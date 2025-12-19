@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(npm run dev)",
+      "Bash(npm run build)",
+      "Bash(npm run lint)",
+      "Bash(npm install:*)",
+      "Bash(npx:*)",
+      "Bash(git:*)",
+      "Read(app/**)",
+      "Read(components/**)",
+      "Read(lib/**)",
+      "Read(public/**)",
+      "Read(styles/**)",
+      "Edit(app/**)",
+      "Edit(components/**)",
+      "Edit(lib/**)",
+      "Edit(public/**)",
+      "Edit(styles/**)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(.env.local)"
+    ]
+  },
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
