@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { SITE, STATS } from '@/lib/constants';
+import { ValuePillars, ProductCards, CalendlyEmbed, AboutSection, ContactSection } from '@/components/sections';
 
 export default function Home() {
   return (
@@ -119,41 +120,20 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Placeholder sections - will be built out */}
-      <section className="section bg-brand-navy">
-        <div className="container-max text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">The Power of Music</h2>
-          <p className="text-gray-400">Value pillars section coming soon...</p>
-        </div>
-      </section>
+      {/* Value Pillars Section */}
+      <ValuePillars />
 
-      <section className="section">
-        <div className="container-max text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Solutions</h2>
-          <p className="text-gray-400">Product cards section coming soon...</p>
-        </div>
-      </section>
+      {/* Product Cards Section */}
+      <ProductCards />
 
-      <section id="demo" className="section bg-brand-navy">
-        <div className="container-max text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Book a Free Demo</h2>
-          <p className="text-gray-400">Calendly embed section coming soon...</p>
-        </div>
-      </section>
+      {/* Calendly Demo Booking Section */}
+      <CalendlyEmbed />
 
-      <section className="section">
-        <div className="container-max text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Who We Are</h2>
-          <p className="text-gray-400">About section coming soon...</p>
-        </div>
-      </section>
+      {/* About Section */}
+      <AboutSection />
 
-      <section className="section bg-brand-navy">
-        <div className="container-max text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
-          <p className="text-gray-400">Contact form section coming soon...</p>
-        </div>
-      </section>
+      {/* Contact Section */}
+      <ContactSection />
     </>
   );
 }
