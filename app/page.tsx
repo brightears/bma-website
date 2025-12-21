@@ -45,7 +45,9 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="text-brand-orange font-semibold text-lg mb-4 tracking-wide uppercase"
+              className="font-semibold text-lg mb-4 tracking-[0.25em] uppercase
+                         bg-gradient-to-r from-brand-orange to-amber-400 bg-clip-text text-transparent
+                         animate-tagline-glow"
             >
               {SITE.tagline}
             </motion.p>

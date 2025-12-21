@@ -90,6 +90,20 @@
   animation: soundwave 1s ease-in-out infinite;
 }
 
+/* Tagline glow animation - subtle breathing effect */
+@keyframes tagline-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px rgba(239, 166, 52, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(239, 166, 52, 0.5));
+  }
+}
+
+.animate-tagline-glow {
+  animation: tagline-glow 5s ease-in-out infinite;
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *,
