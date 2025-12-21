@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
@@ -70,6 +70,16 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
 }) => {
   const [status, setStatus] = useState<SubmissionStatus>('idle');
   const [errorMessage, setErrorMessage] = useState<string>('');
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Cleanup timeout on unmount to prevent memory leaks
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
 
   const {
     register,
@@ -111,7 +121,7 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
         onSuccess?.();
 
         // Reset success message after 5 seconds
-        setTimeout(() => {
+        timeoutRef.current = setTimeout(() => {
           setStatus('idle');
         }, 5000);
       } else {
@@ -126,7 +136,7 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
       onError?.(message);
 
       // Reset error message after 5 seconds
-      setTimeout(() => {
+      timeoutRef.current = setTimeout(() => {
         setStatus('idle');
         setErrorMessage('');
       }, 5000);

@@ -61,6 +61,34 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        {/* Preconnect hints for external resources */}
+        <link rel="preconnect" href="https://assets.calendly.com" />
+        <link rel="dns-prefetch" href="https://assets.calendly.com" />
+
+        {/* Organization Schema (JSON-LD) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'BMAsia',
+              url: 'https://bmasiamusic.com',
+              logo: 'https://bmasiamusic.com/images/BMAsia_Logo.png',
+              description:
+                'BMAsia provides customized background music solutions for businesses across Asia-Pacific.',
+              foundingDate: '2002',
+              contactPoint: {
+                '@type': 'ContactPoint',
+                email: 'norbert@bmasiamusic.com',
+                contactType: 'sales',
+              },
+              areaServed: 'Asia-Pacific',
+              serviceType: 'Background Music Solutions',
+            }),
+          }}
+        />
+
         {/* Google Tag Manager */}
         {process.env.NEXT_PUBLIC_GTM_ID && (
           <script
