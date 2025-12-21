@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { SITE, STATS } from '@/lib/constants';
-import { ValuePillars, ProductCards, CalendlyEmbed, AboutSection, ContactSection } from '@/components/sections';
+import { ValuePillars, ProductCards, ClientLogos, CalendlyEmbed, AboutSection, ContactSection } from '@/components/sections';
 
 export default function Home() {
   return (
@@ -125,6 +125,9 @@ export default function Home() {
 
       {/* Product Cards Section */}
       <ProductCards />
+
+      {/* Client Logos Section */}
+      <ClientLogos />
 
       {/* Calendly Demo Booking Section */}
       <CalendlyEmbed />
