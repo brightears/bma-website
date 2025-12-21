@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { NAV_LINKS } from '@/lib/constants';
 
@@ -140,15 +141,21 @@ export const Header: React.FC = () => {
           <Link
             href="/"
             className="relative z-50 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark rounded-lg"
-            aria-label="BMAsia - Go to homepage"
           >
-            <motion.span
-              className="text-2xl md:text-3xl font-bold text-brand-orange"
+            <motion.div
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
+              className="relative h-8 md:h-10 w-auto"
             >
-              BMAsia
-            </motion.span>
+              <Image
+                src="/images/BMAsia_Logo.png"
+                alt="BMAsia - Wherever Music Matters"
+                height={40}
+                width={120}
+                className="h-8 md:h-10 w-auto object-contain"
+                priority
+              />
+            </motion.div>
           </Link>
 
           {/* Desktop Navigation */}

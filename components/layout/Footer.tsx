@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { NAV_LINKS, SITE } from '@/lib/constants';
 
@@ -69,13 +70,18 @@ export const Footer: React.FC = () => {
               className="inline-block focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark rounded-lg"
               aria-label="BMAsia - Go to homepage"
             >
-              <motion.span
-                className="text-2xl md:text-3xl font-bold text-brand-orange"
+              <motion.div
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                {SITE.name}
-              </motion.span>
+                <Image
+                  src="/images/BMAsia_Logo.png"
+                  alt="BMAsia - Wherever Music Matters"
+                  width={120}
+                  height={32}
+                  className="h-8 w-auto"
+                />
+              </motion.div>
             </Link>
             <p className="mt-3 text-lg text-white/80 font-medium">
               {SITE.tagline}
