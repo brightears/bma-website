@@ -379,50 +379,15 @@ export default function LicensingPage() {
               id="solution-heading"
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
             >
-              BMAsia Solutions Include{' '}
-              <span className="gradient-text">All Licensing</span>
+              We Handle the{' '}
+              <span className="gradient-text">Licensing Complexity</span>
             </h2>
             <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
-              When you choose BMAsia, you get fully licensed music without the hassle
+              Choose the solution that fits your needs
             </p>
           </motion.div>
 
-          {/* Benefits */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
-            className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 md:p-12 mb-12"
-          >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {[
-                'All three license types included',
-                'No separate PRO negotiations',
-                'No hidden fees or extra costs',
-                'Full legal protection for your business',
-                'Worry-free commercial music playback',
-                'Coverage for all your locations',
-              ].map((benefit, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="flex items-start gap-3"
-                >
-                  <CheckCircle2
-                    className="w-6 h-6 text-brand-orange flex-shrink-0 mt-0.5"
-                    aria-hidden="true"
-                  />
-                  <span className="text-gray-300 text-lg">{benefit}</span>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* Product cards summary */}
+          {/* Product cards with licensing details */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -446,9 +411,25 @@ export default function LicensingPage() {
               <p className="text-brand-orange mb-4">
                 {PRODUCTS.soundtrackYourBrand.tagline}
               </p>
-              <p className="text-gray-400 mb-6">
-                Access over 100 million tracks with complete licensing included. Perfect for brands that want premium music curation.
+              <p className="text-gray-400 mb-4">
+                Access over 100 million tracks with recording and publishing licenses included.
               </p>
+
+              {/* License checklist */}
+              <div className="space-y-2 mb-6">
+                <div className="flex items-center gap-2 text-sm">
+                  <CheckCircle2 className="w-4 h-4 text-green-400" aria-hidden="true" />
+                  <span className="text-gray-300">Recording License - 100M+ tracks</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm">
+                  <CheckCircle2 className="w-4 h-4 text-green-400" aria-hidden="true" />
+                  <span className="text-gray-300">Publishing License - Compositions covered</span>
+                </div>
+                <div className="flex items-start gap-2 text-sm">
+                  <AlertTriangle className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                  <span className="text-amber-300">Public Performance License - Required separately from your local PRO</span>
+                </div>
+              </div>
 
               <Link href="/quotation">
                 <motion.span
@@ -465,23 +446,47 @@ export default function LicensingPage() {
             <motion.article
               variants={cardVariants}
               whileHover={{ y: -4, transition: { duration: 0.3 } }}
-              className="relative bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 md:p-8 hover:border-white/20 hover:bg-white/10 transition-all duration-300"
+              className="relative bg-white/5 backdrop-blur-lg border border-green-500/30 rounded-2xl p-6 md:p-8 hover:border-green-500/50 hover:bg-white/10 transition-all duration-300"
             >
-              <h3 className="text-2xl font-bold text-white mb-2">
+              <div className="absolute -top-3 left-6 px-4 py-1 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full text-xs font-semibold text-white uppercase tracking-wider">
+                Fully Licensed
+              </div>
+
+              <h3 className="text-2xl font-bold text-white mb-2 mt-2">
                 {PRODUCTS.beatBreeze.name}
               </h3>
-              <p className="text-gray-400 mb-4">
+              <p className="text-green-400 mb-4">
                 {PRODUCTS.beatBreeze.tagline}
               </p>
-              <p className="text-gray-400 mb-6">
-                Over 30,000 curated tracks with public performance license included. Ideal for cost-conscious businesses.
+              <p className="text-gray-400 mb-4">
+                Over 30,000 curated tracks with ALL licenses included. No additional fees or PRO negotiations required.
+              </p>
+
+              {/* License checklist */}
+              <div className="space-y-2 mb-4">
+                <div className="flex items-center gap-2 text-sm">
+                  <CheckCircle2 className="w-4 h-4 text-green-400" aria-hidden="true" />
+                  <span className="text-gray-300">Recording License - 30K+ tracks</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm">
+                  <CheckCircle2 className="w-4 h-4 text-green-400" aria-hidden="true" />
+                  <span className="text-gray-300">Publishing License - Compositions covered</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm">
+                  <CheckCircle2 className="w-4 h-4 text-green-400" aria-hidden="true" />
+                  <span className="text-green-300 font-medium">Public Performance License - Included!</span>
+                </div>
+              </div>
+
+              <p className="text-sm text-green-400/80 mb-6">
+                Play music worry-free - we handle everything.
               </p>
 
               <Link href="/quotation">
                 <motion.span
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="inline-block w-full text-center bg-white/10 hover:bg-white/20 text-white border border-white/10 px-6 py-3 rounded-xl font-semibold transition-colors"
+                  className="inline-block w-full text-center bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-semibold transition-colors"
                 >
                   Get a Quote
                 </motion.span>
@@ -540,7 +545,7 @@ export default function LicensingPage() {
 
             {/* Description */}
             <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-              Protect your business and enjoy premium music with complete peace of mind. Get a personalized quote today.
+              Choose the right music solution for your business. Get a personalized quote today.
             </p>
 
             {/* CTA Buttons */}
