@@ -9,21 +9,21 @@ import Image from 'next/image';
  */
 const CLIENTS = [
   // Row 1: Mix of industries
-  { name: 'Accor', logo: '/images/logos/accor-logo.jpg', category: 'hospitality' },
-  { name: 'The North Face', logo: '/images/logos/The-North-Face-Logo.png', category: 'retail' },
-  { name: 'Tim Hortons', logo: '/images/logos/tim-hortons-logo.jpg', category: 'fnb' },
-  { name: 'DBS', logo: '/images/logos/dbs-logo.jpg', category: 'finance' },
-  { name: 'Vans', logo: '/images/logos/vans-logo-png_seeklogo-257446.png', category: 'retail' },
-  { name: 'Hyatt', logo: '/images/logos/hyatt-logo.jpg', category: 'hospitality' },
-  { name: 'Wine Connection', logo: '/images/logos/wine-connection-logo.png', category: 'fnb' },
+  { name: 'Accor', logo: '/images/logos/accor-logo.jpg' },
+  { name: 'The North Face', logo: '/images/logos/The-North-Face-Logo.png' },
+  { name: 'Tim Hortons', logo: '/images/logos/tim-hortons-logo.jpg' },
+  { name: 'DBS', logo: '/images/logos/dbs-logo.jpg' },
+  { name: 'Vans', logo: '/images/logos/vans-logo-png_seeklogo-257446.png' },
+  { name: 'Hyatt', logo: '/images/logos/hyatt-logo.jpg' },
+  { name: 'Wine Connection', logo: '/images/logos/wine-connection-logo.png' },
   // Row 2: Mix of industries
-  { name: 'JLL', logo: '/images/logos/JLL-logo.jpg', category: 'realestate' },
-  { name: 'Dickies', logo: '/images/logos/Dickies-Logo-500x281.png', category: 'retail' },
-  { name: 'The Ascott', logo: '/images/logos/ascott-logo.png', category: 'hospitality' },
-  { name: 'TUI', logo: '/images/logos/TUI_Logo_2016.svg.png', category: 'travel' },
-  { name: 'Love, Bonito', logo: '/images/logos/Love, Bonito.svg', category: 'retail' },
-  { name: 'Centara', logo: '/images/logos/centara-logo.jpg', category: 'hospitality' },
-  { name: 'Minor Hotels', logo: '/images/logos/minor-logo.jpg', category: 'hospitality' },
+  { name: 'JLL', logo: '/images/logos/JLL-logo.jpg' },
+  { name: 'Dickies', logo: '/images/logos/Dickies-Logo-500x281.png' },
+  { name: 'The Ascott', logo: '/images/logos/ascott-logo.png' },
+  { name: 'TUI', logo: '/images/logos/TUI_Logo_2016.svg.png' },
+  { name: 'Love, Bonito', logo: '/images/logos/love-bonito.svg' },
+  { name: 'Centara', logo: '/images/logos/centara-logo.jpg' },
+  { name: 'Minor Hotels', logo: '/images/logos/minor-logo.jpg' },
 ] as const;
 
 /**
@@ -97,24 +97,27 @@ export const ClientLogos: React.FC = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-50px' }}
-          className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-6 md:gap-8 items-center justify-items-center"
+          className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-8 md:gap-10 items-center justify-items-center"
         >
           {CLIENTS.map((client) => (
             <motion.div
               key={client.name}
               variants={itemVariants}
-              className="group relative h-10 md:h-12 w-full flex items-center justify-center"
+              className="group relative w-full flex items-center justify-center py-2"
             >
               <Image
                 src={client.logo}
                 alt={client.name}
-                width={120}
-                height={48}
-                className="h-8 md:h-10 w-auto max-w-[100px] md:max-w-[120px] object-contain
-                           grayscale brightness-[1.8] opacity-50
-                           transition-all duration-300
-                           group-hover:opacity-70 group-hover:brightness-[2]"
-                style={{ filter: 'grayscale(100%) brightness(1.8)' }}
+                width={140}
+                height={60}
+                className="w-auto h-auto max-h-10 md:max-h-12 max-w-[110px] md:max-w-[130px] object-contain
+                           transition-opacity duration-300
+                           group-hover:opacity-80"
+                style={{
+                  filter: 'grayscale(100%) brightness(0) invert(1)',
+                  opacity: 0.5
+                }}
+                unoptimized={client.logo.endsWith('.svg')}
               />
             </motion.div>
           ))}
