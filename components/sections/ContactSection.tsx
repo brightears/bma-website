@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Clock, MessageSquare, ArrowRight } from 'lucide-react';
+import { Mail, MessageSquare, ArrowRight } from 'lucide-react';
 import { SITE, SOCIAL } from '@/lib/constants';
 import { InquiryForm } from '@/components/forms/InquiryForm';
 import { WhatsAppIcon, LineIcon } from '@/components/icons';
@@ -73,18 +73,6 @@ const CONTACT_INFO: ContactInfoItem[] = [
     href: SOCIAL.line,
     description: 'Connect with us on Line',
     isExternal: true,
-  },
-  {
-    icon: <Clock className="w-5 h-5 text-brand-orange" aria-hidden="true" />,
-    label: 'Business Hours',
-    value: 'Mon - Fri, 9AM - 6PM (HKT)',
-    description: 'Hong Kong timezone',
-  },
-  {
-    icon: <MapPin className="w-5 h-5 text-brand-orange" aria-hidden="true" />,
-    label: 'Coverage',
-    value: 'Asia Pacific Region',
-    description: 'Serving businesses across APAC',
   },
 ];
 
