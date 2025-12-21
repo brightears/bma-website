@@ -245,15 +245,15 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
             initial="initial"
             animate="animate"
             exit="exit"
-            className="flex items-center gap-3 bg-green-500/10 border border-green-500/20 rounded-lg p-4"
+            className="flex items-center gap-3 bg-brand-orange/10 border border-brand-orange/20 rounded-lg p-4"
             role="alert"
             aria-live="polite"
           >
             <CheckCircle
-              className="w-5 h-5 text-green-400 flex-shrink-0"
+              className="w-5 h-5 text-brand-orange flex-shrink-0"
               aria-hidden="true"
             />
-            <p className="text-green-400">
+            <p className="text-brand-orange">
               Thank you for your quotation request! We will get back to you
               within 24-48 hours with a personalized quote.
             </p>
