@@ -90,18 +90,30 @@
   animation: soundwave 1s ease-in-out infinite;
 }
 
-/* Tagline glow animation - subtle breathing effect */
-@keyframes tagline-glow {
-  0%, 100% {
-    filter: drop-shadow(0 0 8px rgba(239, 166, 52, 0.3));
+/* Tagline shimmer animation - visible light sweep effect */
+@keyframes tagline-shimmer {
+  0% {
+    background-position: -200% center;
   }
-  50% {
-    filter: drop-shadow(0 0 20px rgba(239, 166, 52, 0.5));
+  100% {
+    background-position: 200% center;
   }
 }
 
-.animate-tagline-glow {
-  animation: tagline-glow 5s ease-in-out infinite;
+.animate-tagline-shimmer {
+  background: linear-gradient(
+    90deg,
+    #EFA634 0%,
+    #EFA634 40%,
+    #fcd34d 50%,
+    #EFA634 60%,
+    #EFA634 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: tagline-shimmer 4s ease-in-out infinite;
 }
 
 /* Reduced motion */
