@@ -1,15 +1,30 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import { sendQuotationNotification } from '@/lib/email';
+import { checkRateLimit, isHoneypotTriggered, getClientIP } from '@/lib/rate-limiter';
 
 /**
  * Quotation request form submission API endpoint
  * POST /api/quotation
  *
  * Validates the request, saves to database, and sends email notification
+ * Includes spam protection: honeypot field and rate limiting
  */
 export async function POST(request: NextRequest) {
   try {
+    // Get client IP for rate limiting
+    const clientIP = getClientIP(request.headers);
+
+    // Check rate limit
+    const rateLimit = checkRateLimit(clientIP);
+    if (rateLimit.isLimited) {
+      console.log(`Rate limit exceeded for IP: ${clientIP}`);
+      return NextResponse.json(
+        { error: 'Too many submissions. Please try again later.' },
+        { status: 429 }
+      );
+    }
+
     // Parse request body
     const body = await request.json();
     const {
@@ -21,7 +36,18 @@ export async function POST(request: NextRequest) {
       companyAddress,
       preferredSolution,
       numberOfZones,
+      website,
     } = body;
+
+    // Check honeypot field - if filled, silently reject (likely a bot)
+    if (isHoneypotTriggered(website)) {
+      console.log(`Honeypot triggered for IP: ${clientIP}`);
+      // Return success to fool the bot, but don't actually process
+      return NextResponse.json(
+        { success: true, message: 'Quotation request submitted successfully' },
+        { status: 201 }
+      );
+    }
 
     // Validate required fields
     if (

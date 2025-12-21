@@ -56,6 +56,7 @@ interface QuotationFormData {
   companyAddress: string;
   preferredSolution: string;
   numberOfZones: number;
+  website?: string; // Honeypot field - should remain empty for real users
 }
 
 /**
@@ -632,6 +633,18 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
             {errors.numberOfZones.message}
           </p>
         )}
+      </div>
+
+      {/* Honeypot field - hidden from real users, catches bots */}
+      <div className="absolute left-[-9999px]" aria-hidden="true">
+        <label htmlFor="quotation-website">Website</label>
+        <input
+          id="quotation-website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          {...register('website')}
+        />
       </div>
 
       {/* Submit Button */}

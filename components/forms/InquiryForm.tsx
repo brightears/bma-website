@@ -13,6 +13,7 @@ interface InquiryFormData {
   company: string;
   email: string;
   message: string;
+  website?: string; // Honeypot field - should remain empty for real users
 }
 
 /**
@@ -326,6 +327,18 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
             {errors.message.message}
           </p>
         )}
+      </div>
+
+      {/* Honeypot field - hidden from real users, catches bots */}
+      <div className="absolute left-[-9999px]" aria-hidden="true">
+        <label htmlFor="inquiry-website">Website</label>
+        <input
+          id="inquiry-website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          {...register('website')}
+        />
       </div>
 
       {/* Submit Button */}
