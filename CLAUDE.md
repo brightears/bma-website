@@ -6,7 +6,7 @@ Modern website rebuild for BMAsia (bmasiamusic.com) - a B2B background music sol
 **Goal**: Create a premium, animated website that outshines competitors with modern design and smooth interactions.
 
 ## Tech Stack
-- **Framework**: Next.js 14 (App Router)
+- **Framework**: Next.js 16 (App Router)
 - **Language**: TypeScript (strict mode)
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion
@@ -35,11 +35,13 @@ White:           #ffffff
 
 ## Common Commands
 ```bash
-npm run dev      # Start development server
-npm run build    # Build for production (outputs to /out)
-npm run lint     # Run ESLint
-npm run start    # Start production server (if not static)
+npm run dev                      # Start development server
+NODE_ENV=production npm run build # Build for production (outputs to /out)
+npm run lint                     # Run ESLint
+npm run start                    # Start production server (if not static)
 ```
+
+**Note**: Use `NODE_ENV=production` prefix for builds to avoid Next.js 16 global-error prerender issue.
 
 ## Project Structure
 ```
@@ -59,6 +61,7 @@ bma_website/
 │   └── constants.ts        # Colors, URLs, form IDs
 ├── public/
 │   └── images/             # Static assets
+│       └── logos/          # Client logos (transparent PNGs/SVGs)
 └── styles/
     └── globals.css         # Global styles + Tailwind
 ```
@@ -67,7 +70,7 @@ bma_website/
 
 | Route | Page | Key Sections |
 |-------|------|--------------|
-| `/` | Landing | Hero, Value Pillars, Products, Calendly, About, Contact |
+| `/` | Landing | Hero, Value Pillars, Products, ClientLogos, Calendly, About, Contact |
 | `/how-it-works` | Process | 3-step process, Benefits, Demo CTA |
 | `/licensing` | Education | License types, Streaming warning, Solutions |
 | `/quotation` | Form | Quotation request form |
@@ -83,6 +86,40 @@ bma_website/
 - Company Name, Company Address
 - Preferred Solution (dropdown), Number of Zones
 - Formspree endpoint: `NEXT_PUBLIC_FORMSPREE_QUOTATION_ID`
+
+## Client Logos Section
+
+### Overview
+Subtle "Trusted by industry leaders" section displaying monochrome client logos on the landing page. Located between Products and Calendly sections.
+
+### Component
+`components/sections/ClientLogos.tsx`
+
+### Current Logos (10 total, 2 rows of 5)
+| Logo | File | Industry |
+|------|------|----------|
+| Accor | accor-seeklogo.png | Hospitality |
+| The North Face | The-North-Face-Logo.png | Retail |
+| Tim Hortons | tim-hortons-seeklogo.png | F&B |
+| DBS | DBS_Bank_Logo_(alternative).svg | Finance |
+| TUI | TUI_Logo_2016.svg.png | Travel |
+| Hyatt | hyatt-seeklogo.png | Hospitality |
+| JLL | JLL_logo.svg | Real Estate |
+| Hilton | hilton-hotels-seeklogo.png | Hospitality |
+| Centara | centara-hotels-resorts-seeklogo.png | Hospitality |
+| Minor Hotels | minor-hotels-seeklogo.png | Hospitality |
+
+### Technical Implementation
+- **Monochrome Filter**: `filter: 'grayscale(100%) brightness(0) invert(1)'` converts any logo to white
+- **Opacity**: 0.5 for subtle appearance
+- **Grid**: 5 columns desktop, 3 tablet, 2 mobile
+- **Logo Requirements**: MUST have transparent background (solid backgrounds become gray boxes with the invert filter)
+
+### Adding/Replacing Logos
+1. Download transparent PNG/SVG from SeekLogo, Wikipedia, or brand press kits
+2. Save to `public/images/logos/`
+3. Update `CLIENTS` array in `ClientLogos.tsx`
+4. Build with `NODE_ENV=production npm run build` (required to avoid Next.js 16 global-error issue)
 
 ## Design Patterns
 
