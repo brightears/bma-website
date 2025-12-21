@@ -4,7 +4,6 @@ import { useState, useRef, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
-import { URLS } from '@/lib/constants';
 
 /**
  * Form data interface for the inquiry form
@@ -53,7 +52,8 @@ const statusVariants = {
  *
  * A reusable form component for music inquiries with:
  * - React Hook Form for state management
- * - Formspree integration for submission
+ * - API route submission with PostgreSQL storage
+ * - Email notification via Gmail SMTP
  * - Field validation with error messages
  * - Loading state on submit button
  * - Success/error toast messages
@@ -91,29 +91,22 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
   });
 
   /**
-   * Handle form submission to Formspree
+   * Handle form submission to API
    */
   const onSubmit = async (data: InquiryFormData) => {
     setStatus('idle');
     setErrorMessage('');
 
     try {
-      const formspreeUrl = URLS.formspreeInquiry
-        ? `https://formspree.io/f/${URLS.formspreeInquiry}`
-        : '';
-
-      if (!formspreeUrl) {
-        throw new Error('Form submission endpoint not configured');
-      }
-
-      const response = await fetch(formspreeUrl, {
+      const response = await fetch('/api/inquiry', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Accept: 'application/json',
         },
         body: JSON.stringify(data),
       });
+
+      const result = await response.json();
 
       if (response.ok) {
         setStatus('success');
@@ -125,8 +118,7 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
           setStatus('idle');
         }, 5000);
       } else {
-        const errorData = await response.json().catch(() => ({}));
-        throw new Error(errorData.error || 'Failed to send message');
+        throw new Error(result.error || 'Failed to send message');
       }
     } catch (error) {
       const message =

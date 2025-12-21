@@ -2,8 +2,9 @@
 
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Clock, MessageSquare, ArrowRight } from 'lucide-react';
-import { SITE } from '@/lib/constants';
+import { SITE, SOCIAL } from '@/lib/constants';
 import { InquiryForm } from '@/components/forms/InquiryForm';
+import { WhatsAppIcon, LineIcon } from '@/components/icons';
 
 /**
  * Animation variants for container with staggered children
@@ -38,11 +39,12 @@ const itemVariants = {
  * Contact information item type
  */
 interface ContactInfoItem {
-  icon: React.ComponentType<{ className?: string }>;
+  icon: React.ReactNode;
   label: string;
   value: string;
   href?: string;
   description: string;
+  isExternal?: boolean;
 }
 
 /**
@@ -50,20 +52,36 @@ interface ContactInfoItem {
  */
 const CONTACT_INFO: ContactInfoItem[] = [
   {
-    icon: Mail,
+    icon: <Mail className="w-5 h-5 text-brand-orange" aria-hidden="true" />,
     label: 'Email',
     value: SITE.email,
     href: `mailto:${SITE.email}`,
     description: 'We typically respond within 24 hours',
   },
   {
-    icon: Clock,
+    icon: <WhatsAppIcon size={20} />,
+    label: 'WhatsApp',
+    value: 'Message us on WhatsApp',
+    href: SOCIAL.whatsapp,
+    description: 'Quick response via WhatsApp',
+    isExternal: true,
+  },
+  {
+    icon: <LineIcon size={20} />,
+    label: 'Line',
+    value: 'Add us on Line',
+    href: SOCIAL.line,
+    description: 'Connect with us on Line',
+    isExternal: true,
+  },
+  {
+    icon: <Clock className="w-5 h-5 text-brand-orange" aria-hidden="true" />,
     label: 'Business Hours',
     value: 'Mon - Fri, 9AM - 6PM (HKT)',
     description: 'Hong Kong timezone',
   },
   {
-    icon: MapPin,
+    icon: <MapPin className="w-5 h-5 text-brand-orange" aria-hidden="true" />,
     label: 'Coverage',
     value: 'Asia Pacific Region',
     description: 'Serving businesses across APAC',
@@ -213,10 +231,14 @@ export const ContactSection: React.FC = () => {
                   {item.href ? (
                     <a
                       href={item.href}
+                      {...(item.isExternal && {
+                        target: '_blank',
+                        rel: 'noopener noreferrer',
+                      })}
                       className="flex items-start gap-4 p-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-colors"
                     >
                       <div className="w-10 h-10 rounded-lg bg-brand-orange/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-orange/30 transition-colors">
-                        <item.icon className="w-5 h-5 text-brand-orange" aria-hidden="true" />
+                        {item.icon}
                       </div>
                       <div>
                         <div className="text-sm text-gray-500">{item.label}</div>
@@ -231,7 +253,7 @@ export const ContactSection: React.FC = () => {
                   ) : (
                     <div className="flex items-start gap-4 p-4 bg-white/5 border border-white/10 rounded-xl">
                       <div className="w-10 h-10 rounded-lg bg-brand-orange/20 flex items-center justify-center flex-shrink-0">
-                        <item.icon className="w-5 h-5 text-brand-orange" aria-hidden="true" />
+                        {item.icon}
                       </div>
                       <div>
                         <div className="text-sm text-gray-500">{item.label}</div>

@@ -80,7 +80,7 @@ export default function RootLayout({
               foundingDate: '2002',
               contactPoint: {
                 '@type': 'ContactPoint',
-                email: 'norbert@bmasiamusic.com',
+                email: 'info@bmasiamusic.com',
                 contactType: 'sales',
               },
               areaServed: 'Asia-Pacific',

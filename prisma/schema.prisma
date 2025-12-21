@@ -1,0 +1,39 @@
+// BMAsia Website - Prisma Schema
+// Stores form submissions for inquiries and quotation requests
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// General inquiry form submissions
+model Inquiry {
+  id        String   @id @default(cuid())
+  name      String
+  company   String
+  email     String
+  message   String   @db.Text
+  createdAt DateTime @default(now())
+
+  @@map("inquiries")
+}
+
+// Quotation request form submissions
+model Quotation {
+  id                String   @id @default(cuid())
+  firstName         String
+  lastName          String
+  email             String
+  country           String
+  companyName       String
+  companyAddress    String   @db.Text
+  preferredSolution String
+  numberOfZones     Int
+  createdAt         DateTime @default(now())
+
+  @@map("quotations")
+}

@@ -16,7 +16,13 @@ export const SITE = {
   tagline: 'Wherever Music Matters',
   description: 'BMAsia provides customized background music solutions for businesses. Transform your space with the perfect soundtrack.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://bmasiamusic.com',
-  email: 'norbert@bmasiamusic.com',
+  email: 'info@bmasiamusic.com',
+} as const;
+
+// Social/Messaging Links
+export const SOCIAL = {
+  whatsapp: 'https://wa.me/66632377765',
+  line: 'https://lin.ee/GKG9FGX',
 } as const;
 
 // External URLs

@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 import { Mail, Clock, CheckCircle, Music, Zap, Shield } from 'lucide-react';
 import Link from 'next/link';
 import { QuotationForm } from '@/components/forms';
-import { PRODUCTS, SITE } from '@/lib/constants';
+import { PRODUCTS, SITE, SOCIAL } from '@/lib/constants';
+import { WhatsAppLink, LineLink } from '@/components/icons';
 
 /**
  * Animation variants for the container with staggered children
@@ -278,7 +279,8 @@ export default function QuotationPage() {
                     Questions?
                   </span>
                 </h2>
-                <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl p-5">
+                <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl p-5 space-y-4">
+                  {/* Email contact */}
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-xl bg-brand-orange/20 flex items-center justify-center">
                       <Mail
@@ -296,6 +298,14 @@ export default function QuotationPage() {
                       >
                         {SITE.email}
                       </a>
+                    </div>
+                  </div>
+                  {/* Messaging icons */}
+                  <div className="flex items-center gap-3 pt-2 border-t border-white/10">
+                    <span className="text-gray-400 text-sm">Or message us:</span>
+                    <div className="flex items-center gap-4">
+                      <WhatsAppLink href={SOCIAL.whatsapp} size={24} />
+                      <LineLink href={SOCIAL.line} size={24} />
                     </div>
                   </div>
                 </div>

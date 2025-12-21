@@ -4,7 +4,6 @@ import { useState, useRef, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
-import { URLS } from '@/lib/constants';
 
 /**
  * Country options for the dropdown
@@ -96,7 +95,8 @@ const statusVariants = {
  *
  * A comprehensive quotation request form with:
  * - React Hook Form for state management
- * - Formspree integration for submission
+ * - API route submission with PostgreSQL storage
+ * - Email notification via Gmail SMTP
  * - Field validation with error messages
  * - Loading state on submit button
  * - Success/error toast messages
@@ -146,22 +146,14 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
   const selectedCountry = watch('country');
 
   /**
-   * Handle form submission to Formspree
+   * Handle form submission to API
    */
   const onSubmit = async (data: QuotationFormData) => {
     setStatus('idle');
     setErrorMessage('');
 
     try {
-      const formspreeUrl = URLS.formspreeQuotation
-        ? `https://formspree.io/f/${URLS.formspreeQuotation}`
-        : '';
-
-      if (!formspreeUrl) {
-        throw new Error('Form submission endpoint not configured');
-      }
-
-      // Prepare submission data
+      // Prepare submission data with resolved country name
       const submissionData = {
         ...data,
         country:
@@ -169,19 +161,17 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
             ? data.otherCountry
             : COUNTRIES.find((c) => c.value === data.country)?.label ||
               data.country,
-        preferredSolution:
-          SOLUTIONS.find((s) => s.value === data.preferredSolution)?.label ||
-          data.preferredSolution,
       };
 
-      const response = await fetch(formspreeUrl, {
+      const response = await fetch('/api/quotation', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Accept: 'application/json',
         },
         body: JSON.stringify(submissionData),
       });
+
+      const result = await response.json();
 
       if (response.ok) {
         setStatus('success');
@@ -193,8 +183,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
           setStatus('idle');
         }, 5000);
       } else {
-        const errorData = await response.json().catch(() => ({}));
-        throw new Error(errorData.error || 'Failed to submit quotation request');
+        throw new Error(result.error || 'Failed to submit quotation request');
       }
     } catch (error) {
       const message =

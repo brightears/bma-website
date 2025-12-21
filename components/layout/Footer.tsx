@@ -3,7 +3,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { NAV_LINKS, SITE } from '@/lib/constants';
+import { NAV_LINKS, SITE, SOCIAL } from '@/lib/constants';
+import { WhatsAppLink, LineLink } from '@/components/icons';
 
 /**
  * Footer component for the BMAsia website
@@ -123,6 +124,13 @@ export const Footer: React.FC = () => {
                     {SITE.email}
                   </span>
                 </a>
+              </li>
+              {/* Messaging icons */}
+              <li>
+                <div className="flex items-center gap-4 mt-4">
+                  <WhatsAppLink href={SOCIAL.whatsapp} size={24} />
+                  <LineLink href={SOCIAL.line} size={24} />
+                </div>
               </li>
             </ul>
           </motion.div>

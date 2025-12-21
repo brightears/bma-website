@@ -43,3 +43,5 @@ CLAUDE.local.md
 # PWA
 **/public/sw.js
 **/public/workbox-*.js
+
+/lib/generated/prisma

@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // Note: Removed 'output: export' to enable API routes with PostgreSQL + email
   images: {
     unoptimized: true,
   },
