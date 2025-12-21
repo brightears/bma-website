@@ -9,21 +9,17 @@ import Image from 'next/image';
  */
 const CLIENTS = [
   // Row 1: Mix of industries
-  { name: 'Accor', logo: '/images/logos/accor-logo.jpg' },
+  { name: 'Accor', logo: '/images/logos/accor-seeklogo.png' },
   { name: 'The North Face', logo: '/images/logos/The-North-Face-Logo.png' },
-  { name: 'Tim Hortons', logo: '/images/logos/tim-hortons-logo.jpg' },
-  { name: 'DBS', logo: '/images/logos/dbs-logo.jpg' },
-  { name: 'Vans', logo: '/images/logos/vans-logo-png_seeklogo-257446.png' },
-  { name: 'Hyatt', logo: '/images/logos/hyatt-logo.jpg' },
-  { name: 'Wine Connection', logo: '/images/logos/wine-connection-logo.png' },
-  // Row 2: Mix of industries
-  { name: 'JLL', logo: '/images/logos/JLL-logo.jpg' },
-  { name: 'Dickies', logo: '/images/logos/Dickies-Logo-500x281.png' },
-  { name: 'The Ascott', logo: '/images/logos/ascott-logo.png' },
+  { name: 'Tim Hortons', logo: '/images/logos/tim-hortons-seeklogo.png' },
+  { name: 'DBS', logo: '/images/logos/DBS_Bank_Logo_(alternative).svg' },
   { name: 'TUI', logo: '/images/logos/TUI_Logo_2016.svg.png' },
-  { name: 'Love, Bonito', logo: '/images/logos/love-bonito.svg' },
-  { name: 'Centara', logo: '/images/logos/centara-logo.jpg' },
-  { name: 'Minor Hotels', logo: '/images/logos/minor-logo.jpg' },
+  // Row 2: Mix of industries
+  { name: 'Hyatt', logo: '/images/logos/hyatt-seeklogo.png' },
+  { name: 'JLL', logo: '/images/logos/JLL_logo.svg' },
+  { name: 'The Ascott', logo: '/images/logos/the-ascott-limited-seeklogo.png' },
+  { name: 'Centara', logo: '/images/logos/centara-hotels-resorts-seeklogo.png' },
+  { name: 'Minor Hotels', logo: '/images/logos/minor-hotels-seeklogo.png' },
 ] as const;
 
 /**
@@ -64,7 +60,7 @@ const itemVariants = {
  * Features:
  * - Actual brand logos with monochrome filter
  * - Diverse industry representation
- * - 7-column grid for even distribution
+ * - 5-column grid for even distribution (10 logos = 2 rows)
  * - Scroll-reveal animation
  * - Responsive layout
  */
@@ -91,13 +87,13 @@ export const ClientLogos: React.FC = () => {
           </p>
         </motion.div>
 
-        {/* Client logos grid - 7 columns on desktop, 4 on tablet, 3 on mobile */}
+        {/* Client logos grid - 5 columns on desktop, 3 on tablet, 2 on mobile */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-50px' }}
-          className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-8 md:gap-10 items-center justify-items-center"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 md:gap-12 items-center justify-items-center"
         >
           {CLIENTS.map((client) => (
             <motion.div
