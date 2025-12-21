@@ -151,7 +151,7 @@ export const CalendlyEmbed: React.FC = () => {
           {!hasError && (
             <div
               className="calendly-inline-widget"
-              data-url={`${calendlyUrl}?hide_gdpr_banner=1&background_color=1a1a2e&text_color=ffffff&primary_color=efa634`}
+              data-url={calendlyUrl}
               style={{
                 minWidth: '320px',
                 height: '700px',
