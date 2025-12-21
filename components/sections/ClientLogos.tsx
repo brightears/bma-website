@@ -17,7 +17,7 @@ const CLIENTS = [
   // Row 2: Mix of industries
   { name: 'Hyatt', logo: '/images/logos/hyatt-seeklogo.png' },
   { name: 'JLL', logo: '/images/logos/JLL_logo.svg' },
-  { name: 'The Ascott', logo: '/images/logos/the-ascott-limited-seeklogo.png' },
+  { name: 'Hilton', logo: '/images/logos/hilton-hotels-seeklogo.png' },
   { name: 'Centara', logo: '/images/logos/centara-hotels-resorts-seeklogo.png' },
   { name: 'Minor Hotels', logo: '/images/logos/minor-hotels-seeklogo.png' },
 ] as const;
