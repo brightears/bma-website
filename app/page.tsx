@@ -15,7 +15,7 @@ export default function Home() {
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
           {/* Soundwave bars animation */}
-          <div className="absolute bottom-0 left-0 right-0 h-32 flex items-end justify-center gap-1 opacity-20">
+          <div className="absolute bottom-0 left-0 right-0 h-20 md:h-32 flex items-end justify-center gap-1 opacity-20">
             {[...Array(50)].map((_, i) => (
               <motion.div
                 key={i}
@@ -88,7 +88,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-20 grid grid-cols-3 gap-8 max-w-2xl mx-auto"
+            className="mt-16 sm:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-2xl mx-auto"
           >
             {STATS.map((stat, index) => (
               <div key={index} className="text-center">

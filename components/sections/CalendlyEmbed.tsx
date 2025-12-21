@@ -154,7 +154,7 @@ export const CalendlyEmbed: React.FC = () => {
               data-url={calendlyUrl}
               style={{
                 minWidth: '320px',
-                height: '700px',
+                height: 'clamp(550px, 80vh, 700px)',
                 opacity: isLoading ? 0 : 1,
                 transition: 'opacity 0.3s ease-in-out',
               }}

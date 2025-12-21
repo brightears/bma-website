@@ -225,7 +225,7 @@ export const ContactSection: React.FC = () => {
                       })}
                       className="flex items-start gap-4 p-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-colors"
                     >
-                      <div className="w-10 h-10 rounded-lg bg-brand-orange/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-orange/30 transition-colors">
+                      <div className="w-11 h-11 rounded-lg bg-brand-orange/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-orange/30 transition-colors">
                         {item.icon}
                       </div>
                       <div>
@@ -240,7 +240,7 @@ export const ContactSection: React.FC = () => {
                     </a>
                   ) : (
                     <div className="flex items-start gap-4 p-4 bg-white/5 border border-white/10 rounded-xl">
-                      <div className="w-10 h-10 rounded-lg bg-brand-orange/20 flex items-center justify-center flex-shrink-0">
+                      <div className="w-11 h-11 rounded-lg bg-brand-orange/20 flex items-center justify-center flex-shrink-0">
                         {item.icon}
                       </div>
                       <div>
