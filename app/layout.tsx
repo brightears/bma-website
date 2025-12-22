@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: SITE.name }],
   creator: SITE.name,
+  alternates: {
+    canonical: 'https://bmasiamusic.com',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
