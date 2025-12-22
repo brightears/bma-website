@@ -150,9 +150,12 @@ export const Footer: React.FC = () => {
                 Licensing
               </Link>
               <span className="text-gray-600">|</span>
-              <span className="text-gray-500 text-sm">
+              <Link
+                href="/how-it-works"
+                className="text-gray-500 hover:text-gray-300 text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark rounded"
+              >
                 Music for Business
-              </span>
+              </Link>
             </div>
           </div>
         </div>
