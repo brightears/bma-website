@@ -1,7 +1,9 @@
 # BMAsia Website Project
 
 ## Project Overview
-Modern website rebuild for BMAsia (bmasiamusic.com) - a B2B background music solutions provider founded in 2002. Migrating from WordPress/Elementor to Next.js, deployed on Render.
+Modern website rebuild for BMAsia (bmasiamusic.com) - a B2B background music solutions provider founded in 2002. Migrated from WordPress/Elementor to Next.js, deployed on Render.
+
+**Status**: Live at https://bmasiamusic.com (production)
 
 **Goal**: Create a premium, animated website that outshines competitors with modern design and smooth interactions.
 
@@ -10,7 +12,8 @@ Modern website rebuild for BMAsia (bmasiamusic.com) - a B2B background music sol
 - **Language**: TypeScript (strict mode)
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion
-- **Forms**: React Hook Form + Formspree
+- **Forms**: React Hook Form + API routes + Prisma + Email notifications
+- **Database**: PostgreSQL (via Prisma ORM)
 - **Icons**: Lucide React
 - **Deployment**: Render (static export)
 - **Repository**: https://github.com/brightears/bma-website.git
@@ -77,15 +80,17 @@ bma_website/
 
 ## Forms
 
-### Music Inquiry Form (Contact)
-- Name, Company, Email, Message
-- Formspree endpoint: `NEXT_PUBLIC_FORMSPREE_INQUIRY_ID`
+Both forms use API routes with Prisma (database) + email notifications. Honeypot spam protection and rate limiting included.
 
-### Quotation Request Form
-- First Name, Last Name, Email, Country
-- Company Name, Company Address
-- Preferred Solution (dropdown), Number of Zones
-- Formspree endpoint: `NEXT_PUBLIC_FORMSPREE_QUOTATION_ID`
+### Music Inquiry Form (Contact Section)
+- **Fields**: Name, Company, Email, Message
+- **API Route**: `app/api/inquiry/route.ts`
+- **Component**: `components/forms/InquiryForm.tsx`
+
+### Quotation Request Form (/quotation page)
+- **Fields**: First Name, Last Name, Email, Country, Company Name, Company Address, Preferred Solution (dropdown), Number of Zones
+- **API Route**: `app/api/quotation/route.ts`
+- **Component**: `components/forms/QuotationForm.tsx`
 
 ## Client Logos Section
 
@@ -159,15 +164,16 @@ Subtle "Trusted by industry leaders" section displaying monochrome client logos 
 2. Commit to main branch
 3. Push to GitHub
 4. Render auto-deploys from GitHub
-5. Verify on live site: https://bmasia-website.onrender.com
+5. Verify on live site: https://bmasiamusic.com
 
-### Why No Local Testing
-- All testing happens on Render deployment
-- Saves time and avoids environment inconsistencies
-- Claude Code has direct access to GitHub and Render
+### DNS Configuration
+- **Domain**: bmasiamusic.com (managed at GoDaddy)
+- **A Record**: `@` → `216.24.57.1` (Render)
+- **CNAME**: `www` → `bmasia-website.onrender.com`
+- **Email**: Stays on GoDaddy (Google Workspace)
 
 ## Environment Variables
-Production environment variables are configured on Render.
+Production environment variables are configured on Render dashboard.
 
 ## Sub-Agents Available
 - **component-builder**: Create React components with TypeScript/Tailwind/Framer Motion
@@ -177,6 +183,21 @@ Production environment variables are configured on Render.
 - **performance-auditor**: Analyze bundle size, Core Web Vitals, image optimization, render performance
 
 ## Key Integrations
-- **Calendly**: `/bmasia/sound-innovations` for demo booking
+- **Calendly**: Popup widget (not inline embed) - works on mobile/incognito
+  - URL: `https://calendly.com/bmasia/sound-innovations`
+  - Component: `components/sections/CalendlyEmbed.tsx`
 - **Google Tag Manager**: GT-WRDQZP6W
-- **Formspree**: Form submissions to norbert@bmasiamusic.com
+- **Google Search Console**: Sitemap submitted, 4 pages indexed
+- **Database**: PostgreSQL on Render (form submissions stored via Prisma)
+- **Email**: Notifications sent via configured email service
+
+## SEO Status
+- **Score**: 82/100 (Dec 2024 audit)
+- **Canonical URL**: Set on homepage
+- **Meta description**: 158 chars, keyword-optimized
+- **Structured data**: Organization schema (JSON-LD)
+- **Sitemap**: `/sitemap.xml` submitted to Google
+
+### Future SEO Improvements (Optional)
+- Add OG image (1200x630px) for better social sharing previews
+- Add breadcrumb structured data to subpages
