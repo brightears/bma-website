@@ -70,7 +70,7 @@ bma_website/
 
 | Route | Page | Key Sections |
 |-------|------|--------------|
-| `/` | Landing | Hero, Value Pillars, Products, ClientLogos, Calendly, About, Contact |
+| `/` | Landing | Hero, Value Pillars, Products, SmartFeatures, ClientLogos, Calendly, About, Contact |
 | `/how-it-works` | Process | 3-step process, Benefits, Demo CTA |
 | `/licensing` | Education | License types, Streaming warning, Solutions |
 | `/quotation` | Form | Quotation request form |
@@ -90,7 +90,7 @@ bma_website/
 ## Client Logos Section
 
 ### Overview
-Subtle "Trusted by industry leaders" section displaying monochrome client logos on the landing page. Located between Products and Calendly sections.
+Subtle "Trusted by industry leaders" section displaying monochrome client logos on the landing page. Located between SmartFeatures and Calendly sections.
 
 ### Component
 `components/sections/ClientLogos.tsx`
@@ -152,19 +152,29 @@ Subtle "Trusted by industry leaders" section displaying monochrome client logos 
 ```
 
 ## Deployment Workflow
-1. Make changes locally
+
+**IMPORTANT: Never run dev server, builds, or tests locally. Always push to GitHub and deploy on Render.**
+
+1. Make code changes
 2. Commit to main branch
 3. Push to GitHub
 4. Render auto-deploys from GitHub
-5. Test on Render preview URL
+5. Verify on live site: https://bmasia-website.onrender.com
+
+### Why No Local Testing
+- All testing happens on Render deployment
+- Saves time and avoids environment inconsistencies
+- Claude Code has direct access to GitHub and Render
 
 ## Environment Variables
-See `.env.example` for required variables. Create `.env.local` for local development.
+Production environment variables are configured on Render.
 
 ## Sub-Agents Available
 - **component-builder**: Create React components with TypeScript/Tailwind/Framer Motion
 - **code-reviewer**: Review code for quality, accessibility, performance
 - **seo-auditor**: Audit pages for SEO, performance, accessibility
+- **test-writer**: Generate comprehensive tests for components, API routes, forms (Vitest/Jest + Testing Library)
+- **performance-auditor**: Analyze bundle size, Core Web Vitals, image optimization, render performance
 
 ## Key Integrations
 - **Calendly**: `/bmasia/sound-innovations` for demo booking
