@@ -333,7 +333,7 @@ export const AboutSection: React.FC = () => {
             className="space-y-6"
           >
             {/* Studio image */}
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden">
               <Image
                 src="/images/about-studio.webp"
                 alt="Professional music studio control room"
