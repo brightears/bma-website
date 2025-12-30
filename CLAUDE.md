@@ -36,6 +36,20 @@ White:           #ffffff
 ### Tagline
 "Wherever Music Matters"
 
+### Headline
+"Craft the Perfect Atmosphere"
+
+### Product Taglines
+- **Soundtrack Your Brand**: "Premium Music Solution"
+- **Beat Breeze**: "Essential Solution"
+
+### Copywriting Standards
+- Use contractions naturally ("we'll" not "we will")
+- Avoid overusing "atmosphere" - alternate with "ambiance", "environment", "space"
+- No ampersands in body copy (use "and")
+- Positive framing ("Enhancing" not "Embellishing")
+- Professional but approachable tone
+
 ## Common Commands
 ```bash
 npm run dev                      # Start development server
@@ -106,7 +120,7 @@ Subtle "Trusted by industry leaders" section displaying monochrome client logos 
 | Accor | accor-seeklogo.png | Hospitality |
 | The North Face | The-North-Face-Logo.png | Retail |
 | Tim Hortons | tim-hortons-seeklogo.png | F&B |
-| DBS | DBS_Bank_Logo_(alternative).svg | Finance |
+| DBS | dbs-logo.svg | Finance |
 | TUI | TUI_Logo_2016.svg.png | Travel |
 | Hyatt | hyatt-seeklogo.png | Hospitality |
 | JLL | JLL_logo.svg | Real Estate |
@@ -126,6 +140,9 @@ Subtle "Trusted by industry leaders" section displaying monochrome client logos 
 3. Update `CLIENTS` array in `ClientLogos.tsx`
 4. Build with `NODE_ENV=production npm run build` (required to avoid Next.js 16 global-error issue)
 
+### Special Case: DBS Logo
+The DBS logo has a white star cutout that becomes invisible with the monochrome filter. A custom SVG (`dbs-logo.svg`) was created with the white background polygon removed, so the star appears as a transparent cutout showing the page background.
+
 ## Hero & Section Images
 
 ### Overview
@@ -136,10 +153,12 @@ AI-generated images (Google Gemini) used throughout the site for visual impact. 
 |------|------|---------|-------------|
 | `hero-lounge.webp` | 142 KB | Homepage | Dark hotel lounge with orange ceiling glow |
 | `hero-restaurant.webp` | 189 KB | How It Works | Restaurant with amber pendant lights |
-| `hero-visualization.webp` | 162 KB | Licensing | Abstract orange soundwave on dark navy |
+| `hero-abstract.webp` | 162 KB | Licensing | Abstract orange soundwave on dark navy |
+| `hero-spa.webp` | ~150 KB | Quotation | Luxury spa setting with relaxing atmosphere |
 | `about-studio.webp` | 34 KB | Homepage (About) | Music studio control room |
 | `product-soundtrack.webp` | 41 KB | Homepage (Products) | Tablet with music interface in restaurant |
 | `product-beatbreeze.webp` | 49 KB | Homepage (Products) | Speaker in cafe setting |
+| `og-image.jpg` | ~200 KB | Social sharing | Hotel lounge with logo and tagline (1200x630) |
 
 ### Implementation Pattern
 ```tsx
@@ -167,8 +186,12 @@ AI-generated images (Google Gemini) used throughout the site for visual impact. 
 - **Section images**: Use `aspect-[16/9]` for wide shots, `aspect-[4/3]` for taller
 - **Product cards**: Include gradient fade at bottom (`bg-gradient-to-t from-black/60`)
 
-### Pages Without Hero Images
-- `/quotation` — Intentionally no hero image (form-focused conversion page)
+### Hero Image Alt Text
+All hero images include descriptive alt text for accessibility:
+- Homepage: "Elegant hotel lounge with warm ambient lighting"
+- How It Works: "Modern restaurant interior with sophisticated ambiance"
+- Licensing: "Abstract sound wave visualization representing music licensing"
+- Quotation: "Luxury spa setting with relaxing atmosphere"
 
 ## Design Patterns
 
@@ -237,11 +260,16 @@ Production environment variables are configured on Render dashboard.
 
 ## SEO Status
 - **Score**: 82/100 (Dec 2024 audit)
-- **Canonical URL**: Set on homepage
-- **Meta description**: 158 chars, keyword-optimized
-- **Structured data**: Organization schema (JSON-LD)
-- **Sitemap**: `/sitemap.xml` submitted to Google
+- **Canonical URL**: Set on all pages
+- **Meta description**: 158 chars, keyword-optimized ("Craft the perfect atmosphere...")
+- **OG Image**: `og-image.jpg` (1200x630) - hotel lounge with logo/tagline
+- **Structured data**:
+  - Organization schema (JSON-LD) on all pages
+  - BreadcrumbList schema on subpages (How It Works, Licensing, Quotation)
+- **Sitemap**: `/sitemap.xml` submitted to Google (last updated Dec 2024)
+- **Image SEO**: All hero images have descriptive alt text
 
-### Future SEO Improvements (Optional)
-- Add OG image (1200x630px) for better social sharing previews
-- Add breadcrumb structured data to subpages
+### Social Sharing Preview Testing
+- **Facebook**: https://developers.facebook.com/tools/debug/
+- **Twitter**: https://cards-dev.twitter.com/validator
+- **LinkedIn**: https://www.linkedin.com/post-inspector/
