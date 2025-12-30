@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, useInView, useMotionValue, useSpring } from 'framer-motion';
 import { Globe, Clock, Music2, Award, ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 /**
  * Stat item interface
@@ -331,45 +332,17 @@ export const AboutSection: React.FC = () => {
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
             className="space-y-6"
           >
-            {/* Image placeholder */}
+            {/* Studio image */}
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-              {/* Gradient pattern placeholder */}
-              <div className="absolute inset-0 bg-gradient-to-br from-brand-navy via-brand-dark to-brand-navy" />
-
-              {/* Decorative pattern */}
-              <div className="absolute inset-0 opacity-30">
-                <div
-                  className="absolute inset-0"
-                  style={{
-                    backgroundImage: `radial-gradient(circle at 20% 30%, rgba(239, 166, 52, 0.3) 0%, transparent 50%),
-                                     radial-gradient(circle at 80% 70%, rgba(239, 166, 52, 0.2) 0%, transparent 40%),
-                                     radial-gradient(circle at 50% 50%, rgba(26, 26, 46, 0.5) 0%, transparent 60%)`,
-                  }}
-                />
-              </div>
-
-              {/* Sound wave visualization */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="flex items-end gap-1 h-24">
-                  {[...Array(20)].map((_, i) => (
-                    <motion.div
-                      key={i}
-                      className="w-1.5 bg-gradient-to-t from-brand-orange/50 to-brand-orange rounded-full"
-                      initial={{ height: 16 }}
-                      animate={{
-                        height: [16, Math.random() * 60 + 20, 16],
-                      }}
-                      transition={{
-                        duration: 1.5 + Math.random() * 0.5,
-                        repeat: Infinity,
-                        delay: i * 0.08,
-                        ease: 'easeInOut',
-                      }}
-                    />
-                  ))}
-                </div>
-              </div>
-
+              <Image
+                src="/images/about-studio.webp"
+                alt="Professional music studio control room"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              {/* Gradient overlay for visual consistency */}
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/40 via-transparent to-transparent" />
               {/* Border overlay */}
               <div className="absolute inset-0 border border-white/10 rounded-2xl" />
             </div>

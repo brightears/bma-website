@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Check, Smartphone, Monitor, Apple } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { PRODUCTS } from '@/lib/constants';
 
@@ -11,6 +12,7 @@ import { PRODUCTS } from '@/lib/constants';
 interface Product {
   name: string;
   tagline: string;
+  image: string;
   features: readonly string[];
   platforms: readonly string[];
 }
@@ -111,6 +113,18 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, isPremium = false, i
           Premium
         </div>
       )}
+
+      {/* Product image */}
+      <div className="relative h-40 md:h-48 mb-6 rounded-xl overflow-hidden -mx-2 md:-mx-4 -mt-2 md:-mt-4">
+        <Image
+          src={product.image}
+          alt={product.name}
+          fill
+          className="object-cover"
+          sizes="(max-width: 1024px) 100vw, 50vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+      </div>
 
       {/* Product header */}
       <div className="mb-6">

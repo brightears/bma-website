@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { SITE, STATS } from '@/lib/constants';
 import { ValuePillars, ProductCards, SmartFeatures, ClientLogos, CalendlyEmbed, AboutSection, ContactSection } from '@/components/sections';
 
@@ -9,8 +10,17 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark via-brand-navy to-brand-dark" />
+        {/* Background image */}
+        <Image
+          src="/images/hero-lounge.webp"
+          alt=""
+          fill
+          priority
+          className="object-cover opacity-40"
+          sizes="100vw"
+        />
+        {/* Background gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/80 via-brand-navy/70 to-brand-dark" />
 
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden" aria-hidden="true">

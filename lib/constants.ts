@@ -52,6 +52,7 @@ export const PRODUCTS = {
   soundtrackYourBrand: {
     name: 'Soundtrack Your Brand',
     tagline: 'Premium Music Solution',
+    image: '/images/product-soundtrack.webp',
     features: [
       '100M+ tracks available',
       'Drag-and-drop scheduling',
@@ -66,6 +67,7 @@ export const PRODUCTS = {
   beatBreeze: {
     name: 'Beat Breeze',
     tagline: 'Cost-Effective Solution',
+    image: '/images/product-beatbreeze.webp',
     features: [
       '30K+ curated tracks',
       '50 ready-made playlists',
