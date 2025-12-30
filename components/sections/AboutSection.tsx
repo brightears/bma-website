@@ -265,7 +265,7 @@ export const AboutSection: React.FC = () => {
             <div className="space-y-4">
               <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
                 Since <span className="text-brand-orange font-semibold">2002</span>,
-                BMAsia has been the leading global B2B provider of{' '}
+                BMAsia has been a leading global B2B provider of{' '}
                 <span className="text-white font-medium">
                   customized background music solutions
                 </span>

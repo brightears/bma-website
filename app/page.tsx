@@ -68,8 +68,8 @@ export default function Home() {
 
             {/* Subheading */}
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10">
-              Elevate your business atmosphere with customized background music
-              that influences guest behavior and creates unforgettable experiences.
+              Elevate your business ambiance with customized background music
+              that influences guest behavior and creates memorable moments.
             </p>
 
             {/* CTA Buttons */}

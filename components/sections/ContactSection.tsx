@@ -168,7 +168,7 @@ export const ContactSection: React.FC = () => {
               </div>
 
               <h3 className="text-2xl md:text-3xl font-bold text-white">
-                Ready to transform your business atmosphere?
+                Ready to transform your business environment?
               </h3>
 
               <p className="text-gray-400 leading-relaxed">
@@ -271,7 +271,7 @@ export const ContactSection: React.FC = () => {
                   Music Inquiry Form
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Fill out the form below and we will get back to you within 24 hours.
+                  Fill out the form below and we'll get back to you within 24 hours.
                 </p>
               </div>
 

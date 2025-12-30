@@ -66,7 +66,7 @@ export const PRODUCTS = {
   },
   beatBreeze: {
     name: 'Beat Breeze',
-    tagline: 'Cost-Effective Solution',
+    tagline: 'Essential Solution',
     image: '/images/product-beatbreeze.webp',
     features: [
       '30K+ curated tracks',
@@ -85,17 +85,17 @@ export const PRODUCTS = {
 export const VALUE_PILLARS = [
   {
     title: 'Revenue Resonance',
-    description: 'Amplifying profits with impactful soundscapes that encourage customers to stay longer and spend more.',
+    description: 'Driving revenue with compelling soundscapes that encourage customers to stay longer and spend more.',
     icon: 'TrendingUp',
   },
   {
     title: 'Emotional Echoes',
-    description: 'Shaping moods and behaviors with musical precision, creating the perfect atmosphere for your space.',
+    description: 'Shaping moods and behaviors with musical precision, creating the ideal ambiance for your space.',
     icon: 'Heart',
   },
   {
     title: 'Brand Harmony',
-    description: 'Embellishing brand identity through distinctive music designs that resonate with your customers.',
+    description: 'Enhancing brand identity through distinctive music designs that resonate with your customers.',
     icon: 'Music',
   },
 ] as const;
@@ -104,17 +104,17 @@ export const VALUE_PILLARS = [
 export const PROCESS_STEPS = [
   {
     step: 1,
-    title: 'Choose Your Sound & Get A Quote',
+    title: 'Choose Your Sound and Get a Quote',
     description: 'Select between our solutions, request a personalized quote, or book a free online demo to experience our platform.',
   },
   {
     step: 2,
     title: 'Customize Your Playlist',
-    description: 'Collaborate with our expert music designers to tailor samples that match your brand voice and venue atmosphere.',
+    description: 'Collaborate with our expert music designers to tailor samples that match your brand voice and venue ambiance.',
   },
   {
     step: 3,
-    title: 'Setup & Master The System',
+    title: 'Setup and Get Started',
     description: 'We handle the installation and provide comprehensive training so you can easily manage your music experience.',
   },
 ] as const;

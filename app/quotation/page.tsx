@@ -150,8 +150,8 @@ export default function QuotationPage() {
 
             {/* Subheading */}
             <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
-              Simply provide your details, and we will respond with a
-              personalized quotation
+              Provide your details and we'll respond with a personalized
+              quotation
             </p>
           </motion.div>
         </div>
@@ -336,8 +336,8 @@ export default function QuotationPage() {
                     Quotation Request Form
                   </h2>
                   <p className="text-gray-400 text-sm">
-                    Fill in your details below and we will get back to you with
-                    a personalized quote.
+                    Fill in your details below and we'll get back to you with a
+                    personalized quote.
                   </p>
                 </div>
                 <QuotationForm />
