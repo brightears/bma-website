@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Mail, Clock, CheckCircle, Music, Zap, Shield } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { QuotationForm } from '@/components/forms';
 import { PRODUCTS, SITE, SOCIAL } from '@/lib/constants';
@@ -112,8 +113,17 @@ export default function QuotationPage() {
     <>
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 px-4 md:px-8 lg:px-16 overflow-hidden">
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark via-brand-navy to-brand-dark" />
+        {/* Background image */}
+        <Image
+          src="/images/hero-spa.webp"
+          alt=""
+          fill
+          priority
+          className="object-cover opacity-60"
+          sizes="100vw"
+        />
+        {/* Background gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/60 via-brand-navy/40 to-brand-dark/80" />
 
         {/* Decorative background elements - hidden on mobile to prevent overflow */}
         <div className="hidden sm:block absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">

@@ -149,11 +149,11 @@ export default function LicensingPage() {
           alt=""
           fill
           priority
-          className="object-cover opacity-40"
+          className="object-cover opacity-60"
           sizes="100vw"
         />
         {/* Background gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/60 via-brand-navy/50 to-brand-dark" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/60 via-brand-navy/40 to-brand-dark/80" />
 
         {/* Decorative background elements - hidden on mobile to prevent overflow */}
         <div className="hidden sm:block absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
