@@ -12,7 +12,7 @@ const CLIENTS = [
   { name: 'Accor', logo: '/images/logos/accor-seeklogo.png' },
   { name: 'The North Face', logo: '/images/logos/The-North-Face-Logo.png' },
   { name: 'Tim Hortons', logo: '/images/logos/tim-hortons-seeklogo.png' },
-  { name: 'DBS', logo: '/images/logos/DBS_Bank_Logo_(alternative).svg' },
+  { name: 'DBS', logo: '/images/logos/dbs-logo.svg' },
   { name: 'TUI', logo: '/images/logos/TUI_Logo_2016.svg.png' },
   // Row 2: Mix of industries
   { name: 'Hyatt', logo: '/images/logos/hyatt-seeklogo.png' },
