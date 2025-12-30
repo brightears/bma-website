@@ -62,8 +62,8 @@ export default function Home() {
 
             {/* Main heading */}
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-              Transform Your Space with the{' '}
-              <span className="gradient-text">Perfect Soundtrack</span>
+              Craft the Perfect{' '}
+              <span className="gradient-text">Atmosphere</span>
             </h1>
 
             {/* Subheading */}
