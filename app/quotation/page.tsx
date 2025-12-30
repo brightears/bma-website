@@ -116,7 +116,7 @@ export default function QuotationPage() {
         {/* Background image */}
         <Image
           src="/images/hero-spa.webp"
-          alt=""
+          alt="Luxury spa setting with relaxing atmosphere"
           fill
           priority
           className="object-cover opacity-60"

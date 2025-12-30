@@ -13,7 +13,7 @@ export default function Home() {
         {/* Background image */}
         <Image
           src="/images/hero-lounge.webp"
-          alt=""
+          alt="Elegant hotel lounge with warm ambient lighting"
           fill
           priority
           className="object-cover opacity-60"

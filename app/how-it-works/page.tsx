@@ -233,7 +233,7 @@ export default function HowItWorksPage() {
         {/* Background image */}
         <Image
           src="/images/hero-restaurant.webp"
-          alt=""
+          alt="Modern restaurant interior with sophisticated ambiance"
           fill
           priority
           className="object-cover opacity-60"

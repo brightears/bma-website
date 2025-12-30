@@ -14,7 +14,7 @@ export const COLORS = {
 export const SITE = {
   name: 'BMAsia',
   tagline: 'Wherever Music Matters',
-  description: 'BMAsia provides customized background music solutions for hotels, restaurants, and retail spaces across Asia-Pacific. Licensed music, drag-and-drop scheduling, and 24/7 support since 2002.',
+  description: 'Craft the perfect atmosphere for your business. BMAsia provides customized background music solutions for hotels, restaurants, and retail across Asia-Pacific since 2002.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://bmasiamusic.com',
   email: 'info@bmasiamusic.com',
 } as const;

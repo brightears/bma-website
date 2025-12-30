@@ -146,7 +146,7 @@ export default function LicensingPage() {
         {/* Background image */}
         <Image
           src="/images/hero-visualization.webp"
-          alt=""
+          alt="Abstract sound wave visualization representing music licensing"
           fill
           priority
           className="object-cover opacity-60"
