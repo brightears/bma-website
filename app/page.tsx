@@ -16,11 +16,11 @@ export default function Home() {
           alt=""
           fill
           priority
-          className="object-cover opacity-40"
+          className="object-cover opacity-60"
           sizes="100vw"
         />
         {/* Background gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/80 via-brand-navy/70 to-brand-dark" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/60 via-brand-navy/40 to-brand-dark/80" />
 
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
