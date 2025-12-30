@@ -126,6 +126,50 @@ Subtle "Trusted by industry leaders" section displaying monochrome client logos 
 3. Update `CLIENTS` array in `ClientLogos.tsx`
 4. Build with `NODE_ENV=production npm run build` (required to avoid Next.js 16 global-error issue)
 
+## Hero & Section Images
+
+### Overview
+AI-generated images (Google Gemini) used throughout the site for visual impact. All images optimized to WebP format for performance.
+
+### Image Files (`public/images/`)
+| File | Size | Used On | Description |
+|------|------|---------|-------------|
+| `hero-lounge.webp` | 142 KB | Homepage | Dark hotel lounge with orange ceiling glow |
+| `hero-restaurant.webp` | 189 KB | How It Works | Restaurant with amber pendant lights |
+| `hero-visualization.webp` | 162 KB | Licensing | Abstract orange soundwave on dark navy |
+| `about-studio.webp` | 34 KB | Homepage (About) | Music studio control room |
+| `product-soundtrack.webp` | 41 KB | Homepage (Products) | Tablet with music interface in restaurant |
+| `product-beatbreeze.webp` | 49 KB | Homepage (Products) | Speaker in cafe setting |
+
+### Implementation Pattern
+```tsx
+// Hero background with gradient overlay
+<Image
+  src="/images/hero-lounge.webp"
+  alt=""
+  fill
+  priority
+  className="object-cover opacity-60"
+  sizes="100vw"
+/>
+<div className="absolute inset-0 bg-gradient-to-b from-brand-dark/60 via-brand-navy/40 to-brand-dark/80" />
+```
+
+### Image Optimization Workflow
+1. Generate images via Google Gemini (or other AI tools)
+2. Save PNG to `public/images/`
+3. Resize with `sips -Z [width] [filename].png` (1920px for hero, 800px for sections)
+4. Convert to WebP: `cwebp -q 85 [filename].png -o [filename].webp`
+5. Use WebP version in code, keep PNG as backup
+
+### Opacity & Overlay Guidelines
+- **Hero images**: 50-60% opacity + gradient overlay for text readability
+- **Section images**: Use `aspect-[16/9]` for wide shots, `aspect-[4/3]` for taller
+- **Product cards**: Include gradient fade at bottom (`bg-gradient-to-t from-black/60`)
+
+### Pages Without Hero Images
+- `/quotation` — Intentionally no hero image (form-focused conversion page)
+
 ## Design Patterns
 
 ### Section Container
