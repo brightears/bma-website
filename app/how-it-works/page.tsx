@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { MessageSquareQuote, Palette, Settings, TrendingUp, Heart, Music, LucideIcon } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { PROCESS_STEPS, VALUE_PILLARS } from '@/lib/constants';
 
@@ -229,8 +230,17 @@ export default function HowItWorksPage() {
     <>
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 px-4 md:px-8 lg:px-16 overflow-hidden">
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark via-brand-navy to-brand-dark" />
+        {/* Background image */}
+        <Image
+          src="/images/hero-restaurant.webp"
+          alt=""
+          fill
+          priority
+          className="object-cover opacity-50"
+          sizes="100vw"
+        />
+        {/* Background gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/70 via-brand-navy/50 to-brand-dark" />
 
         {/* Decorative background elements - hidden on mobile to prevent overflow */}
         <div className="hidden sm:block absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
