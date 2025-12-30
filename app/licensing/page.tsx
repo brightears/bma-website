@@ -10,6 +10,7 @@ import {
   CheckCircle2,
   LucideIcon,
 } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { LICENSE_TYPES, PRODUCTS } from '@/lib/constants';
 
@@ -142,8 +143,17 @@ export default function LicensingPage() {
     <>
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 px-4 md:px-8 lg:px-16 overflow-hidden">
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark via-brand-navy to-brand-dark" />
+        {/* Background image */}
+        <Image
+          src="/images/hero-visualization.webp"
+          alt=""
+          fill
+          priority
+          className="object-cover opacity-40"
+          sizes="100vw"
+        />
+        {/* Background gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/60 via-brand-navy/50 to-brand-dark" />
 
         {/* Decorative background elements - hidden on mobile to prevent overflow */}
         <div className="hidden sm:block absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
