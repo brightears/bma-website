@@ -223,6 +223,11 @@ All hero images include descriptive alt text for accessibility:
 </button>
 ```
 
+### Header Behavior
+- **Not scrolled**: Subtle gradient (`from-brand-dark/70 to-transparent`) for logo visibility
+- **Scrolled**: Solid dark background with blur (`bg-brand-dark/95 backdrop-blur-md`)
+- Transition: 300ms smooth animation between states
+
 ## Deployment Workflow
 
 **IMPORTANT: Never run dev server, builds, or tests locally. Always push to GitHub and deploy on Render.**
