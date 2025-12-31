@@ -2,38 +2,23 @@
 
 import { motion } from 'framer-motion';
 import { Timer, CloudSun, Sparkles, LucideIcon } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 /**
  * Feature type definition
  */
 interface Feature {
   icon: LucideIcon;
-  title: string;
-  description: string;
+  key: string;
 }
 
 /**
- * Smart features data
+ * Smart features configuration with icons and translation keys
  */
-const FEATURES: Feature[] = [
-  {
-    icon: Timer,
-    title: 'Smart Scheduling',
-    description:
-      'Preprogram volume levels, automatic adjustments based on business hours, and regional adaptations like prayer time pauses.',
-  },
-  {
-    icon: CloudSun,
-    title: 'Context-Aware Music',
-    description:
-      'Music that adapts to weather conditions, syncs with lighting systems, and responds to real-time data feeds.',
-  },
-  {
-    icon: Sparkles,
-    title: 'AI-Powered Playlists',
-    description:
-      'Simply describe what you want — our AI creates the perfect playlist. No music expertise needed.',
-  },
+const FEATURES_CONFIG: Feature[] = [
+  { icon: Timer, key: 'smartScheduling' },
+  { icon: CloudSun, key: 'contextAware' },
+  { icon: Sparkles, key: 'aiPowered' },
 ];
 
 /**
@@ -69,12 +54,12 @@ const cardVariants = {
  * Individual Feature Card Component
  */
 interface FeatureCardProps {
-  feature: Feature;
+  icon: LucideIcon;
+  title: string;
+  description: string;
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ feature }) => {
-  const IconComponent = feature.icon;
-
+const FeatureCard: React.FC<FeatureCardProps> = ({ icon: IconComponent, title, description }) => {
   return (
     <motion.article
       variants={cardVariants}
@@ -88,10 +73,10 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ feature }) => {
 
       {/* Content */}
       <h3 className="text-xl md:text-2xl font-bold text-white mb-3">
-        {feature.title}
+        {title}
       </h3>
       <p className="text-gray-400 text-base md:text-lg leading-relaxed flex-grow">
-        {feature.description}
+        {description}
       </p>
 
       {/* Decorative gradient overlay on hover */}
@@ -115,6 +100,8 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ feature }) => {
  * - CTA button linking to demo booking
  */
 export const SmartFeatures: React.FC = () => {
+  const t = useTranslations('smartFeatures');
+
   const scrollToDemo = () => {
     const demoSection = document.getElementById('demo');
     if (demoSection) {
@@ -151,11 +138,11 @@ export const SmartFeatures: React.FC = () => {
             id="smart-features-heading"
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
           >
-            Music That{' '}
-            <span className="gradient-text">Works For You</span>
+            {t('sectionTitle')}{' '}
+            <span className="gradient-text">{t('sectionTitleHighlight')}</span>
           </h2>
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
-            Intelligent automation that adapts your soundtrack to your business
+            {t('sectionSubtitle')}
           </p>
         </motion.div>
 
@@ -167,8 +154,13 @@ export const SmartFeatures: React.FC = () => {
           viewport={{ once: true, margin: '-100px' }}
           className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"
         >
-          {FEATURES.map((feature) => (
-            <FeatureCard key={feature.title} feature={feature} />
+          {FEATURES_CONFIG.map((feature) => (
+            <FeatureCard
+              key={feature.key}
+              icon={feature.icon}
+              title={t(`${feature.key}.title`)}
+              description={t(`${feature.key}.description`)}
+            />
           ))}
         </motion.div>
 
@@ -186,7 +178,7 @@ export const SmartFeatures: React.FC = () => {
             whileTap={{ scale: 0.98 }}
             className="bg-brand-orange hover:bg-brand-orange-dark text-white px-8 py-4 rounded-xl font-semibold transition-colors"
           >
-            Book a Demo
+            {t('ctaDemo')}
           </motion.button>
         </motion.div>
       </div>

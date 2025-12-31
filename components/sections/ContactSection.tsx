@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Mail, MessageSquare, ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { SITE, SOCIAL } from '@/lib/constants';
 import { InquiryForm } from '@/components/forms/InquiryForm';
 import { WhatsAppIcon, LineIcon } from '@/components/icons';
@@ -39,51 +40,45 @@ const itemVariants = {
  * Contact information item type
  */
 interface ContactInfoItem {
+  key: 'email' | 'whatsapp' | 'line';
   icon: React.ReactNode;
-  label: string;
-  value: string;
+  value?: string;
   href?: string;
-  description: string;
   isExternal?: boolean;
 }
 
 /**
- * Contact information items
+ * Contact information items configuration
  */
-const CONTACT_INFO: ContactInfoItem[] = [
+const CONTACT_INFO_CONFIG: ContactInfoItem[] = [
   {
+    key: 'email',
     icon: <Mail className="w-5 h-5 text-brand-orange" aria-hidden="true" />,
-    label: 'Email',
     value: SITE.email,
     href: `mailto:${SITE.email}`,
-    description: 'We typically respond within 24 hours',
   },
   {
+    key: 'whatsapp',
     icon: <WhatsAppIcon size={20} />,
-    label: 'WhatsApp',
-    value: 'Message us on WhatsApp',
     href: SOCIAL.whatsapp,
-    description: 'Quick response via WhatsApp',
     isExternal: true,
   },
   {
+    key: 'line',
     icon: <LineIcon size={20} />,
-    label: 'Line',
-    value: 'Add us on Line',
     href: SOCIAL.line,
-    description: 'Connect with us on Line',
     isExternal: true,
   },
 ];
 
 /**
- * Contact feature highlights
+ * Feature keys for translation
  */
-const FEATURES = [
-  'Free consultation and demo',
-  'Personalized music recommendations',
-  'Flexible pricing options',
-  'Dedicated support team',
+const FEATURE_KEYS = [
+  'consultation',
+  'recommendations',
+  'pricing',
+  'support',
 ] as const;
 
 /**
@@ -103,6 +98,9 @@ const FEATURES = [
  * - Right column: InquiryForm component
  */
 export const ContactSection: React.FC = () => {
+  const t = useTranslations('contact');
+  const tForms = useTranslations('forms.inquiry');
+
   return (
     <section
       id="contact"
@@ -141,10 +139,10 @@ export const ContactSection: React.FC = () => {
             id="contact-heading"
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
           >
-            Contact <span className="gradient-text">Us</span>
+            {t('sectionTitle')} <span className="gradient-text">{t('sectionTitleHighlight')}</span>
           </h2>
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
-            Take the first step, we take care of the rest
+            {t('sectionSubtitle')}
           </p>
         </motion.div>
 
@@ -163,18 +161,16 @@ export const ContactSection: React.FC = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-orange/10 border border-brand-orange/20 rounded-full">
                 <MessageSquare className="w-4 h-4 text-brand-orange" aria-hidden="true" />
                 <span className="text-sm font-medium text-brand-orange">
-                  Let&apos;s Talk Music
+                  {t('pill')}
                 </span>
               </div>
 
               <h3 className="text-2xl md:text-3xl font-bold text-white">
-                Ready to transform your business environment?
+                {t('heading')}
               </h3>
 
               <p className="text-gray-400 leading-relaxed">
-                Whether you are looking for a complete music solution for your retail chain,
-                a boutique hotel, or a single venue, our team is here to help you find the
-                perfect soundtrack for your brand.
+                {t('description')}
               </p>
             </div>
 
@@ -186,9 +182,9 @@ export const ContactSection: React.FC = () => {
               viewport={{ once: true, margin: '-50px' }}
               className="space-y-3"
             >
-              {FEATURES.map((feature, index) => (
+              {FEATURE_KEYS.map((key) => (
                 <motion.div
-                  key={index}
+                  key={key}
                   variants={itemVariants}
                   className="flex items-center gap-3 group"
                 >
@@ -196,7 +192,7 @@ export const ContactSection: React.FC = () => {
                     <ArrowRight className="w-3 h-3 text-brand-orange" aria-hidden="true" />
                   </div>
                   <span className="text-gray-300 group-hover:text-white transition-colors">
-                    {feature}
+                    {t(`features.${key}`)}
                   </span>
                 </motion.div>
               ))}
@@ -210,9 +206,9 @@ export const ContactSection: React.FC = () => {
               viewport={{ once: true, margin: '-50px' }}
               className="space-y-4"
             >
-              {CONTACT_INFO.map((item) => (
+              {CONTACT_INFO_CONFIG.map((item) => (
                 <motion.div
-                  key={item.label}
+                  key={item.key}
                   variants={itemVariants}
                   className="group"
                 >
@@ -229,12 +225,12 @@ export const ContactSection: React.FC = () => {
                         {item.icon}
                       </div>
                       <div>
-                        <div className="text-sm text-gray-500">{item.label}</div>
+                        <div className="text-sm text-gray-500">{t(`${item.key}.label`)}</div>
                         <div className="text-white font-medium group-hover:text-brand-orange transition-colors">
-                          {item.value}
+                          {item.value || t(`${item.key}.label`)}
                         </div>
                         <div className="text-xs text-gray-500 mt-1">
-                          {item.description}
+                          {t(`${item.key}.description`)}
                         </div>
                       </div>
                     </a>
@@ -244,10 +240,10 @@ export const ContactSection: React.FC = () => {
                         {item.icon}
                       </div>
                       <div>
-                        <div className="text-sm text-gray-500">{item.label}</div>
-                        <div className="text-white font-medium">{item.value}</div>
+                        <div className="text-sm text-gray-500">{t(`${item.key}.label`)}</div>
+                        <div className="text-white font-medium">{item.value || t(`${item.key}.label`)}</div>
                         <div className="text-xs text-gray-500 mt-1">
-                          {item.description}
+                          {t(`${item.key}.description`)}
                         </div>
                       </div>
                     </div>
@@ -268,10 +264,10 @@ export const ContactSection: React.FC = () => {
             <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 md:p-8">
               <div className="mb-6">
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
-                  Music Inquiry Form
+                  {tForms('title')}
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Fill out the form below and we'll get back to you within 24 hours.
+                  {tForms('description')}
                 </p>
               </div>
 
@@ -286,14 +282,13 @@ export const ContactSection: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="text-center text-gray-500 text-sm mt-6"
             >
-              Prefer to schedule a call?{' '}
+              {tForms('preferDemo')}{' '}
               <a
                 href="#demo"
                 className="text-brand-orange hover:text-brand-orange-light underline underline-offset-2 transition-colors"
               >
-                Book a free demo
-              </a>{' '}
-              instead.
+                {tForms('bookDemo')}
+              </a>
             </motion.p>
           </motion.div>
         </div>

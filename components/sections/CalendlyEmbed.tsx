@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, Users, ExternalLink } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { URLS } from '@/lib/constants';
 
 // Declare Calendly global for TypeScript
@@ -30,6 +31,7 @@ export const CalendlyEmbed: React.FC = () => {
   const [isReady, setIsReady] = useState(false);
   const [hasError, setHasError] = useState(false);
   const calendlyUrl = URLS.calendly;
+  const t = useTranslations('calendly');
 
   useEffect(() => {
     // Load Calendly CSS for popup styling
@@ -106,13 +108,11 @@ export const CalendlyEmbed: React.FC = () => {
             id="calendly-heading"
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
           >
-            Book a{' '}
-            <span className="gradient-text">Free Demo</span>
+            {t('sectionTitle')}{' '}
+            <span className="gradient-text">{t('sectionTitleHighlight')}</span>
           </h2>
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
-            Schedule a personalized demo call with our team. We&apos;ll walk you through our
-            platform, answer your questions, and help you find the perfect music solution
-            for your business.
+            {t('sectionSubtitle')}
           </p>
         </motion.div>
 
@@ -126,18 +126,18 @@ export const CalendlyEmbed: React.FC = () => {
         >
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 text-center">
             <Clock className="w-8 h-8 text-brand-orange mx-auto mb-3" aria-hidden="true" />
-            <p className="text-white font-medium">15-30 Minutes</p>
-            <p className="text-gray-500 text-sm">Quick & focused</p>
+            <p className="text-white font-medium">{t('duration.title')}</p>
+            <p className="text-gray-500 text-sm">{t('duration.description')}</p>
           </div>
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 text-center">
             <Users className="w-8 h-8 text-brand-orange mx-auto mb-3" aria-hidden="true" />
-            <p className="text-white font-medium">1-on-1 Session</p>
-            <p className="text-gray-500 text-sm">Personalized for you</p>
+            <p className="text-white font-medium">{t('session.title')}</p>
+            <p className="text-gray-500 text-sm">{t('session.description')}</p>
           </div>
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 text-center">
             <Calendar className="w-8 h-8 text-brand-orange mx-auto mb-3" aria-hidden="true" />
-            <p className="text-white font-medium">No Commitment</p>
-            <p className="text-gray-500 text-sm">Just exploring? That&apos;s fine</p>
+            <p className="text-white font-medium">{t('noCommitment.title')}</p>
+            <p className="text-gray-500 text-sm">{t('noCommitment.description')}</p>
           </div>
         </motion.div>
 
@@ -160,7 +160,7 @@ export const CalendlyEmbed: React.FC = () => {
               className="inline-flex items-center gap-3 bg-brand-orange hover:bg-brand-orange-dark text-white text-lg md:text-xl px-10 py-5 rounded-xl font-semibold transition-colors shadow-lg shadow-brand-orange/25"
             >
               <Calendar className="w-6 h-6" aria-hidden="true" />
-              <span>Book Your Free Demo</span>
+              <span>{t('ctaButton')}</span>
               <ExternalLink className="w-5 h-5" aria-hidden="true" />
             </motion.a>
           ) : (
@@ -172,7 +172,7 @@ export const CalendlyEmbed: React.FC = () => {
               className="inline-flex items-center gap-3 bg-brand-orange hover:bg-brand-orange-dark disabled:bg-brand-orange/50 disabled:cursor-wait text-white text-lg md:text-xl px-10 py-5 rounded-xl font-semibold transition-colors shadow-lg shadow-brand-orange/25"
             >
               <Calendar className="w-6 h-6" aria-hidden="true" />
-              <span>{isReady ? 'Book Your Free Demo' : 'Loading...'}</span>
+              <span>{isReady ? t('ctaButton') : t('ctaLoading')}</span>
             </motion.button>
           )}
 
@@ -184,7 +184,7 @@ export const CalendlyEmbed: React.FC = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-brand-orange text-white text-lg px-10 py-5 rounded-xl font-semibold mt-4"
             >
-              <span>Book Your Free Demo</span>
+              <span>{t('ctaButton')}</span>
               <ExternalLink className="w-5 h-5" />
             </a>
           </noscript>
@@ -198,7 +198,7 @@ export const CalendlyEmbed: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center text-gray-500 text-sm mt-8"
         >
-          Select a time that works for you. Calendar will open in a popup.
+          {t('infoNote')}
         </motion.p>
       </div>
     </section>

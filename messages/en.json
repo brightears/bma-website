@@ -101,8 +101,22 @@
   "calendly": {
     "sectionTitle": "Book a",
     "sectionTitleHighlight": "Free Demo",
-    "sectionSubtitle": "Experience how BMAsia can transform your business atmosphere. Schedule a personalized demo with our team.",
-    "ctaButton": "Schedule Demo"
+    "sectionSubtitle": "Schedule a personalized demo call with our team. We'll walk you through our platform, answer your questions, and help you find the perfect music solution for your business.",
+    "ctaButton": "Book Your Free Demo",
+    "ctaLoading": "Loading...",
+    "infoNote": "Select a time that works for you. Calendar will open in a popup.",
+    "duration": {
+      "title": "15-30 Minutes",
+      "description": "Quick & focused"
+    },
+    "session": {
+      "title": "1-on-1 Session",
+      "description": "Personalized for you"
+    },
+    "noCommitment": {
+      "title": "No Commitment",
+      "description": "Just exploring? That's fine"
+    }
   },
   "about": {
     "sectionTitle": "Who We",
@@ -178,56 +192,85 @@
       "preferDemo": "Prefer to schedule a call?",
       "bookDemo": "Book a free demo instead",
       "fields": {
-        "name": "Name",
-        "namePlaceholder": "Your full name",
-        "company": "Company",
-        "companyPlaceholder": "Your company name",
-        "email": "Email",
-        "emailPlaceholder": "you@company.com",
-        "message": "Message",
-        "messagePlaceholder": "Tell us about your music needs, venue type, or any questions you have..."
+        "name": {
+          "label": "Name",
+          "placeholder": "Your full name"
+        },
+        "company": {
+          "label": "Company",
+          "placeholder": "Your company name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "you@company.com"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Tell us about your music needs, venue type, or any questions you have..."
+        }
       },
-      "submit": "Send Message",
-      "submitting": "Sending...",
-      "success": "Thank you for your inquiry! We will get back to you within 24 hours.",
-      "error": "Something went wrong. Please try again.",
-      "privacy": "By submitting this form, you agree to our privacy policy. We will never share your information with third parties."
+      "submitButton": {
+        "default": "Send Message",
+        "sending": "Sending..."
+      },
+      "successMessage": "Thank you for your inquiry! We will get back to you within 24 hours.",
+      "errorMessage": "Something went wrong. Please try again.",
+      "privacyNote": "By submitting this form, you agree to our privacy policy. We will never share your information with third parties."
     },
     "quotation": {
       "title": "Quotation Request Form",
       "description": "Fill in your details below and we'll get back to you with a personalized quote.",
       "fields": {
-        "firstName": "First Name",
-        "firstNamePlaceholder": "John",
-        "lastName": "Last Name",
-        "lastNamePlaceholder": "Doe",
-        "email": "Email",
-        "emailPlaceholder": "john.doe@company.com",
-        "country": "Country",
-        "countryPlaceholder": "Select a country",
-        "otherCountry": "Other Country",
-        "otherCountryPlaceholder": "Please specify your country",
-        "companyName": "Company Name",
-        "companyNamePlaceholder": "Your company name",
-        "companyAddress": "Company Address",
-        "companyAddressPlaceholder": "Full business address including city and postal code",
-        "preferredSolution": "Preferred Solution",
-        "solutionPlaceholder": "Select a solution",
-        "notSureYet": "Not Sure Yet",
-        "numberOfZones": "Number of Zones",
-        "zonesPlaceholder": "1",
-        "zonesHelp": "A zone represents a distinct area where music will be played (e.g., lobby, restaurant, spa)"
+        "firstName": {
+          "label": "First Name",
+          "placeholder": "John"
+        },
+        "lastName": {
+          "label": "Last Name",
+          "placeholder": "Doe"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "john.doe@company.com"
+        },
+        "country": {
+          "label": "Country",
+          "placeholder": "Select a country"
+        },
+        "otherCountry": {
+          "label": "Please specify your country",
+          "placeholder": "Enter your country"
+        },
+        "companyName": {
+          "label": "Company Name",
+          "placeholder": "Your company name"
+        },
+        "companyAddress": {
+          "label": "Company Address",
+          "placeholder": "Full business address including city and postal code"
+        },
+        "preferredSolution": {
+          "label": "Preferred Solution",
+          "placeholder": "Select a solution"
+        },
+        "numberOfZones": {
+          "label": "Number of Zones",
+          "placeholder": "1",
+          "help": "A zone represents a distinct area where music will be played (e.g., lobby, restaurant, spa)"
+        }
       },
-      "submit": "Request Quotation",
-      "submitting": "Submitting...",
-      "success": "Thank you for your quotation request! We will get back to you within 24-48 hours with a personalized quote.",
-      "error": "Something went wrong. Please try again.",
-      "privacy": "By submitting this form, you agree to our privacy policy. We will never share your information with third parties."
+      "submitButton": {
+        "default": "Request Quotation",
+        "sending": "Submitting..."
+      },
+      "successMessage": "Thank you for your quotation request! We will get back to you within 24-48 hours with a personalized quote.",
+      "errorMessage": "Something went wrong. Please try again.",
+      "privacyNote": "By submitting this form, you agree to our privacy policy. We will never share your information with third parties."
     },
     "validation": {
-      "required": "This field is required",
+      "required": "{field} is required",
       "invalidEmail": "Please enter a valid email address",
-      "minLength": "Must be at least {min} characters",
+      "minLength": "{field} must be at least {count} characters",
       "selectRequired": "Please select an option",
       "invalidNumber": "Please enter a valid number",
       "minValue": "Must be at least {min}"
@@ -380,22 +423,31 @@
     }
   },
   "countries": {
-    "thailand": "Thailand",
-    "vietnam": "Vietnam",
-    "malaysia": "Malaysia",
+    "select": "Select a country",
     "singapore": "Singapore",
+    "malaysia": "Malaysia",
+    "thailand": "Thailand",
     "indonesia": "Indonesia",
     "philippines": "Philippines",
-    "japan": "Japan",
-    "southKorea": "South Korea",
-    "china": "China",
+    "vietnam": "Vietnam",
     "hongKong": "Hong Kong",
     "taiwan": "Taiwan",
-    "india": "India",
-    "uae": "United Arab Emirates",
+    "japan": "Japan",
+    "southKorea": "South Korea",
     "australia": "Australia",
     "newZealand": "New Zealand",
+    "uae": "United Arab Emirates",
+    "unitedKingdom": "United Kingdom",
+    "unitedStates": "United States",
+    "china": "China",
+    "india": "India",
     "other": "Other"
+  },
+  "solutions": {
+    "select": "Select a solution",
+    "soundtrackYourBrand": "Soundtrack Your Brand",
+    "beatBreeze": "Beat Breeze",
+    "notSure": "Not Sure Yet"
   },
   "common": {
     "getQuote": "Get a Quote",

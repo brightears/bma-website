@@ -4,23 +4,43 @@ import { motion } from 'framer-motion';
 import { Check, Smartphone, Monitor, Apple } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { PRODUCTS } from '@/lib/constants';
+import { useTranslations } from 'next-intl';
 
 /**
- * Product type definition based on PRODUCTS constant
+ * Product configuration with static data and translation keys
  */
-interface Product {
+interface ProductConfig {
+  key: 'soundtrackYourBrand' | 'beatBreeze';
   name: string;
-  tagline: string;
   image: string;
-  features: readonly string[];
   platforms: readonly string[];
+  featureKeys: readonly string[];
+  isPremium: boolean;
 }
 
+const PRODUCTS_CONFIG: ProductConfig[] = [
+  {
+    key: 'soundtrackYourBrand',
+    name: 'Soundtrack Your Brand',
+    image: '/images/product-soundtrack.webp',
+    platforms: ['iOS', 'Android', 'Windows'] as const,
+    featureKeys: ['tracks', 'scheduling', 'messaging', 'offline', 'spotify', 'bespoke', 'support'] as const,
+    isPremium: true,
+  },
+  {
+    key: 'beatBreeze',
+    name: 'Beat Breeze',
+    image: '/images/product-beatbreeze.webp',
+    platforms: ['iOS', 'Android', 'Windows'] as const,
+    featureKeys: ['tracks', 'playlists', 'license', 'multizone', 'scheduling', 'messaging', 'offline'] as const,
+    isPremium: false,
+  },
+];
+
 interface ProductCardProps {
-  product: Product;
-  isPremium?: boolean;
-  index: number;
+  product: ProductConfig;
+  t: ReturnType<typeof useTranslations>;
+  tCommon: ReturnType<typeof useTranslations>;
 }
 
 /**
@@ -92,7 +112,9 @@ const PlatformBadge: React.FC<{ platform: string }> = ({ platform }) => {
 /**
  * Individual Product Card Component
  */
-const ProductCard: React.FC<ProductCardProps> = ({ product, isPremium = false, index }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ product, t, tCommon }) => {
+  const isPremium = product.isPremium;
+
   return (
     <motion.article
       variants={cardVariants}
@@ -110,7 +132,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, isPremium = false, i
       {/* Premium indicator */}
       {isPremium && (
         <div className="absolute -top-3 left-6 px-4 py-1 bg-gradient-to-r from-brand-orange to-amber-500 rounded-full text-xs font-semibold text-white uppercase tracking-wider">
-          Premium
+          {t('premium')}
         </div>
       )}
 
@@ -132,7 +154,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, isPremium = false, i
           {product.name}
         </h3>
         <p className={`text-lg ${isPremium ? 'text-brand-orange' : 'text-gray-400'}`}>
-          {product.tagline}
+          {t(`${product.key}.tagline`)}
         </p>
       </div>
 
@@ -144,9 +166,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, isPremium = false, i
         viewport={{ once: true }}
         className="space-y-3 mb-8 flex-grow"
       >
-        {product.features.map((feature, featureIndex) => (
+        {product.featureKeys.map((featureKey) => (
           <motion.li
-            key={featureIndex}
+            key={featureKey}
             variants={featureVariants}
             className="flex items-start gap-3 text-gray-300"
           >
@@ -159,7 +181,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, isPremium = false, i
                 aria-hidden="true"
               />
             </span>
-            <span>{feature}</span>
+            <span>{t(`${product.key}.features.${featureKey}`)}</span>
           </motion.li>
         ))}
       </motion.ul>
@@ -167,7 +189,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, isPremium = false, i
       {/* Platform badges */}
       <div className="mb-6">
         <p className="text-sm text-gray-500 mb-2 uppercase tracking-wide">
-          Available on
+          {t('availableOn')}
         </p>
         <div className="flex flex-wrap gap-2">
           {product.platforms.map((platform) => (
@@ -189,7 +211,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, isPremium = false, i
             }
           `}
         >
-          Get a Quote
+          {tCommon('getQuote')}
         </motion.span>
       </Link>
 
@@ -223,10 +245,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, isPremium = false, i
  * - CTA buttons linking to quotation page
  */
 export const ProductCards: React.FC = () => {
-  const products = [
-    { key: 'soundtrackYourBrand', isPremium: true },
-    { key: 'beatBreeze', isPremium: false },
-  ] as const;
+  const t = useTranslations('products');
+  const tCommon = useTranslations('common');
 
   return (
     <section
@@ -257,11 +277,11 @@ export const ProductCards: React.FC = () => {
             id="products-heading"
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
           >
-            Our{' '}
-            <span className="gradient-text">Solutions</span>
+            {t('sectionTitle')}{' '}
+            <span className="gradient-text">{t('sectionTitleHighlight')}</span>
           </h2>
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
-            Choose the perfect music solution tailored to your business needs and budget
+            {t('sectionSubtitle')}
           </p>
         </motion.div>
 
@@ -273,12 +293,12 @@ export const ProductCards: React.FC = () => {
           viewport={{ once: true, margin: '-100px' }}
           className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto"
         >
-          {products.map((item, index) => (
+          {PRODUCTS_CONFIG.map((product) => (
             <ProductCard
-              key={item.key}
-              product={PRODUCTS[item.key]}
-              isPremium={item.isPremium}
-              index={index}
+              key={product.key}
+              product={product}
+              t={t}
+              tCommon={tCommon}
             />
           ))}
         </motion.div>
@@ -292,7 +312,7 @@ export const ProductCards: React.FC = () => {
           className="text-center mt-12 md:mt-16"
         >
           <p className="text-gray-400 mb-4">
-            Not sure which solution is right for you?
+            {t('notSure')}
           </p>
           <Link href="#demo">
             <motion.span
@@ -300,7 +320,7 @@ export const ProductCards: React.FC = () => {
               whileTap={{ scale: 0.98 }}
               className="inline-block border-2 border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors"
             >
-              Book a Free Demo
+              {t('bookDemo')}
             </motion.span>
           </Link>
         </motion.div>

@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { TrendingUp, Heart, Music, LucideIcon } from 'lucide-react';
-import { VALUE_PILLARS } from '@/lib/constants';
+import { useTranslations } from 'next-intl';
 
 /**
  * Map of icon names to Lucide React components
@@ -102,6 +102,15 @@ const PillarCard: React.FC<PillarCardProps> = ({ title, description, icon }) => 
 };
 
 /**
+ * Pillar configuration with translation keys and icons
+ */
+const PILLAR_CONFIG = [
+  { key: 'revenueResonance', icon: 'TrendingUp' },
+  { key: 'emotionalEchoes', icon: 'Heart' },
+  { key: 'brandHarmony', icon: 'Music' },
+] as const;
+
+/**
  * ValuePillars Section Component
  *
  * Displays the three core value propositions of BMAsia's music solutions:
@@ -116,6 +125,8 @@ const PillarCard: React.FC<PillarCardProps> = ({ title, description, icon }) => 
  * - Navy gradient background
  */
 export const ValuePillars: React.FC = () => {
+  const t = useTranslations('valuePillars');
+
   return (
     <section
       className="relative py-16 md:py-24 px-4 md:px-8 lg:px-16 overflow-hidden"
@@ -143,11 +154,11 @@ export const ValuePillars: React.FC = () => {
             id="value-pillars-heading"
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
           >
-            The Power of{' '}
-            <span className="gradient-text">Music</span>
+            {t('sectionTitle')}{' '}
+            <span className="gradient-text">{t('sectionTitleHighlight')}</span>
           </h2>
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
-            Discover how the right soundtrack transforms your business environment
+            {t('sectionSubtitle')}
           </p>
         </motion.div>
 
@@ -159,11 +170,11 @@ export const ValuePillars: React.FC = () => {
           viewport={{ once: true, margin: '-100px' }}
           className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"
         >
-          {VALUE_PILLARS.map((pillar) => (
+          {PILLAR_CONFIG.map((pillar) => (
             <PillarCard
-              key={pillar.title}
-              title={pillar.title}
-              description={pillar.description}
+              key={pillar.key}
+              title={t(`${pillar.key}.title`)}
+              description={t(`${pillar.key}.description`)}
               icon={pillar.icon}
             />
           ))}

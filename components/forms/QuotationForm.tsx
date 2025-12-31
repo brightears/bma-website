@@ -4,43 +4,42 @@ import { useState, useRef, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 /**
- * Country options for the dropdown
+ * Country codes for the dropdown
  * Focused on Asia-Pacific region where BMAsia primarily operates
+ * Labels are fetched from translations
  */
-const COUNTRIES = [
-  { value: '', label: 'Select a country' },
-  // Asia-Pacific (Primary Markets)
-  { value: 'SG', label: 'Singapore' },
-  { value: 'MY', label: 'Malaysia' },
-  { value: 'TH', label: 'Thailand' },
-  { value: 'ID', label: 'Indonesia' },
-  { value: 'PH', label: 'Philippines' },
-  { value: 'VN', label: 'Vietnam' },
-  { value: 'HK', label: 'Hong Kong' },
-  { value: 'TW', label: 'Taiwan' },
-  { value: 'JP', label: 'Japan' },
-  { value: 'KR', label: 'South Korea' },
-  { value: 'AU', label: 'Australia' },
-  { value: 'NZ', label: 'New Zealand' },
-  // Middle East
-  { value: 'AE', label: 'United Arab Emirates' },
-  // Western Markets
-  { value: 'GB', label: 'United Kingdom' },
-  { value: 'US', label: 'United States' },
-  // Other option
-  { value: 'OTHER', label: 'Other' },
+const COUNTRY_CODES = [
+  { value: '', key: 'select' },
+  { value: 'SG', key: 'singapore' },
+  { value: 'MY', key: 'malaysia' },
+  { value: 'TH', key: 'thailand' },
+  { value: 'ID', key: 'indonesia' },
+  { value: 'PH', key: 'philippines' },
+  { value: 'VN', key: 'vietnam' },
+  { value: 'HK', key: 'hongKong' },
+  { value: 'TW', key: 'taiwan' },
+  { value: 'JP', key: 'japan' },
+  { value: 'KR', key: 'southKorea' },
+  { value: 'AU', key: 'australia' },
+  { value: 'NZ', key: 'newZealand' },
+  { value: 'AE', key: 'uae' },
+  { value: 'GB', key: 'unitedKingdom' },
+  { value: 'US', key: 'unitedStates' },
+  { value: 'OTHER', key: 'other' },
 ] as const;
 
 /**
  * Solution options for the preferred solution dropdown
+ * Product names stay in English, but labels like "Not Sure Yet" are translated
  */
-const SOLUTIONS = [
-  { value: '', label: 'Select a solution' },
-  { value: 'soundtrack-your-brand', label: 'Soundtrack Your Brand' },
-  { value: 'beat-breeze', label: 'Beat Breeze' },
-  { value: 'not-sure', label: 'Not Sure Yet' },
+const SOLUTION_KEYS = [
+  { value: '', key: 'select' },
+  { value: 'soundtrack-your-brand', key: 'soundtrackYourBrand' },
+  { value: 'beat-breeze', key: 'beatBreeze' },
+  { value: 'not-sure', key: 'notSure' },
 ] as const;
 
 /**
@@ -121,6 +120,12 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
   const [errorMessage, setErrorMessage] = useState<string>('');
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
+  // Translation hooks
+  const t = useTranslations('forms.quotation');
+  const tValidation = useTranslations('forms.validation');
+  const tCountries = useTranslations('countries');
+  const tSolutions = useTranslations('solutions');
+
   // Cleanup timeout on unmount to prevent memory leaks
   useEffect(() => {
     return () => {
@@ -155,13 +160,14 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
 
     try {
       // Prepare submission data with resolved country name
+      const countryEntry = COUNTRY_CODES.find((c) => c.value === data.country);
+      const countryName = data.country === 'OTHER' && data.otherCountry
+        ? data.otherCountry
+        : countryEntry ? tCountries(countryEntry.key) : data.country;
+
       const submissionData = {
         ...data,
-        country:
-          data.country === 'OTHER' && data.otherCountry
-            ? data.otherCountry
-            : COUNTRIES.find((c) => c.value === data.country)?.label ||
-              data.country,
+        country: countryName,
       };
 
       const response = await fetch('/api/quotation', {
@@ -255,8 +261,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
               aria-hidden="true"
             />
             <p className="text-brand-orange">
-              Thank you for your quotation request! We will get back to you
-              within 24-48 hours with a personalized quote.
+              {t('successMessage')}
             </p>
           </motion.div>
         )}
@@ -277,7 +282,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
               aria-hidden="true"
             />
             <p className="text-red-400">
-              {errorMessage || 'Something went wrong. Please try again.'}
+              {errorMessage || t('errorMessage')}
             </p>
           </motion.div>
         )}
@@ -291,7 +296,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
             htmlFor="quotation-firstName"
             className="block text-sm font-medium text-gray-300"
           >
-            First Name <span className="text-brand-orange">*</span>
+            {t('fields.firstName.label')} <span className="text-brand-orange">*</span>
           </label>
           <motion.div variants={inputVariants} whileFocus="focus">
             <input
@@ -305,14 +310,14 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
                 errors.firstName ? 'firstName-error' : undefined
               }
               {...register('firstName', {
-                required: 'First name is required',
+                required: tValidation('required', { field: t('fields.firstName.label') }),
                 minLength: {
                   value: 2,
-                  message: 'First name must be at least 2 characters',
+                  message: tValidation('minLength', { field: t('fields.firstName.label'), count: 2 }),
                 },
               })}
               className={inputClassName}
-              placeholder="John"
+              placeholder={t('fields.firstName.placeholder')}
             />
           </motion.div>
           {errors.firstName && (
@@ -328,7 +333,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
             htmlFor="quotation-lastName"
             className="block text-sm font-medium text-gray-300"
           >
-            Last Name <span className="text-brand-orange">*</span>
+            {t('fields.lastName.label')} <span className="text-brand-orange">*</span>
           </label>
           <motion.div variants={inputVariants} whileFocus="focus">
             <input
@@ -340,14 +345,14 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
               aria-invalid={errors.lastName ? 'true' : 'false'}
               aria-describedby={errors.lastName ? 'lastName-error' : undefined}
               {...register('lastName', {
-                required: 'Last name is required',
+                required: tValidation('required', { field: t('fields.lastName.label') }),
                 minLength: {
                   value: 2,
-                  message: 'Last name must be at least 2 characters',
+                  message: tValidation('minLength', { field: t('fields.lastName.label'), count: 2 }),
                 },
               })}
               className={inputClassName}
-              placeholder="Doe"
+              placeholder={t('fields.lastName.placeholder')}
             />
           </motion.div>
           {errors.lastName && (
@@ -364,7 +369,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
           htmlFor="quotation-email"
           className="block text-sm font-medium text-gray-300"
         >
-          Email <span className="text-brand-orange">*</span>
+          {t('fields.email.label')} <span className="text-brand-orange">*</span>
         </label>
         <motion.div variants={inputVariants} whileFocus="focus">
           <input
@@ -376,14 +381,14 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
             aria-invalid={errors.email ? 'true' : 'false'}
             aria-describedby={errors.email ? 'email-error' : undefined}
             {...register('email', {
-              required: 'Email is required',
+              required: tValidation('required', { field: t('fields.email.label') }),
               pattern: {
                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                message: 'Please enter a valid email address',
+                message: tValidation('invalidEmail'),
               },
             })}
             className={inputClassName}
-            placeholder="john.doe@company.com"
+            placeholder={t('fields.email.placeholder')}
           />
         </motion.div>
         {errors.email && (
@@ -399,7 +404,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
           htmlFor="quotation-country"
           className="block text-sm font-medium text-gray-300"
         >
-          Country <span className="text-brand-orange">*</span>
+          {t('fields.country.label')} <span className="text-brand-orange">*</span>
         </label>
         <motion.div variants={inputVariants} whileFocus="focus">
           <select
@@ -409,18 +414,18 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
             aria-invalid={errors.country ? 'true' : 'false'}
             aria-describedby={errors.country ? 'country-error' : undefined}
             {...register('country', {
-              required: 'Please select a country',
+              required: tValidation('selectRequired'),
             })}
             className={selectClassName}
           >
-            {COUNTRIES.map((country) => (
+            {COUNTRY_CODES.map((country) => (
               <option
                 key={country.value}
                 value={country.value}
                 disabled={country.value === ''}
                 className="bg-brand-navy text-white"
               >
-                {country.label}
+                {tCountries(country.key)}
               </option>
             ))}
           </select>
@@ -446,7 +451,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
               htmlFor="quotation-otherCountry"
               className="block text-sm font-medium text-gray-300"
             >
-              Please specify your country{' '}
+              {t('fields.otherCountry.label')}{' '}
               <span className="text-brand-orange">*</span>
             </label>
             <motion.div variants={inputVariants} whileFocus="focus">
@@ -462,11 +467,11 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
                 {...register('otherCountry', {
                   required:
                     selectedCountry === 'OTHER'
-                      ? 'Please specify your country'
+                      ? tValidation('required', { field: t('fields.otherCountry.label') })
                       : false,
                 })}
                 className={inputClassName}
-                placeholder="Enter your country"
+                placeholder={t('fields.otherCountry.placeholder')}
               />
             </motion.div>
             {errors.otherCountry && (
@@ -484,7 +489,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
           htmlFor="quotation-companyName"
           className="block text-sm font-medium text-gray-300"
         >
-          Company Name <span className="text-brand-orange">*</span>
+          {t('fields.companyName.label')} <span className="text-brand-orange">*</span>
         </label>
         <motion.div variants={inputVariants} whileFocus="focus">
           <input
@@ -498,10 +503,10 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
               errors.companyName ? 'companyName-error' : undefined
             }
             {...register('companyName', {
-              required: 'Company name is required',
+              required: tValidation('required', { field: t('fields.companyName.label') }),
             })}
             className={inputClassName}
-            placeholder="Your company name"
+            placeholder={t('fields.companyName.placeholder')}
           />
         </motion.div>
         {errors.companyName && (
@@ -517,7 +522,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
           htmlFor="quotation-companyAddress"
           className="block text-sm font-medium text-gray-300"
         >
-          Company Address <span className="text-brand-orange">*</span>
+          {t('fields.companyAddress.label')} <span className="text-brand-orange">*</span>
         </label>
         <motion.div variants={inputVariants} whileFocus="focus">
           <textarea
@@ -531,14 +536,14 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
               errors.companyAddress ? 'companyAddress-error' : undefined
             }
             {...register('companyAddress', {
-              required: 'Company address is required',
+              required: tValidation('required', { field: t('fields.companyAddress.label') }),
               minLength: {
                 value: 10,
-                message: 'Please provide a complete address',
+                message: tValidation('minLength', { field: t('fields.companyAddress.label'), count: 10 }),
               },
             })}
             className={`${inputClassName} resize-none`}
-            placeholder="Full business address including city and postal code"
+            placeholder={t('fields.companyAddress.placeholder')}
           />
         </motion.div>
         {errors.companyAddress && (
@@ -554,7 +559,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
           htmlFor="quotation-preferredSolution"
           className="block text-sm font-medium text-gray-300"
         >
-          Preferred Solution <span className="text-brand-orange">*</span>
+          {t('fields.preferredSolution.label')} <span className="text-brand-orange">*</span>
         </label>
         <motion.div variants={inputVariants} whileFocus="focus">
           <select
@@ -566,18 +571,18 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
               errors.preferredSolution ? 'preferredSolution-error' : undefined
             }
             {...register('preferredSolution', {
-              required: 'Please select a solution',
+              required: tValidation('selectRequired'),
             })}
             className={selectClassName}
           >
-            {SOLUTIONS.map((solution) => (
+            {SOLUTION_KEYS.map((solution) => (
               <option
                 key={solution.value}
                 value={solution.value}
                 disabled={solution.value === ''}
                 className="bg-brand-navy text-white"
               >
-                {solution.label}
+                {tSolutions(solution.key)}
               </option>
             ))}
           </select>
@@ -599,7 +604,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
           htmlFor="quotation-numberOfZones"
           className="block text-sm font-medium text-gray-300"
         >
-          Number of Zones <span className="text-brand-orange">*</span>
+          {t('fields.numberOfZones.label')} <span className="text-brand-orange">*</span>
         </label>
         <motion.div variants={inputVariants} whileFocus="focus">
           <input
@@ -613,20 +618,19 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
               errors.numberOfZones ? 'numberOfZones-error' : undefined
             }
             {...register('numberOfZones', {
-              required: 'Number of zones is required',
+              required: tValidation('required', { field: t('fields.numberOfZones.label') }),
               min: {
                 value: 1,
-                message: 'Must be at least 1 zone',
+                message: tValidation('minValue', { min: 1 }),
               },
               valueAsNumber: true,
             })}
             className={inputClassName}
-            placeholder="1"
+            placeholder={t('fields.numberOfZones.placeholder')}
           />
         </motion.div>
         <p className="text-xs text-gray-500">
-          A zone represents a distinct area where music will be played (e.g.,
-          lobby, restaurant, spa)
+          {t('fields.numberOfZones.help')}
         </p>
         {errors.numberOfZones && (
           <p id="numberOfZones-error" className={errorClassName} role="alert">
@@ -658,20 +662,19 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
         {isSubmitting ? (
           <>
             <Loader2 className="w-5 h-5 animate-spin" aria-hidden="true" />
-            <span>Submitting...</span>
+            <span>{t('submitButton.sending')}</span>
           </>
         ) : (
           <>
             <Send className="w-5 h-5" aria-hidden="true" />
-            <span>Request Quotation</span>
+            <span>{t('submitButton.default')}</span>
           </>
         )}
       </motion.button>
 
       {/* Privacy note */}
       <p className="text-xs text-gray-500 text-center">
-        By submitting this form, you agree to our privacy policy. We will never
-        share your information with third parties.
+        {t('privacyNote')}
       </p>
     </form>
   );

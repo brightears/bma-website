@@ -4,62 +4,38 @@ import { useEffect, useRef, useState } from 'react';
 import { motion, useInView, useMotionValue, useSpring } from 'framer-motion';
 import { Globe, Clock, Music2, Award, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 /**
  * Stat item interface
  */
 interface StatItem {
+  key: string;
   value: number;
   suffix: string;
-  label: string;
-  description: string;
   icon: React.ComponentType<{ className?: string }>;
   displayValue?: string;
 }
 
 /**
- * Stats data for the About section
+ * Stats configuration for the About section
  */
-const ABOUT_STATS: StatItem[] = [
-  {
-    value: 23,
-    suffix: '+',
-    label: 'Years of Experience',
-    description: 'Founded in 2002',
-    icon: Clock,
-  },
-  {
-    value: 50000,
-    suffix: '+',
-    label: 'Hours of Music',
-    description: 'Created annually',
-    icon: Music2,
-  },
-  {
-    value: 100,
-    suffix: 'M+',
-    label: 'Tracks Available',
-    description: 'In our library',
-    icon: Award,
-  },
-  {
-    value: 1,
-    suffix: '',
-    label: 'Global Presence',
-    description: 'Worldwide reach',
-    icon: Globe,
-    displayValue: 'Global',
-  },
+const ABOUT_STATS_CONFIG: StatItem[] = [
+  { key: 'experience', value: 23, suffix: '+', icon: Clock },
+  { key: 'hours', value: 50000, suffix: '+', icon: Music2 },
+  { key: 'tracks', value: 100, suffix: 'M+', icon: Award },
+  { key: 'global', value: 1, suffix: '', icon: Globe, displayValue: 'Global' },
 ];
 
 /**
- * Key differentiators for BMAsia
+ * Differentiator keys for translation
  */
-const DIFFERENTIATORS = [
-  'Music tailored to your venue concept',
-  'Aligned with your brand image',
-  'Designed for your customer demographics',
-  'Expert music curation team',
+const DIFFERENTIATOR_KEYS = [
+  'venuesConcept',
+  'brandImage',
+  'demographics',
+  'expertTeam',
 ] as const;
 
 /**
@@ -145,24 +121,24 @@ const AnimatedCounter: React.FC<AnimatedCounterProps> = ({
 };
 
 interface StatCardProps {
+  statKey: string;
   value: number;
   suffix: string;
-  label: string;
-  description: string;
   icon: React.ComponentType<{ className?: string }>;
   displayValue?: string;
+  t: ReturnType<typeof useTranslations>;
 }
 
 /**
  * Individual stat card with animated counter
  */
 const StatCard: React.FC<StatCardProps> = ({
+  statKey,
   value,
   suffix,
-  label,
-  description,
   icon: Icon,
   displayValue,
+  t,
 }) => {
   return (
     <motion.div
@@ -178,11 +154,11 @@ const StatCard: React.FC<StatCardProps> = ({
             <AnimatedCounter
               value={value}
               suffix={suffix}
-              displayValue={displayValue}
+              displayValue={displayValue ? t(`stats.${statKey}.value`) : undefined}
             />
           </div>
-          <div className="text-sm font-medium text-brand-orange">{label}</div>
-          <div className="text-xs text-gray-500 mt-1">{description}</div>
+          <div className="text-sm font-medium text-brand-orange">{t(`stats.${statKey}.label`)}</div>
+          <div className="text-xs text-gray-500 mt-1">{t(`stats.${statKey}.sublabel`)}</div>
         </div>
       </div>
     </motion.div>
@@ -206,6 +182,8 @@ const StatCard: React.FC<StatCardProps> = ({
  * - Dark background with subtle gradient
  */
 export const AboutSection: React.FC = () => {
+  const t = useTranslations('about');
+
   return (
     <section
       id="about"
@@ -244,10 +222,10 @@ export const AboutSection: React.FC = () => {
             id="about-heading"
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
           >
-            Who We <span className="gradient-text">Are</span>
+            {t('sectionTitle')} <span className="gradient-text">{t('sectionTitleHighlight')}</span>
           </h2>
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
-            Your trusted partner in creating memorable sonic experiences
+            {t('sectionSubtitle')}
           </p>
         </motion.div>
 
@@ -264,19 +242,15 @@ export const AboutSection: React.FC = () => {
             {/* Company story */}
             <div className="space-y-4">
               <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-                Since <span className="text-brand-orange font-semibold">2002</span>,
-                BMAsia has been a leading global B2B provider of{' '}
+                {t('storySince')} <span className="text-brand-orange font-semibold">{t('storyYear')}</span>,{' '}
+                {t('storyIntro')}{' '}
                 <span className="text-white font-medium">
-                  customized background music solutions
+                  {t('storyHighlight')}
                 </span>
                 .
               </p>
               <p className="text-gray-400 leading-relaxed">
-                We create over 50,000 hours of music annually, carefully crafted
-                to match your venue concepts, reinforce your brand image, and
-                resonate with your customer demographics. Our expert team
-                understands that the right soundtrack can transform customer
-                experiences and drive business success.
+                {t('storyDetails')}
               </p>
             </div>
 
@@ -289,17 +263,17 @@ export const AboutSection: React.FC = () => {
               className="space-y-3"
             >
               <h3 className="text-sm font-semibold text-brand-orange uppercase tracking-wider mb-4">
-                What Sets Us Apart
+                {t('differentiators.title')}
               </h3>
-              {DIFFERENTIATORS.map((item, index) => (
+              {DIFFERENTIATOR_KEYS.map((key, index) => (
                 <motion.div
-                  key={index}
+                  key={key}
                   variants={itemVariants}
                   className="flex items-center gap-3 group"
                 >
                   <div className="w-2 h-2 rounded-full bg-brand-orange group-hover:scale-150 transition-transform duration-300" />
                   <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
-                    {item}
+                    {t(`differentiators.${key}`)}
                   </span>
                 </motion.div>
               ))}
@@ -312,15 +286,16 @@ export const AboutSection: React.FC = () => {
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <motion.a
-                href="/quotation"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="inline-flex items-center gap-2 text-brand-orange hover:text-brand-orange-light font-semibold group"
-              >
-                Learn how we can help your business
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-              </motion.a>
+              <Link href="/quotation">
+                <motion.span
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="inline-flex items-center gap-2 text-brand-orange hover:text-brand-orange-light font-semibold group"
+                >
+                  {t('cta')}
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                </motion.span>
+              </Link>
             </motion.div>
           </motion.div>
 
@@ -336,7 +311,7 @@ export const AboutSection: React.FC = () => {
             <div className="relative aspect-[16/9] rounded-2xl overflow-hidden">
               <Image
                 src="/images/about-studio.webp"
-                alt="Professional music studio control room"
+                alt={t('imageAlt')}
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -355,15 +330,15 @@ export const AboutSection: React.FC = () => {
               viewport={{ once: true, margin: '-50px' }}
               className="grid grid-cols-2 gap-4"
             >
-              {ABOUT_STATS.map((stat) => (
+              {ABOUT_STATS_CONFIG.map((stat) => (
                 <StatCard
-                  key={stat.label}
+                  key={stat.key}
+                  statKey={stat.key}
                   value={stat.value}
                   suffix={stat.suffix}
-                  label={stat.label}
-                  description={stat.description}
                   icon={stat.icon}
                   displayValue={stat.displayValue}
+                  t={t}
                 />
               ))}
             </motion.div>

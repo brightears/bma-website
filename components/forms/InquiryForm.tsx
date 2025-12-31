@@ -4,6 +4,11 @@ import { useState, useRef, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+
+// Field configuration for type-safe translation keys
+type FieldKey = 'name' | 'company' | 'email' | 'message';
+const FIELD_KEYS: readonly FieldKey[] = ['name', 'company', 'email', 'message'] as const;
 
 /**
  * Form data interface for the inquiry form
@@ -72,6 +77,10 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
   const [status, setStatus] = useState<SubmissionStatus>('idle');
   const [errorMessage, setErrorMessage] = useState<string>('');
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Translation hooks for form labels and validation messages
+  const t = useTranslations('forms.inquiry');
+  const tValidation = useTranslations('forms.validation');
 
   // Cleanup timeout on unmount to prevent memory leaks
   useEffect(() => {
@@ -170,7 +179,7 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
           >
             <CheckCircle className="w-5 h-5 text-brand-orange flex-shrink-0" aria-hidden="true" />
             <p className="text-brand-orange">
-              Thank you for your inquiry! We will get back to you within 24 hours.
+              {t('successMessage')}
             </p>
           </motion.div>
         )}
@@ -188,7 +197,7 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
           >
             <AlertCircle className="w-5 h-5 text-red-400 flex-shrink-0" aria-hidden="true" />
             <p className="text-red-400">
-              {errorMessage || 'Something went wrong. Please try again.'}
+              {errorMessage || t('errorMessage')}
             </p>
           </motion.div>
         )}
@@ -200,7 +209,7 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
           htmlFor="inquiry-name"
           className="block text-sm font-medium text-gray-300"
         >
-          Name <span className="text-brand-orange">*</span>
+          {t('fields.name.label')} <span className="text-brand-orange">*</span>
         </label>
         <motion.div variants={inputVariants} whileFocus="focus">
           <input
@@ -212,14 +221,14 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
             aria-invalid={errors.name ? 'true' : 'false'}
             aria-describedby={errors.name ? 'name-error' : undefined}
             {...register('name', {
-              required: 'Name is required',
+              required: tValidation('required', { field: t('fields.name.label') }),
               minLength: {
                 value: 2,
-                message: 'Name must be at least 2 characters',
+                message: tValidation('minLength', { field: t('fields.name.label'), count: 2 }),
               },
             })}
             className={inputClassName}
-            placeholder="Your full name"
+            placeholder={t('fields.name.placeholder')}
           />
         </motion.div>
         {errors.name && (
@@ -235,7 +244,7 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
           htmlFor="inquiry-company"
           className="block text-sm font-medium text-gray-300"
         >
-          Company <span className="text-brand-orange">*</span>
+          {t('fields.company.label')} <span className="text-brand-orange">*</span>
         </label>
         <motion.div variants={inputVariants} whileFocus="focus">
           <input
@@ -247,10 +256,10 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
             aria-invalid={errors.company ? 'true' : 'false'}
             aria-describedby={errors.company ? 'company-error' : undefined}
             {...register('company', {
-              required: 'Company name is required',
+              required: tValidation('required', { field: t('fields.company.label') }),
             })}
             className={inputClassName}
-            placeholder="Your company name"
+            placeholder={t('fields.company.placeholder')}
           />
         </motion.div>
         {errors.company && (
@@ -266,7 +275,7 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
           htmlFor="inquiry-email"
           className="block text-sm font-medium text-gray-300"
         >
-          Email <span className="text-brand-orange">*</span>
+          {t('fields.email.label')} <span className="text-brand-orange">*</span>
         </label>
         <motion.div variants={inputVariants} whileFocus="focus">
           <input
@@ -278,14 +287,14 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
             aria-invalid={errors.email ? 'true' : 'false'}
             aria-describedby={errors.email ? 'email-error' : undefined}
             {...register('email', {
-              required: 'Email is required',
+              required: tValidation('required', { field: t('fields.email.label') }),
               pattern: {
                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                message: 'Please enter a valid email address',
+                message: tValidation('invalidEmail'),
               },
             })}
             className={inputClassName}
-            placeholder="you@company.com"
+            placeholder={t('fields.email.placeholder')}
           />
         </motion.div>
         {errors.email && (
@@ -301,7 +310,7 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
           htmlFor="inquiry-message"
           className="block text-sm font-medium text-gray-300"
         >
-          Message <span className="text-brand-orange">*</span>
+          {t('fields.message.label')} <span className="text-brand-orange">*</span>
         </label>
         <motion.div variants={inputVariants} whileFocus="focus">
           <textarea
@@ -312,14 +321,14 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
             aria-invalid={errors.message ? 'true' : 'false'}
             aria-describedby={errors.message ? 'message-error' : undefined}
             {...register('message', {
-              required: 'Message is required',
+              required: tValidation('required', { field: t('fields.message.label') }),
               minLength: {
                 value: 10,
-                message: 'Message must be at least 10 characters',
+                message: tValidation('minLength', { field: t('fields.message.label'), count: 10 }),
               },
             })}
             className={`${inputClassName} resize-none`}
-            placeholder="Tell us about your music needs, venue type, or any questions you have..."
+            placeholder={t('fields.message.placeholder')}
           />
         </motion.div>
         {errors.message && (
@@ -352,19 +361,19 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
         {isSubmitting ? (
           <>
             <Loader2 className="w-5 h-5 animate-spin" aria-hidden="true" />
-            <span>Sending...</span>
+            <span>{t('submitButton.sending')}</span>
           </>
         ) : (
           <>
             <Send className="w-5 h-5" aria-hidden="true" />
-            <span>Send Message</span>
+            <span>{t('submitButton.default')}</span>
           </>
         )}
       </motion.button>
 
       {/* Privacy note */}
       <p className="text-xs text-gray-500 text-center">
-        By submitting this form, you agree to our privacy policy. We will never share your information with third parties.
+        {t('privacyNote')}
       </p>
     </form>
   );

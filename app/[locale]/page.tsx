@@ -2,10 +2,20 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { SITE, STATS } from '@/lib/constants';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { ValuePillars, ProductCards, SmartFeatures, ClientLogos, CalendlyEmbed, AboutSection, ContactSection } from '@/components/sections';
 
 export default function Home() {
+  const t = useTranslations('hero');
+  const tStats = useTranslations('stats');
+
+  const stats = [
+    { value: '23+', label: tStats('yearsExperience') },
+    { value: '50,000+', label: tStats('hoursOfMusic') },
+    { value: '100M+', label: tStats('availableTracks') },
+  ];
+
   return (
     <>
       {/* Hero Section */}
@@ -13,7 +23,7 @@ export default function Home() {
         {/* Background image */}
         <Image
           src="/images/hero-lounge.webp"
-          alt="Elegant hotel lounge with warm ambient lighting"
+          alt={t('imageAlt')}
           fill
           priority
           className="object-cover opacity-60"
@@ -57,38 +67,38 @@ export default function Home() {
               transition={{ delay: 0.2 }}
               className="font-semibold text-lg mb-4 tracking-[0.25em] uppercase animate-tagline-shimmer"
             >
-              {SITE.tagline}
+              {t('tagline')}
             </motion.p>
 
             {/* Main heading */}
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-              Craft the Perfect{' '}
-              <span className="gradient-text">Atmosphere</span>
+              {t('headline')}{' '}
+              <span className="gradient-text">{t('headlineHighlight')}</span>
             </h1>
 
             {/* Subheading */}
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10">
-              Elevate your business ambiance with customized background music
-              that influences guest behavior and creates memorable moments.
+              {t('subheading')}
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.a
-                href="/quotation"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="btn-primary text-lg px-8 py-4"
-              >
-                Get a Quote
-              </motion.a>
+              <Link href="/quotation">
+                <motion.span
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="btn-primary text-lg px-8 py-4 inline-block"
+                >
+                  {t('ctaQuote')}
+                </motion.span>
+              </Link>
               <motion.a
                 href="#demo"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="btn-secondary text-lg px-8 py-4"
               >
-                Book Free Demo
+                {t('ctaDemo')}
               </motion.a>
             </div>
           </motion.div>
@@ -100,7 +110,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="mt-16 sm:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-2xl mx-auto"
           >
-            {STATS.map((stat, index) => (
+            {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-brand-orange">
                   {stat.value}

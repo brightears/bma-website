@@ -3,7 +3,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { NAV_LINKS, SITE, SOCIAL } from '@/lib/constants';
+import { useLocale, useTranslations } from 'next-intl';
+import { SITE, SOCIAL } from '@/lib/constants';
 import { WhatsAppLink, LineLink } from '@/components/icons';
 
 /**
@@ -16,11 +17,6 @@ import { WhatsAppLink, LineLink } from '@/components/icons';
  * - Copyright notice with dynamic year
  * - Full accessibility support
  */
-
-interface NavLinkItem {
-  href: string;
-  label: string;
-}
 
 // Animation variants for staggered children
 const containerVariants = {
@@ -48,6 +44,17 @@ const itemVariants = {
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+  const locale = useLocale();
+  const t = useTranslations('footer');
+  const tNav = useTranslations('navigation');
+
+  // Navigation links with translated labels
+  const navLinks = [
+    { href: `/${locale}`, label: tNav('home') },
+    { href: `/${locale}/how-it-works`, label: tNav('howItWorks') },
+    { href: `/${locale}/licensing`, label: tNav('licensing') },
+    { href: `/${locale}/quotation`, label: tNav('getQuote') },
+  ];
 
   return (
     <footer
@@ -67,7 +74,7 @@ export const Footer: React.FC = () => {
           {/* Brand Section */}
           <motion.div variants={itemVariants} className="lg:col-span-2">
             <Link
-              href="/"
+              href={`/${locale}`}
               className="inline-block focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark rounded-lg"
               aria-label="BMAsia - Go to homepage"
             >
@@ -85,21 +92,21 @@ export const Footer: React.FC = () => {
               </motion.div>
             </Link>
             <p className="mt-3 text-lg text-white/80 font-medium">
-              {SITE.tagline}
+              {t('tagline')}
             </p>
             <p className="mt-4 text-gray-400 max-w-md leading-relaxed">
-              {SITE.description}
+              {t('description')}
             </p>
           </motion.div>
 
           {/* Navigation Section */}
           <motion.div variants={itemVariants}>
             <h3 className="text-white font-semibold text-lg mb-4">
-              Navigation
+              {t('navigation')}
             </h3>
             <nav aria-label="Footer navigation">
               <ul className="space-y-3">
-                {NAV_LINKS.map((link: NavLinkItem) => (
+                {navLinks.map((link) => (
                   <li key={link.href}>
                     <FooterLink href={link.href} label={link.label} />
                   </li>
@@ -111,7 +118,7 @@ export const Footer: React.FC = () => {
           {/* Contact Section */}
           <motion.div variants={itemVariants}>
             <h3 className="text-white font-semibold text-lg mb-4">
-              Contact
+              {t('contact')}
             </h3>
             <ul className="space-y-3">
               <li>
@@ -140,21 +147,21 @@ export const Footer: React.FC = () => {
         <div className="py-6 border-t border-white/10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-gray-500 text-sm text-center md:text-left">
-              &copy; {currentYear} {SITE.name}. All rights reserved.
+              &copy; {currentYear} {SITE.name}. {t('copyright')}
             </p>
             <div className="flex items-center gap-6">
               <Link
-                href="/licensing"
+                href={`/${locale}/licensing`}
                 className="text-gray-500 hover:text-gray-300 text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark rounded"
               >
-                Licensing
+                {t('licensing')}
               </Link>
               <span className="text-gray-600">|</span>
               <Link
-                href="/how-it-works"
+                href={`/${locale}/how-it-works`}
                 className="text-gray-500 hover:text-gray-300 text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark rounded"
               >
-                Music for Business
+                {t('musicForBusiness')}
               </Link>
             </div>
           </div>

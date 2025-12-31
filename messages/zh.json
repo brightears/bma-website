@@ -1,0 +1,465 @@
+{
+  "metadata": {
+    "title": "BMAsia | 音乐无处不在",
+    "description": "为您的企业打造完美氛围。自2002年以来，BMAsia为亚太地区的酒店、餐厅和零售店提供定制背景音乐解决方案。"
+  },
+  "navigation": {
+    "home": "首页",
+    "howItWorks": "服务流程",
+    "licensing": "音乐授权",
+    "getQuote": "获取报价"
+  },
+  "languageSwitcher": {
+    "label": "语言",
+    "selectLanguage": "选择语言"
+  },
+  "hero": {
+    "tagline": "音乐无处不在",
+    "headline": "打造完美",
+    "headlineHighlight": "氛围",
+    "subheading": "通过定制背景音乐提升您的商业环境，影响顾客行为并创造难忘时刻。",
+    "ctaQuote": "获取报价",
+    "ctaDemo": "预约免费演示",
+    "imageAlt": "温馨灯光下的优雅酒店休息室"
+  },
+  "stats": {
+    "yearsExperience": "年行业经验",
+    "hoursOfMusic": "小时音乐",
+    "availableTracks": "可用曲目"
+  },
+  "valuePillars": {
+    "sectionTitle": "音乐的",
+    "sectionTitleHighlight": "力量",
+    "sectionSubtitle": "发现合适的背景音乐如何改变您的商业环境",
+    "revenueResonance": {
+      "title": "收益共鸣",
+      "description": "通过引人入胜的声音景观推动收益，鼓励顾客停留更久，消费更多。"
+    },
+    "emotionalEchoes": {
+      "title": "情感回响",
+      "description": "以音乐的精准塑造情绪和行为，为您的空间营造理想氛围。"
+    },
+    "brandHarmony": {
+      "title": "品牌和谐",
+      "description": "通过与顾客产生共鸣的独特音乐设计，增强品牌识别度。"
+    }
+  },
+  "products": {
+    "sectionTitle": "我们的",
+    "sectionTitleHighlight": "解决方案",
+    "sectionSubtitle": "选择适合您业务需求和预算的完美音乐解决方案",
+    "premium": "高端版",
+    "availableOn": "适用于",
+    "soundtrackYourBrand": {
+      "tagline": "高端音乐解决方案",
+      "features": {
+        "tracks": "超过1亿首曲目",
+        "scheduling": "拖拽式排程",
+        "messaging": "文字转语音消息",
+        "offline": "离线播放",
+        "spotify": "合法Spotify同步",
+        "bespoke": "定制音乐设计",
+        "support": "全天候支持"
+      }
+    },
+    "beatBreeze": {
+      "tagline": "基础解决方案",
+      "features": {
+        "tracks": "超过3万首精选曲目",
+        "playlists": "50个现成播放列表",
+        "license": "包含公共表演许可",
+        "multizone": "多区域设置",
+        "scheduling": "高级排程功能",
+        "messaging": "集成消息功能",
+        "offline": "离线播放"
+      }
+    },
+    "notSure": "不确定哪种解决方案适合您？",
+    "bookDemo": "预约免费演示"
+  },
+  "smartFeatures": {
+    "sectionTitle": "为您",
+    "sectionTitleHighlight": "服务的音乐",
+    "sectionSubtitle": "智能自动化，让您的背景音乐适应您的业务",
+    "smartScheduling": {
+      "title": "智能排程",
+      "description": "预设音量级别，根据营业时间自动调整，以及区域适配如祈祷时间暂停等功能。"
+    },
+    "contextAware": {
+      "title": "情境感知音乐",
+      "description": "音乐可根据天气条件调整，与灯光系统同步，并响应实时数据馈送。"
+    },
+    "aiPowered": {
+      "title": "AI驱动播放列表",
+      "description": "只需描述您想要的音乐风格，我们的AI就能创建完美播放列表。无需音乐专业知识。"
+    },
+    "ctaDemo": "预约演示"
+  },
+  "clientLogos": {
+    "sectionTitle": "行业领袖的信赖之选"
+  },
+  "calendly": {
+    "sectionTitle": "预约",
+    "sectionTitleHighlight": "免费演示",
+    "sectionSubtitle": "与我们的团队安排个性化演示通话。我们将向您介绍我们的平台，解答您的问题，并帮助您找到最适合您业务的音乐解决方案。",
+    "ctaButton": "预约免费演示",
+    "ctaLoading": "加载中...",
+    "infoNote": "选择适合您的时间。日历将在弹窗中打开。",
+    "duration": {
+      "title": "15-30分钟",
+      "description": "快速且专注"
+    },
+    "session": {
+      "title": "一对一会议",
+      "description": "为您量身定制"
+    },
+    "noCommitment": {
+      "title": "无需承诺",
+      "description": "只是了解一下？没问题"
+    }
+  },
+  "about": {
+    "sectionTitle": "关于",
+    "sectionTitleHighlight": "我们",
+    "sectionSubtitle": "您值得信赖的合作伙伴，为您创造难忘的声音体验",
+    "imageAlt": "专业音乐工作室控制室",
+    "storySince": "自",
+    "storyYear": "2002年",
+    "storyIntro": "BMAsia一直是全球领先的B2B",
+    "storyHighlight": "定制背景音乐解决方案",
+    "storyDetails": "提供商。我们每年创作超过50,000小时的音乐，精心制作以匹配您的场所概念，强化您的品牌形象，并与您的客户群体产生共鸣。我们的专家团队深知，合适的背景音乐可以改变客户体验，推动业务成功。",
+    "differentiators": {
+      "title": "我们的独特之处",
+      "venuesConcept": "根据您的场所概念定制音乐",
+      "brandImage": "与您的品牌形象保持一致",
+      "demographics": "为您的客户群体量身设计",
+      "expertTeam": "专业音乐策划团队"
+    },
+    "cta": "了解我们如何帮助您的业务",
+    "stats": {
+      "experience": {
+        "value": "23+",
+        "label": "年行业经验",
+        "sublabel": "成立于2002年"
+      },
+      "hours": {
+        "value": "50000+",
+        "label": "小时音乐",
+        "sublabel": "年度制作量"
+      },
+      "tracks": {
+        "value": "1亿+",
+        "label": "可用曲目",
+        "sublabel": "在我们的曲库中"
+      },
+      "global": {
+        "value": "全球",
+        "label": "业务覆盖",
+        "sublabel": "遍布世界各地"
+      }
+    }
+  },
+  "contact": {
+    "sectionTitle": "联系",
+    "sectionTitleHighlight": "我们",
+    "sectionSubtitle": "迈出第一步，我们将为您处理其余一切",
+    "pill": "让我们聊聊音乐",
+    "heading": "准备好改变您的商业环境了吗？",
+    "description": "无论您是为连锁零售店、精品酒店还是单一场所寻找完整的音乐解决方案，我们的团队都在这里帮助您找到最适合您品牌的背景音乐。",
+    "features": {
+      "consultation": "免费咨询和演示",
+      "recommendations": "个性化音乐推荐",
+      "pricing": "灵活的定价方案",
+      "support": "专属支持团队"
+    },
+    "email": {
+      "label": "电子邮件",
+      "description": "我们通常在24小时内回复"
+    },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "description": "通过WhatsApp快速回复"
+    },
+    "line": {
+      "label": "Line",
+      "description": "通过Line与我们联系"
+    }
+  },
+  "forms": {
+    "inquiry": {
+      "title": "音乐咨询表单",
+      "description": "填写以下表单，我们将在24小时内与您联系。",
+      "preferDemo": "更喜欢预约通话？",
+      "bookDemo": "预约免费演示",
+      "fields": {
+        "name": {
+          "label": "姓名",
+          "placeholder": "您的全名"
+        },
+        "company": {
+          "label": "公司",
+          "placeholder": "您的公司名称"
+        },
+        "email": {
+          "label": "电子邮件",
+          "placeholder": "you@company.com"
+        },
+        "message": {
+          "label": "留言",
+          "placeholder": "告诉我们您的音乐需求、场所类型或任何问题..."
+        }
+      },
+      "submitButton": {
+        "default": "发送消息",
+        "sending": "发送中..."
+      },
+      "successMessage": "感谢您的咨询！我们将在24小时内与您联系。",
+      "errorMessage": "出了点问题。请重试。",
+      "privacyNote": "提交此表单即表示您同意我们的隐私政策。我们绝不会与第三方分享您的信息。"
+    },
+    "quotation": {
+      "title": "报价申请表单",
+      "description": "填写以下详细信息，我们将为您提供个性化报价。",
+      "fields": {
+        "firstName": {
+          "label": "名字",
+          "placeholder": "明"
+        },
+        "lastName": {
+          "label": "姓氏",
+          "placeholder": "王"
+        },
+        "email": {
+          "label": "电子邮件",
+          "placeholder": "ming.wang@company.com"
+        },
+        "country": {
+          "label": "国家",
+          "placeholder": "选择国家"
+        },
+        "otherCountry": {
+          "label": "请注明您的国家",
+          "placeholder": "输入您的国家"
+        },
+        "companyName": {
+          "label": "公司名称",
+          "placeholder": "您的公司名称"
+        },
+        "companyAddress": {
+          "label": "公司地址",
+          "placeholder": "完整的公司地址，包括城市和邮政编码"
+        },
+        "preferredSolution": {
+          "label": "首选解决方案",
+          "placeholder": "选择解决方案"
+        },
+        "numberOfZones": {
+          "label": "区域数量",
+          "placeholder": "1",
+          "help": "区域代表一个独立的音乐播放区域（例如：大堂、餐厅、水疗中心）"
+        }
+      },
+      "submitButton": {
+        "default": "提交报价申请",
+        "sending": "提交中..."
+      },
+      "successMessage": "感谢您的报价申请！我们将在24-48小时内为您提供个性化报价。",
+      "errorMessage": "出了点问题。请重试。",
+      "privacyNote": "提交此表单即表示您同意我们的隐私政策。我们绝不会与第三方分享您的信息。"
+    },
+    "validation": {
+      "required": "{field}为必填项",
+      "invalidEmail": "请输入有效的电子邮件地址",
+      "minLength": "{field}至少需要{count}个字符",
+      "selectRequired": "请选择一个选项",
+      "invalidNumber": "请输入有效数字",
+      "minValue": "最小值为{min}"
+    }
+  },
+  "footer": {
+    "tagline": "音乐无处不在",
+    "description": "为您的企业打造完美氛围。自2002年以来，BMAsia为亚太地区的酒店、餐厅和零售店提供定制背景音乐解决方案。",
+    "navigation": "导航",
+    "contact": "联系方式",
+    "copyright": "版权所有。",
+    "licensing": "音乐授权",
+    "musicForBusiness": "商业音乐"
+  },
+  "howItWorks": {
+    "hero": {
+      "title": "服务",
+      "titleHighlight": "流程",
+      "subtitle": "三个简单步骤，为您的空间带来和谐之音",
+      "imageAlt": "现代餐厅内部，氛围优雅"
+    },
+    "steps": {
+      "sectionTitle": "完美音效",
+      "sectionTitleHighlight": "之旅",
+      "sectionSubtitle": "与BMAsia合作非常简单。按照这三个步骤改变您的空间。",
+      "step1": {
+        "title": "选择音效并获取报价",
+        "description": "在我们的解决方案中选择，申请个性化报价，或预约免费在线演示体验我们的平台。"
+      },
+      "step2": {
+        "title": "定制您的播放列表",
+        "description": "与我们的专业音乐设计师合作，定制符合您品牌声音和场所氛围的音乐样本。"
+      },
+      "step3": {
+        "title": "安装并开始使用",
+        "description": "我们负责安装并提供全面培训，让您轻松管理音乐体验。"
+      }
+    },
+    "benefits": {
+      "sectionTitle": "为什么选择",
+      "sectionTitleHighlight": "BMAsia",
+      "sectionSubtitle": "发现专业策划音乐的变革力量"
+    },
+    "cta": {
+      "sectionTitle": "准备好改变",
+      "sectionTitleHighlight": "您的空间？",
+      "sectionSubtitle": "迈出第一步，为您的企业打造完美氛围。我们的团队随时准备帮助您找到理想的音乐解决方案。"
+    }
+  },
+  "licensing": {
+    "hero": {
+      "title": "音乐授权",
+      "titleHighlight": "轻松搞定",
+      "subtitle": "了解您的企业所需的许可证",
+      "imageAlt": "代表音乐授权的抽象声波可视化"
+    },
+    "intro": {
+      "sectionTitle": "为什么您的企业",
+      "sectionTitleHighlight": "需要许可证？",
+      "paragraph1": "在企业中播放音乐与在家中聆听不同。当您将音乐用于商业用途时，您需要获得创作该音乐的权利持有人的许可。",
+      "paragraph2Intro": "要在您的企业中合法播放音乐，您需要",
+      "paragraph2Highlight": "三种不同的许可证"
+    },
+    "types": {
+      "sectionTitle": "三种",
+      "sectionTitleHighlight": "基本许可证",
+      "sectionSubtitle": "每种许可证保护不同的权利持有人并确保公平补偿",
+      "recording": {
+        "name": "录音许可证",
+        "description": "涵盖使用特定歌曲录音的权利，并补偿录音艺术家。"
+      },
+      "publishing": {
+        "name": "出版许可证",
+        "description": "涵盖使用原始作品的权利，并补偿词曲作者和作曲家。"
+      },
+      "performance": {
+        "name": "公共表演许可证",
+        "description": "允许您在公共场所如您的商业场所播放歌曲。"
+      }
+    },
+    "warning": {
+      "sectionTitle": "消费级流媒体服务",
+      "notLicensed": "未获得",
+      "sectionTitleEnd": "商业使用授权",
+      "personalUseOnly": "这些服务仅授权供个人使用。",
+      "liability": "在商业环境中使用它们违反其服务条款，可能使您的企业面临法律责任。",
+      "spotifyQuote": "Spotify服务和内容是Spotify或Spotify许可方的财产。我们授予您有限的、非排他性的、可撤销的许可，仅供个人、非商业使用Spotify服务...",
+      "spotifySource": "Spotify服务条款"
+    },
+    "solution": {
+      "sectionTitle": "我们处理",
+      "sectionTitleHighlight": "授权复杂事务",
+      "sectionSubtitle": "选择适合您需求的解决方案",
+      "fullyLicensed": "完全授权",
+      "included": "已包含",
+      "requiredSeparately": "需单独从当地PRO获取",
+      "worryFree": "无忧播放音乐——我们处理一切。"
+    },
+    "cta": {
+      "sectionTitle": "开始使用",
+      "sectionTitleHighlight": "授权音乐",
+      "sectionSubtitle": "为您的企业选择合适的音乐解决方案。立即获取个性化报价。"
+    }
+  },
+  "quotation": {
+    "hero": {
+      "title": "申请",
+      "titleHighlight": "报价",
+      "subtitle": "提供您的详细信息，我们将为您提供个性化报价",
+      "imageAlt": "豪华水疗环境，氛围轻松"
+    },
+    "whatToExpect": {
+      "sectionTitle": "期待什么",
+      "fastResponse": {
+        "title": "快速响应",
+        "description": "在24-48小时内收到您的个性化报价"
+      },
+      "noObligation": {
+        "title": "无需承诺",
+        "description": "免费咨询，无需任何承诺"
+      },
+      "tailored": {
+        "title": "定制方案",
+        "description": "根据您的具体需求定制定价"
+      }
+    },
+    "ourSolutions": {
+      "sectionTitle": "我们的解决方案",
+      "soundtrackHighlights": {
+        "tracks": "1亿+曲目",
+        "scheduling": "高级排程",
+        "support": "全天候支持"
+      },
+      "beatBreezeHighlights": {
+        "tracks": "3万+精选曲目",
+        "license": "包含许可证",
+        "multizone": "多区域就绪"
+      },
+      "learnMore": "了解更多关于我们的解决方案"
+    },
+    "haveQuestions": {
+      "sectionTitle": "有疑问？",
+      "emailDescription": "直接联系我们",
+      "messagingLabel": "或发消息给我们："
+    },
+    "preferDemo": {
+      "sectionTitle": "更喜欢现场演示？",
+      "sectionSubtitle": "与我们的团队预约免费在线演示，亲眼体验我们的音乐解决方案，并获得所有问题的解答。",
+      "ctaButton": "预约免费演示"
+    }
+  },
+  "countries": {
+    "select": "选择国家",
+    "singapore": "新加坡",
+    "malaysia": "马来西亚",
+    "thailand": "泰国",
+    "indonesia": "印度尼西亚",
+    "philippines": "菲律宾",
+    "vietnam": "越南",
+    "hongKong": "香港",
+    "taiwan": "台湾",
+    "japan": "日本",
+    "southKorea": "韩国",
+    "australia": "澳大利亚",
+    "newZealand": "新西兰",
+    "uae": "阿联酋",
+    "unitedKingdom": "英国",
+    "unitedStates": "美国",
+    "china": "中国",
+    "india": "印度",
+    "other": "其他"
+  },
+  "solutions": {
+    "select": "选择解决方案",
+    "soundtrackYourBrand": "Soundtrack Your Brand",
+    "beatBreeze": "Beat Breeze",
+    "notSure": "尚未确定"
+  },
+  "common": {
+    "getQuote": "获取报价",
+    "bookDemo": "预约免费演示",
+    "learnMore": "了解更多",
+    "backToHome": "返回首页",
+    "loading": "加载中..."
+  },
+  "errors": {
+    "pageNotFound": "页面未找到",
+    "pageNotFoundDescription": "您访问的页面不存在或已被移动。",
+    "somethingWentWrong": "出了点问题",
+    "tryAgain": "重试"
+  }
+}

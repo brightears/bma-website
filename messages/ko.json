@@ -1,0 +1,465 @@
+{
+  "metadata": {
+    "title": "BMAsia | 음악이 중요한 곳",
+    "description": "비즈니스에 완벽한 분위기를 만드세요. BMAsia는 2002년부터 아시아태평양 전역의 호텔, 레스토랑, 리테일을 위한 맞춤형 배경음악 솔루션을 제공합니다."
+  },
+  "navigation": {
+    "home": "홈",
+    "howItWorks": "이용 방법",
+    "licensing": "라이선스",
+    "getQuote": "견적 받기"
+  },
+  "languageSwitcher": {
+    "label": "언어",
+    "selectLanguage": "언어 선택"
+  },
+  "hero": {
+    "tagline": "음악이 중요한 곳",
+    "headline": "완벽한",
+    "headlineHighlight": "분위기를 만드세요",
+    "subheading": "고객 행동에 영향을 미치고 기억에 남는 순간을 만드는 맞춤형 배경음악으로 비즈니스 분위기를 높이세요.",
+    "ctaQuote": "견적 받기",
+    "ctaDemo": "무료 데모 예약",
+    "imageAlt": "따뜻한 조명의 우아한 호텔 라운지"
+  },
+  "stats": {
+    "yearsExperience": "년 경험",
+    "hoursOfMusic": "시간의 음악",
+    "availableTracks": "곡 보유"
+  },
+  "valuePillars": {
+    "sectionTitle": "음악의",
+    "sectionTitleHighlight": "힘",
+    "sectionSubtitle": "올바른 사운드트랙이 비즈니스 환경을 어떻게 변화시키는지 알아보세요",
+    "revenueResonance": {
+      "title": "매출 증대",
+      "description": "고객이 더 오래 머물고 더 많이 소비하도록 유도하는 매력적인 사운드스케이프로 수익을 창출합니다."
+    },
+    "emotionalEchoes": {
+      "title": "감성적 연결",
+      "description": "음악적 정밀함으로 분위기와 행동을 형성하여 공간에 이상적인 분위기를 만듭니다."
+    },
+    "brandHarmony": {
+      "title": "브랜드 조화",
+      "description": "고객과 공명하는 독특한 음악 디자인을 통해 브랜드 정체성을 강화합니다."
+    }
+  },
+  "products": {
+    "sectionTitle": "우리의",
+    "sectionTitleHighlight": "솔루션",
+    "sectionSubtitle": "비즈니스 요구사항과 예산에 맞는 완벽한 음악 솔루션을 선택하세요",
+    "premium": "프리미엄",
+    "availableOn": "사용 가능",
+    "soundtrackYourBrand": {
+      "tagline": "프리미엄 음악 솔루션",
+      "features": {
+        "tracks": "1억 곡+ 보유",
+        "scheduling": "드래그 앤 드롭 스케줄링",
+        "messaging": "텍스트 음성 변환 메시지",
+        "offline": "오프라인 재생",
+        "spotify": "합법적인 Spotify 동기화",
+        "bespoke": "맞춤 음악 디자인",
+        "support": "24/7 지원"
+      }
+    },
+    "beatBreeze": {
+      "tagline": "기본 솔루션",
+      "features": {
+        "tracks": "3만 곡+ 큐레이션",
+        "playlists": "50개 기성 플레이리스트",
+        "license": "공연 라이선스 포함",
+        "multizone": "멀티존 설정",
+        "scheduling": "고급 스케줄링",
+        "messaging": "통합 메시지",
+        "offline": "오프라인 재생"
+      }
+    },
+    "notSure": "어떤 솔루션이 적합한지 모르시나요?",
+    "bookDemo": "무료 데모 예약"
+  },
+  "smartFeatures": {
+    "sectionTitle": "당신을 위해",
+    "sectionTitleHighlight": "작동하는 음악",
+    "sectionSubtitle": "비즈니스에 맞게 사운드트랙을 조정하는 지능형 자동화",
+    "smartScheduling": {
+      "title": "스마트 스케줄링",
+      "description": "볼륨 레벨 사전 프로그래밍, 영업 시간에 따른 자동 조정, 기도 시간 일시 중지와 같은 지역 적응."
+    },
+    "contextAware": {
+      "title": "컨텍스트 인식 음악",
+      "description": "날씨 조건에 적응하고, 조명 시스템과 동기화하며, 실시간 데이터 피드에 반응하는 음악."
+    },
+    "aiPowered": {
+      "title": "AI 기반 플레이리스트",
+      "description": "원하는 것을 설명하기만 하면 AI가 완벽한 플레이리스트를 만듭니다. 음악 전문 지식이 필요 없습니다."
+    },
+    "ctaDemo": "데모 예약"
+  },
+  "clientLogos": {
+    "sectionTitle": "업계 리더들의 신뢰"
+  },
+  "calendly": {
+    "sectionTitle": "",
+    "sectionTitleHighlight": "무료 데모 예약",
+    "sectionSubtitle": "팀과 개인화된 데모 통화를 예약하세요. 플랫폼을 안내하고, 질문에 답변하며, 비즈니스에 완벽한 음악 솔루션을 찾아드립니다.",
+    "ctaButton": "무료 데모 예약하기",
+    "ctaLoading": "로딩 중...",
+    "infoNote": "편한 시간을 선택하세요. 팝업에서 캘린더가 열립니다.",
+    "duration": {
+      "title": "15-30분",
+      "description": "빠르고 집중적"
+    },
+    "session": {
+      "title": "1:1 세션",
+      "description": "맞춤 상담"
+    },
+    "noCommitment": {
+      "title": "의무 없음",
+      "description": "탐색만 해도 괜찮습니다"
+    }
+  },
+  "about": {
+    "sectionTitle": "우리는",
+    "sectionTitleHighlight": "누구인가",
+    "sectionSubtitle": "기억에 남는 음향 경험을 만드는 신뢰할 수 있는 파트너",
+    "imageAlt": "전문 음악 스튜디오 컨트롤룸",
+    "storySince": "",
+    "storyYear": "2002년부터",
+    "storyIntro": "BMAsia는 글로벌 B2B 선두 제공업체로",
+    "storyHighlight": "맞춤형 배경음악 솔루션",
+    "storyDetails": "을 제공합니다. 매년 50,000시간 이상의 음악을 제작하며, 장소 컨셉에 맞게, 브랜드 이미지를 강화하고, 고객 인구통계와 공명하도록 세심하게 제작합니다. 전문 팀은 올바른 사운드트랙이 고객 경험을 변화시키고 비즈니스 성공을 이끌 수 있다는 것을 이해합니다.",
+    "differentiators": {
+      "title": "차별화 요소",
+      "venuesConcept": "장소 컨셉에 맞춘 음악",
+      "brandImage": "브랜드 이미지와 일치",
+      "demographics": "고객 인구통계 맞춤 설계",
+      "expertTeam": "전문 음악 큐레이션 팀"
+    },
+    "cta": "비즈니스를 어떻게 도울 수 있는지 알아보세요",
+    "stats": {
+      "experience": {
+        "value": "23+",
+        "label": "년 경험",
+        "sublabel": "2002년 설립"
+      },
+      "hours": {
+        "value": "50000+",
+        "label": "시간의 음악",
+        "sublabel": "연간 제작"
+      },
+      "tracks": {
+        "value": "1억+",
+        "label": "곡 보유",
+        "sublabel": "라이브러리에"
+      },
+      "global": {
+        "value": "글로벌",
+        "label": "존재감",
+        "sublabel": "전 세계 진출"
+      }
+    }
+  },
+  "contact": {
+    "sectionTitle": "문의",
+    "sectionTitleHighlight": "하기",
+    "sectionSubtitle": "첫 걸음을 내딛으세요, 나머지는 저희가 처리합니다",
+    "pill": "음악에 대해 이야기해요",
+    "heading": "비즈니스 환경을 변화시킬 준비가 되셨나요?",
+    "description": "리테일 체인, 부티크 호텔, 또는 단일 장소를 위한 완벽한 음악 솔루션을 찾고 계시든, 저희 팀이 브랜드에 완벽한 사운드트랙을 찾아드리겠습니다.",
+    "features": {
+      "consultation": "무료 상담 및 데모",
+      "recommendations": "맞춤 음악 추천",
+      "pricing": "유연한 가격 옵션",
+      "support": "전담 지원팀"
+    },
+    "email": {
+      "label": "이메일",
+      "description": "24시간 이내 답변"
+    },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "description": "WhatsApp으로 빠른 답변"
+    },
+    "line": {
+      "label": "Line",
+      "description": "Line으로 연결"
+    }
+  },
+  "forms": {
+    "inquiry": {
+      "title": "음악 문의 양식",
+      "description": "아래 양식을 작성해 주시면 24시간 이내에 연락드리겠습니다.",
+      "preferDemo": "통화 예약을 원하시나요?",
+      "bookDemo": "무료 데모 예약하기",
+      "fields": {
+        "name": {
+          "label": "이름",
+          "placeholder": "성명"
+        },
+        "company": {
+          "label": "회사",
+          "placeholder": "회사명"
+        },
+        "email": {
+          "label": "이메일",
+          "placeholder": "you@company.com"
+        },
+        "message": {
+          "label": "메시지",
+          "placeholder": "음악 요구사항, 장소 유형, 또는 질문을 알려주세요..."
+        }
+      },
+      "submitButton": {
+        "default": "메시지 보내기",
+        "sending": "보내는 중..."
+      },
+      "successMessage": "문의해 주셔서 감사합니다! 24시간 이내에 연락드리겠습니다.",
+      "errorMessage": "오류가 발생했습니다. 다시 시도해 주세요.",
+      "privacyNote": "이 양식을 제출함으로써 개인정보 보호정책에 동의합니다. 귀하의 정보를 제3자와 공유하지 않습니다."
+    },
+    "quotation": {
+      "title": "견적 요청 양식",
+      "description": "아래 정보를 입력해 주시면 맞춤 견적으로 답변드리겠습니다.",
+      "fields": {
+        "firstName": {
+          "label": "이름",
+          "placeholder": "길동"
+        },
+        "lastName": {
+          "label": "성",
+          "placeholder": "홍"
+        },
+        "email": {
+          "label": "이메일",
+          "placeholder": "gildong.hong@company.com"
+        },
+        "country": {
+          "label": "국가",
+          "placeholder": "국가 선택"
+        },
+        "otherCountry": {
+          "label": "국가를 지정해 주세요",
+          "placeholder": "국가 입력"
+        },
+        "companyName": {
+          "label": "회사명",
+          "placeholder": "회사명"
+        },
+        "companyAddress": {
+          "label": "회사 주소",
+          "placeholder": "도시 및 우편번호를 포함한 전체 사업장 주소"
+        },
+        "preferredSolution": {
+          "label": "선호 솔루션",
+          "placeholder": "솔루션 선택"
+        },
+        "numberOfZones": {
+          "label": "존 수",
+          "placeholder": "1",
+          "help": "존은 음악이 재생될 별개의 영역을 나타냅니다 (예: 로비, 레스토랑, 스파)"
+        }
+      },
+      "submitButton": {
+        "default": "견적 요청",
+        "sending": "제출 중..."
+      },
+      "successMessage": "견적 요청해 주셔서 감사합니다! 24-48시간 이내에 맞춤 견적으로 연락드리겠습니다.",
+      "errorMessage": "오류가 발생했습니다. 다시 시도해 주세요.",
+      "privacyNote": "이 양식을 제출함으로써 개인정보 보호정책에 동의합니다. 귀하의 정보를 제3자와 공유하지 않습니다."
+    },
+    "validation": {
+      "required": "{field}을(를) 입력해 주세요",
+      "invalidEmail": "유효한 이메일 주소를 입력해 주세요",
+      "minLength": "{field}은(는) 최소 {count}자 이상이어야 합니다",
+      "selectRequired": "옵션을 선택해 주세요",
+      "invalidNumber": "유효한 숫자를 입력해 주세요",
+      "minValue": "최소 {min} 이상이어야 합니다"
+    }
+  },
+  "footer": {
+    "tagline": "음악이 중요한 곳",
+    "description": "비즈니스에 완벽한 분위기를 만드세요. BMAsia는 2002년부터 아시아태평양 전역의 호텔, 레스토랑, 리테일을 위한 맞춤형 배경음악 솔루션을 제공합니다.",
+    "navigation": "네비게이션",
+    "contact": "연락처",
+    "copyright": "모든 권리 보유.",
+    "licensing": "라이선스",
+    "musicForBusiness": "비즈니스용 음악"
+  },
+  "howItWorks": {
+    "hero": {
+      "title": "이용",
+      "titleHighlight": "방법",
+      "subtitle": "3단계로 공간을 조화롭게",
+      "imageAlt": "세련된 분위기의 현대적인 레스토랑 인테리어"
+    },
+    "steps": {
+      "sectionTitle": "완벽한 사운드로의",
+      "sectionTitleHighlight": "여정",
+      "sectionSubtitle": "BMAsia 시작은 간단합니다. 세 단계를 따라 공간을 변화시키세요.",
+      "step1": {
+        "title": "사운드 선택 및 견적 받기",
+        "description": "솔루션 중에서 선택하고, 맞춤 견적을 요청하거나, 무료 온라인 데모를 예약하여 플랫폼을 경험하세요."
+      },
+      "step2": {
+        "title": "플레이리스트 커스터마이징",
+        "description": "전문 음악 디자이너와 협력하여 브랜드 보이스와 장소 분위기에 맞는 샘플을 맞춤 제작하세요."
+      },
+      "step3": {
+        "title": "설정 및 시작",
+        "description": "설치를 처리하고 포괄적인 교육을 제공하여 음악 경험을 쉽게 관리할 수 있습니다."
+      }
+    },
+    "benefits": {
+      "sectionTitle": "왜",
+      "sectionTitleHighlight": "BMAsia인가",
+      "sectionSubtitle": "전문적으로 큐레이션된 음악의 변화의 힘을 발견하세요"
+    },
+    "cta": {
+      "sectionTitle": "공간을 변화시킬",
+      "sectionTitleHighlight": "준비가 되셨나요?",
+      "sectionSubtitle": "비즈니스에 완벽한 분위기를 만드는 첫 걸음을 내딛으세요. 팀이 이상적인 음악 솔루션을 찾아드립니다."
+    }
+  },
+  "licensing": {
+    "hero": {
+      "title": "음악 라이선스",
+      "titleHighlight": "간소화",
+      "subtitle": "비즈니스에 필요한 라이선스 이해하기",
+      "imageAlt": "음악 라이선스를 나타내는 추상 음파 시각화"
+    },
+    "intro": {
+      "sectionTitle": "왜 비즈니스에",
+      "sectionTitleHighlight": "라이선스가 필요한가요?",
+      "paragraph1": "비즈니스에서 음악을 재생하는 것은 집에서 듣는 것과 다릅니다. 상업적으로 음악을 사용할 때는 음악을 만든 권리 보유자의 허가가 필요합니다.",
+      "paragraph2Intro": "비즈니스에서 합법적으로 음악을 재생하려면",
+      "paragraph2Highlight": "세 가지 다른 라이선스가 필요합니다"
+    },
+    "types": {
+      "sectionTitle": "세 가지",
+      "sectionTitleHighlight": "필수 라이선스",
+      "sectionSubtitle": "각 라이선스는 다른 권리 보유자를 보호하고 공정한 보상을 보장합니다",
+      "recording": {
+        "name": "녹음 라이선스",
+        "description": "특정 노래 녹음을 사용할 권리를 포함하며 녹음 아티스트에게 보상합니다."
+      },
+      "publishing": {
+        "name": "출판 라이선스",
+        "description": "원곡을 사용할 권리를 포함하며 작곡가와 작사가에게 보상합니다."
+      },
+      "performance": {
+        "name": "공연 라이선스",
+        "description": "비즈니스 장소와 같은 공공 환경에서 노래를 재생할 수 있게 합니다."
+      }
+    },
+    "warning": {
+      "sectionTitle": "소비자 스트리밍 서비스는",
+      "notLicensed": "비즈니스용으로",
+      "sectionTitleEnd": "라이선스되지 않았습니다",
+      "personalUseOnly": "이러한 서비스는 개인 사용만을 위해 라이선스됩니다.",
+      "liability": "상업적 환경에서 사용하면 서비스 약관을 위반하고 법적 책임에 노출될 수 있습니다.",
+      "spotifyQuote": "Spotify 서비스 및 콘텐츠는 Spotify 또는 Spotify 라이선서의 재산입니다. Spotify 서비스의 개인적, 비상업적 사용을 위한 제한적, 비독점적, 취소 가능한 라이선스를 부여합니다...",
+      "spotifySource": "Spotify 서비스 약관"
+    },
+    "solution": {
+      "sectionTitle": "라이선스 복잡성을",
+      "sectionTitleHighlight": "저희가 처리합니다",
+      "sectionSubtitle": "필요에 맞는 솔루션을 선택하세요",
+      "fullyLicensed": "완전 라이선스",
+      "included": "포함",
+      "requiredSeparately": "현지 PRO에서 별도로 필요",
+      "worryFree": "걱정 없이 음악을 재생하세요 - 모든 것을 처리합니다."
+    },
+    "cta": {
+      "sectionTitle": "라이선스 음악으로",
+      "sectionTitleHighlight": "시작하기",
+      "sectionSubtitle": "비즈니스에 적합한 음악 솔루션을 선택하세요. 오늘 맞춤 견적을 받으세요."
+    }
+  },
+  "quotation": {
+    "hero": {
+      "title": "견적",
+      "titleHighlight": "요청",
+      "subtitle": "정보를 제공해 주시면 맞춤 견적으로 답변드리겠습니다",
+      "imageAlt": "편안한 분위기의 럭셔리 스파 세팅"
+    },
+    "whatToExpect": {
+      "sectionTitle": "기대 사항",
+      "fastResponse": {
+        "title": "빠른 응답",
+        "description": "24-48시간 이내 맞춤 견적 수령"
+      },
+      "noObligation": {
+        "title": "의무 없음",
+        "description": "약정 없이 무료 상담"
+      },
+      "tailored": {
+        "title": "맞춤 솔루션",
+        "description": "특정 요구에 기반한 맞춤 가격"
+      }
+    },
+    "ourSolutions": {
+      "sectionTitle": "우리의 솔루션",
+      "soundtrackHighlights": {
+        "tracks": "1억+ 곡",
+        "scheduling": "고급 스케줄링",
+        "support": "24/7 지원"
+      },
+      "beatBreezeHighlights": {
+        "tracks": "3만+ 큐레이션 곡",
+        "license": "라이선스 포함",
+        "multizone": "멀티존 준비 완료"
+      },
+      "learnMore": "솔루션에 대해 더 알아보기"
+    },
+    "haveQuestions": {
+      "sectionTitle": "질문이 있으신가요?",
+      "emailDescription": "직접 연락하기",
+      "messagingLabel": "또는 메시지:"
+    },
+    "preferDemo": {
+      "sectionTitle": "라이브 데모를 원하시나요?",
+      "sectionSubtitle": "팀과 무료 온라인 데모를 예약하여 음악 솔루션을 직접 보고 모든 질문에 답변을 받으세요.",
+      "ctaButton": "무료 데모 예약"
+    }
+  },
+  "countries": {
+    "select": "국가 선택",
+    "singapore": "싱가포르",
+    "malaysia": "말레이시아",
+    "thailand": "태국",
+    "indonesia": "인도네시아",
+    "philippines": "필리핀",
+    "vietnam": "베트남",
+    "hongKong": "홍콩",
+    "taiwan": "대만",
+    "japan": "일본",
+    "southKorea": "대한민국",
+    "australia": "호주",
+    "newZealand": "뉴질랜드",
+    "uae": "아랍에미리트",
+    "unitedKingdom": "영국",
+    "unitedStates": "미국",
+    "china": "중국",
+    "india": "인도",
+    "other": "기타"
+  },
+  "solutions": {
+    "select": "솔루션 선택",
+    "soundtrackYourBrand": "Soundtrack Your Brand",
+    "beatBreeze": "Beat Breeze",
+    "notSure": "아직 모르겠어요"
+  },
+  "common": {
+    "getQuote": "견적 받기",
+    "bookDemo": "무료 데모 예약",
+    "learnMore": "더 알아보기",
+    "backToHome": "홈으로 돌아가기",
+    "loading": "로딩 중..."
+  },
+  "errors": {
+    "pageNotFound": "페이지를 찾을 수 없습니다",
+    "pageNotFoundDescription": "찾으시는 페이지가 존재하지 않거나 이동되었습니다.",
+    "somethingWentWrong": "오류가 발생했습니다",
+    "tryAgain": "다시 시도"
+  }
+}

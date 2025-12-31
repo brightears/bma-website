@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 /**
  * Client data with logo file paths
@@ -65,10 +66,12 @@ const itemVariants = {
  * - Responsive layout
  */
 export const ClientLogos: React.FC = () => {
+  const t = useTranslations('clientLogos');
+
   return (
     <section
       className="relative py-12 md:py-16 px-4 md:px-8 lg:px-16 overflow-hidden"
-      aria-label="Trusted by leading brands"
+      aria-label={t('sectionTitle')}
     >
       {/* Background - subtle gradient continuation */}
       <div className="absolute inset-0 bg-gradient-to-b from-brand-navy via-brand-dark to-brand-dark" />
@@ -83,7 +86,7 @@ export const ClientLogos: React.FC = () => {
           className="text-center mb-10"
         >
           <p className="text-gray-500 text-sm uppercase tracking-[0.2em] font-medium">
-            Trusted by industry leaders
+            {t('sectionTitle')}
           </p>
         </motion.div>
 

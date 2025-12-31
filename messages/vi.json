@@ -1,0 +1,465 @@
+{
+  "metadata": {
+    "title": "BMAsia | Nơi Âm Nhạc Quan Trọng",
+    "description": "Tạo bầu không khí hoàn hảo cho doanh nghiệp của bạn. BMAsia cung cấp giải pháp nhạc nền tùy chỉnh cho khách sạn, nhà hàng và bán lẻ trên khắp Châu Á-Thái Bình Dương từ năm 2002."
+  },
+  "navigation": {
+    "home": "Trang chủ",
+    "howItWorks": "Cách hoạt động",
+    "licensing": "Bản quyền",
+    "getQuote": "Nhận báo giá"
+  },
+  "languageSwitcher": {
+    "label": "Ngôn ngữ",
+    "selectLanguage": "Chọn ngôn ngữ"
+  },
+  "hero": {
+    "tagline": "Nơi Âm Nhạc Quan Trọng",
+    "headline": "Tạo Nên",
+    "headlineHighlight": "Bầu Không Khí Hoàn Hảo",
+    "subheading": "Nâng tầm không gian doanh nghiệp của bạn với nhạc nền tùy chỉnh ảnh hưởng đến hành vi khách hàng và tạo ra những khoảnh khắc đáng nhớ.",
+    "ctaQuote": "Nhận báo giá",
+    "ctaDemo": "Đặt demo miễn phí",
+    "imageAlt": "Phòng chờ khách sạn sang trọng với ánh sáng ấm áp"
+  },
+  "stats": {
+    "yearsExperience": "Năm kinh nghiệm",
+    "hoursOfMusic": "Giờ nhạc",
+    "availableTracks": "Bài hát có sẵn"
+  },
+  "valuePillars": {
+    "sectionTitle": "Sức mạnh của",
+    "sectionTitleHighlight": "Âm nhạc",
+    "sectionSubtitle": "Khám phá cách âm nhạc phù hợp có thể biến đổi môi trường kinh doanh của bạn",
+    "revenueResonance": {
+      "title": "Tăng doanh thu",
+      "description": "Thúc đẩy doanh thu với không gian âm thanh hấp dẫn khuyến khích khách hàng ở lại lâu hơn và chi tiêu nhiều hơn."
+    },
+    "emotionalEchoes": {
+      "title": "Kết nối cảm xúc",
+      "description": "Định hình tâm trạng và hành vi với độ chính xác âm nhạc, tạo bầu không khí lý tưởng cho không gian của bạn."
+    },
+    "brandHarmony": {
+      "title": "Hài hòa thương hiệu",
+      "description": "Nâng cao bản sắc thương hiệu thông qua thiết kế âm nhạc độc đáo cộng hưởng với khách hàng của bạn."
+    }
+  },
+  "products": {
+    "sectionTitle": "Giải pháp",
+    "sectionTitleHighlight": "của chúng tôi",
+    "sectionSubtitle": "Chọn giải pháp âm nhạc hoàn hảo phù hợp với nhu cầu và ngân sách doanh nghiệp của bạn",
+    "premium": "Cao cấp",
+    "availableOn": "Có sẵn trên",
+    "soundtrackYourBrand": {
+      "tagline": "Giải pháp nhạc cao cấp",
+      "features": {
+        "tracks": "100 triệu+ bài hát có sẵn",
+        "scheduling": "Lập lịch kéo thả",
+        "messaging": "Tin nhắn văn bản thành giọng nói",
+        "offline": "Phát ngoại tuyến",
+        "spotify": "Đồng bộ Spotify hợp pháp",
+        "bespoke": "Thiết kế nhạc riêng",
+        "support": "Hỗ trợ 24/7"
+      }
+    },
+    "beatBreeze": {
+      "tagline": "Giải pháp cơ bản",
+      "features": {
+        "tracks": "30.000+ bài hát chọn lọc",
+        "playlists": "50 playlist sẵn có",
+        "license": "Bao gồm giấy phép biểu diễn công cộng",
+        "multizone": "Thiết lập đa vùng",
+        "scheduling": "Lập lịch nâng cao",
+        "messaging": "Tin nhắn tích hợp",
+        "offline": "Phát ngoại tuyến"
+      }
+    },
+    "notSure": "Không chắc giải pháp nào phù hợp với bạn?",
+    "bookDemo": "Đặt demo miễn phí"
+  },
+  "smartFeatures": {
+    "sectionTitle": "Âm nhạc hoạt động",
+    "sectionTitleHighlight": "vì bạn",
+    "sectionSubtitle": "Tự động hóa thông minh điều chỉnh nhạc phù hợp với doanh nghiệp của bạn",
+    "smartScheduling": {
+      "title": "Lập lịch thông minh",
+      "description": "Lập trình sẵn mức âm lượng, điều chỉnh tự động theo giờ làm việc và thích ứng theo vùng như tạm dừng giờ cầu nguyện."
+    },
+    "contextAware": {
+      "title": "Nhạc theo ngữ cảnh",
+      "description": "Nhạc thích ứng với điều kiện thời tiết, đồng bộ với hệ thống chiếu sáng và phản hồi dữ liệu thời gian thực."
+    },
+    "aiPowered": {
+      "title": "Playlist do AI tạo",
+      "description": "Chỉ cần mô tả những gì bạn muốn — AI của chúng tôi tạo playlist hoàn hảo. Không cần chuyên môn âm nhạc."
+    },
+    "ctaDemo": "Đặt demo"
+  },
+  "clientLogos": {
+    "sectionTitle": "Được tin tưởng bởi các nhà lãnh đạo ngành"
+  },
+  "calendly": {
+    "sectionTitle": "Đặt",
+    "sectionTitleHighlight": "Demo miễn phí",
+    "sectionSubtitle": "Lên lịch cuộc gọi demo cá nhân với đội ngũ của chúng tôi. Chúng tôi sẽ hướng dẫn bạn qua nền tảng, trả lời câu hỏi và giúp bạn tìm giải pháp âm nhạc hoàn hảo cho doanh nghiệp.",
+    "ctaButton": "Đặt demo miễn phí của bạn",
+    "ctaLoading": "Đang tải...",
+    "infoNote": "Chọn thời gian phù hợp với bạn. Lịch sẽ mở trong popup.",
+    "duration": {
+      "title": "15-30 phút",
+      "description": "Nhanh chóng & tập trung"
+    },
+    "session": {
+      "title": "Phiên 1-1",
+      "description": "Cá nhân hóa cho bạn"
+    },
+    "noCommitment": {
+      "title": "Không ràng buộc",
+      "description": "Chỉ khám phá? Không sao"
+    }
+  },
+  "about": {
+    "sectionTitle": "Chúng tôi",
+    "sectionTitleHighlight": "là ai",
+    "sectionSubtitle": "Đối tác đáng tin cậy trong việc tạo ra trải nghiệm âm thanh đáng nhớ",
+    "imageAlt": "Phòng điều khiển studio nhạc chuyên nghiệp",
+    "storySince": "Từ",
+    "storyYear": "2002",
+    "storyIntro": "BMAsia đã là nhà cung cấp B2B hàng đầu thế giới về",
+    "storyHighlight": "giải pháp nhạc nền tùy chỉnh",
+    "storyDetails": "Chúng tôi tạo ra hơn 50.000 giờ nhạc hàng năm, được chế tác cẩn thận để phù hợp với concept địa điểm, củng cố hình ảnh thương hiệu và cộng hưởng với nhân khẩu học khách hàng của bạn. Đội ngũ chuyên gia của chúng tôi hiểu rằng âm nhạc phù hợp có thể biến đổi trải nghiệm khách hàng và thúc đẩy thành công kinh doanh.",
+    "differentiators": {
+      "title": "Điều làm chúng tôi khác biệt",
+      "venuesConcept": "Nhạc phù hợp với concept địa điểm của bạn",
+      "brandImage": "Phù hợp với hình ảnh thương hiệu",
+      "demographics": "Thiết kế cho nhân khẩu học khách hàng",
+      "expertTeam": "Đội ngũ chọn nhạc chuyên gia"
+    },
+    "cta": "Tìm hiểu cách chúng tôi có thể giúp doanh nghiệp của bạn",
+    "stats": {
+      "experience": {
+        "value": "23+",
+        "label": "Năm kinh nghiệm",
+        "sublabel": "Thành lập năm 2002"
+      },
+      "hours": {
+        "value": "50000+",
+        "label": "Giờ nhạc",
+        "sublabel": "Tạo ra hàng năm"
+      },
+      "tracks": {
+        "value": "100M+",
+        "label": "Bài hát có sẵn",
+        "sublabel": "Trong thư viện"
+      },
+      "global": {
+        "value": "Toàn cầu",
+        "label": "Hiện diện",
+        "sublabel": "Phạm vi toàn thế giới"
+      }
+    }
+  },
+  "contact": {
+    "sectionTitle": "Liên hệ",
+    "sectionTitleHighlight": "chúng tôi",
+    "sectionSubtitle": "Bước đầu tiên, chúng tôi lo phần còn lại",
+    "pill": "Hãy nói về âm nhạc",
+    "heading": "Sẵn sàng biến đổi môi trường kinh doanh của bạn?",
+    "description": "Dù bạn đang tìm kiếm giải pháp âm nhạc hoàn chỉnh cho chuỗi bán lẻ, khách sạn boutique hay địa điểm đơn lẻ, đội ngũ của chúng tôi sẵn sàng giúp bạn tìm nhạc nền hoàn hảo cho thương hiệu.",
+    "features": {
+      "consultation": "Tư vấn và demo miễn phí",
+      "recommendations": "Đề xuất nhạc cá nhân hóa",
+      "pricing": "Tùy chọn giá linh hoạt",
+      "support": "Đội hỗ trợ chuyên dụng"
+    },
+    "email": {
+      "label": "Email",
+      "description": "Chúng tôi phản hồi trong 24 giờ"
+    },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "description": "Phản hồi nhanh qua WhatsApp"
+    },
+    "line": {
+      "label": "Line",
+      "description": "Kết nối với chúng tôi trên Line"
+    }
+  },
+  "forms": {
+    "inquiry": {
+      "title": "Mẫu yêu cầu nhạc",
+      "description": "Điền vào mẫu bên dưới và chúng tôi sẽ liên hệ lại trong 24 giờ.",
+      "preferDemo": "Muốn đặt lịch gọi?",
+      "bookDemo": "Đặt demo miễn phí thay thế",
+      "fields": {
+        "name": {
+          "label": "Tên",
+          "placeholder": "Họ tên đầy đủ"
+        },
+        "company": {
+          "label": "Công ty",
+          "placeholder": "Tên công ty"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "you@company.com"
+        },
+        "message": {
+          "label": "Tin nhắn",
+          "placeholder": "Cho chúng tôi biết về nhu cầu âm nhạc, loại địa điểm hoặc câu hỏi của bạn..."
+        }
+      },
+      "submitButton": {
+        "default": "Gửi tin nhắn",
+        "sending": "Đang gửi..."
+      },
+      "successMessage": "Cảm ơn yêu cầu của bạn! Chúng tôi sẽ liên hệ lại trong 24 giờ.",
+      "errorMessage": "Đã xảy ra lỗi. Vui lòng thử lại.",
+      "privacyNote": "Bằng cách gửi mẫu này, bạn đồng ý với chính sách bảo mật của chúng tôi. Chúng tôi không bao giờ chia sẻ thông tin của bạn với bên thứ ba."
+    },
+    "quotation": {
+      "title": "Mẫu yêu cầu báo giá",
+      "description": "Điền thông tin bên dưới và chúng tôi sẽ phản hồi với báo giá cá nhân hóa.",
+      "fields": {
+        "firstName": {
+          "label": "Tên",
+          "placeholder": "Văn"
+        },
+        "lastName": {
+          "label": "Họ",
+          "placeholder": "Nguyễn"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "van.nguyen@company.com"
+        },
+        "country": {
+          "label": "Quốc gia",
+          "placeholder": "Chọn quốc gia"
+        },
+        "otherCountry": {
+          "label": "Vui lòng ghi rõ quốc gia",
+          "placeholder": "Nhập quốc gia của bạn"
+        },
+        "companyName": {
+          "label": "Tên công ty",
+          "placeholder": "Tên công ty của bạn"
+        },
+        "companyAddress": {
+          "label": "Địa chỉ công ty",
+          "placeholder": "Địa chỉ đầy đủ bao gồm thành phố và mã bưu điện"
+        },
+        "preferredSolution": {
+          "label": "Giải pháp ưa thích",
+          "placeholder": "Chọn giải pháp"
+        },
+        "numberOfZones": {
+          "label": "Số lượng vùng",
+          "placeholder": "1",
+          "help": "Một vùng là khu vực riêng biệt nơi nhạc được phát (ví dụ: sảnh, nhà hàng, spa)"
+        }
+      },
+      "submitButton": {
+        "default": "Yêu cầu báo giá",
+        "sending": "Đang gửi..."
+      },
+      "successMessage": "Cảm ơn yêu cầu báo giá! Chúng tôi sẽ liên hệ lại trong 24-48 giờ với báo giá cá nhân hóa.",
+      "errorMessage": "Đã xảy ra lỗi. Vui lòng thử lại.",
+      "privacyNote": "Bằng cách gửi mẫu này, bạn đồng ý với chính sách bảo mật của chúng tôi. Chúng tôi không bao giờ chia sẻ thông tin của bạn với bên thứ ba."
+    },
+    "validation": {
+      "required": "Vui lòng nhập {field}",
+      "invalidEmail": "Vui lòng nhập email hợp lệ",
+      "minLength": "{field} phải có ít nhất {count} ký tự",
+      "selectRequired": "Vui lòng chọn một tùy chọn",
+      "invalidNumber": "Vui lòng nhập số hợp lệ",
+      "minValue": "Phải ít nhất {min}"
+    }
+  },
+  "footer": {
+    "tagline": "Nơi Âm Nhạc Quan Trọng",
+    "description": "Tạo bầu không khí hoàn hảo cho doanh nghiệp của bạn. BMAsia cung cấp giải pháp nhạc nền tùy chỉnh cho khách sạn, nhà hàng và bán lẻ trên khắp Châu Á-Thái Bình Dương từ năm 2002.",
+    "navigation": "Điều hướng",
+    "contact": "Liên hệ",
+    "copyright": "Bảo lưu mọi quyền.",
+    "licensing": "Bản quyền",
+    "musicForBusiness": "Nhạc cho doanh nghiệp"
+  },
+  "howItWorks": {
+    "hero": {
+      "title": "Cách",
+      "titleHighlight": "hoạt động",
+      "subtitle": "Hài hòa không gian của bạn trong 3 bước đơn giản",
+      "imageAlt": "Nội thất nhà hàng hiện đại với bầu không khí tinh tế"
+    },
+    "steps": {
+      "sectionTitle": "Hành trình của bạn đến",
+      "sectionTitleHighlight": "Âm thanh hoàn hảo",
+      "sectionSubtitle": "Bắt đầu với BMAsia rất đơn giản. Làm theo 3 bước này để biến đổi không gian của bạn.",
+      "step1": {
+        "title": "Chọn âm thanh và nhận báo giá",
+        "description": "Chọn giữa các giải pháp, yêu cầu báo giá cá nhân hóa hoặc đặt demo trực tuyến miễn phí để trải nghiệm nền tảng."
+      },
+      "step2": {
+        "title": "Tùy chỉnh playlist",
+        "description": "Hợp tác với nhà thiết kế nhạc chuyên gia để tạo mẫu phù hợp với giọng thương hiệu và bầu không khí địa điểm."
+      },
+      "step3": {
+        "title": "Cài đặt và bắt đầu",
+        "description": "Chúng tôi xử lý cài đặt và cung cấp đào tạo toàn diện để bạn dễ dàng quản lý trải nghiệm âm nhạc."
+      }
+    },
+    "benefits": {
+      "sectionTitle": "Tại sao chọn",
+      "sectionTitleHighlight": "BMAsia",
+      "sectionSubtitle": "Khám phá sức mạnh biến đổi của nhạc được chọn lọc chuyên nghiệp"
+    },
+    "cta": {
+      "sectionTitle": "Sẵn sàng biến đổi",
+      "sectionTitleHighlight": "không gian của bạn?",
+      "sectionSubtitle": "Bước đầu tiên để tạo bầu không khí hoàn hảo cho doanh nghiệp. Đội ngũ sẵn sàng giúp bạn tìm giải pháp âm nhạc lý tưởng."
+    }
+  },
+  "licensing": {
+    "hero": {
+      "title": "Bản quyền nhạc",
+      "titleHighlight": "đơn giản hóa",
+      "subtitle": "Hiểu các bản quyền doanh nghiệp của bạn cần",
+      "imageAlt": "Hình ảnh sóng âm trừu tượng đại diện cho bản quyền nhạc"
+    },
+    "intro": {
+      "sectionTitle": "Tại sao doanh nghiệp",
+      "sectionTitleHighlight": "cần bản quyền?",
+      "paragraph1": "Phát nhạc trong doanh nghiệp khác với nghe ở nhà. Khi sử dụng nhạc thương mại, bạn cần sự cho phép từ chủ sở hữu quyền đã tạo ra nhạc đó.",
+      "paragraph2Intro": "Để phát nhạc hợp pháp trong doanh nghiệp, bạn cần",
+      "paragraph2Highlight": "ba bản quyền khác nhau"
+    },
+    "types": {
+      "sectionTitle": "Ba",
+      "sectionTitleHighlight": "bản quyền thiết yếu",
+      "sectionSubtitle": "Mỗi bản quyền bảo vệ chủ sở hữu quyền khác nhau và đảm bảo bồi thường công bằng",
+      "recording": {
+        "name": "Bản quyền ghi âm",
+        "description": "Bao gồm quyền sử dụng bản ghi cụ thể của bài hát và bồi thường cho nghệ sĩ ghi âm."
+      },
+      "publishing": {
+        "name": "Bản quyền xuất bản",
+        "description": "Bao gồm quyền sử dụng sáng tác gốc và bồi thường cho nhạc sĩ và composer."
+      },
+      "performance": {
+        "name": "Bản quyền biểu diễn công cộng",
+        "description": "Cho phép bạn phát bài hát trong môi trường công cộng như địa điểm kinh doanh."
+      }
+    },
+    "warning": {
+      "sectionTitle": "Dịch vụ streaming tiêu dùng",
+      "notLicensed": "KHÔNG",
+      "sectionTitleEnd": "được cấp phép cho sử dụng kinh doanh",
+      "personalUseOnly": "Các dịch vụ này chỉ được cấp phép cho sử dụng cá nhân.",
+      "liability": "Sử dụng trong môi trường thương mại vi phạm điều khoản dịch vụ và có thể khiến doanh nghiệp chịu trách nhiệm pháp lý.",
+      "spotifyQuote": "Dịch vụ Spotify và Nội dung là tài sản của Spotify hoặc người cấp phép của Spotify. Chúng tôi cấp cho bạn giấy phép hạn chế, không độc quyền, có thể thu hồi để sử dụng cá nhân, phi thương mại Dịch vụ Spotify...",
+      "spotifySource": "Điều khoản dịch vụ Spotify"
+    },
+    "solution": {
+      "sectionTitle": "Chúng tôi xử lý",
+      "sectionTitleHighlight": "sự phức tạp bản quyền",
+      "sectionSubtitle": "Chọn giải pháp phù hợp với nhu cầu của bạn",
+      "fullyLicensed": "Đầy đủ bản quyền",
+      "included": "Bao gồm",
+      "requiredSeparately": "Yêu cầu riêng từ PRO địa phương",
+      "worryFree": "Phát nhạc không lo - chúng tôi lo mọi thứ."
+    },
+    "cta": {
+      "sectionTitle": "Bắt đầu với",
+      "sectionTitleHighlight": "nhạc có bản quyền",
+      "sectionSubtitle": "Chọn giải pháp âm nhạc phù hợp cho doanh nghiệp. Nhận báo giá cá nhân hóa ngay hôm nay."
+    }
+  },
+  "quotation": {
+    "hero": {
+      "title": "Yêu cầu",
+      "titleHighlight": "báo giá",
+      "subtitle": "Cung cấp thông tin và chúng tôi sẽ phản hồi với báo giá cá nhân hóa",
+      "imageAlt": "Spa sang trọng với bầu không khí thư giãn"
+    },
+    "whatToExpect": {
+      "sectionTitle": "Điều mong đợi",
+      "fastResponse": {
+        "title": "Phản hồi nhanh",
+        "description": "Nhận báo giá cá nhân hóa trong 24-48 giờ"
+      },
+      "noObligation": {
+        "title": "Không ràng buộc",
+        "description": "Tư vấn miễn phí không cần cam kết"
+      },
+      "tailored": {
+        "title": "Giải pháp tùy chỉnh",
+        "description": "Giá tùy chỉnh dựa trên nhu cầu cụ thể"
+      }
+    },
+    "ourSolutions": {
+      "sectionTitle": "Giải pháp của chúng tôi",
+      "soundtrackHighlights": {
+        "tracks": "100M+ bài hát",
+        "scheduling": "Lập lịch nâng cao",
+        "support": "Hỗ trợ 24/7"
+      },
+      "beatBreezeHighlights": {
+        "tracks": "30K+ bài hát chọn lọc",
+        "license": "Bao gồm bản quyền",
+        "multizone": "Sẵn sàng đa vùng"
+      },
+      "learnMore": "Tìm hiểu thêm về giải pháp"
+    },
+    "haveQuestions": {
+      "sectionTitle": "Có câu hỏi?",
+      "emailDescription": "Liên hệ trực tiếp",
+      "messagingLabel": "Hoặc nhắn tin:"
+    },
+    "preferDemo": {
+      "sectionTitle": "Muốn xem demo trực tiếp?",
+      "sectionSubtitle": "Đặt demo trực tuyến miễn phí với đội ngũ để xem giải pháp âm nhạc hoạt động và nhận câu trả lời cho mọi câu hỏi.",
+      "ctaButton": "Đặt demo miễn phí"
+    }
+  },
+  "countries": {
+    "select": "Chọn quốc gia",
+    "singapore": "Singapore",
+    "malaysia": "Malaysia",
+    "thailand": "Thái Lan",
+    "indonesia": "Indonesia",
+    "philippines": "Philippines",
+    "vietnam": "Việt Nam",
+    "hongKong": "Hồng Kông",
+    "taiwan": "Đài Loan",
+    "japan": "Nhật Bản",
+    "southKorea": "Hàn Quốc",
+    "australia": "Úc",
+    "newZealand": "New Zealand",
+    "uae": "Các Tiểu vương quốc Ả Rập Thống nhất",
+    "unitedKingdom": "Vương quốc Anh",
+    "unitedStates": "Hoa Kỳ",
+    "china": "Trung Quốc",
+    "india": "Ấn Độ",
+    "other": "Khác"
+  },
+  "solutions": {
+    "select": "Chọn giải pháp",
+    "soundtrackYourBrand": "Soundtrack Your Brand",
+    "beatBreeze": "Beat Breeze",
+    "notSure": "Chưa chắc chắn"
+  },
+  "common": {
+    "getQuote": "Nhận báo giá",
+    "bookDemo": "Đặt demo miễn phí",
+    "learnMore": "Tìm hiểu thêm",
+    "backToHome": "Về trang chủ",
+    "loading": "Đang tải..."
+  },
+  "errors": {
+    "pageNotFound": "Không tìm thấy trang",
+    "pageNotFoundDescription": "Trang bạn đang tìm không tồn tại hoặc đã được di chuyển.",
+    "somethingWentWrong": "Đã xảy ra lỗi",
+    "tryAgain": "Thử lại"
+  }
+}

@@ -1,0 +1,465 @@
+{
+  "metadata": {
+    "title": "BMAsia | Di Mana Musik Penting",
+    "description": "Ciptakan atmosfer sempurna untuk bisnis Anda. BMAsia menyediakan solusi musik latar yang disesuaikan untuk hotel, restoran, dan ritel di seluruh Asia-Pasifik sejak 2002."
+  },
+  "navigation": {
+    "home": "Beranda",
+    "howItWorks": "Cara Kerja",
+    "licensing": "Lisensi",
+    "getQuote": "Minta Penawaran"
+  },
+  "languageSwitcher": {
+    "label": "Bahasa",
+    "selectLanguage": "Pilih bahasa"
+  },
+  "hero": {
+    "tagline": "Di Mana Musik Penting",
+    "headline": "Ciptakan",
+    "headlineHighlight": "Atmosfer Sempurna",
+    "subheading": "Tingkatkan suasana bisnis Anda dengan musik latar yang disesuaikan yang mempengaruhi perilaku pelanggan dan menciptakan momen berkesan.",
+    "ctaQuote": "Minta Penawaran",
+    "ctaDemo": "Pesan Demo Gratis",
+    "imageAlt": "Lobi hotel mewah dengan pencahayaan hangat"
+  },
+  "stats": {
+    "yearsExperience": "Tahun Pengalaman",
+    "hoursOfMusic": "Jam Musik",
+    "availableTracks": "Lagu Tersedia"
+  },
+  "valuePillars": {
+    "sectionTitle": "Kekuatan",
+    "sectionTitleHighlight": "Musik",
+    "sectionSubtitle": "Temukan bagaimana soundtrack yang tepat dapat mengubah lingkungan bisnis Anda",
+    "revenueResonance": {
+      "title": "Peningkatan Pendapatan",
+      "description": "Mendorong pendapatan dengan lanskap suara yang menarik yang mendorong pelanggan tinggal lebih lama dan menghabiskan lebih banyak."
+    },
+    "emotionalEchoes": {
+      "title": "Gema Emosional",
+      "description": "Membentuk suasana hati dan perilaku dengan presisi musikal, menciptakan suasana ideal untuk ruang Anda."
+    },
+    "brandHarmony": {
+      "title": "Harmoni Merek",
+      "description": "Meningkatkan identitas merek melalui desain musik yang khas yang beresonansi dengan pelanggan Anda."
+    }
+  },
+  "products": {
+    "sectionTitle": "Solusi",
+    "sectionTitleHighlight": "Kami",
+    "sectionSubtitle": "Pilih solusi musik sempurna yang disesuaikan dengan kebutuhan dan anggaran bisnis Anda",
+    "premium": "Premium",
+    "availableOn": "Tersedia di",
+    "soundtrackYourBrand": {
+      "tagline": "Solusi Musik Premium",
+      "features": {
+        "tracks": "100 juta+ lagu tersedia",
+        "scheduling": "Penjadwalan seret-dan-lepas",
+        "messaging": "Pesan teks-ke-suara",
+        "offline": "Putar offline",
+        "spotify": "Sinkronisasi Spotify legal",
+        "bespoke": "Desain musik khusus",
+        "support": "Dukungan 24/7"
+      }
+    },
+    "beatBreeze": {
+      "tagline": "Solusi Dasar",
+      "features": {
+        "tracks": "30 ribu+ lagu terpilih",
+        "playlists": "50 playlist siap pakai",
+        "license": "Lisensi pertunjukan publik termasuk",
+        "multizone": "Pengaturan multi-zona",
+        "scheduling": "Penjadwalan lanjutan",
+        "messaging": "Pesan terintegrasi",
+        "offline": "Putar offline"
+      }
+    },
+    "notSure": "Tidak yakin solusi mana yang tepat untuk Anda?",
+    "bookDemo": "Pesan Demo Gratis"
+  },
+  "smartFeatures": {
+    "sectionTitle": "Musik yang Bekerja",
+    "sectionTitleHighlight": "untuk Anda",
+    "sectionSubtitle": "Otomatisasi cerdas yang menyesuaikan soundtrack dengan bisnis Anda",
+    "smartScheduling": {
+      "title": "Penjadwalan Cerdas",
+      "description": "Praprogram tingkat volume, penyesuaian otomatis berdasarkan jam operasional, dan adaptasi regional seperti jeda waktu shalat."
+    },
+    "contextAware": {
+      "title": "Musik Sadar Konteks",
+      "description": "Musik yang beradaptasi dengan kondisi cuaca, sinkron dengan sistem pencahayaan, dan merespons feed data real-time."
+    },
+    "aiPowered": {
+      "title": "Playlist Bertenaga AI",
+      "description": "Cukup jelaskan apa yang Anda inginkan — AI kami menciptakan playlist sempurna. Tidak perlu keahlian musik."
+    },
+    "ctaDemo": "Pesan Demo"
+  },
+  "clientLogos": {
+    "sectionTitle": "Dipercaya oleh Pemimpin Industri"
+  },
+  "calendly": {
+    "sectionTitle": "Pesan",
+    "sectionTitleHighlight": "Demo Gratis",
+    "sectionSubtitle": "Jadwalkan panggilan demo personal dengan tim kami. Kami akan memandu Anda melalui platform, menjawab pertanyaan Anda, dan membantu Anda menemukan solusi musik sempurna untuk bisnis Anda.",
+    "ctaButton": "Pesan Demo Gratis Anda",
+    "ctaLoading": "Memuat...",
+    "infoNote": "Pilih waktu yang cocok untuk Anda. Kalender akan terbuka di popup.",
+    "duration": {
+      "title": "15-30 Menit",
+      "description": "Cepat & fokus"
+    },
+    "session": {
+      "title": "Sesi 1-lawan-1",
+      "description": "Dipersonalisasi untuk Anda"
+    },
+    "noCommitment": {
+      "title": "Tanpa Komitmen",
+      "description": "Hanya menjelajah? Tidak masalah"
+    }
+  },
+  "about": {
+    "sectionTitle": "Siapa",
+    "sectionTitleHighlight": "Kami",
+    "sectionSubtitle": "Mitra terpercaya Anda dalam menciptakan pengalaman sonik yang tak terlupakan",
+    "imageAlt": "Ruang kontrol studio musik profesional",
+    "storySince": "Sejak",
+    "storyYear": "2002",
+    "storyIntro": "BMAsia telah menjadi penyedia B2B terkemuka global untuk",
+    "storyHighlight": "solusi musik latar yang disesuaikan",
+    "storyDetails": "Kami menciptakan lebih dari 50.000 jam musik setiap tahun, dirancang dengan cermat untuk mencocokkan konsep venue Anda, memperkuat citra merek Anda, dan beresonansi dengan demografi pelanggan Anda. Tim ahli kami memahami bahwa soundtrack yang tepat dapat mengubah pengalaman pelanggan dan mendorong kesuksesan bisnis.",
+    "differentiators": {
+      "title": "Apa yang Membedakan Kami",
+      "venuesConcept": "Musik disesuaikan dengan konsep venue Anda",
+      "brandImage": "Selaras dengan citra merek Anda",
+      "demographics": "Dirancang untuk demografi pelanggan Anda",
+      "expertTeam": "Tim kurasi musik ahli"
+    },
+    "cta": "Pelajari bagaimana kami dapat membantu bisnis Anda",
+    "stats": {
+      "experience": {
+        "value": "23+",
+        "label": "Tahun Pengalaman",
+        "sublabel": "Didirikan pada 2002"
+      },
+      "hours": {
+        "value": "50000+",
+        "label": "Jam Musik",
+        "sublabel": "Diciptakan setiap tahun"
+      },
+      "tracks": {
+        "value": "100 Jt+",
+        "label": "Lagu Tersedia",
+        "sublabel": "Di perpustakaan kami"
+      },
+      "global": {
+        "value": "Global",
+        "label": "Kehadiran",
+        "sublabel": "Jangkauan seluruh dunia"
+      }
+    }
+  },
+  "contact": {
+    "sectionTitle": "Hubungi",
+    "sectionTitleHighlight": "Kami",
+    "sectionSubtitle": "Ambil langkah pertama, kami urus sisanya",
+    "pill": "Mari Bicara tentang Musik",
+    "heading": "Siap mengubah lingkungan bisnis Anda?",
+    "description": "Apakah Anda mencari solusi musik lengkap untuk jaringan ritel Anda, hotel butik, atau satu venue, tim kami siap membantu Anda menemukan soundtrack sempurna untuk merek Anda.",
+    "features": {
+      "consultation": "Konsultasi dan demo gratis",
+      "recommendations": "Rekomendasi musik personal",
+      "pricing": "Opsi harga fleksibel",
+      "support": "Tim dukungan khusus"
+    },
+    "email": {
+      "label": "Email",
+      "description": "Kami biasanya merespons dalam 24 jam"
+    },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "description": "Respons cepat via WhatsApp"
+    },
+    "line": {
+      "label": "Line",
+      "description": "Terhubung dengan kami di Line"
+    }
+  },
+  "forms": {
+    "inquiry": {
+      "title": "Formulir Pertanyaan Musik",
+      "description": "Isi formulir di bawah dan kami akan menghubungi Anda dalam 24 jam.",
+      "preferDemo": "Lebih suka menjadwalkan panggilan?",
+      "bookDemo": "Pesan demo gratis saja",
+      "fields": {
+        "name": {
+          "label": "Nama",
+          "placeholder": "Nama lengkap Anda"
+        },
+        "company": {
+          "label": "Perusahaan",
+          "placeholder": "Nama perusahaan Anda"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "anda@perusahaan.com"
+        },
+        "message": {
+          "label": "Pesan",
+          "placeholder": "Ceritakan tentang kebutuhan musik, jenis venue, atau pertanyaan Anda..."
+        }
+      },
+      "submitButton": {
+        "default": "Kirim Pesan",
+        "sending": "Mengirim..."
+      },
+      "successMessage": "Terima kasih atas pertanyaan Anda! Kami akan menghubungi Anda dalam 24 jam.",
+      "errorMessage": "Terjadi kesalahan. Silakan coba lagi.",
+      "privacyNote": "Dengan mengirimkan formulir ini, Anda menyetujui kebijakan privasi kami. Kami tidak akan pernah membagikan informasi Anda kepada pihak ketiga."
+    },
+    "quotation": {
+      "title": "Formulir Permintaan Penawaran",
+      "description": "Isi detail Anda di bawah dan kami akan merespons dengan penawaran yang dipersonalisasi.",
+      "fields": {
+        "firstName": {
+          "label": "Nama Depan",
+          "placeholder": "Budi"
+        },
+        "lastName": {
+          "label": "Nama Belakang",
+          "placeholder": "Santoso"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "budi.santoso@perusahaan.com"
+        },
+        "country": {
+          "label": "Negara",
+          "placeholder": "Pilih negara"
+        },
+        "otherCountry": {
+          "label": "Mohon sebutkan negara Anda",
+          "placeholder": "Masukkan negara Anda"
+        },
+        "companyName": {
+          "label": "Nama Perusahaan",
+          "placeholder": "Nama perusahaan Anda"
+        },
+        "companyAddress": {
+          "label": "Alamat Perusahaan",
+          "placeholder": "Alamat bisnis lengkap termasuk kota dan kode pos"
+        },
+        "preferredSolution": {
+          "label": "Solusi Pilihan",
+          "placeholder": "Pilih solusi"
+        },
+        "numberOfZones": {
+          "label": "Jumlah Zona",
+          "placeholder": "1",
+          "help": "Zona mewakili area berbeda di mana musik akan diputar (misalnya, lobi, restoran, spa)"
+        }
+      },
+      "submitButton": {
+        "default": "Minta Penawaran",
+        "sending": "Mengirim..."
+      },
+      "successMessage": "Terima kasih atas permintaan penawaran Anda! Kami akan menghubungi Anda dalam 24-48 jam dengan penawaran yang dipersonalisasi.",
+      "errorMessage": "Terjadi kesalahan. Silakan coba lagi.",
+      "privacyNote": "Dengan mengirimkan formulir ini, Anda menyetujui kebijakan privasi kami. Kami tidak akan pernah membagikan informasi Anda kepada pihak ketiga."
+    },
+    "validation": {
+      "required": "Mohon masukkan {field}",
+      "invalidEmail": "Mohon masukkan alamat email yang valid",
+      "minLength": "{field} harus minimal {count} karakter",
+      "selectRequired": "Mohon pilih satu opsi",
+      "invalidNumber": "Mohon masukkan angka yang valid",
+      "minValue": "Harus minimal {min}"
+    }
+  },
+  "footer": {
+    "tagline": "Di Mana Musik Penting",
+    "description": "Ciptakan atmosfer sempurna untuk bisnis Anda. BMAsia menyediakan solusi musik latar yang disesuaikan untuk hotel, restoran, dan ritel di seluruh Asia-Pasifik sejak 2002.",
+    "navigation": "Navigasi",
+    "contact": "Kontak",
+    "copyright": "Hak cipta dilindungi.",
+    "licensing": "Lisensi",
+    "musicForBusiness": "Musik untuk Bisnis"
+  },
+  "howItWorks": {
+    "hero": {
+      "title": "Cara",
+      "titleHighlight": "Kerja",
+      "subtitle": "Harmoniskan Ruang Anda dalam 3 Langkah Sederhana",
+      "imageAlt": "Interior restoran modern dengan suasana canggih"
+    },
+    "steps": {
+      "sectionTitle": "Perjalanan Anda ke",
+      "sectionTitleHighlight": "Suara Sempurna",
+      "sectionSubtitle": "Memulai dengan BMAsia itu mudah. Ikuti tiga langkah ini untuk mengubah ruang Anda.",
+      "step1": {
+        "title": "Pilih Suara Anda dan Dapatkan Penawaran",
+        "description": "Pilih antara solusi kami, minta penawaran yang dipersonalisasi, atau pesan demo online gratis untuk merasakan platform kami."
+      },
+      "step2": {
+        "title": "Sesuaikan Playlist Anda",
+        "description": "Berkolaborasi dengan desainer musik ahli kami untuk menyesuaikan sampel yang sesuai dengan suara merek dan suasana venue Anda."
+      },
+      "step3": {
+        "title": "Setup dan Mulai",
+        "description": "Kami menangani instalasi dan memberikan pelatihan komprehensif sehingga Anda dapat dengan mudah mengelola pengalaman musik Anda."
+      }
+    },
+    "benefits": {
+      "sectionTitle": "Mengapa Memilih",
+      "sectionTitleHighlight": "BMAsia",
+      "sectionSubtitle": "Temukan kekuatan transformatif musik yang dikurasi secara profesional"
+    },
+    "cta": {
+      "sectionTitle": "Siap Mengubah",
+      "sectionTitleHighlight": "Ruang Anda?",
+      "sectionSubtitle": "Ambil langkah pertama menuju menciptakan atmosfer sempurna untuk bisnis Anda. Tim kami siap membantu Anda menemukan solusi musik yang ideal."
+    }
+  },
+  "licensing": {
+    "hero": {
+      "title": "Lisensi Musik",
+      "titleHighlight": "Disederhanakan",
+      "subtitle": "Memahami lisensi yang dibutuhkan bisnis Anda",
+      "imageAlt": "Visualisasi gelombang suara abstrak mewakili lisensi musik"
+    },
+    "intro": {
+      "sectionTitle": "Mengapa Bisnis Anda",
+      "sectionTitleHighlight": "Membutuhkan Lisensi?",
+      "paragraph1": "Memutar musik di bisnis berbeda dari mendengarkan di rumah. Ketika Anda menggunakan musik secara komersial, Anda membutuhkan izin dari pemegang hak yang menciptakan musik tersebut.",
+      "paragraph2Intro": "Untuk memutar musik secara legal di bisnis Anda, Anda membutuhkan",
+      "paragraph2Highlight": "tiga lisensi berbeda"
+    },
+    "types": {
+      "sectionTitle": "Tiga",
+      "sectionTitleHighlight": "Lisensi Penting",
+      "sectionSubtitle": "Setiap lisensi melindungi pemegang hak yang berbeda dan memastikan kompensasi yang adil",
+      "recording": {
+        "name": "Lisensi Rekaman",
+        "description": "Mencakup hak untuk menggunakan rekaman spesifik dari sebuah lagu dan mengompensasi artis rekaman."
+      },
+      "publishing": {
+        "name": "Lisensi Penerbitan",
+        "description": "Mencakup hak untuk menggunakan komposisi asli dan mengompensasi penulis lagu dan komposer."
+      },
+      "performance": {
+        "name": "Lisensi Pertunjukan Publik",
+        "description": "Memungkinkan Anda memutar lagu di lingkungan publik seperti venue bisnis Anda."
+      }
+    },
+    "warning": {
+      "sectionTitle": "Layanan Streaming Konsumen",
+      "notLicensed": "TIDAK",
+      "sectionTitleEnd": "Dilisensikan untuk Penggunaan Bisnis",
+      "personalUseOnly": "Layanan ini dilisensikan untuk penggunaan pribadi saja.",
+      "liability": "Menggunakannya dalam setting komersial melanggar ketentuan layanan mereka dan dapat mengekspos bisnis Anda pada tanggung jawab hukum.",
+      "spotifyQuote": "Layanan Spotify dan Konten adalah milik Spotify atau pemberi lisensi Spotify. Kami memberi Anda lisensi terbatas, non-eksklusif, dapat dicabut untuk membuat penggunaan pribadi, non-komersial dari Layanan Spotify...",
+      "spotifySource": "Ketentuan Layanan Spotify"
+    },
+    "solution": {
+      "sectionTitle": "Kami Menangani",
+      "sectionTitleHighlight": "Kompleksitas Lisensi",
+      "sectionSubtitle": "Pilih solusi yang sesuai dengan kebutuhan Anda",
+      "fullyLicensed": "Berlisensi Penuh",
+      "included": "Termasuk",
+      "requiredSeparately": "Diperlukan secara terpisah dari PRO lokal Anda",
+      "worryFree": "Putar musik tanpa khawatir - kami menangani semuanya."
+    },
+    "cta": {
+      "sectionTitle": "Mulai dengan",
+      "sectionTitleHighlight": "Musik Berlisensi",
+      "sectionSubtitle": "Pilih solusi musik yang tepat untuk bisnis Anda. Dapatkan penawaran yang dipersonalisasi hari ini."
+    }
+  },
+  "quotation": {
+    "hero": {
+      "title": "Minta",
+      "titleHighlight": "Penawaran",
+      "subtitle": "Berikan detail Anda dan kami akan merespons dengan penawaran yang dipersonalisasi",
+      "imageAlt": "Setting spa mewah dengan suasana relaksasi"
+    },
+    "whatToExpect": {
+      "sectionTitle": "Apa yang Diharapkan",
+      "fastResponse": {
+        "title": "Respons Cepat",
+        "description": "Terima penawaran yang dipersonalisasi dalam 24-48 jam"
+      },
+      "noObligation": {
+        "title": "Tanpa Kewajiban",
+        "description": "Konsultasi gratis tanpa komitmen diperlukan"
+      },
+      "tailored": {
+        "title": "Solusi yang Disesuaikan",
+        "description": "Harga khusus berdasarkan kebutuhan spesifik Anda"
+      }
+    },
+    "ourSolutions": {
+      "sectionTitle": "Solusi Kami",
+      "soundtrackHighlights": {
+        "tracks": "100 Jt+ lagu",
+        "scheduling": "Penjadwalan lanjutan",
+        "support": "Dukungan 24/7"
+      },
+      "beatBreezeHighlights": {
+        "tracks": "30 ribu+ lagu terpilih",
+        "license": "Lisensi termasuk",
+        "multizone": "Siap multi-zona"
+      },
+      "learnMore": "Pelajari lebih lanjut tentang solusi kami"
+    },
+    "haveQuestions": {
+      "sectionTitle": "Punya Pertanyaan?",
+      "emailDescription": "Hubungi kami langsung",
+      "messagingLabel": "Atau kirim pesan:"
+    },
+    "preferDemo": {
+      "sectionTitle": "Lebih Suka Demo Langsung?",
+      "sectionSubtitle": "Pesan demo online gratis dengan tim kami untuk melihat solusi musik kami beraksi dan dapatkan jawaban untuk semua pertanyaan Anda.",
+      "ctaButton": "Pesan Demo Gratis"
+    }
+  },
+  "countries": {
+    "select": "Pilih negara",
+    "singapore": "Singapura",
+    "malaysia": "Malaysia",
+    "thailand": "Thailand",
+    "indonesia": "Indonesia",
+    "philippines": "Filipina",
+    "vietnam": "Vietnam",
+    "hongKong": "Hong Kong",
+    "taiwan": "Taiwan",
+    "japan": "Jepang",
+    "southKorea": "Korea Selatan",
+    "australia": "Australia",
+    "newZealand": "Selandia Baru",
+    "uae": "Uni Emirat Arab",
+    "unitedKingdom": "Inggris",
+    "unitedStates": "Amerika Serikat",
+    "china": "Tiongkok",
+    "india": "India",
+    "other": "Lainnya"
+  },
+  "solutions": {
+    "select": "Pilih solusi",
+    "soundtrackYourBrand": "Soundtrack Your Brand",
+    "beatBreeze": "Beat Breeze",
+    "notSure": "Belum Yakin"
+  },
+  "common": {
+    "getQuote": "Minta Penawaran",
+    "bookDemo": "Pesan Demo Gratis",
+    "learnMore": "Pelajari Lebih Lanjut",
+    "backToHome": "Kembali ke Beranda",
+    "loading": "Memuat..."
+  },
+  "errors": {
+    "pageNotFound": "Halaman Tidak Ditemukan",
+    "pageNotFoundDescription": "Halaman yang Anda cari tidak ada atau telah dipindahkan.",
+    "somethingWentWrong": "Terjadi Kesalahan",
+    "tryAgain": "Coba Lagi"
+  }
+}
