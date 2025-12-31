@@ -4,7 +4,9 @@ import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLocale } from 'next-intl';
 import { NAV_LINKS } from '@/lib/constants';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 /**
  * Header component for the BMAsia website
@@ -73,6 +75,7 @@ const overlayVariants = {
 };
 
 export const Header: React.FC = () => {
+  const locale = useLocale();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -139,7 +142,7 @@ export const Header: React.FC = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link
-            href="/"
+            href={`/${locale}`}
             className="relative z-50 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark rounded-lg"
           >
             <motion.div
@@ -161,8 +164,13 @@ export const Header: React.FC = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
             {NAV_LINKS.map((link: NavLinkItem) => (
-              <NavLink key={link.href} href={link.href} label={link.label} />
+              <NavLink
+                key={link.href}
+                href={`/${locale}${link.href === '/' ? '' : link.href}`}
+                label={link.label}
+              />
             ))}
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
@@ -222,7 +230,7 @@ export const Header: React.FC = () => {
                         animate="open"
                       >
                         <MobileNavLink
-                          href={link.href}
+                          href={`/${locale}${link.href === '/' ? '' : link.href}`}
                           label={link.label}
                           onClick={closeMenu}
                         />
@@ -231,16 +239,30 @@ export const Header: React.FC = () => {
                   </ul>
                 </nav>
 
-                {/* Mobile CTA */}
+                {/* Mobile Language Switcher */}
                 <motion.div
                   custom={NAV_LINKS.length}
                   variants={menuItemVariants}
                   initial="closed"
                   animate="open"
-                  className="pt-6 border-t border-white/10"
+                  className="py-4 border-t border-white/10"
+                >
+                  <div className="flex items-center justify-between px-4">
+                    <span className="text-white/60 text-sm">Language</span>
+                    <LanguageSwitcher />
+                  </div>
+                </motion.div>
+
+                {/* Mobile CTA */}
+                <motion.div
+                  custom={NAV_LINKS.length + 1}
+                  variants={menuItemVariants}
+                  initial="closed"
+                  animate="open"
+                  className="pt-4"
                 >
                   <Link
-                    href="/quotation"
+                    href={`/${locale}/quotation`}
                     onClick={closeMenu}
                     className="block w-full text-center bg-brand-orange hover:bg-brand-orange-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark"
                   >

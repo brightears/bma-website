@@ -1,0 +1,413 @@
+{
+  "metadata": {
+    "title": "BMAsia | Wherever Music Matters",
+    "description": "Craft the perfect atmosphere for your business. BMAsia provides customized background music solutions for hotels, restaurants, and retail across Asia-Pacific since 2002."
+  },
+  "navigation": {
+    "home": "Home",
+    "howItWorks": "How It Works",
+    "licensing": "Licensing",
+    "getQuote": "Get a Quote"
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "selectLanguage": "Select language"
+  },
+  "hero": {
+    "tagline": "Wherever Music Matters",
+    "headline": "Craft the Perfect",
+    "headlineHighlight": "Atmosphere",
+    "subheading": "Elevate your business ambiance with customized background music that influences guest behavior and creates memorable moments.",
+    "ctaQuote": "Get a Quote",
+    "ctaDemo": "Book Free Demo",
+    "imageAlt": "Elegant hotel lounge with warm ambient lighting"
+  },
+  "stats": {
+    "yearsExperience": "Years Experience",
+    "hoursOfMusic": "Hours of Music",
+    "availableTracks": "Available Tracks"
+  },
+  "valuePillars": {
+    "sectionTitle": "The Power of",
+    "sectionTitleHighlight": "Music",
+    "sectionSubtitle": "Discover how the right soundtrack transforms your business environment",
+    "revenueResonance": {
+      "title": "Revenue Resonance",
+      "description": "Driving revenue with compelling soundscapes that encourage customers to stay longer and spend more."
+    },
+    "emotionalEchoes": {
+      "title": "Emotional Echoes",
+      "description": "Shaping moods and behaviors with musical precision, creating the ideal ambiance for your space."
+    },
+    "brandHarmony": {
+      "title": "Brand Harmony",
+      "description": "Enhancing brand identity through distinctive music designs that resonate with your customers."
+    }
+  },
+  "products": {
+    "sectionTitle": "Our",
+    "sectionTitleHighlight": "Solutions",
+    "sectionSubtitle": "Choose the perfect music solution tailored to your business needs and budget",
+    "premium": "Premium",
+    "availableOn": "Available on",
+    "soundtrackYourBrand": {
+      "tagline": "Premium Music Solution",
+      "features": {
+        "tracks": "100M+ tracks available",
+        "scheduling": "Drag-and-drop scheduling",
+        "messaging": "Text-to-speech messaging",
+        "offline": "Offline playback",
+        "spotify": "Legal Spotify sync",
+        "bespoke": "Bespoke music design",
+        "support": "24/7 support"
+      }
+    },
+    "beatBreeze": {
+      "tagline": "Essential Solution",
+      "features": {
+        "tracks": "30K+ curated tracks",
+        "playlists": "50 ready-made playlists",
+        "license": "Public performance license included",
+        "multizone": "Multi-zone setup",
+        "scheduling": "Advanced scheduling",
+        "messaging": "Integrated messaging",
+        "offline": "Offline playback"
+      }
+    },
+    "notSure": "Not sure which solution is right for you?",
+    "bookDemo": "Book a Free Demo"
+  },
+  "smartFeatures": {
+    "sectionTitle": "Music That Works",
+    "sectionTitleHighlight": "For You",
+    "sectionSubtitle": "Intelligent automation that adapts your soundtrack to your business",
+    "smartScheduling": {
+      "title": "Smart Scheduling",
+      "description": "Preprogram volume levels, automatic adjustments based on business hours, and regional adaptations like prayer time pauses."
+    },
+    "contextAware": {
+      "title": "Context-Aware Music",
+      "description": "Music that adapts to weather conditions, syncs with lighting systems, and responds to real-time data feeds."
+    },
+    "aiPowered": {
+      "title": "AI-Powered Playlists",
+      "description": "Simply describe what you want — our AI creates the perfect playlist. No music expertise needed."
+    },
+    "ctaDemo": "Book a Demo"
+  },
+  "clientLogos": {
+    "sectionTitle": "Trusted by Industry Leaders"
+  },
+  "calendly": {
+    "sectionTitle": "Book a",
+    "sectionTitleHighlight": "Free Demo",
+    "sectionSubtitle": "Experience how BMAsia can transform your business atmosphere. Schedule a personalized demo with our team.",
+    "ctaButton": "Schedule Demo"
+  },
+  "about": {
+    "sectionTitle": "Who We",
+    "sectionTitleHighlight": "Are",
+    "sectionSubtitle": "Your trusted partner in creating memorable sonic experiences",
+    "imageAlt": "Professional music studio control room",
+    "storySince": "Since",
+    "storyYear": "2002",
+    "storyIntro": "BMAsia has been a leading global B2B provider of",
+    "storyHighlight": "customized background music solutions",
+    "storyDetails": "We create over 50,000 hours of music annually, carefully crafted to match your venue concepts, reinforce your brand image, and resonate with your customer demographics. Our expert team understands that the right soundtrack can transform customer experiences and drive business success.",
+    "differentiators": {
+      "title": "What Sets Us Apart",
+      "venuesConcept": "Music tailored to your venue concept",
+      "brandImage": "Aligned with your brand image",
+      "demographics": "Designed for your customer demographics",
+      "expertTeam": "Expert music curation team"
+    },
+    "cta": "Learn how we can help your business",
+    "stats": {
+      "experience": {
+        "value": "23+",
+        "label": "Years of Experience",
+        "sublabel": "Founded in 2002"
+      },
+      "hours": {
+        "value": "50000+",
+        "label": "Hours of Music",
+        "sublabel": "Created annually"
+      },
+      "tracks": {
+        "value": "100M+",
+        "label": "Tracks Available",
+        "sublabel": "In our library"
+      },
+      "global": {
+        "value": "Global",
+        "label": "Presence",
+        "sublabel": "Worldwide reach"
+      }
+    }
+  },
+  "contact": {
+    "sectionTitle": "Contact",
+    "sectionTitleHighlight": "Us",
+    "sectionSubtitle": "Take the first step, we take care of the rest",
+    "pill": "Let's Talk Music",
+    "heading": "Ready to transform your business environment?",
+    "description": "Whether you are looking for a complete music solution for your retail chain, a boutique hotel, or a single venue, our team is here to help you find the perfect soundtrack for your brand.",
+    "features": {
+      "consultation": "Free consultation and demo",
+      "recommendations": "Personalized music recommendations",
+      "pricing": "Flexible pricing options",
+      "support": "Dedicated support team"
+    },
+    "email": {
+      "label": "Email",
+      "description": "We typically respond within 24 hours"
+    },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "description": "Quick response via WhatsApp"
+    },
+    "line": {
+      "label": "Line",
+      "description": "Connect with us on Line"
+    }
+  },
+  "forms": {
+    "inquiry": {
+      "title": "Music Inquiry Form",
+      "description": "Fill out the form below and we'll get back to you within 24 hours.",
+      "preferDemo": "Prefer to schedule a call?",
+      "bookDemo": "Book a free demo instead",
+      "fields": {
+        "name": "Name",
+        "namePlaceholder": "Your full name",
+        "company": "Company",
+        "companyPlaceholder": "Your company name",
+        "email": "Email",
+        "emailPlaceholder": "you@company.com",
+        "message": "Message",
+        "messagePlaceholder": "Tell us about your music needs, venue type, or any questions you have..."
+      },
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": "Thank you for your inquiry! We will get back to you within 24 hours.",
+      "error": "Something went wrong. Please try again.",
+      "privacy": "By submitting this form, you agree to our privacy policy. We will never share your information with third parties."
+    },
+    "quotation": {
+      "title": "Quotation Request Form",
+      "description": "Fill in your details below and we'll get back to you with a personalized quote.",
+      "fields": {
+        "firstName": "First Name",
+        "firstNamePlaceholder": "John",
+        "lastName": "Last Name",
+        "lastNamePlaceholder": "Doe",
+        "email": "Email",
+        "emailPlaceholder": "john.doe@company.com",
+        "country": "Country",
+        "countryPlaceholder": "Select a country",
+        "otherCountry": "Other Country",
+        "otherCountryPlaceholder": "Please specify your country",
+        "companyName": "Company Name",
+        "companyNamePlaceholder": "Your company name",
+        "companyAddress": "Company Address",
+        "companyAddressPlaceholder": "Full business address including city and postal code",
+        "preferredSolution": "Preferred Solution",
+        "solutionPlaceholder": "Select a solution",
+        "notSureYet": "Not Sure Yet",
+        "numberOfZones": "Number of Zones",
+        "zonesPlaceholder": "1",
+        "zonesHelp": "A zone represents a distinct area where music will be played (e.g., lobby, restaurant, spa)"
+      },
+      "submit": "Request Quotation",
+      "submitting": "Submitting...",
+      "success": "Thank you for your quotation request! We will get back to you within 24-48 hours with a personalized quote.",
+      "error": "Something went wrong. Please try again.",
+      "privacy": "By submitting this form, you agree to our privacy policy. We will never share your information with third parties."
+    },
+    "validation": {
+      "required": "This field is required",
+      "invalidEmail": "Please enter a valid email address",
+      "minLength": "Must be at least {min} characters",
+      "selectRequired": "Please select an option",
+      "invalidNumber": "Please enter a valid number",
+      "minValue": "Must be at least {min}"
+    }
+  },
+  "footer": {
+    "tagline": "Wherever Music Matters",
+    "description": "Craft the perfect atmosphere for your business. BMAsia provides customized background music solutions for hotels, restaurants, and retail across Asia-Pacific since 2002.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "copyright": "All rights reserved.",
+    "licensing": "Licensing",
+    "musicForBusiness": "Music for Business"
+  },
+  "howItWorks": {
+    "hero": {
+      "title": "How It",
+      "titleHighlight": "Works",
+      "subtitle": "Harmonizing Your Space in 3 Simple Steps",
+      "imageAlt": "Modern restaurant interior with sophisticated ambiance"
+    },
+    "steps": {
+      "sectionTitle": "Your Journey to",
+      "sectionTitleHighlight": "Perfect Sound",
+      "sectionSubtitle": "Getting started with BMAsia is simple. Follow these three steps to transform your space.",
+      "step1": {
+        "title": "Choose Your Sound and Get a Quote",
+        "description": "Select between our solutions, request a personalized quote, or book a free online demo to experience our platform."
+      },
+      "step2": {
+        "title": "Customize Your Playlist",
+        "description": "Collaborate with our expert music designers to tailor samples that match your brand voice and venue ambiance."
+      },
+      "step3": {
+        "title": "Setup and Get Started",
+        "description": "We handle the installation and provide comprehensive training so you can easily manage your music experience."
+      }
+    },
+    "benefits": {
+      "sectionTitle": "Why Choose",
+      "sectionTitleHighlight": "BMAsia",
+      "sectionSubtitle": "Discover the transformative power of professionally curated music"
+    },
+    "cta": {
+      "sectionTitle": "Ready to Transform",
+      "sectionTitleHighlight": "Your Space?",
+      "sectionSubtitle": "Take the first step towards creating the perfect atmosphere for your business. Our team is ready to help you find the ideal music solution."
+    }
+  },
+  "licensing": {
+    "hero": {
+      "title": "Music Licensing",
+      "titleHighlight": "Made Simple",
+      "subtitle": "Understanding the licenses your business needs",
+      "imageAlt": "Abstract sound wave visualization representing music licensing"
+    },
+    "intro": {
+      "sectionTitle": "Why Does Your Business",
+      "sectionTitleHighlight": "Need Licenses?",
+      "paragraph1": "Playing music in a business is different from listening at home. When you use music commercially, you need permission from the rights holders who created that music.",
+      "paragraph2Intro": "To legally play music in your business, you need",
+      "paragraph2Highlight": "three different licenses"
+    },
+    "types": {
+      "sectionTitle": "The Three",
+      "sectionTitleHighlight": "Essential Licenses",
+      "sectionSubtitle": "Each license protects different rights holders and ensures fair compensation",
+      "recording": {
+        "name": "Recording License",
+        "description": "Covers the right to use a specific recording of a song and compensates the recording artist."
+      },
+      "publishing": {
+        "name": "Publishing License",
+        "description": "Covers the right to use the original composition and compensates the songwriters and composers."
+      },
+      "performance": {
+        "name": "Public Performance License",
+        "description": "Allows you to play the song in a public environment like your business venue."
+      }
+    },
+    "warning": {
+      "sectionTitle": "Consumer Streaming Services Are",
+      "notLicensed": "NOT",
+      "sectionTitleEnd": "Licensed for Business Use",
+      "personalUseOnly": "These services are licensed for personal use only.",
+      "liability": "Using them in a commercial setting violates their terms of service and can expose your business to legal liability.",
+      "spotifyQuote": "The Spotify Service and the Content are the property of Spotify or Spotify's licensors. We grant you a limited, non-exclusive, revocable licence to make personal, non-commercial use of the Spotify Service...",
+      "spotifySource": "Spotify Terms of Service"
+    },
+    "solution": {
+      "sectionTitle": "We Handle the",
+      "sectionTitleHighlight": "Licensing Complexity",
+      "sectionSubtitle": "Choose the solution that fits your needs",
+      "fullyLicensed": "Fully Licensed",
+      "included": "Included",
+      "requiredSeparately": "Required separately from your local PRO",
+      "worryFree": "Play music worry-free - we handle everything."
+    },
+    "cta": {
+      "sectionTitle": "Get Started with",
+      "sectionTitleHighlight": "Licensed Music",
+      "sectionSubtitle": "Choose the right music solution for your business. Get a personalized quote today."
+    }
+  },
+  "quotation": {
+    "hero": {
+      "title": "Request a",
+      "titleHighlight": "Quote",
+      "subtitle": "Provide your details and we'll respond with a personalized quotation",
+      "imageAlt": "Luxury spa setting with relaxing atmosphere"
+    },
+    "whatToExpect": {
+      "sectionTitle": "What to Expect",
+      "fastResponse": {
+        "title": "Fast Response",
+        "description": "Receive your personalized quote within 24-48 hours"
+      },
+      "noObligation": {
+        "title": "No Obligation",
+        "description": "Free consultation with no commitment required"
+      },
+      "tailored": {
+        "title": "Tailored Solutions",
+        "description": "Custom pricing based on your specific needs"
+      }
+    },
+    "ourSolutions": {
+      "sectionTitle": "Our Solutions",
+      "soundtrackHighlights": {
+        "tracks": "100M+ tracks",
+        "scheduling": "Advanced scheduling",
+        "support": "24/7 support"
+      },
+      "beatBreezeHighlights": {
+        "tracks": "30K+ curated tracks",
+        "license": "License included",
+        "multizone": "Multi-zone ready"
+      },
+      "learnMore": "Learn more about our solutions"
+    },
+    "haveQuestions": {
+      "sectionTitle": "Have Questions?",
+      "emailDescription": "Reach out to us directly",
+      "messagingLabel": "Or message us:"
+    },
+    "preferDemo": {
+      "sectionTitle": "Prefer a Live Demo?",
+      "sectionSubtitle": "Book a free online demo with our team to see our music solutions in action and get answers to all your questions.",
+      "ctaButton": "Book Free Demo"
+    }
+  },
+  "countries": {
+    "thailand": "Thailand",
+    "vietnam": "Vietnam",
+    "malaysia": "Malaysia",
+    "singapore": "Singapore",
+    "indonesia": "Indonesia",
+    "philippines": "Philippines",
+    "japan": "Japan",
+    "southKorea": "South Korea",
+    "china": "China",
+    "hongKong": "Hong Kong",
+    "taiwan": "Taiwan",
+    "india": "India",
+    "uae": "United Arab Emirates",
+    "australia": "Australia",
+    "newZealand": "New Zealand",
+    "other": "Other"
+  },
+  "common": {
+    "getQuote": "Get a Quote",
+    "bookDemo": "Book Free Demo",
+    "learnMore": "Learn More",
+    "backToHome": "Back to Home",
+    "loading": "Loading..."
+  },
+  "errors": {
+    "pageNotFound": "Page Not Found",
+    "pageNotFoundDescription": "The page you're looking for doesn't exist or has been moved.",
+    "somethingWentWrong": "Something Went Wrong",
+    "tryAgain": "Try Again"
+  }
+}
