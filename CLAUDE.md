@@ -149,11 +149,14 @@ export function MyComponent() {
 }
 ```
 
-### Status
-- Infrastructure: Complete
-- English translations: Complete (~200 strings)
-- Other languages: Pending
-- Component integration: Pending (currently shows English on all locales)
+### Status (Updated Dec 31, 2024)
+- **Infrastructure**: Complete (next-intl v4.6.1)
+- **All 8 languages**: Complete (~200 strings each)
+- **Component integration**: Complete (all sections use translations)
+- **Form translations**: Complete (InquiryForm, QuotationForm)
+- **SEO metadata**: Translated titles, descriptions, OG tags per locale
+- **Sitemap**: Dynamic with hreflang alternates (32 URLs)
+- **Google Search Console**: Sitemap resubmitted, 32 pages discovered
 
 ## Forms
 
@@ -322,19 +325,23 @@ Production environment variables are configured on Render dashboard.
   - URL: `https://calendly.com/bmasia/sound-innovations`
   - Component: `components/sections/CalendlyEmbed.tsx`
 - **Google Tag Manager**: GT-WRDQZP6W
-- **Google Search Console**: Sitemap submitted, 4 pages indexed
+- **Google Search Console**: Sitemap submitted, 32 pages discovered (8 locales × 4 pages)
 - **Database**: PostgreSQL on Render (form submissions stored via Prisma)
 - **Email**: Notifications sent via configured email service
 
-## SEO Status
+## SEO Status (Updated Dec 31, 2024)
 - **Score**: 82/100 (Dec 2024 audit)
-- **Canonical URL**: Set on all pages
-- **Meta description**: 158 chars, keyword-optimized ("Craft the perfect atmosphere...")
+- **Pages indexed**: 32 (8 locales × 4 pages)
+- **Canonical URL**: Set per locale (`/en/`, `/th/`, etc.)
+- **hreflang**: All pages have alternates pointing to all 8 language versions
+- **Meta titles/descriptions**: Translated per locale
+- **OG tags**: Translated per locale with proper locale codes (en_US, zh_CN, ja_JP, etc.)
 - **OG Image**: `og-image.jpg` (1200x630) - hotel lounge with logo/tagline
 - **Structured data**:
-  - Organization schema (JSON-LD) on all pages
-  - BreadcrumbList schema on subpages (How It Works, Licensing, Quotation)
-- **Sitemap**: `/sitemap.xml` submitted to Google (last updated Dec 2024)
+  - Organization schema (JSON-LD) on all pages (translated descriptions)
+  - BreadcrumbList schema on subpages (translated labels)
+- **Sitemap**: Dynamic `/sitemap.xml` with 32 URLs and hreflang alternates
+- **Google Search Console**: Sitemap resubmitted Dec 31, 2024 - 32 pages discovered
 - **Image SEO**: All hero images have descriptive alt text
 
 ### Social Sharing Preview Testing
