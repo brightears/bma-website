@@ -1,6 +1,19 @@
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { SITE } from '@/lib/constants';
-import { locales } from '@/lib/i18n-config';
+import { locales, type Locale } from '@/lib/i18n-config';
+
+// Map locale codes to OpenGraph locale format
+const ogLocaleMap: Record<Locale, string> = {
+  en: 'en_US',
+  th: 'th_TH',
+  vi: 'vi_VN',
+  ms: 'ms_MY',
+  id: 'id_ID',
+  ko: 'ko_KR',
+  ja: 'ja_JP',
+  zh: 'zh_CN',
+};
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -9,6 +22,13 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
+  // Get translations for this page
+  const t = await getTranslations({ locale, namespace: 'quotation' });
+  const tNav = await getTranslations({ locale, namespace: 'navigation' });
+
+  const title = `${t('hero.title')} ${t('hero.titleHighlight')}`;
+  const description = t('hero.subtitle');
+
   // Generate alternate URLs for all locales
   const alternateLanguages: Record<string, string> = {};
   locales.forEach((loc) => {
@@ -16,17 +36,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 
   return {
-    title: 'Request a Quote',
-    description:
-      'Get a personalized quote for your business music solution. Choose Soundtrack Your Brand or Beat Breeze to transform your space.',
+    title: tNav('getQuote'),
+    description,
     alternates: {
       canonical: `${SITE.url}/${locale}/quotation`,
       languages: alternateLanguages,
     },
     openGraph: {
-      title: 'Request a Quote | BMAsia',
-      description:
-        'Get a personalized quotation for background music solutions tailored to your business needs. Fast response within 24-48 hours.',
+      title: `${title} | ${SITE.name}`,
+      description,
+      locale: ogLocaleMap[locale as Locale] || 'en_US',
       url: `${SITE.url}/${locale}/quotation`,
       siteName: SITE.name,
       type: 'website',
@@ -35,15 +54,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: `${SITE.url}/images/og-image.jpg`,
           width: 1200,
           height: 630,
-          alt: 'Request a Quote - BMAsia',
+          alt: 'BMAsia - Wherever Music Matters',
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Request a Quote | BMAsia',
-      description:
-        'Get a personalized quotation for background music solutions tailored to your business needs. Fast response within 24-48 hours.',
+      title: `${title} | ${SITE.name}`,
+      description,
       images: [`${SITE.url}/images/og-image.jpg`],
     },
   };
@@ -57,6 +75,8 @@ export default async function QuotationLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const tNav = await getTranslations({ locale, namespace: 'navigation' });
+
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -64,13 +84,13 @@ export default async function QuotationLayout({
       {
         '@type': 'ListItem',
         position: 1,
-        name: 'Home',
+        name: tNav('home'),
         item: `${SITE.url}/${locale}`,
       },
       {
         '@type': 'ListItem',
         position: 2,
-        name: 'Get a Quote',
+        name: tNav('getQuote'),
         item: `${SITE.url}/${locale}/quotation`,
       },
     ],

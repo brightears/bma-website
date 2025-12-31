@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, getTranslations } from 'next-intl/server';
 import '../globals.css';
 import { SITE } from '@/lib/constants';
 import { locales, type Locale } from '@/lib/i18n-config';
@@ -10,6 +10,18 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
+
+// Map locale codes to OpenGraph locale format
+const ogLocaleMap: Record<Locale, string> = {
+  en: 'en_US',
+  th: 'th_TH',
+  vi: 'vi_VN',
+  ms: 'ms_MY',
+  id: 'id_ID',
+  ko: 'ko_KR',
+  ja: 'ja_JP',
+  zh: 'zh_CN',
+};
 
 // Generate static params for all locales
 export function generateStaticParams() {
@@ -23,19 +35,26 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+
+  // Get translations for metadata
+  const t = await getTranslations({ locale, namespace: 'metadata' });
+
   // Generate alternate URLs for all locales
   const alternateLanguages: Record<string, string> = {};
   locales.forEach((loc) => {
     alternateLanguages[loc] = `${SITE.url}/${loc}`;
   });
 
+  const title = t('title');
+  const description = t('description');
+
   return {
     metadataBase: new URL(SITE.url),
     title: {
-      default: `${SITE.name} | ${SITE.tagline}`,
+      default: title,
       template: `%s | ${SITE.name}`,
     },
-    description: SITE.description,
+    description,
     keywords: [
       'background music',
       'business music',
@@ -54,11 +73,11 @@ export async function generateMetadata({
     },
     openGraph: {
       type: 'website',
-      locale: locale === 'en' ? 'en_US' : locale,
+      locale: ogLocaleMap[locale as Locale] || 'en_US',
       url: `${SITE.url}/${locale}`,
       siteName: SITE.name,
-      title: `${SITE.name} | ${SITE.tagline}`,
-      description: SITE.description,
+      title,
+      description,
       images: [
         {
           url: '/images/og-image.jpg',
@@ -70,8 +89,8 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${SITE.name} | ${SITE.tagline}`,
-      description: SITE.description,
+      title,
+      description,
       images: ['/images/og-image.jpg'],
     },
     robots: {
@@ -101,8 +120,9 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  // Get messages for the locale
+  // Get messages and translations for the locale
   const messages = await getMessages();
+  const t = await getTranslations({ locale, namespace: 'metadata' });
 
   return (
     <html lang={locale} className="scroll-smooth">
@@ -111,7 +131,7 @@ export default async function LocaleLayout({
         <link rel="preconnect" href="https://assets.calendly.com" />
         <link rel="dns-prefetch" href="https://assets.calendly.com" />
 
-        {/* Organization Schema (JSON-LD) */}
+        {/* Organization Schema (JSON-LD) - with translated description */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -121,8 +141,7 @@ export default async function LocaleLayout({
               name: 'BMAsia',
               url: `https://bmasiamusic.com/${locale}`,
               logo: 'https://bmasiamusic.com/images/BMAsia_Logo.png',
-              description:
-                'BMAsia provides customized background music solutions for businesses across Asia-Pacific.',
+              description: t('description'),
               foundingDate: '2002',
               contactPoint: {
                 '@type': 'ContactPoint',
@@ -131,6 +150,7 @@ export default async function LocaleLayout({
               },
               areaServed: 'Asia-Pacific',
               serviceType: 'Background Music Solutions',
+              inLanguage: locale,
             }),
           }}
         />
