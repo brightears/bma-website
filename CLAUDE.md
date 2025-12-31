@@ -12,10 +12,11 @@ Modern website rebuild for BMAsia (bmasiamusic.com) - a B2B background music sol
 - **Language**: TypeScript (strict mode)
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion
+- **i18n**: next-intl (8 languages)
 - **Forms**: React Hook Form + API routes + Prisma + Email notifications
 - **Database**: PostgreSQL (via Prisma ORM)
 - **Icons**: Lucide React
-- **Deployment**: Render (static export)
+- **Deployment**: Render
 - **Repository**: https://github.com/brightears/bma-website.git
 
 ## Brand Guidelines
@@ -63,34 +64,96 @@ npm run start                    # Start production server (if not static)
 ## Project Structure
 ```
 bma_website/
-├── app/                    # Next.js App Router pages
-│   ├── layout.tsx          # Root layout (header/footer)
-│   ├── page.tsx            # Landing page (/)
-│   ├── how-it-works/       # /how-it-works
-│   ├── licensing/          # /licensing
-│   └── quotation/          # /quotation
+├── app/
+│   ├── layout.tsx          # Minimal root layout
+│   ├── [locale]/           # Locale-based routing
+│   │   ├── layout.tsx      # Main layout (header/footer/i18n provider)
+│   │   ├── page.tsx        # Landing page (/en/, /th/, etc.)
+│   │   ├── how-it-works/   # /[locale]/how-it-works
+│   │   ├── licensing/      # /[locale]/licensing
+│   │   └── quotation/      # /[locale]/quotation
+│   └── api/                # API routes (forms)
 ├── components/
-│   ├── layout/             # Header, Footer, Navigation
+│   ├── layout/             # Header, Footer, LanguageSwitcher
 │   ├── sections/           # Page sections (Hero, Products, etc.)
 │   ├── forms/              # InquiryForm, QuotationForm
 │   └── ui/                 # Reusable UI (Button, Card, Input)
 ├── lib/
-│   └── constants.ts        # Colors, URLs, form IDs
-├── public/
-│   └── images/             # Static assets
-│       └── logos/          # Client logos (transparent PNGs/SVGs)
-└── styles/
-    └── globals.css         # Global styles + Tailwind
+│   ├── constants.ts        # Colors, URLs, form IDs
+│   └── i18n-config.ts      # Locale configuration
+├── messages/               # Translation files
+│   ├── en.json             # English (default)
+│   ├── th.json             # Thai
+│   ├── vi.json             # Vietnamese
+│   └── ...                 # Other languages
+├── middleware.ts           # Language detection middleware
+├── i18n.ts                 # next-intl configuration
+└── public/
+    └── images/             # Static assets
 ```
 
 ## Pages Overview
 
 | Route | Page | Key Sections |
 |-------|------|--------------|
-| `/` | Landing | Hero, Value Pillars, Products, SmartFeatures, ClientLogos, Calendly, About, Contact |
-| `/how-it-works` | Process | 3-step process, Benefits, Demo CTA |
-| `/licensing` | Education | License types, Streaming warning, Solutions |
-| `/quotation` | Form | Quotation request form |
+| `/[locale]/` | Landing | Hero, Value Pillars, Products, SmartFeatures, ClientLogos, Calendly, About, Contact |
+| `/[locale]/how-it-works` | Process | 3-step process, Benefits, Demo CTA |
+| `/[locale]/licensing` | Education | License types, Streaming warning, Solutions |
+| `/[locale]/quotation` | Form | Quotation request form |
+
+## Internationalization (i18n)
+
+### Supported Languages
+| Code | Language | Region |
+|------|----------|--------|
+| `en` | English | Default (all other countries) |
+| `th` | Thai | Thailand |
+| `vi` | Vietnamese | Vietnam |
+| `ms` | Malay | Malaysia |
+| `id` | Indonesian | Indonesia |
+| `ko` | Korean | South Korea |
+| `ja` | Japanese | Japan |
+| `zh` | Simplified Chinese | China, Singapore |
+
+### URL Structure
+All pages use locale prefix: `/en/`, `/th/`, `/vi/`, etc.
+- Homepage: `bmasiamusic.com/en/`
+- Subpages: `bmasiamusic.com/th/how-it-works/`
+
+### Language Detection
+1. URL locale prefix (explicit user choice)
+2. Cookie preference (returning visitors)
+3. Accept-Language header (browser preference)
+4. Default to English
+
+### Key Files
+- `lib/i18n-config.ts` - Locale configuration and language mapping
+- `i18n.ts` - next-intl request configuration
+- `middleware.ts` - Language detection and routing
+- `messages/*.json` - Translation files (~200 strings each)
+- `components/layout/LanguageSwitcher.tsx` - Language dropdown
+
+### Adding Translations
+1. Create/edit `messages/[locale].json`
+2. Use same structure as `messages/en.json`
+3. Product names stay in English (Soundtrack Your Brand, Beat Breeze)
+
+### Using Translations in Components
+```tsx
+'use client';
+import { useTranslations } from 'next-intl';
+
+export function MyComponent() {
+  const t = useTranslations('sectionName');
+  return <h1>{t('title')}</h1>;
+}
+```
+
+### Status
+- Infrastructure: Complete
+- English translations: Complete (~200 strings)
+- Other languages: Pending
+- Component integration: Pending (currently shows English on all locales)
 
 ## Forms
 
