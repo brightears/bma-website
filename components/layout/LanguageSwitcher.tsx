@@ -7,7 +7,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Globe, ChevronDown } from 'lucide-react';
 import { locales, localeNames, type Locale } from '@/lib/i18n-config';
 
-export const LanguageSwitcher: React.FC = () => {
+interface LanguageSwitcherProps {
+  openDirection?: 'up' | 'down';
+}
+
+export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
+  openDirection = 'down',
+}) => {
   const locale = useLocale() as Locale;
   const router = useRouter();
   const pathname = usePathname();
@@ -73,11 +79,13 @@ export const LanguageSwitcher: React.FC = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -10, scale: 0.95 }}
+            initial={{ opacity: 0, y: openDirection === 'up' ? 10 : -10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -10, scale: 0.95 }}
+            exit={{ opacity: 0, y: openDirection === 'up' ? 10 : -10, scale: 0.95 }}
             transition={{ duration: 0.15 }}
-            className="absolute right-0 mt-2 w-48 bg-brand-dark/95 backdrop-blur-lg border border-white/10 rounded-lg shadow-xl overflow-hidden z-50"
+            className={`absolute right-0 ${
+              openDirection === 'up' ? 'bottom-full mb-2' : 'mt-2'
+            } w-48 bg-brand-dark/95 backdrop-blur-lg border border-white/10 rounded-lg shadow-xl overflow-hidden z-50`}
             role="listbox"
             aria-label="Available languages"
           >

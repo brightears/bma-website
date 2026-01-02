@@ -249,7 +249,7 @@ export const Header: React.FC = () => {
                 >
                   <div className="flex items-center justify-between px-4">
                     <span className="text-white/60 text-sm">Language</span>
-                    <LanguageSwitcher />
+                    <LanguageSwitcher openDirection="up" />
                   </div>
                 </motion.div>
 
