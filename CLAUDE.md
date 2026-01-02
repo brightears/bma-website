@@ -149,7 +149,7 @@ export function MyComponent() {
 }
 ```
 
-### Status (Updated Dec 31, 2024)
+### Status (Updated Jan 2, 2025)
 - **Infrastructure**: Complete (next-intl v4.6.1)
 - **All 8 languages**: Complete (~200 strings each)
 - **Component integration**: Complete (all sections use translations)
@@ -157,6 +157,7 @@ export function MyComponent() {
 - **SEO metadata**: Translated titles, descriptions, OG tags per locale
 - **Sitemap**: Dynamic with hreflang alternates (32 URLs)
 - **Google Search Console**: Sitemap resubmitted, 32 pages discovered
+- **Mobile language switcher**: Fixed - dropdown opens upward on mobile
 
 ## Forms
 
@@ -329,7 +330,7 @@ Production environment variables are configured on Render dashboard.
 - **Database**: PostgreSQL on Render (form submissions stored via Prisma)
 - **Email**: Notifications sent via configured email service
 
-## SEO Status (Updated Dec 31, 2024)
+## SEO Status (Updated Jan 2, 2025)
 - **Score**: 82/100 (Dec 2024 audit)
 - **Pages indexed**: 32 (8 locales × 4 pages)
 - **Canonical URL**: Set per locale (`/en/`, `/th/`, etc.)
@@ -348,3 +349,8 @@ Production environment variables are configured on Render dashboard.
 - **Facebook**: https://developers.facebook.com/tools/debug/
 - **Twitter**: https://cards-dev.twitter.com/validator
 - **LinkedIn**: https://www.linkedin.com/post-inspector/
+
+## Recent Changes
+
+### Jan 2, 2025
+- **Fixed mobile language switcher**: Dropdown was cut off on iPhone when opened at bottom of mobile menu. Added `openDirection` prop to `LanguageSwitcher.tsx` - desktop opens downward (default), mobile opens upward. All 8 languages now visible on mobile.
