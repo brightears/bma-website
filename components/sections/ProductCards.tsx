@@ -31,7 +31,7 @@ const PRODUCTS_CONFIG: ProductConfig[] = [
     key: 'beatBreeze',
     name: 'Beat Breeze',
     image: '/images/product-beatbreeze.webp',
-    platforms: ['iOS', 'Android', 'Windows'] as const,
+    platforms: ['Android', 'Windows'] as const,
     featureKeys: ['tracks', 'playlists', 'license', 'multizone', 'scheduling', 'messaging', 'offline'] as const,
     isPremium: false,
   },
