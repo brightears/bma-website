@@ -352,5 +352,8 @@ Production environment variables are configured on Render dashboard.
 
 ## Recent Changes
 
+### Jan 3, 2025
+- **Fixed Beat Breeze platform availability**: Removed iOS from Beat Breeze platforms in `ProductCards.tsx`. Beat Breeze is only available on Android and Windows. Soundtrack Your Brand remains on iOS, Android, and Windows.
+
 ### Jan 2, 2025
 - **Fixed mobile language switcher**: Dropdown was cut off on iPhone when opened at bottom of mobile menu. Added `openDirection` prop to `LanguageSwitcher.tsx` - desktop opens downward (default), mobile opens upward. All 8 languages now visible on mobile.
