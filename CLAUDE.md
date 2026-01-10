@@ -326,6 +326,10 @@ Production environment variables are configured on Render dashboard.
   - URL: `https://calendly.com/bmasia/sound-innovations`
   - Component: `components/sections/CalendlyEmbed.tsx`
 - **Google Tag Manager**: GT-WRDQZP6W
+- **Apollo.io**: Website visitor tracking for lead identification
+  - AppId: `691d948496127f0021ef7728`
+  - Location: `app/[locale]/layout.tsx` (inline script in `<head>`)
+  - Dashboard: https://app.apollo.io
 - **Google Search Console**: Sitemap submitted, 32 pages discovered (8 locales × 4 pages)
 - **Database**: PostgreSQL on Render (form submissions stored via Prisma)
 - **Email**: Notifications sent via configured email service
@@ -351,6 +355,9 @@ Production environment variables are configured on Render dashboard.
 - **LinkedIn**: https://www.linkedin.com/post-inspector/
 
 ## Recent Changes
+
+### Jan 10, 2025
+- **Added Apollo.io website tracker**: Integrated Apollo.io visitor tracking script for lead identification. Script added to `app/[locale]/layout.tsx` with preconnect hint for faster loading.
 
 ### Jan 3, 2025
 - **Fixed Beat Breeze platform availability**: Removed iOS from Beat Breeze platforms in `ProductCards.tsx`. Beat Breeze is only available on Android and Windows. Soundtrack Your Brand remains on iOS, Android, and Windows.
