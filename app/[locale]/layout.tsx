@@ -130,6 +130,7 @@ export default async function LocaleLayout({
         {/* Preconnect hints for external resources */}
         <link rel="preconnect" href="https://assets.calendly.com" />
         <link rel="dns-prefetch" href="https://assets.calendly.com" />
+        <link rel="preconnect" href="https://assets.apollo.io" />
 
         {/* Organization Schema (JSON-LD) - with translated description */}
         <script
@@ -169,6 +170,26 @@ export default async function LocaleLayout({
             }}
           />
         )}
+
+        {/* Apollo.io Website Tracker */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              function initApollo(){
+                var n=Math.random().toString(36).substring(7),
+                o=document.createElement("script");
+                o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n;
+                o.async=!0;
+                o.defer=!0;
+                o.onload=function(){
+                  window.trackingFunctions.onLoad({appId:"691d948496127f0021ef7728"})
+                };
+                document.head.appendChild(o)
+              }
+              initApollo();
+            `,
+          }}
+        />
       </head>
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}
