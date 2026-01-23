@@ -84,6 +84,7 @@ export function HeroChat() {
     try {
       await conversation.startSession({
         agentId: ELEVENLABS.agentId,
+        connectionType: 'websocket',
       });
       setHasStarted(true);
     } catch (err) {
