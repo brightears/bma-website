@@ -345,29 +345,40 @@ Prominent AI chat interface in the Hero section, powered by ElevenLabs Conversat
 
 ### Features
 - Glassmorphism styling matching site aesthetic
-- Quick action buttons: "Get pricing", "Book a demo", "Technical help"
+- Quick action buttons inside chat panel (not in hero - avoids redundancy with main CTAs)
 - Expandable message panel with auto-scroll
-- Welcome message on first interaction
+- Welcome message with quick actions on first focus
 - Locale passed to agent for multilingual support
 - Error handling with retry capability
 
 ### UI States
-**Collapsed (Default)**:
+**Collapsed (Default)** - Clean hero with only chat input:
 ```
 ┌───────────────────────────────────────────────────┐
 │  Ask anything about our music solutions...    ➤  │
 └───────────────────────────────────────────────────┘
-   [ Get pricing ]  [ Book a demo ]  [ Technical help ]
 ```
 
-**Expanded (After Interaction)**:
+**Expanded (On Focus)** - Welcome with quick actions:
 ```
 ┌───────────────────────────────────────────────────┐
 │  BMAsia AI Assistant                        ─ ✕  │
 ├───────────────────────────────────────────────────┤
-│  Agent: Hello! How can I help you today?         │
-│                        You: How much does it cost │
+│  Hi! I can help you with:                        │
+│  [ Get pricing ] [ Book a demo ] [ Technical ]   │
+│  Or ask me anything!                             │
+├───────────────────────────────────────────────────┤
+│  Type your message...                         ➤  │
+└───────────────────────────────────────────────────┘
+```
+
+**Conversation Active** - Quick actions disappear:
+```
+┌───────────────────────────────────────────────────┐
+│  BMAsia AI Assistant                        ─ ✕  │
+├───────────────────────────────────────────────────┤
 │  Agent: Great question! Our pricing depends...   │
+│                        You: How much does it cost │
 ├───────────────────────────────────────────────────┤
 │  Type your message...                         ➤  │
 └───────────────────────────────────────────────────┘
@@ -380,7 +391,7 @@ All 8 language files include `chat` namespace with:
 - `quickActionMessages.*` - Pre-defined messages sent when buttons clicked
 - `status.*` - Connection states
 - `errors.*` - Error messages
-- `welcomeMessage` - Initial greeting
+- `welcomeMessage`, `welcomePrompt`, `orAskAnything` - Welcome state strings
 
 ### Phase 2 (Planned)
 Voice input/output using cheaper alternatives (Fish Audio or ChatterboxTTS).
@@ -426,7 +437,9 @@ Voice input/output using cheaper alternatives (Fish Audio or ChatterboxTTS).
 ## Recent Changes
 
 ### Jan 23, 2025
-- **Added AI Chat Interface (HeroChat)**: Prominent AI chat powered by ElevenLabs in Hero section. Features text input, quick action suggestions (Get pricing, Book a demo, Technical help), expandable message panel, and multilingual support. Uses same agent as WhatsApp (`agent_8501kesasj5fe8b8rm6nnxcvn4kb`). Components: `components/chat/` (HeroChat, ChatInput, ChatMessages, QuickActions). Translations added to all 8 language files.
+- **Added AI Chat Interface (HeroChat)**: Prominent AI chat powered by ElevenLabs in Hero section. Features text input, expandable message panel, and multilingual support. Uses same agent as WhatsApp (`agent_8501kesasj5fe8b8rm6nnxcvn4kb`). Components: `components/chat/` (HeroChat, ChatInput, ChatMessages, QuickActions). Translations added to all 8 language files.
+- **UX Refinement - Quick Actions Inside Chat Panel**: Moved quick action buttons from hero section into chat panel to eliminate redundancy with main CTAs ("Get a Quote" / "Book Free Demo"). Quick actions now appear as welcome message when user focuses on chat input. Matches industry patterns (Intercom/Drift/HubSpot).
+- **Added Render MCP Server**: Configured Render API access via MCP for deployment monitoring. Command: `claude mcp add --transport http render https://mcp.render.com/mcp --header "Authorization: Bearer <API_KEY>"`
 
 ### Jan 10, 2025
 - **Added Apollo.io website tracker**: Integrated Apollo.io visitor tracking script for lead identification. Script added to `app/[locale]/layout.tsx` with preconnect hint for faster loading.
