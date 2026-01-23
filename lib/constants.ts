@@ -119,6 +119,11 @@ export const PROCESS_STEPS = [
   },
 ] as const;
 
+// ElevenLabs Conversational AI Configuration
+export const ELEVENLABS = {
+  agentId: process.env.NEXT_PUBLIC_ELEVENLABS_AGENT_ID || 'agent_8501kesasj5fe8b8rm6nnxcvn4kb',
+} as const;
+
 // License Types
 export const LICENSE_TYPES = [
   {

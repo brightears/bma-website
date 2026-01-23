@@ -461,5 +461,34 @@
     "pageNotFoundDescription": "Halaman yang Anda cari tidak ada atau telah dipindahkan.",
     "somethingWentWrong": "Terjadi Kesalahan",
     "tryAgain": "Coba Lagi"
+  },
+  "chat": {
+    "placeholder": "Tanyakan apa saja tentang solusi musik kami...",
+    "send": "Kirim",
+    "assistantName": "Asisten AI BMAsia",
+    "minimize": "Perkecil",
+    "close": "Tutup",
+    "expand": "Lihat percakapan",
+    "quickActions": {
+      "pricing": "Lihat harga",
+      "demo": "Pesan demo",
+      "technical": "Bantuan teknis"
+    },
+    "quickActionMessages": {
+      "pricing": "Saya ingin mengetahui tentang opsi harga Anda.",
+      "demo": "Saya ingin memesan demo gratis.",
+      "technical": "Saya membutuhkan bantuan teknis untuk pengaturan saya."
+    },
+    "status": {
+      "connecting": "Menghubungkan...",
+      "connected": "Online",
+      "disconnected": "Offline",
+      "typing": "Mengetik..."
+    },
+    "errors": {
+      "connectionFailed": "Tidak dapat terhubung. Silakan coba lagi.",
+      "messageFailed": "Pesan tidak dapat dikirim. Silakan coba lagi."
+    },
+    "welcomeMessage": "Halo! Saya asisten BMAsia Anda. Ada yang bisa saya bantu hari ini?"
   }
 }

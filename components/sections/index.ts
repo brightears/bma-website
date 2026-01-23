@@ -5,3 +5,4 @@ export { ClientLogos } from './ClientLogos';
 export { CalendlyEmbed } from './CalendlyEmbed';
 export { AboutSection } from './AboutSection';
 export { ContactSection } from './ContactSection';
+export { HeroChat } from '../chat/HeroChat';

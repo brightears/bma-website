@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { ValuePillars, ProductCards, SmartFeatures, ClientLogos, CalendlyEmbed, AboutSection, ContactSection } from '@/components/sections';
+import { ValuePillars, ProductCards, SmartFeatures, ClientLogos, CalendlyEmbed, AboutSection, ContactSection, HeroChat } from '@/components/sections';
 
 export default function Home() {
   const t = useTranslations('hero');
@@ -101,6 +101,9 @@ export default function Home() {
                 {t('ctaDemo')}
               </motion.a>
             </div>
+
+            {/* AI Chat Interface */}
+            <HeroChat />
           </motion.div>
 
           {/* Stats */}
@@ -108,7 +111,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-16 sm:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-2xl mx-auto"
+            className="mt-10 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-2xl mx-auto"
           >
             {stats.map((stat, index) => (
               <div key={index} className="text-center">

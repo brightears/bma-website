@@ -461,5 +461,34 @@
     "pageNotFoundDescription": "您访问的页面不存在或已被移动。",
     "somethingWentWrong": "出了点问题",
     "tryAgain": "重试"
+  },
+  "chat": {
+    "placeholder": "询问任何关于我们音乐解决方案的问题...",
+    "send": "发送",
+    "assistantName": "BMAsia AI 助手",
+    "minimize": "最小化",
+    "close": "关闭",
+    "expand": "查看对话",
+    "quickActions": {
+      "pricing": "查看价格",
+      "demo": "预约演示",
+      "technical": "技术支持"
+    },
+    "quickActionMessages": {
+      "pricing": "我想了解您的价格选项。",
+      "demo": "我想预约一个免费演示。",
+      "technical": "我需要针对现有设置的技术支持。"
+    },
+    "status": {
+      "connecting": "正在连接...",
+      "connected": "在线",
+      "disconnected": "离线",
+      "typing": "正在输入..."
+    },
+    "errors": {
+      "connectionFailed": "无法连接，请重试。",
+      "messageFailed": "消息发送失败，请重试。"
+    },
+    "welcomeMessage": "您好！我是您的 BMAsia 助手。今天有什么可以帮助您的吗？"
   }
 }

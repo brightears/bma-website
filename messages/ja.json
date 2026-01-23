@@ -461,5 +461,34 @@
     "pageNotFoundDescription": "お探しのページは存在しないか、移動されました。",
     "somethingWentWrong": "エラーが発生しました",
     "tryAgain": "もう一度試す"
+  },
+  "chat": {
+    "placeholder": "音楽ソリューションについて何でもお聞きください...",
+    "send": "送信",
+    "assistantName": "BMAsia AIアシスタント",
+    "minimize": "最小化",
+    "close": "閉じる",
+    "expand": "会話を表示",
+    "quickActions": {
+      "pricing": "価格を見る",
+      "demo": "デモを予約",
+      "technical": "技術サポート"
+    },
+    "quickActionMessages": {
+      "pricing": "価格オプションについて知りたいです。",
+      "demo": "無料デモを予約したいです。",
+      "technical": "現在の設定について技術サポートが必要です。"
+    },
+    "status": {
+      "connecting": "接続中...",
+      "connected": "オンライン",
+      "disconnected": "オフライン",
+      "typing": "入力中..."
+    },
+    "errors": {
+      "connectionFailed": "接続できませんでした。もう一度お試しください。",
+      "messageFailed": "メッセージを送信できませんでした。もう一度お試しください。"
+    },
+    "welcomeMessage": "こんにちは！BMAsia アシスタントです。本日はどのようなご用件でしょうか？"
   }
 }

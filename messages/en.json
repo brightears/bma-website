@@ -461,5 +461,34 @@
     "pageNotFoundDescription": "The page you're looking for doesn't exist or has been moved.",
     "somethingWentWrong": "Something Went Wrong",
     "tryAgain": "Try Again"
+  },
+  "chat": {
+    "placeholder": "Ask anything about our music solutions...",
+    "send": "Send",
+    "assistantName": "BMAsia AI Assistant",
+    "minimize": "Minimize",
+    "close": "Close",
+    "expand": "View conversation",
+    "quickActions": {
+      "pricing": "Get pricing",
+      "demo": "Book a demo",
+      "technical": "Technical help"
+    },
+    "quickActionMessages": {
+      "pricing": "I would like to know about your pricing options.",
+      "demo": "I would like to book a free demo.",
+      "technical": "I need technical support for my existing setup."
+    },
+    "status": {
+      "connecting": "Connecting...",
+      "connected": "Online",
+      "disconnected": "Offline",
+      "typing": "Typing..."
+    },
+    "errors": {
+      "connectionFailed": "Could not connect to chat. Please try again.",
+      "messageFailed": "Message could not be sent. Please try again."
+    },
+    "welcomeMessage": "Hello! I'm your BMAsia assistant. How can I help you today?"
   }
 }

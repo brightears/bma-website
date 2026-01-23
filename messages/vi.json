@@ -461,5 +461,34 @@
     "pageNotFoundDescription": "Trang bạn đang tìm không tồn tại hoặc đã được di chuyển.",
     "somethingWentWrong": "Đã xảy ra lỗi",
     "tryAgain": "Thử lại"
+  },
+  "chat": {
+    "placeholder": "Hỏi bất cứ điều gì về giải pháp âm nhạc của chúng tôi...",
+    "send": "Gửi",
+    "assistantName": "Trợ lý AI BMAsia",
+    "minimize": "Thu nhỏ",
+    "close": "Đóng",
+    "expand": "Xem cuộc trò chuyện",
+    "quickActions": {
+      "pricing": "Xem giá",
+      "demo": "Đặt demo",
+      "technical": "Hỗ trợ kỹ thuật"
+    },
+    "quickActionMessages": {
+      "pricing": "Tôi muốn biết về các tùy chọn giá của bạn.",
+      "demo": "Tôi muốn đặt một buổi demo miễn phí.",
+      "technical": "Tôi cần hỗ trợ kỹ thuật cho thiết lập hiện tại của tôi."
+    },
+    "status": {
+      "connecting": "Đang kết nối...",
+      "connected": "Trực tuyến",
+      "disconnected": "Ngoại tuyến",
+      "typing": "Đang nhập..."
+    },
+    "errors": {
+      "connectionFailed": "Không thể kết nối. Vui lòng thử lại.",
+      "messageFailed": "Không thể gửi tin nhắn. Vui lòng thử lại."
+    },
+    "welcomeMessage": "Xin chào! Tôi là trợ lý BMAsia của bạn. Hôm nay tôi có thể giúp gì cho bạn?"
   }
 }

@@ -76,6 +76,7 @@ bma_website/
 ├── components/
 │   ├── layout/             # Header, Footer, LanguageSwitcher
 │   ├── sections/           # Page sections (Hero, Products, etc.)
+│   ├── chat/               # AI Chat interface (HeroChat, ChatInput, etc.)
 │   ├── forms/              # InquiryForm, QuotationForm
 │   └── ui/                 # Reusable UI (Button, Card, Input)
 ├── lib/
@@ -321,7 +322,75 @@ Production environment variables are configured on Render dashboard.
 - **test-writer**: Generate comprehensive tests for components, API routes, forms (Vitest/Jest + Testing Library)
 - **performance-auditor**: Analyze bundle size, Core Web Vitals, image optimization, render performance
 
+## AI Chat Interface (HeroChat)
+
+### Overview
+Prominent AI chat interface in the Hero section, powered by ElevenLabs Conversational AI. Uses the same agent as the WhatsApp integration. Text-only for Phase 1.
+
+### Components (`components/chat/`)
+| Component | Description |
+|-----------|-------------|
+| `HeroChat.tsx` | Main container with ElevenLabs integration |
+| `ChatInput.tsx` | Text input with send button |
+| `ChatMessages.tsx` | Expandable conversation panel |
+| `QuickActions.tsx` | Suggestion buttons (pricing, demo, technical) |
+| `index.ts` | Barrel export |
+
+### ElevenLabs Integration
+- **SDK**: `@elevenlabs/react` with `useConversation` hook
+- **Mode**: `textOnly: true` (no audio processing)
+- **Agent ID**: `agent_8501kesasj5fe8b8rm6nnxcvn4kb` (same as WhatsApp)
+- **Config**: `lib/constants.ts` → `ELEVENLABS.agentId`
+- **Environment Variable**: `NEXT_PUBLIC_ELEVENLABS_AGENT_ID`
+
+### Features
+- Glassmorphism styling matching site aesthetic
+- Quick action buttons: "Get pricing", "Book a demo", "Technical help"
+- Expandable message panel with auto-scroll
+- Welcome message on first interaction
+- Locale passed to agent for multilingual support
+- Error handling with retry capability
+
+### UI States
+**Collapsed (Default)**:
+```
+┌───────────────────────────────────────────────────┐
+│  Ask anything about our music solutions...    ➤  │
+└───────────────────────────────────────────────────┘
+   [ Get pricing ]  [ Book a demo ]  [ Technical help ]
+```
+
+**Expanded (After Interaction)**:
+```
+┌───────────────────────────────────────────────────┐
+│  BMAsia AI Assistant                        ─ ✕  │
+├───────────────────────────────────────────────────┤
+│  Agent: Hello! How can I help you today?         │
+│                        You: How much does it cost │
+│  Agent: Great question! Our pricing depends...   │
+├───────────────────────────────────────────────────┤
+│  Type your message...                         ➤  │
+└───────────────────────────────────────────────────┘
+```
+
+### Translations
+All 8 language files include `chat` namespace with:
+- `placeholder`, `send`, `assistantName`, `minimize`, `close`
+- `quickActions.*` - Button labels
+- `quickActionMessages.*` - Pre-defined messages sent when buttons clicked
+- `status.*` - Connection states
+- `errors.*` - Error messages
+- `welcomeMessage` - Initial greeting
+
+### Phase 2 (Planned)
+Voice input/output using cheaper alternatives (Fish Audio or ChatterboxTTS).
+
 ## Key Integrations
+- **ElevenLabs Conversational AI**: AI chat in Hero section
+  - Agent ID: `agent_8501kesasj5fe8b8rm6nnxcvn4kb`
+  - Component: `components/chat/HeroChat.tsx`
+  - Same agent handles both website and WhatsApp
+  - Escalation flows to Google Chat (via bma_messenger_hub)
 - **Calendly**: Popup widget (not inline embed) - works on mobile/incognito
   - URL: `https://calendly.com/bmasia/sound-innovations`
   - Component: `components/sections/CalendlyEmbed.tsx`
@@ -355,6 +424,9 @@ Production environment variables are configured on Render dashboard.
 - **LinkedIn**: https://www.linkedin.com/post-inspector/
 
 ## Recent Changes
+
+### Jan 23, 2025
+- **Added AI Chat Interface (HeroChat)**: Prominent AI chat powered by ElevenLabs in Hero section. Features text input, quick action suggestions (Get pricing, Book a demo, Technical help), expandable message panel, and multilingual support. Uses same agent as WhatsApp (`agent_8501kesasj5fe8b8rm6nnxcvn4kb`). Components: `components/chat/` (HeroChat, ChatInput, ChatMessages, QuickActions). Translations added to all 8 language files.
 
 ### Jan 10, 2025
 - **Added Apollo.io website tracker**: Integrated Apollo.io visitor tracking script for lead identification. Script added to `app/[locale]/layout.tsx` with preconnect hint for faster loading.
