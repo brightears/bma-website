@@ -489,6 +489,8 @@
       "connectionFailed": "Tidak dapat menyambung. Sila cuba lagi.",
       "messageFailed": "Mesej tidak dapat dihantar. Sila cuba lagi."
     },
-    "welcomeMessage": "Hai! Saya pembantu BMAsia anda. Bagaimana saya boleh membantu anda hari ini?"
+    "welcomeMessage": "Hai! Saya pembantu BMAsia anda. Bagaimana saya boleh membantu anda hari ini?",
+    "welcomePrompt": "Hai! Saya boleh membantu anda dengan:",
+    "orAskAnything": "Atau tanya apa sahaja!"
   }
 }

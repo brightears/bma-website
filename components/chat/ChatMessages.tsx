@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { X, Minus, Bot, User } from 'lucide-react';
+import { QuickActions } from './QuickActions';
 
 export interface ChatMessage {
   id: string;
@@ -17,6 +18,7 @@ interface ChatMessagesProps {
   onClose: () => void;
   onMinimize: () => void;
   isTyping?: boolean;
+  onQuickAction?: (message: string) => void;
 }
 
 /**
@@ -30,6 +32,7 @@ export function ChatMessages({
   onClose,
   onMinimize,
   isTyping = false,
+  onQuickAction,
 }: ChatMessagesProps) {
   const t = useTranslations('chat');
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -87,6 +90,28 @@ export function ChatMessages({
         aria-label="Chat messages"
       >
         <AnimatePresence mode="popLayout">
+          {/* Welcome state with quick actions */}
+          {messages.length === 0 && !isTyping && onQuickAction && (
+            <motion.div
+              key="welcome"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+              className="text-center py-2"
+            >
+              <div className="flex items-start gap-2 mb-4">
+                <div className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center bg-white/10 text-gray-400">
+                  <Bot className="w-4 h-4" aria-hidden="true" />
+                </div>
+                <div className="bg-white/10 px-3 py-2 rounded-lg text-sm text-gray-200 text-left">
+                  {t('welcomePrompt')}
+                </div>
+              </div>
+              <QuickActions onSelect={onQuickAction} disabled={false} />
+              <p className="text-sm text-gray-400 mt-3">{t('orAskAnything')}</p>
+            </motion.div>
+          )}
+
           {messages.map((message) => (
             <motion.div
               key={message.id}

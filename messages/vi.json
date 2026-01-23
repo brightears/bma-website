@@ -489,6 +489,8 @@
       "connectionFailed": "Không thể kết nối. Vui lòng thử lại.",
       "messageFailed": "Không thể gửi tin nhắn. Vui lòng thử lại."
     },
-    "welcomeMessage": "Xin chào! Tôi là trợ lý BMAsia của bạn. Hôm nay tôi có thể giúp gì cho bạn?"
+    "welcomeMessage": "Xin chào! Tôi là trợ lý BMAsia của bạn. Hôm nay tôi có thể giúp gì cho bạn?",
+    "welcomePrompt": "Xin chào! Tôi có thể giúp bạn về:",
+    "orAskAnything": "Hoặc hỏi bất cứ điều gì!"
   }
 }

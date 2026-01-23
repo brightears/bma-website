@@ -9,6 +9,7 @@ interface ChatInputProps {
   placeholder: string;
   isLoading?: boolean;
   disabled?: boolean;
+  onFocus?: () => void;
 }
 
 /**
@@ -22,6 +23,7 @@ export function ChatInput({
   placeholder,
   isLoading = false,
   disabled = false,
+  onFocus,
 }: ChatInputProps) {
   const [message, setMessage] = useState('');
 
@@ -58,6 +60,7 @@ export function ChatInput({
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         onKeyDown={handleKeyDown}
+        onFocus={onFocus}
         placeholder={placeholder}
         disabled={disabled}
         className="flex-1 bg-transparent border-none text-white placeholder-gray-400

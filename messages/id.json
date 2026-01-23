@@ -489,6 +489,8 @@
       "connectionFailed": "Tidak dapat terhubung. Silakan coba lagi.",
       "messageFailed": "Pesan tidak dapat dikirim. Silakan coba lagi."
     },
-    "welcomeMessage": "Halo! Saya asisten BMAsia Anda. Ada yang bisa saya bantu hari ini?"
+    "welcomeMessage": "Halo! Saya asisten BMAsia Anda. Ada yang bisa saya bantu hari ini?",
+    "welcomePrompt": "Hai! Saya bisa membantu Anda dengan:",
+    "orAskAnything": "Atau tanyakan apa saja!"
   }
 }

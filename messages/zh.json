@@ -489,6 +489,8 @@
       "connectionFailed": "无法连接，请重试。",
       "messageFailed": "消息发送失败，请重试。"
     },
-    "welcomeMessage": "您好！我是您的 BMAsia 助手。今天有什么可以帮助您的吗？"
+    "welcomeMessage": "您好！我是您的 BMAsia 助手。今天有什么可以帮助您的吗？",
+    "welcomePrompt": "您好！我可以帮助您：",
+    "orAskAnything": "或者随便问我任何问题！"
   }
 }

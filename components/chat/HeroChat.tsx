@@ -7,7 +7,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { AlertCircle } from 'lucide-react';
 import { ChatInput } from './ChatInput';
 import { ChatMessages, type ChatMessage } from './ChatMessages';
-import { QuickActions } from './QuickActions';
 import { ELEVENLABS } from '@/lib/constants';
 
 /**
@@ -149,6 +148,11 @@ export function HeroChat() {
     setIsExpanded(false);
   }, []);
 
+  // Handle input focus - expand panel to show welcome/quick actions
+  const handleFocus = useCallback(() => {
+    setIsExpanded(true);
+  }, []);
+
   const isConnecting = conversation.status === 'connecting';
 
   return (
@@ -178,12 +182,13 @@ export function HeroChat() {
 
         {/* Expandable message panel */}
         <AnimatePresence>
-          {isExpanded && messages.length > 0 && (
+          {isExpanded && (
             <ChatMessages
               messages={messages}
               onClose={handleClose}
               onMinimize={handleMinimize}
               isTyping={isTyping}
+              onQuickAction={sendMessage}
             />
           )}
         </AnimatePresence>
@@ -194,11 +199,9 @@ export function HeroChat() {
           placeholder={isConnecting ? t('status.connecting') : t('placeholder')}
           isLoading={isConnecting}
           disabled={false}
+          onFocus={handleFocus}
         />
       </div>
-
-      {/* Quick actions */}
-      <QuickActions onSelect={sendMessage} disabled={isConnecting} />
     </motion.div>
   );
 }
