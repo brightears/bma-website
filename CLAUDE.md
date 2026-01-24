@@ -333,7 +333,7 @@ Prominent AI chat interface in the Hero section, powered by ElevenLabs Conversat
 | `HeroChat.tsx` | Main container with ElevenLabs integration |
 | `ChatInput.tsx` | Text input with send button |
 | `ChatMessages.tsx` | Expandable conversation panel |
-| `QuickActions.tsx` | Suggestion buttons (pricing, demo, technical) |
+| `QuickActions.tsx` | Suggestion buttons (compare, licensing, technical) |
 | `index.ts` | Barrel export |
 
 ### ElevenLabs Integration
@@ -365,7 +365,7 @@ Prominent AI chat interface in the Hero section, powered by ElevenLabs Conversat
 │  BMAsia AI Assistant                        ─ ✕  │
 ├───────────────────────────────────────────────────┤
 │  Hi! I can help you with:                        │
-│  [ Get pricing ] [ Book a demo ] [ Technical ]   │
+│  [ Compare solutions ] [ How licensing works ] [ Technical help ]
 │  Or ask me anything!                             │
 ├───────────────────────────────────────────────────┤
 │  Type your message...                         ➤  │
@@ -435,6 +435,9 @@ Voice input/output using cheaper alternatives (Fish Audio or ChatterboxTTS).
 - **LinkedIn**: https://www.linkedin.com/post-inspector/
 
 ## Recent Changes
+
+### Jan 24, 2025
+- **Replaced redundant quick action topics**: Changed "Get pricing" → "Compare solutions" (Layers icon) and "Book a demo" → "How licensing works" (FileText icon). These educational topics complement rather than duplicate the main CTA buttons ("Get a Quote" / "Book Free Demo"). Updated all 8 translation files.
 
 ### Jan 23, 2025
 - **Added AI Chat Interface (HeroChat)**: Prominent AI chat powered by ElevenLabs in Hero section. Features text input, expandable message panel, and multilingual support. Uses same agent as WhatsApp (`agent_8501kesasj5fe8b8rm6nnxcvn4kb`). Components: `components/chat/` (HeroChat, ChatInput, ChatMessages, QuickActions). Translations added to all 8 language files.
