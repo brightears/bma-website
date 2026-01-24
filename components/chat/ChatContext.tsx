@@ -30,6 +30,16 @@ const ESCALATION_TRIGGERS = [
   'team member',
 ];
 
+// Patterns to detect when AI confirms email was captured (progressive profiling)
+// These match AI responses like "Got it! I've noted john@example.com"
+const LEAD_CAPTURE_PATTERNS = [
+  /i've noted\s+(\S+@\S+\.\S+)/i,
+  /i have\s+(\S+@\S+\.\S+)/i,
+  /got it.*?(\S+@\S+\.\S+)/i,
+  /noted.*?(\S+@\S+\.\S+)/i,
+  /i'll send.*?to\s+(\S+@\S+\.\S+)/i,
+];
+
 interface ChatContextType {
   messages: ChatMessage[];
   isOpen: boolean;
@@ -78,6 +88,9 @@ export function ChatProvider({ children }: ChatProviderProps) {
   // Track if escalation has already been triggered this session
   const escalationTriggeredRef = useRef(false);
 
+  // Track if lead has been captured this session (to avoid duplicate notifications)
+  const leadCapturedRef = useRef(false);
+
   // ElevenLabs conversation hook
   const conversation = useConversation({
     textOnly: true,
@@ -114,6 +127,39 @@ export function ChatProvider({ children }: ChatProviderProps) {
           if (isEscalation) {
             escalationTriggeredRef.current = true;
             setShowEscalationModal(true);
+          }
+        }
+
+        // Check if this message indicates lead capture (email collected)
+        // Only capture if not already captured and not escalated
+        if (!leadCapturedRef.current && !escalationTriggeredRef.current) {
+          for (const pattern of LEAD_CAPTURE_PATTERNS) {
+            const match = message.message.match(pattern);
+            if (match && match[1]) {
+              const capturedEmail = match[1];
+              leadCapturedRef.current = true;
+
+              // Build conversation summary for context
+              const conversationSummary = messages
+                .slice(-6) // Last 6 messages for context
+                .map((msg) => `${msg.role === 'user' ? 'Customer' : 'Agent'}: ${msg.text}`)
+                .join('\n');
+
+              // Send lead capture notification (fire and forget)
+              fetch('/api/chat-lead-capture', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  email: capturedEmail,
+                  conversationSummary,
+                  locale,
+                }),
+              }).catch((err) => {
+                console.error('Lead capture notification failed:', err);
+              });
+
+              break; // Only capture first email match
+            }
           }
         }
       }
