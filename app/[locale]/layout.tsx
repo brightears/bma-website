@@ -8,6 +8,7 @@ import { SITE } from '@/lib/constants';
 import { locales, type Locale } from '@/lib/i18n-config';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { ChatProvider, ChatPanel } from '@/components/chat';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -213,14 +214,18 @@ export default async function LocaleLayout({
         </a>
 
         <NextIntlClientProvider messages={messages}>
-          {/* Main content */}
-          <div className="min-h-screen flex flex-col bg-brand-dark">
-            <Header />
-            <main id="main" className="flex-1">
-              {children}
-            </main>
-            <Footer />
-          </div>
+          <ChatProvider>
+            {/* Main content */}
+            <div className="min-h-screen flex flex-col bg-brand-dark">
+              <Header />
+              <main id="main" className="flex-1">
+                {children}
+              </main>
+              <Footer />
+            </div>
+            {/* Chat Panel (slides in from right) */}
+            <ChatPanel />
+          </ChatProvider>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -1,5 +1,7 @@
 // Chat Components
 export { ChatInput } from './ChatInput';
-export { ChatMessages, type ChatMessage } from './ChatMessages';
+export { ChatMessages } from './ChatMessages';
 export { QuickActions } from './QuickActions';
 export { HeroChat } from './HeroChat';
+export { ChatPanel } from './ChatPanel';
+export { ChatProvider, useChatContext, type ChatMessage } from './ChatContext';
