@@ -491,6 +491,23 @@
     },
     "welcomeMessage": "안녕하세요! BMAsia 어시스턴트입니다. 무엇을 도와드릴까요?",
     "welcomePrompt": "안녕하세요! 다음과 관련하여 도움을 드릴 수 있습니다:",
-    "orAskAnything": "또는 무엇이든 물어보세요!"
+    "orAskAnything": "또는 무엇이든 물어보세요!",
+    "escalation": {
+      "title": "팀에 연결하기",
+      "subtitle": "영업일 기준 2시간 이내에 이메일로 연락드리겠습니다",
+      "nameLabel": "이름",
+      "namePlaceholder": "이름을 입력하세요",
+      "companyLabel": "회사",
+      "companyPlaceholder": "회사명을 입력하세요",
+      "emailLabel": "이메일",
+      "emailPlaceholder": "your@email.com",
+      "emailRequired": "이메일은 필수입니다",
+      "emailInvalid": "유효한 이메일을 입력해주세요",
+      "cancel": "취소",
+      "submit": "팀에 연결",
+      "submitting": "연결 중...",
+      "success": "영업일 기준 2시간 이내에 {email}로 연락드리겠습니다. 그 동안 다른 도움이 필요하신가요?",
+      "error": "문제가 발생했습니다. 다시 시도해주세요."
+    }
   }
 }

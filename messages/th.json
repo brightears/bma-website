@@ -491,6 +491,23 @@
     },
     "welcomeMessage": "สวัสดี! ฉันคือผู้ช่วย BMAsia ของคุณ วันนี้ให้ช่วยอะไรได้บ้างคะ?",
     "welcomePrompt": "สวัสดี! ฉันช่วยคุณได้เรื่อง:",
-    "orAskAnything": "หรือถามอะไรก็ได้!"
+    "orAskAnything": "หรือถามอะไรก็ได้!",
+    "escalation": {
+      "title": "ติดต่อทีมงานของเรา",
+      "subtitle": "เราจะติดต่อกลับทางอีเมลภายใน 2 ชั่วโมงทำการ",
+      "nameLabel": "ชื่อ",
+      "namePlaceholder": "ชื่อของคุณ",
+      "companyLabel": "บริษัท",
+      "companyPlaceholder": "บริษัทของคุณ",
+      "emailLabel": "อีเมล",
+      "emailPlaceholder": "your@email.com",
+      "emailRequired": "กรุณากรอกอีเมล",
+      "emailInvalid": "กรุณากรอกอีเมลที่ถูกต้อง",
+      "cancel": "ยกเลิก",
+      "submit": "ติดต่อทีมงาน",
+      "submitting": "กำลังเชื่อมต่อ...",
+      "success": "ทีมงานของเราจะติดต่อกลับที่ {email} ภายใน 2 ชั่วโมงทำการ มีอะไรให้ช่วยเพิ่มเติมไหมครับ?",
+      "error": "เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง"
+    }
   }
 }

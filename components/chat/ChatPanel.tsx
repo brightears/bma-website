@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import { X, Headphones, User, Send, Loader2 } from 'lucide-react';
 import { useChatContext } from './ChatContext';
 import { QuickActions } from './QuickActions';
+import { EscalationModal } from './EscalationModal';
 
 /**
  * ChatPanel Component
@@ -15,7 +16,19 @@ import { QuickActions } from './QuickActions';
  */
 export function ChatPanel() {
   const t = useTranslations('chat');
-  const { messages, isOpen, isTyping, error, isConnecting, closePanel, sendMessage } = useChatContext();
+  const {
+    messages,
+    isOpen,
+    isTyping,
+    error,
+    isConnecting,
+    showEscalationModal,
+    isSubmittingEscalation,
+    closePanel,
+    sendMessage,
+    setShowEscalationModal,
+    submitEscalation,
+  } = useChatContext();
   const scrollRef = useRef<HTMLDivElement>(null);
   const [inputValue, setInputValue] = useState('');
 
@@ -54,6 +67,7 @@ export function ChatPanel() {
   const canSend = inputValue.trim().length > 0 && !isConnecting;
 
   return (
+    <>
     <AnimatePresence>
       {isOpen && (
         <>
@@ -241,6 +255,15 @@ export function ChatPanel() {
         </>
       )}
     </AnimatePresence>
+
+      {/* Escalation Modal */}
+      <EscalationModal
+        isOpen={showEscalationModal}
+        onClose={() => setShowEscalationModal(false)}
+        onSubmit={submitEscalation}
+        isSubmitting={isSubmittingEscalation}
+      />
+    </>
   );
 }
 

@@ -491,6 +491,23 @@
     },
     "welcomeMessage": "Hai! Saya pembantu BMAsia anda. Bagaimana saya boleh membantu anda hari ini?",
     "welcomePrompt": "Hai! Saya boleh membantu anda dengan:",
-    "orAskAnything": "Atau tanya apa sahaja!"
+    "orAskAnything": "Atau tanya apa sahaja!",
+    "escalation": {
+      "title": "Hubungi Pasukan Kami",
+      "subtitle": "Kami akan memberi maklum balas melalui emel dalam masa 2 jam bekerja",
+      "nameLabel": "Nama",
+      "namePlaceholder": "Nama anda",
+      "companyLabel": "Syarikat",
+      "companyPlaceholder": "Syarikat anda",
+      "emailLabel": "Emel",
+      "emailPlaceholder": "your@email.com",
+      "emailRequired": "Emel diperlukan",
+      "emailInvalid": "Sila masukkan emel yang sah",
+      "cancel": "Batal",
+      "submit": "Hubungi Pasukan",
+      "submitting": "Menyambung...",
+      "success": "Pasukan kami akan menghubungi anda di {email} dalam masa 2 jam bekerja. Ada apa-apa lagi yang boleh saya bantu?",
+      "error": "Sesuatu telah berlaku. Sila cuba lagi."
+    }
   }
 }

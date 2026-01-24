@@ -491,6 +491,23 @@
     },
     "welcomeMessage": "Hello! I'm your BMAsia assistant. How can I help you today?",
     "welcomePrompt": "Hi! I can help you with:",
-    "orAskAnything": "Or ask me anything!"
+    "orAskAnything": "Or ask me anything!",
+    "escalation": {
+      "title": "Connect with Our Team",
+      "subtitle": "We'll follow up via email within 2 business hours",
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "companyLabel": "Company",
+      "companyPlaceholder": "Your company",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email",
+      "cancel": "Cancel",
+      "submit": "Connect with Team",
+      "submitting": "Connecting...",
+      "success": "Our team will follow up at {email} within 2 business hours. Is there anything else I can help clarify in the meantime?",
+      "error": "Something went wrong. Please try again."
+    }
   }
 }

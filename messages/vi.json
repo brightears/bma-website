@@ -491,6 +491,23 @@
     },
     "welcomeMessage": "Xin chào! Tôi là trợ lý BMAsia của bạn. Hôm nay tôi có thể giúp gì cho bạn?",
     "welcomePrompt": "Xin chào! Tôi có thể giúp bạn về:",
-    "orAskAnything": "Hoặc hỏi bất cứ điều gì!"
+    "orAskAnything": "Hoặc hỏi bất cứ điều gì!",
+    "escalation": {
+      "title": "Kết nối với Đội ngũ của chúng tôi",
+      "subtitle": "Chúng tôi sẽ phản hồi qua email trong vòng 2 giờ làm việc",
+      "nameLabel": "Tên",
+      "namePlaceholder": "Tên của bạn",
+      "companyLabel": "Công ty",
+      "companyPlaceholder": "Công ty của bạn",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "emailRequired": "Email là bắt buộc",
+      "emailInvalid": "Vui lòng nhập email hợp lệ",
+      "cancel": "Hủy",
+      "submit": "Kết nối với Đội ngũ",
+      "submitting": "Đang kết nối...",
+      "success": "Đội ngũ của chúng tôi sẽ liên hệ với bạn tại {email} trong vòng 2 giờ làm việc. Bạn có cần hỗ trợ thêm gì không?",
+      "error": "Đã xảy ra lỗi. Vui lòng thử lại."
+    }
   }
 }

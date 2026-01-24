@@ -12,15 +12,37 @@ export interface ChatMessage {
   timestamp: Date;
 }
 
+export interface EscalationData {
+  name: string;
+  company: string;
+  email: string;
+}
+
+// Phrases that trigger the escalation modal
+const ESCALATION_TRIGGERS = [
+  'connect you with',
+  'speak with a human',
+  'speak to someone',
+  'one of our specialists',
+  'escalate',
+  'human agent',
+  'specialist who can help',
+  'team member',
+];
+
 interface ChatContextType {
   messages: ChatMessage[];
   isOpen: boolean;
   isTyping: boolean;
   error: string | null;
   isConnecting: boolean;
+  showEscalationModal: boolean;
+  isSubmittingEscalation: boolean;
   openPanel: () => void;
   closePanel: () => void;
   sendMessage: (text: string) => Promise<void>;
+  setShowEscalationModal: (show: boolean) => void;
+  submitEscalation: (data: EscalationData) => Promise<void>;
 }
 
 const ChatContext = createContext<ChatContextType | null>(null);
@@ -47,9 +69,14 @@ export function ChatProvider({ children }: ChatProviderProps) {
   const [hasStarted, setHasStarted] = useState(false);
   const [isTyping, setIsTyping] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [showEscalationModal, setShowEscalationModal] = useState(false);
+  const [isSubmittingEscalation, setIsSubmittingEscalation] = useState(false);
 
   // Track session to prevent multiple startSession calls
   const sessionStartingRef = useRef(false);
+
+  // Track if escalation has already been triggered this session
+  const escalationTriggeredRef = useRef(false);
 
   // ElevenLabs conversation hook
   const conversation = useConversation({
@@ -77,6 +104,18 @@ export function ChatProvider({ children }: ChatProviderProps) {
           timestamp: new Date(),
         };
         setMessages((prev) => [...prev, newMessage]);
+
+        // Check if this message triggers escalation
+        if (!escalationTriggeredRef.current) {
+          const lowerMessage = message.message.toLowerCase();
+          const isEscalation = ESCALATION_TRIGGERS.some(trigger =>
+            lowerMessage.includes(trigger)
+          );
+          if (isEscalation) {
+            escalationTriggeredRef.current = true;
+            setShowEscalationModal(true);
+          }
+        }
       }
     },
     onError: (err) => {
@@ -117,6 +156,56 @@ export function ChatProvider({ children }: ChatProviderProps) {
     setIsOpen(false);
     // Don't end session - keep conversation for if they reopen
   }, []);
+
+  // Submit escalation with email to backend
+  const submitEscalation = useCallback(
+    async (data: EscalationData) => {
+      setIsSubmittingEscalation(true);
+      setError(null);
+
+      try {
+        // Format conversation history for escalation
+        const conversationHistory = messages
+          .map((msg) => `${msg.role === 'user' ? 'Customer' : 'Agent'}: ${msg.text}`)
+          .join('\n');
+
+        // Send to our API route which forwards to bma_messenger_hub
+        const response = await fetch('/api/chat-escalation', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email: data.email,
+            name: data.name || undefined,
+            company: data.company || undefined,
+            conversationHistory,
+            locale,
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to submit escalation');
+        }
+
+        // Close modal
+        setShowEscalationModal(false);
+
+        // Add confirmation message to chat
+        const confirmationMessage: ChatMessage = {
+          id: `agent-confirm-${Date.now()}`,
+          role: 'agent',
+          text: t('escalation.success', { email: data.email }),
+          timestamp: new Date(),
+        };
+        setMessages((prev) => [...prev, confirmationMessage]);
+      } catch (err) {
+        console.error('Escalation error:', err);
+        setError(t('escalation.error'));
+      } finally {
+        setIsSubmittingEscalation(false);
+      }
+    },
+    [messages, locale, t]
+  );
 
   // Send a message
   const sendMessage = useCallback(
@@ -163,9 +252,13 @@ export function ChatProvider({ children }: ChatProviderProps) {
         isTyping,
         error,
         isConnecting,
+        showEscalationModal,
+        isSubmittingEscalation,
         openPanel,
         closePanel,
         sendMessage,
+        setShowEscalationModal,
+        submitEscalation,
       }}
     >
       {children}
