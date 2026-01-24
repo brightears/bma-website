@@ -470,13 +470,13 @@
     "close": "閉じる",
     "expand": "会話を表示",
     "quickActions": {
-      "pricing": "価格を見る",
-      "demo": "デモを予約",
+      "compare": "ソリューションを比較",
+      "licensing": "音楽ライセンスについて",
       "technical": "技術サポート"
     },
     "quickActionMessages": {
-      "pricing": "価格オプションについて知りたいです。",
-      "demo": "無料デモを予約したいです。",
+      "compare": "Soundtrack Your BrandとBeat Breezeの違いを教えていただけますか？",
+      "licensing": "ビジネス向けの音楽ライセンスはどのように機能しますか？",
       "technical": "現在の設定について技術サポートが必要です。"
     },
     "status": {

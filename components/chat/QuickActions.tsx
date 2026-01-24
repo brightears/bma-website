@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { DollarSign, Calendar, Wrench } from 'lucide-react';
+import { Layers, FileText, Wrench } from 'lucide-react';
 
 interface QuickActionsProps {
   onSelect: (message: string) => void;
@@ -20,16 +20,16 @@ export function QuickActions({ onSelect, disabled = false }: QuickActionsProps) 
 
   const actions = [
     {
-      id: 'pricing',
-      label: t('quickActions.pricing'),
-      message: t('quickActionMessages.pricing'),
-      icon: DollarSign,
+      id: 'compare',
+      label: t('quickActions.compare'),
+      message: t('quickActionMessages.compare'),
+      icon: Layers,
     },
     {
-      id: 'demo',
-      label: t('quickActions.demo'),
-      message: t('quickActionMessages.demo'),
-      icon: Calendar,
+      id: 'licensing',
+      label: t('quickActions.licensing'),
+      message: t('quickActionMessages.licensing'),
+      icon: FileText,
     },
     {
       id: 'technical',

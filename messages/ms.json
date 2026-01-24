@@ -470,13 +470,13 @@
     "close": "Tutup",
     "expand": "Lihat perbualan",
     "quickActions": {
-      "pricing": "Lihat harga",
-      "demo": "Tempah demo",
+      "compare": "Bandingkan penyelesaian",
+      "licensing": "Cara pelesenan muzik",
       "technical": "Bantuan teknikal"
     },
     "quickActionMessages": {
-      "pricing": "Saya ingin mengetahui tentang pilihan harga anda.",
-      "demo": "Saya ingin menempah demo percuma.",
+      "compare": "Bolehkah anda membantu saya memahami perbezaan antara Soundtrack Your Brand dan Beat Breeze?",
+      "licensing": "Bagaimana pelesenan muzik untuk perniagaan berfungsi?",
       "technical": "Saya memerlukan bantuan teknikal untuk persediaan saya."
     },
     "status": {

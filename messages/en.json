@@ -470,13 +470,13 @@
     "close": "Close",
     "expand": "View conversation",
     "quickActions": {
-      "pricing": "Get pricing",
-      "demo": "Book a demo",
+      "compare": "Compare solutions",
+      "licensing": "How licensing works",
       "technical": "Technical help"
     },
     "quickActionMessages": {
-      "pricing": "I would like to know about your pricing options.",
-      "demo": "I would like to book a free demo.",
+      "compare": "Can you help me understand the difference between Soundtrack Your Brand and Beat Breeze?",
+      "licensing": "How does music licensing work for businesses?",
       "technical": "I need technical support for my existing setup."
     },
     "status": {

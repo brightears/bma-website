@@ -470,13 +470,13 @@
     "close": "关闭",
     "expand": "查看对话",
     "quickActions": {
-      "pricing": "查看价格",
-      "demo": "预约演示",
+      "compare": "比较解决方案",
+      "licensing": "音乐授权说明",
       "technical": "技术支持"
     },
     "quickActionMessages": {
-      "pricing": "我想了解您的价格选项。",
-      "demo": "我想预约一个免费演示。",
+      "compare": "您能帮我了解 Soundtrack Your Brand 和 Beat Breeze 之间的区别吗？",
+      "licensing": "企业音乐授权是如何运作的？",
       "technical": "我需要针对现有设置的技术支持。"
     },
     "status": {

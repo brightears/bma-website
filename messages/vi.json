@@ -470,13 +470,13 @@
     "close": "Đóng",
     "expand": "Xem cuộc trò chuyện",
     "quickActions": {
-      "pricing": "Xem giá",
-      "demo": "Đặt demo",
+      "compare": "So sánh giải pháp",
+      "licensing": "Cách cấp phép âm nhạc",
       "technical": "Hỗ trợ kỹ thuật"
     },
     "quickActionMessages": {
-      "pricing": "Tôi muốn biết về các tùy chọn giá của bạn.",
-      "demo": "Tôi muốn đặt một buổi demo miễn phí.",
+      "compare": "Bạn có thể giúp tôi hiểu sự khác biệt giữa Soundtrack Your Brand và Beat Breeze không?",
+      "licensing": "Cấp phép âm nhạc cho doanh nghiệp hoạt động như thế nào?",
       "technical": "Tôi cần hỗ trợ kỹ thuật cho thiết lập hiện tại của tôi."
     },
     "status": {
