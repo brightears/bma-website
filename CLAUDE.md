@@ -350,6 +350,8 @@ Prominent AI chat interface in the Hero section, powered by ElevenLabs Conversat
 - Welcome message with quick actions on first focus
 - Locale passed to agent for multilingual support
 - Error handling with retry capability
+- **Lead capture**: Detects when AI collects customer email during conversation (progressive profiling) and sends notification to `bma_messenger_hub`
+- **Escalation modal**: When AI triggers escalation, modal collects customer contact info for human follow-up
 
 ### UI States
 **Collapsed (Default)** - Clean hero with only chat input:
@@ -437,6 +439,9 @@ Voice input/output using cheaper alternatives (Fish Audio or ChatterboxTTS).
 ## Recent Changes
 
 ### Jan 24, 2025
+- **Added progressive profiling / lead capture**: Website chat now detects when AI collects customer email (e.g., "Got it, I've noted john@example.com") and sends lead notification to `bma_messenger_hub`. Patterns handle curly/straight apostrophes. Files: `ChatContext.tsx`, `app/api/chat-lead-capture/route.ts`.
+- **Added WhatsApp escalation acknowledgment**: When WhatsApp customer is escalated, they immediately receive a message setting time expectations (different for business hours vs after hours). Prevents customers waiting in silence. File: `bma_messenger_hub/src/index-simple.js`.
+- **ElevenLabs agent prompt v2.9**: Multiple fixes - clearer pricing table, "soundtrack" recognition, one-question rule with forbidden patterns, fixed double escalation message.
 - **Replaced redundant quick action topics**: Changed "Get pricing" → "Compare solutions" (Layers icon) and "Book a demo" → "How licensing works" (FileText icon). These educational topics complement rather than duplicate the main CTA buttons ("Get a Quote" / "Book Free Demo"). Updated all 8 translation files.
 
 ### Jan 23, 2025
