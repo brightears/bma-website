@@ -33,12 +33,13 @@ const ESCALATION_TRIGGERS = [
 // Patterns to detect when AI confirms email was captured (progressive profiling)
 // These match AI responses like "Got it! I've noted john@example.com"
 // Note: ['''] handles both straight and curly apostrophes
+// Email pattern: letters/numbers/dots/hyphens @ domain - no trailing punctuation
+const EMAIL_PATTERN = '([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})';
 const LEAD_CAPTURE_PATTERNS = [
-  /i[''']ve noted\s+(\S+@\S+\.\S+)/i,
-  /i have\s+(\S+@\S+\.\S+)/i,
-  /got it[,.]?\s*i[''']ve noted\s+(\S+@\S+\.\S+)/i,
-  /noted\s+(\S+@\S+\.\S+)/i,
-  /i[''']ll send.*?to\s+(\S+@\S+\.\S+)/i,
+  new RegExp(`i[''']ve noted\\s+${EMAIL_PATTERN}`, 'i'),
+  new RegExp(`i have\\s+${EMAIL_PATTERN}`, 'i'),
+  new RegExp(`noted\\s+${EMAIL_PATTERN}`, 'i'),
+  new RegExp(`got it.*?${EMAIL_PATTERN}`, 'i'),
 ];
 
 interface ChatContextType {
