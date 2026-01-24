@@ -68,14 +68,13 @@ export function EscalationModal({ isOpen, onClose, onSubmit, isSubmitting }: Esc
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* Backdrop */}
+          {/* Backdrop - does NOT close on click (important form) */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
             className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60]"
-            onClick={isSubmitting ? undefined : onClose}
           />
 
           {/* Modal */}
