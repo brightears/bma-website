@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { X, Minus, Bot, User } from 'lucide-react';
+import { X, Minus, Headphones, User } from 'lucide-react';
 import { QuickActions } from './QuickActions';
 
 export interface ChatMessage {
@@ -55,7 +55,7 @@ export function ChatMessages({
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-white/10 bg-white/5">
         <div className="flex items-center gap-2">
-          <Bot className="w-5 h-5 text-brand-orange" aria-hidden="true" />
+          <Headphones className="w-5 h-5 text-brand-orange" aria-hidden="true" />
           <span className="text-white font-medium text-sm">
             {t('assistantName')}
           </span>
@@ -101,7 +101,7 @@ export function ChatMessages({
             >
               <div className="flex items-start gap-2 mb-4">
                 <div className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center bg-white/10 text-gray-400">
-                  <Bot className="w-4 h-4" aria-hidden="true" />
+                  <Headphones className="w-4 h-4" aria-hidden="true" />
                 </div>
                 <div className="bg-white/10 px-3 py-2 rounded-lg text-sm text-gray-200 text-left">
                   {t('welcomePrompt')}
@@ -134,7 +134,7 @@ export function ChatMessages({
                 {message.role === 'user' ? (
                   <User className="w-4 h-4" aria-hidden="true" />
                 ) : (
-                  <Bot className="w-4 h-4" aria-hidden="true" />
+                  <Headphones className="w-4 h-4" aria-hidden="true" />
                 )}
               </div>
 
@@ -143,7 +143,7 @@ export function ChatMessages({
                 className={`max-w-[80%] px-3 py-2 rounded-lg text-sm ${
                   message.role === 'user'
                     ? 'bg-brand-orange/20 text-white'
-                    : 'bg-white/10 text-gray-200'
+                    : 'bg-white/10 text-gray-200 text-left'
                 }`}
               >
                 {message.text}
@@ -160,7 +160,7 @@ export function ChatMessages({
               className="flex items-start gap-2"
             >
               <div className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center bg-white/10 text-gray-400">
-                <Bot className="w-4 h-4" aria-hidden="true" />
+                <Headphones className="w-4 h-4" aria-hidden="true" />
               </div>
               <div className="bg-white/10 px-3 py-2 rounded-lg">
                 <div className="flex gap-1">
