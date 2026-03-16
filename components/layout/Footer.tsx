@@ -53,6 +53,7 @@ export const Footer: React.FC = () => {
     { href: `/${locale}`, label: tNav('home') },
     { href: `/${locale}/how-it-works`, label: tNav('howItWorks') },
     { href: `/${locale}/licensing`, label: tNav('licensing') },
+    { href: 'https://bmasia-music-brief-v2.onrender.com', label: tNav('musicDesign'), external: true },
     { href: `/${locale}/quotation`, label: tNav('getQuote') },
   ];
 
@@ -108,7 +109,7 @@ export const Footer: React.FC = () => {
               <ul className="space-y-3">
                 {navLinks.map((link) => (
                   <li key={link.href}>
-                    <FooterLink href={link.href} label={link.label} />
+                    <FooterLink href={link.href} label={link.label} external={link.external} />
                   </li>
                 ))}
               </ul>
@@ -177,14 +178,13 @@ export const Footer: React.FC = () => {
 interface FooterLinkProps {
   href: string;
   label: string;
+  external?: boolean;
 }
 
-const FooterLink: React.FC<FooterLinkProps> = ({ href, label }) => {
-  return (
-    <Link
-      href={href}
-      className="group inline-flex items-center text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark rounded"
-    >
+const FooterLink: React.FC<FooterLinkProps> = ({ href, label, external }) => {
+  const className = "group inline-flex items-center text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark rounded";
+  const content = (
+    <>
       <motion.span
         className="inline-block"
         whileHover={{ x: 4 }}
@@ -199,6 +199,20 @@ const FooterLink: React.FC<FooterLinkProps> = ({ href, label }) => {
       >
         <ArrowIcon className="w-4 h-4" />
       </motion.span>
+    </>
+  );
+
+  if (external) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <Link href={href} className={className}>
+      {content}
     </Link>
   );
 };

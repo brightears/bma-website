@@ -30,6 +30,7 @@ export const URLS = {
   calendly: process.env.NEXT_PUBLIC_CALENDLY_URL || 'https://calendly.com/bmasia/sound-innovations',
   formspreeInquiry: process.env.NEXT_PUBLIC_FORMSPREE_INQUIRY_ID || '',
   formspreeQuotation: process.env.NEXT_PUBLIC_FORMSPREE_QUOTATION_ID || '',
+  musicDesign: 'https://bmasia-music-brief-v2.onrender.com',
 } as const;
 
 // Navigation Links
@@ -37,6 +38,7 @@ export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/how-it-works', label: 'How It Works' },
   { href: '/licensing', label: 'Licensing' },
+  { href: 'https://bmasia-music-brief-v2.onrender.com', label: 'Music Design', external: true },
   { href: '/quotation', label: 'Get a Quote' },
 ] as const;
 

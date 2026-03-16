@@ -20,6 +20,7 @@ import { LanguageSwitcher } from './LanguageSwitcher';
 interface NavLinkItem {
   href: string;
   label: string;
+  external?: boolean;
 }
 
 // Animation variants for the mobile menu
@@ -166,8 +167,9 @@ export const Header: React.FC = () => {
             {NAV_LINKS.map((link: NavLinkItem) => (
               <NavLink
                 key={link.href}
-                href={`/${locale}${link.href === '/' ? '' : link.href}`}
+                href={link.external ? link.href : `/${locale}${link.href === '/' ? '' : link.href}`}
                 label={link.label}
+                external={link.external}
               />
             ))}
             <LanguageSwitcher />
@@ -230,9 +232,10 @@ export const Header: React.FC = () => {
                         animate="open"
                       >
                         <MobileNavLink
-                          href={`/${locale}${link.href === '/' ? '' : link.href}`}
+                          href={link.external ? link.href : `/${locale}${link.href === '/' ? '' : link.href}`}
                           label={link.label}
                           onClick={closeMenu}
+                          external={link.external}
                         />
                       </motion.li>
                     ))}
@@ -284,14 +287,28 @@ export const Header: React.FC = () => {
 interface NavLinkProps {
   href: string;
   label: string;
+  external?: boolean;
 }
 
-const NavLink: React.FC<NavLinkProps> = ({ href, label }) => {
+const NavLink: React.FC<NavLinkProps> = ({ href, label, external }) => {
+  const className = "relative px-4 py-2 text-white/90 hover:text-white font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark rounded-lg group";
+
+  if (external) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+        <span>{label}</span>
+        <motion.span
+          className="absolute bottom-0 left-4 right-4 h-0.5 bg-brand-orange origin-left"
+          initial={{ scaleX: 0 }}
+          whileHover={{ scaleX: 1 }}
+          transition={{ duration: 0.2, ease: 'easeOut' }}
+        />
+      </a>
+    );
+  }
+
   return (
-    <Link
-      href={href}
-      className="relative px-4 py-2 text-white/90 hover:text-white font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark rounded-lg group"
-    >
+    <Link href={href} className={className}>
       <span>{label}</span>
       <motion.span
         className="absolute bottom-0 left-4 right-4 h-0.5 bg-brand-orange origin-left"
@@ -310,19 +327,27 @@ interface MobileNavLinkProps {
   href: string;
   label: string;
   onClick: () => void;
+  external?: boolean;
 }
 
 const MobileNavLink: React.FC<MobileNavLinkProps> = ({
   href,
   label,
   onClick,
+  external,
 }) => {
+  const className = "block px-4 py-3 text-lg text-white/90 hover:text-white hover:bg-white/5 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-inset";
+
+  if (external) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" onClick={onClick} className={className}>
+        {label}
+      </a>
+    );
+  }
+
   return (
-    <Link
-      href={href}
-      onClick={onClick}
-      className="block px-4 py-3 text-lg text-white/90 hover:text-white hover:bg-white/5 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-inset"
-    >
+    <Link href={href} onClick={onClick} className={className}>
       {label}
     </Link>
   );
