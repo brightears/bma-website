@@ -53,7 +53,7 @@ export const Footer: React.FC = () => {
     { href: `/${locale}`, label: tNav('home') },
     { href: `/${locale}/how-it-works`, label: tNav('howItWorks') },
     { href: `/${locale}/licensing`, label: tNav('licensing') },
-    { href: 'https://bmasia-music-brief-v2.onrender.com', label: tNav('musicDesign'), external: true },
+    { href: '/design', label: tNav('musicDesign'), rawHref: true },
     { href: `/${locale}/quotation`, label: tNav('getQuote') },
   ];
 
@@ -109,7 +109,7 @@ export const Footer: React.FC = () => {
               <ul className="space-y-3">
                 {navLinks.map((link) => (
                   <li key={link.href}>
-                    <FooterLink href={link.href} label={link.label} external={link.external} />
+                    <FooterLink href={link.href} label={link.label} />
                   </li>
                 ))}
               </ul>

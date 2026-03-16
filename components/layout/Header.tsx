@@ -21,6 +21,7 @@ interface NavLinkItem {
   href: string;
   label: string;
   external?: boolean;
+  rawHref?: boolean;
 }
 
 // Animation variants for the mobile menu
@@ -167,7 +168,7 @@ export const Header: React.FC = () => {
             {NAV_LINKS.map((link: NavLinkItem) => (
               <NavLink
                 key={link.href}
-                href={link.external ? link.href : `/${locale}${link.href === '/' ? '' : link.href}`}
+                href={link.external ? link.href : link.rawHref ? link.href : `/${locale}${link.href === '/' ? '' : link.href}`}
                 label={link.label}
                 external={link.external}
               />
@@ -232,7 +233,7 @@ export const Header: React.FC = () => {
                         animate="open"
                       >
                         <MobileNavLink
-                          href={link.external ? link.href : `/${locale}${link.href === '/' ? '' : link.href}`}
+                          href={link.external ? link.href : link.rawHref ? link.href : `/${locale}${link.href === '/' ? '' : link.href}`}
                           label={link.label}
                           onClick={closeMenu}
                           external={link.external}

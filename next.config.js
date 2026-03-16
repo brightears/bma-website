@@ -9,6 +9,20 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: '/design',
+          destination: 'https://bmasia-music-brief-v2.onrender.com/',
+        },
+        {
+          source: '/design/:path*',
+          destination: 'https://bmasia-music-brief-v2.onrender.com/:path*',
+        },
+      ],
+    };
+  },
 };
 
 module.exports = withNextIntl(nextConfig);

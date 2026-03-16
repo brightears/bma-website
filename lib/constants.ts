@@ -38,7 +38,7 @@ export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/how-it-works', label: 'How It Works' },
   { href: '/licensing', label: 'Licensing' },
-  { href: 'https://bmasia-music-brief-v2.onrender.com', label: 'Music Design', external: true },
+  { href: '/design', label: 'Music Design', rawHref: true },
   { href: '/quotation', label: 'Get a Quote' },
 ] as const;
 
