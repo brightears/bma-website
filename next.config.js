@@ -20,6 +20,22 @@ const nextConfig = {
           source: '/design/:path*',
           destination: 'https://bmasia-music-brief-v2.onrender.com/:path*',
         },
+        {
+          source: '/listen/:path*',
+          destination: 'https://bmasia-audio-sharing.onrender.com/listen/:path*',
+        },
+        {
+          source: '/api/shares/:path*',
+          destination: 'https://bmasia-audio-sharing.onrender.com/api/shares/:path*',
+        },
+        {
+          source: '/api/tracks/:path*',
+          destination: 'https://bmasia-audio-sharing.onrender.com/api/tracks/:path*',
+        },
+        {
+          source: '/api/analytics/:path*',
+          destination: 'https://bmasia-audio-sharing.onrender.com/api/analytics/:path*',
+        },
       ],
     };
   },
