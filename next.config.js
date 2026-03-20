@@ -25,6 +25,30 @@ const nextConfig = {
           destination: 'https://bmasia-audio-sharing.onrender.com/listen/:path*',
         },
         {
+          source: '/admin/:path*',
+          destination: 'https://bmasia-audio-sharing.onrender.com/admin/:path*',
+        },
+        {
+          source: '/admin',
+          destination: 'https://bmasia-audio-sharing.onrender.com/admin',
+        },
+        {
+          source: '/login',
+          destination: 'https://bmasia-audio-sharing.onrender.com/login',
+        },
+        {
+          source: '/login/',
+          destination: 'https://bmasia-audio-sharing.onrender.com/login/',
+        },
+        {
+          source: '/api/auth/:path*',
+          destination: 'https://bmasia-audio-sharing.onrender.com/api/auth/:path*',
+        },
+        {
+          source: '/api/folders/:path*',
+          destination: 'https://bmasia-audio-sharing.onrender.com/api/folders/:path*',
+        },
+        {
           source: '/api/shares/:path*',
           destination: 'https://bmasia-audio-sharing.onrender.com/api/shares/:path*',
         },
@@ -35,6 +59,10 @@ const nextConfig = {
         {
           source: '/api/analytics/:path*',
           destination: 'https://bmasia-audio-sharing.onrender.com/api/analytics/:path*',
+        },
+        {
+          source: '/api/tags/:path*',
+          destination: 'https://bmasia-audio-sharing.onrender.com/api/tags/:path*',
         },
       ],
     };
