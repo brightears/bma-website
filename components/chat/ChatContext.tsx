@@ -1,9 +1,9 @@
 'use client';
 
 import { createContext, useContext, useState, useCallback, useRef, ReactNode } from 'react';
-import { useConversation } from '@elevenlabs/react';
 import { useTranslations, useLocale } from 'next-intl';
-import { ELEVENLABS } from '@/lib/constants';
+
+const CHAT_API_URL = process.env.NEXT_PUBLIC_CHAT_API_URL || 'https://webhooks.bmasiamusic.com';
 
 export interface ChatMessage {
   id: string;
@@ -28,18 +28,6 @@ const ESCALATION_TRIGGERS = [
   'human agent',
   'specialist who can help',
   'team member',
-];
-
-// Patterns to detect when AI confirms email was captured (progressive profiling)
-// These match AI responses like "Got it! I've noted john@example.com"
-// Note: ['''] handles both straight and curly apostrophes
-// Email pattern: letters/numbers/dots/hyphens @ domain - no trailing punctuation
-const EMAIL_PATTERN = '([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})';
-const LEAD_CAPTURE_PATTERNS = [
-  new RegExp(`i[''']ve noted\\s+${EMAIL_PATTERN}`, 'i'),
-  new RegExp(`i have\\s+${EMAIL_PATTERN}`, 'i'),
-  new RegExp(`noted\\s+${EMAIL_PATTERN}`, 'i'),
-  new RegExp(`got it.*?${EMAIL_PATTERN}`, 'i'),
 ];
 
 interface ChatContextType {
@@ -78,131 +66,28 @@ export function ChatProvider({ children }: ChatProviderProps) {
   // State
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [isOpen, setIsOpen] = useState(false);
-  const [hasStarted, setHasStarted] = useState(false);
   const [isTyping, setIsTyping] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [showEscalationModal, setShowEscalationModal] = useState(false);
   const [isSubmittingEscalation, setIsSubmittingEscalation] = useState(false);
 
-  // Track session to prevent multiple startSession calls
-  const sessionStartingRef = useRef(false);
+  // Session ID for conversation continuity
+  const sessionIdRef = useRef(`session-${Date.now()}-${Math.random().toString(36).substring(7)}`);
 
   // Track if escalation has already been triggered this session
   const escalationTriggeredRef = useRef(false);
 
-  // Track if lead has been captured this session (to avoid duplicate notifications)
+  // Track if lead has been captured this session
   const leadCapturedRef = useRef(false);
-
-  // ElevenLabs conversation hook
-  const conversation = useConversation({
-    textOnly: true,
-    overrides: {
-      agent: {
-        language: locale,
-      },
-    },
-    onConnect: () => {
-      setError(null);
-      sessionStartingRef.current = false;
-    },
-    onDisconnect: () => {
-      setIsTyping(false);
-      sessionStartingRef.current = false;
-    },
-    onMessage: (message) => {
-      if (message.source === 'ai') {
-        setIsTyping(false);
-        const newMessage: ChatMessage = {
-          id: `agent-${Date.now()}-${Math.random().toString(36).substring(7)}`,
-          role: 'agent',
-          text: message.message,
-          timestamp: new Date(),
-        };
-        setMessages((prev) => [...prev, newMessage]);
-
-        // Check if this message triggers escalation
-        if (!escalationTriggeredRef.current) {
-          const lowerMessage = message.message.toLowerCase();
-          const isEscalation = ESCALATION_TRIGGERS.some(trigger =>
-            lowerMessage.includes(trigger)
-          );
-          if (isEscalation) {
-            escalationTriggeredRef.current = true;
-            setShowEscalationModal(true);
-          }
-        }
-
-        // Check if this message indicates lead capture (email collected)
-        // Only capture if not already captured and not escalated
-        if (!leadCapturedRef.current && !escalationTriggeredRef.current) {
-          for (const pattern of LEAD_CAPTURE_PATTERNS) {
-            const match = message.message.match(pattern);
-            if (match && match[1]) {
-              const capturedEmail = match[1];
-              leadCapturedRef.current = true;
-
-              // Build conversation summary for context
-              const conversationSummary = messages
-                .slice(-6) // Last 6 messages for context
-                .map((msg) => `${msg.role === 'user' ? 'Customer' : 'Agent'}: ${msg.text}`)
-                .join('\n');
-
-              // Send lead capture notification (fire and forget)
-              fetch('/api/chat-lead-capture', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                  email: capturedEmail,
-                  conversationSummary,
-                  locale,
-                }),
-              }).catch((err) => {
-                console.error('Lead capture notification failed:', err);
-              });
-
-              break; // Only capture first email match
-            }
-          }
-        }
-      }
-    },
-    onError: (err) => {
-      console.error('Chat error:', err);
-      setError(t('errors.connectionFailed'));
-      setIsTyping(false);
-      sessionStartingRef.current = false;
-    },
-  });
-
-  // Start session if not already started
-  const ensureSession = useCallback(async () => {
-    if (hasStarted || sessionStartingRef.current) return;
-
-    sessionStartingRef.current = true;
-    setError(null);
-
-    try {
-      await conversation.startSession({
-        agentId: ELEVENLABS.agentId,
-        connectionType: 'websocket',
-      });
-      setHasStarted(true);
-    } catch (err) {
-      console.error('Failed to start session:', err);
-      setError(t('errors.connectionFailed'));
-      sessionStartingRef.current = false;
-    }
-  }, [conversation, hasStarted, t]);
 
   // Open panel
   const openPanel = useCallback(() => {
     setIsOpen(true);
   }, []);
 
-  // Close panel and optionally end session
+  // Close panel
   const closePanel = useCallback(() => {
     setIsOpen(false);
-    // Don't end session - keep conversation for if they reopen
   }, []);
 
   // Submit escalation with email to backend
@@ -212,13 +97,11 @@ export function ChatProvider({ children }: ChatProviderProps) {
       setError(null);
 
       try {
-        // Format conversation history for escalation
         const conversationHistory = messages
           .map((msg) => `${msg.role === 'user' ? 'Customer' : 'Agent'}: ${msg.text}`)
           .join('\n');
 
-        // Send to our API route which forwards to bma_messenger_hub
-        const response = await fetch('/api/chat-escalation', {
+        const response = await fetch(`${CHAT_API_URL}/escalation`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -234,10 +117,8 @@ export function ChatProvider({ children }: ChatProviderProps) {
           throw new Error('Failed to submit escalation');
         }
 
-        // Close modal
         setShowEscalationModal(false);
 
-        // Add confirmation message to chat
         const confirmationMessage: ChatMessage = {
           id: `agent-confirm-${Date.now()}`,
           role: 'agent',
@@ -255,13 +136,12 @@ export function ChatProvider({ children }: ChatProviderProps) {
     [messages, locale, t]
   );
 
-  // Send a message
+  // Send a message via our Claude-powered chat API
   const sendMessage = useCallback(
     async (text: string) => {
       if (!text.trim()) return;
 
       setError(null);
-      await ensureSession();
 
       // Add user message immediately
       const userMessage: ChatMessage = {
@@ -278,19 +158,69 @@ export function ChatProvider({ children }: ChatProviderProps) {
       // Show typing indicator
       setIsTyping(true);
 
-      // Send to ElevenLabs
       try {
-        conversation.sendUserMessage(text);
+        const response = await fetch(`${CHAT_API_URL}/chat`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            message: text,
+            sessionId: sessionIdRef.current,
+            locale,
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error('Chat request failed');
+        }
+
+        const data = await response.json();
+
+        setIsTyping(false);
+
+        // Add agent response
+        const agentMessage: ChatMessage = {
+          id: `agent-${Date.now()}-${Math.random().toString(36).substring(7)}`,
+          role: 'agent',
+          text: data.reply,
+          timestamp: new Date(),
+        };
+        setMessages((prev) => [...prev, agentMessage]);
+
+        // Check if response triggers escalation
+        if (data.escalate && !escalationTriggeredRef.current) {
+          escalationTriggeredRef.current = true;
+          setShowEscalationModal(true);
+        }
+
+        // Check if lead was captured
+        if (data.leadCaptured && !leadCapturedRef.current) {
+          leadCapturedRef.current = true;
+
+          const conversationSummary = messages
+            .slice(-6)
+            .map((msg) => `${msg.role === 'user' ? 'Customer' : 'Agent'}: ${msg.text}`)
+            .join('\n');
+
+          fetch(`${CHAT_API_URL}/lead`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              email: data.leadCaptured,
+              conversationSummary,
+              locale,
+            }),
+          }).catch((err) => {
+            console.error('Lead capture notification failed:', err);
+          });
+        }
       } catch (err) {
         console.error('Failed to send message:', err);
         setError(t('errors.messageFailed'));
         setIsTyping(false);
       }
     },
-    [conversation, ensureSession, t]
+    [locale, messages, t]
   );
-
-  const isConnecting = conversation.status === 'connecting';
 
   return (
     <ChatContext.Provider
@@ -299,7 +229,7 @@ export function ChatProvider({ children }: ChatProviderProps) {
         isOpen,
         isTyping,
         error,
-        isConnecting,
+        isConnecting: false, // No WebSocket connection needed
         showEscalationModal,
         isSubmittingEscalation,
         openPanel,
