@@ -96,11 +96,62 @@ export default async function LicensingLayout({
     ],
   };
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What music licenses does my business need?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Businesses need three licenses to legally play music: a Recording License (covers the specific recording), a Publishing License (covers the original composition), and a Public Performance License (allows playing music in a public/commercial setting). BMAsia solutions include recording and publishing licenses, with Beat Breeze also including the public performance license.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I use Spotify or Apple Music in my business?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No. Consumer streaming services like Spotify, Apple Music, YouTube Music, Amazon Music, Tidal, and Deezer are licensed for personal use only. Using them in a commercial setting violates their terms of service and can expose your business to legal liability. You need a commercial music service with proper business licensing.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the difference between Soundtrack Your Brand and Beat Breeze?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Soundtrack Your Brand is our premium solution with 100M+ tracks including recording and publishing licenses (public performance license required separately from your local PRO). Beat Breeze is our essential solution with 30,000+ curated royalty-free tracks with ALL three licenses included — no additional fees or negotiations required.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is a Public Performance License?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'A Public Performance License allows you to play music in a public environment like a hotel lobby, restaurant, retail store, or office. It compensates songwriters and publishers through Performing Rights Organizations (PROs) like MPC in Thailand, COMPASS in Singapore, or PRS in the UK. Beat Breeze includes this license; Soundtrack Your Brand requires it separately.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How much does business background music cost?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'BMAsia pricing starts from THB 9,000/zone/year for Beat Breeze (essential, all licenses included) and THB 12,000/zone/year for Soundtrack Your Brand (premium, 100M+ tracks). International pricing starts from USD 290/zone/year (Beat Breeze) and USD 380/zone/year (Soundtrack Your Brand). Volume discounts are available for 5+ zones.',
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       {children}
     </>

@@ -6,7 +6,7 @@ const withNextIntl = createNextIntlPlugin('./i18n.ts');
 const nextConfig = {
   // Note: Removed 'output: export' to enable API routes with PostgreSQL + email
   images: {
-    unoptimized: true,
+    formats: ['image/avif', 'image/webp'],
   },
   trailingSlash: true,
   async rewrites() {

@@ -156,6 +156,20 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, t, tCommon }) => {
         <p className={`text-lg ${isPremium ? 'text-brand-orange' : 'text-gray-400'}`}>
           {t(`${product.key}.tagline`)}
         </p>
+
+        {/* Starting price */}
+        <div className="mt-3 pt-3 border-t border-white/10">
+          <p className="text-sm text-gray-500 uppercase tracking-wide mb-1">
+            Starting from
+          </p>
+          <p className="text-2xl font-bold text-white">
+            {isPremium ? 'USD 380' : 'USD 290'}
+            <span className="text-sm font-normal text-gray-400"> /zone/year</span>
+          </p>
+          <p className="text-xs text-gray-500 mt-1">
+            Volume discounts available for 5+ zones
+          </p>
+        </div>
       </div>
 
       {/* Features list */}
