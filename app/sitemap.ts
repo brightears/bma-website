@@ -9,6 +9,9 @@ const pages = [
   { path: '/how-it-works', changeFrequency: 'monthly' as const, priority: 0.8 },
   { path: '/licensing', changeFrequency: 'monthly' as const, priority: 0.8 },
   { path: '/quotation', changeFrequency: 'monthly' as const, priority: 0.9 },
+  { path: '/solutions/hotels', changeFrequency: 'monthly' as const, priority: 0.9 },
+  { path: '/solutions/restaurants', changeFrequency: 'monthly' as const, priority: 0.9 },
+  { path: '/solutions/retail', changeFrequency: 'monthly' as const, priority: 0.9 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

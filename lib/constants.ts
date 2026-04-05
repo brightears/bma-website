@@ -36,6 +36,9 @@ export const URLS = {
 // Navigation Links
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
+  { href: '/solutions/hotels', label: 'Hotels' },
+  { href: '/solutions/restaurants', label: 'Restaurants' },
+  { href: '/solutions/retail', label: 'Retail' },
   { href: '/how-it-works', label: 'How It Works' },
   { href: '/licensing', label: 'Licensing' },
   { href: '/design', label: 'Music Design', rawHref: true },
