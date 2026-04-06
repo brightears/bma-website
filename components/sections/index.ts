@@ -6,3 +6,7 @@ export { CalendlyEmbed } from './CalendlyEmbed';
 export { AboutSection } from './AboutSection';
 export { ContactSection } from './ContactSection';
 export { HeroChat } from '../chat/HeroChat';
+export { IndustriesGrid } from './IndustriesGrid';
+export { SolutionsSplit } from './SolutionsSplit';
+export { HowWeWork } from './HowWeWork';
+export { ProblemStatement } from './ProblemStatement';

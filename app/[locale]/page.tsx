@@ -4,90 +4,95 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { ValuePillars, ProductCards, SmartFeatures, ClientLogos, CalendlyEmbed, AboutSection, ContactSection, HeroChat } from '@/components/sections';
+import {
+  ClientLogos,
+  CalendlyEmbed,
+  ContactSection,
+  HeroChat,
+  ProblemStatement,
+  SolutionsSplit,
+  IndustriesGrid,
+  HowWeWork,
+} from '@/components/sections';
 
 export default function Home() {
   const t = useTranslations('hero');
   const tStats = useTranslations('stats');
 
-  const stats = [
-    { value: '23+', label: tStats('yearsExperience') },
-    { value: '50,000+', label: tStats('hoursOfMusic') },
-    { value: '100M+', label: tStats('availableTracks') },
-  ];
-
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* ===== HERO (100vh) ===== */}
+      <section className="relative min-h-screen flex items-center overflow-hidden">
         {/* Background image */}
         <Image
           src="/images/hero-lounge.webp"
           alt={t('imageAlt')}
           fill
           priority
-          className="object-cover opacity-60"
+          className="object-cover opacity-50"
           sizes="100vw"
         />
-        {/* Background gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/60 via-brand-navy/40 to-brand-dark/80" />
+        {/* Gradient overlay — heavier on left for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/70 to-brand-dark/40" />
 
-        {/* Animated background elements */}
-        <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
-          {/* Soundwave bars animation */}
-          <div className="absolute bottom-0 left-0 right-0 h-20 md:h-32 flex items-end justify-center gap-1 opacity-20">
-            {[...Array(50)].map((_, i) => (
-              <motion.div
-                key={i}
-                className="w-1 bg-brand-orange rounded-full"
-                initial={{ height: 20 }}
-                animate={{ height: [20, Math.random() * 100 + 20, 20] }}
-                transition={{
-                  duration: 1 + Math.random(),
-                  repeat: Infinity,
-                  delay: i * 0.05,
-                  ease: 'easeInOut',
-                }}
-              />
-            ))}
-          </div>
+        {/* Animated soundwave at bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-16 md:h-24 flex items-end justify-center gap-[2px] opacity-15" aria-hidden="true">
+          {[...Array(60)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="w-[2px] bg-brand-orange rounded-full"
+              initial={{ height: 8 }}
+              animate={{ height: [8, Math.random() * 60 + 12, 8] }}
+              transition={{
+                duration: 1.2 + Math.random() * 0.6,
+                repeat: Infinity,
+                delay: i * 0.04,
+                ease: 'easeInOut',
+              }}
+            />
+          ))}
         </div>
 
-        {/* Content */}
-        <div className="relative z-10 container-max px-4 text-center">
+        {/* Content — asymmetric, left-aligned */}
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
+            className="max-w-3xl"
           >
             {/* Tagline */}
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="font-semibold text-lg mb-4 tracking-[0.25em] uppercase animate-tagline-shimmer"
+              className="text-brand-orange font-semibold text-sm md:text-base tracking-[0.2em] uppercase mb-6"
+              style={{ fontFamily: "'Space Grotesk', monospace" }}
             >
               {t('tagline')}
             </motion.p>
 
-            {/* Main heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+            {/* Main heading — cinematic, serif */}
+            <h1
+              className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1]"
+              style={{ fontFamily: "'Libre Caslon Text', serif" }}
+            >
               {t('headline')}{' '}
               <span className="gradient-text">{t('headlineHighlight')}</span>
             </h1>
 
             {/* Subheading */}
-            <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10">
-              {t('subheading')}
+            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mb-10 leading-relaxed">
+              Licensed music for hotels, restaurants, retail, and beyond — designed, managed, and always on brand.
             </p>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* Dual CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/quotation">
                 <motion.span
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="btn-primary text-lg px-8 py-4 inline-block"
+                  className="inline-block bg-brand-orange hover:bg-brand-orange-dark text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg shadow-brand-orange/25"
                 >
                   {t('ctaQuote')}
                 </motion.span>
@@ -96,33 +101,14 @@ export default function Home() {
                 href="#demo"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="btn-secondary text-lg px-8 py-4"
+                className="inline-block border-2 border-white/20 text-white hover:bg-white/10 px-8 py-4 rounded-lg font-semibold text-lg transition-colors text-center"
               >
                 {t('ctaDemo')}
               </motion.a>
             </div>
 
-            {/* AI Chat Interface */}
+            {/* AI Chat prompt */}
             <HeroChat />
-          </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-10 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-2xl mx-auto"
-          >
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-brand-orange">
-                  {stat.value}
-                </div>
-                <div className="text-sm md:text-base text-gray-400 mt-1">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
           </motion.div>
         </div>
 
@@ -130,38 +116,38 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
+          transition={{ delay: 1.2 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2"
         >
           <motion.div
-            animate={{ y: [0, 10, 0] }}
+            animate={{ y: [0, 8, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="w-6 h-10 rounded-full border-2 border-white/30 flex justify-center pt-2"
+            className="w-5 h-8 rounded-full border border-white/20 flex justify-center pt-1.5"
           >
-            <div className="w-1 h-2 bg-white/50 rounded-full" />
+            <div className="w-0.5 h-1.5 bg-white/40 rounded-full" />
           </motion.div>
         </motion.div>
       </section>
 
-      {/* Value Pillars Section */}
-      <ValuePillars />
-
-      {/* Product Cards Section */}
-      <ProductCards />
-
-      {/* Smart Features Section */}
-      <SmartFeatures />
-
-      {/* Client Logos Section */}
+      {/* ===== SOCIAL PROOF BAR ===== */}
       <ClientLogos />
 
-      {/* Calendly Demo Booking Section */}
+      {/* ===== THE PROBLEM ===== */}
+      <ProblemStatement />
+
+      {/* ===== TWO SOLUTIONS SPLIT ===== */}
+      <SolutionsSplit />
+
+      {/* ===== INDUSTRIES GRID ===== */}
+      <IndustriesGrid />
+
+      {/* ===== HOW WE WORK ===== */}
+      <HowWeWork />
+
+      {/* ===== DEMO BOOKING ===== */}
       <CalendlyEmbed />
 
-      {/* About Section */}
-      <AboutSection />
-
-      {/* Contact Section */}
+      {/* ===== FINAL CTA / CONTACT ===== */}
       <ContactSection />
     </>
   );
