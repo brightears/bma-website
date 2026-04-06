@@ -221,18 +221,25 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: 'Hotels & Resorts', desc: 'Elevate guest loyalty with signature lobby scores.', href: '/solutions/hotels' },
-              { title: 'Restaurants & Bars', desc: 'Curate the energy from brunch to late-night lounge.', href: '/solutions/restaurants' },
-              { title: 'Retail & Fashion', desc: 'Drive brand affinity with rhythmic, fashion-forward sound.', href: '/solutions/retail' },
-              { title: 'Cafés & Coffee Shops', desc: 'The perfect acoustic backdrop for work and social flow.', href: '/quotation' },
-              { title: 'Medical & Wellness', desc: 'Reduce anxiety and enhance serenity with bio-sonic design.', href: '/quotation' },
-              { title: 'Gyms & Fitness', desc: 'High-energy BPM tracks designed to push performance limits.', href: '/quotation' },
+              { title: 'Hotels & Resorts', desc: 'Elevate guest loyalty with signature lobby scores.', href: '/solutions/hotels', img: '/images/hero-hotel.webp' },
+              { title: 'Restaurants & Bars', desc: 'Curate the energy from brunch to late-night lounge.', href: '/solutions/restaurants', img: '/images/hero-restaurant.webp' },
+              { title: 'Retail & Fashion', desc: 'Drive brand affinity with rhythmic, fashion-forward sound.', href: '/solutions/retail', img: '/images/hero-retail.webp' },
+              { title: 'Cafés & Coffee Shops', desc: 'The perfect acoustic backdrop for work and social flow.', href: '/quotation', img: '/images/hero-cafe.webp' },
+              { title: 'Medical & Wellness', desc: 'Reduce anxiety and enhance serenity with bio-sonic design.', href: '/quotation', img: '/images/hero-medical.webp' },
+              { title: 'Gyms & Fitness', desc: 'High-energy BPM tracks designed to push performance limits.', href: '/quotation', img: '/images/hero-gym.webp' },
             ].map((industry) => (
               <Link key={industry.title} href={industry.href}>
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="group relative h-[400px] rounded-2xl overflow-hidden cursor-pointer bg-brand-navy"
+                  className="group relative h-[400px] rounded-2xl overflow-hidden cursor-pointer"
                 >
+                  <Image
+                    src={industry.img}
+                    alt={industry.title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent group-hover:via-black/20 transition-all" />
                   <div className="absolute bottom-8 left-8">
                     <h4 className="text-2xl font-headline text-white mb-2">{industry.title}</h4>
