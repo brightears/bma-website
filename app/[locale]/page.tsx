@@ -278,9 +278,9 @@ export default function Home() {
         <div className="container mx-auto px-8 relative z-10">
           <h2 className="text-center text-5xl font-headline text-white mb-24">The BMAsia Journey</h2>
           <div className="grid md:grid-cols-3 gap-16 relative">
-            {/* Connector Line */}
-            <div className="hidden md:block absolute top-12 left-0 w-full h-[2px] bg-brand-orange/20 -z-10">
-              <div className="w-1/3 h-full bg-brand-orange" />
+            {/* Connector Line — positioned below the numbers */}
+            <div className="hidden md:block absolute top-[5.5rem] left-0 w-full h-[1px] bg-brand-orange/20">
+              <div className="w-1/3 h-full bg-brand-orange/40" />
             </div>
             {[
               { num: '01', title: 'We Listen', desc: 'Our music designers analyze your brand DNA, guest demographics, and venue acoustics.' },
