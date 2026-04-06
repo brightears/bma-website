@@ -49,26 +49,26 @@ export const SOLUTIONS_CATEGORIES = [
     links: [
       { href: '/solutions/hotels', label: 'Hotels & Resorts' },
       { href: '/solutions/restaurants', label: 'Restaurants' },
-      { href: '/quotation', label: 'Bars & Lounges' },
-      { href: '/quotation', label: 'Spas & Wellness' },
+      { href: '/solutions/bars', label: 'Bars & Lounges' },
+      { href: '/solutions/spas', label: 'Spas & Wellness' },
     ],
   },
   {
     category: 'Retail & Lifestyle',
     links: [
       { href: '/solutions/retail', label: 'Retail & Fashion' },
-      { href: '/quotation', label: 'Cafés & Coffee Shops' },
-      { href: '/quotation', label: 'Shopping Malls' },
-      { href: '/quotation', label: 'Gyms & Fitness' },
+      { href: '/solutions/cafes', label: 'Cafés & Coffee Shops' },
+      { href: '/solutions/malls', label: 'Shopping Malls' },
+      { href: '/solutions/gyms', label: 'Gyms & Fitness' },
     ],
   },
   {
     category: 'Professional',
     links: [
-      { href: '/quotation', label: 'Medical & Dental' },
-      { href: '/quotation', label: 'Offices' },
-      { href: '/quotation', label: 'Showrooms' },
-      { href: '/quotation', label: 'Events & Venues' },
+      { href: '/solutions/medical', label: 'Medical & Dental' },
+      { href: '/solutions/offices', label: 'Offices' },
+      { href: '/solutions/showrooms', label: 'Showrooms' },
+      { href: '/solutions/events', label: 'Events & Venues' },
     ],
   },
 ] as const;

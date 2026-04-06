@@ -3,5 +3,5 @@ import { IndustryPageTemplate } from '@/components/sections/IndustryPageTemplate
 import { INDUSTRY_DATA } from '@/lib/industry-data';
 
 export default function Page() {
-  return <IndustryPageTemplate {...INDUSTRY_DATA.restaurants} />;
+  return <IndustryPageTemplate {...INDUSTRY_DATA.cafes} />;
 }

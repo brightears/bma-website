@@ -12,6 +12,15 @@ const pages = [
   { path: '/solutions/hotels', changeFrequency: 'monthly' as const, priority: 0.9 },
   { path: '/solutions/restaurants', changeFrequency: 'monthly' as const, priority: 0.9 },
   { path: '/solutions/retail', changeFrequency: 'monthly' as const, priority: 0.9 },
+  { path: '/solutions/bars', changeFrequency: 'monthly' as const, priority: 0.8 },
+  { path: '/solutions/spas', changeFrequency: 'monthly' as const, priority: 0.8 },
+  { path: '/solutions/cafes', changeFrequency: 'monthly' as const, priority: 0.8 },
+  { path: '/solutions/malls', changeFrequency: 'monthly' as const, priority: 0.8 },
+  { path: '/solutions/gyms', changeFrequency: 'monthly' as const, priority: 0.8 },
+  { path: '/solutions/medical', changeFrequency: 'monthly' as const, priority: 0.8 },
+  { path: '/solutions/offices', changeFrequency: 'monthly' as const, priority: 0.8 },
+  { path: '/solutions/showrooms', changeFrequency: 'monthly' as const, priority: 0.8 },
+  { path: '/solutions/events', changeFrequency: 'monthly' as const, priority: 0.8 },
   { path: '/music-design', changeFrequency: 'monthly' as const, priority: 0.8 },
 ];
 
