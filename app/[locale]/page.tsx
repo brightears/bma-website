@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       {/* ===== 2. HERO SECTION (from Stitch) ===== */}
-      <section className="relative h-screen flex items-center overflow-hidden pt-16">
+      <section className="relative h-screen flex items-center overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero-lounge.webp"
@@ -32,12 +32,12 @@ export default function Home() {
         <div className="container mx-auto px-8 md:px-16 lg:px-24 relative z-10 grid md:grid-cols-2 gap-12 items-center">
           {/* Left: Headline + CTAs */}
           <div>
-            <h1 className="text-5xl md:text-6xl lg:text-8xl font-headline text-white leading-[1.05] mb-8">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-headline text-white leading-[1.05] mb-6">
               {t('headline')}{' '}
               <br />
               <span className="italic text-brand-orange">{t('headlineHighlight')}</span>
             </h1>
-            <p className="text-xl text-gray-400 mb-10 leading-relaxed max-w-xl">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed max-w-xl">
               {t('subheading')}
             </p>
             <div className="flex flex-wrap gap-4">
