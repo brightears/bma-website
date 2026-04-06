@@ -139,7 +139,7 @@ export default function Home() {
           className="flex-1 relative group overflow-hidden flex flex-col justify-end p-12 border-r border-white/5"
         >
           <div className="absolute inset-0 z-0">
-            <Image src="/images/hero-retail.webp" alt="Modern commercial space" fill className="object-cover opacity-30 group-hover:scale-110 transition-transform duration-1000" sizes="50vw" />
+            <Image src="/images/product-syb-hero.webp" alt="Soundtrack Your Brand in a premium venue" fill className="object-cover opacity-30 group-hover:scale-110 transition-transform duration-1000" sizes="50vw" />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
           </div>
           <div className="relative z-10">
@@ -184,7 +184,7 @@ export default function Home() {
           className="flex-1 relative group overflow-hidden flex flex-col justify-end p-12"
         >
           <div className="absolute inset-0 z-0">
-            <Image src="/images/hero-cafe.webp" alt="Relaxing venue interior" fill className="object-cover opacity-30 group-hover:scale-110 transition-transform duration-1000" sizes="50vw" />
+            <Image src="/images/product-bb-hero.webp" alt="Beat Breeze in a cozy venue" fill className="object-cover opacity-30 group-hover:scale-110 transition-transform duration-1000" sizes="50vw" />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
           </div>
           <div className="relative z-10">
