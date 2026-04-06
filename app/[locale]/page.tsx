@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { HeroChat } from '@/components/sections';
+import { HeroChat, ClientLogos } from '@/components/sections';
 
 /**
  * BMAsia Homepage — Cinematic Conversion-Optimized
@@ -72,19 +72,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== 3. SOCIAL PROOF BAR (from Stitch) ===== */}
-      <section className="bg-brand-navy py-12 border-y border-white/5">
-        <div className="container mx-auto px-8">
-          <p className="text-center font-label text-xs tracking-widest text-gray-500 uppercase mb-8">
-            Trusted by 500+ locations across Asia-Pacific
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
-            {['Hilton', 'ACCOR', 'SHANGRI-LA', 'CENTARA', 'ASCOTT', 'MELIA'].map((name) => (
-              <span key={name} className="font-headline text-xl text-white">{name}</span>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ===== 3. SOCIAL PROOF BAR ===== */}
+      <ClientLogos />
 
       {/* ===== 4. THE PROBLEM (from Stitch) ===== */}
       <section className="min-h-screen relative flex items-center overflow-hidden bg-[#0f0f0f]">
@@ -304,26 +293,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== 8. TRUSTED BY — FULL SCREEN (from Stitch) ===== */}
-      <section className="min-h-screen bg-[#0f0f0f] flex flex-col justify-center items-center px-8 text-center">
-        <h2 className="font-label text-xs tracking-[0.3em] uppercase text-gray-500 mb-20">
-          Preferred Partner for Global Hospitality
-        </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-24 gap-x-12 max-w-6xl w-full">
-          {['Hilton', 'ACCOR', 'WPP', 'Google', 'MINOR', 'MELIA', 'CENTARA', 'ASCOTT'].map((name) => (
-            <motion.div
-              key={name}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="flex justify-center items-center grayscale hover:grayscale-0 transition-all duration-500 opacity-40 hover:opacity-100"
-            >
-              <span className="text-5xl md:text-7xl font-headline text-white">{name}</span>
-            </motion.div>
-          ))}
-        </div>
-      </section>
+      {/* ===== 8. TRUSTED BY ===== */}
+      <ClientLogos />
 
       {/* ===== 9. FINAL CTA (from Stitch) ===== */}
       <section className="min-h-screen relative flex items-center justify-center overflow-hidden" id="demo">
