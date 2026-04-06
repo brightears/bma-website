@@ -168,10 +168,10 @@ export const Header: React.FC = () => {
             <NavLink href={`/${locale}`} label="Home" />
             {/* Solutions Mega Dropdown */}
             <div className="relative group">
-              <button className="px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors flex items-center gap-1">
+              <span className="px-3 py-2 text-sm font-medium text-white/90 hover:text-white transition-colors flex items-center gap-1 cursor-pointer rounded-lg hover:bg-white/5">
                 Solutions
-                <svg className="w-3 h-3 opacity-60 group-hover:opacity-100 transition-opacity" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2"><path d="m3 5 3 3 3-3"/></svg>
-              </button>
+                <svg className="w-3 h-3 opacity-50" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2"><path d="m3 5 3 3 3-3"/></svg>
+              </span>
               <div className="absolute top-full left-0 mt-1 bg-brand-dark/95 backdrop-blur-md border border-white/10 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 p-6 min-w-[480px]">
                 <div className="grid grid-cols-3 gap-6">
                   {SOLUTIONS_CATEGORIES.map((cat) => (
