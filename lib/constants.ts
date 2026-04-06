@@ -41,7 +41,7 @@ export const NAV_LINKS = [
   { href: '/solutions/retail', label: 'Retail' },
   { href: '/how-it-works', label: 'How It Works' },
   { href: '/licensing', label: 'Licensing' },
-  { href: '/design', label: 'Music Design', rawHref: true },
+  { href: '/music-design', label: 'Music Design' },
   { href: '/quotation', label: 'Get a Quote' },
 ] as const;
 
