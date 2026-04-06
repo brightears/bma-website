@@ -31,14 +31,6 @@ export default function Home() {
         </div>
         <div className="container mx-auto px-8 md:px-16 lg:px-24 relative z-10 flex items-center">
           <div className="max-w-3xl">
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="font-label text-brand-orange text-sm tracking-[0.2em] uppercase mb-6"
-            >
-              {t('tagline')}
-            </motion.p>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline text-white leading-[1.05] mb-8">
               {t('headline')}{' '}
               <br />
@@ -47,7 +39,7 @@ export default function Home() {
             <p className="text-xl text-gray-400 mb-10 leading-relaxed max-w-xl">
               {t('subheading')}
             </p>
-            <div className="flex flex-wrap gap-4 mb-8">
+            <div className="flex flex-wrap gap-4">
               <Link href="/quotation">
                 <motion.span
                   whileHover={{ scale: 1.05 }}
@@ -66,14 +58,19 @@ export default function Home() {
                 {t('ctaDemo')}
               </motion.a>
             </div>
-            {/* AI Chat Interface */}
-            <HeroChat />
           </div>
         </div>
       </section>
 
       {/* ===== 3. SOCIAL PROOF BAR ===== */}
       <ClientLogos />
+
+      {/* ===== AI CHAT INTERFACE ===== */}
+      <section className="py-12 px-4 md:px-8 bg-[#0f0f0f]">
+        <div className="max-w-2xl mx-auto">
+          <HeroChat />
+        </div>
+      </section>
 
       {/* ===== 4. THE PROBLEM (from Stitch) ===== */}
       <section className="min-h-screen relative flex items-center overflow-hidden bg-[#0f0f0f]">
