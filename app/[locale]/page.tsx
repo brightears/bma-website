@@ -104,14 +104,17 @@ export default function Home() {
               Your Guests Can <br /><span className="italic">Hear the Difference</span>
             </h2>
             <div className="flex items-baseline gap-4 mb-6">
-              <span className="text-7xl font-headline text-brand-orange">37%</span>
-              <p className="text-xl text-gray-300">revenue impact when music is <br />designed intentionally.</p>
+              <span className="text-7xl font-headline text-brand-orange">9.1%</span>
+              <p className="text-xl text-gray-300">sales increase with curated <br />music vs. random playlists.</p>
             </div>
             <p className="text-gray-400 text-lg mb-10 leading-relaxed">
-              Most venues play background noise. We curate sonic identities that increase dwell time, average check size, and brand recall. Silence isn&apos;t golden; the right sound is.
+              A study of 1.8 million purchases across 16 restaurant locations found that brand-fit music drives measurably higher sales. Dessert purchases alone rose 15.6%.
+            </p>
+            <p className="text-gray-500 text-sm mb-6 italic">
+              Source: <a href="https://www.soundtrack.io/research/" target="_blank" rel="noopener noreferrer" className="text-brand-orange/70 hover:text-brand-orange">Soundtrack Research</a> — Global Restaurant Chain Study
             </p>
             <Link href="/licensing" className="inline-flex items-center gap-2 text-brand-orange font-label font-bold border-b border-brand-orange/30 pb-1 hover:border-brand-orange transition-all">
-              Learn How Our Method Works →
+              See More Research →
             </Link>
           </motion.div>
         </div>
