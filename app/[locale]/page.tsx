@@ -138,19 +138,27 @@ export default function Home() {
           transition={{ duration: 0.6 }}
           className="flex-1 relative group overflow-hidden flex flex-col justify-end p-12 border-r border-white/5"
         >
-          <div className="absolute inset-0 z-0 bg-gradient-to-t from-black via-black/80 to-black/40" />
+          <div className="absolute inset-0 z-0">
+            <Image src="/images/hero-retail.webp" alt="Modern commercial space" fill className="object-cover opacity-30 group-hover:scale-110 transition-transform duration-1000" sizes="50vw" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+          </div>
           <div className="relative z-10">
             <span className="inline-block px-3 py-1 bg-brand-red/20 text-brand-red font-label text-xs uppercase tracking-widest rounded mb-4">
               The Global Standard
             </span>
-            <h3 className="text-4xl font-headline text-white mb-6">Soundtrack Your Brand</h3>
-            <ul className="space-y-4 mb-10">
-              {['150 million tracks — any artist, any genre', 'Centralized multi-zone scheduling', 'Full licensing compliance guaranteed'].map((feature) => (
+            <h3 className="text-4xl font-headline text-white mb-4">Soundtrack Your Brand</h3>
+            <p className="text-gray-400 mb-6">The world&apos;s largest commercial music library for business.</p>
+            <ul className="space-y-4 mb-6">
+              {['100M+ tracks — any artist, any genre', 'Recording + publishing licenses included', 'Drag-and-drop scheduling + Spotify sync', 'Bespoke music design, refreshed quarterly'].map((feature) => (
                 <li key={feature} className="flex items-center gap-3 text-gray-300">
                   <span className="w-5 h-5 rounded-full bg-brand-red/20 flex items-center justify-center text-brand-red text-xs">✓</span>
                   {feature}
                 </li>
               ))}
+              <li className="flex items-center gap-3 text-amber-300 text-sm">
+                <span className="w-5 h-5 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400 text-xs">!</span>
+                Public performance license required separately
+              </li>
             </ul>
             <Link href="/quotation">
               <motion.span
@@ -161,6 +169,9 @@ export default function Home() {
                 Explore Soundtrack
               </motion.span>
             </Link>
+            <a href="/listen" className="block text-center mt-3 text-sm text-gray-500 hover:text-brand-red font-label transition-colors">
+              Listen to samples →
+            </a>
           </div>
         </motion.div>
 
@@ -172,14 +183,18 @@ export default function Home() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="flex-1 relative group overflow-hidden flex flex-col justify-end p-12"
         >
-          <div className="absolute inset-0 z-0 bg-gradient-to-t from-black via-black/80 to-black/40" />
+          <div className="absolute inset-0 z-0">
+            <Image src="/images/hero-cafe.webp" alt="Relaxing venue interior" fill className="object-cover opacity-30 group-hover:scale-110 transition-transform duration-1000" sizes="50vw" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+          </div>
           <div className="relative z-10">
             <span className="inline-block px-3 py-1 bg-brand-orange/20 text-brand-orange font-label text-xs uppercase tracking-widest rounded mb-4">
               All-Inclusive Curation
             </span>
-            <h3 className="text-4xl font-headline text-white mb-6">Beat Breeze</h3>
-            <ul className="space-y-4 mb-10">
-              {['100,000 royalty-free tracks — every license included', 'Bespoke curation by music designers', 'Seamless offline-first playback'].map((feature) => (
+            <h3 className="text-4xl font-headline text-white mb-4">Beat Breeze</h3>
+            <p className="text-gray-400 mb-6">Fully licensed background music — zero hassle.</p>
+            <ul className="space-y-4 mb-6">
+              {['30,000+ royalty-free tracks — ALL 3 licenses included', 'No collection society fees, no compliance paperwork', 'Bespoke curation by our music designers', 'Offline-capable, multi-zone scheduling'].map((feature) => (
                 <li key={feature} className="flex items-center gap-3 text-gray-300">
                   <span className="w-5 h-5 rounded-full bg-brand-orange/20 flex items-center justify-center text-brand-orange text-xs">✓</span>
                   {feature}
@@ -195,6 +210,9 @@ export default function Home() {
                 Explore Beat Breeze
               </motion.span>
             </Link>
+            <a href="/listen" className="block text-center mt-3 text-sm text-gray-500 hover:text-brand-orange font-label transition-colors">
+              Listen to samples →
+            </a>
           </div>
         </motion.div>
 
