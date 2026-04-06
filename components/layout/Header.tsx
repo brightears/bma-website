@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLocale } from 'next-intl';
-import { NAV_LINKS } from '@/lib/constants';
+import { NAV_LINKS, SOLUTIONS_CATEGORIES } from '@/lib/constants';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
 /**
@@ -165,7 +165,39 @@ export const Header: React.FC = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
-            {NAV_LINKS.filter(l => l.label !== 'Get a Quote').map((link: NavLinkItem) => (
+            <NavLink href={`/${locale}`} label="Home" />
+            {/* Solutions Mega Dropdown */}
+            <div className="relative group">
+              <button className="px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors flex items-center gap-1">
+                Solutions
+                <svg className="w-3 h-3 opacity-60 group-hover:opacity-100 transition-opacity" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2"><path d="m3 5 3 3 3-3"/></svg>
+              </button>
+              <div className="absolute top-full left-0 mt-1 bg-brand-dark/95 backdrop-blur-md border border-white/10 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 p-6 min-w-[480px]">
+                <div className="grid grid-cols-3 gap-6">
+                  {SOLUTIONS_CATEGORIES.map((cat) => (
+                    <div key={cat.category}>
+                      <p className="text-xs font-semibold text-white/40 uppercase tracking-wider mb-3">{cat.category}</p>
+                      {cat.links.map((link) => (
+                        <Link
+                          key={link.label}
+                          href={`/${locale}${link.href}`}
+                          className="block py-1.5 text-sm text-white/70 hover:text-brand-orange transition-colors"
+                        >
+                          {link.label}
+                        </Link>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-6 pt-4 border-t border-white/10">
+                  <p className="text-xs text-white/40 mb-2">Not sure which solution fits?</p>
+                  <Link href={`/${locale}/quotation`} className="text-sm text-brand-orange hover:text-brand-orange-light transition-colors font-medium">
+                    Talk to us →
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {NAV_LINKS.filter(l => l.label !== 'Home' && l.label !== 'Get a Quote').map((link: NavLinkItem) => (
               <NavLink
                 key={link.href}
                 href={link.external ? link.href : link.rawHref ? link.href : `/${locale}${link.href === '/' ? '' : link.href}`}

@@ -36,13 +36,41 @@ export const URLS = {
 // Navigation Links
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
-  { href: '/solutions/hotels', label: 'Hotels' },
-  { href: '/solutions/restaurants', label: 'Restaurants' },
-  { href: '/solutions/retail', label: 'Retail' },
   { href: '/how-it-works', label: 'How It Works' },
   { href: '/licensing', label: 'Licensing' },
   { href: '/music-design', label: 'Music Design' },
   { href: '/quotation', label: 'Get a Quote' },
+] as const;
+
+// Solutions dropdown — categorized like Soundtrack's "Business types"
+export const SOLUTIONS_CATEGORIES = [
+  {
+    category: 'Hospitality',
+    links: [
+      { href: '/solutions/hotels', label: 'Hotels & Resorts' },
+      { href: '/solutions/restaurants', label: 'Restaurants' },
+      { href: '/quotation', label: 'Bars & Lounges' },
+      { href: '/quotation', label: 'Spas & Wellness' },
+    ],
+  },
+  {
+    category: 'Retail & Lifestyle',
+    links: [
+      { href: '/solutions/retail', label: 'Retail & Fashion' },
+      { href: '/quotation', label: 'Cafés & Coffee Shops' },
+      { href: '/quotation', label: 'Shopping Malls' },
+      { href: '/quotation', label: 'Gyms & Fitness' },
+    ],
+  },
+  {
+    category: 'Professional',
+    links: [
+      { href: '/quotation', label: 'Medical & Dental' },
+      { href: '/quotation', label: 'Offices' },
+      { href: '/quotation', label: 'Showrooms' },
+      { href: '/quotation', label: 'Events & Venues' },
+    ],
+  },
 ] as const;
 
 // Company Stats
