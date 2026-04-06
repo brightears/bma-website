@@ -383,4 +383,4 @@ export const INDUSTRY_DATA = {
     editorialImage: '/images/hero-hotel.webp',
     ctaHeadline: 'Design your event\'s sound.',
   },
-} as const;
+};
