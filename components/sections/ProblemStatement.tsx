@@ -22,7 +22,7 @@ export const ProblemStatement: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight" style={{ fontFamily: "'Libre Caslon Text', serif" }}>
+            <h2 className="font-headline text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
               Your Guests Can Hear the{' '}
               <span className="gradient-text">Difference</span>
             </h2>
@@ -31,7 +31,7 @@ export const ProblemStatement: React.FC = () => {
                 Music shapes how people feel in your space. It affects how long they stay, how much they spend, and whether they come back.
               </p>
               <p>
-                <span className="text-brand-orange font-semibold text-2xl block mb-2" style={{ fontFamily: "'Libre Caslon Text', serif" }}>37%</span>
+                <span className="font-headline text-brand-orange font-semibold text-2xl block mb-2">37%</span>
                 revenue impact when background music is designed intentionally — not left to chance.
               </p>
               <p>
@@ -59,7 +59,7 @@ export const ProblemStatement: React.FC = () => {
               <div className="absolute inset-4 rounded-full border border-brand-orange/20" />
               <div className="absolute inset-8 rounded-full border border-brand-orange/10" />
               <div className="text-center relative z-10">
-                <span className="text-6xl md:text-7xl font-bold text-brand-orange block" style={{ fontFamily: "'Libre Caslon Text', serif" }}>
+                <span className="font-headline text-6xl md:text-7xl font-bold text-brand-orange block">
                   93%
                 </span>
                 <span className="text-gray-400 text-sm mt-2 block">

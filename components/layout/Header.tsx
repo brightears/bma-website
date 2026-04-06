@@ -165,7 +165,7 @@ export const Header: React.FC = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
-            {NAV_LINKS.map((link: NavLinkItem) => (
+            {NAV_LINKS.filter(l => l.label !== 'Get a Quote').map((link: NavLinkItem) => (
               <NavLink
                 key={link.href}
                 href={link.external ? link.href : link.rawHref ? link.href : `/${locale}${link.href === '/' ? '' : link.href}`}
@@ -174,6 +174,12 @@ export const Header: React.FC = () => {
               />
             ))}
             <LanguageSwitcher />
+            <Link
+              href={`/${locale}/quotation`}
+              className="ml-2 bg-brand-orange hover:bg-brand-orange-dark text-white px-5 py-2 rounded-lg text-sm font-semibold transition-colors shadow-sm shadow-brand-orange/20"
+            >
+              Get a Quote
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}

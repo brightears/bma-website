@@ -75,7 +75,7 @@ export const IndustriesGrid: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4" style={{ fontFamily: "'Libre Caslon Text', serif" }}>
+          <h2 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
             Music for Every{' '}
             <span className="gradient-text">Space</span>
           </h2>

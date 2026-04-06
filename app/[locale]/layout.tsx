@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter } from 'next/font/google';
+import { DM_Sans, Libre_Caslon_Text, Space_Grotesk } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
@@ -10,7 +10,24 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { ChatProvider, ChatPanel } from '@/components/chat';
 
-const inter = Inter({ subsets: ['latin'] });
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  display: 'swap',
+});
+
+const libreCaslon = Libre_Caslon_Text({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-headline',
+  display: 'swap',
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-label',
+  display: 'swap',
+});
 
 // Map locale codes to OpenGraph locale format
 const ogLocaleMap: Record<Locale, string> = {
@@ -126,7 +143,7 @@ export default async function LocaleLayout({
   const t = await getTranslations({ locale, namespace: 'metadata' });
 
   return (
-    <html lang={locale} className="scroll-smooth">
+    <html lang={locale} className={`scroll-smooth ${dmSans.variable} ${libreCaslon.variable} ${spaceGrotesk.variable}`}>
       <head>
         {/* Preconnect hints for external resources */}
         <link rel="preconnect" href="https://assets.calendly.com" />
@@ -192,7 +209,7 @@ export default async function LocaleLayout({
           }}
         />
       </head>
-      <body className={inter.className}>
+      <body className={dmSans.className}>
         {/* Google Tag Manager (noscript) */}
         {process.env.NEXT_PUBLIC_GTM_ID && (
           <noscript>

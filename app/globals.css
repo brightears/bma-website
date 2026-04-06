@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Note: Inter font is loaded via next/font in layout.tsx for better performance */
+/* Fonts loaded via next/font in layout.tsx: DM Sans (body), Libre Caslon Text (headlines), Space Grotesk (labels) */
 
 /* Base styles */
 @layer base {

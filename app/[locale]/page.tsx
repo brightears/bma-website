@@ -66,16 +66,16 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="text-brand-orange font-semibold text-sm md:text-base tracking-[0.2em] uppercase mb-6"
-              style={{ fontFamily: "'Space Grotesk', monospace" }}
+              className="font-label text-brand-orange font-semibold text-sm md:text-base tracking-[0.2em] uppercase mb-6"
+             
             >
               {t('tagline')}
             </motion.p>
 
             {/* Main heading — cinematic, serif */}
             <h1
-              className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1]"
-              style={{ fontFamily: "'Libre Caslon Text', serif" }}
+              className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1]"
+             
             >
               {t('headline')}{' '}
               <span className="gradient-text">{t('headlineHighlight')}</span>

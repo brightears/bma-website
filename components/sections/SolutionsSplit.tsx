@@ -17,7 +17,7 @@ export const SolutionsSplit: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center py-16 px-4"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white" style={{ fontFamily: "'Libre Caslon Text', serif" }}>
+          <h2 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold text-white">
             Two Solutions.{' '}
             <span className="gradient-text">One Mission.</span>
           </h2>
@@ -36,7 +36,7 @@ export const SolutionsSplit: React.FC = () => {
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#FF3B30] to-[#FF3B30]/40" />
             <div className="max-w-lg">
               <span className="text-[#FF3B30] text-sm font-semibold uppercase tracking-widest font-mono">Premium</span>
-              <h3 className="text-3xl md:text-4xl font-bold text-white mt-3 mb-4" style={{ fontFamily: "'Libre Caslon Text', serif" }}>
+              <h3 className="font-headline text-3xl md:text-4xl font-bold text-white mt-3 mb-4">
                 Soundtrack Your Brand
               </h3>
               <p className="text-2xl text-gray-300 mb-8 font-light">
@@ -76,7 +76,7 @@ export const SolutionsSplit: React.FC = () => {
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-orange to-brand-orange/40" />
             <div className="max-w-lg">
               <span className="text-brand-orange text-sm font-semibold uppercase tracking-widest font-mono">All Licenses Included</span>
-              <h3 className="text-3xl md:text-4xl font-bold text-white mt-3 mb-4" style={{ fontFamily: "'Libre Caslon Text', serif" }}>
+              <h3 className="font-headline text-3xl md:text-4xl font-bold text-white mt-3 mb-4">
                 Beat Breeze
               </h3>
               <p className="text-2xl text-gray-300 mb-8 font-light">

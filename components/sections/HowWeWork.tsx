@@ -33,7 +33,7 @@ export const HowWeWork: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white" style={{ fontFamily: "'Libre Caslon Text', serif" }}>
+          <h2 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold text-white">
             How We{' '}
             <span className="gradient-text">Work</span>
           </h2>
@@ -56,12 +56,12 @@ export const HowWeWork: React.FC = () => {
 
               <div className="relative">
                 <span
-                  className="text-7xl md:text-8xl font-bold text-brand-orange/10"
-                  style={{ fontFamily: "'Libre Caslon Text', serif" }}
+                  className="font-headline text-7xl md:text-8xl font-bold text-brand-orange/10"
+                 
                 >
                   {step.number}
                 </span>
-                <h3 className="text-2xl md:text-3xl font-bold text-white -mt-6 mb-3" style={{ fontFamily: "'Libre Caslon Text', serif" }}>
+                <h3 className="font-headline text-2xl md:text-3xl font-bold text-white -mt-6 mb-3">
                   {step.title}
                 </h3>
                 <p className="text-gray-400 leading-relaxed max-w-xs mx-auto md:mx-0">
