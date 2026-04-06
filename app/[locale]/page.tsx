@@ -29,24 +29,32 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0f0f0f] via-[#0f0f0f]/80 to-transparent" />
         </div>
-        <div className="container mx-auto px-8 relative z-10 grid md:grid-cols-2 gap-12">
-          <div className="max-w-2xl">
-            <h1 className="text-6xl md:text-8xl font-headline text-white leading-tight mb-8">
+        <div className="container mx-auto px-8 md:px-16 lg:px-24 relative z-10 flex items-center">
+          <div className="max-w-3xl">
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="font-label text-brand-orange text-sm tracking-[0.2em] uppercase mb-6"
+            >
+              {t('tagline')}
+            </motion.p>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline text-white leading-[1.05] mb-8">
               {t('headline')}{' '}
               <br />
               <span className="italic text-brand-orange">{t('headlineHighlight')}</span>
             </h1>
-            <p className="text-xl text-gray-400 mb-10 leading-relaxed max-w-lg">
-              Licensed music for hotels, restaurants, retail, and beyond — designed, managed, and always on brand.
+            <p className="text-xl text-gray-400 mb-10 leading-relaxed max-w-xl">
+              {t('subheading')}
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 mb-8">
               <Link href="/quotation">
                 <motion.span
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="inline-flex items-center gap-2 bg-brand-orange hover:bg-amber-400 text-black px-8 py-4 rounded-full font-label font-bold transition-all shadow-lg shadow-brand-orange/20"
                 >
-                  Get a Quote →
+                  {t('ctaQuote')}
                 </motion.span>
               </Link>
               <motion.a
@@ -55,27 +63,12 @@ export default function Home() {
                 whileTap={{ scale: 0.95 }}
                 className="border border-white/20 hover:bg-white/5 text-white px-8 py-4 rounded-full font-label font-bold transition-all"
               >
-                Book Free Demo
+                {t('ctaDemo')}
               </motion.a>
             </div>
             {/* AI Chat Interface */}
-            <div className="mt-8">
-              <HeroChat />
-            </div>
+            <HeroChat />
           </div>
-        </div>
-        {/* Animated Soundwave */}
-        <div className="absolute bottom-12 left-8 flex items-end gap-1 opacity-40">
-          {[0.1, 0.3, 0.2, 0.5, 0.4, 0.6, 0.15, 0.35, 0.25, 0.45].map((delay, i) => (
-            <motion.div
-              key={i}
-              className="w-1 bg-brand-orange rounded-full"
-              animate={{ height: [4, 24, 4] }}
-              transition={{ duration: 1.2, repeat: Infinity, delay, ease: 'easeInOut' }}
-              style={{ height: 4 }}
-            />
-          ))}
-          <span className="ml-4 font-label text-xs uppercase tracking-widest text-brand-orange">Live Sonic Design</span>
         </div>
       </section>
 
