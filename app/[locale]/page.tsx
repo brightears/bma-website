@@ -29,9 +29,10 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0f0f0f] via-[#0f0f0f]/80 to-transparent" />
         </div>
-        <div className="container mx-auto px-8 md:px-16 lg:px-24 relative z-10 flex items-center">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline text-white leading-[1.05] mb-8">
+        <div className="container mx-auto px-8 md:px-16 lg:px-24 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+          {/* Left: Headline + CTAs */}
+          <div>
+            <h1 className="text-5xl md:text-6xl lg:text-8xl font-headline text-white leading-[1.05] mb-8">
               {t('headline')}{' '}
               <br />
               <span className="italic text-brand-orange">{t('headlineHighlight')}</span>
@@ -59,18 +60,20 @@ export default function Home() {
               </motion.a>
             </div>
           </div>
+          {/* Right: AI Chat — invites conversation */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="hidden md:block"
+          >
+            <HeroChat />
+          </motion.div>
         </div>
       </section>
 
       {/* ===== 3. SOCIAL PROOF BAR ===== */}
       <ClientLogos />
-
-      {/* ===== AI CHAT INTERFACE ===== */}
-      <section className="py-12 px-4 md:px-8 bg-[#0f0f0f]">
-        <div className="max-w-2xl mx-auto">
-          <HeroChat />
-        </div>
-      </section>
 
       {/* ===== 4. THE PROBLEM (from Stitch) ===== */}
       <section className="min-h-screen relative flex items-center overflow-hidden bg-[#0f0f0f]">
