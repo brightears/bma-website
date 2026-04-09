@@ -28,21 +28,33 @@ export const CookieConsent: React.FC = () => {
   const enableAnalytics = () => {
     // Fire GTM only after consent
     const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
-    if (!gtmId) return;
+    if (gtmId && !document.querySelector(`script[src*="googletagmanager.com/gtm.js?id=${gtmId}"]`)) {
+      const gtmScript = document.createElement('script');
+      gtmScript.innerHTML = `
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','${gtmId}');
+      `;
+      document.head.appendChild(gtmScript);
+    }
 
-    // Check if GTM already loaded
-    if (document.querySelector(`script[src*="googletagmanager.com/gtm.js?id=${gtmId}"]`)) return;
-
-    // Load GTM dynamically
-    const script = document.createElement('script');
-    script.innerHTML = `
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','${gtmId}');
-    `;
-    document.head.appendChild(script);
+    // Fire Apollo.io tracker only after consent
+    if (!document.querySelector('script[src*="assets.apollo.io"]')) {
+      const apolloScript = document.createElement('script');
+      apolloScript.innerHTML = `
+        (function(){
+          var n=Math.random().toString(36).substring(7),
+          o=document.createElement("script");
+          o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n;
+          o.async=true;o.defer=true;
+          o.onload=function(){window.trackingFunctions.onLoad({appId:"691d948496127f0021ef7728"})};
+          document.head.appendChild(o)
+        })();
+      `;
+      document.head.appendChild(apolloScript);
+    }
   };
 
   const handleAccept = () => {

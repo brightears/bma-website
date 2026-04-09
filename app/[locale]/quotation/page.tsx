@@ -2,9 +2,27 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { QuotationForm } from '@/components/forms';
+import dynamic from 'next/dynamic';
 import { SITE, SOCIAL } from '@/lib/constants';
 import { WhatsAppLink, LineLink } from '@/components/icons';
+
+const QuotationForm = dynamic(
+  () => import('@/components/forms/QuotationForm').then((mod) => mod.QuotationForm),
+  {
+    loading: () => (
+      <div className="space-y-5 animate-pulse">
+        {[...Array(6)].map((_, i) => (
+          <div key={i} className="space-y-2">
+            <div className="h-4 w-24 bg-white/10 rounded" />
+            <div className="h-12 bg-white/5 border border-white/10 rounded-lg" />
+          </div>
+        ))}
+        <div className="h-14 bg-brand-orange/20 rounded-lg" />
+      </div>
+    ),
+    ssr: false,
+  }
+);
 
 export default function QuotationPage() {
   return (
