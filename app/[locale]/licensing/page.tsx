@@ -38,7 +38,7 @@ export default function LicensingPage() {
               <span className="font-label text-brand-orange text-sm tracking-[0.3em] uppercase mb-6 block">
                 Compliance
               </span>
-              <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl leading-none tracking-tight text-white mb-6">
+              <h1 className="font-headline text-5xl md:text-7xl leading-none tracking-tight text-white mb-6">
                 Music Licensing <br />
                 <span className="italic text-brand-orange">Made Simple</span>
               </h1>
@@ -107,7 +107,7 @@ export default function LicensingPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-headline text-4xl md:text-6xl text-center leading-tight text-white mb-16">
+            <h2 className="font-headline text-4xl md:text-5xl text-center leading-tight text-white mb-16">
               Consumer Streaming Services Are <span className="text-brand-red">NOT</span> Licensed for Business Use
             </h2>
 
@@ -214,7 +214,7 @@ export default function LicensingPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-headline text-4xl md:text-6xl text-white mb-12 leading-tight">
+            <h2 className="font-headline text-4xl md:text-5xl text-white mb-12 leading-tight">
               Get Started with <br /><span className="italic text-brand-orange">Licensed Music</span>
             </h2>
             <div className="flex flex-col md:flex-row gap-6 justify-center">

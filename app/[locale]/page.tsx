@@ -31,7 +31,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#0f0f0f] via-[#0f0f0f]/80 to-transparent" />
         </div>
         <div className="container mx-auto px-8 md:px-16 lg:px-24 relative z-10 max-w-3xl">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-headline text-white leading-[1.05] mb-6">
+          <h1 className="text-5xl md:text-7xl font-headline text-white leading-[1.05] mb-6">
             {t('headline')}{' '}
             <br />
             <span className="italic text-brand-orange">{t('headlineHighlight')}</span>
@@ -89,7 +89,7 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            <h2 className="text-5xl md:text-7xl font-headline text-white mb-8 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-headline text-white mb-8 leading-tight">
               Your Guests Can <br /><span className="italic">Hear the Difference</span>
             </h2>
             <div className="flex items-baseline gap-4 mb-6">
@@ -117,7 +117,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <h2 className="font-headline text-4xl md:text-6xl text-white leading-none tracking-tight mb-6">
+            <h2 className="font-headline text-4xl md:text-5xl text-white leading-none tracking-tight mb-6">
               Two Solutions, <span className="italic text-brand-orange">One Standard.</span>
             </h2>
             <p className="text-xl text-white/50 max-w-2xl leading-relaxed">
@@ -250,7 +250,7 @@ export default function Home() {
       <section className="py-24 bg-[#0f0f0f]">
         <div className="container mx-auto px-8">
           <div className="max-w-2xl mb-16">
-            <h2 className="text-5xl font-headline text-white mb-6 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-headline text-white mb-6 leading-tight">
               Tailored Sound for <br />Every Space
             </h2>
             <p className="text-gray-400">
@@ -297,7 +297,7 @@ export default function Home() {
       <section className="py-24 md:py-36 relative flex items-center justify-center overflow-hidden" id="demo">
         <div className="absolute inset-0" style={{ background: 'radial-gradient(circle, rgba(239, 166, 52, 0.15) 0%, rgba(15, 15, 15, 1) 70%)' }} />
         <div className="container mx-auto px-8 text-center relative z-10">
-          <h2 className="text-5xl md:text-7xl font-headline text-white mb-12">
+          <h2 className="text-4xl md:text-5xl font-headline text-white mb-12">
             Let&apos;s Design <br />
             <span className="italic text-brand-orange">Your Sound</span>
           </h2>

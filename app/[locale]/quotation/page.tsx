@@ -22,7 +22,7 @@ export default function QuotationPage() {
               <span className="font-label text-brand-orange text-sm tracking-[0.3em] uppercase mb-6 block">
                 Get Started
               </span>
-              <h1 className="font-headline text-5xl md:text-6xl leading-none text-white mb-6">
+              <h1 className="font-headline text-5xl md:text-7xl leading-none text-white mb-6">
                 Request a <span className="italic text-brand-orange">Quote</span>
               </h1>
               <p className="text-xl text-white/50 leading-relaxed mb-16 max-w-lg">

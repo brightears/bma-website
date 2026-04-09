@@ -59,7 +59,7 @@ export default function HowItWorksPage() {
               <span className="font-label text-brand-orange text-sm tracking-[0.3em] uppercase mb-6 block">
                 Our Methodology
               </span>
-              <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl leading-tight mb-8 text-white">
+              <h1 className="font-headline text-5xl md:text-7xl leading-tight mb-8 text-white">
                 From First Call to <br />
                 <span className="italic text-brand-orange">First Note</span>
               </h1>
@@ -134,7 +134,7 @@ export default function HowItWorksPage() {
             <span className="font-label text-brand-orange text-sm tracking-[0.3em] uppercase mb-6 block">
               Why BMAsia
             </span>
-            <h2 className="font-headline text-4xl md:text-6xl leading-tight text-white">
+            <h2 className="font-headline text-4xl md:text-5xl leading-tight text-white">
               Built for Hospitality.
             </h2>
           </motion.div>
@@ -174,7 +174,7 @@ export default function HowItWorksPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-headline text-4xl md:text-6xl text-white mb-12">
+            <h2 className="font-headline text-4xl md:text-5xl text-white mb-12">
               Ready to hear the difference?
             </h2>
             <div className="flex flex-col md:flex-row justify-center gap-6">
