@@ -9,6 +9,7 @@ import { locales, type Locale } from '@/lib/i18n-config';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { ChatProvider, ChatPanel } from '@/components/chat';
+import { CookieConsent } from '@/components/layout/CookieConsent';
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -174,20 +175,7 @@ export default async function LocaleLayout({
           }}
         />
 
-        {/* Google Tag Manager */}
-        {process.env.NEXT_PUBLIC_GTM_ID && (
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID}');
-              `,
-            }}
-          />
-        )}
+        {/* GTM loads dynamically after cookie consent — see CookieConsent component */}
 
         {/* Apollo.io Website Tracker */}
         <script
@@ -210,18 +198,6 @@ export default async function LocaleLayout({
         />
       </head>
       <body className={dmSans.className}>
-        {/* Google Tag Manager (noscript) */}
-        {process.env.NEXT_PUBLIC_GTM_ID && (
-          <noscript>
-            <iframe
-              src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
-              height="0"
-              width="0"
-              style={{ display: 'none', visibility: 'hidden' }}
-            />
-          </noscript>
-        )}
-
         {/* Skip to main content link for accessibility */}
         <a
           href="#main"
@@ -242,6 +218,8 @@ export default async function LocaleLayout({
             </div>
             {/* Chat Panel (slides in from right) */}
             <ChatPanel />
+            {/* Cookie consent banner */}
+            <CookieConsent />
           </ChatProvider>
         </NextIntlClientProvider>
       </body>
