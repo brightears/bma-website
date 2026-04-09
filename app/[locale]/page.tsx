@@ -106,101 +106,142 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== 5. TWO SOLUTIONS (from Stitch) ===== */}
-      <section className="min-h-screen flex flex-col md:flex-row border-t border-white/10 relative">
-        {/* Soundtrack Your Brand — RED */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="flex-1 relative group overflow-hidden flex flex-col justify-end p-12 border-r border-white/5"
-        >
-          <div className="absolute inset-0 z-0">
-            <Image src="/images/product-syb-hero.webp" alt="Soundtrack Your Brand in a premium venue" fill className="object-cover opacity-30 group-hover:scale-110 transition-transform duration-1000" sizes="50vw" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
-          </div>
-          <div className="relative z-10">
-            <span className="inline-block px-3 py-1 bg-brand-red/20 text-brand-red font-label text-xs uppercase tracking-widest rounded mb-4">
-              The Global Standard
-            </span>
-            <h3 className="text-4xl font-headline text-white mb-4">Soundtrack Your Brand</h3>
-            <p className="text-gray-400 mb-6">The world&apos;s largest commercial music library for business.</p>
-            <ul className="space-y-4 mb-6">
-              {['100M+ tracks — any artist, any genre', 'Recording + publishing licenses included', 'Drag-and-drop scheduling + Spotify sync', 'Bespoke music design, refreshed quarterly'].map((feature) => (
-                <li key={feature} className="flex items-center gap-3 text-gray-300">
-                  <span className="w-5 h-5 rounded-full bg-brand-red/20 flex items-center justify-center text-brand-red text-xs">✓</span>
-                  {feature}
-                </li>
-              ))}
-              <li className="flex items-center gap-3 text-amber-300 text-sm">
-                <span className="w-5 h-5 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400 text-xs">!</span>
-                Public performance license required separately
-              </li>
-            </ul>
-            <Link href="/quotation">
-              <motion.span
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="block w-full text-center bg-brand-red hover:bg-brand-red-dark text-white font-label font-bold py-4 rounded-lg transition-all shadow-lg shadow-brand-red/20"
-              >
-                Explore Soundtrack
-              </motion.span>
-            </Link>
-            <a href="https://app.soundtrack.io/search" target="_blank" rel="noopener noreferrer" className="block text-center mt-3 text-sm text-gray-500 hover:text-brand-red font-label transition-colors">
-              Listen to samples →
-            </a>
-          </div>
-        </motion.div>
-
-        {/* Beat Breeze — GOLD */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="flex-1 relative group overflow-hidden flex flex-col justify-end p-12"
-        >
-          <div className="absolute inset-0 z-0">
-            <Image src="/images/product-bb-hero.webp" alt="Beat Breeze in a cozy venue" fill className="object-cover opacity-30 group-hover:scale-110 transition-transform duration-1000" sizes="50vw" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
-          </div>
-          <div className="relative z-10">
-            <span className="inline-block px-3 py-1 bg-brand-orange/20 text-brand-orange font-label text-xs uppercase tracking-widest rounded mb-4">
-              All-Inclusive Curation
-            </span>
-            <h3 className="text-4xl font-headline text-white mb-4">Beat Breeze</h3>
-            <p className="text-gray-400 mb-6">Fully licensed background music — zero hassle.</p>
-            <ul className="space-y-4 mb-6">
-              {['30,000+ royalty-free tracks — ALL 3 licenses included', 'No collection society fees, no compliance paperwork', 'Bespoke curation by our music designers', 'Offline-capable, multi-zone scheduling'].map((feature) => (
-                <li key={feature} className="flex items-center gap-3 text-gray-300">
-                  <span className="w-5 h-5 rounded-full bg-brand-orange/20 flex items-center justify-center text-brand-orange text-xs">✓</span>
-                  {feature}
-                </li>
-              ))}
-            </ul>
-            <Link href="/quotation">
-              <motion.span
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="block w-full text-center bg-brand-orange hover:bg-amber-400 text-black font-label font-bold py-4 rounded-lg transition-all shadow-lg shadow-brand-orange/20"
-              >
-                Explore Beat Breeze
-              </motion.span>
-            </Link>
-            <a href="https://bmasiamusic.com/listen/a91c14a5-681d-421b-af2e-06651df17b53" target="_blank" rel="noopener noreferrer" className="block text-center mt-3 text-sm text-gray-500 hover:text-brand-orange font-label transition-colors">
-              Listen to samples →
-            </a>
-          </div>
-        </motion.div>
-
-        {/* Center divider */}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 hidden md:block">
-          <div className="bg-[#0f0f0f] border border-white/10 px-6 py-3 rounded-full shadow-2xl">
-            <p className="font-label text-xs text-gray-500 whitespace-nowrap">
-              Not sure? <Link href="/quotation" className="text-brand-orange hover:underline">Talk to us</Link>
+      {/* ===== 5. TWO SOLUTIONS (Stitch editorial cards) ===== */}
+      <section className="py-20 md:py-32 px-6 md:px-12 bg-[#0f0f0f] border-t border-white/10">
+        <div className="max-w-7xl mx-auto">
+          {/* Section header */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16"
+          >
+            <h2 className="font-headline text-4xl md:text-6xl text-white leading-none tracking-tight mb-6">
+              Two Solutions, <span className="italic text-brand-orange">One Standard.</span>
+            </h2>
+            <p className="text-xl text-white/50 max-w-2xl leading-relaxed">
+              Choose the foundation that supports your brand&apos;s acoustic identity.
             </p>
+          </motion.div>
+
+          {/* Product cards grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+            {/* Card 1: Soundtrack Your Brand (Premium) */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative group"
+            >
+              <div className="absolute -inset-0.5 bg-brand-red/20 opacity-0 group-hover:opacity-100 transition duration-500 blur-xl" />
+              <div className="relative flex flex-col h-full bg-[#161616] border border-white/10 p-8 md:p-12">
+                <div className="mb-10">
+                  <span className="font-label text-xs tracking-[0.3em] text-brand-red font-bold uppercase block mb-4">The Global Standard</span>
+                  <h3 className="text-3xl md:text-4xl font-headline text-white mb-4">Soundtrack Your Brand</h3>
+                  <p className="text-lg text-white/50 leading-relaxed italic">
+                    The world&apos;s largest commercial music library for business.
+                  </p>
+                </div>
+                <ul className="space-y-5 mb-10 flex-grow">
+                  {[
+                    { text: '100M+ tracks — any artist, any genre' },
+                    { text: 'Recording + publishing licenses included' },
+                    { text: 'Drag-and-drop scheduling + Spotify sync' },
+                    { text: 'Bespoke music design, refreshed quarterly' },
+                  ].map((feature) => (
+                    <li key={feature.text} className="flex items-start gap-4 text-white/80">
+                      <span className="w-5 h-5 rounded-full bg-brand-red/20 flex items-center justify-center text-brand-red text-xs mt-0.5 flex-shrink-0">✓</span>
+                      <span>{feature.text}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-auto pt-8 border-t border-white/5">
+                  <p className="flex items-center gap-2 mb-6 text-white/40 text-sm italic">
+                    <span className="text-amber-400">⚠</span>
+                    Public performance license required separately
+                  </p>
+                  <Link href="/quotation">
+                    <motion.span
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="block w-full text-center bg-brand-red hover:bg-brand-red-dark text-white py-4 font-label text-sm font-bold tracking-widest uppercase transition-all"
+                    >
+                      Explore Soundtrack
+                    </motion.span>
+                  </Link>
+                  <a href="https://app.soundtrack.io/search" target="_blank" rel="noopener noreferrer" className="block text-center mt-4 text-sm text-white/40 hover:text-white font-label tracking-widest uppercase transition-colors">
+                    Listen to samples →
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Card 2: Beat Breeze (Essential) */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="relative"
+            >
+              <div className="relative flex flex-col h-full bg-[#161616] border border-white/10 p-8 md:p-12">
+                <div className="mb-10">
+                  <span className="font-label text-xs tracking-[0.3em] text-brand-orange font-bold uppercase block mb-4">All-Inclusive Curation</span>
+                  <h3 className="text-3xl md:text-4xl font-headline text-white mb-4">Beat Breeze</h3>
+                  <p className="text-lg text-white/50 leading-relaxed italic">
+                    Fully licensed background music — zero hassle.
+                  </p>
+                </div>
+                <ul className="space-y-5 mb-10 flex-grow">
+                  {[
+                    { text: '30,000+ royalty-free tracks — ALL 3 licenses included' },
+                    { text: 'No collection society fees, no compliance paperwork' },
+                    { text: 'Bespoke curation by our music designers' },
+                    { text: 'Offline-capable, multi-zone scheduling' },
+                  ].map((feature) => (
+                    <li key={feature.text} className="flex items-start gap-4 text-white/80">
+                      <span className="w-5 h-5 rounded-full bg-brand-orange/20 flex items-center justify-center text-brand-orange text-xs mt-0.5 flex-shrink-0">✓</span>
+                      <span>{feature.text}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-auto pt-8 border-t border-white/5">
+                  <div className="mt-6">
+                    <Link href="/quotation">
+                      <motion.span
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        className="block w-full text-center bg-brand-orange hover:bg-amber-400 text-black py-4 font-label text-sm font-bold tracking-widest uppercase transition-all"
+                      >
+                        Explore Beat Breeze
+                      </motion.span>
+                    </Link>
+                    <a href="https://bmasiamusic.com/listen/a91c14a5-681d-421b-af2e-06651df17b53" target="_blank" rel="noopener noreferrer" className="block text-center mt-4 text-sm text-white/40 hover:text-white font-label tracking-widest uppercase transition-colors">
+                      Listen to samples →
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
+
+          {/* Bottom CTA */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mt-16 text-center"
+          >
+            <Link href="/quotation" className="font-headline text-2xl md:text-3xl text-white group inline-block">
+              Not sure which solution fits?{' '}
+              <span className="text-brand-orange underline decoration-white/20 underline-offset-8 group-hover:decoration-brand-orange transition-all duration-300">
+                Talk to us →
+              </span>
+            </Link>
+          </motion.div>
         </div>
       </section>
 
