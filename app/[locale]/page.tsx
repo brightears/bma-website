@@ -111,12 +111,9 @@ export default function Home() {
             <p className="text-gray-400 text-lg mb-10 leading-relaxed">
               A study of 1.8 million purchases across 16 restaurant locations found that brand-fit music drives measurably higher sales. Dessert purchases alone rose 15.6%.
             </p>
-            <p className="text-gray-500 text-sm mb-6 italic">
-              Source: <a href="https://www.soundtrack.io/research/" target="_blank" rel="noopener noreferrer" className="text-brand-orange/70 hover:text-brand-orange">Soundtrack Research</a> — Global Restaurant Chain Study
+            <p className="text-gray-500 text-sm italic">
+              Source: Soundtrack Research — Global Restaurant Chain Study
             </p>
-            <Link href="/licensing" className="inline-flex items-center gap-2 text-brand-orange font-label font-bold border-b border-brand-orange/30 pb-1 hover:border-brand-orange transition-all">
-              See More Research →
-            </Link>
           </motion.div>
         </div>
       </section>

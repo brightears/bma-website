@@ -174,7 +174,7 @@ export const IndustryPageTemplate: React.FC<IndustryPageProps> = ({
           <h2 className="font-headline text-4xl md:text-5xl text-white mb-4">{editorialStat}</h2>
           <p className="text-brand-orange text-xl">{editorialStatSub}</p>
           <p className="font-label text-gray-500 text-xs mt-4">
-            Source: <a href="https://www.soundtrack.io/research/" target="_blank" rel="noopener noreferrer" className="text-brand-orange/70 hover:text-brand-orange">Soundtrack Research</a>
+            Source: Soundtrack Research
           </p>
         </div>
       </section>
