@@ -146,26 +146,9 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="py-6 border-t border-white/10">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-gray-500 text-sm text-center md:text-left">
-              &copy; {currentYear} {SITE.name}. {t('copyright')}
-            </p>
-            <div className="flex items-center gap-6">
-              <Link
-                href={`/${locale}/licensing`}
-                className="text-gray-500 hover:text-gray-300 text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark rounded"
-              >
-                {t('licensing')}
-              </Link>
-              <span className="text-gray-600">|</span>
-              <Link
-                href={`/${locale}/how-it-works`}
-                className="text-gray-500 hover:text-gray-300 text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark rounded"
-              >
-                {t('musicForBusiness')}
-              </Link>
-            </div>
-          </div>
+          <p className="text-gray-500 text-sm text-center md:text-left">
+            &copy; {currentYear} {SITE.name}. {t('copyright')}
+          </p>
         </div>
       </div>
     </footer>

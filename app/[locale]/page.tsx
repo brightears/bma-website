@@ -326,20 +326,6 @@ export default function Home() {
               Book a Free Demo
             </motion.a>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 pt-20 border-t border-white/5 max-w-4xl mx-auto">
-            <div>
-              <p className="font-label text-xs uppercase text-gray-500 mb-2">Email Us</p>
-              <p className="text-lg text-white">info@bmasiamusic.com</p>
-            </div>
-            <div>
-              <p className="font-label text-xs uppercase text-gray-500 mb-2">Reach Us</p>
-              <p className="text-lg text-white">Bangkok · Singapore · Hong Kong</p>
-            </div>
-            <div className="flex justify-center gap-6">
-              <a href="https://wa.me/66632377765" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-brand-orange transition-colors text-sm font-label">WhatsApp</a>
-              <a href="https://lin.ee/GKG9FGX" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-brand-orange transition-colors text-sm font-label">LINE</a>
-            </div>
-          </div>
         </div>
       </section>
 
