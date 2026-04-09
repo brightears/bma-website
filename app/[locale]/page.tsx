@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { HeroChat, ClientLogos } from '@/components/sections';
+import { FloatingChatButton } from '@/components/chat/FloatingChatButton';
 
 /**
  * BMAsia Homepage — Cinematic Conversion-Optimized
@@ -344,6 +345,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Floating chat button — mobile only, appears after scrolling */}
+      <FloatingChatButton />
     </>
   );
 }
