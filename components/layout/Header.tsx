@@ -238,7 +238,7 @@ export const Header: React.FC = () => {
           <>
             {/* Overlay */}
             <motion.div
-              className="fixed inset-0 bg-black/60 backdrop-blur-sm md:hidden"
+              className="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm md:hidden"
               variants={overlayVariants}
               initial="closed"
               animate="open"
@@ -250,7 +250,7 @@ export const Header: React.FC = () => {
             {/* Menu Panel */}
             <motion.div
               id="mobile-menu"
-              className="fixed top-0 right-0 bottom-0 w-full max-w-sm bg-brand-dark border-l border-white/10 md:hidden"
+              className="fixed top-0 right-0 bottom-0 w-full max-w-sm z-[70] bg-brand-dark border-l border-white/10 md:hidden"
               variants={menuVariants}
               initial="closed"
               animate="open"
