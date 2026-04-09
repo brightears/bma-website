@@ -184,8 +184,9 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="relative"
+              className="relative group"
             >
+              <div className="absolute -inset-0.5 bg-brand-orange/20 opacity-0 group-hover:opacity-100 transition duration-500 blur-xl" />
               <div className="relative flex flex-col h-full bg-[#161616] border border-white/10 p-8 md:p-12">
                 <div className="mb-10">
                   <span className="font-label text-xs tracking-[0.3em] text-brand-orange font-bold uppercase block mb-4">All-Inclusive Curation</span>
