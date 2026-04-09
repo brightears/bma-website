@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { HeroChat, ClientLogos } from '@/components/sections';
+import { ClientLogos } from '@/components/sections';
 import { FloatingChatButton } from '@/components/chat/FloatingChatButton';
 
 /**
@@ -30,46 +30,34 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0f0f0f] via-[#0f0f0f]/80 to-transparent" />
         </div>
-        <div className="container mx-auto px-8 md:px-16 lg:px-24 relative z-10 grid md:grid-cols-2 gap-12 items-center">
-          {/* Left: Headline + CTAs */}
-          <div>
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-headline text-white leading-[1.05] mb-6">
-              {t('headline')}{' '}
-              <br />
-              <span className="italic text-brand-orange">{t('headlineHighlight')}</span>
-            </h1>
-            <p className="text-lg text-gray-400 mb-8 leading-relaxed max-w-xl">
-              {t('subheading')}
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Link href="/quotation">
-                <motion.span
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center gap-2 bg-brand-orange hover:bg-amber-400 text-black px-8 py-4 rounded-full font-label font-bold transition-all shadow-lg shadow-brand-orange/20"
-                >
-                  {t('ctaQuote')}
-                </motion.span>
-              </Link>
-              <motion.a
-                href="#demo"
+        <div className="container mx-auto px-8 md:px-16 lg:px-24 relative z-10 max-w-3xl">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-headline text-white leading-[1.05] mb-6">
+            {t('headline')}{' '}
+            <br />
+            <span className="italic text-brand-orange">{t('headlineHighlight')}</span>
+          </h1>
+          <p className="text-lg text-gray-400 mb-8 leading-relaxed max-w-xl">
+            {t('subheading')}
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <Link href="/quotation">
+              <motion.span
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="border border-white/20 hover:bg-white/5 text-white px-8 py-4 rounded-full font-label font-bold transition-all"
+                className="inline-flex items-center gap-2 bg-brand-orange hover:bg-amber-400 text-black px-8 py-4 rounded-full font-label font-bold transition-all shadow-lg shadow-brand-orange/20"
               >
-                {t('ctaDemo')}
-              </motion.a>
-            </div>
+                {t('ctaQuote')}
+              </motion.span>
+            </Link>
+            <motion.a
+              href="#demo"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="border border-white/20 hover:bg-white/5 text-white px-8 py-4 rounded-full font-label font-bold transition-all"
+            >
+              {t('ctaDemo')}
+            </motion.a>
           </div>
-          {/* Right: AI Chat — invites conversation */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="hidden md:block"
-          >
-            <HeroChat />
-          </motion.div>
         </div>
       </section>
 
