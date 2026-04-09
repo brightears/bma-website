@@ -297,10 +297,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== 8. TRUSTED BY ===== */}
-      <ClientLogos />
-
-      {/* ===== 9. FINAL CTA (from Stitch) ===== */}
+      {/* ===== 8. FINAL CTA (from Stitch) ===== */}
       <section className="min-h-screen relative flex items-center justify-center overflow-hidden" id="demo">
         <div className="absolute inset-0" style={{ background: 'radial-gradient(circle, rgba(239, 166, 52, 0.15) 0%, rgba(15, 15, 15, 1) 70%)' }} />
         <div className="container mx-auto px-8 text-center relative z-10">
