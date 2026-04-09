@@ -70,7 +70,7 @@ export default function LicensingPage() {
       </section>
 
       {/* The Three Licenses */}
-      <section className="py-20 md:py-32 px-6 md:px-12 bg-[#0f0f0f]">
+      <section className="py-16 md:py-24 px-6 md:px-12 bg-[#0f0f0f]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10">
             {LICENSES.map((license, i) => (
@@ -92,7 +92,7 @@ export default function LicensingPage() {
       </section>
 
       {/* Warning Section */}
-      <section className="py-20 md:py-32 px-6 md:px-12 bg-[#0f0f0f] border-y border-white/5">
+      <section className="py-16 md:py-24 px-6 md:px-12 bg-[#0f0f0f] border-y border-white/5">
         <div className="max-w-5xl mx-auto">
           {/* Red divider with label */}
           <div className="flex items-center gap-4 mb-12">
@@ -128,7 +128,7 @@ export default function LicensingPage() {
       </section>
 
       {/* Comparison */}
-      <section className="py-20 md:py-32 px-6 md:px-12 bg-[#0f0f0f]">
+      <section className="py-16 md:py-24 px-6 md:px-12 bg-[#0f0f0f]">
         <div className="max-w-6xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -206,7 +206,7 @@ export default function LicensingPage() {
       </section>
 
       {/* CTA */}
-      <section className="relative py-24 md:py-36 bg-[#0f0f0f] overflow-hidden text-center">
+      <section className="relative py-16 md:py-24 bg-[#0f0f0f] overflow-hidden text-center">
         <div className="max-w-4xl mx-auto relative z-10 px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

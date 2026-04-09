@@ -280,7 +280,7 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent group-hover:via-black/20 transition-all" />
                   <div className="absolute bottom-8 left-8">
-                    <h4 className="text-2xl font-headline text-white mb-2">{industry.title}</h4>
+                    <h3 className="text-2xl font-headline text-white mb-2">{industry.title}</h3>
                     <p className="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity mb-4">{industry.desc}</p>
                     <span className="text-brand-orange font-label text-sm flex items-center gap-2">
                       Explore →
@@ -319,7 +319,7 @@ export default function Home() {
               whileTap={{ scale: 0.95 }}
               className="border border-white/20 hover:bg-white/5 text-white px-12 py-5 rounded-full font-label font-bold text-lg transition-all"
             >
-              Book a Free Demo
+              Book a Demo
             </motion.a>
           </div>
         </div>

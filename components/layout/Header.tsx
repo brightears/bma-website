@@ -208,7 +208,7 @@ export const Header: React.FC = () => {
             <LanguageSwitcher />
             <Link
               href={`/${locale}/quotation`}
-              className="ml-2 bg-brand-orange hover:bg-brand-orange-dark text-white px-5 py-2 rounded-lg text-sm font-semibold transition-colors shadow-sm shadow-brand-orange/20"
+              className="ml-2 bg-brand-orange hover:bg-brand-orange-dark text-black px-5 py-2 rounded-lg text-sm font-semibold transition-colors shadow-sm shadow-brand-orange/20"
             >
               Get a Quote
             </Link>

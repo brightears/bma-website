@@ -94,12 +94,6 @@ export default function QuotationPage() {
                   Fill in your details and we&apos;ll get back to you with a personalized quote.
                 </p>
                 <QuotationForm />
-                <p className="text-white/20 text-xs mt-6">
-                  By submitting, you agree to our{' '}
-                  <Link href="/privacy" className="text-white/40 hover:text-brand-orange underline transition-colors">
-                    Privacy Policy
-                  </Link>.
-                </p>
               </div>
             </motion.div>
           </div>

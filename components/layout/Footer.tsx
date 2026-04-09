@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
                 src="/images/BMAsia_Logo.png"
                 alt="BMAsia"
                 width={80}
-                height={22}
+                height={32}
                 className="h-5 w-auto"
               />
             </Link>
@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-6">
               <a
                 href={`mailto:${SITE.email}`}
-                className="text-gray-500 hover:text-brand-orange transition-colors text-xs font-label tracking-wide"
+                className="text-gray-400 hover:text-brand-orange transition-colors text-xs font-label tracking-wide"
               >
                 {SITE.email}
               </a>
@@ -43,17 +43,17 @@ export const Footer: React.FC = () => {
           </div>
           <div className="flex items-center justify-between mt-4 pt-4 border-t border-white/5">
             <div className="flex items-center gap-6">
-              <Link href={`/${locale}/privacy`} className="text-gray-600 hover:text-gray-400 transition-colors text-xs font-label">
+              <Link href={`/${locale}/privacy`} className="text-gray-400 hover:text-gray-300 transition-colors text-xs font-label">
                 Privacy Policy
               </Link>
-              <Link href={`/${locale}/cookies`} className="text-gray-600 hover:text-gray-400 transition-colors text-xs font-label">
+              <Link href={`/${locale}/cookies`} className="text-gray-400 hover:text-gray-300 transition-colors text-xs font-label">
                 Cookie Policy
               </Link>
-              <Link href={`/${locale}/terms`} className="text-gray-600 hover:text-gray-400 transition-colors text-xs font-label">
+              <Link href={`/${locale}/terms`} className="text-gray-400 hover:text-gray-300 transition-colors text-xs font-label">
                 Terms of Service
               </Link>
             </div>
-            <p className="text-gray-600 text-xs font-label">
+            <p className="text-gray-400 text-xs font-label">
               &copy; {currentYear} {SITE.name}. All rights reserved.
             </p>
           </div>
@@ -67,14 +67,14 @@ export const Footer: React.FC = () => {
                 src="/images/BMAsia_Logo.png"
                 alt="BMAsia"
                 width={80}
-                height={22}
+                height={32}
                 className="h-5 w-auto"
               />
             </Link>
             <div className="flex items-center gap-3">
               <a
                 href={`mailto:${SITE.email}`}
-                className="text-gray-500 hover:text-brand-orange transition-colors text-xs font-label"
+                className="text-gray-400 hover:text-brand-orange transition-colors text-xs font-label"
               >
                 {SITE.email}
               </a>
@@ -84,17 +84,17 @@ export const Footer: React.FC = () => {
           </div>
           <div className="flex items-center justify-between pt-3 border-t border-white/5">
             <div className="flex items-center gap-4">
-              <Link href={`/${locale}/privacy`} className="text-gray-600 hover:text-gray-400 transition-colors text-[10px] font-label">
+              <Link href={`/${locale}/privacy`} className="text-gray-400 hover:text-gray-300 transition-colors text-[10px] font-label">
                 Privacy
               </Link>
-              <Link href={`/${locale}/cookies`} className="text-gray-600 hover:text-gray-400 transition-colors text-[10px] font-label">
+              <Link href={`/${locale}/cookies`} className="text-gray-400 hover:text-gray-300 transition-colors text-[10px] font-label">
                 Cookies
               </Link>
-              <Link href={`/${locale}/terms`} className="text-gray-600 hover:text-gray-400 transition-colors text-[10px] font-label">
+              <Link href={`/${locale}/terms`} className="text-gray-400 hover:text-gray-300 transition-colors text-[10px] font-label">
                 Terms
               </Link>
             </div>
-            <p className="text-gray-600 text-[10px] font-label">
+            <p className="text-gray-400 text-[10px] font-label">
               &copy; {currentYear} {SITE.name}
             </p>
           </div>

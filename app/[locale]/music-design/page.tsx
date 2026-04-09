@@ -13,7 +13,7 @@ export default function MusicDesignPage() {
       <iframe
         src="https://bmasia-music-brief-v2.onrender.com/?embed=true"
         className="w-full border-0"
-        style={{ height: 'calc(100vh - 80px)', minHeight: '700px' }}
+        style={{ height: 'calc(100vh - 80px)' }}
         title="BMAsia Music Design Assistant"
         allow="microphone"
         loading="lazy"
