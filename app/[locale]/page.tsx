@@ -293,38 +293,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== 7. HOW IT WORKS (from Stitch) ===== */}
-      <section className="py-24 bg-brand-navy relative overflow-hidden">
-        <div className="container mx-auto px-8 relative z-10">
-          <h2 className="text-center text-5xl font-headline text-white mb-24">The BMAsia Journey</h2>
-          <div className="grid md:grid-cols-3 gap-16 relative">
-            {/* Connector Line — positioned below the numbers */}
-            <div className="hidden md:block absolute top-[5.5rem] left-0 w-full h-[1px] bg-brand-orange/20">
-              <div className="w-1/3 h-full bg-brand-orange/40" />
-            </div>
-            {[
-              { num: '01', title: 'We Listen', desc: 'Our music designers analyze your brand DNA, guest demographics, and venue acoustics.' },
-              { num: '02', title: 'We Design', desc: 'We curate a multi-layered sonic schedule that evolves throughout the day and week.' },
-              { num: '03', title: 'We Deliver', desc: 'Using smart hardware or software, your music plays flawlessly across all your locations.' },
-            ].map((step) => (
-              <motion.div
-                key={step.num}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="text-center"
-              >
-                <div className="text-7xl font-headline text-brand-orange/20 mb-6">{step.num}</div>
-                <h3 className="text-2xl font-headline text-white mb-4">{step.title}</h3>
-                <p className="text-gray-400">{step.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ===== 8. FINAL CTA (from Stitch) ===== */}
+      {/* ===== 7. FINAL CTA (from Stitch) ===== */}
       <section className="min-h-screen relative flex items-center justify-center overflow-hidden" id="demo">
         <div className="absolute inset-0" style={{ background: 'radial-gradient(circle, rgba(239, 166, 52, 0.15) 0%, rgba(15, 15, 15, 1) 70%)' }} />
         <div className="container mx-auto px-8 text-center relative z-10">
