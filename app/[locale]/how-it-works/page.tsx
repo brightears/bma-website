@@ -18,7 +18,7 @@ const STEPS = [
   {
     num: '03',
     title: 'Setup & Go Live',
-    desc: 'We ship hardware (or configure your existing devices), set up the software remotely, and train your team. Most venues are playing music within 48 hours of receiving equipment. We handle everything — you just press play.',
+    desc: 'We ship hardware (or configure your existing devices), set up the software remotely, and train your team. If hardware is already in place, you can be playing music within minutes. We handle everything — you just press play.',
   },
   {
     num: '04',
@@ -29,7 +29,7 @@ const STEPS = [
 
 const STATS = [
   { value: '23 Years', desc: 'Curating music for hospitality across Asia-Pacific since 2002.' },
-  { value: '2 Week Setup', desc: 'From signed contract to live music in your venue.' },
+  { value: '48 Hours', desc: 'From bespoke music design to live in your venue. Instant if hardware is in place.' },
   { value: '100% Legal', desc: 'Every track fully licensed. No compliance headaches, no fines.' },
 ];
 
@@ -64,7 +64,7 @@ export default function HowItWorksPage() {
                 <span className="italic text-brand-orange">First Note</span>
               </h1>
               <p className="text-xl md:text-2xl text-white/60 max-w-2xl leading-relaxed">
-                Most clients are live within 2 weeks. Here&apos;s what the process looks like.
+                Most clients are live within 48 hours. Here&apos;s what the process looks like.
               </p>
             </motion.div>
           </div>
@@ -122,7 +122,7 @@ export default function HowItWorksPage() {
       </section>
 
       {/* What Makes Us Different */}
-      <section className="py-20 md:py-32 bg-[#F5F0EB] text-[#0f0f0f]">
+      <section className="py-20 md:py-32 bg-[#0f0f0f] border-t border-white/10">
         <div className="container mx-auto px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -131,10 +131,10 @@ export default function HowItWorksPage() {
             transition={{ duration: 0.6 }}
             className="max-w-2xl mb-16 md:mb-24"
           >
-            <span className="font-label text-sm tracking-[0.3em] uppercase mb-6 block text-[#0f0f0f]/40">
+            <span className="font-label text-brand-orange text-sm tracking-[0.3em] uppercase mb-6 block">
               Why BMAsia
             </span>
-            <h2 className="font-headline text-4xl md:text-6xl leading-tight">
+            <h2 className="font-headline text-4xl md:text-6xl leading-tight text-white">
               Built for Hospitality.
             </h2>
           </motion.div>
@@ -146,10 +146,10 @@ export default function HowItWorksPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="border-l border-[#0f0f0f]/10 pl-8"
+                className="border-l border-white/10 pl-8"
               >
-                <h4 className="font-headline text-4xl md:text-5xl mb-4">{stat.value}</h4>
-                <p className="text-lg text-[#0f0f0f]/60 leading-relaxed">{stat.desc}</p>
+                <h4 className="font-headline text-4xl md:text-5xl text-brand-orange mb-4">{stat.value}</h4>
+                <p className="text-lg text-white/50 leading-relaxed">{stat.desc}</p>
               </motion.div>
             ))}
           </div>
