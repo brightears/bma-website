@@ -99,18 +99,20 @@ export const IndustryPageTemplate: React.FC<IndustryPageProps> = ({
         </div>
       </section>
 
-      {/* ZONES / USE CASES */}
+      {/* ZONES + BENEFITS — Combined Section */}
       <section className="py-12 md:py-16 px-4 md:px-8 lg:px-16 bg-[#0f0f0f]">
         <div className="max-w-5xl mx-auto">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="font-headline text-3xl md:text-4xl text-white mb-10"
-          >
-            {zonesTitle}
-          </motion.h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="font-headline text-3xl md:text-4xl text-white"
+            >
+              {zonesTitle}
+            </motion.h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-5">
             {zones.map((zone, i) => (
               <motion.div
                 key={zone.name}
@@ -128,34 +130,32 @@ export const IndustryPageTemplate: React.FC<IndustryPageProps> = ({
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* BENEFITS */}
-      <section className="py-12 md:py-16 px-4 md:px-8 lg:px-16 bg-brand-dark">
-        <div className="max-w-4xl mx-auto">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="font-headline text-3xl md:text-4xl text-white mb-12"
-          >
-            {benefitsTitle}
-          </motion.h2>
-          <div className="space-y-8">
-            {benefits.map((benefit, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, x: -15 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="flex items-start gap-4"
-              >
-                <span className="w-1.5 h-1.5 rounded-full bg-brand-orange mt-2.5 flex-shrink-0" />
-                <p className="text-gray-300 text-lg">{benefit}</p>
-              </motion.div>
-            ))}
+          {/* Benefits — inline below zones */}
+          <div className="mt-14 pt-10 border-t border-white/10">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="font-label text-xs uppercase tracking-widest text-brand-orange mb-8"
+            >
+              {benefitsTitle}
+            </motion.p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {benefits.map((benefit, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: i * 0.1 }}
+                  className="flex items-start gap-3"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-orange mt-2 flex-shrink-0" />
+                  <p className="text-gray-300">{benefit}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
