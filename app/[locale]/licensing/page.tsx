@@ -1,583 +1,234 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import {
-  Disc3,
-  FileText,
-  Users,
-  AlertTriangle,
-  Shield,
-  CheckCircle2,
-  LucideIcon,
-} from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { LICENSE_TYPES, PRODUCTS } from '@/lib/constants';
 
-/**
- * Map of license types to their corresponding Lucide icons
- */
-const licenseIcons: Record<string, LucideIcon> = {
-  'Recording License': Disc3,
-  'Publishing License': FileText,
-  'Public Performance License': Users,
-};
+const LICENSES = [
+  { num: '01', title: 'Recording License', desc: 'Covers the right to use a specific recording of a song and compensates the recording artist and their record label.' },
+  { num: '02', title: 'Publishing License', desc: 'Covers the right to use the original composition and compensates the songwriters and music composers for their intellectual property.' },
+  { num: '03', title: 'Public Performance License', desc: 'Allows you to play the song in a public environment like your business venue, retail space, or restaurant.' },
+];
 
-/**
- * Consumer streaming services that are NOT licensed for business use
- */
-const CONSUMER_STREAMING_SERVICES = [
-  'Spotify',
-  'Apple Music',
-  'YouTube Music',
-  'Amazon Music',
-  'Tidal',
-  'Deezer',
-] as const;
+const STREAMING_SERVICES = ['Spotify', 'Apple Music', 'YouTube Music', 'Amazon Music', 'Tidal', 'Deezer'];
 
-/**
- * Animation variants for the container with staggered children
- */
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-      delayChildren: 0.1,
-    },
-  },
-};
-
-/**
- * Animation variants for individual cards
- */
-const cardVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: 'easeOut',
-    },
-  },
-};
-
-/**
- * Animation variants for list items
- */
-const listItemVariants = {
-  hidden: { opacity: 0, x: -20 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.4,
-      ease: 'easeOut',
-    },
-  },
-};
-
-interface LicenseCardProps {
-  name: string;
-  description: string;
-}
-
-/**
- * Individual license type card with glassmorphism styling
- */
-const LicenseCard: React.FC<LicenseCardProps> = ({ name, description }) => {
-  const IconComponent = licenseIcons[name] || FileText;
-
-  return (
-    <motion.article
-      variants={cardVariants}
-      whileHover={{ y: -8, transition: { duration: 0.3 } }}
-      className="group relative bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 md:p-8 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
-    >
-      {/* Icon container with gradient background */}
-      <div className="w-14 h-14 md:w-16 md:h-16 rounded-xl bg-gradient-to-br from-brand-orange to-amber-500 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-        <IconComponent
-          className="w-7 h-7 md:w-8 md:h-8 text-white"
-          aria-hidden="true"
-        />
-      </div>
-
-      {/* License name */}
-      <h3 className="text-xl md:text-2xl font-bold text-white mb-3">
-        {name}
-      </h3>
-
-      {/* Description */}
-      <p className="text-gray-400 leading-relaxed">
-        {description}
-      </p>
-
-      {/* Decorative gradient overlay on hover */}
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-brand-orange/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-    </motion.article>
-  );
-};
-
-/**
- * Licensing Page Component
- *
- * Explains music licensing requirements for businesses:
- * - Three types of licenses needed (Recording, Publishing, Public Performance)
- * - Warning about consumer streaming services
- * - How BMAsia solutions include all necessary licensing
- *
- * Features:
- * - Hero section with dark gradient background
- * - License types displayed as glassmorphism cards
- * - Warning section with alert styling
- * - Solution section referencing BMAsia products
- * - CTA section linking to quotation page
- * - Scroll-triggered staggered animations
- * - Fully responsive design
- * - Accessible with proper ARIA labels and heading hierarchy
- */
 export default function LicensingPage() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative py-20 md:py-32 px-4 md:px-8 lg:px-16 overflow-hidden">
-        {/* Background image */}
-        <Image
-          src="/images/hero-visualization.webp"
-          alt="Abstract sound wave visualization representing music licensing"
-          fill
-          priority
-          className="object-cover opacity-60"
-          sizes="100vw"
-        />
-        {/* Background gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/60 via-brand-navy/40 to-brand-dark/80" />
-
-        {/* Decorative background elements - hidden on mobile to prevent overflow */}
-        <div className="hidden sm:block absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-          {/* Radial gradient for depth */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-orange/5 rounded-full blur-3xl" />
-          {/* Additional glow effect */}
-          <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-brand-navy/50 rounded-full blur-3xl" />
+      {/* Hero */}
+      <section className="relative min-h-[70vh] flex items-center pt-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/hero-retail.webp"
+            alt="Premium venue interior"
+            fill
+            priority
+            className="object-cover opacity-40"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0f0f0f] via-[#0f0f0f]/80 to-transparent" />
         </div>
+        <div className="relative z-10 container mx-auto px-6 md:px-12">
+          <div className="max-w-4xl">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <span className="font-label text-brand-orange text-sm tracking-[0.3em] uppercase mb-6 block">
+                Compliance
+              </span>
+              <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl leading-none tracking-tight text-white mb-6">
+                Music Licensing <br />
+                <span className="italic text-brand-orange">Made Simple</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-white/60 max-w-xl leading-relaxed">
+                Understanding the licenses your business needs to stay compliant and support the artists you play.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
-        {/* Content */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
+      {/* Why Licenses Matter — brief intro */}
+      <section className="py-16 md:py-24 px-6 md:px-12 bg-[#0f0f0f] border-t border-white/10">
+        <div className="max-w-3xl mx-auto text-center">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
           >
-            {/* Main heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Music Licensing{' '}
-              <span className="gradient-text">Made Simple</span>
-            </h1>
-
-            {/* Subheading */}
-            <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
-              Understanding the licenses your business needs
+            <p className="text-xl md:text-2xl text-white/70 leading-relaxed">
+              Playing music in a business is different from listening at home. When you use music commercially, you need permission from the rights holders.
+            </p>
+            <p className="text-xl md:text-2xl text-white mt-4 font-headline">
+              Your business needs <span className="text-brand-orange">three different licenses.</span>
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Introduction Section */}
-      <section
-        className="relative py-16 md:py-24 px-4 md:px-8 lg:px-16 overflow-hidden"
-        aria-labelledby="intro-heading"
-      >
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark via-brand-navy to-brand-dark" />
-
-        <div className="relative z-10 max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="text-center"
-          >
-            <h2
-              id="intro-heading"
-              className="text-3xl md:text-4xl font-bold text-white mb-6"
-            >
-              Why Does Your Business{' '}
-              <span className="gradient-text">Need Licenses?</span>
-            </h2>
-
-            <div className="space-y-4 text-gray-300 text-lg md:text-xl leading-relaxed">
-              <p>
-                Playing music in a business is different from listening at home. When you use music commercially, you need permission from the rights holders who created that music.
-              </p>
-              <p className="font-semibold text-white">
-                To legally play music in your business, you need{' '}
-                <span className="text-brand-orange">three different licenses</span>.
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* License Types Section */}
-      <section
-        className="relative py-16 md:py-24 px-4 md:px-8 lg:px-16 overflow-hidden"
-        aria-labelledby="license-types-heading"
-      >
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark via-brand-navy to-brand-navy" />
-
-        {/* Decorative background elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-          {/* Left side glow */}
-          <div className="absolute top-1/3 -left-40 w-80 h-80 bg-brand-orange/10 rounded-full blur-3xl" />
-          {/* Right side glow */}
-          <div className="absolute bottom-1/3 -right-40 w-80 h-80 bg-brand-orange/5 rounded-full blur-3xl" />
-        </div>
-
-        <div className="relative z-10 max-w-7xl mx-auto">
-          {/* Section header */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="text-center mb-12 md:mb-16"
-          >
-            <h2
-              id="license-types-heading"
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
-            >
-              The Three{' '}
-              <span className="gradient-text">Essential Licenses</span>
-            </h2>
-            <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
-              Each license protects different rights holders and ensures fair compensation
-            </p>
-          </motion.div>
-
-          {/* License cards grid */}
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: '-100px' }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"
-          >
-            {LICENSE_TYPES.map((license) => (
-              <LicenseCard
-                key={license.name}
-                name={license.name}
-                description={license.description}
-              />
+      {/* The Three Licenses */}
+      <section className="py-20 md:py-32 px-6 md:px-12 bg-[#0f0f0f]">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10">
+            {LICENSES.map((license, i) => (
+              <motion.div
+                key={license.num}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="p-8 md:p-12"
+              >
+                <span className="font-headline text-5xl md:text-6xl text-brand-orange/30 block mb-8">{license.num}.</span>
+                <h3 className="font-headline text-2xl md:text-3xl text-white mb-4">{license.title}</h3>
+                <p className="text-lg text-white/50 leading-relaxed">{license.desc}</p>
+              </motion.div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Warning Section */}
-      <section
-        className="relative py-16 md:py-24 px-4 md:px-8 lg:px-16 overflow-hidden"
-        aria-labelledby="warning-heading"
-      >
-        {/* Background with warning accent */}
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-navy via-brand-dark to-brand-dark" />
+      <section className="py-20 md:py-32 px-6 md:px-12 bg-[#0f0f0f] border-y border-white/5">
+        <div className="max-w-5xl mx-auto">
+          {/* Red divider with label */}
+          <div className="flex items-center gap-4 mb-12">
+            <div className="h-px flex-1 bg-brand-red" />
+            <span className="font-label text-brand-red text-xs tracking-[0.2em] font-bold">CRITICAL COMPLIANCE</span>
+            <div className="h-px flex-1 bg-brand-red" />
+          </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="relative bg-gradient-to-br from-red-500/10 via-orange-500/10 to-amber-500/5 backdrop-blur-lg border border-red-500/30 rounded-2xl p-8 md:p-12"
-            role="alert"
-            aria-live="polite"
-          >
-            {/* Warning icon */}
-            <div className="flex justify-center mb-6">
-              <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-red-500/20 to-orange-500/20 flex items-center justify-center">
-                <AlertTriangle
-                  className="w-8 h-8 md:w-10 md:h-10 text-red-400"
-                  aria-hidden="true"
-                />
-              </div>
-            </div>
-
-            {/* Warning heading */}
-            <h2
-              id="warning-heading"
-              className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-white mb-6"
-            >
-              Consumer Streaming Services Are{' '}
-              <span className="text-red-400">NOT</span>{' '}
-              Licensed for Business Use
-            </h2>
-
-            {/* Services list */}
-            <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              className="flex flex-wrap justify-center gap-3 mb-8"
-            >
-              {CONSUMER_STREAMING_SERVICES.map((service) => (
-                <motion.span
-                  key={service}
-                  variants={listItemVariants}
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-gray-300"
-                >
-                  <span className="w-2 h-2 rounded-full bg-red-400" aria-hidden="true" />
-                  {service}
-                </motion.span>
-              ))}
-            </motion.div>
-
-            {/* Explanation */}
-            <div className="space-y-4 text-center text-gray-300">
-              <p className="text-lg leading-relaxed">
-                These services are licensed for <span className="text-white font-semibold">personal use only</span>.
-                Using them in a commercial setting violates their terms of service and can expose your business to legal liability.
-              </p>
-
-              {/* Spotify terms citation */}
-              <blockquote className="relative mt-6 px-6 py-4 bg-white/5 rounded-lg border-l-4 border-brand-orange italic text-gray-400">
-                <p className="text-sm md:text-base">
-                  &ldquo;The Spotify Service and the Content are the property of Spotify or Spotify&apos;s licensors. We grant you a limited, non-exclusive, revocable licence to make <span className="text-white not-italic font-medium">personal, non-commercial use</span> of the Spotify Service...&rdquo;
-                </p>
-                <footer className="mt-2 text-xs text-gray-500 not-italic">
-                  - Spotify Terms of Service
-                </footer>
-              </blockquote>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Solution Section */}
-      <section
-        className="relative py-16 md:py-24 px-4 md:px-8 lg:px-16 overflow-hidden"
-        aria-labelledby="solution-heading"
-      >
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark via-brand-navy to-brand-dark" />
-
-        {/* Decorative background elements - hidden on mobile to prevent overflow */}
-        <div className="hidden sm:block absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-orange/5 rounded-full blur-3xl" />
-        </div>
-
-        <div className="relative z-10 max-w-5xl mx-auto">
-          {/* Section header */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="text-center mb-12 md:mb-16"
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-brand-orange to-amber-500 mb-6">
-              <Shield
-                className="w-8 h-8 md:w-10 md:h-10 text-white"
-                aria-hidden="true"
-              />
+            <h2 className="font-headline text-4xl md:text-6xl text-center leading-tight text-white mb-16">
+              Consumer Streaming Services Are <span className="text-brand-red">NOT</span> Licensed for Business Use
+            </h2>
+
+            <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mb-16 text-center opacity-50">
+              {STREAMING_SERVICES.map((service) => (
+                <span key={service} className="font-label text-xs uppercase tracking-widest text-white">{service}</span>
+              ))}
             </div>
 
-            <h2
-              id="solution-heading"
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
-            >
-              We Handle the{' '}
-              <span className="gradient-text">Licensing Complexity</span>
-            </h2>
-            <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
-              Choose the solution that fits your needs
-            </p>
-          </motion.div>
-
-          {/* Product cards with licensing details */}
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: '-100px' }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8"
-          >
-            {/* Soundtrack Your Brand */}
-            <motion.article
-              variants={cardVariants}
-              whileHover={{ y: -4, transition: { duration: 0.3 } }}
-              className="relative bg-white/5 backdrop-blur-lg border border-brand-orange/50 rounded-2xl p-6 md:p-8 hover:border-brand-orange transition-all duration-300"
-            >
-              <div className="absolute -top-3 left-6 px-4 py-1 bg-gradient-to-r from-brand-orange to-amber-500 rounded-full text-xs font-semibold text-white uppercase tracking-wider">
-                Premium
-              </div>
-
-              <h3 className="text-2xl font-bold text-white mb-2 mt-2">
-                {PRODUCTS.soundtrackYourBrand.name}
-              </h3>
-              <p className="text-brand-orange mb-4">
-                {PRODUCTS.soundtrackYourBrand.tagline}
+            <div className="relative bg-white/5 p-10 md:p-16 border-l-4 border-brand-red">
+              <p className="font-headline italic text-xl md:text-2xl text-white/90 leading-relaxed">
+                &ldquo;We grant you a limited, non-exclusive, revocable licence to make personal, <span className="underline decoration-brand-red underline-offset-8">non-commercial</span> use of the Spotify Service...&rdquo;
               </p>
-              <p className="text-gray-400 mb-4">
-                Access over 100 million tracks with recording and publishing licenses included.
-              </p>
-
-              {/* License checklist */}
-              <div className="space-y-2 mb-6">
-                <div className="flex items-center gap-2 text-sm">
-                  <CheckCircle2 className="w-4 h-4 text-green-400" aria-hidden="true" />
-                  <span className="text-gray-300">Recording License - 100M+ tracks</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <CheckCircle2 className="w-4 h-4 text-green-400" aria-hidden="true" />
-                  <span className="text-gray-300">Publishing License - Compositions covered</span>
-                </div>
-                <div className="flex items-start gap-2 text-sm">
-                  <AlertTriangle className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
-                  <span className="text-amber-300">Public Performance License - Required separately from your local PRO</span>
-                </div>
-              </div>
-
-              <Link href="/quotation">
-                <motion.span
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="inline-block w-full text-center bg-brand-orange hover:bg-brand-orange-dark text-white px-6 py-3 rounded-xl font-semibold transition-colors"
-                >
-                  Get a Quote
-                </motion.span>
-              </Link>
-            </motion.article>
-
-            {/* Beat Breeze */}
-            <motion.article
-              variants={cardVariants}
-              whileHover={{ y: -4, transition: { duration: 0.3 } }}
-              className="relative bg-white/5 backdrop-blur-lg border border-green-500/30 rounded-2xl p-6 md:p-8 hover:border-green-500/50 hover:bg-white/10 transition-all duration-300"
-            >
-              <div className="absolute -top-3 left-6 px-4 py-1 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full text-xs font-semibold text-white uppercase tracking-wider">
-                Fully Licensed
-              </div>
-
-              <h3 className="text-2xl font-bold text-white mb-2 mt-2">
-                {PRODUCTS.beatBreeze.name}
-              </h3>
-              <p className="text-green-400 mb-4">
-                {PRODUCTS.beatBreeze.tagline}
-              </p>
-              <p className="text-gray-400 mb-4">
-                Over 30,000 curated tracks with ALL licenses included. No additional fees or PRO negotiations required.
-              </p>
-
-              {/* License checklist */}
-              <div className="space-y-2 mb-4">
-                <div className="flex items-center gap-2 text-sm">
-                  <CheckCircle2 className="w-4 h-4 text-green-400" aria-hidden="true" />
-                  <span className="text-gray-300">Recording License - 30K+ tracks</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <CheckCircle2 className="w-4 h-4 text-green-400" aria-hidden="true" />
-                  <span className="text-gray-300">Publishing License - Compositions covered</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <CheckCircle2 className="w-4 h-4 text-green-400" aria-hidden="true" />
-                  <span className="text-green-300 font-medium">Public Performance License - Included!</span>
-                </div>
-              </div>
-
-              <p className="text-sm text-green-400/80 mb-6">
-                Play music worry-free - we handle everything.
-              </p>
-
-              <Link href="/quotation">
-                <motion.span
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="inline-block w-full text-center bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-semibold transition-colors"
-                >
-                  Get a Quote
-                </motion.span>
-              </Link>
-            </motion.article>
+              <div className="mt-6 font-label text-brand-red text-sm font-bold uppercase tracking-widest">— Spotify Terms &amp; Conditions</div>
+            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section
-        className="relative py-20 md:py-32 px-4 md:px-8 lg:px-16 overflow-hidden"
-        aria-labelledby="cta-heading"
-      >
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark via-brand-navy to-brand-dark" />
+      {/* Comparison */}
+      <section className="py-20 md:py-32 px-6 md:px-12 bg-[#0f0f0f]">
+        <div className="max-w-6xl mx-auto">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="font-headline text-4xl md:text-5xl text-white text-center mb-16"
+          >
+            Compare Your Solution
+          </motion.h2>
 
-        {/* Decorative background elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-          {/* Top glow */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-brand-orange/10 rounded-full blur-3xl" />
-          {/* Bottom pattern - sound wave visualization */}
-          <div className="absolute bottom-0 left-0 right-0 h-32 flex items-end justify-center gap-1 opacity-10">
-            {[...Array(40)].map((_, i) => (
-              <motion.div
-                key={i}
-                className="w-1 bg-brand-orange rounded-full"
-                initial={{ height: 16 }}
-                animate={{ height: [16, Math.random() * 60 + 20, 16] }}
-                transition={{
-                  duration: 1.5 + Math.random() * 0.5,
-                  repeat: Infinity,
-                  delay: i * 0.05,
-                  ease: 'easeInOut',
-                }}
-              />
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            {/* Soundtrack Your Brand */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="bg-[#161616] p-10 md:p-14 border-t-4 border-brand-red"
+            >
+              <div className="flex justify-between items-start mb-10">
+                <h3 className="font-headline text-3xl text-white">Soundtrack Your Brand</h3>
+                <span className="font-label text-brand-red text-xs border border-brand-red px-3 py-1">PREMIUM</span>
+              </div>
+              <ul className="space-y-6">
+                <li className="flex items-center justify-between border-b border-white/5 pb-4">
+                  <span className="text-lg text-white/80">Recording License</span>
+                  <span className="text-green-400">✓</span>
+                </li>
+                <li className="flex items-center justify-between border-b border-white/5 pb-4">
+                  <span className="text-lg text-white/80">Publishing License</span>
+                  <span className="text-green-400">✓</span>
+                </li>
+                <li className="flex items-center justify-between">
+                  <div>
+                    <span className="text-lg text-white/80">Public Performance License</span>
+                    <p className="text-xs font-label text-white/30 mt-1 uppercase">Local PRO registration required</p>
+                  </div>
+                  <span className="text-brand-red">⚠</span>
+                </li>
+              </ul>
+            </motion.div>
+
+            {/* Beat Breeze */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="bg-[#161616] p-10 md:p-14 border-t-4 border-brand-orange"
+            >
+              <div className="flex justify-between items-start mb-10">
+                <h3 className="font-headline text-3xl text-white">Beat Breeze</h3>
+                <span className="font-label text-brand-orange text-xs border border-brand-orange px-3 py-1">FULLY LICENSED</span>
+              </div>
+              <ul className="space-y-6">
+                <li className="flex items-center justify-between border-b border-white/5 pb-4">
+                  <span className="text-lg text-white/80">Recording License</span>
+                  <span className="text-brand-orange">✓</span>
+                </li>
+                <li className="flex items-center justify-between border-b border-white/5 pb-4">
+                  <span className="text-lg text-white/80">Publishing License</span>
+                  <span className="text-brand-orange">✓</span>
+                </li>
+                <li className="flex items-center justify-between">
+                  <div>
+                    <span className="text-lg text-white/80">Public Performance License</span>
+                    <p className="text-xs font-label text-brand-orange mt-1 uppercase">All-inclusive coverage</p>
+                  </div>
+                  <span className="text-brand-orange">✓</span>
+                </li>
+              </ul>
+            </motion.div>
           </div>
         </div>
+      </section>
 
-        <div className="relative z-10 max-w-3xl mx-auto text-center">
+      {/* CTA */}
+      <section className="relative py-24 md:py-36 bg-[#0f0f0f] overflow-hidden text-center">
+        <div className="max-w-4xl mx-auto relative z-10 px-6">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
           >
-            {/* Heading */}
-            <h2
-              id="cta-heading"
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
-            >
-              Get Started with{' '}
-              <span className="gradient-text">Licensed Music</span>
+            <h2 className="font-headline text-4xl md:text-6xl text-white mb-12 leading-tight">
+              Get Started with <br /><span className="italic text-brand-orange">Licensed Music</span>
             </h2>
-
-            {/* Description */}
-            <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-              Choose the right music solution for your business. Get a personalized quote today.
-            </p>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/quotation">
-                <motion.span
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="inline-block bg-brand-orange hover:bg-brand-orange-dark text-white px-8 py-4 rounded-xl font-semibold text-lg transition-colors shadow-lg shadow-brand-orange/30"
-                >
-                  Get a Quote
-                </motion.span>
+            <div className="flex flex-col md:flex-row gap-6 justify-center">
+              <Link href="/quotation" className="bg-brand-orange text-black px-12 py-5 font-label font-bold uppercase tracking-widest hover:bg-white transition-all duration-300">
+                Get a Quote
               </Link>
-              <Link href="/#demo">
-                <motion.span
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="inline-block border-2 border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-colors"
-                >
-                  Book Free Demo
-                </motion.span>
-              </Link>
+              <a
+                href="https://calendly.com/bmasia/sound-innovations"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-white/20 text-white px-12 py-5 font-label font-bold uppercase tracking-widest hover:border-brand-orange hover:text-brand-orange transition-all duration-300"
+              >
+                Book a Demo
+              </a>
             </div>
           </motion.div>
         </div>
