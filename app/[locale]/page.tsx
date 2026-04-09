@@ -65,7 +65,7 @@ export default function Home() {
       <ClientLogos />
 
       {/* ===== 4. THE PROBLEM (from Stitch) ===== */}
-      <section className="min-h-screen relative flex items-center overflow-hidden bg-[#0f0f0f]">
+      <section className="min-h-screen relative flex items-center overflow-hidden bg-[#0f0f0f] pb-20 md:pb-0">
         <div className="container mx-auto px-8 grid md:grid-cols-2 gap-20 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
