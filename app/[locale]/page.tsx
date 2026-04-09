@@ -161,7 +161,7 @@ export default function Home() {
                 Explore Soundtrack
               </motion.span>
             </Link>
-            <a href="/listen" className="block text-center mt-3 text-sm text-gray-500 hover:text-brand-red font-label transition-colors">
+            <a href="https://app.soundtrack.io/search" target="_blank" rel="noopener noreferrer" className="block text-center mt-3 text-sm text-gray-500 hover:text-brand-red font-label transition-colors">
               Listen to samples →
             </a>
           </div>
@@ -202,7 +202,7 @@ export default function Home() {
                 Explore Beat Breeze
               </motion.span>
             </Link>
-            <a href="/listen" className="block text-center mt-3 text-sm text-gray-500 hover:text-brand-orange font-label transition-colors">
+            <a href="https://bmasiamusic.com/listen/a91c14a5-681d-421b-af2e-06651df17b53" target="_blank" rel="noopener noreferrer" className="block text-center mt-3 text-sm text-gray-500 hover:text-brand-orange font-label transition-colors">
               Listen to samples →
             </a>
           </div>
@@ -234,9 +234,9 @@ export default function Home() {
               { title: 'Hotels & Resorts', desc: 'Elevate guest loyalty with signature lobby scores.', href: '/solutions/hotels', img: '/images/hero-hotel.webp' },
               { title: 'Restaurants & Bars', desc: 'Curate the energy from brunch to late-night lounge.', href: '/solutions/restaurants', img: '/images/hero-restaurant.webp' },
               { title: 'Retail & Fashion', desc: 'Drive brand affinity with rhythmic, fashion-forward sound.', href: '/solutions/retail', img: '/images/hero-retail.webp' },
-              { title: 'Cafés & Coffee Shops', desc: 'The perfect acoustic backdrop for work and social flow.', href: '/quotation', img: '/images/hero-cafe.webp' },
-              { title: 'Medical & Wellness', desc: 'Reduce anxiety and enhance serenity with bio-sonic design.', href: '/quotation', img: '/images/hero-medical.webp' },
-              { title: 'Gyms & Fitness', desc: 'High-energy BPM tracks designed to push performance limits.', href: '/quotation', img: '/images/hero-gym.webp' },
+              { title: 'Cafés & Coffee Shops', desc: 'The perfect acoustic backdrop for work and social flow.', href: '/solutions/cafes', img: '/images/hero-cafe.webp' },
+              { title: 'Medical & Wellness', desc: 'Reduce anxiety and enhance serenity with bio-sonic design.', href: '/solutions/medical', img: '/images/hero-medical.webp' },
+              { title: 'Gyms & Fitness', desc: 'High-energy BPM tracks designed to push performance limits.', href: '/solutions/gyms', img: '/images/hero-gym.webp' },
             ].map((industry) => (
               <Link key={industry.title} href={industry.href}>
                 <motion.div

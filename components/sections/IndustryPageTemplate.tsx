@@ -100,17 +100,17 @@ export const IndustryPageTemplate: React.FC<IndustryPageProps> = ({
       </section>
 
       {/* ZONES / USE CASES */}
-      <section className="py-20 md:py-28 px-4 md:px-8 lg:px-16 bg-[#0f0f0f]">
+      <section className="py-12 md:py-16 px-4 md:px-8 lg:px-16 bg-[#0f0f0f]">
         <div className="max-w-5xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-headline text-3xl md:text-4xl text-white mb-16"
+            className="font-headline text-3xl md:text-4xl text-white mb-10"
           >
             {zonesTitle}
           </motion.h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-6">
             {zones.map((zone, i) => (
               <motion.div
                 key={zone.name}
@@ -132,7 +132,7 @@ export const IndustryPageTemplate: React.FC<IndustryPageProps> = ({
       </section>
 
       {/* BENEFITS */}
-      <section className="py-20 md:py-28 px-4 md:px-8 lg:px-16 bg-brand-dark">
+      <section className="py-12 md:py-16 px-4 md:px-8 lg:px-16 bg-brand-dark">
         <div className="max-w-4xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
