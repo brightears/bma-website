@@ -213,7 +213,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
   const inputClassName = `
     w-full px-4 py-3
     bg-white/5 border border-white/10 rounded-lg
-    text-white placeholder-gray-500
+    text-white placeholder-gray-400
     focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent
     transition-all duration-200
     disabled:opacity-50 disabled:cursor-not-allowed
@@ -629,7 +629,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
             placeholder={t('fields.numberOfZones.placeholder')}
           />
         </motion.div>
-        <p className="text-xs text-gray-500">
+        <p className="text-xs text-gray-400">
           {t('fields.numberOfZones.help')}
         </p>
         {errors.numberOfZones && (
@@ -657,7 +657,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
         disabled={isSubmitting}
         whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
         whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
-        className="w-full bg-brand-orange hover:bg-brand-orange-dark disabled:bg-gray-600 disabled:cursor-not-allowed text-white px-6 py-4 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 shadow-lg shadow-brand-orange/20"
+        className="w-full bg-brand-orange hover:bg-brand-orange-dark disabled:bg-gray-600 disabled:cursor-not-allowed text-black px-6 py-4 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 shadow-lg shadow-brand-orange/20"
       >
         {isSubmitting ? (
           <>
@@ -673,7 +673,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
       </motion.button>
 
       {/* Privacy note */}
-      <p className="text-xs text-gray-500 text-center">
+      <p className="text-xs text-gray-400 text-center">
         {t('privacyNote')}
       </p>
     </form>

@@ -25,13 +25,13 @@ export default function QuotationPage() {
               <h1 className="font-headline text-5xl md:text-7xl leading-none text-white mb-6">
                 Request a <span className="italic text-brand-orange">Quote</span>
               </h1>
-              <p className="text-xl text-white/50 leading-relaxed mb-16 max-w-lg">
+              <p className="text-xl text-white/60 leading-relaxed mb-16 max-w-lg">
                 Tell us about your venue and we&apos;ll send a personalized quotation within 24 hours.
               </p>
 
               {/* What to Expect */}
               <div className="mb-14">
-                <h2 className="font-label text-xs tracking-[0.3em] uppercase text-white/30 mb-8">What to Expect</h2>
+                <h2 className="font-label text-xs tracking-[0.3em] uppercase text-white/50 mb-8">What to Expect</h2>
                 <div className="space-y-6">
                   {[
                     { title: 'Fast Response', desc: 'Receive your personalized quote within 24 hours' },
@@ -41,7 +41,7 @@ export default function QuotationPage() {
                     <div key={item.title} className="flex items-start gap-4 border-l border-brand-orange/30 pl-6">
                       <div>
                         <h3 className="text-white font-medium mb-1">{item.title}</h3>
-                        <p className="text-white/40 text-sm">{item.desc}</p>
+                        <p className="text-white/60 text-sm">{item.desc}</p>
                       </div>
                     </div>
                   ))}
@@ -50,15 +50,15 @@ export default function QuotationPage() {
 
               {/* Our Solutions */}
               <div className="mb-14">
-                <h2 className="font-label text-xs tracking-[0.3em] uppercase text-white/30 mb-8">Our Solutions</h2>
+                <h2 className="font-label text-xs tracking-[0.3em] uppercase text-white/50 mb-8">Our Solutions</h2>
                 <div className="space-y-4">
                   <div className="border-l-2 border-brand-red pl-6">
                     <h3 className="font-headline text-xl text-white">Soundtrack Your Brand</h3>
-                    <p className="text-white/40 text-sm mt-1">Premium — 100M+ tracks, Spotify sync, bespoke design</p>
+                    <p className="text-white/60 text-sm mt-1">Premium — 100M+ tracks, Spotify sync, bespoke design</p>
                   </div>
                   <div className="border-l-2 border-brand-orange pl-6">
                     <h3 className="font-headline text-xl text-white">Beat Breeze</h3>
-                    <p className="text-white/40 text-sm mt-1">Essential — 30K+ tracks, all licenses included</p>
+                    <p className="text-white/60 text-sm mt-1">Essential — 30K+ tracks, all licenses included</p>
                   </div>
                 </div>
                 <Link href="/how-it-works" className="inline-block mt-6 text-brand-orange hover:text-white text-sm font-label tracking-wide transition-colors">
@@ -68,7 +68,7 @@ export default function QuotationPage() {
 
               {/* Contact */}
               <div>
-                <h2 className="font-label text-xs tracking-[0.3em] uppercase text-white/30 mb-6">Questions?</h2>
+                <h2 className="font-label text-xs tracking-[0.3em] uppercase text-white/50 mb-6">Questions?</h2>
                 <div className="flex items-center gap-6">
                   <a
                     href={`mailto:${SITE.email}`}
@@ -90,7 +90,7 @@ export default function QuotationPage() {
             >
               <div className="bg-[#161616] border border-white/10 p-8 md:p-10">
                 <h2 className="font-headline text-2xl text-white mb-2">Tell Us About Your Space</h2>
-                <p className="text-white/40 text-sm mb-8">
+                <p className="text-white/60 text-sm mb-8">
                   Fill in your details and we&apos;ll get back to you with a personalized quote.
                 </p>
                 <QuotationForm />
@@ -111,7 +111,7 @@ export default function QuotationPage() {
           <h2 className="font-headline text-3xl md:text-4xl text-white mb-4">
             Prefer a <span className="italic text-brand-orange">Live Demo?</span>
           </h2>
-          <p className="text-white/50 text-lg mb-8 max-w-xl mx-auto">
+          <p className="text-white/60 text-lg mb-8 max-w-xl mx-auto">
             Book a free online demo to see our music solutions in action.
           </p>
           <a
