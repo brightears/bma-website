@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       {/* ===== 2. HERO SECTION (from Stitch) ===== */}
-      <section className="relative h-screen flex items-center overflow-hidden pt-20">
+      <section className="relative h-[70vh] md:h-screen flex items-center overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero-lounge.webp"
