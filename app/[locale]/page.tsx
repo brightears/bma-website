@@ -294,10 +294,10 @@ export default function Home() {
       </section>
 
       {/* ===== 7. FINAL CTA (from Stitch) ===== */}
-      <section className="min-h-screen relative flex items-center justify-center overflow-hidden" id="demo">
+      <section className="py-24 md:py-36 relative flex items-center justify-center overflow-hidden" id="demo">
         <div className="absolute inset-0" style={{ background: 'radial-gradient(circle, rgba(239, 166, 52, 0.15) 0%, rgba(15, 15, 15, 1) 70%)' }} />
         <div className="container mx-auto px-8 text-center relative z-10">
-          <h2 className="text-6xl md:text-9xl font-headline text-white mb-12">
+          <h2 className="text-5xl md:text-7xl font-headline text-white mb-12">
             Let&apos;s Design <br />
             <span className="italic text-brand-orange">Your Sound</span>
           </h2>
