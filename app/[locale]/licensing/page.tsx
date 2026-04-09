@@ -107,7 +107,7 @@ export default function LicensingPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-headline text-4xl md:text-5xl text-center leading-tight text-white mb-16">
+            <h2 className="font-headline text-3xl md:text-5xl text-center leading-tight text-white mb-16 max-w-4xl mx-auto">
               Consumer Streaming Services Are <span className="text-brand-red">NOT</span> Licensed for Business Use
             </h2>
 

@@ -251,7 +251,7 @@ export default function Home() {
         <div className="container mx-auto px-8">
           <div className="max-w-2xl mb-16">
             <h2 className="text-4xl md:text-5xl font-headline text-white mb-6 leading-tight">
-              Tailored Sound for <br />Every Space
+              Tailored Sound for Every Space
             </h2>
             <p className="text-gray-400">
               We don&apos;t believe in one-size-fits-all. Every industry requires a specific frequency and mood to maximize performance.
