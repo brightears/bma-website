@@ -873,5 +873,78 @@
       "ctaQuote": "Dapatkan Sebut Harga",
       "ctaDemo": "Tempah Demo"
     }
+  },
+  "homePage": {
+    "theProblem": {
+      "title": "Tetamu Anda Boleh",
+      "titleHighlight": "Mendengar Perbezaannya",
+      "statNumber": "9.1%",
+      "statDesc": "peningkatan jualan dengan muzik terpilih berbanding senarai main rawak.",
+      "paragraph": "Satu kajian terhadap 1.8 million pembelian di 16 lokasi restoran mendapati bahawa muzik yang sesuai dengan jenama memacu peningkatan jualan yang ketara. Pembelian pencuci mulut sahaja meningkat sebanyak 15.6%.",
+      "source": "Sumber: Soundtrack Research — Kajian Rangkaian Restoran Global"
+    },
+    "twoSolutions": {
+      "sectionTitle": "Dua Penyelesaian,",
+      "sectionTitleHighlight": "Satu Piawaian.",
+      "sectionSubtitle": "Pilih asas yang menyokong identiti akustik jenama anda.",
+      "syb": {
+        "badge": "Piawaian Global",
+        "title": "Soundtrack Your Brand",
+        "tagline": "Perpustakaan muzik komersial terbesar di dunia untuk perniagaan.",
+        "feature1": "100M+ lagu — sebarang artis, sebarang genre",
+        "feature2": "Lesen rakaman + penerbitan disertakan",
+        "feature3": "Penjadualan seret-dan-lepas + penyegerakan Spotify",
+        "feature4": "Reka bentuk muzik tersuai, disegarkan setiap suku tahun",
+        "licenseNote": "Lesen persembahan awam diperlukan secara berasingan",
+        "cta": "Terokai Soundtrack"
+      },
+      "bb": {
+        "badge": "Kurasi Serba Lengkap",
+        "title": "Beat Breeze",
+        "tagline": "Muzik latar berlesen sepenuhnya — tanpa sebarang kerumitan.",
+        "feature1": "30,000+ lagu bebas royalti — KESEMUA 3 lesen disertakan",
+        "feature2": "Tiada yuran badan kutipan, tiada dokumen pematuhan",
+        "feature3": "Kurasi tersuai oleh pereka muzik kami",
+        "feature4": "Mampu dimainkan luar talian, penjadualan berbilang zon",
+        "cta": "Terokai Beat Breeze"
+      },
+      "notSurePrefix": "Tidak pasti penyelesaian mana yang sesuai?",
+      "notSureCta": "Hubungi kami →"
+    },
+    "industries": {
+      "sectionTitle": "Bunyi Tersuai untuk Setiap Ruang",
+      "sectionSubtitle": "Kami tidak percaya pada pendekatan satu-saiz-untuk-semua. Setiap industri memerlukan frekuensi dan suasana tertentu untuk memaksimumkan prestasi.",
+      "exploreCta": "Terokai →",
+      "hotels": {
+        "title": "Hotel & Resort",
+        "desc": "Tingkatkan kesetiaan tetamu dengan muzik lobi yang berciri tersendiri."
+      },
+      "restaurants": {
+        "title": "Restoran & Bar",
+        "desc": "Atur suasana dari waktu brunch hingga lounge lewat malam."
+      },
+      "retail": {
+        "title": "Runcit & Fesyen",
+        "desc": "Pacu daya tarikan jenama dengan bunyi berirama dan bergaya fesyen."
+      },
+      "cafes": {
+        "title": "Kafe & Kedai Kopi",
+        "desc": "Latar akustik sempurna untuk bekerja dan bersosial."
+      },
+      "medical": {
+        "title": "Perubatan & Kesihatan",
+        "desc": "Kurangkan kebimbangan dan tingkatkan ketenangan dengan reka bentuk bio-sonik."
+      },
+      "gyms": {
+        "title": "Gim & Kecergasan",
+        "desc": "Lagu BPM bertenaga tinggi yang direka untuk menolak had prestasi."
+      }
+    },
+    "finalCta": {
+      "title": "Mari Reka",
+      "titleHighlight": "Bunyi Anda",
+      "ctaQuote": "Dapatkan Sebut Harga",
+      "ctaDemo": "Tempah Demo"
+    }
   }
 }

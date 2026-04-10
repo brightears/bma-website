@@ -873,5 +873,78 @@
       "ctaQuote": "Nhận Báo Giá",
       "ctaDemo": "Đặt Lịch Demo"
     }
+  },
+  "homePage": {
+    "theProblem": {
+      "title": "Khách hàng của bạn có thể",
+      "titleHighlight": "Cảm nhận sự khác biệt",
+      "statNumber": "9.1%",
+      "statDesc": "doanh số tăng khi sử dụng âm nhạc được tuyển chọn so với danh sách phát ngẫu nhiên.",
+      "paragraph": "Một nghiên cứu trên 1.8 million giao dịch tại 16 địa điểm nhà hàng cho thấy âm nhạc phù hợp với thương hiệu thúc đẩy doanh số tăng rõ rệt. Riêng doanh số món tráng miệng đã tăng 15.6%.",
+      "source": "Nguồn: Nghiên cứu của Soundtrack — Khảo sát Chuỗi Nhà hàng Toàn cầu"
+    },
+    "twoSolutions": {
+      "sectionTitle": "Hai giải pháp,",
+      "sectionTitleHighlight": "Một tiêu chuẩn.",
+      "sectionSubtitle": "Chọn nền tảng hỗ trợ bản sắc âm thanh cho thương hiệu của bạn.",
+      "syb": {
+        "badge": "Tiêu chuẩn toàn cầu",
+        "title": "Soundtrack Your Brand",
+        "tagline": "Thư viện âm nhạc thương mại lớn nhất thế giới dành cho doanh nghiệp.",
+        "feature1": "100M+ bản nhạc — mọi nghệ sĩ, mọi thể loại",
+        "feature2": "Bao gồm giấy phép ghi âm và xuất bản",
+        "feature3": "Lên lịch kéo-thả và đồng bộ với Spotify",
+        "feature4": "Thiết kế âm nhạc riêng, làm mới hàng quý",
+        "licenseNote": "Giấy phép biểu diễn công cộng cần được thanh toán riêng",
+        "cta": "Khám phá Soundtrack"
+      },
+      "bb": {
+        "badge": "Tuyển chọn trọn gói",
+        "title": "Beat Breeze",
+        "tagline": "Nhạc nền được cấp phép đầy đủ — hoàn toàn không phiền toái.",
+        "feature1": "30,000+ bản nhạc miễn bản quyền — bao gồm CẢ 3 giấy phép",
+        "feature2": "Không phí tổ chức thu tác quyền, không thủ tục tuân thủ",
+        "feature3": "Tuyển chọn riêng bởi các nhà thiết kế âm nhạc của chúng tôi",
+        "feature4": "Hoạt động ngoại tuyến, lên lịch đa khu vực",
+        "cta": "Khám phá Beat Breeze"
+      },
+      "notSurePrefix": "Chưa chắc giải pháp nào phù hợp?",
+      "notSureCta": "Trò chuyện với chúng tôi →"
+    },
+    "industries": {
+      "sectionTitle": "Âm thanh được thiết kế riêng cho từng không gian",
+      "sectionSubtitle": "Chúng tôi không tin vào giải pháp rập khuôn. Mỗi ngành nghề đòi hỏi một tần số và tâm trạng riêng để tối ưu hiệu suất.",
+      "exploreCta": "Khám phá →",
+      "hotels": {
+        "title": "Khách sạn & Khu nghỉ dưỡng",
+        "desc": "Nâng tầm lòng trung thành của khách với bản nhạc đặc trưng cho sảnh lễ tân."
+      },
+      "restaurants": {
+        "title": "Nhà hàng & Quán bar",
+        "desc": "Điều chỉnh năng lượng từ bữa sáng muộn đến quán lounge về đêm."
+      },
+      "retail": {
+        "title": "Bán lẻ & Thời trang",
+        "desc": "Gia tăng sức hút thương hiệu với âm nhạc nhịp điệu, đậm chất thời trang."
+      },
+      "cafes": {
+        "title": "Quán cà phê",
+        "desc": "Nền âm thanh hoàn hảo cho công việc và giao lưu xã hội."
+      },
+      "medical": {
+        "title": "Y tế & Chăm sóc sức khỏe",
+        "desc": "Giảm lo âu và nâng cao sự thanh thản với thiết kế bio-sonic."
+      },
+      "gyms": {
+        "title": "Phòng tập & Thể hình",
+        "desc": "Những bản nhạc BPM cao được thiết kế để đẩy giới hạn hiệu suất."
+      }
+    },
+    "finalCta": {
+      "title": "Hãy cùng thiết kế",
+      "titleHighlight": "Âm thanh của bạn",
+      "ctaQuote": "Nhận báo giá",
+      "ctaDemo": "Đặt lịch demo"
+    }
   }
 }

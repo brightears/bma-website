@@ -873,5 +873,78 @@
       "ctaQuote": "获取报价",
       "ctaDemo": "预约演示"
     }
+  },
+  "homePage": {
+    "theProblem": {
+      "title": "您的客人能",
+      "titleHighlight": "听出其中的差别",
+      "statNumber": "9.1%",
+      "statDesc": "精心策划的音乐相较随机播放列表带来的销售增长。",
+      "paragraph": "一项针对 16 家餐厅门店、涵盖 180 万笔消费的研究发现，与品牌契合的音乐可显著提升销售。仅甜品一项销量便增长了 15.6%。",
+      "source": "数据来源：Soundtrack Research — 全球连锁餐厅研究"
+    },
+    "twoSolutions": {
+      "sectionTitle": "两种方案，",
+      "sectionTitleHighlight": "同一标准。",
+      "sectionSubtitle": "选择最能承载您品牌声音标识的基石。",
+      "syb": {
+        "badge": "全球标准",
+        "title": "Soundtrack Your Brand",
+        "tagline": "全球最大的商用音乐曲库。",
+        "feature1": "逾 1 亿首曲目 — 任何艺人、任何风格",
+        "feature2": "包含录音版权与出版版权授权",
+        "feature3": "拖放式排程，支持 Spotify 同步",
+        "feature4": "专属音乐设计，每季度焕新",
+        "licenseNote": "公开表演权需另行支付",
+        "cta": "了解 Soundtrack"
+      },
+      "bb": {
+        "badge": "全包式音乐策划",
+        "title": "Beat Breeze",
+        "tagline": "全授权背景音乐 — 零烦恼。",
+        "feature1": "逾 30,000 首无版税曲目 — 三项授权全部包含",
+        "feature2": "无需向版权集体管理组织付费，无合规文书",
+        "feature3": "由我们的音乐设计师量身策划",
+        "feature4": "支持离线播放与多区域排程",
+        "cta": "了解 Beat Breeze"
+      },
+      "notSurePrefix": "不确定哪种方案适合您？",
+      "notSureCta": "联系我们 →"
+    },
+    "industries": {
+      "sectionTitle": "为每一种空间量身定制声音",
+      "sectionSubtitle": "我们不相信千篇一律。每个行业都需要特定的频率与氛围，才能释放最大效能。",
+      "exploreCta": "探索 →",
+      "hotels": {
+        "title": "酒店与度假村",
+        "desc": "以标志性大堂乐章提升宾客忠诚度。"
+      },
+      "restaurants": {
+        "title": "餐厅与酒吧",
+        "desc": "从早午餐到深夜酒廊，精准调配氛围能量。"
+      },
+      "retail": {
+        "title": "零售与时尚",
+        "desc": "以富有节奏感的时尚之声提升品牌好感度。"
+      },
+      "cafes": {
+        "title": "咖啡馆",
+        "desc": "办公与社交的完美声学背景。"
+      },
+      "medical": {
+        "title": "医疗与健康",
+        "desc": "以生物声学设计舒缓焦虑，营造宁静氛围。"
+      },
+      "gyms": {
+        "title": "健身房与健身中心",
+        "desc": "高能量 BPM 曲目，激发训练极限表现。"
+      }
+    },
+    "finalCta": {
+      "title": "让我们一同设计",
+      "titleHighlight": "属于您的声音",
+      "ctaQuote": "获取报价",
+      "ctaDemo": "预约演示"
+    }
   }
 }

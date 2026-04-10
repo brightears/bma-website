@@ -873,5 +873,78 @@
       "ctaQuote": "Dapatkan Penawaran",
       "ctaDemo": "Pesan Demo"
     }
+  },
+  "homePage": {
+    "theProblem": {
+      "title": "Tamu Anda Bisa",
+      "titleHighlight": "Mendengar Perbedaannya",
+      "statNumber": "9.1%",
+      "statDesc": "peningkatan penjualan dengan musik yang dikurasi dibanding playlist acak.",
+      "paragraph": "Studi terhadap 1.8 million pembelian di 16 lokasi restoran menemukan bahwa musik yang sesuai dengan brand mendorong penjualan yang terukur lebih tinggi. Pembelian dessert saja meningkat 15.6%.",
+      "source": "Sumber: Soundtrack Research — Studi Jaringan Restoran Global"
+    },
+    "twoSolutions": {
+      "sectionTitle": "Dua Solusi,",
+      "sectionTitleHighlight": "Satu Standar.",
+      "sectionSubtitle": "Pilih fondasi yang mendukung identitas akustik brand Anda.",
+      "syb": {
+        "badge": "Standar Global",
+        "title": "Soundtrack Your Brand",
+        "tagline": "Perpustakaan musik komersial terbesar di dunia untuk bisnis.",
+        "feature1": "100M+ lagu — artis apa pun, genre apa pun",
+        "feature2": "Lisensi rekaman + penerbitan sudah termasuk",
+        "feature3": "Penjadwalan drag-and-drop + sinkronisasi Spotify",
+        "feature4": "Desain musik khusus, diperbarui setiap kuartal",
+        "licenseNote": "Lisensi pertunjukan publik diperlukan secara terpisah",
+        "cta": "Jelajahi Soundtrack"
+      },
+      "bb": {
+        "badge": "Kurasi All-Inclusive",
+        "title": "Beat Breeze",
+        "tagline": "Musik latar berlisensi penuh — tanpa repot.",
+        "feature1": "30,000+ lagu bebas royalti — SEMUA 3 lisensi sudah termasuk",
+        "feature2": "Tanpa biaya lembaga pengumpul, tanpa dokumen kepatuhan",
+        "feature3": "Kurasi khusus oleh desainer musik kami",
+        "feature4": "Dapat digunakan offline, penjadwalan multi-zona",
+        "cta": "Jelajahi Beat Breeze"
+      },
+      "notSurePrefix": "Tidak yakin solusi mana yang cocok?",
+      "notSureCta": "Hubungi kami →"
+    },
+    "industries": {
+      "sectionTitle": "Suara yang Disesuaikan untuk Setiap Ruang",
+      "sectionSubtitle": "Kami tidak percaya pada pendekatan satu ukuran untuk semua. Setiap industri membutuhkan frekuensi dan suasana khusus untuk memaksimalkan kinerja.",
+      "exploreCta": "Jelajahi →",
+      "hotels": {
+        "title": "Hotel & Resor",
+        "desc": "Tingkatkan loyalitas tamu dengan nuansa lobi yang khas."
+      },
+      "restaurants": {
+        "title": "Restoran & Bar",
+        "desc": "Kurasi energi dari brunch hingga lounge malam."
+      },
+      "retail": {
+        "title": "Ritel & Fashion",
+        "desc": "Bangun afinitas brand dengan suara ritmis yang berorientasi fashion."
+      },
+      "cafes": {
+        "title": "Kafe & Kedai Kopi",
+        "desc": "Latar akustik sempurna untuk bekerja dan bersosialisasi."
+      },
+      "medical": {
+        "title": "Medis & Kesehatan",
+        "desc": "Kurangi kecemasan dan tingkatkan ketenangan dengan desain bio-sonik."
+      },
+      "gyms": {
+        "title": "Gym & Kebugaran",
+        "desc": "Lagu BPM berenergi tinggi yang dirancang untuk mendorong batas performa."
+      }
+    },
+    "finalCta": {
+      "title": "Mari Rancang",
+      "titleHighlight": "Suara Anda",
+      "ctaQuote": "Dapatkan Penawaran",
+      "ctaDemo": "Jadwalkan Demo"
+    }
   }
 }

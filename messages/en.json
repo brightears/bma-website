@@ -873,5 +873,78 @@
       "ctaQuote": "Get a Quote",
       "ctaDemo": "Book a Demo"
     }
+  },
+  "homePage": {
+    "theProblem": {
+      "title": "Your Guests Can",
+      "titleHighlight": "Hear the Difference",
+      "statNumber": "9.1%",
+      "statDesc": "sales increase with curated music vs. random playlists.",
+      "paragraph": "A study of 1.8 million purchases across 16 restaurant locations found that brand-fit music drives measurably higher sales. Dessert purchases alone rose 15.6%.",
+      "source": "Source: Soundtrack Research — Global Restaurant Chain Study"
+    },
+    "twoSolutions": {
+      "sectionTitle": "Two Solutions,",
+      "sectionTitleHighlight": "One Standard.",
+      "sectionSubtitle": "Choose the foundation that supports your brand's acoustic identity.",
+      "syb": {
+        "badge": "The Global Standard",
+        "title": "Soundtrack Your Brand",
+        "tagline": "The world's largest commercial music library for business.",
+        "feature1": "100M+ tracks — any artist, any genre",
+        "feature2": "Recording + publishing licenses included",
+        "feature3": "Drag-and-drop scheduling + Spotify sync",
+        "feature4": "Bespoke music design, refreshed quarterly",
+        "licenseNote": "Public performance license required separately",
+        "cta": "Explore Soundtrack"
+      },
+      "bb": {
+        "badge": "All-Inclusive Curation",
+        "title": "Beat Breeze",
+        "tagline": "Fully licensed background music — zero hassle.",
+        "feature1": "30,000+ royalty-free tracks — ALL 3 licenses included",
+        "feature2": "No collection society fees, no compliance paperwork",
+        "feature3": "Bespoke curation by our music designers",
+        "feature4": "Offline-capable, multi-zone scheduling",
+        "cta": "Explore Beat Breeze"
+      },
+      "notSurePrefix": "Not sure which solution fits?",
+      "notSureCta": "Talk to us →"
+    },
+    "industries": {
+      "sectionTitle": "Tailored Sound for Every Space",
+      "sectionSubtitle": "We don't believe in one-size-fits-all. Every industry requires a specific frequency and mood to maximize performance.",
+      "exploreCta": "Explore →",
+      "hotels": {
+        "title": "Hotels & Resorts",
+        "desc": "Elevate guest loyalty with signature lobby scores."
+      },
+      "restaurants": {
+        "title": "Restaurants & Bars",
+        "desc": "Curate the energy from brunch to late-night lounge."
+      },
+      "retail": {
+        "title": "Retail & Fashion",
+        "desc": "Drive brand affinity with rhythmic, fashion-forward sound."
+      },
+      "cafes": {
+        "title": "Cafés & Coffee Shops",
+        "desc": "The perfect acoustic backdrop for work and social flow."
+      },
+      "medical": {
+        "title": "Medical & Wellness",
+        "desc": "Reduce anxiety and enhance serenity with bio-sonic design."
+      },
+      "gyms": {
+        "title": "Gyms & Fitness",
+        "desc": "High-energy BPM tracks designed to push performance limits."
+      }
+    },
+    "finalCta": {
+      "title": "Let's Design",
+      "titleHighlight": "Your Sound",
+      "ctaQuote": "Get a Quote",
+      "ctaDemo": "Book a Demo"
+    }
   }
 }

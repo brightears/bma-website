@@ -14,6 +14,7 @@ import { FloatingChatButton } from '@/components/chat/FloatingChatButton';
  */
 export default function Home() {
   const t = useTranslations('hero');
+  const h = useTranslations('homePage');
 
   return (
     <>
@@ -90,17 +91,17 @@ export default function Home() {
             transition={{ duration: 0.7, delay: 0.1 }}
           >
             <h2 className="text-4xl md:text-5xl font-headline text-white mb-8 leading-tight">
-              Your Guests Can <br /><span className="italic">Hear the Difference</span>
+              {h('theProblem.title')} <br /><span className="italic">{h('theProblem.titleHighlight')}</span>
             </h2>
             <div className="flex items-baseline gap-4 mb-6">
-              <span className="text-7xl font-headline text-brand-orange">9.1%</span>
-              <p className="text-xl text-gray-300">sales increase with curated <br />music vs. random playlists.</p>
+              <span className="text-7xl font-headline text-brand-orange">{h('theProblem.statNumber')}</span>
+              <p className="text-xl text-gray-300">{h('theProblem.statDesc')}</p>
             </div>
             <p className="text-gray-400 text-lg mb-10 leading-relaxed">
-              A study of 1.8 million purchases across 16 restaurant locations found that brand-fit music drives measurably higher sales. Dessert purchases alone rose 15.6%.
+              {h('theProblem.paragraph')}
             </p>
             <p className="text-gray-500 text-sm italic">
-              Source: Soundtrack Research — Global Restaurant Chain Study
+              {h('theProblem.source')}
             </p>
           </motion.div>
         </div>
@@ -118,10 +119,10 @@ export default function Home() {
             className="mb-16"
           >
             <h2 className="font-headline text-4xl md:text-5xl text-white leading-none tracking-tight mb-6">
-              Two Solutions, <span className="italic text-brand-orange">One Standard.</span>
+              {h('twoSolutions.sectionTitle')} <span className="italic text-brand-orange">{h('twoSolutions.sectionTitleHighlight')}</span>
             </h2>
             <p className="text-xl text-white/50 max-w-2xl leading-relaxed">
-              Choose the foundation that supports your brand&apos;s acoustic identity.
+              {h('twoSolutions.sectionSubtitle')}
             </p>
           </motion.div>
 
@@ -138,29 +139,24 @@ export default function Home() {
               <div className="absolute -inset-0.5 bg-brand-red/20 opacity-0 group-hover:opacity-100 transition duration-500 blur-xl" />
               <div className="relative flex flex-col h-full bg-[#161616] border border-white/10 p-8 md:p-12">
                 <div className="mb-10">
-                  <span className="font-label text-xs tracking-[0.3em] text-brand-red font-bold uppercase block mb-4">The Global Standard</span>
-                  <h3 className="text-3xl md:text-4xl font-headline text-white mb-4">Soundtrack Your Brand</h3>
+                  <span className="font-label text-xs tracking-[0.3em] text-brand-red font-bold uppercase block mb-4">{h('twoSolutions.syb.badge')}</span>
+                  <h3 className="text-3xl md:text-4xl font-headline text-white mb-4">{h('twoSolutions.syb.title')}</h3>
                   <p className="text-lg text-white/50 leading-relaxed italic">
-                    The world&apos;s largest commercial music library for business.
+                    {h('twoSolutions.syb.tagline')}
                   </p>
                 </div>
                 <ul className="space-y-5 mb-10 flex-grow">
-                  {[
-                    { text: '100M+ tracks — any artist, any genre' },
-                    { text: 'Recording + publishing licenses included' },
-                    { text: 'Drag-and-drop scheduling + Spotify sync' },
-                    { text: 'Bespoke music design, refreshed quarterly' },
-                  ].map((feature) => (
-                    <li key={feature.text} className="flex items-start gap-4 text-white/80">
+                  {(['feature1', 'feature2', 'feature3', 'feature4'] as const).map((key) => (
+                    <li key={key} className="flex items-start gap-4 text-white/80">
                       <span className="w-5 h-5 rounded-full bg-brand-red/20 flex items-center justify-center text-brand-red text-xs mt-0.5 flex-shrink-0">✓</span>
-                      <span>{feature.text}</span>
+                      <span>{h(`twoSolutions.syb.${key}`)}</span>
                     </li>
                   ))}
                 </ul>
                 <div className="mt-auto pt-8 border-t border-white/5">
                   <p className="flex items-center gap-2 mb-6 text-white/40 text-sm italic">
                     <span className="text-amber-400">⚠</span>
-                    Public performance license required separately
+                    {h('twoSolutions.syb.licenseNote')}
                   </p>
                   <Link href="/soundtrack-your-brand">
                     <motion.span
@@ -168,7 +164,7 @@ export default function Home() {
                       whileTap={{ scale: 0.98 }}
                       className="block w-full text-center bg-brand-red hover:bg-brand-red-dark text-white py-4 font-label text-sm font-bold tracking-widest uppercase transition-all"
                     >
-                      Explore Soundtrack
+                      {h('twoSolutions.syb.cta')}
                     </motion.span>
                   </Link>
                 </div>
@@ -186,22 +182,17 @@ export default function Home() {
               <div className="absolute -inset-0.5 bg-brand-orange/20 opacity-0 group-hover:opacity-100 transition duration-500 blur-xl" />
               <div className="relative flex flex-col h-full bg-[#161616] border border-white/10 p-8 md:p-12">
                 <div className="mb-10">
-                  <span className="font-label text-xs tracking-[0.3em] text-brand-orange font-bold uppercase block mb-4">All-Inclusive Curation</span>
-                  <h3 className="text-3xl md:text-4xl font-headline text-white mb-4">Beat Breeze</h3>
+                  <span className="font-label text-xs tracking-[0.3em] text-brand-orange font-bold uppercase block mb-4">{h('twoSolutions.bb.badge')}</span>
+                  <h3 className="text-3xl md:text-4xl font-headline text-white mb-4">{h('twoSolutions.bb.title')}</h3>
                   <p className="text-lg text-white/50 leading-relaxed italic">
-                    Fully licensed background music — zero hassle.
+                    {h('twoSolutions.bb.tagline')}
                   </p>
                 </div>
                 <ul className="space-y-5 mb-10 flex-grow">
-                  {[
-                    { text: '30,000+ royalty-free tracks — ALL 3 licenses included' },
-                    { text: 'No collection society fees, no compliance paperwork' },
-                    { text: 'Bespoke curation by our music designers' },
-                    { text: 'Offline-capable, multi-zone scheduling' },
-                  ].map((feature) => (
-                    <li key={feature.text} className="flex items-start gap-4 text-white/80">
+                  {(['feature1', 'feature2', 'feature3', 'feature4'] as const).map((key) => (
+                    <li key={key} className="flex items-start gap-4 text-white/80">
                       <span className="w-5 h-5 rounded-full bg-brand-orange/20 flex items-center justify-center text-brand-orange text-xs mt-0.5 flex-shrink-0">✓</span>
-                      <span>{feature.text}</span>
+                      <span>{h(`twoSolutions.bb.${key}`)}</span>
                     </li>
                   ))}
                 </ul>
@@ -213,7 +204,7 @@ export default function Home() {
                         whileTap={{ scale: 0.98 }}
                         className="block w-full text-center bg-brand-orange hover:bg-amber-400 text-black py-4 font-label text-sm font-bold tracking-widest uppercase transition-all"
                       >
-                        Explore Beat Breeze
+                        {h('twoSolutions.bb.cta')}
                       </motion.span>
                     </Link>
                   </div>
@@ -231,9 +222,9 @@ export default function Home() {
             className="mt-16 text-center"
           >
             <Link href="/quotation" className="font-headline text-2xl md:text-3xl text-white group inline-block">
-              Not sure which solution fits?{' '}
+              {h('twoSolutions.notSurePrefix')}{' '}
               <span className="text-brand-orange underline decoration-white/20 underline-offset-8 group-hover:decoration-brand-orange transition-all duration-300">
-                Talk to us →
+                {h('twoSolutions.notSureCta')}
               </span>
             </Link>
           </motion.div>
@@ -245,39 +236,39 @@ export default function Home() {
         <div className="container mx-auto px-8">
           <div className="max-w-2xl mb-16">
             <h2 className="text-4xl md:text-5xl font-headline text-white mb-6 leading-tight">
-              Tailored Sound for Every Space
+              {h('industries.sectionTitle')}
             </h2>
             <p className="text-gray-400">
-              We don&apos;t believe in one-size-fits-all. Every industry requires a specific frequency and mood to maximize performance.
+              {h('industries.sectionSubtitle')}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { title: 'Hotels & Resorts', desc: 'Elevate guest loyalty with signature lobby scores.', href: '/solutions/hotels', img: '/images/hero-hotel.webp' },
-              { title: 'Restaurants & Bars', desc: 'Curate the energy from brunch to late-night lounge.', href: '/solutions/restaurants', img: '/images/hero-restaurant.webp' },
-              { title: 'Retail & Fashion', desc: 'Drive brand affinity with rhythmic, fashion-forward sound.', href: '/solutions/retail', img: '/images/hero-retail.webp' },
-              { title: 'Cafés & Coffee Shops', desc: 'The perfect acoustic backdrop for work and social flow.', href: '/solutions/cafes', img: '/images/hero-cafe.webp' },
-              { title: 'Medical & Wellness', desc: 'Reduce anxiety and enhance serenity with bio-sonic design.', href: '/solutions/medical', img: '/images/hero-medical.webp' },
-              { title: 'Gyms & Fitness', desc: 'High-energy BPM tracks designed to push performance limits.', href: '/solutions/gyms', img: '/images/hero-gym.webp' },
-            ].map((industry) => (
-              <Link key={industry.title} href={industry.href}>
+            {([
+              { key: 'hotels', href: '/solutions/hotels', img: '/images/hero-hotel.webp' },
+              { key: 'restaurants', href: '/solutions/restaurants', img: '/images/hero-restaurant.webp' },
+              { key: 'retail', href: '/solutions/retail', img: '/images/hero-retail.webp' },
+              { key: 'cafes', href: '/solutions/cafes', img: '/images/hero-cafe.webp' },
+              { key: 'medical', href: '/solutions/medical', img: '/images/hero-medical.webp' },
+              { key: 'gyms', href: '/solutions/gyms', img: '/images/hero-gym.webp' },
+            ] as const).map((industry) => (
+              <Link key={industry.key} href={industry.href}>
                 <motion.div
                   whileHover={{ scale: 1.02 }}
                   className="group relative h-[400px] rounded-2xl overflow-hidden cursor-pointer"
                 >
                   <Image
                     src={industry.img}
-                    alt={industry.title}
+                    alt={h(`industries.${industry.key}.title`)}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent group-hover:via-black/20 transition-all" />
                   <div className="absolute bottom-8 left-8">
-                    <h3 className="text-2xl font-headline text-white mb-2">{industry.title}</h3>
-                    <p className="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity mb-4">{industry.desc}</p>
+                    <h3 className="text-2xl font-headline text-white mb-2">{h(`industries.${industry.key}.title`)}</h3>
+                    <p className="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity mb-4">{h(`industries.${industry.key}.desc`)}</p>
                     <span className="text-brand-orange font-label text-sm flex items-center gap-2">
-                      Explore →
+                      {h('industries.exploreCta')}
                     </span>
                   </div>
                 </motion.div>
@@ -292,8 +283,8 @@ export default function Home() {
         <div className="absolute inset-0" style={{ background: 'radial-gradient(circle, rgba(239, 166, 52, 0.15) 0%, rgba(15, 15, 15, 1) 70%)' }} />
         <div className="container mx-auto px-8 text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-headline text-white mb-12">
-            Let&apos;s Design <br />
-            <span className="italic text-brand-orange">Your Sound</span>
+            {h('finalCta.title')} <br />
+            <span className="italic text-brand-orange">{h('finalCta.titleHighlight')}</span>
           </h2>
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-20">
             <Link href="/quotation">
@@ -302,7 +293,7 @@ export default function Home() {
                 whileTap={{ scale: 0.95 }}
                 className="inline-block bg-brand-orange hover:bg-amber-400 text-black px-12 py-5 rounded-full font-label font-bold text-lg transition-all shadow-2xl shadow-brand-orange/30"
               >
-                Get a Quote
+                {h('finalCta.ctaQuote')}
               </motion.span>
             </Link>
             <motion.a
@@ -313,7 +304,7 @@ export default function Home() {
               whileTap={{ scale: 0.95 }}
               className="border border-white/20 hover:bg-white/5 text-white px-12 py-5 rounded-full font-label font-bold text-lg transition-all"
             >
-              Book a Demo
+              {h('finalCta.ctaDemo')}
             </motion.a>
           </div>
         </div>
