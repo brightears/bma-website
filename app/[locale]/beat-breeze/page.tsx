@@ -164,8 +164,8 @@ export default function BeatBreezePage() {
       <section className="relative min-h-[70vh] flex items-center pt-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/product-bb-hero.webp"
-            alt="Beat Breeze by BMAsia"
+            src="/images/hero-cafe.webp"
+            alt="Atmospheric cafe with curated background music"
             fill
             priority
             className="object-cover opacity-40"
@@ -180,6 +180,15 @@ export default function BeatBreezePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
+              <div className="mb-8 w-20 h-20 md:w-24 md:h-24 relative">
+                <Image
+                  src="/images/bmasia-circle-logo.png"
+                  alt="BMAsia"
+                  fill
+                  className="object-contain"
+                  sizes="96px"
+                />
+              </div>
               <span className="font-label text-brand-orange text-sm tracking-[0.3em] uppercase mb-6 block">
                 All-Inclusive Curation
               </span>
