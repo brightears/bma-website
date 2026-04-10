@@ -510,5 +510,368 @@
       "success": "Đội ngũ của chúng tôi sẽ liên hệ với bạn tại {email} trong vòng 2 giờ làm việc. Bạn có cần hỗ trợ thêm gì không?",
       "error": "Đã xảy ra lỗi. Vui lòng thử lại."
     }
+  },
+  "soundtrackPage": {
+    "metadata": {
+      "title": "Soundtrack Your Brand",
+      "description": "Thư viện nhạc thương mại lớn nhất thế giới, được tuyển chọn dành riêng cho ngành khách sạn. Hơn 100 triệu bản nhạc có bản quyền, điều khiển đa khu vực, tuyển chọn theo yêu cầu và hỗ trợ 24/7 từ BMAsia."
+    },
+    "hero": {
+      "label": "Tiêu Chuẩn Toàn Cầu",
+      "title": "Soundtrack Your",
+      "titleHighlight": "Brand",
+      "subtitle": "Thư viện nhạc thương mại lớn nhất thế giới, được tuyển chọn riêng cho không gian của quý khách.",
+      "ctaQuote": "Nhận Báo Giá",
+      "ctaTrial": "Dùng Thử Miễn Phí"
+    },
+    "positioning": {
+      "text1": "Khi quý khách phát nhạc trong doanh nghiệp của mình, quý khách đang kiến tạo một trải nghiệm.",
+      "highlight": "Soundtrack Your Brand",
+      "text2": "mang đến mọi ca khúc mà khách hàng của quý khách yêu thích — được cấp phép đầy đủ cho mục đích thương mại."
+    },
+    "valueProps": {
+      "sectionLabel": "",
+      "01": {
+        "label": "Kho Nhạc",
+        "title": "Mọi nghệ sĩ, mọi thể loại.",
+        "desc": "Truy cập hơn 100 triệu bản nhạc được cấp phép thương mại. Mọi ca khúc mà khách hàng yêu thích, đã được duyệt đầy đủ cho sử dụng thương mại."
+      },
+      "02": {
+        "label": "Tuân Thủ",
+        "title": "Cấp phép đáng tin cậy.",
+        "desc": "Bao gồm quyền ghi âm và xuất bản. Chúng tôi chia sẻ mọi thông tin cần thiết về giấy phép biểu diễn công cộng tại địa phương và hỗ trợ quý khách bất cứ khi nào có thể — phần thủ tục pháp lý vẫn là giữa quý khách và tổ chức thu tiền bản quyền."
+      },
+      "03": {
+        "label": "Chuyên Biệt",
+        "title": "Thiết kế riêng cho ngành khách sạn.",
+        "desc": "Được xây dựng cho những cơ sở phức tạp. Không khí nhẹ nhàng buổi sáng tại sảnh, nhịp sôi động giờ ăn trưa, nhịp đập khuya tại lounge — mỗi không gian được xử lý như một khu vực riêng."
+      }
+    },
+    "features": {
+      "sectionLabel": "Tính Năng",
+      "sectionTitle": "Mọi thứ quý khách cần để vận hành âm nhạc đúng cách.",
+      "multiZone": {
+        "title": "Điều Khiển Đa Khu Vực",
+        "desc": "Bầu không khí khác nhau cho từng không gian. Quản lý sảnh, spa và nhà hàng từ một bảng điều khiển duy nhất."
+      },
+      "scheduling": {
+        "title": "Lập Lịch",
+        "desc": "Lịch phát theo tuần hoặc theo ngày với thao tác kéo-thả. Ghi đè ngày lễ, khung giờ trong ngày và mẫu sẵn có theo loại hình địa điểm."
+      },
+      "audioMessaging": {
+        "title": "Thông Điệp Âm Thanh",
+        "desc": "Lên lịch phát các thông báo thương hiệu, chương trình khuyến mãi hoặc ghi chú giọng nói bằng năm ngôn ngữ — tải lên MP3 hoặc chuyển văn bản thành giọng nói."
+      },
+      "mobileApps": {
+        "title": "Ứng Dụng Di Động",
+        "desc": "Toàn quyền điều khiển từ bất cứ đâu. iOS, Android, Windows, macOS. Nhân viên của quý khách có thể điều chỉnh không khí ngay từ điện thoại."
+      },
+      "offlineReady": {
+        "title": "Sẵn Sàng Ngoại Tuyến",
+        "desc": "Âm nhạc không bao giờ gián đoạn. Mỗi thiết bị lưu trữ nhạc để phát liên tục đến 30 ngày — lý tưởng cho những nơi kết nối không ổn định."
+      },
+      "enterpriseSecurity": {
+        "title": "Bảo Mật Doanh Nghiệp",
+        "desc": "SAML SSO, phân quyền theo vai trò, quản trị đa người dùng. Được thiết kế cho các cơ sở cần quản trị chuẩn mực."
+      }
+    },
+    "integrations": {
+      "sectionLabel": "Bền Vững Với Tương Lai",
+      "sectionTitle": "Vượt Ra Ngoài Nền Tảng",
+      "sectionDesc": "Chúng tôi phát triển các tính năng AI và API trên nền Soundtrack Your Brand — tự động hóa tùy biến, tích hợp tòa nhà thông minh và các công cụ chuyên biệt được thiết kế xoay quanh vận hành của cơ sở quý khách.",
+      "aiPlaylist": {
+        "title": "Tạo Playlist Bằng AI",
+        "desc": "Các công cụ AI tùy biến được xây dựng trên nền tảng. Mô tả một tâm trạng, nhận playlist được tuyển chọn trong vài giây."
+      },
+      "smartBuilding": {
+        "title": "API Tòa Nhà Thông Minh",
+        "desc": "Kết nối âm nhạc với hệ thống chiếu sáng, nhiệt độ phòng hoặc cảm biến sự hiện diện. Biến âm thanh thành một phần trong toàn bộ trải nghiệm của khách."
+      },
+      "bespoke": {
+        "title": "Tính Năng Theo Yêu Cầu",
+        "desc": "Cần điều gì đặc biệt? Chúng tôi xây dựng các tích hợp xoay quanh vận hành của cơ sở quý khách — theo yêu cầu, không phát sinh chi phí bất ngờ."
+      }
+    },
+    "licensing": {
+      "sectionTitle": "Cấp phép, rõ ràng.",
+      "sectionDesc": "Chúng tôi cho quý khách biết chính xác những gì được bao gồm và những gì không — không bất ngờ, không điều khoản ẩn.",
+      "included": {
+        "label": "Những Gì Được Bao Gồm",
+        "item1": "Quyền ghi âm (giấy phép bản ghi gốc)",
+        "item2": "Quyền xuất bản (cơ học/đồng bộ)",
+        "item3": "Hợp tác trực tiếp với các hãng lớn và độc lập thông qua Soundtrack",
+        "item4": "Tuyển chọn theo yêu cầu và làm mới playlist hàng quý",
+        "item5": "Hỗ trợ liên tục, không cần bận tâm, từ đội ngũ thiết kế âm nhạc của chúng tôi"
+      },
+      "separate": {
+        "label": "Những Gì Cần Riêng",
+        "desc": "Giấy",
+        "descHighlight": "Phép Biểu Diễn Công Cộng",
+        "descTail": "được thanh toán tại địa phương cho tổ chức thu tiền bản quyền của quý khách — MPC tại Thái Lan, MRSS tại Singapore, PRS tại Anh, ASCAP/BMI tại Mỹ, và nhiều nơi khác.",
+        "calloutLabel": "Chúng tôi luôn sẵn sàng hỗ trợ",
+        "calloutDesc": "Chúng tôi không xử lý thủ tục pháp lý thay quý khách, nhưng luôn sẵn lòng cung cấp mọi thông tin cần thiết và hỗ trợ bằng mọi cách có thể."
+      }
+    },
+    "devices": {
+      "sectionLabel": "Linh Hoạt",
+      "sectionTitle": "Hoạt động trên mọi thiết bị quý khách đã có.",
+      "soundtrackPlayer": {
+        "title": "Soundtrack Player",
+        "desc": "Thiết bị phần cứng chuyên dụng. Cắm là chạy, bộ nhớ đệm ngoại tuyến 30 ngày."
+      },
+      "windows": {
+        "title": "Windows PC",
+        "desc": "Bất kỳ máy Windows hiện đại nào. Trình phát desktop đầy đủ, chế độ doanh nghiệp không giao diện."
+      },
+      "androidIos": {
+        "title": "Android & iOS",
+        "desc": "Máy tính bảng hoặc điện thoại. Toàn quyền điều khiển ứng dụng từ bất cứ đâu trong cơ sở."
+      },
+      "macos": {
+        "title": "macOS",
+        "desc": "Trình phát desktop gốc dành cho môi trường Mac."
+      },
+      "sonos": {
+        "title": "Tích Hợp Sonos",
+        "desc": "Sử dụng Soundtrack như một dịch vụ âm nhạc bên trong ứng dụng Sonos."
+      },
+      "qsys": {
+        "title": "Q-SYS",
+        "desc": "Quản lý đa khu vực tập trung cho các hệ thống âm thanh doanh nghiệp."
+      }
+    },
+    "trial": {
+      "sectionLabel": "Hãy Thử Trước",
+      "title": "Hãy thử trước khi",
+      "titleHighlight": "quyết định.",
+      "desc1": "Bắt đầu với một tháng dùng thử miễn phí trên một khu vực. Không cần thẻ tín dụng, không ràng buộc.",
+      "desc2": "Khi quý khách quyết định đăng ký và phần cứng đã sẵn sàng, chúng tôi sẽ giúp quý khách vận hành trong vòng năm phút.",
+      "cta": "Bắt Đầu Dùng Thử"
+    },
+    "support": {
+      "sectionLabel": "Luôn Sẵn Sàng",
+      "sectionTitle": "Quý khách không bao giờ đơn độc.",
+      "technical": {
+        "title": "Hỗ Trợ Kỹ Thuật 24/7",
+        "desc": "Hỗ trợ mọi lúc cho các vấn đề về phần cứng, mạng và nền tảng. Người thật, không phải kịch bản."
+      },
+      "musicDesign": {
+        "title": "Thiết Kế Âm Nhạc Theo Yêu Cầu",
+        "desc": "Đội ngũ thiết kế âm nhạc của chúng tôi làm việc với quý khách từ thứ Hai đến thứ Sáu (giờ Bangkok) để xây dựng và làm mới âm thanh của quý khách."
+      },
+      "aiAssist": {
+        "title": "Tự Phục Vụ Bằng AI",
+        "desc": "Trợ lý tương tác sẵn sàng 24/7 cho những câu hỏi phổ biến, tinh chỉnh playlist và điều chỉnh nhanh."
+      }
+    },
+    "faq": {
+      "title": "Câu Hỏi Thường Gặp",
+      "q1": {
+        "q": "Tôi có cần Giấy Phép Biểu Diễn Công Cộng không?",
+        "a": "Có — giấy phép này được thanh toán riêng cho tổ chức thu tiền bản quyền tại địa phương (MPC tại Thái Lan, MRSS tại Singapore, PRS tại Anh, v.v.). Chúng tôi không xử lý thủ tục pháp lý thay quý khách, nhưng luôn sẵn lòng chia sẻ mọi thông tin cần thiết và hỗ trợ bằng mọi cách có thể."
+      },
+      "q2": {
+        "q": "Tôi cần tốc độ internet và hệ thống mạng như thế nào?",
+        "a": "Tối thiểu 0,5 Mbit/s cho mỗi thiết bị phát. Nên sử dụng Ethernet có dây thay vì Wi-Fi. Một vài cổng gửi đi cần được mở (443, 53, 123) — chúng tôi sẽ gửi cho đội ngũ IT của quý khách một danh sách kiểm tra ngắn trước khi cài đặt."
+      },
+      "q3": {
+        "q": "Tôi có thể phát nhạc ngoại tuyến không?",
+        "a": "Có. Mỗi thiết bị lưu đệm các bản nhạc sau khi phát, và quý khách có thể bật chế độ \"phát ngoại tuyến nhiều hơn\" để chủ động tải nội dung về. Một thiết bị đã đồng bộ đầy đủ có thể phát liên tục đến 30 ngày mà không cần internet."
+      },
+      "q4": {
+        "q": "Tôi có thể quản lý bao nhiêu khu vực?",
+        "a": "Không giới hạn. Mỗi khu vực có lịch phát, playlist và ghép nối thiết bị riêng — được điều khiển từ một bảng điều khiển duy nhất. Quý khách có thể thêm và sắp xếp lại các khu vực khi cơ sở phát triển."
+      },
+      "q5": {
+        "q": "Tôi có thể sử dụng playlist Spotify của mình không?",
+        "a": "Có. Soundtrack Your Brand đồng bộ trực tiếp với Spotify, nên mọi playlist quý khách đã tạo (của riêng mình hay được tuyển chọn) đều có thể được sử dụng cho mục đích thương mại thông qua nền tảng của chúng tôi."
+      },
+      "q6": {
+        "q": "Điều gì xảy ra nếu mất kết nối internet?",
+        "a": "Các bản nhạc đã lưu đệm vẫn tiếp tục phát không gián đoạn. Khách của quý khách hoàn toàn không nhận ra điều gì. Khi kết nối được khôi phục, trình phát sẽ âm thầm đồng bộ ở nền."
+      }
+    },
+    "finalCta": {
+      "title": "Sẵn sàng cảm nhận",
+      "titleHighlight": "sự khác biệt?",
+      "desc": "Đội ngũ thiết kế âm nhạc của chúng tôi sẽ kiến tạo một trải nghiệm âm thanh độc đáo riêng cho thương hiệu của quý khách.",
+      "ctaQuote": "Nhận Báo Giá",
+      "ctaDemo": "Đặt Lịch Demo"
+    }
+  },
+  "beatBreezePage": {
+    "metadata": {
+      "title": "Beat Breeze",
+      "description": "Nhạc nền được cấp phép đầy đủ cho mọi doanh nghiệp — bao gồm cả ba giấy phép âm nhạc, không phí tổ chức thu tiền bản quyền, và được tuyển chọn chuyên nghiệp bởi các chuyên gia thiết kế âm nhạc của BMAsia."
+    },
+    "hero": {
+      "label": "Tuyển Chọn Trọn Gói",
+      "title": "Beat",
+      "titleHighlight": "Breeze",
+      "subtitle": "Nhạc nền được cấp phép đầy đủ cho mọi doanh nghiệp — không phí phát sinh, không thủ tục, không phiền phức.",
+      "ctaQuote": "Nhận Báo Giá",
+      "ctaTrial": "Dùng Thử Miễn Phí"
+    },
+    "positioning": {
+      "text1": "Âm nhạc được cấp phép, tuyển chọn trọn gói, với chi phí chỉ bằng một phần của dịch vụ streaming thương mại.",
+      "highlight": "Beat Breeze",
+      "text2": "bao gồm mọi giấy phép quý khách cần — để quý khách không bao giờ phải làm việc với tổ chức thu tiền bản quyền nữa."
+    },
+    "valueProps": {
+      "01": {
+        "label": "Trọn Gói",
+        "title": "Đủ ba giấy phép, luôn bao gồm.",
+        "desc": "Quyền ghi âm, xuất bản và biểu diễn công cộng — mọi giấy phép quý khách cần đều được tích hợp trong gói đăng ký. Không bao giờ phải trả phí cho tổ chức thu tiền bản quyền."
+      },
+      "02": {
+        "label": "Giá Trị",
+        "title": "Chi phí hợp lý hơn đáng kể.",
+        "desc": "Vì Beat Breeze được tuyển chọn nội bộ, chi phí thấp hơn đáng kể so với Soundtrack Your Brand — mà vẫn có đầy đủ mọi giấy phép."
+      },
+      "03": {
+        "label": "Đơn Giản",
+        "title": "Được thiết kế để quý khách không phải bận tâm.",
+        "desc": "Tuyển chọn theo yêu cầu bởi đội ngũ thiết kế âm nhạc của chúng tôi. Làm mới theo lịch, cập nhật theo mùa và hỗ trợ 24/7. Quý khách tập trung vào khách hàng — chúng tôi lo phần âm thanh."
+      }
+    },
+    "features": {
+      "sectionLabel": "Tính Năng",
+      "sectionTitle": "Mọi thứ quý khách cần, không có gì dư thừa.",
+      "zeroLicensing": {
+        "title": "Không Phiền Phức Cấp Phép",
+        "desc": "Cả ba giấy phép — ghi âm, xuất bản và biểu diễn công cộng — đều được gộp trong một gói. Không MPC, không MRSS, không PRS, không ASCAP, không thủ tục giấy tờ."
+      },
+      "curation": {
+        "title": "Tuyển Chọn Theo Yêu Cầu",
+        "desc": "Đội ngũ thiết kế âm nhạc của chúng tôi kiến tạo các playlist phù hợp với thương hiệu của quý khách và làm mới định kỳ. Quý khách duyệt không khí, chúng tôi lo phần còn lại."
+      },
+      "offline": {
+        "title": "Hoạt Động Ngoại Tuyến",
+        "desc": "Nhạc được tải về thiết bị và phát tại chỗ. Trải nghiệm của khách vẫn mượt mà ngay cả khi kết nối bị gián đoạn."
+      },
+      "scheduling": {
+        "title": "Lập Lịch",
+        "desc": "Các tâm trạng khác nhau cho những khung giờ khác nhau. Giờ phục vụ sáng, giờ cao điểm trưa, lounge buổi tối — thiết lập một lần và hệ thống tự vận hành."
+      },
+      "audioSignatures": {
+        "title": "Dấu Ấn Âm Thanh",
+        "desc": "Chèn thông điệp thương hiệu, khuyến mãi hoặc thông báo giữa các bản nhạc theo lịch."
+      },
+      "remoteMgmt": {
+        "title": "Quản Lý Từ Xa",
+        "desc": "Quản lý âm nhạc của quý khách từ bất cứ đâu. Đội ngũ của chúng tôi có thể hỗ trợ từ xa, xử lý sự cố và cập nhật playlist mà không cần có mặt tại chỗ."
+      }
+    },
+    "licensing": {
+      "sectionTitle": "Mọi giấy phép.",
+      "sectionTitleHighlight": "Trọn gói.",
+      "sectionDesc": "Không phí PRO. Không thủ tục. Không bất ngờ.",
+      "recording": {
+        "title": "Quyền Ghi Âm",
+        "desc": "Giấy phép bản ghi gốc cho mọi bản nhạc trong kho."
+      },
+      "publishing": {
+        "title": "Quyền Xuất Bản",
+        "desc": "Quyền cơ học và đồng bộ cho nhà soạn nhạc và nhà xuất bản."
+      },
+      "performance": {
+        "title": "Giấy Phép Biểu Diễn Công Cộng",
+        "desc": "Phát nhạc ở bất cứ nơi nào doanh nghiệp của quý khách hoạt động — không bao giờ phải trả phí cho tổ chức thu tiền bản quyền."
+      },
+      "footnote1": "Trong khi",
+      "footnoteLink": "Soundtrack Your Brand",
+      "footnote2": "vẫn yêu cầu Giấy Phép Biểu Diễn Công Cộng riêng ở hầu hết các quốc gia, Beat Breeze đã tích hợp tất cả bên trong. Đó chính là điểm cốt lõi."
+    },
+    "platforms": {
+      "sectionLabel": "Chạy Trên Mọi Thiết Bị",
+      "sectionTitle": "Không cần phần cứng đặc biệt.",
+      "windows": {
+        "title": "Windows",
+        "desc": "Trình phát desktop đầy đủ cho bất kỳ máy Windows hiện đại nào. Mini PC có sẵn từ BMAsia (Thái Lan) với bảo hành 1 năm."
+      },
+      "android": {
+        "title": "Android",
+        "desc": "Ứng dụng Android gốc dành cho máy tính bảng và điện thoại. Tiết kiệm chi phí và đáng tin cậy."
+      },
+      "web": {
+        "title": "Trình Duyệt Web",
+        "desc": "Trình phát web cho cài đặt nhanh chóng — đăng nhập từ bất kỳ trình duyệt nào và bắt đầu phát nhạc."
+      }
+    },
+    "custom": {
+      "sectionLabel": "Xây Dựng Để Mở Rộng",
+      "sectionTitle": "Vượt trên tiêu chuẩn.",
+      "sectionDesc": "Beat Breeze được xây dựng như một nền tảng không ngừng phát triển — đặc biệt dành cho các chuỗi doanh nghiệp và tập đoàn đa cơ sở. Chúng tôi phát triển các tính năng xoay quanh nhu cầu của quý khách.",
+      "whiteLabel": {
+        "title": "White-Label Cho Tập Đoàn",
+        "desc": "Các chuỗi doanh nghiệp có thể gắn thương hiệu Beat Breeze thành nền tảng âm nhạc nội bộ của riêng mình. Thương hiệu, màu sắc và tên miền tùy chỉnh."
+      },
+      "customBuilds": {
+        "title": "Xây Dựng Tính Năng Tùy Biến",
+        "desc": "Cần điều gì vượt ngoài tiêu chuẩn? Chúng tôi xây dựng các tính năng xoay quanh vận hành của quý khách theo yêu cầu — như một phần trong quá trình phát triển nền tảng liên tục."
+      },
+      "volumePricing": {
+        "title": "Giá Ưu Đãi Theo Khối Lượng",
+        "desc": "Càng nhiều khu vực vận hành, mức giá trên mỗi khu vực càng tốt. Đặc biệt hấp dẫn cho các chuỗi đa cơ sở và tập đoàn bán lẻ."
+      }
+    },
+    "trial": {
+      "sectionLabel": "Hãy Thử Trước",
+      "title": "Lắng nghe trước khi",
+      "titleHighlight": "quyết định.",
+      "desc1": "Bắt đầu với hai tuần dùng thử miễn phí. Không cần thẻ tín dụng, không ràng buộc.",
+      "desc2": "Chúng tôi sẽ cài đặt từ xa cho quý khách, và quý khách có thể cảm nhận Beat Breeze nghe như thế nào trong chính không gian của mình trước khi quyết định.",
+      "cta": "Bắt Đầu Dùng Thử"
+    },
+    "support": {
+      "sectionLabel": "Luôn Sẵn Sàng",
+      "sectionTitle": "Quý khách không bao giờ đơn độc.",
+      "technical": {
+        "title": "Hỗ Trợ Kỹ Thuật 24/7",
+        "desc": "Hỗ trợ mọi lúc cho các vấn đề về phần cứng, mạng và nền tảng. Người thật, không phải kịch bản."
+      },
+      "musicDesign": {
+        "title": "Thiết Kế Âm Nhạc Theo Yêu Cầu",
+        "desc": "Đội ngũ thiết kế âm nhạc của chúng tôi làm việc với quý khách từ thứ Hai đến thứ Sáu (giờ Bangkok) để xây dựng và làm mới âm thanh của quý khách."
+      },
+      "aiAssist": {
+        "title": "Tự Phục Vụ Bằng AI",
+        "desc": "Trợ lý tương tác sẵn sàng 24/7 cho những câu hỏi phổ biến, tinh chỉnh playlist và điều chỉnh nhanh."
+      }
+    },
+    "faq": {
+      "title": "Câu Hỏi Thường Gặp",
+      "q1": {
+        "q": "Tôi có phải trả bất kỳ khoản phí cấp phép âm nhạc nào riêng không?",
+        "a": "Không. Mọi gói đăng ký Beat Breeze đều bao gồm cả ba giấy phép — ghi âm, xuất bản và biểu diễn công cộng. Quý khách không bao giờ phải trả cho MPC, MRSS, PRS, ASCAP, BMI hay bất kỳ tổ chức thu tiền bản quyền nào khác."
+      },
+      "q2": {
+        "q": "Beat Breeze khác gì so với Soundtrack Your Brand?",
+        "a": "Beat Breeze có chi phí hợp lý hơn đáng kể và bao gồm tất cả các giấy phép, nhưng kho nhạc được tuyển chọn và miễn phí bản quyền — không phải các ca khúc hit cụ thể. Nếu quý khách muốn những bản hit mà khách hàng của mình biết tên, hãy chọn Soundtrack Your Brand. Nếu quý khách muốn âm nhạc được cấp phép không phiền phức với chi phí bằng không và được tuyển chọn chuyên nghiệp, hãy chọn Beat Breeze."
+      },
+      "q3": {
+        "q": "Beat Breeze chạy trên những thiết bị nào?",
+        "a": "Bất kỳ Windows PC hiện đại nào, máy tính bảng hoặc điện thoại Android, hoặc trực tiếp trên trình duyệt web. Tại Thái Lan, chúng tôi cung cấp các Windows mini PC đã được cấu hình sẵn với bảo hành 1 năm nếu quý khách muốn một giải pháp cắm là chạy."
+      },
+      "q4": {
+        "q": "Beat Breeze có hoạt động ngoại tuyến được không?",
+        "a": "Có. Nhạc được tải về thiết bị và phát tại chỗ, vì vậy trải nghiệm vẫn mượt mà ngay cả khi internet bị gián đoạn. Quý khách chỉ cần kết nối để cập nhật và quản lý từ xa."
+      },
+      "q5": {
+        "q": "Kho nhạc lớn đến mức nào?",
+        "a": "Hơn 30.000 bản nhạc được sản xuất chuyên nghiệp và miễn phí bản quyền, và kho nhạc vẫn đang tiếp tục phát triển. Mỗi bản nhạc đều được đội ngũ thiết kế âm nhạc của chúng tôi tuyển chọn cho môi trường khách sạn và bán lẻ."
+      },
+      "q6": {
+        "q": "Tôi có thể white-label Beat Breeze cho thương hiệu tập đoàn của mình không?",
+        "a": "Có. Các chuỗi doanh nghiệp có thể vận hành Beat Breeze như nền tảng âm nhạc nội bộ mang thương hiệu riêng với màu sắc, logo và tên miền tùy chỉnh. Hãy trao đổi với chúng tôi về những gì quý khách cần."
+      }
+    },
+    "finalCta": {
+      "title": "Âm nhạc,",
+      "titleHighlight": "đơn giản hóa.",
+      "desc": "Không phiền phức cấp phép. Tuyển chọn theo yêu cầu. Hỗ trợ không cần bận tâm. Tất cả với mức giá hợp lý.",
+      "ctaQuote": "Nhận Báo Giá",
+      "ctaDemo": "Đặt Lịch Demo"
+    }
   }
 }

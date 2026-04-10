@@ -510,5 +510,368 @@
       "success": "Pasukan kami akan menghubungi anda di {email} dalam masa 2 jam bekerja. Ada apa-apa lagi yang boleh saya bantu?",
       "error": "Sesuatu telah berlaku. Sila cuba lagi."
     }
+  },
+  "soundtrackPage": {
+    "metadata": {
+      "title": "Soundtrack Your Brand",
+      "description": "Perpustakaan muzik komersial terbesar di dunia, dikurasi khas untuk industri hospitaliti. Lebih 100 juta lagu berlesen, kawalan berbilang zon, kurasi tersuai, dan sokongan 24/7 daripada BMAsia."
+    },
+    "hero": {
+      "label": "Standard Global",
+      "title": "Soundtrack Your",
+      "titleHighlight": "Brand",
+      "subtitle": "Perpustakaan muzik komersial terbesar di dunia, dikurasi khas untuk ruang anda.",
+      "ctaQuote": "Dapatkan Sebut Harga",
+      "ctaTrial": "Mula Percubaan Percuma"
+    },
+    "positioning": {
+      "text1": "Apabila anda memainkan muzik dalam perniagaan anda, anda sedang membentuk sebuah pengalaman.",
+      "highlight": "Soundtrack Your Brand",
+      "text2": "memberi anda setiap lagu yang dikenali tetamu anda — berlesen sepenuhnya untuk kegunaan komersial."
+    },
+    "valueProps": {
+      "sectionLabel": "",
+      "01": {
+        "label": "Repertoir",
+        "title": "Mana-mana artis, mana-mana genre.",
+        "desc": "Akses kepada lebih 100 juta lagu berlesen komersial. Setiap lagu yang dikenali tetamu anda, dibersihkan sepenuhnya untuk kegunaan komersial."
+      },
+      "02": {
+        "label": "Pematuhan",
+        "title": "Pelesenan yang boleh dipercayai.",
+        "desc": "Hak rakaman dan penerbitan termasuk. Kami berkongsi sebarang maklumat yang anda perlukan tentang lesen persembahan awam tempatan dan membantu anda di mana mungkin — urusan dokumen kekal antara anda dan badan kutipan hak cipta anda."
+      },
+      "03": {
+        "label": "Pengkhususan",
+        "title": "Dicipta untuk hospitaliti.",
+        "desc": "Dibina untuk hartanah yang kompleks. Deruan lobi pagi, tenaga perkhidmatan makan tengah hari, denyutan lounge lewat malam — setiap satunya dikendalikan sebagai zon tersendiri."
+      }
+    },
+    "features": {
+      "sectionLabel": "Keupayaan",
+      "sectionTitle": "Segala yang anda perlukan untuk menguruskan muzik dengan betul.",
+      "multiZone": {
+        "title": "Kawalan Berbilang Zon",
+        "desc": "Suasana berbeza untuk ruang yang berbeza. Uruskan lobi, spa, dan restoran daripada satu papan pemuka."
+      },
+      "scheduling": {
+        "title": "Penjadualan",
+        "desc": "Jadual mingguan atau harian secara seret-dan-lepas. Pengatasan cuti, waktu siang, dan templat siap sedia mengikut jenis premis."
+      },
+      "audioMessaging": {
+        "title": "Pemesejan Audio",
+        "desc": "Jadualkan pengumuman berjenama, promosi, atau nota suara dalam lima bahasa — muat naik MP3 atau teks-ke-ucapan."
+      },
+      "mobileApps": {
+        "title": "Aplikasi Mudah Alih",
+        "desc": "Kawalan penuh dari mana-mana sahaja. iOS, Android, Windows, macOS. Kakitangan anda boleh mengubah suasana melalui telefon mereka."
+      },
+      "offlineReady": {
+        "title": "Sedia Luar Talian",
+        "desc": "Muzik tidak pernah berhenti. Sehingga 30 hari berturut-turut main balik tercache bagi setiap peranti — ideal untuk kesambungan yang tidak menentu."
+      },
+      "enterpriseSecurity": {
+        "title": "Keselamatan Perusahaan",
+        "desc": "SAML SSO, akses berasaskan peranan, pentadbiran berbilang pengguna. Dibina untuk hartanah yang memerlukan tadbir urus yang kemas."
+      }
+    },
+    "integrations": {
+      "sectionLabel": "Kalis Masa Depan",
+      "sectionTitle": "Melangkaui Platform",
+      "sectionDesc": "Kami membina ciri AI dan API di atas Soundtrack Your Brand — automasi tersuai, integrasi bangunan pintar, dan alat khusus yang direka bentuk sekeliling operasi hartanah anda.",
+      "aiPlaylist": {
+        "title": "Penjanaan Senarai Main AI",
+        "desc": "Alat AI tersuai yang dibina di atas platform. Gambarkan suasana, dapatkan senarai main yang dikurasi dalam beberapa saat."
+      },
+      "smartBuilding": {
+        "title": "API Bangunan Pintar",
+        "desc": "Hubungkan muzik dengan pencahayaan, suhu bilik, atau sensor penghunian. Jadikan bunyi sebahagian daripada keseluruhan pengalaman tetamu."
+      },
+      "bespoke": {
+        "title": "Ciri Tersuai Atas Permintaan",
+        "desc": "Perlukan sesuatu yang khas? Kami membina integrasi mengikut operasi hartanah anda — atas permintaan, tanpa kos tersembunyi."
+      }
+    },
+    "licensing": {
+      "sectionTitle": "Pelesenan, dijelaskan.",
+      "sectionDesc": "Kami memberitahu anda dengan tepat apa yang dilindungi dan apa yang tidak — tiada kejutan, tiada syarat tersembunyi.",
+      "included": {
+        "label": "Apa Yang Termasuk",
+        "item1": "Hak rakaman (lesen master)",
+        "item2": "Hak penerbitan (mekanikal/sync)",
+        "item3": "Perjanjian langsung dengan label utama dan indie melalui Soundtrack",
+        "item4": "Kurasi tersuai dan penyegaran senarai main setiap suku tahun",
+        "item5": "Sokongan berterusan tanpa perlu bersusah payah daripada pereka muzik kami"
+      },
+      "separate": {
+        "label": "Apa Yang Berasingan",
+        "desc": "Lesen",
+        "descHighlight": "Persembahan Awam",
+        "descTail": "dibayar secara tempatan kepada badan kutipan hak cipta anda — MPC di Thailand, MRSS di Singapura, PRS di UK, ASCAP/BMI di AS, dan seterusnya.",
+        "calloutLabel": "Kami di sini untuk membantu",
+        "calloutDesc": "Kami tidak menguruskan dokumen bagi pihak anda, tetapi kami dengan senang hati menyediakan sebarang maklumat yang anda perlukan dan membantu anda sedaya upaya."
+      }
+    },
+    "devices": {
+      "sectionLabel": "Kepelbagaian",
+      "sectionTitle": "Berfungsi pada semua peranti yang sedia ada.",
+      "soundtrackPlayer": {
+        "title": "Soundtrack Player",
+        "desc": "Perkakasan khusus. Pasang-dan-main, cache luar talian 30 hari."
+      },
+      "windows": {
+        "title": "Windows PC",
+        "desc": "Mana-mana mesin Windows moden. Pemain desktop penuh, mod perusahaan tanpa skrin."
+      },
+      "androidIos": {
+        "title": "Android & iOS",
+        "desc": "Tablet atau telefon. Kawalan aplikasi penuh dari mana-mana sahaja di dalam premis."
+      },
+      "macos": {
+        "title": "macOS",
+        "desc": "Pemain desktop asli untuk persekitaran Mac."
+      },
+      "sonos": {
+        "title": "Integrasi Sonos",
+        "desc": "Gunakan Soundtrack sebagai perkhidmatan muzik dalam aplikasi Sonos."
+      },
+      "qsys": {
+        "title": "Q-SYS",
+        "desc": "Pengurusan berbilang zon berpusat untuk sistem audio perusahaan."
+      }
+    },
+    "trial": {
+      "sectionLabel": "Cuba Dahulu",
+      "title": "Cuba sebelum anda",
+      "titleHighlight": "komited.",
+      "desc1": "Mulakan dengan percubaan percuma satu bulan untuk satu zon. Tanpa kad kredit, tanpa komitmen.",
+      "desc2": "Sebaik sahaja anda memutuskan untuk mendaftar dan perkakasan anda sudah sedia, kami akan menyiapkan anda dalam lima minit.",
+      "cta": "Mula Percubaan Percuma"
+    },
+    "support": {
+      "sectionLabel": "Sentiasa Aktif",
+      "sectionTitle": "Anda tidak pernah keseorangan.",
+      "technical": {
+        "title": "Sokongan Teknikal 24/7",
+        "desc": "Bantuan sepanjang masa untuk isu perkakasan, rangkaian, dan platform. Manusia sebenar, bukan skrip."
+      },
+      "musicDesign": {
+        "title": "Reka Bentuk Muzik Tersuai",
+        "desc": "Pereka muzik kami bekerjasama dengan anda dari Isnin hingga Jumaat (waktu Bangkok) untuk mencipta dan menyegarkan bunyi anda."
+      },
+      "aiAssist": {
+        "title": "Layan Diri AI",
+        "desc": "Pembantu interaktif tersedia 24/7 untuk soalan lazim, pengubahsuaian senarai main, dan pelarasan cepat."
+      }
+    },
+    "faq": {
+      "title": "Soalan Lazim",
+      "q1": {
+        "q": "Adakah saya memerlukan Lesen Persembahan Awam?",
+        "a": "Ya — ini dibayar secara berasingan kepada badan kutipan hak cipta tempatan anda (MPC di Thailand, MRSS di Singapura, PRS di UK, dsb). Kami tidak menguruskan dokumen bagi pihak anda, tetapi kami dengan senang hati berkongsi sebarang maklumat yang anda perlukan dan membantu anda sedaya upaya."
+      },
+      "q2": {
+        "q": "Kelajuan internet dan rangkaian apa yang saya perlukan?",
+        "a": "Minimum 0.5 Mbit/s bagi setiap peranti main balik. Ethernet berwayar lebih diutamakan berbanding Wi-Fi. Beberapa port keluar perlu dibuka (443, 53, 123) — kami akan menghantar senarai semak ringkas kepada pasukan IT anda sebelum pemasangan."
+      },
+      "q3": {
+        "q": "Bolehkah saya memainkan muzik secara luar talian?",
+        "a": "Ya. Setiap peranti menyimpan cache lagu selepas memainkannya, dan anda boleh mengaktifkan mod \"lebih banyak main luar talian\" untuk memuat turun kandungan secara proaktif. Peranti yang disegerakkan sepenuhnya boleh terus memainkan muzik sehingga 30 hari berturut-turut tanpa internet."
+      },
+      "q4": {
+        "q": "Berapa banyak zon yang boleh saya uruskan?",
+        "a": "Tanpa had. Setiap zon mempunyai jadual, senarai main, dan pemasangan peranti tersendiri — dikawal daripada satu papan pemuka. Anda boleh menambah dan menyusun semula zon apabila hartanah anda berkembang."
+      },
+      "q5": {
+        "q": "Bolehkah saya menggunakan senarai main Spotify saya?",
+        "a": "Ya. Soundtrack Your Brand menyegerak terus dengan Spotify, jadi mana-mana senarai main yang anda telah bina (milik anda atau dikurasi) boleh digunakan secara komersial melalui platform kami."
+      },
+      "q6": {
+        "q": "Apa yang berlaku jika internet terputus?",
+        "a": "Lagu tercache terus dimainkan tanpa gangguan. Tetamu anda tidak akan perasan apa-apa. Sebaik sambungan kembali, pemain akan menyegerak secara senyap di latar belakang."
+      }
+    },
+    "finalCta": {
+      "title": "Sedia untuk mendengar",
+      "titleHighlight": "perbezaannya?",
+      "desc": "Pereka muzik kami akan mencipta pengalaman bunyi yang unik untuk jenama anda.",
+      "ctaQuote": "Dapatkan Sebut Harga",
+      "ctaDemo": "Tempah Demo"
+    }
+  },
+  "beatBreezePage": {
+    "metadata": {
+      "title": "Beat Breeze",
+      "description": "Muzik latar belakang berlesen sepenuhnya untuk setiap perniagaan — ketiga-tiga lesen muzik termasuk, tanpa yuran badan kutipan, dan kurasi profesional oleh pereka muzik BMAsia."
+    },
+    "hero": {
+      "label": "Kurasi Serba Lengkap",
+      "title": "Beat",
+      "titleHighlight": "Breeze",
+      "subtitle": "Muzik latar belakang berlesen sepenuhnya untuk setiap perniagaan — tanpa yuran, tanpa kerenah dokumen, tanpa pening kepala.",
+      "ctaQuote": "Dapatkan Sebut Harga",
+      "ctaTrial": "Mula Percubaan Percuma"
+    },
+    "positioning": {
+      "text1": "Muzik berlesen, dikurasi sepenuhnya, pada sebahagian kecil kos perkhidmatan penstriman komersial.",
+      "highlight": "Beat Breeze",
+      "text2": "termasuk setiap lesen yang anda perlukan — jadi anda tidak perlu lagi berurusan dengan badan kutipan hak cipta."
+    },
+    "valueProps": {
+      "01": {
+        "label": "Serba Lengkap",
+        "title": "Ketiga-tiga lesen, sentiasa termasuk.",
+        "desc": "Rakaman, penerbitan, dan persembahan awam — setiap lesen yang anda perlukan disertakan dalam langganan. Tiada yuran badan kutipan, selama-lamanya."
+      },
+      "02": {
+        "label": "Nilai",
+        "title": "Jauh lebih berpatutan.",
+        "desc": "Kerana Beat Breeze dikurasi secara dalaman, ia jauh lebih murah berbanding Soundtrack Your Brand — dan anda tetap mendapat setiap lesen termasuk."
+      },
+      "03": {
+        "label": "Kesederhanaan",
+        "title": "Direka bentuk tanpa perlu bersusah payah.",
+        "desc": "Kurasi tersuai oleh pereka muzik kami. Penyegaran berjadual, kemas kini bermusim, dan sokongan 24/7. Anda fokus kepada tetamu — kami uruskan bunyinya."
+      }
+    },
+    "features": {
+      "sectionLabel": "Keupayaan",
+      "sectionTitle": "Segala yang anda perlukan, tiada yang tidak perlu.",
+      "zeroLicensing": {
+        "title": "Tanpa Kerenah Pelesenan",
+        "desc": "Ketiga-tiga lesen — rakaman, penerbitan, dan persembahan awam — disatukan. Tiada MPC, tiada MRSS, tiada PRS, tiada ASCAP, tiada dokumen."
+      },
+      "curation": {
+        "title": "Kurasi Tersuai",
+        "desc": "Pereka muzik kami mencipta senarai main yang sepadan dengan jenama anda dan disegarkan secara berkala. Anda luluskan suasananya, kami uruskan yang selebihnya."
+      },
+      "offline": {
+        "title": "Mampu Luar Talian",
+        "desc": "Muzik dimuat turun ke peranti anda dan dimainkan secara tempatan. Pengalaman tetamu kekal lancar walaupun kesambungan terputus."
+      },
+      "scheduling": {
+        "title": "Penjadualan",
+        "desc": "Suasana berbeza untuk waktu yang berbeza. Perkhidmatan sarapan, kesibukan tengah hari, lounge petang — jadualkan sekali dan ia berjalan dengan sendirinya."
+      },
+      "audioSignatures": {
+        "title": "Tandatangan Audio",
+        "desc": "Selitkan mesej berjenama, promosi, atau pengumuman antara lagu mengikut jadual."
+      },
+      "remoteMgmt": {
+        "title": "Pengurusan Jarak Jauh",
+        "desc": "Uruskan muzik anda dari mana-mana sahaja. Pasukan kami boleh membantu dari jauh, menyelesaikan masalah, dan mengemas kini senarai main tanpa perlu berada di lokasi."
+      }
+    },
+    "licensing": {
+      "sectionTitle": "Setiap lesen.",
+      "sectionTitleHighlight": "Termasuk.",
+      "sectionDesc": "Tiada yuran PRO. Tiada kerenah dokumen. Tiada kejutan.",
+      "recording": {
+        "title": "Hak Rakaman",
+        "desc": "Lesen master untuk setiap lagu dalam katalog."
+      },
+      "publishing": {
+        "title": "Hak Penerbitan",
+        "desc": "Hak mekanikal dan sync untuk komposer dan penerbit."
+      },
+      "performance": {
+        "title": "Lesen Persembahan Awam",
+        "desc": "Mainkan di mana sahaja perniagaan anda beroperasi — tanpa pembayaran badan kutipan selamanya."
+      },
+      "footnote1": "Walaupun",
+      "footnoteLink": "Soundtrack Your Brand",
+      "footnote2": "masih memerlukan Lesen Persembahan Awam berasingan di kebanyakan negara, Beat Breeze mempunyai semuanya disatukan. Itulah tujuannya."
+    },
+    "platforms": {
+      "sectionLabel": "Berfungsi Di Mana-Mana",
+      "sectionTitle": "Tiada perkakasan khas diperlukan.",
+      "windows": {
+        "title": "Windows",
+        "desc": "Pemain desktop penuh untuk mana-mana mesin Windows moden. Mini PC tersedia daripada BMAsia (Thailand) dengan waranti 1 tahun."
+      },
+      "android": {
+        "title": "Android",
+        "desc": "Aplikasi Android asli untuk tablet dan telefon. Mesra bajet dan boleh dipercayai."
+      },
+      "web": {
+        "title": "Pelayar Web",
+        "desc": "Pemain web untuk pemasangan pantas — log masuk daripada mana-mana pelayar dan mula memainkan muzik."
+      }
+    },
+    "custom": {
+      "sectionLabel": "Dibina Untuk Skala",
+      "sectionTitle": "Melangkaui yang standard.",
+      "sectionDesc": "Beat Breeze dibina sebagai platform yang sentiasa berkembang — khususnya untuk rangkaian korporat dan kumpulan berbilang hartanah. Kami membangunkan ciri mengikut keperluan anda.",
+      "whiteLabel": {
+        "title": "Label Putih untuk Korporat",
+        "desc": "Rangkaian korporat boleh menjenamakan Beat Breeze sebagai platform muzik dalaman mereka sendiri. Penjenamaan tersuai, warna, dan domain."
+      },
+      "customBuilds": {
+        "title": "Pembinaan Ciri Tersuai",
+        "desc": "Perlukan sesuatu di luar standard? Kami membina ciri mengikut operasi anda atas permintaan — sebahagian daripada pembangunan platform berterusan kami."
+      },
+      "volumePricing": {
+        "title": "Harga Mesra Volum",
+        "desc": "Semakin banyak zon yang anda jalankan, semakin baik kadar per zon. Sangat menarik untuk rangkaian berbilang hartanah dan kumpulan runcit."
+      }
+    },
+    "trial": {
+      "sectionLabel": "Cuba Dahulu",
+      "title": "Dengar sebelum anda",
+      "titleHighlight": "komited.",
+      "desc1": "Mulakan dengan percubaan percuma dua minggu. Tanpa kad kredit, tanpa komitmen.",
+      "desc2": "Kami akan menyiapkan anda dari jauh dan anda boleh mendengar bagaimana bunyi Beat Breeze dalam ruang sebenar anda sebelum membuat keputusan.",
+      "cta": "Mula Percubaan Percuma"
+    },
+    "support": {
+      "sectionLabel": "Sentiasa Aktif",
+      "sectionTitle": "Anda tidak pernah keseorangan.",
+      "technical": {
+        "title": "Sokongan Teknikal 24/7",
+        "desc": "Bantuan sepanjang masa untuk isu perkakasan, rangkaian, dan platform. Manusia sebenar, bukan skrip."
+      },
+      "musicDesign": {
+        "title": "Reka Bentuk Muzik Tersuai",
+        "desc": "Pereka muzik kami bekerjasama dengan anda dari Isnin hingga Jumaat (waktu Bangkok) untuk mencipta dan menyegarkan bunyi anda."
+      },
+      "aiAssist": {
+        "title": "Layan Diri AI",
+        "desc": "Pembantu interaktif tersedia 24/7 untuk soalan lazim, pengubahsuaian senarai main, dan pelarasan cepat."
+      }
+    },
+    "faq": {
+      "title": "Soalan Lazim",
+      "q1": {
+        "q": "Adakah saya perlu membayar sebarang yuran pelesenan muzik secara berasingan?",
+        "a": "Tidak. Setiap langganan Beat Breeze termasuk ketiga-tiga lesen — rakaman, penerbitan, dan persembahan awam. Anda tidak perlu membayar MPC, MRSS, PRS, ASCAP, BMI, atau mana-mana badan kutipan lain."
+      },
+      "q2": {
+        "q": "Bagaimana Beat Breeze berbeza daripada Soundtrack Your Brand?",
+        "a": "Beat Breeze jauh lebih berpatutan dan mempunyai semua lesen termasuk, tetapi katalog muziknya dikurasi dan bebas royalti — bukan lagu hit carta tertentu. Jika anda mahukan lagu hit yang dikenali tetamu anda dengan nama, pilih Soundtrack Your Brand. Jika anda mahukan muzik berlesen tanpa kerenah, tiada yuran, dan kurasi profesional, pilih Beat Breeze."
+      },
+      "q3": {
+        "q": "Peranti apa yang menjalankan Beat Breeze?",
+        "a": "Mana-mana Windows PC moden, tablet atau telefon Android, atau terus dalam pelayar web. Di Thailand, kami membekalkan Windows mini PC yang telah prakonfigurasi dengan waranti 1 tahun jika anda mahukan penyelesaian pasang-dan-main."
+      },
+      "q4": {
+        "q": "Bolehkah Beat Breeze berfungsi secara luar talian?",
+        "a": "Ya. Muzik dimuat turun ke peranti anda dan dimainkan secara tempatan, jadi pengalaman kekal lancar walaupun internet anda terputus. Anda hanya memerlukan kesambungan untuk kemas kini dan pengurusan jarak jauh."
+      },
+      "q5": {
+        "q": "Berapa besar katalog muzik?",
+        "a": "Lebih 30,000 lagu bebas royalti yang dihasilkan secara profesional, dan katalog ini semakin berkembang. Setiap lagu dikurasi oleh pereka muzik kami untuk persekitaran hospitaliti dan runcit."
+      },
+      "q6": {
+        "q": "Bolehkah saya menggunakan label putih Beat Breeze untuk jenama korporat saya?",
+        "a": "Ya. Rangkaian korporat boleh menjalankan Beat Breeze sebagai platform muzik dalaman berjenama mereka sendiri dengan warna, logo, dan domain tersuai. Hubungi kami untuk berbincang tentang keperluan anda."
+      }
+    },
+    "finalCta": {
+      "title": "Muzik,",
+      "titleHighlight": "dipermudahkan.",
+      "desc": "Tanpa kerenah pelesenan. Kurasi tersuai. Sokongan tanpa perlu bersusah payah. Semuanya pada harga yang masuk akal.",
+      "ctaQuote": "Dapatkan Sebut Harga",
+      "ctaDemo": "Tempah Demo"
+    }
   }
 }

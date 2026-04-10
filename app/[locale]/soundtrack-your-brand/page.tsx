@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import {
   Layers,
   Calendar,
@@ -24,133 +25,43 @@ import {
   Plus,
 } from 'lucide-react';
 
-const VALUE_PROPS = [
-  {
-    num: '01',
-    label: 'Repertoire',
-    title: 'Any artist, any genre.',
-    desc: 'Access 100+ million commercially licensed tracks. Every song your guests know, fully cleared for commercial use.',
-  },
-  {
-    num: '02',
-    label: 'Compliance',
-    title: 'Licensing you can trust.',
-    desc: 'Recording and publishing rights included. We share any information you need on the local public performance license and assist you wherever we can — the paperwork stays between you and your collection society.',
-  },
-  {
-    num: '03',
-    label: 'Specialization',
-    title: 'Made for hospitality.',
-    desc: 'Built for complex properties. Morning lobby hum, lunch service energy, late-night lounge pulse — each handled as its own zone.',
-  },
-];
+const VALUE_PROP_KEYS = ['01', '02', '03'] as const;
 
 const FEATURES = [
-  {
-    Icon: Layers,
-    title: 'Multi-Zone Control',
-    desc: 'Different atmospheres for different spaces. Manage lobby, spa, and restaurant from one dashboard.',
-  },
-  {
-    Icon: Calendar,
-    title: 'Scheduling',
-    desc: 'Weekly or daily drag-and-drop schedules. Holiday overrides, dayparts, and ready-made templates by venue type.',
-  },
-  {
-    Icon: Megaphone,
-    title: 'Audio Messaging',
-    desc: 'Schedule branded announcements, promotions, or voice notes in five languages — MP3 upload or text-to-speech.',
-  },
-  {
-    Icon: Smartphone,
-    title: 'Mobile Apps',
-    desc: 'Full control from anywhere. iOS, Android, Windows, macOS. Your staff can adjust the vibe from their phone.',
-  },
-  {
-    Icon: CloudOff,
-    title: 'Offline Ready',
-    desc: 'Music never stops. Up to 30 consecutive days of cached playback per device — ideal for fluctuating connectivity.',
-  },
-  {
-    Icon: ShieldCheck,
-    title: 'Enterprise Security',
-    desc: 'SAML SSO, role-based access, multi-user admin. Built for properties that need proper governance.',
-  },
-];
+  { Icon: Layers, key: 'multiZone' },
+  { Icon: Calendar, key: 'scheduling' },
+  { Icon: Megaphone, key: 'audioMessaging' },
+  { Icon: Smartphone, key: 'mobileApps' },
+  { Icon: CloudOff, key: 'offlineReady' },
+  { Icon: ShieldCheck, key: 'enterpriseSecurity' },
+] as const;
 
 const INTEGRATIONS = [
-  {
-    Icon: Sparkles,
-    title: 'AI Playlist Generation',
-    desc: 'Custom AI tools built on top of the platform. Describe a mood, get a curated playlist in seconds.',
-  },
-  {
-    Icon: Network,
-    title: 'Smart Building API',
-    desc: 'Connect music to lighting, room temperature, or occupancy sensors. Make the sound part of the whole guest experience.',
-  },
-  {
-    Icon: Wrench,
-    title: 'Bespoke Features on Request',
-    desc: 'Need something custom? We build integrations around your property\u2019s operations — on request, at no surprise cost.',
-  },
-];
+  { Icon: Sparkles, key: 'aiPlaylist' },
+  { Icon: Network, key: 'smartBuilding' },
+  { Icon: Wrench, key: 'bespoke' },
+] as const;
 
 const DEVICES = [
-  { Icon: Router, title: 'Soundtrack Player', desc: 'Dedicated hardware. Plug-and-play, 30-day offline cache.' },
-  { Icon: MonitorSmartphone, title: 'Windows PC', desc: 'Any modern Windows machine. Full desktop player, headless enterprise mode.' },
-  { Icon: Smartphone, title: 'Android & iOS', desc: 'Tablets or phones. Full app control from anywhere on the floor.' },
-  { Icon: Apple, title: 'macOS', desc: 'Native desktop player for Mac environments.' },
-  { Icon: Speaker, title: 'Sonos Integration', desc: 'Use Soundtrack as a music service within the Sonos app.' },
-  { Icon: Cable, title: 'Q-SYS', desc: 'Central multi-zone management for enterprise audio systems.' },
-];
+  { Icon: Router, key: 'soundtrackPlayer' },
+  { Icon: MonitorSmartphone, key: 'windows' },
+  { Icon: Smartphone, key: 'androidIos' },
+  { Icon: Apple, key: 'macos' },
+  { Icon: Speaker, key: 'sonos' },
+  { Icon: Cable, key: 'qsys' },
+] as const;
 
-const FAQS = [
-  {
-    q: 'Do I need a Public Performance License?',
-    a: 'Yes — this is paid separately to your local collection society (MPC in Thailand, MRSS in Singapore, PRS in the UK, etc). We don\u2019t handle the paperwork on your behalf, but we\u2019re happy to share any information you need and assist you however we can.',
-  },
-  {
-    q: 'What internet speed and network do I need?',
-    a: 'Minimum 0.5 Mbit/s per playback device. Wired Ethernet is preferred over Wi-Fi. A handful of outbound ports need to be open (443, 53, 123) — we send your IT team a short checklist before setup.',
-  },
-  {
-    q: 'Can I play music offline?',
-    a: 'Yes. Every device caches tracks after playing them, and you can enable "more offline play" mode to proactively download content. A fully-synced device keeps playing for up to 30 consecutive days without internet.',
-  },
-  {
-    q: 'How many zones can I manage?',
-    a: 'Unlimited. Each zone gets its own schedule, playlist, and device pairing — controlled from one dashboard. You can add and rearrange zones as your property evolves.',
-  },
-  {
-    q: 'Can I use my Spotify playlists?',
-    a: 'Yes. Soundtrack Your Brand syncs directly with Spotify, so any playlist you\u2019ve built (yours or curated) can be used commercially through our platform.',
-  },
-  {
-    q: 'What happens if the internet goes down?',
-    a: 'Cached tracks keep playing uninterrupted. Your guests never notice a thing. Once the connection comes back, the player syncs silently in the background.',
-  },
-];
+const FAQ_KEYS = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6'] as const;
 
 const SUPPORT = [
-  {
-    Icon: Headphones,
-    title: '24/7 Technical Support',
-    desc: 'Round-the-clock help for hardware, network, and platform issues. Real humans, not scripts.',
-  },
-  {
-    Icon: Music,
-    title: 'Bespoke Music Design',
-    desc: 'Our music designers work with you Monday through Friday (Bangkok hours) to craft and refresh your sound.',
-  },
-  {
-    Icon: Bot,
-    title: 'AI Self-Service',
-    desc: 'Interactive assistants available 24/7 for common questions, playlist tweaks, and quick adjustments.',
-  },
-];
+  { Icon: Headphones, key: 'technical' },
+  { Icon: Music, key: 'musicDesign' },
+  { Icon: Bot, key: 'aiAssist' },
+] as const;
 
 export default function SoundtrackYourBrandPage() {
+  const t = useTranslations('soundtrackPage');
+
   return (
     <>
       {/* Hero */}
@@ -174,27 +85,27 @@ export default function SoundtrackYourBrandPage() {
               transition={{ duration: 0.8 }}
             >
               <span className="font-label text-brand-orange text-sm tracking-[0.3em] uppercase mb-6 block">
-                The Global Standard
+                {t('hero.label')}
               </span>
               <h1 className="font-headline text-5xl md:text-7xl leading-none tracking-tight text-white mb-6">
-                Soundtrack Your <br />
-                <span className="italic text-brand-orange">Brand</span>
+                {t('hero.title')} <br />
+                <span className="italic text-brand-orange">{t('hero.titleHighlight')}</span>
               </h1>
               <p className="text-xl md:text-2xl text-white/60 max-w-xl leading-relaxed mb-10">
-                The world&rsquo;s largest commercial music library, curated for your space.
+                {t('hero.subtitle')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/quotation"
                   className="bg-brand-orange text-black px-10 py-4 font-label font-bold uppercase tracking-widest text-sm hover:bg-white transition-all duration-300 text-center"
                 >
-                  Get a Quote
+                  {t('hero.ctaQuote')}
                 </Link>
                 <Link
                   href="#trial"
                   className="border border-white/20 text-white px-10 py-4 font-label font-bold uppercase tracking-widest text-sm hover:border-brand-orange hover:text-brand-orange transition-all duration-300 text-center"
                 >
-                  Start a Free Trial
+                  {t('hero.ctaTrial')}
                 </Link>
               </div>
             </motion.div>
@@ -212,11 +123,11 @@ export default function SoundtrackYourBrandPage() {
             transition={{ duration: 0.6 }}
             className="font-headline text-3xl md:text-5xl leading-tight text-white/90 [text-wrap:balance]"
           >
-            When you play music in your business, you&rsquo;re shaping an experience.
+            {t('positioning.text1')}
             {' '}
-            <span className="italic text-brand-orange">Soundtrack Your Brand</span>
+            <span className="italic text-brand-orange">{t('positioning.highlight')}</span>
             {' '}
-            gives you every song your guests know — fully licensed for commercial use.
+            {t('positioning.text2')}
           </motion.p>
         </div>
       </section>
@@ -225,9 +136,9 @@ export default function SoundtrackYourBrandPage() {
       <section className="py-16 md:py-24 px-6 md:px-12 bg-[#0f0f0f]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10">
-            {VALUE_PROPS.map((prop, i) => (
+            {VALUE_PROP_KEYS.map((num, i) => (
               <motion.div
-                key={prop.num}
+                key={num}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -235,10 +146,10 @@ export default function SoundtrackYourBrandPage() {
                 className="p-8 md:p-12"
               >
                 <span className="font-label text-brand-orange text-xs tracking-[0.2em] uppercase block mb-4">
-                  {prop.num} / {prop.label}
+                  {num} / {t(`valueProps.${num}.label`)}
                 </span>
-                <h3 className="font-headline text-2xl md:text-3xl text-white mb-4 [text-wrap:balance]">{prop.title}</h3>
-                <p className="text-lg text-white/50 leading-relaxed">{prop.desc}</p>
+                <h3 className="font-headline text-2xl md:text-3xl text-white mb-4 [text-wrap:balance]">{t(`valueProps.${num}.title`)}</h3>
+                <p className="text-lg text-white/50 leading-relaxed">{t(`valueProps.${num}.desc`)}</p>
               </motion.div>
             ))}
           </div>
@@ -255,16 +166,16 @@ export default function SoundtrackYourBrandPage() {
             className="mb-16"
           >
             <span className="font-label text-brand-orange text-xs tracking-[0.2em] uppercase block mb-4">
-              Capabilities
+              {t('features.sectionLabel')}
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance]">Everything you need to run music right.</h2>
+            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance]">{t('features.sectionTitle')}</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5">
             {FEATURES.map((feature, i) => {
               const Icon = feature.Icon;
               return (
                 <motion.div
-                  key={feature.title}
+                  key={feature.key}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -272,8 +183,8 @@ export default function SoundtrackYourBrandPage() {
                   className="bg-[#121212] p-10 md:p-12"
                 >
                   <Icon className="text-brand-orange w-10 h-10 mb-6" strokeWidth={1.5} />
-                  <h4 className="font-label text-sm font-bold tracking-widest uppercase text-white mb-3 [text-wrap:balance]">{feature.title}</h4>
-                  <p className="text-base text-white/60 leading-relaxed">{feature.desc}</p>
+                  <h4 className="font-label text-sm font-bold tracking-widest uppercase text-white mb-3 [text-wrap:balance]">{t(`features.${feature.key}.title`)}</h4>
+                  <p className="text-base text-white/60 leading-relaxed">{t(`features.${feature.key}.desc`)}</p>
                 </motion.div>
               );
             })}
@@ -291,11 +202,11 @@ export default function SoundtrackYourBrandPage() {
             className="mb-16 max-w-3xl"
           >
             <span className="font-label text-brand-orange text-xs tracking-[0.2em] uppercase block mb-4">
-              Future-Proof
+              {t('integrations.sectionLabel')}
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance] mb-6">Beyond the Platform</h2>
+            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance] mb-6">{t('integrations.sectionTitle')}</h2>
             <p className="text-lg md:text-xl text-white/60 leading-relaxed">
-              We build AI and API features on top of Soundtrack Your Brand — custom automations, smart building integrations, and bespoke tools designed around your property&rsquo;s operations.
+              {t('integrations.sectionDesc')}
             </p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -303,7 +214,7 @@ export default function SoundtrackYourBrandPage() {
               const Icon = item.Icon;
               return (
                 <motion.div
-                  key={item.title}
+                  key={item.key}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -311,8 +222,8 @@ export default function SoundtrackYourBrandPage() {
                   className="border-l-2 border-brand-orange/30 pl-8"
                 >
                   <Icon className="text-brand-orange w-8 h-8 mb-4" strokeWidth={1.5} />
-                  <h4 className="font-headline text-xl text-white mb-3 [text-wrap:balance]">{item.title}</h4>
-                  <p className="text-base text-white/50 leading-relaxed">{item.desc}</p>
+                  <h4 className="font-headline text-xl text-white mb-3 [text-wrap:balance]">{t(`integrations.${item.key}.title`)}</h4>
+                  <p className="text-base text-white/50 leading-relaxed">{t(`integrations.${item.key}.desc`)}</p>
                 </motion.div>
               );
             })}
@@ -329,9 +240,9 @@ export default function SoundtrackYourBrandPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance] mb-4">Licensing, clarified.</h2>
+            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance] mb-4">{t('licensing.sectionTitle')}</h2>
             <p className="text-lg text-white/50 max-w-2xl mx-auto">
-              We tell you exactly what&rsquo;s covered and what isn&rsquo;t — no surprises, no fine print.
+              {t('licensing.sectionDesc')}
             </p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
@@ -343,29 +254,15 @@ export default function SoundtrackYourBrandPage() {
               className="bg-[#0f0f0f] p-10 md:p-12 border-t-4 border-brand-orange"
             >
               <h4 className="font-label text-xs font-bold tracking-[0.2em] uppercase text-brand-orange mb-8">
-                What&rsquo;s Included
+                {t('licensing.included.label')}
               </h4>
               <ul className="space-y-5">
-                <li className="flex items-start gap-4">
-                  <span className="text-brand-orange mt-1">✓</span>
-                  <span className="text-white/80">Recording rights (master license)</span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-brand-orange mt-1">✓</span>
-                  <span className="text-white/80">Publishing rights (mechanical/sync)</span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-brand-orange mt-1">✓</span>
-                  <span className="text-white/80">Direct deals with major and indie labels via Soundtrack</span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-brand-orange mt-1">✓</span>
-                  <span className="text-white/80">Bespoke curation and quarterly playlist refreshes</span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-brand-orange mt-1">✓</span>
-                  <span className="text-white/80">Hands-off ongoing support from our music designers</span>
-                </li>
+                {(['item1', 'item2', 'item3', 'item4', 'item5'] as const).map((item) => (
+                  <li key={item} className="flex items-start gap-4">
+                    <span className="text-brand-orange mt-1">✓</span>
+                    <span className="text-white/80">{t(`licensing.included.${item}`)}</span>
+                  </li>
+                ))}
               </ul>
             </motion.div>
             <motion.div
@@ -376,17 +273,19 @@ export default function SoundtrackYourBrandPage() {
               className="bg-[#0f0f0f] p-10 md:p-12 border-t-4 border-white/20"
             >
               <h4 className="font-label text-xs font-bold tracking-[0.2em] uppercase text-white/50 mb-8">
-                What&rsquo;s Separate
+                {t('licensing.separate.label')}
               </h4>
               <p className="text-white/70 mb-6 leading-relaxed">
-                The <span className="text-brand-orange">Public Performance License</span> is paid locally to your collection society — MPC in Thailand, MRSS in Singapore, PRS in the UK, ASCAP/BMI in the US, and so on.
+                {t('licensing.separate.desc')}{' '}
+                <span className="text-brand-orange">{t('licensing.separate.descHighlight')}</span>{' '}
+                {t('licensing.separate.descTail')}
               </p>
               <div className="bg-white/5 p-6 border-l-2 border-brand-orange mt-8">
                 <p className="font-label text-[10px] tracking-widest uppercase text-brand-orange mb-2">
-                  We&rsquo;re here to help
+                  {t('licensing.separate.calloutLabel')}
                 </p>
                 <p className="text-sm text-white/60 leading-relaxed">
-                  We don&rsquo;t handle the paperwork on your behalf, but we&rsquo;re happy to provide any information you need and assist you however we can.
+                  {t('licensing.separate.calloutDesc')}
                 </p>
               </div>
             </motion.div>
@@ -404,16 +303,16 @@ export default function SoundtrackYourBrandPage() {
             className="text-center mb-16"
           >
             <span className="font-label text-brand-orange text-xs tracking-[0.2em] uppercase block mb-4">
-              Versatility
+              {t('devices.sectionLabel')}
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance]">Plays on everything you already have.</h2>
+            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance]">{t('devices.sectionTitle')}</h2>
           </motion.div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             {DEVICES.map((device, i) => {
               const Icon = device.Icon;
               return (
                 <motion.div
-                  key={device.title}
+                  key={device.key}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -422,9 +321,9 @@ export default function SoundtrackYourBrandPage() {
                 >
                   <Icon className="text-brand-orange w-10 h-10 mb-4 mx-auto" strokeWidth={1.5} />
                   <h4 className="font-label text-sm font-bold tracking-widest uppercase text-white mb-3 [text-wrap:balance]">
-                    {device.title}
+                    {t(`devices.${device.key}.title`)}
                   </h4>
-                  <p className="text-sm text-white/50 leading-relaxed">{device.desc}</p>
+                  <p className="text-sm text-white/50 leading-relaxed">{t(`devices.${device.key}.desc`)}</p>
                 </motion.div>
               );
             })}
@@ -441,22 +340,22 @@ export default function SoundtrackYourBrandPage() {
             viewport={{ once: true }}
           >
             <span className="font-label text-brand-orange text-xs tracking-[0.2em] uppercase block mb-6">
-              Try It First
+              {t('trial.sectionLabel')}
             </span>
             <h2 className="font-headline text-4xl md:text-6xl text-white mb-8 leading-tight [text-wrap:balance]">
-              Try it before you <span className="italic text-brand-orange">commit.</span>
+              {t('trial.title')} <span className="italic text-brand-orange">{t('trial.titleHighlight')}</span>
             </h2>
             <p className="text-xl md:text-2xl text-white/60 leading-relaxed mb-4">
-              Start with a free one-month trial on a single zone. No credit card, no commitment.
+              {t('trial.desc1')}
             </p>
             <p className="text-lg text-white/40 leading-relaxed mb-12">
-              Once you decide to sign up and your hardware is in place, we&rsquo;ll have you up and running in five minutes.
+              {t('trial.desc2')}
             </p>
             <Link
               href="/quotation"
               className="inline-block bg-brand-orange text-black px-12 py-5 font-label font-bold uppercase tracking-widest hover:bg-white transition-all duration-300"
             >
-              Start Free Trial
+              {t('trial.cta')}
             </Link>
           </motion.div>
         </div>
@@ -472,16 +371,16 @@ export default function SoundtrackYourBrandPage() {
             className="text-center mb-16"
           >
             <span className="font-label text-brand-orange text-xs tracking-[0.2em] uppercase block mb-4">
-              Always On
+              {t('support.sectionLabel')}
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance]">You&rsquo;re never alone.</h2>
+            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance]">{t('support.sectionTitle')}</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {SUPPORT.map((item, i) => {
               const Icon = item.Icon;
               return (
                 <motion.div
-                  key={item.title}
+                  key={item.key}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -489,8 +388,8 @@ export default function SoundtrackYourBrandPage() {
                   className="text-center md:text-left"
                 >
                   <Icon className="text-brand-orange w-10 h-10 mb-6 mx-auto md:mx-0" strokeWidth={1.5} />
-                  <h4 className="font-headline text-2xl text-white mb-4 [text-wrap:balance]">{item.title}</h4>
-                  <p className="text-base text-white/50 leading-relaxed">{item.desc}</p>
+                  <h4 className="font-headline text-2xl text-white mb-4 [text-wrap:balance]">{t(`support.${item.key}.title`)}</h4>
+                  <p className="text-base text-white/50 leading-relaxed">{t(`support.${item.key}.desc`)}</p>
                 </motion.div>
               );
             })}
@@ -507,12 +406,12 @@ export default function SoundtrackYourBrandPage() {
             viewport={{ once: true }}
             className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance] mb-16 text-center"
           >
-            Frequently Asked
+            {t('faq.title')}
           </motion.h2>
           <div className="space-y-6">
-            {FAQS.map((faq, i) => (
+            {FAQ_KEYS.map((fk, i) => (
               <motion.details
-                key={faq.q}
+                key={fk}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -520,11 +419,11 @@ export default function SoundtrackYourBrandPage() {
                 className="group border-b border-white/10 pb-6"
               >
                 <summary className="flex justify-between items-start cursor-pointer list-none">
-                  <h5 className="font-headline text-xl md:text-2xl text-white pr-8 [text-wrap:balance]">{faq.q}</h5>
+                  <h5 className="font-headline text-xl md:text-2xl text-white pr-8 [text-wrap:balance]">{t(`faq.${fk}.q`)}</h5>
                   <Plus className="text-brand-orange w-6 h-6 flex-shrink-0 group-open:rotate-45 transition-transform" strokeWidth={1.5} />
                 </summary>
                 <p className="mt-6 text-base md:text-lg text-white/60 leading-relaxed pr-8">
-                  {faq.a}
+                  {t(`faq.${fk}.a`)}
                 </p>
               </motion.details>
             ))}
@@ -552,18 +451,18 @@ export default function SoundtrackYourBrandPage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="font-headline text-4xl md:text-6xl text-white mb-8 leading-tight [text-wrap:balance]">
-              Ready to hear the <br />
-              <span className="italic text-brand-orange">difference?</span>
+              {t('finalCta.title')} <br />
+              <span className="italic text-brand-orange">{t('finalCta.titleHighlight')}</span>
             </h2>
             <p className="text-xl md:text-2xl text-white/60 mb-12 max-w-2xl mx-auto leading-relaxed">
-              Our music designers will craft a sound experience unique to your brand.
+              {t('finalCta.desc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/quotation"
                 className="bg-brand-orange text-black px-12 py-5 font-label font-bold uppercase tracking-widest hover:bg-white transition-all duration-300"
               >
-                Get a Quote
+                {t('finalCta.ctaQuote')}
               </Link>
               <a
                 href="https://calendly.com/bmasia/sound-innovations"
@@ -571,7 +470,7 @@ export default function SoundtrackYourBrandPage() {
                 rel="noopener noreferrer"
                 className="border border-white/20 text-white px-12 py-5 font-label font-bold uppercase tracking-widest hover:border-brand-orange hover:text-brand-orange transition-all duration-300"
               >
-                Book a Demo
+                {t('finalCta.ctaDemo')}
               </a>
             </div>
           </motion.div>

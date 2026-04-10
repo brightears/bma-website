@@ -510,5 +510,368 @@
       "success": "Our team will follow up at {email} within 2 business hours. Is there anything else I can help clarify in the meantime?",
       "error": "Something went wrong. Please try again."
     }
+  },
+  "soundtrackPage": {
+    "metadata": {
+      "title": "Soundtrack Your Brand",
+      "description": "The world's largest commercial music library, curated for hospitality. 100M+ licensed tracks, multi-zone control, bespoke curation, and 24/7 support from BMAsia."
+    },
+    "hero": {
+      "label": "The Global Standard",
+      "title": "Soundtrack Your",
+      "titleHighlight": "Brand",
+      "subtitle": "The world's largest commercial music library, curated for your space.",
+      "ctaQuote": "Get a Quote",
+      "ctaTrial": "Start a Free Trial"
+    },
+    "positioning": {
+      "text1": "When you play music in your business, you're shaping an experience.",
+      "highlight": "Soundtrack Your Brand",
+      "text2": "gives you every song your guests know — fully licensed for commercial use."
+    },
+    "valueProps": {
+      "sectionLabel": "",
+      "01": {
+        "label": "Repertoire",
+        "title": "Any artist, any genre.",
+        "desc": "Access 100+ million commercially licensed tracks. Every song your guests know, fully cleared for commercial use."
+      },
+      "02": {
+        "label": "Compliance",
+        "title": "Licensing you can trust.",
+        "desc": "Recording and publishing rights included. We share any information you need on the local public performance license and assist you wherever we can — the paperwork stays between you and your collection society."
+      },
+      "03": {
+        "label": "Specialization",
+        "title": "Made for hospitality.",
+        "desc": "Built for complex properties. Morning lobby hum, lunch service energy, late-night lounge pulse — each handled as its own zone."
+      }
+    },
+    "features": {
+      "sectionLabel": "Capabilities",
+      "sectionTitle": "Everything you need to run music right.",
+      "multiZone": {
+        "title": "Multi-Zone Control",
+        "desc": "Different atmospheres for different spaces. Manage lobby, spa, and restaurant from one dashboard."
+      },
+      "scheduling": {
+        "title": "Scheduling",
+        "desc": "Weekly or daily drag-and-drop schedules. Holiday overrides, dayparts, and ready-made templates by venue type."
+      },
+      "audioMessaging": {
+        "title": "Audio Messaging",
+        "desc": "Schedule branded announcements, promotions, or voice notes in five languages — MP3 upload or text-to-speech."
+      },
+      "mobileApps": {
+        "title": "Mobile Apps",
+        "desc": "Full control from anywhere. iOS, Android, Windows, macOS. Your staff can adjust the vibe from their phone."
+      },
+      "offlineReady": {
+        "title": "Offline Ready",
+        "desc": "Music never stops. Up to 30 consecutive days of cached playback per device — ideal for fluctuating connectivity."
+      },
+      "enterpriseSecurity": {
+        "title": "Enterprise Security",
+        "desc": "SAML SSO, role-based access, multi-user admin. Built for properties that need proper governance."
+      }
+    },
+    "integrations": {
+      "sectionLabel": "Future-Proof",
+      "sectionTitle": "Beyond the Platform",
+      "sectionDesc": "We build AI and API features on top of Soundtrack Your Brand — custom automations, smart building integrations, and bespoke tools designed around your property's operations.",
+      "aiPlaylist": {
+        "title": "AI Playlist Generation",
+        "desc": "Custom AI tools built on top of the platform. Describe a mood, get a curated playlist in seconds."
+      },
+      "smartBuilding": {
+        "title": "Smart Building API",
+        "desc": "Connect music to lighting, room temperature, or occupancy sensors. Make the sound part of the whole guest experience."
+      },
+      "bespoke": {
+        "title": "Bespoke Features on Request",
+        "desc": "Need something custom? We build integrations around your property's operations — on request, at no surprise cost."
+      }
+    },
+    "licensing": {
+      "sectionTitle": "Licensing, clarified.",
+      "sectionDesc": "We tell you exactly what's covered and what isn't — no surprises, no fine print.",
+      "included": {
+        "label": "What's Included",
+        "item1": "Recording rights (master license)",
+        "item2": "Publishing rights (mechanical/sync)",
+        "item3": "Direct deals with major and indie labels via Soundtrack",
+        "item4": "Bespoke curation and quarterly playlist refreshes",
+        "item5": "Hands-off ongoing support from our music designers"
+      },
+      "separate": {
+        "label": "What's Separate",
+        "desc": "The",
+        "descHighlight": "Public Performance License",
+        "descTail": "is paid locally to your collection society — MPC in Thailand, MRSS in Singapore, PRS in the UK, ASCAP/BMI in the US, and so on.",
+        "calloutLabel": "We're here to help",
+        "calloutDesc": "We don't handle the paperwork on your behalf, but we're happy to provide any information you need and assist you however we can."
+      }
+    },
+    "devices": {
+      "sectionLabel": "Versatility",
+      "sectionTitle": "Plays on everything you already have.",
+      "soundtrackPlayer": {
+        "title": "Soundtrack Player",
+        "desc": "Dedicated hardware. Plug-and-play, 30-day offline cache."
+      },
+      "windows": {
+        "title": "Windows PC",
+        "desc": "Any modern Windows machine. Full desktop player, headless enterprise mode."
+      },
+      "androidIos": {
+        "title": "Android & iOS",
+        "desc": "Tablets or phones. Full app control from anywhere on the floor."
+      },
+      "macos": {
+        "title": "macOS",
+        "desc": "Native desktop player for Mac environments."
+      },
+      "sonos": {
+        "title": "Sonos Integration",
+        "desc": "Use Soundtrack as a music service within the Sonos app."
+      },
+      "qsys": {
+        "title": "Q-SYS",
+        "desc": "Central multi-zone management for enterprise audio systems."
+      }
+    },
+    "trial": {
+      "sectionLabel": "Try It First",
+      "title": "Try it before you",
+      "titleHighlight": "commit.",
+      "desc1": "Start with a free one-month trial on a single zone. No credit card, no commitment.",
+      "desc2": "Once you decide to sign up and your hardware is in place, we'll have you up and running in five minutes.",
+      "cta": "Start Free Trial"
+    },
+    "support": {
+      "sectionLabel": "Always On",
+      "sectionTitle": "You're never alone.",
+      "technical": {
+        "title": "24/7 Technical Support",
+        "desc": "Round-the-clock help for hardware, network, and platform issues. Real humans, not scripts."
+      },
+      "musicDesign": {
+        "title": "Bespoke Music Design",
+        "desc": "Our music designers work with you Monday through Friday (Bangkok hours) to craft and refresh your sound."
+      },
+      "aiAssist": {
+        "title": "AI Self-Service",
+        "desc": "Interactive assistants available 24/7 for common questions, playlist tweaks, and quick adjustments."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked",
+      "q1": {
+        "q": "Do I need a Public Performance License?",
+        "a": "Yes — this is paid separately to your local collection society (MPC in Thailand, MRSS in Singapore, PRS in the UK, etc). We don't handle the paperwork on your behalf, but we're happy to share any information you need and assist you however we can."
+      },
+      "q2": {
+        "q": "What internet speed and network do I need?",
+        "a": "Minimum 0.5 Mbit/s per playback device. Wired Ethernet is preferred over Wi-Fi. A handful of outbound ports need to be open (443, 53, 123) — we send your IT team a short checklist before setup."
+      },
+      "q3": {
+        "q": "Can I play music offline?",
+        "a": "Yes. Every device caches tracks after playing them, and you can enable \"more offline play\" mode to proactively download content. A fully-synced device keeps playing for up to 30 consecutive days without internet."
+      },
+      "q4": {
+        "q": "How many zones can I manage?",
+        "a": "Unlimited. Each zone gets its own schedule, playlist, and device pairing — controlled from one dashboard. You can add and rearrange zones as your property evolves."
+      },
+      "q5": {
+        "q": "Can I use my Spotify playlists?",
+        "a": "Yes. Soundtrack Your Brand syncs directly with Spotify, so any playlist you've built (yours or curated) can be used commercially through our platform."
+      },
+      "q6": {
+        "q": "What happens if the internet goes down?",
+        "a": "Cached tracks keep playing uninterrupted. Your guests never notice a thing. Once the connection comes back, the player syncs silently in the background."
+      }
+    },
+    "finalCta": {
+      "title": "Ready to hear the",
+      "titleHighlight": "difference?",
+      "desc": "Our music designers will craft a sound experience unique to your brand.",
+      "ctaQuote": "Get a Quote",
+      "ctaDemo": "Book a Demo"
+    }
+  },
+  "beatBreezePage": {
+    "metadata": {
+      "title": "Beat Breeze",
+      "description": "Fully licensed background music for every business — all three music licenses included, zero collection society fees, and professional curation by BMAsia music designers."
+    },
+    "hero": {
+      "label": "All-Inclusive Curation",
+      "title": "Beat",
+      "titleHighlight": "Breeze",
+      "subtitle": "Fully licensed background music for every business — zero fees, zero paperwork, zero headaches.",
+      "ctaQuote": "Get a Quote",
+      "ctaTrial": "Start a Free Trial"
+    },
+    "positioning": {
+      "text1": "Licensed music, fully curated, for a fraction of the cost of a commercial streaming service.",
+      "highlight": "Beat Breeze",
+      "text2": "includes every license you need — so you never deal with a collection society again."
+    },
+    "valueProps": {
+      "01": {
+        "label": "All-Inclusive",
+        "title": "All three licenses, always included.",
+        "desc": "Recording, publishing, and public performance — every license you need is built into the subscription. Zero collection society fees, ever."
+      },
+      "02": {
+        "label": "Value",
+        "title": "Significantly more affordable.",
+        "desc": "Because Beat Breeze is curated in-house, it costs significantly less than Soundtrack Your Brand — and you still get every license included."
+      },
+      "03": {
+        "label": "Simplicity",
+        "title": "Designed to be hands‑off.",
+        "desc": "Bespoke curation by our music designers. Scheduled refreshes, seasonal updates, and 24/7 support. You focus on your guests — we handle the sound."
+      }
+    },
+    "features": {
+      "sectionLabel": "Capabilities",
+      "sectionTitle": "Everything you need, nothing you don't.",
+      "zeroLicensing": {
+        "title": "Zero Licensing Hassle",
+        "desc": "All three licenses — recording, publishing, and public performance — are bundled in. No MPC, no MRSS, no PRS, no ASCAP, no paperwork."
+      },
+      "curation": {
+        "title": "Bespoke Curation",
+        "desc": "Our music designers craft playlists matched to your brand and refreshed regularly. You approve the vibe, we handle the rest."
+      },
+      "offline": {
+        "title": "Offline-Capable",
+        "desc": "Music downloads to your device and plays locally. Guest experience stays smooth even when connectivity drops."
+      },
+      "scheduling": {
+        "title": "Scheduling",
+        "desc": "Different moods for different hours. Breakfast service, lunch rush, evening lounge — schedule it once and it runs itself."
+      },
+      "audioSignatures": {
+        "title": "Audio Signatures",
+        "desc": "Insert branded messages, promotions, or announcements between tracks on a schedule."
+      },
+      "remoteMgmt": {
+        "title": "Remote Management",
+        "desc": "Manage your music from anywhere. Our team can assist remotely, troubleshoot, and update playlists without being on-site."
+      }
+    },
+    "licensing": {
+      "sectionTitle": "Every license.",
+      "sectionTitleHighlight": "Included.",
+      "sectionDesc": "No PRO fees. No paperwork. No surprises.",
+      "recording": {
+        "title": "Recording Rights",
+        "desc": "Master license for every track in the catalog."
+      },
+      "publishing": {
+        "title": "Publishing Rights",
+        "desc": "Mechanical and sync rights for composers and publishers."
+      },
+      "performance": {
+        "title": "Public Performance License",
+        "desc": "Play anywhere your business operates — no collection society payments ever."
+      },
+      "footnote1": "While",
+      "footnoteLink": "Soundtrack Your Brand",
+      "footnote2": "still requires a separate Public Performance License in most countries, Beat Breeze has it all built in. That's the whole point."
+    },
+    "platforms": {
+      "sectionLabel": "Runs Everywhere",
+      "sectionTitle": "No special hardware required.",
+      "windows": {
+        "title": "Windows",
+        "desc": "Full desktop player for any modern Windows machine. Mini PCs available from BMAsia (Thailand) with 1-year warranty."
+      },
+      "android": {
+        "title": "Android",
+        "desc": "Native Android app for tablets and phones. Budget-friendly and reliable."
+      },
+      "web": {
+        "title": "Web Browser",
+        "desc": "Web player for quick setup — log in from any browser and start playing."
+      }
+    },
+    "custom": {
+      "sectionLabel": "Built For Scale",
+      "sectionTitle": "Beyond the standard.",
+      "sectionDesc": "Beat Breeze is built as an evolving platform — especially for corporate chains and multi-property groups. We develop features around your needs.",
+      "whiteLabel": {
+        "title": "White-Label for Corporations",
+        "desc": "Corporate chains can brand Beat Breeze as their own internal music platform. Custom branding, colours, and domain."
+      },
+      "customBuilds": {
+        "title": "Custom Feature Builds",
+        "desc": "Need something beyond standard? We build features around your operations on request — part of our ongoing platform development."
+      },
+      "volumePricing": {
+        "title": "Volume-Friendly Pricing",
+        "desc": "The more zones you run, the better the per-zone rate. Especially attractive for multi-property chains and retail groups."
+      }
+    },
+    "trial": {
+      "sectionLabel": "Try It First",
+      "title": "Listen before you",
+      "titleHighlight": "commit.",
+      "desc1": "Start with a free two-week trial. No credit card, no commitment.",
+      "desc2": "We'll set you up remotely and you can hear how Beat Breeze sounds in your actual space before you decide.",
+      "cta": "Start Free Trial"
+    },
+    "support": {
+      "sectionLabel": "Always On",
+      "sectionTitle": "You're never alone.",
+      "technical": {
+        "title": "24/7 Technical Support",
+        "desc": "Round-the-clock help for hardware, network, and platform issues. Real humans, not scripts."
+      },
+      "musicDesign": {
+        "title": "Bespoke Music Design",
+        "desc": "Our music designers work with you Monday through Friday (Bangkok hours) to craft and refresh your sound."
+      },
+      "aiAssist": {
+        "title": "AI Self-Service",
+        "desc": "Interactive assistants available 24/7 for common questions, playlist tweaks, and quick adjustments."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked",
+      "q1": {
+        "q": "Do I need to pay any music licensing fees separately?",
+        "a": "No. Every Beat Breeze subscription includes all three licenses — recording, publishing, and public performance. You never need to pay MPC, MRSS, PRS, ASCAP, BMI, or any other collection society."
+      },
+      "q2": {
+        "q": "How is Beat Breeze different from Soundtrack Your Brand?",
+        "a": "Beat Breeze is significantly more affordable and has all licenses included, but the music catalog is curated and royalty-free — not specific chart hits. If you want the hits your guests know by name, choose Soundtrack Your Brand. If you want hassle-free licensed music with zero fees and professional curation, choose Beat Breeze."
+      },
+      "q3": {
+        "q": "What devices does Beat Breeze run on?",
+        "a": "Any modern Windows PC, Android tablet or phone, or directly in a web browser. In Thailand, we supply pre-configured Windows mini PCs with a 1-year warranty if you prefer a plug-and-play solution."
+      },
+      "q4": {
+        "q": "Can Beat Breeze work offline?",
+        "a": "Yes. The music downloads to your device and plays locally, so the experience stays smooth even if your internet drops. You just need connectivity for updates and remote management."
+      },
+      "q5": {
+        "q": "How big is the music catalog?",
+        "a": "Over 30,000 professionally-produced royalty-free tracks, and the catalog is growing. Every track is curated by our music designers for hospitality and retail environments."
+      },
+      "q6": {
+        "q": "Can I white-label Beat Breeze for my corporate brand?",
+        "a": "Yes. Corporate chains can run Beat Breeze as their own branded internal music platform with custom colours, logo, and domain. Talk to us about what you need."
+      }
+    },
+    "finalCta": {
+      "title": "Music,",
+      "titleHighlight": "simplified.",
+      "desc": "Zero licensing hassle. Bespoke curation. Hands-off support. All at a price that makes sense.",
+      "ctaQuote": "Get a Quote",
+      "ctaDemo": "Book a Demo"
+    }
   }
 }
