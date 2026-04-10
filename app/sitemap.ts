@@ -6,6 +6,8 @@ const BASE_URL = 'https://bmasiamusic.com';
 // Define all pages with their metadata
 const pages = [
   { path: '', changeFrequency: 'weekly' as const, priority: 1.0 },
+  { path: '/soundtrack-your-brand', changeFrequency: 'monthly' as const, priority: 0.95 },
+  { path: '/beat-breeze', changeFrequency: 'monthly' as const, priority: 0.95 },
   { path: '/how-it-works', changeFrequency: 'monthly' as const, priority: 0.8 },
   { path: '/licensing', changeFrequency: 'monthly' as const, priority: 0.8 },
   { path: '/quotation', changeFrequency: 'monthly' as const, priority: 0.9 },
