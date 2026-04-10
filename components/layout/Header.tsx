@@ -250,8 +250,7 @@ export const Header: React.FC = () => {
             {/* Menu Panel */}
             <motion.div
               id="mobile-menu"
-              className="fixed top-0 right-0 bottom-0 w-full max-w-sm z-[70] border-l border-white/10 md:hidden"
-              style={{ backgroundColor: '#0f0f0f' }}
+              className="fixed top-0 right-0 bottom-0 w-full max-w-sm z-[70] md:hidden"
               variants={menuVariants}
               initial="closed"
               animate="open"
@@ -260,7 +259,13 @@ export const Header: React.FC = () => {
               aria-modal="true"
               aria-label="Mobile navigation menu"
             >
-              <div className="flex flex-col h-full pt-24 pb-8 px-6">
+              {/* Solid background layer — isolated from framer-motion transform to guarantee opacity on iOS Safari */}
+              <div
+                className="absolute inset-0 border-l border-white/10"
+                style={{ backgroundColor: '#0f0f0f' }}
+                aria-hidden="true"
+              />
+              <div className="relative flex flex-col h-full pt-24 pb-8 px-6">
                 <nav className="flex-1" aria-label="Mobile navigation">
                   <ul className="space-y-2">
                     {NAV_LINKS.map((link: NavLinkItem, index: number) => (
