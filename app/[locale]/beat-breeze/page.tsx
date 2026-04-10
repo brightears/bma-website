@@ -38,7 +38,7 @@ const VALUE_PROPS = [
   {
     num: '03',
     label: 'Simplicity',
-    title: 'Designed to be hands-off.',
+    title: 'Designed to be hands\u2011off.',
     desc: 'Bespoke curation by our music designers. Scheduled refreshes, seasonal updates, and 24/7 support. You focus on your guests — we handle the sound.',
   },
 ];
@@ -217,7 +217,7 @@ export default function BeatBreezePage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="font-headline text-3xl md:text-5xl leading-tight text-white/90"
+            className="font-headline text-3xl md:text-5xl leading-tight text-white/90 [text-wrap:balance]"
           >
             Licensed music, fully curated, for a fraction of the cost of a commercial streaming service.
             {' '}
@@ -244,7 +244,7 @@ export default function BeatBreezePage() {
                 <span className="font-label text-brand-orange text-xs tracking-[0.2em] uppercase block mb-4">
                   {prop.num} / {prop.label}
                 </span>
-                <h3 className="font-headline text-2xl md:text-3xl text-white mb-4">{prop.title}</h3>
+                <h3 className="font-headline text-2xl md:text-3xl text-white mb-4 [text-wrap:balance]">{prop.title}</h3>
                 <p className="text-lg text-white/50 leading-relaxed">{prop.desc}</p>
               </motion.div>
             ))}
@@ -264,7 +264,7 @@ export default function BeatBreezePage() {
             <span className="font-label text-brand-orange text-xs tracking-[0.2em] uppercase block mb-4">
               Capabilities
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl text-white">Everything you need, nothing you don&rsquo;t.</h2>
+            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance]">Everything you need, nothing you don&rsquo;t.</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5">
             {FEATURES.map((feature, i) => {
@@ -279,7 +279,7 @@ export default function BeatBreezePage() {
                   className="bg-[#121212] p-10 md:p-12"
                 >
                   <Icon className="text-brand-orange w-10 h-10 mb-6" strokeWidth={1.5} />
-                  <h4 className="font-label text-sm font-bold tracking-widest uppercase text-white mb-3">{feature.title}</h4>
+                  <h4 className="font-label text-sm font-bold tracking-widest uppercase text-white mb-3 [text-wrap:balance]">{feature.title}</h4>
                   <p className="text-base text-white/60 leading-relaxed">{feature.desc}</p>
                 </motion.div>
               );
@@ -297,7 +297,7 @@ export default function BeatBreezePage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="font-headline text-4xl md:text-5xl text-white mb-4">
+            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance] mb-4">
               Every license. <span className="italic text-brand-orange">Included.</span>
             </h2>
             <p className="text-lg text-white/50 max-w-2xl mx-auto">
@@ -355,7 +355,7 @@ export default function BeatBreezePage() {
             <span className="font-label text-brand-orange text-xs tracking-[0.2em] uppercase block mb-4">
               Runs Everywhere
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl text-white">No special hardware required.</h2>
+            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance]">No special hardware required.</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {PLATFORMS.map((platform, i) => {
@@ -370,7 +370,7 @@ export default function BeatBreezePage() {
                   className="bg-[#0f0f0f] p-10 text-center border-t border-white/5"
                 >
                   <Icon className="text-brand-orange w-12 h-12 mb-6 mx-auto" strokeWidth={1.5} />
-                  <h4 className="font-headline text-2xl text-white mb-4">{platform.title}</h4>
+                  <h4 className="font-headline text-2xl text-white mb-4 [text-wrap:balance]">{platform.title}</h4>
                   <p className="text-base text-white/50 leading-relaxed">{platform.desc}</p>
                 </motion.div>
               );
@@ -391,7 +391,7 @@ export default function BeatBreezePage() {
             <span className="font-label text-brand-orange text-xs tracking-[0.2em] uppercase block mb-4">
               Built For Scale
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl text-white mb-6">Beyond the standard.</h2>
+            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance] mb-6">Beyond the standard.</h2>
             <p className="text-lg md:text-xl text-white/60 leading-relaxed">
               Beat Breeze is built as an evolving platform — especially for corporate chains and multi-property groups. We develop features around your needs.
             </p>
@@ -409,7 +409,7 @@ export default function BeatBreezePage() {
                   className="border-l-2 border-brand-orange/30 pl-8"
                 >
                   <Icon className="text-brand-orange w-8 h-8 mb-4" strokeWidth={1.5} />
-                  <h4 className="font-headline text-xl text-white mb-3">{item.title}</h4>
+                  <h4 className="font-headline text-xl text-white mb-3 [text-wrap:balance]">{item.title}</h4>
                   <p className="text-base text-white/50 leading-relaxed">{item.desc}</p>
                 </motion.div>
               );
@@ -429,7 +429,7 @@ export default function BeatBreezePage() {
             <span className="font-label text-brand-orange text-xs tracking-[0.2em] uppercase block mb-6">
               Try It First
             </span>
-            <h2 className="font-headline text-4xl md:text-6xl text-white mb-8 leading-tight">
+            <h2 className="font-headline text-4xl md:text-6xl text-white mb-8 leading-tight [text-wrap:balance]">
               Listen before you <span className="italic text-brand-orange">commit.</span>
             </h2>
             <p className="text-xl md:text-2xl text-white/60 leading-relaxed mb-4">
@@ -460,7 +460,7 @@ export default function BeatBreezePage() {
             <span className="font-label text-brand-orange text-xs tracking-[0.2em] uppercase block mb-4">
               Always On
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl text-white">You&rsquo;re never alone.</h2>
+            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance]">You&rsquo;re never alone.</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {SUPPORT.map((item, i) => {
@@ -475,7 +475,7 @@ export default function BeatBreezePage() {
                   className="text-center md:text-left"
                 >
                   <Icon className="text-brand-orange w-10 h-10 mb-6 mx-auto md:mx-0" strokeWidth={1.5} />
-                  <h4 className="font-headline text-2xl text-white mb-4">{item.title}</h4>
+                  <h4 className="font-headline text-2xl text-white mb-4 [text-wrap:balance]">{item.title}</h4>
                   <p className="text-base text-white/50 leading-relaxed">{item.desc}</p>
                 </motion.div>
               );
@@ -491,7 +491,7 @@ export default function BeatBreezePage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-headline text-4xl md:text-5xl text-white mb-16 text-center"
+            className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance] mb-16 text-center"
           >
             Frequently Asked
           </motion.h2>
@@ -506,7 +506,7 @@ export default function BeatBreezePage() {
                 className="group border-b border-white/10 pb-6"
               >
                 <summary className="flex justify-between items-start cursor-pointer list-none">
-                  <h5 className="font-headline text-xl md:text-2xl text-white pr-8">{faq.q}</h5>
+                  <h5 className="font-headline text-xl md:text-2xl text-white pr-8 [text-wrap:balance]">{faq.q}</h5>
                   <Plus className="text-brand-orange w-6 h-6 flex-shrink-0 group-open:rotate-45 transition-transform" strokeWidth={1.5} />
                 </summary>
                 <p className="mt-6 text-base md:text-lg text-white/60 leading-relaxed pr-8">
@@ -537,7 +537,7 @@ export default function BeatBreezePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-headline text-4xl md:text-6xl text-white mb-8 leading-tight">
+            <h2 className="font-headline text-4xl md:text-6xl text-white mb-8 leading-tight [text-wrap:balance]">
               Music, <br />
               <span className="italic text-brand-orange">simplified.</span>
             </h2>
