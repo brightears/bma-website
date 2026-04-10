@@ -35,7 +35,7 @@ const VALUE_PROPS = [
     num: '02',
     label: 'Compliance',
     title: 'Licensing you can trust.',
-    desc: 'Recording and publishing rights included. We guide you through the local public performance license so nothing slips through the cracks.',
+    desc: 'Recording and publishing rights included. We share any information you need on the local public performance license and assist you wherever we can — the paperwork stays between you and your collection society.',
   },
   {
     num: '03',
@@ -108,7 +108,7 @@ const DEVICES = [
 const FAQS = [
   {
     q: 'Do I need a Public Performance License?',
-    a: 'Yes — this is paid separately to your local collection society (MPC in Thailand, MRSS in Singapore, PRS in the UK, etc). The good news: we guide you through the process during onboarding, so you never deal with it alone.',
+    a: 'Yes — this is paid separately to your local collection society (MPC in Thailand, MRSS in Singapore, PRS in the UK, etc). We don\u2019t handle the paperwork on your behalf, but we\u2019re happy to share any information you need and assist you however we can.',
   },
   {
     q: 'What internet speed and network do I need?',
@@ -383,10 +383,10 @@ export default function SoundtrackYourBrandPage() {
               </p>
               <div className="bg-white/5 p-6 border-l-2 border-brand-orange mt-8">
                 <p className="font-label text-[10px] tracking-widest uppercase text-brand-orange mb-2">
-                  We handle the paperwork
+                  We&rsquo;re here to help
                 </p>
                 <p className="text-sm text-white/60 leading-relaxed">
-                  Our team walks you through the local licensing process during onboarding. You never deal with it alone.
+                  We don&rsquo;t handle the paperwork on your behalf, but we&rsquo;re happy to provide any information you need and assist you however we can.
                 </p>
               </div>
             </motion.div>

@@ -76,7 +76,7 @@ export default function SoundtrackYourBrandLayout({
         name: 'Do I need a Public Performance License for Soundtrack Your Brand?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, the Public Performance License is paid separately to your local collection society (MPC in Thailand, MRSS in Singapore, PRS in the UK, etc). BMAsia guides you through the process during onboarding, so you never deal with it alone.',
+          text: 'Yes, the Public Performance License is paid separately to your local collection society (MPC in Thailand, MRSS in Singapore, PRS in the UK, etc). BMAsia does not handle the paperwork on your behalf, but we are happy to share any information you need and assist you however we can.',
         },
       },
       {
