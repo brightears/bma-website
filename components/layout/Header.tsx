@@ -250,7 +250,8 @@ export const Header: React.FC = () => {
             {/* Menu Panel */}
             <motion.div
               id="mobile-menu"
-              className="fixed top-0 right-0 bottom-0 w-full max-w-sm z-[70] bg-brand-dark border-l border-white/10 md:hidden"
+              className="fixed top-0 right-0 bottom-0 w-full max-w-sm z-[70] border-l border-white/10 md:hidden"
+              style={{ backgroundColor: '#0f0f0f' }}
               variants={menuVariants}
               initial="closed"
               animate="open"

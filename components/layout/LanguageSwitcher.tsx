@@ -85,7 +85,8 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
             transition={{ duration: 0.15 }}
             className={`absolute right-0 ${
               openDirection === 'up' ? 'bottom-full mb-2' : 'mt-2'
-            } w-48 bg-brand-dark/95 backdrop-blur-lg border border-white/10 rounded-lg shadow-xl overflow-hidden z-50`}
+            } w-48 border border-white/10 rounded-lg shadow-xl overflow-hidden z-50`}
+            style={{ backgroundColor: '#0f0f0f' }}
             role="listbox"
             aria-label="Available languages"
           >
