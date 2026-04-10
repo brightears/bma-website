@@ -946,5 +946,108 @@
       "ctaQuote": "Nhận báo giá",
       "ctaDemo": "Đặt lịch demo"
     }
+  },
+  "licensingPage": {
+    "hero": {
+      "label": "Tuân thủ",
+      "title": "Cấp phép âm nhạc",
+      "titleHighlight": "Đơn giản hoá",
+      "subtitle": "Hiểu rõ các loại giấy phép mà doanh nghiệp bạn cần để tuân thủ quy định và ủng hộ các nghệ sĩ bạn phát nhạc."
+    },
+    "intro": {
+      "paragraph1": "Phát nhạc trong một doanh nghiệp khác với nghe nhạc tại nhà. Khi bạn sử dụng âm nhạc cho mục đích thương mại, bạn cần được sự cho phép từ những chủ sở hữu quyền.",
+      "paragraph2Prefix": "Doanh nghiệp của bạn cần",
+      "paragraph2Highlight": "ba loại giấy phép khác nhau."
+    },
+    "licenses": {
+      "01": {
+        "title": "Giấy phép bản ghi",
+        "desc": "Bao gồm quyền sử dụng một bản thu cụ thể của một bài hát và trả thù lao cho nghệ sĩ biểu diễn cùng hãng đĩa của họ."
+      },
+      "02": {
+        "title": "Giấy phép xuất bản",
+        "desc": "Bao gồm quyền sử dụng tác phẩm gốc và trả thù lao cho người viết lời và nhà soạn nhạc cho tài sản trí tuệ của họ."
+      },
+      "03": {
+        "title": "Giấy phép biểu diễn công cộng",
+        "desc": "Cho phép bạn phát bài hát trong môi trường công cộng như địa điểm kinh doanh, cửa hàng bán lẻ hoặc nhà hàng của bạn."
+      }
+    },
+    "warning": {
+      "label": "TUÂN THỦ QUAN TRỌNG",
+      "titleStart": "Các dịch vụ phát trực tuyến dành cho người dùng cá nhân",
+      "titleNot": "KHÔNG",
+      "titleEnd": "được cấp phép cho mục đích sử dụng thương mại",
+      "quote": "Chúng tôi cấp cho bạn một giấy phép có giới hạn, không độc quyền và có thể thu hồi để sử dụng dịch vụ Spotify cho mục đích cá nhân, phi thương mại...",
+      "quoteHighlight": "phi thương mại",
+      "source": "— Điều khoản & Điều kiện của Spotify"
+    },
+    "comparison": {
+      "sectionTitle": "So sánh giải pháp của bạn",
+      "recordingLicense": "Giấy phép bản ghi",
+      "publishingLicense": "Giấy phép xuất bản",
+      "performanceLicense": "Giấy phép biểu diễn công cộng",
+      "syb": {
+        "badge": "CAO CẤP",
+        "performanceNote": "Yêu cầu đăng ký với PRO địa phương"
+      },
+      "bb": {
+        "badge": "ĐÃ CẤP PHÉP ĐẦY ĐỦ",
+        "performanceNote": "Bao gồm trọn gói tất cả"
+      }
+    },
+    "cta": {
+      "title": "Bắt đầu với",
+      "titleHighlight": "Âm nhạc có bản quyền",
+      "ctaQuote": "Nhận báo giá",
+      "ctaDemo": "Đặt lịch demo"
+    }
+  },
+  "howItWorksPage": {
+    "hero": {
+      "label": "Phương pháp của chúng tôi",
+      "title": "Từ cuộc gọi đầu tiên đến",
+      "titleHighlight": "Nốt nhạc đầu tiên",
+      "subtitle": "Hầu hết khách hàng đi vào hoạt động trong vòng 48 giờ. Đây là quy trình cụ thể."
+    },
+    "steps": {
+      "01": {
+        "title": "Hãy cho chúng tôi biết về không gian của bạn",
+        "desc": "Chia sẻ loại hình địa điểm, số lượng khu vực phát nhạc và bầu không khí bạn muốn tạo ra. Chúng tôi sẽ đề xuất giải pháp phù hợp — Soundtrack Your Brand để kiểm soát sáng tạo toàn diện, hoặc Beat Breeze cho giải pháp âm nhạc trọn gói, không phiền phức. Nhận báo giá trong vòng 24 giờ."
+      },
+      "02": {
+        "title": "Chúng tôi thiết kế âm thanh của bạn",
+        "desc": "Các nhà thiết kế âm nhạc của chúng tôi phân tích thương hiệu, đặc điểm khách hàng và âm học của địa điểm. Chúng tôi xây dựng lịch phát danh sách nhạc đa lớp — với các cảm xúc khác nhau cho buổi sáng, buổi chiều và buổi tối — được thiết kế riêng cho không gian của bạn. Bạn duyệt các bản mẫu trước khi mọi thứ đi vào hoạt động."
+      },
+      "03": {
+        "title": "Cài đặt và đi vào hoạt động",
+        "desc": "Chúng tôi vận chuyển phần cứng (hoặc cấu hình thiết bị hiện có của bạn), cài đặt phần mềm từ xa và hướng dẫn đội ngũ của bạn. Nếu phần cứng đã sẵn sàng, bạn có thể phát nhạc chỉ trong vài phút. Chúng tôi xử lý mọi thứ — bạn chỉ cần nhấn nút phát."
+      },
+      "04": {
+        "title": "Hỗ trợ và phát triển liên tục",
+        "desc": "Âm nhạc của bạn không phải là việc cài đặt một lần rồi quên. Chúng tôi làm mới danh sách nhạc hàng tháng (SYB) hoặc hàng quý (Beat Breeze), theo dõi tình trạng các khu vực phát và thích ứng với các chủ đề theo mùa. Hỗ trợ tận tình từ đội ngũ Bangkok của chúng tôi."
+      }
+    },
+    "stats": {
+      "label": "Tại sao chọn BMAsia",
+      "sectionTitle": "Được xây dựng cho ngành khách sạn.",
+      "experience": {
+        "value": "23 Năm",
+        "desc": "Tuyển chọn âm nhạc cho ngành khách sạn trên khắp Asia-Pacific từ năm 2002."
+      },
+      "speed": {
+        "value": "48 Giờ",
+        "desc": "Từ thiết kế âm nhạc riêng đến vận hành trực tiếp tại địa điểm của bạn. Ngay lập tức nếu phần cứng đã sẵn sàng."
+      },
+      "legal": {
+        "value": "100% Hợp pháp",
+        "desc": "Mọi bản nhạc đều được cấp phép đầy đủ. Không rắc rối tuân thủ, không tiền phạt."
+      }
+    },
+    "cta": {
+      "title": "Sẵn sàng cảm nhận sự khác biệt?",
+      "ctaQuote": "Nhận báo giá",
+      "ctaDemo": "Đặt lịch demo"
+    }
   }
 }

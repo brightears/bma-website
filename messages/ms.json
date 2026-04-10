@@ -946,5 +946,108 @@
       "ctaQuote": "Dapatkan Sebut Harga",
       "ctaDemo": "Tempah Demo"
     }
+  },
+  "licensingPage": {
+    "hero": {
+      "label": "Pematuhan",
+      "title": "Pelesenan Muzik",
+      "titleHighlight": "Dipermudahkan",
+      "subtitle": "Memahami lesen yang diperlukan oleh perniagaan anda untuk kekal mematuhi peraturan dan menyokong artis yang anda mainkan."
+    },
+    "intro": {
+      "paragraph1": "Memainkan muzik dalam perniagaan adalah berbeza daripada mendengar di rumah. Apabila anda menggunakan muzik secara komersial, anda memerlukan kebenaran daripada pemegang hak.",
+      "paragraph2Prefix": "Perniagaan anda memerlukan",
+      "paragraph2Highlight": "tiga lesen yang berbeza."
+    },
+    "licenses": {
+      "01": {
+        "title": "Lesen Rakaman",
+        "desc": "Merangkumi hak untuk menggunakan rakaman tertentu sesebuah lagu dan memberi pampasan kepada artis rakaman serta syarikat rakaman mereka."
+      },
+      "02": {
+        "title": "Lesen Penerbitan",
+        "desc": "Merangkumi hak untuk menggunakan komposisi asal dan memberi pampasan kepada penulis lagu dan penggubah muzik atas harta intelek mereka."
+      },
+      "03": {
+        "title": "Lesen Persembahan Awam",
+        "desc": "Membenarkan anda memainkan lagu dalam persekitaran awam seperti premis perniagaan, ruang runcit, atau restoran anda."
+      }
+    },
+    "warning": {
+      "label": "PEMATUHAN KRITIKAL",
+      "titleStart": "Perkhidmatan Penstriman Pengguna",
+      "titleNot": "TIDAK",
+      "titleEnd": "Dilesenkan untuk Kegunaan Perniagaan",
+      "quote": "Kami memberikan anda lesen yang terhad, bukan eksklusif dan boleh dibatalkan untuk membuat penggunaan peribadi dan bukan komersial bagi Spotify Service...",
+      "quoteHighlight": "bukan komersial",
+      "source": "— Terma & Syarat Spotify"
+    },
+    "comparison": {
+      "sectionTitle": "Bandingkan Penyelesaian Anda",
+      "recordingLicense": "Lesen Rakaman",
+      "publishingLicense": "Lesen Penerbitan",
+      "performanceLicense": "Lesen Persembahan Awam",
+      "syb": {
+        "badge": "PREMIUM",
+        "performanceNote": "Pendaftaran PRO tempatan diperlukan"
+      },
+      "bb": {
+        "badge": "DILESENKAN SEPENUHNYA",
+        "performanceNote": "Perlindungan menyeluruh"
+      }
+    },
+    "cta": {
+      "title": "Mulakan dengan",
+      "titleHighlight": "Muzik Berlesen",
+      "ctaQuote": "Dapatkan Sebut Harga",
+      "ctaDemo": "Tempah Demo"
+    }
+  },
+  "howItWorksPage": {
+    "hero": {
+      "label": "Metodologi Kami",
+      "title": "Dari Panggilan Pertama ke",
+      "titleHighlight": "Nota Pertama",
+      "subtitle": "Kebanyakan pelanggan beroperasi dalam masa 48 jam. Inilah rupa prosesnya."
+    },
+    "steps": {
+      "01": {
+        "title": "Beritahu Kami Tentang Ruang Anda",
+        "desc": "Kongsikan jenis premis, bilangan zon, dan suasana yang ingin anda wujudkan. Kami akan mencadangkan penyelesaian yang sesuai — Soundtrack Your Brand untuk kawalan kreatif sepenuhnya, atau Beat Breeze untuk muzik yang bebas kerumitan dan serba lengkap. Dapatkan sebut harga dalam masa 24 jam."
+      },
+      "02": {
+        "title": "Kami Reka Bunyi Anda",
+        "desc": "Pereka muzik kami menganalisis jenama, demografi tetamu, dan akustik premis anda. Kami mencipta jadual senarai main berbilang lapisan — mood berbeza untuk waktu pagi, petang, dan malam — disesuaikan dengan ruang anda. Anda meluluskan sampel sebelum apa-apa disiarkan."
+      },
+      "03": {
+        "title": "Persediaan & Mula Beroperasi",
+        "desc": "Kami menghantar perkakasan (atau mengkonfigurasi peranti sedia ada anda), memasang perisian dari jauh, dan melatih pasukan anda. Jika perkakasan sudah tersedia, anda boleh mula memainkan muzik dalam masa beberapa minit. Kami uruskan semuanya — anda hanya perlu tekan main."
+      },
+      "04": {
+        "title": "Sokongan & Evolusi Berterusan",
+        "desc": "Muzik anda bukan sekadar tetapkan-dan-lupakan. Kami menyegarkan senarai main setiap bulan (SYB) atau setiap suku tahun (Beat Breeze), memantau kesihatan zon, dan menyesuaikan dengan tema bermusim. Sokongan khusus daripada pasukan Bangkok kami."
+      }
+    },
+    "stats": {
+      "label": "Mengapa BMAsia",
+      "sectionTitle": "Dibina untuk Hospitaliti.",
+      "experience": {
+        "value": "23 Tahun",
+        "desc": "Mengkurasi muzik untuk sektor hospitaliti di seluruh Asia-Pacific sejak 2002."
+      },
+      "speed": {
+        "value": "48 Jam",
+        "desc": "Dari reka bentuk muzik khusus hingga beroperasi di premis anda. Serta-merta jika perkakasan sudah tersedia."
+      },
+      "legal": {
+        "value": "100% Sah",
+        "desc": "Setiap lagu dilesenkan sepenuhnya. Tiada kerumitan pematuhan, tiada denda."
+      }
+    },
+    "cta": {
+      "title": "Bersedia untuk mendengar perbezaannya?",
+      "ctaQuote": "Dapatkan Sebut Harga",
+      "ctaDemo": "Tempah Demo"
+    }
   }
 }
