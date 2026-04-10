@@ -171,9 +171,6 @@ export default function Home() {
                       Explore Soundtrack
                     </motion.span>
                   </Link>
-                  <a href="https://app.soundtrack.io/search" target="_blank" rel="noopener noreferrer" className="block text-center mt-4 text-sm text-white/40 hover:text-white font-label tracking-widest uppercase transition-colors">
-                    Listen to samples →
-                  </a>
                 </div>
               </div>
             </motion.div>
@@ -219,9 +216,6 @@ export default function Home() {
                         Explore Beat Breeze
                       </motion.span>
                     </Link>
-                    <a href="https://bmasiamusic.com/listen/a91c14a5-681d-421b-af2e-06651df17b53" target="_blank" rel="noopener noreferrer" className="block text-center mt-4 text-sm text-white/40 hover:text-white font-label tracking-widest uppercase transition-colors">
-                      Listen to samples →
-                    </a>
                   </div>
                 </div>
               </div>
