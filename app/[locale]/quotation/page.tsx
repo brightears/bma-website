@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import { useTranslations } from 'next-intl';
 import { SITE, SOCIAL } from '@/lib/constants';
 import { WhatsAppLink, LineLink } from '@/components/icons';
 
@@ -24,7 +25,11 @@ const QuotationForm = dynamic(
   }
 );
 
+const EXPECT_ITEMS = ['fastResponse', 'noObligation', 'tailored'] as const;
+
 export default function QuotationPage() {
+  const t = useTranslations('quotationPage');
+
   return (
     <>
       {/* Main Content */}
@@ -38,28 +43,24 @@ export default function QuotationPage() {
               transition={{ duration: 0.6 }}
             >
               <span className="font-label text-brand-orange text-sm tracking-[0.3em] uppercase mb-6 block">
-                Get Started
+                {t('hero.label')}
               </span>
               <h1 className="font-headline text-5xl md:text-7xl leading-none text-white mb-6">
-                Request a <span className="italic text-brand-orange">Quote</span>
+                {t('hero.title')} <span className="italic text-brand-orange">{t('hero.titleHighlight')}</span>
               </h1>
               <p className="text-xl text-white/60 leading-relaxed mb-16 max-w-lg">
-                Tell us about your venue and we&apos;ll send a personalized quotation within 24 hours.
+                {t('hero.subtitle')}
               </p>
 
               {/* What to Expect */}
               <div className="mb-14">
-                <h2 className="font-label text-xs tracking-[0.3em] uppercase text-white/50 mb-8">What to Expect</h2>
+                <h2 className="font-label text-xs tracking-[0.3em] uppercase text-white/50 mb-8">{t('whatToExpect.sectionTitle')}</h2>
                 <div className="space-y-6">
-                  {[
-                    { title: 'Fast Response', desc: 'Receive your personalized quote within 24 hours' },
-                    { title: 'No Obligation', desc: 'Free consultation with no commitment required' },
-                    { title: 'Tailored Solutions', desc: 'Custom pricing based on your specific needs' },
-                  ].map((item) => (
-                    <div key={item.title} className="flex items-start gap-4 border-l border-brand-orange/30 pl-6">
+                  {EXPECT_ITEMS.map((key) => (
+                    <div key={key} className="flex items-start gap-4 border-l border-brand-orange/30 pl-6">
                       <div>
-                        <h3 className="text-white font-medium mb-1">{item.title}</h3>
-                        <p className="text-white/60 text-sm">{item.desc}</p>
+                        <h3 className="text-white font-medium mb-1">{t(`whatToExpect.${key}.title`)}</h3>
+                        <p className="text-white/60 text-sm">{t(`whatToExpect.${key}.desc`)}</p>
                       </div>
                     </div>
                   ))}
@@ -68,25 +69,25 @@ export default function QuotationPage() {
 
               {/* Our Solutions */}
               <div className="mb-14">
-                <h2 className="font-label text-xs tracking-[0.3em] uppercase text-white/50 mb-8">Our Solutions</h2>
+                <h2 className="font-label text-xs tracking-[0.3em] uppercase text-white/50 mb-8">{t('ourSolutions.sectionTitle')}</h2>
                 <div className="space-y-4">
                   <div className="border-l-2 border-brand-red pl-6">
                     <h3 className="font-headline text-xl text-white">Soundtrack Your Brand</h3>
-                    <p className="text-white/60 text-sm mt-1">Premium — 100M+ tracks, Spotify sync, bespoke design</p>
+                    <p className="text-white/60 text-sm mt-1">{t('ourSolutions.sybTagline')}</p>
                   </div>
                   <div className="border-l-2 border-brand-orange pl-6">
                     <h3 className="font-headline text-xl text-white">Beat Breeze</h3>
-                    <p className="text-white/60 text-sm mt-1">Essential — 30K+ tracks, all licenses included</p>
+                    <p className="text-white/60 text-sm mt-1">{t('ourSolutions.bbTagline')}</p>
                   </div>
                 </div>
                 <Link href="/how-it-works" className="inline-block mt-6 text-brand-orange hover:text-white text-sm font-label tracking-wide transition-colors">
-                  Learn more about our solutions →
+                  {t('ourSolutions.learnMore')}
                 </Link>
               </div>
 
               {/* Contact */}
               <div>
-                <h2 className="font-label text-xs tracking-[0.3em] uppercase text-white/50 mb-6">Questions?</h2>
+                <h2 className="font-label text-xs tracking-[0.3em] uppercase text-white/50 mb-6">{t('questions.sectionTitle')}</h2>
                 <div className="flex items-center gap-6">
                   <a
                     href={`mailto:${SITE.email}`}
@@ -107,9 +108,9 @@ export default function QuotationPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div className="bg-[#161616] border border-white/10 p-8 md:p-10">
-                <h2 className="font-headline text-2xl text-white mb-2">Tell Us About Your Space</h2>
+                <h2 className="font-headline text-2xl text-white mb-2">{t('formHeader.title')}</h2>
                 <p className="text-white/60 text-sm mb-8">
-                  Fill in your details and we&apos;ll get back to you with a personalized quote.
+                  {t('formHeader.subtitle')}
                 </p>
                 <QuotationForm />
               </div>
@@ -127,10 +128,10 @@ export default function QuotationPage() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-headline text-3xl md:text-4xl text-white mb-4">
-            Prefer a <span className="italic text-brand-orange">Live Demo?</span>
+            {t('demoCta.title')} <span className="italic text-brand-orange">{t('demoCta.titleHighlight')}</span>
           </h2>
           <p className="text-white/60 text-lg mb-8 max-w-xl mx-auto">
-            Book a free online demo to see our music solutions in action.
+            {t('demoCta.subtitle')}
           </p>
           <a
             href="https://calendly.com/bmasia/sound-innovations"
@@ -138,7 +139,7 @@ export default function QuotationPage() {
             rel="noopener noreferrer"
             className="inline-block border border-white/20 text-white px-12 py-5 font-label font-bold uppercase tracking-widest hover:border-brand-orange hover:text-brand-orange transition-all duration-300"
           >
-            Book a Demo
+            {t('demoCta.ctaButton')}
           </a>
         </motion.div>
       </section>

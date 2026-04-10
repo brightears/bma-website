@@ -284,7 +284,14 @@
     "contact": "Liên hệ",
     "copyright": "Bảo lưu mọi quyền.",
     "licensing": "Bản quyền",
-    "musicForBusiness": "Nhạc cho doanh nghiệp"
+    "musicForBusiness": "Nhạc cho doanh nghiệp",
+    "privacyPolicy": "Chính sách bảo mật",
+    "cookiePolicy": "Chính sách cookie",
+    "termsOfService": "Điều khoản dịch vụ",
+    "privacy": "Bảo mật",
+    "cookies": "Cookie",
+    "terms": "Điều khoản",
+    "allRightsReserved": "Bảo lưu mọi quyền."
   },
   "howItWorks": {
     "hero": {
@@ -1049,5 +1056,776 @@
       "ctaQuote": "Nhận báo giá",
       "ctaDemo": "Đặt lịch demo"
     }
+  },
+  "quotationPage": {
+    "hero": {
+      "label": "Bắt đầu",
+      "title": "Yêu cầu",
+      "titleHighlight": "Báo giá",
+      "subtitle": "Hãy cho chúng tôi biết về địa điểm của bạn và chúng tôi sẽ gửi báo giá cá nhân hóa trong vòng 24 hours."
+    },
+    "whatToExpect": {
+      "sectionTitle": "Những gì bạn sẽ nhận được",
+      "fastResponse": {
+        "title": "Phản hồi nhanh chóng",
+        "desc": "Nhận báo giá cá nhân hóa của bạn trong vòng 24 hours"
+      },
+      "noObligation": {
+        "title": "Không ràng buộc",
+        "desc": "Tư vấn miễn phí, không yêu cầu cam kết"
+      },
+      "tailored": {
+        "title": "Giải pháp tùy chỉnh",
+        "desc": "Định giá riêng dựa trên nhu cầu cụ thể của bạn"
+      }
+    },
+    "ourSolutions": {
+      "sectionTitle": "Giải pháp của chúng tôi",
+      "sybTagline": "Cao cấp — 100M+ bản nhạc, đồng bộ với Spotify, thiết kế theo yêu cầu",
+      "bbTagline": "Thiết yếu — 30K+ bản nhạc, bao gồm toàn bộ giấy phép",
+      "learnMore": "Tìm hiểu thêm về các giải pháp của chúng tôi →"
+    },
+    "questions": {
+      "sectionTitle": "Có thắc mắc?"
+    },
+    "formHeader": {
+      "title": "Hãy cho chúng tôi biết về không gian của bạn",
+      "subtitle": "Điền thông tin của bạn và chúng tôi sẽ liên hệ lại với báo giá cá nhân hóa."
+    },
+    "demoCta": {
+      "title": "Bạn muốn trải nghiệm",
+      "titleHighlight": "Demo trực tiếp?",
+      "subtitle": "Đặt lịch demo trực tuyến miễn phí để xem các giải pháp âm nhạc của chúng tôi hoạt động.",
+      "ctaButton": "Đặt lịch Demo"
+    }
+  },
+  "industryData": {
+    "hotels": {
+      "headline": "Âm thanh của dịch vụ lưu trú năm sao",
+      "subheadline": "Từ sảnh đón đến spa, chúng tôi thiết kế âm nhạc định hình trải nghiệm của khách trên từng không gian.",
+      "zonesTitle": "Mỗi không gian có tần số riêng",
+      "benefitsTitle": "Vì sao các khách sạn chọn BMAsia",
+      "editorialStat": "41% khách lưu trú lâu hơn khi họ yêu thích âm nhạc.",
+      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021 — khảo sát hơn 2.500 người tiêu dùng.",
+      "ctaHeadline": "Thiết kế âm thanh cho khách sạn của bạn.",
+      "stats": {
+        "s1": {
+          "value": "9.1%",
+          "label": "Tăng doanh thu"
+        },
+        "s2": {
+          "value": "41%",
+          "label": "Thời gian lưu trú dài hơn"
+        },
+        "s3": {
+          "value": "39%",
+          "label": "Khách quay lại nhiều hơn"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Quản lý âm nhạc"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Sảnh đón & Tiếp tân",
+          "description": "Ấm áp, thân thiện, tinh tế — ấn tượng đầu tiên định hình không khí"
+        },
+        "z2": {
+          "name": "Nhà hàng & F&B",
+          "description": "Từ bữa tối ấm cúng đến tiệc buffet sáng sôi động"
+        },
+        "z3": {
+          "name": "Spa & Chăm sóc sức khỏe",
+          "description": "Không gian âm thanh tĩnh lặng, thiền định cho sự thư giãn sâu"
+        },
+        "z4": {
+          "name": "Hồ bơi & Ngoài trời",
+          "description": "Năng lượng thư thái, vui tươi cho những khoảnh khắc tắm nắng và nghỉ ngơi"
+        },
+        "z5": {
+          "name": "Phòng tập & Fitness",
+          "description": "Giai điệu sôi động, tiếp thêm động lực để bứt phá hiệu suất"
+        },
+        "z6": {
+          "name": "Quầy bar & Lounge",
+          "description": "Không khí buổi tối tinh tế, từ jazz đến deep house"
+        }
+      },
+      "benefits": {
+        "b1": "Điều khiển tập trung nhiều cơ sở từ một bảng điều khiển duy nhất",
+        "b2": "Thiết kế âm nhạc riêng bởi đội ngũ của chúng tôi, làm mới hàng quý",
+        "b3": "Lập lịch theo khung giờ — tự động chuyển từ sáng đến tối",
+        "b4": "Phát ngoại tuyến đảm bảo — âm nhạc vẫn phát ngay cả khi mất mạng",
+        "b5": "Hỗ trợ và quản lý tài khoản chuyên biệt 24/7"
+      }
+    },
+    "restaurants": {
+      "headline": "Nguyên liệu bí mật không ai nhìn thấy",
+      "subheadline": "Âm nhạc biến bữa ăn thành kỷ niệm — được lên lịch, tuyển chọn và luôn đúng thương hiệu.",
+      "zonesTitle": "Từ bình minh đến gọi món cuối",
+      "benefitsTitle": "Vì sao các nhà hàng chọn BMAsia",
+      "editorialStat": "Âm nhạc nhịp chậm tăng thời gian dùng bữa thêm 24% và doanh thu quầy bar thêm 40%.",
+      "editorialStatSub": "Milliman (1986), Journal of Consumer Research.",
+      "ctaHeadline": "Định hình không khí cho nhà hàng của bạn.",
+      "stats": {
+        "s1": {
+          "value": "9.1%",
+          "label": "Doanh thu cao hơn"
+        },
+        "s2": {
+          "value": "15%",
+          "label": "Bán tráng miệng nhiều hơn"
+        },
+        "s3": {
+          "value": "24%",
+          "label": "Thời gian dùng bữa dài hơn"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Tự động"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Fine Dining",
+          "description": "Thanh lịch, riêng tư, cổ điển — nâng tầm trải nghiệm ẩm thực"
+        },
+        "z2": {
+          "name": "Ăn uống thân mật",
+          "description": "Ấm áp, dễ trò chuyện, nhẹ nhàng — âm nhạc không lấn át"
+        },
+        "z3": {
+          "name": "Café & Tiệm bánh",
+          "description": "Nhẹ nhàng, vui tươi, acoustic — phông nền hoàn hảo"
+        },
+        "z4": {
+          "name": "Quầy bar & Cocktail",
+          "description": "Tinh tế, chất jazz, xã giao — định hình không khí buổi tối"
+        },
+        "z5": {
+          "name": "Fast Casual & QSR",
+          "description": "Sôi động, tràn đầy năng lượng, hiện đại — khớp với nhịp độ"
+        },
+        "z6": {
+          "name": "Sân hiên ngoài trời",
+          "description": "Gió lộng, thư thái, hoàng hôn — chất al fresco"
+        }
+      },
+      "benefits": {
+        "b1": "Lập lịch theo khung giờ — tự động chuyển từ bữa sáng đến đêm khuya",
+        "b2": "Tuyển chọn thể loại và tâm trạng phù hợp với concept F&B của bạn",
+        "b3": "Đầy đủ giấy phép — tùy chọn không bản quyền hoặc thương mại",
+        "b4": "Điều khiển đa vùng cho phòng ăn, quầy bar, sân hiên và khu vệ sinh",
+        "b5": "Âm lượng và mức năng lượng tự điều chỉnh theo thời điểm trong ngày"
+      }
+    },
+    "retail": {
+      "headline": "Thương hiệu của bạn có âm thanh riêng",
+      "subheadline": "Chúng tôi thiết kế bản sắc âm thanh khiến khách hàng ở lại, dạo xem và mua sắm.",
+      "zonesTitle": "Âm thanh cho mọi quy mô",
+      "benefitsTitle": "Vì sao các nhà bán lẻ chọn BMAsia",
+      "editorialStat": "Âm nhạc nhịp chậm tăng doanh số bán lẻ hàng ngày thêm 38%.",
+      "editorialStatSub": "Milliman (1982), Journal of Marketing — nghiên cứu âm nhạc bán lẻ chuẩn mực.",
+      "ctaHeadline": "Khuếch đại thương hiệu của bạn.",
+      "stats": {
+        "s1": {
+          "value": "38%",
+          "label": "Doanh số hàng ngày cao hơn"
+        },
+        "s2": {
+          "value": "90%",
+          "label": "Quay lại khi nhạc hay"
+        },
+        "s3": {
+          "value": "3.4x",
+          "label": "Hiệu ứng gợi ý với rượu vang"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Tự động"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Thời trang & May mặc",
+          "description": "Playlist tuyển chọn hợp xu hướng, khớp với bản sắc thương hiệu"
+        },
+        "z2": {
+          "name": "Trung tâm thương mại",
+          "description": "Âm nhạc sôi động, tràn đầy năng lượng, kéo lưu lượng khách"
+        },
+        "z3": {
+          "name": "Làm đẹp & Chăm sóc sức khỏe",
+          "description": "Không gian âm thanh dịu nhẹ, sang trọng cho những khoảnh khắc nuông chiều"
+        },
+        "z4": {
+          "name": "Showroom",
+          "description": "Âm nhạc cao cấp, truyền cảm hứng, tôn vinh sản phẩm"
+        },
+        "z5": {
+          "name": "Siêu thị",
+          "description": "Sôi động, quen thuộc, giữ khách tiếp tục di chuyển"
+        },
+        "z6": {
+          "name": "Phòng tập & Fitness",
+          "description": "Giai điệu BPM cao cho hiệu suất đỉnh cao"
+        }
+      },
+      "benefits": {
+        "b1": "Điều khiển âm nhạc tập trung trên toàn bộ chuỗi cửa hàng",
+        "b2": "Tuyển chọn phù hợp thương hiệu, củng cố bản sắc của bạn",
+        "b3": "Thông điệp âm thanh cho khuyến mãi, giờ mở cửa và thông báo",
+        "b4": "Đồng nhất đa cửa hàng từ flagship đến outlet",
+        "b5": "Lập lịch giờ cao điểm — mức năng lượng khớp với lưu lượng khách"
+      }
+    },
+    "bars": {
+      "headline": "Nơi đêm buông đúng điệu",
+      "subheadline": "Âm nhạc có bản quyền định hình không khí hoàn hảo — từ giờ cocktail đến giờ đóng cửa.",
+      "zonesTitle": "Định hình không khí cho từng khoảnh khắc",
+      "benefitsTitle": "Vì sao các quầy bar chọn BMAsia",
+      "editorialStat": "Âm lượng lớn hơn làm tăng số đồ uống mỗi khách từ 2.6 lên 3.4.",
+      "editorialStatSub": "Guéguen et al. (2004), Alcoholism: Clinical & Experimental Research.",
+      "ctaHeadline": "Thiết kế âm thanh cho quầy bar của bạn.",
+      "stats": {
+        "s1": {
+          "value": "+31%",
+          "label": "Gọi đồ uống nhiều hơn"
+        },
+        "s2": {
+          "value": "+40%",
+          "label": "Tăng doanh thu quầy bar"
+        },
+        "s3": {
+          "value": "24%",
+          "label": "Thời gian ngồi bàn dài hơn"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Tự động"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Cocktail Bar",
+          "description": "Jazz tinh tế, neo-soul và bossa nova"
+        },
+        "z2": {
+          "name": "Sports Bar",
+          "description": "Những bản hit sôi động và ca khúc chiều lòng đám đông"
+        },
+        "z3": {
+          "name": "Wine Bar",
+          "description": "Riêng tư, acoustic, tinh tế — để câu chuyện tuôn chảy"
+        },
+        "z4": {
+          "name": "Rooftop Lounge",
+          "description": "Electronic thư thái, chất hoàng hôn, deep house"
+        },
+        "z5": {
+          "name": "Nightclub",
+          "description": "Năng lượng sàn nhảy, các set do DJ tuyển chọn"
+        },
+        "z6": {
+          "name": "Quầy bar khách sạn",
+          "description": "Không khí buổi tối thanh lịch, nhất quán thương hiệu"
+        }
+      },
+      "benefits": {
+        "b1": "Tự động chuyển không khí từ giờ tan ca sang đêm muộn",
+        "b2": "Chuyên môn đa thể loại — từ jazz đến electronic đến top 40",
+        "b3": "Tuân thủ pháp lý — không rủi ro vi phạm bản quyền",
+        "b4": "Lập lịch âm lượng tôn trọng quy định về tiếng ồn",
+        "b5": "Playlist riêng được làm mới để khách quen luôn bất ngờ"
+      }
+    },
+    "spas": {
+      "headline": "Âm thanh như liệu pháp",
+      "subheadline": "Âm nhạc được thiết kế để xoa dịu, chữa lành và phục hồi — từ tiếp tân đến phòng trị liệu.",
+      "zonesTitle": "Tần số chữa lành cho từng không gian",
+      "benefitsTitle": "Vì sao các spa chọn BMAsia",
+      "editorialStat": "\"Weightless\" giảm lo âu 65% trong thử nghiệm lâm sàng.",
+      "editorialStatSub": "Mindlab International / British Academy of Sound Therapy, 2011.",
+      "ctaHeadline": "Thiết kế âm thanh cho không gian an yên của bạn.",
+      "stats": {
+        "s1": {
+          "value": "65%",
+          "label": "Giảm lo âu"
+        },
+        "s2": {
+          "value": "60 BPM",
+          "label": "Đồng bộ sóng não Alpha"
+        },
+        "s3": {
+          "value": "30K+",
+          "label": "Bản nhạc tuyển chọn"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Tự động"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Tiếp tân & Chờ",
+          "description": "Chuyển giao nhẹ nhàng từ thế giới bên ngoài vào không gian an yên"
+        },
+        "z2": {
+          "name": "Phòng trị liệu",
+          "description": "Thư giãn sâu, âm thanh thiên nhiên, các lớp âm ambient"
+        },
+        "z3": {
+          "name": "Yoga & Thiền",
+          "description": "Không gian âm thanh tỉnh thức, khoáng đạt cho buổi tập"
+        },
+        "z4": {
+          "name": "Hồ bơi & Nhiệt trị liệu",
+          "description": "Các sáng tác ambient lấy cảm hứng từ dòng chảy của nước"
+        },
+        "z5": {
+          "name": "Phòng thư giãn",
+          "description": "Sự tĩnh tại sau trị liệu, mềm mại và ấm áp"
+        },
+        "z6": {
+          "name": "Khu thay đồ",
+          "description": "Nền nhạc nhẹ nhàng, kín đáo, mang lại sự thoải mái"
+        }
+      },
+      "benefits": {
+        "b1": "Playlist wellness tuyển chọn bởi các nhà thiết kế âm nhạc chuyên nghiệp",
+        "b2": "Điều khiển liền mạch theo từng vùng cho các khu trị liệu khác nhau",
+        "b3": "Phát ngoại tuyến — không bao giờ im lặng trong lúc trị liệu",
+        "b4": "Cập nhật theo mùa và chủ đề (Ramadan, lễ hội, sự kiện)",
+        "b5": "Bao gồm đầy đủ giấy phép với Beat Breeze — không phiền hà"
+      }
+    },
+    "cafes": {
+      "headline": "Phông nền hoàn hảo",
+      "subheadline": "Âm nhạc khiến khách ngồi xuống, gọi thêm một ly cà phê và nán lại thêm chút nữa.",
+      "zonesTitle": "Từ ly espresso buổi sáng đến buổi làm việc chiều",
+      "benefitsTitle": "Vì sao các quán café chọn BMAsia",
+      "editorialStat": "73% khách hàng hành động sau khi nghe một bài hát họ thích trong quán café.",
+      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021.",
+      "ctaHeadline": "Thiết kế âm thanh cho quán café của bạn.",
+      "stats": {
+        "s1": {
+          "value": "79%",
+          "label": "Chú ý đến âm nhạc"
+        },
+        "s2": {
+          "value": "41%",
+          "label": "Ở lại lâu hơn"
+        },
+        "s3": {
+          "value": "73%",
+          "label": "Hành động sau đó"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Tự động"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Cao điểm sáng",
+          "description": "Acoustic sôi động, năng lượng nhẹ nhàng mở đầu ngày mới"
+        },
+        "z2": {
+          "name": "Giờ làm việc & học tập",
+          "description": "Lo-fi, ambient, hỗ trợ tập trung — không phân tâm"
+        },
+        "z3": {
+          "name": "Giao lưu buổi chiều",
+          "description": "Indie ấm áp, folk, pop nhẹ — dễ trò chuyện"
+        },
+        "z4": {
+          "name": "Thư giãn buổi tối",
+          "description": "Jazz, bossa nova, dịu êm — một chuyển giao tự nhiên"
+        },
+        "z5": {
+          "name": "Brunch cuối tuần",
+          "description": "Vui tươi, tuyển chọn, hơi lớn tiếng hơn — đúng không khí brunch"
+        },
+        "z6": {
+          "name": "Chỗ ngồi ngoài trời",
+          "description": "Nhẹ nhàng và khoáng đạt — bổ trợ cho âm thanh phố phường"
+        }
+      },
+      "benefits": {
+        "b1": "Lập lịch theo khung giờ khớp năng lượng với thời điểm trong ngày",
+        "b2": "Bao gồm đầy đủ giấy phép — không phí hiệp hội thu tác quyền với Beat Breeze",
+        "b3": "Giá cả phải chăng cho các cơ sở một vùng",
+        "b4": "Thiết lập dễ dàng trên mọi thiết bị Android hoặc Windows",
+        "b5": "Playlist làm mới giữ chân khách quen"
+      }
+    },
+    "malls": {
+      "headline": "Âm thanh khiến người mua dịch chuyển",
+      "subheadline": "Quản lý âm nhạc đa vùng cho các trung tâm thương mại mong muốn tăng lưu lượng khách và thời gian ghé thăm.",
+      "zonesTitle": "Một tòa nhà, nhiều không khí",
+      "benefitsTitle": "Vì sao các trung tâm thương mại chọn BMAsia",
+      "editorialStat": "85% người mua nói âm nhạc là yếu tố số 1 nâng cao tâm trạng khi mua sắm.",
+      "editorialStatSub": "Mood Media, \"Quantifying the Impact of Sensory Marketing,\" 2019.",
+      "ctaHeadline": "Thiết kế âm thanh cho trung tâm thương mại của bạn.",
+      "stats": {
+        "s1": {
+          "value": "38%",
+          "label": "Doanh số hàng ngày cao hơn"
+        },
+        "s2": {
+          "value": "85%",
+          "label": "Nói âm nhạc nâng cao tâm trạng"
+        },
+        "s3": {
+          "value": "75%",
+          "label": "Ở lại lâu hơn"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Điều khiển tập trung"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Khu vực chung",
+          "description": "Sôi động, đa dạng, thân thiện — định hình năng lượng của trung tâm"
+        },
+        "z2": {
+          "name": "Khu ẩm thực",
+          "description": "Sống động, xã giao, bổ trợ không khí ăn uống nhộn nhịp"
+        },
+        "z3": {
+          "name": "Bãi đỗ xe & Lối vào",
+          "description": "Tín hiệu chào đón tinh tế và chỉ dẫn lối đi"
+        },
+        "z4": {
+          "name": "Khu cao cấp",
+          "description": "Âm nhạc tinh tế, gần với chất sang trọng cho các khu vực cao cấp"
+        },
+        "z5": {
+          "name": "Khu trẻ em & Giải trí",
+          "description": "Vui nhộn, tinh nghịch, thân thiện với gia đình"
+        },
+        "z6": {
+          "name": "Khu vệ sinh & Dịch vụ",
+          "description": "Nhẹ nhàng, sạch sẽ, kín đáo"
+        }
+      },
+      "benefits": {
+        "b1": "Quản lý tập trung hàng chục vùng từ một bảng điều khiển duy nhất",
+        "b2": "Thông điệp âm thanh cho khuyến mãi, sự kiện và thông báo",
+        "b3": "Lập lịch thích ứng với mô hình lưu lượng ngày thường và cuối tuần",
+        "b4": "Giải pháp phần cứng cho triển khai quy mô lớn",
+        "b5": "Quản lý tài khoản chuyên biệt để hỗ trợ liên tục"
+      }
+    },
+    "gyms": {
+      "headline": "Năng lượng theo yêu cầu",
+      "subheadline": "Âm nhạc tràn đầy năng lượng thúc đẩy hiệu suất, truyền cảm hứng cho hội viên và giữ họ quay lại.",
+      "zonesTitle": "Năng lượng khác nhau cho từng bài tập",
+      "benefitsTitle": "Vì sao các phòng gym chọn BMAsia",
+      "editorialStat": "Âm nhạc tăng sức bền 15% và giảm cảm giác gắng sức 10%.",
+      "editorialStatSub": "Karageorghis et al. / Terry et al. (2020), Psychological Bulletin — phân tích tổng hợp 139 nghiên cứu.",
+      "ctaHeadline": "Tiếp thêm năng lượng cho âm thanh phòng gym của bạn.",
+      "stats": {
+        "s1": {
+          "value": "+15%",
+          "label": "Tăng sức bền"
+        },
+        "s2": {
+          "value": "-10%",
+          "label": "Cảm giác gắng sức"
+        },
+        "s3": {
+          "value": "139",
+          "label": "Nghiên cứu xác nhận"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Tự động"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Khu tạ",
+          "description": "Beat mạnh, hip-hop, BPM cao — năng lượng thô"
+        },
+        "z2": {
+          "name": "Khu cardio",
+          "description": "Electronic dẫn nhịp, các bản remix pop, nhịp ổn định"
+        },
+        "z3": {
+          "name": "Lớp học nhóm",
+          "description": "Do huấn luyện viên tuyển chọn, đồng bộ với các giai đoạn tập luyện"
+        },
+        "z4": {
+          "name": "Yoga & Giãn cơ",
+          "description": "Ambient, dịu nhẹ, tập trung vào hơi thở"
+        },
+        "z5": {
+          "name": "Tiếp tân & Lounge",
+          "description": "Sôi động nhưng thân thiện — không gian chuyển tiếp"
+        },
+        "z6": {
+          "name": "Phòng thay đồ",
+          "description": "Nhẹ nhàng, trung tính, không gian cá nhân"
+        }
+      },
+      "benefits": {
+        "b1": "Playlist khớp BPM cho các cường độ tập luyện khác nhau",
+        "b2": "Điều khiển đa vùng — mạnh mẽ ở khu tạ, nhẹ nhàng ở phòng yoga",
+        "b3": "Đầy đủ giấy phép — thương mại hoặc không bản quyền",
+        "b4": "Lập lịch thích ứng với giờ cao điểm và lịch lớp học",
+        "b5": "Đồng nhất đa cơ sở cho các chuỗi gym"
+      }
+    },
+    "medical": {
+      "headline": "Bình tĩnh, tin cậy, thoải mái",
+      "subheadline": "Âm nhạc giảm lo âu, xây dựng niềm tin và tạo nên môi trường chữa lành.",
+      "zonesTitle": "Âm thanh cho mọi không gian lâm sàng",
+      "benefitsTitle": "Vì sao các cơ sở y tế chọn BMAsia",
+      "editorialStat": "Âm nhạc giảm lo âu phẫu thuật hiệu quả như thuốc (NNT=4).",
+      "editorialStatSub": "Kuhlmann et al. (2018), British Journal of Surgery — 92 RCTs, 7.385 bệnh nhân.",
+      "ctaHeadline": "Thiết kế âm thanh cho phòng khám của bạn.",
+      "stats": {
+        "s1": {
+          "value": "NNT=4",
+          "label": "Hiệu quả như thuốc"
+        },
+        "s2": {
+          "value": "7,385",
+          "label": "Bệnh nhân được nghiên cứu"
+        },
+        "s3": {
+          "value": "92",
+          "label": "Thử nghiệm lâm sàng"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Tự động"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Phòng chờ",
+          "description": "Dịu nhẹ, trấn an — giảm lo âu trước khi khám"
+        },
+        "z2": {
+          "name": "Phòng điều trị",
+          "description": "Nhạc nền dịu nhẹ hỗ trợ sự tập trung và thoải mái"
+        },
+        "z3": {
+          "name": "Khu hồi phục",
+          "description": "Các sáng tác ambient nhẹ nhàng, chữa lành"
+        },
+        "z4": {
+          "name": "Ghế nha khoa",
+          "description": "Che đi âm thanh lâm sàng bằng nhạc xoa dịu"
+        },
+        "z5": {
+          "name": "Phòng khám thẩm mỹ",
+          "description": "Không khí cao cấp, như spa cho các liệu trình làm đẹp"
+        },
+        "z6": {
+          "name": "Khu nhân viên",
+          "description": "Năng lượng nhẹ nhàng, tích cực cho phòng nghỉ"
+        }
+      },
+      "benefits": {
+        "b1": "Playlist dựa trên cơ sở lâm sàng, thiết kế cho môi trường y tế",
+        "b2": "Bao gồm đầy đủ giấy phép với Beat Breeze — không phức tạp về tuân thủ",
+        "b3": "Phát ngoại tuyến — không gián đoạn trong lúc điều trị",
+        "b4": "Kiểm soát âm lượng phù hợp với môi trường lâm sàng",
+        "b5": "Thiết lập dễ dàng, không gây gánh nặng cho đội IT"
+      }
+    },
+    "offices": {
+      "headline": "Được thiết kế để làm việc hiệu quả",
+      "subheadline": "Nhạc nền nâng cao khả năng tập trung, sáng tạo và sự hài lòng nơi công sở.",
+      "zonesTitle": "Các chế độ khác nhau cho các không gian khác nhau",
+      "benefitsTitle": "Vì sao các văn phòng chọn BMAsia",
+      "editorialStat": "Lập trình viên phần mềm tạo ra công việc chất lượng cao hơn khi có nhạc nền.",
+      "editorialStatSub": "Lesiuk (2005), Psychology of Music — 56 lập trình viên, nghiên cứu 5 tuần.",
+      "ctaHeadline": "Thiết kế âm thanh cho không gian làm việc của bạn.",
+      "stats": {
+        "s1": {
+          "value": "79%",
+          "label": "Nói âm nhạc có ích"
+        },
+        "s2": {
+          "value": "70 dB",
+          "label": "Mức tối ưu"
+        },
+        "s3": {
+          "value": "30K+",
+          "label": "Bản nhạc tuyển chọn"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Tự động"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Không gian mở",
+          "description": "Ambient, hỗ trợ tập trung — che đi những cuộc trò chuyện gây phân tâm"
+        },
+        "z2": {
+          "name": "Tiếp tân & Sảnh",
+          "description": "Chuyên nghiệp, thân thiện — ấn tượng đầu tiên rất quan trọng"
+        },
+        "z3": {
+          "name": "Phòng họp",
+          "description": "Năng lượng nhẹ nhàng trước cuộc họp, im lặng trong lúc họp"
+        },
+        "z4": {
+          "name": "Phòng nghỉ & Căn tin",
+          "description": "Sôi động, xã giao — nạp lại năng lượng"
+        },
+        "z5": {
+          "name": "Không gian Co-Working",
+          "description": "Lo-fi, hiệu quả — nhạc nền của công việc hiện đại"
+        },
+        "z6": {
+          "name": "Tầng điều hành",
+          "description": "Tinh tế, kín đáo, không khí cao cấp"
+        }
+      },
+      "benefits": {
+        "b1": "Lập lịch khớp với nhịp văn phòng — sáng tập trung, chiều xã giao",
+        "b2": "Điều khiển đa vùng cho không gian mở, phòng họp và khu vực chung",
+        "b3": "Bao gồm đầy đủ giấy phép với Beat Breeze — thiết lập thân thiện với IT",
+        "b4": "Tăng sự hài lòng của nhân viên thông qua thiết kế âm thanh chu đáo",
+        "b5": "Giá một vùng phải chăng cho văn phòng nhỏ"
+      }
+    },
+    "showrooms": {
+      "headline": "Âm thanh bán đi giấc mơ",
+      "subheadline": "Âm nhạc cao cấp tôn vinh sản phẩm và tạo ra những trải nghiệm truyền cảm hứng.",
+      "zonesTitle": "Sân khấu cho từng sản phẩm",
+      "benefitsTitle": "Vì sao các showroom chọn BMAsia",
+      "editorialStat": "Nhạc cổ điển dẫn dắt khách hàng chọn những sản phẩm đắt tiền hơn.",
+      "editorialStatSub": "Areni & Kim (1993), Advances in Consumer Research.",
+      "ctaHeadline": "Thiết kế âm thanh cho showroom của bạn.",
+      "stats": {
+        "s1": {
+          "value": "38%",
+          "label": "Doanh số cao hơn"
+        },
+        "s2": {
+          "value": "3.4x",
+          "label": "Hiệu ứng gợi ý từ âm nhạc"
+        },
+        "s3": {
+          "value": "65%",
+          "label": "Nói không khí là quan trọng"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Tự động"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Showroom ô tô",
+          "description": "Cao cấp, truyền cảm hứng — khớp với thương hiệu"
+        },
+        "z2": {
+          "name": "Trung tâm bán bất động sản",
+          "description": "Nhạc nền phong cách sống tinh tế"
+        },
+        "z3": {
+          "name": "Showroom thương hiệu xa xỉ",
+          "description": "Biên tập, hướng thời trang, tuyển chọn"
+        },
+        "z4": {
+          "name": "Công nghệ & Điện tử",
+          "description": "Hiện đại, đổi mới, hướng tới tương lai"
+        },
+        "z5": {
+          "name": "Nội thất & Thiết kế",
+          "description": "Ấm cúng, như ở nhà, truyền cảm hứng"
+        },
+        "z6": {
+          "name": "Phòng trưng bày nghệ thuật",
+          "description": "Tối giản, chiêm nghiệm, tôn vinh chứ không lấn át"
+        }
+      },
+      "benefits": {
+        "b1": "Âm nhạc khớp thương hiệu củng cố định vị sản phẩm của bạn",
+        "b2": "Chế độ sự kiện cho ra mắt, khai trương và các buổi xem VIP",
+        "b3": "Tuyển chọn riêng kể câu chuyện thương hiệu qua âm thanh",
+        "b4": "Lập lịch đa phòng cho các khu sản phẩm khác nhau",
+        "b5": "Cảm giác cao cấp không đi kèm sự phức tạp cao cấp"
+      }
+    },
+    "events": {
+      "headline": "Mỗi sự kiện đều có âm thanh riêng",
+      "subheadline": "Từ gala doanh nghiệp đến ra mắt thương hiệu — âm nhạc biến những khoảnh khắc thành điều không thể quên.",
+      "zonesTitle": "Âm thanh cho mọi dịp",
+      "benefitsTitle": "Vì sao các địa điểm sự kiện chọn BMAsia",
+      "editorialStat": "Vào những khoảnh khắc cảm xúc đỉnh cao, người tham dự có khả năng kết nối với thương hiệu cao hơn 63%.",
+      "editorialStatSub": "Live Nation, \"The Power of Live\" Global Study, 2018 — 22.500 người hâm mộ, 11 quốc gia.",
+      "ctaHeadline": "Thiết kế âm thanh cho sự kiện của bạn.",
+      "stats": {
+        "s1": {
+          "value": "63%",
+          "label": "Kết nối thương hiệu"
+        },
+        "s2": {
+          "value": "90%",
+          "label": "Chào đón sự hiện diện thương hiệu"
+        },
+        "s3": {
+          "value": "500+",
+          "label": "Địa điểm đã phục vụ"
+        },
+        "s4": {
+          "value": "23+",
+          "label": "Năm kinh nghiệm"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Sự kiện doanh nghiệp",
+          "description": "Chuyên nghiệp, trau chuốt, phù hợp thương hiệu"
+        },
+        "z2": {
+          "name": "Ra mắt sản phẩm",
+          "description": "Hào hứng, hiện đại, xây dựng sự mong chờ"
+        },
+        "z3": {
+          "name": "Đám cưới & Tiệc mừng",
+          "description": "Giàu cảm xúc, cá nhân, đúng thời điểm hoàn hảo"
+        },
+        "z4": {
+          "name": "Hội nghị",
+          "description": "Giờ nghỉ tiếp năng lượng, phiên làm việc tập trung"
+        },
+        "z5": {
+          "name": "Triển lãm",
+          "description": "Sống động, cuốn hút, dẫn dắt hành trình khách tham quan"
+        },
+        "z6": {
+          "name": "Tiệc riêng tư",
+          "description": "Tuyển chọn theo gu của chủ tiệc và tâm trạng sự kiện"
+        }
+      },
+      "benefits": {
+        "b1": "Thiết kế playlist riêng cho từng sự kiện bởi đội ngũ âm nhạc của chúng tôi",
+        "b2": "Lập lịch bám sát dòng thời gian sự kiện một cách chính xác",
+        "b3": "Thông điệp âm thanh cho thông báo và điều hướng chương trình",
+        "b4": "Tùy chọn lắp đặt tạm thời hoặc cố định",
+        "b5": "Trợ lý Thiết kế Âm nhạc của chúng tôi giúp lên kế hoạch sự kiện trong vài phút"
+      }
+    }
+  },
+  "industryTemplate": {
+    "ctaQuote": "Nhận báo giá →",
+    "ctaDemo": "Đặt lịch demo",
+    "source": "Nguồn: Soundtrack Research",
+    "footerCtaQuote": "Nhận báo giá →",
+    "footerCtaDemo": "Đặt lịch demo →"
   }
 }

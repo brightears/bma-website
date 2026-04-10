@@ -284,7 +284,14 @@
     "contact": "Contact",
     "copyright": "All rights reserved.",
     "licensing": "Licensing",
-    "musicForBusiness": "Music for Business"
+    "musicForBusiness": "Music for Business",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "termsOfService": "Terms of Service",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "terms": "Terms",
+    "allRightsReserved": "All rights reserved."
   },
   "howItWorks": {
     "hero": {
@@ -1049,5 +1056,776 @@
       "ctaQuote": "Get a Quote",
       "ctaDemo": "Book a Demo"
     }
+  },
+  "quotationPage": {
+    "hero": {
+      "label": "Get Started",
+      "title": "Request a",
+      "titleHighlight": "Quote",
+      "subtitle": "Tell us about your venue and we'll send a personalized quotation within 24 hours."
+    },
+    "whatToExpect": {
+      "sectionTitle": "What to Expect",
+      "fastResponse": {
+        "title": "Fast Response",
+        "desc": "Receive your personalized quote within 24 hours"
+      },
+      "noObligation": {
+        "title": "No Obligation",
+        "desc": "Free consultation with no commitment required"
+      },
+      "tailored": {
+        "title": "Tailored Solutions",
+        "desc": "Custom pricing based on your specific needs"
+      }
+    },
+    "ourSolutions": {
+      "sectionTitle": "Our Solutions",
+      "sybTagline": "Premium — 100M+ tracks, Spotify sync, bespoke design",
+      "bbTagline": "Essential — 30K+ tracks, all licenses included",
+      "learnMore": "Learn more about our solutions →"
+    },
+    "questions": {
+      "sectionTitle": "Questions?"
+    },
+    "formHeader": {
+      "title": "Tell Us About Your Space",
+      "subtitle": "Fill in your details and we'll get back to you with a personalized quote."
+    },
+    "demoCta": {
+      "title": "Prefer a",
+      "titleHighlight": "Live Demo?",
+      "subtitle": "Book a free online demo to see our music solutions in action.",
+      "ctaButton": "Book a Demo"
+    }
+  },
+  "industryData": {
+    "hotels": {
+      "headline": "The sound of five-star hospitality",
+      "subheadline": "From lobby to spa, we design the music that shapes your guest experience across every zone.",
+      "zonesTitle": "Every space has its frequency",
+      "benefitsTitle": "Why hotels choose BMAsia",
+      "editorialStat": "41% of guests stay longer when they enjoy the music.",
+      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021 — 2,500+ consumers surveyed.",
+      "ctaHeadline": "Design your hotel's sound.",
+      "stats": {
+        "s1": {
+          "value": "9.1%",
+          "label": "Revenue Increase"
+        },
+        "s2": {
+          "value": "41%",
+          "label": "Longer Dwell Time"
+        },
+        "s3": {
+          "value": "39%",
+          "label": "More Return Visits"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Music Management"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Lobby & Reception",
+          "description": "Warm, welcoming, refined — the first impression that sets the tone"
+        },
+        "z2": {
+          "name": "Restaurant & F&B",
+          "description": "From intimate dinner to vibrant breakfast buffet"
+        },
+        "z3": {
+          "name": "Spa & Wellness",
+          "description": "Tranquil, meditative soundscapes for deep relaxation"
+        },
+        "z4": {
+          "name": "Pool & Outdoor",
+          "description": "Relaxed, upbeat energy for sun and leisure"
+        },
+        "z5": {
+          "name": "Gym & Fitness",
+          "description": "Energetic, motivating tracks that push performance"
+        },
+        "z6": {
+          "name": "Bar & Lounge",
+          "description": "Sophisticated evening ambiance, jazz to deep house"
+        }
+      },
+      "benefits": {
+        "b1": "Centralized multi-property control from one dashboard",
+        "b2": "Bespoke music design by our team, refreshed quarterly",
+        "b3": "Daypart scheduling — automatic transitions from morning to night",
+        "b4": "Offline playback guaranteed — music plays even if internet drops",
+        "b5": "24/7 dedicated support and account management"
+      }
+    },
+    "restaurants": {
+      "headline": "The secret ingredient no one sees",
+      "subheadline": "Music that turns meals into memories — scheduled, curated, and always on brand.",
+      "zonesTitle": "From sunrise to last call",
+      "benefitsTitle": "Why restaurants choose BMAsia",
+      "editorialStat": "Slow-tempo music increases dining time by 24% and bar revenue by 40%.",
+      "editorialStatSub": "Milliman (1986), Journal of Consumer Research.",
+      "ctaHeadline": "Set the mood for your restaurant.",
+      "stats": {
+        "s1": {
+          "value": "9.1%",
+          "label": "Higher Revenue"
+        },
+        "s2": {
+          "value": "15%",
+          "label": "More Dessert Sales"
+        },
+        "s3": {
+          "value": "24%",
+          "label": "Longer Dining Time"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Automated"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Fine Dining",
+          "description": "Elegant, intimate, classical — enhancing the culinary experience"
+        },
+        "z2": {
+          "name": "Casual Dining",
+          "description": "Warm, conversational, easy — music that doesn't compete"
+        },
+        "z3": {
+          "name": "Café & Bakery",
+          "description": "Light, cheerful, acoustic — the perfect backdrop"
+        },
+        "z4": {
+          "name": "Bar & Cocktails",
+          "description": "Sophisticated, jazzy, social — setting the evening mood"
+        },
+        "z5": {
+          "name": "Fast Casual & QSR",
+          "description": "Upbeat, energetic, modern — matching the pace"
+        },
+        "z6": {
+          "name": "Outdoor Terrace",
+          "description": "Breezy, relaxed, sunset — al fresco vibes"
+        }
+      },
+      "benefits": {
+        "b1": "Daypart scheduling — automatic transitions from breakfast to late night",
+        "b2": "Genre and mood curation matched to your F&B concept",
+        "b3": "All licenses available — royalty-free or commercial options",
+        "b4": "Multi-zone control for dining room, bar, terrace, and restrooms",
+        "b5": "Volume and energy auto-adjust based on time of day"
+      }
+    },
+    "retail": {
+      "headline": "Your brand has a sound",
+      "subheadline": "We design the sonic identity that makes customers stay, browse, and buy.",
+      "zonesTitle": "Sound for every format",
+      "benefitsTitle": "Why retailers choose BMAsia",
+      "editorialStat": "Slow-tempo music increases daily retail sales by 38%.",
+      "editorialStatSub": "Milliman (1982), Journal of Marketing — the gold-standard retail music study.",
+      "ctaHeadline": "Amplify your brand.",
+      "stats": {
+        "s1": {
+          "value": "38%",
+          "label": "Higher Daily Sales"
+        },
+        "s2": {
+          "value": "90%",
+          "label": "Return with Good Music"
+        },
+        "s3": {
+          "value": "3.4x",
+          "label": "Wine Priming Effect"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Automated"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Fashion & Apparel",
+          "description": "Trendy, curated playlists that match your brand identity"
+        },
+        "z2": {
+          "name": "Shopping Malls",
+          "description": "Dynamic, energetic music that drives foot traffic"
+        },
+        "z3": {
+          "name": "Beauty & Wellness",
+          "description": "Calming, luxurious soundscapes for pampering"
+        },
+        "z4": {
+          "name": "Showrooms",
+          "description": "Premium, aspirational music that elevates products"
+        },
+        "z5": {
+          "name": "Supermarkets",
+          "description": "Upbeat, familiar music that keeps shoppers moving"
+        },
+        "z6": {
+          "name": "Gyms & Fitness",
+          "description": "High-energy BPM tracks for peak performance"
+        }
+      },
+      "benefits": {
+        "b1": "Centralized music control across all store locations",
+        "b2": "Brand-aligned curation that reinforces your identity",
+        "b3": "Audio messaging for promotions, store hours, and announcements",
+        "b4": "Multi-store consistency from flagship to outlet",
+        "b5": "Peak hour scheduling — energy levels match customer flow"
+      }
+    },
+    "bars": {
+      "headline": "Where the night sounds right",
+      "subheadline": "Licensed music that sets the perfect mood — from cocktail hour to closing time.",
+      "zonesTitle": "Set the vibe for every moment",
+      "benefitsTitle": "Why bars choose BMAsia",
+      "editorialStat": "Higher volume increased drinks per patron from 2.6 to 3.4.",
+      "editorialStatSub": "Guéguen et al. (2004), Alcoholism: Clinical & Experimental Research.",
+      "ctaHeadline": "Design your bar's sound.",
+      "stats": {
+        "s1": {
+          "value": "+31%",
+          "label": "More Drinks Ordered"
+        },
+        "s2": {
+          "value": "+40%",
+          "label": "Bar Revenue Increase"
+        },
+        "s3": {
+          "value": "24%",
+          "label": "Longer Table Time"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Automated"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Cocktail Bar",
+          "description": "Sophisticated jazz, neo-soul, and bossa nova"
+        },
+        "z2": {
+          "name": "Sports Bar",
+          "description": "High-energy hits and crowd-pleasers"
+        },
+        "z3": {
+          "name": "Wine Bar",
+          "description": "Intimate, acoustic, refined — letting conversation flow"
+        },
+        "z4": {
+          "name": "Rooftop Lounge",
+          "description": "Chill electronic, sunset vibes, deep house"
+        },
+        "z5": {
+          "name": "Nightclub",
+          "description": "Dance floor energy, DJ-curated sets"
+        },
+        "z6": {
+          "name": "Hotel Bar",
+          "description": "Elegant, brand-consistent evening ambiance"
+        }
+      },
+      "benefits": {
+        "b1": "Mood transitions from after-work to late night automatically",
+        "b2": "Genre expertise — from jazz to electronic to top 40",
+        "b3": "Legal compliance — no risk of copyright issues",
+        "b4": "Volume scheduling that respects noise regulations",
+        "b5": "Bespoke playlists refreshed to keep regulars surprised"
+      }
+    },
+    "spas": {
+      "headline": "Sound as therapy",
+      "subheadline": "Music designed to calm, heal, and restore — from reception to treatment room.",
+      "zonesTitle": "Healing frequencies for every space",
+      "benefitsTitle": "Why spas choose BMAsia",
+      "editorialStat": "\"Weightless\" reduced anxiety by 65% in clinical testing.",
+      "editorialStatSub": "Mindlab International / British Academy of Sound Therapy, 2011.",
+      "ctaHeadline": "Design your sanctuary's sound.",
+      "stats": {
+        "s1": {
+          "value": "65%",
+          "label": "Anxiety Reduction"
+        },
+        "s2": {
+          "value": "60 BPM",
+          "label": "Alpha Brainwave Sync"
+        },
+        "s3": {
+          "value": "30K+",
+          "label": "Curated Tracks"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Automated"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Reception & Waiting",
+          "description": "Gentle transition from outside world to sanctuary"
+        },
+        "z2": {
+          "name": "Treatment Rooms",
+          "description": "Deep relaxation, nature sounds, ambient textures"
+        },
+        "z3": {
+          "name": "Yoga & Meditation",
+          "description": "Mindful, spacious soundscapes for practice"
+        },
+        "z4": {
+          "name": "Pool & Thermal",
+          "description": "Flowing water-inspired ambient compositions"
+        },
+        "z5": {
+          "name": "Relaxation Lounge",
+          "description": "Post-treatment serenity, soft and warm"
+        },
+        "z6": {
+          "name": "Changing Areas",
+          "description": "Light, unobtrusive background comfort"
+        }
+      },
+      "benefits": {
+        "b1": "Curated wellness playlists by professional music designers",
+        "b2": "Seamless zone-by-zone control for different treatment areas",
+        "b3": "Offline playback — never silence during a treatment",
+        "b4": "Seasonal and thematic updates (Ramadan, holidays, events)",
+        "b5": "All licenses included with Beat Breeze — zero hassle"
+      }
+    },
+    "cafes": {
+      "headline": "The perfect backdrop",
+      "subheadline": "Music that makes people sit down, order another coffee, and stay a while.",
+      "zonesTitle": "From morning espresso to afternoon work session",
+      "benefitsTitle": "Why cafés choose BMAsia",
+      "editorialStat": "73% of customers take action after hearing a song they like in a café.",
+      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021.",
+      "ctaHeadline": "Design your café's sound.",
+      "stats": {
+        "s1": {
+          "value": "79%",
+          "label": "Notice the Music"
+        },
+        "s2": {
+          "value": "41%",
+          "label": "Stay Longer"
+        },
+        "s3": {
+          "value": "73%",
+          "label": "Take Action After"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Automated"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Morning Rush",
+          "description": "Upbeat acoustic, gentle energy to start the day"
+        },
+        "z2": {
+          "name": "Work & Study Hours",
+          "description": "Lo-fi, ambient, focus-friendly — no distractions"
+        },
+        "z3": {
+          "name": "Afternoon Social",
+          "description": "Warm indie, folk, light pop — conversational"
+        },
+        "z4": {
+          "name": "Evening Wind-Down",
+          "description": "Jazz, bossa nova, mellow — a natural transition"
+        },
+        "z5": {
+          "name": "Weekend Brunch",
+          "description": "Cheerful, curated, slightly louder — brunch energy"
+        },
+        "z6": {
+          "name": "Outdoor Seating",
+          "description": "Light and airy — complementing street sounds"
+        }
+      },
+      "benefits": {
+        "b1": "Daypart scheduling matches energy to the time of day",
+        "b2": "All licenses included — no collection society fees with Beat Breeze",
+        "b3": "Affordable pricing for single-zone locations",
+        "b4": "Easy setup on any Android or Windows device",
+        "b5": "Refreshed playlists keep regulars engaged"
+      }
+    },
+    "malls": {
+      "headline": "Sound that moves shoppers",
+      "subheadline": "Multi-zone music management for shopping centers that want more foot traffic and longer visits.",
+      "zonesTitle": "One building, many moods",
+      "benefitsTitle": "Why shopping malls choose BMAsia",
+      "editorialStat": "85% of shoppers say music is the #1 factor lifting their in-store mood.",
+      "editorialStatSub": "Mood Media, \"Quantifying the Impact of Sensory Marketing,\" 2019.",
+      "ctaHeadline": "Design your mall's sound.",
+      "stats": {
+        "s1": {
+          "value": "38%",
+          "label": "Higher Daily Sales"
+        },
+        "s2": {
+          "value": "85%",
+          "label": "Say Music Lifts Mood"
+        },
+        "s3": {
+          "value": "75%",
+          "label": "Stay Longer"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Centralized Control"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Common Areas",
+          "description": "Upbeat, diverse, welcoming — setting the mall energy"
+        },
+        "z2": {
+          "name": "Food Court",
+          "description": "Lively, social, complementing the dining buzz"
+        },
+        "z3": {
+          "name": "Parking & Entrances",
+          "description": "Subtle welcome cues and wayfinding"
+        },
+        "z4": {
+          "name": "Premium Zones",
+          "description": "Refined, luxury-adjacent music for high-end wings"
+        },
+        "z5": {
+          "name": "Kids & Entertainment",
+          "description": "Fun, playful, family-friendly"
+        },
+        "z6": {
+          "name": "Restrooms & Service Areas",
+          "description": "Light, clean, unobtrusive"
+        }
+      },
+      "benefits": {
+        "b1": "Centralized management across dozens of zones from one dashboard",
+        "b2": "Audio messaging for promotions, events, and announcements",
+        "b3": "Scheduling that adapts to weekday vs weekend traffic patterns",
+        "b4": "Hardware solutions for large-scale deployments",
+        "b5": "Dedicated account manager for ongoing support"
+      }
+    },
+    "gyms": {
+      "headline": "Energy on demand",
+      "subheadline": "High-energy music that pushes performance, motivates members, and keeps them coming back.",
+      "zonesTitle": "Different energy for every workout",
+      "benefitsTitle": "Why gyms choose BMAsia",
+      "editorialStat": "Music increases endurance by 15% and reduces perceived exertion by 10%.",
+      "editorialStatSub": "Karageorghis et al. / Terry et al. (2020), Psychological Bulletin — meta-analysis of 139 studies.",
+      "ctaHeadline": "Power up your gym's sound.",
+      "stats": {
+        "s1": {
+          "value": "+15%",
+          "label": "Endurance Increase"
+        },
+        "s2": {
+          "value": "-10%",
+          "label": "Perceived Exertion"
+        },
+        "s3": {
+          "value": "139",
+          "label": "Studies Confirm It"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Automated"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Weights Floor",
+          "description": "Heavy beats, hip-hop, high BPM — raw energy"
+        },
+        "z2": {
+          "name": "Cardio Zone",
+          "description": "Driving electronic, pop remixes, steady pace"
+        },
+        "z3": {
+          "name": "Group Classes",
+          "description": "Instructor-curated, synced to workout phases"
+        },
+        "z4": {
+          "name": "Yoga & Stretch",
+          "description": "Ambient, calming, breath-focused"
+        },
+        "z5": {
+          "name": "Reception & Lounge",
+          "description": "Upbeat but welcoming — transition space"
+        },
+        "z6": {
+          "name": "Changing Rooms",
+          "description": "Light, neutral, personal space"
+        }
+      },
+      "benefits": {
+        "b1": "BPM-matched playlists for different workout intensities",
+        "b2": "Multi-zone control — heavy in weights, calm in yoga",
+        "b3": "All licenses available — commercial or royalty-free",
+        "b4": "Scheduling that adapts to peak hours and class schedules",
+        "b5": "Multi-location consistency for gym chains"
+      }
+    },
+    "medical": {
+      "headline": "Calm, trust, comfort",
+      "subheadline": "Music that reduces anxiety, builds trust, and creates a healing environment.",
+      "zonesTitle": "Sound for every clinical space",
+      "benefitsTitle": "Why medical facilities choose BMAsia",
+      "editorialStat": "Music reduces surgical anxiety as effectively as medication (NNT=4).",
+      "editorialStatSub": "Kuhlmann et al. (2018), British Journal of Surgery — 92 RCTs, 7,385 patients.",
+      "ctaHeadline": "Design your practice's sound.",
+      "stats": {
+        "s1": {
+          "value": "NNT=4",
+          "label": "As Effective as Medication"
+        },
+        "s2": {
+          "value": "7,385",
+          "label": "Patients Studied"
+        },
+        "s3": {
+          "value": "92",
+          "label": "Clinical Trials"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Automated"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Waiting Room",
+          "description": "Calming, reassuring — reducing pre-appointment anxiety"
+        },
+        "z2": {
+          "name": "Treatment Rooms",
+          "description": "Gentle background that supports focus and comfort"
+        },
+        "z3": {
+          "name": "Recovery Areas",
+          "description": "Soft, healing ambient compositions"
+        },
+        "z4": {
+          "name": "Dental Chairs",
+          "description": "Masking clinical sounds with soothing music"
+        },
+        "z5": {
+          "name": "Aesthetic Clinics",
+          "description": "Premium, spa-like atmosphere for beauty treatments"
+        },
+        "z6": {
+          "name": "Staff Areas",
+          "description": "Light, positive energy for break rooms"
+        }
+      },
+      "benefits": {
+        "b1": "Clinically-informed playlists designed for healthcare settings",
+        "b2": "All licenses included with Beat Breeze — no compliance complexity",
+        "b3": "Offline playback — no interruptions during treatments",
+        "b4": "Volume control appropriate for clinical environments",
+        "b5": "Easy setup that doesn't burden IT teams"
+      }
+    },
+    "offices": {
+      "headline": "Productive by design",
+      "subheadline": "Background music that boosts focus, creativity, and workplace satisfaction.",
+      "zonesTitle": "Different modes for different spaces",
+      "benefitsTitle": "Why offices choose BMAsia",
+      "editorialStat": "Software developers produce higher quality work with background music.",
+      "editorialStatSub": "Lesiuk (2005), Psychology of Music — 56 developers, 5-week study.",
+      "ctaHeadline": "Design your workspace's sound.",
+      "stats": {
+        "s1": {
+          "value": "79%",
+          "label": "Say Music Helps"
+        },
+        "s2": {
+          "value": "70 dB",
+          "label": "Optimal Level"
+        },
+        "s3": {
+          "value": "30K+",
+          "label": "Curated Tracks"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Automated"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Open Plan",
+          "description": "Ambient, focus-friendly — masking distracting conversations"
+        },
+        "z2": {
+          "name": "Reception & Lobby",
+          "description": "Professional, welcoming — first impressions matter"
+        },
+        "z3": {
+          "name": "Meeting Rooms",
+          "description": "Subtle pre-meeting energy, silence during sessions"
+        },
+        "z4": {
+          "name": "Break Rooms & Cafeteria",
+          "description": "Upbeat, social — recharging energy"
+        },
+        "z5": {
+          "name": "Co-Working Spaces",
+          "description": "Lo-fi, productive — the modern work soundtrack"
+        },
+        "z6": {
+          "name": "Executive Floors",
+          "description": "Refined, understated, premium ambiance"
+        }
+      },
+      "benefits": {
+        "b1": "Scheduling that matches office rhythms — focus mornings, social afternoons",
+        "b2": "Multi-zone control for open plan, meeting rooms, and common areas",
+        "b3": "All licenses included with Beat Breeze — IT-friendly setup",
+        "b4": "Employee satisfaction boost through thoughtful sound design",
+        "b5": "Affordable single-zone pricing for smaller offices"
+      }
+    },
+    "showrooms": {
+      "headline": "Sound that sells the dream",
+      "subheadline": "Premium music that elevates products and creates aspirational experiences.",
+      "zonesTitle": "Setting the stage for every product",
+      "benefitsTitle": "Why showrooms choose BMAsia",
+      "editorialStat": "Classical music leads customers to choose more expensive products.",
+      "editorialStatSub": "Areni & Kim (1993), Advances in Consumer Research.",
+      "ctaHeadline": "Design your showroom's sound.",
+      "stats": {
+        "s1": {
+          "value": "38%",
+          "label": "Higher Sales"
+        },
+        "s2": {
+          "value": "3.4x",
+          "label": "Music Priming Effect"
+        },
+        "s3": {
+          "value": "65%",
+          "label": "Say Atmosphere Matters"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Automated"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Automotive Showrooms",
+          "description": "Premium, aspirational — matching the brand"
+        },
+        "z2": {
+          "name": "Property Sales Centers",
+          "description": "Sophisticated lifestyle soundtrack"
+        },
+        "z3": {
+          "name": "Luxury Brand Showrooms",
+          "description": "Editorial, fashion-forward, curated"
+        },
+        "z4": {
+          "name": "Tech & Electronics",
+          "description": "Modern, innovative, forward-thinking"
+        },
+        "z5": {
+          "name": "Furniture & Design",
+          "description": "Warm, homelike, inspiring"
+        },
+        "z6": {
+          "name": "Art Galleries",
+          "description": "Minimal, contemplative, enhancing not competing"
+        }
+      },
+      "benefits": {
+        "b1": "Brand-aligned music that reinforces your product positioning",
+        "b2": "Event mode for launches, openings, and VIP viewings",
+        "b3": "Bespoke curation that tells your brand story through sound",
+        "b4": "Multi-room scheduling for different product areas",
+        "b5": "Premium feel without the premium complexity"
+      }
+    },
+    "events": {
+      "headline": "Every event has a sound",
+      "subheadline": "From corporate galas to brand launches — music that makes moments unforgettable.",
+      "zonesTitle": "Sound for every occasion",
+      "benefitsTitle": "Why event venues choose BMAsia",
+      "editorialStat": "At peak emotional moments, attendees are 63% more likely to connect with brands.",
+      "editorialStatSub": "Live Nation, \"The Power of Live\" Global Study, 2018 — 22,500 fans, 11 countries.",
+      "ctaHeadline": "Design your event's sound.",
+      "stats": {
+        "s1": {
+          "value": "63%",
+          "label": "Brand Connection"
+        },
+        "s2": {
+          "value": "90%",
+          "label": "Welcome Brand Presence"
+        },
+        "s3": {
+          "value": "500+",
+          "label": "Venues Served"
+        },
+        "s4": {
+          "value": "23+",
+          "label": "Years Experience"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Corporate Events",
+          "description": "Professional, polished, brand-appropriate"
+        },
+        "z2": {
+          "name": "Product Launches",
+          "description": "Exciting, modern, building anticipation"
+        },
+        "z3": {
+          "name": "Weddings & Celebrations",
+          "description": "Emotional, personal, perfectly timed"
+        },
+        "z4": {
+          "name": "Conferences",
+          "description": "Energizing breaks, focused sessions"
+        },
+        "z5": {
+          "name": "Exhibitions",
+          "description": "Dynamic, engaging, guiding the visitor journey"
+        },
+        "z6": {
+          "name": "Private Functions",
+          "description": "Curated to the host's taste and the event's mood"
+        }
+      },
+      "benefits": {
+        "b1": "Event-specific playlist design by our music team",
+        "b2": "Scheduling that follows event timelines precisely",
+        "b3": "Audio messaging for announcements and program flow",
+        "b4": "Temporary or permanent installation options",
+        "b5": "Our Music Design Assistant helps plan events in minutes"
+      }
+    }
+  },
+  "industryTemplate": {
+    "ctaQuote": "Get a Quote →",
+    "ctaDemo": "Book a Demo",
+    "source": "Source: Soundtrack Research",
+    "footerCtaQuote": "Get a quote →",
+    "footerCtaDemo": "Book a demo →"
   }
 }

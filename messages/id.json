@@ -284,7 +284,14 @@
     "contact": "Kontak",
     "copyright": "Hak cipta dilindungi.",
     "licensing": "Lisensi",
-    "musicForBusiness": "Musik untuk Bisnis"
+    "musicForBusiness": "Musik untuk Bisnis",
+    "privacyPolicy": "Kebijakan Privasi",
+    "cookiePolicy": "Kebijakan Cookie",
+    "termsOfService": "Ketentuan Layanan",
+    "privacy": "Privasi",
+    "cookies": "Cookie",
+    "terms": "Ketentuan",
+    "allRightsReserved": "Hak cipta dilindungi."
   },
   "howItWorks": {
     "hero": {
@@ -1049,5 +1056,776 @@
       "ctaQuote": "Dapatkan Penawaran",
       "ctaDemo": "Pesan Demo"
     }
+  },
+  "quotationPage": {
+    "hero": {
+      "label": "Mulai Sekarang",
+      "title": "Minta",
+      "titleHighlight": "Penawaran",
+      "subtitle": "Ceritakan tentang venue Anda dan kami akan mengirimkan penawaran yang dipersonalisasi dalam 24 jam."
+    },
+    "whatToExpect": {
+      "sectionTitle": "Apa yang Dapat Anda Harapkan",
+      "fastResponse": {
+        "title": "Respons Cepat",
+        "desc": "Dapatkan penawaran yang dipersonalisasi dalam 24 jam"
+      },
+      "noObligation": {
+        "title": "Tanpa Kewajiban",
+        "desc": "Konsultasi gratis tanpa komitmen apa pun"
+      },
+      "tailored": {
+        "title": "Solusi yang Disesuaikan",
+        "desc": "Harga khusus berdasarkan kebutuhan spesifik Anda"
+      }
+    },
+    "ourSolutions": {
+      "sectionTitle": "Solusi Kami",
+      "sybTagline": "Premium — 100 juta+ lagu, sinkronisasi Spotify, desain khusus",
+      "bbTagline": "Esensial — 30 ribu+ lagu, semua lisensi termasuk",
+      "learnMore": "Pelajari lebih lanjut tentang solusi kami →"
+    },
+    "questions": {
+      "sectionTitle": "Ada Pertanyaan?"
+    },
+    "formHeader": {
+      "title": "Ceritakan Tentang Ruang Anda",
+      "subtitle": "Isi detail Anda dan kami akan menghubungi Anda kembali dengan penawaran yang dipersonalisasi."
+    },
+    "demoCta": {
+      "title": "Lebih Memilih",
+      "titleHighlight": "Demo Langsung?",
+      "subtitle": "Pesan demo online gratis untuk melihat solusi musik kami beraksi.",
+      "ctaButton": "Pesan Demo"
+    }
+  },
+  "industryData": {
+    "hotels": {
+      "headline": "Suara keramahtamahan bintang lima",
+      "subheadline": "Dari lobi hingga spa, kami merancang musik yang membentuk pengalaman tamu Anda di setiap zona.",
+      "zonesTitle": "Setiap ruang memiliki frekuensinya",
+      "benefitsTitle": "Mengapa hotel memilih BMAsia",
+      "editorialStat": "41% tamu tinggal lebih lama ketika mereka menikmati musiknya.",
+      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021 — lebih dari 2.500 konsumen disurvei.",
+      "ctaHeadline": "Rancang suara hotel Anda.",
+      "stats": {
+        "s1": {
+          "value": "9.1%",
+          "label": "Peningkatan Pendapatan"
+        },
+        "s2": {
+          "value": "41%",
+          "label": "Waktu Kunjungan Lebih Lama"
+        },
+        "s3": {
+          "value": "39%",
+          "label": "Lebih Banyak Kunjungan Ulang"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Manajemen Musik"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Lobi & Resepsionis",
+          "description": "Hangat, ramah, elegan — kesan pertama yang menentukan suasana"
+        },
+        "z2": {
+          "name": "Restoran & F&B",
+          "description": "Dari makan malam intim hingga sarapan prasmanan yang meriah"
+        },
+        "z3": {
+          "name": "Spa & Wellness",
+          "description": "Lanskap suara yang tenang dan meditatif untuk relaksasi mendalam"
+        },
+        "z4": {
+          "name": "Kolam Renang & Area Luar",
+          "description": "Energi santai dan ceria untuk berjemur dan bersantai"
+        },
+        "z5": {
+          "name": "Gym & Kebugaran",
+          "description": "Lagu energik dan memotivasi yang mendorong performa"
+        },
+        "z6": {
+          "name": "Bar & Lounge",
+          "description": "Suasana malam yang canggih, dari jazz hingga deep house"
+        }
+      },
+      "benefits": {
+        "b1": "Kontrol multi-properti terpusat dari satu dasbor",
+        "b2": "Desain musik khusus oleh tim kami, diperbarui setiap triwulan",
+        "b3": "Penjadwalan per waktu — transisi otomatis dari pagi hingga malam",
+        "b4": "Pemutaran offline terjamin — musik tetap berjalan meski internet terputus",
+        "b5": "Dukungan dan manajemen akun khusus 24/7"
+      }
+    },
+    "restaurants": {
+      "headline": "Bahan rahasia yang tak terlihat",
+      "subheadline": "Musik yang mengubah santapan menjadi kenangan — terjadwal, terkurasi, dan selalu sesuai brand.",
+      "zonesTitle": "Dari matahari terbit hingga panggilan terakhir",
+      "benefitsTitle": "Mengapa restoran memilih BMAsia",
+      "editorialStat": "Musik bertempo lambat meningkatkan waktu bersantap sebesar 24% dan pendapatan bar sebesar 40%.",
+      "editorialStatSub": "Milliman (1986), Journal of Consumer Research.",
+      "ctaHeadline": "Ciptakan suasana untuk restoran Anda.",
+      "stats": {
+        "s1": {
+          "value": "9.1%",
+          "label": "Pendapatan Lebih Tinggi"
+        },
+        "s2": {
+          "value": "15%",
+          "label": "Lebih Banyak Penjualan Hidangan Penutup"
+        },
+        "s3": {
+          "value": "24%",
+          "label": "Waktu Bersantap Lebih Lama"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Otomatis"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Fine Dining",
+          "description": "Elegan, intim, klasik — memperkaya pengalaman kuliner"
+        },
+        "z2": {
+          "name": "Casual Dining",
+          "description": "Hangat, komunikatif, santai — musik yang tidak mengganggu"
+        },
+        "z3": {
+          "name": "Kafe & Bakery",
+          "description": "Ringan, ceria, akustik — latar yang sempurna"
+        },
+        "z4": {
+          "name": "Bar & Koktail",
+          "description": "Canggih, jazzy, sosial — menciptakan suasana malam"
+        },
+        "z5": {
+          "name": "Fast Casual & QSR",
+          "description": "Ceria, energik, modern — mengikuti ritme"
+        },
+        "z6": {
+          "name": "Teras Luar Ruangan",
+          "description": "Sejuk, santai, matahari terbenam — nuansa al fresco"
+        }
+      },
+      "benefits": {
+        "b1": "Penjadwalan per waktu — transisi otomatis dari sarapan hingga larut malam",
+        "b2": "Kurasi genre dan mood yang sesuai dengan konsep F&B Anda",
+        "b3": "Semua lisensi tersedia — opsi bebas royalti atau komersial",
+        "b4": "Kontrol multi-zona untuk ruang makan, bar, teras, dan toilet",
+        "b5": "Volume dan energi menyesuaikan secara otomatis berdasarkan waktu"
+      }
+    },
+    "retail": {
+      "headline": "Brand Anda memiliki suara",
+      "subheadline": "Kami merancang identitas sonik yang membuat pelanggan bertahan, menjelajah, dan membeli.",
+      "zonesTitle": "Suara untuk setiap format",
+      "benefitsTitle": "Mengapa peritel memilih BMAsia",
+      "editorialStat": "Musik bertempo lambat meningkatkan penjualan ritel harian sebesar 38%.",
+      "editorialStatSub": "Milliman (1982), Journal of Marketing — studi musik ritel standar emas.",
+      "ctaHeadline": "Perkuat brand Anda.",
+      "stats": {
+        "s1": {
+          "value": "38%",
+          "label": "Penjualan Harian Lebih Tinggi"
+        },
+        "s2": {
+          "value": "90%",
+          "label": "Kembali karena Musik Bagus"
+        },
+        "s3": {
+          "value": "3.4x",
+          "label": "Efek Priming Anggur"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Otomatis"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Fashion & Pakaian",
+          "description": "Playlist trendi dan terkurasi yang sesuai dengan identitas brand Anda"
+        },
+        "z2": {
+          "name": "Pusat Perbelanjaan",
+          "description": "Musik dinamis dan energik yang mendorong lalu lintas pengunjung"
+        },
+        "z3": {
+          "name": "Kecantikan & Wellness",
+          "description": "Lanskap suara yang menenangkan dan mewah untuk memanjakan diri"
+        },
+        "z4": {
+          "name": "Showroom",
+          "description": "Musik premium dan aspiratif yang mengangkat produk"
+        },
+        "z5": {
+          "name": "Supermarket",
+          "description": "Musik ceria dan familiar yang membuat pembelanja terus bergerak"
+        },
+        "z6": {
+          "name": "Gym & Kebugaran",
+          "description": "Lagu BPM tinggi untuk performa puncak"
+        }
+      },
+      "benefits": {
+        "b1": "Kontrol musik terpusat di seluruh lokasi toko",
+        "b2": "Kurasi selaras brand yang memperkuat identitas Anda",
+        "b3": "Pesan audio untuk promosi, jam operasional, dan pengumuman",
+        "b4": "Konsistensi multi-toko dari flagship hingga outlet",
+        "b5": "Penjadwalan jam sibuk — tingkat energi sesuai arus pelanggan"
+      }
+    },
+    "bars": {
+      "headline": "Di mana malam terdengar pas",
+      "subheadline": "Musik berlisensi yang menciptakan suasana sempurna — dari jam koktail hingga waktu tutup.",
+      "zonesTitle": "Ciptakan vibe untuk setiap momen",
+      "benefitsTitle": "Mengapa bar memilih BMAsia",
+      "editorialStat": "Volume yang lebih tinggi meningkatkan minuman per pelanggan dari 2,6 menjadi 3,4.",
+      "editorialStatSub": "Guéguen et al. (2004), Alcoholism: Clinical & Experimental Research.",
+      "ctaHeadline": "Rancang suara bar Anda.",
+      "stats": {
+        "s1": {
+          "value": "+31%",
+          "label": "Lebih Banyak Minuman Dipesan"
+        },
+        "s2": {
+          "value": "+40%",
+          "label": "Peningkatan Pendapatan Bar"
+        },
+        "s3": {
+          "value": "24%",
+          "label": "Waktu di Meja Lebih Lama"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Otomatis"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Bar Koktail",
+          "description": "Jazz canggih, neo-soul, dan bossa nova"
+        },
+        "z2": {
+          "name": "Sports Bar",
+          "description": "Lagu hit berenergi tinggi yang memukau kerumunan"
+        },
+        "z3": {
+          "name": "Wine Bar",
+          "description": "Intim, akustik, elegan — membiarkan percakapan mengalir"
+        },
+        "z4": {
+          "name": "Rooftop Lounge",
+          "description": "Elektronik santai, nuansa matahari terbenam, deep house"
+        },
+        "z5": {
+          "name": "Klub Malam",
+          "description": "Energi lantai dansa, set kurasi DJ"
+        },
+        "z6": {
+          "name": "Hotel Bar",
+          "description": "Suasana malam yang elegan dan konsisten dengan brand"
+        }
+      },
+      "benefits": {
+        "b1": "Transisi mood otomatis dari jam pulang kerja hingga larut malam",
+        "b2": "Keahlian genre — dari jazz hingga elektronik hingga top 40",
+        "b3": "Kepatuhan hukum — tanpa risiko masalah hak cipta",
+        "b4": "Penjadwalan volume yang menghormati regulasi kebisingan",
+        "b5": "Playlist khusus yang diperbarui untuk mengejutkan pelanggan tetap"
+      }
+    },
+    "spas": {
+      "headline": "Suara sebagai terapi",
+      "subheadline": "Musik yang dirancang untuk menenangkan, menyembuhkan, dan memulihkan — dari resepsi hingga ruang perawatan.",
+      "zonesTitle": "Frekuensi penyembuhan untuk setiap ruang",
+      "benefitsTitle": "Mengapa spa memilih BMAsia",
+      "editorialStat": "\"Weightless\" mengurangi kecemasan sebesar 65% dalam uji klinis.",
+      "editorialStatSub": "Mindlab International / British Academy of Sound Therapy, 2011.",
+      "ctaHeadline": "Rancang suara tempat peristirahatan Anda.",
+      "stats": {
+        "s1": {
+          "value": "65%",
+          "label": "Pengurangan Kecemasan"
+        },
+        "s2": {
+          "value": "60 BPM",
+          "label": "Sinkronisasi Gelombang Otak Alfa"
+        },
+        "s3": {
+          "value": "30K+",
+          "label": "Lagu Terkurasi"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Otomatis"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Resepsi & Ruang Tunggu",
+          "description": "Transisi lembut dari dunia luar menuju tempat peristirahatan"
+        },
+        "z2": {
+          "name": "Ruang Perawatan",
+          "description": "Relaksasi mendalam, suara alam, tekstur ambient"
+        },
+        "z3": {
+          "name": "Yoga & Meditasi",
+          "description": "Lanskap suara yang penuh kesadaran dan lapang untuk praktik"
+        },
+        "z4": {
+          "name": "Kolam & Termal",
+          "description": "Komposisi ambient terinspirasi aliran air"
+        },
+        "z5": {
+          "name": "Lounge Relaksasi",
+          "description": "Ketenangan pasca perawatan, lembut dan hangat"
+        },
+        "z6": {
+          "name": "Ruang Ganti",
+          "description": "Latar yang ringan dan tidak mengganggu"
+        }
+      },
+      "benefits": {
+        "b1": "Playlist wellness yang dikurasi oleh desainer musik profesional",
+        "b2": "Kontrol zona per zona yang mulus untuk area perawatan berbeda",
+        "b3": "Pemutaran offline — tidak pernah hening selama perawatan",
+        "b4": "Pembaruan musiman dan tematik (Ramadan, hari raya, acara)",
+        "b5": "Semua lisensi termasuk dalam Beat Breeze — tanpa ribet"
+      }
+    },
+    "cafes": {
+      "headline": "Latar yang sempurna",
+      "subheadline": "Musik yang membuat orang duduk, memesan kopi lagi, dan tinggal sebentar lebih lama.",
+      "zonesTitle": "Dari espresso pagi hingga sesi kerja sore",
+      "benefitsTitle": "Mengapa kafe memilih BMAsia",
+      "editorialStat": "73% pelanggan mengambil tindakan setelah mendengar lagu yang mereka sukai di kafe.",
+      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021.",
+      "ctaHeadline": "Rancang suara kafe Anda.",
+      "stats": {
+        "s1": {
+          "value": "79%",
+          "label": "Memperhatikan Musik"
+        },
+        "s2": {
+          "value": "41%",
+          "label": "Tinggal Lebih Lama"
+        },
+        "s3": {
+          "value": "73%",
+          "label": "Mengambil Tindakan Sesudahnya"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Otomatis"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Jam Sibuk Pagi",
+          "description": "Akustik ceria, energi lembut untuk memulai hari"
+        },
+        "z2": {
+          "name": "Jam Kerja & Belajar",
+          "description": "Lo-fi, ambient, ramah fokus — tanpa gangguan"
+        },
+        "z3": {
+          "name": "Sosial Sore",
+          "description": "Indie hangat, folk, pop ringan — komunikatif"
+        },
+        "z4": {
+          "name": "Relaksasi Malam",
+          "description": "Jazz, bossa nova, mellow — transisi alami"
+        },
+        "z5": {
+          "name": "Brunch Akhir Pekan",
+          "description": "Ceria, terkurasi, sedikit lebih keras — energi brunch"
+        },
+        "z6": {
+          "name": "Tempat Duduk Luar",
+          "description": "Ringan dan lapang — melengkapi suara jalanan"
+        }
+      },
+      "benefits": {
+        "b1": "Penjadwalan per waktu menyesuaikan energi dengan waktu hari",
+        "b2": "Semua lisensi termasuk — tanpa biaya lembaga pengumpulan dengan Beat Breeze",
+        "b3": "Harga terjangkau untuk lokasi zona tunggal",
+        "b4": "Pengaturan mudah di perangkat Android atau Windows apa pun",
+        "b5": "Playlist yang diperbarui menjaga pelanggan tetap terlibat"
+      }
+    },
+    "malls": {
+      "headline": "Suara yang menggerakkan pembelanja",
+      "subheadline": "Manajemen musik multi-zona untuk pusat perbelanjaan yang menginginkan lebih banyak lalu lintas dan kunjungan lebih lama.",
+      "zonesTitle": "Satu gedung, banyak mood",
+      "benefitsTitle": "Mengapa pusat perbelanjaan memilih BMAsia",
+      "editorialStat": "85% pembelanja mengatakan musik adalah faktor #1 yang mengangkat mood mereka di dalam toko.",
+      "editorialStatSub": "Mood Media, \"Quantifying the Impact of Sensory Marketing,\" 2019.",
+      "ctaHeadline": "Rancang suara mal Anda.",
+      "stats": {
+        "s1": {
+          "value": "38%",
+          "label": "Penjualan Harian Lebih Tinggi"
+        },
+        "s2": {
+          "value": "85%",
+          "label": "Mengatakan Musik Mengangkat Mood"
+        },
+        "s3": {
+          "value": "75%",
+          "label": "Tinggal Lebih Lama"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Kontrol Terpusat"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Area Umum",
+          "description": "Ceria, beragam, ramah — menciptakan energi mal"
+        },
+        "z2": {
+          "name": "Food Court",
+          "description": "Hidup, sosial, melengkapi keramaian bersantap"
+        },
+        "z3": {
+          "name": "Parkir & Pintu Masuk",
+          "description": "Isyarat sambutan halus dan petunjuk arah"
+        },
+        "z4": {
+          "name": "Zona Premium",
+          "description": "Musik elegan dan mewah untuk sayap kelas atas"
+        },
+        "z5": {
+          "name": "Anak-Anak & Hiburan",
+          "description": "Menyenangkan, menghibur, ramah keluarga"
+        },
+        "z6": {
+          "name": "Toilet & Area Servis",
+          "description": "Ringan, bersih, tidak mengganggu"
+        }
+      },
+      "benefits": {
+        "b1": "Manajemen terpusat di puluhan zona dari satu dasbor",
+        "b2": "Pesan audio untuk promosi, acara, dan pengumuman",
+        "b3": "Penjadwalan yang menyesuaikan pola lalu lintas hari kerja vs akhir pekan",
+        "b4": "Solusi perangkat keras untuk penerapan skala besar",
+        "b5": "Manajer akun khusus untuk dukungan berkelanjutan"
+      }
+    },
+    "gyms": {
+      "headline": "Energi sesuai permintaan",
+      "subheadline": "Musik berenergi tinggi yang mendorong performa, memotivasi anggota, dan membuat mereka terus kembali.",
+      "zonesTitle": "Energi berbeda untuk setiap latihan",
+      "benefitsTitle": "Mengapa gym memilih BMAsia",
+      "editorialStat": "Musik meningkatkan daya tahan sebesar 15% dan mengurangi persepsi kelelahan sebesar 10%.",
+      "editorialStatSub": "Karageorghis et al. / Terry et al. (2020), Psychological Bulletin — meta-analisis 139 studi.",
+      "ctaHeadline": "Perkuat suara gym Anda.",
+      "stats": {
+        "s1": {
+          "value": "+15%",
+          "label": "Peningkatan Daya Tahan"
+        },
+        "s2": {
+          "value": "-10%",
+          "label": "Persepsi Kelelahan"
+        },
+        "s3": {
+          "value": "139",
+          "label": "Studi Mengonfirmasi"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Otomatis"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Area Angkat Beban",
+          "description": "Beat berat, hip-hop, BPM tinggi — energi mentah"
+        },
+        "z2": {
+          "name": "Zona Kardio",
+          "description": "Elektronik bertempo, remix pop, ritme stabil"
+        },
+        "z3": {
+          "name": "Kelas Grup",
+          "description": "Dikurasi instruktur, selaras dengan fase latihan"
+        },
+        "z4": {
+          "name": "Yoga & Peregangan",
+          "description": "Ambient, menenangkan, fokus pada napas"
+        },
+        "z5": {
+          "name": "Resepsi & Lounge",
+          "description": "Ceria namun ramah — ruang transisi"
+        },
+        "z6": {
+          "name": "Ruang Ganti",
+          "description": "Ringan, netral, ruang pribadi"
+        }
+      },
+      "benefits": {
+        "b1": "Playlist dengan BPM yang disesuaikan untuk intensitas latihan berbeda",
+        "b2": "Kontrol multi-zona — berat di area beban, tenang di yoga",
+        "b3": "Semua lisensi tersedia — komersial atau bebas royalti",
+        "b4": "Penjadwalan yang menyesuaikan jam sibuk dan jadwal kelas",
+        "b5": "Konsistensi multi-lokasi untuk jaringan gym"
+      }
+    },
+    "medical": {
+      "headline": "Ketenangan, kepercayaan, kenyamanan",
+      "subheadline": "Musik yang mengurangi kecemasan, membangun kepercayaan, dan menciptakan lingkungan penyembuhan.",
+      "zonesTitle": "Suara untuk setiap ruang klinis",
+      "benefitsTitle": "Mengapa fasilitas medis memilih BMAsia",
+      "editorialStat": "Musik mengurangi kecemasan operasi seefektif pengobatan (NNT=4).",
+      "editorialStatSub": "Kuhlmann et al. (2018), British Journal of Surgery — 92 RCTs, 7.385 pasien.",
+      "ctaHeadline": "Rancang suara praktik Anda.",
+      "stats": {
+        "s1": {
+          "value": "NNT=4",
+          "label": "Seefektif Pengobatan"
+        },
+        "s2": {
+          "value": "7,385",
+          "label": "Pasien Diteliti"
+        },
+        "s3": {
+          "value": "92",
+          "label": "Uji Klinis"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Otomatis"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Ruang Tunggu",
+          "description": "Menenangkan, meyakinkan — mengurangi kecemasan sebelum janji temu"
+        },
+        "z2": {
+          "name": "Ruang Perawatan",
+          "description": "Latar lembut yang mendukung fokus dan kenyamanan"
+        },
+        "z3": {
+          "name": "Area Pemulihan",
+          "description": "Komposisi ambient yang lembut dan menyembuhkan"
+        },
+        "z4": {
+          "name": "Kursi Dental",
+          "description": "Menutupi suara klinis dengan musik yang menenangkan"
+        },
+        "z5": {
+          "name": "Klinik Estetika",
+          "description": "Suasana premium seperti spa untuk perawatan kecantikan"
+        },
+        "z6": {
+          "name": "Area Staf",
+          "description": "Energi ringan dan positif untuk ruang istirahat"
+        }
+      },
+      "benefits": {
+        "b1": "Playlist yang didasarkan pada data klinis untuk lingkungan layanan kesehatan",
+        "b2": "Semua lisensi termasuk dalam Beat Breeze — tanpa kerumitan kepatuhan",
+        "b3": "Pemutaran offline — tanpa gangguan selama perawatan",
+        "b4": "Kontrol volume yang sesuai untuk lingkungan klinis",
+        "b5": "Pengaturan mudah yang tidak membebani tim IT"
+      }
+    },
+    "offices": {
+      "headline": "Produktif by design",
+      "subheadline": "Musik latar yang meningkatkan fokus, kreativitas, dan kepuasan tempat kerja.",
+      "zonesTitle": "Mode berbeda untuk ruang berbeda",
+      "benefitsTitle": "Mengapa kantor memilih BMAsia",
+      "editorialStat": "Pengembang perangkat lunak menghasilkan pekerjaan berkualitas lebih tinggi dengan musik latar.",
+      "editorialStatSub": "Lesiuk (2005), Psychology of Music — 56 pengembang, studi 5 minggu.",
+      "ctaHeadline": "Rancang suara ruang kerja Anda.",
+      "stats": {
+        "s1": {
+          "value": "79%",
+          "label": "Mengatakan Musik Membantu"
+        },
+        "s2": {
+          "value": "70 dB",
+          "label": "Tingkat Optimal"
+        },
+        "s3": {
+          "value": "30K+",
+          "label": "Lagu Terkurasi"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Otomatis"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Open Plan",
+          "description": "Ambient, ramah fokus — menutupi percakapan yang mengganggu"
+        },
+        "z2": {
+          "name": "Resepsi & Lobi",
+          "description": "Profesional, ramah — kesan pertama itu penting"
+        },
+        "z3": {
+          "name": "Ruang Rapat",
+          "description": "Energi halus pra-rapat, hening selama sesi"
+        },
+        "z4": {
+          "name": "Ruang Istirahat & Kafetaria",
+          "description": "Ceria, sosial — mengisi ulang energi"
+        },
+        "z5": {
+          "name": "Ruang Co-Working",
+          "description": "Lo-fi, produktif — soundtrack kerja modern"
+        },
+        "z6": {
+          "name": "Lantai Eksekutif",
+          "description": "Elegan, tenang, suasana premium"
+        }
+      },
+      "benefits": {
+        "b1": "Penjadwalan yang sesuai dengan ritme kantor — pagi untuk fokus, sore untuk sosial",
+        "b2": "Kontrol multi-zona untuk open plan, ruang rapat, dan area umum",
+        "b3": "Semua lisensi termasuk dalam Beat Breeze — pengaturan ramah IT",
+        "b4": "Peningkatan kepuasan karyawan melalui desain suara yang cermat",
+        "b5": "Harga zona tunggal yang terjangkau untuk kantor yang lebih kecil"
+      }
+    },
+    "showrooms": {
+      "headline": "Suara yang menjual impian",
+      "subheadline": "Musik premium yang mengangkat produk dan menciptakan pengalaman aspiratif.",
+      "zonesTitle": "Mengatur panggung untuk setiap produk",
+      "benefitsTitle": "Mengapa showroom memilih BMAsia",
+      "editorialStat": "Musik klasik mengarahkan pelanggan untuk memilih produk yang lebih mahal.",
+      "editorialStatSub": "Areni & Kim (1993), Advances in Consumer Research.",
+      "ctaHeadline": "Rancang suara showroom Anda.",
+      "stats": {
+        "s1": {
+          "value": "38%",
+          "label": "Penjualan Lebih Tinggi"
+        },
+        "s2": {
+          "value": "3.4x",
+          "label": "Efek Priming Musik"
+        },
+        "s3": {
+          "value": "65%",
+          "label": "Mengatakan Suasana Penting"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "Otomatis"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Showroom Otomotif",
+          "description": "Premium, aspiratif — sesuai dengan brand"
+        },
+        "z2": {
+          "name": "Pusat Penjualan Properti",
+          "description": "Soundtrack gaya hidup yang canggih"
+        },
+        "z3": {
+          "name": "Showroom Brand Mewah",
+          "description": "Editorial, modis, terkurasi"
+        },
+        "z4": {
+          "name": "Teknologi & Elektronik",
+          "description": "Modern, inovatif, berpikiran maju"
+        },
+        "z5": {
+          "name": "Furnitur & Desain",
+          "description": "Hangat, seperti di rumah, menginspirasi"
+        },
+        "z6": {
+          "name": "Galeri Seni",
+          "description": "Minimal, kontemplatif, memperkaya bukan bersaing"
+        }
+      },
+      "benefits": {
+        "b1": "Musik yang selaras dengan brand untuk memperkuat positioning produk Anda",
+        "b2": "Mode acara untuk peluncuran, pembukaan, dan kunjungan VIP",
+        "b3": "Kurasi khusus yang menceritakan kisah brand Anda melalui suara",
+        "b4": "Penjadwalan multi-ruangan untuk area produk yang berbeda",
+        "b5": "Nuansa premium tanpa kerumitan premium"
+      }
+    },
+    "events": {
+      "headline": "Setiap acara memiliki suara",
+      "subheadline": "Dari gala korporat hingga peluncuran brand — musik yang membuat momen tak terlupakan.",
+      "zonesTitle": "Suara untuk setiap kesempatan",
+      "benefitsTitle": "Mengapa tempat acara memilih BMAsia",
+      "editorialStat": "Pada momen emosional puncak, peserta 63% lebih mungkin terhubung dengan brand.",
+      "editorialStatSub": "Live Nation, \"The Power of Live\" Global Study, 2018 — 22.500 penggemar, 11 negara.",
+      "ctaHeadline": "Rancang suara acara Anda.",
+      "stats": {
+        "s1": {
+          "value": "63%",
+          "label": "Koneksi Brand"
+        },
+        "s2": {
+          "value": "90%",
+          "label": "Menyambut Kehadiran Brand"
+        },
+        "s3": {
+          "value": "500+",
+          "label": "Tempat Dilayani"
+        },
+        "s4": {
+          "value": "23+",
+          "label": "Tahun Pengalaman"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "Acara Korporat",
+          "description": "Profesional, elegan, sesuai brand"
+        },
+        "z2": {
+          "name": "Peluncuran Produk",
+          "description": "Menarik, modern, membangun antisipasi"
+        },
+        "z3": {
+          "name": "Pernikahan & Perayaan",
+          "description": "Emosional, personal, waktu yang sempurna"
+        },
+        "z4": {
+          "name": "Konferensi",
+          "description": "Istirahat yang membangkitkan energi, sesi yang fokus"
+        },
+        "z5": {
+          "name": "Pameran",
+          "description": "Dinamis, memikat, memandu perjalanan pengunjung"
+        },
+        "z6": {
+          "name": "Acara Pribadi",
+          "description": "Dikurasi sesuai selera tuan rumah dan mood acara"
+        }
+      },
+      "benefits": {
+        "b1": "Desain playlist khusus acara oleh tim musik kami",
+        "b2": "Penjadwalan yang mengikuti jadwal acara dengan tepat",
+        "b3": "Pesan audio untuk pengumuman dan alur program",
+        "b4": "Opsi instalasi sementara atau permanen",
+        "b5": "Music Design Assistant kami membantu merencanakan acara dalam hitungan menit"
+      }
+    }
+  },
+  "industryTemplate": {
+    "ctaQuote": "Dapatkan Penawaran →",
+    "ctaDemo": "Pesan Demo",
+    "source": "Sumber: Soundtrack Research",
+    "footerCtaQuote": "Dapatkan penawaran →",
+    "footerCtaDemo": "Pesan demo →"
   }
 }

@@ -2,13 +2,14 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { SITE, SOCIAL } from '@/lib/constants';
 import { WhatsAppLink, LineLink } from '@/components/icons';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   const locale = useLocale();
+  const t = useTranslations('footer');
 
   return (
     <footer
@@ -44,17 +45,17 @@ export const Footer: React.FC = () => {
           <div className="flex items-center justify-between mt-4 pt-4 border-t border-white/5">
             <div className="flex items-center gap-6">
               <Link href={`/${locale}/privacy`} className="text-gray-400 hover:text-gray-300 transition-colors text-xs font-label">
-                Privacy Policy
+                {t('privacyPolicy')}
               </Link>
               <Link href={`/${locale}/cookies`} className="text-gray-400 hover:text-gray-300 transition-colors text-xs font-label">
-                Cookie Policy
+                {t('cookiePolicy')}
               </Link>
               <Link href={`/${locale}/terms`} className="text-gray-400 hover:text-gray-300 transition-colors text-xs font-label">
-                Terms of Service
+                {t('termsOfService')}
               </Link>
             </div>
             <p className="text-gray-400 text-xs font-label">
-              &copy; {currentYear} {SITE.name}. All rights reserved.
+              &copy; {currentYear} {SITE.name}. {t('allRightsReserved')}
             </p>
           </div>
         </div>
@@ -85,13 +86,13 @@ export const Footer: React.FC = () => {
           <div className="flex items-center justify-between pt-3 border-t border-white/5">
             <div className="flex items-center gap-4">
               <Link href={`/${locale}/privacy`} className="text-gray-400 hover:text-gray-300 transition-colors text-[10px] font-label">
-                Privacy
+                {t('privacy')}
               </Link>
               <Link href={`/${locale}/cookies`} className="text-gray-400 hover:text-gray-300 transition-colors text-[10px] font-label">
-                Cookies
+                {t('cookies')}
               </Link>
               <Link href={`/${locale}/terms`} className="text-gray-400 hover:text-gray-300 transition-colors text-[10px] font-label">
-                Terms
+                {t('terms')}
               </Link>
             </div>
             <p className="text-gray-400 text-[10px] font-label">

@@ -284,7 +284,14 @@
     "contact": "联系方式",
     "copyright": "版权所有。",
     "licensing": "音乐授权",
-    "musicForBusiness": "商业音乐"
+    "musicForBusiness": "商业音乐",
+    "privacyPolicy": "隐私政策",
+    "cookiePolicy": "Cookie 政策",
+    "termsOfService": "服务条款",
+    "privacy": "隐私",
+    "cookies": "Cookie",
+    "terms": "条款",
+    "allRightsReserved": "版权所有。"
   },
   "howItWorks": {
     "hero": {
@@ -1049,5 +1056,776 @@
       "ctaQuote": "获取报价",
       "ctaDemo": "预约演示"
     }
+  },
+  "quotationPage": {
+    "hero": {
+      "label": "立即开始",
+      "title": "申请",
+      "titleHighlight": "报价",
+      "subtitle": "告诉我们您的场所信息，我们将在24小时内发送个性化报价。"
+    },
+    "whatToExpect": {
+      "sectionTitle": "您将获得",
+      "fastResponse": {
+        "title": "快速响应",
+        "desc": "24小时内收到您的个性化报价"
+      },
+      "noObligation": {
+        "title": "无需承诺",
+        "desc": "免费咨询，无任何义务"
+      },
+      "tailored": {
+        "title": "定制方案",
+        "desc": "根据您的具体需求量身定价"
+      }
+    },
+    "ourSolutions": {
+      "sectionTitle": "我们的方案",
+      "sybTagline": "高端之选 — 超1亿首曲目，Spotify 同步，定制化设计",
+      "bbTagline": "基础之选 — 超3万首曲目，全套授权包含在内",
+      "learnMore": "了解更多我们的方案 →"
+    },
+    "questions": {
+      "sectionTitle": "有疑问？"
+    },
+    "formHeader": {
+      "title": "告诉我们您的场所情况",
+      "subtitle": "填写您的详细信息，我们将为您提供个性化报价。"
+    },
+    "demoCta": {
+      "title": "想要",
+      "titleHighlight": "在线演示？",
+      "subtitle": "预约免费在线演示，亲身体验我们的音乐解决方案。",
+      "ctaButton": "预约演示"
+    }
+  },
+  "industryData": {
+    "hotels": {
+      "headline": "五星级酒店的声音",
+      "subheadline": "从大堂到水疗，我们为您酒店的每一个区域量身打造塑造宾客体验的音乐。",
+      "zonesTitle": "每一个空间都有属于自己的频率",
+      "benefitsTitle": "为什么酒店选择 BMAsia",
+      "editorialStat": "41% 的宾客在喜爱音乐时会停留更久。",
+      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021 — 2,500+ 消费者调研。",
+      "ctaHeadline": "为您的酒店定制声音。",
+      "stats": {
+        "s1": {
+          "value": "9.1%",
+          "label": "营收增长"
+        },
+        "s2": {
+          "value": "41%",
+          "label": "停留时间更长"
+        },
+        "s3": {
+          "value": "39%",
+          "label": "回访率提升"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "音乐管理"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "大堂与前台",
+          "description": "温暖、迎宾、精致——奠定基调的第一印象"
+        },
+        "z2": {
+          "name": "餐厅与 F&B",
+          "description": "从静谧晚餐到活力早餐自助"
+        },
+        "z3": {
+          "name": "水疗与养生",
+          "description": "宁静、冥想式的声景，带来深度放松"
+        },
+        "z4": {
+          "name": "泳池与户外",
+          "description": "轻松愉悦的能量，适合阳光与休闲"
+        },
+        "z5": {
+          "name": "健身房",
+          "description": "充满活力、激励人心的曲目，激发运动表现"
+        },
+        "z6": {
+          "name": "酒吧与休息厅",
+          "description": "精致的夜间氛围，从爵士到 deep house"
+        }
+      },
+      "benefits": {
+        "b1": "通过一个控制台集中管理多家物业",
+        "b2": "由我们的团队量身设计音乐，每季度更新",
+        "b3": "分时段排程——从清晨到深夜自动切换",
+        "b4": "保证离线播放——即使断网音乐也不中断",
+        "b5": "24/7 专属支持与客户经理服务"
+      }
+    },
+    "restaurants": {
+      "headline": "无人看见的秘密配料",
+      "subheadline": "让每一餐都成为回忆的音乐——精心排程、策划，并始终契合品牌。",
+      "zonesTitle": "从日出到最后一杯",
+      "benefitsTitle": "为什么餐厅选择 BMAsia",
+      "editorialStat": "慢节奏音乐使用餐时间延长 24%，酒吧营收提升 40%。",
+      "editorialStatSub": "Milliman (1986), Journal of Consumer Research。",
+      "ctaHeadline": "为您的餐厅营造氛围。",
+      "stats": {
+        "s1": {
+          "value": "9.1%",
+          "label": "营收更高"
+        },
+        "s2": {
+          "value": "15%",
+          "label": "甜品销售提升"
+        },
+        "s3": {
+          "value": "24%",
+          "label": "用餐时间更长"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "自动运行"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "高级餐饮",
+          "description": "优雅、私密、古典——升华餐饮体验"
+        },
+        "z2": {
+          "name": "休闲餐饮",
+          "description": "温暖、轻松、易于交谈——不抢风头的音乐"
+        },
+        "z3": {
+          "name": "咖啡馆与烘焙店",
+          "description": "轻盈、欢快、原声——完美的背景"
+        },
+        "z4": {
+          "name": "酒吧与鸡尾酒",
+          "description": "精致、爵士、社交——营造夜晚氛围"
+        },
+        "z5": {
+          "name": "快休闲与 QSR",
+          "description": "欢快、动感、现代——匹配节奏"
+        },
+        "z6": {
+          "name": "户外露台",
+          "description": "轻风、悠闲、日落——户外惬意氛围"
+        }
+      },
+      "benefits": {
+        "b1": "分时段排程——从早餐到深夜自动切换",
+        "b2": "根据您的 F&B 概念匹配曲风与情绪",
+        "b3": "全部牌照可选——免版税或商业授权",
+        "b4": "多区域控制，覆盖餐厅、酒吧、露台和洗手间",
+        "b5": "音量与能量根据时段自动调整"
+      }
+    },
+    "retail": {
+      "headline": "您的品牌有自己的声音",
+      "subheadline": "我们打造让顾客驻足、浏览并下单的声音标识。",
+      "zonesTitle": "适用于每种业态的声音",
+      "benefitsTitle": "为什么零售商选择 BMAsia",
+      "editorialStat": "慢节奏音乐使零售店每日销售额提升 38%。",
+      "editorialStatSub": "Milliman (1982), Journal of Marketing — 零售音乐研究的金标准。",
+      "ctaHeadline": "放大您的品牌。",
+      "stats": {
+        "s1": {
+          "value": "38%",
+          "label": "日均销售更高"
+        },
+        "s2": {
+          "value": "90%",
+          "label": "因好音乐回访"
+        },
+        "s3": {
+          "value": "3.4x",
+          "label": "红酒启动效应"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "自动运行"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "时装与服饰",
+          "description": "潮流、精选的歌单，契合您的品牌形象"
+        },
+        "z2": {
+          "name": "购物中心",
+          "description": "动感、充满能量的音乐，带动人流"
+        },
+        "z3": {
+          "name": "美妆与养生",
+          "description": "舒缓、奢华的声景，带来呵护体验"
+        },
+        "z4": {
+          "name": "展厅",
+          "description": "高端、令人向往的音乐，提升产品格调"
+        },
+        "z5": {
+          "name": "超市",
+          "description": "欢快、熟悉的音乐，让顾客持续前行"
+        },
+        "z6": {
+          "name": "健身房",
+          "description": "高 BPM 曲目，激发巅峰状态"
+        }
+      },
+      "benefits": {
+        "b1": "集中管理所有门店的音乐播放",
+        "b2": "与品牌契合的策划，强化您的身份标识",
+        "b3": "用于促销、营业时间和公告的语音广播",
+        "b4": "从旗舰店到奥莱店的多店一致性",
+        "b5": "高峰时段排程——能量与客流节奏同步"
+      }
+    },
+    "bars": {
+      "headline": "夜晚就该这么响",
+      "subheadline": "获得合法授权的音乐，完美营造氛围——从鸡尾酒时光到打烊时刻。",
+      "zonesTitle": "为每一刻设定氛围",
+      "benefitsTitle": "为什么酒吧选择 BMAsia",
+      "editorialStat": "更高音量使每位顾客的饮品数量从 2.6 提升至 3.4 杯。",
+      "editorialStatSub": "Guéguen et al. (2004), Alcoholism: Clinical & Experimental Research。",
+      "ctaHeadline": "为您的酒吧定制声音。",
+      "stats": {
+        "s1": {
+          "value": "+31%",
+          "label": "酒水点单增加"
+        },
+        "s2": {
+          "value": "+40%",
+          "label": "酒吧营收提升"
+        },
+        "s3": {
+          "value": "24%",
+          "label": "桌边停留更久"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "自动运行"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "鸡尾酒吧",
+          "description": "精致的爵士、新灵魂与 bossa nova"
+        },
+        "z2": {
+          "name": "体育酒吧",
+          "description": "高能量金曲与人气之选"
+        },
+        "z3": {
+          "name": "葡萄酒吧",
+          "description": "私密、原声、精致——让对话流畅自然"
+        },
+        "z4": {
+          "name": "屋顶休息厅",
+          "description": "chill 电子、日落氛围、deep house"
+        },
+        "z5": {
+          "name": "夜店",
+          "description": "舞池能量，DJ 精心策划的曲目"
+        },
+        "z6": {
+          "name": "酒店酒吧",
+          "description": "优雅、契合品牌的夜间氛围"
+        }
+      },
+      "benefits": {
+        "b1": "从下班后到深夜的情绪自动切换",
+        "b2": "专业曲风——从爵士到电子到 top 40",
+        "b3": "合法合规——杜绝版权风险",
+        "b4": "符合噪声规定的音量排程",
+        "b5": "定制歌单持续更新，给老顾客新惊喜"
+      }
+    },
+    "spas": {
+      "headline": "声音即疗愈",
+      "subheadline": "为平静、疗愈与恢复而设计的音乐——从前台到护理室。",
+      "zonesTitle": "为每一处空间调配的疗愈频率",
+      "benefitsTitle": "为什么水疗中心选择 BMAsia",
+      "editorialStat": "《Weightless》在临床测试中将焦虑降低 65%。",
+      "editorialStatSub": "Mindlab International / British Academy of Sound Therapy, 2011。",
+      "ctaHeadline": "为您的疗愈空间定制声音。",
+      "stats": {
+        "s1": {
+          "value": "65%",
+          "label": "焦虑缓解"
+        },
+        "s2": {
+          "value": "60 BPM",
+          "label": "α 脑波同步"
+        },
+        "s3": {
+          "value": "30K+",
+          "label": "精选曲目"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "自动运行"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "前台与等候区",
+          "description": "从外界到疗愈空间的温柔过渡"
+        },
+        "z2": {
+          "name": "护理室",
+          "description": "深度放松、自然声与环境音纹理"
+        },
+        "z3": {
+          "name": "瑜伽与冥想",
+          "description": "正念、开阔的声景，配合练习"
+        },
+        "z4": {
+          "name": "泳池与温泉",
+          "description": "以流水为灵感的环境音乐"
+        },
+        "z5": {
+          "name": "放松休息区",
+          "description": "护理后的静谧，柔和而温暖"
+        },
+        "z6": {
+          "name": "更衣区",
+          "description": "轻盈、低调的背景舒适感"
+        }
+      },
+      "benefits": {
+        "b1": "由专业音乐设计师策划的养生歌单",
+        "b2": "不同护理区域的逐区无缝控制",
+        "b3": "离线播放——护理过程中绝不静音",
+        "b4": "季节性与主题更新（Ramadan、节日、活动）",
+        "b5": "Beat Breeze 全牌照涵盖——零烦恼"
+      }
+    },
+    "cafes": {
+      "headline": "最好的背景",
+      "subheadline": "让人愿意坐下、再点一杯咖啡、并多停留片刻的音乐。",
+      "zonesTitle": "从清晨的浓缩到午后的工作时光",
+      "benefitsTitle": "为什么咖啡馆选择 BMAsia",
+      "editorialStat": "73% 的顾客在咖啡馆听到喜欢的歌曲后会采取行动。",
+      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021。",
+      "ctaHeadline": "为您的咖啡馆定制声音。",
+      "stats": {
+        "s1": {
+          "value": "79%",
+          "label": "注意到音乐"
+        },
+        "s2": {
+          "value": "41%",
+          "label": "停留更久"
+        },
+        "s3": {
+          "value": "73%",
+          "label": "听后采取行动"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "自动运行"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "早高峰",
+          "description": "欢快的原声，温和能量开启一天"
+        },
+        "z2": {
+          "name": "工作与学习时段",
+          "description": "lo-fi、环境音、有利专注——零干扰"
+        },
+        "z3": {
+          "name": "午后社交",
+          "description": "温暖的独立、民谣、轻流行——利于交谈"
+        },
+        "z4": {
+          "name": "傍晚放松",
+          "description": "爵士、bossa nova、柔和——自然过渡"
+        },
+        "z5": {
+          "name": "周末早午餐",
+          "description": "欢快、精选、音量稍高——早午餐的活力"
+        },
+        "z6": {
+          "name": "户外座位",
+          "description": "轻盈通透——与街道声音相得益彰"
+        }
+      },
+      "benefits": {
+        "b1": "分时段排程让能量与时段匹配",
+        "b2": "全部牌照涵盖——Beat Breeze 无需支付版权协会费用",
+        "b3": "单区域店铺的实惠价格",
+        "b4": "在任何 Android 或 Windows 设备上轻松部署",
+        "b5": "更新歌单让老顾客持续参与"
+      }
+    },
+    "malls": {
+      "headline": "让顾客流动起来的声音",
+      "subheadline": "为希望提升客流与停留时间的购物中心提供多区域音乐管理。",
+      "zonesTitle": "一栋建筑，多种氛围",
+      "benefitsTitle": "为什么购物中心选择 BMAsia",
+      "editorialStat": "85% 的购物者表示，音乐是提升店内心情的第一要素。",
+      "editorialStatSub": "Mood Media, \"Quantifying the Impact of Sensory Marketing,\" 2019。",
+      "ctaHeadline": "为您的购物中心定制声音。",
+      "stats": {
+        "s1": {
+          "value": "38%",
+          "label": "日均销售更高"
+        },
+        "s2": {
+          "value": "85%",
+          "label": "认为音乐提升心情"
+        },
+        "s3": {
+          "value": "75%",
+          "label": "停留更久"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "集中控制"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "公共区域",
+          "description": "欢快、多元、迎宾——奠定购物中心的能量"
+        },
+        "z2": {
+          "name": "美食广场",
+          "description": "热闹、社交，与用餐氛围相辅相成"
+        },
+        "z3": {
+          "name": "停车场与出入口",
+          "description": "含蓄的欢迎提示与路径引导"
+        },
+        "z4": {
+          "name": "高端区域",
+          "description": "精致、接近奢华的音乐，适合高端楼层"
+        },
+        "z5": {
+          "name": "儿童与娱乐",
+          "description": "趣味、活泼、亲子友好"
+        },
+        "z6": {
+          "name": "洗手间与服务区",
+          "description": "轻盈、清爽、不喧宾夺主"
+        }
+      },
+      "benefits": {
+        "b1": "通过一个控制台集中管理数十个区域",
+        "b2": "用于促销、活动和公告的语音广播",
+        "b3": "适应工作日与周末客流规律的排程",
+        "b4": "面向大规模部署的硬件方案",
+        "b5": "专属客户经理持续提供支持"
+      }
+    },
+    "gyms": {
+      "headline": "随时随地的能量",
+      "subheadline": "高能量音乐激发表现、激励会员、让他们持续回归。",
+      "zonesTitle": "每种训练对应不同能量",
+      "benefitsTitle": "为什么健身房选择 BMAsia",
+      "editorialStat": "音乐可使耐力提升 15%，主观疲劳感降低 10%。",
+      "editorialStatSub": "Karageorghis et al. / Terry et al. (2020), Psychological Bulletin — 139 项研究的 meta 分析。",
+      "ctaHeadline": "为您的健身房注入声音能量。",
+      "stats": {
+        "s1": {
+          "value": "+15%",
+          "label": "耐力提升"
+        },
+        "s2": {
+          "value": "-10%",
+          "label": "主观疲劳"
+        },
+        "s3": {
+          "value": "139",
+          "label": "研究佐证"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "自动运行"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "力量训练区",
+          "description": "重鼓点、嘻哈、高 BPM——原始能量"
+        },
+        "z2": {
+          "name": "有氧区",
+          "description": "律动电子、流行混音、稳定节奏"
+        },
+        "z3": {
+          "name": "团课教室",
+          "description": "教练精选，与训练阶段同步"
+        },
+        "z4": {
+          "name": "瑜伽与拉伸",
+          "description": "环境音、舒缓、专注呼吸"
+        },
+        "z5": {
+          "name": "前台与休息区",
+          "description": "欢快又欢迎——过渡空间"
+        },
+        "z6": {
+          "name": "更衣室",
+          "description": "轻盈、中性、个人空间"
+        }
+      },
+      "benefits": {
+        "b1": "按 BPM 匹配不同训练强度的歌单",
+        "b2": "多区域控制——力量区动感、瑜伽区静谧",
+        "b3": "全部牌照可选——商业授权或免版税",
+        "b4": "适应高峰时段与课程安排的排程",
+        "b5": "连锁健身房的多店一致体验"
+      }
+    },
+    "medical": {
+      "headline": "平静、信任、舒适",
+      "subheadline": "缓解焦虑、建立信任、营造疗愈环境的音乐。",
+      "zonesTitle": "为每一处临床空间而设计的声音",
+      "benefitsTitle": "为什么医疗机构选择 BMAsia",
+      "editorialStat": "音乐缓解术前焦虑的效果与药物相当（NNT=4）。",
+      "editorialStatSub": "Kuhlmann et al. (2018), British Journal of Surgery — 92 项 RCTs，7,385 名患者。",
+      "ctaHeadline": "为您的诊所定制声音。",
+      "stats": {
+        "s1": {
+          "value": "NNT=4",
+          "label": "效果等同药物"
+        },
+        "s2": {
+          "value": "7,385",
+          "label": "研究患者数"
+        },
+        "s3": {
+          "value": "92",
+          "label": "临床试验"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "自动运行"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "候诊区",
+          "description": "舒缓、安抚——减轻就诊前焦虑"
+        },
+        "z2": {
+          "name": "诊疗室",
+          "description": "温和的背景，辅助专注与舒适"
+        },
+        "z3": {
+          "name": "恢复区",
+          "description": "柔和、具疗愈感的环境音乐"
+        },
+        "z4": {
+          "name": "牙科诊椅",
+          "description": "以舒缓音乐掩盖临床器械声"
+        },
+        "z5": {
+          "name": "医美诊所",
+          "description": "高端、水疗级的美护氛围"
+        },
+        "z6": {
+          "name": "员工区",
+          "description": "休息室的轻盈积极能量"
+        }
+      },
+      "benefits": {
+        "b1": "为医疗场景专门设计、具临床依据的歌单",
+        "b2": "Beat Breeze 全牌照涵盖——零合规烦恼",
+        "b3": "离线播放——诊疗过程中绝无中断",
+        "b4": "适合临床环境的音量控制",
+        "b5": "不给 IT 团队添负担的轻松部署"
+      }
+    },
+    "offices": {
+      "headline": "为生产力而设计",
+      "subheadline": "提升专注力、创造力与职场满意度的背景音乐。",
+      "zonesTitle": "不同空间对应不同模式",
+      "benefitsTitle": "为什么办公室选择 BMAsia",
+      "editorialStat": "软件开发者在有背景音乐时能产出更高质量的工作。",
+      "editorialStatSub": "Lesiuk (2005), Psychology of Music — 56 名开发者，为期 5 周的研究。",
+      "ctaHeadline": "为您的办公空间定制声音。",
+      "stats": {
+        "s1": {
+          "value": "79%",
+          "label": "认为音乐有益"
+        },
+        "s2": {
+          "value": "70 dB",
+          "label": "最佳音量"
+        },
+        "s3": {
+          "value": "30K+",
+          "label": "精选曲目"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "自动运行"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "开放式办公区",
+          "description": "环境音、利于专注——掩盖干扰性对话"
+        },
+        "z2": {
+          "name": "前台与大堂",
+          "description": "专业、迎宾——第一印象很重要"
+        },
+        "z3": {
+          "name": "会议室",
+          "description": "会前的淡雅能量，会议期间保持安静"
+        },
+        "z4": {
+          "name": "休息室与餐厅",
+          "description": "欢快、社交——恢复能量"
+        },
+        "z5": {
+          "name": "联合办公空间",
+          "description": "lo-fi、高效——现代职场的工作配乐"
+        },
+        "z6": {
+          "name": "高管楼层",
+          "description": "精致、低调、高端氛围"
+        }
+      },
+      "benefits": {
+        "b1": "与办公节奏匹配的排程——专注的清晨，社交的午后",
+        "b2": "多区域控制，覆盖开放区、会议室和公共区",
+        "b3": "Beat Breeze 全牌照涵盖——IT 友好的部署",
+        "b4": "通过用心的声音设计提升员工满意度",
+        "b5": "为小型办公室提供实惠的单区域定价"
+      }
+    },
+    "showrooms": {
+      "headline": "把梦想卖出去的声音",
+      "subheadline": "高端音乐提升产品格调，营造令人向往的体验。",
+      "zonesTitle": "为每件产品打造舞台",
+      "benefitsTitle": "为什么展厅选择 BMAsia",
+      "editorialStat": "古典音乐会促使顾客选择更昂贵的产品。",
+      "editorialStatSub": "Areni & Kim (1993), Advances in Consumer Research。",
+      "ctaHeadline": "为您的展厅定制声音。",
+      "stats": {
+        "s1": {
+          "value": "38%",
+          "label": "销售更高"
+        },
+        "s2": {
+          "value": "3.4x",
+          "label": "音乐启动效应"
+        },
+        "s3": {
+          "value": "65%",
+          "label": "认为氛围重要"
+        },
+        "s4": {
+          "value": "24/7",
+          "label": "自动运行"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "汽车展厅",
+          "description": "高端、令人向往——与品牌契合"
+        },
+        "z2": {
+          "name": "房产销售中心",
+          "description": "精致的生活方式配乐"
+        },
+        "z3": {
+          "name": "奢侈品展厅",
+          "description": "杂志级、时尚前沿、精心策划"
+        },
+        "z4": {
+          "name": "科技与电子产品",
+          "description": "现代、创新、前瞻"
+        },
+        "z5": {
+          "name": "家具与设计",
+          "description": "温暖、家居感、启发灵感"
+        },
+        "z6": {
+          "name": "艺术画廊",
+          "description": "极简、沉思——衬托而不喧宾夺主"
+        }
+      },
+      "benefits": {
+        "b1": "与品牌契合的音乐，强化您的产品定位",
+        "b2": "适用于发布会、开幕和 VIP 参观的活动模式",
+        "b3": "定制策划，用声音讲述您的品牌故事",
+        "b4": "不同产品区域的多房间排程",
+        "b5": "高端体验，却没有高端的繁琐"
+      }
+    },
+    "events": {
+      "headline": "每一场活动都有属于它的声音",
+      "subheadline": "从企业晚宴到品牌发布——让瞬间难以忘怀的音乐。",
+      "zonesTitle": "为每种场合而设的声音",
+      "benefitsTitle": "为什么活动场馆选择 BMAsia",
+      "editorialStat": "在情绪高峰时刻，与会者与品牌产生连接的可能性高出 63%。",
+      "editorialStatSub": "Live Nation, \"The Power of Live\" Global Study, 2018 — 22,500 名粉丝，11 个国家。",
+      "ctaHeadline": "为您的活动定制声音。",
+      "stats": {
+        "s1": {
+          "value": "63%",
+          "label": "品牌连接"
+        },
+        "s2": {
+          "value": "90%",
+          "label": "欢迎品牌出现"
+        },
+        "s3": {
+          "value": "500+",
+          "label": "服务场馆"
+        },
+        "s4": {
+          "value": "23+",
+          "label": "年经验"
+        }
+      },
+      "zones": {
+        "z1": {
+          "name": "企业活动",
+          "description": "专业、精致、契合品牌"
+        },
+        "z2": {
+          "name": "产品发布",
+          "description": "激动人心、现代、层层铺垫期待"
+        },
+        "z3": {
+          "name": "婚礼与庆典",
+          "description": "情感化、个性化、节拍精准"
+        },
+        "z4": {
+          "name": "会议",
+          "description": "充满活力的茶歇，专注的会议环节"
+        },
+        "z5": {
+          "name": "展览",
+          "description": "动感、引人入胜，引导访客动线"
+        },
+        "z6": {
+          "name": "私人活动",
+          "description": "根据主办方品味与活动氛围精心策划"
+        }
+      },
+      "benefits": {
+        "b1": "由我们的音乐团队为特定活动设计歌单",
+        "b2": "精准跟随活动时间线的排程",
+        "b3": "用于公告与流程衔接的语音广播",
+        "b4": "临时或长期安装方案可选",
+        "b5": "我们的音乐设计助理几分钟内帮您规划活动"
+      }
+    }
+  },
+  "industryTemplate": {
+    "ctaQuote": "获取报价 →",
+    "ctaDemo": "预约演示",
+    "source": "来源：Soundtrack Research",
+    "footerCtaQuote": "获取报价 →",
+    "footerCtaDemo": "预约演示 →"
   }
 }

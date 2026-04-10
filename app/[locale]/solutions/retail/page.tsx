@@ -1,7 +1,7 @@
 'use client';
 import { IndustryPageTemplate } from '@/components/sections/IndustryPageTemplate';
-import { INDUSTRY_DATA } from '@/lib/industry-data';
+import { INDUSTRY_CONFIG } from '@/lib/industry-data';
 
 export default function Page() {
-  return <IndustryPageTemplate {...INDUSTRY_DATA.retail} />;
+  return <IndustryPageTemplate config={INDUSTRY_CONFIG.retail} />;
 }
