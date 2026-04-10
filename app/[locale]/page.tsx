@@ -162,7 +162,7 @@ export default function Home() {
                     <span className="text-amber-400">⚠</span>
                     Public performance license required separately
                   </p>
-                  <Link href="/quotation">
+                  <Link href="/soundtrack-your-brand">
                     <motion.span
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
@@ -207,7 +207,7 @@ export default function Home() {
                 </ul>
                 <div className="mt-auto pt-8 border-t border-white/5">
                   <div className="mt-6">
-                    <Link href="/quotation">
+                    <Link href="/beat-breeze">
                       <motion.span
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
