@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
+import { createPortal } from 'react-dom';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -80,6 +81,12 @@ export const Header: React.FC = () => {
   const locale = useLocale();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  // Track client-side mount for createPortal (SSR-safe)
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   // Handle scroll events for sticky header background change
   useEffect(() => {
@@ -232,96 +239,102 @@ export const Header: React.FC = () => {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {isMenuOpen && (
-          <>
-            {/* Overlay */}
-            <motion.div
-              className="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm md:hidden"
-              variants={overlayVariants}
-              initial="closed"
-              animate="open"
-              exit="closed"
-              onClick={closeMenu}
-              aria-hidden="true"
-            />
-
-            {/* Menu Panel */}
-            <motion.div
-              id="mobile-menu"
-              className="fixed top-0 right-0 bottom-0 w-full max-w-sm z-[70] md:hidden"
-              variants={menuVariants}
-              initial="closed"
-              animate="open"
-              exit="closed"
-              role="dialog"
-              aria-modal="true"
-              aria-label="Mobile navigation menu"
-            >
-              {/* Solid background layer — isolated from framer-motion transform to guarantee opacity on iOS Safari */}
-              <div
-                className="absolute inset-0 border-l border-white/10"
-                style={{ backgroundColor: '#0f0f0f' }}
+      {/* Mobile Menu — rendered via Portal to document.body to escape the header's
+          stacking context. iOS Safari has known bugs where a position:fixed element
+          inside another position:fixed parent (plus framer-motion transforms) can
+          drop its background paint. A portal sidesteps this entirely. */}
+      {isMounted && createPortal(
+        <AnimatePresence>
+          {isMenuOpen && (
+            <>
+              {/* Overlay */}
+              <motion.div
+                className="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm md:hidden"
+                variants={overlayVariants}
+                initial="closed"
+                animate="open"
+                exit="closed"
+                onClick={closeMenu}
                 aria-hidden="true"
               />
-              <div className="relative flex flex-col h-full pt-24 pb-8 px-6">
-                <nav className="flex-1" aria-label="Mobile navigation">
-                  <ul className="space-y-2">
-                    {NAV_LINKS.map((link: NavLinkItem, index: number) => (
-                      <motion.li
-                        key={link.href}
-                        custom={index}
-                        variants={menuItemVariants}
-                        initial="closed"
-                        animate="open"
-                      >
-                        <MobileNavLink
-                          href={link.external ? link.href : link.rawHref ? link.href : `/${locale}${link.href === '/' ? '' : link.href}`}
-                          label={link.label}
-                          onClick={closeMenu}
-                          external={link.external}
-                        />
-                      </motion.li>
-                    ))}
-                  </ul>
-                </nav>
 
-                {/* Mobile Language Switcher */}
-                <motion.div
-                  custom={NAV_LINKS.length}
-                  variants={menuItemVariants}
-                  initial="closed"
-                  animate="open"
-                  className="py-4 border-t border-white/10"
-                >
-                  <div className="flex items-center justify-between px-4">
-                    <span className="text-white/60 text-sm">Language</span>
-                    <LanguageSwitcher openDirection="up" />
-                  </div>
-                </motion.div>
+              {/* Menu Panel */}
+              <motion.div
+                id="mobile-menu"
+                className="fixed top-0 right-0 bottom-0 w-full max-w-sm z-[70] md:hidden"
+                variants={menuVariants}
+                initial="closed"
+                animate="open"
+                exit="closed"
+                role="dialog"
+                aria-modal="true"
+                aria-label="Mobile navigation menu"
+              >
+                {/* Solid background layer — isolated from framer-motion transform */}
+                <div
+                  className="absolute inset-0 border-l border-white/10"
+                  style={{ backgroundColor: '#0f0f0f' }}
+                  aria-hidden="true"
+                />
+                <div className="relative flex flex-col h-full pt-24 pb-8 px-6">
+                  <nav className="flex-1" aria-label="Mobile navigation">
+                    <ul className="space-y-2">
+                      {NAV_LINKS.map((link: NavLinkItem, index: number) => (
+                        <motion.li
+                          key={link.href}
+                          custom={index}
+                          variants={menuItemVariants}
+                          initial="closed"
+                          animate="open"
+                        >
+                          <MobileNavLink
+                            href={link.external ? link.href : link.rawHref ? link.href : `/${locale}${link.href === '/' ? '' : link.href}`}
+                            label={link.label}
+                            onClick={closeMenu}
+                            external={link.external}
+                          />
+                        </motion.li>
+                      ))}
+                    </ul>
+                  </nav>
 
-                {/* Mobile CTA */}
-                <motion.div
-                  custom={NAV_LINKS.length + 1}
-                  variants={menuItemVariants}
-                  initial="closed"
-                  animate="open"
-                  className="pt-4"
-                >
-                  <Link
-                    href={`/${locale}/quotation`}
-                    onClick={closeMenu}
-                    className="block w-full text-center bg-brand-orange hover:bg-brand-orange-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark"
+                  {/* Mobile Language Switcher */}
+                  <motion.div
+                    custom={NAV_LINKS.length}
+                    variants={menuItemVariants}
+                    initial="closed"
+                    animate="open"
+                    className="py-4 border-t border-white/10"
                   >
-                    Get a Quote
-                  </Link>
-                </motion.div>
-              </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
+                    <div className="flex items-center justify-between px-4">
+                      <span className="text-white/60 text-sm">Language</span>
+                      <LanguageSwitcher openDirection="up" />
+                    </div>
+                  </motion.div>
+
+                  {/* Mobile CTA */}
+                  <motion.div
+                    custom={NAV_LINKS.length + 1}
+                    variants={menuItemVariants}
+                    initial="closed"
+                    animate="open"
+                    className="pt-4"
+                  >
+                    <Link
+                      href={`/${locale}/quotation`}
+                      onClick={closeMenu}
+                      className="block w-full text-center bg-brand-orange hover:bg-brand-orange-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark"
+                    >
+                      Get a Quote
+                    </Link>
+                  </motion.div>
+                </div>
+              </motion.div>
+            </>
+          )}
+        </AnimatePresence>,
+        document.body
+      )}
     </header>
   );
 };
