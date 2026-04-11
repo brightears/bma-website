@@ -97,10 +97,14 @@ bma_website/
 
 | Route | Page | Key Sections |
 |-------|------|--------------|
-| `/[locale]/` | Landing | Hero, Value Pillars, Products, SmartFeatures, ClientLogos, Calendly, About, Contact |
-| `/[locale]/how-it-works` | Process | 3-step process, Benefits, Demo CTA |
-| `/[locale]/licensing` | Education | License types, Streaming warning, Solutions |
+| `/[locale]/` | Landing | Hero, The Problem, Two Solutions, Industries grid, Final CTA |
+| `/[locale]/soundtrack-your-brand` | Product | SYB features, AI integrations, licensing, devices, trial, support, FAQ |
+| `/[locale]/beat-breeze` | Product | BB all-inclusive licensing, features, platforms, white-label, FAQ |
+| `/[locale]/how-it-works` | Process | 4-step methodology, stats, Benefits, CTA |
+| `/[locale]/licensing` | Education | 3 license types, Streaming warning, SYB vs BB comparison |
 | `/[locale]/quotation` | Form | Quotation request form |
+| `/[locale]/music-design` | Tool | Iframe → bmasia_music_brief Render app (separate repo at ~/bmasia_music_brief) |
+| `/[locale]/solutions/[industry]` | Industry | 12 pages (hotels, restaurants, retail, bars, spas, cafes, malls, gyms, medical, offices, showrooms, events) via IndustryPageTemplate + industryData translations |
 
 ## Internationalization (i18n)
 
@@ -150,15 +154,24 @@ export function MyComponent() {
 }
 ```
 
-### Status (Updated Jan 2, 2025)
+### Status (Updated Apr 11, 2026)
 - **Infrastructure**: Complete (next-intl v4.6.1)
-- **All 8 languages**: Complete (~200 strings each)
-- **Component integration**: Complete (all sections use translations)
+- **All 8 languages**: Complete (~900 leaf keys per locale file — grew from ~200 after Apr 10-11 translation wave)
+- **Component integration**: Complete — all pages use `useTranslations()`
+- **Page translation coverage**: Homepage, Licensing, How It Works, Quotation, Soundtrack Your Brand, Beat Breeze, Footer, all 12 solutions/industry pages via IndustryPageTemplate
 - **Form translations**: Complete (InquiryForm, QuotationForm)
 - **SEO metadata**: Translated titles, descriptions, OG tags per locale
-- **Sitemap**: Dynamic with hreflang alternates (32 URLs)
-- **Google Search Console**: Sitemap resubmitted, 32 pages discovered
-- **Mobile language switcher**: Fixed - dropdown opens upward on mobile
+- **Sitemap**: Dynamic with hreflang alternates (includes SYB + BB pages)
+- **Mobile language switcher**: Dropdown opens upward on mobile; rendered via Portal
+- **Translation pattern**: Each major page has its own top-level namespace (e.g. `homePage`, `licensingPage`, `soundtrackPage`, `beatBreezePage`, `howItWorksPage`, `quotationPage`, `industryData`, `industryTemplate`). Brand names (Soundtrack Your Brand, Beat Breeze, BMAsia), research author names, and technical acronyms always kept in English.
+
+### Translator workflow
+When adding new translated content:
+1. Add the English keys to `messages/en.json` under a namespace
+2. Export just the new block to `/tmp/translation_source_<name>.json`
+3. Launch 7 parallel Opus 4.6 subagents (one per locale: th, vi, ms, id, ko, ja, zh) with strict rules about preserving structure, protecting brand names, and handling concatenated sentence fragments (`title` + `titleHighlight` etc.)
+4. Validate structure parity via Python, then merge into `messages/{locale}.json` files
+5. Refactor the page component to use `useTranslations('namespace')`
 
 ## Forms
 
@@ -294,6 +307,32 @@ All hero images include descriptive alt text for accessibility:
 ### Header Behavior
 - **Not scrolled**: Subtle gradient (`from-brand-dark/70 to-transparent`) for logo visibility
 - **Scrolled**: Solid dark background with blur (`bg-brand-dark/95 backdrop-blur-md`)
+
+### Mobile Full-Screen Modals / Drawers (CRITICAL — iOS Safari safe pattern)
+**NEVER** render a `position: fixed` full-screen modal inside another `position: fixed` parent (e.g. inside the Header) if a child uses `transform` (e.g. framer-motion animations). iOS Safari has well-documented bugs where the background paint drops on the inner fixed element under this nesting. Symptom: panel renders transparent, page content bleeds through during the animation.
+
+**Correct pattern: React Portal to `document.body`**
+```tsx
+import { createPortal } from 'react-dom';
+import { useState, useEffect } from 'react';
+
+const [isMounted, setIsMounted] = useState(false);
+useEffect(() => { setIsMounted(true); }, []); // SSR-safe gate
+
+return (
+  <header>
+    {/* nav bar */}
+    {isMounted && createPortal(
+      <AnimatePresence>
+        {isOpen && <motion.div className="fixed ...">{/* modal */}</motion.div>}
+      </AnimatePresence>,
+      document.body
+    )}
+  </header>
+);
+```
+
+Applied to mobile nav menu in `components/layout/Header.tsx` (commit c903037, 11.04.2026). Same pattern required for any future drawer/modal/overlay in the site. Full details in the BMAsia-Emails memory file `reference_ios_safari_fixed_bugs.md`.
 - Transition: 300ms smooth animation between states
 
 ## Deployment Workflow
@@ -437,6 +476,14 @@ Voice input/output using cheaper alternatives (Fish Audio or ChatterboxTTS).
 - **LinkedIn**: https://www.linkedin.com/post-inspector/
 
 ## Recent Changes
+
+### Apr 10–11, 2026
+- **Massive i18n expansion — ~900 leaf keys × 8 locales** (~7,200 translated strings total). Added `homePage`, `licensingPage`, `howItWorksPage`, `quotationPage`, `soundtrackPage`, `beatBreezePage`, `industryData`, `industryTemplate` namespaces. Refactored all page components to use `useTranslations()`. Delivered via parallel Opus 4.6 translator subagents (7 per page, validated for structure parity before merge). Commits: `d24314b`, `e249ecf`, `7e67fde`, `e1ec23e`.
+- **New product pages**: `/[locale]/soundtrack-your-brand` and `/[locale]/beat-breeze`. Full editorial pages with hero, value props, features, integrations, licensing clarity, devices, trial, support, FAQ, final CTA.
+- **Homepage rewire**: "Explore Soundtrack" / "Explore Beat Breeze" buttons now link to the new product pages (commit `d5d8a53`). Added both to `sitemap.ts` with 0.95 priority.
+- **Full solutions/industry system**: `IndustryPageTemplate` now takes a typed `IndustryConfig` prop and reads all content from `industryData.<slug>` translations. `lib/industry-data.ts` simplified to a config map of non-translatable bits (images, counts). 12 pages (hotels, restaurants, retail, bars, spas, cafes, malls, gyms, medical, offices, showrooms, events).
+- **Mobile nav React Portal fix** (commit `c903037`): Root cause was `position:fixed` nav panel inside `position:fixed` header with framer-motion transforms — iOS Safari dropped the background paint. Fixed by rendering the panel via `createPortal(menu, document.body)` with an SSR-safe `isMounted` gate. See "Mobile Full-Screen Modals / Drawers" section above for the pattern.
+- **Footer i18n**: Privacy Policy, Cookie Policy, Terms of Service, "All rights reserved" translated across all 8 locales.
 
 ### Jan 24, 2025
 - **Added progressive profiling / lead capture**: Website chat now detects when AI collects customer email (e.g., "Got it, I've noted john@example.com") and sends lead notification to `bma_messenger_hub`. Patterns handle curly/straight apostrophes. Files: `ChatContext.tsx`, `app/api/chat-lead-capture/route.ts`.
