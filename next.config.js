@@ -9,6 +9,20 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
   },
   trailingSlash: true,
+  async redirects() {
+    return [
+      {
+        source: '/design',
+        destination: '/en/quotation?source=music-design',
+        permanent: true,
+      },
+      {
+        source: '/design/:path*',
+        destination: '/en/quotation?source=music-design',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
@@ -26,14 +40,6 @@ const nextConfig = {
   async rewrites() {
     return {
       beforeFiles: [
-        {
-          source: '/design',
-          destination: 'https://bmasia-music-brief-v2.onrender.com/',
-        },
-        {
-          source: '/design/:path*',
-          destination: 'https://bmasia-music-brief-v2.onrender.com/:path*',
-        },
         {
           source: '/listen/:path*',
           destination: 'https://bmasia-audio-sharing.onrender.com/listen/:path*',

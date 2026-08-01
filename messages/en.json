@@ -8,19 +8,33 @@
     "howItWorks": "How It Works",
     "licensing": "Licensing",
     "getQuote": "Get a Quote",
-    "musicDesign": "Music Design"
+    "musicDesign": "Music Design",
+    "beatBreeze": "Beat Breeze",
+    "soundtrack": "Soundtrack",
+    "solutions": "Solutions",
+    "notSure": "Not sure which solution fits?",
+    "talkToUs": "Talk to us",
+    "signIn": "Sign in",
+    "startFree": "Start free",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainNavigation": "Main navigation",
+    "mobileNavigation": "Mobile navigation menu",
+    "language": "Language",
+    "talkToBMAsia": "Talk to BMAsia",
+    "startTrial": "Start 14-day free trial"
   },
   "languageSwitcher": {
     "label": "Language",
     "selectLanguage": "Select language"
   },
   "hero": {
-    "tagline": "BMAsia",
-    "headline": "The Soundtrack",
-    "headlineHighlight": "That Moves Your Business",
-    "subheading": "Licensed music for hotels, restaurants, retail, and beyond — designed, managed, and always on brand.",
-    "ctaQuote": "Get a Quote →",
-    "ctaDemo": "Book Free Demo",
+    "tagline": "Music operations for modern venues",
+    "headline": "Set the mood.",
+    "headlineHighlight": "We'll run the music.",
+    "subheading": "Licensed music, intelligent recommendations, schedules and live control across every zone — backed by BMAsia.",
+    "ctaQuote": "Start 14-day free trial",
+    "ctaDemo": "Explore Beat Breeze",
     "imageAlt": "Luxurious dark hotel lobby bar with warm amber lighting"
   },
   "stats": {
@@ -291,7 +305,20 @@
     "privacy": "Privacy",
     "cookies": "Cookies",
     "terms": "Terms",
-    "allRightsReserved": "All rights reserved."
+    "allRightsReserved": "All rights reserved.",
+    "operationsDescription": "Music operations, licensing and support for hospitality, retail and multi-site businesses across Asia-Pacific.",
+    "products": "Products",
+    "howItWorks": "How it works",
+    "musicLicensing": "Music licensing",
+    "forBusiness": "For business",
+    "hotels": "Hotels & resorts",
+    "restaurants": "Restaurants & bars",
+    "retail": "Retail & fashion",
+    "fitness": "Fitness & wellness",
+    "startHere": "Start here",
+    "tryBeatBreeze": "Try Beat Breeze",
+    "trialProof": "14 days free · no card",
+    "talkToBMAsia": "Talk to BMAsia"
   },
   "howItWorks": {
     "hero": {
@@ -715,7 +742,7 @@
       "label": "All-Inclusive Curation",
       "title": "Beat",
       "titleHighlight": "Breeze",
-      "subtitle": "Fully licensed background music for every business — zero fees, zero paperwork, zero headaches.",
+      "subtitle": "A music operations platform for business — discover, schedule and control every zone from one place.",
       "ctaQuote": "Get a Quote",
       "ctaTrial": "Start a Free Trial"
     },
@@ -745,12 +772,12 @@
       "sectionLabel": "Capabilities",
       "sectionTitle": "Everything you need, nothing you don't.",
       "zeroLicensing": {
-        "title": "Zero Licensing Hassle",
-        "desc": "All three licenses — recording, publishing, and public performance — are bundled in. No MPC, no MRSS, no PRS, no ASCAP, no paperwork."
+        "title": "Business-Ready Music",
+        "desc": "A curated royalty-free catalogue prepared for business use. BMAsia confirms any local public-performance requirements during onboarding."
       },
       "curation": {
-        "title": "Bespoke Curation",
-        "desc": "Our music designers craft playlists matched to your brand and refreshed regularly. You approve the vibe, we handle the rest."
+        "title": "Music Concierge",
+        "desc": "Recommendations use zone context, time and energy — and explain why each choice fits before you apply it."
       },
       "offline": {
         "title": "Offline-Capable",
@@ -761,13 +788,36 @@
         "desc": "Different moods for different hours. Breakfast service, lunch rush, evening lounge — schedule it once and it runs itself."
       },
       "audioSignatures": {
-        "title": "Audio Signatures",
+        "title": "Messaging",
         "desc": "Insert branded messages, promotions, or announcements between tracks on a schedule."
       },
       "remoteMgmt": {
-        "title": "Remote Management",
-        "desc": "Manage your music from anywhere. Our team can assist remotely, troubleshoot, and update playlists without being on-site."
+        "title": "Live Zone Control",
+        "desc": "See player status, control playback and volume, and manage every zone from the dashboard or Remote app."
       }
+    },
+    "product": {
+      "openProduct": "Open Beat Breeze",
+      "liveVenue": "Live venue",
+      "zonesReady": "{count} zones ready",
+      "explainable": "Explainable",
+      "waysLabel": "One system, two ways to work",
+      "waysTitle": "Choose the music. Or work with the Concierge.",
+      "waysDescription": "Start hands-on, hand over repetitive work later, and review every recommendation before it changes the venue.",
+      "selfTitle": "You stay in control",
+      "selfText": "Browse the catalogue, preview music, build schedules and control playback in every zone.",
+      "conciergeTitle": "The Concierge works with you",
+      "conciergeText": "It learns the business context, explains its reasoning and can manage ongoing music work when enabled.",
+      "playersLabel": "Players",
+      "playersTitle": "Use the devices you already own.",
+      "mobile": "iPhone, iPad & Android",
+      "windows": "Windows player",
+      "web": "Web player",
+      "offline": "Offline playback",
+      "price": "From $12 / zone / month",
+      "finalTitle": "Your first zone is ready in minutes.",
+      "startFree": "Start free",
+      "talkToBMAsia": "Talk to BMAsia"
     },
     "licensing": {
       "sectionTitle": "Every license.",
@@ -882,6 +932,41 @@
     }
   },
   "homePage": {
+    "venuePulse": {
+      "ariaLabel": "Live preview of one venue with three music zones",
+      "label": "Venue pulse",
+      "venue": "Riverside House",
+      "ready": "3 zones ready",
+      "lobby": { "name": "Lobby", "playlist": "Jazz Piano · afternoon lounge", "status": "Playing" },
+      "restaurant": { "name": "Restaurant", "playlist": "Bossa Nova Lounge · dinner set", "status": "Playing" },
+      "rooftop": { "name": "Rooftop", "playlist": "Deep House · starts at 19:00", "status": "Ready" },
+      "conciergeLabel": "Concierge recommendation",
+      "conciergeText": "Bring the rooftop up gently before arrivals. Keep the lobby calm while check-in is busiest.",
+      "reason": "Based on zone, time, energy and today's schedule"
+    },
+    "beatBreezeLead": {
+      "label": "Beat Breeze by BMAsia",
+      "title": "One venue platform. Every zone in flow.",
+      "description": "Choose the music yourself or let the Concierge shape the day. Schedule it, control every player and keep the experience moving from one place.",
+      "cta": "Explore the platform",
+      "proof1": "14 days free",
+      "proof2": "No card required",
+      "proof3": "No dedicated hardware",
+      "workflowLabel": "From sign-up to sound",
+      "workflowTitle": "Three steps. Then it runs itself.",
+      "workflowDescription": "Start simply. The deeper scheduling, creation and automation tools are there when the venue needs them.",
+      "step1Title": "Tell us about the business",
+      "step1Text": "Describe the concept, guests and atmosphere in plain language.",
+      "step2Title": "Connect a player",
+      "step2Text": "Use a browser or install the app on a device you already own.",
+      "step3Title": "Set every zone in motion",
+      "step3Text": "Choose the music yourself or let the Concierge build the starting plan.",
+      "finalDescription": "Try the full music experience in one zone for 14 days. No card, no dedicated box and no long setup."
+    },
+    "alternative": {
+      "title": "Need music your guests know by name?",
+      "description": "Soundtrack Your Brand gives businesses access to familiar artists and major-label repertoire. BMAsia can supply and manage it when recognizable music is the priority."
+    },
     "theProblem": {
       "title": "Your Guests Can",
       "titleHighlight": "Hear the Difference",
@@ -909,9 +994,9 @@
         "badge": "All-Inclusive Curation",
         "title": "Beat Breeze",
         "tagline": "Fully licensed background music — zero hassle.",
-        "feature1": "30,000+ royalty-free tracks — ALL 3 licenses included",
+        "feature1": "A growing royalty-free catalogue — licensed for business",
         "feature2": "No collection society fees, no compliance paperwork",
-        "feature3": "Bespoke curation by our music designers",
+        "feature3": "Music Concierge recommendations that explain why",
         "feature4": "Offline-capable, multi-zone scheduling",
         "cta": "Explore Beat Breeze"
       },
@@ -1817,7 +1902,7 @@
         "b2": "Scheduling that follows event timelines precisely",
         "b3": "Audio messaging for announcements and program flow",
         "b4": "Temporary or permanent installation options",
-        "b5": "Our Music Design Assistant helps plan events in minutes"
+        "b5": "Our music team turns your event brief into a practical music plan"
       }
     }
   },

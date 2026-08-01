@@ -8,19 +8,33 @@
     "howItWorks": "Cara Ia Berfungsi",
     "licensing": "Pelesenan",
     "getQuote": "Dapatkan Sebut Harga",
-    "musicDesign": "Reka Bentuk Muzik"
+    "musicDesign": "Reka Bentuk Muzik",
+    "beatBreeze": "Beat Breeze",
+    "soundtrack": "Soundtrack",
+    "solutions": "Penyelesaian",
+    "notSure": "Tidak pasti penyelesaian yang sesuai?",
+    "talkToUs": "Bercakap dengan kami",
+    "signIn": "Log masuk",
+    "startFree": "Mula percuma",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu",
+    "mainNavigation": "Navigasi utama",
+    "mobileNavigation": "Menu navigasi mudah alih",
+    "language": "Bahasa",
+    "talkToBMAsia": "Bercakap dengan BMAsia",
+    "startTrial": "Mulakan percubaan percuma 14 hari"
   },
   "languageSwitcher": {
     "label": "Bahasa",
     "selectLanguage": "Pilih bahasa"
   },
   "hero": {
-    "tagline": "Di Mana Muzik Penting",
-    "headline": "Cipta",
-    "headlineHighlight": "Suasana Sempurna",
-    "subheading": "Tingkatkan suasana perniagaan anda dengan muzik latar belakang tersuai yang mempengaruhi tingkah laku pelanggan dan mencipta detik yang tidak dapat dilupakan.",
-    "ctaQuote": "Dapatkan Sebut Harga",
-    "ctaDemo": "Tempah Demo Percuma",
+    "tagline": "Operasi muzik untuk venue moden",
+    "headline": "Tetapkan suasana.",
+    "headlineHighlight": "Kami uruskan muzik.",
+    "subheading": "Muzik berlesen, cadangan pintar, jadual dan kawalan langsung untuk setiap zon — disokong BMAsia.",
+    "ctaQuote": "Cuba percuma 14 hari",
+    "ctaDemo": "Terokai Beat Breeze",
     "imageAlt": "Lobi hotel mewah dengan pencahayaan hangat"
   },
   "stats": {
@@ -291,7 +305,20 @@
     "privacy": "Privasi",
     "cookies": "Kuki",
     "terms": "Syarat",
-    "allRightsReserved": "Hak cipta terpelihara."
+    "allRightsReserved": "Hak cipta terpelihara.",
+    "operationsDescription": "Operasi muzik, pelesenan dan sokongan untuk hospitaliti, runcit dan perniagaan berbilang lokasi di seluruh Asia Pasifik.",
+    "products": "Produk",
+    "howItWorks": "Cara ia berfungsi",
+    "musicLicensing": "Pelesenan muzik",
+    "forBusiness": "Untuk perniagaan",
+    "hotels": "Hotel & resort",
+    "restaurants": "Restoran & bar",
+    "retail": "Runcit & fesyen",
+    "fitness": "Kecergasan & kesejahteraan",
+    "startHere": "Mulakan di sini",
+    "tryBeatBreeze": "Cuba Beat Breeze",
+    "trialProof": "14 hari percuma · tanpa kad",
+    "talkToBMAsia": "Bercakap dengan BMAsia"
   },
   "howItWorks": {
     "hero": {
@@ -715,7 +742,7 @@
       "label": "Kurasi Serba Lengkap",
       "title": "Beat",
       "titleHighlight": "Breeze",
-      "subtitle": "Muzik latar belakang berlesen sepenuhnya untuk setiap perniagaan — tanpa yuran, tanpa kerenah dokumen, tanpa pening kepala.",
+      "subtitle": "Platform operasi muzik untuk perniagaan — teroka, jadual dan kawal setiap zon dari satu tempat.",
       "ctaQuote": "Dapatkan Sebut Harga",
       "ctaTrial": "Mula Percubaan Percuma"
     },
@@ -745,12 +772,12 @@
       "sectionLabel": "Keupayaan",
       "sectionTitle": "Segala yang anda perlukan, tiada yang tidak perlu.",
       "zeroLicensing": {
-        "title": "Tanpa Kerenah Pelesenan",
-        "desc": "Ketiga-tiga lesen — rakaman, penerbitan, dan persembahan awam — disatukan. Tiada MPC, tiada MRSS, tiada PRS, tiada ASCAP, tiada dokumen."
+        "title": "Muzik Sedia Untuk Perniagaan",
+        "desc": "Katalog muzik bebas royalti yang dikurasi untuk kegunaan perniagaan. BMAsia mengesahkan keperluan persembahan awam tempatan semasa proses persediaan."
       },
       "curation": {
-        "title": "Kurasi Tersuai",
-        "desc": "Pereka muzik kami mencipta senarai main yang sepadan dengan jenama anda dan disegarkan secara berkala. Anda luluskan suasananya, kami uruskan yang selebihnya."
+        "title": "Music Concierge",
+        "desc": "Cadangan menggunakan konteks zon, masa dan tenaga — serta menerangkan sebab setiap pilihan sesuai sebelum anda menerapkannya."
       },
       "offline": {
         "title": "Mampu Luar Talian",
@@ -761,13 +788,36 @@
         "desc": "Suasana berbeza untuk waktu yang berbeza. Perkhidmatan sarapan, kesibukan tengah hari, lounge petang — jadualkan sekali dan ia berjalan dengan sendirinya."
       },
       "audioSignatures": {
-        "title": "Tandatangan Audio",
+        "title": "Mesej & Pengumuman",
         "desc": "Selitkan mesej berjenama, promosi, atau pengumuman antara lagu mengikut jadual."
       },
       "remoteMgmt": {
-        "title": "Pengurusan Jarak Jauh",
-        "desc": "Uruskan muzik anda dari mana-mana sahaja. Pasukan kami boleh membantu dari jauh, menyelesaikan masalah, dan mengemas kini senarai main tanpa perlu berada di lokasi."
+        "title": "Kawalan Zon Langsung",
+        "desc": "Lihat status pemain, kawal main balik dan volum, serta urus setiap zon melalui papan pemuka atau aplikasi Remote."
       }
+    },
+    "product": {
+      "openProduct": "Buka Beat Breeze",
+      "liveVenue": "Lokasi langsung",
+      "zonesReady": "{count} zon sedia",
+      "explainable": "Boleh dijelaskan",
+      "waysLabel": "Satu sistem, dua cara bekerja",
+      "waysTitle": "Pilih muzik sendiri atau bekerjasama dengan Concierge.",
+      "waysDescription": "Mulakan secara kendiri, serahkan kerja berulang kemudian, dan semak setiap cadangan sebelum ia mengubah suasana lokasi.",
+      "selfTitle": "Anda kekal mengawal",
+      "selfText": "Teroka katalog, dengar pratonton, bina jadual dan kawal main balik di setiap zon.",
+      "conciergeTitle": "Concierge bekerja bersama anda",
+      "conciergeText": "Ia mempelajari konteks perniagaan, menerangkan sebabnya dan boleh mengurus kerja muzik berterusan apabila diaktifkan.",
+      "playersLabel": "Pemain",
+      "playersTitle": "Gunakan peranti yang anda sudah miliki.",
+      "mobile": "iPhone, iPad & Android",
+      "windows": "Pemain Windows",
+      "web": "Pemain web",
+      "offline": "Main balik luar talian",
+      "price": "Bermula $12 / zon / bulan",
+      "finalTitle": "Zon pertama anda sedia dalam beberapa minit.",
+      "startFree": "Mula percuma",
+      "talkToBMAsia": "Bercakap dengan BMAsia"
     },
     "licensing": {
       "sectionTitle": "Setiap lesen.",
@@ -882,6 +932,41 @@
     }
   },
   "homePage": {
+    "venuePulse": {
+      "ariaLabel": "Pratonton langsung satu venue dengan tiga zon muzik",
+      "label": "Nadi venue",
+      "venue": "Riverside House",
+      "ready": "3 zon sedia",
+      "lobby": { "name": "Lobi", "playlist": "Jazz Piano · lounge petang", "status": "Sedang dimainkan" },
+      "restaurant": { "name": "Restoran", "playlist": "Bossa Nova Lounge · makan malam", "status": "Sedang dimainkan" },
+      "rooftop": { "name": "Bumbung", "playlist": "Deep House · bermula 19:00", "status": "Sedia" },
+      "conciergeLabel": "Cadangan Concierge",
+      "conciergeText": "Naikkan tenaga di bumbung secara perlahan sebelum tetamu tiba. Kekalkan lobi tenang ketika daftar masuk paling sibuk.",
+      "reason": "Berdasarkan zon, masa, tenaga dan jadual hari ini"
+    },
+    "beatBreezeLead": {
+      "label": "Beat Breeze oleh BMAsia",
+      "title": "Satu platform venue. Setiap zon mengalir.",
+      "description": "Pilih muzik sendiri atau biarkan Concierge membentuk hari anda. Jadualkan dan kawal setiap pemain dari satu tempat.",
+      "cta": "Terokai platform",
+      "proof1": "Percuma 14 hari",
+      "proof2": "Tiada kad diperlukan",
+      "proof3": "Tiada perkakasan khas",
+      "workflowLabel": "Daripada daftar kepada bunyi",
+      "workflowTitle": "Tiga langkah. Kemudian ia berjalan sendiri.",
+      "workflowDescription": "Mulakan dengan mudah. Alat jadual, penciptaan dan automasi tersedia apabila diperlukan.",
+      "step1Title": "Ceritakan tentang perniagaan",
+      "step1Text": "Terangkan konsep, tetamu dan suasana dengan bahasa mudah.",
+      "step2Title": "Sambungkan pemain",
+      "step2Text": "Gunakan pelayar atau pasang aplikasi pada peranti sedia ada.",
+      "step3Title": "Gerakkan setiap zon",
+      "step3Text": "Pilih muzik sendiri atau biarkan Concierge membina pelan awal.",
+      "finalDescription": "Cuba pengalaman muzik penuh dalam satu zon selama 14 hari. Tiada kad atau kotak khas."
+    },
+    "alternative": {
+      "title": "Perlukan muzik yang tetamu kenal namanya?",
+      "description": "Soundtrack Your Brand menyediakan artis terkenal dan katalog label utama. BMAsia boleh membekal dan menguruskannya apabila muzik dikenali menjadi keutamaan."
+    },
     "theProblem": {
       "title": "Tetamu Anda Boleh",
       "titleHighlight": "Mendengar Perbezaannya",
@@ -909,9 +994,9 @@
         "badge": "Kurasi Serba Lengkap",
         "title": "Beat Breeze",
         "tagline": "Muzik latar berlesen sepenuhnya — tanpa sebarang kerumitan.",
-        "feature1": "30,000+ lagu bebas royalti — KESEMUA 3 lesen disertakan",
+        "feature1": "Katalog bebas royalti yang sentiasa berkembang — berlesen untuk perniagaan",
         "feature2": "Tiada yuran badan kutipan, tiada dokumen pematuhan",
-        "feature3": "Kurasi tersuai oleh pereka muzik kami",
+        "feature3": "Cadangan Music Concierge dengan alasan yang jelas",
         "feature4": "Mampu dimainkan luar talian, penjadualan berbilang zon",
         "cta": "Terokai Beat Breeze"
       },
@@ -1817,7 +1902,7 @@
         "b2": "Penjadualan yang mengikut garis masa acara dengan tepat",
         "b3": "Pemesejan audio untuk pengumuman dan aliran program",
         "b4": "Pilihan pemasangan sementara atau kekal",
-        "b5": "Pembantu Reka Bentuk Muzik kami membantu merancang acara dalam beberapa minit"
+        "b5": "Pasukan muzik kami menukar ringkasan acara anda menjadi pelan muzik yang praktikal"
       }
     }
   },

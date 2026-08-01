@@ -8,19 +8,33 @@
     "howItWorks": "이용 방법",
     "licensing": "라이선스",
     "getQuote": "견적 받기",
-    "musicDesign": "음악 디자인"
+    "musicDesign": "음악 디자인",
+    "beatBreeze": "Beat Breeze",
+    "soundtrack": "Soundtrack",
+    "solutions": "솔루션",
+    "notSure": "어떤 솔루션이 맞는지 모르시겠나요?",
+    "talkToUs": "상담하기",
+    "signIn": "로그인",
+    "startFree": "무료로 시작",
+    "openMenu": "메뉴 열기",
+    "closeMenu": "메뉴 닫기",
+    "mainNavigation": "주요 메뉴",
+    "mobileNavigation": "모바일 메뉴",
+    "language": "언어",
+    "talkToBMAsia": "BMAsia와 상담하기",
+    "startTrial": "14일 무료 체험 시작"
   },
   "languageSwitcher": {
     "label": "언어",
     "selectLanguage": "언어 선택"
   },
   "hero": {
-    "tagline": "음악이 중요한 곳",
-    "headline": "완벽한",
-    "headlineHighlight": "분위기를 만드세요",
-    "subheading": "고객 행동에 영향을 미치고 기억에 남는 순간을 만드는 맞춤형 배경음악으로 비즈니스 분위기를 높이세요.",
-    "ctaQuote": "견적 받기",
-    "ctaDemo": "무료 데모 예약",
+    "tagline": "현대적인 공간을 위한 음악 운영",
+    "headline": "분위기를 정하세요.",
+    "headlineHighlight": "음악 운영은 저희가 맡습니다.",
+    "subheading": "라이선스 음악, 지능형 추천, 스케줄과 실시간 제어를 모든 존에서 — BMAsia가 지원합니다.",
+    "ctaQuote": "14일 무료 체험",
+    "ctaDemo": "Beat Breeze 살펴보기",
     "imageAlt": "따뜻한 조명의 우아한 호텔 라운지"
   },
   "stats": {
@@ -291,7 +305,20 @@
     "privacy": "개인정보",
     "cookies": "쿠키",
     "terms": "약관",
-    "allRightsReserved": "모든 권리 보유."
+    "allRightsReserved": "모든 권리 보유.",
+    "operationsDescription": "아시아 태평양 지역의 호텔, 리테일 및 다지점 비즈니스를 위한 음악 운영, 라이선스 및 지원.",
+    "products": "제품",
+    "howItWorks": "이용 방법",
+    "musicLicensing": "음악 라이선스",
+    "forBusiness": "비즈니스 유형",
+    "hotels": "호텔 & 리조트",
+    "restaurants": "레스토랑 & 바",
+    "retail": "리테일 & 패션",
+    "fitness": "피트니스 & 웰니스",
+    "startHere": "여기서 시작",
+    "tryBeatBreeze": "Beat Breeze 체험하기",
+    "trialProof": "14일 무료 · 카드 불필요",
+    "talkToBMAsia": "BMAsia와 상담하기"
   },
   "howItWorks": {
     "hero": {
@@ -715,7 +742,7 @@
       "label": "올인원 큐레이션",
       "title": "Beat",
       "titleHighlight": "Breeze",
-      "subtitle": "모든 비즈니스를 위한 라이선스 완비형 배경 음악. 수수료 제로, 서류 작업 제로, 골칫거리 제로.",
+      "subtitle": "비즈니스를 위한 음악 운영 플랫폼으로, 한곳에서 모든 존을 탐색하고 예약하며 제어할 수 있습니다.",
       "ctaQuote": "견적 요청하기",
       "ctaTrial": "무료 체험 시작하기"
     },
@@ -745,12 +772,12 @@
       "sectionLabel": "주요 기능",
       "sectionTitle": "필요한 모든 것, 그리고 불필요한 것은 없음.",
       "zeroLicensing": {
-        "title": "라이선싱 번거로움 제로",
-        "desc": "녹음, 출판, 공연권 등 세 가지 라이선스가 모두 번들로 포함되어 있습니다. MPC도, MRSS도, PRS도, ASCAP도, 서류 작업도 필요 없습니다."
+        "title": "비즈니스용 음악",
+        "desc": "비즈니스 사용을 위해 큐레이션된 로열티 프리 카탈로그입니다. BMAsia가 온보딩 과정에서 현지 공연권 요건을 확인합니다."
       },
       "curation": {
-        "title": "맞춤형 큐레이션",
-        "desc": "저희 뮤직 디자이너가 귀하의 브랜드에 맞춘 플레이리스트를 설계하고 정기적으로 업데이트합니다. 분위기만 승인해 주시면 나머지는 저희가 처리합니다."
+        "title": "Music Concierge",
+        "desc": "존의 맥락, 시간, 에너지를 바탕으로 추천하고 적용 전에 각 선택이 적합한 이유를 설명합니다."
       },
       "offline": {
         "title": "오프라인 지원",
@@ -761,13 +788,36 @@
         "desc": "시간대별로 다른 무드를 연출합니다. 조식 서비스, 점심 러시, 저녁 라운지까지 한 번만 스케줄을 설정하면 자동으로 운영됩니다."
       },
       "audioSignatures": {
-        "title": "오디오 시그니처",
+        "title": "메시지 및 안내 방송",
         "desc": "브랜드 메시지, 프로모션, 안내 방송을 트랙 사이에 스케줄에 맞춰 삽입할 수 있습니다."
       },
       "remoteMgmt": {
-        "title": "원격 관리",
-        "desc": "어디서든 음악을 관리하실 수 있습니다. 저희 팀이 원격으로 지원하고, 문제를 해결하고, 현장에 방문하지 않고도 플레이리스트를 업데이트할 수 있습니다."
+        "title": "실시간 존 제어",
+        "desc": "플레이어 상태, 재생 및 볼륨을 확인하고 대시보드나 Remote 앱에서 모든 존을 관리할 수 있습니다."
       }
+    },
+    "product": {
+      "openProduct": "Beat Breeze 열기",
+      "liveVenue": "운영 중인 장소",
+      "zonesReady": "{count}개 존 준비 완료",
+      "explainable": "설명 가능한 추천",
+      "waysLabel": "하나의 시스템, 두 가지 운영 방식",
+      "waysTitle": "직접 음악을 선택하거나 Concierge와 함께 운영하세요.",
+      "waysDescription": "직접 시작한 뒤 반복 업무를 맡기고, 장소에 적용되기 전에 모든 추천을 검토할 수 있습니다.",
+      "selfTitle": "항상 직접 제어",
+      "selfText": "카탈로그 탐색, 미리 듣기, 스케줄 구성과 모든 존의 재생 제어가 가능합니다.",
+      "conciergeTitle": "Concierge가 함께 일합니다",
+      "conciergeText": "비즈니스 맥락을 학습하고 이유를 설명하며, 활성화하면 지속적인 음악 운영을 관리할 수 있습니다.",
+      "playersLabel": "플레이어",
+      "playersTitle": "이미 보유한 기기를 사용하세요.",
+      "mobile": "iPhone, iPad 및 Android",
+      "windows": "Windows 플레이어",
+      "web": "웹 플레이어",
+      "offline": "오프라인 재생",
+      "price": "존당 월 $12부터",
+      "finalTitle": "첫 번째 존을 몇 분 안에 준비하세요.",
+      "startFree": "무료로 시작",
+      "talkToBMAsia": "BMAsia와 상담"
     },
     "licensing": {
       "sectionTitle": "모든 라이선스.",
@@ -882,6 +932,41 @@
     }
   },
   "homePage": {
+    "venuePulse": {
+      "ariaLabel": "세 개 음악 존이 있는 한 장소의 실시간 미리보기",
+      "label": "베뉴 펄스",
+      "venue": "Riverside House",
+      "ready": "3개 존 준비",
+      "lobby": { "name": "로비", "playlist": "Jazz Piano · 오후 라운지", "status": "재생 중" },
+      "restaurant": { "name": "레스토랑", "playlist": "Bossa Nova Lounge · 디너", "status": "재생 중" },
+      "rooftop": { "name": "루프톱", "playlist": "Deep House · 19:00 시작", "status": "준비" },
+      "conciergeLabel": "Concierge 추천",
+      "conciergeText": "손님 도착 전 루프톱의 에너지를 부드럽게 높이고, 체크인이 붐빌 때는 로비를 차분하게 유지하세요.",
+      "reason": "존, 시간, 에너지, 오늘의 스케줄을 기반으로 추천"
+    },
+    "beatBreezeLead": {
+      "label": "BMAsia의 Beat Breeze",
+      "title": "하나의 베뉴 플랫폼. 모든 존이 자연스럽게.",
+      "description": "직접 음악을 고르거나 Concierge가 하루를 설계하도록 하세요. 모든 플레이어를 한곳에서 스케줄하고 제어합니다.",
+      "cta": "플랫폼 살펴보기",
+      "proof1": "14일 무료",
+      "proof2": "카드 불필요",
+      "proof3": "전용 하드웨어 불필요",
+      "workflowLabel": "가입부터 재생까지",
+      "workflowTitle": "세 단계면 운영이 시작됩니다.",
+      "workflowDescription": "간단하게 시작하고 필요할 때 스케줄, 제작, 자동화 도구를 사용하세요.",
+      "step1Title": "비즈니스를 알려주세요",
+      "step1Text": "콘셉트, 고객, 원하는 분위기를 자연어로 설명하세요.",
+      "step2Title": "플레이어 연결",
+      "step2Text": "브라우저를 사용하거나 기존 기기에 앱을 설치하세요.",
+      "step3Title": "모든 존을 실행",
+      "step3Text": "직접 음악을 고르거나 Concierge가 첫 플랜을 만들게 하세요.",
+      "finalDescription": "한 개 존에서 14일간 전체 음악 경험을 체험하세요. 카드나 전용 장비가 필요 없습니다."
+    },
+    "alternative": {
+      "title": "고객이 이름을 아는 음악이 필요하신가요?",
+      "description": "Soundtrack Your Brand는 유명 아티스트와 메이저 레이블 레퍼토리를 제공합니다. 대중적인 음악이 우선이라면 BMAsia가 공급하고 관리합니다."
+    },
     "theProblem": {
       "title": "고객은 그 차이를",
       "titleHighlight": "분명히 느낍니다",
@@ -909,9 +994,9 @@
         "badge": "올인클루시브 큐레이션",
         "title": "Beat Breeze",
         "tagline": "완전한 라이선스를 갖춘 배경음악 — 번거로움이 전혀 없습니다.",
-        "feature1": "3만 곡 이상의 로열티 프리 트랙 — 3가지 라이선스 모두 포함",
+        "feature1": "계속 성장하는 로열티 프리 카탈로그 — 비즈니스용 라이선스 포함",
         "feature2": "저작권 관리단체 수수료 및 준수 서류 작업이 없습니다",
-        "feature3": "전문 음악 디자이너의 맞춤 큐레이션",
+        "feature3": "이유를 설명하는 Music Concierge 추천",
         "feature4": "오프라인 사용 가능, 다중 구역 스케줄링",
         "cta": "Beat Breeze 살펴보기"
       },
@@ -1817,7 +1902,7 @@
         "b2": "이벤트 타임라인을 정확하게 따르는 스케줄링",
         "b3": "공지 및 프로그램 흐름을 위한 오디오 메시징",
         "b4": "임시 또는 영구 설치 옵션",
-        "b5": "Music Design Assistant로 몇 분 만에 이벤트 계획 수립"
+        "b5": "음악 팀이 이벤트 브리프를 실용적인 음악 계획으로 완성합니다"
       }
     }
   },

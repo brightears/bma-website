@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Globe, ChevronDown } from 'lucide-react';
@@ -15,6 +15,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
   openDirection = 'down',
 }) => {
   const locale = useLocale() as Locale;
+  const t = useTranslations('navigation');
   const router = useRouter();
   const pathname = usePathname();
 
@@ -65,7 +66,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
         className="flex items-center gap-2 px-3 py-2 text-white/90 hover:text-white rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark"
         aria-expanded={isOpen}
         aria-haspopup="listbox"
-        aria-label="Select language"
+        aria-label={`${localeNames[locale]} — ${t('language')}`}
       >
         <Globe className="w-4 h-4" />
         <span className="hidden sm:inline text-sm font-medium">
@@ -88,7 +89,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
             } w-48 border border-white/10 rounded-lg shadow-xl overflow-hidden z-50`}
             style={{ backgroundColor: '#0f0f0f' }}
             role="listbox"
-            aria-label="Available languages"
+            aria-label={t('language')}
           >
             {locales.map((loc) => (
               <button

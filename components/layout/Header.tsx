@@ -5,8 +5,8 @@ import { createPortal } from 'react-dom';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useLocale } from 'next-intl';
-import { NAV_LINKS, SOLUTIONS_CATEGORIES } from '@/lib/constants';
+import { useLocale, useTranslations } from 'next-intl';
+import { SOLUTIONS_CATEGORIES } from '@/lib/constants';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
 /**
@@ -79,6 +79,7 @@ const overlayVariants = {
 
 export const Header: React.FC = () => {
   const locale = useLocale();
+  const t = useTranslations('navigation');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
@@ -134,21 +135,30 @@ export const Header: React.FC = () => {
     setIsMenuOpen(false);
   }, []);
 
+  const mobileNavLinks: NavLinkItem[] = [
+    { href: '/', label: t('home') },
+    { href: '/beat-breeze', label: t('beatBreeze') },
+    { href: '/soundtrack-your-brand', label: t('soundtrack') },
+    { href: '/how-it-works', label: t('howItWorks') },
+    { href: '/licensing', label: t('licensing') },
+    { href: '/quotation', label: t('getQuote') },
+  ];
+
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed left-0 right-0 top-0 z-50 border-b transition-all duration-300 ${
         isScrolled
-          ? 'bg-brand-dark/95 backdrop-blur-md shadow-lg'
-          : 'bg-gradient-to-b from-brand-dark/70 to-transparent'
+          ? 'border-white/10 bg-[#070d17]/92 shadow-[0_16px_50px_rgba(0,0,0,0.25)] backdrop-blur-xl'
+          : 'border-transparent bg-gradient-to-b from-[#070d17]/90 to-transparent'
       }`}
       role="banner"
     >
       <nav
-        className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16"
+        className="mx-auto max-w-[1440px] px-5 md:px-8 lg:px-16"
         role="navigation"
-        aria-label="Main navigation"
+        aria-label={t('mainNavigation')}
       >
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex h-[72px] items-center justify-between md:h-20">
           {/* Logo */}
           <Link
             href={`/${locale}`}
@@ -171,15 +181,16 @@ export const Header: React.FC = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
-            <NavLink href={`/${locale}`} label="Home" />
+          <div className="hidden items-center gap-1 md:flex">
+            <NavLink href={`/${locale}/beat-breeze`} label={t('beatBreeze')} />
+            <NavLink href={`/${locale}/soundtrack-your-brand`} label={t('soundtrack')} />
             {/* Solutions Mega Dropdown */}
             <div className="relative group">
-              <span className="px-3 py-2 text-sm font-medium text-white/90 hover:text-white transition-colors flex items-center gap-1 cursor-pointer rounded-lg hover:bg-white/5">
-                Solutions
+              <button type="button" className="flex cursor-pointer items-center gap-1 rounded-full px-3 py-2 text-sm font-medium text-white/65 transition-colors hover:bg-white/5 hover:text-white focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark">
+                {t('solutions')}
                 <svg className="w-3 h-3 opacity-50" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2"><path d="m3 5 3 3 3-3"/></svg>
-              </span>
-              <div className="absolute top-full left-0 mt-1 bg-brand-dark/95 backdrop-blur-md border border-white/10 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 p-6 min-w-[480px]">
+              </button>
+              <div className="invisible absolute left-0 top-full z-50 mt-2 min-w-[520px] rounded-2xl border border-white/10 bg-[#09111d]/98 p-6 opacity-0 shadow-2xl backdrop-blur-xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
                 <div className="grid grid-cols-3 gap-6">
                   {SOLUTIONS_CATEGORIES.map((cat) => (
                     <div key={cat.category}>
@@ -197,28 +208,27 @@ export const Header: React.FC = () => {
                   ))}
                 </div>
                 <div className="mt-6 pt-4 border-t border-white/10">
-                  <p className="text-xs text-white/40 mb-2">Not sure which solution fits?</p>
+                  <p className="text-xs text-white/40 mb-2">{t('notSure')}</p>
                   <Link href={`/${locale}/quotation`} className="text-sm text-brand-orange hover:text-brand-orange-light transition-colors font-medium">
-                    Talk to us →
+                    {t('talkToUs')} →
                   </Link>
                 </div>
               </div>
             </div>
-            {NAV_LINKS.filter(l => l.label !== 'Home' && l.label !== 'Get a Quote').map((link: NavLinkItem) => (
-              <NavLink
-                key={link.href}
-                href={link.external ? link.href : link.rawHref ? link.href : `/${locale}${link.href === '/' ? '' : link.href}`}
-                label={link.label}
-                external={link.external}
-              />
-            ))}
+            <NavLink href={`/${locale}/how-it-works`} label={t('howItWorks')} />
             <LanguageSwitcher />
-            <Link
-              href={`/${locale}/quotation`}
-              className="ml-2 bg-brand-orange hover:bg-brand-orange-dark text-black px-5 py-2 rounded-lg text-sm font-semibold transition-colors shadow-sm shadow-brand-orange/20"
+            <a
+              href="https://beatbreeze.io/sign-in"
+              className="ml-1 rounded-full px-3 py-2 text-sm font-medium text-white/65 transition-colors hover:text-white"
             >
-              Get a Quote
-            </Link>
+              {t('signIn')}
+            </a>
+            <a
+              href="https://beatbreeze.io/sign-up"
+              className="ml-1 rounded-full bg-brand-orange px-5 py-2.5 text-sm font-semibold text-[#101010] shadow-sm shadow-brand-orange/20 transition-colors hover:bg-[#ffb64a]"
+            >
+              {t('startFree')}
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -228,11 +238,11 @@ export const Header: React.FC = () => {
             onClick={toggleMenu}
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
-            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-label={isMenuOpen ? t('closeMenu') : t('openMenu')}
             whileTap={{ scale: 0.95 }}
           >
             <span className="sr-only">
-              {isMenuOpen ? 'Close menu' : 'Open menu'}
+              {isMenuOpen ? t('closeMenu') : t('openMenu')}
             </span>
             <HamburgerIcon isOpen={isMenuOpen} />
           </motion.button>
@@ -268,7 +278,7 @@ export const Header: React.FC = () => {
                 exit="closed"
                 role="dialog"
                 aria-modal="true"
-                aria-label="Mobile navigation menu"
+                aria-label={t('mobileNavigation')}
               >
                 {/* Solid background layer — isolated from framer-motion transform */}
                 <div
@@ -277,9 +287,9 @@ export const Header: React.FC = () => {
                   aria-hidden="true"
                 />
                 <div className="relative flex flex-col h-full pt-24 pb-8 px-6">
-                  <nav className="flex-1" aria-label="Mobile navigation">
+                  <nav className="flex-1" aria-label={t('mobileNavigation')}>
                     <ul className="space-y-2">
-                      {NAV_LINKS.map((link: NavLinkItem, index: number) => (
+                      {mobileNavLinks.map((link: NavLinkItem, index: number) => (
                         <motion.li
                           key={link.href}
                           custom={index}
@@ -300,21 +310,21 @@ export const Header: React.FC = () => {
 
                   {/* Mobile Language Switcher */}
                   <motion.div
-                    custom={NAV_LINKS.length}
+                    custom={mobileNavLinks.length}
                     variants={menuItemVariants}
                     initial="closed"
                     animate="open"
                     className="py-4 border-t border-white/10"
                   >
                     <div className="flex items-center justify-between px-4">
-                      <span className="text-white/60 text-sm">Language</span>
+                      <span className="text-white/60 text-sm">{t('language')}</span>
                       <LanguageSwitcher openDirection="up" />
                     </div>
                   </motion.div>
 
                   {/* Mobile CTA */}
                   <motion.div
-                    custom={NAV_LINKS.length + 1}
+                    custom={mobileNavLinks.length + 1}
                     variants={menuItemVariants}
                     initial="closed"
                     animate="open"
@@ -323,10 +333,17 @@ export const Header: React.FC = () => {
                     <Link
                       href={`/${locale}/quotation`}
                       onClick={closeMenu}
-                      className="block w-full text-center bg-brand-orange hover:bg-brand-orange-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark"
-                    >
-                      Get a Quote
+                    className="mb-3 block w-full rounded-full border border-white/15 px-6 py-3 text-center font-semibold text-white transition-colors hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark"
+                  >
+                      {t('talkToBMAsia')}
                     </Link>
+                    <a
+                      href="https://beatbreeze.io/sign-up"
+                      onClick={closeMenu}
+                      className="block w-full rounded-full bg-brand-orange px-6 py-3 text-center font-semibold text-[#101010] transition-colors hover:bg-[#ffb64a] focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark"
+                    >
+                      {t('startTrial')}
+                    </a>
                   </motion.div>
                 </div>
               </motion.div>
@@ -349,7 +366,7 @@ interface NavLinkProps {
 }
 
 const NavLink: React.FC<NavLinkProps> = ({ href, label, external }) => {
-  const className = "relative px-4 py-2 text-white/90 hover:text-white font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark rounded-lg group";
+  const className = "group relative rounded-full px-3 py-2 text-sm font-medium text-white/65 transition-colors hover:bg-white/5 hover:text-white focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark";
 
   if (external) {
     return (
