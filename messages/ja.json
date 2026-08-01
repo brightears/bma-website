@@ -8,19 +8,33 @@
     "howItWorks": "ご利用方法",
     "licensing": "ライセンス",
     "getQuote": "お見積もり",
-    "musicDesign": "音楽デザイン"
+    "musicDesign": "音楽デザイン",
+    "beatBreeze": "Beat Breeze",
+    "soundtrack": "Soundtrack",
+    "solutions": "ソリューション",
+    "notSure": "最適なソリューションが分かりませんか？",
+    "talkToUs": "ご相談ください",
+    "signIn": "ログイン",
+    "startFree": "無料で始める",
+    "openMenu": "メニューを開く",
+    "closeMenu": "メニューを閉じる",
+    "mainNavigation": "メインナビゲーション",
+    "mobileNavigation": "モバイルナビゲーション",
+    "language": "言語",
+    "talkToBMAsia": "BMAsiaに相談",
+    "startTrial": "14日間の無料トライアルを開始"
   },
   "languageSwitcher": {
     "label": "言語",
     "selectLanguage": "言語を選択"
   },
   "hero": {
-    "tagline": "音楽が大切な場所",
-    "headline": "最高の",
-    "headlineHighlight": "雰囲気を創る",
-    "subheading": "お客様の行動に影響を与え、記憶に残る瞬間を創り出すカスタマイズされたBGMで、ビジネスの雰囲気を高めましょう。",
-    "ctaQuote": "お見積もり",
-    "ctaDemo": "無料デモを予約",
+    "tagline": "現代の店舗・施設のための音楽運用",
+    "headline": "空間のムードを整える。",
+    "headlineHighlight": "音楽運用は私たちに。",
+    "subheading": "ライセンス済み音楽、インテリジェントな提案、スケジュール、全ゾーンのライブ管理をBMAsiaが支えます。",
+    "ctaQuote": "14日間無料で試す",
+    "ctaDemo": "Beat Breezeを見る",
     "imageAlt": "温かみのある照明のエレガントなホテルラウンジ"
   },
   "stats": {
@@ -291,7 +305,20 @@
     "privacy": "プライバシー",
     "cookies": "クッキー",
     "terms": "規約",
-    "allRightsReserved": "無断転載を禁じます。"
+    "allRightsReserved": "無断転載を禁じます。",
+    "operationsDescription": "アジア太平洋地域のホテル、リテール、多拠点ビジネス向けの音楽運用、ライセンス、サポート。",
+    "products": "製品",
+    "howItWorks": "利用の流れ",
+    "musicLicensing": "音楽ライセンス",
+    "forBusiness": "ビジネス別",
+    "hotels": "ホテル＆リゾート",
+    "restaurants": "レストラン＆バー",
+    "retail": "リテール＆ファッション",
+    "fitness": "フィットネス＆ウェルネス",
+    "startHere": "こちらから開始",
+    "tryBeatBreeze": "Beat Breezeを試す",
+    "trialProof": "14日間無料・カード不要",
+    "talkToBMAsia": "BMAsiaに相談"
   },
   "howItWorks": {
     "hero": {
@@ -715,7 +742,7 @@
       "label": "オールインクルーシブのキュレーション",
       "title": "Beat",
       "titleHighlight": "Breeze",
-      "subtitle": "あらゆるビジネス向けの完全ライセンス済みBGM — 追加料金ゼロ、手続きゼロ、手間ゼロ。",
+      "subtitle": "ビジネス向けの音楽運用プラットフォーム。すべてのゾーンの検索、スケジュール、コントロールを一か所で。",
       "ctaQuote": "お見積もりを依頼",
       "ctaTrial": "無料トライアルを開始"
     },
@@ -745,12 +772,12 @@
       "sectionLabel": "機能",
       "sectionTitle": "必要なものだけを、過不足なく。",
       "zeroLicensing": {
-        "title": "ライセンスの手間はゼロ",
-        "desc": "原盤権、出版権、公衆送信権の3種類すべてが込み。MPCも、MRSSも、PRSも、ASCAPも、面倒な手続きも一切不要です。"
+        "title": "ビジネス対応の音楽",
+        "desc": "ビジネス利用向けにキュレーションされたロイヤリティフリーのカタログです。BMAsiaが導入時に地域の公衆演奏要件を確認します。"
       },
       "curation": {
-        "title": "オーダーメイドのキュレーション",
-        "desc": "音楽デザイナーが貴ブランドに合わせたプレイリストを制作し、定期的に更新します。雰囲気をご承認いただければ、あとはすべてお任せください。"
+        "title": "Music Concierge",
+        "desc": "ゾーンの背景、時間帯、エネルギーをもとに提案し、適用前に各候補が合う理由を説明します。"
       },
       "offline": {
         "title": "オフライン対応",
@@ -761,13 +788,36 @@
         "desc": "時間帯ごとに異なるムードを。朝食サービス、ランチタイムの混雑、夜のラウンジ — 一度設定すれば、あとは自動で運用されます。"
       },
       "audioSignatures": {
-        "title": "オーディオシグネチャ",
+        "title": "メッセージとアナウンス",
         "desc": "楽曲の合間に、ブランドメッセージ、プロモーション、アナウンスをスケジュール配信できます。"
       },
       "remoteMgmt": {
-        "title": "リモート管理",
-        "desc": "どこからでも音楽を管理可能。私たちのチームが現地を訪れることなく、遠隔でサポート、トラブルシューティング、プレイリスト更新を行います。"
+        "title": "ライブゾーン管理",
+        "desc": "プレイヤーの状態、再生、音量を確認し、ダッシュボードまたはRemoteアプリからすべてのゾーンを管理できます。"
       }
+    },
+    "product": {
+      "openProduct": "Beat Breezeを開く",
+      "liveVenue": "稼働中の施設",
+      "zonesReady": "{count}ゾーン準備完了",
+      "explainable": "理由を説明",
+      "waysLabel": "一つのシステム、二つの運用方法",
+      "waysTitle": "自分で選ぶ。あるいはConciergeと運用する。",
+      "waysDescription": "まずは自分で始め、反復作業は後から任せることができます。施設へ反映される前にすべての提案を確認できます。",
+      "selfTitle": "常に自分でコントロール",
+      "selfText": "カタログの閲覧、試聴、スケジュール作成、すべてのゾーンの再生管理が可能です。",
+      "conciergeTitle": "Conciergeが一緒に運用",
+      "conciergeText": "ビジネスの背景を学び、理由を説明し、有効化すると継続的な音楽運用を管理します。",
+      "playersLabel": "プレイヤー",
+      "playersTitle": "お手持ちのデバイスをそのまま利用できます。",
+      "mobile": "iPhone、iPad、Android",
+      "windows": "Windowsプレイヤー",
+      "web": "Webプレイヤー",
+      "offline": "オフライン再生",
+      "price": "1ゾーン月額12ドルから",
+      "finalTitle": "最初のゾーンを数分で準備できます。",
+      "startFree": "無料で開始",
+      "talkToBMAsia": "BMAsiaに相談"
     },
     "licensing": {
       "sectionTitle": "すべてのライセンスが、",
@@ -882,6 +932,41 @@
     }
   },
   "homePage": {
+    "venuePulse": {
+      "ariaLabel": "3つの音楽ゾーンを持つ施設のライブプレビュー",
+      "label": "ベニューパルス",
+      "venue": "Riverside House",
+      "ready": "3ゾーン準備完了",
+      "lobby": { "name": "ロビー", "playlist": "Jazz Piano · 午後のラウンジ", "status": "再生中" },
+      "restaurant": { "name": "レストラン", "playlist": "Bossa Nova Lounge · ディナー", "status": "再生中" },
+      "rooftop": { "name": "ルーフトップ", "playlist": "Deep House · 19:00開始", "status": "準備完了" },
+      "conciergeLabel": "Conciergeの提案",
+      "conciergeText": "来店前にルーフトップのエネルギーを緩やかに上げ、チェックインのピークはロビーを穏やかに保ちます。",
+      "reason": "ゾーン、時間、エネルギー、今日のスケジュールに基づく提案"
+    },
+    "beatBreezeLead": {
+      "label": "Beat Breeze by BMAsia",
+      "title": "ひとつの施設プラットフォーム。全ゾーンを心地よく。",
+      "description": "自分で選曲するか、Conciergeに一日を任せるか。すべてのプレーヤーを一か所でスケジュール・管理できます。",
+      "cta": "プラットフォームを見る",
+      "proof1": "14日間無料",
+      "proof2": "カード不要",
+      "proof3": "専用機器不要",
+      "workflowLabel": "登録から再生まで",
+      "workflowTitle": "3ステップ。その後は自動で運用。",
+      "workflowDescription": "シンプルに始め、必要に応じてスケジュール、制作、自動化機能を利用できます。",
+      "step1Title": "ビジネスを教えてください",
+      "step1Text": "コンセプト、ゲスト、望む雰囲気を自然な言葉で説明します。",
+      "step2Title": "プレーヤーを接続",
+      "step2Text": "ブラウザまたは手持ちの端末にアプリをインストールします。",
+      "step3Title": "すべてのゾーンを稼働",
+      "step3Text": "自分で選曲するか、Conciergeに最初のプランを作らせます。",
+      "finalDescription": "1ゾーンで14日間、すべての機能をお試しください。カードも専用機器も不要です。"
+    },
+    "alternative": {
+      "title": "ゲストが名前を知っている曲が必要ですか？",
+      "description": "Soundtrack Your Brandなら有名アーティストやメジャーレーベルの楽曲を利用できます。認知度の高い音楽が必要な場合はBMAsiaが導入・運用します。"
+    },
     "theProblem": {
       "title": "お客様には",
       "titleHighlight": "その違いが聞こえます",
@@ -909,9 +994,9 @@
         "badge": "オールインクルーシブ・キュレーション",
         "title": "Beat Breeze",
         "tagline": "完全ライセンス済みのBGM — 手間は一切不要。",
-        "feature1": "3万曲以上のロイヤリティフリー音源 — 必要な3つのライセンスすべてを含む",
+        "feature1": "成長し続けるロイヤリティフリー・カタログ — 商用ライセンス済み",
         "feature2": "著作権管理団体への支払いもコンプライアンス書類も不要",
-        "feature3": "自社の音楽デザイナーによるオーダーメイドキュレーション",
+        "feature3": "理由まで説明するMusic Conciergeの提案",
         "feature4": "オフライン対応、複数ゾーンのスケジューリング",
         "cta": "Beat Breezeを見る"
       },
@@ -1817,7 +1902,7 @@
         "b2": "イベントのタイムラインに正確に従うスケジューリング",
         "b3": "アナウンスとプログラム進行のためのオーディオメッセージング",
         "b4": "一時的または恒久的な設置オプション",
-        "b5": "当社のMusic Design Assistantが数分でイベント計画をサポート"
+        "b5": "音楽チームがイベントのブリーフを実践的な音楽プランに仕上げます"
       }
     }
   },

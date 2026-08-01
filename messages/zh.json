@@ -8,19 +8,33 @@
     "howItWorks": "服务流程",
     "licensing": "音乐授权",
     "getQuote": "获取报价",
-    "musicDesign": "音乐设计"
+    "musicDesign": "音乐设计",
+    "beatBreeze": "Beat Breeze",
+    "soundtrack": "Soundtrack",
+    "solutions": "解决方案",
+    "notSure": "不确定哪种解决方案适合您？",
+    "talkToUs": "与我们沟通",
+    "signIn": "登录",
+    "startFree": "免费开始",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "mainNavigation": "主导航",
+    "mobileNavigation": "移动端导航菜单",
+    "language": "语言",
+    "talkToBMAsia": "与 BMAsia 沟通",
+    "startTrial": "开始 14 天免费试用"
   },
   "languageSwitcher": {
     "label": "语言",
     "selectLanguage": "选择语言"
   },
   "hero": {
-    "tagline": "音乐无处不在",
-    "headline": "打造完美",
-    "headlineHighlight": "氛围",
-    "subheading": "通过定制背景音乐提升您的商业环境，影响顾客行为并创造难忘时刻。",
-    "ctaQuote": "获取报价",
-    "ctaDemo": "预约免费演示",
+    "tagline": "面向现代场所的音乐运营",
+    "headline": "营造氛围。",
+    "headlineHighlight": "音乐运营交给我们。",
+    "subheading": "授权音乐、智能建议、排程和每个区域的实时控制 — 由 BMAsia 提供支持。",
+    "ctaQuote": "免费试用 14 天",
+    "ctaDemo": "了解 Beat Breeze",
     "imageAlt": "温馨灯光下的优雅酒店休息室"
   },
   "stats": {
@@ -291,7 +305,20 @@
     "privacy": "隐私",
     "cookies": "Cookie",
     "terms": "条款",
-    "allRightsReserved": "版权所有。"
+    "allRightsReserved": "版权所有。",
+    "operationsDescription": "为亚太地区的酒店、零售及多地点企业提供音乐运营、授权与支持。",
+    "products": "产品",
+    "howItWorks": "运作方式",
+    "musicLicensing": "音乐授权",
+    "forBusiness": "适用行业",
+    "hotels": "酒店与度假村",
+    "restaurants": "餐厅与酒吧",
+    "retail": "零售与时尚",
+    "fitness": "健身与康养",
+    "startHere": "从这里开始",
+    "tryBeatBreeze": "试用 Beat Breeze",
+    "trialProof": "免费 14 天 · 无需信用卡",
+    "talkToBMAsia": "与 BMAsia 沟通"
   },
   "howItWorks": {
     "hero": {
@@ -715,7 +742,7 @@
       "label": "全包式编排",
       "title": "Beat",
       "titleHighlight": "Breeze",
-      "subtitle": "面向所有商业场所的完整授权背景音乐 —— 零费用、零手续、零烦恼。",
+      "subtitle": "面向商业场所的音乐运营平台 —— 在一个界面中发现、排期并控制每个区域。",
       "ctaQuote": "获取报价",
       "ctaTrial": "开始免费试用"
     },
@@ -745,12 +772,12 @@
       "sectionLabel": "核心功能",
       "sectionTitle": "所需的一切，没有多余。",
       "zeroLicensing": {
-        "title": "零授权烦恼",
-        "desc": "录音、出版和公开表演三项许可全部打包内置。无需 MPC、无需 MRSS、无需 PRS、无需 ASCAP，更无需任何纸面手续。"
+        "title": "商业场所适用音乐",
+        "desc": "为商业使用精选的免版税曲库。BMAsia 会在上线过程中确认当地的公开表演要求。"
       },
       "curation": {
-        "title": "定制编排",
-        "desc": "我们的音乐设计师根据您的品牌精心打造歌单并定期刷新。您确认氛围方向，剩下的交给我们。"
+        "title": "Music Concierge",
+        "desc": "根据区域背景、时段与能量提供建议，并在应用前解释每个选择为何合适。"
       },
       "offline": {
         "title": "离线可用",
@@ -761,13 +788,36 @@
         "desc": "不同时段，不同氛围。早餐服务、午餐高峰、晚间酒廊 —— 一次设定，自动运行。"
       },
       "audioSignatures": {
-        "title": "品牌音频",
+        "title": "消息与公告",
         "desc": "按排期在曲目之间插入品牌消息、促销信息或公告。"
       },
       "remoteMgmt": {
-        "title": "远程管理",
-        "desc": "随时随地管理您的音乐。我们的团队无需到场即可远程协助、排查故障并更新歌单。"
+        "title": "实时区域控制",
+        "desc": "查看播放器状态，控制播放和音量，并通过仪表板或Remote应用管理每个区域。"
       }
+    },
+    "product": {
+      "openProduct": "打开 Beat Breeze",
+      "liveVenue": "运营中的场所",
+      "zonesReady": "{count} 个区域已就绪",
+      "explainable": "建议可解释",
+      "waysLabel": "一个系统，两种运营方式",
+      "waysTitle": "自己选择音乐，或与 Concierge 协作。",
+      "waysDescription": "先自行上手，之后把重复工作交给系统，并在任何建议改变场所音乐前进行审核。",
+      "selfTitle": "您始终掌握控制权",
+      "selfText": "浏览曲库、试听音乐、建立排期，并控制每个区域的播放。",
+      "conciergeTitle": "Concierge 与您协同工作",
+      "conciergeText": "它会学习业务背景、解释推荐理由，并在启用后持续管理音乐运营。",
+      "playersLabel": "播放器",
+      "playersTitle": "直接使用您已有的设备。",
+      "mobile": "iPhone、iPad 与 Android",
+      "windows": "Windows 播放器",
+      "web": "网页播放器",
+      "offline": "离线播放",
+      "price": "每个区域每月 12 美元起",
+      "finalTitle": "几分钟内即可让第一个区域上线。",
+      "startFree": "免费开始",
+      "talkToBMAsia": "联系 BMAsia"
     },
     "licensing": {
       "sectionTitle": "每一项许可。",
@@ -882,6 +932,41 @@
     }
   },
   "homePage": {
+    "venuePulse": {
+      "ariaLabel": "拥有三个音乐区域的场所实时预览",
+      "label": "场所脉动",
+      "venue": "Riverside House",
+      "ready": "3 个区域已就绪",
+      "lobby": { "name": "大堂", "playlist": "Jazz Piano · 午后休息室", "status": "播放中" },
+      "restaurant": { "name": "餐厅", "playlist": "Bossa Nova Lounge · 晚餐", "status": "播放中" },
+      "rooftop": { "name": "屋顶", "playlist": "Deep House · 19:00 开始", "status": "就绪" },
+      "conciergeLabel": "Concierge 建议",
+      "conciergeText": "客人到达前温和提升屋顶区域的能量；入住高峰时保持大堂平静。",
+      "reason": "基于区域、时间、能量和今日排程"
+    },
+    "beatBreezeLead": {
+      "label": "BMAsia 出品 Beat Breeze",
+      "title": "一个场所平台，让每个区域保持节奏。",
+      "description": "自行选曲或让 Concierge 安排全天氛围。在一个地方排程并控制所有播放器。",
+      "cta": "了解平台",
+      "proof1": "免费 14 天",
+      "proof2": "无需信用卡",
+      "proof3": "无需专用硬件",
+      "workflowLabel": "从注册到播放",
+      "workflowTitle": "三个步骤，之后自动运行。",
+      "workflowDescription": "简单开始；需要时再使用排程、创作和自动化工具。",
+      "step1Title": "告诉我们您的业务",
+      "step1Text": "用自然语言描述概念、客群和期望氛围。",
+      "step2Title": "连接播放器",
+      "step2Text": "使用浏览器或在现有设备上安装应用。",
+      "step3Title": "启动每个区域",
+      "step3Text": "自行选曲或让 Concierge 创建初始方案。",
+      "finalDescription": "在一个区域完整试用 14 天。无需信用卡、专用盒子或复杂设置。"
+    },
+    "alternative": {
+      "title": "需要客人熟悉的热门音乐？",
+      "description": "Soundtrack Your Brand 提供知名艺人和主流唱片公司曲库。当熟悉度是重点时，BMAsia 可负责供应和管理。"
+    },
     "theProblem": {
       "title": "您的客人能",
       "titleHighlight": "听出其中的差别",
@@ -909,9 +994,9 @@
         "badge": "全包式音乐策划",
         "title": "Beat Breeze",
         "tagline": "全授权背景音乐 — 零烦恼。",
-        "feature1": "逾 30,000 首无版税曲目 — 三项授权全部包含",
+        "feature1": "持续增长的免版税曲库 — 已获商业使用授权",
         "feature2": "无需向版权集体管理组织付费，无合规文书",
-        "feature3": "由我们的音乐设计师量身策划",
+        "feature3": "Music Concierge 提供可解释的建议",
         "feature4": "支持离线播放与多区域排程",
         "cta": "了解 Beat Breeze"
       },
@@ -1817,7 +1902,7 @@
         "b2": "精准跟随活动时间线的排程",
         "b3": "用于公告与流程衔接的语音广播",
         "b4": "临时或长期安装方案可选",
-        "b5": "我们的音乐设计助理几分钟内帮您规划活动"
+        "b5": "我们的音乐团队将您的活动需求转化为切实可行的音乐方案"
       }
     }
   },

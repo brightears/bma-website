@@ -30,15 +30,15 @@ export const URLS = {
   calendly: process.env.NEXT_PUBLIC_CALENDLY_URL || 'https://calendly.com/bmasia/sound-innovations',
   formspreeInquiry: process.env.NEXT_PUBLIC_FORMSPREE_INQUIRY_ID || '',
   formspreeQuotation: process.env.NEXT_PUBLIC_FORMSPREE_QUOTATION_ID || '',
-  musicDesign: 'https://bmasia-music-brief-v2.onrender.com',
 } as const;
 
 // Navigation Links
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
+  { href: '/beat-breeze', label: 'Beat Breeze' },
+  { href: '/soundtrack-your-brand', label: 'Soundtrack Your Brand' },
   { href: '/how-it-works', label: 'How It Works' },
   { href: '/licensing', label: 'Licensing' },
-  { href: '/music-design', label: 'Music Design' },
   { href: '/quotation', label: 'Get a Quote' },
 ] as const;
 
@@ -99,18 +99,18 @@ export const PRODUCTS = {
   },
   beatBreeze: {
     name: 'Beat Breeze',
-    tagline: 'Essential Solution',
+    tagline: 'Music Operations Platform',
     image: '/images/product-beatbreeze.webp',
     features: [
-      '30K+ curated tracks',
-      '50 ready-made playlists',
-      'Public performance license included',
+      'Growing curated catalogue',
+      'Music Concierge recommendations',
+      'Business-ready royalty-free catalogue',
       'Multi-zone setup',
       'Advanced scheduling',
       'Integrated messaging',
       'Offline playback',
     ],
-    platforms: ['Android', 'Windows'],
+    platforms: ['iOS', 'Android', 'Windows', 'Web'],
   },
 } as const;
 

@@ -23,7 +23,6 @@ const pages = [
   { path: '/solutions/offices', changeFrequency: 'monthly' as const, priority: 0.8 },
   { path: '/solutions/showrooms', changeFrequency: 'monthly' as const, priority: 0.8 },
   { path: '/solutions/events', changeFrequency: 'monthly' as const, priority: 0.8 },
-  { path: '/music-design', changeFrequency: 'monthly' as const, priority: 0.8 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import { SITE } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Music Design Assistant',
+  title: 'Music Consultation',
   description:
-    'Create the perfect background music for your venue or event. Our AI music designer will craft a personalized playlist recommendation in minutes.',
+    'Tell BMAsia what your venue or event needs and our team will help you choose the right music solution.',
   openGraph: {
-    title: 'Music Design Assistant | BMAsia',
-    description: 'AI-powered music design for your business. Get personalized playlist recommendations.',
+    title: 'Music Consultation | BMAsia',
+    description: 'Talk to BMAsia about the right music setup for your business or event.',
     siteName: SITE.name,
     type: 'website',
   },

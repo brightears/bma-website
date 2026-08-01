@@ -8,19 +8,33 @@
     "howItWorks": "Cách hoạt động",
     "licensing": "Bản quyền",
     "getQuote": "Nhận báo giá",
-    "musicDesign": "Thiết Kế Âm Nhạc"
+    "musicDesign": "Thiết Kế Âm Nhạc",
+    "beatBreeze": "Beat Breeze",
+    "soundtrack": "Soundtrack",
+    "solutions": "Giải pháp",
+    "notSure": "Chưa chắc giải pháp nào phù hợp?",
+    "talkToUs": "Trao đổi với chúng tôi",
+    "signIn": "Đăng nhập",
+    "startFree": "Bắt đầu miễn phí",
+    "openMenu": "Mở menu",
+    "closeMenu": "Đóng menu",
+    "mainNavigation": "Điều hướng chính",
+    "mobileNavigation": "Menu điều hướng di động",
+    "language": "Ngôn ngữ",
+    "talkToBMAsia": "Trao đổi với BMAsia",
+    "startTrial": "Dùng thử miễn phí 14 ngày"
   },
   "languageSwitcher": {
     "label": "Ngôn ngữ",
     "selectLanguage": "Chọn ngôn ngữ"
   },
   "hero": {
-    "tagline": "Nơi Âm Nhạc Quan Trọng",
-    "headline": "Tạo Nên",
-    "headlineHighlight": "Bầu Không Khí Hoàn Hảo",
-    "subheading": "Nâng tầm không gian doanh nghiệp của bạn với nhạc nền tùy chỉnh ảnh hưởng đến hành vi khách hàng và tạo ra những khoảnh khắc đáng nhớ.",
-    "ctaQuote": "Nhận báo giá",
-    "ctaDemo": "Đặt demo miễn phí",
+    "tagline": "Vận hành âm nhạc cho không gian hiện đại",
+    "headline": "Tạo đúng bầu không khí.",
+    "headlineHighlight": "Chúng tôi vận hành âm nhạc.",
+    "subheading": "Âm nhạc được cấp phép, đề xuất thông minh, lịch phát và điều khiển trực tiếp cho mọi khu vực — do BMAsia hỗ trợ.",
+    "ctaQuote": "Dùng thử miễn phí 14 ngày",
+    "ctaDemo": "Khám phá Beat Breeze",
     "imageAlt": "Phòng chờ khách sạn sang trọng với ánh sáng ấm áp"
   },
   "stats": {
@@ -291,7 +305,20 @@
     "privacy": "Bảo mật",
     "cookies": "Cookie",
     "terms": "Điều khoản",
-    "allRightsReserved": "Bảo lưu mọi quyền."
+    "allRightsReserved": "Bảo lưu mọi quyền.",
+    "operationsDescription": "Vận hành âm nhạc, cấp phép và hỗ trợ cho khách sạn, bán lẻ và doanh nghiệp nhiều địa điểm trên khắp Châu Á - Thái Bình Dương.",
+    "products": "Sản phẩm",
+    "howItWorks": "Cách hoạt động",
+    "musicLicensing": "Cấp phép âm nhạc",
+    "forBusiness": "Dành cho doanh nghiệp",
+    "hotels": "Khách sạn & khu nghỉ dưỡng",
+    "restaurants": "Nhà hàng & quán bar",
+    "retail": "Bán lẻ & thời trang",
+    "fitness": "Thể hình & chăm sóc sức khỏe",
+    "startHere": "Bắt đầu tại đây",
+    "tryBeatBreeze": "Dùng thử Beat Breeze",
+    "trialProof": "Miễn phí 14 ngày · không cần thẻ",
+    "talkToBMAsia": "Trao đổi với BMAsia"
   },
   "howItWorks": {
     "hero": {
@@ -715,7 +742,7 @@
       "label": "Tuyển Chọn Trọn Gói",
       "title": "Beat",
       "titleHighlight": "Breeze",
-      "subtitle": "Nhạc nền được cấp phép đầy đủ cho mọi doanh nghiệp — không phí phát sinh, không thủ tục, không phiền phức.",
+      "subtitle": "Nền tảng vận hành âm nhạc cho doanh nghiệp — khám phá, lên lịch và kiểm soát mọi khu vực từ một nơi.",
       "ctaQuote": "Nhận Báo Giá",
       "ctaTrial": "Dùng Thử Miễn Phí"
     },
@@ -745,12 +772,12 @@
       "sectionLabel": "Tính Năng",
       "sectionTitle": "Mọi thứ quý khách cần, không có gì dư thừa.",
       "zeroLicensing": {
-        "title": "Không Phiền Phức Cấp Phép",
-        "desc": "Cả ba giấy phép — ghi âm, xuất bản và biểu diễn công cộng — đều được gộp trong một gói. Không MPC, không MRSS, không PRS, không ASCAP, không thủ tục giấy tờ."
+        "title": "Âm Nhạc Sẵn Sàng Cho Doanh Nghiệp",
+        "desc": "Kho nhạc royalty-free được tuyển chọn cho mục đích kinh doanh. BMAsia xác nhận các yêu cầu biểu diễn công cộng tại địa phương trong quá trình triển khai."
       },
       "curation": {
-        "title": "Tuyển Chọn Theo Yêu Cầu",
-        "desc": "Đội ngũ thiết kế âm nhạc của chúng tôi kiến tạo các playlist phù hợp với thương hiệu của quý khách và làm mới định kỳ. Quý khách duyệt không khí, chúng tôi lo phần còn lại."
+        "title": "Music Concierge",
+        "desc": "Đề xuất dựa trên bối cảnh khu vực, thời gian và mức năng lượng — đồng thời giải thích lý do trước khi quý khách áp dụng."
       },
       "offline": {
         "title": "Hoạt Động Ngoại Tuyến",
@@ -761,13 +788,36 @@
         "desc": "Các tâm trạng khác nhau cho những khung giờ khác nhau. Giờ phục vụ sáng, giờ cao điểm trưa, lounge buổi tối — thiết lập một lần và hệ thống tự vận hành."
       },
       "audioSignatures": {
-        "title": "Dấu Ấn Âm Thanh",
+        "title": "Tin Nhắn & Thông Báo",
         "desc": "Chèn thông điệp thương hiệu, khuyến mãi hoặc thông báo giữa các bản nhạc theo lịch."
       },
       "remoteMgmt": {
-        "title": "Quản Lý Từ Xa",
-        "desc": "Quản lý âm nhạc của quý khách từ bất cứ đâu. Đội ngũ của chúng tôi có thể hỗ trợ từ xa, xử lý sự cố và cập nhật playlist mà không cần có mặt tại chỗ."
+        "title": "Điều Khiển Khu Vực Trực Tiếp",
+        "desc": "Xem trạng thái trình phát, điều khiển phát nhạc và âm lượng, đồng thời quản lý mọi khu vực từ bảng điều khiển hoặc ứng dụng Remote."
       }
+    },
+    "product": {
+      "openProduct": "Mở Beat Breeze",
+      "liveVenue": "Địa điểm trực tiếp",
+      "zonesReady": "{count} khu vực sẵn sàng",
+      "explainable": "Có giải thích",
+      "waysLabel": "Một hệ thống, hai cách làm việc",
+      "waysTitle": "Tự chọn nhạc hoặc làm việc với Concierge.",
+      "waysDescription": "Bắt đầu chủ động, giao lại công việc lặp lại sau và duyệt mọi đề xuất trước khi áp dụng tại địa điểm.",
+      "selfTitle": "Quý khách luôn kiểm soát",
+      "selfText": "Duyệt kho nhạc, nghe thử, xây lịch và điều khiển phát nhạc ở mọi khu vực.",
+      "conciergeTitle": "Concierge làm việc cùng quý khách",
+      "conciergeText": "Hệ thống học bối cảnh kinh doanh, giải thích lý do và có thể quản lý công việc âm nhạc liên tục khi được bật.",
+      "playersLabel": "Trình phát",
+      "playersTitle": "Dùng những thiết bị quý khách đã có.",
+      "mobile": "iPhone, iPad & Android",
+      "windows": "Trình phát Windows",
+      "web": "Trình phát web",
+      "offline": "Phát ngoại tuyến",
+      "price": "Từ 12 USD / khu vực / tháng",
+      "finalTitle": "Khu vực đầu tiên sẵn sàng trong vài phút.",
+      "startFree": "Bắt đầu miễn phí",
+      "talkToBMAsia": "Trao đổi với BMAsia"
     },
     "licensing": {
       "sectionTitle": "Mọi giấy phép.",
@@ -882,6 +932,41 @@
     }
   },
   "homePage": {
+    "venuePulse": {
+      "ariaLabel": "Bản xem trực tiếp một địa điểm với ba khu vực âm nhạc",
+      "label": "Nhịp vận hành địa điểm",
+      "venue": "Riverside House",
+      "ready": "3 khu vực sẵn sàng",
+      "lobby": { "name": "Sảnh", "playlist": "Jazz Piano · lounge buổi chiều", "status": "Đang phát" },
+      "restaurant": { "name": "Nhà hàng", "playlist": "Bossa Nova Lounge · bữa tối", "status": "Đang phát" },
+      "rooftop": { "name": "Sân thượng", "playlist": "Deep House · bắt đầu 19:00", "status": "Sẵn sàng" },
+      "conciergeLabel": "Đề xuất từ Concierge",
+      "conciergeText": "Tăng năng lượng sân thượng nhẹ nhàng trước giờ khách đến. Giữ sảnh êm dịu khi check-in đông nhất.",
+      "reason": "Dựa trên khu vực, thời gian, năng lượng và lịch hôm nay"
+    },
+    "beatBreezeLead": {
+      "label": "Beat Breeze bởi BMAsia",
+      "title": "Một nền tảng. Mọi khu vực đều đúng nhịp.",
+      "description": "Tự chọn nhạc hoặc để Concierge định hình cả ngày. Lên lịch, điều khiển mọi trình phát và quản lý từ một nơi.",
+      "cta": "Khám phá nền tảng",
+      "proof1": "Miễn phí 14 ngày",
+      "proof2": "Không cần thẻ",
+      "proof3": "Không cần phần cứng riêng",
+      "workflowLabel": "Từ đăng ký đến âm thanh",
+      "workflowTitle": "Ba bước. Sau đó hệ thống tự vận hành.",
+      "workflowDescription": "Bắt đầu đơn giản; các công cụ lịch, sáng tạo và tự động hóa luôn sẵn sàng khi cần.",
+      "step1Title": "Mô tả doanh nghiệp",
+      "step1Text": "Cho biết mô hình, khách hàng và bầu không khí bằng ngôn ngữ tự nhiên.",
+      "step2Title": "Kết nối trình phát",
+      "step2Text": "Dùng trình duyệt hoặc cài ứng dụng trên thiết bị sẵn có.",
+      "step3Title": "Đưa mọi khu vực vào nhịp",
+      "step3Text": "Tự chọn nhạc hoặc để Concierge tạo kế hoạch đầu tiên.",
+      "finalDescription": "Trải nghiệm đầy đủ cho một khu vực trong 14 ngày. Không cần thẻ hay thiết bị chuyên dụng."
+    },
+    "alternative": {
+      "title": "Cần những bài hát khách quen tên?",
+      "description": "Soundtrack Your Brand mang đến nghệ sĩ quen thuộc và danh mục hãng thu âm lớn. BMAsia có thể cung cấp và quản lý khi âm nhạc nhận diện cao là ưu tiên."
+    },
     "theProblem": {
       "title": "Khách hàng của bạn có thể",
       "titleHighlight": "Cảm nhận sự khác biệt",
@@ -909,9 +994,9 @@
         "badge": "Tuyển chọn trọn gói",
         "title": "Beat Breeze",
         "tagline": "Nhạc nền được cấp phép đầy đủ — hoàn toàn không phiền toái.",
-        "feature1": "30,000+ bản nhạc miễn bản quyền — bao gồm CẢ 3 giấy phép",
+        "feature1": "Danh mục nhạc miễn bản quyền liên tục mở rộng — được cấp phép cho doanh nghiệp",
         "feature2": "Không phí tổ chức thu tác quyền, không thủ tục tuân thủ",
-        "feature3": "Tuyển chọn riêng bởi các nhà thiết kế âm nhạc của chúng tôi",
+        "feature3": "Đề xuất Music Concierge kèm lý do rõ ràng",
         "feature4": "Hoạt động ngoại tuyến, lên lịch đa khu vực",
         "cta": "Khám phá Beat Breeze"
       },
@@ -1817,7 +1902,7 @@
         "b2": "Lập lịch bám sát dòng thời gian sự kiện một cách chính xác",
         "b3": "Thông điệp âm thanh cho thông báo và điều hướng chương trình",
         "b4": "Tùy chọn lắp đặt tạm thời hoặc cố định",
-        "b5": "Trợ lý Thiết kế Âm nhạc của chúng tôi giúp lên kế hoạch sự kiện trong vài phút"
+        "b5": "Đội ngũ âm nhạc biến bản tóm tắt sự kiện của bạn thành kế hoạch âm nhạc thực tế"
       }
     }
   },

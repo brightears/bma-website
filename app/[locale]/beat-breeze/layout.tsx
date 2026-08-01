@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = 'Beat Breeze';
   const description =
-    'Fully licensed background music for every business — all three music licenses included, zero collection society fees, and professional curation by BMAsia music designers.';
+    'Beat Breeze is BMAsia’s music operations platform for business: a growing licensed catalogue, Music Concierge, scheduling, offline players and live control across every zone.';
 
   const alternateLanguages: Record<string, string> = {};
   locales.forEach((loc) => {
@@ -76,7 +76,7 @@ export default function BeatBreezeLayout({
         name: 'Do I need to pay any music licensing fees separately with Beat Breeze?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'No. Every Beat Breeze subscription includes all three licenses — recording, publishing, and public performance. You never need to pay MPC, MRSS, PRS, ASCAP, BMI, or any other collection society.',
+          text: 'Beat Breeze uses music licensed for its intended business use. Licensing requirements can vary by country and venue, so BMAsia confirms the applicable setup during onboarding.',
         },
       },
       {
@@ -84,7 +84,7 @@ export default function BeatBreezeLayout({
         name: 'How is Beat Breeze different from Soundtrack Your Brand?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Beat Breeze is significantly more affordable and has all licenses included, but the music catalog is curated and royalty-free — not specific chart hits. If you want hassle-free licensed music with zero fees and professional curation, Beat Breeze is the right fit.',
+          text: 'Beat Breeze uses a curated royalty-free catalogue and adds venue operations, recommendations, scheduling and live control. Soundtrack Your Brand is the alternative when familiar chart and major-label repertoire is the priority.',
         },
       },
       {
@@ -92,7 +92,7 @@ export default function BeatBreezeLayout({
         name: 'What devices does Beat Breeze run on?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Any modern Windows PC, Android tablet or phone, or directly in a web browser. In Thailand, BMAsia supplies pre-configured Windows mini PCs with a 1-year warranty.',
+          text: 'Beat Breeze offers venue players for iPhone, iPad, Android, Windows and modern web browsers.',
         },
       },
       {
@@ -108,15 +108,7 @@ export default function BeatBreezeLayout({
         name: 'How big is the Beat Breeze music catalog?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Over 30,000 professionally-produced royalty-free tracks, with the catalog continuing to grow. Every track is curated for hospitality and retail environments.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Can Beat Breeze be white-labeled for corporate brands?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes. Corporate chains can run Beat Breeze as their own branded internal music platform with custom colours, logo, and domain.',
+          text: 'The Beat Breeze royalty-free catalogue is growing continuously. New catalogue playlists are included automatically in discovery and recommendation workflows.',
         },
       },
     ],
