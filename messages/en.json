@@ -949,6 +949,17 @@
         "ariaLabel": "A living field showing music changing throughout the venue",
         "energy": "Energy {energy}"
       },
+      "audio": {
+        "title": "Sound preview",
+        "visualOnly": "Music direction preview · sound off",
+        "hear": "Hear this mood",
+        "pause": "Pause sample",
+        "paused": "Preview paused",
+        "mute": "Mute sample",
+        "unmute": "Unmute sample",
+        "playing": "Playing a licensed 25-second preview",
+        "unavailable": "Audio preview unavailable"
+      },
       "demo": {
         "eyebrow": "A useful five-minute experience",
         "title": "Move through a day.",

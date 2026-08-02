@@ -939,6 +939,7 @@
         "try": "体验场所时间机器", "start": "免费试用 14 天", "proof1": "无需信用卡", "proof2": "无需专用硬件", "proof3": "每个区域 $12 起", "scroll": "体验一天的变化"
       },
       "field": { "ariaLabel": "展示音乐随场所变化的动态音乐场", "energy": "能量 {energy}" },
+      "audio": { "title": "声音预览", "visualOnly": "音乐方向预览 · 静音", "hear": "聆听这种氛围", "pause": "暂停预览", "paused": "预览已暂停", "mute": "静音预览", "unmute": "取消静音", "playing": "正在播放25秒授权预览", "unavailable": "音频预览不可用" },
       "demo": {
         "eyebrow": "五分钟即可获得启发", "title": "推动一天的进程。", "highlight": "感受空间随之改变。",
         "description": "选择业务类型、拖动时间，并将不同区域带到前景。音乐、能量和 Concierge 建议会同步响应。",

@@ -1,10 +1,10 @@
 'use client';
 
-import { useMemo, useState, type CSSProperties } from 'react';
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
-import { ArrowDown, ArrowRight, Check, Copy, Sparkles } from 'lucide-react';
+import { ArrowDown, ArrowRight, Check, Copy, Pause, Play, Sparkles, Volume2, VolumeX } from 'lucide-react';
 import styles from './ImmersiveBeatBreeze.module.css';
 
 type VenueKey = 'hotel' | 'restaurant' | 'retail' | 'fitness';
@@ -133,6 +133,13 @@ const phaseAccents = [
 
 const phaseEnergy = [27, 46, 69, 42];
 
+const phaseAudio = [
+  '/audio/beat-breeze-demo/morning.mp3',
+  '/audio/beat-breeze-demo/daytime.mp3',
+  '/audio/beat-breeze-demo/evening.mp3',
+  '/audio/beat-breeze-demo/late-night.mp3',
+] as const;
+
 function getPhaseIndex(hour: number) {
   if (hour < 9) return 0;
   if (hour < 16) return 1;
@@ -161,6 +168,9 @@ export function ImmersiveBeatBreeze() {
   const [hour, setHour] = useState(18);
   const [focus, setFocus] = useState(1);
   const [copied, setCopied] = useState(false);
+  const [audioState, setAudioState] = useState<'idle' | 'playing' | 'paused' | 'error'>('idle');
+  const [isMuted, setIsMuted] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
 
   const venue = venues[venueKey];
   const phaseIndex = getPhaseIndex(hour);
@@ -179,6 +189,52 @@ export function ImmersiveBeatBreeze() {
     [hour, phaseIndex, t, venueKey, zoneSummary],
   );
 
+  useEffect(() => {
+    setIsMuted(window.sessionStorage.getItem('bmasia-audio-muted') === 'true');
+  }, []);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    audio.pause();
+    audio.currentTime = 0;
+    setAudioState('idle');
+  }, [phaseIndex, venueKey]);
+
+  const toggleAudio = async () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    if (!audio.paused) {
+      audio.pause();
+      setAudioState('paused');
+      return;
+    }
+
+    try {
+      if (audio.ended) audio.currentTime = 0;
+      await audio.play();
+      setAudioState('playing');
+    } catch {
+      setAudioState('error');
+    }
+  };
+
+  const toggleMuted = () => {
+    const nextMuted = !isMuted;
+    setIsMuted(nextMuted);
+    window.sessionStorage.setItem('bmasia-audio-muted', String(nextMuted));
+  };
+
+  const audioStatus = audioState === 'playing'
+    ? t('audio.playing')
+    : audioState === 'paused'
+      ? t('audio.paused')
+      : audioState === 'error'
+        ? t('audio.unavailable')
+        : t('audio.visualOnly');
+
   const copyBrief = async () => {
     await navigator.clipboard?.writeText(brief);
     setCopied(true);
@@ -196,7 +252,7 @@ export function ImmersiveBeatBreeze() {
         <div className={styles.heroGrid}>
           <div className={styles.heroCopy}>
             <p className={styles.eyebrow}><span />{t('hero.eyebrow')}</p>
-            <h1>{t('hero.title')} <em>{t('hero.highlight')}</em></h1>
+            <h1><span>{t('hero.title')}</span> <em>{t('hero.highlight')}</em></h1>
             <p className={styles.heroLead}>{t('hero.description')}</p>
             <div className={styles.heroActions}>
               <a href="#experience" className={styles.primaryButton}>
@@ -219,7 +275,7 @@ export function ImmersiveBeatBreeze() {
               <span>{formatHour(hour)}</span>
               <strong>{t(`phases.${phaseIndex}.label`)}</strong>
               <small>{t('field.energy', { energy })}</small>
-              <Equalizer active />
+              <Equalizer active={audioState === 'playing'} />
             </div>
             {playlists.map((playlist, index) => (
               <Image
@@ -292,6 +348,40 @@ export function ImmersiveBeatBreeze() {
               />
             </label>
             <div className={styles.timeLabels}><span>05:00</span><span>09:00</span><span>13:00</span><span>18:00</span><span>23:00</span></div>
+
+            <div className={styles.audioPreview}>
+              <audio
+                ref={audioRef}
+                src={phaseAudio[phaseIndex]}
+                preload="none"
+                muted={isMuted}
+                playsInline
+                onPlay={() => setAudioState('playing')}
+                onPause={() => setAudioState((current) => (current === 'playing' ? 'paused' : current))}
+                onEnded={() => setAudioState('idle')}
+                onError={() => setAudioState('error')}
+              />
+              <span className={styles.audioGlyph} aria-hidden="true">
+                <Equalizer active={audioState === 'playing'} />
+              </span>
+              <div className={styles.audioCopy}>
+                <strong>{t('audio.title')}</strong>
+                <span aria-live="polite">{audioStatus}</span>
+              </div>
+              <button type="button" className={styles.audioPlay} onClick={toggleAudio}>
+                {audioState === 'playing' ? <Pause aria-hidden="true" /> : <Play aria-hidden="true" />}
+                {audioState === 'playing' ? t('audio.pause') : t('audio.hear')}
+              </button>
+              <button
+                type="button"
+                className={styles.audioMute}
+                onClick={toggleMuted}
+                aria-label={isMuted ? t('audio.unmute') : t('audio.mute')}
+                aria-pressed={isMuted}
+              >
+                {isMuted ? <VolumeX aria-hidden="true" /> : <Volume2 aria-hidden="true" />}
+              </button>
+            </div>
           </div>
 
           <div className={styles.zonesStage}>
@@ -309,7 +399,7 @@ export function ImmersiveBeatBreeze() {
                   <span className={styles.coverWrap}>
                     <Image src={playlist.cover} alt="" fill sizes="112px" />
                     <span className={styles.coverEnergy}>{zoneEnergy}%</span>
-                    {focus === index && <span className={styles.coverSelected}><Equalizer active /></span>}
+                    {focus === index && <span className={styles.coverSelected}><Equalizer active={audioState === 'playing'} /></span>}
                   </span>
                   <span className={styles.zoneName}><i />{t(`zones.${playlist.zone}`)}</span>
                   <strong>{playlist.title}</strong>

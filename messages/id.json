@@ -939,6 +939,7 @@
         "try": "Coba mesin waktu venue", "start": "Coba gratis 14 hari", "proof1": "Tanpa kartu", "proof2": "Tanpa perangkat khusus", "proof3": "Mulai $12 per zona", "scroll": "Rasakan perjalanan harinya"
       },
       "field": { "ariaLabel": "Bidang musik hidup yang berubah di seluruh venue", "energy": "Energi {energy}" },
+      "audio": { "title": "Pratinjau audio", "visualOnly": "Pratinjau arah musik · suara mati", "hear": "Dengarkan suasana ini", "pause": "Jeda pratinjau", "paused": "Pratinjau dijeda", "mute": "Bisukan pratinjau", "unmute": "Aktifkan suara", "playing": "Memutar pratinjau berlisensi selama 25 detik", "unavailable": "Pratinjau audio tidak tersedia" },
       "demo": {
         "eyebrow": "Pengalaman lima menit yang berguna", "title": "Jalani satu hari.", "highlight": "Lihat suasananya berubah.",
         "description": "Pilih jenis bisnis, geser waktu, dan tonjolkan zona yang berbeda. Musik, energi, dan panduan Concierge merespons bersama.",
