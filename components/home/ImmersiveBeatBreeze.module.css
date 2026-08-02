@@ -12,6 +12,8 @@
   min-height: 100svh;
   isolation: isolate;
   background:
+    radial-gradient(circle at 68% 14%, rgba(0, 212, 200, 0.09), transparent 24%),
+    radial-gradient(circle at 38% 76%, rgba(115, 207, 152, 0.07), transparent 27%),
     radial-gradient(circle at 80% 24%, color-mix(in srgb, var(--phase-b) 12%, transparent), transparent 26%),
     radial-gradient(circle at 16% 40%, color-mix(in srgb, var(--phase-a) 15%, transparent), transparent 31%),
     #070d17;
@@ -46,10 +48,10 @@
 
 .heroGrid {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(520px, 1.1fr);
+  grid-template-columns: minmax(0, 0.95fr) minmax(500px, 1.05fr);
   align-items: center;
-  gap: 6vw;
-  width: min(100%, 1600px);
+  gap: clamp(2.5rem, 5vw, 5.5rem);
+  width: min(100%, 1480px);
   min-height: 100svh;
   margin: 0 auto;
   padding: 130px 5vw 90px;
@@ -113,7 +115,7 @@
   max-width: 900px;
   margin: 0;
   font-family: var(--font-label), sans-serif;
-  font-size: clamp(4rem, 6.8vw, 8.2rem);
+  font-size: clamp(3.65rem, 5.35vw, 6.5rem);
   font-weight: 430;
   line-height: 0.9;
   letter-spacing: -0.07em;
@@ -122,7 +124,9 @@
 
 .hero h1 > span {
   display: block;
-  background: linear-gradient(94deg, #e8850c 0%, #e7b94e 43%, #91c780 85%);
+  background: linear-gradient(94deg, #e8850c 0%, #e7b94e 31%, #73cf98 66%, #00d4c8 100%);
+  background-size: 145% 100%;
+  background-position: left center;
   background-clip: text;
   color: transparent;
 }
@@ -132,7 +136,9 @@
 .story h2 em {
   display: block;
   padding-bottom: 0.12em;
-  background: linear-gradient(94deg, var(--phase-a) 0%, #d9bd61 42%, #73cf98 68%, var(--phase-b) 100%);
+  background: linear-gradient(94deg, #e8850c 0%, #e7b94e 29%, #73cf98 63%, #00d4c8 100%);
+  background-size: 145% 100%;
+  background-position: right center;
   background-clip: text;
   color: transparent;
   font-style: normal;
@@ -845,7 +851,7 @@
 
 @media (max-width: 900px) {
   .heroGrid { min-height: auto; grid-template-columns: 1fr; padding: 130px 24px 90px; }
-  .hero h1 { font-size: clamp(3.5rem, 14vw, 6rem); }
+  .hero h1 { font-size: clamp(3.2rem, 12vw, 5rem); }
   .livingField { min-height: 520px; }
   .experience, .story { padding: 100px 24px; }
   .zonesStage { grid-template-columns: 1fr; }
