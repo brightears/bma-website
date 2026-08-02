@@ -29,6 +29,24 @@ interface QuotationEmailData {
   numberOfZones: number;
 }
 
+interface SoundtrackTrialEmailData {
+  name: string;
+  email: string;
+  company: string;
+  country: string;
+  businessType: string;
+  locationName: string;
+  zoneName?: string;
+}
+
+const escapeHtml = (value: string) =>
+  value
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+
 /**
  * Send notification email for new inquiry submission
  */
@@ -181,6 +199,47 @@ Requirements:
 ---
 Sent from BMAsia website quotation form
     `,
+  };
+
+  await transporter.sendMail(mailOptions);
+}
+
+/**
+ * Send a distinct notification for a Soundtrack no-card trial request.
+ * Provisioning is deliberately handled after review; this email and the
+ * persisted inquiry are the operational hand-off.
+ */
+export async function sendSoundtrackTrialNotification(data: SoundtrackTrialEmailData): Promise<void> {
+  const safe = Object.fromEntries(
+    Object.entries(data).map(([key, value]) => [key, escapeHtml(value || '')])
+  ) as Record<keyof SoundtrackTrialEmailData, string>;
+
+  const mailOptions = {
+    from: `"BMAsia Website" <${process.env.GMAIL_USER}>`,
+    to: process.env.NOTIFICATION_EMAIL,
+    replyTo: data.email,
+    subject: `Soundtrack trial request — ${data.company}`,
+    html: `
+      <div style="font-family: Arial, sans-serif; max-width: 640px; margin: 0 auto;">
+        <div style="background: #190d21; padding: 30px; border-radius: 10px 10px 0 0;">
+          <p style="color: #d6c2ff; margin: 0 0 8px; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;">14-day no-card trial</p>
+          <h1 style="color: white; margin: 0; font-size: 24px;">New Soundtrack trial request</h1>
+        </div>
+        <div style="background: #f8f5ff; padding: 30px; border-radius: 0 0 10px 10px; color: #190d21;">
+          <table style="width: 100%; border-collapse: collapse;">
+            <tr><td style="padding: 10px 0; border-bottom: 1px solid #ded5eb; font-weight: bold; width: 150px;">Name</td><td style="padding: 10px 0; border-bottom: 1px solid #ded5eb;">${safe.name}</td></tr>
+            <tr><td style="padding: 10px 0; border-bottom: 1px solid #ded5eb; font-weight: bold;">Email</td><td style="padding: 10px 0; border-bottom: 1px solid #ded5eb;"><a href="mailto:${safe.email}" style="color: #5f3b89;">${safe.email}</a></td></tr>
+            <tr><td style="padding: 10px 0; border-bottom: 1px solid #ded5eb; font-weight: bold;">Company</td><td style="padding: 10px 0; border-bottom: 1px solid #ded5eb;">${safe.company}</td></tr>
+            <tr><td style="padding: 10px 0; border-bottom: 1px solid #ded5eb; font-weight: bold;">Country</td><td style="padding: 10px 0; border-bottom: 1px solid #ded5eb;">${safe.country}</td></tr>
+            <tr><td style="padding: 10px 0; border-bottom: 1px solid #ded5eb; font-weight: bold;">Business type</td><td style="padding: 10px 0; border-bottom: 1px solid #ded5eb;">${safe.businessType}</td></tr>
+            <tr><td style="padding: 10px 0; border-bottom: 1px solid #ded5eb; font-weight: bold;">First location</td><td style="padding: 10px 0; border-bottom: 1px solid #ded5eb;">${safe.locationName}</td></tr>
+            <tr><td style="padding: 10px 0; border-bottom: 1px solid #ded5eb; font-weight: bold;">First zone</td><td style="padding: 10px 0; border-bottom: 1px solid #ded5eb;">${safe.zoneName || 'Not specified'}</td></tr>
+          </table>
+          <p style="margin: 24px 0 0; color: #6f607c; font-size: 13px;">Review the request, verify the business details, then activate the Soundtrack trial through the approved operational workflow.</p>
+        </div>
+      </div>
+    `,
+    text: `Soundtrack trial request\n\nName: ${data.name}\nEmail: ${data.email}\nCompany: ${data.company}\nCountry: ${data.country}\nBusiness type: ${data.businessType}\nFirst location: ${data.locationName}\nFirst zone: ${data.zoneName || 'Not specified'}`,
   };
 
   await transporter.sendMail(mailOptions);

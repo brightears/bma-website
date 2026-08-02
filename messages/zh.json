@@ -545,6 +545,14 @@
       "error": "出现了问题，请重试。"
     }
   },
+  "soundtrackTrialPage": {
+    "metadata": { "title": "开始 Soundtrack 免费试用", "description": "申请一个商业音乐区域的 14 天 Soundtrack 试用。无需信用卡，无需承诺。" },
+    "hero": { "label": "无需信用卡的 14 天试用", "title": "在您的空间体验", "titleHighlight": "Soundtrack。", "subtitle": "告诉我们您希望测试的第一个地点。BMAsia 将核实设置并安排一个区域的访问权限。" },
+    "proof": { "noCard": "无需信用卡", "oneZone": "测试一个区域", "autoEnd": "自动结束" },
+    "steps": { "label": "接下来的流程", "requestTitle": "提交必要信息", "requestDesc": "一份简短表格即可提供我们准备合适试用所需的信息。", "verifyTitle": "BMAsia 核实设置", "verifyDesc": "我们会检查地点，并确保试用按商业用途进行配置。", "accessTitle": "获取访问权限", "accessDesc": "我们会发送第一个区域的登录信息和设置说明。" },
+    "note": { "title": "透明、无压力的试用", "desc": "无需提供付款方式。如果您不订阅，无卡试用将自动结束。" },
+    "form": { "title": "申请试用", "subtitle": "先从一个地点和一个区域开始。音乐合适后，再添加其余区域。", "name": "您的姓名", "email": "工作邮箱", "company": "公司", "country": "国家", "businessType": "业务类型", "select": "请选择", "hotel": "酒店或度假村", "restaurant": "餐厅或酒吧", "retail": "零售", "fitness": "健身或康养", "office": "办公室或工作场所", "other": "其他", "locationName": "第一个地点", "locationPlaceholder": "例如 Riverside Hotel Bangkok", "zoneName": "第一个区域（可选）", "zonePlaceholder": "例如 大堂", "zoneHint": "区域是拥有独立音乐的空间，例如大堂、餐厅或卖场。", "consent": "我同意 BMAsia 使用这些信息安排 Soundtrack 试用，并与 Soundtrack 分享所需的激活信息", "privacy": "隐私政策", "consentRequired": "请确认后再继续。", "required": "此项为必填。", "invalidEmail": "请输入有效的工作邮箱。", "submit": "申请 14 天试用", "submitting": "正在发送申请…", "footnote": "提交表格不会开始付费订阅。", "successTitle": "已收到您的试用申请。", "successMessage": "BMAsia 将核实信息并通过电子邮件发送下一步。尚未产生费用或订阅。", "back": "返回 Soundtrack", "error": "无法保存申请，请重试。" }
+  },
   "soundtrackPage": {
     "metadata": {
       "title": "Soundtrack Your Brand",
@@ -552,8 +560,8 @@
     },
     "hero": {
       "label": "全球行业标准",
-      "title": "Soundtrack Your",
-      "titleHighlight": "Brand",
+      "title": "Soundtrack",
+      "titleHighlight": "Your Brand",
       "subtitle": "全球最大的商用音乐曲库，为您的空间量身打造。",
       "ctaQuote": "获取报价",
       "ctaTrial": "开始免费试用"
@@ -678,7 +686,7 @@
       "sectionLabel": "先试后定",
       "title": "在决定之前",
       "titleHighlight": "先体验一番。",
-      "desc1": "从单个区域的免费一个月试用开始。无需信用卡，无需任何承诺。",
+      "desc1": "从单个区域的免费 14 天试用开始。无需信用卡，无需任何承诺。",
       "desc2": "一旦您决定签约且硬件就位，我们可在五分钟内让您顺利上线运行。",
       "cta": "开始免费试用"
     },

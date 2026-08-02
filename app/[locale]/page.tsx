@@ -89,14 +89,16 @@ export default function Home() {
               <div className="relative min-h-[430px] overflow-hidden bg-[#d6c2ff] p-6 sm:p-8">
                 <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full border border-black/10" aria-hidden="true" />
                 <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full border border-black/10" aria-hidden="true" />
-                <Image
-                  src="/images/brand/soundtrack/reseller-of-soundtrack-purple.svg"
-                  alt="Official reseller of Soundtrack"
-                  width={502}
-                  height={213}
-                  className="relative z-10 h-auto w-full max-w-[390px]"
-                />
-                <div className="relative z-10 mt-7 min-h-[225px] overflow-hidden rounded-[1.5rem] border border-black/15 bg-[#190d21] shadow-[0_24px_70px_rgba(25,13,33,0.28)]">
+                <div className="relative z-10">
+                  <Image
+                    src="/images/brand/soundtrack/soundtrack-logo-black.svg"
+                    alt="Soundtrack"
+                    width={502}
+                    height={147}
+                    className="h-auto w-[13rem] sm:w-[15rem]"
+                  />
+                </div>
+                <div className="relative z-10 mt-8 min-h-[225px] overflow-hidden rounded-[1.5rem] border border-black/15 bg-[#190d21] shadow-[0_24px_70px_rgba(25,13,33,0.28)]">
                   <Image src="/images/product-syb-hero.webp" alt="" fill sizes="(max-width:1280px) 100vw, 43vw" className="object-cover opacity-55 saturate-[0.76]" />
                   <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(25,13,33,0.94),rgba(25,13,33,0.35))]" />
                   <div className="absolute inset-x-0 bottom-0 z-10 p-6">
