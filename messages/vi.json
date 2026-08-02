@@ -14,7 +14,7 @@
     "solutions": "Giải pháp",
     "notSure": "Chưa chắc giải pháp nào phù hợp?",
     "talkToUs": "Trao đổi với chúng tôi",
-    "signIn": "Đăng nhập",
+    "signIn": "Đăng nhập Beat Breeze",
     "startFree": "Bắt đầu miễn phí",
     "openMenu": "Mở menu",
     "closeMenu": "Đóng menu",
@@ -932,6 +932,43 @@
     }
   },
   "homePage": {
+    "immersive": {
+      "hero": {
+        "eyebrow": "Beat Breeze bởi BMAsia", "title": "Mỗi không gian có một nhịp điệu.", "highlight": "Hãy để âm nhạc chuyển động cùng nó.",
+        "description": "Định hình từng khu vực từ sáng đến tối—hoặc để Music Concierge quản lý toàn bộ dòng nhạc. Một nền tảng thông minh cho âm nhạc đúng với từng khoảnh khắc.",
+        "try": "Thử cỗ máy thời gian", "start": "Dùng thử miễn phí 14 ngày", "proof1": "Không cần thẻ", "proof2": "Không cần phần cứng chuyên dụng", "proof3": "Từ $12 mỗi khu vực", "scroll": "Trải nghiệm cả ngày"
+      },
+      "field": { "ariaLabel": "Trường âm nhạc sống động thay đổi theo từng khu vực", "energy": "Năng lượng {energy}" },
+      "demo": {
+        "eyebrow": "Một trải nghiệm hữu ích trong năm phút", "title": "Đi qua một ngày.", "highlight": "Cảm nhận không gian thay đổi.",
+        "description": "Chọn loại hình kinh doanh, kéo thời gian và đưa từng khu vực lên trước. Âm nhạc, năng lượng và hướng dẫn Concierge cùng phản hồi.",
+        "machineLabel": "Mô phỏng địa điểm trực tiếp", "live": "Phản hồi trực tiếp", "chooseVenue": "Chọn loại hình kinh doanh", "localTime": "Giờ địa phương", "chooseTime": "Chọn thời điểm", "playlistDetail": "Năng lượng {energy} · {bpm} BPM", "concierge": "Hướng dẫn từ Music Concierge", "energy": "Năng lượng địa điểm"
+      },
+      "venues": { "hotel": "Khách sạn", "restaurant": "Nhà hàng", "retail": "Bán lẻ", "fitness": "Thể hình" },
+      "phases": { "0": { "label": "Buổi sáng", "mood": "Đón khách nhẹ nhàng" }, "1": { "label": "Ban ngày", "mood": "Ấm áp và trôi chảy" }, "2": { "label": "Buổi tối", "mood": "Năng lượng giao lưu" }, "3": { "label": "Đêm muộn", "mood": "Khép lại dịu dàng" } },
+      "zones": { "lobby": "Sảnh", "restaurant": "Nhà hàng", "wellness": "Chăm sóc sức khỏe", "rooftop": "Sân thượng", "dining": "Khu ăn uống", "bar": "Quầy bar", "terrace": "Sân hiên", "entrance": "Lối vào", "shopFloor": "Khu bán hàng", "fittingRooms": "Phòng thử đồ", "mainFloor": "Sàn chính", "studio": "Phòng tập", "recovery": "Khu hồi phục" },
+      "venueContext": {
+        "hotel": "Giữ trải nghiệm đến nơi thật êm dịu, rồi tăng dần năng lượng ở các khu vực giao lưu.",
+        "restaurant": "Ưu tiên trò chuyện trước, sau đó nâng không khí theo nhịp phục vụ.",
+        "retail": "Tạo đà chuyển động mà không biến âm nhạc thành tâm điểm.",
+        "fitness": "Khớp cường độ âm nhạc với luyện tập, chuyển tiếp và hồi phục."
+      },
+      "guidance": { "0": "Bắt đầu thoáng và ít kích thích khi ngày mới dần mở ra.", "1": "Thêm chuyển động nhịp nhàng ổn định mà không làm không gian chật chội.", "2": "Chủ động nâng năng lượng ở nơi mọi người giao lưu nhiều hơn.", "3": "Giảm dần cường độ để kết thúc một cách dễ chịu." },
+      "brief": { "eyebrow": "Mang theo điều hữu ích", "title": "Bản định hướng âm nhạc của bạn", "copy": "Sao chép bản định hướng", "copied": "Đã sao chép", "text": "Định hướng {venue} lúc {time}\nCảm giác mong muốn: {mood}. {guidance}\nKế hoạch khu vực: {zones}" },
+      "story": {
+        "eyebrow": "Một hệ thống, không phải danh sách tính năng", "title": "Từ cảm giác đến", "highlight": "một địa điểm vận hành trôi chảy.",
+        "find": { "title": "Tìm đúng cảm giác", "text": "Mô tả khoảnh khắc bằng ngôn ngữ tự nhiên hoặc tự khám phá toàn bộ danh mục." },
+        "shape": { "title": "Định hình cả ngày", "text": "Biến giờ mở cửa, khung giờ và năng lượng thành một kế hoạch âm nhạc hợp lý." },
+        "control": { "title": "Điều khiển mọi khu vực", "text": "Xem nội dung đang phát, kết nối thiết bị và can thiệp từ một phòng điều khiển rõ ràng." },
+        "concierge": { "title": "Để Concierge quản lý", "text": "Nhận đề xuất có thể giải thích, câu hỏi đúng lúc và sự chăm sóc liên tục khi bạn muốn." },
+        "cta": "Khám phá mọi điều Beat Breeze có thể làm"
+      },
+      "worlds": {
+        "eyebrow": "Một đội ngũ BMAsia · hai giải pháp khác biệt", "title": "Chọn thế giới âm nhạc", "highlight": "phù hợp với doanh nghiệp của bạn.",
+        "description": "Beat Breeze mang đến nền tảng tự phục vụ thông minh. Soundtrack cung cấp danh mục thương mại quen thuộc với sự hỗ trợ của BMAsia.",
+        "bbCore": "Khu vực · lịch phát · Concierge", "tryBeatBreeze": "Dùng thử Beat Breeze", "sybDiscLabel": "BMAsia đồng hành", "sybDiscText": "Âm nhạc quen thuộc cho doanh nghiệp", "talkSoundtrack": "Trao đổi với BMAsia về Soundtrack", "compareLabel": "Chưa chắc lựa chọn nào phù hợp?", "compareText": "Chúng tôi sẽ cùng bạn so sánh danh mục, bản quyền, khả năng điều khiển và dịch vụ—không ép bạn chọn sai sản phẩm."
+      }
+    },
     "venuePulse": {
       "ariaLabel": "Bản xem trực tiếp một địa điểm với ba khu vực âm nhạc",
       "label": "Nhịp vận hành địa điểm",

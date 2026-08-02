@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Fonts loaded via next/font in layout.tsx: DM Sans (body), Libre Caslon Text (headlines), Space Grotesk (labels) */
+/* Fonts loaded via next/font in layout.tsx: Geist (body + headlines), Space Grotesk (labels and product moments) */
 
 /* Base styles */
 @layer base {
@@ -25,7 +25,7 @@
 @layer utilities {
   /* Gradient text */
   .gradient-text {
-    @apply bg-gradient-to-r from-brand-orange to-amber-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-brand-orange via-amber-300 to-cyan-400 bg-clip-text text-transparent;
   }
 
   /* Glassmorphism effect */

@@ -20,9 +20,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['DM Sans', 'system-ui', 'sans-serif'],
-        headline: ['Libre Caslon Text', 'Georgia', 'serif'],
-        label: ['Space Grotesk', 'monospace'],
+        sans: ['var(--font-geist)', 'system-ui', 'sans-serif'],
+        headline: ['var(--font-geist)', 'system-ui', 'sans-serif'],
+        label: ['var(--font-label)', 'Space Grotesk', 'sans-serif'],
       },
       animation: {
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',

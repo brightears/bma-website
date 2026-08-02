@@ -14,7 +14,7 @@
     "solutions": "ソリューション",
     "notSure": "最適なソリューションが分かりませんか？",
     "talkToUs": "ご相談ください",
-    "signIn": "ログイン",
+    "signIn": "Beat Breeze ログイン",
     "startFree": "無料で始める",
     "openMenu": "メニューを開く",
     "closeMenu": "メニューを閉じる",
@@ -932,6 +932,43 @@
     }
   },
   "homePage": {
+    "immersive": {
+      "hero": {
+        "eyebrow": "BMAsiaのBeat Breeze", "title": "すべての空間には、独自の鼓動があります。", "highlight": "音楽をその流れに合わせましょう。",
+        "description": "朝から夜まで各ゾーンの雰囲気を整えることも、Music Conciergeに流れを任せることもできます。瞬間に合う音楽を一つの知的なプラットフォームで。",
+        "try": "ベニュー・タイムマシンを試す", "start": "14日間無料で試す", "proof1": "カード不要", "proof2": "専用ハードウェア不要", "proof3": "1ゾーン月額$12から", "scroll": "一日の流れを体験"
+      },
+      "field": { "ariaLabel": "ベニュー全体で音楽が変化するライブフィールド", "energy": "エネルギー {energy}" },
+      "demo": {
+        "eyebrow": "5分で体験できる実用的なデモ", "title": "一日を動かす。", "highlight": "空間の変化を感じる。",
+        "description": "業種を選び、時間を動かし、各ゾーンを前面に出してみてください。音楽、エネルギー、Conciergeの提案が連動します。",
+        "machineLabel": "ライブ・ベニューシミュレーション", "live": "リアルタイムで反応中", "chooseVenue": "業種を選択", "localTime": "現地時間", "chooseTime": "時間帯を選択", "playlistDetail": "エネルギー {energy} · {bpm} BPM", "concierge": "Music Conciergeの提案", "energy": "ベニューのエネルギー"
+      },
+      "venues": { "hotel": "ホテル", "restaurant": "レストラン", "retail": "小売店", "fitness": "フィットネス" },
+      "phases": { "0": { "label": "朝", "mood": "穏やかな到着" }, "1": { "label": "日中", "mood": "温かく自然な流れ" }, "2": { "label": "夕方", "mood": "社交的なエネルギー" }, "3": { "label": "夜遅く", "mood": "やわらかな着地" } },
+      "zones": { "lobby": "ロビー", "restaurant": "レストラン", "wellness": "ウェルネス", "rooftop": "ルーフトップ", "dining": "ダイニング", "bar": "バー", "terrace": "テラス", "entrance": "エントランス", "shopFloor": "売場", "fittingRooms": "試着室", "mainFloor": "メインフロア", "studio": "スタジオ", "recovery": "リカバリー" },
+      "venueContext": {
+        "hotel": "到着時は穏やかに保ち、ソーシャルゾーンは後から徐々に高めます。",
+        "restaurant": "まず会話を守り、サービスの流れに合わせて空間を引き上げます。",
+        "retail": "音楽を主役にせず、心地よい勢いを生み出します。",
+        "fitness": "トレーニング、切り替え、回復に音楽の強度を合わせます。"
+      },
+      "guidance": { "0": "一日が始まる時間は、余白のある低刺激な音から始めましょう。", "1": "空間を埋めすぎず、安定したリズムの動きを加えましょう。", "2": "交流が増えるゾーンでは、意図的にエネルギーを高めましょう。", "3": "強度をゆるやかに下げ、心地よく一日を締めくくりましょう。" },
+      "brief": { "eyebrow": "持ち帰れる実用的なアウトプット", "title": "あなたの音楽ブリーフ", "copy": "音楽ブリーフをコピー", "copied": "コピーしました", "text": "{time}の{venue}の方向性\n目指す雰囲気: {mood}。{guidance}\nゾーン計画: {zones}" },
+      "story": {
+        "eyebrow": "機能の羅列ではなく、一つのシステム", "title": "感覚から始まり、", "highlight": "空間全体が流れ出す。",
+        "find": { "title": "雰囲気を見つける", "text": "自然な言葉でその瞬間を説明するか、カタログ全体を自分で探索できます。" },
+        "shape": { "title": "一日を形にする", "text": "営業時間、時間帯、エネルギーを、納得できる音楽プランに変えます。" },
+        "control": { "title": "すべてのゾーンを管理", "text": "再生中の音楽を確認し、デバイスを接続し、一つの明確なコントロールルームから操作できます。" },
+        "concierge": { "title": "Conciergeに任せる", "text": "説明できる提案、適切なタイミングの質問、必要なときの継続的な管理を受けられます。" },
+        "cta": "Beat Breezeでできることをすべて見る"
+      },
+      "worlds": {
+        "eyebrow": "一つのBMAsiaチーム · 二つの異なるソリューション", "title": "ビジネスに合う", "highlight": "音楽の世界を選ぶ。",
+        "description": "Beat Breezeは運営者向けの知的なセルフサービスプラットフォーム。SoundtrackはBMAsiaのサポートとともに、親しみのある商用レパートリーを提供します。",
+        "bbCore": "ゾーン · スケジュール · Concierge", "tryBeatBreeze": "Beat Breezeを無料で試す", "sybDiscLabel": "BMAsiaがサポート", "sybDiscText": "ビジネスのための親しみある音楽", "talkSoundtrack": "SoundtrackについてBMAsiaに相談", "compareLabel": "どちらが合うか迷っていますか？", "compareText": "不適切な商品を押しつけることなく、レパートリー、ライセンス、操作性、サービスを一緒に比較します。"
+      }
+    },
     "venuePulse": {
       "ariaLabel": "3つの音楽ゾーンを持つ施設のライブプレビュー",
       "label": "ベニューパルス",

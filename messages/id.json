@@ -14,7 +14,7 @@
     "solutions": "Solusi",
     "notSure": "Belum yakin solusi mana yang sesuai?",
     "talkToUs": "Bicarakan dengan kami",
-    "signIn": "Masuk",
+    "signIn": "Masuk Beat Breeze",
     "startFree": "Mulai gratis",
     "openMenu": "Buka menu",
     "closeMenu": "Tutup menu",
@@ -932,6 +932,43 @@
     }
   },
   "homePage": {
+    "immersive": {
+      "hero": {
+        "eyebrow": "Beat Breeze oleh BMAsia", "title": "Setiap tempat punya denyut.", "highlight": "Biarkan musik mengikutinya.",
+        "description": "Bentuk setiap zona dari pagi hingga malam—atau biarkan Music Concierge mengelola alurnya. Satu platform cerdas untuk musik yang sesuai dengan setiap momen.",
+        "try": "Coba mesin waktu venue", "start": "Coba gratis 14 hari", "proof1": "Tanpa kartu", "proof2": "Tanpa perangkat khusus", "proof3": "Mulai $12 per zona", "scroll": "Rasakan perjalanan harinya"
+      },
+      "field": { "ariaLabel": "Bidang musik hidup yang berubah di seluruh venue", "energy": "Energi {energy}" },
+      "demo": {
+        "eyebrow": "Pengalaman lima menit yang berguna", "title": "Jalani satu hari.", "highlight": "Lihat suasananya berubah.",
+        "description": "Pilih jenis bisnis, geser waktu, dan tonjolkan zona yang berbeda. Musik, energi, dan panduan Concierge merespons bersama.",
+        "machineLabel": "Simulasi venue langsung", "live": "Merespons langsung", "chooseVenue": "Pilih jenis bisnis", "localTime": "Waktu lokal", "chooseTime": "Pilih waktu", "playlistDetail": "Energi {energy} · {bpm} BPM", "concierge": "Panduan Music Concierge", "energy": "Energi venue"
+      },
+      "venues": { "hotel": "Hotel", "restaurant": "Restoran", "retail": "Ritel", "fitness": "Pusat kebugaran" },
+      "phases": { "0": { "label": "Pagi", "mood": "Kedatangan yang tenang" }, "1": { "label": "Siang", "mood": "Hangat dan mengalir" }, "2": { "label": "Sore", "mood": "Energi sosial" }, "3": { "label": "Larut malam", "mood": "Penutup yang lembut" } },
+      "zones": { "lobby": "Lobi", "restaurant": "Restoran", "wellness": "Kebugaran", "rooftop": "Rooftop", "dining": "Area makan", "bar": "Bar", "terrace": "Teras", "entrance": "Pintu masuk", "shopFloor": "Area penjualan", "fittingRooms": "Ruang ganti", "mainFloor": "Lantai utama", "studio": "Studio", "recovery": "Pemulihan" },
+      "venueContext": {
+        "hotel": "Jaga ketenangan saat tamu datang, lalu bangun energi di zona sosial secara bertahap.",
+        "restaurant": "Utamakan percakapan, lalu angkat suasana mengikuti alur layanan.",
+        "retail": "Ciptakan momentum tanpa membuat musik menjadi pusat perhatian.",
+        "fitness": "Sesuaikan intensitas musik dengan latihan, transisi, dan pemulihan."
+      },
+      "guidance": { "0": "Mulai dengan nuansa lapang dan stimulasi rendah saat hari dimulai.", "1": "Tambahkan gerakan ritmis yang stabil tanpa memenuhi ruang.", "2": "Naikkan energi dengan sengaja ketika pengunjung makin bersosialisasi.", "3": "Turunkan intensitas perlahan untuk penutupan yang nyaman." },
+      "brief": { "eyebrow": "Bawa pulang sesuatu yang berguna", "title": "Brief musik yang dibuat untuk Anda", "copy": "Salin brief musik", "copied": "Brief disalin", "text": "Arah {venue} pada {time}\nSuasana yang diinginkan: {mood}. {guidance}\nRencana zona: {zones}" },
+      "story": {
+        "eyebrow": "Satu sistem, bukan daftar fitur", "title": "Dari sebuah rasa menuju", "highlight": "venue yang mengalir.",
+        "find": { "title": "Temukan suasananya", "text": "Jelaskan momen dengan bahasa sehari-hari atau jelajahi seluruh katalog sendiri." },
+        "shape": { "title": "Bentuk sepanjang hari", "text": "Ubah jam operasional, bagian hari, dan energi menjadi rencana musik yang masuk akal." },
+        "control": { "title": "Kendalikan setiap zona", "text": "Lihat apa yang diputar, hubungkan perangkat, dan ambil kendali dari satu ruang kontrol yang jelas." },
+        "concierge": { "title": "Biarkan Concierge mengelola", "text": "Dapatkan rekomendasi yang dapat dijelaskan, pertanyaan tepat waktu, dan pengelolaan berkelanjutan saat Anda menginginkannya." },
+        "cta": "Jelajahi semua yang dapat dilakukan Beat Breeze"
+      },
+      "worlds": {
+        "eyebrow": "Satu tim BMAsia · dua solusi berbeda", "title": "Pilih dunia musik", "highlight": "yang sesuai untuk bisnis Anda.",
+        "description": "Beat Breeze memberi operator platform layanan mandiri yang cerdas. Soundtrack menghadirkan repertoar komersial yang dikenal dengan panduan BMAsia.",
+        "bbCore": "Zona · jadwal · Concierge", "tryBeatBreeze": "Coba Beat Breeze gratis", "sybDiscLabel": "Didampingi BMAsia", "sybDiscText": "Musik yang dikenal untuk bisnis", "talkSoundtrack": "Bicara dengan BMAsia tentang Soundtrack", "compareLabel": "Belum yakin jalur mana yang tepat?", "compareText": "Kami akan membandingkan repertoar, lisensi, kontrol, dan layanan bersama Anda—tanpa mendorong produk yang keliru."
+      }
+    },
     "venuePulse": {
       "ariaLabel": "Pratinjau langsung satu venue dengan tiga zona musik",
       "label": "Denyut venue",

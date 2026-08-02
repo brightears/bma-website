@@ -181,7 +181,7 @@ export const Header: React.FC = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden items-center gap-1 md:flex">
+          <div className="hidden items-center gap-1 xl:flex">
             <NavLink href={`/${locale}/beat-breeze`} label={t('beatBreeze')} />
             <NavLink href={`/${locale}/soundtrack-your-brand`} label={t('soundtrack')} />
             {/* Solutions Mega Dropdown */}
@@ -215,8 +215,13 @@ export const Header: React.FC = () => {
                 </div>
               </div>
             </div>
-            <NavLink href={`/${locale}/how-it-works`} label={t('howItWorks')} />
             <LanguageSwitcher />
+            <Link
+              href={`/${locale}/quotation`}
+              className="ml-1 rounded-full px-3 py-2 text-sm font-medium text-brand-orange transition-colors hover:bg-brand-orange/5 hover:text-[#ffb64a]"
+            >
+              {t('talkToBMAsia')}
+            </Link>
             <a
               href="https://beatbreeze.io/sign-in"
               className="ml-1 rounded-full px-3 py-2 text-sm font-medium text-white/65 transition-colors hover:text-white"
@@ -234,7 +239,7 @@ export const Header: React.FC = () => {
           {/* Mobile Menu Button */}
           <motion.button
             type="button"
-            className="relative z-50 md:hidden p-2 -mr-2 text-white focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark rounded-lg"
+            className="relative z-50 -mr-2 rounded-lg p-2 text-white focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark xl:hidden"
             onClick={toggleMenu}
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
@@ -259,7 +264,7 @@ export const Header: React.FC = () => {
             <>
               {/* Overlay */}
               <motion.div
-                className="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm md:hidden"
+                className="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm xl:hidden"
                 variants={overlayVariants}
                 initial="closed"
                 animate="open"
@@ -271,7 +276,7 @@ export const Header: React.FC = () => {
               {/* Menu Panel */}
               <motion.div
                 id="mobile-menu"
-                className="fixed top-0 right-0 bottom-0 w-full max-w-sm z-[70] md:hidden"
+                className="fixed bottom-0 right-0 top-0 z-[70] w-full max-w-sm xl:hidden"
                 variants={menuVariants}
                 initial="closed"
                 animate="open"
@@ -333,10 +338,17 @@ export const Header: React.FC = () => {
                     <Link
                       href={`/${locale}/quotation`}
                       onClick={closeMenu}
-                    className="mb-3 block w-full rounded-full border border-white/15 px-6 py-3 text-center font-semibold text-white transition-colors hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark"
-                  >
+                      className="mb-3 block w-full rounded-full border border-white/15 px-6 py-3 text-center font-semibold text-white transition-colors hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark"
+                    >
                       {t('talkToBMAsia')}
                     </Link>
+                    <a
+                      href="https://beatbreeze.io/sign-in"
+                      onClick={closeMenu}
+                      className="mb-3 block w-full rounded-full border border-brand-orange/35 px-6 py-3 text-center font-semibold text-brand-orange transition-colors hover:bg-brand-orange/10 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark"
+                    >
+                      {t('signIn')}
+                    </a>
                     <a
                       href="https://beatbreeze.io/sign-up"
                       onClick={closeMenu}
