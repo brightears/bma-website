@@ -14,7 +14,7 @@
     "solutions": "Penyelesaian",
     "notSure": "Tidak pasti penyelesaian yang sesuai?",
     "talkToUs": "Bercakap dengan kami",
-    "signIn": "Log masuk",
+    "signIn": "Log masuk Beat Breeze",
     "startFree": "Mula percuma",
     "openMenu": "Buka menu",
     "closeMenu": "Tutup menu",
@@ -932,6 +932,43 @@
     }
   },
   "homePage": {
+    "immersive": {
+      "hero": {
+        "eyebrow": "Beat Breeze oleh BMAsia", "title": "Setiap ruang ada denyutnya.", "highlight": "Biarkan muzik mengikutinya.",
+        "description": "Bentuk setiap zon dari pagi hingga malam—atau biarkan Music Concierge mengurus alirannya. Satu platform pintar untuk muzik yang sesuai dengan setiap detik.",
+        "try": "Cuba mesin masa venue", "start": "Cuba percuma 14 hari", "proof1": "Tiada kad diperlukan", "proof2": "Tiada perkakasan khusus", "proof3": "Daripada $12 setiap zon", "scroll": "Alami perjalanan hari"
+      },
+      "field": { "ariaLabel": "Medan muzik hidup yang berubah di seluruh venue", "energy": "Tenaga {energy}" },
+      "demo": {
+        "eyebrow": "Pengalaman lima minit yang berguna", "title": "Gerakkan satu hari.", "highlight": "Lihat suasana berubah.",
+        "description": "Pilih jenis perniagaan, laraskan masa dan bawa zon berbeza ke hadapan. Muzik, tenaga dan panduan Concierge bertindak balas bersama.",
+        "machineLabel": "Simulasi venue langsung", "live": "Bertindak balas langsung", "chooseVenue": "Pilih jenis perniagaan", "localTime": "Waktu tempatan", "chooseTime": "Pilih masa", "playlistDetail": "Tenaga {energy} · {bpm} BPM", "concierge": "Panduan Music Concierge", "energy": "Tenaga venue"
+      },
+      "venues": { "hotel": "Hotel", "restaurant": "Restoran", "retail": "Runcit", "fitness": "Kecergasan" },
+      "phases": { "0": { "label": "Pagi", "mood": "Ketibaan yang tenang" }, "1": { "label": "Siang", "mood": "Hangat dan mengalir" }, "2": { "label": "Petang", "mood": "Tenaga sosial" }, "3": { "label": "Lewat malam", "mood": "Penutup yang lembut" } },
+      "zones": { "lobby": "Lobi", "restaurant": "Restoran", "wellness": "Kesejahteraan", "rooftop": "Bumbung", "dining": "Ruang makan", "bar": "Bar", "terrace": "Teres", "entrance": "Pintu masuk", "shopFloor": "Ruang jualan", "fittingRooms": "Bilik persalinan", "mainFloor": "Ruang utama", "studio": "Studio", "recovery": "Pemulihan" },
+      "venueContext": {
+        "hotel": "Pastikan ketibaan tenang dan biarkan zon sosial membina tenaga kemudian.",
+        "restaurant": "Utamakan perbualan, kemudian tingkatkan suasana mengikut servis.",
+        "retail": "Cipta momentum tanpa menjadikan muzik acara utama.",
+        "fitness": "Padankan keamatan muzik dengan latihan, peralihan dan pemulihan."
+      },
+      "guidance": { "0": "Mulakan dengan ruang yang lapang dan rangsangan rendah ketika hari bermula.", "1": "Tambah pergerakan berirama yang stabil tanpa memenuhi ruang.", "2": "Tingkatkan tenaga secara sengaja apabila tetamu semakin bersosial.", "3": "Kurangkan keamatan dan kekalkan penutup yang selesa." },
+      "brief": { "eyebrow": "Bawa pulang sesuatu yang berguna", "title": "Ringkasan muzik yang dijana untuk anda", "copy": "Salin ringkasan muzik", "copied": "Ringkasan disalin", "text": "Arah {venue} pada {time}\nSuasana yang dikehendaki: {mood}. {guidance}\nPelan zon: {zones}" },
+      "story": {
+        "eyebrow": "Satu sistem, bukan senarai ciri", "title": "Daripada perasaan kepada", "highlight": "venue yang mengalir.",
+        "find": { "title": "Cari suasana", "text": "Terangkan detik dengan bahasa biasa atau terokai keseluruhan katalog sendiri." },
+        "shape": { "title": "Bentuk keseluruhan hari", "text": "Tukar waktu operasi, bahagian hari dan tenaga menjadi pelan muzik yang masuk akal." },
+        "control": { "title": "Kawal setiap zon", "text": "Lihat apa yang dimainkan, sambungkan peranti dan campur tangan dari satu bilik kawalan yang jelas." },
+        "concierge": { "title": "Biarkan Concierge mengurus", "text": "Dapatkan cadangan yang boleh dijelaskan, soalan tepat pada masa dan penjagaan berterusan apabila anda mahu." },
+        "cta": "Terokai segala yang Beat Breeze boleh lakukan"
+      },
+      "worlds": {
+        "eyebrow": "Satu pasukan BMAsia · dua penyelesaian berbeza", "title": "Pilih dunia muzik", "highlight": "yang sesuai dengan perniagaan anda.",
+        "description": "Beat Breeze memberi operator platform layan diri pintar. Soundtrack menawarkan repertoir komersial yang dikenali dengan bimbingan BMAsia.",
+        "bbCore": "Zon · jadual · Concierge", "tryBeatBreeze": "Cuba Beat Breeze percuma", "sybDiscLabel": "Dibantu BMAsia", "sybDiscText": "Muzik yang dikenali untuk perniagaan", "talkSoundtrack": "Bercakap dengan BMAsia tentang Soundtrack", "compareLabel": "Tidak pasti laluan yang sesuai?", "compareText": "Kami akan membandingkan repertoir, pelesenan, kawalan dan perkhidmatan bersama anda—tanpa menolak produk yang salah."
+      }
+    },
     "venuePulse": {
       "ariaLabel": "Pratonton langsung satu venue dengan tiga zon muzik",
       "label": "Nadi venue",

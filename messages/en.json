@@ -14,7 +14,7 @@
     "solutions": "Solutions",
     "notSure": "Not sure which solution fits?",
     "talkToUs": "Talk to us",
-    "signIn": "Sign in",
+    "signIn": "Beat Breeze login",
     "startFree": "Start free",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
@@ -932,6 +932,107 @@
     }
   },
   "homePage": {
+    "immersive": {
+      "hero": {
+        "eyebrow": "Beat Breeze by BMAsia",
+        "title": "Your venue has a pulse.",
+        "highlight": "Let the music follow it.",
+        "description": "Shape every zone from morning to night—or let the Music Concierge manage the flow. One intelligent platform for music that fits the moment.",
+        "try": "Try the venue time machine",
+        "start": "Start 14 days free",
+        "proof1": "No card required",
+        "proof2": "No dedicated hardware",
+        "proof3": "From $12 per zone",
+        "scroll": "Experience the day"
+      },
+      "field": {
+        "ariaLabel": "A living field showing music changing throughout the venue",
+        "energy": "Energy {energy}"
+      },
+      "demo": {
+        "eyebrow": "A useful five-minute experience",
+        "title": "Move through a day.",
+        "highlight": "Hear the venue change.",
+        "description": "Choose a business, drag the time and bring different zones forward. The music, energy and Concierge guidance respond together.",
+        "machineLabel": "Live venue simulation",
+        "live": "Responding live",
+        "chooseVenue": "Choose a business type",
+        "localTime": "Local time",
+        "chooseTime": "Choose a time of day",
+        "playlistDetail": "Energy {energy} · {bpm} BPM",
+        "concierge": "Music Concierge guidance",
+        "energy": "Venue energy"
+      },
+      "venues": {
+        "hotel": "Hotel",
+        "restaurant": "Restaurant",
+        "retail": "Retail",
+        "fitness": "Fitness"
+      },
+      "phases": {
+        "0": { "label": "Morning", "mood": "Quiet arrival" },
+        "1": { "label": "Daytime", "mood": "Warm and flowing" },
+        "2": { "label": "Evening", "mood": "Social energy" },
+        "3": { "label": "Late night", "mood": "A softer landing" }
+      },
+      "zones": {
+        "lobby": "Lobby",
+        "restaurant": "Restaurant",
+        "wellness": "Wellness",
+        "rooftop": "Rooftop",
+        "dining": "Dining",
+        "bar": "Bar",
+        "terrace": "Terrace",
+        "entrance": "Entrance",
+        "shopFloor": "Shop floor",
+        "fittingRooms": "Fitting rooms",
+        "mainFloor": "Main floor",
+        "studio": "Studio",
+        "recovery": "Recovery"
+      },
+      "venueContext": {
+        "hotel": "Keep arrivals calm and let the social zones build later.",
+        "restaurant": "Protect conversation first, then lift the room with service.",
+        "retail": "Create momentum without turning the music into the main event.",
+        "fitness": "Match musical intensity to training, transition and recovery."
+      },
+      "guidance": {
+        "0": "Start spacious and low-arousal while the day settles in.",
+        "1": "Add steady rhythmic movement without crowding the space.",
+        "2": "Raise energy deliberately where guests are becoming more social.",
+        "3": "Ease intensity down and preserve a comfortable close."
+      },
+      "brief": {
+        "eyebrow": "Take something useful with you",
+        "title": "Your generated music brief",
+        "copy": "Copy music brief",
+        "copied": "Brief copied",
+        "text": "{venue} direction at {time}\nDesired feeling: {mood}. {guidance}\nZone plan: {zones}"
+      },
+      "story": {
+        "eyebrow": "One system, not a list of features",
+        "title": "From a feeling to",
+        "highlight": "a venue in flow.",
+        "find": { "title": "Find the feeling", "text": "Describe the moment in plain language or explore the complete catalogue yourself." },
+        "shape": { "title": "Shape the day", "text": "Turn opening hours, dayparts and energy into a music plan that makes sense." },
+        "control": { "title": "Control every zone", "text": "See what is playing, connect devices and step in from one clear control room." },
+        "concierge": { "title": "Let Concierge manage it", "text": "Get explainable recommendations, timely questions and ongoing care when you want it." },
+        "cta": "Explore everything Beat Breeze can do"
+      },
+      "worlds": {
+        "eyebrow": "One BMAsia team · two distinct solutions",
+        "title": "Choose the music world",
+        "highlight": "that fits your business.",
+        "description": "Beat Breeze gives operators an intelligent self-service platform. Soundtrack brings familiar commercial repertoire with BMAsia guidance.",
+        "bbCore": "Zones · schedules · Concierge",
+        "tryBeatBreeze": "Try Beat Breeze free",
+        "sybDiscLabel": "BMAsia-assisted",
+        "sybDiscText": "Recognisable music for business",
+        "talkSoundtrack": "Talk to BMAsia about Soundtrack",
+        "compareLabel": "Not sure which route is right?",
+        "compareText": "We will compare repertoire, licensing, control and service with you—without pushing the wrong product."
+      }
+    },
     "venuePulse": {
       "ariaLabel": "Live preview of one venue with three music zones",
       "label": "Venue pulse",

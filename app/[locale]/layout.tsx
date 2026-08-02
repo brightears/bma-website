@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { DM_Sans, Libre_Caslon_Text, Space_Grotesk } from 'next/font/google';
+import { Geist, Space_Grotesk } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
@@ -11,16 +11,9 @@ import { Footer } from '@/components/layout/Footer';
 import { ChatProvider, ChatPanel } from '@/components/chat';
 import { CookieConsent } from '@/components/layout/CookieConsent';
 
-const dmSans = DM_Sans({
+const geist = Geist({
   subsets: ['latin'],
-  variable: '--font-sans',
-  display: 'swap',
-});
-
-const libreCaslon = Libre_Caslon_Text({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-headline',
+  variable: '--font-geist',
   display: 'swap',
 });
 
@@ -144,7 +137,7 @@ export default async function LocaleLayout({
   const t = await getTranslations({ locale, namespace: 'metadata' });
 
   return (
-    <html lang={locale} suppressHydrationWarning className={`scroll-smooth ${dmSans.variable} ${libreCaslon.variable} ${spaceGrotesk.variable}`}>
+    <html lang={locale} suppressHydrationWarning className={`scroll-smooth ${geist.variable} ${spaceGrotesk.variable}`}>
       <head>
         {/* Preconnect hints for external resources */}
         <link rel="preconnect" href="https://assets.calendly.com" />
@@ -177,7 +170,7 @@ export default async function LocaleLayout({
 
         {/* GTM + Apollo load dynamically after cookie consent — see CookieConsent component */}
       </head>
-      <body className={dmSans.className}>
+      <body className={geist.className}>
         {/* Skip to main content link for accessibility */}
         <a
           href="#main"
