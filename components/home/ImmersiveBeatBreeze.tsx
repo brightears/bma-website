@@ -215,8 +215,8 @@ export function ImmersiveBeatBreeze() {
     try {
       if (audio.ended) audio.currentTime = 0;
       await audio.play();
-      setAudioState('playing');
-    } catch {
+    } catch (error) {
+      if (error instanceof DOMException && error.name === 'AbortError') return;
       setAudioState('error');
     }
   };
@@ -228,7 +228,7 @@ export function ImmersiveBeatBreeze() {
   };
 
   const audioStatus = audioState === 'playing'
-    ? t('audio.playing')
+    ? t(isMuted ? 'audio.playingMuted' : 'audio.playing')
     : audioState === 'paused'
       ? t('audio.paused')
       : audioState === 'error'
