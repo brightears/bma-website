@@ -56,11 +56,11 @@ export default function BeatBreezePage() {
         <div className="mx-auto grid w-full max-w-[1440px] gap-14 lg:grid-cols-[.86fr_1.14fr] lg:items-center lg:gap-16">
           <motion.div initial={{ opacity: 0, y: 26 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75 }}>
             <p className="font-label text-[11px] uppercase tracking-[.28em] text-brand-orange">{h('beatBreezeLead.label')}</p>
-            <h1 className="mt-7 font-headline text-[clamp(4.4rem,8vw,8rem)] leading-[.82] tracking-[-.065em] text-white">
+            <h1 className="mt-7 text-balance font-headline text-[clamp(4.4rem,8vw,8rem)] leading-[.82] tracking-[-.065em] text-white">
               {t('hero.title')}
               <span className="block bg-gradient-to-r from-brand-orange via-[#e4c06d] to-[#45d6cb] bg-clip-text pb-4 text-transparent">{t('hero.titleHighlight')}</span>
             </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-white/58 md:text-xl">{h('beatBreezeLead.description')}</p>
+            <p className="mt-7 max-w-2xl text-pretty text-lg leading-8 text-white/58 md:text-xl">{h('beatBreezeLead.description')}</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a href="https://beatbreeze.io/sign-up" className="group inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-brand-orange px-7 text-sm font-semibold text-[#101010] hover:bg-[#ffb64a]">
                 {h('beatBreezeLead.proof1')} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
@@ -93,7 +93,7 @@ export default function BeatBreezePage() {
               </div>
               <div className="grid gap-5 border-t border-white/[.08] bg-white/[.025] p-6 sm:grid-cols-[auto_1fr_auto] sm:items-center">
                 <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-orange/10 text-brand-orange"><Sparkles className="h-5 w-5" aria-hidden="true" /></div>
-                <div><p className="text-sm font-medium text-white">{h('venuePulse.conciergeLabel')}</p><p className="mt-1 text-xs leading-5 text-white/42">{h('venuePulse.conciergeText')}</p></div>
+                <div><p className="text-sm font-medium text-white">{h('venuePulse.conciergeLabel')}</p><p className="mt-1 text-pretty text-xs leading-5 text-white/42">{h('venuePulse.conciergeText')}</p></div>
                 <span className="font-label text-[10px] uppercase tracking-[.16em] text-brand-orange">{t('product.explainable')}</span>
               </div>
             </div>
@@ -105,15 +105,15 @@ export default function BeatBreezePage() {
         <div className="mx-auto max-w-[1320px]">
           <motion.div {...reveal} className="max-w-4xl">
             <p className="font-label text-[11px] uppercase tracking-[.28em] text-brand-orange">{t('features.sectionLabel')}</p>
-            <h2 className="mt-5 font-headline text-4xl tracking-[-.04em] text-white md:text-6xl">{h('beatBreezeLead.title')}</h2>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-white/50">{t('hero.subtitle')}</p>
+            <h2 className="mt-5 max-w-[1100px] text-balance font-headline text-4xl leading-[1.02] tracking-[-.04em] text-white md:text-[clamp(3.5rem,5.4vw,5.8rem)]">{h('beatBreezeLead.title')}</h2>
+            <p className="mt-6 max-w-3xl text-pretty text-lg leading-8 text-white/50">{t('hero.subtitle')}</p>
           </motion.div>
           <div className="mt-16 grid gap-px overflow-hidden rounded-[1.6rem] border border-white/[.08] bg-white/[.08] md:grid-cols-2 lg:grid-cols-3">
             {features.map(({ key, icon: Icon }, index) => (
               <motion.div key={key} {...reveal} transition={{ duration: .5, delay: index * .04 }} className="min-h-[275px] bg-[#0b1423] p-8 md:p-10">
                 <Icon className="h-7 w-7 text-brand-orange" strokeWidth={1.45} aria-hidden="true" />
-                <h3 className="mt-12 text-xl font-medium text-white">{t(`features.${key}.title`)}</h3>
-                <p className="mt-3 leading-7 text-white/48">{t(`features.${key}.desc`)}</p>
+                <h3 className="mt-12 text-balance text-xl font-medium text-white">{t(`features.${key}.title`)}</h3>
+                <p className="mt-3 text-pretty leading-7 text-white/48">{t(`features.${key}.desc`)}</p>
               </motion.div>
             ))}
           </div>
@@ -124,19 +124,19 @@ export default function BeatBreezePage() {
         <div className="mx-auto grid max-w-[1320px] gap-14 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
           <motion.div {...reveal}>
             <p className="font-label text-[11px] uppercase tracking-[.28em] text-brand-orange">{t('product.waysLabel')}</p>
-            <h2 className="mt-5 font-headline text-4xl tracking-[-.04em] text-white md:text-6xl">{t('product.waysTitle')}</h2>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-white/50">{t('product.waysDescription')}</p>
+            <h2 className="mt-5 text-balance font-headline text-4xl tracking-[-.04em] text-white md:text-6xl">{t('product.waysTitle')}</h2>
+            <p className="mt-6 max-w-xl text-pretty text-lg leading-8 text-white/50">{t('product.waysDescription')}</p>
           </motion.div>
           <motion.div {...reveal} className="grid gap-4 sm:grid-cols-2">
             <article className="rounded-[1.5rem] border border-white/10 bg-[#0b1423] p-7 md:p-9">
               <Headphones className="h-7 w-7 text-white/70" aria-hidden="true" />
-              <h3 className="mt-10 text-2xl text-white">{t('product.selfTitle')}</h3>
-              <p className="mt-3 leading-7 text-white/48">{t('product.selfText')}</p>
+              <h3 className="mt-10 text-balance text-2xl text-white">{t('product.selfTitle')}</h3>
+              <p className="mt-3 text-pretty leading-7 text-white/48">{t('product.selfText')}</p>
             </article>
             <article className="rounded-[1.5rem] border border-brand-orange/25 bg-brand-orange/[.08] p-7 md:p-9">
               <Sparkles className="h-7 w-7 text-brand-orange" aria-hidden="true" />
-              <h3 className="mt-10 text-2xl text-white">{t('product.conciergeTitle')}</h3>
-              <p className="mt-3 leading-7 text-white/52">{t('product.conciergeText')}</p>
+              <h3 className="mt-10 text-balance text-2xl text-white">{t('product.conciergeTitle')}</h3>
+              <p className="mt-3 text-pretty leading-7 text-white/52">{t('product.conciergeText')}</p>
             </article>
           </motion.div>
         </div>
@@ -146,7 +146,7 @@ export default function BeatBreezePage() {
         <div className="mx-auto max-w-[1320px]">
           <motion.div {...reveal} className="text-center">
             <p className="font-label text-[11px] uppercase tracking-[.28em] text-brand-orange">{t('product.playersLabel')}</p>
-            <h2 className="mt-5 font-headline text-4xl tracking-[-.04em] text-white md:text-6xl">{t('product.playersTitle')}</h2>
+            <h2 className="mt-5 text-balance font-headline text-4xl tracking-[-.04em] text-white md:text-6xl">{t('product.playersTitle')}</h2>
           </motion.div>
           <div className="mx-auto mt-14 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
@@ -166,8 +166,8 @@ export default function BeatBreezePage() {
       <section className="relative overflow-hidden bg-[#070d17] px-6 py-24 sm:px-10 md:py-36 lg:px-16">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_100%,rgba(239,166,52,.17),transparent_48%)]" aria-hidden="true" />
         <motion.div {...reveal} className="relative mx-auto max-w-4xl text-center">
-          <h2 className="font-headline text-5xl tracking-[-.045em] text-white md:text-7xl">{t('product.finalTitle')}</h2>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/50">{h('beatBreezeLead.finalDescription')}</p>
+          <h2 className="text-balance font-headline text-5xl tracking-[-.045em] text-white md:text-7xl">{t('product.finalTitle')}</h2>
+          <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-8 text-white/50">{h('beatBreezeLead.finalDescription')}</p>
           <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
             <a href="https://beatbreeze.io/sign-up" className="inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-brand-orange px-8 text-sm font-semibold text-[#101010] hover:bg-[#ffb64a]">{t('product.startFree')} <ArrowRight className="h-4 w-4" aria-hidden="true" /></a>
             <Link href={`/${locale}/quotation`} className="inline-flex min-h-14 items-center justify-center rounded-full border border-white/15 px-8 text-sm font-semibold text-white hover:bg-white/5">{t('product.talkToBMAsia')}</Link>

@@ -939,6 +939,7 @@
         "try": "Cuba mesin masa venue", "start": "Cuba percuma 14 hari", "proof1": "Tiada kad diperlukan", "proof2": "Tiada perkakasan khusus", "proof3": "Daripada $12 setiap zon", "scroll": "Alami perjalanan hari"
       },
       "field": { "ariaLabel": "Medan muzik hidup yang berubah di seluruh venue", "energy": "Tenaga {energy}" },
+      "audio": { "title": "Pratonton audio", "visualOnly": "Pratonton arah muzik · bunyi dimatikan", "hear": "Dengar suasana ini", "pause": "Jeda pratonton", "paused": "Pratonton dijeda", "mute": "Senyapkan pratonton", "unmute": "Hidupkan bunyi", "playing": "Memainkan pratonton berlesen selama 25 saat", "playingMuted": "Memainkan pratonton berlesen selama 25 saat · disenyapkan", "unavailable": "Pratonton audio tidak tersedia" },
       "demo": {
         "eyebrow": "Pengalaman lima minit yang berguna", "title": "Gerakkan satu hari.", "highlight": "Lihat suasana berubah.",
         "description": "Pilih jenis perniagaan, laraskan masa dan bawa zon berbeza ke hadapan. Muzik, tenaga dan panduan Concierge bertindak balas bersama.",
