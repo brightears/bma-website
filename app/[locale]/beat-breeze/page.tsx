@@ -105,7 +105,7 @@ export default function BeatBreezePage() {
         <div className="mx-auto max-w-[1320px]">
           <motion.div {...reveal} className="max-w-4xl">
             <p className="font-label text-[11px] uppercase tracking-[.28em] text-brand-orange">{t('features.sectionLabel')}</p>
-            <h2 className="mt-5 max-w-[1100px] bg-gradient-to-r from-brand-orange via-[#c9c56f] to-[#37d5cb] bg-clip-text text-balance font-label text-[clamp(2.5rem,3.2vw,3.25rem)] leading-[1.02] tracking-[-.04em] text-transparent">{h('beatBreezeLead.title')}</h2>
+            <h2 className="mt-5 max-w-[1100px] bg-gradient-to-r from-brand-orange via-[#c9c56f] to-[#37d5cb] bg-clip-text pb-[0.12em] text-balance font-label text-[clamp(2.5rem,3.2vw,3.25rem)] leading-[1.08] tracking-[-.04em] text-transparent">{h('beatBreezeLead.title')}</h2>
             <p className="mt-6 max-w-3xl text-pretty text-lg leading-8 text-white/50">{t('hero.subtitle')}</p>
           </motion.div>
           <div className="mt-16 grid gap-px overflow-hidden rounded-[1.6rem] border border-white/[.08] bg-white/[.08] md:grid-cols-2 lg:grid-cols-3">

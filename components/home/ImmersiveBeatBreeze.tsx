@@ -447,7 +447,15 @@ export function ImmersiveBeatBreeze() {
                 <label htmlFor="venue-audio-volume" className="sr-only">
                   {t('audio.volume')}
                 </label>
-                <Volume2 aria-hidden="true" />
+                <button
+                  type="button"
+                  className={styles.audioVolumeToggle}
+                  onClick={toggleMuted}
+                  aria-label={isMuted ? t('audio.unmute') : t('audio.mute')}
+                  aria-pressed={isMuted}
+                >
+                  {isMuted ? <VolumeX aria-hidden="true" /> : <Volume2 aria-hidden="true" />}
+                </button>
                 <input
                   id="venue-audio-volume"
                   type="range"
@@ -460,15 +468,6 @@ export function ImmersiveBeatBreeze() {
                 />
                 <output>{Math.round(volume * 100)}%</output>
               </div>
-              <button
-                type="button"
-                className={styles.audioMute}
-                onClick={toggleMuted}
-                aria-label={isMuted ? t('audio.unmute') : t('audio.mute')}
-                aria-pressed={isMuted}
-              >
-                {isMuted ? <VolumeX aria-hidden="true" /> : <Volume2 aria-hidden="true" />}
-              </button>
             </div>
           </div>
 
