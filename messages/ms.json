@@ -306,7 +306,7 @@
     "cookies": "Kuki",
     "terms": "Syarat",
     "allRightsReserved": "Hak cipta terpelihara.",
-    "operationsDescription": "Muzik untuk perniagaan, diurus dari satu tempat.",
+    "operationsDescription": "Muzik dan media, diurus bersama.",
     "products": "Produk",
     "howItWorks": "Cara ia berfungsi",
     "musicLicensing": "Pelesenan muzik",
@@ -744,13 +744,13 @@
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
-      "description": "Muzik latar belakang berlesen sepenuhnya untuk setiap perniagaan — ketiga-tiga lesen muzik termasuk, tanpa yuran badan kutipan, dan kurasi profesional oleh pereka muzik BMAsia."
+      "description": "Operasi tempat berteraskan muzik: jadualkan muzik, urus saluran TV, cipta mesej dan audio telefon, automasikan titik sentuh dan kawal setiap zon."
     },
     "hero": {
-      "label": "Kurasi Serba Lengkap",
+      "label": "Pengalaman Tempat Terhubung",
       "title": "Beat",
       "titleHighlight": "Breeze",
-      "subtitle": "Platform operasi muzik untuk perniagaan — teroka, jadual dan kawal setiap zon dari satu tempat.",
+      "subtitle": "Muzik, skrin, mesej dan audio telefon—dirancang, dicipta dan dikawal di setiap zon.",
       "ctaQuote": "Dapatkan Sebut Harga",
       "ctaTrial": "Mula Percubaan Percuma"
     },
@@ -778,31 +778,33 @@
     },
     "features": {
       "sectionLabel": "Keupayaan",
-      "sectionTitle": "Segala yang anda perlukan, tiada yang tidak perlu.",
+      "sectionTitle": "Muzik ialah nadinya. Setiap titik sentuh bergerak bersamanya.",
       "zeroLicensing": {
-        "title": "Muzik Sedia Untuk Perniagaan",
-        "desc": "Katalog muzik bebas royalti yang dikurasi untuk kegunaan perniagaan. BMAsia mengesahkan keperluan persembahan awam tempatan semasa proses persediaan."
+        "title": "Kedengaran profesional semasa panggilan",
+        "desc": "Cipta muzik menunggu dan audio telefon berjenama dengan suara dan bahasa yang sesuai untuk perniagaan anda."
       },
       "curation": {
-        "title": "Music Concierge",
-        "desc": "Cadangan menggunakan konteks zon, masa dan tenaga — serta menerangkan sebab setiap pilihan sesuai sebelum anda menerapkannya."
+        "title": "Bentuk bunyi tempat anda",
+        "desc": "Terokai katalog sendiri atau biarkan Music Concierge mencadang mengikut zon, masa, tenaga dan konteks perniagaan."
       },
       "offline": {
-        "title": "Mampu Luar Talian",
-        "desc": "Muzik dimuat turun ke peranti anda dan dimainkan secara tempatan. Pengalaman tetamu kekal lancar walaupun kesambungan terputus."
+        "title": "Biarkan tempat bertindak balas",
+        "desc": "Automasi membantu muzik dan mesej mengikut waktu operasi, hari istimewa, cuaca dan keperluan tempat."
       },
       "scheduling": {
-        "title": "Penjadualan",
-        "desc": "Suasana berbeza untuk waktu yang berbeza. Perkhidmatan sarapan, kesibukan tengah hari, lounge petang — jadualkan sekali dan ia berjalan dengan sendirinya."
+        "title": "Hidupkan setiap skrin",
+        "desc": "Padankan senarai main penuh dengan visual gelung, mesej dan kandungan berjenama untuk TV dan skrin."
       },
       "audioSignatures": {
-        "title": "Mesej & Pengumuman",
-        "desc": "Selitkan mesej berjenama, promosi, atau pengumuman antara lagu mengikut jadual."
+        "title": "Bercakap pada waktu yang tepat",
+        "desc": "Cipta dan jadualkan mesej suara berbilang bahasa untuk promosi, maklumat tetamu dan pengumuman operasi."
       },
       "remoteMgmt": {
-        "title": "Kawalan Zon Langsung",
-        "desc": "Lihat status pemain, kawal main balik dan volum, serta urus setiap zon melalui papan pemuka atau aplikasi Remote."
+        "title": "Kawal dari mana-mana",
+        "desc": "Lihat status pemain, kawal muzik dan kelantangan, serta urus setiap zon dari papan pemuka atau aplikasi Remote."
       }
+    ,
+      "sectionDescription": "Beat Breeze menyatukan bunyi, skrin, komunikasi dan operasi harian dalam satu aliran yang mudah dikawal."
     },
     "product": {
       "openProduct": "Buka Beat Breeze",
@@ -826,6 +828,8 @@
       "finalTitle": "Zon pertama anda sedia dalam beberapa minit.",
       "startFree": "Mula percuma",
       "talkToBMAsia": "Bercakap dengan BMAsia"
+    ,
+      "finalDescription": "Cuba pengalaman tempat terhubung dalam satu zon selama 14 hari. Tanpa kad, perkakasan khusus atau persediaan yang rumit."
     },
     "licensing": {
       "sectionTitle": "Setiap lesen.",
@@ -942,16 +946,16 @@
   "homePage": {
     "immersive": {
       "hero": {
-        "eyebrow": "Beat Breeze oleh BMAsia", "title": "Setiap ruang ada denyutnya.", "highlight": "Biarkan muzik mengikutinya.",
-        "description": "Bentuk setiap zon dari pagi hingga malam—atau biarkan Music Concierge mengurus alirannya. Satu platform pintar untuk muzik yang sesuai dengan setiap detik.",
-        "try": "Cuba mesin masa venue", "start": "Cuba percuma 14 hari", "proof1": "Tiada kad diperlukan", "proof2": "Tiada perkakasan khusus", "proof3": "Daripada $12 setiap zon", "scroll": "Alami perjalanan hari"
+        "eyebrow": "Beat Breeze oleh BMAsia", "title": "Bentuk suasana.", "highlight": "Gerakkan setiap titik sentuh.",
+        "description": "Muzik, skrin, mesej dan audio telefon yang diselaraskan di setiap zon.",
+        "try": "Cuba simulator pengalaman tempat", "start": "Cuba percuma 14 hari", "proof1": "Tiada kad diperlukan", "proof2": "Tiada perkakasan khusus", "proof3": "Daripada $12 setiap zon", "scroll": "Alami perjalanan hari"
       },
       "field": { "ariaLabel": "Medan muzik hidup yang berubah di seluruh venue", "energy": "Tenaga {energy}" },
       "audio": { "title": "Pratonton audio", "visualOnly": "Pratonton arah muzik · bunyi dimatikan", "hear": "Dengar suasana ini", "pause": "Jeda pratonton", "paused": "Pratonton dijeda", "mute": "Senyapkan pratonton", "unmute": "Hidupkan bunyi", "playing": "Memainkan pratonton berlesen selama 25 saat", "playingMuted": "Memainkan pratonton berlesen selama 25 saat · disenyapkan", "unavailable": "Pratonton audio tidak tersedia", "volume": "Kelantangan pratonton" },
       "demo": {
-        "eyebrow": "Pengalaman lima minit yang berguna", "title": "Gerakkan satu hari.", "highlight": "Lihat suasana berubah.",
-        "description": "Pilih jenis perniagaan, laraskan masa dan bawa zon berbeza ke hadapan. Muzik, tenaga dan panduan Concierge bertindak balas bersama.",
-        "machineLabel": "Simulasi venue langsung", "live": "Bertindak balas langsung", "chooseVenue": "Pilih jenis perniagaan", "localTime": "Waktu tempatan", "chooseTime": "Pilih masa", "playlistDetail": "Tenaga {energy} · {bpm} BPM", "concierge": "Panduan Music Concierge", "energy": "Tenaga venue"
+        "eyebrow": "Pengalaman lima minit yang berguna", "title": "Jalani satu hari.", "highlight": "Lihat setiap titik sentuh bertindak balas.",
+        "description": "Pilih jenis perniagaan, gerakkan masa dan bawa zon berbeza ke hadapan. Muzik, skrin, mesej, telefon, tenaga dan panduan Concierge bertindak balas bersama.",
+        "machineLabel": "Simulasi pengalaman tempat secara langsung", "live": "Bertindak balas langsung", "chooseVenue": "Pilih jenis perniagaan", "localTime": "Waktu tempatan", "chooseTime": "Pilih masa", "playlistDetail": "Tenaga {energy} · {bpm} BPM", "concierge": "Panduan Music Concierge", "energy": "Tenaga venue"
       },
       "venues": { "hotel": "Hotel", "restaurant": "Restoran", "retail": "Runcit", "fitness": "Kecergasan" },
       "phases": { "0": { "label": "Pagi", "mood": "Ketibaan yang tenang" }, "1": { "label": "Siang", "mood": "Hangat dan mengalir" }, "2": { "label": "Petang", "mood": "Tenaga sosial" }, "3": { "label": "Lewat malam", "mood": "Penutup yang lembut" } },
@@ -965,17 +969,99 @@
       "guidance": { "0": "Mulakan dengan ruang yang lapang dan rangsangan rendah ketika hari bermula.", "1": "Tambah pergerakan berirama yang stabil tanpa memenuhi ruang.", "2": "Tingkatkan tenaga secara sengaja apabila tetamu semakin bersosial.", "3": "Kurangkan keamatan dan kekalkan penutup yang selesa." },
       "brief": { "eyebrow": "Bawa pulang sesuatu yang berguna", "title": "Ringkasan muzik yang dijana untuk anda", "copy": "Salin ringkasan muzik", "copied": "Ringkasan disalin", "text": "Arah {venue} pada {time}\nSuasana yang dikehendaki: {mood}. {guidance}\nPelan zon: {zones}" },
       "story": {
-        "eyebrow": "Satu sistem, bukan senarai ciri", "title": "Daripada perasaan kepada", "highlight": "venue yang mengalir.",
-        "find": { "title": "Cari suasana", "text": "Terangkan detik dengan bahasa biasa atau terokai keseluruhan katalog sendiri." },
-        "shape": { "title": "Bentuk keseluruhan hari", "text": "Tukar waktu operasi, bahagian hari dan tenaga menjadi pelan muzik yang masuk akal." },
-        "control": { "title": "Kawal setiap zon", "text": "Lihat apa yang dimainkan, sambungkan peranti dan campur tangan dari satu bilik kawalan yang jelas." },
-        "concierge": { "title": "Biarkan Concierge mengurus", "text": "Dapatkan cadangan yang boleh dijelaskan, soalan tepat pada masa dan penjagaan berterusan apabila anda mahu." },
-        "cta": "Terokai segala yang Beat Breeze boleh lakukan"
+        "eyebrow": "Satu sistem, bukan senarai ciri",
+        "title": "Daripada satu brief kepada",
+        "highlight": "tempat yang terasa menyatu.",
+        "sound": {
+          "title": "Bentuk identiti bunyi",
+          "text": "Cari muzik sendiri atau biarkan Concierge menterjemah konsep kepada arah yang boleh dijelaskan."
+        },
+        "screens": {
+          "title": "Bawa ke skrin",
+          "text": "Padankan visual gelung dan kandungan berjenama dengan senarai main yang terus bergerak."
+        },
+        "messages": {
+          "title": "Bercakap pada masa yang tepat",
+          "text": "Cipta dan jadualkan mesej suara berbilang bahasa tanpa aliran produksi berasingan."
+        },
+        "calls": {
+          "title": "Teruskan pengalaman dalam panggilan",
+          "text": "Cipta muzik menunggu dan suara telefon yang terasa sebahagian daripada tempat yang sama."
+        },
+        "automate": {
+          "title": "Automatikkan kerja berulang",
+          "text": "Biarkan masa, acara dan konteks tempat mencetuskan perubahan yang boleh disemak."
+        },
+        "control": {
+          "title": "Kawal semuanya",
+          "text": "Lihat apa yang berjalan, sambungkan peranti dan ambil alih dari papan pemuka atau Remote."
+        },
+        "cta": "Terokai semua yang Beat Breeze boleh lakukan"
       },
       "worlds": {
         "eyebrow": "Satu pasukan BMAsia · dua penyelesaian berbeza", "title": "Pilih dunia muzik", "highlight": "yang sesuai dengan perniagaan anda.",
         "description": "Beat Breeze memberi operator platform layan diri pintar. Soundtrack menawarkan repertoir komersial yang dikenali dengan bimbingan BMAsia.",
         "bbCore": "Zon · jadual · Concierge", "tryBeatBreeze": "Cuba Beat Breeze percuma", "sybDiscLabel": "Dibantu BMAsia", "sybDiscText": "Muzik yang dikenali untuk perniagaan", "talkSoundtrack": "Bercakap dengan BMAsia tentang Soundtrack", "compareLabel": "Tidak pasti laluan yang sesuai?", "compareText": "Kami akan membandingkan repertoir, pelesenan, kawalan dan perkhidmatan bersama anda—tanpa menolak produk yang salah."
+      }
+    ,
+      "touchpoints": {
+        "eyebrow": "Titik sentuh terhubung",
+        "title": "Pratonton seluruh pengalaman tempat.",
+        "description": "Pilih titik sentuh untuk melihat bagaimana satu brief membentuk setiap permukaan yang dilihat tetamu.",
+        "status": "Arah langsung",
+        "sound": {
+          "label": "Muzik",
+          "title": "{playlist} membentuk {zone}",
+          "text": "Pilihan muzik mengikuti tenaga {phase} pada {time}."
+        },
+        "screens": {
+          "label": "Skrin",
+          "title": "Visual bergerak bersama muzik",
+          "text": "Gelung di {zone} mengikuti warna, tempo dan rasa {playlist}."
+        },
+        "messages": {
+          "label": "Mesej",
+          "title": "Mesej hadir pada masa yang tepat",
+          "text": "Mesej berbilang bahasa boleh dijadualkan untuk detik {phase} pada {time}."
+        },
+        "phone": {
+          "label": "Telefon",
+          "title": "Pengalaman berterusan dalam panggilan",
+          "text": "Muzik menunggu dan suara jenama mengekalkan rasa {playlist} sebelum tetamu tiba."
+        }
+      }
+    ,
+      "connected": {
+        "eyebrow": "Lebih daripada muzik",
+        "title": "Muzik ialah nadinya.",
+        "highlight": "Beat Breeze mengurus seluruh pengalaman.",
+        "description": "Satu arah kreatif boleh menggerakkan bunyi, skrin, mesej, telefon dan kerja operasi di belakangnya.",
+        "core": "Beat Breeze",
+        "coreText": "Satu brief tempat",
+        "sound": {
+          "title": "Muzik & Concierge",
+          "text": "Cari, jadual dan segarkan bunyi tempat."
+        },
+        "screens": {
+          "title": "TV & visual",
+          "text": "Jalankan visual gelung bersama senarai main penuh."
+        },
+        "messages": {
+          "title": "Mesej berbilang bahasa",
+          "text": "Cipta pengumuman tepat masa dan selaras jenama."
+        },
+        "calls": {
+          "title": "Muzik menunggu",
+          "text": "Bawa identiti bunyi ke setiap panggilan."
+        },
+        "automation": {
+          "title": "Automasi pintar",
+          "text": "Biarkan masa, konteks dan acara mencetuskan kerja rutin."
+        },
+        "operations": {
+          "title": "Kawalan langsung",
+          "text": "Urus setiap zon, pemain dan perubahan dari mana-mana."
+        }
       }
     },
     "venuePulse": {

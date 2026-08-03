@@ -4,10 +4,27 @@ import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
-import { ArrowDown, ArrowRight, Check, Copy, Pause, Play, Sparkles, Volume2, VolumeX } from 'lucide-react';
+import {
+  ArrowDown,
+  ArrowRight,
+  Check,
+  Copy,
+  MessageSquareText,
+  MonitorPlay,
+  Music2,
+  Pause,
+  PhoneCall,
+  Play,
+  SlidersHorizontal,
+  Sparkles,
+  Volume2,
+  VolumeX,
+  Workflow,
+} from 'lucide-react';
 import styles from './ImmersiveBeatBreeze.module.css';
 
 type VenueKey = 'hotel' | 'restaurant' | 'retail' | 'fitness';
+type TouchpointKey = 'sound' | 'screens' | 'messages' | 'phone';
 
 type Playlist = {
   zone: string;
@@ -194,6 +211,7 @@ export function ImmersiveBeatBreeze() {
   const [audioState, setAudioState] = useState<'idle' | 'playing' | 'paused' | 'error'>('idle');
   const [isMuted, setIsMuted] = useState(false);
   const [volume, setVolume] = useState(0.65);
+  const [activeTouchpoint, setActiveTouchpoint] = useState<TouchpointKey>('sound');
   const audioRef = useRef<HTMLAudioElement>(null);
   const resumeAfterSourceChangeRef = useRef(false);
 
@@ -511,6 +529,63 @@ export function ImmersiveBeatBreeze() {
               <div><i style={{ width: `${energy}%` }} /></div>
             </div>
           </div>
+
+          <div className={styles.touchpointRail}>
+            <div className={styles.touchpointIntro}>
+              <p className={styles.eyebrow}><span />{t('touchpoints.eyebrow')}</p>
+              <h3>{t('touchpoints.title')}</h3>
+              <p>{t('touchpoints.description')}</p>
+            </div>
+            <div
+              className={styles.touchpointTabs}
+              role="tablist"
+              aria-label={t('touchpoints.title')}
+            >
+              {([
+                ['sound', Music2],
+                ['screens', MonitorPlay],
+                ['messages', MessageSquareText],
+                ['phone', PhoneCall],
+              ] as const).map(([key, Icon]) => (
+                <button
+                  key={key}
+                  type="button"
+                  role="tab"
+                  aria-selected={activeTouchpoint === key}
+                  aria-controls="touchpoint-preview"
+                  className={`${styles.touchpointTab} ${activeTouchpoint === key ? styles.touchpointTabActive : ''}`}
+                  onClick={() => setActiveTouchpoint(key)}
+                >
+                  <Icon aria-hidden="true" />
+                  <span>{t(`touchpoints.${key}.label`)}</span>
+                </button>
+              ))}
+            </div>
+            <div
+              id="touchpoint-preview"
+              className={styles.touchpointPreview}
+              role="tabpanel"
+              aria-live="polite"
+            >
+              <span className={styles.touchpointPreviewIcon} aria-hidden="true">
+                {activeTouchpoint === 'sound' && <Music2 />}
+                {activeTouchpoint === 'screens' && <MonitorPlay />}
+                {activeTouchpoint === 'messages' && <MessageSquareText />}
+                {activeTouchpoint === 'phone' && <PhoneCall />}
+              </span>
+              <div>
+                <span>{t('touchpoints.status')}</span>
+                <h4>{t(`touchpoints.${activeTouchpoint}.title`)}</h4>
+                <p>{t(`touchpoints.${activeTouchpoint}.text`, {
+                  playlist: selectedPlaylist.title,
+                  zone: t(`zones.${selectedPlaylist.zone}`),
+                  time: formatHour(hour),
+                  phase: t(`phases.${phaseIndex}.mood`),
+                })}</p>
+              </div>
+              <strong>{formatHour(hour)}</strong>
+            </div>
+          </div>
         </div>
 
         <div className={styles.takeaway}>
@@ -523,6 +598,39 @@ export function ImmersiveBeatBreeze() {
             <Copy aria-hidden="true" />{copied ? t('brief.copied') : t('brief.copy')}
           </button>
         </div>
+
+        <div className={styles.connectedReveal}>
+          <div className={styles.connectedHeading}>
+            <p className={styles.eyebrow}><span />{t('connected.eyebrow')}</p>
+            <h3>{t('connected.title')} <em>{t('connected.highlight')}</em></h3>
+            <p>{t('connected.description')}</p>
+          </div>
+          <div className={styles.connectedScene}>
+            <div className={styles.connectedCore}>
+              <Sparkles aria-hidden="true" />
+              <strong>{t('connected.core')}</strong>
+              <span>{t('connected.coreText')}</span>
+            </div>
+            <div className={styles.capabilityGrid}>
+              {([
+                ['sound', Music2],
+                ['screens', MonitorPlay],
+                ['messages', MessageSquareText],
+                ['calls', PhoneCall],
+                ['automation', Workflow],
+                ['operations', SlidersHorizontal],
+              ] as const).map(([key, Icon]) => (
+                <div className={styles.capabilityCard} key={key}>
+                  <Icon aria-hidden="true" />
+                  <div>
+                    <strong>{t(`connected.${key}.title`)}</strong>
+                    <span>{t(`connected.${key}.text`)}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className={styles.story} id="beat-breeze-story">
@@ -531,7 +639,7 @@ export function ImmersiveBeatBreeze() {
           <h2>{t('story.title')} <em>{t('story.highlight')}</em></h2>
         </div>
         <div className={styles.storyTrack}>
-          {(['find', 'shape', 'control', 'concierge'] as const).map((key, index) => (
+          {(['sound', 'screens', 'messages', 'calls', 'automate', 'control'] as const).map((key, index) => (
             <article key={key}>
               <span>0{index + 1}</span>
               <div className={styles.storyLine}><i className={index === 0 ? styles.storyActive : ''} /></div>

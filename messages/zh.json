@@ -306,7 +306,7 @@
     "cookies": "Cookie",
     "terms": "条款",
     "allRightsReserved": "版权所有。",
-    "operationsDescription": "商业音乐，一处即可统一管理。",
+    "operationsDescription": "音乐与媒体，统一管理。",
     "products": "产品",
     "howItWorks": "运作方式",
     "musicLicensing": "音乐授权",
@@ -744,13 +744,13 @@
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
-      "description": "面向所有商业场所的完整授权背景音乐 —— 三项音乐许可全部包含、零版权组织费用，并由 BMAsia 音乐设计师提供专业编排。"
+      "description": "以音乐为核心的场所运营平台：安排音乐、运行电视内容、创建消息与电话音频、自动化触点，并控制每个区域。"
     },
     "hero": {
-      "label": "全包式编排",
+      "label": "互联场所体验",
       "title": "Beat",
       "titleHighlight": "Breeze",
-      "subtitle": "面向商业场所的音乐运营平台 —— 在一个界面中发现、排期并控制每个区域。",
+      "subtitle": "音乐、屏幕、消息与电话音频，在每个区域统一规划、创作与控制。",
       "ctaQuote": "获取报价",
       "ctaTrial": "开始免费试用"
     },
@@ -778,31 +778,33 @@
     },
     "features": {
       "sectionLabel": "核心功能",
-      "sectionTitle": "所需的一切，没有多余。",
+      "sectionTitle": "音乐是心跳，每个触点随之律动。",
       "zeroLicensing": {
-        "title": "商业场所适用音乐",
-        "desc": "为商业使用精选的免版税曲库。BMAsia 会在上线过程中确认当地的公开表演要求。"
+        "title": "让每通电话都更专业",
+        "desc": "以适合品牌的声音和语言，创建品牌等候音乐与电话音频。"
       },
       "curation": {
-        "title": "Music Concierge",
-        "desc": "根据区域背景、时段与能量提供建议，并在应用前解释每个选择为何合适。"
+        "title": "塑造场所声音",
+        "desc": "自行探索曲库，或让 Music Concierge 根据区域、时间、能量和业务情境提供建议。"
       },
       "offline": {
-        "title": "离线可用",
-        "desc": "音乐下载至您的设备本地播放。即便网络中断，宾客体验依然流畅无缝。"
+        "title": "让场所主动响应",
+        "desc": "自动化功能可让音乐与消息根据营业时间、特殊日期、天气和现场需求变化。"
       },
       "scheduling": {
-        "title": "排期管理",
-        "desc": "不同时段，不同氛围。早餐服务、午餐高峰、晚间酒廊 —— 一次设定，自动运行。"
+        "title": "让每块屏幕鲜活起来",
+        "desc": "将完整音乐播放列表与循环视觉、消息和品牌内容配合，用于电视与场内屏幕。"
       },
       "audioSignatures": {
-        "title": "消息与公告",
-        "desc": "按排期在曲目之间插入品牌消息、促销信息或公告。"
+        "title": "在正确时刻发声",
+        "desc": "为促销、宾客信息和运营通知创建并安排多语言语音消息。"
       },
       "remoteMgmt": {
-        "title": "实时区域控制",
-        "desc": "查看播放器状态，控制播放和音量，并通过仪表板或Remote应用管理每个区域。"
+        "title": "随时随地控制",
+        "desc": "查看播放器状态，控制音乐和音量，并通过控制台或 Remote 应用管理每个区域。"
       }
+    ,
+      "sectionDescription": "Beat Breeze 将声音、屏幕、沟通和日常运营连接成一个清晰易控的工作流。"
     },
     "product": {
       "openProduct": "打开 Beat Breeze",
@@ -826,6 +828,8 @@
       "finalTitle": "几分钟内即可让第一个区域上线。",
       "startFree": "免费开始",
       "talkToBMAsia": "联系 BMAsia"
+    ,
+      "finalDescription": "在一个区域免费体验 14 天互联场所体验。无需信用卡、专用硬件或复杂设置。"
     },
     "licensing": {
       "sectionTitle": "每一项许可。",
@@ -942,16 +946,16 @@
   "homePage": {
     "immersive": {
       "hero": {
-        "eyebrow": "BMAsia 旗下 Beat Breeze", "title": "每个空间都有自己的脉动。", "highlight": "让音乐跟随它流动。",
-        "description": "从早到晚塑造每个区域，或让 Music Concierge 管理整体音乐流。一个智能平台，让音乐始终契合当下。",
-        "try": "体验场所时间机器", "start": "免费试用 14 天", "proof1": "无需信用卡", "proof2": "无需专用硬件", "proof3": "每个区域 $12 起", "scroll": "体验一天的变化"
+        "eyebrow": "BMAsia 旗下 Beat Breeze", "title": "塑造空间氛围。", "highlight": "驱动每一个触点。",
+        "description": "音乐、屏幕、消息与电话音频，在每个区域协同运行。",
+        "try": "体验场所模拟器", "start": "免费试用 14 天", "proof1": "无需信用卡", "proof2": "无需专用硬件", "proof3": "每个区域 $12 起", "scroll": "体验一天的变化"
       },
       "field": { "ariaLabel": "展示音乐随场所变化的动态音乐场", "energy": "能量 {energy}" },
       "audio": { "title": "声音预览", "visualOnly": "音乐方向预览 · 静音", "hear": "聆听这种氛围", "pause": "暂停预览", "paused": "预览已暂停", "mute": "静音预览", "unmute": "取消静音", "playing": "正在播放25秒授权预览", "playingMuted": "正在播放25秒授权预览 · 已静音", "unavailable": "音频预览不可用", "volume": "预览音量" },
       "demo": {
-        "eyebrow": "五分钟即可获得启发", "title": "推动一天的进程。", "highlight": "感受空间随之改变。",
-        "description": "选择业务类型、拖动时间，并将不同区域带到前景。音乐、能量和 Concierge 建议会同步响应。",
-        "machineLabel": "实时场所模拟", "live": "实时响应中", "chooseVenue": "选择业务类型", "localTime": "当地时间", "chooseTime": "选择时间", "playlistDetail": "能量 {energy} · {bpm} BPM", "concierge": "Music Concierge 建议", "energy": "场所能量"
+        "eyebrow": "五分钟即可获得启发", "title": "走过完整一天。", "highlight": "观察每个触点如何响应。",
+        "description": "选择业态、拖动时间并突出不同区域。音乐、屏幕、消息、电话、能量与 Concierge 建议会同步变化。",
+        "machineLabel": "实时场所体验模拟", "live": "实时响应中", "chooseVenue": "选择业务类型", "localTime": "当地时间", "chooseTime": "选择时间", "playlistDetail": "能量 {energy} · {bpm} BPM", "concierge": "Music Concierge 建议", "energy": "场所能量"
       },
       "venues": { "hotel": "酒店", "restaurant": "餐厅", "retail": "零售", "fitness": "健身中心" },
       "phases": { "0": { "label": "早晨", "mood": "安静迎宾" }, "1": { "label": "白天", "mood": "温暖流动" }, "2": { "label": "傍晚", "mood": "社交活力" }, "3": { "label": "深夜", "mood": "柔和收尾" } },
@@ -965,17 +969,99 @@
       "guidance": { "0": "一天刚开始时，以宽松、低唤醒度的音乐起步。", "1": "加入稳定的律动，同时避免让空间显得拥挤。", "2": "在人们社交增加的区域，有意识地提升能量。", "3": "逐步降低强度，为一天带来舒适的收尾。" },
       "brief": { "eyebrow": "带走一份真正有用的成果", "title": "为你生成的音乐简报", "copy": "复制音乐简报", "copied": "简报已复制", "text": "{time} 的{venue}方向\n目标感受：{mood}。{guidance}\n区域计划：{zones}" },
       "story": {
-        "eyebrow": "一个完整系统，而非功能清单", "title": "从一种感受，走向", "highlight": "流动中的场所。",
-        "find": { "title": "找到想要的感受", "text": "用自然语言描述此刻，或亲自浏览完整音乐目录。" },
-        "shape": { "title": "塑造一整天", "text": "把营业时间、时段和能量变成合理的音乐计划。" },
-        "control": { "title": "控制每个区域", "text": "查看正在播放的音乐、连接设备，并从一个清晰的控制中心介入。" },
-        "concierge": { "title": "交给 Concierge 管理", "text": "在需要时获得可解释的建议、及时的问题和持续照管。" },
+        "eyebrow": "一个系统，而非功能清单",
+        "title": "从一份简报到",
+        "highlight": "浑然一体的场所。",
+        "sound": {
+          "title": "塑造声音识别",
+          "text": "自行寻找音乐，或让 Concierge 将概念转化为可解释的方向。"
+        },
+        "screens": {
+          "title": "延伸到屏幕",
+          "text": "将循环视觉和品牌内容与持续流动的播放列表连接。"
+        },
+        "messages": {
+          "title": "在正确时刻发声",
+          "text": "无需额外制作流程，即可创建并安排多语言语音消息。"
+        },
+        "calls": {
+          "title": "让体验延续到电话",
+          "text": "创建如同场所一部分的等候音乐与电话声音。"
+        },
+        "automate": {
+          "title": "自动处理重复工作",
+          "text": "让时间、活动和场所情境触发可审核的变化。"
+        },
+        "control": {
+          "title": "控制一切",
+          "text": "查看正在运行的内容、连接设备，并通过控制台或 Remote 接管。"
+        },
         "cta": "探索 Beat Breeze 的全部能力"
       },
       "worlds": {
         "eyebrow": "一个 BMAsia 团队 · 两种不同解决方案", "title": "选择适合业务的", "highlight": "音乐世界。",
         "description": "Beat Breeze 为运营者提供智能自助平台。Soundtrack 则在 BMAsia 支持下带来熟悉的商业音乐曲库。",
         "bbCore": "区域 · 排程 · Concierge", "tryBeatBreeze": "免费试用 Beat Breeze", "sybDiscLabel": "BMAsia 协助服务", "sybDiscText": "适合商业空间的熟悉音乐", "talkSoundtrack": "向 BMAsia 咨询 Soundtrack", "compareLabel": "还不确定哪种方案适合？", "compareText": "我们会与你比较曲库、授权、控制和服务，而不会把你推向错误的产品。"
+      }
+    ,
+      "touchpoints": {
+        "eyebrow": "互联触点",
+        "title": "预览整个场所体验。",
+        "description": "选择一个触点，查看同一份简报如何塑造宾客看到和听到的一切。",
+        "status": "实时方向",
+        "sound": {
+          "label": "音乐",
+          "title": "{playlist} 塑造 {zone}",
+          "text": "音乐选择跟随 {time} 的 {phase} 能量。"
+        },
+        "screens": {
+          "label": "屏幕",
+          "title": "视觉随音乐而动",
+          "text": "{zone} 的循环视觉呼应 {playlist} 的色彩、节奏和氛围。"
+        },
+        "messages": {
+          "label": "消息",
+          "title": "在正确时刻传达",
+          "text": "可为 {time} 的 {phase} 时刻安排多语言消息。"
+        },
+        "phone": {
+          "label": "电话",
+          "title": "体验延续到电话中",
+          "text": "等候音乐与品牌声音在宾客到达前延续 {playlist} 的感受。"
+        }
+      }
+    ,
+      "connected": {
+        "eyebrow": "不止音乐",
+        "title": "音乐是心跳。",
+        "highlight": "Beat Breeze 运营完整体验。",
+        "description": "一个创意方向即可驱动声音、屏幕、消息、电话及其背后的运营工作。",
+        "core": "Beat Breeze",
+        "coreText": "一份场所简报",
+        "sound": {
+          "title": "音乐与 Concierge",
+          "text": "发现、安排并持续更新场所声音。"
+        },
+        "screens": {
+          "title": "电视与视觉",
+          "text": "使用完整播放列表运行循环视觉。"
+        },
+        "messages": {
+          "title": "多语言消息",
+          "text": "创建及时且符合品牌的通知。"
+        },
+        "calls": {
+          "title": "等候音乐",
+          "text": "让声音识别延伸到每通电话。"
+        },
+        "automation": {
+          "title": "智能自动化",
+          "text": "让时间、情境和事件触发日常工作。"
+        },
+        "operations": {
+          "title": "实时控制",
+          "text": "随时随地管理每个区域、播放器和变化。"
+        }
       }
     },
     "venuePulse": {

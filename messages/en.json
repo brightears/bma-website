@@ -306,7 +306,7 @@
     "cookies": "Cookies",
     "terms": "Terms",
     "allRightsReserved": "All rights reserved.",
-    "operationsDescription": "Music for businesses, managed from one place.",
+    "operationsDescription": "Music and media, managed together.",
     "products": "Products",
     "howItWorks": "How it works",
     "musicLicensing": "Music licensing",
@@ -799,13 +799,13 @@
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
-      "description": "Fully licensed background music for every business — all three music licenses included, zero collection society fees, and professional curation by BMAsia music designers."
+      "description": "Music-led venue operations for businesses: schedule music, run TV channels, create messages and phone audio, automate touchpoints, and control every zone."
     },
     "hero": {
-      "label": "All-Inclusive Curation",
+      "label": "Connected Venue Experience",
       "title": "Beat",
       "titleHighlight": "Breeze",
-      "subtitle": "A music operations platform for business — discover, schedule and control every zone from one place.",
+      "subtitle": "Music, screens, messages and phone audio—planned, created and controlled across every zone.",
       "ctaQuote": "Get a Quote",
       "ctaTrial": "Start a Free Trial"
     },
@@ -833,30 +833,31 @@
     },
     "features": {
       "sectionLabel": "Capabilities",
-      "sectionTitle": "Everything you need, nothing you don't.",
+      "sectionTitle": "Music is the heartbeat. Every touchpoint moves with it.",
+      "sectionDescription": "Plan the atmosphere, create the media and keep every customer-facing moment aligned from one operational workspace.",
       "zeroLicensing": {
-        "title": "Business-Ready Music",
-        "desc": "A curated royalty-free catalogue prepared for business use. BMAsia confirms any local public-performance requirements during onboarding."
+        "title": "Sound professional on calls",
+        "desc": "Create branded phone-on-hold messages with an appropriate music bed."
       },
       "curation": {
-        "title": "Music Concierge",
-        "desc": "Recommendations use zone context, time and energy — and explain why each choice fits before you apply it."
+        "title": "Shape the sound",
+        "desc": "Browse the catalogue, describe a moment, build schedules and let the Concierge explain what fits."
       },
       "offline": {
-        "title": "Offline-Capable",
-        "desc": "Music downloads to your device and plays locally. Guest experience stays smooth even when connectivity drops."
+        "title": "Let the venue respond",
+        "desc": "Use connected automations for time, day and operational triggers."
       },
       "scheduling": {
-        "title": "Scheduling",
-        "desc": "Different moods for different hours. Breakfast service, lunch rush, evening lounge — schedule it once and it runs itself."
+        "title": "Bring screens to life",
+        "desc": "Create TV channels and visual loops that move with the music already shaping each zone."
       },
       "audioSignatures": {
-        "title": "Messaging",
-        "desc": "Insert branded messages, promotions, or announcements between tracks on a schedule."
+        "title": "Speak at the right moment",
+        "desc": "Schedule clear, branded messages in multiple languages without breaking the atmosphere."
       },
       "remoteMgmt": {
-        "title": "Live Zone Control",
-        "desc": "See player status, control playback and volume, and manage every zone from the dashboard or Remote app."
+        "title": "Control anywhere",
+        "desc": "See status, manage playback and volume, and control every zone from the dashboard or Remote app."
       }
     },
     "product": {
@@ -878,6 +879,7 @@
       "web": "Web player",
       "offline": "Offline playback",
       "price": "From $12 / zone / month",
+      "finalDescription": "Try the connected venue experience in one zone for 14 days. No card, no dedicated box and no long setup.",
       "finalTitle": "Your first zone is ready in minutes.",
       "startFree": "Start free",
       "talkToBMAsia": "Talk to BMAsia"
@@ -998,10 +1000,10 @@
     "immersive": {
       "hero": {
         "eyebrow": "Beat Breeze by BMAsia",
-        "title": "Your venue has a pulse.",
-        "highlight": "Let the music follow it.",
-        "description": "Shape every zone from morning to night—or let the Music Concierge manage the flow. One intelligent platform for music that fits the moment.",
-        "try": "Try the venue time machine",
+        "title": "Set the atmosphere.",
+        "highlight": "Run every touchpoint.",
+        "description": "Music, screens, messages and phone audio, orchestrated across every zone.",
+        "try": "Try the venue experience simulator",
         "start": "Start 14 days free",
         "proof1": "No card required",
         "proof2": "No dedicated hardware",
@@ -1028,9 +1030,9 @@
       "demo": {
         "eyebrow": "A useful five-minute experience",
         "title": "Move through a day.",
-        "highlight": "Hear the venue change.",
-        "description": "Choose a business, drag the time and bring different zones forward. The music, energy and Concierge guidance respond together.",
-        "machineLabel": "Live venue simulation",
+        "highlight": "Watch every touchpoint respond.",
+        "description": "Choose a business, drag the time and bring different zones forward. Music, screens, messages, phone audio and Concierge guidance respond together.",
+        "machineLabel": "Live venue experience simulation",
         "live": "Responding live",
         "chooseVenue": "Choose a business type",
         "localTime": "Local time",
@@ -1038,6 +1040,16 @@
         "playlistDetail": "Energy {energy} · {bpm} BPM",
         "concierge": "Music Concierge guidance",
         "energy": "Venue energy"
+      },
+      "touchpoints": {
+        "eyebrow": "Connected touchpoints",
+        "title": "Preview the whole venue experience",
+        "description": "Music remains the heartbeat. Switch touchpoints to see how the same moment carries across the business.",
+        "sound": { "label": "Sound", "title": "Music in this zone", "text": "{playlist} is shaping {zone} at {time}." },
+        "screens": { "label": "TV", "title": "Screen atmosphere", "text": "A silent visual loop follows the {phase} mood while the zone playlist keeps moving." },
+        "messages": { "label": "Messaging", "title": "Scheduled message", "text": "A concise, localised announcement is ready for this moment without interrupting the flow." },
+        "phone": { "label": "Phone", "title": "On-hold experience", "text": "A branded phone message and music bed carry the same atmosphere beyond the venue floor." },
+        "status": "Experience preview"
       },
       "venues": {
         "hotel": "Hotel",
@@ -1085,14 +1097,30 @@
         "copied": "Brief copied",
         "text": "{venue} direction at {time}\nDesired feeling: {mood}. {guidance}\nZone plan: {zones}"
       },
+      "connected": {
+        "eyebrow": "One connected venue experience",
+        "title": "Music is the heartbeat.",
+        "highlight": "Beat Breeze runs the whole experience.",
+        "description": "Shape sound, screens, messages and calls, then keep every zone aligned with automations and live control.",
+        "core": "Beat Breeze",
+        "coreText": "Music-led venue operations",
+        "sound": { "title": "Sound", "text": "Curate, schedule and preview" },
+        "screens": { "title": "Screens", "text": "TV channels and visual loops" },
+        "messages": { "title": "Messages", "text": "Timed, multilingual announcements" },
+        "calls": { "title": "Calls", "text": "Phone-on-hold audio" },
+        "automation": { "title": "Automation", "text": "Respond to time, day and triggers" },
+        "operations": { "title": "Operations", "text": "Monitor and control every zone" }
+      },
       "story": {
         "eyebrow": "One system, not a list of features",
-        "title": "From a feeling to",
-        "highlight": "a venue in flow.",
-        "find": { "title": "Find the feeling", "text": "Describe the moment in plain language or explore the complete catalogue yourself." },
-        "shape": { "title": "Shape the day", "text": "Turn opening hours, dayparts and energy into a music plan that makes sense." },
-        "control": { "title": "Control every zone", "text": "See what is playing, connect devices and step in from one clear control room." },
-        "concierge": { "title": "Let Concierge manage it", "text": "Get explainable recommendations, timely questions and ongoing care when you want it." },
+        "title": "From atmosphere to",
+        "highlight": "every touchpoint in flow.",
+        "sound": { "title": "Shape the sound", "text": "Find music, build schedules and let Concierge explain what fits." },
+        "screens": { "title": "Bring screens to life", "text": "Pair visual loops and TV channels with the music already shaping the zone." },
+        "messages": { "title": "Speak at the right moment", "text": "Schedule clear multilingual announcements without breaking the atmosphere." },
+        "calls": { "title": "Sound professional on calls", "text": "Create branded phone-on-hold messages with an appropriate music bed." },
+        "automate": { "title": "Let the venue respond", "text": "Use connected automations for time, day and operational triggers." },
+        "control": { "title": "Control anywhere", "text": "See status and manage playback, volume and every zone from dashboard or Remote." },
         "cta": "Explore everything Beat Breeze can do"
       },
       "worlds": {
