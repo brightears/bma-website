@@ -140,6 +140,29 @@ const phaseAudio = [
   '/audio/beat-breeze-demo/late-night.mp3',
 ] as const;
 
+type DemoAudioSource = (typeof phaseAudio)[number];
+
+// The public demo has four licensed samples, each representing a family of
+// playlist directions. This mapping keeps every selectable card honest: the
+// highlighted playlist always controls the closest available sample rather
+// than silently continuing an unrelated time-of-day preview.
+const previewAudioByPlaylist: Record<string, DemoAudioSource> = {
+  'Nu Jazz Chillhop': phaseAudio[0],
+  'Balinese Spa': phaseAudio[0],
+  Chillhop: phaseAudio[0],
+  'Bossa Nova Lounge': phaseAudio[1],
+  'Jazz Piano': phaseAudio[1],
+  'Italian Lounge': phaseAudio[1],
+  'French Cafe': phaseAudio[1],
+  'Acoustic Pop': phaseAudio[1],
+  'Nu Disco Vocal': phaseAudio[2],
+  'Electro Swing': phaseAudio[2],
+  'Pop Mid Tempo': phaseAudio[2],
+  'Soulful House': phaseAudio[2],
+  'Deep House': phaseAudio[3],
+  'Tropical House': phaseAudio[3],
+};
+
 function getPhaseIndex(hour: number) {
   if (hour < 9) return 0;
   if (hour < 16) return 1;
@@ -170,11 +193,15 @@ export function ImmersiveBeatBreeze() {
   const [copied, setCopied] = useState(false);
   const [audioState, setAudioState] = useState<'idle' | 'playing' | 'paused' | 'error'>('idle');
   const [isMuted, setIsMuted] = useState(false);
+  const [volume, setVolume] = useState(0.65);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const resumeAfterSourceChangeRef = useRef(false);
 
   const venue = venues[venueKey];
   const phaseIndex = getPhaseIndex(hour);
   const playlists = venue.playlists[phaseIndex];
+  const selectedPlaylist = playlists[focus] ?? playlists[0];
+  const selectedAudioSource = previewAudioByPlaylist[selectedPlaylist.title] ?? phaseAudio[phaseIndex];
   const [accent, accentTwo] = phaseAccents[phaseIndex];
   const energy = Math.min(94, phaseEnergy[phaseIndex] + (venueKey === 'fitness' ? 14 : venueKey === 'retail' ? 5 : 0));
   const zoneSummary = playlists.map((item) => `${t(`zones.${item.zone}`)} — ${item.title}`).join('; ');
@@ -191,16 +218,45 @@ export function ImmersiveBeatBreeze() {
 
   useEffect(() => {
     setIsMuted(window.sessionStorage.getItem('bmasia-audio-muted') === 'true');
+    const storedVolume = Number(window.sessionStorage.getItem('bmasia-audio-volume'));
+    if (Number.isFinite(storedVolume) && storedVolume >= 0 && storedVolume <= 1) {
+      setVolume(storedVolume);
+    }
   }, []);
 
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
 
+    resumeAfterSourceChangeRef.current = false;
     audio.pause();
     audio.currentTime = 0;
     setAudioState('idle');
   }, [phaseIndex, venueKey]);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    const shouldResume = resumeAfterSourceChangeRef.current;
+    resumeAfterSourceChangeRef.current = false;
+    audio.pause();
+    audio.currentTime = 0;
+    audio.load();
+    setAudioState('idle');
+
+    if (shouldResume) {
+      void audio.play().catch((error: unknown) => {
+        if (error instanceof DOMException && error.name === 'AbortError') return;
+        setAudioState('error');
+      });
+    }
+  }, [selectedAudioSource]);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (audio) audio.volume = volume;
+  }, [volume]);
 
   const toggleAudio = async () => {
     const audio = audioRef.current;
@@ -225,6 +281,21 @@ export function ImmersiveBeatBreeze() {
     const nextMuted = !isMuted;
     setIsMuted(nextMuted);
     window.sessionStorage.setItem('bmasia-audio-muted', String(nextMuted));
+  };
+
+  const changeVolume = (nextVolume: number) => {
+    setVolume(nextVolume);
+    window.sessionStorage.setItem('bmasia-audio-volume', String(nextVolume));
+    if (nextVolume > 0 && isMuted) {
+      setIsMuted(false);
+      window.sessionStorage.setItem('bmasia-audio-muted', 'false');
+    }
+  };
+
+  const selectPlaylist = (index: number) => {
+    const audio = audioRef.current;
+    resumeAfterSourceChangeRef.current = Boolean(audio && !audio.paused);
+    setFocus(index);
   };
 
   const audioStatus = audioState === 'playing'
@@ -352,7 +423,7 @@ export function ImmersiveBeatBreeze() {
             <div className={styles.audioPreview}>
               <audio
                 ref={audioRef}
-                src={phaseAudio[phaseIndex]}
+                src={selectedAudioSource}
                 preload="none"
                 muted={isMuted}
                 playsInline
@@ -366,12 +437,29 @@ export function ImmersiveBeatBreeze() {
               </span>
               <div className={styles.audioCopy}>
                 <strong>{t('audio.title')}</strong>
-                <span aria-live="polite">{audioStatus}</span>
+                <span aria-live="polite">{selectedPlaylist.title} · {audioStatus}</span>
               </div>
               <button type="button" className={styles.audioPlay} onClick={toggleAudio}>
                 {audioState === 'playing' ? <Pause aria-hidden="true" /> : <Play aria-hidden="true" />}
                 {audioState === 'playing' ? t('audio.pause') : t('audio.hear')}
               </button>
+              <div className={styles.audioVolume}>
+                <label htmlFor="venue-audio-volume" className="sr-only">
+                  {t('audio.volume')}
+                </label>
+                <Volume2 aria-hidden="true" />
+                <input
+                  id="venue-audio-volume"
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.05"
+                  value={volume}
+                  onChange={(event) => changeVolume(Number(event.target.value))}
+                  style={{ '--audio-volume': `${volume * 100}%` } as CSSProperties}
+                />
+                <output>{Math.round(volume * 100)}%</output>
+              </div>
               <button
                 type="button"
                 className={styles.audioMute}
@@ -393,7 +481,7 @@ export function ImmersiveBeatBreeze() {
                   type="button"
                   key={`${venueKey}-${phaseIndex}-${playlist.zone}`}
                   className={`${styles.playlistCard} ${focus === index ? styles.focused : ''}`}
-                  onClick={() => setFocus(index)}
+                  onClick={() => selectPlaylist(index)}
                   aria-pressed={focus === index}
                 >
                   <span className={styles.coverWrap}>

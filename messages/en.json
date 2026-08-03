@@ -1022,7 +1022,8 @@
         "unmute": "Unmute sample",
         "playing": "Playing a licensed 25-second preview",
         "playingMuted": "Playing a licensed 25-second preview · muted",
-        "unavailable": "Audio preview unavailable"
+        "unavailable": "Audio preview unavailable",
+        "volume": "Preview volume"
       },
       "demo": {
         "eyebrow": "A useful five-minute experience",
