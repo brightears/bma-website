@@ -545,6 +545,14 @@
       "error": "Terjadi kesalahan. Silakan coba lagi."
     }
   },
+  "soundtrackTrialPage": {
+    "metadata": { "title": "Mulai uji coba gratis Soundtrack", "description": "Minta uji coba Soundtrack 14 hari untuk satu zona musik bisnis. Tanpa kartu dan tanpa komitmen." },
+    "hero": { "label": "Uji coba 14 hari tanpa kartu", "title": "Dengarkan Soundtrack", "titleHighlight": "di ruang Anda.", "subtitle": "Ceritakan lokasi pertama yang ingin diuji. BMAsia akan memverifikasi pengaturan dan mengatur akses untuk satu zona." },
+    "proof": { "noCard": "Tanpa kartu kredit", "oneZone": "Satu zona uji coba", "autoEnd": "Berakhir otomatis" },
+    "steps": { "label": "Langkah berikutnya", "requestTitle": "Kirim informasi penting", "requestDesc": "Satu formulir singkat memberi kami informasi untuk menyiapkan uji coba yang tepat.", "verifyTitle": "BMAsia memverifikasi pengaturan", "verifyDesc": "Kami memeriksa lokasi dan memastikan uji coba dikonfigurasi untuk penggunaan bisnis.", "accessTitle": "Terima akses Anda", "accessDesc": "Kami mengirim detail masuk dan petunjuk pengaturan untuk zona pertama." },
+    "note": { "title": "Uji coba yang transparan", "desc": "Metode pembayaran tidak diperlukan. Jika Anda tidak berlangganan, uji coba tanpa kartu berakhir otomatis." },
+    "form": { "title": "Minta uji coba", "subtitle": "Mulai dengan satu lokasi dan satu zona. Tambahkan sisanya setelah musik terasa tepat.", "name": "Nama Anda", "email": "Email kerja", "company": "Perusahaan", "country": "Negara", "businessType": "Jenis bisnis", "select": "Pilih satu", "hotel": "Hotel atau resor", "restaurant": "Restoran atau bar", "retail": "Ritel", "fitness": "Kebugaran atau wellness", "office": "Kantor atau tempat kerja", "other": "Lainnya", "locationName": "Lokasi pertama", "locationPlaceholder": "contoh Riverside Hotel Bangkok", "zoneName": "Zona pertama (opsional)", "zonePlaceholder": "contoh Lobi", "zoneHint": "Zona adalah satu area dengan musiknya sendiri, seperti lobi, restoran, atau lantai toko.", "consent": "Saya setuju BMAsia menggunakan detail ini untuk mengatur uji coba Soundtrack dan membagikan informasi aktivasi yang diperlukan kepada Soundtrack", "privacy": "Kebijakan privasi", "consentRequired": "Harap konfirmasi sebelum melanjutkan.", "required": "Kolom ini wajib diisi.", "invalidEmail": "Masukkan email kerja yang valid.", "submit": "Minta uji coba 14 hari", "submitting": "Mengirim permintaan…", "footnote": "Mengirim formulir tidak memulai langganan berbayar.", "successTitle": "Permintaan uji coba diterima.", "successMessage": "BMAsia akan memverifikasi detail dan mengirim langkah berikutnya melalui email. Belum ada biaya atau langganan.", "back": "Kembali ke Soundtrack", "error": "Permintaan tidak dapat disimpan. Silakan coba lagi." }
+  },
   "soundtrackPage": {
     "metadata": {
       "title": "Soundtrack Your Brand",
@@ -552,8 +560,8 @@
     },
     "hero": {
       "label": "Standar Global",
-      "title": "Soundtrack Your",
-      "titleHighlight": "Brand",
+      "title": "Soundtrack",
+      "titleHighlight": "Your Brand",
       "subtitle": "Pustaka musik komersial terbesar di dunia, dikurasi untuk ruang Anda.",
       "ctaQuote": "Dapatkan Penawaran",
       "ctaTrial": "Mulai Uji Coba Gratis"
@@ -678,7 +686,7 @@
       "sectionLabel": "Coba Dulu",
       "title": "Coba sebelum Anda",
       "titleHighlight": "berkomitmen.",
-      "desc1": "Mulailah dengan uji coba gratis satu bulan pada satu zona. Tanpa kartu kredit, tanpa komitmen.",
+      "desc1": "Mulailah dengan uji coba gratis 14 hari pada satu zona. Tanpa kartu kredit, tanpa komitmen.",
       "desc2": "Setelah Anda memutuskan untuk berlangganan dan perangkat keras Anda sudah terpasang, kami akan membuat Anda beroperasi dalam lima menit.",
       "cta": "Mulai Uji Coba Gratis"
     },
@@ -1204,8 +1212,8 @@
     },
     "ourSolutions": {
       "sectionTitle": "Solusi Kami",
-      "sybTagline": "Premium — 100 juta+ lagu, sinkronisasi Spotify, desain khusus",
-      "bbTagline": "Esensial — 30 ribu+ lagu, semua lisensi termasuk",
+      "sybTagline": "Repertoar komersial yang dikenal — artis populer, impor Spotify, dan penyiapan dengan dukungan BMAsia",
+      "bbTagline": "Operasi musik cerdas — katalog terkurasi yang terus berkembang, Music Concierge, jadwal, dan kontrol zona langsung",
       "learnMore": "Pelajari lebih lanjut tentang solusi kami →"
     },
     "questions": {

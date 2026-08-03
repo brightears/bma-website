@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import {
   Layers,
   Calendar,
@@ -61,11 +61,12 @@ const SUPPORT = [
 
 export default function SoundtrackYourBrandPage() {
   const t = useTranslations('soundtrackPage');
+  const locale = useLocale();
 
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[70vh] flex items-center pt-24 overflow-hidden bg-[#14091d]">
+      <section className="relative flex min-h-[72vh] items-center overflow-hidden bg-[#14091d] px-6 pb-20 pt-32 sm:pb-24 md:px-12 md:pb-28 md:pt-36">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/product-syb-hero.webp"
@@ -78,39 +79,39 @@ export default function SoundtrackYourBrandPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#14091d] via-[#14091d]/90 to-[#241331]/55" />
           <div className="absolute -right-20 top-12 h-[28rem] w-[28rem] rounded-full bg-[#D6C2FF]/10 blur-3xl" />
         </div>
-        <div className="relative z-10 container mx-auto px-6 md:px-12">
-          <div className="max-w-4xl">
+        <div className="relative z-10 container mx-auto">
+          <div className="max-w-6xl">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
               <Image
-                src="/images/brand/soundtrack/reseller-of-soundtrack-white.svg"
-                alt="Authorised reseller of Soundtrack"
-                width={258}
-                height={78}
-                className="mb-8 h-auto w-52 sm:w-64"
+                src="/images/brand/soundtrack/soundtrack-logo-white.svg"
+                alt="Soundtrack"
+                width={502}
+                height={147}
+                className="mb-10 h-auto w-52 sm:w-60"
               />
               <span className="font-label text-[#D6C2FF] text-sm tracking-[0.3em] uppercase mb-6 block">
                 {t('hero.label')}
               </span>
-              <h1 className="font-headline text-5xl md:text-7xl leading-none tracking-tight text-white mb-6 [text-wrap:balance]">
-                {t('hero.title')} <br />
-                <span className="italic text-[#D6C2FF]">{t('hero.titleHighlight')}</span>
+              <h1 className="mb-7 max-w-6xl text-balance font-headline text-[clamp(3.15rem,7.4vw,7rem)] leading-[0.94] tracking-[-0.055em] text-white">
+                <span>{t('hero.title')}</span>{' '}
+                <span className="inline-block italic text-[#D6C2FF]">{t('hero.titleHighlight')}</span>
               </h1>
               <p className="text-xl md:text-2xl text-white/60 max-w-xl leading-relaxed mb-10">
                 {t('hero.subtitle')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/quotation"
+                  href={`/${locale}/quotation`}
                   className="bg-[#D6C2FF] text-[#14091d] px-10 py-4 font-label font-bold uppercase tracking-widest text-sm hover:bg-white transition-all duration-300 text-center"
                 >
                   {t('hero.ctaQuote')}
                 </Link>
                 <Link
-                  href="#trial"
+                  href={`/${locale}/soundtrack-trial`}
                   className="border border-[#D6C2FF]/45 text-white px-10 py-4 font-label font-bold uppercase tracking-widest text-sm hover:border-[#D6C2FF] hover:text-[#D6C2FF] transition-all duration-300 text-center"
                 >
                   {t('hero.ctaTrial')}
@@ -122,7 +123,7 @@ export default function SoundtrackYourBrandPage() {
       </section>
 
       {/* Positioning */}
-      <section className="py-20 md:py-32 px-6 md:px-12 bg-[#14091d] border-t border-[#D6C2FF]/15">
+      <section className="border-t border-[#D6C2FF]/15 bg-[#14091d] px-6 py-24 md:px-12 md:py-32">
         <div className="max-w-4xl mx-auto text-center">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -360,7 +361,7 @@ export default function SoundtrackYourBrandPage() {
               {t('trial.desc2')}
             </p>
             <Link
-              href="/quotation"
+              href={`/${locale}/soundtrack-trial`}
               className="inline-block bg-[#D6C2FF] text-[#14091d] px-12 py-5 font-label font-bold uppercase tracking-widest hover:bg-white transition-all duration-300"
             >
               {t('trial.cta')}
@@ -467,7 +468,7 @@ export default function SoundtrackYourBrandPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/quotation"
+                href={`/${locale}/quotation`}
                 className="bg-[#D6C2FF] text-[#14091d] px-12 py-5 font-label font-bold uppercase tracking-widest hover:bg-white transition-all duration-300"
               >
                 {t('finalCta.ctaQuote')}

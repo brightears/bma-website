@@ -46,8 +46,8 @@ export default function Home() {
             <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-8 text-white/52">{h('immersive.worlds.description')}</p>
           </motion.div>
 
-          <div className="mt-16 grid gap-6 xl:grid-cols-[1.14fr_0.86fr]">
-            <motion.article {...reveal} className="relative overflow-hidden rounded-[2rem] border border-[#e8850c]/25 bg-[#0b1423] shadow-[0_30px_90px_rgba(0,212,200,0.06)] before:absolute before:inset-x-0 before:top-0 before:z-20 before:h-0.5 before:bg-[linear-gradient(90deg,#e8850c,#e7b94e,#73cf98,#00d4c8)]">
+          <div className="mt-16 grid items-stretch gap-6 xl:grid-cols-2">
+            <motion.article {...reveal} className="relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-[#e8850c]/25 bg-[#0b1423] shadow-[0_30px_90px_rgba(0,212,200,0.06)] before:absolute before:inset-x-0 before:top-0 before:z-20 before:h-0.5 before:bg-[linear-gradient(90deg,#e8850c,#e7b94e,#73cf98,#00d4c8)]">
               <div className="relative grid min-h-[430px] place-items-center overflow-hidden bg-[radial-gradient(circle_at_center,rgba(0,212,200,0.18),transparent_33%),radial-gradient(circle_at_15%_75%,rgba(232,133,12,0.24),transparent_30%),radial-gradient(circle_at_85%_20%,rgba(115,207,152,0.11),transparent_26%),#09121f]">
                 <div className="absolute aspect-square w-[560px] rounded-full border border-cyan-300/15 shadow-[0_0_0_76px_rgba(0,212,200,0.025),0_0_0_150px_rgba(232,133,12,0.025)] motion-safe:animate-pulse-slow" />
                 <div className="relative z-10 flex h-48 w-48 flex-col items-center justify-center rounded-full border border-white/15 bg-[#0b1321]/80 text-center shadow-[0_0_90px_rgba(232,133,12,0.18)] backdrop-blur-xl">
@@ -65,7 +65,7 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <div className="p-7 sm:p-10">
+              <div className="flex flex-1 flex-col p-7 sm:p-10">
                 <p className="font-label text-[10px] uppercase tracking-[0.2em] text-brand-orange">{h('twoSolutions.bb.badge')}</p>
                 <h3 className="mt-3 bg-gradient-to-r from-[#e8850c] via-[#e7b94e] via-[55%] to-[#00d4c8] bg-clip-text font-headline text-4xl font-medium tracking-[-0.045em] text-transparent sm:text-5xl">Beat Breeze</h3>
                 <p className="mt-4 max-w-2xl text-pretty text-lg leading-8 text-white/52">{h('twoSolutions.bb.tagline')}</p>
@@ -74,7 +74,7 @@ export default function Home() {
                     <li key={key} className="rounded-full border border-white/10 px-3 py-2 text-xs text-white/60">{h(`twoSolutions.bb.${key}`)}</li>
                   ))}
                 </ul>
-                <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <div className="mt-auto flex flex-col gap-3 pt-8 sm:flex-row">
                   <a href="https://beatbreeze.io/sign-up" className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-brand-orange px-6 font-label text-sm font-semibold text-[#101010] hover:bg-[#ffb64a]">
                     {h('immersive.worlds.tryBeatBreeze')} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
                   </a>
@@ -85,18 +85,20 @@ export default function Home() {
               </div>
             </motion.article>
 
-            <motion.article {...reveal} transition={{ duration: 0.65, delay: 0.08 }} className="overflow-hidden rounded-[2rem] border border-[#d6c2ff]/40 bg-[#190d21] shadow-[0_30px_90px_rgba(214,194,255,0.08)]">
+            <motion.article {...reveal} transition={{ duration: 0.65, delay: 0.08 }} className="flex h-full flex-col overflow-hidden rounded-[2rem] border border-[#d6c2ff]/40 bg-[#190d21] shadow-[0_30px_90px_rgba(214,194,255,0.08)]">
               <div className="relative min-h-[430px] overflow-hidden bg-[#d6c2ff] p-6 sm:p-8">
                 <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full border border-black/10" aria-hidden="true" />
                 <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full border border-black/10" aria-hidden="true" />
-                <Image
-                  src="/images/brand/soundtrack/reseller-of-soundtrack-purple.svg"
-                  alt="Official reseller of Soundtrack"
-                  width={502}
-                  height={213}
-                  className="relative z-10 h-auto w-full max-w-[390px]"
-                />
-                <div className="relative z-10 mt-7 min-h-[225px] overflow-hidden rounded-[1.5rem] border border-black/15 bg-[#190d21] shadow-[0_24px_70px_rgba(25,13,33,0.28)]">
+                <div className="relative z-10">
+                  <Image
+                    src="/images/brand/soundtrack/soundtrack-logo-black.svg"
+                    alt="Soundtrack"
+                    width={502}
+                    height={147}
+                    className="h-auto w-[13rem] sm:w-[15rem]"
+                  />
+                </div>
+                <div className="relative z-10 mt-8 min-h-[225px] overflow-hidden rounded-[1.5rem] border border-black/15 bg-[#190d21] shadow-[0_24px_70px_rgba(25,13,33,0.28)]">
                   <Image src="/images/product-syb-hero.webp" alt="" fill sizes="(max-width:1280px) 100vw, 43vw" className="object-cover opacity-55 saturate-[0.76]" />
                   <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(25,13,33,0.94),rgba(25,13,33,0.35))]" />
                   <div className="absolute inset-x-0 bottom-0 z-10 p-6">
@@ -105,7 +107,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="p-7 sm:p-10">
+              <div className="flex flex-1 flex-col p-7 sm:p-10">
                 <p className="font-label text-[10px] uppercase tracking-[0.2em] text-[#c9b2ff]">{h('twoSolutions.syb.badge')}</p>
                 <h3 className="mt-3 text-balance font-headline text-4xl font-medium tracking-[-0.045em] text-white sm:text-5xl">Soundtrack Your Brand</h3>
                 <p className="mt-4 text-pretty text-lg leading-8 text-[#eee6ff]/58">{h('alternative.description')}</p>
@@ -114,9 +116,14 @@ export default function Home() {
                     <li key={key} className="rounded-full border border-[#eee6ff]/15 px-3 py-2 text-xs text-[#eee6ff]/65">{h(`twoSolutions.syb.${key}`)}</li>
                   ))}
                 </ul>
-                <Link href={`/${locale}/quotation`} className="group mt-8 inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-[#c9b2ff] px-6 font-label text-sm font-semibold text-[#180424] hover:bg-[#ded0ff]">
-                  {h('immersive.worlds.talkSoundtrack')} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                </Link>
+                <div className="mt-auto flex flex-col gap-3 pt-8 sm:flex-row">
+                  <Link href={`/${locale}/quotation`} className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-[#c9b2ff] px-6 font-label text-sm font-semibold text-[#180424] hover:bg-[#ded0ff]">
+                    {h('immersive.worlds.talkSoundtrack')} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                  </Link>
+                  <Link href={`/${locale}/soundtrack-your-brand`} className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#eee6ff]/20 px-6 font-label text-sm font-semibold text-white hover:bg-white/5">
+                    {h('twoSolutions.syb.cta')}
+                  </Link>
+                </div>
               </div>
             </motion.article>
           </div>

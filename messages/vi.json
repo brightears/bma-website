@@ -545,6 +545,14 @@
       "error": "Đã xảy ra lỗi. Vui lòng thử lại."
     }
   },
+  "soundtrackTrialPage": {
+    "metadata": { "title": "Bắt đầu dùng thử Soundtrack miễn phí", "description": "Yêu cầu dùng thử Soundtrack 14 ngày cho một khu vực nhạc doanh nghiệp. Không cần thẻ và không ràng buộc." },
+    "hero": { "label": "Dùng thử 14 ngày không cần thẻ", "title": "Nghe Soundtrack", "titleHighlight": "trong không gian của bạn.", "subtitle": "Hãy cho chúng tôi biết địa điểm đầu tiên bạn muốn thử. BMAsia sẽ xác minh thiết lập và sắp xếp quyền truy cập cho một khu vực." },
+    "proof": { "noCard": "Không cần thẻ tín dụng", "oneZone": "Một khu vực thử nghiệm", "autoEnd": "Tự động kết thúc" },
+    "steps": { "label": "Điều gì xảy ra tiếp theo", "requestTitle": "Gửi thông tin cần thiết", "requestDesc": "Một biểu mẫu ngắn cung cấp đủ thông tin để chúng tôi chuẩn bị bản dùng thử.", "verifyTitle": "BMAsia xác minh thiết lập", "verifyDesc": "Chúng tôi kiểm tra địa điểm và bảo đảm bản dùng thử được cấu hình cho mục đích kinh doanh.", "accessTitle": "Nhận quyền truy cập", "accessDesc": "Chúng tôi gửi thông tin đăng nhập và hướng dẫn thiết lập cho khu vực đầu tiên." },
+    "note": { "title": "Dùng thử minh bạch", "desc": "Không yêu cầu phương thức thanh toán. Nếu bạn không đăng ký, bản dùng thử không cần thẻ sẽ tự động kết thúc." },
+    "form": { "title": "Yêu cầu dùng thử", "subtitle": "Bắt đầu với một địa điểm và một khu vực. Bạn có thể thêm phần còn lại sau khi âm nhạc đã phù hợp.", "name": "Tên của bạn", "email": "Email công việc", "company": "Công ty", "country": "Quốc gia", "businessType": "Loại hình kinh doanh", "select": "Chọn một", "hotel": "Khách sạn hoặc khu nghỉ dưỡng", "restaurant": "Nhà hàng hoặc quán bar", "retail": "Bán lẻ", "fitness": "Thể hình hoặc chăm sóc sức khỏe", "office": "Văn phòng hoặc nơi làm việc", "other": "Khác", "locationName": "Địa điểm đầu tiên", "locationPlaceholder": "ví dụ Riverside Hotel Bangkok", "zoneName": "Khu vực đầu tiên (tùy chọn)", "zonePlaceholder": "ví dụ Sảnh", "zoneHint": "Khu vực là một không gian có âm nhạc riêng, như sảnh, nhà hàng hoặc khu bán hàng.", "consent": "Tôi đồng ý cho BMAsia sử dụng thông tin này để sắp xếp bản dùng thử Soundtrack và chia sẻ thông tin kích hoạt cần thiết với Soundtrack", "privacy": "Chính sách bảo mật", "consentRequired": "Vui lòng xác nhận trước khi tiếp tục.", "required": "Trường này là bắt buộc.", "invalidEmail": "Nhập email công việc hợp lệ.", "submit": "Yêu cầu dùng thử 14 ngày", "submitting": "Đang gửi yêu cầu…", "footnote": "Gửi biểu mẫu không bắt đầu gói đăng ký trả phí.", "successTitle": "Đã nhận yêu cầu dùng thử.", "successMessage": "BMAsia sẽ xác minh thông tin và gửi bước tiếp theo qua email. Chưa có khoản phí hay đăng ký nào.", "back": "Quay lại Soundtrack", "error": "Không thể lưu yêu cầu. Vui lòng thử lại." }
+  },
   "soundtrackPage": {
     "metadata": {
       "title": "Soundtrack Your Brand",
@@ -552,8 +560,8 @@
     },
     "hero": {
       "label": "Tiêu Chuẩn Toàn Cầu",
-      "title": "Soundtrack Your",
-      "titleHighlight": "Brand",
+      "title": "Soundtrack",
+      "titleHighlight": "Your Brand",
       "subtitle": "Thư viện nhạc thương mại lớn nhất thế giới, được tuyển chọn riêng cho không gian của quý khách.",
       "ctaQuote": "Nhận Báo Giá",
       "ctaTrial": "Dùng Thử Miễn Phí"
@@ -678,7 +686,7 @@
       "sectionLabel": "Hãy Thử Trước",
       "title": "Hãy thử trước khi",
       "titleHighlight": "quyết định.",
-      "desc1": "Bắt đầu với một tháng dùng thử miễn phí trên một khu vực. Không cần thẻ tín dụng, không ràng buộc.",
+      "desc1": "Bắt đầu với 14 ngày dùng thử miễn phí trên một khu vực. Không cần thẻ tín dụng, không ràng buộc.",
       "desc2": "Khi quý khách quyết định đăng ký và phần cứng đã sẵn sàng, chúng tôi sẽ giúp quý khách vận hành trong vòng năm phút.",
       "cta": "Bắt Đầu Dùng Thử"
     },
@@ -1204,8 +1212,8 @@
     },
     "ourSolutions": {
       "sectionTitle": "Giải pháp của chúng tôi",
-      "sybTagline": "Cao cấp — 100M+ bản nhạc, đồng bộ với Spotify, thiết kế theo yêu cầu",
-      "bbTagline": "Thiết yếu — 30K+ bản nhạc, bao gồm toàn bộ giấy phép",
+      "sybTagline": "Kho nhạc thương mại quen thuộc — nghệ sĩ nổi tiếng, nhập từ Spotify và thiết lập có BMAsia hỗ trợ",
+      "bbTagline": "Vận hành âm nhạc thông minh — danh mục tuyển chọn luôn mở rộng, Music Concierge, lịch phát và điều khiển khu vực trực tiếp",
       "learnMore": "Tìm hiểu thêm về các giải pháp của chúng tôi →"
     },
     "questions": {

@@ -61,7 +61,7 @@ export default async function HotelsSolutionLayout({
         name: 'Soundtrack Your Brand — Hotels',
         price: '380',
         priceCurrency: 'USD',
-        description: 'Premium music solution with 100M+ tracks, bespoke design, multi-zone scheduling',
+        description: 'Recognisable commercial repertoire, Spotify import, bespoke design, and multi-zone scheduling',
         unitText: 'per zone per year',
       },
       {
@@ -69,7 +69,7 @@ export default async function HotelsSolutionLayout({
         name: 'Beat Breeze — Hotels',
         price: '290',
         priceCurrency: 'USD',
-        description: 'Essential music solution with 30K+ tracks, all licenses included',
+        description: 'Intelligent music operations with a growing curated catalogue, Music Concierge, schedules, and live zone control',
         unitText: 'per zone per year',
       },
     ],

@@ -545,6 +545,69 @@
       "error": "Something went wrong. Please try again."
     }
   },
+  "soundtrackTrialPage": {
+    "metadata": {
+      "title": "Start a Soundtrack free trial",
+      "description": "Request a 14-day Soundtrack trial for one business music zone. No card and no commitment."
+    },
+    "hero": {
+      "label": "14-day no-card trial",
+      "title": "Hear Soundtrack",
+      "titleHighlight": "in your space.",
+      "subtitle": "Tell us about the first place you want to test. BMAsia will verify the setup and arrange access for one zone."
+    },
+    "proof": {
+      "noCard": "No credit card",
+      "oneZone": "One test zone",
+      "autoEnd": "Ends automatically"
+    },
+    "steps": {
+      "label": "What happens next",
+      "requestTitle": "Send the essentials",
+      "requestDesc": "One short form gives us what we need to prepare the right trial.",
+      "verifyTitle": "BMAsia verifies the setup",
+      "verifyDesc": "We check the location and make sure the trial is configured for business use.",
+      "accessTitle": "Receive your access",
+      "accessDesc": "We send the sign-in and setup instructions for your first zone."
+    },
+    "note": {
+      "title": "A clear, no-card trial",
+      "desc": "No payment method is required. If you do not subscribe, the no-card trial ends automatically."
+    },
+    "form": {
+      "title": "Request your trial",
+      "subtitle": "Start with one location and one zone. You can add the rest after the music feels right.",
+      "name": "Your name",
+      "email": "Work email",
+      "company": "Company",
+      "country": "Country",
+      "businessType": "Business type",
+      "select": "Select one",
+      "hotel": "Hotel or resort",
+      "restaurant": "Restaurant or bar",
+      "retail": "Retail",
+      "fitness": "Fitness or wellness",
+      "office": "Office or workplace",
+      "other": "Other",
+      "locationName": "First location",
+      "locationPlaceholder": "e.g. Riverside Hotel Bangkok",
+      "zoneName": "First zone (optional)",
+      "zonePlaceholder": "e.g. Lobby",
+      "zoneHint": "A zone is one area with its own music, such as a lobby, restaurant or shop floor.",
+      "consent": "I agree that BMAsia may use these details to arrange my Soundtrack trial and share the required activation information with Soundtrack",
+      "privacy": "Privacy policy",
+      "consentRequired": "Please confirm before continuing.",
+      "required": "This field is required.",
+      "invalidEmail": "Enter a valid work email.",
+      "submit": "Request 14-day trial",
+      "submitting": "Sending request…",
+      "footnote": "Submitting does not start a paid subscription.",
+      "successTitle": "Your trial request is in.",
+      "successMessage": "BMAsia will verify the details and email the next step. Nothing has been charged or subscribed.",
+      "back": "Back to Soundtrack",
+      "error": "We could not save your request. Please try again."
+    }
+  },
   "soundtrackPage": {
     "metadata": {
       "title": "Soundtrack Your Brand",
@@ -552,8 +615,8 @@
     },
     "hero": {
       "label": "The Global Standard",
-      "title": "Soundtrack Your",
-      "titleHighlight": "Brand",
+      "title": "Soundtrack",
+      "titleHighlight": "Your Brand",
       "subtitle": "The world's largest commercial music library, curated for your space.",
       "ctaQuote": "Get a Quote",
       "ctaTrial": "Start a Free Trial"
@@ -678,7 +741,7 @@
       "sectionLabel": "Try It First",
       "title": "Try it before you",
       "titleHighlight": "commit.",
-      "desc1": "Start with a free one-month trial on a single zone. No credit card, no commitment.",
+      "desc1": "Start with a free 14-day trial on a single zone. No credit card, no commitment.",
       "desc2": "Once you decide to sign up and your hardware is in place, we'll have you up and running in five minutes.",
       "cta": "Start Free Trial"
     },
@@ -1279,8 +1342,8 @@
     },
     "ourSolutions": {
       "sectionTitle": "Our Solutions",
-      "sybTagline": "Premium — 100M+ tracks, Spotify sync, bespoke design",
-      "bbTagline": "Essential — 30K+ tracks, all licenses included",
+      "sybTagline": "Recognisable commercial repertoire — familiar artists, Spotify import and BMAsia-assisted setup",
+      "bbTagline": "Intelligent music operations — a growing curated catalogue, Music Concierge, schedules and live zone control",
       "learnMore": "Learn more about our solutions →"
     },
     "questions": {

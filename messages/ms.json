@@ -545,6 +545,14 @@
       "error": "Sesuatu telah berlaku. Sila cuba lagi."
     }
   },
+  "soundtrackTrialPage": {
+    "metadata": { "title": "Mulakan percubaan percuma Soundtrack", "description": "Mohon percubaan Soundtrack 14 hari untuk satu zon muzik perniagaan. Tanpa kad dan tanpa komitmen." },
+    "hero": { "label": "Percubaan 14 hari tanpa kad", "title": "Dengar Soundtrack", "titleHighlight": "di ruang anda.", "subtitle": "Beritahu kami lokasi pertama yang ingin diuji. BMAsia akan mengesahkan persediaan dan mengatur akses untuk satu zon." },
+    "proof": { "noCard": "Tanpa kad kredit", "oneZone": "Satu zon percubaan", "autoEnd": "Tamat secara automatik" },
+    "steps": { "label": "Apa yang berlaku seterusnya", "requestTitle": "Hantar maklumat penting", "requestDesc": "Satu borang ringkas memberi kami maklumat untuk menyediakan percubaan yang betul.", "verifyTitle": "BMAsia mengesahkan persediaan", "verifyDesc": "Kami menyemak lokasi dan memastikan percubaan dikonfigurasi untuk kegunaan perniagaan.", "accessTitle": "Terima akses anda", "accessDesc": "Kami menghantar log masuk dan arahan persediaan untuk zon pertama." },
+    "note": { "title": "Percubaan yang telus", "desc": "Kaedah pembayaran tidak diperlukan. Jika anda tidak melanggan, percubaan tanpa kad tamat secara automatik." },
+    "form": { "title": "Mohon percubaan anda", "subtitle": "Mulakan dengan satu lokasi dan satu zon. Tambah selebihnya selepas muzik terasa tepat.", "name": "Nama anda", "email": "E-mel kerja", "company": "Syarikat", "country": "Negara", "businessType": "Jenis perniagaan", "select": "Pilih satu", "hotel": "Hotel atau resort", "restaurant": "Restoran atau bar", "retail": "Runcit", "fitness": "Kecergasan atau kesejahteraan", "office": "Pejabat atau tempat kerja", "other": "Lain-lain", "locationName": "Lokasi pertama", "locationPlaceholder": "cth. Riverside Hotel Bangkok", "zoneName": "Zon pertama (pilihan)", "zonePlaceholder": "cth. Lobi", "zoneHint": "Zon ialah satu kawasan dengan muziknya sendiri, seperti lobi, restoran atau ruang jualan.", "consent": "Saya bersetuju BMAsia menggunakan maklumat ini untuk mengatur percubaan Soundtrack dan berkongsi maklumat pengaktifan yang diperlukan dengan Soundtrack", "privacy": "Dasar privasi", "consentRequired": "Sila sahkan sebelum meneruskan.", "required": "Medan ini diperlukan.", "invalidEmail": "Masukkan e-mel kerja yang sah.", "submit": "Mohon percubaan 14 hari", "submitting": "Menghantar permohonan…", "footnote": "Menghantar borang tidak memulakan langganan berbayar.", "successTitle": "Permohonan percubaan diterima.", "successMessage": "BMAsia akan mengesahkan butiran dan menghantar langkah seterusnya melalui e-mel. Tiada caj atau langganan dibuat.", "back": "Kembali ke Soundtrack", "error": "Kami tidak dapat menyimpan permohonan. Sila cuba lagi." }
+  },
   "soundtrackPage": {
     "metadata": {
       "title": "Soundtrack Your Brand",
@@ -552,8 +560,8 @@
     },
     "hero": {
       "label": "Standard Global",
-      "title": "Soundtrack Your",
-      "titleHighlight": "Brand",
+      "title": "Soundtrack",
+      "titleHighlight": "Your Brand",
       "subtitle": "Perpustakaan muzik komersial terbesar di dunia, dikurasi khas untuk ruang anda.",
       "ctaQuote": "Dapatkan Sebut Harga",
       "ctaTrial": "Mula Percubaan Percuma"
@@ -678,7 +686,7 @@
       "sectionLabel": "Cuba Dahulu",
       "title": "Cuba sebelum anda",
       "titleHighlight": "komited.",
-      "desc1": "Mulakan dengan percubaan percuma satu bulan untuk satu zon. Tanpa kad kredit, tanpa komitmen.",
+      "desc1": "Mulakan dengan percubaan percuma 14 hari untuk satu zon. Tanpa kad kredit, tanpa komitmen.",
       "desc2": "Sebaik sahaja anda memutuskan untuk mendaftar dan perkakasan anda sudah sedia, kami akan menyiapkan anda dalam lima minit.",
       "cta": "Mula Percubaan Percuma"
     },
@@ -1204,8 +1212,8 @@
     },
     "ourSolutions": {
       "sectionTitle": "Penyelesaian Kami",
-      "sybTagline": "Premium — 100M+ lagu, penyegerakan Spotify, reka bentuk tersuai",
-      "bbTagline": "Asas — 30K+ lagu, semua lesen disertakan",
+      "sybTagline": "Repertoir komersial yang dikenali — artis popular, import Spotify dan persediaan dibantu BMAsia",
+      "bbTagline": "Operasi muzik pintar — katalog terpilih yang terus berkembang, Music Concierge, jadual dan kawalan zon langsung",
       "learnMore": "Ketahui lebih lanjut tentang penyelesaian kami →"
     },
     "questions": {
