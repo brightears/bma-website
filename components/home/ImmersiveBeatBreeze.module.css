@@ -540,7 +540,7 @@
 
 .audioPreview {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  grid-template-columns: auto minmax(0, 1fr) auto minmax(150px, 210px) auto;
   align-items: center;
   gap: 14px;
   margin-top: 24px;
@@ -597,6 +597,52 @@
   color: rgba(255, 255, 255, 0.92);
   cursor: pointer;
   transition: transform 220ms ease, border-color 220ms ease, background 220ms ease;
+}
+
+.audioVolume {
+  min-width: 150px;
+  display: grid;
+  grid-template-columns: auto minmax(72px, 1fr) 36px;
+  align-items: center;
+  gap: 9px;
+  color: rgba(238, 243, 255, 0.55);
+}
+
+.audioVolume svg {
+  width: 15px;
+  height: 15px;
+}
+
+.audioVolume input {
+  width: 100%;
+  height: 4px;
+  appearance: none;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--phase-a) var(--audio-volume), rgba(255, 255, 255, 0.12) var(--audio-volume));
+  cursor: pointer;
+}
+
+.audioVolume input::-webkit-slider-thumb {
+  width: 14px;
+  height: 14px;
+  appearance: none;
+  border: 2px solid var(--phase-a);
+  border-radius: 50%;
+  background: #0b1321;
+}
+
+.audioVolume input::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--phase-a);
+  border-radius: 50%;
+  background: #0b1321;
+}
+
+.audioVolume output {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 10px;
+  text-align: right;
 }
 
 .audioPlay {
@@ -858,7 +904,7 @@
   .playlistCard { opacity: 0.8; transform: none; }
   .machineFooter, .takeaway, .storyHeading { grid-template-columns: 1fr; }
   .storyTrack { grid-template-columns: 1fr 1fr; gap: 50px 0; }
-  .audioPreview { grid-template-columns: auto minmax(0, 1fr) auto auto; }
+  .audioPreview { grid-template-columns: auto minmax(0, 1fr) auto minmax(130px, 180px) auto; }
 }
 
 @media (max-width: 620px) {
@@ -880,6 +926,7 @@
   .audioPreview { grid-template-columns: auto minmax(0, 1fr) auto; }
   .audioPlay { grid-column: 1 / -1; grid-row: 2; }
   .audioMute { grid-column: 3; grid-row: 1; }
+  .audioVolume { grid-column: 1 / -1; grid-row: 3; min-width: 0; }
   .audioCopy span { white-space: normal; }
   .takeaway { grid-template-columns: 1fr; padding: 24px; }
   .storyTrack { grid-template-columns: 1fr; }

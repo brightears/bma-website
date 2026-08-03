@@ -947,7 +947,7 @@
         "try": "Thử cỗ máy thời gian", "start": "Dùng thử miễn phí 14 ngày", "proof1": "Không cần thẻ", "proof2": "Không cần phần cứng chuyên dụng", "proof3": "Từ $12 mỗi khu vực", "scroll": "Trải nghiệm cả ngày"
       },
       "field": { "ariaLabel": "Trường âm nhạc sống động thay đổi theo từng khu vực", "energy": "Năng lượng {energy}" },
-      "audio": { "title": "Nghe thử", "visualOnly": "Bản xem trước định hướng âm nhạc · đang tắt tiếng", "hear": "Nghe không khí này", "pause": "Tạm dừng bản nghe thử", "paused": "Đã tạm dừng", "mute": "Tắt tiếng", "unmute": "Bật tiếng", "playing": "Đang phát bản nghe thử có bản quyền dài 25 giây", "playingMuted": "Đang phát bản nghe thử có bản quyền dài 25 giây · đã tắt tiếng", "unavailable": "Không thể phát bản nghe thử" },
+      "audio": { "title": "Nghe thử", "visualOnly": "Bản xem trước định hướng âm nhạc · đang tắt tiếng", "hear": "Nghe không khí này", "pause": "Tạm dừng bản nghe thử", "paused": "Đã tạm dừng", "mute": "Tắt tiếng", "unmute": "Bật tiếng", "playing": "Đang phát bản nghe thử có bản quyền dài 25 giây", "playingMuted": "Đang phát bản nghe thử có bản quyền dài 25 giây · đã tắt tiếng", "unavailable": "Không thể phát bản nghe thử", "volume": "Âm lượng nghe thử" },
       "demo": {
         "eyebrow": "Một trải nghiệm hữu ích trong năm phút", "title": "Đi qua một ngày.", "highlight": "Cảm nhận không gian thay đổi.",
         "description": "Chọn loại hình kinh doanh, kéo thời gian và đưa từng khu vực lên trước. Âm nhạc, năng lượng và hướng dẫn Concierge cùng phản hồi.",

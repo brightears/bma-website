@@ -96,7 +96,7 @@ export default function SoundtrackYourBrandPage() {
               <span className="font-label text-[#D6C2FF] text-sm tracking-[0.3em] uppercase mb-6 block">
                 {t('hero.label')}
               </span>
-              <h1 className="mb-7 max-w-6xl text-balance font-headline text-[clamp(3.15rem,7.4vw,7rem)] leading-[0.94] tracking-[-0.055em] text-white">
+              <h1 className="mb-7 max-w-6xl text-balance font-label text-[clamp(3.35rem,5.4vw,4.85rem)] leading-[.98] tracking-[-.05em] text-white">
                 <span>{t('hero.title')}</span>{' '}
                 <span className="inline-block italic text-[#D6C2FF]">{t('hero.titleHighlight')}</span>
               </h1>
@@ -130,7 +130,7 @@ export default function SoundtrackYourBrandPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="font-headline text-3xl md:text-5xl leading-tight text-white/90 [text-wrap:balance]"
+            className="font-label text-3xl md:text-5xl leading-tight text-white/90 [text-wrap:balance]"
           >
             {t('positioning.text1')}
             {' '}
@@ -157,7 +157,7 @@ export default function SoundtrackYourBrandPage() {
                 <span className="font-label text-[#D6C2FF] text-xs tracking-[0.2em] uppercase block mb-4">
                   {num} / {t(`valueProps.${num}.label`)}
                 </span>
-                <h3 className="font-headline text-2xl md:text-3xl text-white mb-4 [text-wrap:balance]">{t(`valueProps.${num}.title`)}</h3>
+                <h3 className="font-label text-2xl md:text-3xl text-white mb-4 [text-wrap:balance]">{t(`valueProps.${num}.title`)}</h3>
                 <p className="text-lg text-white/50 leading-relaxed">{t(`valueProps.${num}.desc`)}</p>
               </motion.div>
             ))}
@@ -177,7 +177,7 @@ export default function SoundtrackYourBrandPage() {
             <span className="font-label text-[#D6C2FF] text-xs tracking-[0.2em] uppercase block mb-4">
               {t('features.sectionLabel')}
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance]">{t('features.sectionTitle')}</h2>
+            <h2 className="font-label text-3xl md:text-5xl text-white [text-wrap:balance]">{t('features.sectionTitle')}</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5">
             {FEATURES.map((feature, i) => {
@@ -213,7 +213,7 @@ export default function SoundtrackYourBrandPage() {
             <span className="font-label text-[#D6C2FF] text-xs tracking-[0.2em] uppercase block mb-4">
               {t('integrations.sectionLabel')}
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance] mb-6">{t('integrations.sectionTitle')}</h2>
+            <h2 className="font-label text-3xl md:text-5xl text-white [text-wrap:balance] mb-6">{t('integrations.sectionTitle')}</h2>
             <p className="text-lg md:text-xl text-white/60 leading-relaxed">
               {t('integrations.sectionDesc')}
             </p>
@@ -231,7 +231,7 @@ export default function SoundtrackYourBrandPage() {
                   className="border-l-2 border-[#D6C2FF]/35 pl-8"
                 >
                   <Icon className="text-[#D6C2FF] w-8 h-8 mb-4" strokeWidth={1.5} />
-                  <h4 className="font-headline text-xl text-white mb-3 [text-wrap:balance]">{t(`integrations.${item.key}.title`)}</h4>
+                  <h4 className="font-label text-xl text-white mb-3 [text-wrap:balance]">{t(`integrations.${item.key}.title`)}</h4>
                   <p className="text-base text-white/50 leading-relaxed">{t(`integrations.${item.key}.desc`)}</p>
                 </motion.div>
               );
@@ -249,7 +249,7 @@ export default function SoundtrackYourBrandPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance] mb-4">{t('licensing.sectionTitle')}</h2>
+            <h2 className="font-label text-3xl md:text-5xl text-white [text-wrap:balance] mb-4">{t('licensing.sectionTitle')}</h2>
             <p className="text-lg text-white/50 max-w-2xl mx-auto">
               {t('licensing.sectionDesc')}
             </p>
@@ -314,7 +314,7 @@ export default function SoundtrackYourBrandPage() {
             <span className="font-label text-[#D6C2FF] text-xs tracking-[0.2em] uppercase block mb-4">
               {t('devices.sectionLabel')}
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance]">{t('devices.sectionTitle')}</h2>
+            <h2 className="font-label text-3xl md:text-5xl text-white [text-wrap:balance]">{t('devices.sectionTitle')}</h2>
           </motion.div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             {DEVICES.map((device, i) => {
@@ -351,7 +351,7 @@ export default function SoundtrackYourBrandPage() {
             <span className="font-label text-[#D6C2FF] text-xs tracking-[0.2em] uppercase block mb-6">
               {t('trial.sectionLabel')}
             </span>
-            <h2 className="font-headline text-4xl md:text-6xl text-white mb-8 leading-tight [text-wrap:balance]">
+            <h2 className="font-label text-[clamp(2.5rem,3.2vw,3.25rem)] text-white mb-8 leading-tight [text-wrap:balance]">
               {t('trial.title')} <span className="italic text-[#D6C2FF]">{t('trial.titleHighlight')}</span>
             </h2>
             <p className="text-xl md:text-2xl text-white/60 leading-relaxed mb-4">
@@ -382,7 +382,7 @@ export default function SoundtrackYourBrandPage() {
             <span className="font-label text-[#D6C2FF] text-xs tracking-[0.2em] uppercase block mb-4">
               {t('support.sectionLabel')}
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance]">{t('support.sectionTitle')}</h2>
+            <h2 className="font-label text-3xl md:text-5xl text-white [text-wrap:balance]">{t('support.sectionTitle')}</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {SUPPORT.map((item, i) => {
@@ -397,7 +397,7 @@ export default function SoundtrackYourBrandPage() {
                   className="text-center md:text-left"
                 >
                   <Icon className="text-[#D6C2FF] w-10 h-10 mb-6 mx-auto md:mx-0" strokeWidth={1.5} />
-                  <h4 className="font-headline text-2xl text-white mb-4 [text-wrap:balance]">{t(`support.${item.key}.title`)}</h4>
+                  <h4 className="font-label text-2xl text-white mb-4 [text-wrap:balance]">{t(`support.${item.key}.title`)}</h4>
                   <p className="text-base text-white/50 leading-relaxed">{t(`support.${item.key}.desc`)}</p>
                 </motion.div>
               );
@@ -413,7 +413,7 @@ export default function SoundtrackYourBrandPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-headline text-4xl md:text-5xl text-white [text-wrap:balance] mb-16 text-center"
+            className="font-label text-3xl md:text-5xl text-white [text-wrap:balance] mb-16 text-center"
           >
             {t('faq.title')}
           </motion.h2>
@@ -428,7 +428,7 @@ export default function SoundtrackYourBrandPage() {
                 className="group border-b border-white/10 pb-6"
               >
                 <summary className="flex justify-between items-start cursor-pointer list-none">
-                  <h5 className="font-headline text-xl md:text-2xl text-white pr-8 [text-wrap:balance]">{t(`faq.${fk}.q`)}</h5>
+                  <h5 className="font-label text-xl md:text-2xl text-white pr-8 [text-wrap:balance]">{t(`faq.${fk}.q`)}</h5>
                   <Plus className="text-[#D6C2FF] w-6 h-6 flex-shrink-0 group-open:rotate-45 transition-transform" strokeWidth={1.5} />
                 </summary>
                 <p className="mt-6 text-base md:text-lg text-white/60 leading-relaxed pr-8">
@@ -459,7 +459,7 @@ export default function SoundtrackYourBrandPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-headline text-4xl md:text-6xl text-white mb-8 leading-tight [text-wrap:balance]">
+            <h2 className="font-label text-[clamp(2.5rem,3.2vw,3.25rem)] text-white mb-8 leading-tight [text-wrap:balance]">
               {t('finalCta.title')} <br />
               <span className="italic text-[#D6C2FF]">{t('finalCta.titleHighlight')}</span>
             </h2>
