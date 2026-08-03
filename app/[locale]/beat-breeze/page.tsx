@@ -6,27 +6,28 @@ import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import {
   ArrowRight,
-  CalendarClock,
   Check,
   CloudOff,
   Headphones,
   Laptop,
-  MessageSquare,
+  MessageSquareText,
   MonitorPlay,
-  ShieldCheck,
+  Music2,
+  PhoneCall,
+  SlidersHorizontal,
   Smartphone,
   Sparkles,
-  Volume2,
+  Workflow,
 } from 'lucide-react';
 import { FloatingChatButton } from '@/components/chat/FloatingChatButton';
 
 const features = [
-  { key: 'curation', icon: Sparkles },
-  { key: 'scheduling', icon: CalendarClock },
-  { key: 'remoteMgmt', icon: Volume2 },
-  { key: 'offline', icon: CloudOff },
-  { key: 'audioSignatures', icon: MessageSquare },
-  { key: 'zeroLicensing', icon: ShieldCheck },
+  { key: 'curation', icon: Music2 },
+  { key: 'scheduling', icon: MonitorPlay },
+  { key: 'audioSignatures', icon: MessageSquareText },
+  { key: 'zeroLicensing', icon: PhoneCall },
+  { key: 'offline', icon: Workflow },
+  { key: 'remoteMgmt', icon: SlidersHorizontal },
 ] as const;
 
 const reveal = {
@@ -55,12 +56,12 @@ export default function BeatBreezePage() {
 
         <div className="mx-auto grid w-full max-w-[1440px] gap-14 lg:grid-cols-[.86fr_1.14fr] lg:items-center lg:gap-16">
           <motion.div initial={{ opacity: 0, y: 26 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75 }}>
-            <p className="font-label text-[11px] uppercase tracking-[.28em] text-brand-orange">{h('beatBreezeLead.label')}</p>
+            <p className="font-label text-[11px] uppercase tracking-[.28em] text-brand-orange">{t('hero.label')}</p>
             <h1 className="mt-7 bg-gradient-to-r from-brand-orange via-[#c9c56f] to-[#37d5cb] bg-clip-text pb-3 text-balance font-label text-[clamp(3.7rem,5.4vw,4.85rem)] leading-[.98] tracking-[-.05em] text-transparent">
               {t('hero.title')}
               <span className="block">{t('hero.titleHighlight')}</span>
             </h1>
-            <p className="mt-7 max-w-2xl text-pretty text-lg leading-8 text-white/58 md:text-xl">{h('beatBreezeLead.description')}</p>
+            <p className="mt-7 max-w-2xl text-pretty text-lg leading-8 text-white/58 md:text-xl">{t('hero.subtitle')}</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a href="https://beatbreeze.io/sign-up" className="group inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-brand-orange px-7 text-sm font-semibold text-[#101010] hover:bg-[#ffb64a]">
                 {h('beatBreezeLead.proof1')} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
@@ -105,8 +106,8 @@ export default function BeatBreezePage() {
         <div className="mx-auto max-w-[1320px]">
           <motion.div {...reveal} className="max-w-4xl">
             <p className="font-label text-[11px] uppercase tracking-[.28em] text-brand-orange">{t('features.sectionLabel')}</p>
-            <h2 className="mt-5 max-w-[1100px] bg-gradient-to-r from-brand-orange via-[#c9c56f] to-[#37d5cb] bg-clip-text pb-[0.12em] text-balance font-label text-[clamp(2.5rem,3.2vw,3.25rem)] leading-[1.08] tracking-[-.04em] text-transparent">{h('beatBreezeLead.title')}</h2>
-            <p className="mt-6 max-w-3xl text-pretty text-lg leading-8 text-white/50">{t('hero.subtitle')}</p>
+            <h2 className="mt-5 max-w-[1100px] bg-gradient-to-r from-brand-orange via-[#c9c56f] to-[#37d5cb] bg-clip-text pb-[0.12em] text-balance font-label text-[clamp(2.5rem,3.2vw,3.25rem)] leading-[1.08] tracking-[-.04em] text-transparent">{t('features.sectionTitle')}</h2>
+            <p className="mt-6 max-w-3xl text-pretty text-lg leading-8 text-white/50">{t('features.sectionDescription')}</p>
           </motion.div>
           <div className="mt-16 grid gap-px overflow-hidden rounded-[1.6rem] border border-white/[.08] bg-white/[.08] md:grid-cols-2 lg:grid-cols-3">
             {features.map(({ key, icon: Icon }, index) => (
@@ -167,7 +168,7 @@ export default function BeatBreezePage() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_100%,rgba(239,166,52,.17),transparent_48%)]" aria-hidden="true" />
         <motion.div {...reveal} className="relative mx-auto max-w-4xl text-center">
           <h2 className="bg-gradient-to-r from-brand-orange via-[#c9c56f] to-[#37d5cb] bg-clip-text text-balance font-label text-[clamp(2.75rem,4vw,3.75rem)] tracking-[-.045em] text-transparent">{t('product.finalTitle')}</h2>
-          <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-8 text-white/50">{h('beatBreezeLead.finalDescription')}</p>
+          <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-8 text-white/50">{t('product.finalDescription')}</p>
           <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
             <a href="https://beatbreeze.io/sign-up" className="inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-brand-orange px-8 text-sm font-semibold text-[#101010] hover:bg-[#ffb64a]">{t('product.startFree')} <ArrowRight className="h-4 w-4" aria-hidden="true" /></a>
             <Link href={`/${locale}/quotation`} className="inline-flex min-h-14 items-center justify-center rounded-full border border-white/15 px-8 text-sm font-semibold text-white hover:bg-white/5">{t('product.talkToBMAsia')}</Link>

@@ -306,7 +306,7 @@
     "cookies": "Cookie",
     "terms": "Điều khoản",
     "allRightsReserved": "Bảo lưu mọi quyền.",
-    "operationsDescription": "Âm nhạc cho doanh nghiệp, được quản lý từ một nơi.",
+    "operationsDescription": "Âm nhạc và nội dung, được quản lý cùng nhau.",
     "products": "Sản phẩm",
     "howItWorks": "Cách hoạt động",
     "musicLicensing": "Cấp phép âm nhạc",
@@ -744,13 +744,13 @@
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
-      "description": "Nhạc nền được cấp phép đầy đủ cho mọi doanh nghiệp — bao gồm cả ba giấy phép âm nhạc, không phí tổ chức thu tiền bản quyền, và được tuyển chọn chuyên nghiệp bởi các chuyên gia thiết kế âm nhạc của BMAsia."
+      "description": "Vận hành không gian lấy âm nhạc làm trung tâm: lên lịch nhạc, quản lý kênh TV, tạo thông điệp và âm thanh điện thoại, tự động hóa các điểm chạm và điều khiển mọi khu vực."
     },
     "hero": {
-      "label": "Tuyển Chọn Trọn Gói",
+      "label": "Trải Nghiệm Không Gian Kết Nối",
       "title": "Beat",
       "titleHighlight": "Breeze",
-      "subtitle": "Nền tảng vận hành âm nhạc cho doanh nghiệp — khám phá, lên lịch và kiểm soát mọi khu vực từ một nơi.",
+      "subtitle": "Âm nhạc, màn hình, thông điệp và âm thanh điện thoại—được lập kế hoạch, sáng tạo và điều khiển ở mọi khu vực.",
       "ctaQuote": "Nhận Báo Giá",
       "ctaTrial": "Dùng Thử Miễn Phí"
     },
@@ -778,31 +778,33 @@
     },
     "features": {
       "sectionLabel": "Tính Năng",
-      "sectionTitle": "Mọi thứ quý khách cần, không có gì dư thừa.",
+      "sectionTitle": "Âm nhạc là nhịp tim. Mọi điểm chạm chuyển động cùng nó.",
       "zeroLicensing": {
-        "title": "Âm Nhạc Sẵn Sàng Cho Doanh Nghiệp",
-        "desc": "Kho nhạc royalty-free được tuyển chọn cho mục đích kinh doanh. BMAsia xác nhận các yêu cầu biểu diễn công cộng tại địa phương trong quá trình triển khai."
+        "title": "Chuyên nghiệp trong từng cuộc gọi",
+        "desc": "Tạo nhạc chờ và âm thanh điện thoại theo thương hiệu, bằng giọng nói và ngôn ngữ phù hợp với doanh nghiệp."
       },
       "curation": {
-        "title": "Music Concierge",
-        "desc": "Đề xuất dựa trên bối cảnh khu vực, thời gian và mức năng lượng — đồng thời giải thích lý do trước khi quý khách áp dụng."
+        "title": "Định hình âm thanh",
+        "desc": "Tự khám phá danh mục hoặc để Music Concierge đề xuất theo khu vực, thời gian, năng lượng và bối cảnh kinh doanh."
       },
       "offline": {
-        "title": "Hoạt Động Ngoại Tuyến",
-        "desc": "Nhạc được tải về thiết bị và phát tại chỗ. Trải nghiệm của khách vẫn mượt mà ngay cả khi kết nối bị gián đoạn."
+        "title": "Để không gian tự phản ứng",
+        "desc": "Tự động hóa giúp nhạc và thông điệp thay đổi theo giờ mở cửa, ngày đặc biệt, thời tiết và nhu cầu vận hành."
       },
       "scheduling": {
-        "title": "Lập Lịch",
-        "desc": "Các tâm trạng khác nhau cho những khung giờ khác nhau. Giờ phục vụ sáng, giờ cao điểm trưa, lounge buổi tối — thiết lập một lần và hệ thống tự vận hành."
+        "title": "Làm sống động mọi màn hình",
+        "desc": "Kết hợp playlist đầy đủ với hình ảnh lặp, thông điệp và nội dung thương hiệu cho TV và màn hình tại điểm bán."
       },
       "audioSignatures": {
-        "title": "Tin Nhắn & Thông Báo",
-        "desc": "Chèn thông điệp thương hiệu, khuyến mãi hoặc thông báo giữa các bản nhạc theo lịch."
+        "title": "Nói đúng lúc",
+        "desc": "Tạo và lên lịch thông điệp thoại đa ngôn ngữ cho khuyến mãi, thông tin khách và thông báo vận hành."
       },
       "remoteMgmt": {
-        "title": "Điều Khiển Khu Vực Trực Tiếp",
-        "desc": "Xem trạng thái trình phát, điều khiển phát nhạc và âm lượng, đồng thời quản lý mọi khu vực từ bảng điều khiển hoặc ứng dụng Remote."
+        "title": "Điều khiển từ bất cứ đâu",
+        "desc": "Xem trạng thái trình phát, điều khiển nhạc và âm lượng, quản lý mọi khu vực từ bảng điều khiển hoặc ứng dụng Remote."
       }
+    ,
+      "sectionDescription": "Beat Breeze kết nối âm thanh, màn hình, giao tiếp và vận hành hằng ngày trong một luồng làm việc dễ kiểm soát."
     },
     "product": {
       "openProduct": "Mở Beat Breeze",
@@ -826,6 +828,8 @@
       "finalTitle": "Khu vực đầu tiên sẵn sàng trong vài phút.",
       "startFree": "Bắt đầu miễn phí",
       "talkToBMAsia": "Trao đổi với BMAsia"
+    ,
+      "finalDescription": "Thử trải nghiệm không gian kết nối tại một khu vực trong 14 ngày. Không cần thẻ, thiết bị chuyên dụng hay cài đặt phức tạp."
     },
     "licensing": {
       "sectionTitle": "Mọi giấy phép.",
@@ -942,16 +946,16 @@
   "homePage": {
     "immersive": {
       "hero": {
-        "eyebrow": "Beat Breeze bởi BMAsia", "title": "Mỗi không gian có một nhịp điệu.", "highlight": "Hãy để âm nhạc chuyển động cùng nó.",
-        "description": "Định hình từng khu vực từ sáng đến tối—hoặc để Music Concierge quản lý toàn bộ dòng nhạc. Một nền tảng thông minh cho âm nhạc đúng với từng khoảnh khắc.",
-        "try": "Thử cỗ máy thời gian", "start": "Dùng thử miễn phí 14 ngày", "proof1": "Không cần thẻ", "proof2": "Không cần phần cứng chuyên dụng", "proof3": "Từ $12 mỗi khu vực", "scroll": "Trải nghiệm cả ngày"
+        "eyebrow": "Beat Breeze bởi BMAsia", "title": "Định hình bầu không khí.", "highlight": "Vận hành mọi điểm chạm.",
+        "description": "Âm nhạc, màn hình, thông điệp và âm thanh điện thoại được phối hợp trên mọi khu vực.",
+        "try": "Thử trình mô phỏng trải nghiệm không gian", "start": "Dùng thử miễn phí 14 ngày", "proof1": "Không cần thẻ", "proof2": "Không cần phần cứng chuyên dụng", "proof3": "Từ $12 mỗi khu vực", "scroll": "Trải nghiệm cả ngày"
       },
       "field": { "ariaLabel": "Trường âm nhạc sống động thay đổi theo từng khu vực", "energy": "Năng lượng {energy}" },
       "audio": { "title": "Nghe thử", "visualOnly": "Bản xem trước định hướng âm nhạc · đang tắt tiếng", "hear": "Nghe không khí này", "pause": "Tạm dừng bản nghe thử", "paused": "Đã tạm dừng", "mute": "Tắt tiếng", "unmute": "Bật tiếng", "playing": "Đang phát bản nghe thử có bản quyền dài 25 giây", "playingMuted": "Đang phát bản nghe thử có bản quyền dài 25 giây · đã tắt tiếng", "unavailable": "Không thể phát bản nghe thử", "volume": "Âm lượng nghe thử" },
       "demo": {
-        "eyebrow": "Một trải nghiệm hữu ích trong năm phút", "title": "Đi qua một ngày.", "highlight": "Cảm nhận không gian thay đổi.",
-        "description": "Chọn loại hình kinh doanh, kéo thời gian và đưa từng khu vực lên trước. Âm nhạc, năng lượng và hướng dẫn Concierge cùng phản hồi.",
-        "machineLabel": "Mô phỏng địa điểm trực tiếp", "live": "Phản hồi trực tiếp", "chooseVenue": "Chọn loại hình kinh doanh", "localTime": "Giờ địa phương", "chooseTime": "Chọn thời điểm", "playlistDetail": "Năng lượng {energy} · {bpm} BPM", "concierge": "Hướng dẫn từ Music Concierge", "energy": "Năng lượng địa điểm"
+        "eyebrow": "Một trải nghiệm hữu ích trong năm phút", "title": "Đi qua một ngày.", "highlight": "Xem mọi điểm chạm phản hồi.",
+        "description": "Chọn loại hình kinh doanh, kéo thời gian và đưa từng khu vực lên trước. Âm nhạc, màn hình, thông điệp, điện thoại, năng lượng và hướng dẫn Concierge cùng thay đổi.",
+        "machineLabel": "Mô phỏng trải nghiệm không gian trực tiếp", "live": "Phản hồi trực tiếp", "chooseVenue": "Chọn loại hình kinh doanh", "localTime": "Giờ địa phương", "chooseTime": "Chọn thời điểm", "playlistDetail": "Năng lượng {energy} · {bpm} BPM", "concierge": "Hướng dẫn từ Music Concierge", "energy": "Năng lượng địa điểm"
       },
       "venues": { "hotel": "Khách sạn", "restaurant": "Nhà hàng", "retail": "Bán lẻ", "fitness": "Thể hình" },
       "phases": { "0": { "label": "Buổi sáng", "mood": "Đón khách nhẹ nhàng" }, "1": { "label": "Ban ngày", "mood": "Ấm áp và trôi chảy" }, "2": { "label": "Buổi tối", "mood": "Năng lượng giao lưu" }, "3": { "label": "Đêm muộn", "mood": "Khép lại dịu dàng" } },
@@ -965,17 +969,99 @@
       "guidance": { "0": "Bắt đầu thoáng và ít kích thích khi ngày mới dần mở ra.", "1": "Thêm chuyển động nhịp nhàng ổn định mà không làm không gian chật chội.", "2": "Chủ động nâng năng lượng ở nơi mọi người giao lưu nhiều hơn.", "3": "Giảm dần cường độ để kết thúc một cách dễ chịu." },
       "brief": { "eyebrow": "Mang theo điều hữu ích", "title": "Bản định hướng âm nhạc của bạn", "copy": "Sao chép bản định hướng", "copied": "Đã sao chép", "text": "Định hướng {venue} lúc {time}\nCảm giác mong muốn: {mood}. {guidance}\nKế hoạch khu vực: {zones}" },
       "story": {
-        "eyebrow": "Một hệ thống, không phải danh sách tính năng", "title": "Từ cảm giác đến", "highlight": "một địa điểm vận hành trôi chảy.",
-        "find": { "title": "Tìm đúng cảm giác", "text": "Mô tả khoảnh khắc bằng ngôn ngữ tự nhiên hoặc tự khám phá toàn bộ danh mục." },
-        "shape": { "title": "Định hình cả ngày", "text": "Biến giờ mở cửa, khung giờ và năng lượng thành một kế hoạch âm nhạc hợp lý." },
-        "control": { "title": "Điều khiển mọi khu vực", "text": "Xem nội dung đang phát, kết nối thiết bị và can thiệp từ một phòng điều khiển rõ ràng." },
-        "concierge": { "title": "Để Concierge quản lý", "text": "Nhận đề xuất có thể giải thích, câu hỏi đúng lúc và sự chăm sóc liên tục khi bạn muốn." },
+        "eyebrow": "Một hệ thống, không phải danh sách tính năng",
+        "title": "Từ một bản brief đến",
+        "highlight": "không gian vận hành liền mạch.",
+        "sound": {
+          "title": "Định hình bản sắc âm thanh",
+          "text": "Tự tìm nhạc hoặc để Concierge chuyển ý tưởng thành hướng đi có thể giải thích."
+        },
+        "screens": {
+          "title": "Đưa lên màn hình",
+          "text": "Kết hợp hình ảnh lặp và nội dung thương hiệu với playlist luôn chuyển động."
+        },
+        "messages": {
+          "title": "Nói đúng lúc",
+          "text": "Tạo và lên lịch thông điệp thoại đa ngôn ngữ mà không cần quy trình sản xuất riêng."
+        },
+        "calls": {
+          "title": "Tiếp tục trải nghiệm qua điện thoại",
+          "text": "Tạo nhạc chờ và giọng điện thoại như một phần của cùng không gian."
+        },
+        "automate": {
+          "title": "Tự động hóa việc lặp lại",
+          "text": "Để thời gian, sự kiện và bối cảnh kích hoạt các thay đổi có thể xem xét."
+        },
+        "control": {
+          "title": "Điều khiển tất cả",
+          "text": "Xem nội dung đang chạy, kết nối thiết bị và kiểm soát từ bảng điều khiển hoặc Remote."
+        },
         "cta": "Khám phá mọi điều Beat Breeze có thể làm"
       },
       "worlds": {
         "eyebrow": "Một đội ngũ BMAsia · hai giải pháp khác biệt", "title": "Chọn thế giới âm nhạc", "highlight": "phù hợp với doanh nghiệp của bạn.",
         "description": "Beat Breeze mang đến nền tảng tự phục vụ thông minh. Soundtrack cung cấp danh mục thương mại quen thuộc với sự hỗ trợ của BMAsia.",
         "bbCore": "Khu vực · lịch phát · Concierge", "tryBeatBreeze": "Dùng thử Beat Breeze", "sybDiscLabel": "BMAsia đồng hành", "sybDiscText": "Âm nhạc quen thuộc cho doanh nghiệp", "talkSoundtrack": "Trao đổi với BMAsia về Soundtrack", "compareLabel": "Chưa chắc lựa chọn nào phù hợp?", "compareText": "Chúng tôi sẽ cùng bạn so sánh danh mục, bản quyền, khả năng điều khiển và dịch vụ—không ép bạn chọn sai sản phẩm."
+      }
+    ,
+      "touchpoints": {
+        "eyebrow": "Các điểm chạm kết nối",
+        "title": "Xem trước toàn bộ trải nghiệm không gian.",
+        "description": "Chọn một điểm chạm để thấy một bản brief định hình mọi bề mặt hướng đến khách.",
+        "status": "Hướng trực tiếp",
+        "sound": {
+          "label": "Âm nhạc",
+          "title": "{playlist} định hình {zone}",
+          "text": "Lựa chọn âm nhạc theo năng lượng {phase} lúc {time}."
+        },
+        "screens": {
+          "label": "Màn hình",
+          "title": "Hình ảnh chuyển động cùng âm nhạc",
+          "text": "Vòng lặp tại {zone} theo màu sắc, nhịp độ và cảm xúc của {playlist}."
+        },
+        "messages": {
+          "label": "Thông điệp",
+          "title": "Thông điệp xuất hiện đúng lúc",
+          "text": "Có thể lên lịch thông điệp đa ngôn ngữ cho thời điểm {phase} lúc {time}."
+        },
+        "phone": {
+          "label": "Điện thoại",
+          "title": "Trải nghiệm tiếp tục trên điện thoại",
+          "text": "Nhạc chờ và giọng thương hiệu giữ cảm giác của {playlist} trước khi khách đến."
+        }
+      }
+    ,
+      "connected": {
+        "eyebrow": "Không chỉ là âm nhạc",
+        "title": "Âm nhạc là nhịp tim.",
+        "highlight": "Beat Breeze vận hành toàn bộ trải nghiệm.",
+        "description": "Một định hướng sáng tạo có thể điều khiển âm thanh, màn hình, thông điệp, điện thoại và công việc phía sau.",
+        "core": "Beat Breeze",
+        "coreText": "Một brief cho cả không gian",
+        "sound": {
+          "title": "Âm nhạc & Concierge",
+          "text": "Khám phá, lên lịch và làm mới âm thanh."
+        },
+        "screens": {
+          "title": "TV & hình ảnh",
+          "text": "Chạy hình ảnh lặp với playlist đầy đủ."
+        },
+        "messages": {
+          "title": "Thông điệp đa ngôn ngữ",
+          "text": "Tạo thông báo đúng lúc và đúng thương hiệu."
+        },
+        "calls": {
+          "title": "Nhạc chờ",
+          "text": "Đưa bản sắc âm thanh vào mọi cuộc gọi."
+        },
+        "automation": {
+          "title": "Tự động hóa thông minh",
+          "text": "Để thời gian, bối cảnh và sự kiện kích hoạt công việc thường lệ."
+        },
+        "operations": {
+          "title": "Điều khiển trực tiếp",
+          "text": "Quản lý mọi khu vực, trình phát và thay đổi từ bất cứ đâu."
+        }
       }
     },
     "venuePulse": {
