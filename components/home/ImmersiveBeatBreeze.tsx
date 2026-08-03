@@ -443,10 +443,13 @@ export function ImmersiveBeatBreeze() {
                 {audioState === 'playing' ? <Pause aria-hidden="true" /> : <Play aria-hidden="true" />}
                 {audioState === 'playing' ? t('audio.pause') : t('audio.hear')}
               </button>
-              <label className={styles.audioVolume}>
-                <span className="sr-only">{t('audio.volume')}</span>
+              <div className={styles.audioVolume}>
+                <label htmlFor="venue-audio-volume" className="sr-only">
+                  {t('audio.volume')}
+                </label>
                 <Volume2 aria-hidden="true" />
                 <input
+                  id="venue-audio-volume"
                   type="range"
                   min="0"
                   max="1"
@@ -456,7 +459,7 @@ export function ImmersiveBeatBreeze() {
                   style={{ '--audio-volume': `${volume * 100}%` } as CSSProperties}
                 />
                 <output>{Math.round(volume * 100)}%</output>
-              </label>
+              </div>
               <button
                 type="button"
                 className={styles.audioMute}
