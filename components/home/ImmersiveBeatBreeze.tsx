@@ -409,6 +409,7 @@ export function ImmersiveBeatBreeze() {
             <label>
               <span className="sr-only">{t('demo.chooseTime')}</span>
               <input
+                className={styles.timeSlider}
                 type="range"
                 min="5"
                 max="23"
