@@ -190,7 +190,10 @@ export const Header: React.FC = () => {
                 {t('solutions')}
                 <svg className="w-3 h-3 opacity-50" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2"><path d="m3 5 3 3 3-3"/></svg>
               </button>
-              <div className="invisible absolute left-0 top-full z-50 mt-2 min-w-[520px] rounded-2xl border border-white/10 bg-[#09111d]/98 p-6 opacity-0 shadow-2xl backdrop-blur-xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              <div
+                className="invisible absolute left-0 top-full z-50 mt-2 min-w-[520px] isolate overflow-hidden rounded-2xl border border-white/10 p-6 opacity-0 shadow-[0_24px_70px_rgba(0,0,0,0.58)] ring-1 ring-black/30 transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"
+                style={{ backgroundColor: '#07101b' }}
+              >
                 <div className="grid grid-cols-3 gap-6">
                   {SOLUTIONS_CATEGORIES.map((cat) => (
                     <div key={cat.category}>
