@@ -770,31 +770,37 @@
         "energy": "에너지 {energy}"
       },
       "audio": {
-        "title": "사운드 미리듣기",
-        "visualOnly": "음악 방향 미리보기 · 소리 꺼짐",
+        "title": "선택한 존 샘플",
+        "visualOnly": "대표 음악 방향 · 소리 꺼짐",
         "hear": "이 분위기 들어보기",
         "pause": "미리듣기 일시정지",
         "paused": "미리듣기 일시정지됨",
         "mute": "미리듣기 음소거",
         "unmute": "음소거 해제",
-        "playing": "라이선스된 25초 미리듣기 재생 중",
-        "playingMuted": "라이선스된 25초 미리듣기 재생 중 · 음소거",
+        "playing": "대표 라이선스 25초 샘플 재생 중",
+        "playingMuted": "대표 라이선스 25초 샘플 재생 중 · 음소거",
         "unavailable": "오디오 미리듣기를 사용할 수 없습니다",
-        "volume": "미리듣기 음량"
+        "volume": "미리듣기 음량",
+        "selection": "{zone} · {playlist} 방향 · {status}"
       },
       "demo": {
         "eyebrow": "BMAsia Venue Time Machine",
         "title": "하루를 움직여 보세요.",
         "highlight": "모든 접점이 반응합니다.",
-        "description": "업종을 선택하고 시간을 움직이며 각 존을 앞으로 가져오세요. 음악, 스크린, 메시지, 전화, 에너지, Concierge 가이드가 함께 반응합니다.",
+        "description": "업종을 선택하고 7개의 스케줄 시점을 이동해 보세요. 각 카드는 별도 존이며 음악, 활성도, 미리듣기, Concierge 설명이 함께 바뀝니다.",
         "machineLabel": "실시간 매장 경험 미리보기",
         "live": "실시간 반응 중",
         "chooseVenue": "업종 선택",
         "localTime": "현지 시간",
         "chooseTime": "시간대 선택",
-        "playlistDetail": "에너지 {energy} · {bpm} BPM",
-        "concierge": "Music Concierge 안내",
-        "energy": "베뉴 에너지"
+        "playlistDetail": "목표 활성도 {energy}/100 · 약 {bpm} BPM",
+        "concierge": "이 존에 맞는 이유",
+        "energy": "선택한 존 활성도",
+        "zonePlanEyebrow": "하나의 베뉴, 세 가지 음악 역할",
+        "zonePlanTitle": "세 개의 존. 세 가지 개별 추천.",
+        "zonePlanDescription": "각 카드는 서로 다른 존을 제어합니다. 하나를 선택하면 대표 음악 방향과 지금 이 존에 맞는 이유를 볼 수 있습니다.",
+        "zoneLabel": "존 {index} · {zone}",
+        "conciergeReason": "{time}의 {zone}에는 {playlist}을(를) 추천합니다: {purpose}. 약 {bpm} BPM, 목표 활성도 {energy}/100으로 다른 두 존과 역할을 구분합니다."
       },
       "touchpoints": {
         "eyebrow": "연결된 접점",
@@ -860,6 +866,20 @@
         "mainFloor": "메인 플로어",
         "studio": "스튜디오",
         "recovery": "리커버리"
+      },
+      "zonePurpose": {
+        "lobby": "재촉하는 느낌 없이 도착 고객을 맞이하기",
+        "restaurant": "대화의 여백을 남기며 서비스 흐름을 돕기",
+        "wellness": "자극을 낮추고 전환을 부드럽게 유지하기",
+        "dining": "대화와 음식에 집중할 여지를 남기기",
+        "bar": "사교적 에너지를 의도적으로 높이기",
+        "terrace": "개방적이고 편안한 리듬을 유지하기",
+        "entrance": "몇 초 안에 브랜드 인상을 전달하기",
+        "shopFloor": "상품을 방해하지 않으며 탐색 흐름을 유지하기",
+        "fittingRooms": "고객이 고민할 때 부담을 낮추기",
+        "mainFloor": "지속적인 개인 운동을 지원하기",
+        "studio": "코칭 세션에 명확한 리듬을 제공하기",
+        "recovery": "운동 후 강도를 낮추도록 돕기"
       },
       "venueContext": {
         "hotel": "도착 시간은 차분하게 유지하고 사교 존은 이후에 에너지를 높이세요.",

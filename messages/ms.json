@@ -770,31 +770,37 @@
         "energy": "Tenaga {energy}"
       },
       "audio": {
-        "title": "Pratonton audio",
-        "visualOnly": "Pratonton arah muzik · bunyi dimatikan",
+        "title": "Sampel zon dipilih",
+        "visualOnly": "Arah muzik perwakilan · bunyi dimatikan",
         "hear": "Dengar suasana ini",
         "pause": "Jeda pratonton",
         "paused": "Pratonton dijeda",
         "mute": "Senyapkan pratonton",
         "unmute": "Hidupkan bunyi",
-        "playing": "Memainkan pratonton berlesen selama 25 saat",
-        "playingMuted": "Memainkan pratonton berlesen selama 25 saat · disenyapkan",
+        "playing": "Memainkan sampel perwakilan berlesen selama 25 saat",
+        "playingMuted": "Memainkan sampel perwakilan berlesen selama 25 saat · disenyapkan",
         "unavailable": "Pratonton audio tidak tersedia",
-        "volume": "Kelantangan pratonton"
+        "volume": "Kelantangan pratonton",
+        "selection": "{zone} · arah {playlist} · {status}"
       },
       "demo": {
         "eyebrow": "Pengalaman lima minit yang berguna",
         "title": "Jalani satu hari.",
         "highlight": "Lihat setiap titik sentuh bertindak balas.",
-        "description": "Pilih jenis perniagaan, gerakkan masa dan bawa zon berbeza ke hadapan. Muzik, skrin, mesej, telefon, tenaga dan panduan Concierge bertindak balas bersama.",
+        "description": "Pilih jenis perniagaan dan lalui tujuh detik jadual. Setiap kad ialah zon berasingan; muzik, pengaktifan, pratonton dan penjelasan Concierge berubah bersama.",
         "machineLabel": "Simulasi pengalaman tempat secara langsung",
         "live": "Bertindak balas langsung",
         "chooseVenue": "Pilih jenis perniagaan",
         "localTime": "Waktu tempatan",
         "chooseTime": "Pilih masa",
-        "playlistDetail": "Tenaga {energy} · {bpm} BPM",
-        "concierge": "Panduan Music Concierge",
-        "energy": "Tenaga venue"
+        "playlistDetail": "Sasaran pengaktifan {energy}/100 · sekitar {bpm} BPM",
+        "concierge": "Mengapa ia sesuai untuk zon ini",
+        "energy": "Pengaktifan zon dipilih",
+        "zonePlanEyebrow": "Satu venue, tiga tugas muzik",
+        "zonePlanTitle": "Tiga zon. Tiga cadangan berasingan.",
+        "zonePlanDescription": "Setiap kad mengawal zon yang berbeza. Pilih satu untuk mendengar arah perwakilan dan melihat sebab ia sesuai pada waktu ini.",
+        "zoneLabel": "Zon {index} · {zone}",
+        "conciergeReason": "{playlist} disyorkan untuk {zone} pada {time}: {purpose}. Sekitar {bpm} BPM dengan sasaran pengaktifan {energy}/100 membezakan zon ini daripada dua zon lain."
       },
       "touchpoints": {
         "eyebrow": "Titik sentuh terhubung",
@@ -860,6 +866,20 @@
         "mainFloor": "Ruang utama",
         "studio": "Studio",
         "recovery": "Pemulihan"
+      },
+      "zonePurpose": {
+        "lobby": "menyambut ketibaan tanpa mewujudkan tekanan",
+        "restaurant": "menyokong rentak servis sambil memberi ruang untuk perbualan",
+        "wellness": "mengekalkan rangsangan rendah dan peralihan lancar",
+        "dining": "memberi ruang kepada perbualan dan hidangan",
+        "bar": "membina tenaga sosial secara terancang",
+        "terrace": "mengekalkan rentak yang terbuka dan santai",
+        "entrance": "menyampaikan identiti jenama dalam beberapa saat",
+        "shopFloor": "mengekalkan momentum membeli-belah tanpa menenggelamkan produk",
+        "fittingRooms": "mengurangkan tekanan semasa pelanggan membuat pertimbangan",
+        "mainFloor": "menyokong usaha individu yang berterusan",
+        "studio": "memberi rentak jelas kepada sesi bimbingan",
+        "recovery": "membantu ahli menurunkan intensiti selepas latihan"
       },
       "venueContext": {
         "hotel": "Pastikan ketibaan tenang dan biarkan zon sosial membina tenaga kemudian.",

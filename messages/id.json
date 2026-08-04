@@ -770,31 +770,37 @@
         "energy": "Energi {energy}"
       },
       "audio": {
-        "title": "Pratinjau audio",
-        "visualOnly": "Pratinjau arah musik · suara mati",
+        "title": "Sampel zona terpilih",
+        "visualOnly": "Arah musik representatif · suara mati",
         "hear": "Dengarkan suasana ini",
         "pause": "Jeda pratinjau",
         "paused": "Pratinjau dijeda",
         "mute": "Bisukan pratinjau",
         "unmute": "Aktifkan suara",
-        "playing": "Memutar pratinjau berlisensi selama 25 detik",
-        "playingMuted": "Memutar pratinjau berlisensi selama 25 detik · dibisukan",
+        "playing": "Memutar sampel representatif berlisensi selama 25 detik",
+        "playingMuted": "Memutar sampel representatif berlisensi selama 25 detik · dibisukan",
         "unavailable": "Pratinjau audio tidak tersedia",
-        "volume": "Volume pratinjau"
+        "volume": "Volume pratinjau",
+        "selection": "{zone} · arah {playlist} · {status}"
       },
       "demo": {
         "eyebrow": "Mesin Waktu Venue BMAsia",
         "title": "Jalani satu hari.",
         "highlight": "Lihat setiap titik interaksi merespons.",
-        "description": "Pilih jenis bisnis, geser waktu, dan tonjolkan zona yang berbeda. Musik, layar, pesan, audio telepon, energi, dan panduan Concierge merespons bersama.",
+        "description": "Pilih jenis bisnis dan jelajahi tujuh momen jadwal. Setiap kartu adalah zona terpisah; musik, tingkat aktivasi, pratinjau, dan penjelasan Concierge berubah bersama.",
         "machineLabel": "Pratinjau pengalaman venue langsung",
         "live": "Merespons langsung",
         "chooseVenue": "Pilih jenis bisnis",
         "localTime": "Waktu lokal",
         "chooseTime": "Pilih waktu",
-        "playlistDetail": "Energi {energy} · {bpm} BPM",
-        "concierge": "Panduan Music Concierge",
-        "energy": "Energi venue"
+        "playlistDetail": "Target aktivasi {energy}/100 · sekitar {bpm} BPM",
+        "concierge": "Mengapa cocok untuk zona ini",
+        "energy": "Aktivasi zona terpilih",
+        "zonePlanEyebrow": "Satu venue, tiga tugas musik",
+        "zonePlanTitle": "Tiga zona. Tiga rekomendasi terpisah.",
+        "zonePlanDescription": "Setiap kartu mengontrol zona yang berbeda. Pilih satu untuk mendengar arah representatif dan melihat alasan kecocokannya saat ini.",
+        "zoneLabel": "Zona {index} · {zone}",
+        "conciergeReason": "{playlist} direkomendasikan untuk {zone} pada {time}: {purpose}. Sekitar {bpm} BPM dengan target aktivasi {energy}/100 membedakan zona ini dari dua zona lainnya."
       },
       "venues": {
         "hotel": "Hotel",
@@ -834,6 +840,20 @@
         "mainFloor": "Lantai utama",
         "studio": "Studio",
         "recovery": "Pemulihan"
+      },
+      "zonePurpose": {
+        "lobby": "menyambut kedatangan tanpa menciptakan tekanan",
+        "restaurant": "mendukung ritme layanan sambil memberi ruang untuk percakapan",
+        "wellness": "menjaga stimulasi rendah dan transisi tetap halus",
+        "dining": "memberi ruang untuk percakapan dan hidangan",
+        "bar": "membangun energi sosial secara terarah",
+        "terrace": "menjaga ritme yang terbuka dan santai",
+        "entrance": "menyampaikan karakter merek dalam hitungan detik",
+        "shopFloor": "menjaga momentum berbelanja tanpa menutupi produk",
+        "fittingRooms": "mengurangi tekanan saat pelanggan mempertimbangkan pilihan",
+        "mainFloor": "mendukung upaya individu yang berkelanjutan",
+        "studio": "memberi tempo yang jelas untuk sesi dengan instruktur",
+        "recovery": "membantu anggota menurunkan intensitas setelah latihan"
       },
       "venueContext": {
         "hotel": "Jaga ketenangan saat tamu datang, lalu bangun energi di zona sosial secara bertahap.",
