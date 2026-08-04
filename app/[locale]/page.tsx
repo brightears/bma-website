@@ -219,12 +219,12 @@ export default function Home() {
 
       <section className="bg-[#070d17] px-6 py-24 sm:px-10 md:py-32 lg:px-16">
         <div className="mx-auto max-w-[1320px]">
-          <motion.div {...reveal} className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
+          <motion.div {...reveal} className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
             <div className="max-w-2xl">
               <p className="font-label text-[11px] uppercase tracking-[0.28em] text-brand-orange">{h('industries.sectionTitle')}</p>
               <h2 className="mt-5 text-balance font-headline text-4xl font-medium tracking-[-0.045em] text-white md:text-6xl">{h('industries.sectionSubtitle')}</h2>
             </div>
-            <Link href={`/${locale}/quotation`} className="group inline-flex items-center gap-3 text-sm font-semibold text-white/65 hover:text-white">
+            <Link href={`/${locale}/quotation`} className="group inline-flex shrink-0 items-center gap-3 whitespace-nowrap text-sm font-semibold text-white/65 hover:text-white">
               {h('twoSolutions.notSureCta')} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
             </Link>
           </motion.div>
