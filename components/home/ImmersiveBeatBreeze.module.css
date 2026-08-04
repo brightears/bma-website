@@ -780,10 +780,15 @@
   font-weight: 620;
 }
 
-.audioPlay:hover {
+.audioPlay:not(:disabled):hover {
   border-color: var(--phase-a);
   background: color-mix(in srgb, var(--phase-a) 22%, rgba(7, 13, 23, 0.62));
   transform: translateY(-1px);
+}
+
+.audioPlay:disabled {
+  cursor: wait;
+  opacity: 0.48;
 }
 
 .audioPlay svg {

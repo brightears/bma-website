@@ -777,11 +777,11 @@
         "paused": "Pratinjau dijeda",
         "mute": "Bisukan pratinjau",
         "unmute": "Aktifkan suara",
-        "playing": "Memutar sampel representatif berlisensi selama 25 detik",
-        "playingMuted": "Memutar sampel representatif berlisensi selama 25 detik · dibisukan",
+        "playing": "Memutar sampel Beat Breeze berlisensi selama 30 detik",
+        "playingMuted": "Memutar sampel Beat Breeze berlisensi selama 30 detik · dibisukan",
         "unavailable": "Pratinjau audio tidak tersedia",
         "volume": "Volume pratinjau",
-        "selection": "{zone} · arah {playlist} · {status}"
+        "selection": "{zone} · {playlist} · {status}"
       },
       "demo": {
         "eyebrow": "Mesin Waktu Venue BMAsia",

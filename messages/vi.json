@@ -777,11 +777,11 @@
         "paused": "Đã tạm dừng",
         "mute": "Tắt tiếng",
         "unmute": "Bật tiếng",
-        "playing": "Đang phát mẫu đại diện có bản quyền dài 25 giây",
-        "playingMuted": "Đang phát mẫu đại diện có bản quyền dài 25 giây · đã tắt tiếng",
+        "playing": "Đang phát mẫu Beat Breeze có bản quyền dài 30 giây",
+        "playingMuted": "Đang phát mẫu Beat Breeze có bản quyền dài 30 giây · đã tắt tiếng",
         "unavailable": "Không thể phát bản nghe thử",
         "volume": "Âm lượng nghe thử",
-        "selection": "{zone} · định hướng {playlist} · {status}"
+        "selection": "{zone} · {playlist} · {status}"
       },
       "demo": {
         "eyebrow": "BMAsia Venue Time Machine",

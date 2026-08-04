@@ -14,16 +14,23 @@ export type ZoneKey =
   | 'studio'
   | 'recovery';
 
-export type DemoAudioSource =
-  | '/audio/beat-breeze-demo/morning.mp3'
-  | '/audio/beat-breeze-demo/daytime.mp3'
-  | '/audio/beat-breeze-demo/evening.mp3'
-  | '/audio/beat-breeze-demo/late-night.mp3';
-
 export type PlaylistRecommendation = {
   title: string;
   bpm: number;
   energy: number;
+};
+
+export type PlaylistSampleTrack = {
+  title: string;
+  artist: string | null;
+  tempoBpm: number | null;
+  audioUrl: string;
+};
+
+export type PlaylistSampleAsset = {
+  name: string;
+  coverImageUrl: string | null;
+  samples: PlaylistSampleTrack[];
 };
 
 type RecommendationSchedule = readonly [
@@ -248,43 +255,15 @@ export const PLAYLIST_COVERS: Record<string, string> = {
   'Tropical House Instrumental': '/images/covers/tropical-house-instrumental.jpg',
 };
 
-const MORNING_AUDIO: DemoAudioSource = '/audio/beat-breeze-demo/morning.mp3';
-const DAYTIME_AUDIO: DemoAudioSource = '/audio/beat-breeze-demo/daytime.mp3';
-const EVENING_AUDIO: DemoAudioSource = '/audio/beat-breeze-demo/evening.mp3';
-const LATE_AUDIO: DemoAudioSource = '/audio/beat-breeze-demo/late-night.mp3';
-
 /**
- * The public page currently carries four licensed excerpts. Each recommendation
- * is therefore mapped to its closest activation family and is labelled in the
- * UI as a representative direction, never as the exact playlist recording.
+ * The sample API accepts only the playlist directions used by this experience.
+ * Keeping the list derived from the recommendations prevents new cards from
+ * silently falling back to unrelated audio or placeholder artwork.
  */
-export const PREVIEW_AUDIO_BY_PLAYLIST: Record<string, DemoAudioSource> = {
-  'New Age Piano': MORNING_AUDIO,
-  'Spa Arrival Lounge': MORNING_AUDIO,
-  'Balinese Spa': MORNING_AUDIO,
-  Chillhop: MORNING_AUDIO,
-  'Yoga Flow': MORNING_AUDIO,
-  Pilates: MORNING_AUDIO,
-  'Cool Down': MORNING_AUDIO,
-  'Jazz Piano': DAYTIME_AUDIO,
-  'Acoustic Pop': DAYTIME_AUDIO,
-  'Bossa Nova Lounge': DAYTIME_AUDIO,
-  'French Cafe': DAYTIME_AUDIO,
-  'Italian Lounge': DAYTIME_AUDIO,
-  'Smooth Jazz': DAYTIME_AUDIO,
-  'Jazz Lounge Vocal': DAYTIME_AUDIO,
-  'Pop Soft': EVENING_AUDIO,
-  'Pop Mid-Tempo': EVENING_AUDIO,
-  'Nu Disco Instrumental': EVENING_AUDIO,
-  'Nu Disco Vocal': EVENING_AUDIO,
-  'Soulful House Vocal': EVENING_AUDIO,
-  'Tropical House Instrumental': EVENING_AUDIO,
-  Dance: EVENING_AUDIO,
-  'Warm Up': EVENING_AUDIO,
-  'Deep House': LATE_AUDIO,
-  Strength: LATE_AUDIO,
-  HIIT: LATE_AUDIO,
-  Boxing: LATE_AUDIO,
-  'Spinning Endurance': LATE_AUDIO,
-  'Spinning Sprint': LATE_AUDIO,
-};
+export const VENUE_PLAYLIST_NAMES = [...new Set(
+  Object.values(VENUES).flatMap((venue) => (
+    venue.zones.flatMap((zone) => (
+      zone.recommendations.map(({ title }) => title)
+    ))
+  )),
+)];

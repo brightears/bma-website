@@ -777,11 +777,11 @@
         "paused": "Preview paused",
         "mute": "Mute sample",
         "unmute": "Unmute sample",
-        "playing": "Playing a representative licensed 25-second preview",
-        "playingMuted": "Playing a representative licensed 25-second preview · muted",
+        "playing": "Playing a licensed 30-second Beat Breeze sample",
+        "playingMuted": "Playing a licensed 30-second Beat Breeze sample · muted",
         "unavailable": "Audio preview unavailable",
         "volume": "Preview volume",
-        "selection": "{zone} · {playlist} direction · {status}"
+        "selection": "{zone} · {playlist} · {status}"
       },
       "demo": {
         "eyebrow": "BMAsia Venue Time Machine",

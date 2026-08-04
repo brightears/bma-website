@@ -777,11 +777,11 @@
         "paused": "미리듣기 일시정지됨",
         "mute": "미리듣기 음소거",
         "unmute": "음소거 해제",
-        "playing": "대표 라이선스 25초 샘플 재생 중",
-        "playingMuted": "대표 라이선스 25초 샘플 재생 중 · 음소거",
+        "playing": "라이선스된 Beat Breeze 30초 샘플 재생 중",
+        "playingMuted": "라이선스된 Beat Breeze 30초 샘플 재생 중 · 음소거",
         "unavailable": "오디오 미리듣기를 사용할 수 없습니다",
         "volume": "미리듣기 음량",
-        "selection": "{zone} · {playlist} 방향 · {status}"
+        "selection": "{zone} · {playlist} · {status}"
       },
       "demo": {
         "eyebrow": "BMAsia Venue Time Machine",
