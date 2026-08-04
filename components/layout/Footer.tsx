@@ -29,8 +29,7 @@ export function Footer() {
             <Link href={`/${locale}`} className="inline-block rounded-lg" aria-label="BMAsia">
               <Image src="/images/BMAsia_Logo.png" alt="BMAsia" width={150} height={50} className="h-10 w-auto" />
             </Link>
-            <p className="mt-6 max-w-sm text-base leading-7 text-white/48">{t('operationsDescription')}</p>
-            <p className="mt-4 max-w-sm text-sm leading-6 text-white/32">{t('globalReach')}</p>
+            <p className="mt-6 whitespace-nowrap font-headline text-xl font-medium tracking-[-0.02em] text-white/68">{t('tagline')}</p>
             <div className="mt-6 flex items-center gap-4">
               <a href={`mailto:${SITE.email}`} className="text-sm text-white/62 hover:text-brand-orange">{SITE.email}</a>
               <WhatsAppLink href={SOCIAL.whatsapp} size={18} />
