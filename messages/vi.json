@@ -652,9 +652,9 @@
         "description": "Cho Concierge biết khu vực, đối tượng khách, thời gian và cảm giác mong muốn. Hệ thống có thể đề xuất nhạc trong kho hoặc chuẩn bị một định hướng sáng tạo; bạn nghe thử kết quả trước khi bất cứ nội dung nào được phát hoặc thêm vào lịch.",
         "ready": "Sẵn sàng nhận yêu cầu",
         "recommendation": "Đề xuất có thể phát",
-        "preview": "Nghe thử",
-        "schedule": "Thêm vào lịch",
-        "keepBrowsing": "Tiếp tục duyệt",
+        "preview": "Nghe mẫu",
+        "schedule": "Xem trước lịch",
+        "keepBrowsing": "Mở danh mục",
         "control": "Quyền kiểm soát của con người luôn hiển thị rõ: xem lý do, nghe thử kết quả, áp dụng, chỉnh sửa hoặc tiếp tục tự duyệt kho nhạc.",
         "steps": {
           "ask": "Mô tả khoảnh khắc",
@@ -691,7 +691,9 @@
         "screens": {
           "label": "Màn hình và TV",
           "title": "Hình ảnh lặp, trình chiếu và kênh nội bộ",
-          "text": "Lên kế hoạch cho hình ảnh lặp không tiếng, trình chiếu mang thương hiệu và các kênh TV tại khu vực công cộng hoặc trải nghiệm trong phòng khi mô hình triển khai cần đến."
+          "text": "Lên kế hoạch cho hình ảnh lặp không tiếng, trình chiếu mang thương hiệu và các kênh TV tại khu vực công cộng hoặc trải nghiệm trong phòng khi mô hình triển khai cần đến.",
+          "loopPlay": "Phát vòng lặp hình ảnh",
+          "loopPause": "Tạm dừng vòng lặp hình ảnh"
         },
         "create": {
           "label": "Sáng tạo có AI hỗ trợ",

@@ -652,9 +652,9 @@
         "description": "Sampaikan kepada Concierge tentang zona, audiens, waktu, dan suasana yang diinginkan. Concierge dapat merekomendasikan musik dari katalog atau menyiapkan arah kreatif; Anda meninjau hasilnya sebelum musik diputar atau dimasukkan ke jadwal.",
         "ready": "Siap menerima brief",
         "recommendation": "Rekomendasi siap diputar",
-        "preview": "Pratinjau",
-        "schedule": "Tambahkan ke jadwal",
-        "keepBrowsing": "Lanjutkan menelusuri",
+        "preview": "Dengarkan sampel",
+        "schedule": "Pratinjau jadwal",
+        "keepBrowsing": "Buka katalog",
         "control": "Kontrol manusia tetap terlihat: tinjau alasannya, dengarkan pratinjau hasilnya, terapkan, edit, atau tetap telusuri katalog secara manual.",
         "steps": {
           "ask": "Jelaskan momennya",
@@ -691,7 +691,9 @@
         "screens": {
           "label": "Layar dan TV",
           "title": "Visual loop, slideshow, dan kanal venue",
-          "text": "Rencanakan visual loop tanpa suara, slideshow bermerek, dan kanal TV untuk area publik atau pengalaman di dalam kamar jika implementasinya memerlukan."
+          "text": "Rencanakan visual loop tanpa suara, slideshow bermerek, dan kanal TV untuk area publik atau pengalaman di dalam kamar jika implementasinya memerlukan.",
+          "loopPlay": "Putar loop visual",
+          "loopPause": "Jeda loop visual"
         },
         "create": {
           "label": "Kreasi berbantuan AI",

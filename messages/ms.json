@@ -652,9 +652,9 @@
         "description": "Beritahu Concierge tentang zon, audiens, waktu dan perasaan yang diingini. Ia boleh mengesyorkan muzik katalog atau menyediakan arah kreatif; anda mempratonton hasil sebelum apa-apa dimainkan atau dimasukkan dalam jadual.",
         "ready": "Sedia menerima taklimat",
         "recommendation": "Cadangan yang boleh dimainkan",
-        "preview": "Pratonton",
-        "schedule": "Tambah pada jadual",
-        "keepBrowsing": "Teruskan melayari",
+        "preview": "Dengar sampel",
+        "schedule": "Pratonton jadual",
+        "keepBrowsing": "Buka katalog",
         "control": "Kawalan manusia sentiasa kelihatan: semak alasan, pratonton hasil, gunakan, sunting atau teruskan melayari katalog secara manual.",
         "steps": {
           "ask": "Huraikan detik tersebut",
@@ -691,7 +691,9 @@
         "screens": {
           "label": "Skrin dan TV",
           "title": "Gelung visual, tayangan slaid dan saluran venue",
-          "text": "Rancang gelung skrin senyap, tayangan slaid berjenama dan saluran TV untuk ruang awam atau pengalaman dalam bilik apabila pelaksanaan memerlukannya."
+          "text": "Rancang gelung skrin senyap, tayangan slaid berjenama dan saluran TV untuk ruang awam atau pengalaman dalam bilik apabila pelaksanaan memerlukannya.",
+          "loopPlay": "Mainkan gelung visual",
+          "loopPause": "Jeda gelung visual"
         },
         "create": {
           "label": "Penciptaan dibantu AI",

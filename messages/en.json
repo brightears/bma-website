@@ -652,9 +652,9 @@
         "description": "Tell Concierge the zone, audience, time and desired feeling. It can recommend catalogue music or prepare a creative direction; you preview the result before anything plays or enters a schedule.",
         "ready": "Ready for a brief",
         "recommendation": "Playable recommendation",
-        "preview": "Preview",
-        "schedule": "Add to schedule",
-        "keepBrowsing": "Keep browsing",
+        "preview": "Hear sample",
+        "schedule": "Preview schedule",
+        "keepBrowsing": "Open catalogue",
         "control": "Human control stays visible: review the reasoning, preview the result, apply it, edit it or keep browsing the catalogue manually.",
         "steps": {
           "ask": "Describe the moment",
@@ -691,7 +691,9 @@
         "screens": {
           "label": "Screens and TV",
           "title": "Visual loops, slideshows and venue channels",
-          "text": "Plan silent screen loops, branded slideshows and TV channels for public areas or in-room experiences where the deployment calls for them."
+          "text": "Plan silent screen loops, branded slideshows and TV channels for public areas or in-room experiences where the deployment calls for them.",
+          "loopPlay": "Play visual loop",
+          "loopPause": "Pause visual loop"
         },
         "create": {
           "label": "AI-assisted creation",
