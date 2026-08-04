@@ -693,7 +693,13 @@
           "title": "Visual loop, slideshow, dan kanal venue",
           "text": "Rencanakan visual loop tanpa suara, slideshow bermerek, dan kanal TV untuk area publik atau pengalaman di dalam kamar jika implementasinya memerlukan.",
           "loopPlay": "Putar loop visual",
-          "loopPause": "Jeda loop visual"
+          "loopPause": "Jeda loop visual",
+          "loopMeta": "10 detik · 16:9",
+          "loops": {
+            "coffee": { "name": "Krema kopi", "mood": "Hangat & nyaman" },
+            "palm": { "name": "Bayangan palem", "mood": "Segar & cerah" },
+            "neon": { "name": "Pantulan neon", "mood": "Malam neon" }
+          }
         },
         "create": {
           "label": "Kreasi berbantuan AI",

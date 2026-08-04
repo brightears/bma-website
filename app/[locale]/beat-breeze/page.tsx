@@ -56,22 +56,19 @@ const conciergeSampleDirections: Record<
 
 const includedVisualLoops = [
   {
-    name: 'Coffee crema',
-    mood: 'Warm & cozy',
+    key: 'coffee',
     src: '/media/beat-breeze/warm-coffee-crema.mp4',
     poster: '/media/beat-breeze/warm-coffee-crema.jpg',
     accent: '#efa634',
   },
   {
-    name: 'Palm shadows',
-    mood: 'Fresh & bright',
+    key: 'palm',
     src: '/media/beat-breeze/fresh-palm-shadows.mp4',
     poster: '/media/beat-breeze/fresh-palm-shadows.jpg',
     accent: '#49d5c5',
   },
   {
-    name: 'Neon reflections',
-    mood: 'Neon night',
+    key: 'neon',
     src: '/media/beat-breeze/neon-wet-street.mp4',
     poster: '/media/beat-breeze/neon-wet-street.jpg',
     accent: '#7fe7c4',
@@ -289,7 +286,7 @@ export default function BeatBreezePage() {
               <div className="mt-6 grid gap-5 rounded-[1.5rem_1.5rem_1.5rem_.35rem] border border-white/[0.08] bg-white/[0.03] p-5 sm:grid-cols-[7rem_1fr] sm:p-6">
                 <div className="relative aspect-square overflow-hidden rounded-2xl">
                   <Image src={scenario === 'arrival' ? '/images/covers/bossa-nova-lounge.jpg' : scenario === 'campaign' ? '/images/covers/nu-disco-vocal.jpg' : '/images/covers/balinese-spa.jpg'} alt="" fill className="object-cover" sizes="112px" />
-                  <span className="absolute inset-0 grid place-items-center bg-black/18">
+                  <span className="absolute inset-0 grid place-items-center bg-black/18" aria-hidden="true">
                     {audioState === 'playing'
                       ? <Pause className="h-7 w-7 fill-white text-white" />
                       : <Play className="h-7 w-7 fill-white text-white" />}
@@ -552,11 +549,14 @@ function VisualLoopTheater({
   playLabel: string;
   pauseLabel: string;
 }) {
+  const t = useTranslations('beatBreezePage.redesign.media.screens');
   const reduceMotion = useReducedMotion();
   const [activeLoop, setActiveLoop] = useState(0);
   const [isPlaying, setIsPlaying] = useState(!reduceMotion);
   const videoRef = useRef<HTMLVideoElement>(null);
   const loop = includedVisualLoops[activeLoop] ?? includedVisualLoops[0]!;
+  const loopName = t(`loops.${loop.key}.name`);
+  const loopMood = t(`loops.${loop.key}.mood`);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -584,7 +584,7 @@ function VisualLoopTheater({
   }
 
   return (
-    <div className="mt-9" aria-label={ariaLabel}>
+    <div className="mt-9" role="group" aria-label={ariaLabel}>
       <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10 bg-[#050b12] shadow-[0_24px_70px_rgba(0,0,0,.34)]">
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
@@ -604,7 +604,7 @@ function VisualLoopTheater({
               playsInline
               preload="metadata"
               className="h-full w-full object-cover"
-              aria-label={`${loop.name} · ${loop.mood}`}
+              aria-label={`${loopName} · ${loopMood}`}
             />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(3,8,13,.06),rgba(3,8,13,.12)_48%,rgba(3,8,13,.82))]" />
             <motion.i
@@ -614,9 +614,9 @@ function VisualLoopTheater({
             />
             <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-4 sm:p-5">
               <div>
-                <span className="font-label text-[9px] uppercase tracking-[.2em] text-white/42">10 SEC · 16:9</span>
-                <strong className="mt-1 block text-sm font-medium text-white sm:text-base">{loop.name}</strong>
-                <span className="mt-0.5 block text-xs text-white/48">{loop.mood}</span>
+                <span className="font-label text-[9px] uppercase tracking-[.2em] text-white/42">{t('loopMeta')}</span>
+                <strong className="mt-1 block text-sm font-medium text-white sm:text-base">{loopName}</strong>
+                <span className="mt-0.5 block text-xs text-white/48">{loopMood}</span>
               </div>
               <span className="h-1.5 w-12 rounded-full" style={{ background: loop.accent }} />
             </div>
@@ -633,19 +633,24 @@ function VisualLoopTheater({
       </div>
 
       <div className="mt-3 grid grid-cols-3 gap-2">
-        {includedVisualLoops.map((candidate, index) => (
-          <button
-            key={candidate.src}
-            type="button"
-            onClick={() => setActiveLoop(index)}
-            aria-pressed={activeLoop === index}
-            aria-label={`${candidate.name} · ${candidate.mood}`}
-            className={`group/loop relative aspect-video overflow-hidden rounded-xl border transition ${activeLoop === index ? 'border-brand-orange/65 ring-2 ring-brand-orange/15' : 'border-white/10 opacity-58 hover:opacity-100'}`}
-          >
-            <Image src={candidate.poster} alt="" fill sizes="180px" className="object-cover transition duration-500 group-hover/loop:scale-105" />
-            <span className="absolute inset-x-0 bottom-0 h-1" style={{ background: candidate.accent }} />
-          </button>
-        ))}
+        {includedVisualLoops.map((candidate, index) => {
+          const candidateName = t(`loops.${candidate.key}.name`);
+          const candidateMood = t(`loops.${candidate.key}.mood`);
+
+          return (
+            <button
+              key={candidate.src}
+              type="button"
+              onClick={() => setActiveLoop(index)}
+              aria-pressed={activeLoop === index}
+              aria-label={`${candidateName} · ${candidateMood}`}
+              className={`group/loop relative aspect-video overflow-hidden rounded-xl border transition ${activeLoop === index ? 'border-brand-orange/65 ring-2 ring-brand-orange/15' : 'border-white/10 opacity-58 hover:opacity-100'}`}
+            >
+              <Image src={candidate.poster} alt="" fill sizes="180px" className="object-cover transition duration-500 group-hover/loop:scale-105" />
+              <span className="absolute inset-x-0 bottom-0 h-1" style={{ background: candidate.accent }} />
+            </button>
+          );
+        })}
       </div>
     </div>
   );

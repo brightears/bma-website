@@ -693,7 +693,13 @@
           "title": "Hình ảnh lặp, trình chiếu và kênh nội bộ",
           "text": "Lên kế hoạch cho hình ảnh lặp không tiếng, trình chiếu mang thương hiệu và các kênh TV tại khu vực công cộng hoặc trải nghiệm trong phòng khi mô hình triển khai cần đến.",
           "loopPlay": "Phát vòng lặp hình ảnh",
-          "loopPause": "Tạm dừng vòng lặp hình ảnh"
+          "loopPause": "Tạm dừng vòng lặp hình ảnh",
+          "loopMeta": "10 giây · 16:9",
+          "loops": {
+            "coffee": { "name": "Lớp crema cà phê", "mood": "Ấm áp & thư thái" },
+            "palm": { "name": "Bóng cọ", "mood": "Tươi mới & rực sáng" },
+            "neon": { "name": "Phản chiếu neon", "mood": "Đêm neon" }
+          }
         },
         "create": {
           "label": "Sáng tạo có AI hỗ trợ",

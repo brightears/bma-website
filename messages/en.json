@@ -693,7 +693,13 @@
           "title": "Visual loops, slideshows and venue channels",
           "text": "Plan silent screen loops, branded slideshows and TV channels for public areas or in-room experiences where the deployment calls for them.",
           "loopPlay": "Play visual loop",
-          "loopPause": "Pause visual loop"
+          "loopPause": "Pause visual loop",
+          "loopMeta": "10 sec · 16:9",
+          "loops": {
+            "coffee": { "name": "Coffee crema", "mood": "Warm & cozy" },
+            "palm": { "name": "Palm shadows", "mood": "Fresh & bright" },
+            "neon": { "name": "Neon reflections", "mood": "Neon night" }
+          }
         },
         "create": {
           "label": "AI-assisted creation",

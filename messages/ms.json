@@ -693,7 +693,13 @@
           "title": "Gelung visual, tayangan slaid dan saluran venue",
           "text": "Rancang gelung skrin senyap, tayangan slaid berjenama dan saluran TV untuk ruang awam atau pengalaman dalam bilik apabila pelaksanaan memerlukannya.",
           "loopPlay": "Mainkan gelung visual",
-          "loopPause": "Jeda gelung visual"
+          "loopPause": "Jeda gelung visual",
+          "loopMeta": "10 saat · 16:9",
+          "loops": {
+            "coffee": { "name": "Krim kopi", "mood": "Hangat & selesa" },
+            "palm": { "name": "Bayang palma", "mood": "Segar & cerah" },
+            "neon": { "name": "Pantulan neon", "mood": "Malam neon" }
+          }
         },
         "create": {
           "label": "Penciptaan dibantu AI",
