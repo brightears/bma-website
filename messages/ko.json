@@ -797,7 +797,8 @@
         "concierge": "이 존에 맞는 이유",
         "energy": "선택한 존 활성도",
         "zonePlanEyebrow": "하나의 베뉴, 세 가지 음악 역할",
-        "zonePlanTitle": "세 개의 존. 세 가지 개별 추천.",
+        "zonePlanTitleLine1": "세 개의 존.",
+        "zonePlanTitleLine2": "세 가지 개별 추천.",
         "zonePlanDescription": "각 카드는 서로 다른 존을 제어합니다. 하나를 선택하면 대표 음악 방향과 지금 이 존에 맞는 이유를 볼 수 있습니다.",
         "zoneLabel": "존 {index} · {zone}",
         "conciergeReason": "{time}의 {zone}에는 {playlist}을(를) 추천합니다: {purpose}. 약 {bpm} BPM, 목표 활성도 {energy}/100으로 다른 두 존과 역할을 구분합니다."

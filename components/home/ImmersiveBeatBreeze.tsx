@@ -454,7 +454,10 @@ export function ImmersiveBeatBreeze() {
             <div className={styles.zonePlanIntro}>
               <div>
                 <span>{t('demo.zonePlanEyebrow')}</span>
-                <strong>{t('demo.zonePlanTitle')}</strong>
+                <strong>
+                  <span className={styles.zonePlanTitleLine}>{t('demo.zonePlanTitleLine1')}</span>
+                  <span className={styles.zonePlanTitleLine}>{t('demo.zonePlanTitleLine2')}</span>
+                </strong>
               </div>
               <p>{t('demo.zonePlanDescription')}</p>
             </div>

@@ -797,7 +797,8 @@
         "concierge": "このゾーンに合う理由",
         "energy": "選択中ゾーンの活性度",
         "zonePlanEyebrow": "1つの施設、3つの音楽の役割",
-        "zonePlanTitle": "3つのゾーン。3つの個別提案。",
+        "zonePlanTitleLine1": "3つのゾーン。",
+        "zonePlanTitleLine2": "3つの個別提案。",
         "zonePlanDescription": "各カードは異なるゾーンを操作します。選択すると、代表的な方向性と、この時間に合う理由を確認できます。",
         "zoneLabel": "ゾーン {index} · {zone}",
         "conciergeReason": "{time}の{zone}には{playlist}を提案します。目的は「{purpose}」。約{bpm} BPM、目標活性度{energy}/100で、ほかの2ゾーンと明確に役割を分けます。"
