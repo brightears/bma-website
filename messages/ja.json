@@ -770,31 +770,37 @@
         "energy": "エネルギー {energy}"
       },
       "audio": {
-        "title": "サウンドプレビュー",
-        "visualOnly": "音楽ディレクションのプレビュー · 消音中",
+        "title": "選択中ゾーンのサンプル",
+        "visualOnly": "代表的な音楽方向性 · 消音中",
         "hear": "このムードを聴く",
         "pause": "プレビューを一時停止",
         "paused": "プレビューを一時停止中",
         "mute": "プレビューをミュート",
         "unmute": "ミュート解除",
-        "playing": "ライセンス済みの25秒プレビューを再生中",
-        "playingMuted": "ライセンス済みの25秒プレビューを再生中 · ミュート",
+        "playing": "代表的なライセンス済み25秒サンプルを再生中",
+        "playingMuted": "代表的なライセンス済み25秒サンプルを再生中 · ミュート",
         "unavailable": "音声プレビューを利用できません",
-        "volume": "プレビュー音量"
+        "volume": "プレビュー音量",
+        "selection": "{zone} · {playlist} の方向性 · {status}"
       },
       "demo": {
         "eyebrow": "BMAsia Venue Time Machine",
         "title": "一日を動かしてみる。",
         "highlight": "すべての接点が反応する。",
-        "description": "業態を選び、時間を動かし、ゾーンを切り替えてください。音楽、スクリーン、メッセージ、電話、エネルギー、Conciergeの提案が連動します。",
+        "description": "業態を選び、7つの時間帯を動かしてみてください。各カードは別々のゾーンで、音楽、活性度、プレビュー、Conciergeの説明が連動します。",
         "machineLabel": "空間体験ライブプレビュー",
         "live": "リアルタイムで反応中",
         "chooseVenue": "業種を選択",
         "localTime": "現地時間",
         "chooseTime": "時間帯を選択",
-        "playlistDetail": "エネルギー {energy} · {bpm} BPM",
-        "concierge": "Music Conciergeの提案",
-        "energy": "ベニューのエネルギー"
+        "playlistDetail": "目標活性度 {energy}/100 · 約{bpm} BPM",
+        "concierge": "このゾーンに合う理由",
+        "energy": "選択中ゾーンの活性度",
+        "zonePlanEyebrow": "1つの施設、3つの音楽の役割",
+        "zonePlanTitle": "3つのゾーン。3つの個別提案。",
+        "zonePlanDescription": "各カードは異なるゾーンを操作します。選択すると、代表的な方向性と、この時間に合う理由を確認できます。",
+        "zoneLabel": "ゾーン {index} · {zone}",
+        "conciergeReason": "{time}の{zone}には{playlist}を提案します。目的は「{purpose}」。約{bpm} BPM、目標活性度{energy}/100で、ほかの2ゾーンと明確に役割を分けます。"
       },
       "touchpoints": {
         "eyebrow": "つながるタッチポイント",
@@ -860,6 +866,20 @@
         "mainFloor": "メインフロア",
         "studio": "スタジオ",
         "recovery": "リカバリー"
+      },
+      "zonePurpose": {
+        "lobby": "急かさず、落ち着いて到着客を迎える",
+        "restaurant": "会話の余白を残しながらサービスのテンポを支える",
+        "wellness": "刺激を抑え、移行をなめらかにする",
+        "dining": "会話と料理を主役にする",
+        "bar": "社交的なエネルギーを意図的に高める",
+        "terrace": "開放的で軽やかなリズムを保つ",
+        "entrance": "数秒でブランドらしさを伝える",
+        "shopFloor": "商品を邪魔せず、回遊の勢いを保つ",
+        "fittingRooms": "検討中のプレッシャーを和らげる",
+        "mainFloor": "持続的な個人トレーニングを支える",
+        "studio": "インストラクター主導のセッションに明確な拍子を与える",
+        "recovery": "運動後のクールダウンを助ける"
       },
       "venueContext": {
         "hotel": "到着時は穏やかに保ち、ソーシャルゾーンは後から徐々に高めます。",

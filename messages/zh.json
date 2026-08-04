@@ -770,31 +770,37 @@
         "energy": "能量 {energy}"
       },
       "audio": {
-        "title": "声音预览",
-        "visualOnly": "音乐方向预览 · 静音",
+        "title": "所选区域样本",
+        "visualOnly": "代表性音乐方向 · 静音",
         "hear": "聆听这种氛围",
         "pause": "暂停预览",
         "paused": "预览已暂停",
         "mute": "静音预览",
         "unmute": "取消静音",
-        "playing": "正在播放25秒授权预览",
-        "playingMuted": "正在播放25秒授权预览 · 已静音",
+        "playing": "正在播放25秒代表性授权样本",
+        "playingMuted": "正在播放25秒代表性授权样本 · 已静音",
         "unavailable": "音频预览不可用",
-        "volume": "预览音量"
+        "volume": "预览音量",
+        "selection": "{zone} · {playlist} 方向 · {status}"
       },
       "demo": {
         "eyebrow": "五分钟即可获得启发",
         "title": "走过完整一天。",
         "highlight": "观察每个触点如何响应。",
-        "description": "选择业态、拖动时间并突出不同区域。音乐、屏幕、消息、电话、能量与 Concierge 建议会同步变化。",
+        "description": "选择业态并浏览七个排程时刻。每张卡片代表一个独立区域；音乐、活跃度、试听与 Concierge 说明会同步变化。",
         "machineLabel": "实时场所体验模拟",
         "live": "实时响应中",
         "chooseVenue": "选择业务类型",
         "localTime": "当地时间",
         "chooseTime": "选择时间",
-        "playlistDetail": "能量 {energy} · {bpm} BPM",
-        "concierge": "Music Concierge 建议",
-        "energy": "场所能量"
+        "playlistDetail": "目标活跃度 {energy}/100 · 约 {bpm} BPM",
+        "concierge": "为何适合这个区域",
+        "energy": "所选区域活跃度",
+        "zonePlanEyebrow": "一个场所，三种音乐任务",
+        "zonePlanTitle": "三个区域。三套独立建议。",
+        "zonePlanDescription": "每张卡片控制不同区域。选择一个区域，即可试听代表性方向，并了解它为何适合当前时刻。",
+        "zoneLabel": "区域 {index} · {zone}",
+        "conciergeReason": "{time} 的 {zone} 推荐 {playlist}：{purpose}。约 {bpm} BPM、目标活跃度 {energy}/100，使这个区域与另外两个区域保持清晰区别。"
       },
       "touchpoints": {
         "eyebrow": "互联触点",
@@ -860,6 +866,20 @@
         "mainFloor": "主训练区",
         "studio": "工作室",
         "recovery": "恢复区"
+      },
+      "zonePurpose": {
+        "lobby": "从容迎接到访者，不制造催促感",
+        "restaurant": "配合服务节奏，同时为交谈留出空间",
+        "wellness": "保持低刺激，让过渡更平顺",
+        "dining": "让交谈与菜品成为主角",
+        "bar": "有意识地提升社交氛围",
+        "terrace": "保持开放、轻松的节奏",
+        "entrance": "在几秒内传达品牌印象",
+        "shopFloor": "维持浏览动力，不喧宾夺主",
+        "fittingRooms": "顾客考虑时降低压力",
+        "mainFloor": "支持持续的个人训练",
+        "studio": "为教练带领的课程提供明确节奏",
+        "recovery": "帮助会员在运动后逐步降速"
       },
       "venueContext": {
         "hotel": "让宾客抵达时保持平静，再逐步提升社交区域的活力。",

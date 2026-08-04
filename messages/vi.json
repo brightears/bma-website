@@ -770,31 +770,37 @@
         "energy": "Năng lượng {energy}"
       },
       "audio": {
-        "title": "Nghe thử",
-        "visualOnly": "Bản xem trước định hướng âm nhạc · đang tắt tiếng",
+        "title": "Mẫu của khu vực đã chọn",
+        "visualOnly": "Định hướng âm nhạc đại diện · đang tắt tiếng",
         "hear": "Nghe không khí này",
         "pause": "Tạm dừng bản nghe thử",
         "paused": "Đã tạm dừng",
         "mute": "Tắt tiếng",
         "unmute": "Bật tiếng",
-        "playing": "Đang phát bản nghe thử có bản quyền dài 25 giây",
-        "playingMuted": "Đang phát bản nghe thử có bản quyền dài 25 giây · đã tắt tiếng",
+        "playing": "Đang phát mẫu đại diện có bản quyền dài 25 giây",
+        "playingMuted": "Đang phát mẫu đại diện có bản quyền dài 25 giây · đã tắt tiếng",
         "unavailable": "Không thể phát bản nghe thử",
-        "volume": "Âm lượng nghe thử"
+        "volume": "Âm lượng nghe thử",
+        "selection": "{zone} · định hướng {playlist} · {status}"
       },
       "demo": {
         "eyebrow": "BMAsia Venue Time Machine",
         "title": "Đi qua một ngày.",
         "highlight": "Xem mọi điểm chạm phản hồi.",
-        "description": "Chọn loại hình kinh doanh, kéo thời gian và đưa từng khu vực lên trước. Âm nhạc, màn hình, thông điệp, điện thoại, năng lượng và hướng dẫn Concierge cùng thay đổi.",
+        "description": "Chọn loại hình kinh doanh và đi qua bảy thời điểm trong lịch. Mỗi thẻ là một khu vực riêng; âm nhạc, mức kích hoạt, bản nghe thử và giải thích của Concierge thay đổi đồng bộ.",
         "machineLabel": "Bản xem trước trải nghiệm không gian trực tiếp",
         "live": "Phản hồi trực tiếp",
         "chooseVenue": "Chọn loại hình kinh doanh",
         "localTime": "Giờ địa phương",
         "chooseTime": "Chọn thời điểm",
-        "playlistDetail": "Năng lượng {energy} · {bpm} BPM",
-        "concierge": "Hướng dẫn từ Music Concierge",
-        "energy": "Năng lượng địa điểm"
+        "playlistDetail": "Mức kích hoạt mục tiêu {energy}/100 · khoảng {bpm} BPM",
+        "concierge": "Vì sao phù hợp với khu vực này",
+        "energy": "Mức kích hoạt của khu vực đã chọn",
+        "zonePlanEyebrow": "Một địa điểm, ba nhiệm vụ âm nhạc",
+        "zonePlanTitle": "Ba khu vực. Ba đề xuất riêng.",
+        "zonePlanDescription": "Mỗi thẻ điều khiển một khu vực khác nhau. Chọn một thẻ để nghe định hướng đại diện và xem vì sao nó phù hợp vào lúc này.",
+        "zoneLabel": "Khu vực {index} · {zone}",
+        "conciergeReason": "{playlist} được đề xuất cho {zone} lúc {time}: {purpose}. Khoảng {bpm} BPM với mức kích hoạt mục tiêu {energy}/100 giúp khu vực này khác biệt với hai khu vực còn lại."
       },
       "venues": {
         "hotel": "Khách sạn",
@@ -834,6 +840,20 @@
         "mainFloor": "Sàn chính",
         "studio": "Phòng tập",
         "recovery": "Khu hồi phục"
+      },
+      "zonePurpose": {
+        "lobby": "đón khách mà không tạo cảm giác vội vã",
+        "restaurant": "hỗ trợ nhịp phục vụ nhưng vẫn dành chỗ cho trò chuyện",
+        "wellness": "giữ kích thích ở mức thấp và chuyển tiếp nhẹ nhàng",
+        "dining": "dành không gian cho cuộc trò chuyện và món ăn",
+        "bar": "chủ động xây dựng năng lượng giao tiếp",
+        "terrace": "giữ nhịp điệu cởi mở và thư thái",
+        "entrance": "truyền tải dấu ấn thương hiệu trong vài giây",
+        "shopFloor": "duy trì nhịp khám phá mà không lấn át sản phẩm",
+        "fittingRooms": "giảm áp lực khi khách hàng cân nhắc",
+        "mainFloor": "hỗ trợ nỗ lực cá nhân bền bỉ",
+        "studio": "tạo nhịp rõ ràng cho các buổi tập có hướng dẫn",
+        "recovery": "giúp hội viên hạ nhịp sau khi vận động"
       },
       "venueContext": {
         "hotel": "Giữ trải nghiệm đến nơi thật êm dịu, rồi tăng dần năng lượng ở các khu vực giao lưu.",

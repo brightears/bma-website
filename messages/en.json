@@ -770,31 +770,37 @@
         "energy": "Energy {energy}"
       },
       "audio": {
-        "title": "Sound preview",
-        "visualOnly": "Music direction preview · sound off",
+        "title": "Selected zone sample",
+        "visualOnly": "Representative music direction · sound off",
         "hear": "Hear this mood",
         "pause": "Pause sample",
         "paused": "Preview paused",
         "mute": "Mute sample",
         "unmute": "Unmute sample",
-        "playing": "Playing a licensed 25-second preview",
-        "playingMuted": "Playing a licensed 25-second preview · muted",
+        "playing": "Playing a representative licensed 25-second preview",
+        "playingMuted": "Playing a representative licensed 25-second preview · muted",
         "unavailable": "Audio preview unavailable",
-        "volume": "Preview volume"
+        "volume": "Preview volume",
+        "selection": "{zone} · {playlist} direction · {status}"
       },
       "demo": {
         "eyebrow": "BMAsia Venue Time Machine",
         "title": "Move through a day.",
         "highlight": "Watch every touchpoint respond.",
-        "description": "Choose a business, drag the time and bring different zones forward. Music, screens, messages, phone audio and Concierge guidance respond together.",
+        "description": "Choose a business and move through seven schedule moments. Each card is a separate zone; its music, activation, preview and Concierge explanation respond together.",
         "machineLabel": "Live venue experience preview",
         "live": "Responding live",
         "chooseVenue": "Choose a business type",
         "localTime": "Local time",
         "chooseTime": "Choose a time of day",
-        "playlistDetail": "Energy {energy} · {bpm} BPM",
-        "concierge": "Music Concierge guidance",
-        "energy": "Venue energy"
+        "playlistDetail": "Target activation {energy}/100 · around {bpm} BPM",
+        "concierge": "Why this zone fits",
+        "energy": "Selected zone activation",
+        "zonePlanEyebrow": "One venue, three music jobs",
+        "zonePlanTitle": "Three zones. Three separate recommendations.",
+        "zonePlanDescription": "Each card controls a different zone. Select one to hear its representative direction and see why it fits this moment.",
+        "zoneLabel": "Zone {index} · {zone}",
+        "conciergeReason": "At {time}, {playlist} is the {zone} recommendation to {purpose}. Around {bpm} BPM with target activation {energy}/100 keeps this zone distinct from the other two."
       },
       "touchpoints": {
         "eyebrow": "Connected touchpoints",
@@ -860,6 +866,20 @@
         "mainFloor": "Main floor",
         "studio": "Studio",
         "recovery": "Recovery"
+      },
+      "zonePurpose": {
+        "lobby": "welcome arrivals without creating pressure",
+        "restaurant": "support service pace while leaving room for conversation",
+        "wellness": "keep stimulation low and transitions smooth",
+        "dining": "leave room for conversation and the food",
+        "bar": "build social energy deliberately",
+        "terrace": "keep an open, easy rhythm",
+        "entrance": "signal the brand within seconds",
+        "shopFloor": "sustain browsing momentum without crowding the product",
+        "fittingRooms": "reduce pressure while customers consider",
+        "mainFloor": "support sustained individual effort",
+        "studio": "give coached sessions a clear cadence",
+        "recovery": "help members downshift after exertion"
       },
       "venueContext": {
         "hotel": "Keep arrivals calm and let the social zones build later.",
