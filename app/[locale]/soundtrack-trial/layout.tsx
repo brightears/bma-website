@@ -12,16 +12,17 @@ type Props = { params: Promise<{ locale: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'soundtrackTrialPage.metadata' });
-  const languages = Object.fromEntries(locales.map((loc) => [loc, `${SITE.url}/${loc}/soundtrack-trial`]));
+  const languages = Object.fromEntries(locales.map((loc) => [loc, `${SITE.url}/${loc}/soundtrack-trial/`]));
+  languages['x-default'] = `${SITE.url}/en/soundtrack-trial/`;
 
   return {
     title: t('title'),
     description: t('description'),
-    alternates: { canonical: `${SITE.url}/${locale}/soundtrack-trial`, languages },
+    alternates: { canonical: `${SITE.url}/${locale}/soundtrack-trial/`, languages },
     openGraph: {
       title: t('title'),
       description: t('description'),
-      url: `${SITE.url}/${locale}/soundtrack-trial`,
+      url: `${SITE.url}/${locale}/soundtrack-trial/`,
       locale: ogLocaleMap[locale as Locale] || 'en_US',
       siteName: SITE.name,
       type: 'website',

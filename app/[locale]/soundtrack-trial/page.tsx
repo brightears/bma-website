@@ -15,7 +15,7 @@ export default function SoundtrackTrialPage() {
   const t = useTranslations('soundtrackTrialPage');
 
   return (
-    <main className="relative overflow-hidden bg-[#14091d] px-6 pb-24 pt-32 sm:px-10 md:pt-40 lg:px-16">
+    <div className="relative overflow-hidden bg-[#14091d] px-6 pb-24 pt-32 sm:px-10 md:pt-40 lg:px-16">
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
         <div className="absolute -left-40 top-8 h-[34rem] w-[34rem] rounded-full bg-[#8c66bf]/16 blur-3xl" />
         <div className="absolute -right-48 top-48 h-[38rem] w-[38rem] rounded-full bg-[#d6c2ff]/10 blur-3xl" />
@@ -31,7 +31,7 @@ export default function SoundtrackTrialPage() {
           <p className="mt-7 max-w-xl text-pretty text-lg leading-8 text-white/58 sm:text-xl">{t('hero.subtitle')}</p>
 
           <div className="mt-9 flex flex-wrap gap-2.5">
-            {(['noCard', 'oneZone', 'autoEnd'] as const).map((key) => (
+            {(['noCard', 'oneZone'] as const).map((key) => (
               <span key={key} className="inline-flex items-center gap-2 rounded-full border border-[#d6c2ff]/16 bg-[#d6c2ff]/[0.055] px-4 py-2 text-sm text-white/62">
                 <Check className="h-3.5 w-3.5 text-[#d6c2ff]" aria-hidden="true" /> {t(`proof.${key}`)}
               </span>
@@ -65,6 +65,6 @@ export default function SoundtrackTrialPage() {
           <SoundtrackTrialForm />
         </motion.section>
       </div>
-    </main>
+    </div>
   );
 }

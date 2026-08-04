@@ -83,7 +83,7 @@ export function SoundtrackTrialForm() {
       <p className="mt-3 text-pretty leading-7 text-white/52">{t('subtitle')}</p>
 
       {state === 'error' && (
-        <div className="mt-6 rounded-xl border border-red-300/25 bg-red-300/10 p-4 text-sm text-[#ffaaa5]" role="alert">
+        <div id="trial-form-error" className="mt-6 rounded-xl border border-red-300/25 bg-red-300/10 p-4 text-sm text-[#ffaaa5]" role="alert">
           {errorMessage || t('error')}
         </div>
       )}
@@ -91,36 +91,36 @@ export function SoundtrackTrialForm() {
       <div className="mt-8 grid gap-5 sm:grid-cols-2">
         <div>
           <label className={labelClass} htmlFor="trial-name">{t('name')} *</label>
-          <input id="trial-name" autoComplete="name" disabled={isSubmitting} className={fieldClass} {...register('name', { required: t('required'), minLength: 2, maxLength: 120 })} />
-          {errors.name && <p className={errorClass}>{t('required')}</p>}
+          <input id="trial-name" autoComplete="name" disabled={isSubmitting} className={fieldClass} aria-invalid={Boolean(errors.name)} aria-describedby={errors.name ? 'trial-name-error' : undefined} {...register('name', { required: t('required'), minLength: 2, maxLength: 120 })} />
+          {errors.name && <p id="trial-name-error" className={errorClass}>{t('required')}</p>}
         </div>
         <div>
           <label className={labelClass} htmlFor="trial-email">{t('email')} *</label>
-          <input id="trial-email" type="email" autoComplete="email" disabled={isSubmitting} className={fieldClass} {...register('email', { required: t('required'), pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ })} />
-          {errors.email && <p className={errorClass}>{errors.email.type === 'pattern' ? t('invalidEmail') : t('required')}</p>}
+          <input id="trial-email" type="email" autoComplete="email" disabled={isSubmitting} className={fieldClass} aria-invalid={Boolean(errors.email)} aria-describedby={errors.email ? 'trial-email-error' : undefined} {...register('email', { required: t('required'), pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ })} />
+          {errors.email && <p id="trial-email-error" className={errorClass}>{errors.email.type === 'pattern' ? t('invalidEmail') : t('required')}</p>}
         </div>
         <div>
           <label className={labelClass} htmlFor="trial-company">{t('company')} *</label>
-          <input id="trial-company" autoComplete="organization" disabled={isSubmitting} className={fieldClass} {...register('company', { required: t('required'), maxLength: 160 })} />
-          {errors.company && <p className={errorClass}>{t('required')}</p>}
+          <input id="trial-company" autoComplete="organization" disabled={isSubmitting} className={fieldClass} aria-invalid={Boolean(errors.company)} aria-describedby={errors.company ? 'trial-company-error' : undefined} {...register('company', { required: t('required'), maxLength: 160 })} />
+          {errors.company && <p id="trial-company-error" className={errorClass}>{t('required')}</p>}
         </div>
         <div>
           <label className={labelClass} htmlFor="trial-country">{t('country')} *</label>
-          <input id="trial-country" autoComplete="country-name" disabled={isSubmitting} className={fieldClass} {...register('country', { required: t('required'), maxLength: 100 })} />
-          {errors.country && <p className={errorClass}>{t('required')}</p>}
+          <input id="trial-country" autoComplete="country-name" disabled={isSubmitting} className={fieldClass} aria-invalid={Boolean(errors.country)} aria-describedby={errors.country ? 'trial-country-error' : undefined} {...register('country', { required: t('required'), maxLength: 100 })} />
+          {errors.country && <p id="trial-country-error" className={errorClass}>{t('required')}</p>}
         </div>
         <div>
           <label className={labelClass} htmlFor="trial-business-type">{t('businessType')} *</label>
-          <select id="trial-business-type" disabled={isSubmitting} className={`${fieldClass} appearance-none`} {...register('businessType', { required: t('required') })}>
+          <select id="trial-business-type" disabled={isSubmitting} className={`${fieldClass} appearance-none`} aria-invalid={Boolean(errors.businessType)} aria-describedby={errors.businessType ? 'trial-business-error' : undefined} {...register('businessType', { required: t('required') })}>
             <option value="" className="bg-[#190d21]">{t('select')}</option>
             {BUSINESS_TYPES.map((type) => <option key={type} value={type} className="bg-[#190d21]">{t(type)}</option>)}
           </select>
-          {errors.businessType && <p className={errorClass}>{t('required')}</p>}
+          {errors.businessType && <p id="trial-business-error" className={errorClass}>{t('required')}</p>}
         </div>
         <div>
           <label className={labelClass} htmlFor="trial-location">{t('locationName')} *</label>
-          <input id="trial-location" disabled={isSubmitting} className={fieldClass} placeholder={t('locationPlaceholder')} {...register('locationName', { required: t('required'), maxLength: 160 })} />
-          {errors.locationName && <p className={errorClass}>{t('required')}</p>}
+          <input id="trial-location" disabled={isSubmitting} className={fieldClass} placeholder={t('locationPlaceholder')} aria-invalid={Boolean(errors.locationName)} aria-describedby={errors.locationName ? 'trial-location-error' : undefined} {...register('locationName', { required: t('required'), maxLength: 160 })} />
+          {errors.locationName && <p id="trial-location-error" className={errorClass}>{t('required')}</p>}
         </div>
         <div className="sm:col-span-2">
           <label className={labelClass} htmlFor="trial-zone">{t('zoneName')}</label>
@@ -135,13 +135,13 @@ export function SoundtrackTrialForm() {
       </div>
 
       <label className="mt-6 flex cursor-pointer items-start gap-3 text-sm leading-6 text-white/48">
-        <input type="checkbox" className="mt-1 h-4 w-4 accent-[#d6c2ff]" {...register('consent', { required: t('consentRequired') })} />
+        <input type="checkbox" className="mt-1 h-4 w-4 accent-[#d6c2ff]" aria-invalid={Boolean(errors.consent)} aria-describedby={errors.consent ? 'trial-consent-error' : undefined} {...register('consent', { required: t('consentRequired') })} />
         <span>
           {t('consent')}{' '}
           <Link href={`/${locale}/privacy`} className="text-[#d6c2ff] underline-offset-4 hover:underline">{t('privacy')}</Link>.
         </span>
       </label>
-      {errors.consent && <p className={errorClass}>{t('consentRequired')}</p>}
+      {errors.consent && <p id="trial-consent-error" className={errorClass}>{t('consentRequired')}</p>}
 
       <button type="submit" disabled={isSubmitting} className="mt-7 inline-flex min-h-14 w-full items-center justify-center gap-3 rounded-full bg-[#d6c2ff] px-7 font-label text-sm font-semibold text-[#190d21] transition hover:bg-white disabled:cursor-not-allowed disabled:opacity-60">
         {isSubmitting ? <><Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> {t('submitting')}</> : <>{t('submit')} <ArrowRight className="h-4 w-4" aria-hidden="true" /></>}

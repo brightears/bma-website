@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "tsc --noEmit",
+    "check:locales": "node scripts/check-locales.mjs"
   },
   "dependencies": {
     "@elevenlabs/react": "^0.13.0",

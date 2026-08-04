@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "BMAsia | 음악이 중요한 곳",
-    "description": "비즈니스에 완벽한 분위기를 만드세요. BMAsia는 2002년부터 아시아태평양 전역의 호텔, 레스토랑, 리테일을 위한 맞춤형 배경음악 솔루션을 제공합니다."
+    "description": "BMAsia는 음악, 미디어, 메시지, 연결형 매장 경험을 설계하고 운영하며, 하나의 전문 서비스 팀을 통해 Beat Breeze와 Soundtrack을 제공합니다."
   },
   "navigation": {
     "home": "홈",
@@ -14,15 +14,24 @@
     "solutions": "솔루션",
     "notSure": "어떤 솔루션이 맞는지 모르시겠나요?",
     "talkToUs": "상담하기",
-    "signIn": "Beat Breeze 로그인",
-    "startFree": "무료로 시작",
+    "signIn": "로그인",
+    "startFree": "시작하기",
     "openMenu": "메뉴 열기",
     "closeMenu": "메뉴 닫기",
     "mainNavigation": "주요 메뉴",
     "mobileNavigation": "모바일 메뉴",
     "language": "언어",
     "talkToBMAsia": "BMAsia와 상담하기",
-    "startTrial": "14일 무료 체험 시작"
+    "startTrial": "제품 선택",
+    "products": "제품",
+    "solutionsIntro": "업종에 맞는 완성형 매장 경험 아이디어를 살펴보세요.",
+    "helpMeChoose": "선택 도움받기",
+    "login": "로그인",
+    "beatBreezeShort": "로열티 프리 음악, 미디어, 매장 자동화.",
+    "soundtrackShort": "BMAsia가 공급하고 지원하는 친숙한 상업용 음악.",
+    "beatBreezeLogin": "Beat Breeze 플랫폼 열기",
+    "soundtrackLogin": "Soundtrack 앱 열기",
+    "skipToContent": "본문으로 건너뛰기"
   },
   "languageSwitcher": {
     "label": "언어",
@@ -58,57 +67,6 @@
       "title": "브랜드 조화",
       "description": "고객과 공명하는 독특한 음악 디자인을 통해 브랜드 정체성을 강화합니다."
     }
-  },
-  "products": {
-    "sectionTitle": "우리의",
-    "sectionTitleHighlight": "솔루션",
-    "sectionSubtitle": "비즈니스 요구사항과 예산에 맞는 완벽한 음악 솔루션을 선택하세요",
-    "premium": "프리미엄",
-    "availableOn": "사용 가능",
-    "soundtrackYourBrand": {
-      "tagline": "프리미엄 음악 솔루션",
-      "features": {
-        "tracks": "1억 곡+ 보유",
-        "scheduling": "드래그 앤 드롭 스케줄링",
-        "messaging": "텍스트 음성 변환 메시지",
-        "offline": "오프라인 재생",
-        "spotify": "합법적인 Spotify 동기화",
-        "bespoke": "맞춤 음악 디자인",
-        "support": "24/7 지원"
-      }
-    },
-    "beatBreeze": {
-      "tagline": "기본 솔루션",
-      "features": {
-        "tracks": "3만 곡+ 큐레이션",
-        "playlists": "50개 기성 플레이리스트",
-        "license": "공연 라이선스 포함",
-        "multizone": "멀티존 설정",
-        "scheduling": "고급 스케줄링",
-        "messaging": "통합 메시지",
-        "offline": "오프라인 재생"
-      }
-    },
-    "notSure": "어떤 솔루션이 적합한지 모르시나요?",
-    "bookDemo": "무료 데모 예약"
-  },
-  "smartFeatures": {
-    "sectionTitle": "당신을 위해",
-    "sectionTitleHighlight": "작동하는 음악",
-    "sectionSubtitle": "비즈니스에 맞게 사운드트랙을 조정하는 지능형 자동화",
-    "smartScheduling": {
-      "title": "스마트 스케줄링",
-      "description": "볼륨 레벨 사전 프로그래밍, 영업 시간에 따른 자동 조정, 기도 시간 일시 중지와 같은 지역 적응."
-    },
-    "contextAware": {
-      "title": "컨텍스트 인식 음악",
-      "description": "날씨 조건에 적응하고, 조명 시스템과 동기화하며, 실시간 데이터 피드에 반응하는 음악."
-    },
-    "aiPowered": {
-      "title": "AI 기반 플레이리스트",
-      "description": "원하는 것을 설명하기만 하면 AI가 완벽한 플레이리스트를 만듭니다. 음악 전문 지식이 필요 없습니다."
-    },
-    "ctaDemo": "데모 예약"
   },
   "clientLogos": {
     "sectionTitle": "업계 리더들의 신뢰"
@@ -189,7 +147,7 @@
     },
     "email": {
       "label": "이메일",
-      "description": "24시간 이내 답변"
+      "description": "담당자가 확인 후 답변"
     },
     "whatsapp": {
       "label": "WhatsApp",
@@ -203,7 +161,7 @@
   "forms": {
     "inquiry": {
       "title": "음악 문의 양식",
-      "description": "아래 양식을 작성해 주시면 24시간 이내에 연락드리겠습니다.",
+      "description": "아래 양식을 작성해 주시면 BMAsia 전문가가 확인 후 연락드립니다.",
       "preferDemo": "통화 예약을 원하시나요?",
       "bookDemo": "무료 데모 예약하기",
       "fields": {
@@ -228,9 +186,9 @@
         "default": "메시지 보내기",
         "sending": "보내는 중..."
       },
-      "successMessage": "문의해 주셔서 감사합니다! 24시간 이내에 연락드리겠습니다.",
+      "successMessage": "문의해 주셔서 감사합니다. BMAsia 전문가가 확인 후 연락드리겠습니다.",
       "errorMessage": "오류가 발생했습니다. 다시 시도해 주세요.",
-      "privacyNote": "이 양식을 제출함으로써 개인정보 보호정책에 동의합니다. 귀하의 정보를 제3자와 공유하지 않습니다."
+      "privacyNote": "요청에 답변하기 위해 이 정보를 사용합니다. 서비스 제공업체가 사이트 운영을 지원하는 방식은 개인정보 처리방침에서 확인하세요."
     },
     "quotation": {
       "title": "견적 요청 양식",
@@ -278,9 +236,9 @@
         "default": "견적 요청",
         "sending": "제출 중..."
       },
-      "successMessage": "견적 요청해 주셔서 감사합니다! 24-48시간 이내에 맞춤 견적으로 연락드리겠습니다.",
+      "successMessage": "견적을 요청해 주셔서 감사합니다. BMAsia 전문가가 브리프를 검토한 후 연락드리겠습니다.",
       "errorMessage": "오류가 발생했습니다. 다시 시도해 주세요.",
-      "privacyNote": "이 양식을 제출함으로써 개인정보 보호정책에 동의합니다. 귀하의 정보를 제3자와 공유하지 않습니다."
+      "privacyNote": "요청 내용을 검토하고 답변을 준비하기 위해 이 정보를 사용합니다. 서비스 제공업체가 사이트 운영을 지원하는 방식은 개인정보 처리방침에서 확인하세요."
     },
     "validation": {
       "required": "{field}을(를) 입력해 주세요",
@@ -306,7 +264,7 @@
     "cookies": "쿠키",
     "terms": "약관",
     "allRightsReserved": "모든 권리 보유.",
-    "operationsDescription": "음악과 미디어를 하나로 관리하세요.",
+    "operationsDescription": "음악, 미디어, 매장 운영을 하나의 경험으로 설계합니다.",
     "products": "제품",
     "howItWorks": "이용 방법",
     "musicLicensing": "음악 라이선스",
@@ -318,144 +276,12 @@
     "startHere": "여기서 시작",
     "tryBeatBreeze": "Beat Breeze 체험하기",
     "trialProof": "14일 무료 · 카드 불필요",
-    "talkToBMAsia": "BMAsia와 상담하기"
-  },
-  "howItWorks": {
-    "hero": {
-      "title": "이용",
-      "titleHighlight": "방법",
-      "subtitle": "3단계로 공간을 조화롭게",
-      "imageAlt": "세련된 분위기의 현대적인 레스토랑 인테리어"
-    },
-    "steps": {
-      "sectionTitle": "완벽한 사운드로의",
-      "sectionTitleHighlight": "여정",
-      "sectionSubtitle": "BMAsia 시작은 간단합니다. 세 단계를 따라 공간을 변화시키세요.",
-      "step1": {
-        "title": "사운드 선택 및 견적 받기",
-        "description": "솔루션 중에서 선택하고, 맞춤 견적을 요청하거나, 무료 온라인 데모를 예약하여 플랫폼을 경험하세요."
-      },
-      "step2": {
-        "title": "플레이리스트 커스터마이징",
-        "description": "전문 음악 디자이너와 협력하여 브랜드 보이스와 장소 분위기에 맞는 샘플을 맞춤 제작하세요."
-      },
-      "step3": {
-        "title": "설정 및 시작",
-        "description": "설치를 처리하고 포괄적인 교육을 제공하여 음악 경험을 쉽게 관리할 수 있습니다."
-      }
-    },
-    "benefits": {
-      "sectionTitle": "왜",
-      "sectionTitleHighlight": "BMAsia인가",
-      "sectionSubtitle": "전문적으로 큐레이션된 음악의 변화의 힘을 발견하세요"
-    },
-    "cta": {
-      "sectionTitle": "공간을 변화시킬",
-      "sectionTitleHighlight": "준비가 되셨나요?",
-      "sectionSubtitle": "비즈니스에 완벽한 분위기를 만드는 첫 걸음을 내딛으세요. 팀이 이상적인 음악 솔루션을 찾아드립니다."
-    }
-  },
-  "licensing": {
-    "hero": {
-      "title": "음악 라이선스",
-      "titleHighlight": "간소화",
-      "subtitle": "비즈니스에 필요한 라이선스 이해하기",
-      "imageAlt": "음악 라이선스를 나타내는 추상 음파 시각화"
-    },
-    "intro": {
-      "sectionTitle": "왜 비즈니스에",
-      "sectionTitleHighlight": "라이선스가 필요한가요?",
-      "paragraph1": "비즈니스에서 음악을 재생하는 것은 집에서 듣는 것과 다릅니다. 상업적으로 음악을 사용할 때는 음악을 만든 권리 보유자의 허가가 필요합니다.",
-      "paragraph2Intro": "비즈니스에서 합법적으로 음악을 재생하려면",
-      "paragraph2Highlight": "세 가지 다른 라이선스가 필요합니다"
-    },
-    "types": {
-      "sectionTitle": "세 가지",
-      "sectionTitleHighlight": "필수 라이선스",
-      "sectionSubtitle": "각 라이선스는 다른 권리 보유자를 보호하고 공정한 보상을 보장합니다",
-      "recording": {
-        "name": "녹음 라이선스",
-        "description": "특정 노래 녹음을 사용할 권리를 포함하며 녹음 아티스트에게 보상합니다."
-      },
-      "publishing": {
-        "name": "출판 라이선스",
-        "description": "원곡을 사용할 권리를 포함하며 작곡가와 작사가에게 보상합니다."
-      },
-      "performance": {
-        "name": "공연 라이선스",
-        "description": "비즈니스 장소와 같은 공공 환경에서 노래를 재생할 수 있게 합니다."
-      }
-    },
-    "warning": {
-      "sectionTitle": "소비자 스트리밍 서비스는",
-      "notLicensed": "비즈니스용으로",
-      "sectionTitleEnd": "라이선스되지 않았습니다",
-      "personalUseOnly": "이러한 서비스는 개인 사용만을 위해 라이선스됩니다.",
-      "liability": "상업적 환경에서 사용하면 서비스 약관을 위반하고 법적 책임에 노출될 수 있습니다.",
-      "spotifyQuote": "Spotify 서비스 및 콘텐츠는 Spotify 또는 Spotify 라이선서의 재산입니다. Spotify 서비스의 개인적, 비상업적 사용을 위한 제한적, 비독점적, 취소 가능한 라이선스를 부여합니다...",
-      "spotifySource": "Spotify 서비스 약관"
-    },
-    "solution": {
-      "sectionTitle": "라이선스 복잡성을",
-      "sectionTitleHighlight": "저희가 처리합니다",
-      "sectionSubtitle": "필요에 맞는 솔루션을 선택하세요",
-      "fullyLicensed": "완전 라이선스",
-      "included": "포함",
-      "requiredSeparately": "현지 PRO에서 별도로 필요",
-      "worryFree": "걱정 없이 음악을 재생하세요 - 모든 것을 처리합니다."
-    },
-    "cta": {
-      "sectionTitle": "라이선스 음악으로",
-      "sectionTitleHighlight": "시작하기",
-      "sectionSubtitle": "비즈니스에 적합한 음악 솔루션을 선택하세요. 오늘 맞춤 견적을 받으세요."
-    }
-  },
-  "quotation": {
-    "hero": {
-      "title": "견적",
-      "titleHighlight": "요청",
-      "subtitle": "정보를 제공해 주시면 맞춤 견적으로 답변드리겠습니다",
-      "imageAlt": "편안한 분위기의 럭셔리 스파 세팅"
-    },
-    "whatToExpect": {
-      "sectionTitle": "기대 사항",
-      "fastResponse": {
-        "title": "빠른 응답",
-        "description": "24-48시간 이내 맞춤 견적 수령"
-      },
-      "noObligation": {
-        "title": "의무 없음",
-        "description": "약정 없이 무료 상담"
-      },
-      "tailored": {
-        "title": "맞춤 솔루션",
-        "description": "특정 요구에 기반한 맞춤 가격"
-      }
-    },
-    "ourSolutions": {
-      "sectionTitle": "우리의 솔루션",
-      "soundtrackHighlights": {
-        "tracks": "1억+ 곡",
-        "scheduling": "고급 스케줄링",
-        "support": "24/7 지원"
-      },
-      "beatBreezeHighlights": {
-        "tracks": "3만+ 큐레이션 곡",
-        "license": "라이선스 포함",
-        "multizone": "멀티존 준비 완료"
-      },
-      "learnMore": "솔루션에 대해 더 알아보기"
-    },
-    "haveQuestions": {
-      "sectionTitle": "질문이 있으신가요?",
-      "emailDescription": "직접 연락하기",
-      "messagingLabel": "또는 메시지:"
-    },
-    "preferDemo": {
-      "sectionTitle": "라이브 데모를 원하시나요?",
-      "sectionSubtitle": "팀과 무료 온라인 데모를 예약하여 음악 솔루션을 직접 보고 모든 질문에 답변을 받으세요.",
-      "ctaButton": "무료 데모 예약"
-    }
+    "talkToBMAsia": "BMAsia와 상담하기",
+    "globalReach": "2002년 설립. 신속하게 대응하는 지역 팀이 현지 매장과 글로벌 그룹을 지원합니다.",
+    "choosePath": "음악 솔루션 선택",
+    "beatBreezeDescription": "음악, 스크린, 메시지, 자동화를 위한 BMAsia의 유연한 로열티 프리 플랫폼.",
+    "soundtrackDescription": "친숙한 라이선스 음악의 방대한 카탈로그와 BMAsia의 음악 설계 및 서비스.",
+    "manageCookies": "쿠키 관리"
   },
   "countries": {
     "select": "국가 선택",
@@ -529,7 +355,7 @@
     "orAskAnything": "또는 무엇이든 물어보세요!",
     "escalation": {
       "title": "팀에 연결하기",
-      "subtitle": "영업일 기준 2시간 이내에 이메일로 연락드리겠습니다",
+      "subtitle": "BMAsia 전문가가 이메일로 연락드립니다",
       "nameLabel": "이름",
       "namePlaceholder": "이름을 입력하세요",
       "companyLabel": "회사",
@@ -541,270 +367,207 @@
       "cancel": "취소",
       "submit": "팀에 연결",
       "submitting": "연결 중...",
-      "success": "영업일 기준 2시간 이내에 {email}로 연락드리겠습니다. 그 동안 다른 도움이 필요하신가요?",
+      "success": "담당 팀이 {email}로 연락드리겠습니다. 그동안 더 명확히 안내해 드릴 내용이 있을까요?",
       "error": "문제가 발생했습니다. 다시 시도해주세요."
     }
   },
   "soundtrackTrialPage": {
-    "metadata": { "title": "Soundtrack 무료 체험 시작", "description": "비즈니스 음악 존 한 곳에서 14일간 Soundtrack을 무료로 체험하세요. 카드와 약정이 필요 없습니다." },
-    "hero": { "label": "카드 없이 14일 무료 체험", "title": "내 공간에서", "titleHighlight": "Soundtrack을 들어보세요.", "subtitle": "먼저 시험할 장소를 알려주세요. BMAsia가 설정을 확인하고 한 개 존의 이용 권한을 준비합니다." },
-    "proof": { "noCard": "신용카드 불필요", "oneZone": "테스트 존 1곳", "autoEnd": "자동 종료" },
-    "steps": { "label": "다음 단계", "requestTitle": "필수 정보 보내기", "requestDesc": "간단한 양식 하나로 체험 준비에 필요한 정보를 전달합니다.", "verifyTitle": "BMAsia가 설정 확인", "verifyDesc": "장소를 확인하고 비즈니스 이용에 맞게 체험이 설정되는지 점검합니다.", "accessTitle": "이용 권한 받기", "accessDesc": "첫 번째 존의 로그인 및 설정 안내를 보내드립니다." },
-    "note": { "title": "부담 없는 체험", "desc": "결제 수단이 필요하지 않습니다. 구독하지 않으면 카드 없는 체험은 자동으로 종료됩니다." },
-    "form": { "title": "무료 체험 요청", "subtitle": "한 장소와 한 존으로 시작하세요. 음악이 마음에 들면 나머지를 추가할 수 있습니다.", "name": "이름", "email": "업무용 이메일", "company": "회사", "country": "국가", "businessType": "업종", "select": "선택", "hotel": "호텔 또는 리조트", "restaurant": "레스토랑 또는 바", "retail": "리테일", "fitness": "피트니스 또는 웰니스", "office": "사무실 또는 업무 공간", "other": "기타", "locationName": "첫 번째 장소", "locationPlaceholder": "예: Riverside Hotel Bangkok", "zoneName": "첫 번째 존 (선택)", "zonePlaceholder": "예: 로비", "zoneHint": "존은 로비, 레스토랑, 매장처럼 별도의 음악이 재생되는 한 공간입니다.", "consent": "BMAsia가 Soundtrack 체험을 준비하고 필요한 활성화 정보를 Soundtrack과 공유하는 데 이 정보를 사용하는 것에 동의합니다", "privacy": "개인정보 처리방침", "consentRequired": "계속하기 전에 확인해 주세요.", "required": "필수 입력 항목입니다.", "invalidEmail": "올바른 업무용 이메일을 입력하세요.", "submit": "14일 체험 요청", "submitting": "요청 보내는 중…", "footnote": "양식을 제출해도 유료 구독이 시작되지 않습니다.", "successTitle": "체험 요청을 받았습니다.", "successMessage": "BMAsia가 정보를 확인하고 다음 단계를 이메일로 안내합니다. 결제나 구독은 이루어지지 않았습니다.", "back": "Soundtrack으로 돌아가기", "error": "요청을 저장할 수 없습니다. 다시 시도해 주세요." }
+    "metadata": {
+      "title": "Soundtrack 무료 체험 시작",
+      "description": "비즈니스 음악 존 한 곳에서 14일간 Soundtrack을 무료로 체험하세요. 카드와 약정이 필요 없습니다."
+    },
+    "hero": {
+      "label": "카드 없이 14일 무료 체험",
+      "title": "내 공간에서",
+      "titleHighlight": "Soundtrack을 들어보세요.",
+      "subtitle": "먼저 시험할 장소를 알려주세요. BMAsia가 설정을 확인하고 한 개 존의 이용 권한을 준비합니다."
+    },
+    "proof": {
+      "noCard": "신용카드 불필요",
+      "oneZone": "테스트 존 1곳"
+    },
+    "steps": {
+      "label": "다음 단계",
+      "requestTitle": "필수 정보 보내기",
+      "requestDesc": "간단한 양식 하나로 체험 준비에 필요한 정보를 전달합니다.",
+      "verifyTitle": "BMAsia가 설정 확인",
+      "verifyDesc": "장소를 확인하고 비즈니스 이용에 맞게 체험이 설정되는지 점검합니다.",
+      "accessTitle": "이용 권한 받기",
+      "accessDesc": "첫 번째 존의 로그인 및 설정 안내를 보내드립니다."
+    },
+    "note": {
+      "title": "부담 없는 체험",
+      "desc": "결제 수단은 필요하지 않습니다. BMAsia가 요청을 검토하고 대상 고객의 이용 권한을 준비하며, 유료 구독을 시작하기 전 지속 이용 여부를 고객과 협의합니다."
+    },
+    "form": {
+      "title": "무료 체험 요청",
+      "subtitle": "한 장소와 한 존으로 시작하세요. 음악이 마음에 들면 나머지를 추가할 수 있습니다.",
+      "name": "이름",
+      "email": "업무용 이메일",
+      "company": "회사",
+      "country": "국가",
+      "businessType": "업종",
+      "select": "선택",
+      "hotel": "호텔 또는 리조트",
+      "restaurant": "레스토랑 또는 바",
+      "retail": "리테일",
+      "fitness": "피트니스 또는 웰니스",
+      "office": "사무실 또는 업무 공간",
+      "other": "기타",
+      "locationName": "첫 번째 장소",
+      "locationPlaceholder": "예: Riverside Hotel Bangkok",
+      "zoneName": "첫 번째 존 (선택)",
+      "zonePlaceholder": "예: 로비",
+      "zoneHint": "존은 로비, 레스토랑, 매장처럼 별도의 음악이 재생되는 한 공간입니다.",
+      "consent": "BMAsia가 Soundtrack 체험을 준비하고 필요한 활성화 정보를 Soundtrack과 공유하는 데 이 정보를 사용하는 것에 동의합니다",
+      "privacy": "개인정보 처리방침",
+      "consentRequired": "계속하기 전에 확인해 주세요.",
+      "required": "필수 입력 항목입니다.",
+      "invalidEmail": "올바른 업무용 이메일을 입력하세요.",
+      "submit": "14일 체험 요청",
+      "submitting": "요청 보내는 중…",
+      "footnote": "양식을 제출해도 유료 구독이 시작되지 않습니다.",
+      "successTitle": "체험 요청을 받았습니다.",
+      "successMessage": "BMAsia가 정보를 확인하고 다음 단계를 이메일로 안내합니다. 결제나 구독은 이루어지지 않았습니다.",
+      "back": "Soundtrack으로 돌아가기",
+      "error": "요청을 저장할 수 없습니다. 다시 시도해 주세요."
+    }
   },
   "soundtrackPage": {
     "metadata": {
-      "title": "Soundtrack Your Brand",
-      "description": "호스피탈리티 업계를 위해 큐레이션된 세계 최대 규모의 상업용 음악 라이브러리입니다. 1억 곡 이상의 라이선스 음원, 다중 존 제어, 맞춤형 큐레이션, 그리고 BMAsia의 연중무휴 지원을 제공합니다."
-    },
-    "hero": {
-      "label": "글로벌 스탠더드",
       "title": "Soundtrack",
-      "titleHighlight": "Your Brand",
-      "subtitle": "귀하의 공간에 맞게 큐레이션된, 세계 최대 규모의 상업용 음악 라이브러리입니다.",
-      "ctaQuote": "견적 요청하기",
-      "ctaTrial": "무료 체험 시작하기"
+      "description": "BMAsia가 제공하는 친숙한 라이선스 상업용 음악과 음악 설계, 온보딩, 지속적인 지원, BMAsia가 구축한 매장 확장 기능."
     },
-    "positioning": {
-      "text1": "비즈니스 공간에서 음악을 재생한다는 것은 곧 하나의 경험을 빚어내는 일입니다.",
-      "highlight": "Soundtrack Your Brand",
-      "text2": "는 고객이 아는 모든 곡을 상업적 사용을 위해 완벽하게 라이선스된 형태로 제공합니다."
-    },
-    "valueProps": {
-      "sectionLabel": "",
-      "01": {
-        "label": "레퍼토리",
-        "title": "어떤 아티스트든, 어떤 장르든.",
-        "desc": "상업적 라이선스가 완료된 1억 곡 이상의 음원에 접근할 수 있습니다. 고객이 아는 모든 곡을 상업적 사용에 문제없이 이용하실 수 있습니다."
+    "redesign": {
+      "hero": {
+        "eyebrow": "BMAsia를 통한 라이선스 상업용 음악",
+        "title": "친숙한 음악.",
+        "highlight": "매장에 꼭 맞게.",
+        "description": "친숙한 메이저 레이블 음악의 방대한 카탈로그에 BMAsia의 플레이리스트 설계, 온보딩, 매장 확장 기능, 지속적인 인적 서비스를 더합니다.",
+        "trial": "Soundtrack 체험 요청",
+        "talk": "BMAsia와 상담하기",
+        "note": "BMAsia를 통한 Soundtrack 체험은 사업장 정보를 검토한 뒤 준비됩니다. 일반 견적 양식이 아니라 제품별 활성화 요청입니다."
       },
-      "02": {
-        "label": "컴플라이언스",
-        "title": "믿을 수 있는 라이선싱.",
-        "desc": "녹음 및 출판 권리가 포함되어 있습니다. 현지 공연권 라이선스에 대해 필요한 모든 정보를 공유하고 가능한 모든 부분에서 지원해 드립니다. 다만, 서류 작업 자체는 귀하와 해당 저작권 단체 사이의 절차로 남습니다."
+      "catalogue": {
+        "nowPlaying": "음악 방향 미리보기",
+        "featured": "저녁 방문객을 맞이하는 친숙한 음악",
+        "preview": "이 방향 미리보기",
+        "label": "상업용 카탈로그",
+        "line": "친숙한 아티스트, 비즈니스에 맞춘 제어"
       },
-      "03": {
-        "label": "전문성",
-        "title": "호스피탈리티를 위해 설계되었습니다.",
-        "desc": "복합적인 시설을 위해 구축되었습니다. 아침 로비의 잔잔함, 점심 서비스의 활기, 늦은 밤 라운지의 리듬까지 각 공간별로 별도의 존으로 관리됩니다."
+      "pillars": {
+        "catalogue": {
+          "title": "친숙한 레퍼토리",
+          "text": "메이저 레이블 음악을 포함한 방대한 라이선스 상업용 카탈로그."
+        },
+        "musicDesign": {
+          "title": "BMAsia 음악 설계",
+          "text": "브랜드, 존, 고객의 하루에 맞게 구성한 플레이리스트."
+        },
+        "service": {
+          "title": "하나의 지역 서비스 팀",
+          "text": "BMAsia가 온보딩, 업데이트, 지속적인 지원을 관리합니다."
+        }
+      },
+      "direction": {
+        "eyebrow": "BMAsia 음악 설계 서비스",
+        "title": "방대한 카탈로그에도 분명한 관점이 필요합니다.",
+        "description": "BMAsia는 브랜드, 고객, 위치, 운영 일정을 직원이 직접 분류해야 하는 수많은 트랙이 아니라 실제로 사용할 수 있는 플레이리스트로 전환합니다.",
+        "refreshTitle": "정기적으로 새로워져도 브랜드다움은 그대로",
+        "refreshText": "플레이리스트는 고객 브리프에 맞춰 업데이트되며 사업, 계절, 캠페인 변화에 따라 조정할 수 있습니다.",
+        "listen": {
+          "label": "이해",
+          "title": "음악을 고르기 전에 매장을 이해합니다",
+          "text": "브랜드 포지션, 고객층, 존, 시간대, 제외 항목, 운영 제약을 파악합니다."
+        },
+        "design": {
+          "label": "설계",
+          "title": "알아볼 수 있는 음악 방향을 만듭니다",
+          "text": "음악 디자이너가 상업용 카탈로그에서 플레이리스트를 구성하고 원하는 정체성에 맞게 선곡을 유지합니다."
+        },
+        "schedule": {
+          "label": "운영",
+          "title": "음악 방향을 실용적인 일정으로 전환합니다",
+          "text": "아침, 낮, 저녁, 주말, 특별한 순간마다 알맞은 플레이리스트와 존 계획을 적용합니다."
+        },
+        "refresh": {
+          "label": "유지",
+          "title": "브랜드를 잃지 않고 새롭게 합니다",
+          "text": "BMAsia가 고객 피드백과 운영자 제어를 반영해 음악 방향을 정기적으로 검토하고 업데이트합니다."
+        }
+      },
+      "extensions": {
+        "eyebrow": "BMAsia 구축 확장 기능",
+        "title": "Soundtrack을 매장 운영 방식과 연결합니다.",
+        "description": "BMAsia를 통해 공급받는 고객에게는 운영 준비를 마친 확장 기능으로 Soundtrack 음악을 특정 매장 루틴과 지원 시스템에 연결할 수 있습니다.",
+        "scope": "지원 대상 고객 환경을 위한 BMAsia 서비스입니다. soundtrack.io에서 직접 가입할 때 반드시 포함되는 기능은 아닙니다.",
+        "location": "연결된 고객",
+        "venue": "Riverside Hotel · 방콕",
+        "connected": "승인된 확장 기능과 함께 BMAsia를 통해 공급되는 Soundtrack",
+        "footer": "각 확장 기능은 고객 환경에 맞게 범위를 정하고 구성하며 지원합니다.",
+        "prayer": {
+          "title": "기도 시간 연동",
+          "text": "정확한 현지 기도 시간에 설정된 음악 동작을 적용하고 이후 자연스럽게 원래 일정으로 돌아갑니다."
+        },
+        "volume": {
+          "title": "지원되는 볼륨 연동",
+          "text": "지속적인 마이크 감지를 주장하지 않고, 지원 시스템을 통해 예약 또는 연동된 볼륨 동작을 적용합니다."
+        },
+        "weather": {
+          "title": "날씨에 따른 플레이리스트 동작",
+          "text": "현지 날씨를 승인된 입력값으로 사용해 플레이리스트 방향이나 설정된 동작에 반영합니다."
+        },
+        "api": {
+          "title": "운영 API",
+          "text": "BMAsia가 구축한 확장 기능을 통해 지원되는 매장 워크플로와 데이터를 Soundtrack 서비스에 연결합니다."
+        }
+      },
+      "operations": {
+        "eyebrow": "BMAsia가 서비스 계층을 담당합니다",
+        "title": "첫 브리프부터 일상 운영까지 하나의 팀이 함께합니다.",
+        "description": "BMAsia는 플랫폼을 공급하고 음악 방향 설정과 온보딩을 지원하며 매장이 변화하는 동안 계속 함께합니다.",
+        "cta": "Soundtrack 구성 상담하기",
+        "onboarding": {
+          "title": "리셀러 및 온보딩",
+          "text": "BMAsia가 목표 환경에 맞춰 회사, 지점, 존, 도입 계획의 구조를 잡도록 돕습니다."
+        },
+        "design": {
+          "title": "플레이리스트 설계 및 업데이트",
+          "text": "음악 디자이너가 고객 브리프에 맞게 플레이리스트를 조정하고 정기적으로 새롭게 합니다."
+        },
+        "regional": {
+          "title": "지역 및 다국어 맥락",
+          "text": "현지 운영, 기도 시간, 메시지 요건을 올바른 맥락에 맞춰 반영할 수 있습니다."
+        },
+        "support": {
+          "title": "신속한 인적 지원",
+          "text": "BMAsia 지역 팀이 설정, 음악 방향, 지원되는 연동 기능에 대해 지속적으로 도움을 제공합니다."
+        }
+      },
+      "licensing": {
+        "eyebrow": "명확한 라이선스",
+        "title": "현지 환경에 맞는 상업용 음악.",
+        "description": "Soundtrack은 비즈니스 서비스에 녹음물과 출판 권리를 제공합니다. 공연권 요건은 지역에 따라 다르며 BMAsia가 온보딩 과정에서 적용 범위를 확인합니다.",
+        "included": "Soundtrack을 통해 제공",
+        "recording": "서비스 카탈로그의 녹음물 권리",
+        "publishing": "서비스 카탈로그의 출판 권리",
+        "commercial": "레이블 및 유통사와의 직접 계약",
+        "local": "현지 확인 사항",
+        "localText": "공연권 라이선스와 기타 현지 의무는 국가와 매장에 따라 다릅니다. BMAsia가 활성화 전에 별도 항목을 설명합니다."
+      },
+      "final": {
+        "title": "친숙한 음악을",
+        "highlight": "비즈니스에 활용하세요.",
+        "description": "BMAsia를 통해 검토형 Soundtrack 체험을 요청하거나 음악 설계, 존, 매장 확장 기능을 상담하세요.",
+        "login": "Soundtrack 로그인",
+        "support": "BMAsia 지역 팀이 신속하게 지원합니다."
       }
-    },
-    "features": {
-      "sectionLabel": "주요 기능",
-      "sectionTitle": "음악을 제대로 운영하는 데 필요한 모든 것.",
-      "multiZone": {
-        "title": "다중 존 제어",
-        "desc": "공간마다 다른 분위기를 연출합니다. 로비, 스파, 레스토랑을 하나의 대시보드에서 관리할 수 있습니다."
-      },
-      "scheduling": {
-        "title": "스케줄링",
-        "desc": "주간 또는 일간 드래그 앤 드롭 스케줄을 지원합니다. 휴일 오버라이드, 시간대 설정, 업종별 템플릿까지 기본 제공됩니다."
-      },
-      "audioMessaging": {
-        "title": "오디오 메시징",
-        "desc": "브랜드 안내 방송, 프로모션, 음성 메모를 5개 언어로 예약 재생할 수 있습니다. MP3 업로드 또는 텍스트 음성 변환 방식을 모두 지원합니다."
-      },
-      "mobileApps": {
-        "title": "모바일 앱",
-        "desc": "어디서든 완벽하게 제어할 수 있습니다. iOS, Android, Windows, macOS를 지원하며, 직원들이 자신의 휴대폰으로 분위기를 조정할 수 있습니다."
-      },
-      "offlineReady": {
-        "title": "오프라인 지원",
-        "desc": "음악이 멈추지 않습니다. 기기당 최대 30일 연속 캐시 재생이 가능하여, 연결 상태가 불안정한 환경에서도 안정적입니다."
-      },
-      "enterpriseSecurity": {
-        "title": "엔터프라이즈 보안",
-        "desc": "SAML SSO, 역할 기반 접근 제어, 다중 사용자 관리 기능을 제공합니다. 체계적인 거버넌스가 필요한 시설을 위해 설계되었습니다."
-      }
-    },
-    "integrations": {
-      "sectionLabel": "미래 지향적",
-      "sectionTitle": "플랫폼 그 너머",
-      "sectionDesc": "Soundtrack Your Brand 위에 AI와 API 기능을 구축합니다. 귀하 시설의 운영 방식에 맞춘 맞춤형 자동화, 스마트 빌딩 연동, 전용 도구를 제공합니다.",
-      "aiPlaylist": {
-        "title": "AI 플레이리스트 생성",
-        "desc": "플랫폼 위에 구축된 맞춤형 AI 도구입니다. 원하는 분위기를 설명하면 몇 초 안에 큐레이션된 플레이리스트를 받아볼 수 있습니다."
-      },
-      "smartBuilding": {
-        "title": "스마트 빌딩 API",
-        "desc": "음악을 조명, 실내 온도, 재실 감지 센서와 연결합니다. 사운드를 고객 경험 전반의 일부로 만들어 보십시오."
-      },
-      "bespoke": {
-        "title": "요청 기반 맞춤 기능",
-        "desc": "특별히 필요한 기능이 있으신가요? 귀하 시설의 운영에 맞춘 연동을 요청 기반으로 구축해 드리며, 예기치 못한 추가 비용은 발생하지 않습니다."
-      }
-    },
-    "licensing": {
-      "sectionTitle": "라이선싱, 명쾌하게 정리합니다.",
-      "sectionDesc": "무엇이 포함되고 무엇이 포함되지 않는지 명확하게 알려드립니다. 예상치 못한 조항이나 숨겨진 세부 내용은 없습니다.",
-      "included": {
-        "label": "포함 사항",
-        "item1": "녹음 권리 (마스터 라이선스)",
-        "item2": "출판 권리 (기계적 복제권/싱크권)",
-        "item3": "Soundtrack을 통한 메이저 및 인디 레이블과의 직접 계약",
-        "item4": "맞춤형 큐레이션 및 분기별 플레이리스트 업데이트",
-        "item5": "전담 뮤직 디자이너의 지속적이고 번거로움 없는 지원"
-      },
-      "separate": {
-        "label": "별도 부담 사항",
-        "desc": "",
-        "descHighlight": "공연권 라이선스",
-        "descTail": "는 현지 저작권 단체에 별도로 납부해야 합니다. 예를 들어 태국은 MPC, 싱가포르는 MRSS, 영국은 PRS, 미국은 ASCAP/BMI 등이 해당됩니다.",
-        "calloutLabel": "언제든 도와드립니다",
-        "calloutDesc": "서류 작업을 대신 처리해 드리지는 않지만, 필요한 모든 정보를 기꺼이 제공하고 가능한 모든 방법으로 지원해 드립니다."
-      }
-    },
-    "devices": {
-      "sectionLabel": "다재다능함",
-      "sectionTitle": "이미 보유하신 모든 기기에서 재생됩니다.",
-      "soundtrackPlayer": {
-        "title": "Soundtrack Player",
-        "desc": "전용 하드웨어입니다. 플러그 앤 플레이 방식이며, 30일 오프라인 캐시를 지원합니다."
-      },
-      "windows": {
-        "title": "Windows PC",
-        "desc": "최신 Windows 기기라면 어느 것이든 사용 가능합니다. 완전한 데스크톱 플레이어와 엔터프라이즈용 헤드리스 모드를 제공합니다."
-      },
-      "androidIos": {
-        "title": "Android 및 iOS",
-        "desc": "태블릿이나 휴대폰에서 사용할 수 있습니다. 매장 어디에서나 앱으로 완벽하게 제어할 수 있습니다."
-      },
-      "macos": {
-        "title": "macOS",
-        "desc": "Mac 환경을 위한 네이티브 데스크톱 플레이어입니다."
-      },
-      "sonos": {
-        "title": "Sonos 연동",
-        "desc": "Sonos 앱 내에서 Soundtrack을 음악 서비스로 사용할 수 있습니다."
-      },
-      "qsys": {
-        "title": "Q-SYS",
-        "desc": "엔터프라이즈 오디오 시스템을 위한 중앙 집중식 다중 존 관리 솔루션입니다."
-      }
-    },
-    "trial": {
-      "sectionLabel": "먼저 경험해 보세요",
-      "title": "계약 전에 먼저",
-      "titleHighlight": "체험해 보세요.",
-      "desc1": "단일 존에 대해 14일 무료 체험을 제공합니다. 신용카드 등록도, 약정도 필요 없습니다.",
-      "desc2": "가입을 결정하시고 하드웨어가 준비되면, 5분 안에 모든 설정이 완료됩니다.",
-      "cta": "무료 체험 시작하기"
-    },
-    "support": {
-      "sectionLabel": "언제나 함께",
-      "sectionTitle": "결코 혼자가 아닙니다.",
-      "technical": {
-        "title": "24/7 기술 지원",
-        "desc": "하드웨어, 네트워크, 플랫폼 관련 문제에 대해 연중무휴로 도움을 드립니다. 정해진 스크립트가 아닌, 실제 전문가가 응대합니다."
-      },
-      "musicDesign": {
-        "title": "맞춤형 뮤직 디자인",
-        "desc": "저희 뮤직 디자이너가 월요일부터 금요일까지(방콕 시간 기준) 함께하며 귀하의 사운드를 설계하고 지속적으로 업데이트합니다."
-      },
-      "aiAssist": {
-        "title": "AI 셀프 서비스",
-        "desc": "일반적인 질문, 플레이리스트 조정, 간단한 설정 변경을 위한 인터랙티브 어시스턴트를 24/7 이용할 수 있습니다."
-      }
-    },
-    "faq": {
-      "title": "자주 묻는 질문",
-      "q1": {
-        "q": "공연권 라이선스가 필요합니까?",
-        "a": "네, 필요합니다. 이는 현지 저작권 단체에 별도로 납부하는 비용입니다(태국은 MPC, 싱가포르는 MRSS, 영국은 PRS 등). 저희가 서류 작업을 대신 처리해 드리지는 않지만, 필요한 모든 정보를 기꺼이 공유하고 가능한 모든 방법으로 지원해 드립니다."
-      },
-      "q2": {
-        "q": "어떤 인터넷 속도와 네트워크 환경이 필요합니까?",
-        "a": "재생 기기당 최소 0.5Mbit/s의 속도가 필요합니다. Wi-Fi보다는 유선 Ethernet 연결을 권장합니다. 일부 아웃바운드 포트(443, 53, 123)를 개방해야 하며, 설치 전에 귀하의 IT 담당자에게 간단한 체크리스트를 전달해 드립니다."
-      },
-      "q3": {
-        "q": "오프라인 상태에서도 음악을 재생할 수 있습니까?",
-        "a": "네, 가능합니다. 모든 기기는 재생한 트랙을 캐시에 저장하며, \"더 많은 오프라인 재생\" 모드를 활성화하여 미리 콘텐츠를 다운로드할 수도 있습니다. 완전히 동기화된 기기는 인터넷 연결 없이도 최대 30일간 연속 재생이 가능합니다."
-      },
-      "q4": {
-        "q": "몇 개의 존을 관리할 수 있습니까?",
-        "a": "무제한입니다. 각 존에는 고유의 스케줄, 플레이리스트, 기기 연결이 부여되며, 모두 하나의 대시보드에서 제어할 수 있습니다. 시설의 변화에 맞춰 존을 추가하거나 재배치할 수 있습니다."
-      },
-      "q5": {
-        "q": "제가 만든 Spotify 플레이리스트를 사용할 수 있습니까?",
-        "a": "네, 가능합니다. Soundtrack Your Brand는 Spotify와 직접 동기화되므로, 직접 만드시거나 큐레이션된 플레이리스트를 저희 플랫폼을 통해 상업적으로 사용하실 수 있습니다."
-      },
-      "q6": {
-        "q": "인터넷이 끊기면 어떻게 됩니까?",
-        "a": "캐시된 트랙이 중단 없이 계속 재생됩니다. 고객은 아무런 차이를 느끼지 못합니다. 연결이 복구되면 플레이어가 백그라운드에서 조용히 동기화됩니다."
-      }
-    },
-    "finalCta": {
-      "title": "그",
-      "titleHighlight": "차이를 경험할",
-      "desc": "저희 뮤직 디자이너가 귀하의 브랜드에 맞춘 고유한 사운드 경험을 만들어 드립니다.",
-      "ctaQuote": "견적 요청하기",
-      "ctaDemo": "데모 예약하기"
     }
   },
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
-      "description": "음악 중심의 매장 운영 플랫폼: 음악 편성, TV 채널, 메시지와 전화 오디오 제작, 자동화, 모든 존의 실시간 제어를 한곳에서 관리합니다."
-    },
-    "hero": {
-      "label": "연결된 공간 경험",
-      "title": "Beat",
-      "titleHighlight": "Breeze",
-      "subtitle": "음악, 스크린, 메시지, 전화 오디오를 모든 존에서 계획하고 만들고 제어합니다.",
-      "ctaQuote": "견적 요청하기",
-      "ctaTrial": "무료 체험 시작하기"
-    },
-    "positioning": {
-      "text1": "라이선스가 완비되고 완벽하게 큐레이션된 음악을, 상업용 스트리밍 서비스 대비 훨씬 합리적인 비용으로 제공합니다.",
-      "highlight": "Beat Breeze",
-      "text2": "는 필요한 모든 라이선스를 포함하고 있어, 저작권 단체와 다시는 씨름하실 필요가 없습니다."
-    },
-    "valueProps": {
-      "01": {
-        "label": "올인원",
-        "title": "세 가지 라이선스, 언제나 모두 포함.",
-        "desc": "녹음, 출판, 공연권까지 필요한 모든 라이선스가 구독에 기본 포함되어 있습니다. 저작권 단체 수수료는 영원히 없습니다."
-      },
-      "02": {
-        "label": "가치",
-        "title": "한층 더 합리적인 가격.",
-        "desc": "Beat Breeze는 자체적으로 큐레이션하기 때문에 Soundtrack Your Brand보다 훨씬 저렴하며, 그럼에도 모든 라이선스는 그대로 포함됩니다."
-      },
-      "03": {
-        "label": "단순함",
-        "title": "손대지 않아도 되도록 설계되었습니다.",
-        "desc": "저희 뮤직 디자이너가 직접 맞춤 큐레이션을 진행합니다. 정기적인 업데이트, 시즌별 리프레시, 24/7 지원을 제공합니다. 귀하는 고객에게 집중하시고, 사운드는 저희에게 맡겨 주십시오."
-      }
-    },
-    "features": {
-      "sectionLabel": "주요 기능",
-      "sectionTitle": "음악이 심장이라면, 모든 접점은 그 박자에 맞춰 움직입니다.",
-      "zeroLicensing": {
-        "title": "통화에서도 전문적인 사운드",
-        "desc": "비즈니스에 맞는 음성과 언어로 브랜드 대기 음악과 전화 오디오를 만드세요."
-      },
-      "curation": {
-        "title": "공간의 사운드 설계",
-        "desc": "직접 카탈로그를 탐색하거나 Music Concierge가 존, 시간, 에너지, 비즈니스 맥락에 맞춰 제안합니다."
-      },
-      "offline": {
-        "title": "공간이 스스로 반응하도록",
-        "desc": "운영 시간, 특별한 날, 날씨, 현장 상황에 따라 음악과 메시지가 자동으로 움직입니다."
-      },
-      "scheduling": {
-        "title": "모든 스크린을 살아 있게",
-        "desc": "전체 음악 플레이리스트에 반복 영상, 메시지, 브랜드 콘텐츠를 결합해 TV와 스크린에 전송합니다."
-      },
-      "audioSignatures": {
-        "title": "필요한 순간에 말하기",
-        "desc": "프로모션, 고객 안내, 운영 공지를 위한 다국어 음성 메시지를 만들고 예약하세요."
-      },
-      "remoteMgmt": {
-        "title": "어디서나 제어",
-        "desc": "플레이어 상태, 음악, 볼륨을 확인하고 대시보드 또는 Remote 앱에서 모든 존을 관리하세요."
-      }
-    ,
-      "sectionDescription": "Beat Breeze는 사운드, 스크린, 커뮤니케이션, 일상 운영을 하나의 이해하기 쉬운 흐름으로 연결합니다."
+      "description": "큐레이션된 음악, 일정, 스크린, 메시지, 자동화, 연결형 존 제어를 제공하는 BMAsia의 로열티 프리 매장 경험 플랫폼."
     },
     "product": {
       "openProduct": "Beat Breeze 열기",
@@ -824,219 +587,305 @@
       "windows": "Windows 플레이어",
       "web": "웹 플레이어",
       "offline": "오프라인 재생",
-      "price": "존당 월 $12부터",
+      "price": "매장별 맞춤 구성",
+      "finalDescription": "하나의 존에서 14일 동안 연결된 공간 경험을 시험해 보세요. 카드, 전용 하드웨어, 복잡한 설치가 필요 없습니다.",
       "finalTitle": "첫 번째 존을 몇 분 안에 준비하세요.",
       "startFree": "무료로 시작",
       "talkToBMAsia": "BMAsia와 상담"
-    ,
-      "finalDescription": "하나의 존에서 14일 동안 연결된 공간 경험을 시험해 보세요. 카드, 전용 하드웨어, 복잡한 설치가 필요 없습니다."
     },
-    "licensing": {
-      "sectionTitle": "모든 라이선스.",
-      "sectionTitleHighlight": "포함.",
-      "sectionDesc": "PRO 수수료 없음. 서류 작업 없음. 예상치 못한 비용 없음.",
-      "recording": {
-        "title": "녹음 권리",
-        "desc": "카탈로그의 모든 트랙에 대한 마스터 라이선스입니다."
+    "redesign": {
+      "hero": {
+        "eyebrow": "BMAsia의 연결형 매장 플랫폼",
+        "title": "음악을 중심에.",
+        "highlight": "모든 접점을 유기적으로.",
+        "description": "큐레이션된 로열티 프리 음악, 스크린, 메시지, 매장 자동화를 존별로 계획하고 사람이 검토하며 한곳에서 제어합니다.",
+        "trial": "Beat Breeze 체험 시작",
+        "talk": "BMAsia와 상담하기",
+        "proof1": "계속 확장되는 로열티 프리 카탈로그",
+        "proof2": "언제든 직접 탐색 가능",
+        "proof3": "전용 플레이어 하드웨어 불필요"
       },
-      "publishing": {
-        "title": "출판 권리",
-        "desc": "작곡가와 퍼블리셔를 위한 기계적 복제권 및 싱크권입니다."
+      "controlRoom": {
+        "label": "매장 컨트롤 룸",
+        "venue": "Riverside House · 방콕",
+        "live": "3개 존 운영 중",
+        "weather": "날씨 맥락",
+        "prayer": "다음 기도 일시 중지",
+        "volume": "저녁 볼륨 프리셋",
+        "schedule": "현재 시간대",
+        "energy": "에너지",
+        "lobby": "로비",
+        "restaurant": "레스토랑",
+        "rooftop": "루프톱",
+        "updated": "계획 업데이트됨",
+        "note": "예약된 볼륨 프리셋과 지원되는 연동으로 동작을 예측 가능하게 유지합니다. Beat Breeze는 마이크로 주변 소리를 지속 감지한다고 주장하지 않습니다."
       },
-      "performance": {
-        "title": "공연권 라이선스",
-        "desc": "비즈니스가 운영되는 어느 곳에서든 재생할 수 있습니다. 저작권 단체에 납부할 비용이 전혀 없습니다."
+      "day": {
+        "eyebrow": "움직이는 하루",
+        "title": "매장이 변하면 계획도 함께 변합니다.",
+        "description": "일정이 기본 틀을 만들고 날씨, 기도 시간, 승인된 운영 트리거가 계획을 조정할 수 있으며 최종 결정은 직원에게 있습니다.",
+        "morning": {
+          "time": "06:30",
+          "title": "존마다 다른 아침 시작",
+          "text": "로비, 조식, 웰니스 존이 각기 다른 음악, 스크린, 볼륨 프리셋으로 문을 엽니다."
+        },
+        "weather": {
+          "time": "12:10",
+          "title": "날씨가 방향에 반영됩니다",
+          "text": "덥거나 비 오는 날은 운영자의 제어권을 빼앗지 않으면서 플레이리스트 추천이나 설정된 동작에 영향을 줄 수 있습니다."
+        },
+        "prayer": {
+          "time": "18:36",
+          "title": "기도 시간을 존중합니다",
+          "text": "설정된 시장에서는 정확한 현지 기도 시간에 프로그램을 일시 중지하거나 변경한 뒤 자연스럽게 일정으로 돌아갑니다."
+        },
+        "evening": {
+          "time": "19:00",
+          "title": "저녁에는 더 넓은 경험이 활성화됩니다",
+          "text": "음악, 비주얼 루프, 다국어 메시지, 볼륨 프리셋이 함께 저녁 계획으로 전환됩니다."
+        },
+        "volumeNote": "여기서 설명하는 볼륨 변경은 예약 프리셋 또는 지원되는 매장 시스템 연동이며, 마이크로 계속 듣는 방식이 아닙니다."
       },
-      "footnote1": "",
-      "footnoteLink": "Soundtrack Your Brand",
-      "footnote2": "는 대부분의 국가에서 여전히 별도의 공연권 라이선스가 필요한 반면, Beat Breeze는 이 모든 것을 기본 포함하고 있습니다. 그것이 바로 Beat Breeze의 핵심입니다."
-    },
-    "platforms": {
-      "sectionLabel": "어디서든 실행",
-      "sectionTitle": "특별한 하드웨어가 필요하지 않습니다.",
-      "windows": {
-        "title": "Windows",
-        "desc": "최신 Windows 기기라면 어느 것이든 완전한 데스크톱 플레이어를 사용할 수 있습니다. 태국 내에서는 BMAsia를 통해 1년 보증이 포함된 미니 PC도 공급해 드립니다."
+      "concierge": {
+        "eyebrow": "쉬운 말로 설명하는 Music Concierge",
+        "title": "원하는 결과를 요청하고 답을 검토하세요.",
+        "description": "Concierge에 존, 고객층, 시간, 원하는 느낌을 알려주세요. 카탈로그 음악을 추천하거나 크리에이티브 방향을 준비하며, 재생하거나 일정에 넣기 전에 결과를 미리 확인할 수 있습니다.",
+        "ready": "브리프 준비 완료",
+        "recommendation": "재생 가능한 추천",
+        "preview": "미리보기",
+        "schedule": "일정에 추가",
+        "keepBrowsing": "계속 탐색",
+        "control": "사람의 제어권이 항상 보입니다. 추천 근거를 검토하고 결과를 미리 듣고, 적용하거나 수정하거나 카탈로그를 직접 계속 탐색할 수 있습니다.",
+        "steps": {
+          "ask": "순간을 설명하기",
+          "recommend": "옵션 또는 브리프 받기",
+          "review": "미리보기 및 승인",
+          "play": "즉시 재생 또는 예약"
+        },
+        "arrival": {
+          "label": "호텔 도착",
+          "prompt": "따뜻하면서 현대적인 로비 맞이",
+          "request": "16:00~19:00 로비에 체크인 동안 따뜻하고 현대적이며 차분한 분위기를 만들어 주세요. 지나치게 졸린 어쿠스틱 음악은 제외해 주세요.",
+          "result": "모던 보사와 부드러운 일렉트로닉 소울",
+          "reason": "중간 템포 리듬이 도착의 흐름을 유지하고 절제된 보컬은 대화를 위한 여유를 남깁니다."
+        },
+        "campaign": {
+          "label": "리테일 출시",
+          "prompt": "새 시즌 플래그십 에너지",
+          "request": "매장 공간에는 자신감 있는 새 시즌 방향을, 입구에는 무음 스크린 루프를 구성해 주세요.",
+          "result": "그래픽 모션 브리프를 더한 누디스코 펄스",
+          "reason": "깔끔한 리듬 기반이 매장 전체에 어울리고 비주얼 브리프가 캠페인 색상을 입구까지 이어 줍니다."
+        },
+        "recovery": {
+          "label": "웰니스 회복",
+          "prompt": "방해가 적은 회복 공간",
+          "request": "자연의 질감, 급격한 전환 없음, 운영자가 제어하는 볼륨을 갖춘 조용한 회복 방향을 만들어 주세요.",
+          "result": "느린 화성 움직임의 앰비언트 사운드스케이프",
+          "reason": "긴 호흡의 질감이 눈에 띄는 전환을 줄이고 레벨과 타이밍은 직원이 직접 제어할 수 있게 합니다."
+        }
       },
-      "android": {
-        "title": "Android",
-        "desc": "태블릿과 휴대폰을 위한 네이티브 Android 앱입니다. 경제적이면서도 안정적입니다."
+      "media": {
+        "eyebrow": "음악 플레이어 그 이상",
+        "title": "사운드트랙을 둘러싼 세계를 만드세요.",
+        "description": "Beat Breeze는 매장에서 고객이 접하는 미디어와 메시지를 따로 떨어진 부가 기능이 아니라 하나의 운영 계획으로 조율할 수 있습니다.",
+        "screens": {
+          "label": "스크린 및 TV",
+          "title": "비주얼 루프, 슬라이드쇼, 매장 채널",
+          "text": "도입 환경에 따라 공용 공간이나 객실 경험을 위한 무음 스크린 루프, 브랜드 슬라이드쇼, TV 채널을 계획합니다."
+        },
+        "create": {
+          "label": "AI 보조 제작",
+          "title": "검토 단계를 거치는 이미지와 비디오",
+          "text": "AI 보조 또는 AI 생성 비주얼 초안을 사용한 뒤 스크린에 표시하기 전에 자산을 검토하고 승인합니다."
+        },
+        "messages": {
+          "label": "다국어 메시지",
+          "title": "알맞은 언어로 알맞은 말을 전하세요",
+          "text": "지원 언어로 유용한 안내, 프로모션, 브랜드 메시지를 준비하고 예약합니다."
+        },
+        "soundscapes": {
+          "label": "사운드스케이프",
+          "title": "노래를 넘어선 분위기",
+          "text": "일반적인 플레이리스트가 적합하지 않을 때 자연, 웰니스, 환경 질감을 활용합니다."
+        },
+        "phone": {
+          "label": "통화 대기음",
+          "title": "통화 경험까지 브랜드를 이어 가세요",
+          "text": "적합한 음악과 명확한 통화 대기 메시지를 조합해 매장 정체성과 일관되게 유지합니다."
+        },
+        "catalogue": {
+          "label": "지속적인 발전",
+          "title": "확장되는 음악 및 미디어 셀렉션",
+          "text": "BMAsia는 다양한 업종과 존을 위한 플레이리스트 방향, 사운드스케이프, 미디어 옵션을 계속 확장합니다."
+        }
       },
-      "web": {
-        "title": "웹 브라우저",
-        "desc": "빠른 설정을 위한 웹 플레이어입니다. 어느 브라우저에서든 로그인하고 바로 재생을 시작할 수 있습니다."
+      "connections": {
+        "eyebrow": "경계가 분명한 자동화",
+        "title": "제어 기능을 숨기지 않고 매장을 연결합니다.",
+        "description": "Beat Breeze는 명시적인 일정, 설정된 규칙, 지원되는 연동을 사용합니다. 운영자는 계획을 확인하고 매장에 다른 선택이 필요할 때 개입할 수 있습니다.",
+        "schedules": {
+          "title": "시간대 및 캘린더",
+          "text": "시간, 요일, 계절, 행사에 따라 음악, 메시지, 스크린, 볼륨 프리셋을 다르게 계획합니다."
+        },
+        "weather": {
+          "title": "날씨 인식 동작",
+          "text": "현지 날씨를 설정된 입력값으로 사용해 음악 추천이나 승인된 플레이리스트 동작에 반영합니다."
+        },
+        "prayer": {
+          "title": "기도 시간 자동화",
+          "text": "설정된 재생 동작과 명확한 복귀 절차로 현지 기도 시간을 존중합니다."
+        },
+        "volume": {
+          "title": "예약 및 지원되는 볼륨 제어",
+          "text": "프리셋 레벨과 지원되는 볼륨 연동을 사용합니다. 직원이 직접 제어하며 지속적인 마이크 감지를 주장하지 않습니다."
+        },
+        "api": {
+          "title": "스마트 API 및 매장 연결",
+          "text": "고객 환경에 맞게 범위를 정한 API를 통해 승인된 건물, 콘텐츠, 운영 시스템을 연결합니다."
+        }
+      },
+      "final": {
+        "title": "첫 번째 존을 현실로 만드세요.",
+        "description": "제품별 Beat Breeze 체험으로 시작하거나 BMAsia에 다중 존 음악·미디어 계획을 요청하세요.",
+        "support": "BMAsia가 온보딩과 신속한 지역 지원을 제공합니다. 팀이 필요할 때 언제든 제품 셀프서비스를 사용할 수 있습니다."
       }
-    },
-    "custom": {
-      "sectionLabel": "확장성을 고려한 설계",
-      "sectionTitle": "표준을 뛰어넘는 그 이상.",
-      "sectionDesc": "Beat Breeze는 특히 기업형 체인과 다중 시설 그룹을 위해 계속 발전하는 플랫폼으로 구축되었습니다. 귀하의 필요에 맞춰 기능을 개발해 드립니다.",
-      "whiteLabel": {
-        "title": "기업용 화이트라벨",
-        "desc": "기업형 체인은 Beat Breeze를 자사의 내부 음악 플랫폼으로 브랜딩하여 사용할 수 있습니다. 맞춤형 브랜딩, 컬러, 도메인을 제공합니다."
-      },
-      "customBuilds": {
-        "title": "맞춤형 기능 개발",
-        "desc": "표준 기능 이상이 필요하신가요? 귀하의 운영 방식에 맞춘 기능을 요청 기반으로 구축해 드리며, 이는 저희의 지속적인 플랫폼 개발의 일환입니다."
-      },
-      "volumePricing": {
-        "title": "볼륨 친화적 가격",
-        "desc": "운영하시는 존이 많을수록 존당 요금이 더욱 유리해집니다. 특히 다중 시설 체인과 리테일 그룹에 매력적인 조건입니다."
-      }
-    },
-    "trial": {
-      "sectionLabel": "먼저 경험해 보세요",
-      "title": "계약 전에 먼저",
-      "titleHighlight": "들어 보세요.",
-      "desc1": "2주 무료 체험으로 시작하실 수 있습니다. 신용카드 등록도, 약정도 필요 없습니다.",
-      "desc2": "저희가 원격으로 설정을 완료해 드리며, 결정을 내리시기 전에 실제 공간에서 Beat Breeze의 사운드를 직접 들어보실 수 있습니다.",
-      "cta": "무료 체험 시작하기"
-    },
-    "support": {
-      "sectionLabel": "언제나 함께",
-      "sectionTitle": "결코 혼자가 아닙니다.",
-      "technical": {
-        "title": "24/7 기술 지원",
-        "desc": "하드웨어, 네트워크, 플랫폼 관련 문제에 대해 연중무휴로 도움을 드립니다. 정해진 스크립트가 아닌, 실제 전문가가 응대합니다."
-      },
-      "musicDesign": {
-        "title": "맞춤형 뮤직 디자인",
-        "desc": "저희 뮤직 디자이너가 월요일부터 금요일까지(방콕 시간 기준) 함께하며 귀하의 사운드를 설계하고 지속적으로 업데이트합니다."
-      },
-      "aiAssist": {
-        "title": "AI 셀프 서비스",
-        "desc": "일반적인 질문, 플레이리스트 조정, 간단한 설정 변경을 위한 인터랙티브 어시스턴트를 24/7 이용할 수 있습니다."
-      }
-    },
-    "faq": {
-      "title": "자주 묻는 질문",
-      "q1": {
-        "q": "별도로 지불해야 할 음악 라이선스 비용이 있습니까?",
-        "a": "아니요, 없습니다. 모든 Beat Breeze 구독에는 녹음, 출판, 공연권 등 세 가지 라이선스가 모두 포함되어 있습니다. MPC, MRSS, PRS, ASCAP, BMI 등 어떠한 저작권 단체에도 비용을 지불하실 필요가 없습니다."
-      },
-      "q2": {
-        "q": "Beat Breeze는 Soundtrack Your Brand와 어떻게 다릅니까?",
-        "a": "Beat Breeze는 훨씬 합리적인 가격에 모든 라이선스가 포함되어 있지만, 음악 카탈로그는 로열티 프리로 큐레이션된 음원이며 특정 차트 히트곡은 포함되지 않습니다. 고객이 이름을 아는 히트곡을 원하신다면 Soundtrack Your Brand를, 수수료 없이 전문적으로 큐레이션된 번거로움 없는 라이선스 음악을 원하신다면 Beat Breeze를 선택하시기 바랍니다."
-      },
-      "q3": {
-        "q": "Beat Breeze는 어떤 기기에서 실행됩니까?",
-        "a": "최신 Windows PC, Android 태블릿 또는 휴대폰, 혹은 웹 브라우저에서 직접 실행할 수 있습니다. 태국의 경우, 플러그 앤 플레이 솔루션을 선호하시는 분들을 위해 1년 보증이 포함된 사전 구성된 Windows 미니 PC를 공급해 드립니다."
-      },
-      "q4": {
-        "q": "Beat Breeze는 오프라인에서도 작동합니까?",
-        "a": "네, 가능합니다. 음악이 기기에 다운로드되어 로컬에서 재생되므로, 인터넷 연결이 끊겨도 사용 경험은 끊김 없이 유지됩니다. 업데이트와 원격 관리를 위해서만 인터넷 연결이 필요합니다."
-      },
-      "q5": {
-        "q": "음악 카탈로그의 규모는 어느 정도입니까?",
-        "a": "30,000곡 이상의 전문 제작 로열티 프리 트랙을 보유하고 있으며, 카탈로그는 지속적으로 늘어나고 있습니다. 모든 트랙은 호스피탈리티 및 리테일 환경을 위해 저희 뮤직 디자이너가 직접 큐레이션합니다."
-      },
-      "q6": {
-        "q": "기업 브랜드용으로 Beat Breeze를 화이트라벨로 사용할 수 있습니까?",
-        "a": "네, 가능합니다. 기업형 체인은 맞춤형 컬러, 로고, 도메인을 적용하여 Beat Breeze를 자사 브랜드의 내부 음악 플랫폼으로 운영할 수 있습니다. 필요한 사항을 저희와 상의해 주시기 바랍니다."
-      }
-    },
-    "finalCta": {
-      "title": "음악,",
-      "titleHighlight": "더욱 단순하게.",
-      "desc": "라이선싱 번거로움 제로. 맞춤형 큐레이션. 손대지 않아도 되는 지원. 그리고 납득할 수 있는 가격까지.",
-      "ctaQuote": "견적 요청하기",
-      "ctaDemo": "데모 예약하기"
     }
   },
   "homePage": {
     "immersive": {
       "hero": {
-        "eyebrow": "BMAsia의 Beat Breeze", "title": "공간의 분위기를 설계하세요.", "highlight": "모든 접점을 함께 운영하세요.",
-        "description": "음악, 스크린, 메시지, 전화 오디오를 모든 존에서 유기적으로 연결합니다.",
-        "try": "공간 경험 시뮬레이터 체험", "start": "14일 무료 체험", "proof1": "카드 불필요", "proof2": "전용 하드웨어 불필요", "proof3": "존당 $12부터", "scroll": "하루를 경험해 보세요"
+        "eyebrow": "BMAsia · 음악, 미디어, 매장 경험",
+        "title": "매장에는 고유한 리듬이 있습니다.",
+        "highlight": "우리는 그 모든 요소를 함께 움직이게 합니다.",
+        "description": "BMAsia는 서로 다른 두 음악 플랫폼으로 브리프에 맞춰 음악, 스크린, 메시지, 연결형 매장 경험을 설계하고 운영합니다.",
+        "try": "솔루션 선택",
+        "start": "BMAsia와 상담하기",
+        "proof1": "독립적인 제품 안내",
+        "proof2": "2002년부터 이어 온 음악 설계",
+        "proof3": "모든 존을 아우르는 하나의 파트너",
+        "scroll": "Venue Time Machine 체험하기"
       },
-      "field": { "ariaLabel": "베뉴 전체에서 음악이 변화하는 살아 있는 필드", "energy": "에너지 {energy}" },
-      "audio": { "title": "사운드 미리듣기", "visualOnly": "음악 방향 미리보기 · 소리 꺼짐", "hear": "이 분위기 들어보기", "pause": "미리듣기 일시정지", "paused": "미리듣기 일시정지됨", "mute": "미리듣기 음소거", "unmute": "음소거 해제", "playing": "라이선스된 25초 미리듣기 재생 중", "playingMuted": "라이선스된 25초 미리듣기 재생 중 · 음소거", "unavailable": "오디오 미리듣기를 사용할 수 없습니다", "volume": "미리듣기 음량" },
+      "field": {
+        "ariaLabel": "베뉴 전체에서 음악이 변화하는 살아 있는 필드",
+        "energy": "에너지 {energy}"
+      },
+      "audio": {
+        "title": "사운드 미리듣기",
+        "visualOnly": "음악 방향 미리보기 · 소리 꺼짐",
+        "hear": "이 분위기 들어보기",
+        "pause": "미리듣기 일시정지",
+        "paused": "미리듣기 일시정지됨",
+        "mute": "미리듣기 음소거",
+        "unmute": "음소거 해제",
+        "playing": "라이선스된 25초 미리듣기 재생 중",
+        "playingMuted": "라이선스된 25초 미리듣기 재생 중 · 음소거",
+        "unavailable": "오디오 미리듣기를 사용할 수 없습니다",
+        "volume": "미리듣기 음량"
+      },
       "demo": {
-        "eyebrow": "유용한 5분 경험", "title": "하루를 움직여 보세요.", "highlight": "모든 접점이 반응합니다.",
+        "eyebrow": "BMAsia Venue Time Machine",
+        "title": "하루를 움직여 보세요.",
+        "highlight": "모든 접점이 반응합니다.",
         "description": "업종을 선택하고 시간을 움직이며 각 존을 앞으로 가져오세요. 음악, 스크린, 메시지, 전화, 에너지, Concierge 가이드가 함께 반응합니다.",
-        "machineLabel": "실시간 공간 경험 시뮬레이션", "live": "실시간 반응 중", "chooseVenue": "업종 선택", "localTime": "현지 시간", "chooseTime": "시간대 선택", "playlistDetail": "에너지 {energy} · {bpm} BPM", "concierge": "Music Concierge 안내", "energy": "베뉴 에너지"
+        "machineLabel": "실시간 매장 경험 미리보기",
+        "live": "실시간 반응 중",
+        "chooseVenue": "업종 선택",
+        "localTime": "현지 시간",
+        "chooseTime": "시간대 선택",
+        "playlistDetail": "에너지 {energy} · {bpm} BPM",
+        "concierge": "Music Concierge 안내",
+        "energy": "베뉴 에너지"
       },
-      "venues": { "hotel": "호텔", "restaurant": "레스토랑", "retail": "리테일", "fitness": "피트니스" },
-      "phases": { "0": { "label": "아침", "mood": "차분한 도착" }, "1": { "label": "낮", "mood": "따뜻하고 자연스러운 흐름" }, "2": { "label": "저녁", "mood": "사교적인 에너지" }, "3": { "label": "늦은 밤", "mood": "부드러운 마무리" } },
-      "zones": { "lobby": "로비", "restaurant": "레스토랑", "wellness": "웰니스", "rooftop": "루프탑", "dining": "다이닝", "bar": "바", "terrace": "테라스", "entrance": "입구", "shopFloor": "매장", "fittingRooms": "피팅룸", "mainFloor": "메인 플로어", "studio": "스튜디오", "recovery": "리커버리" },
+      "touchpoints": {
+        "eyebrow": "연결된 접점",
+        "title": "공간 전체의 경험을 미리 보세요.",
+        "description": "하나의 브리프가 고객이 만나는 모든 표면을 어떻게 설계하는지 확인하세요.",
+        "sound": {
+          "label": "음악",
+          "title": "이 존의 음악",
+          "text": "{playlist}이(가) {time}에 {zone}의 분위기를 만들고 있습니다."
+        },
+        "screens": {
+          "label": "TV",
+          "title": "스크린 분위기",
+          "text": "존의 플레이리스트가 이어지는 동안 무음 비주얼 루프가 {phase} 분위기를 따릅니다."
+        },
+        "messages": {
+          "label": "메시지",
+          "title": "예약 메시지",
+          "text": "흐름을 방해하지 않으면서 이 순간에 맞는 간결한 현지화 안내가 준비됩니다."
+        },
+        "phone": {
+          "label": "전화",
+          "title": "통화 대기 경험",
+          "text": "브랜드 통화 메시지와 음악이 매장 밖에서도 같은 분위기를 이어 갑니다."
+        },
+        "status": "실시간 방향"
+      },
+      "venues": {
+        "hotel": "호텔",
+        "restaurant": "레스토랑",
+        "retail": "리테일",
+        "fitness": "피트니스"
+      },
+      "phases": {
+        "0": {
+          "label": "아침",
+          "mood": "차분한 도착"
+        },
+        "1": {
+          "label": "낮",
+          "mood": "따뜻하고 자연스러운 흐름"
+        },
+        "2": {
+          "label": "저녁",
+          "mood": "사교적인 에너지"
+        },
+        "3": {
+          "label": "늦은 밤",
+          "mood": "부드러운 마무리"
+        }
+      },
+      "zones": {
+        "lobby": "로비",
+        "restaurant": "레스토랑",
+        "wellness": "웰니스",
+        "rooftop": "루프탑",
+        "dining": "다이닝",
+        "bar": "바",
+        "terrace": "테라스",
+        "entrance": "입구",
+        "shopFloor": "매장",
+        "fittingRooms": "피팅룸",
+        "mainFloor": "메인 플로어",
+        "studio": "스튜디오",
+        "recovery": "리커버리"
+      },
       "venueContext": {
         "hotel": "도착 시간은 차분하게 유지하고 사교 존은 이후에 에너지를 높이세요.",
         "restaurant": "대화를 먼저 보호한 뒤 서비스 흐름에 맞춰 공간을 끌어올리세요.",
         "retail": "음악이 주인공이 되지 않으면서도 자연스러운 활력을 만드세요.",
         "fitness": "운동, 전환, 회복에 맞춰 음악의 강도를 조절하세요."
       },
-      "guidance": { "0": "하루가 자리 잡는 동안 여유롭고 낮은 자극으로 시작하세요.", "1": "공간을 압도하지 않도록 안정적인 리듬감을 더하세요.", "2": "사람들의 교류가 늘어나는 존에서 의도적으로 에너지를 높이세요.", "3": "강도를 천천히 낮추며 편안하게 하루를 마무리하세요." },
-      "brief": { "eyebrow": "방문 후에도 쓸 수 있는 결과물", "title": "생성된 음악 브리프", "copy": "음악 브리프 복사", "copied": "브리프 복사 완료", "text": "{time}의 {venue} 방향\n원하는 느낌: {mood}. {guidance}\n존 계획: {zones}" },
-      "story": {
-        "eyebrow": "기능 목록이 아닌 하나의 시스템",
-        "title": "하나의 브리프에서",
-        "highlight": "하나로 느껴지는 공간까지.",
-        "sound": {
-          "title": "사운드 아이덴티티 설계",
-          "text": "직접 음악을 찾거나 Concierge가 콘셉트를 설명 가능한 방향으로 바꿉니다."
-        },
-        "screens": {
-          "title": "스크린으로 확장",
-          "text": "루프 영상과 브랜드 콘텐츠를 계속 움직이는 플레이리스트에 연결합니다."
-        },
-        "messages": {
-          "title": "적시에 말하기",
-          "text": "별도 제작 과정 없이 다국어 음성 메시지를 만들고 예약합니다."
-        },
-        "calls": {
-          "title": "전화까지 경험 확장",
-          "text": "같은 공간의 일부처럼 느껴지는 대기 음악과 전화 음성을 만듭니다."
-        },
-        "automate": {
-          "title": "반복 업무 자동화",
-          "text": "시간, 이벤트, 공간 맥락이 검토 가능한 변경을 실행합니다."
-        },
-        "control": {
-          "title": "모든 것을 제어",
-          "text": "실행 중인 항목을 보고 장치를 연결하며 대시보드나 Remote에서 제어합니다."
-        },
-        "cta": "Beat Breeze의 모든 기능 살펴보기"
+      "guidance": {
+        "0": "하루가 자리 잡는 동안 여유롭고 낮은 자극으로 시작하세요.",
+        "1": "공간을 압도하지 않도록 안정적인 리듬감을 더하세요.",
+        "2": "사람들의 교류가 늘어나는 존에서 의도적으로 에너지를 높이세요.",
+        "3": "강도를 천천히 낮추며 편안하게 하루를 마무리하세요."
       },
-      "worlds": {
-        "eyebrow": "하나의 BMAsia 팀 · 서로 다른 두 솔루션", "title": "비즈니스에 맞는", "highlight": "음악 세계를 선택하세요.",
-        "description": "Beat Breeze는 운영자를 위한 지능형 셀프서비스 플랫폼입니다. Soundtrack은 BMAsia의 지원과 함께 익숙한 상업 음악 레퍼토리를 제공합니다.",
-        "bbCore": "존 · 스케줄 · Concierge", "tryBeatBreeze": "Beat Breeze 무료 체험", "sybDiscLabel": "BMAsia 지원", "sybDiscText": "비즈니스를 위한 익숙한 음악", "talkSoundtrack": "Soundtrack에 대해 BMAsia와 상담", "compareLabel": "어떤 선택이 맞는지 고민되시나요?", "compareText": "잘못된 제품을 권하지 않고 레퍼토리, 라이선스, 제어, 서비스를 함께 비교해 드립니다."
-      }
-    ,
-      "touchpoints": {
-        "eyebrow": "연결된 접점",
-        "title": "공간 전체의 경험을 미리 보세요.",
-        "description": "하나의 브리프가 고객이 만나는 모든 표면을 어떻게 설계하는지 확인하세요.",
-        "status": "실시간 방향",
-        "sound": {
-          "label": "음악",
-          "title": "{playlist}이(가) {zone}을 만듭니다",
-          "text": "{time}의 {phase} 에너지에 맞춘 음악입니다."
-        },
-        "screens": {
-          "label": "스크린",
-          "title": "영상이 음악과 함께 움직입니다",
-          "text": "{zone}의 루프 영상이 {playlist}의 색감, 템포, 분위기를 따릅니다."
-        },
-        "messages": {
-          "label": "메시지",
-          "title": "필요한 순간에 메시지 전달",
-          "text": "{time}의 {phase} 순간에 다국어 메시지를 예약할 수 있습니다."
-        },
-        "phone": {
-          "label": "전화",
-          "title": "전화에서도 이어지는 경험",
-          "text": "대기 음악과 브랜드 음성이 고객 도착 전부터 {playlist}의 감각을 이어갑니다."
-        }
-      }
-    ,
+      "brief": {
+        "eyebrow": "방문 후에도 쓸 수 있는 결과물",
+        "title": "생성된 음악 브리프",
+        "copy": "음악 브리프 복사",
+        "copied": "브리프 복사 완료",
+        "text": "{time}의 {venue} 방향\n원하는 느낌: {mood}. {guidance}\n존 계획: {zones}"
+      },
       "connected": {
-        "eyebrow": "음악 그 이상",
+        "eyebrow": "하나의 시스템으로 움직이는 매장",
         "title": "음악이 심장이라면.",
         "highlight": "Beat Breeze는 전체 경험을 운영합니다.",
         "description": "하나의 크리에이티브 방향이 사운드, 스크린, 메시지, 전화와 뒤의 운영까지 움직입니다.",
-        "core": "Beat Breeze",
+        "core": "BMAsia",
         "coreText": "공간을 위한 하나의 브리프",
         "sound": {
           "title": "음악 & Concierge",
@@ -1062,6 +911,63 @@
           "title": "실시간 제어",
           "text": "어디서나 모든 존, 플레이어, 변경을 관리합니다."
         }
+      },
+      "story": {
+        "eyebrow": "배경 음악 그 이상",
+        "title": "분위기를 설계하고.",
+        "highlight": "경험을 운영합니다.",
+        "sound": {
+          "title": "사운드 아이덴티티 설계",
+          "text": "카탈로그를 선택하고 음악을 설계하며 모든 시간대를 계획합니다."
+        },
+        "screens": {
+          "title": "스크린에 역할을 부여하세요",
+          "text": "매장에 필요한 곳에서 비주얼 루프, 슬라이드쇼, TV 채널을 활용합니다."
+        },
+        "messages": {
+          "title": "적시에 말하기",
+          "text": "흐름을 방해하지 않으면서 명확한 다국어 메시지를 예약합니다."
+        },
+        "calls": {
+          "title": "매장 밖까지 경험을 이어 가세요",
+          "text": "통화 대기 음악과 메시지로 브랜드 경험을 계속합니다."
+        },
+        "automate": {
+          "title": "매장 신호를 연결하세요",
+          "text": "일정, 날씨, 기도 시간, 승인된 API 트리거를 활용합니다."
+        },
+        "control": {
+          "title": "사람이 계속 제어하게 하세요",
+          "text": "운영자가 모든 존을 검토하고 재정의하며 관리할 수 있습니다."
+        },
+        "cta": "BMAsia 운영 방식 보기"
+      },
+      "worlds": {
+        "eyebrow": "하나의 BMAsia 팀 · 서로 다른 두 솔루션",
+        "title": "비즈니스에 맞는",
+        "highlight": "음악 세계를 선택하세요.",
+        "description": "Beat Breeze는 운영자를 위한 지능형 셀프서비스 플랫폼입니다. Soundtrack은 BMAsia의 지원과 함께 익숙한 상업 음악 레퍼토리를 제공합니다.",
+        "bbCore": "존 · 스케줄 · Concierge",
+        "tryBeatBreeze": "Beat Breeze 체험 시작",
+        "sybDiscLabel": "BMAsia 지원",
+        "sybDiscText": "비즈니스를 위한 익숙한 음악",
+        "talkSoundtrack": "Soundtrack 체험 요청",
+        "compareLabel": "어떤 선택이 맞는지 고민되시나요?",
+        "compareText": "잘못된 제품을 권하지 않고 레퍼토리, 라이선스, 제어, 서비스를 함께 비교해 드립니다."
+      },
+      "paths": {
+        "eyebrow": "두 가지 제품 경로",
+        "title": "매장에 필요한 것부터 시작하세요",
+        "beatLabel": "유연한 로열티 프리 방식",
+        "beatText": "음악, 미디어, 자동화를 하나의 BMAsia 플랫폼에서.",
+        "soundtrackLabel": "친숙한 상업용 음악",
+        "soundtrackText": "메이저 레이블 레퍼토리와 BMAsia 서비스 및 확장 기능.",
+        "resultEyebrow": "미리보기를 실행 계획으로",
+        "resultTitle": "이 매장에는 어떤 방식이 맞을까요?",
+        "resultText": "획일적인 영업 문구가 아니라 카탈로그, 운영, 고객 경험을 기준으로 선택하세요.",
+        "beatDecision": "유연성, 미디어, 자동화가 브리프의 핵심일 때 적합합니다.",
+        "soundtrackDecision": "친숙한 상업용 레퍼토리가 브리프의 핵심일 때 적합합니다.",
+        "helpDecision": "BMAsia에 두 방식을 비교해 달라고 요청하기"
       }
     },
     "venuePulse": {
@@ -1069,9 +975,21 @@
       "label": "베뉴 펄스",
       "venue": "Riverside House",
       "ready": "3개 존 준비",
-      "lobby": { "name": "로비", "playlist": "Jazz Piano · 오후 라운지", "status": "재생 중" },
-      "restaurant": { "name": "레스토랑", "playlist": "Bossa Nova Lounge · 디너", "status": "재생 중" },
-      "rooftop": { "name": "루프톱", "playlist": "Deep House · 19:00 시작", "status": "준비" },
+      "lobby": {
+        "name": "로비",
+        "playlist": "Jazz Piano · 오후 라운지",
+        "status": "재생 중"
+      },
+      "restaurant": {
+        "name": "레스토랑",
+        "playlist": "Bossa Nova Lounge · 디너",
+        "status": "재생 중"
+      },
+      "rooftop": {
+        "name": "루프톱",
+        "playlist": "Deep House · 19:00 시작",
+        "status": "준비"
+      },
       "conciergeLabel": "Concierge 추천",
       "conciergeText": "손님 도착 전 루프톱의 에너지를 부드럽게 높이고, 체크인이 붐빌 때는 로비를 차분하게 유지하세요.",
       "reason": "존, 시간, 에너지, 오늘의 스케줄을 기반으로 추천"
@@ -1097,7 +1015,7 @@
     },
     "alternative": {
       "title": "고객이 이름을 아는 음악이 필요하신가요?",
-      "description": "Soundtrack Your Brand는 유명 아티스트와 메이저 레이블 레퍼토리를 제공합니다. 대중적인 음악이 우선이라면 BMAsia가 공급하고 관리합니다."
+      "description": "친숙한 라이선스 상업용 음악에 BMAsia의 음악 설계, 온보딩, 매장 확장 기능을 더합니다."
     },
     "theProblem": {
       "title": "고객은 그 차이를",
@@ -1125,9 +1043,9 @@
       "bb": {
         "badge": "올인클루시브 큐레이션",
         "title": "Beat Breeze",
-        "tagline": "완전한 라이선스를 갖춘 배경음악 — 번거로움이 전혀 없습니다.",
+        "tagline": "유연한 매장 경험 플랫폼의 중심이 되는 로열티 프리 음악.",
         "feature1": "계속 성장하는 로열티 프리 카탈로그 — 비즈니스용 라이선스 포함",
-        "feature2": "저작권 관리단체 수수료 및 준수 서류 작업이 없습니다",
+        "feature2": "선택한 플랜과 지역에 맞는 라이선스 범위 확인",
         "feature3": "이유를 설명하는 Music Concierge 추천",
         "feature4": "오프라인 사용 가능, 다중 구역 스케줄링",
         "cta": "Beat Breeze 살펴보기"
@@ -1165,113 +1083,116 @@
       }
     },
     "finalCta": {
-      "title": "당신만의 사운드를",
-      "titleHighlight": "디자인해 드립니다",
-      "ctaQuote": "견적 요청",
-      "ctaDemo": "데모 예약"
+      "title": "이 매장에 맞는",
+      "titleHighlight": "솔루션을 찾으세요.",
+      "description": "공간에 필요한 것을 알려주세요. Beat Breeze와 Soundtrack을 솔직하게 비교하고 운영 방식에 맞춰 음악과 서비스를 설계합니다.",
+      "ctaQuote": "선택 도움받기",
+      "ctaDemo": "제품 비교하기"
     }
   },
   "licensingPage": {
     "hero": {
-      "label": "법적 준수",
-      "title": "음악 라이선스",
-      "titleHighlight": "간단하게 정리합니다",
-      "subtitle": "법적 준수를 유지하고 재생하시는 아티스트를 지원하기 위해 귀하의 사업장에 필요한 라이선스를 안내해 드립니다."
+      "label": "알기 쉬운 음악 권리",
+      "title": "서비스가 보장하는 범위를 알고.",
+      "titleHighlight": "매장에 필요한 추가 사항을 확인하세요.",
+      "subtitle": "상업용 음악 권리는 레퍼토리, 제품, 지역, 사용 방식에 따라 달라집니다. BMAsia가 운영 시작 전에 범위를 이해하도록 돕습니다."
     },
     "intro": {
-      "paragraph1": "사업장에서 음악을 재생하는 것은 가정에서 감상하는 것과 다릅니다. 음악을 상업적으로 사용하시는 경우, 권리자의 허가를 반드시 받으셔야 합니다.",
-      "paragraph2Prefix": "귀하의 사업장에는",
-      "paragraph2Highlight": "세 가지 서로 다른 라이선스가 필요합니다."
+      "paragraph1": "개인용 스트리밍 구독은 사업장에서 음악을 재생할 수 있는 허가와 같지 않습니다. 상업적 이용에는 여러 층위의 권리가 관련될 수 있습니다.",
+      "paragraph2Prefix": "실용적인 원칙:",
+      "paragraph2Highlight": "서비스와 지역 범위를 서면으로 확인하세요."
     },
     "licenses": {
       "01": {
-        "title": "녹음 라이선스",
-        "desc": "특정 곡의 녹음물을 사용할 수 있는 권리를 포함하며, 녹음 아티스트와 그 소속 음반사에 대한 보상을 제공합니다."
+        "title": "녹음물 권리",
+        "desc": "특정 녹음물과 관련된 허가입니다. 적용 범위는 선택한 카탈로그와 상업용 음악 서비스에 따라 달라집니다."
       },
       "02": {
-        "title": "퍼블리싱 라이선스",
-        "desc": "원곡의 작곡물을 사용할 수 있는 권리를 포함하며, 작사가와 작곡가의 지적 재산권에 대한 보상을 제공합니다."
+        "title": "저작물 권리",
+        "desc": "작곡가와 음악 출판사를 포함한 원곡 자체에 관한 권리입니다. 제품과 지역에 따라 처리 방식이 달라집니다."
       },
       "03": {
-        "title": "공연 라이선스",
-        "desc": "사업장, 소매 공간, 레스토랑 등 공공 환경에서 해당 곡을 재생할 수 있도록 허용합니다."
+        "title": "공연권 의무",
+        "desc": "매장에는 현지 라이선스나 저작권 신탁관리단체와의 별도 절차가 필요할 수 있습니다. 요건은 국가, 매장, 레퍼토리에 따라 다릅니다."
       }
     },
     "warning": {
-      "label": "필수 준수 사항",
-      "titleStart": "일반 소비자용 스트리밍 서비스는 상업적 용도로",
-      "titleNot": "NOT",
-      "titleEnd": "라이선스가 부여되지 않습니다",
-      "quote": "당사는 귀하에게 Spotify 서비스를 개인적, 비상업적으로 이용할 수 있는 제한적이고 비독점적이며 철회 가능한 라이선스를 부여합니다...",
-      "quoteHighlight": "비상업적",
-      "source": "— Spotify 이용 약관"
+      "label": "기억할 경계",
+      "titleStart": "개인용 스트리밍 요금제는",
+      "titleNot": "설계되지 않았습니다",
+      "titleEnd": "상업용 매장 이용을 위해",
+      "quote": "비즈니스 음악 서비스를 사용하고 해당 매장에 적용되는 권리를 확인하세요.",
+      "quoteHighlight": "비즈니스 음악 서비스",
+      "source": "BMAsia 라이선스 안내"
     },
     "comparison": {
-      "sectionTitle": "솔루션을 비교해 보십시오",
-      "recordingLicense": "녹음 라이선스",
-      "publishingLicense": "퍼블리싱 라이선스",
-      "performanceLicense": "공연 라이선스",
+      "sectionTitle": "서로 다른 권리 모델을 가진 두 가지 제품 경로",
+      "recordingLicense": "상업용 카탈로그 권리",
+      "publishingLicense": "제품별 레퍼토리 범위",
+      "performanceLicense": "현지 매장 의무",
       "syb": {
-        "badge": "프리미엄",
-        "performanceNote": "현지 PRO 등록 필요"
+        "badge": "친숙한 레퍼토리",
+        "performanceNote": "현지 공연권 요건이 적용될 수 있으므로 지역별로 확인하세요.",
+        "cta": "Soundtrack 살펴보기"
       },
       "bb": {
-        "badge": "완전 라이선스 포함",
-        "performanceNote": "올인클루시브 커버리지"
+        "badge": "큐레이션 카탈로그",
+        "performanceNote": "적용 범위는 선택한 플랜, 카탈로그, 지역에 따라 달라지므로 BMAsia에 확인하세요.",
+        "cta": "Beat Breeze 살펴보기"
       }
     },
     "cta": {
-      "title": "지금 시작해 보십시오",
-      "titleHighlight": "라이선스가 부여된 음악",
-      "ctaQuote": "견적 요청",
-      "ctaDemo": "데모 예약"
+      "title": "다음 조건에 맞는 권리 범위를 확인하세요",
+      "titleHighlight": "매장과 운영 지역",
+      "ctaQuote": "BMAsia에 문의",
+      "ctaDemo": "옵션 상담하기"
     }
   },
   "howItWorksPage": {
     "hero": {
-      "label": "저희의 방법론",
-      "title": "첫 상담부터",
-      "titleHighlight": "첫 음까지",
-      "subtitle": "대부분의 고객은 48시간 이내에 서비스를 시작합니다. 진행 과정을 소개합니다."
+      "label": "브리프에서 일상의 리듬까지",
+      "title": "하나의 운영 모델.",
+      "titleHighlight": "두 가지 구현 방식.",
+      "subtitle": "BMAsia가 브랜드, 공간, 시간대를 음악 계획으로 전환한 뒤 알맞은 플랫폼을 연결하고 운영팀을 지원합니다."
     },
     "steps": {
       "01": {
-        "title": "공간에 대해 알려주십시오",
-        "desc": "매장 유형, 구역 수, 그리고 연출하고자 하는 분위기를 알려주십시오. 창의적 제어가 가능한 Soundtrack Your Brand 또는 번거로움 없이 모든 것이 포함된 Beat Breeze 중에서 최적의 솔루션을 추천해 드립니다. 24시간 이내에 견적을 받아보실 수 있습니다."
+        "title": "매장을 이해합니다",
+        "desc": "업종, 지점, 존, 고객 여정, 브랜드 단서, 실무 제약을 파악합니다. 이 단계에서 Beat Breeze, Soundtrack 또는 결합 운영 방식 중 브리프에 가장 적합한 선택을 결정합니다."
       },
       "02": {
-        "title": "사운드를 디자인합니다",
-        "desc": "저희 음악 디자이너가 귀사의 브랜드, 고객층, 그리고 매장 음향 환경을 분석합니다. 오전, 오후, 저녁에 맞춰 서로 다른 분위기의 다층적인 플레이리스트 일정을 공간에 맞춰 제작합니다. 공개 전에 샘플을 검토하시고 승인하실 수 있습니다."
+        "title": "하루를 설계합니다",
+        "desc": "오픈, 도착, 피크 시간, 전환, 마감 등 중요한 순간을 위한 분위기의 흐름을 구성합니다. 실제 일정에 적용하기 전에 방향을 검토할 수 있습니다."
       },
       "03": {
-        "title": "설치 및 운영 시작",
-        "desc": "하드웨어를 배송하거나 기존 기기를 구성해 드리며, 소프트웨어를 원격으로 설정하고 팀을 교육해 드립니다. 하드웨어가 이미 설치되어 있다면 몇 분 안에 음악을 재생하실 수 있습니다. 모든 과정을 저희가 처리하며, 고객님은 재생 버튼만 누르시면 됩니다."
+        "title": "시스템을 연결합니다",
+        "desc": "BMAsia가 호환되는 재생, 일정, 권한, 팀 접근을 구성하도록 돕습니다. 정확한 설정은 선택한 제품, 매장 하드웨어, 네트워크 조건에 따릅니다."
       },
       "04": {
-        "title": "지속적인 지원과 발전",
-        "desc": "저희의 음악 서비스는 한 번 설정하고 끝나는 것이 아닙니다. 매월(SYB) 또는 분기별(Beat Breeze)로 플레이리스트를 새롭게 업데이트하고, 구역 상태를 모니터링하며, 계절 테마에 맞춰 조정합니다. Bangkok 팀의 전담 지원이 함께합니다."
+        "title": "운영하고 발전시킵니다",
+        "desc": "팀에는 명확한 인수인계를 제공하고 BMAsia는 신속한 지역 지원을 제공하며 매장, 계절, 운영 브리프가 바뀔 때 음악 방향이 함께 발전하도록 돕습니다."
       }
     },
     "stats": {
-      "label": "BMAsia를 선택해야 하는 이유",
-      "sectionTitle": "호스피탈리티를 위해 만들어졌습니다.",
+      "label": "BMAsia의 역할",
+      "sectionTitle": "플레이리스트 전달이 아니라 운영 시스템으로 설계합니다.",
       "experience": {
-        "value": "23년",
-        "desc": "2002년부터 Asia-Pacific 전역의 호스피탈리티 업계를 위한 음악을 큐레이팅해 왔습니다."
+        "value": "매장 브리프",
+        "desc": "브랜드, 고객, 존, 운영 현실을 하나의 공유 방향에 담습니다."
       },
       "speed": {
-        "value": "48시간",
-        "desc": "맞춤형 음악 디자인부터 매장 운영 시작까지 소요되는 시간입니다. 하드웨어가 준비되어 있다면 즉시 가능합니다."
+        "value": "사운드 계획",
+        "desc": "매장이 실제로 움직이는 방식에 맞춰 시간대와 전환을 설계합니다."
       },
       "legal": {
-        "value": "100% 합법",
-        "desc": "모든 트랙이 완전하게 라이선스를 확보하고 있습니다. 규정 준수 문제나 벌금 걱정이 없습니다."
+        "value": "운영 인계",
+        "desc": "플랫폼 설정, 팀 안내, 라이선스 범위를 출시 전에 명확히 합니다."
       }
     },
     "cta": {
-      "title": "차이를 직접 들어볼 준비가 되셨습니까?",
-      "ctaQuote": "견적 받기",
-      "ctaDemo": "데모 예약하기"
+      "title": "제품이 아니라 공간에서 시작하세요.",
+      "ctaQuote": "매장 정보 알려주기",
+      "ctaDemo": "BMAsia와 상담하기"
     }
   },
   "quotationPage": {
@@ -1279,35 +1200,35 @@
       "label": "시작하기",
       "title": "견적",
       "titleHighlight": "요청",
-      "subtitle": "귀하의 매장에 대해 알려주시면 24시간 이내에 맞춤 견적을 보내드립니다."
+      "subtitle": "운영해야 할 매장, 지점, 존을 알려주세요. BMAsia가 브리프를 검토하고 적합한 제품 경로와 맞춤 제안으로 답변합니다."
     },
     "whatToExpect": {
       "sectionTitle": "진행 안내",
       "fastResponse": {
-        "title": "빠른 응답",
-        "desc": "24시간 이내에 맞춤 견적을 받아보실 수 있습니다"
+        "title": "담당자의 후속 연락",
+        "desc": "BMAsia 전문가가 브리프를 검토하고 다음으로 유용한 절차를 안내합니다."
       },
       "noObligation": {
-        "title": "부담 없는 상담",
-        "desc": "약정 없이 무료 상담을 제공합니다"
+        "title": "자동 구매 없음",
+        "desc": "양식을 제출해도 구독이나 구속력 있는 주문이 생성되지 않습니다."
       },
       "tailored": {
-        "title": "맞춤형 솔루션",
-        "desc": "귀하의 특정 요구에 맞춘 맞춤 가격을 제공합니다"
+        "title": "운영 방식에 맞춘 구성",
+        "desc": "제안은 시장, 지점, 존, 하드웨어, 서비스 요구 사항을 반영합니다."
       }
     },
     "ourSolutions": {
       "sectionTitle": "제공 솔루션",
       "sybTagline": "익숙한 상업용 레퍼토리 — 유명 아티스트, Spotify 가져오기, BMAsia 지원 설정",
       "bbTagline": "지능형 음악 운영 — 지속적으로 확장되는 큐레이션 카탈로그, Music Concierge, 스케줄 및 실시간 존 제어",
-      "learnMore": "솔루션에 대해 더 알아보기 →"
+      "learnMore": "BMAsia 운영 방식 보기 →"
     },
     "questions": {
       "sectionTitle": "문의사항이 있으신가요?"
     },
     "formHeader": {
       "title": "귀하의 공간에 대해 알려주세요",
-      "subtitle": "정보를 입력해 주시면 맞춤 견적으로 회신드리겠습니다."
+      "subtitle": "몇 가지 운영 정보를 알려주시면 요청을 정확하게 담당자에게 전달할 수 있습니다."
     },
     "demoCta": {
       "title": "라이브 데모를",
@@ -1322,27 +1243,7 @@
       "subheadline": "로비부터 스파까지, 모든 공간에서 고객 경험을 형성하는 음악을 설계합니다.",
       "zonesTitle": "모든 공간에는 고유의 주파수가 있습니다",
       "benefitsTitle": "호텔이 BMAsia를 선택하는 이유",
-      "editorialStat": "음악이 마음에 들 때 고객의 41%가 더 오래 머무릅니다.",
-      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021 — 2,500명 이상의 소비자 설문조사.",
       "ctaHeadline": "호텔의 사운드를 설계하십시오.",
-      "stats": {
-        "s1": {
-          "value": "9.1%",
-          "label": "매출 증가"
-        },
-        "s2": {
-          "value": "41%",
-          "label": "체류 시간 증가"
-        },
-        "s3": {
-          "value": "39%",
-          "label": "재방문 증가"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "음악 관리"
-        }
-      },
       "zones": {
         "z1": {
           "name": "로비 및 리셉션",
@@ -1370,11 +1271,11 @@
         }
       },
       "benefits": {
-        "b1": "하나의 대시보드에서 멀티 프로퍼티 중앙 제어",
-        "b2": "전담 팀이 분기별로 갱신하는 맞춤형 음악 디자인",
-        "b3": "데이파트 스케줄링 — 아침부터 밤까지 자동 전환",
-        "b4": "오프라인 재생 보장 — 인터넷이 끊겨도 음악 재생",
-        "b5": "24/7 전담 지원 및 계정 관리"
+        "b1": "로비, 식음료, 웰니스, 레저, 저녁 존을 하나의 계획으로 운영",
+        "b2": "음악 일정과 스크린 콘텐츠가 고객의 하루 흐름을 따르도록 구성",
+        "b3": "다국어 메시지를 명확하고 브랜드에 맞게 유지",
+        "b4": "기도 시간, 날씨, 지원되는 볼륨 동작을 현지 운영에 맞게 적용",
+        "b5": "중앙에서 전체를 파악하면서 현장 직원이 직접 제어"
       }
     },
     "restaurants": {
@@ -1382,27 +1283,7 @@
       "subheadline": "식사를 추억으로 바꾸는 음악 — 스케줄링되고, 큐레이션되며, 언제나 브랜드에 맞춥니다.",
       "zonesTitle": "일출부터 마지막 주문까지",
       "benefitsTitle": "레스토랑이 BMAsia를 선택하는 이유",
-      "editorialStat": "느린 템포의 음악은 식사 시간을 24%, 바 매출을 40% 증가시킵니다.",
-      "editorialStatSub": "Milliman (1986), Journal of Consumer Research.",
       "ctaHeadline": "레스토랑의 분위기를 설정하십시오.",
-      "stats": {
-        "s1": {
-          "value": "9.1%",
-          "label": "매출 상승"
-        },
-        "s2": {
-          "value": "15%",
-          "label": "디저트 판매 증가"
-        },
-        "s3": {
-          "value": "24%",
-          "label": "식사 시간 연장"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "자동화"
-        }
-      },
       "zones": {
         "z1": {
           "name": "파인 다이닝",
@@ -1430,11 +1311,11 @@
         }
       },
       "benefits": {
-        "b1": "데이파트 스케줄링 — 아침부터 늦은 밤까지 자동 전환",
-        "b2": "F&B 컨셉에 맞춘 장르 및 무드 큐레이션",
-        "b3": "모든 라이선스 제공 — 로열티 프리 또는 상업용 옵션",
-        "b4": "다이닝 룸, 바, 테라스, 화장실을 위한 멀티 존 제어",
-        "b5": "시간대에 따라 볼륨과 에너지가 자동 조정"
+        "b1": "오픈부터 점심, 저녁, 심야 영업까지 시간대별 흐름 구성",
+        "b2": "다이닝, 바, 테라스 존마다 서로 다른 에너지 유지",
+        "b3": "메뉴, 프로모션, 이벤트 비주얼을 같은 계획에 맞춰 운영",
+        "b4": "주변 소리를 마이크로 감지한다는 주장 없이 예약 볼륨 프리셋으로 서비스 지원",
+        "b5": "운영자가 변경 사항을 미리 보고 승인하며 재정의 가능"
       }
     },
     "retail": {
@@ -1442,27 +1323,7 @@
       "subheadline": "고객이 머무르고, 둘러보고, 구매하게 만드는 소닉 아이덴티티를 설계합니다.",
       "zonesTitle": "모든 포맷을 위한 사운드",
       "benefitsTitle": "리테일러가 BMAsia를 선택하는 이유",
-      "editorialStat": "느린 템포의 음악은 일일 리테일 매출을 38% 증가시킵니다.",
-      "editorialStatSub": "Milliman (1982), Journal of Marketing — 리테일 음악 연구의 황금 표준.",
       "ctaHeadline": "브랜드를 증폭시키십시오.",
-      "stats": {
-        "s1": {
-          "value": "38%",
-          "label": "일일 매출 증가"
-        },
-        "s2": {
-          "value": "90%",
-          "label": "좋은 음악 시 재방문"
-        },
-        "s3": {
-          "value": "3.4x",
-          "label": "와인 프라이밍 효과"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "자동화"
-        }
-      },
       "zones": {
         "z1": {
           "name": "패션 및 의류",
@@ -1490,11 +1351,11 @@
         }
       },
       "benefits": {
-        "b1": "모든 매장 지점의 중앙 집중식 음악 제어",
-        "b2": "아이덴티티를 강화하는 브랜드 정렬 큐레이션",
-        "b3": "프로모션, 영업 시간, 공지 사항을 위한 오디오 메시징",
-        "b4": "플래그십부터 아울렛까지 다중 매장 일관성",
-        "b5": "피크 시간 스케줄링 — 고객 유입에 맞춘 에너지 레벨"
+        "b1": "캠페인 음악과 비주얼 루프를 하나의 크리에이티브 방향으로 통일",
+        "b2": "다중 매장 일정으로 브랜드 일관성을 지키면서 현지 제어 유지",
+        "b3": "분위기를 방해하지 않도록 프로모션 메시지 시간 설정",
+        "b4": "API로 승인된 운영 및 캠페인 트리거 연결",
+        "b5": "친숙한 상업용 음악과 로열티 프리 카탈로그 경로 모두 제공"
       }
     },
     "bars": {
@@ -1502,27 +1363,7 @@
       "subheadline": "칵테일 타임부터 마감까지 완벽한 분위기를 연출하는 라이선스 음악.",
       "zonesTitle": "모든 순간을 위한 바이브 연출",
       "benefitsTitle": "바가 BMAsia를 선택하는 이유",
-      "editorialStat": "볼륨이 높을 때 손님당 음료 수가 2.6잔에서 3.4잔으로 증가했습니다.",
-      "editorialStatSub": "Guéguen et al. (2004), Alcoholism: Clinical & Experimental Research.",
       "ctaHeadline": "바의 사운드를 설계하십시오.",
-      "stats": {
-        "s1": {
-          "value": "+31%",
-          "label": "음료 주문 증가"
-        },
-        "s2": {
-          "value": "+40%",
-          "label": "바 매출 증가"
-        },
-        "s3": {
-          "value": "24%",
-          "label": "테이블 체류 시간 증가"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "자동화"
-        }
-      },
       "zones": {
         "z1": {
           "name": "칵테일 바",
@@ -1550,11 +1391,11 @@
         }
       },
       "benefits": {
-        "b1": "퇴근 후부터 심야까지 자동 무드 전환",
-        "b2": "장르 전문성 — 재즈부터 일렉트로닉, 톱 40까지",
-        "b3": "법적 준수 — 저작권 이슈 위험 없음",
-        "b4": "소음 규정을 준수하는 볼륨 스케줄링",
-        "b5": "단골 손님을 놀라게 하는 맞춤형 플레이리스트 갱신"
+        "b1": "오픈부터 칵테일 타임과 마감까지 단계적인 에너지 구성",
+        "b2": "친숙한 상업용 또는 큐레이션된 로열티 프리 레퍼토리 선택 가능",
+        "b3": "스크린, 이벤트 비주얼, 프로모션을 진행 순서에 맞게 운영",
+        "b4": "매장 정책과 운영자 판단을 존중하는 예약 볼륨 프리셋",
+        "b5": "직원이 재생과 존을 즉시 제어"
       }
     },
     "spas": {
@@ -1562,27 +1403,7 @@
       "subheadline": "리셉션에서 트리트먼트 룸까지 — 진정시키고, 치유하며, 회복시키는 음악을 설계합니다.",
       "zonesTitle": "모든 공간을 위한 힐링 주파수",
       "benefitsTitle": "스파가 BMAsia를 선택하는 이유",
-      "editorialStat": "\"Weightless\"는 임상 실험에서 불안을 65% 감소시켰습니다.",
-      "editorialStatSub": "Mindlab International / British Academy of Sound Therapy, 2011.",
       "ctaHeadline": "성역의 사운드를 설계하십시오.",
-      "stats": {
-        "s1": {
-          "value": "65%",
-          "label": "불안 감소"
-        },
-        "s2": {
-          "value": "60 BPM",
-          "label": "알파 뇌파 동기화"
-        },
-        "s3": {
-          "value": "30K+",
-          "label": "큐레이션 트랙"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "자동화"
-        }
-      },
       "zones": {
         "z1": {
           "name": "리셉션 및 대기실",
@@ -1610,11 +1431,11 @@
         }
       },
       "benefits": {
-        "b1": "프로페셔널 뮤직 디자이너의 큐레이션 웰니스 플레이리스트",
-        "b2": "서로 다른 트리트먼트 공간을 위한 매끄러운 존별 제어",
-        "b3": "오프라인 재생 — 트리트먼트 중 침묵하지 않습니다",
-        "b4": "시즌별 및 테마별 업데이트 (Ramadan, 휴일, 이벤트)",
-        "b5": "Beat Breeze에 모든 라이선스 포함 — 번거로움 제로"
+        "b1": "각 트리트먼트 존에 맞춰 사운드스케이프와 음악 구성",
+        "b2": "방해가 적은 일정으로 고객 여정의 속도 보호",
+        "b3": "차분한 비주얼 루프로 리셉션과 휴식 공간 지원",
+        "b4": "메시지를 최소화하고 유용하며 현지에 적합하게 유지",
+        "b5": "볼륨은 프리셋과 운영자 제어로 관리"
       }
     },
     "cafes": {
@@ -1622,27 +1443,7 @@
       "subheadline": "사람들이 자리에 앉고, 커피를 한 잔 더 주문하며, 잠시 머물게 만드는 음악.",
       "zonesTitle": "아침 에스프레소부터 오후 작업 세션까지",
       "benefitsTitle": "카페가 BMAsia를 선택하는 이유",
-      "editorialStat": "카페에서 마음에 드는 노래를 들은 후 고객의 73%가 행동에 옮깁니다.",
-      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021.",
       "ctaHeadline": "카페의 사운드를 설계하십시오.",
-      "stats": {
-        "s1": {
-          "value": "79%",
-          "label": "음악을 인지"
-        },
-        "s2": {
-          "value": "41%",
-          "label": "더 오래 머무름"
-        },
-        "s3": {
-          "value": "73%",
-          "label": "청취 후 행동"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "자동화"
-        }
-      },
       "zones": {
         "z1": {
           "name": "아침 러시",
@@ -1670,11 +1471,11 @@
         }
       },
       "benefits": {
-        "b1": "데이파트 스케줄링으로 시간대에 맞는 에너지 매칭",
-        "b2": "모든 라이선스 포함 — Beat Breeze 사용 시 저작권 협회 수수료 없음",
-        "b3": "단일 존 매장을 위한 합리적인 가격",
-        "b4": "모든 Android 또는 Windows 기기에서 손쉬운 설정",
-        "b5": "단골 손님을 사로잡는 갱신된 플레이리스트"
+        "b1": "아침 피크, 업무 시간, 사교 시간, 마감에 맞춘 음악 일정",
+        "b2": "시간대별로 디지털 메뉴와 프로모션 비주얼 변경",
+        "b3": "날씨 인식 프로그램이 적합한 방향을 제안",
+        "b4": "통화 대기음으로 카페 밖까지 같은 브랜드 사운드 전달",
+        "b5": "직원이 계획을 다시 만들지 않고도 운영 중인 존을 조정"
       }
     },
     "malls": {
@@ -1682,27 +1483,7 @@
       "subheadline": "유동 인구와 체류 시간을 늘리고자 하는 쇼핑센터를 위한 멀티 존 음악 관리.",
       "zonesTitle": "하나의 건물, 다양한 무드",
       "benefitsTitle": "쇼핑몰이 BMAsia를 선택하는 이유",
-      "editorialStat": "쇼핑객의 85%가 매장 내 기분을 높이는 1순위 요인으로 음악을 꼽습니다.",
-      "editorialStatSub": "Mood Media, \"Quantifying the Impact of Sensory Marketing,\" 2019.",
       "ctaHeadline": "쇼핑몰의 사운드를 설계하십시오.",
-      "stats": {
-        "s1": {
-          "value": "38%",
-          "label": "일일 매출 증가"
-        },
-        "s2": {
-          "value": "85%",
-          "label": "음악이 기분을 높인다고 응답"
-        },
-        "s3": {
-          "value": "75%",
-          "label": "더 오래 머무름"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "중앙 집중식 제어"
-        }
-      },
       "zones": {
         "z1": {
           "name": "공용 공간",
@@ -1730,11 +1511,11 @@
         }
       },
       "benefits": {
-        "b1": "하나의 대시보드에서 수십 개 존에 걸친 중앙 집중식 관리",
-        "b2": "프로모션, 이벤트, 공지를 위한 오디오 메시징",
-        "b3": "평일과 주말 트래픽 패턴에 맞춘 스케줄링",
-        "b4": "대규모 배포를 위한 하드웨어 솔루션",
-        "b5": "지속적인 지원을 위한 전담 계정 매니저"
+        "b1": "공용 공간, 푸드코트, 입구, 프리미엄 구역을 조율",
+        "b2": "스크린 네트워크와 안내 방송을 같은 운영 캘린더에 맞게 구성",
+        "b3": "다국어 메시지로 길 안내, 행사, 프로모션 지원",
+        "b4": "기도 시간 동작을 현지 쇼핑센터 일정에 맞게 적용",
+        "b5": "중앙 팀이 전체 시설을 보면서 존 직원은 제어권 유지"
       }
     },
     "gyms": {
@@ -1742,27 +1523,7 @@
       "subheadline": "퍼포먼스를 끌어올리고, 회원들을 동기부여하며, 계속 돌아오게 만드는 고에너지 음악.",
       "zonesTitle": "모든 운동을 위한 서로 다른 에너지",
       "benefitsTitle": "짐이 BMAsia를 선택하는 이유",
-      "editorialStat": "음악은 지구력을 15% 증가시키고 체감 운동 강도를 10% 감소시킵니다.",
-      "editorialStatSub": "Karageorghis et al. / Terry et al. (2020), Psychological Bulletin — 139개 연구의 메타 분석.",
       "ctaHeadline": "짐의 사운드를 강화하십시오.",
-      "stats": {
-        "s1": {
-          "value": "+15%",
-          "label": "지구력 증가"
-        },
-        "s2": {
-          "value": "-10%",
-          "label": "체감 운동 강도"
-        },
-        "s3": {
-          "value": "139",
-          "label": "연구가 확인"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "자동화"
-        }
-      },
       "zones": {
         "z1": {
           "name": "웨이트 플로어",
@@ -1790,11 +1551,11 @@
         }
       },
       "benefits": {
-        "b1": "서로 다른 운동 강도에 맞춘 BPM 매칭 플레이리스트",
-        "b2": "멀티 존 제어 — 웨이트에서는 헤비하게, 요가에서는 차분하게",
-        "b3": "모든 라이선스 제공 — 상업용 또는 로열티 프리",
-        "b4": "피크 시간과 클래스 일정에 맞춘 스케줄링",
-        "b5": "짐 체인을 위한 다중 매장 일관성"
+        "b1": "수업 시간표와 존 일정으로 하루의 에너지 곡선 구성",
+        "b2": "운동, 리셉션, 회복 공간에 의도적으로 다른 사운드 적용",
+        "b3": "스크린과 비주얼 루프로 수업 및 회원 커뮤니케이션 지원",
+        "b4": "API로 승인된 시간표 또는 운영 트리거 연결",
+        "b5": "예약 볼륨 프리셋을 사용하되 제어권은 직원에게 유지"
       }
     },
     "medical": {
@@ -1802,27 +1563,7 @@
       "subheadline": "불안을 줄이고 신뢰를 구축하며 치유 환경을 조성하는 음악.",
       "zonesTitle": "모든 임상 공간을 위한 사운드",
       "benefitsTitle": "의료 시설이 BMAsia를 선택하는 이유",
-      "editorialStat": "음악은 약물만큼 효과적으로 수술 불안을 감소시킵니다 (NNT=4).",
-      "editorialStatSub": "Kuhlmann et al. (2018), British Journal of Surgery — 92개 RCTs, 7,385명 환자.",
       "ctaHeadline": "진료실의 사운드를 설계하십시오.",
-      "stats": {
-        "s1": {
-          "value": "NNT=4",
-          "label": "약물만큼 효과적"
-        },
-        "s2": {
-          "value": "7,385",
-          "label": "연구된 환자 수"
-        },
-        "s3": {
-          "value": "92",
-          "label": "임상 시험"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "자동화"
-        }
-      },
       "zones": {
         "z1": {
           "name": "대기실",
@@ -1850,11 +1591,11 @@
         }
       },
       "benefits": {
-        "b1": "의료 환경을 위해 설계된 임상 정보 기반 플레이리스트",
-        "b2": "Beat Breeze에 모든 라이선스 포함 — 복잡한 준수 절차 없음",
-        "b3": "오프라인 재생 — 치료 중 중단 없음",
-        "b4": "임상 환경에 적합한 볼륨 제어",
-        "b5": "IT 팀에 부담을 주지 않는 손쉬운 설정"
+        "b1": "대기, 진료, 회복 공간마다 서로 다른 저자극 사운드 적용",
+        "b2": "의학적 효능을 주장하지 않고 차분한 정보와 길 안내를 스크린으로 지원",
+        "b3": "위치와 시간에 따라 다국어 메시지 예약",
+        "b4": "단순한 존 일정으로 직원과 IT팀의 부담 감소",
+        "b5": "운영자가 볼륨과 재생을 직접 제어"
       }
     },
     "offices": {
@@ -1862,27 +1603,7 @@
       "subheadline": "집중력, 창의성, 직장 만족도를 높이는 배경 음악.",
       "zonesTitle": "서로 다른 공간을 위한 서로 다른 모드",
       "benefitsTitle": "사무실이 BMAsia를 선택하는 이유",
-      "editorialStat": "소프트웨어 개발자는 배경 음악과 함께 더 높은 품질의 작업을 수행합니다.",
-      "editorialStatSub": "Lesiuk (2005), Psychology of Music — 56명의 개발자, 5주 연구.",
       "ctaHeadline": "업무 공간의 사운드를 설계하십시오.",
-      "stats": {
-        "s1": {
-          "value": "79%",
-          "label": "음악이 도움된다고 응답"
-        },
-        "s2": {
-          "value": "70 dB",
-          "label": "최적 레벨"
-        },
-        "s3": {
-          "value": "30K+",
-          "label": "큐레이션 트랙"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "자동화"
-        }
-      },
       "zones": {
         "z1": {
           "name": "오픈 플랜",
@@ -1910,11 +1631,11 @@
         }
       },
       "benefits": {
-        "b1": "사무실 리듬에 맞춘 스케줄링 — 집중하는 아침, 사교적인 오후",
-        "b2": "오픈 플랜, 회의실, 공용 공간을 위한 멀티 존 제어",
-        "b3": "Beat Breeze에 모든 라이선스 포함 — IT 친화적 설정",
-        "b4": "사려 깊은 사운드 디자인을 통한 직원 만족도 향상",
-        "b5": "소규모 사무실을 위한 합리적인 단일 존 가격"
+        "b1": "집중, 리셉션, 사교, 회의 존을 서로 다른 모드로 운영",
+        "b2": "사내 스크린과 메시지를 업무 캘린더에 맞게 구성",
+        "b3": "생산성 향상을 보장하지 않으면서 조용한 공용 공간에 사운드스케이프 활용",
+        "b4": "통화 대기음으로 발신자에게 브랜드 경험 전달",
+        "b5": "업무 공간 팀이 일정을 쉽게 검토하고 재정의"
       }
     },
     "showrooms": {
@@ -1922,27 +1643,7 @@
       "subheadline": "제품을 돋보이게 하고 열망을 자극하는 경험을 만들어내는 프리미엄 음악.",
       "zonesTitle": "모든 제품을 위한 무대 설정",
       "benefitsTitle": "쇼룸이 BMAsia를 선택하는 이유",
-      "editorialStat": "클래식 음악은 고객이 더 비싼 제품을 선택하도록 유도합니다.",
-      "editorialStatSub": "Areni & Kim (1993), Advances in Consumer Research.",
       "ctaHeadline": "쇼룸의 사운드를 설계하십시오.",
-      "stats": {
-        "s1": {
-          "value": "38%",
-          "label": "매출 증가"
-        },
-        "s2": {
-          "value": "3.4x",
-          "label": "음악 프라이밍 효과"
-        },
-        "s3": {
-          "value": "65%",
-          "label": "분위기가 중요하다고 응답"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "자동화"
-        }
-      },
       "zones": {
         "z1": {
           "name": "자동차 쇼룸",
@@ -1970,11 +1671,11 @@
         }
       },
       "benefits": {
-        "b1": "제품 포지셔닝을 강화하는 브랜드 정렬 음악",
-        "b2": "런칭, 오프닝, VIP 뷰잉을 위한 이벤트 모드",
-        "b3": "사운드로 브랜드 스토리를 전달하는 맞춤형 큐레이션",
-        "b4": "서로 다른 제품 구역을 위한 다중 룸 스케줄링",
-        "b5": "프리미엄 복잡성 없이 프리미엄한 느낌"
+        "b1": "음악과 비주얼 콘텐츠가 함께 제품 스토리를 강화",
+        "b2": "출시 비디오, 슬라이드쇼, 이벤트 모드를 시간 순서에 맞게 운영",
+        "b3": "다국어 메시지로 현지 고객과 방문 그룹 지원",
+        "b4": "승인된 API로 제품 또는 이벤트 순간에 콘텐츠 실행",
+        "b5": "통화 대기음으로 매장 밖까지 같은 브랜드 방향 전달"
       }
     },
     "events": {
@@ -1982,27 +1683,7 @@
       "subheadline": "기업 갈라부터 브랜드 런칭까지 — 순간을 잊을 수 없게 만드는 음악.",
       "zonesTitle": "모든 경우를 위한 사운드",
       "benefitsTitle": "이벤트 베뉴가 BMAsia를 선택하는 이유",
-      "editorialStat": "감정이 최고조에 달하는 순간, 참석자들이 브랜드와 연결될 가능성이 63% 더 높습니다.",
-      "editorialStatSub": "Live Nation, \"The Power of Live\" Global Study, 2018 — 22,500명 팬, 11개국.",
       "ctaHeadline": "이벤트의 사운드를 설계하십시오.",
-      "stats": {
-        "s1": {
-          "value": "63%",
-          "label": "브랜드 연결성"
-        },
-        "s2": {
-          "value": "90%",
-          "label": "브랜드 존재를 환영"
-        },
-        "s3": {
-          "value": "500+",
-          "label": "베뉴 서비스"
-        },
-        "s4": {
-          "value": "23+",
-          "label": "년 경력"
-        }
-      },
       "zones": {
         "z1": {
           "name": "기업 이벤트",
@@ -2030,11 +1711,11 @@
         }
       },
       "benefits": {
-        "b1": "뮤직 팀이 이벤트별로 설계한 플레이리스트",
-        "b2": "이벤트 타임라인을 정확하게 따르는 스케줄링",
-        "b3": "공지 및 프로그램 흐름을 위한 오디오 메시징",
-        "b4": "임시 또는 영구 설치 옵션",
-        "b5": "음악 팀이 이벤트 브리프를 실용적인 음악 계획으로 완성합니다"
+        "b1": "음악, 스크린, 비디오, 안내 방송을 하나의 진행표에 맞게 운영",
+        "b2": "임시 존을 고객 도착 전에 리허설",
+        "b3": "수동 신호에만 의존하지 않고 예약 메시지로 전환 지원",
+        "b4": "운영자가 모든 예약 순간을 현장에서 재정의 가능",
+        "b5": "향후 행사를 위해 계획을 재사용하고 조정"
       }
     }
   },
@@ -2043,6 +1724,283 @@
     "ctaDemo": "데모 예약",
     "source": "출처: Soundtrack Research",
     "footerCtaQuote": "견적 요청 →",
-    "footerCtaDemo": "데모 예약 →"
+    "footerCtaDemo": "데모 예약 →",
+    "heroEyebrow": "매장을 위한 BMAsia",
+    "helpChoose": "선택 도움받기",
+    "seeDayFlow": "하루의 흐름 보기",
+    "livePlan": "실시간 분위기 계획",
+    "ready": "계획 준비 완료",
+    "dayEyebrow": "하루의 운영",
+    "dayTitle": "모든 순간에는 서로 다른 역할이 있습니다.",
+    "dayDescription": "음악이 분위기를 이끌고 스크린, 메시지, 일정, 승인된 자동화가 매장 전체에 계획을 전달합니다.",
+    "touchpointsEyebrow": "이 운영 방식에 맞춤",
+    "touchpointsTitle": "획일적인 배경 음악 템플릿이 아닙니다.",
+    "touchpointsDescription": "각 존과 접점은 해당 업종의 실제 고객 여정, 직원 리듬, 브랜드 결정을 지원해야 합니다.",
+    "operationsTitle": "한 번 감상하는 것이 아니라 실제 운영을 위해 설계",
+    "productFitEyebrow": "신뢰할 수 있는 두 가지 제품 경로",
+    "productFitTitle": "카탈로그와 운영 모델을 기준으로 선택하세요.",
+    "productFitDescription": "BMAsia는 두 방식 모두 제공합니다. 알맞은 선택은 고객이 들어야 할 음악과 운영할 매장 경험의 범위에 따라 달라집니다.",
+    "beatBreeze": {
+      "eyebrow": "유연한 로열티 프리 방식",
+      "text": "음악, 스크린, 메시지, 미디어, 매장 자동화를 하나의 BMAsia 플랫폼에서 함께 운영해야 한다면 Beat Breeze를 선택하세요.",
+      "cta": "Beat Breeze 살펴보기"
+    },
+    "soundtrack": {
+      "eyebrow": "친숙한 상업용 음악",
+      "text": "친숙한 메이저 레이블 레퍼토리가 우선이며 BMAsia 음악 설계와 지원되는 확장 기능이 필요하다면 Soundtrack을 선택하세요.",
+      "cta": "Soundtrack 살펴보기"
+    },
+    "notSure": "BMAsia에 두 방식 비교 요청",
+    "finalDescription": "존, 고객 여정, 음악에 대한 기대를 알려주세요. 실제 운영에 맞는 제품과 서비스 모델을 추천합니다.",
+    "howItWorks": "BMAsia 운영 방식",
+    "capabilities": {
+      "music": "음악",
+      "screens": "스크린 및 TV",
+      "messages": "다국어 메시지",
+      "video": "비디오 및 루프",
+      "scheduling": "일정 관리",
+      "automation": "자동화",
+      "api": "API 및 연동",
+      "volume": "볼륨 프리셋",
+      "prayer": "기도 시간 동작",
+      "phone": "통화 대기음",
+      "soundscapes": "사운드스케이프"
+    }
+  },
+  "cookieBanner": {
+    "title": "개인정보 선택",
+    "manageTitle": "분석 환경설정 관리",
+    "description": "필수 저장소는 언어와 개인정보 선택을 유지합니다. 허용하면 Google Tag Manager와 Apollo가 방문 및 비즈니스 관심도를 파악하는 데 도움을 줍니다.",
+    "policy": "쿠키 정책 보기",
+    "close": "환경설정 닫기",
+    "necessaryTitle": "필수",
+    "necessaryDescription": "언어, 보안, 선택 사항 저장에 필요하며 항상 활성화됩니다.",
+    "analyticsTitle": "분석 및 비즈니스 인사이트",
+    "analyticsDescription": "선택 사항인 Google Tag Manager와 Apollo 측정 기능입니다. 허용한 후에만 로드됩니다.",
+    "necessaryOnly": "필수 항목만",
+    "allowAnalytics": "분석 허용"
+  },
+  "legalPages": {
+    "privacy": {
+      "eyebrow": "법적 고지 · 데이터 처리",
+      "title": "개인정보 처리방침",
+      "summary": "BMAsia가 이 웹사이트를 통해 수집하는 정보, 이용 목적, 문의·체험 요청·도우미 이용 시 관여하는 서비스를 설명합니다.",
+      "updated": "최종 업데이트: 2026년 8월 4일",
+      "cookieLink": "쿠키 환경설정 확인 또는 변경",
+      "sections": {
+        "controller": {
+          "title": "개인정보 처리 책임자",
+          "paragraphs": [
+            "본 방침은 BMAsia (Thailand) Co., Ltd. 및 BMAsia Limited가 bmasiamusic.com을 통해 개인정보를 처리할 때 적용됩니다. 문의 또는 계약을 담당하는 BMAsia 법인이 해당 처리에 대한 책임을 집니다."
+          ],
+          "items": [
+            "BMAsia (Thailand) Co., Ltd., 725 S-Metro Building, Suite 144, Level 20, Sukhumvit Road, Klongtan Nua, Watthana, Bangkok 10110, Thailand.",
+            "BMAsia Limited, Hong Kong."
+          ]
+        },
+        "data": {
+          "title": "수집하는 정보",
+          "paragraphs": [
+            "당사가 수집하는 정보에는 사용자가 제출한 정보와 사이트 이용 중 생성되는 제한적인 기술 정보가 포함됩니다. 자유 입력란이나 웹사이트 도우미에 민감한 개인정보를 입력하지 마세요."
+          ],
+          "items": [
+            "문의, 견적, Soundtrack 체험 양식으로 제출하는 연락처 및 사업 정보, 매장 정보, 선호 제품, 메시지.",
+            "채팅 또는 음성 경험을 이용하기로 선택한 경우 도우미 대화 및 담당자 연결 정보.",
+            "선택적 측정을 활성화한 경우 동의 선택, 언어 환경설정, 기기 및 이용 정보, 유입 정보, 대략적인 네트워크 정보."
+          ]
+        },
+        "purposes": {
+          "title": "이용 목적",
+          "paragraphs": [
+            "당사는 요청에 답변하고, 제품 및 체험 적합성을 검토하고, 제안을 준비하고, 고객을 지원하고, 사이트를 안전하게 운영하며, 서비스를 개선하기 위해 이 정보를 사용합니다. 상황에 따라 처리 근거는 계약 체결 전 조치, 계약 이행, 정당한 사업상 이익, 동의 또는 법적 의무가 될 수 있습니다."
+          ],
+          "items": [
+            "양식 제출은 관련 없는 대량 마케팅에 대한 허가가 아닙니다.",
+            "선택적 분석 및 잠재 고객 측정 기능은 이 사이트에 표시된 동의 항목을 선택한 후에만 로드됩니다.",
+            "도우미의 답변은 정보 제공용이며 구속력 있는 상업적 약속이 아닙니다."
+          ]
+        },
+        "sharing": {
+          "title": "서비스 및 정보 수신자",
+          "paragraphs": [
+            "당사는 사이트 운영, 요청 응답, 요청한 서비스 준비 또는 법적 의무 이행에 필요한 경우에만 데이터를 공유합니다. 서비스 제공업체는 사용자의 국가 밖에서 데이터를 처리할 수 있습니다."
+          ],
+          "items": [
+            "애플리케이션, 데이터베이스, 네트워크, 보안 인프라를 위한 Render와 Cloudflare.",
+            "업무 연락을 위한 Google Workspace와 Gmail, 선택적 측정에 동의한 경우 Google Tag Manager와 Google Analytics.",
+            "선택적 측정에 동의한 경우 Apollo 웹사이트 방문자 측정.",
+            "채팅, 음성 또는 담당자 연결 기능을 이용하는 경우 ElevenLabs와 BMAsia 도우미 또는 메시지 허브 서비스.",
+            "Soundtrack 체험 또는 활성화를 요청해 필요한 설정 정보를 공유해야 하는 경우 Soundtrack.",
+            "법률 또는 정당한 기업 거래에 따라 필요한 경우 전문 자문가, 관계 당국 또는 거래 상대방."
+          ]
+        },
+        "retention": {
+          "title": "보관 및 보안",
+          "paragraphs": [
+            "당사는 수집 목적, 진행 중인 사업 관계, 분쟁 처리, 보안, 법률 및 회계 의무에 필요한 기간 동안만 정보를 보관합니다. 보관 기간은 기록 유형과 관할 지역에 따라 다릅니다.",
+            "BMAsia와 서비스 제공업체는 조직적·기술적 보호조치를 사용하지만, 인터넷 전송이나 저장 시스템의 완전한 보안을 보장할 수는 없습니다."
+          ],
+          "items": []
+        },
+        "rights": {
+          "title": "선택권 및 권리",
+          "paragraphs": [
+            "거주 지역에 따라 열람, 정정, 삭제, 처리 제한, 이동 또는 반대를 요청하고, 동의를 철회하며, 관련 개인정보 보호 기관에 불만을 제기할 수 있습니다. 당사는 본인 확인을 요청할 수 있으며 법률이 허용하거나 요구하는 경우 정보를 보관할 수 있습니다."
+          ],
+          "items": [
+            "바닥글 또는 아래 링크에서 쿠키 환경설정을 다시 열 수 있습니다.",
+            "현재 서비스에 필요하지 않은 직접적인 후속 연락을 중단해 달라고 요청할 수 있습니다.",
+            "브라우저와 기기 설정으로 쿠키 또는 권한을 제한할 수도 있습니다."
+          ]
+        },
+        "contact": {
+          "title": "문의 및 업데이트",
+          "paragraphs": [
+            "개인정보 관련 질문이나 권리 행사는 아래 이메일로 보내 주세요. 사이트, 서비스 제공업체 또는 법적 요건이 변경되면 본 방침을 업데이트할 수 있으며 현재 날짜는 이 페이지 상단에 표시됩니다."
+          ],
+          "items": []
+        }
+      }
+    },
+    "cookies": {
+      "eyebrow": "법적 고지 · 사용자 제어",
+      "title": "쿠키 및 저장소 정책",
+      "summary": "이 웹사이트에서 사용하는 브라우저 저장소와 선택적 측정 기능, 그리고 선택을 변경하는 방법을 쉽게 설명합니다.",
+      "updated": "최종 업데이트: 2026년 8월 4일",
+      "manage": "쿠키 환경설정 열기",
+      "privacyLink": "개인정보 처리방침 보기",
+      "sections": {
+        "storage": {
+          "title": "쿠키 및 브라우저 저장소",
+          "paragraphs": [
+            "쿠키는 브라우저에 저장되는 작은 값입니다. 이 사이트는 동의 기록을 위해 로컬 저장소도 사용합니다. 사용자의 선택으로 활성화된 서비스 제공업체는 자체 쿠키 또는 유사한 식별자를 사용할 수 있습니다."
+          ],
+          "items": []
+        },
+        "necessary": {
+          "title": "필수 저장소",
+          "paragraphs": [
+            "필수 저장소는 사이트에 기억하도록 요청한 선택 사항을 지원하며 광고에는 사용되지 않습니다."
+          ],
+          "items": [
+            "로컬 저장소의 cookie_consent_v2는 필수 저장소만 허용했는지, 선택적 측정도 허용했는지를 기록합니다.",
+            "NEXT_LOCALE은 선택한 언어를 기억합니다. 현재 최대 보관 기간은 1년입니다.",
+            "호스팅 및 네트워크 계층에서 필수 보안 또는 플랫폼 제어 항목을 설정할 수 있습니다."
+          ]
+        },
+        "optional": {
+          "title": "선택적 측정",
+          "paragraphs": [
+            "선택적 측정에 동의하면 사이트는 설정된 Google Analytics 측정과 함께 Google Tag Manager, Apollo 웹사이트 측정을 로드합니다. 이러한 제공업체는 _ga 또는 Apollo 관련 쿠키 같은 식별자를 설정하고 브라우저나 네트워크 정보를 사용해 이용 및 잠재 고객 인사이트를 생성할 수 있습니다.",
+            "서비스 제공업체의 정확한 쿠키 이름과 보관 기간은 변경될 수 있습니다. 이는 브라우저 설정과 더불어 해당 제공업체의 구성 및 정책을 따릅니다."
+          ],
+          "items": []
+        },
+        "control": {
+          "title": "동의, 거부 또는 철회",
+          "paragraphs": [
+            "필수 저장소만 선택하거나 선택적 측정을 허용할 수 있으며 나중에 패널을 다시 열 수도 있습니다. 선택적 동의를 철회하면 이 사이트에서 접근할 수 있는 알려진 Google Analytics 및 Apollo 쿠키를 삭제하고 페이지를 다시 로드해 선택적 스크립트가 다시 로드되지 않게 합니다. 브라우저 설정에서 나머지 제공업체 저장소를 삭제할 수 있습니다."
+          ],
+          "items": []
+        },
+        "providers": {
+          "title": "서비스 제공업체의 범위",
+          "paragraphs": [
+            "Google과 Apollo는 각자의 개인정보 보호 약관에 따라 선택적 측정을 처리합니다. BMAsia는 동의 패널에 수락이 기록되기 전에 이러한 측정 도구를 의도적으로 로드하지 않습니다. 도우미 자체는 대화형 서비스이며, 사용자가 직접 전송한 정보에는 개인정보 처리방침이 적용됩니다."
+          ],
+          "items": []
+        },
+        "contact": {
+          "title": "문의",
+          "paragraphs": [
+            "이 사이트의 저장소 또는 측정에 관한 질문은 BMAsia에 문의하세요. 아래에서 더 넓은 범위의 개인정보 처리방침도 확인할 수 있습니다."
+          ],
+          "items": []
+        }
+      }
+    },
+    "terms": {
+      "eyebrow": "법적 고지 · 웹사이트 이용",
+      "title": "웹사이트 이용약관",
+      "summary": "bmasiamusic.com 이용, 정보 요청, BMAsia 제품 및 파트너 서비스 링크 이용에 적용되는 범위를 설명합니다.",
+      "updated": "최종 업데이트: 2026년 8월 4일",
+      "sections": {
+        "scope": {
+          "title": "약관 안내",
+          "paragraphs": [
+            "본 약관은 bmasiamusic.com 이용에 적용됩니다. 사이트를 이용하면 본 약관에 동의하는 것으로 간주됩니다. 동의하지 않으면 사이트를 이용하지 마세요. 이 사이트는 BMAsia (Thailand) Co., Ltd.와 BMAsia Limited가 운영합니다."
+          ],
+          "items": []
+        },
+        "services": {
+          "title": "사이트가 제공하는 내용",
+          "paragraphs": [
+            "이 사이트는 Beat Breeze와 Soundtrack을 중심으로 한 BMAsia 서비스를 포함해 BMAsia 음악 설계 및 비즈니스 음악 서비스를 설명합니다. 또한 문의, 제안 요청, 대상 고객의 Soundtrack 체험 요청, 정보 제공용 도우미 이용 기능을 제공합니다."
+          ],
+          "items": []
+        },
+        "requests": {
+          "title": "요청, 체험 및 제안",
+          "paragraphs": [
+            "양식 제출, 데모 예약, 체험 요청은 검토를 위한 요청이며 승인된 주문이나 자동 구독이 아닙니다. 자격, 서비스 범위, 라이선스, 이용 가능 여부, 가격, 세금, 지역, 하드웨어, 계약 조건은 별도 서면으로 확인합니다.",
+            "정식 제안서나 서비스 계약이 일반 웹사이트 내용과 상충하는 경우 해당 제안서 또는 계약이 우선합니다."
+          ],
+          "items": []
+        },
+        "assistant": {
+          "title": "AI 보조 정보",
+          "paragraphs": [
+            "사이트는 인공지능으로 생성된 텍스트 또는 음성 답변을 제공할 수 있습니다. 이러한 답변은 불완전하거나 잘못될 수 있으며 법률 자문, 견적 또는 구속력 있는 약속이 아닙니다. 중요한 제품, 라이선스, 상업 조건은 BMAsia 전문가에게 확인하세요."
+          ],
+          "items": []
+        },
+        "rights": {
+          "title": "콘텐츠 및 상표",
+          "paragraphs": [
+            "사이트 문구, 비주얼 디자인, 소프트웨어, BMAsia 자료는 관련 지식재산권법의 보호를 받습니다. 제품명, 로고, 파트너 자료는 각 소유자의 자산입니다. 링크나 설명으로 사용 권리가 이전되지는 않습니다."
+          ],
+          "items": []
+        },
+        "acceptable": {
+          "title": "허용되는 이용",
+          "paragraphs": [
+            "사이트를 오용하거나 운영을 방해하지 마세요."
+          ],
+          "items": [
+            "무단 접근, 보안 탐색, 유해 코드 삽입 또는 서비스 과부하를 시도하지 마세요.",
+            "불법적이거나 기만적이거나 권리를 침해하는 자료를 제출하거나, 타인을 사칭하거나, 양식 및 도우미 기능을 오용하지 마세요.",
+            "허가 없이 보호되는 사이트 콘텐츠를 체계적으로 수집하거나 복제하지 마세요."
+          ]
+        },
+        "external": {
+          "title": "외부 서비스",
+          "paragraphs": [
+            "이 사이트는 제품 로그인, Soundtrack, Calendly, 메시징 플랫폼, 소셜 채널 등 다른 주체가 운영하는 서비스로 연결됩니다. 사이트를 떠나면 해당 서비스의 약관, 개인정보 보호 관행, 이용 가능 여부, 보안이 적용됩니다. BMAsia는 통제하지 않는 제3자 사이트에 책임을 지지 않습니다."
+          ],
+          "items": []
+        },
+        "liability": {
+          "title": "이용 가능 여부 및 책임",
+          "paragraphs": [
+            "공개 사이트는 “이용 가능한 상태”를 기준으로 제공됩니다. 중단 없는 접근이나 모든 일반 설명이 모든 지역과 매장에 적합하다고 약속하지 않습니다. 법률이 허용하는 범위에서 BMAsia는 이 공개 사이트 이용만으로 발생한 간접적 또는 결과적 손실에 책임을 지지 않습니다. 법적으로 배제할 수 없는 책임은 본 조항으로 배제되지 않습니다."
+          ],
+          "items": []
+        },
+        "law": {
+          "title": "준거법",
+          "paragraphs": [
+            "웹사이트 이용에는 일반적으로 태국 법률이 적용됩니다. 고객 계약에서 다른 BMAsia 법인, 준거법, 분쟁 절차를 정할 수 있으며 계약된 서비스에는 해당 계약이 우선합니다."
+          ],
+          "items": []
+        },
+        "contact": {
+          "title": "변경 및 문의",
+          "paragraphs": [
+            "서비스 변경에 따라 웹사이트 약관을 업데이트할 수 있습니다. 현재 날짜는 페이지 상단에 표시됩니다. 질문은 아래 주소로 BMAsia에 보내 주세요."
+          ],
+          "items": []
+        }
+      }
+    }
   }
 }

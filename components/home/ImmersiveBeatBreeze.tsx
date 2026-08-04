@@ -344,10 +344,10 @@ export function ImmersiveBeatBreeze() {
             <h1><span>{t('hero.title')}</span> <em>{t('hero.highlight')}</em></h1>
             <p className={styles.heroLead}>{t('hero.description')}</p>
             <div className={styles.heroActions}>
-              <a href="#experience" className={styles.primaryButton}>
+              <a href="#choose-path" className={styles.primaryButton}>
                 {t('hero.try')} <ArrowDown aria-hidden="true" />
               </a>
-              <a href="https://beatbreeze.io/sign-up" className={styles.secondaryButton}>{t('hero.start')}</a>
+              <Link href={`/${locale}/quotation?source=homepage-hero`} className={styles.secondaryButton}>{t('hero.start')}</Link>
             </div>
             <div className={styles.proofRow}>
               {(['proof1', 'proof2', 'proof3'] as const).map((key) => (
@@ -378,6 +378,22 @@ export function ImmersiveBeatBreeze() {
               />
             ))}
           </div>
+        </div>
+        <div className={styles.productChoice} id="choose-path">
+          <div className={styles.productChoiceIntro}>
+            <span>{t('paths.eyebrow')}</span>
+            <strong>{t('paths.title')}</strong>
+          </div>
+          <Link href={`/${locale}/beat-breeze`} className={styles.beatPath}>
+            <span><small>{t('paths.beatLabel')}</small><strong>Beat Breeze</strong></span>
+            <p>{t('paths.beatText')}</p>
+            <ArrowRight aria-hidden="true" />
+          </Link>
+          <Link href={`/${locale}/soundtrack-your-brand`} className={styles.soundtrackPath}>
+            <span><small>{t('paths.soundtrackLabel')}</small><strong>Soundtrack</strong></span>
+            <p>{t('paths.soundtrackText')}</p>
+            <ArrowRight aria-hidden="true" />
+          </Link>
         </div>
         <a className={styles.scrollCue} href="#experience"><span>{t('hero.scroll')}</span><i /></a>
       </section>
@@ -599,6 +615,25 @@ export function ImmersiveBeatBreeze() {
           </button>
         </div>
 
+        <div className={styles.routeDecision}>
+          <div>
+            <p className={styles.eyebrow}><span />{t('paths.resultEyebrow')}</p>
+            <h3>{t('paths.resultTitle')}</h3>
+            <p>{t('paths.resultText')}</p>
+          </div>
+          <div>
+            <Link href={`/${locale}/beat-breeze`} className={styles.beatDecision}>
+              <strong>Beat Breeze</strong><span>{t('paths.beatDecision')}</span><ArrowRight aria-hidden="true" />
+            </Link>
+            <Link href={`/${locale}/soundtrack-your-brand`} className={styles.soundtrackDecision}>
+              <strong>Soundtrack</strong><span>{t('paths.soundtrackDecision')}</span><ArrowRight aria-hidden="true" />
+            </Link>
+            <Link href={`/${locale}/quotation?source=venue-time-machine`} className={styles.helpDecision}>
+              {t('paths.helpDecision')} <ArrowRight aria-hidden="true" />
+            </Link>
+          </div>
+        </div>
+
         <div className={styles.connectedReveal}>
           <div className={styles.connectedHeading}>
             <p className={styles.eyebrow}><span />{t('connected.eyebrow')}</p>
@@ -633,7 +668,7 @@ export function ImmersiveBeatBreeze() {
         </div>
       </section>
 
-      <section className={styles.story} id="beat-breeze-story">
+      <section className={styles.story} id="bmasia-story">
         <div className={styles.storyHeading}>
           <p className={styles.eyebrow}><span />{t('story.eyebrow')}</p>
           <h2>{t('story.title')} <em>{t('story.highlight')}</em></h2>
@@ -649,7 +684,7 @@ export function ImmersiveBeatBreeze() {
           ))}
         </div>
         <div className={styles.storyCta}>
-          <Link href={`/${locale}/beat-breeze`}>
+          <Link href={`/${locale}/how-it-works`}>
             {t('story.cta')} <ArrowRight aria-hidden="true" />
           </Link>
         </div>

@@ -1,12 +1,1 @@
-export { ValuePillars } from './ValuePillars';
-export { ProductCards } from './ProductCards';
-export { SmartFeatures } from './SmartFeatures';
 export { ClientLogos } from './ClientLogos';
-export { CalendlyEmbed } from './CalendlyEmbed';
-export { AboutSection } from './AboutSection';
-export { ContactSection } from './ContactSection';
-export { HeroChat } from '../chat/HeroChat';
-export { IndustriesGrid } from './IndustriesGrid';
-export { SolutionsSplit } from './SolutionsSplit';
-export { HowWeWork } from './HowWeWork';
-export { ProblemStatement } from './ProblemStatement';

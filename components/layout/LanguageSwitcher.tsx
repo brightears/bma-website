@@ -54,7 +54,8 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
     segments[1] = newLocale; // Replace the locale segment
     const newPathname = segments.join('/');
 
-    router.push(newPathname);
+    document.cookie = `NEXT_LOCALE=${newLocale};path=/;max-age=31536000;samesite=lax`;
+    router.push(newPathname || `/${newLocale}`);
     setIsOpen(false);
   };
 
@@ -63,13 +64,13 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-2 text-white/90 hover:text-white rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-brand-dark"
+        className="flex min-h-11 items-center gap-2 rounded-full border border-transparent px-3 text-white/68 transition-colors hover:border-white/10 hover:bg-white/[0.045] hover:text-white focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-[#06111a]"
         aria-expanded={isOpen}
         aria-haspopup="listbox"
         aria-label={`${localeNames[locale]} — ${t('language')}`}
       >
-        <Globe className="w-4 h-4" />
-        <span className="hidden sm:inline text-sm font-medium">
+        <Globe className="h-4 w-4" aria-hidden="true" />
+        <span className="hidden text-sm font-medium sm:inline">
           {localeNames[locale]}
         </span>
         <ChevronDown
@@ -86,8 +87,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
             transition={{ duration: 0.15 }}
             className={`absolute right-0 ${
               openDirection === 'up' ? 'bottom-full mb-2' : 'mt-2'
-            } w-48 border border-white/10 rounded-lg shadow-xl overflow-hidden z-50`}
-            style={{ backgroundColor: '#0f0f0f' }}
+            } z-50 w-56 overflow-hidden rounded-2xl border border-white/12 bg-[#091722] p-2 shadow-[0_28px_90px_rgba(0,0,0,.72)] ring-1 ring-black/30`}
             role="listbox"
             aria-label={t('language')}
           >
@@ -95,10 +95,10 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
               <button
                 key={loc}
                 onClick={() => handleLocaleChange(loc)}
-                className={`w-full text-left px-4 py-3 text-sm transition-colors flex items-center justify-between ${
+                className={`flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-sm transition-colors ${
                   loc === locale
-                    ? 'bg-brand-orange/20 text-brand-orange'
-                    : 'text-white/80 hover:bg-white/10 hover:text-white'
+                    ? 'bg-brand-orange/12 text-brand-orange'
+                    : 'text-white/72 hover:bg-white/[0.06] hover:text-white'
                 }`}
                 role="option"
                 aria-selected={loc === locale}

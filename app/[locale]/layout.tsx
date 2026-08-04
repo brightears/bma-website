@@ -54,8 +54,9 @@ export async function generateMetadata({
   // Generate alternate URLs for all locales
   const alternateLanguages: Record<string, string> = {};
   locales.forEach((loc) => {
-    alternateLanguages[loc] = `${SITE.url}/${loc}`;
+    alternateLanguages[loc] = `${SITE.url}/${loc}/`;
   });
+  alternateLanguages['x-default'] = `${SITE.url}/en/`;
 
   const title = t('title');
   const description = t('description');
@@ -80,13 +81,13 @@ export async function generateMetadata({
     authors: [{ name: SITE.name }],
     creator: SITE.name,
     alternates: {
-      canonical: `${SITE.url}/${locale}`,
+      canonical: `${SITE.url}/${locale}/`,
       languages: alternateLanguages,
     },
     openGraph: {
       type: 'website',
       locale: ogLocaleMap[locale as Locale] || 'en_US',
-      url: `${SITE.url}/${locale}`,
+      url: `${SITE.url}/${locale}/`,
       siteName: SITE.name,
       title,
       description,
@@ -135,6 +136,7 @@ export default async function LocaleLayout({
   // Get messages and translations for the locale
   const messages = await getMessages();
   const t = await getTranslations({ locale, namespace: 'metadata' });
+  const tNav = await getTranslations({ locale, namespace: 'navigation' });
 
   return (
     <html lang={locale} suppressHydrationWarning className={`scroll-smooth ${geist.variable} ${spaceGrotesk.variable}`}>
@@ -152,8 +154,8 @@ export default async function LocaleLayout({
               '@context': 'https://schema.org',
               '@type': 'Organization',
               name: 'BMAsia',
-              url: `https://bmasiamusic.com/${locale}`,
-              logo: 'https://bmasiamusic.com/images/BMAsia_Logo.png',
+              url: `${SITE.url}/${locale}/`,
+              logo: `${SITE.url}/images/BMAsia_Logo.png`,
               description: t('description'),
               foundingDate: '2002',
               contactPoint: {
@@ -176,7 +178,7 @@ export default async function LocaleLayout({
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 bg-brand-orange text-white px-4 py-2 rounded-lg font-semibold"
         >
-          Skip to main content
+          {tNav('skipToContent')}
         </a>
 
         <NextIntlClientProvider messages={messages}>

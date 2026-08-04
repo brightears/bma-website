@@ -47,14 +47,24 @@ const escapeHtml = (value: string) =>
     .replaceAll('"', '&quot;')
     .replaceAll("'", '&#039;');
 
+const escapeMultilineHtml = (value: string) => escapeHtml(value).replace(/\r?\n/g, '<br>');
+const safeSubjectValue = (value: string) => value.replace(/[\r\n]+/g, ' ').trim().slice(0, 160);
+
 /**
  * Send notification email for new inquiry submission
  */
 export async function sendInquiryNotification(data: InquiryEmailData): Promise<void> {
+  const safe = {
+    name: escapeHtml(data.name),
+    company: escapeHtml(data.company),
+    email: escapeHtml(data.email),
+    message: escapeMultilineHtml(data.message),
+  };
   const mailOptions = {
     from: `"BMAsia Website" <${process.env.GMAIL_USER}>`,
     to: process.env.NOTIFICATION_EMAIL,
-    subject: `New Inquiry from ${data.name} - ${data.company}`,
+    replyTo: data.email,
+    subject: `New Inquiry from ${safeSubjectValue(data.name)} - ${safeSubjectValue(data.company)}`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <div style="background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%); padding: 30px; border-radius: 10px 10px 0 0;">
@@ -65,23 +75,23 @@ export async function sendInquiryNotification(data: InquiryEmailData): Promise<v
           <table style="width: 100%; border-collapse: collapse;">
             <tr>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; width: 120px;">Name:</td>
-              <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.name}</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${safe.name}</td>
             </tr>
             <tr>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold;">Company:</td>
-              <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.company}</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${safe.company}</td>
             </tr>
             <tr>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold;">Email:</td>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee;">
-                <a href="mailto:${data.email}" style="color: #EFA634;">${data.email}</a>
+                <a href="mailto:${safe.email}" style="color: #EFA634;">${safe.email}</a>
               </td>
             </tr>
           </table>
 
           <h2 style="color: #1a1a2e; margin-top: 30px;">Message</h2>
           <div style="background: #fff; padding: 20px; border-radius: 8px; border: 1px solid #eee;">
-            ${data.message.replace(/\n/g, '<br>')}
+            ${safe.message}
           </div>
 
           <p style="color: #666; font-size: 12px; margin-top: 30px; text-align: center;">
@@ -118,10 +128,22 @@ export async function sendQuotationNotification(data: QuotationEmailData): Promi
     'not-sure': 'Not Sure Yet',
   };
 
+  const safe = {
+    firstName: escapeHtml(data.firstName),
+    lastName: escapeHtml(data.lastName),
+    email: escapeHtml(data.email),
+    country: escapeHtml(data.country),
+    companyName: escapeHtml(data.companyName),
+    companyAddress: escapeMultilineHtml(data.companyAddress),
+    preferredSolution: escapeHtml(solutionLabels[data.preferredSolution] || data.preferredSolution),
+    numberOfZones: Number.isFinite(data.numberOfZones) ? String(data.numberOfZones) : '',
+  };
+
   const mailOptions = {
     from: `"BMAsia Website" <${process.env.GMAIL_USER}>`,
     to: process.env.NOTIFICATION_EMAIL,
-    subject: `New Quotation Request from ${data.firstName} ${data.lastName} - ${data.companyName}`,
+    replyTo: data.email,
+    subject: `New Quotation Request from ${safeSubjectValue(`${data.firstName} ${data.lastName}`)} - ${safeSubjectValue(data.companyName)}`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <div style="background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%); padding: 30px; border-radius: 10px 10px 0 0;">
@@ -132,17 +154,17 @@ export async function sendQuotationNotification(data: QuotationEmailData): Promi
           <table style="width: 100%; border-collapse: collapse;">
             <tr>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; width: 140px;">Name:</td>
-              <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.firstName} ${data.lastName}</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${safe.firstName} ${safe.lastName}</td>
             </tr>
             <tr>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold;">Email:</td>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee;">
-                <a href="mailto:${data.email}" style="color: #EFA634;">${data.email}</a>
+                <a href="mailto:${safe.email}" style="color: #EFA634;">${safe.email}</a>
               </td>
             </tr>
             <tr>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold;">Country:</td>
-              <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.country}</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${safe.country}</td>
             </tr>
           </table>
 
@@ -150,11 +172,11 @@ export async function sendQuotationNotification(data: QuotationEmailData): Promi
           <table style="width: 100%; border-collapse: collapse;">
             <tr>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; width: 140px;">Company Name:</td>
-              <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.companyName}</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${safe.companyName}</td>
             </tr>
             <tr>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; vertical-align: top;">Address:</td>
-              <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.companyAddress.replace(/\n/g, '<br>')}</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${safe.companyAddress}</td>
             </tr>
           </table>
 
@@ -164,13 +186,13 @@ export async function sendQuotationNotification(data: QuotationEmailData): Promi
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; width: 140px;">Solution:</td>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee;">
                 <span style="background: #EFA634; color: white; padding: 4px 12px; border-radius: 4px;">
-                  ${solutionLabels[data.preferredSolution] || data.preferredSolution}
+                  ${safe.preferredSolution}
                 </span>
               </td>
             </tr>
             <tr>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold;">Number of Zones:</td>
-              <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.numberOfZones}</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${safe.numberOfZones}</td>
             </tr>
           </table>
 

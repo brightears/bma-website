@@ -4,15 +4,19 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
-import { ArrowRight, Check, Play, Sparkles } from 'lucide-react';
+import { ArrowRight, Compass, Sparkles } from 'lucide-react';
 import { ImmersiveBeatBreeze } from '@/components/home/ImmersiveBeatBreeze';
 import { ClientLogos } from '@/components/sections';
 import { FloatingChatButton } from '@/components/chat/FloatingChatButton';
+import { EXTERNAL_LINKS, withAttribution } from '@/lib/external-links';
 
 const industries = [
   { key: 'hotels', href: '/solutions/hotels', image: '/images/hero-hotel.webp' },
   { key: 'restaurants', href: '/solutions/restaurants', image: '/images/hero-restaurant.webp' },
   { key: 'retail', href: '/solutions/retail', image: '/images/hero-retail.webp' },
+  { key: 'cafes', href: '/solutions/cafes', image: '/images/hero-cafe.webp' },
+  { key: 'medical', href: '/solutions/medical', image: '/images/hero-medical.webp' },
+  { key: 'gyms', href: '/solutions/gyms', image: '/images/hero-gym.webp' },
 ] as const;
 
 const reveal = {
@@ -24,7 +28,6 @@ const reveal = {
 
 export default function Home() {
   const locale = useLocale();
-  const t = useTranslations('hero');
   const h = useTranslations('homePage');
 
   return (
@@ -33,7 +36,7 @@ export default function Home() {
 
       <ClientLogos />
 
-      <section className="relative overflow-hidden bg-[linear-gradient(180deg,#070d17,#090f1b)] px-6 py-24 sm:px-10 md:py-36 lg:px-16">
+      <section id="products" className="bma-grain relative overflow-hidden bg-[linear-gradient(180deg,#070d17,#090f1b)] px-6 py-24 sm:px-10 md:py-36 lg:px-16">
         <div className="mx-auto max-w-[1480px]">
           <motion.div {...reveal} className="mx-auto max-w-4xl text-center">
             <p className="font-label text-[11px] uppercase tracking-[0.28em] text-brand-orange">{h('immersive.worlds.eyebrow')}</p>
@@ -46,9 +49,9 @@ export default function Home() {
             <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-8 text-white/52">{h('immersive.worlds.description')}</p>
           </motion.div>
 
-          <div className="mt-16 grid items-stretch gap-6 xl:grid-cols-2">
+          <div className="mt-16 grid items-stretch gap-5 xl:grid-cols-[1.04fr_.96fr]">
             <motion.article {...reveal} className="relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-[#e8850c]/25 bg-[#0b1423] shadow-[0_30px_90px_rgba(0,212,200,0.06)] before:absolute before:inset-x-0 before:top-0 before:z-20 before:h-0.5 before:bg-[linear-gradient(90deg,#e8850c,#e7b94e,#73cf98,#00d4c8)]">
-              <div className="relative grid min-h-[430px] place-items-center overflow-hidden bg-[radial-gradient(circle_at_center,rgba(0,212,200,0.18),transparent_33%),radial-gradient(circle_at_15%_75%,rgba(232,133,12,0.24),transparent_30%),radial-gradient(circle_at_85%_20%,rgba(115,207,152,0.11),transparent_26%),#09121f]">
+              <div className="relative grid min-h-[330px] place-items-center overflow-hidden bg-[radial-gradient(circle_at_center,rgba(0,212,200,0.18),transparent_33%),radial-gradient(circle_at_15%_75%,rgba(232,133,12,0.24),transparent_30%),radial-gradient(circle_at_85%_20%,rgba(115,207,152,0.11),transparent_26%),#09121f] sm:min-h-[380px]">
                 <div className="absolute aspect-square w-[560px] rounded-full border border-cyan-300/15 shadow-[0_0_0_76px_rgba(0,212,200,0.025),0_0_0_150px_rgba(232,133,12,0.025)] motion-safe:animate-pulse-slow" />
                 <div className="relative z-10 flex h-48 w-48 flex-col items-center justify-center rounded-full border border-white/15 bg-[#0b1321]/80 text-center shadow-[0_0_90px_rgba(232,133,12,0.18)] backdrop-blur-xl">
                   <Sparkles className="h-6 w-6 text-brand-orange" aria-hidden="true" />
@@ -75,18 +78,19 @@ export default function Home() {
                   ))}
                 </ul>
                 <div className="mt-auto flex flex-col gap-3 pt-8 sm:flex-row">
-                  <a href="https://beatbreeze.io/sign-up" className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-brand-orange px-6 font-label text-sm font-semibold text-[#101010] hover:bg-[#ffb64a]">
-                    {h('immersive.worlds.tryBeatBreeze')} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                  </a>
-                  <Link href={`/${locale}/beat-breeze`} className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/15 px-6 font-label text-sm font-semibold text-white hover:bg-white/5">
+                  <Link href={`/${locale}/beat-breeze`} className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-brand-orange px-6 font-label text-sm font-semibold text-[#101010] hover:bg-[#ffb64a]">
                     {h('twoSolutions.bb.cta')}
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
                   </Link>
+                  <a href={withAttribution(EXTERNAL_LINKS.beatBreezeSignup, 'homepage_product_choice', 'beat_breeze_trial')} className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/15 px-6 font-label text-sm font-semibold text-white hover:bg-white/5">
+                    {h('immersive.worlds.tryBeatBreeze')}
+                  </a>
                 </div>
               </div>
             </motion.article>
 
             <motion.article {...reveal} transition={{ duration: 0.65, delay: 0.08 }} className="flex h-full flex-col overflow-hidden rounded-[2rem] border border-[#d6c2ff]/40 bg-[#190d21] shadow-[0_30px_90px_rgba(214,194,255,0.08)]">
-              <div className="relative min-h-[430px] overflow-hidden bg-[#d6c2ff] p-6 sm:p-8">
+              <div className="relative min-h-[330px] overflow-hidden bg-[#d6c2ff] p-6 sm:min-h-[380px] sm:p-8">
                 <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full border border-black/10" aria-hidden="true" />
                 <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full border border-black/10" aria-hidden="true" />
                 <div className="relative z-10">
@@ -117,11 +121,12 @@ export default function Home() {
                   ))}
                 </ul>
                 <div className="mt-auto flex flex-col gap-3 pt-8 sm:flex-row">
-                  <Link href={`/${locale}/quotation`} className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-[#c9b2ff] px-6 font-label text-sm font-semibold text-[#180424] hover:bg-[#ded0ff]">
-                    {h('immersive.worlds.talkSoundtrack')} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                  </Link>
-                  <Link href={`/${locale}/soundtrack-your-brand`} className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#eee6ff]/20 px-6 font-label text-sm font-semibold text-white hover:bg-white/5">
+                  <Link href={`/${locale}/soundtrack-your-brand`} className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-[#c9b2ff] px-6 font-label text-sm font-semibold text-[#180424] hover:bg-[#ded0ff]">
                     {h('twoSolutions.syb.cta')}
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                  </Link>
+                  <Link href={`/${locale}/soundtrack-trial?source=homepage-product-choice`} className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#eee6ff]/20 px-6 font-label text-sm font-semibold text-white hover:bg-white/5">
+                    {h('immersive.worlds.talkSoundtrack')}
                   </Link>
                 </div>
               </div>
@@ -152,10 +157,10 @@ export default function Home() {
             </Link>
           </motion.div>
 
-          <div className="mt-14 grid gap-5 lg:grid-cols-3">
+          <div className="mt-14 grid gap-4 md:grid-cols-2 xl:grid-cols-12">
             {industries.map((industry, index) => (
-              <motion.div key={industry.key} {...reveal} transition={{ duration: 0.55, delay: index * 0.08 }}>
-                <Link href={`/${locale}${industry.href}`} className="group relative block min-h-[460px] overflow-hidden rounded-[1.5rem] border border-white/10 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-4 focus:ring-offset-[#070d17]">
+              <motion.div key={industry.key} {...reveal} transition={{ duration: 0.55, delay: index * 0.08 }} className={index === 0 ? 'xl:col-span-5' : index < 3 ? 'xl:col-span-3' : 'xl:col-span-4'}>
+                <Link href={`/${locale}${industry.href}`} className="group relative block min-h-[360px] overflow-hidden rounded-[1.5rem] border border-white/10 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-4 focus:ring-offset-[#070d17]">
                   <Image src={industry.image} alt={h(`industries.${industry.key}.title`)} fill className="object-cover transition-transform duration-700 group-hover:scale-[1.035]" sizes="(max-width: 1024px) 100vw, 33vw" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#070d17] via-[#070d17]/45 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 p-7 md:p-8">
@@ -173,24 +178,17 @@ export default function Home() {
       <section id="start" className="relative overflow-hidden border-t border-white/[0.08] bg-[#09111d] px-6 py-24 sm:px-10 md:py-36 lg:px-16">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_100%,rgba(232,133,12,0.18),transparent_40%),radial-gradient(circle_at_75%_100%,rgba(0,212,200,0.11),transparent_42%)]" aria-hidden="true" />
         <motion.div {...reveal} className="relative mx-auto max-w-4xl text-center">
-          <Play className="mx-auto h-9 w-9 text-brand-orange" strokeWidth={1.5} aria-hidden="true" />
+          <Compass className="mx-auto h-9 w-9 text-brand-orange" strokeWidth={1.5} aria-hidden="true" />
           <h2 className="mt-7 text-balance font-headline text-5xl font-medium leading-[1.02] tracking-[-0.05em] text-white md:text-7xl">
             {h('finalCta.title')}{' '}
             <span className="bg-gradient-to-r from-brand-orange via-[#d9bd61] to-[#42d6ca] bg-clip-text text-transparent">{h('finalCta.titleHighlight')}</span>
           </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-8 text-white/50">{h('beatBreezeLead.finalDescription')}</p>
+          <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-8 text-white/50">{h('finalCta.description')}</p>
           <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
-            <a href="https://beatbreeze.io/sign-up" className="inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-brand-orange px-8 font-label text-sm font-semibold text-[#101010] hover:bg-[#ffb64a]">
-              {t('ctaQuote')} <ArrowRight className="h-4 w-4" aria-hidden="true" />
-            </a>
-            <Link href={`/${locale}/quotation`} className="inline-flex min-h-14 items-center justify-center rounded-full border border-white/15 px-8 font-label text-sm font-semibold text-white hover:bg-white/5">
-              {h('finalCta.ctaDemo')}
+            <Link href={`/${locale}/quotation?source=homepage-final`} className="inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-brand-orange px-8 font-label text-sm font-semibold text-[#101010] hover:bg-[#ffb64a]">
+              {h('finalCta.ctaQuote')} <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Link>
-          </div>
-          <div className="mt-7 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-white/38">
-            {[h('beatBreezeLead.proof1'), h('beatBreezeLead.proof2'), h('beatBreezeLead.proof3')].map((item) => (
-              <span key={item} className="flex items-center gap-2"><Check className="h-3.5 w-3.5 text-brand-orange" aria-hidden="true" />{item}</span>
-            ))}
+            <Link href="#products" className="inline-flex min-h-14 items-center justify-center rounded-full border border-white/15 px-8 font-label text-sm font-semibold text-white hover:bg-white/5">{h('finalCta.ctaDemo')}</Link>
           </div>
         </motion.div>
       </section>

@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
   // Get translations for this page
-  const t = await getTranslations({ locale, namespace: 'howItWorks' });
+  const t = await getTranslations({ locale, namespace: 'howItWorksPage' });
   const tNav = await getTranslations({ locale, namespace: 'navigation' });
 
   const title = `${t('hero.title')} ${t('hero.titleHighlight')}`;
@@ -32,21 +32,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Generate alternate URLs for all locales
   const alternateLanguages: Record<string, string> = {};
   locales.forEach((loc) => {
-    alternateLanguages[loc] = `${SITE.url}/${loc}/how-it-works`;
+    alternateLanguages[loc] = `${SITE.url}/${loc}/how-it-works/`;
   });
+  alternateLanguages['x-default'] = `${SITE.url}/en/how-it-works/`;
 
   return {
     title: tNav('howItWorks'),
     description,
     alternates: {
-      canonical: `${SITE.url}/${locale}/how-it-works`,
+      canonical: `${SITE.url}/${locale}/how-it-works/`,
       languages: alternateLanguages,
     },
     openGraph: {
       title: `${title} | ${SITE.name}`,
       description,
       locale: ogLocaleMap[locale as Locale] || 'en_US',
-      url: `${SITE.url}/${locale}/how-it-works`,
+      url: `${SITE.url}/${locale}/how-it-works/`,
       siteName: SITE.name,
       type: 'website',
       images: [
@@ -85,13 +86,13 @@ export default async function HowItWorksLayout({
         '@type': 'ListItem',
         position: 1,
         name: tNav('home'),
-        item: `${SITE.url}/${locale}`,
+        item: `${SITE.url}/${locale}/`,
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: tNav('howItWorks'),
-        item: `${SITE.url}/${locale}/how-it-works`,
+        item: `${SITE.url}/${locale}/how-it-works/`,
       },
     ],
   };
