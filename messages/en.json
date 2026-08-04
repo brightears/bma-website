@@ -797,7 +797,8 @@
         "concierge": "Why this zone fits",
         "energy": "Selected zone activation",
         "zonePlanEyebrow": "One venue, three music jobs",
-        "zonePlanTitle": "Three zones. Three separate recommendations.",
+        "zonePlanTitleLine1": "Three zones.",
+        "zonePlanTitleLine2": "Three separate recommendations.",
         "zonePlanDescription": "Each card controls a different zone. Select one to hear its representative direction and see why it fits this moment.",
         "zoneLabel": "Zone {index} · {zone}",
         "conciergeReason": "At {time}, {playlist} is the {zone} recommendation to {purpose}. Around {bpm} BPM with target activation {energy}/100 keeps this zone distinct from the other two."

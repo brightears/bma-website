@@ -797,7 +797,8 @@
         "concierge": "Mengapa ia sesuai untuk zon ini",
         "energy": "Pengaktifan zon dipilih",
         "zonePlanEyebrow": "Satu venue, tiga tugas muzik",
-        "zonePlanTitle": "Tiga zon. Tiga cadangan berasingan.",
+        "zonePlanTitleLine1": "Tiga zon.",
+        "zonePlanTitleLine2": "Tiga cadangan berasingan.",
         "zonePlanDescription": "Setiap kad mengawal zon yang berbeza. Pilih satu untuk mendengar arah perwakilan dan melihat sebab ia sesuai pada waktu ini.",
         "zoneLabel": "Zon {index} · {zone}",
         "conciergeReason": "{playlist} disyorkan untuk {zone} pada {time}: {purpose}. Sekitar {bpm} BPM dengan sasaran pengaktifan {energy}/100 membezakan zon ini daripada dua zon lain."

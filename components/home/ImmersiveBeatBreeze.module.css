@@ -816,7 +816,7 @@
   padding: 0 4px 14px;
 }
 
-.zonePlanIntro span {
+.zonePlanIntro > div > span {
   display: block;
   margin-bottom: 7px;
   color: var(--phase-b);
@@ -831,6 +831,10 @@
   font-size: clamp(1.35rem, 2vw, 2rem);
   font-weight: 520;
   text-wrap: balance;
+}
+
+.zonePlanIntro strong .zonePlanTitleLine {
+  display: block;
 }
 
 .zonePlanIntro p {
@@ -1358,6 +1362,12 @@
   .capabilityCard:nth-child(n) { position: static; width: 100%; }
   .storyTrack { grid-template-columns: 1fr; }
   .storyTrack article { padding-right: 0; }
+}
+
+@media (min-width: 621px) {
+  .zonePlanIntro strong .zonePlanTitleLine:last-child {
+    white-space: nowrap;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
