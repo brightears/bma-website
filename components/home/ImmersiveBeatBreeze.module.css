@@ -284,7 +284,7 @@
 .beatPath,
 .soundtrackPath {
   display: grid;
-  grid-template-columns: minmax(130px, 0.52fr) minmax(0, 1fr) auto;
+  grid-template-columns: minmax(205px, 0.68fr) minmax(0, 1fr) auto;
   align-items: center;
   gap: 18px;
   border-left: 1px solid rgba(255, 255, 255, 0.08);
@@ -297,6 +297,8 @@
 .soundtrackPath strong { display: block; margin-top: 5px; font-family: var(--font-label), sans-serif; font-size: 18px; font-weight: 560; }
 .soundtrackPath small { color: #d6c2ff; }
 .beatPath small { color: var(--orange); }
+.beatPath small,
+.soundtrackPath small { white-space: nowrap; }
 .beatPath p,
 .soundtrackPath p { margin: 0; color: rgba(238, 243, 255, 0.46); font-size: 12px; line-height: 1.5; }
 .beatPath svg,
@@ -1199,6 +1201,12 @@
   .productChoice { position: relative; inset: auto; grid-template-columns: 1fr 1fr; margin: 0 24px 82px; }
   .productChoiceIntro { grid-column: 1 / -1; }
   .productChoice > *:nth-child(2) { border-left: 0; }
+  .beatPath,
+  .soundtrackPath { grid-template-columns: minmax(0, 1fr) auto; align-content: center; }
+  .beatPath p,
+  .soundtrackPath p { grid-column: 1; grid-row: 2; }
+  .beatPath svg,
+  .soundtrackPath svg { grid-column: 2; grid-row: 1 / 3; }
   .scrollCue { display: none; }
   .touchpointIntro { grid-row: auto; }
   .connectedScene { min-height: 540px; }
@@ -1231,7 +1239,7 @@
   .productChoice { grid-template-columns: 1fr; margin-inline: 18px; }
   .productChoiceIntro { grid-column: auto; }
   .beatPath,
-  .soundtrackPath { grid-template-columns: minmax(120px, 0.7fr) 1fr auto; border-top: 1px solid rgba(255, 255, 255, 0.08); border-left: 0; }
+  .soundtrackPath { border-top: 1px solid rgba(255, 255, 255, 0.08); border-left: 0; }
   .routeDecision { padding: 26px 20px; }
   .beatDecision,
   .soundtrackDecision { grid-template-columns: 1fr auto; }
