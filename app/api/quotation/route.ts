@@ -3,6 +3,13 @@ import { prisma } from '@/lib/prisma';
 import { sendQuotationNotification } from '@/lib/email';
 import { checkRateLimit, isHoneypotTriggered, getClientIP } from '@/lib/rate-limiter';
 
+const clean = (value: unknown, maxLength: number) =>
+  typeof value === 'string'
+    ? value.replace(/[\u0000-\u001F\u007F]/g, ' ').trim().slice(0, maxLength)
+    : '';
+
+const SOLUTIONS = new Set(['soundtrack-your-brand', 'beat-breeze', 'not-sure']);
+
 /**
  * Quotation request form submission API endpoint
  * POST /api/quotation
@@ -27,17 +34,17 @@ export async function POST(request: NextRequest) {
 
     // Parse request body
     const body = await request.json();
-    const {
-      firstName,
-      lastName,
-      email,
-      country,
-      companyName,
-      companyAddress,
-      preferredSolution,
-      numberOfZones,
-      website,
-    } = body;
+    const { website } = body;
+    const firstName = clean(body.firstName, 80);
+    const lastName = clean(body.lastName, 80);
+    const email = clean(body.email, 254).toLowerCase();
+    const country = clean(body.country, 100);
+    const companyName = clean(body.companyName, 160);
+    const companyAddress = clean(body.companyAddress, 1000);
+    const preferredSolution = clean(body.preferredSolution, 40);
+    const numberOfZones = typeof body.numberOfZones === 'number' || typeof body.numberOfZones === 'string'
+      ? String(body.numberOfZones)
+      : '';
 
     // Check honeypot field - if filled, silently reject (likely a bot)
     if (isHoneypotTriggered(website)) {
@@ -75,6 +82,13 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    if (!SOLUTIONS.has(preferredSolution)) {
+      return NextResponse.json(
+        { error: 'Please select a valid solution.' },
+        { status: 400 }
+      );
+    }
+
     // Validate numberOfZones is a positive number
     const zones = parseInt(numberOfZones, 10);
     if (isNaN(zones) || zones < 1) {
@@ -87,13 +101,13 @@ export async function POST(request: NextRequest) {
     // Save to database
     const quotation = await prisma.quotation.create({
       data: {
-        firstName: firstName.trim(),
-        lastName: lastName.trim(),
-        email: email.trim().toLowerCase(),
-        country: country.trim(),
-        companyName: companyName.trim(),
-        companyAddress: companyAddress.trim(),
-        preferredSolution: preferredSolution.trim(),
+        firstName,
+        lastName,
+        email,
+        country,
+        companyName,
+        companyAddress,
+        preferredSolution,
         numberOfZones: zones,
       },
     });

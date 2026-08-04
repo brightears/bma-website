@@ -3,6 +3,11 @@ import { prisma } from '@/lib/prisma';
 import { sendInquiryNotification } from '@/lib/email';
 import { checkRateLimit, isHoneypotTriggered, getClientIP } from '@/lib/rate-limiter';
 
+const clean = (value: unknown, maxLength: number) =>
+  typeof value === 'string'
+    ? value.replace(/[\u0000-\u001F\u007F]/g, ' ').trim().slice(0, maxLength)
+    : '';
+
 /**
  * Inquiry form submission API endpoint
  * POST /api/inquiry
@@ -27,7 +32,11 @@ export async function POST(request: NextRequest) {
 
     // Parse request body
     const body = await request.json();
-    const { name, company, email, message, website } = body;
+    const { website } = body;
+    const name = clean(body.name, 120);
+    const company = clean(body.company, 160);
+    const email = clean(body.email, 254).toLowerCase();
+    const message = clean(body.message, 5000);
 
     // Check honeypot field - if filled, silently reject (likely a bot)
     if (isHoneypotTriggered(website)) {
@@ -59,10 +68,10 @@ export async function POST(request: NextRequest) {
     // Save to database
     const inquiry = await prisma.inquiry.create({
       data: {
-        name: name.trim(),
-        company: company.trim(),
-        email: email.trim().toLowerCase(),
-        message: message.trim(),
+        name,
+        company,
+        email,
+        message,
       },
     });
 

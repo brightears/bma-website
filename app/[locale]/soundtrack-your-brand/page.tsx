@@ -1,490 +1,199 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import { useLocale, useTranslations } from 'next-intl';
 import {
-  Layers,
-  Calendar,
-  Megaphone,
-  Smartphone,
-  CloudOff,
-  ShieldCheck,
-  Sparkles,
-  Network,
-  Wrench,
-  Router,
-  MonitorSmartphone,
-  Apple,
-  Speaker,
-  Cable,
+  ArrowRight,
+  CalendarDays,
+  Check,
+  CloudSun,
+  Disc3,
   Headphones,
-  Music,
-  Bot,
-  Plus,
+  Languages,
+  Layers3,
+  MoonStar,
+  Network,
+  Play,
+  RefreshCw,
+  SlidersHorizontal,
+  Smartphone,
+  Sparkles,
+  Volume2,
 } from 'lucide-react';
+import { EXTERNAL_LINKS } from '@/lib/external-links';
 
-const VALUE_PROP_KEYS = ['01', '02', '03'] as const;
+const reveal = {
+  initial: { opacity: 0, y: 24 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, margin: '-80px' },
+  transition: { duration: 0.62 },
+};
 
-const FEATURES = [
-  { Icon: Layers, key: 'multiZone' },
-  { Icon: Calendar, key: 'scheduling' },
-  { Icon: Megaphone, key: 'audioMessaging' },
-  { Icon: Smartphone, key: 'mobileApps' },
-  { Icon: CloudOff, key: 'offlineReady' },
-  { Icon: ShieldCheck, key: 'enterpriseSecurity' },
+const covers = [
+  '/images/covers/nu-disco-vocal.jpg',
+  '/images/covers/jazz-piano.jpg',
+  '/images/covers/deep-house.jpg',
+  '/images/covers/pop-mid-tempo.jpg',
+  '/images/covers/french-cafe.jpg',
+  '/images/covers/bossa-nova-lounge.jpg',
 ] as const;
 
-const INTEGRATIONS = [
-  { Icon: Sparkles, key: 'aiPlaylist' },
-  { Icon: Network, key: 'smartBuilding' },
-  { Icon: Wrench, key: 'bespoke' },
-] as const;
-
-const DEVICES = [
-  { Icon: Router, key: 'soundtrackPlayer' },
-  { Icon: MonitorSmartphone, key: 'windows' },
-  { Icon: Smartphone, key: 'androidIos' },
-  { Icon: Apple, key: 'macos' },
-  { Icon: Speaker, key: 'sonos' },
-  { Icon: Cable, key: 'qsys' },
-] as const;
-
-const FAQ_KEYS = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6'] as const;
-
-const SUPPORT = [
-  { Icon: Headphones, key: 'technical' },
-  { Icon: Music, key: 'musicDesign' },
-  { Icon: Bot, key: 'aiAssist' },
-] as const;
-
-export default function SoundtrackYourBrandPage() {
-  const t = useTranslations('soundtrackPage');
+export default function SoundtrackPage() {
   const locale = useLocale();
+  const t = useTranslations('soundtrackPage');
 
   return (
-    <>
-      {/* Hero */}
-      <section className="relative flex min-h-[72vh] items-center overflow-hidden bg-[#14091d] px-6 pb-20 pt-32 sm:pb-24 md:px-12 md:pb-28 md:pt-36">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/images/product-syb-hero.webp"
-            alt="Premium hotel lobby with ambient music"
-            fill
-            priority
-            className="object-cover opacity-35 saturate-[0.75]"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#14091d] via-[#14091d]/90 to-[#241331]/55" />
-          <div className="absolute -right-20 top-12 h-[28rem] w-[28rem] rounded-full bg-[#D6C2FF]/10 blur-3xl" />
-        </div>
-        <div className="relative z-10 container mx-auto">
-          <div className="max-w-6xl">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <Image
-                src="/images/brand/soundtrack/soundtrack-logo-white.svg"
-                alt="Soundtrack"
-                width={502}
-                height={147}
-                className="mb-10 h-auto w-52 sm:w-60"
-              />
-              <span className="font-label text-[#D6C2FF] text-sm tracking-[0.3em] uppercase mb-6 block">
-                {t('hero.label')}
-              </span>
-              <h1 className="mb-7 max-w-6xl text-balance font-label text-[clamp(3.35rem,5.4vw,4.85rem)] leading-[.98] tracking-[-.05em] text-white">
-                <span>{t('hero.title')}</span>{' '}
-                <span className="inline-block italic text-[#D6C2FF]">{t('hero.titleHighlight')}</span>
-              </h1>
-              <p className="text-xl md:text-2xl text-white/60 max-w-xl leading-relaxed mb-10">
-                {t('hero.subtitle')}
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href={`/${locale}/quotation`}
-                  className="bg-[#D6C2FF] text-[#14091d] px-10 py-4 font-label font-bold uppercase tracking-widest text-sm hover:bg-white transition-all duration-300 text-center"
-                >
-                  {t('hero.ctaQuote')}
-                </Link>
-                <Link
-                  href={`/${locale}/soundtrack-trial`}
-                  className="border border-[#D6C2FF]/45 text-white px-10 py-4 font-label font-bold uppercase tracking-widest text-sm hover:border-[#D6C2FF] hover:text-[#D6C2FF] transition-all duration-300 text-center"
-                >
-                  {t('hero.ctaTrial')}
-                </Link>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+    <div className="overflow-hidden bg-[#160b1f] text-white">
+      <section className="bma-grain relative isolate min-h-[100dvh] overflow-hidden px-5 pb-20 pt-28 sm:px-8 sm:pt-32 lg:flex lg:items-center lg:px-16">
+        <Image src="/images/product-syb-hero.webp" alt="" fill priority className="-z-30 object-cover opacity-[0.22] saturate-[0.7]" sizes="100vw" aria-hidden="true" />
+        <div className="absolute inset-0 -z-20 bg-[linear-gradient(100deg,#160b1f_0%,rgba(22,11,31,.97)_48%,rgba(22,11,31,.68)_100%)]" />
+        <div className="absolute -right-48 top-10 -z-10 h-[44rem] w-[44rem] rounded-full border border-[#d6c2ff]/10 shadow-[0_0_0_110px_rgba(214,194,255,.025),0_0_0_220px_rgba(214,194,255,.015)]" />
 
-      {/* Positioning */}
-      <section className="border-t border-[#D6C2FF]/15 bg-[#14091d] px-6 py-24 md:px-12 md:py-32">
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="font-label text-3xl md:text-5xl leading-tight text-white/90 [text-wrap:balance]"
-          >
-            {t('positioning.text1')}
-            {' '}
-            <span className="italic text-[#D6C2FF]">{t('positioning.highlight')}</span>
-            {' '}
-            {t('positioning.text2')}
-          </motion.p>
-        </div>
-      </section>
-
-      {/* Core Value Props */}
-      <section className="py-16 md:py-24 px-6 md:px-12 bg-[#14091d]">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10">
-            {VALUE_PROP_KEYS.map((num, i) => (
-              <motion.div
-                key={num}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="p-8 md:p-12"
-              >
-                <span className="font-label text-[#D6C2FF] text-xs tracking-[0.2em] uppercase block mb-4">
-                  {num} / {t(`valueProps.${num}.label`)}
-                </span>
-                <h3 className="font-label text-2xl md:text-3xl text-white mb-4 [text-wrap:balance]">{t(`valueProps.${num}.title`)}</h3>
-                <p className="text-lg text-white/50 leading-relaxed">{t(`valueProps.${num}.desc`)}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Features Grid */}
-      <section className="py-20 md:py-32 px-6 md:px-12 bg-[#1a0c24] border-y border-[#D6C2FF]/10">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-16"
-          >
-            <span className="font-label text-[#D6C2FF] text-xs tracking-[0.2em] uppercase block mb-4">
-              {t('features.sectionLabel')}
-            </span>
-            <h2 className="font-label text-3xl md:text-5xl text-white [text-wrap:balance]">{t('features.sectionTitle')}</h2>
-          </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5">
-            {FEATURES.map((feature, i) => {
-              const Icon = feature.Icon;
-              return (
-                <motion.div
-                  key={feature.key}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.05 }}
-                  className="bg-[#1a0c24] p-10 md:p-12"
-                >
-                  <Icon className="text-[#D6C2FF] w-10 h-10 mb-6" strokeWidth={1.5} />
-                  <h4 className="font-label text-sm font-bold tracking-widest uppercase text-white mb-3 [text-wrap:balance]">{t(`features.${feature.key}.title`)}</h4>
-                  <p className="text-base text-white/60 leading-relaxed">{t(`features.${feature.key}.desc`)}</p>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* AI & Custom Integrations */}
-      <section className="py-20 md:py-32 px-6 md:px-12 bg-[#14091d]">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-16 max-w-3xl"
-          >
-            <span className="font-label text-[#D6C2FF] text-xs tracking-[0.2em] uppercase block mb-4">
-              {t('integrations.sectionLabel')}
-            </span>
-            <h2 className="font-label text-3xl md:text-5xl text-white [text-wrap:balance] mb-6">{t('integrations.sectionTitle')}</h2>
-            <p className="text-lg md:text-xl text-white/60 leading-relaxed">
-              {t('integrations.sectionDesc')}
-            </p>
-          </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {INTEGRATIONS.map((item, i) => {
-              const Icon = item.Icon;
-              return (
-                <motion.div
-                  key={item.key}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="border-l-2 border-[#D6C2FF]/35 pl-8"
-                >
-                  <Icon className="text-[#D6C2FF] w-8 h-8 mb-4" strokeWidth={1.5} />
-                  <h4 className="font-label text-xl text-white mb-3 [text-wrap:balance]">{t(`integrations.${item.key}.title`)}</h4>
-                  <p className="text-base text-white/50 leading-relaxed">{t(`integrations.${item.key}.desc`)}</p>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Licensing Clarity */}
-      <section className="py-20 md:py-32 px-6 md:px-12 bg-[#1a0c24] border-y border-[#D6C2FF]/10">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="font-label text-3xl md:text-5xl text-white [text-wrap:balance] mb-4">{t('licensing.sectionTitle')}</h2>
-            <p className="text-lg text-white/50 max-w-2xl mx-auto">
-              {t('licensing.sectionDesc')}
-            </p>
-          </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="bg-[#14091d] p-10 md:p-12 border-t-4 border-[#D6C2FF]"
-            >
-              <h4 className="font-label text-xs font-bold tracking-[0.2em] uppercase text-[#D6C2FF] mb-8">
-                {t('licensing.included.label')}
-              </h4>
-              <ul className="space-y-5">
-                {(['item1', 'item2', 'item3', 'item4', 'item5'] as const).map((item) => (
-                  <li key={item} className="flex items-start gap-4">
-                    <span className="text-[#D6C2FF] mt-1">✓</span>
-                    <span className="text-white/80">{t(`licensing.included.${item}`)}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-[#14091d] p-10 md:p-12 border-t-4 border-white/20"
-            >
-              <h4 className="font-label text-xs font-bold tracking-[0.2em] uppercase text-white/50 mb-8">
-                {t('licensing.separate.label')}
-              </h4>
-              <p className="text-white/70 mb-6 leading-relaxed">
-                {t('licensing.separate.desc')}{' '}
-                <span className="text-[#D6C2FF]">{t('licensing.separate.descHighlight')}</span>{' '}
-                {t('licensing.separate.descTail')}
-              </p>
-              <div className="bg-[#D6C2FF]/[0.06] p-6 border-l-2 border-[#D6C2FF] mt-8">
-                <p className="font-label text-[10px] tracking-widest uppercase text-[#D6C2FF] mb-2">
-                  {t('licensing.separate.calloutLabel')}
-                </p>
-                <p className="text-sm text-white/60 leading-relaxed">
-                  {t('licensing.separate.calloutDesc')}
-                </p>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Supported Devices */}
-      <section className="py-20 md:py-32 px-6 md:px-12 bg-[#14091d]">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <span className="font-label text-[#D6C2FF] text-xs tracking-[0.2em] uppercase block mb-4">
-              {t('devices.sectionLabel')}
-            </span>
-            <h2 className="font-label text-3xl md:text-5xl text-white [text-wrap:balance]">{t('devices.sectionTitle')}</h2>
-          </motion.div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-            {DEVICES.map((device, i) => {
-              const Icon = device.Icon;
-              return (
-                <motion.div
-                  key={device.key}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.05 }}
-                  className="bg-[#1a0c24] p-8 text-center border-t border-[#D6C2FF]/10"
-                >
-                  <Icon className="text-[#D6C2FF] w-10 h-10 mb-4 mx-auto" strokeWidth={1.5} />
-                  <h4 className="font-label text-sm font-bold tracking-widest uppercase text-white mb-3 [text-wrap:balance]">
-                    {t(`devices.${device.key}.title`)}
-                  </h4>
-                  <p className="text-sm text-white/50 leading-relaxed">{t(`devices.${device.key}.desc`)}</p>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Trial & Onboarding */}
-      <section id="trial" className="py-20 md:py-32 px-6 md:px-12 bg-[#1a0c24] border-y border-[#D6C2FF]/10">
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <span className="font-label text-[#D6C2FF] text-xs tracking-[0.2em] uppercase block mb-6">
-              {t('trial.sectionLabel')}
-            </span>
-            <h2 className="font-label text-[clamp(2.5rem,3.2vw,3.25rem)] text-white mb-8 leading-tight [text-wrap:balance]">
-              {t('trial.title')} <span className="italic text-[#D6C2FF]">{t('trial.titleHighlight')}</span>
-            </h2>
-            <p className="text-xl md:text-2xl text-white/60 leading-relaxed mb-4">
-              {t('trial.desc1')}
-            </p>
-            <p className="text-lg text-white/40 leading-relaxed mb-12">
-              {t('trial.desc2')}
-            </p>
-            <Link
-              href={`/${locale}/soundtrack-trial`}
-              className="inline-block bg-[#D6C2FF] text-[#14091d] px-12 py-5 font-label font-bold uppercase tracking-widest hover:bg-white transition-all duration-300"
-            >
-              {t('trial.cta')}
-            </Link>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Support */}
-      <section className="py-20 md:py-32 px-6 md:px-12 bg-[#14091d]">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <span className="font-label text-[#D6C2FF] text-xs tracking-[0.2em] uppercase block mb-4">
-              {t('support.sectionLabel')}
-            </span>
-            <h2 className="font-label text-3xl md:text-5xl text-white [text-wrap:balance]">{t('support.sectionTitle')}</h2>
-          </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-            {SUPPORT.map((item, i) => {
-              const Icon = item.Icon;
-              return (
-                <motion.div
-                  key={item.key}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="text-center md:text-left"
-                >
-                  <Icon className="text-[#D6C2FF] w-10 h-10 mb-6 mx-auto md:mx-0" strokeWidth={1.5} />
-                  <h4 className="font-label text-2xl text-white mb-4 [text-wrap:balance]">{t(`support.${item.key}.title`)}</h4>
-                  <p className="text-base text-white/50 leading-relaxed">{t(`support.${item.key}.desc`)}</p>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-20 md:py-32 px-6 md:px-12 bg-[#1a0c24] border-y border-[#D6C2FF]/10">
-        <div className="max-w-4xl mx-auto">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="font-label text-3xl md:text-5xl text-white [text-wrap:balance] mb-16 text-center"
-          >
-            {t('faq.title')}
-          </motion.h2>
-          <div className="space-y-6">
-            {FAQ_KEYS.map((fk, i) => (
-              <motion.details
-                key={fk}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="group border-b border-white/10 pb-6"
-              >
-                <summary className="flex justify-between items-start cursor-pointer list-none">
-                  <h5 className="font-label text-xl md:text-2xl text-white pr-8 [text-wrap:balance]">{t(`faq.${fk}.q`)}</h5>
-                  <Plus className="text-[#D6C2FF] w-6 h-6 flex-shrink-0 group-open:rotate-45 transition-transform" strokeWidth={1.5} />
-                </summary>
-                <p className="mt-6 text-base md:text-lg text-white/60 leading-relaxed pr-8">
-                  {t(`faq.${fk}.a`)}
-                </p>
-              </motion.details>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Final CTA */}
-      <section className="relative py-20 md:py-32 overflow-hidden bg-[#14091d]">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/images/hero-lounge.webp"
-            alt="Atmospheric hospitality venue"
-            fill
-            className="object-cover opacity-30"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#14091d] via-[#14091d]/90 to-[#241331]/60" />
-        </div>
-        <div className="relative z-10 max-w-4xl mx-auto text-center px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="font-label text-[clamp(2.5rem,3.2vw,3.25rem)] text-white mb-8 leading-tight [text-wrap:balance]">
-              {t('finalCta.title')} <br />
-              <span className="italic text-[#D6C2FF]">{t('finalCta.titleHighlight')}</span>
-            </h2>
-            <p className="text-xl md:text-2xl text-white/60 mb-12 max-w-2xl mx-auto leading-relaxed">
-              {t('finalCta.desc')}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href={`/${locale}/quotation`}
-                className="bg-[#D6C2FF] text-[#14091d] px-12 py-5 font-label font-bold uppercase tracking-widest hover:bg-white transition-all duration-300"
-              >
-                {t('finalCta.ctaQuote')}
+        <div className="bma-container grid gap-14 lg:grid-cols-[0.84fr_1.16fr] lg:items-center lg:gap-16">
+          <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .75 }}>
+            <Image src="/images/brand/soundtrack/soundtrack-logo-white.svg" alt="Soundtrack" width={502} height={147} className="h-auto w-48 sm:w-56" priority />
+            <p className="mt-8 font-label text-[11px] font-semibold uppercase tracking-[.25em] text-[#d6c2ff]">{t('redesign.hero.eyebrow')}</p>
+            <h1 className="mt-5 max-w-3xl font-headline text-[clamp(3.7rem,7vw,7.4rem)] font-medium leading-[.94] tracking-[-.058em]">
+              {t('redesign.hero.title')} <span className="text-[#d6c2ff]">{t('redesign.hero.highlight')}</span>
+            </h1>
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-[#f1eaff]/60 sm:text-xl">{t('redesign.hero.description')}</p>
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <Link href={`/${locale}/soundtrack-trial?source=soundtrack-hero`} className="inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-[#d6c2ff] px-7 font-label text-sm font-semibold text-[#1b0b25] transition hover:-translate-y-0.5 hover:bg-white">
+                {t('redesign.hero.trial')} <ArrowRight className="h-4 w-4" />
               </Link>
-              <a
-                href="https://calendly.com/bmasia/sound-innovations"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border border-[#D6C2FF]/45 text-white px-12 py-5 font-label font-bold uppercase tracking-widest hover:border-[#D6C2FF] hover:text-[#D6C2FF] transition-all duration-300"
-              >
-                {t('finalCta.ctaDemo')}
-              </a>
+              <Link href={`/${locale}/quotation?solution=soundtrack-your-brand&source=soundtrack-hero`} className="inline-flex min-h-14 items-center justify-center rounded-full border border-[#d6c2ff]/25 bg-[#d6c2ff]/[0.04] px-7 font-label text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#d6c2ff]/[0.09]">
+                {t('redesign.hero.talk')}
+              </Link>
+            </div>
+            <p className="mt-6 max-w-xl text-xs leading-5 text-[#f1eaff]/38">{t('redesign.hero.note')}</p>
+          </motion.div>
+
+          <motion.div initial={{ opacity: 0, scale: .97 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: .75, delay: .14 }} className="relative">
+            <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4">
+              {covers.map((cover, index) => (
+                <div key={cover} className={`group relative aspect-square overflow-hidden rounded-[1.25rem] border border-[#d6c2ff]/18 shadow-[0_22px_55px_rgba(0,0,0,.35)] ${index === 0 ? 'col-span-2 row-span-2' : index === 5 ? 'hidden sm:block' : ''}`}>
+                  <Image src={cover} alt="" fill className="object-cover opacity-85 transition duration-700 group-hover:scale-105" sizes="(max-width:768px) 30vw, 180px" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#160b1f]/75 to-transparent" />
+                  {index === 0 && <div className="absolute inset-x-0 bottom-0 p-5"><span className="font-label text-[9px] uppercase tracking-[.18em] text-[#d6c2ff]">{t('redesign.catalogue.nowPlaying')}</span><strong className="mt-2 block text-lg">{t('redesign.catalogue.featured')}</strong><button type="button" className="mt-4 grid h-10 w-10 place-items-center rounded-full bg-[#d6c2ff] text-[#160b1f]"><Play className="h-4 w-4 fill-current" /><span className="sr-only">{t('redesign.catalogue.preview')}</span></button></div>}
+                </div>
+              ))}
+              <div className="col-span-2 flex min-h-24 items-center justify-between rounded-[1.25rem] border border-[#d6c2ff]/18 bg-[#d6c2ff]/[0.06] px-5 sm:col-span-3">
+                <div><span className="font-label text-[9px] uppercase tracking-[.18em] text-[#d6c2ff]">{t('redesign.catalogue.label')}</span><strong className="mt-2 block text-sm sm:text-base">{t('redesign.catalogue.line')}</strong></div>
+                <Disc3 className="h-7 w-7 text-[#d6c2ff] motion-safe:animate-[spin_8s_linear_infinite]" />
+              </div>
             </div>
           </motion.div>
         </div>
       </section>
-    </>
+
+      <section className="border-y border-[#d6c2ff]/12 bg-[#d6c2ff] px-5 py-8 text-[#1a0a24] sm:px-8 lg:px-16">
+        <div className="bma-container grid gap-5 sm:grid-cols-3">
+          {(['catalogue', 'musicDesign', 'service'] as const).map((key, index) => (
+            <motion.div key={key} {...reveal} className="flex items-start gap-4 border-black/12 py-3 sm:border-r sm:pr-6 sm:last:border-r-0">
+              <span className="font-mono text-xs text-[#5f3b89]">0{index + 1}</span>
+              <div><strong className="block text-sm font-semibold">{t(`redesign.pillars.${key}.title`)}</strong><p className="mt-1 text-xs leading-5 text-[#1a0a24]/58">{t(`redesign.pillars.${key}.text`)}</p></div>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      <section className="bma-section bg-[#160b1f]">
+        <div className="bma-container grid gap-12 lg:grid-cols-[.72fr_1.28fr] lg:items-start">
+          <motion.div {...reveal} className="lg:sticky lg:top-32">
+            <p className="font-label text-[11px] uppercase tracking-[.25em] text-[#d6c2ff]">{t('redesign.direction.eyebrow')}</p>
+            <h2 className="mt-5 font-headline text-5xl font-medium leading-[.98] tracking-[-.05em] sm:text-6xl">{t('redesign.direction.title')}</h2>
+            <p className="mt-6 max-w-xl text-lg leading-8 text-[#f1eaff]/52">{t('redesign.direction.description')}</p>
+            <div className="mt-8 rounded-2xl border border-[#d6c2ff]/16 bg-[#d6c2ff]/[0.045] p-5"><p className="text-sm font-medium">{t('redesign.direction.refreshTitle')}</p><p className="mt-2 text-sm leading-6 text-[#f1eaff]/46">{t('redesign.direction.refreshText')}</p></div>
+          </motion.div>
+
+          <div className="relative">
+            <div className="absolute bottom-0 left-5 top-0 w-px bg-gradient-to-b from-[#d6c2ff] via-[#8c66bf] to-transparent sm:left-[7.25rem]" />
+            {(['listen', 'design', 'schedule', 'refresh'] as const).map((key, index) => (
+              <motion.article key={key} {...reveal} className="relative grid grid-cols-[2.6rem_1fr] gap-5 pb-9 sm:grid-cols-[8rem_1fr]">
+                <span className="relative z-10 grid h-10 w-10 place-items-center rounded-full border border-[#d6c2ff]/28 bg-[#160b1f] font-mono text-xs text-[#d6c2ff] sm:ml-[5.25rem]">0{index + 1}</span>
+                <div className="rounded-[1.5rem] border border-[#d6c2ff]/13 bg-[#d6c2ff]/[0.035] p-5 sm:p-7">
+                  <div className="flex items-start justify-between gap-6"><div><p className="font-label text-[9px] uppercase tracking-[.18em] text-[#d6c2ff]">{t(`redesign.direction.${key}.label`)}</p><h3 className="mt-3 text-2xl font-medium">{t(`redesign.direction.${key}.title`)}</h3></div>{index === 0 ? <Headphones className="h-6 w-6 text-[#d6c2ff]" /> : index === 1 ? <Sparkles className="h-6 w-6 text-[#d6c2ff]" /> : index === 2 ? <CalendarDays className="h-6 w-6 text-[#d6c2ff]" /> : <RefreshCw className="h-6 w-6 text-[#d6c2ff]" />}</div>
+                  <p className="mt-4 max-w-xl text-sm leading-6 text-[#f1eaff]/46">{t(`redesign.direction.${key}.text`)}</p>
+                  {index === 1 && <div className="mt-6 flex -space-x-3">{covers.slice(0, 4).map((cover) => <span key={cover} className="relative h-12 w-12 overflow-hidden rounded-xl border-2 border-[#24112f]"><Image src={cover} alt="" fill className="object-cover" sizes="48px" /></span>)}</div>}
+                </div>
+              </motion.article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bma-grain bma-section border-y border-[#d6c2ff]/12 bg-[#1d0e28]">
+        <div className="bma-container">
+          <motion.div {...reveal} className="grid gap-8 lg:grid-cols-[.66fr_1fr] lg:items-end">
+            <div><p className="font-label text-[11px] uppercase tracking-[.25em] text-[#d6c2ff]">{t('redesign.extensions.eyebrow')}</p><h2 className="mt-5 font-headline text-5xl font-medium leading-[.98] tracking-[-.05em] sm:text-6xl lg:text-7xl">{t('redesign.extensions.title')}</h2></div>
+            <div><p className="max-w-2xl text-lg leading-8 text-[#f1eaff]/52">{t('redesign.extensions.description')}</p><p className="mt-4 max-w-2xl text-xs leading-5 text-[#d6c2ff]/52">{t('redesign.extensions.scope')}</p></div>
+          </motion.div>
+
+          <div className="mt-14 overflow-hidden rounded-[2rem] border border-[#d6c2ff]/16 bg-[#13091b] shadow-[0_38px_110px_rgba(0,0,0,.35)]">
+            <div className="grid border-b border-[#d6c2ff]/12 md:grid-cols-[.38fr_1fr]">
+              <div className="border-b border-[#d6c2ff]/12 p-6 md:border-b-0 md:border-r md:p-8">
+                <Image src="/images/brand/soundtrack/soundtrack-logo-white.svg" alt="Soundtrack" width={502} height={147} className="h-auto w-40 opacity-80" />
+                <div className="mt-9"><p className="font-label text-[9px] uppercase tracking-[.18em] text-[#d6c2ff]">{t('redesign.extensions.location')}</p><strong className="mt-2 block">{t('redesign.extensions.venue')}</strong></div>
+                <div className="mt-6 flex items-center gap-3"><span className="grid h-9 w-9 place-items-center rounded-xl bg-emerald-300/[0.08] text-emerald-200"><Check className="h-4 w-4" /></span><p className="text-xs leading-5 text-[#f1eaff]/46">{t('redesign.extensions.connected')}</p></div>
+              </div>
+              <div className="grid sm:grid-cols-2">
+                {[
+                  [MoonStar, 'prayer', '18:42'],
+                  [Volume2, 'volume', '-8 dB'],
+                  [CloudSun, 'weather', 'Warm / rain'],
+                  [Network, 'api', 'Ready'],
+                ].map(([Icon, key, value]) => { const ExtensionIcon = Icon as typeof MoonStar; return <div key={key as string} className="border-b border-[#d6c2ff]/10 p-6 last:border-b-0 sm:border-r sm:p-8 sm:even:border-r-0"><div className="flex items-center justify-between"><span className="grid h-11 w-11 place-items-center rounded-2xl bg-[#d6c2ff]/[0.07] text-[#d6c2ff]"><ExtensionIcon className="h-5 w-5" /></span><span className="font-mono text-xs text-[#d6c2ff]">{value as string}</span></div><h3 className="mt-7 text-lg font-medium">{t(`redesign.extensions.${key as string}.title`)}</h3><p className="mt-3 text-sm leading-6 text-[#f1eaff]/43">{t(`redesign.extensions.${key as string}.text`)}</p></div>; })}
+              </div>
+            </div>
+            <div className="flex flex-col gap-3 px-6 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-8"><p className="text-xs text-[#f1eaff]/38">{t('redesign.extensions.footer')}</p><span className="font-label text-[9px] uppercase tracking-[.18em] text-[#d6c2ff]">BMAsia service layer</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bma-section bg-[#160b1f]">
+        <div className="bma-container grid gap-12 lg:grid-cols-[.78fr_1.22fr] lg:items-center">
+          <motion.div {...reveal}>
+            <p className="font-label text-[11px] uppercase tracking-[.25em] text-[#d6c2ff]">{t('redesign.operations.eyebrow')}</p>
+            <h2 className="mt-5 font-headline text-5xl font-medium leading-[.98] tracking-[-.05em] sm:text-6xl">{t('redesign.operations.title')}</h2>
+            <p className="mt-6 max-w-xl text-lg leading-8 text-[#f1eaff]/52">{t('redesign.operations.description')}</p>
+            <Link href={`/${locale}/quotation?solution=soundtrack-your-brand&source=soundtrack-service`} className="mt-8 inline-flex items-center gap-2 font-label text-sm font-semibold text-[#d6c2ff] hover:text-white">{t('redesign.operations.cta')} <ArrowRight className="h-4 w-4" /></Link>
+          </motion.div>
+          <motion.div {...reveal} className="grid gap-px overflow-hidden rounded-[1.6rem] border border-[#d6c2ff]/12 bg-[#d6c2ff]/12 sm:grid-cols-2">
+            {[
+              [Layers3, 'onboarding'],
+              [SlidersHorizontal, 'design'],
+              [Languages, 'regional'],
+              [Headphones, 'support'],
+            ].map(([Icon, key], index) => { const ServiceIcon = Icon as typeof Layers3; return <div key={key as string} className="bg-[#1a0d24] p-6 sm:p-8"><span className="flex items-center justify-between"><ServiceIcon className="h-5 w-5 text-[#d6c2ff]" /><small className="font-mono text-[10px] text-[#d6c2ff]/50">0{index + 1}</small></span><h3 className="mt-10 text-xl font-medium">{t(`redesign.operations.${key as string}.title`)}</h3><p className="mt-3 text-sm leading-6 text-[#f1eaff]/43">{t(`redesign.operations.${key as string}.text`)}</p></div>; })}
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="border-y border-[#d6c2ff]/12 bg-[#1d0e28] px-5 py-16 sm:px-8 lg:px-16">
+        <div className="bma-container grid gap-10 lg:grid-cols-[.7fr_1.3fr] lg:items-center">
+          <motion.div {...reveal}><p className="font-label text-[11px] uppercase tracking-[.25em] text-[#d6c2ff]">{t('redesign.licensing.eyebrow')}</p><h2 className="mt-5 font-headline text-4xl font-medium tracking-[-.045em] sm:text-5xl">{t('redesign.licensing.title')}</h2><p className="mt-5 max-w-xl text-sm leading-6 text-[#f1eaff]/46">{t('redesign.licensing.description')}</p></motion.div>
+          <motion.div {...reveal} className="grid gap-3 sm:grid-cols-2">
+            <div className="rounded-2xl border border-[#d6c2ff]/16 bg-[#d6c2ff]/[0.045] p-6"><p className="font-label text-[10px] uppercase tracking-[.18em] text-[#d6c2ff]">{t('redesign.licensing.included')}</p><ul className="mt-5 space-y-3 text-sm text-[#f1eaff]/58"><li className="flex gap-2"><Check className="h-4 w-4 text-[#d6c2ff]" />{t('redesign.licensing.recording')}</li><li className="flex gap-2"><Check className="h-4 w-4 text-[#d6c2ff]" />{t('redesign.licensing.publishing')}</li><li className="flex gap-2"><Check className="h-4 w-4 text-[#d6c2ff]" />{t('redesign.licensing.commercial')}</li></ul></div>
+            <div className="rounded-2xl border border-white/[0.08] bg-white/[0.025] p-6"><p className="font-label text-[10px] uppercase tracking-[.18em] text-white/38">{t('redesign.licensing.local')}</p><p className="mt-5 text-sm leading-6 text-[#f1eaff]/48">{t('redesign.licensing.localText')}</p></div>
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="bma-grain relative overflow-hidden px-5 py-24 text-center sm:px-8 md:py-36 lg:px-16">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_100%,rgba(214,194,255,.17),transparent_48%)]" />
+        <motion.div {...reveal} className="relative mx-auto max-w-4xl">
+          <Image src="/images/brand/soundtrack/soundtrack-logo-white.svg" alt="Soundtrack" width={502} height={147} className="mx-auto h-auto w-44 opacity-72" />
+          <h2 className="mt-9 font-headline text-5xl font-medium leading-[.98] tracking-[-.05em] sm:text-7xl">{t('redesign.final.title')} <span className="text-[#d6c2ff]">{t('redesign.final.highlight')}</span></h2>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#f1eaff]/52">{t('redesign.final.description')}</p>
+          <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+            <Link href={`/${locale}/soundtrack-trial?source=soundtrack-final`} className="inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-[#d6c2ff] px-8 font-label text-sm font-semibold text-[#1b0b25] hover:bg-white">{t('redesign.hero.trial')} <ArrowRight className="h-4 w-4" /></Link>
+            <a href={EXTERNAL_LINKS.soundtrackLogin} className="inline-flex min-h-14 items-center justify-center gap-2 rounded-full border border-[#d6c2ff]/24 px-8 font-label text-sm font-semibold text-white hover:bg-[#d6c2ff]/[0.06]">{t('redesign.final.login')} <Smartphone className="h-4 w-4" /></a>
+          </div>
+          <p className="mt-6 text-xs text-[#f1eaff]/34">{t('redesign.final.support')}</p>
+        </motion.div>
+      </section>
+    </div>
   );
 }

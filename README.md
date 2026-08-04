@@ -1,13 +1,14 @@
 # BMAsia Website
 
-Modern website for BMAsia - a B2B background music solutions provider.
+BMAsia's multilingual public product site for music, media, messaging and connected venue experiences.
 
 ## Tech Stack
 
-- **Framework**: Next.js 14 (App Router)
+- **Framework**: Next.js 16 (App Router)
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion
-- **Forms**: React Hook Form + Formspree
+- **Forms**: React Hook Form + PostgreSQL/Prisma + Gmail notifications
+- **Locales**: English, Thai, Vietnamese, Malay, Indonesian, Korean, Japanese and Simplified Chinese
 - **Deployment**: Render
 
 ## Getting Started
@@ -41,7 +42,7 @@ npm run dev
 npm run build
 ```
 
-This creates a static export in the `/out` directory.
+This creates the production server build, including API routes for inquiry, quotation, trial and assistant handoff workflows.
 
 ## Project Structure
 
@@ -61,10 +62,24 @@ This creates a static export in the `/out` directory.
 
 | Route | Description |
 |-------|-------------|
-| `/` | Landing page |
-| `/how-it-works` | Process explanation |
-| `/licensing` | Music licensing info |
-| `/quotation` | Request a quote |
+| `/[locale]` | BMAsia product-choice homepage and Venue Time Machine |
+| `/[locale]/beat-breeze` | Beat Breeze product experience |
+| `/[locale]/soundtrack-your-brand` | Soundtrack product experience |
+| `/[locale]/soundtrack-trial` | Reviewed Soundtrack trial request |
+| `/[locale]/how-it-works` | BMAsia operating model |
+| `/[locale]/licensing` | Music licensing guidance |
+| `/[locale]/quotation` | Request a tailored proposal |
+| `/[locale]/solutions/[industry]` | 12 tailored industry experiences |
+| `/[locale]/privacy`, `/cookies`, `/terms` | Legal and privacy controls |
+
+## Verification
+
+```bash
+npm run lint
+npm run typecheck
+npm run check:locales
+npm run build
+```
 
 ## Environment Variables
 
@@ -72,7 +87,7 @@ See `.env.example` for required variables.
 
 ## Deployment
 
-This site deploys automatically to Render when changes are pushed to the main branch.
+This site deploys to Render from the configured production branch. Do not treat a branch preview as a production deployment.
 
 ## Brand Colors
 

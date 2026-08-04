@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "BMAsia | Wherever Music Matters",
-    "description": "Craft the perfect atmosphere for your business. BMAsia provides customized background music solutions for hotels, restaurants, and retail across Asia-Pacific since 2002."
+    "description": "BMAsia designs and operates music, media, messaging and connected venue experiences, with Beat Breeze and Soundtrack supplied through one expert service team."
   },
   "navigation": {
     "home": "Home",
@@ -14,15 +14,24 @@
     "solutions": "Solutions",
     "notSure": "Not sure which solution fits?",
     "talkToUs": "Talk to us",
-    "signIn": "Beat Breeze login",
-    "startFree": "Start free",
+    "signIn": "Log in",
+    "startFree": "Get started",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "mainNavigation": "Main navigation",
     "mobileNavigation": "Mobile navigation menu",
     "language": "Language",
     "talkToBMAsia": "Talk to BMAsia",
-    "startTrial": "Start 14-day free trial"
+    "startTrial": "Choose a product",
+    "products": "Products",
+    "solutionsIntro": "Explore complete venue-experience ideas for your type of business.",
+    "helpMeChoose": "Help me choose",
+    "login": "Log in",
+    "beatBreezeShort": "Royalty-free music, media and venue automation.",
+    "soundtrackShort": "Familiar commercial music, supplied and supported by BMAsia.",
+    "beatBreezeLogin": "Open the Beat Breeze platform",
+    "soundtrackLogin": "Open the Soundtrack app",
+    "skipToContent": "Skip to main content"
   },
   "languageSwitcher": {
     "label": "Language",
@@ -58,57 +67,6 @@
       "title": "Brand Harmony",
       "description": "Enhancing brand identity through distinctive music designs that resonate with your customers."
     }
-  },
-  "products": {
-    "sectionTitle": "Our",
-    "sectionTitleHighlight": "Solutions",
-    "sectionSubtitle": "Choose the perfect music solution tailored to your business needs and budget",
-    "premium": "Premium",
-    "availableOn": "Available on",
-    "soundtrackYourBrand": {
-      "tagline": "Premium Music Solution",
-      "features": {
-        "tracks": "100M+ tracks available",
-        "scheduling": "Drag-and-drop scheduling",
-        "messaging": "Text-to-speech messaging",
-        "offline": "Offline playback",
-        "spotify": "Legal Spotify sync",
-        "bespoke": "Bespoke music design",
-        "support": "24/7 support"
-      }
-    },
-    "beatBreeze": {
-      "tagline": "Essential Solution",
-      "features": {
-        "tracks": "30K+ curated tracks",
-        "playlists": "50 ready-made playlists",
-        "license": "Public performance license included",
-        "multizone": "Multi-zone setup",
-        "scheduling": "Advanced scheduling",
-        "messaging": "Integrated messaging",
-        "offline": "Offline playback"
-      }
-    },
-    "notSure": "Not sure which solution is right for you?",
-    "bookDemo": "Book a Free Demo"
-  },
-  "smartFeatures": {
-    "sectionTitle": "Music That Works",
-    "sectionTitleHighlight": "For You",
-    "sectionSubtitle": "Intelligent automation that adapts your soundtrack to your business",
-    "smartScheduling": {
-      "title": "Smart Scheduling",
-      "description": "Preprogram volume levels, automatic adjustments based on business hours, and regional adaptations like prayer time pauses."
-    },
-    "contextAware": {
-      "title": "Context-Aware Music",
-      "description": "Music that adapts to weather conditions, syncs with lighting systems, and responds to real-time data feeds."
-    },
-    "aiPowered": {
-      "title": "AI-Powered Playlists",
-      "description": "Simply describe what you want — our AI creates the perfect playlist. No music expertise needed."
-    },
-    "ctaDemo": "Book a Demo"
   },
   "clientLogos": {
     "sectionTitle": "Trusted by Industry Leaders"
@@ -189,7 +147,7 @@
     },
     "email": {
       "label": "Email",
-      "description": "We typically respond within 24 hours"
+      "description": "A BMAsia specialist will review and respond"
     },
     "whatsapp": {
       "label": "WhatsApp",
@@ -203,7 +161,7 @@
   "forms": {
     "inquiry": {
       "title": "Music Inquiry Form",
-      "description": "Fill out the form below and we'll get back to you within 24 hours.",
+      "description": "Fill out the form below and a BMAsia specialist will follow up.",
       "preferDemo": "Prefer to schedule a call?",
       "bookDemo": "Book a free demo instead",
       "fields": {
@@ -228,9 +186,9 @@
         "default": "Send Message",
         "sending": "Sending..."
       },
-      "successMessage": "Thank you for your inquiry! We will get back to you within 24 hours.",
+      "successMessage": "Thank you for your inquiry. A BMAsia specialist will follow up.",
       "errorMessage": "Something went wrong. Please try again.",
-      "privacyNote": "By submitting this form, you agree to our privacy policy. We will never share your information with third parties."
+      "privacyNote": "We use these details to respond to your request. See our Privacy Policy for how service providers help us operate the site."
     },
     "quotation": {
       "title": "Quotation Request Form",
@@ -278,9 +236,9 @@
         "default": "Request Quotation",
         "sending": "Submitting..."
       },
-      "successMessage": "Thank you for your quotation request! We will get back to you within 24-48 hours with a personalized quote.",
+      "successMessage": "Thank you for your quotation request. A BMAsia specialist will review the brief and follow up.",
       "errorMessage": "Something went wrong. Please try again.",
-      "privacyNote": "By submitting this form, you agree to our privacy policy. We will never share your information with third parties."
+      "privacyNote": "We use these details to prepare and respond to your request. See our Privacy Policy for how service providers help us operate the site."
     },
     "validation": {
       "required": "{field} is required",
@@ -306,7 +264,7 @@
     "cookies": "Cookies",
     "terms": "Terms",
     "allRightsReserved": "All rights reserved.",
-    "operationsDescription": "Music and media, managed together.",
+    "operationsDescription": "Music, media and venue operations—designed as one experience.",
     "products": "Products",
     "howItWorks": "How it works",
     "musicLicensing": "Music licensing",
@@ -318,144 +276,12 @@
     "startHere": "Start here",
     "tryBeatBreeze": "Try Beat Breeze",
     "trialProof": "14 days free · no card",
-    "talkToBMAsia": "Talk to BMAsia"
-  },
-  "howItWorks": {
-    "hero": {
-      "title": "How It",
-      "titleHighlight": "Works",
-      "subtitle": "Harmonizing Your Space in 3 Simple Steps",
-      "imageAlt": "Modern restaurant interior with sophisticated ambiance"
-    },
-    "steps": {
-      "sectionTitle": "Your Journey to",
-      "sectionTitleHighlight": "Perfect Sound",
-      "sectionSubtitle": "Getting started with BMAsia is simple. Follow these three steps to transform your space.",
-      "step1": {
-        "title": "Choose Your Sound and Get a Quote",
-        "description": "Select between our solutions, request a personalized quote, or book a free online demo to experience our platform."
-      },
-      "step2": {
-        "title": "Customize Your Playlist",
-        "description": "Collaborate with our expert music designers to tailor samples that match your brand voice and venue ambiance."
-      },
-      "step3": {
-        "title": "Setup and Get Started",
-        "description": "We handle the installation and provide comprehensive training so you can easily manage your music experience."
-      }
-    },
-    "benefits": {
-      "sectionTitle": "Why Choose",
-      "sectionTitleHighlight": "BMAsia",
-      "sectionSubtitle": "Discover the transformative power of professionally curated music"
-    },
-    "cta": {
-      "sectionTitle": "Ready to Transform",
-      "sectionTitleHighlight": "Your Space?",
-      "sectionSubtitle": "Take the first step towards creating the perfect atmosphere for your business. Our team is ready to help you find the ideal music solution."
-    }
-  },
-  "licensing": {
-    "hero": {
-      "title": "Music Licensing",
-      "titleHighlight": "Made Simple",
-      "subtitle": "Understanding the licenses your business needs",
-      "imageAlt": "Abstract sound wave visualization representing music licensing"
-    },
-    "intro": {
-      "sectionTitle": "Why Does Your Business",
-      "sectionTitleHighlight": "Need Licenses?",
-      "paragraph1": "Playing music in a business is different from listening at home. When you use music commercially, you need permission from the rights holders who created that music.",
-      "paragraph2Intro": "To legally play music in your business, you need",
-      "paragraph2Highlight": "three different licenses"
-    },
-    "types": {
-      "sectionTitle": "The Three",
-      "sectionTitleHighlight": "Essential Licenses",
-      "sectionSubtitle": "Each license protects different rights holders and ensures fair compensation",
-      "recording": {
-        "name": "Recording License",
-        "description": "Covers the right to use a specific recording of a song and compensates the recording artist."
-      },
-      "publishing": {
-        "name": "Publishing License",
-        "description": "Covers the right to use the original composition and compensates the songwriters and composers."
-      },
-      "performance": {
-        "name": "Public Performance License",
-        "description": "Allows you to play the song in a public environment like your business venue."
-      }
-    },
-    "warning": {
-      "sectionTitle": "Consumer Streaming Services Are",
-      "notLicensed": "NOT",
-      "sectionTitleEnd": "Licensed for Business Use",
-      "personalUseOnly": "These services are licensed for personal use only.",
-      "liability": "Using them in a commercial setting violates their terms of service and can expose your business to legal liability.",
-      "spotifyQuote": "The Spotify Service and the Content are the property of Spotify or Spotify's licensors. We grant you a limited, non-exclusive, revocable licence to make personal, non-commercial use of the Spotify Service...",
-      "spotifySource": "Spotify Terms of Service"
-    },
-    "solution": {
-      "sectionTitle": "We Handle the",
-      "sectionTitleHighlight": "Licensing Complexity",
-      "sectionSubtitle": "Choose the solution that fits your needs",
-      "fullyLicensed": "Fully Licensed",
-      "included": "Included",
-      "requiredSeparately": "Required separately from your local PRO",
-      "worryFree": "Play music worry-free - we handle everything."
-    },
-    "cta": {
-      "sectionTitle": "Get Started with",
-      "sectionTitleHighlight": "Licensed Music",
-      "sectionSubtitle": "Choose the right music solution for your business. Get a personalized quote today."
-    }
-  },
-  "quotation": {
-    "hero": {
-      "title": "Request a",
-      "titleHighlight": "Quote",
-      "subtitle": "Provide your details and we'll respond with a personalized quotation",
-      "imageAlt": "Luxury spa setting with relaxing atmosphere"
-    },
-    "whatToExpect": {
-      "sectionTitle": "What to Expect",
-      "fastResponse": {
-        "title": "Fast Response",
-        "description": "Receive your personalized quote within 24-48 hours"
-      },
-      "noObligation": {
-        "title": "No Obligation",
-        "description": "Free consultation with no commitment required"
-      },
-      "tailored": {
-        "title": "Tailored Solutions",
-        "description": "Custom pricing based on your specific needs"
-      }
-    },
-    "ourSolutions": {
-      "sectionTitle": "Our Solutions",
-      "soundtrackHighlights": {
-        "tracks": "100M+ tracks",
-        "scheduling": "Advanced scheduling",
-        "support": "24/7 support"
-      },
-      "beatBreezeHighlights": {
-        "tracks": "30K+ curated tracks",
-        "license": "License included",
-        "multizone": "Multi-zone ready"
-      },
-      "learnMore": "Learn more about our solutions"
-    },
-    "haveQuestions": {
-      "sectionTitle": "Have Questions?",
-      "emailDescription": "Reach out to us directly",
-      "messagingLabel": "Or message us:"
-    },
-    "preferDemo": {
-      "sectionTitle": "Prefer a Live Demo?",
-      "sectionSubtitle": "Book a free online demo with our team to see our music solutions in action and get answers to all your questions.",
-      "ctaButton": "Book Free Demo"
-    }
+    "talkToBMAsia": "Talk to BMAsia",
+    "globalReach": "Founded in 2002. Supporting local venues and international groups through a responsive regional team.",
+    "choosePath": "Choose your music route",
+    "beatBreezeDescription": "BMAsia’s flexible royalty-free platform for music, screens, messaging and automation.",
+    "soundtrackDescription": "A large catalogue of familiar licensed music, with BMAsia design and service.",
+    "manageCookies": "Manage cookies"
   },
   "countries": {
     "select": "Select a country",
@@ -529,7 +355,7 @@
     "orAskAnything": "Or ask me anything!",
     "escalation": {
       "title": "Connect with Our Team",
-      "subtitle": "We'll follow up via email within 2 business hours",
+      "subtitle": "A BMAsia specialist will follow up by email",
       "nameLabel": "Name",
       "namePlaceholder": "Your name",
       "companyLabel": "Company",
@@ -541,7 +367,7 @@
       "cancel": "Cancel",
       "submit": "Connect with Team",
       "submitting": "Connecting...",
-      "success": "Our team will follow up at {email} within 2 business hours. Is there anything else I can help clarify in the meantime?",
+      "success": "Our team will follow up at {email}. Is there anything else I can help clarify in the meantime?",
       "error": "Something went wrong. Please try again."
     }
   },
@@ -558,8 +384,7 @@
     },
     "proof": {
       "noCard": "No credit card",
-      "oneZone": "One test zone",
-      "autoEnd": "Ends automatically"
+      "oneZone": "One test zone"
     },
     "steps": {
       "label": "What happens next",
@@ -572,7 +397,7 @@
     },
     "note": {
       "title": "A clear, no-card trial",
-      "desc": "No payment method is required. If you do not subscribe, the no-card trial ends automatically."
+      "desc": "No payment method is required. BMAsia reviews the request and arranges eligible access; any continuation is discussed with you before a paid subscription starts."
     },
     "form": {
       "title": "Request your trial",
@@ -610,255 +435,139 @@
   },
   "soundtrackPage": {
     "metadata": {
-      "title": "Soundtrack Your Brand",
-      "description": "The world's largest commercial music library, curated for hospitality. 100M+ licensed tracks, multi-zone control, bespoke curation, and 24/7 support from BMAsia."
-    },
-    "hero": {
-      "label": "The Global Standard",
       "title": "Soundtrack",
-      "titleHighlight": "Your Brand",
-      "subtitle": "The world's largest commercial music library, curated for your space.",
-      "ctaQuote": "Get a Quote",
-      "ctaTrial": "Start a Free Trial"
+      "description": "Familiar licensed commercial music supplied through BMAsia, with music design, onboarding, ongoing support and BMAsia-built venue extensions."
     },
-    "positioning": {
-      "text1": "When you play music in your business, you're shaping an experience.",
-      "highlight": "Soundtrack Your Brand",
-      "text2": "gives you every song your guests know — fully licensed for commercial use."
-    },
-    "valueProps": {
-      "sectionLabel": "",
-      "01": {
-        "label": "Repertoire",
-        "title": "Any artist, any genre.",
-        "desc": "Access 100+ million commercially licensed tracks. Every song your guests know, fully cleared for commercial use."
+    "redesign": {
+      "hero": {
+        "eyebrow": "Licensed commercial music through BMAsia",
+        "title": "Familiar music.",
+        "highlight": "Made right for the venue.",
+        "description": "A large catalogue of familiar and major-label music, paired with BMAsia playlist design, onboarding, venue extensions and ongoing human service.",
+        "trial": "Request a Soundtrack trial",
+        "talk": "Talk to BMAsia",
+        "note": "Soundtrack trials through BMAsia are reviewed and arranged for the business. This is a product-specific activation request, not a general quote form."
       },
-      "02": {
-        "label": "Compliance",
-        "title": "Licensing you can trust.",
-        "desc": "Recording and publishing rights included. We share any information you need on the local public performance license and assist you wherever we can — the paperwork stays between you and your collection society."
+      "catalogue": {
+        "nowPlaying": "Music direction preview",
+        "featured": "Recognisable music for the evening arrival",
+        "preview": "Preview this direction",
+        "label": "Commercial catalogue",
+        "line": "Familiar artists, business-ready control"
       },
-      "03": {
-        "label": "Specialization",
-        "title": "Made for hospitality.",
-        "desc": "Built for complex properties. Morning lobby hum, lunch service energy, late-night lounge pulse — each handled as its own zone."
+      "pillars": {
+        "catalogue": {
+          "title": "Familiar repertoire",
+          "text": "A large licensed commercial catalogue with major-label music."
+        },
+        "musicDesign": {
+          "title": "BMAsia music design",
+          "text": "Playlists shaped for the brand, zones and guest day."
+        },
+        "service": {
+          "title": "One regional service team",
+          "text": "BMAsia manages onboarding, refreshes and ongoing support."
+        }
+      },
+      "direction": {
+        "eyebrow": "BMAsia music-design service",
+        "title": "A large catalogue still needs a point of view.",
+        "description": "BMAsia turns the brand, guest, location and operating schedule into usable playlists—not a pile of tracks for staff to sort through.",
+        "refreshTitle": "Regularly refreshed, still recognisably yours",
+        "refreshText": "Playlist updates are planned around the customer brief and can be tailored as the business, season or campaign changes.",
+        "listen": {
+          "label": "Understand",
+          "title": "Read the venue before choosing music",
+          "text": "We gather the brand position, audience, zones, dayparts, exclusions and operational constraints."
+        },
+        "design": {
+          "label": "Design",
+          "title": "Build a recognisable music direction",
+          "text": "Music designers shape playlists from the commercial catalogue and keep the selection aligned with the desired identity."
+        },
+        "schedule": {
+          "label": "Operate",
+          "title": "Put the direction into a practical schedule",
+          "text": "Morning, daytime, evening, weekends and special moments each receive the right playlist and zone plan."
+        },
+        "refresh": {
+          "label": "Maintain",
+          "title": "Refresh without losing the brand",
+          "text": "BMAsia reviews and updates the music direction regularly, with customer feedback and operator control."
+        }
+      },
+      "extensions": {
+        "eyebrow": "BMAsia-built extensions",
+        "title": "Soundtrack, connected to the way your venue works.",
+        "description": "For customers supplied through BMAsia, production-ready extensions can connect Soundtrack music to specific venue routines and supported systems.",
+        "scope": "These are BMAsia services for supported customer deployments. They are not necessarily included when signing up directly at soundtrack.io.",
+        "location": "Connected customer",
+        "venue": "Riverside Hotel · Bangkok",
+        "connected": "Soundtrack supplied through BMAsia with approved extensions",
+        "footer": "Each extension is scoped, configured and supported for the customer deployment.",
+        "prayer": {
+          "title": "Prayer-time integration",
+          "text": "Use the correct local prayer times to apply the configured music behavior and return cleanly afterward."
+        },
+        "volume": {
+          "title": "Supported volume integrations",
+          "text": "Apply scheduled or integrated volume behavior through supported systems—without claiming continuous microphone sensing."
+        },
+        "weather": {
+          "title": "Weather-adjusted playlist behavior",
+          "text": "Use local weather as an approved input to influence playlist direction or configured behavior."
+        },
+        "api": {
+          "title": "Operational APIs",
+          "text": "Connect supported venue workflows and data to the Soundtrack service through BMAsia-built extensions."
+        }
+      },
+      "operations": {
+        "eyebrow": "BMAsia is the service layer",
+        "title": "One team from first brief to daily operation.",
+        "description": "BMAsia resells the platform, helps shape the music, arranges onboarding and stays involved as the venue changes.",
+        "cta": "Discuss a Soundtrack setup",
+        "onboarding": {
+          "title": "Reseller and onboarding",
+          "text": "BMAsia helps structure the company, locations, zones and rollout for the intended deployment."
+        },
+        "design": {
+          "title": "Playlist design and refresh",
+          "text": "Music designers tailor playlists and refresh them regularly against the customer brief."
+        },
+        "regional": {
+          "title": "Regional and multilingual context",
+          "text": "Local operations, prayer-time needs and messaging requirements can be addressed with the right context."
+        },
+        "support": {
+          "title": "Responsive human support",
+          "text": "A regional BMAsia team provides ongoing help with setup, music direction and supported integrations."
+        }
+      },
+      "licensing": {
+        "eyebrow": "Licensing, made clear",
+        "title": "Commercial music with the right local setup.",
+        "description": "Soundtrack supplies recording and publishing rights for its business service. Public-performance requirements vary by location, and BMAsia confirms the applicable setup during onboarding.",
+        "included": "Through Soundtrack",
+        "recording": "Recording rights for the service catalogue",
+        "publishing": "Publishing rights for the service catalogue",
+        "commercial": "Direct label and distributor agreements",
+        "local": "Confirmed locally",
+        "localText": "Public-performance licensing and other local obligations depend on the country and venue. BMAsia explains what is separate before activation."
+      },
+      "final": {
+        "title": "Put familiar music",
+        "highlight": "to work.",
+        "description": "Request a reviewed Soundtrack trial through BMAsia or talk to us about music design, zones and venue extensions.",
+        "login": "Soundtrack login",
+        "support": "Responsive regional support from BMAsia. No claim of round-the-clock human technical support."
       }
-    },
-    "features": {
-      "sectionLabel": "Capabilities",
-      "sectionTitle": "Everything you need to run music right.",
-      "multiZone": {
-        "title": "Multi-Zone Control",
-        "desc": "Different atmospheres for different spaces. Manage lobby, spa, and restaurant from one dashboard."
-      },
-      "scheduling": {
-        "title": "Scheduling",
-        "desc": "Weekly or daily drag-and-drop schedules. Holiday overrides, dayparts, and ready-made templates by venue type."
-      },
-      "audioMessaging": {
-        "title": "Audio Messaging",
-        "desc": "Schedule branded announcements, promotions, or voice notes in five languages — MP3 upload or text-to-speech."
-      },
-      "mobileApps": {
-        "title": "Mobile Apps",
-        "desc": "Full control from anywhere. iOS, Android, Windows, macOS. Your staff can adjust the vibe from their phone."
-      },
-      "offlineReady": {
-        "title": "Offline Ready",
-        "desc": "Music never stops. Up to 30 consecutive days of cached playback per device — ideal for fluctuating connectivity."
-      },
-      "enterpriseSecurity": {
-        "title": "Enterprise Security",
-        "desc": "SAML SSO, role-based access, multi-user admin. Built for properties that need proper governance."
-      }
-    },
-    "integrations": {
-      "sectionLabel": "Future-Proof",
-      "sectionTitle": "Beyond the Platform",
-      "sectionDesc": "We build AI and API features on top of Soundtrack Your Brand — custom automations, smart building integrations, and bespoke tools designed around your property's operations.",
-      "aiPlaylist": {
-        "title": "AI Playlist Generation",
-        "desc": "Custom AI tools built on top of the platform. Describe a mood, get a curated playlist in seconds."
-      },
-      "smartBuilding": {
-        "title": "Smart Building API",
-        "desc": "Connect music to lighting, room temperature, or occupancy sensors. Make the sound part of the whole guest experience."
-      },
-      "bespoke": {
-        "title": "Bespoke Features on Request",
-        "desc": "Need something custom? We build integrations around your property's operations — on request, at no surprise cost."
-      }
-    },
-    "licensing": {
-      "sectionTitle": "Licensing, clarified.",
-      "sectionDesc": "We tell you exactly what's covered and what isn't — no surprises, no fine print.",
-      "included": {
-        "label": "What's Included",
-        "item1": "Recording rights (master license)",
-        "item2": "Publishing rights (mechanical/sync)",
-        "item3": "Direct deals with major and indie labels via Soundtrack",
-        "item4": "Bespoke curation and quarterly playlist refreshes",
-        "item5": "Hands-off ongoing support from our music designers"
-      },
-      "separate": {
-        "label": "What's Separate",
-        "desc": "The",
-        "descHighlight": "Public Performance License",
-        "descTail": "is paid locally to your collection society — MPC in Thailand, MRSS in Singapore, PRS in the UK, ASCAP/BMI in the US, and so on.",
-        "calloutLabel": "We're here to help",
-        "calloutDesc": "We don't handle the paperwork on your behalf, but we're happy to provide any information you need and assist you however we can."
-      }
-    },
-    "devices": {
-      "sectionLabel": "Versatility",
-      "sectionTitle": "Plays on everything you already have.",
-      "soundtrackPlayer": {
-        "title": "Soundtrack Player",
-        "desc": "Dedicated hardware. Plug-and-play, 30-day offline cache."
-      },
-      "windows": {
-        "title": "Windows PC",
-        "desc": "Any modern Windows machine. Full desktop player, headless enterprise mode."
-      },
-      "androidIos": {
-        "title": "Android & iOS",
-        "desc": "Tablets or phones. Full app control from anywhere on the floor."
-      },
-      "macos": {
-        "title": "macOS",
-        "desc": "Native desktop player for Mac environments."
-      },
-      "sonos": {
-        "title": "Sonos Integration",
-        "desc": "Use Soundtrack as a music service within the Sonos app."
-      },
-      "qsys": {
-        "title": "Q-SYS",
-        "desc": "Central multi-zone management for enterprise audio systems."
-      }
-    },
-    "trial": {
-      "sectionLabel": "Try It First",
-      "title": "Try it before you",
-      "titleHighlight": "commit.",
-      "desc1": "Start with a free 14-day trial on a single zone. No credit card, no commitment.",
-      "desc2": "Once you decide to sign up and your hardware is in place, we'll have you up and running in five minutes.",
-      "cta": "Start Free Trial"
-    },
-    "support": {
-      "sectionLabel": "Always On",
-      "sectionTitle": "You're never alone.",
-      "technical": {
-        "title": "24/7 Technical Support",
-        "desc": "Round-the-clock help for hardware, network, and platform issues. Real humans, not scripts."
-      },
-      "musicDesign": {
-        "title": "Bespoke Music Design",
-        "desc": "Our music designers work with you Monday through Friday (Bangkok hours) to craft and refresh your sound."
-      },
-      "aiAssist": {
-        "title": "AI Self-Service",
-        "desc": "Interactive assistants available 24/7 for common questions, playlist tweaks, and quick adjustments."
-      }
-    },
-    "faq": {
-      "title": "Frequently Asked",
-      "q1": {
-        "q": "Do I need a Public Performance License?",
-        "a": "Yes — this is paid separately to your local collection society (MPC in Thailand, MRSS in Singapore, PRS in the UK, etc). We don't handle the paperwork on your behalf, but we're happy to share any information you need and assist you however we can."
-      },
-      "q2": {
-        "q": "What internet speed and network do I need?",
-        "a": "Minimum 0.5 Mbit/s per playback device. Wired Ethernet is preferred over Wi-Fi. A handful of outbound ports need to be open (443, 53, 123) — we send your IT team a short checklist before setup."
-      },
-      "q3": {
-        "q": "Can I play music offline?",
-        "a": "Yes. Every device caches tracks after playing them, and you can enable \"more offline play\" mode to proactively download content. A fully-synced device keeps playing for up to 30 consecutive days without internet."
-      },
-      "q4": {
-        "q": "How many zones can I manage?",
-        "a": "Unlimited. Each zone gets its own schedule, playlist, and device pairing — controlled from one dashboard. You can add and rearrange zones as your property evolves."
-      },
-      "q5": {
-        "q": "Can I use my Spotify playlists?",
-        "a": "Yes. Soundtrack Your Brand syncs directly with Spotify, so any playlist you've built (yours or curated) can be used commercially through our platform."
-      },
-      "q6": {
-        "q": "What happens if the internet goes down?",
-        "a": "Cached tracks keep playing uninterrupted. Your guests never notice a thing. Once the connection comes back, the player syncs silently in the background."
-      }
-    },
-    "finalCta": {
-      "title": "Ready to hear the",
-      "titleHighlight": "difference?",
-      "desc": "Our music designers will craft a sound experience unique to your brand.",
-      "ctaQuote": "Get a Quote",
-      "ctaDemo": "Book a Demo"
     }
   },
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
-      "description": "Music-led venue operations for businesses: schedule music, run TV channels, create messages and phone audio, automate touchpoints, and control every zone."
-    },
-    "hero": {
-      "label": "Connected Venue Experience",
-      "title": "Beat",
-      "titleHighlight": "Breeze",
-      "subtitle": "Music, screens, messages and phone audio—planned, created and controlled across every zone.",
-      "ctaQuote": "Get a Quote",
-      "ctaTrial": "Start a Free Trial"
-    },
-    "positioning": {
-      "text1": "Licensed music, fully curated, for a fraction of the cost of a commercial streaming service.",
-      "highlight": "Beat Breeze",
-      "text2": "includes every license you need — so you never deal with a collection society again."
-    },
-    "valueProps": {
-      "01": {
-        "label": "All-Inclusive",
-        "title": "All three licenses, always included.",
-        "desc": "Recording, publishing, and public performance — every license you need is built into the subscription. Zero collection society fees, ever."
-      },
-      "02": {
-        "label": "Value",
-        "title": "Significantly more affordable.",
-        "desc": "Because Beat Breeze is curated in-house, it costs significantly less than Soundtrack Your Brand — and you still get every license included."
-      },
-      "03": {
-        "label": "Simplicity",
-        "title": "Designed to be hands‑off.",
-        "desc": "Bespoke curation by our music designers. Scheduled refreshes, seasonal updates, and 24/7 support. You focus on your guests — we handle the sound."
-      }
-    },
-    "features": {
-      "sectionLabel": "Capabilities",
-      "sectionTitle": "Music is the heartbeat. Every touchpoint moves with it.",
-      "sectionDescription": "Plan the atmosphere, create the media and keep every customer-facing moment aligned from one operational workspace.",
-      "zeroLicensing": {
-        "title": "Sound professional on calls",
-        "desc": "Create branded phone-on-hold messages with an appropriate music bed."
-      },
-      "curation": {
-        "title": "Shape the sound",
-        "desc": "Browse the catalogue, describe a moment, build schedules and let the Concierge explain what fits."
-      },
-      "offline": {
-        "title": "Let the venue respond",
-        "desc": "Use connected automations for time, day and operational triggers."
-      },
-      "scheduling": {
-        "title": "Bring screens to life",
-        "desc": "Create TV channels and visual loops that move with the music already shaping each zone."
-      },
-      "audioSignatures": {
-        "title": "Speak at the right moment",
-        "desc": "Schedule clear, branded messages in multiple languages without breaking the atmosphere."
-      },
-      "remoteMgmt": {
-        "title": "Control anywhere",
-        "desc": "See status, manage playback and volume, and control every zone from the dashboard or Remote app."
-      }
+      "description": "BMAsia’s royalty-free venue experience platform for curated music, schedules, screens, messaging, automation and connected zone control."
     },
     "product": {
       "openProduct": "Open Beat Breeze",
@@ -878,137 +587,183 @@
       "windows": "Windows player",
       "web": "Web player",
       "offline": "Offline playback",
-      "price": "From $12 / zone / month",
+      "price": "Configured for each venue",
       "finalDescription": "Try the connected venue experience in one zone for 14 days. No card, no dedicated box and no long setup.",
       "finalTitle": "Your first zone is ready in minutes.",
       "startFree": "Start free",
       "talkToBMAsia": "Talk to BMAsia"
     },
-    "licensing": {
-      "sectionTitle": "Every license.",
-      "sectionTitleHighlight": "Included.",
-      "sectionDesc": "No PRO fees. No paperwork. No surprises.",
-      "recording": {
-        "title": "Recording Rights",
-        "desc": "Master license for every track in the catalog."
+    "redesign": {
+      "hero": {
+        "eyebrow": "BMAsia’s connected venue platform",
+        "title": "Music at the heart.",
+        "highlight": "Every touchpoint in motion.",
+        "description": "Curated royalty-free music, screens, messages and venue automation—planned across zones, reviewed by people and controlled from one place.",
+        "trial": "Start a Beat Breeze trial",
+        "talk": "Talk to BMAsia",
+        "proof1": "Growing royalty-free catalogue",
+        "proof2": "Manual browsing always available",
+        "proof3": "No special player hardware required"
       },
-      "publishing": {
-        "title": "Publishing Rights",
-        "desc": "Mechanical and sync rights for composers and publishers."
+      "controlRoom": {
+        "label": "Venue control room",
+        "venue": "Riverside House · Bangkok",
+        "live": "3 zones live",
+        "weather": "Weather context",
+        "prayer": "Next prayer pause",
+        "volume": "Evening preset",
+        "schedule": "Current daypart",
+        "energy": "Energy",
+        "lobby": "Lobby",
+        "restaurant": "Restaurant",
+        "rooftop": "Rooftop",
+        "updated": "Plan updated",
+        "note": "Scheduled volume presets and supported integrations keep the behavior predictable. Beat Breeze does not claim continuous microphone-based ambient sensing."
       },
-      "performance": {
-        "title": "Public Performance License",
-        "desc": "Play anywhere your business operates — no collection society payments ever."
+      "day": {
+        "eyebrow": "A day in motion",
+        "title": "The venue changes. The plan changes with it.",
+        "description": "Schedules provide the backbone. Weather, prayer times and approved operational triggers can adjust the plan, while staff keep the final say.",
+        "morning": {
+          "time": "06:30",
+          "title": "Morning starts by zone",
+          "text": "Lobby, breakfast and wellness zones open with distinct music, screen and volume presets."
+        },
+        "weather": {
+          "time": "12:10",
+          "title": "Weather informs the direction",
+          "text": "A hot or rainy day can influence playlist recommendations or configured behavior without taking control away from the operator."
+        },
+        "prayer": {
+          "time": "18:36",
+          "title": "Prayer time is respected",
+          "text": "Configured markets can pause or change programming at the correct local prayer time, then return cleanly to the schedule."
+        },
+        "evening": {
+          "time": "19:00",
+          "title": "Evening activates the wider experience",
+          "text": "Music, visual loops, multilingual messages and preset volume behavior move into the evening plan together."
+        },
+        "volumeNote": "Volume changes described here are scheduled presets or supported venue-system integrations—not continuous microphone listening."
       },
-      "footnote1": "While",
-      "footnoteLink": "Soundtrack Your Brand",
-      "footnote2": "still requires a separate Public Performance License in most countries, Beat Breeze has it all built in. That's the whole point."
-    },
-    "platforms": {
-      "sectionLabel": "Runs Everywhere",
-      "sectionTitle": "No special hardware required.",
-      "windows": {
-        "title": "Windows",
-        "desc": "Full desktop player for any modern Windows machine. Mini PCs available from BMAsia (Thailand) with 1-year warranty."
+      "concierge": {
+        "eyebrow": "Music Concierge, in plain language",
+        "title": "Ask for a result. Review what comes back.",
+        "description": "Tell Concierge the zone, audience, time and desired feeling. It can recommend catalogue music or prepare a creative direction; you preview the result before anything plays or enters a schedule.",
+        "ready": "Ready for a brief",
+        "recommendation": "Playable recommendation",
+        "preview": "Preview",
+        "schedule": "Add to schedule",
+        "keepBrowsing": "Keep browsing",
+        "control": "Human control stays visible: review the reasoning, preview the result, apply it, edit it or keep browsing the catalogue manually.",
+        "steps": {
+          "ask": "Describe the moment",
+          "recommend": "Receive options or a brief",
+          "review": "Preview and approve",
+          "play": "Play now or schedule"
+        },
+        "arrival": {
+          "label": "Hotel arrival",
+          "prompt": "Warm but contemporary lobby arrivals",
+          "request": "For the lobby from 16:00–19:00: warm, contemporary and calm during check-in. Avoid sleepy acoustic music.",
+          "result": "Modern bossa and soft electronic soul",
+          "reason": "Mid-tempo rhythm keeps arrival moving while restrained vocals leave space for conversation."
+        },
+        "campaign": {
+          "label": "Retail launch",
+          "prompt": "New-season flagship energy",
+          "request": "Build a confident new-season direction for the shop floor and a silent screen loop for the entrance.",
+          "result": "Nu-disco pulse with a graphic motion brief",
+          "reason": "A clean rhythmic base works across the shop floor while the visual brief carries campaign colours to the entrance."
+        },
+        "recovery": {
+          "label": "Wellness recovery",
+          "prompt": "Low-interruption recovery spaces",
+          "request": "Create a quiet recovery direction with nature texture, no sharp transitions and operator-controlled volume.",
+          "result": "Ambient soundscape with slow harmonic movement",
+          "reason": "Long-form textures reduce noticeable transitions while leaving staff in direct control of level and timing."
+        }
       },
-      "android": {
-        "title": "Android",
-        "desc": "Native Android app for tablets and phones. Budget-friendly and reliable."
+      "media": {
+        "eyebrow": "More than a music player",
+        "title": "Build the world around the soundtrack.",
+        "description": "Beat Breeze can coordinate the media and messages guests meet around the venue—not as disconnected add-ons, but as parts of the same operating plan.",
+        "screens": {
+          "label": "Screens and TV",
+          "title": "Visual loops, slideshows and venue channels",
+          "text": "Plan silent screen loops, branded slideshows and TV channels for public areas or in-room experiences where the deployment calls for them."
+        },
+        "create": {
+          "label": "AI-assisted creation",
+          "title": "Images and video with a review step",
+          "text": "Use AI-assisted or AI-created visual drafts, then review and approve the asset before it reaches a screen."
+        },
+        "messages": {
+          "label": "Multilingual messaging",
+          "title": "Say the right thing in the right language",
+          "text": "Prepare and schedule useful announcements, promotions and branded messages across supported languages."
+        },
+        "soundscapes": {
+          "label": "Soundscapes",
+          "title": "Ambience beyond songs",
+          "text": "Use nature, wellness and environmental textures when a conventional playlist is not the right experience."
+        },
+        "phone": {
+          "label": "Phone-on-hold",
+          "title": "Carry the brand into calls",
+          "text": "Pair an appropriate music bed with a clear phone-on-hold message and keep it aligned with the venue identity."
+        },
+        "catalogue": {
+          "label": "Always developing",
+          "title": "Growing music and media selections",
+          "text": "BMAsia continues to expand playlist directions, soundscapes and media options for different businesses and zones."
+        }
       },
-      "web": {
-        "title": "Web Browser",
-        "desc": "Web player for quick setup — log in from any browser and start playing."
+      "connections": {
+        "eyebrow": "Automation with boundaries",
+        "title": "Connect the venue without hiding the controls.",
+        "description": "Beat Breeze uses explicit schedules, configured rules and supported integrations. Operators can see what is planned and intervene when the venue needs something different.",
+        "schedules": {
+          "title": "Dayparts and calendars",
+          "text": "Plan distinct music, messaging, screens and volume presets by time, weekday, season or event."
+        },
+        "weather": {
+          "title": "Weather-aware behavior",
+          "text": "Use local weather as a configured input for music recommendations or approved playlist behavior."
+        },
+        "prayer": {
+          "title": "Prayer-time automation",
+          "text": "Respect local prayer times with configured playback behavior and a clear return to the day plan."
+        },
+        "volume": {
+          "title": "Scheduled and supported volume control",
+          "text": "Use preset levels and supported volume integrations. Staff keep direct control; no continuous microphone sensing is claimed."
+        },
+        "api": {
+          "title": "Smart APIs and venue connections",
+          "text": "Connect approved building, content or operational systems through scoped APIs designed for the customer deployment."
+        }
+      },
+      "final": {
+        "title": "Make the first zone real.",
+        "description": "Start with a product-specific Beat Breeze trial or ask BMAsia to shape a multi-zone music and media plan.",
+        "support": "BMAsia provides onboarding and responsive regional support. Product self-service remains available whenever your team needs it."
       }
-    },
-    "custom": {
-      "sectionLabel": "Built For Scale",
-      "sectionTitle": "Beyond the standard.",
-      "sectionDesc": "Beat Breeze is built as an evolving platform — especially for corporate chains and multi-property groups. We develop features around your needs.",
-      "whiteLabel": {
-        "title": "White-Label for Corporations",
-        "desc": "Corporate chains can brand Beat Breeze as their own internal music platform. Custom branding, colours, and domain."
-      },
-      "customBuilds": {
-        "title": "Custom Feature Builds",
-        "desc": "Need something beyond standard? We build features around your operations on request — part of our ongoing platform development."
-      },
-      "volumePricing": {
-        "title": "Volume-Friendly Pricing",
-        "desc": "The more zones you run, the better the per-zone rate. Especially attractive for multi-property chains and retail groups."
-      }
-    },
-    "trial": {
-      "sectionLabel": "Try It First",
-      "title": "Listen before you",
-      "titleHighlight": "commit.",
-      "desc1": "Start with a free two-week trial. No credit card, no commitment.",
-      "desc2": "We'll set you up remotely and you can hear how Beat Breeze sounds in your actual space before you decide.",
-      "cta": "Start Free Trial"
-    },
-    "support": {
-      "sectionLabel": "Always On",
-      "sectionTitle": "You're never alone.",
-      "technical": {
-        "title": "24/7 Technical Support",
-        "desc": "Round-the-clock help for hardware, network, and platform issues. Real humans, not scripts."
-      },
-      "musicDesign": {
-        "title": "Bespoke Music Design",
-        "desc": "Our music designers work with you Monday through Friday (Bangkok hours) to craft and refresh your sound."
-      },
-      "aiAssist": {
-        "title": "AI Self-Service",
-        "desc": "Interactive assistants available 24/7 for common questions, playlist tweaks, and quick adjustments."
-      }
-    },
-    "faq": {
-      "title": "Frequently Asked",
-      "q1": {
-        "q": "Do I need to pay any music licensing fees separately?",
-        "a": "No. Every Beat Breeze subscription includes all three licenses — recording, publishing, and public performance. You never need to pay MPC, MRSS, PRS, ASCAP, BMI, or any other collection society."
-      },
-      "q2": {
-        "q": "How is Beat Breeze different from Soundtrack Your Brand?",
-        "a": "Beat Breeze is significantly more affordable and has all licenses included, but the music catalog is curated and royalty-free — not specific chart hits. If you want the hits your guests know by name, choose Soundtrack Your Brand. If you want hassle-free licensed music with zero fees and professional curation, choose Beat Breeze."
-      },
-      "q3": {
-        "q": "What devices does Beat Breeze run on?",
-        "a": "Any modern Windows PC, Android tablet or phone, or directly in a web browser. In Thailand, we supply pre-configured Windows mini PCs with a 1-year warranty if you prefer a plug-and-play solution."
-      },
-      "q4": {
-        "q": "Can Beat Breeze work offline?",
-        "a": "Yes. The music downloads to your device and plays locally, so the experience stays smooth even if your internet drops. You just need connectivity for updates and remote management."
-      },
-      "q5": {
-        "q": "How big is the music catalog?",
-        "a": "Over 30,000 professionally-produced royalty-free tracks, and the catalog is growing. Every track is curated by our music designers for hospitality and retail environments."
-      },
-      "q6": {
-        "q": "Can I white-label Beat Breeze for my corporate brand?",
-        "a": "Yes. Corporate chains can run Beat Breeze as their own branded internal music platform with custom colours, logo, and domain. Talk to us about what you need."
-      }
-    },
-    "finalCta": {
-      "title": "Music,",
-      "titleHighlight": "simplified.",
-      "desc": "Zero licensing hassle. Bespoke curation. Hands-off support. All at a price that makes sense.",
-      "ctaQuote": "Get a Quote",
-      "ctaDemo": "Book a Demo"
     }
   },
   "homePage": {
     "immersive": {
       "hero": {
-        "eyebrow": "Beat Breeze by BMAsia",
-        "title": "Set the atmosphere.",
-        "highlight": "Run every touchpoint.",
-        "description": "Music, screens, messages and phone audio, orchestrated across every zone.",
-        "try": "Try the venue experience simulator",
-        "start": "Start 14 days free",
-        "proof1": "No card required",
-        "proof2": "No dedicated hardware",
-        "proof3": "From $12 per zone",
-        "scroll": "Experience the day"
+        "eyebrow": "BMAsia · Music, media and venue experience",
+        "title": "Your venue has a rhythm.",
+        "highlight": "We make it work together.",
+        "description": "BMAsia designs and runs music, screens, messages and connected venue experiences—with two distinct music platforms to fit the brief.",
+        "try": "Choose your route",
+        "start": "Talk to BMAsia",
+        "proof1": "Independent product guidance",
+        "proof2": "Music design since 2002",
+        "proof3": "One partner across every zone",
+        "scroll": "Try the Venue Time Machine"
       },
       "field": {
         "ariaLabel": "A living field showing music changing throughout the venue",
@@ -1028,11 +783,11 @@
         "volume": "Preview volume"
       },
       "demo": {
-        "eyebrow": "A useful five-minute experience",
+        "eyebrow": "BMAsia Venue Time Machine",
         "title": "Move through a day.",
         "highlight": "Watch every touchpoint respond.",
         "description": "Choose a business, drag the time and bring different zones forward. Music, screens, messages, phone audio and Concierge guidance respond together.",
-        "machineLabel": "Live venue experience simulation",
+        "machineLabel": "Live venue experience preview",
         "live": "Responding live",
         "chooseVenue": "Choose a business type",
         "localTime": "Local time",
@@ -1045,10 +800,26 @@
         "eyebrow": "Connected touchpoints",
         "title": "Preview the whole venue experience",
         "description": "Music remains the heartbeat. Switch touchpoints to see how the same moment carries across the business.",
-        "sound": { "label": "Sound", "title": "Music in this zone", "text": "{playlist} is shaping {zone} at {time}." },
-        "screens": { "label": "TV", "title": "Screen atmosphere", "text": "A silent visual loop follows the {phase} mood while the zone playlist keeps moving." },
-        "messages": { "label": "Messaging", "title": "Scheduled message", "text": "A concise, localised announcement is ready for this moment without interrupting the flow." },
-        "phone": { "label": "Phone", "title": "On-hold experience", "text": "A branded phone message and music bed carry the same atmosphere beyond the venue floor." },
+        "sound": {
+          "label": "Sound",
+          "title": "Music in this zone",
+          "text": "{playlist} is shaping {zone} at {time}."
+        },
+        "screens": {
+          "label": "TV",
+          "title": "Screen atmosphere",
+          "text": "A silent visual loop follows the {phase} mood while the zone playlist keeps moving."
+        },
+        "messages": {
+          "label": "Messaging",
+          "title": "Scheduled message",
+          "text": "A concise, localised announcement is ready for this moment without interrupting the flow."
+        },
+        "phone": {
+          "label": "Phone",
+          "title": "On-hold experience",
+          "text": "A branded phone message and music bed carry the same atmosphere beyond the venue floor."
+        },
         "status": "Experience preview"
       },
       "venues": {
@@ -1058,10 +829,22 @@
         "fitness": "Fitness"
       },
       "phases": {
-        "0": { "label": "Morning", "mood": "Quiet arrival" },
-        "1": { "label": "Daytime", "mood": "Warm and flowing" },
-        "2": { "label": "Evening", "mood": "Social energy" },
-        "3": { "label": "Late night", "mood": "A softer landing" }
+        "0": {
+          "label": "Morning",
+          "mood": "Quiet arrival"
+        },
+        "1": {
+          "label": "Daytime",
+          "mood": "Warm and flowing"
+        },
+        "2": {
+          "label": "Evening",
+          "mood": "Social energy"
+        },
+        "3": {
+          "label": "Late night",
+          "mood": "A softer landing"
+        }
       },
       "zones": {
         "lobby": "Lobby",
@@ -1098,30 +881,66 @@
         "text": "{venue} direction at {time}\nDesired feeling: {mood}. {guidance}\nZone plan: {zones}"
       },
       "connected": {
-        "eyebrow": "One connected venue experience",
+        "eyebrow": "The venue as a system",
         "title": "Music is the heartbeat.",
         "highlight": "Beat Breeze runs the whole experience.",
         "description": "Shape sound, screens, messages and calls, then keep every zone aligned with automations and live control.",
-        "core": "Beat Breeze",
+        "core": "BMAsia",
         "coreText": "Music-led venue operations",
-        "sound": { "title": "Sound", "text": "Curate, schedule and preview" },
-        "screens": { "title": "Screens", "text": "TV channels and visual loops" },
-        "messages": { "title": "Messages", "text": "Timed, multilingual announcements" },
-        "calls": { "title": "Calls", "text": "Phone-on-hold audio" },
-        "automation": { "title": "Automation", "text": "Respond to time, day and triggers" },
-        "operations": { "title": "Operations", "text": "Monitor and control every zone" }
+        "sound": {
+          "title": "Sound",
+          "text": "Curate, schedule and preview"
+        },
+        "screens": {
+          "title": "Screens",
+          "text": "TV channels and visual loops"
+        },
+        "messages": {
+          "title": "Messages",
+          "text": "Timed, multilingual announcements"
+        },
+        "calls": {
+          "title": "Calls",
+          "text": "Phone-on-hold audio"
+        },
+        "automation": {
+          "title": "Automation",
+          "text": "Respond to time, day and triggers"
+        },
+        "operations": {
+          "title": "Operations",
+          "text": "Monitor and control every zone"
+        }
       },
       "story": {
-        "eyebrow": "One system, not a list of features",
-        "title": "From atmosphere to",
-        "highlight": "every touchpoint in flow.",
-        "sound": { "title": "Shape the sound", "text": "Find music, build schedules and let Concierge explain what fits." },
-        "screens": { "title": "Bring screens to life", "text": "Pair visual loops and TV channels with the music already shaping the zone." },
-        "messages": { "title": "Speak at the right moment", "text": "Schedule clear multilingual announcements without breaking the atmosphere." },
-        "calls": { "title": "Sound professional on calls", "text": "Create branded phone-on-hold messages with an appropriate music bed." },
-        "automate": { "title": "Let the venue respond", "text": "Use connected automations for time, day and operational triggers." },
-        "control": { "title": "Control anywhere", "text": "See status and manage playback, volume and every zone from dashboard or Remote." },
-        "cta": "Explore everything Beat Breeze can do"
+        "eyebrow": "Beyond background music",
+        "title": "Design the atmosphere.",
+        "highlight": "Run the experience.",
+        "sound": {
+          "title": "Shape the sound",
+          "text": "Choose a catalogue, design the music and plan every daypart."
+        },
+        "screens": {
+          "title": "Give screens a role",
+          "text": "Use visual loops, slideshows and TV channels where the venue needs them."
+        },
+        "messages": {
+          "title": "Speak at the right moment",
+          "text": "Schedule clear multilingual messages without breaking the flow."
+        },
+        "calls": {
+          "title": "Continue beyond the floor",
+          "text": "Carry the brand through phone-on-hold music and messages."
+        },
+        "automate": {
+          "title": "Connect venue signals",
+          "text": "Use schedules, weather, prayer times and approved API triggers."
+        },
+        "control": {
+          "title": "Keep people in control",
+          "text": "Operators can review, override and manage every zone."
+        },
+        "cta": "See how BMAsia works"
       },
       "worlds": {
         "eyebrow": "One BMAsia team · two distinct solutions",
@@ -1129,12 +948,26 @@
         "highlight": "that fits your business.",
         "description": "Beat Breeze gives operators an intelligent self-service platform. Soundtrack brings familiar commercial repertoire with BMAsia guidance.",
         "bbCore": "Zones · schedules · Concierge",
-        "tryBeatBreeze": "Try Beat Breeze free",
+        "tryBeatBreeze": "Start a Beat Breeze trial",
         "sybDiscLabel": "BMAsia-assisted",
         "sybDiscText": "Recognisable music for business",
-        "talkSoundtrack": "Talk to BMAsia about Soundtrack",
+        "talkSoundtrack": "Request a Soundtrack trial",
         "compareLabel": "Not sure which route is right?",
         "compareText": "We will compare repertoire, licensing, control and service with you—without pushing the wrong product."
+      },
+      "paths": {
+        "eyebrow": "Two product routes",
+        "title": "Start with what the venue needs",
+        "beatLabel": "Flexible and royalty-free",
+        "beatText": "Music, media and automation in one BMAsia platform.",
+        "soundtrackLabel": "Familiar commercial music",
+        "soundtrackText": "Major-label repertoire with BMAsia service and extensions.",
+        "resultEyebrow": "Turn the preview into a plan",
+        "resultTitle": "Which route fits this venue?",
+        "resultText": "Choose by catalogue, operations and guest experience—not by a one-size-fits-all sales script.",
+        "beatDecision": "Best when flexibility, media and automation lead the brief.",
+        "soundtrackDecision": "Best when familiar commercial repertoire leads the brief.",
+        "helpDecision": "Ask BMAsia to compare both routes"
       }
     },
     "venuePulse": {
@@ -1142,9 +975,21 @@
       "label": "Venue pulse",
       "venue": "Riverside House",
       "ready": "3 zones ready",
-      "lobby": { "name": "Lobby", "playlist": "Jazz Piano · afternoon lounge", "status": "Playing" },
-      "restaurant": { "name": "Restaurant", "playlist": "Bossa Nova Lounge · dinner set", "status": "Playing" },
-      "rooftop": { "name": "Rooftop", "playlist": "Deep House · starts at 19:00", "status": "Ready" },
+      "lobby": {
+        "name": "Lobby",
+        "playlist": "Jazz Piano · afternoon lounge",
+        "status": "Playing"
+      },
+      "restaurant": {
+        "name": "Restaurant",
+        "playlist": "Bossa Nova Lounge · dinner set",
+        "status": "Playing"
+      },
+      "rooftop": {
+        "name": "Rooftop",
+        "playlist": "Deep House · starts at 19:00",
+        "status": "Ready"
+      },
       "conciergeLabel": "Concierge recommendation",
       "conciergeText": "Bring the rooftop up gently before arrivals. Keep the lobby calm while check-in is busiest.",
       "reason": "Based on zone, time, energy and today's schedule"
@@ -1170,7 +1015,7 @@
     },
     "alternative": {
       "title": "Need music your guests know by name?",
-      "description": "Soundtrack Your Brand gives businesses access to familiar artists and major-label repertoire. BMAsia can supply and manage it when recognizable music is the priority."
+      "description": "Familiar licensed commercial music, paired with BMAsia music design, onboarding and venue extensions."
     },
     "theProblem": {
       "title": "Your Guests Can",
@@ -1198,9 +1043,9 @@
       "bb": {
         "badge": "All-Inclusive Curation",
         "title": "Beat Breeze",
-        "tagline": "Fully licensed background music — zero hassle.",
+        "tagline": "Royalty-free music at the heart of a flexible venue experience platform.",
         "feature1": "A growing royalty-free catalogue — licensed for business",
-        "feature2": "No collection society fees, no compliance paperwork",
+        "feature2": "Licensing scope confirmed for your plan and territory",
         "feature3": "Music Concierge recommendations that explain why",
         "feature4": "Offline-capable, multi-zone scheduling",
         "cta": "Explore Beat Breeze"
@@ -1238,113 +1083,116 @@
       }
     },
     "finalCta": {
-      "title": "Let's Design",
-      "titleHighlight": "Your Sound",
-      "ctaQuote": "Get a Quote",
-      "ctaDemo": "Book a Demo"
+      "title": "Find the right route",
+      "titleHighlight": "for this venue.",
+      "description": "Tell us what the space needs. We’ll compare Beat Breeze and Soundtrack honestly, then design the music and service around the operation.",
+      "ctaQuote": "Help me choose",
+      "ctaDemo": "Compare products"
     }
   },
   "licensingPage": {
     "hero": {
-      "label": "Compliance",
-      "title": "Music Licensing",
-      "titleHighlight": "Made Simple",
-      "subtitle": "Understanding the licenses your business needs to stay compliant and support the artists you play."
+      "label": "Music rights, made legible",
+      "title": "Know what your service covers.",
+      "titleHighlight": "Confirm what your venue still needs.",
+      "subtitle": "Commercial music rights vary by repertoire, product, territory and how music is used. BMAsia helps you understand the scope before you go live."
     },
     "intro": {
-      "paragraph1": "Playing music in a business is different from listening at home. When you use music commercially, you need permission from the rights holders.",
-      "paragraph2Prefix": "Your business needs",
-      "paragraph2Highlight": "three different licenses."
+      "paragraph1": "A consumer streaming subscription is not the same as permission to play music in a business. Commercial use can involve several layers of rights.",
+      "paragraph2Prefix": "The practical rule:",
+      "paragraph2Highlight": "confirm the service and territory, in writing."
     },
     "licenses": {
       "01": {
-        "title": "Recording License",
-        "desc": "Covers the right to use a specific recording of a song and compensates the recording artist and their record label."
+        "title": "Recorded music rights",
+        "desc": "Permission connected to the particular sound recording. Coverage depends on the catalogue and commercial music service you select."
       },
       "02": {
-        "title": "Publishing License",
-        "desc": "Covers the right to use the original composition and compensates the songwriters and music composers for their intellectual property."
+        "title": "Composition rights",
+        "desc": "Rights connected to the underlying song, including songwriters and publishers. Product and territory determine how these are handled."
       },
       "03": {
-        "title": "Public Performance License",
-        "desc": "Allows you to play the song in a public environment like your business venue, retail space, or restaurant."
+        "title": "Public performance obligations",
+        "desc": "A venue may also need a local licence or collecting-society arrangement. Requirements differ by country, venue and repertoire."
       }
     },
     "warning": {
-      "label": "CRITICAL COMPLIANCE",
-      "titleStart": "Consumer Streaming Services Are",
-      "titleNot": "NOT",
-      "titleEnd": "Licensed for Business Use",
-      "quote": "We grant you a limited, non-exclusive, revocable licence to make personal, non-commercial use of the Spotify Service...",
-      "quoteHighlight": "non-commercial",
-      "source": "— Spotify Terms & Conditions"
+      "label": "A useful boundary",
+      "titleStart": "Personal streaming plans are",
+      "titleNot": "not designed",
+      "titleEnd": "for commercial venue use",
+      "quote": "Use a business music service and verify the rights that apply to your exact venue.",
+      "quoteHighlight": "business music service",
+      "source": "BMAsia licensing guidance"
     },
     "comparison": {
-      "sectionTitle": "Compare Your Solution",
-      "recordingLicense": "Recording License",
-      "publishingLicense": "Publishing License",
-      "performanceLicense": "Public Performance License",
+      "sectionTitle": "Two product paths, each with a different rights model",
+      "recordingLicense": "Commercial catalogue rights",
+      "publishingLicense": "Product-specific repertoire scope",
+      "performanceLicense": "Local venue obligations",
       "syb": {
-        "badge": "PREMIUM",
-        "performanceNote": "Local PRO registration required"
+        "badge": "Recognisable repertoire",
+        "performanceNote": "Local public-performance requirements may apply; confirm by territory.",
+        "cta": "Explore Soundtrack"
       },
       "bb": {
-        "badge": "FULLY LICENSED",
-        "performanceNote": "All-inclusive coverage"
+        "badge": "Curated catalogue",
+        "performanceNote": "Coverage depends on the selected plan, catalogue and territory; confirm with BMAsia.",
+        "cta": "Explore Beat Breeze"
       }
     },
     "cta": {
-      "title": "Get Started with",
-      "titleHighlight": "Licensed Music",
-      "ctaQuote": "Get a Quote",
-      "ctaDemo": "Book a Demo"
+      "title": "Get the rights picture for",
+      "titleHighlight": "your venue and territory",
+      "ctaQuote": "Ask BMAsia",
+      "ctaDemo": "Talk through the options"
     }
   },
   "howItWorksPage": {
     "hero": {
-      "label": "Our Methodology",
-      "title": "From First Call to",
-      "titleHighlight": "First Note",
-      "subtitle": "Most clients are live within 48 hours. Here's what the process looks like."
+      "label": "From brief to daily rhythm",
+      "title": "One operating model.",
+      "titleHighlight": "Two ways to deliver it.",
+      "subtitle": "BMAsia turns your brand, spaces and dayparts into a music plan, then connects the right platform and supports the people running it."
     },
     "steps": {
       "01": {
-        "title": "Tell Us About Your Space",
-        "desc": "Share your venue type, number of zones, and the atmosphere you want to create. We'll recommend the right solution — Soundtrack Your Brand for full creative control, or Beat Breeze for hassle-free, all-inclusive music. Get a quote within 24 hours."
+        "title": "Read the venue",
+        "desc": "We map the business type, locations, zones, guest journey, brand cues and practical constraints. This is where we decide whether Beat Breeze, Soundtrack or a combined operating approach best fits the brief."
       },
       "02": {
-        "title": "We Design Your Sound",
-        "desc": "Our music designers analyze your brand, guest demographics, and venue acoustics. We create a multi-layered playlist schedule — different moods for morning, afternoon, and evening — tailored to your space. You approve the samples before anything goes live."
+        "title": "Design the day",
+        "desc": "We shape a sequence of moods for the moments that matter: opening, arrival, peak service, transition and close. You can review the direction before it becomes the live schedule."
       },
       "03": {
-        "title": "Setup & Go Live",
-        "desc": "We ship hardware (or configure your existing devices), set up the software remotely, and train your team. If hardware is already in place, you can be playing music within minutes. We handle everything — you just press play."
+        "title": "Connect the system",
+        "desc": "BMAsia helps configure compatible playback, schedules, permissions and team access. The exact setup follows the selected product, venue hardware and network conditions."
       },
       "04": {
-        "title": "Ongoing Support & Evolution",
-        "desc": "Your music isn't set-and-forget. We refresh playlists monthly (SYB) or quarterly (Beat Breeze), monitor zone health, and adapt to seasonal themes. Dedicated support from our Bangkok team."
+        "title": "Operate and evolve",
+        "desc": "Your team gets a clear handoff, while BMAsia provides responsive regional support and helps the music direction evolve as the venue, season or operating brief changes."
       }
     },
     "stats": {
-      "label": "Why BMAsia",
-      "sectionTitle": "Built for Hospitality.",
+      "label": "The BMAsia layer",
+      "sectionTitle": "Designed as an operating system, not a playlist handoff.",
       "experience": {
-        "value": "23 Years",
-        "desc": "Curating music for hospitality across Asia-Pacific since 2002."
+        "value": "Venue brief",
+        "desc": "Brand, audience, zones and operational reality captured in one shared direction."
       },
       "speed": {
-        "value": "48 Hours",
-        "desc": "From bespoke music design to live in your venue. Instant if hardware is in place."
+        "value": "Sound plan",
+        "desc": "Dayparts and transitions designed around how the venue actually moves."
       },
       "legal": {
-        "value": "100% Legal",
-        "desc": "Every track fully licensed. No compliance headaches, no fines."
+        "value": "Live handoff",
+        "desc": "Platform setup, team guidance and licensing scope made clear before launch."
       }
     },
     "cta": {
-      "title": "Ready to hear the difference?",
-      "ctaQuote": "Get a Quote",
-      "ctaDemo": "Book a Demo"
+      "title": "Start with the place, not the product.",
+      "ctaQuote": "Tell us about your venue",
+      "ctaDemo": "Talk with BMAsia"
     }
   },
   "quotationPage": {
@@ -1352,35 +1200,35 @@
       "label": "Get Started",
       "title": "Request a",
       "titleHighlight": "Quote",
-      "subtitle": "Tell us about your venue and we'll send a personalized quotation within 24 hours."
+      "subtitle": "Share the venue, locations and zones you need to operate. BMAsia will review the brief and follow up with the right product path and a tailored proposal."
     },
     "whatToExpect": {
       "sectionTitle": "What to Expect",
       "fastResponse": {
-        "title": "Fast Response",
-        "desc": "Receive your personalized quote within 24 hours"
+        "title": "Human follow-up",
+        "desc": "A BMAsia specialist reviews the brief and contacts you with the next useful step."
       },
       "noObligation": {
-        "title": "No Obligation",
-        "desc": "Free consultation with no commitment required"
+        "title": "No automatic purchase",
+        "desc": "Submitting the form does not create a subscription or binding order."
       },
       "tailored": {
-        "title": "Tailored Solutions",
-        "desc": "Custom pricing based on your specific needs"
+        "title": "Built around the operation",
+        "desc": "The proposal reflects your market, locations, zones, hardware and service needs."
       }
     },
     "ourSolutions": {
       "sectionTitle": "Our Solutions",
       "sybTagline": "Recognisable commercial repertoire — familiar artists, Spotify import and BMAsia-assisted setup",
       "bbTagline": "Intelligent music operations — a growing curated catalogue, Music Concierge, schedules and live zone control",
-      "learnMore": "Learn more about our solutions →"
+      "learnMore": "See how the BMAsia process works →"
     },
     "questions": {
       "sectionTitle": "Questions?"
     },
     "formHeader": {
       "title": "Tell Us About Your Space",
-      "subtitle": "Fill in your details and we'll get back to you with a personalized quote."
+      "subtitle": "A few operational details help us route your request accurately."
     },
     "demoCta": {
       "title": "Prefer a",
@@ -1395,27 +1243,7 @@
       "subheadline": "From lobby to spa, we design the music that shapes your guest experience across every zone.",
       "zonesTitle": "Every space has its frequency",
       "benefitsTitle": "Why hotels choose BMAsia",
-      "editorialStat": "41% of guests stay longer when they enjoy the music.",
-      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021 — 2,500+ consumers surveyed.",
       "ctaHeadline": "Design your hotel's sound.",
-      "stats": {
-        "s1": {
-          "value": "9.1%",
-          "label": "Revenue Increase"
-        },
-        "s2": {
-          "value": "41%",
-          "label": "Longer Dwell Time"
-        },
-        "s3": {
-          "value": "39%",
-          "label": "More Return Visits"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Music Management"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Lobby & Reception",
@@ -1443,11 +1271,11 @@
         }
       },
       "benefits": {
-        "b1": "Centralized multi-property control from one dashboard",
-        "b2": "Bespoke music design by our team, refreshed quarterly",
-        "b3": "Daypart scheduling — automatic transitions from morning to night",
-        "b4": "Offline playback guaranteed — music plays even if internet drops",
-        "b5": "24/7 dedicated support and account management"
+        "b1": "One plan across lobby, food and beverage, wellness, leisure and evening zones",
+        "b2": "Music schedules and screen content can follow the guest day",
+        "b3": "Multilingual messages stay clear and on brand",
+        "b4": "Prayer-time, weather and supported volume behavior fit local operations",
+        "b5": "Central oversight with local staff control"
       }
     },
     "restaurants": {
@@ -1455,27 +1283,7 @@
       "subheadline": "Music that turns meals into memories — scheduled, curated, and always on brand.",
       "zonesTitle": "From sunrise to last call",
       "benefitsTitle": "Why restaurants choose BMAsia",
-      "editorialStat": "Slow-tempo music increases dining time by 24% and bar revenue by 40%.",
-      "editorialStatSub": "Milliman (1986), Journal of Consumer Research.",
       "ctaHeadline": "Set the mood for your restaurant.",
-      "stats": {
-        "s1": {
-          "value": "9.1%",
-          "label": "Higher Revenue"
-        },
-        "s2": {
-          "value": "15%",
-          "label": "More Dessert Sales"
-        },
-        "s3": {
-          "value": "24%",
-          "label": "Longer Dining Time"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automated"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Fine Dining",
@@ -1503,11 +1311,11 @@
         }
       },
       "benefits": {
-        "b1": "Daypart scheduling — automatic transitions from breakfast to late night",
-        "b2": "Genre and mood curation matched to your F&B concept",
-        "b3": "All licenses available — royalty-free or commercial options",
-        "b4": "Multi-zone control for dining room, bar, terrace, and restrooms",
-        "b5": "Volume and energy auto-adjust based on time of day"
+        "b1": "Dayparts move from opening to lunch, dinner and late service",
+        "b2": "Dining, bar and terrace zones can hold distinct energy",
+        "b3": "Menu, promotion and event visuals can follow the same plan",
+        "b4": "Scheduled volume presets support service without ambient microphone claims",
+        "b5": "Operators can preview, approve and override changes"
       }
     },
     "retail": {
@@ -1515,27 +1323,7 @@
       "subheadline": "We design the sonic identity that makes customers stay, browse, and buy.",
       "zonesTitle": "Sound for every format",
       "benefitsTitle": "Why retailers choose BMAsia",
-      "editorialStat": "Slow-tempo music increases daily retail sales by 38%.",
-      "editorialStatSub": "Milliman (1982), Journal of Marketing — the gold-standard retail music study.",
       "ctaHeadline": "Amplify your brand.",
-      "stats": {
-        "s1": {
-          "value": "38%",
-          "label": "Higher Daily Sales"
-        },
-        "s2": {
-          "value": "90%",
-          "label": "Return with Good Music"
-        },
-        "s3": {
-          "value": "3.4x",
-          "label": "Wine Priming Effect"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automated"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Fashion & Apparel",
@@ -1563,11 +1351,11 @@
         }
       },
       "benefits": {
-        "b1": "Centralized music control across all store locations",
-        "b2": "Brand-aligned curation that reinforces your identity",
-        "b3": "Audio messaging for promotions, store hours, and announcements",
-        "b4": "Multi-store consistency from flagship to outlet",
-        "b5": "Peak hour scheduling — energy levels match customer flow"
+        "b1": "Campaign music and visual loops share one creative direction",
+        "b2": "Multi-store schedules preserve brand consistency with local control",
+        "b3": "Promotional messaging can be timed without interrupting the atmosphere",
+        "b4": "APIs can connect approved operational and campaign triggers",
+        "b5": "Both familiar commercial and royalty-free catalogue routes are available"
       }
     },
     "bars": {
@@ -1575,27 +1363,7 @@
       "subheadline": "Licensed music that sets the perfect mood — from cocktail hour to closing time.",
       "zonesTitle": "Set the vibe for every moment",
       "benefitsTitle": "Why bars choose BMAsia",
-      "editorialStat": "Higher volume increased drinks per patron from 2.6 to 3.4.",
-      "editorialStatSub": "Guéguen et al. (2004), Alcoholism: Clinical & Experimental Research.",
       "ctaHeadline": "Design your bar's sound.",
-      "stats": {
-        "s1": {
-          "value": "+31%",
-          "label": "More Drinks Ordered"
-        },
-        "s2": {
-          "value": "+40%",
-          "label": "Bar Revenue Increase"
-        },
-        "s3": {
-          "value": "24%",
-          "label": "Longer Table Time"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automated"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Cocktail Bar",
@@ -1623,11 +1391,11 @@
         }
       },
       "benefits": {
-        "b1": "Mood transitions from after-work to late night automatically",
-        "b2": "Genre expertise — from jazz to electronic to top 40",
-        "b3": "Legal compliance — no risk of copyright issues",
-        "b4": "Volume scheduling that respects noise regulations",
-        "b5": "Bespoke playlists refreshed to keep regulars surprised"
+        "b1": "Energy can progress from opening through cocktail hour and closing",
+        "b2": "Music choice can use familiar commercial or curated royalty-free repertoire",
+        "b3": "Screens, event visuals and promotions follow the run of show",
+        "b4": "Scheduled volume presets respect venue policy and operator judgment",
+        "b5": "Staff retain immediate playback and zone control"
       }
     },
     "spas": {
@@ -1635,27 +1403,7 @@
       "subheadline": "Music designed to calm, heal, and restore — from reception to treatment room.",
       "zonesTitle": "Healing frequencies for every space",
       "benefitsTitle": "Why spas choose BMAsia",
-      "editorialStat": "\"Weightless\" reduced anxiety by 65% in clinical testing.",
-      "editorialStatSub": "Mindlab International / British Academy of Sound Therapy, 2011.",
       "ctaHeadline": "Design your sanctuary's sound.",
-      "stats": {
-        "s1": {
-          "value": "65%",
-          "label": "Anxiety Reduction"
-        },
-        "s2": {
-          "value": "60 BPM",
-          "label": "Alpha Brainwave Sync"
-        },
-        "s3": {
-          "value": "30K+",
-          "label": "Curated Tracks"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automated"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Reception & Waiting",
@@ -1683,11 +1431,11 @@
         }
       },
       "benefits": {
-        "b1": "Curated wellness playlists by professional music designers",
-        "b2": "Seamless zone-by-zone control for different treatment areas",
-        "b3": "Offline playback — never silence during a treatment",
-        "b4": "Seasonal and thematic updates (Ramadan, holidays, events)",
-        "b5": "All licenses included with Beat Breeze — zero hassle"
+        "b1": "Soundscapes and music can be shaped for each treatment zone",
+        "b2": "Low-interruption schedules protect the pace of the guest journey",
+        "b3": "Calm visual loops support reception and relaxation areas",
+        "b4": "Messages stay minimal, useful and locally appropriate",
+        "b5": "Volume remains preset and operator controlled"
       }
     },
     "cafes": {
@@ -1695,27 +1443,7 @@
       "subheadline": "Music that makes people sit down, order another coffee, and stay a while.",
       "zonesTitle": "From morning espresso to afternoon work session",
       "benefitsTitle": "Why cafés choose BMAsia",
-      "editorialStat": "73% of customers take action after hearing a song they like in a café.",
-      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021.",
       "ctaHeadline": "Design your café's sound.",
-      "stats": {
-        "s1": {
-          "value": "79%",
-          "label": "Notice the Music"
-        },
-        "s2": {
-          "value": "41%",
-          "label": "Stay Longer"
-        },
-        "s3": {
-          "value": "73%",
-          "label": "Take Action After"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automated"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Morning Rush",
@@ -1743,11 +1471,11 @@
         }
       },
       "benefits": {
-        "b1": "Daypart scheduling matches energy to the time of day",
-        "b2": "All licenses included — no collection society fees with Beat Breeze",
-        "b3": "Affordable pricing for single-zone locations",
-        "b4": "Easy setup on any Android or Windows device",
-        "b5": "Refreshed playlists keep regulars engaged"
+        "b1": "Music schedules follow morning rush, work hours, social time and close",
+        "b2": "Digital menu and promotional visuals can change by daypart",
+        "b3": "Weather-aware programming can suggest an appropriate direction",
+        "b4": "Phone-on-hold can carry the same brand sound beyond the café",
+        "b5": "Staff can adjust the live zone without rebuilding the plan"
       }
     },
     "malls": {
@@ -1755,27 +1483,7 @@
       "subheadline": "Multi-zone music management for shopping centers that want more foot traffic and longer visits.",
       "zonesTitle": "One building, many moods",
       "benefitsTitle": "Why shopping malls choose BMAsia",
-      "editorialStat": "85% of shoppers say music is the #1 factor lifting their in-store mood.",
-      "editorialStatSub": "Mood Media, \"Quantifying the Impact of Sensory Marketing,\" 2019.",
       "ctaHeadline": "Design your mall's sound.",
-      "stats": {
-        "s1": {
-          "value": "38%",
-          "label": "Higher Daily Sales"
-        },
-        "s2": {
-          "value": "85%",
-          "label": "Say Music Lifts Mood"
-        },
-        "s3": {
-          "value": "75%",
-          "label": "Stay Longer"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Centralized Control"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Common Areas",
@@ -1803,11 +1511,11 @@
         }
       },
       "benefits": {
-        "b1": "Centralized management across dozens of zones from one dashboard",
-        "b2": "Audio messaging for promotions, events, and announcements",
-        "b3": "Scheduling that adapts to weekday vs weekend traffic patterns",
-        "b4": "Hardware solutions for large-scale deployments",
-        "b5": "Dedicated account manager for ongoing support"
+        "b1": "Common areas, food courts, entrances and premium wings stay coordinated",
+        "b2": "Screen networks and announcements can follow the same operating calendar",
+        "b3": "Multilingual messaging supports wayfinding, events and promotions",
+        "b4": "Prayer-time behavior can fit the local centre schedule",
+        "b5": "Central teams see the whole property while zone staff retain control"
       }
     },
     "gyms": {
@@ -1815,27 +1523,7 @@
       "subheadline": "High-energy music that pushes performance, motivates members, and keeps them coming back.",
       "zonesTitle": "Different energy for every workout",
       "benefitsTitle": "Why gyms choose BMAsia",
-      "editorialStat": "Music increases endurance by 15% and reduces perceived exertion by 10%.",
-      "editorialStatSub": "Karageorghis et al. / Terry et al. (2020), Psychological Bulletin — meta-analysis of 139 studies.",
       "ctaHeadline": "Power up your gym's sound.",
-      "stats": {
-        "s1": {
-          "value": "+15%",
-          "label": "Endurance Increase"
-        },
-        "s2": {
-          "value": "-10%",
-          "label": "Perceived Exertion"
-        },
-        "s3": {
-          "value": "139",
-          "label": "Studies Confirm It"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automated"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Weights Floor",
@@ -1863,11 +1551,11 @@
         }
       },
       "benefits": {
-        "b1": "BPM-matched playlists for different workout intensities",
-        "b2": "Multi-zone control — heavy in weights, calm in yoga",
-        "b3": "All licenses available — commercial or royalty-free",
-        "b4": "Scheduling that adapts to peak hours and class schedules",
-        "b5": "Multi-location consistency for gym chains"
+        "b1": "Class timetables and zone schedules shape the daily energy curve",
+        "b2": "Workout, reception and recovery areas can sound deliberately different",
+        "b3": "Screens and visual loops support classes and member communication",
+        "b4": "APIs can connect approved timetable or operational triggers",
+        "b5": "Scheduled volume presets keep control with staff"
       }
     },
     "medical": {
@@ -1875,27 +1563,7 @@
       "subheadline": "Music that reduces anxiety, builds trust, and creates a healing environment.",
       "zonesTitle": "Sound for every clinical space",
       "benefitsTitle": "Why medical facilities choose BMAsia",
-      "editorialStat": "Music reduces surgical anxiety as effectively as medication (NNT=4).",
-      "editorialStatSub": "Kuhlmann et al. (2018), British Journal of Surgery — 92 RCTs, 7,385 patients.",
       "ctaHeadline": "Design your practice's sound.",
-      "stats": {
-        "s1": {
-          "value": "NNT=4",
-          "label": "As Effective as Medication"
-        },
-        "s2": {
-          "value": "7,385",
-          "label": "Patients Studied"
-        },
-        "s3": {
-          "value": "92",
-          "label": "Clinical Trials"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automated"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Waiting Room",
@@ -1923,11 +1591,11 @@
         }
       },
       "benefits": {
-        "b1": "Clinically-informed playlists designed for healthcare settings",
-        "b2": "All licenses included with Beat Breeze — no compliance complexity",
-        "b3": "Offline playback — no interruptions during treatments",
-        "b4": "Volume control appropriate for clinical environments",
-        "b5": "Easy setup that doesn't burden IT teams"
+        "b1": "Waiting, treatment and recovery spaces can have distinct low-stress sound",
+        "b2": "Screens support calm information and wayfinding without medical claims",
+        "b3": "Multilingual messaging can be scheduled by location and time",
+        "b4": "Simple zone schedules reduce the burden on staff and IT",
+        "b5": "Operators retain direct volume and playback control"
       }
     },
     "offices": {
@@ -1935,27 +1603,7 @@
       "subheadline": "Background music that boosts focus, creativity, and workplace satisfaction.",
       "zonesTitle": "Different modes for different spaces",
       "benefitsTitle": "Why offices choose BMAsia",
-      "editorialStat": "Software developers produce higher quality work with background music.",
-      "editorialStatSub": "Lesiuk (2005), Psychology of Music — 56 developers, 5-week study.",
       "ctaHeadline": "Design your workspace's sound.",
-      "stats": {
-        "s1": {
-          "value": "79%",
-          "label": "Say Music Helps"
-        },
-        "s2": {
-          "value": "70 dB",
-          "label": "Optimal Level"
-        },
-        "s3": {
-          "value": "30K+",
-          "label": "Curated Tracks"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automated"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Open Plan",
@@ -1983,11 +1631,11 @@
         }
       },
       "benefits": {
-        "b1": "Scheduling that matches office rhythms — focus mornings, social afternoons",
-        "b2": "Multi-zone control for open plan, meeting rooms, and common areas",
-        "b3": "All licenses included with Beat Breeze — IT-friendly setup",
-        "b4": "Employee satisfaction boost through thoughtful sound design",
-        "b5": "Affordable single-zone pricing for smaller offices"
+        "b1": "Focus, reception, social and meeting zones can run different modes",
+        "b2": "Internal screens and messages follow the workplace calendar",
+        "b3": "Soundscapes can support quieter shared spaces without productivity guarantees",
+        "b4": "Phone-on-hold continues the brand experience for callers",
+        "b5": "Schedules remain easy for workplace teams to review and override"
       }
     },
     "showrooms": {
@@ -1995,27 +1643,7 @@
       "subheadline": "Premium music that elevates products and creates aspirational experiences.",
       "zonesTitle": "Setting the stage for every product",
       "benefitsTitle": "Why showrooms choose BMAsia",
-      "editorialStat": "Classical music leads customers to choose more expensive products.",
-      "editorialStatSub": "Areni & Kim (1993), Advances in Consumer Research.",
       "ctaHeadline": "Design your showroom's sound.",
-      "stats": {
-        "s1": {
-          "value": "38%",
-          "label": "Higher Sales"
-        },
-        "s2": {
-          "value": "3.4x",
-          "label": "Music Priming Effect"
-        },
-        "s3": {
-          "value": "65%",
-          "label": "Say Atmosphere Matters"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automated"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Automotive Showrooms",
@@ -2043,11 +1671,11 @@
         }
       },
       "benefits": {
-        "b1": "Brand-aligned music that reinforces your product positioning",
-        "b2": "Event mode for launches, openings, and VIP viewings",
-        "b3": "Bespoke curation that tells your brand story through sound",
-        "b4": "Multi-room scheduling for different product areas",
-        "b5": "Premium feel without the premium complexity"
+        "b1": "Music and visual content reinforce the product story together",
+        "b2": "Launch video, slideshows and event modes can follow a timed sequence",
+        "b3": "Multilingual messages support local guests and visiting groups",
+        "b4": "Approved APIs can trigger content for product or event moments",
+        "b5": "Phone-on-hold extends the same brand direction beyond the floor"
       }
     },
     "events": {
@@ -2055,27 +1683,7 @@
       "subheadline": "From corporate galas to brand launches — music that makes moments unforgettable.",
       "zonesTitle": "Sound for every occasion",
       "benefitsTitle": "Why event venues choose BMAsia",
-      "editorialStat": "At peak emotional moments, attendees are 63% more likely to connect with brands.",
-      "editorialStatSub": "Live Nation, \"The Power of Live\" Global Study, 2018 — 22,500 fans, 11 countries.",
       "ctaHeadline": "Design your event's sound.",
-      "stats": {
-        "s1": {
-          "value": "63%",
-          "label": "Brand Connection"
-        },
-        "s2": {
-          "value": "90%",
-          "label": "Welcome Brand Presence"
-        },
-        "s3": {
-          "value": "500+",
-          "label": "Venues Served"
-        },
-        "s4": {
-          "value": "23+",
-          "label": "Years Experience"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Corporate Events",
@@ -2103,11 +1711,11 @@
         }
       },
       "benefits": {
-        "b1": "Event-specific playlist design by our music team",
-        "b2": "Scheduling that follows event timelines precisely",
-        "b3": "Audio messaging for announcements and program flow",
-        "b4": "Temporary or permanent installation options",
-        "b5": "Our music team turns your event brief into a practical music plan"
+        "b1": "Music, screens, video and announcements follow one run of show",
+        "b2": "Temporary zones can be rehearsed before guests arrive",
+        "b3": "Timed messages support transitions without relying on manual cues alone",
+        "b4": "Operators can override every scheduled moment live",
+        "b5": "Plans can be reused and adapted for future events"
       }
     }
   },
@@ -2116,6 +1724,283 @@
     "ctaDemo": "Book a Demo",
     "source": "Source: Soundtrack Research",
     "footerCtaQuote": "Get a quote →",
-    "footerCtaDemo": "Book a demo →"
+    "footerCtaDemo": "Book a demo →",
+    "heroEyebrow": "BMAsia for your venue",
+    "helpChoose": "Help me choose",
+    "seeDayFlow": "See the day in motion",
+    "livePlan": "Live atmosphere plan",
+    "ready": "Plan ready",
+    "dayEyebrow": "One operating day",
+    "dayTitle": "Every moment has a different job.",
+    "dayDescription": "Music leads the atmosphere, while screens, messaging, schedules and approved automations carry the plan across the venue.",
+    "touchpointsEyebrow": "Made for this operation",
+    "touchpointsTitle": "Not a background-music template.",
+    "touchpointsDescription": "Each zone and touchpoint should support the actual customer journey, staff rhythm and brand decisions of this type of business.",
+    "operationsTitle": "Built to be operated, not admired once",
+    "productFitEyebrow": "Two credible product routes",
+    "productFitTitle": "Choose by catalogue and operating model.",
+    "productFitDescription": "BMAsia can supply either route. The right answer depends on the music guests should hear and the wider venue experience you need to run.",
+    "beatBreeze": {
+      "eyebrow": "Flexible and royalty-free",
+      "text": "Choose Beat Breeze when music, screens, messaging, media and venue automation need to work together in one BMAsia platform.",
+      "cta": "Explore Beat Breeze"
+    },
+    "soundtrack": {
+      "eyebrow": "Familiar commercial music",
+      "text": "Choose Soundtrack when familiar major-label repertoire is the priority, with BMAsia music design and supported extensions.",
+      "cta": "Explore Soundtrack"
+    },
+    "notSure": "Ask BMAsia to compare both",
+    "finalDescription": "Tell us about the zones, guest journey and music expectations. We’ll recommend the product and service model that actually fits.",
+    "howItWorks": "How BMAsia works",
+    "capabilities": {
+      "music": "Music",
+      "screens": "Screens and TV",
+      "messages": "Multilingual messages",
+      "video": "Video and loops",
+      "scheduling": "Scheduling",
+      "automation": "Automation",
+      "api": "APIs and integrations",
+      "volume": "Volume presets",
+      "prayer": "Prayer-time behavior",
+      "phone": "Phone-on-hold",
+      "soundscapes": "Soundscapes"
+    }
+  },
+  "cookieBanner": {
+    "title": "Your privacy choices",
+    "manageTitle": "Manage analytics preferences",
+    "description": "Necessary storage keeps your language and privacy choice. With permission, Google Tag Manager and Apollo help us understand visits and business interest.",
+    "policy": "Read the cookie policy",
+    "close": "Close preferences",
+    "necessaryTitle": "Necessary",
+    "necessaryDescription": "Required for language, security and remembering this choice. Always active.",
+    "analyticsTitle": "Analytics and business insights",
+    "analyticsDescription": "Optional Google Tag Manager and Apollo measurement. Loaded only after you allow it.",
+    "necessaryOnly": "Necessary only",
+    "allowAnalytics": "Allow analytics"
+  },
+  "legalPages": {
+    "privacy": {
+      "eyebrow": "Legal · Data practice",
+      "title": "Privacy policy",
+      "summary": "What BMAsia collects through this website, why we use it, and the services involved when you contact us, request a trial or use the assistant.",
+      "updated": "Last updated: 4 August 2026",
+      "cookieLink": "Review or change cookie preferences",
+      "sections": {
+        "controller": {
+          "title": "Who is responsible",
+          "paragraphs": [
+            "This policy applies to BMAsia (Thailand) Co., Ltd. and BMAsia Limited when they process personal data through bmasiamusic.com. The BMAsia entity that handles your enquiry or agreement is responsible for that processing."
+          ],
+          "items": [
+            "BMAsia (Thailand) Co., Ltd., 725 S-Metro Building, Suite 144, Level 20, Sukhumvit Road, Klongtan Nua, Watthana, Bangkok 10110, Thailand.",
+            "BMAsia Limited, Hong Kong."
+          ]
+        },
+        "data": {
+          "title": "Data we receive",
+          "paragraphs": [
+            "We receive information you submit and limited technical information created when the site is used. Please do not put sensitive personal data into free-text fields or the website assistant."
+          ],
+          "items": [
+            "Contact and business details, venue information, product preference and messages submitted through enquiry, quotation and Soundtrack trial forms.",
+            "Assistant conversations and escalation details when you choose to use the chat or voice experience.",
+            "Consent choice, language preference, device and usage information, referral data and approximate network information where optional measurement is enabled."
+          ]
+        },
+        "purposes": {
+          "title": "Why we use it",
+          "paragraphs": [
+            "We use this information to respond to requests, assess product and trial suitability, prepare proposals, support customers, secure and operate the site, and improve our services. Depending on the context, our basis may be steps toward a contract, performance of a contract, legitimate business interests, consent, or a legal obligation."
+          ],
+          "items": [
+            "Submitting a form is not permission for unrelated bulk marketing.",
+            "Optional analytics and prospect measurement load only after the consent choice shown on this site.",
+            "Assistant responses are informational and are not binding commercial commitments."
+          ]
+        },
+        "sharing": {
+          "title": "Services and recipients",
+          "paragraphs": [
+            "We share data only where needed to operate the site, respond to you, arrange a requested service, or meet legal duties. Providers can process data in countries outside your own."
+          ],
+          "items": [
+            "Render and Cloudflare for application, database, network and security infrastructure.",
+            "Google Workspace and Gmail for business correspondence; Google Tag Manager and Google Analytics when optional measurement is accepted.",
+            "Apollo website visitor measurement when optional measurement is accepted.",
+            "ElevenLabs and BMAsia assistant or message-hub services when chat, voice or escalation features are used.",
+            "Soundtrack when you request a Soundtrack trial or activation and the necessary setup details must be shared.",
+            "Professional advisers, authorities or counterparties where required by law or a legitimate corporate transaction."
+          ]
+        },
+        "retention": {
+          "title": "Retention and security",
+          "paragraphs": [
+            "We keep information only for as long as needed for the purpose collected, an active business relationship, dispute handling, security, or legal and accounting obligations. Retention differs by record type and jurisdiction.",
+            "BMAsia and its providers use organisational and technical safeguards, but no internet transmission or storage system can be guaranteed completely secure."
+          ],
+          "items": []
+        },
+        "rights": {
+          "title": "Your choices and rights",
+          "paragraphs": [
+            "Depending on where you are, you may be able to request access, correction, deletion, restriction, portability or objection, withdraw consent, and complain to a relevant data-protection authority. We may need to verify your identity and may retain information where law permits or requires it."
+          ],
+          "items": [
+            "You can reopen cookie preferences from the footer or the link below.",
+            "You can ask us to stop a direct follow-up that is not required for a current service.",
+            "Browser and device controls may also limit cookies or permissions."
+          ]
+        },
+        "contact": {
+          "title": "Contact and updates",
+          "paragraphs": [
+            "Email privacy questions or rights requests to the address below. We may update this policy when the site, providers or legal requirements change; the current date will appear at the top of this page."
+          ],
+          "items": []
+        }
+      }
+    },
+    "cookies": {
+      "eyebrow": "Legal · Your controls",
+      "title": "Cookie and storage policy",
+      "summary": "A plain-language map of the browser storage and optional measurement used on this website—and how to change your choice.",
+      "updated": "Last updated: 4 August 2026",
+      "manage": "Open cookie preferences",
+      "privacyLink": "Read the privacy policy",
+      "sections": {
+        "storage": {
+          "title": "Cookies and browser storage",
+          "paragraphs": [
+            "Cookies are small values stored by a browser. This site also uses local storage for the consent record. Providers enabled by your choice may use their own cookies or similar identifiers."
+          ],
+          "items": []
+        },
+        "necessary": {
+          "title": "Necessary storage",
+          "paragraphs": [
+            "Necessary storage supports choices you ask the site to remember and is not used for advertising."
+          ],
+          "items": [
+            "cookie_consent_v2 in local storage records whether you accepted only necessary storage or also optional measurement.",
+            "NEXT_LOCALE remembers the language you select. Its current maximum age is one year.",
+            "Essential security or platform controls may be set by the hosting and network layer."
+          ]
+        },
+        "optional": {
+          "title": "Optional measurement",
+          "paragraphs": [
+            "If you accept optional measurement, the site loads Google Tag Manager and the configured Google Analytics measurement, plus Apollo website measurement. These providers may set identifiers such as _ga or Apollo-related cookies and use browser or network information to produce usage and prospect insights.",
+            "Exact provider cookie names and lifetimes can change. They are governed by the provider configuration and policies as well as your browser controls."
+          ],
+          "items": []
+        },
+        "control": {
+          "title": "Give, refuse or withdraw consent",
+          "paragraphs": [
+            "You can choose necessary storage only, accept optional measurement, or reopen the panel later. Withdrawing optional consent removes known Google Analytics and Apollo cookies that are accessible to this site and reloads the page so optional scripts are not loaded again. Browser settings can remove remaining provider storage."
+          ],
+          "items": []
+        },
+        "providers": {
+          "title": "Provider boundaries",
+          "paragraphs": [
+            "Google and Apollo process optional measurement under their own privacy terms. BMAsia does not intentionally load those measurement tools before the consent panel records acceptance. The assistant itself is an interactive service; information you actively send through it is covered by the privacy policy."
+          ],
+          "items": []
+        },
+        "contact": {
+          "title": "Questions",
+          "paragraphs": [
+            "For questions about storage or measurement on this site, contact BMAsia. You can also read the broader privacy policy below."
+          ],
+          "items": []
+        }
+      }
+    },
+    "terms": {
+      "eyebrow": "Legal · Website use",
+      "title": "Website terms",
+      "summary": "The boundaries for using bmasiamusic.com, requesting information and following links to BMAsia product and partner services.",
+      "updated": "Last updated: 4 August 2026",
+      "sections": {
+        "scope": {
+          "title": "About these terms",
+          "paragraphs": [
+            "These terms govern use of bmasiamusic.com. By using the site, you agree to them. If you do not agree, do not use the site. The site is operated by BMAsia (Thailand) Co., Ltd. and BMAsia Limited."
+          ],
+          "items": []
+        },
+        "services": {
+          "title": "What the site provides",
+          "paragraphs": [
+            "The site explains BMAsia music-design and business-music services, including Beat Breeze and BMAsia services around Soundtrack. It also lets you contact us, request a proposal, request an eligible Soundtrack trial and use an informational assistant."
+          ],
+          "items": []
+        },
+        "requests": {
+          "title": "Requests, trials and proposals",
+          "paragraphs": [
+            "A form submission, demo booking or trial request is a request for review—not an accepted order or automatic subscription. Eligibility, service scope, licensing, availability, price, taxes, territory, hardware and contract terms are confirmed separately in writing.",
+            "A formal proposal or service agreement controls if it conflicts with general website content."
+          ],
+          "items": []
+        },
+        "assistant": {
+          "title": "AI-assisted information",
+          "paragraphs": [
+            "The site may provide text or voice responses generated with artificial intelligence. Those responses can be incomplete or wrong and are not legal advice, a quotation or a binding commitment. Confirm important product, licensing and commercial details with a BMAsia specialist."
+          ],
+          "items": []
+        },
+        "rights": {
+          "title": "Content and trademarks",
+          "paragraphs": [
+            "Site text, visual design, software and BMAsia materials are protected by applicable intellectual-property laws. Product names, logos and partner materials belong to their respective owners. A link or description does not transfer rights to you."
+          ],
+          "items": []
+        },
+        "acceptable": {
+          "title": "Acceptable use",
+          "paragraphs": [
+            "Do not misuse the site or interfere with its operation."
+          ],
+          "items": [
+            "Do not attempt unauthorised access, probe security, introduce harmful code or overwhelm the service.",
+            "Do not submit unlawful, deceptive or infringing material, impersonate another person, or misuse forms and assistant features.",
+            "Do not systematically scrape or reproduce protected site content without permission."
+          ]
+        },
+        "external": {
+          "title": "External services",
+          "paragraphs": [
+            "The site links to services operated by others, including product logins, Soundtrack, Calendly, messaging platforms and social channels. Their terms, privacy practices, availability and security apply when you leave this site. BMAsia is not responsible for third-party sites it does not control."
+          ],
+          "items": []
+        },
+        "liability": {
+          "title": "Availability and liability",
+          "paragraphs": [
+            "The public site is provided on an “as available” basis. We do not promise uninterrupted access or that every general statement fits every territory or venue. To the extent permitted by law, BMAsia is not liable for indirect or consequential loss caused solely by use of this public site. Nothing here excludes liability that cannot legally be excluded."
+          ],
+          "items": []
+        },
+        "law": {
+          "title": "Applicable law",
+          "paragraphs": [
+            "Website use is generally governed by the laws of Thailand. A customer agreement may name a different BMAsia entity, governing law and dispute process; that agreement controls the contracted service."
+          ],
+          "items": []
+        },
+        "contact": {
+          "title": "Changes and contact",
+          "paragraphs": [
+            "We may update these website terms as the service changes. The current date appears at the top. Questions can be sent to BMAsia at the address below."
+          ],
+          "items": []
+        }
+      }
+    }
   }
 }

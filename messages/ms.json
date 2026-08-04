@@ -22,7 +22,16 @@
     "mobileNavigation": "Menu navigasi mudah alih",
     "language": "Bahasa",
     "talkToBMAsia": "Bercakap dengan BMAsia",
-    "startTrial": "Mulakan percubaan percuma 14 hari"
+    "startTrial": "Mulakan percubaan percuma 14 hari",
+    "products": "Produk",
+    "solutionsIntro": "Terokai idea pengalaman venue yang lengkap untuk jenis perniagaan anda.",
+    "helpMeChoose": "Bantu saya memilih",
+    "login": "Log masuk",
+    "beatBreezeShort": "Muzik bebas royalti, media dan automasi venue.",
+    "soundtrackShort": "Muzik komersial yang dikenali, dibekal dan disokong oleh BMAsia.",
+    "beatBreezeLogin": "Buka platform Beat Breeze",
+    "soundtrackLogin": "Buka aplikasi Soundtrack",
+    "skipToContent": "Langkau ke kandungan utama"
   },
   "languageSwitcher": {
     "label": "Bahasa",
@@ -58,57 +67,6 @@
       "title": "Harmoni Jenama",
       "description": "Meningkatkan identiti jenama melalui reka bentuk muzik yang tersendiri yang bergema dengan pelanggan anda."
     }
-  },
-  "products": {
-    "sectionTitle": "Penyelesaian",
-    "sectionTitleHighlight": "Kami",
-    "sectionSubtitle": "Pilih penyelesaian muzik sempurna yang disesuaikan dengan keperluan dan bajet perniagaan anda",
-    "premium": "Premium",
-    "availableOn": "Tersedia di",
-    "soundtrackYourBrand": {
-      "tagline": "Penyelesaian Muzik Premium",
-      "features": {
-        "tracks": "100J+ lagu tersedia",
-        "scheduling": "Penjadualan seret-dan-lepas",
-        "messaging": "Pesanan teks-ke-ucapan",
-        "offline": "Main luar talian",
-        "spotify": "Segerak Spotify sah",
-        "bespoke": "Reka bentuk muzik tersuai",
-        "support": "Sokongan 24/7"
-      }
-    },
-    "beatBreeze": {
-      "tagline": "Penyelesaian Asas",
-      "features": {
-        "tracks": "30K+ lagu terpilih",
-        "playlists": "50 senarai main sedia ada",
-        "license": "Lesen persembahan awam termasuk",
-        "multizone": "Persediaan pelbagai zon",
-        "scheduling": "Penjadualan lanjutan",
-        "messaging": "Pesanan bersepadu",
-        "offline": "Main luar talian"
-      }
-    },
-    "notSure": "Tidak pasti penyelesaian mana yang sesuai untuk anda?",
-    "bookDemo": "Tempah Demo Percuma"
-  },
-  "smartFeatures": {
-    "sectionTitle": "Muzik Yang Berfungsi",
-    "sectionTitleHighlight": "Untuk Anda",
-    "sectionSubtitle": "Automasi pintar yang menyesuaikan bunyi anda dengan perniagaan anda",
-    "smartScheduling": {
-      "title": "Penjadualan Pintar",
-      "description": "Praprogram tahap kelantangan, pelarasan automatik berdasarkan waktu perniagaan, dan penyesuaian serantau seperti jeda waktu solat."
-    },
-    "contextAware": {
-      "title": "Muzik Sedar Konteks",
-      "description": "Muzik yang menyesuaikan dengan keadaan cuaca, menyegerak dengan sistem pencahayaan, dan bertindak balas kepada suapan data masa nyata."
-    },
-    "aiPowered": {
-      "title": "Senarai Main Dikuasakan AI",
-      "description": "Hanya terangkan apa yang anda mahu — AI kami mencipta senarai main yang sempurna. Tiada kepakaran muzik diperlukan."
-    },
-    "ctaDemo": "Tempah Demo"
   },
   "clientLogos": {
     "sectionTitle": "Dipercayai oleh Pemimpin Industri"
@@ -189,7 +147,7 @@
     },
     "email": {
       "label": "E-mel",
-      "description": "Kami biasanya membalas dalam 24 jam"
+      "description": "Pakar BMAsia akan menyemak dan membalas"
     },
     "whatsapp": {
       "label": "WhatsApp",
@@ -203,7 +161,7 @@
   "forms": {
     "inquiry": {
       "title": "Borang Pertanyaan Muzik",
-      "description": "Isi borang di bawah dan kami akan menghubungi anda dalam masa 24 jam.",
+      "description": "Isi borang di bawah dan pakar BMAsia akan membuat susulan.",
       "preferDemo": "Lebih suka menjadualkan panggilan?",
       "bookDemo": "Tempah demo percuma sebaliknya",
       "fields": {
@@ -228,9 +186,9 @@
         "default": "Hantar Mesej",
         "sending": "Menghantar..."
       },
-      "successMessage": "Terima kasih atas pertanyaan anda! Kami akan menghubungi anda dalam masa 24 jam.",
+      "successMessage": "Terima kasih atas pertanyaan anda. Pakar BMAsia akan membuat susulan.",
       "errorMessage": "Sesuatu telah berlaku. Sila cuba lagi.",
-      "privacyNote": "Dengan menghantar borang ini, anda bersetuju dengan dasar privasi kami. Kami tidak akan berkongsi maklumat anda dengan pihak ketiga."
+      "privacyNote": "Kami menggunakan butiran ini untuk membalas permintaan anda. Lihat Dasar Privasi kami untuk mengetahui cara penyedia perkhidmatan membantu kami mengendalikan laman."
     },
     "quotation": {
       "title": "Borang Permintaan Sebut Harga",
@@ -278,9 +236,9 @@
         "default": "Minta Sebut Harga",
         "sending": "Menghantar..."
       },
-      "successMessage": "Terima kasih atas permintaan sebut harga anda! Kami akan menghubungi anda dalam masa 24-48 jam dengan sebut harga peribadi.",
+      "successMessage": "Terima kasih atas permintaan sebut harga anda. Pakar BMAsia akan menyemak taklimat dan membuat susulan.",
       "errorMessage": "Sesuatu telah berlaku. Sila cuba lagi.",
-      "privacyNote": "Dengan menghantar borang ini, anda bersetuju dengan dasar privasi kami. Kami tidak akan berkongsi maklumat anda dengan pihak ketiga."
+      "privacyNote": "Kami menggunakan butiran ini untuk menyediakan dan membalas permintaan anda. Lihat Dasar Privasi kami untuk mengetahui cara penyedia perkhidmatan membantu kami mengendalikan laman."
     },
     "validation": {
       "required": "Sila masukkan {field}",
@@ -318,144 +276,12 @@
     "startHere": "Mulakan di sini",
     "tryBeatBreeze": "Cuba Beat Breeze",
     "trialProof": "14 hari percuma · tanpa kad",
-    "talkToBMAsia": "Bercakap dengan BMAsia"
-  },
-  "howItWorks": {
-    "hero": {
-      "title": "Cara Ia",
-      "titleHighlight": "Berfungsi",
-      "subtitle": "Mengharmonikan Ruang Anda dalam 3 Langkah Mudah",
-      "imageAlt": "Dalaman restoran moden dengan suasana sofistikated"
-    },
-    "steps": {
-      "sectionTitle": "Perjalanan Anda ke",
-      "sectionTitleHighlight": "Bunyi Sempurna",
-      "sectionSubtitle": "Bermula dengan BMAsia adalah mudah. Ikuti tiga langkah ini untuk mengubah ruang anda.",
-      "step1": {
-        "title": "Pilih Bunyi Anda dan Dapatkan Sebut Harga",
-        "description": "Pilih antara penyelesaian kami, minta sebut harga peribadi, atau tempah demo dalam talian percuma untuk mengalami platform kami."
-      },
-      "step2": {
-        "title": "Sesuaikan Senarai Main Anda",
-        "description": "Bekerjasama dengan pereka muzik pakar kami untuk menyesuaikan sampel yang sepadan dengan suara jenama dan suasana tempat anda."
-      },
-      "step3": {
-        "title": "Persediaan dan Bermula",
-        "description": "Kami mengendalikan pemasangan dan menyediakan latihan menyeluruh supaya anda boleh menguruskan pengalaman muzik anda dengan mudah."
-      }
-    },
-    "benefits": {
-      "sectionTitle": "Mengapa Pilih",
-      "sectionTitleHighlight": "BMAsia",
-      "sectionSubtitle": "Temui kuasa transformatif muzik yang dikurasi secara profesional"
-    },
-    "cta": {
-      "sectionTitle": "Bersedia untuk Mengubah",
-      "sectionTitleHighlight": "Ruang Anda?",
-      "sectionSubtitle": "Ambil langkah pertama ke arah mencipta suasana sempurna untuk perniagaan anda. Pasukan kami sedia membantu anda mencari penyelesaian muzik yang ideal."
-    }
-  },
-  "licensing": {
-    "hero": {
-      "title": "Pelesenan Muzik",
-      "titleHighlight": "Dipermudahkan",
-      "subtitle": "Memahami lesen yang diperlukan perniagaan anda",
-      "imageAlt": "Visualisasi gelombang bunyi abstrak mewakili pelesenan muzik"
-    },
-    "intro": {
-      "sectionTitle": "Mengapa Perniagaan Anda",
-      "sectionTitleHighlight": "Memerlukan Lesen?",
-      "paragraph1": "Memainkan muzik dalam perniagaan berbeza daripada mendengar di rumah. Apabila anda menggunakan muzik secara komersial, anda memerlukan kebenaran daripada pemegang hak yang mencipta muzik tersebut.",
-      "paragraph2Intro": "Untuk memainkan muzik secara sah dalam perniagaan anda, anda memerlukan",
-      "paragraph2Highlight": "tiga lesen berbeza"
-    },
-    "types": {
-      "sectionTitle": "Tiga",
-      "sectionTitleHighlight": "Lesen Penting",
-      "sectionSubtitle": "Setiap lesen melindungi pemegang hak yang berbeza dan memastikan pampasan yang adil",
-      "recording": {
-        "name": "Lesen Rakaman",
-        "description": "Meliputi hak untuk menggunakan rakaman khusus sesebuah lagu dan membayar pampasan kepada artis rakaman."
-      },
-      "publishing": {
-        "name": "Lesen Penerbitan",
-        "description": "Meliputi hak untuk menggunakan gubahan asal dan membayar pampasan kepada penulis lagu dan komposer."
-      },
-      "performance": {
-        "name": "Lesen Persembahan Awam",
-        "description": "Membenarkan anda memainkan lagu dalam persekitaran awam seperti tempat perniagaan anda."
-      }
-    },
-    "warning": {
-      "sectionTitle": "Perkhidmatan Penstriman Pengguna",
-      "notLicensed": "TIDAK",
-      "sectionTitleEnd": "Dilesenkan untuk Kegunaan Perniagaan",
-      "personalUseOnly": "Perkhidmatan ini dilesenkan untuk kegunaan peribadi sahaja.",
-      "liability": "Menggunakannya dalam tetapan komersial melanggar terma perkhidmatan mereka dan boleh mendedahkan perniagaan anda kepada liabiliti undang-undang.",
-      "spotifyQuote": "Perkhidmatan Spotify dan Kandungan adalah hak milik Spotify atau pemberi lesen Spotify. Kami memberikan anda lesen terhad, tidak eksklusif, boleh dibatalkan untuk membuat kegunaan peribadi, bukan komersial Perkhidmatan Spotify...",
-      "spotifySource": "Terma Perkhidmatan Spotify"
-    },
-    "solution": {
-      "sectionTitle": "Kami Mengendalikan",
-      "sectionTitleHighlight": "Kerumitan Pelesenan",
-      "sectionSubtitle": "Pilih penyelesaian yang sesuai dengan keperluan anda",
-      "fullyLicensed": "Berlesen Penuh",
-      "included": "Termasuk",
-      "requiredSeparately": "Diperlukan secara berasingan daripada PRO tempatan anda",
-      "worryFree": "Mainkan muzik tanpa risau - kami mengendalikan semuanya."
-    },
-    "cta": {
-      "sectionTitle": "Bermula dengan",
-      "sectionTitleHighlight": "Muzik Berlesen",
-      "sectionSubtitle": "Pilih penyelesaian muzik yang tepat untuk perniagaan anda. Dapatkan sebut harga peribadi hari ini."
-    }
-  },
-  "quotation": {
-    "hero": {
-      "title": "Minta",
-      "titleHighlight": "Sebut Harga",
-      "subtitle": "Berikan butiran anda dan kami akan membalas dengan sebut harga peribadi",
-      "imageAlt": "Tetapan spa mewah dengan suasana santai"
-    },
-    "whatToExpect": {
-      "sectionTitle": "Apa yang Dijangka",
-      "fastResponse": {
-        "title": "Respons Pantas",
-        "description": "Terima sebut harga peribadi anda dalam masa 24-48 jam"
-      },
-      "noObligation": {
-        "title": "Tiada Kewajipan",
-        "description": "Perundingan percuma tanpa komitmen diperlukan"
-      },
-      "tailored": {
-        "title": "Penyelesaian Tersuai",
-        "description": "Harga tersuai berdasarkan keperluan khusus anda"
-      }
-    },
-    "ourSolutions": {
-      "sectionTitle": "Penyelesaian Kami",
-      "soundtrackHighlights": {
-        "tracks": "100J+ lagu",
-        "scheduling": "Penjadualan lanjutan",
-        "support": "Sokongan 24/7"
-      },
-      "beatBreezeHighlights": {
-        "tracks": "30K+ lagu terpilih",
-        "license": "Lesen termasuk",
-        "multizone": "Sedia pelbagai zon"
-      },
-      "learnMore": "Ketahui lebih lanjut tentang penyelesaian kami"
-    },
-    "haveQuestions": {
-      "sectionTitle": "Ada Soalan?",
-      "emailDescription": "Hubungi kami secara langsung",
-      "messagingLabel": "Atau hantar mesej kepada kami:"
-    },
-    "preferDemo": {
-      "sectionTitle": "Lebih Suka Demo Langsung?",
-      "sectionSubtitle": "Tempah demo dalam talian percuma dengan pasukan kami untuk melihat penyelesaian muzik kami dalam tindakan dan dapatkan jawapan kepada semua soalan anda.",
-      "ctaButton": "Tempah Demo Percuma"
-    }
+    "talkToBMAsia": "Bercakap dengan BMAsia",
+    "globalReach": "Ditubuhkan pada 2002. Menyokong venue tempatan dan kumpulan antarabangsa melalui pasukan serantau yang responsif.",
+    "choosePath": "Pilih laluan muzik anda",
+    "beatBreezeDescription": "Platform bebas royalti BMAsia yang fleksibel untuk muzik, skrin, pemesejan dan automasi.",
+    "soundtrackDescription": "Katalog besar muzik berlesen yang dikenali, dengan reka bentuk muzik dan perkhidmatan BMAsia.",
+    "manageCookies": "Urus kuki"
   },
   "countries": {
     "select": "Pilih negara",
@@ -529,7 +355,7 @@
     "orAskAnything": "Atau tanya apa sahaja!",
     "escalation": {
       "title": "Hubungi Pasukan Kami",
-      "subtitle": "Kami akan memberi maklum balas melalui emel dalam masa 2 jam bekerja",
+      "subtitle": "Pakar BMAsia akan membuat susulan melalui e-mel",
       "nameLabel": "Nama",
       "namePlaceholder": "Nama anda",
       "companyLabel": "Syarikat",
@@ -541,270 +367,207 @@
       "cancel": "Batal",
       "submit": "Hubungi Pasukan",
       "submitting": "Menyambung...",
-      "success": "Pasukan kami akan menghubungi anda di {email} dalam masa 2 jam bekerja. Ada apa-apa lagi yang boleh saya bantu?",
+      "success": "Pasukan kami akan membuat susulan melalui {email}. Sementara itu, adakah perkara lain yang boleh saya bantu jelaskan?",
       "error": "Sesuatu telah berlaku. Sila cuba lagi."
     }
   },
   "soundtrackTrialPage": {
-    "metadata": { "title": "Mulakan percubaan percuma Soundtrack", "description": "Mohon percubaan Soundtrack 14 hari untuk satu zon muzik perniagaan. Tanpa kad dan tanpa komitmen." },
-    "hero": { "label": "Percubaan 14 hari tanpa kad", "title": "Dengar Soundtrack", "titleHighlight": "di ruang anda.", "subtitle": "Beritahu kami lokasi pertama yang ingin diuji. BMAsia akan mengesahkan persediaan dan mengatur akses untuk satu zon." },
-    "proof": { "noCard": "Tanpa kad kredit", "oneZone": "Satu zon percubaan", "autoEnd": "Tamat secara automatik" },
-    "steps": { "label": "Apa yang berlaku seterusnya", "requestTitle": "Hantar maklumat penting", "requestDesc": "Satu borang ringkas memberi kami maklumat untuk menyediakan percubaan yang betul.", "verifyTitle": "BMAsia mengesahkan persediaan", "verifyDesc": "Kami menyemak lokasi dan memastikan percubaan dikonfigurasi untuk kegunaan perniagaan.", "accessTitle": "Terima akses anda", "accessDesc": "Kami menghantar log masuk dan arahan persediaan untuk zon pertama." },
-    "note": { "title": "Percubaan yang telus", "desc": "Kaedah pembayaran tidak diperlukan. Jika anda tidak melanggan, percubaan tanpa kad tamat secara automatik." },
-    "form": { "title": "Mohon percubaan anda", "subtitle": "Mulakan dengan satu lokasi dan satu zon. Tambah selebihnya selepas muzik terasa tepat.", "name": "Nama anda", "email": "E-mel kerja", "company": "Syarikat", "country": "Negara", "businessType": "Jenis perniagaan", "select": "Pilih satu", "hotel": "Hotel atau resort", "restaurant": "Restoran atau bar", "retail": "Runcit", "fitness": "Kecergasan atau kesejahteraan", "office": "Pejabat atau tempat kerja", "other": "Lain-lain", "locationName": "Lokasi pertama", "locationPlaceholder": "cth. Riverside Hotel Bangkok", "zoneName": "Zon pertama (pilihan)", "zonePlaceholder": "cth. Lobi", "zoneHint": "Zon ialah satu kawasan dengan muziknya sendiri, seperti lobi, restoran atau ruang jualan.", "consent": "Saya bersetuju BMAsia menggunakan maklumat ini untuk mengatur percubaan Soundtrack dan berkongsi maklumat pengaktifan yang diperlukan dengan Soundtrack", "privacy": "Dasar privasi", "consentRequired": "Sila sahkan sebelum meneruskan.", "required": "Medan ini diperlukan.", "invalidEmail": "Masukkan e-mel kerja yang sah.", "submit": "Mohon percubaan 14 hari", "submitting": "Menghantar permohonan…", "footnote": "Menghantar borang tidak memulakan langganan berbayar.", "successTitle": "Permohonan percubaan diterima.", "successMessage": "BMAsia akan mengesahkan butiran dan menghantar langkah seterusnya melalui e-mel. Tiada caj atau langganan dibuat.", "back": "Kembali ke Soundtrack", "error": "Kami tidak dapat menyimpan permohonan. Sila cuba lagi." }
+    "metadata": {
+      "title": "Mulakan percubaan percuma Soundtrack",
+      "description": "Mohon percubaan Soundtrack selama 14 hari untuk satu zon muzik perniagaan. Tanpa kad dan tanpa komitmen."
+    },
+    "hero": {
+      "label": "Percubaan 14 hari tanpa kad",
+      "title": "Dengar Soundtrack",
+      "titleHighlight": "di ruang anda.",
+      "subtitle": "Beritahu kami tempat pertama yang ingin anda uji. BMAsia akan mengesahkan persediaan dan mengatur akses untuk satu zon."
+    },
+    "proof": {
+      "noCard": "Tanpa kad kredit",
+      "oneZone": "Satu zon ujian"
+    },
+    "steps": {
+      "label": "Apa yang berlaku seterusnya",
+      "requestTitle": "Hantar maklumat penting",
+      "requestDesc": "Satu borang ringkas memberikan maklumat yang kami perlukan untuk menyediakan percubaan yang tepat.",
+      "verifyTitle": "BMAsia mengesahkan persediaan",
+      "verifyDesc": "Kami menyemak lokasi dan memastikan percubaan dikonfigurasi untuk kegunaan perniagaan.",
+      "accessTitle": "Terima akses anda",
+      "accessDesc": "Kami menghantar arahan log masuk dan persediaan untuk zon pertama anda."
+    },
+    "note": {
+      "title": "Percubaan yang jelas, tanpa kad",
+      "desc": "Tiada kaedah pembayaran diperlukan. BMAsia menyemak permintaan dan mengatur akses yang layak; sebarang penerusan dibincangkan dengan anda sebelum langganan berbayar bermula."
+    },
+    "form": {
+      "title": "Mohon percubaan anda",
+      "subtitle": "Mulakan dengan satu lokasi dan satu zon. Anda boleh menambah yang lain selepas muzik dirasakan sesuai.",
+      "name": "Nama anda",
+      "email": "E-mel kerja",
+      "company": "Syarikat",
+      "country": "Negara",
+      "businessType": "Jenis perniagaan",
+      "select": "Pilih satu",
+      "hotel": "Hotel atau resort",
+      "restaurant": "Restoran atau bar",
+      "retail": "Runcit",
+      "fitness": "Kecergasan atau kesejahteraan",
+      "office": "Pejabat atau tempat kerja",
+      "other": "Lain-lain",
+      "locationName": "Lokasi pertama",
+      "locationPlaceholder": "cth. Riverside Hotel Bangkok",
+      "zoneName": "Zon pertama (pilihan)",
+      "zonePlaceholder": "cth. Lobi",
+      "zoneHint": "Zon ialah satu kawasan dengan muziknya sendiri, seperti lobi, restoran atau lantai jualan.",
+      "consent": "Saya bersetuju bahawa BMAsia boleh menggunakan butiran ini untuk mengatur percubaan Soundtrack saya dan berkongsi maklumat pengaktifan yang diperlukan dengan Soundtrack",
+      "privacy": "Dasar privasi",
+      "consentRequired": "Sila sahkan sebelum meneruskan.",
+      "required": "Medan ini diperlukan.",
+      "invalidEmail": "Masukkan e-mel kerja yang sah.",
+      "submit": "Mohon percubaan 14 hari",
+      "submitting": "Menghantar permintaan…",
+      "footnote": "Penghantaran tidak memulakan langganan berbayar.",
+      "successTitle": "Permohonan percubaan anda telah diterima.",
+      "successMessage": "BMAsia akan mengesahkan butiran dan menghantar langkah seterusnya melalui e-mel. Tiada caj atau langganan telah dibuat.",
+      "back": "Kembali ke Soundtrack",
+      "error": "Kami tidak dapat menyimpan permintaan anda. Sila cuba lagi."
+    }
   },
   "soundtrackPage": {
     "metadata": {
-      "title": "Soundtrack Your Brand",
-      "description": "Perpustakaan muzik komersial terbesar di dunia, dikurasi khas untuk industri hospitaliti. Lebih 100 juta lagu berlesen, kawalan berbilang zon, kurasi tersuai, dan sokongan 24/7 daripada BMAsia."
-    },
-    "hero": {
-      "label": "Standard Global",
       "title": "Soundtrack",
-      "titleHighlight": "Your Brand",
-      "subtitle": "Perpustakaan muzik komersial terbesar di dunia, dikurasi khas untuk ruang anda.",
-      "ctaQuote": "Dapatkan Sebut Harga",
-      "ctaTrial": "Mula Percubaan Percuma"
+      "description": "Muzik komersial berlesen yang dikenali, dibekalkan melalui BMAsia dengan reka bentuk muzik, penerimaan pelanggan, sokongan berterusan dan peluasan venue yang dibina BMAsia."
     },
-    "positioning": {
-      "text1": "Apabila anda memainkan muzik dalam perniagaan anda, anda sedang membentuk sebuah pengalaman.",
-      "highlight": "Soundtrack Your Brand",
-      "text2": "memberi anda setiap lagu yang dikenali tetamu anda — berlesen sepenuhnya untuk kegunaan komersial."
-    },
-    "valueProps": {
-      "sectionLabel": "",
-      "01": {
-        "label": "Repertoir",
-        "title": "Mana-mana artis, mana-mana genre.",
-        "desc": "Akses kepada lebih 100 juta lagu berlesen komersial. Setiap lagu yang dikenali tetamu anda, dibersihkan sepenuhnya untuk kegunaan komersial."
+    "redesign": {
+      "hero": {
+        "eyebrow": "Muzik komersial berlesen melalui BMAsia",
+        "title": "Muzik yang dikenali.",
+        "highlight": "Disesuaikan dengan tepat untuk venue.",
+        "description": "Katalog besar muzik yang dikenali dan daripada label utama, digandingkan dengan reka bentuk senarai main BMAsia, penerimaan pelanggan, peluasan venue dan perkhidmatan manusia yang berterusan.",
+        "trial": "Mohon percubaan Soundtrack",
+        "talk": "Bercakap dengan BMAsia",
+        "note": "Percubaan Soundtrack melalui BMAsia disemak dan diatur untuk perniagaan. Ini ialah permohonan pengaktifan khusus produk, bukannya borang sebut harga umum."
       },
-      "02": {
-        "label": "Pematuhan",
-        "title": "Pelesenan yang boleh dipercayai.",
-        "desc": "Hak rakaman dan penerbitan termasuk. Kami berkongsi sebarang maklumat yang anda perlukan tentang lesen persembahan awam tempatan dan membantu anda di mana mungkin — urusan dokumen kekal antara anda dan badan kutipan hak cipta anda."
+      "catalogue": {
+        "nowPlaying": "Pratonton arah muzik",
+        "featured": "Muzik yang dikenali untuk ketibaan waktu malam",
+        "preview": "Pratonton arah ini",
+        "label": "Katalog komersial",
+        "line": "Artis yang dikenali, kawalan sedia perniagaan"
       },
-      "03": {
-        "label": "Pengkhususan",
-        "title": "Dicipta untuk hospitaliti.",
-        "desc": "Dibina untuk hartanah yang kompleks. Deruan lobi pagi, tenaga perkhidmatan makan tengah hari, denyutan lounge lewat malam — setiap satunya dikendalikan sebagai zon tersendiri."
+      "pillars": {
+        "catalogue": {
+          "title": "Repertoir yang dikenali",
+          "text": "Katalog komersial berlesen yang besar dengan muzik daripada label utama."
+        },
+        "musicDesign": {
+          "title": "Reka bentuk muzik BMAsia",
+          "text": "Senarai main dibentuk mengikut jenama, zon dan perjalanan tetamu sepanjang hari."
+        },
+        "service": {
+          "title": "Satu pasukan perkhidmatan serantau",
+          "text": "BMAsia mengurus penerimaan pelanggan, kemas kini dan sokongan berterusan."
+        }
+      },
+      "direction": {
+        "eyebrow": "Perkhidmatan reka bentuk muzik BMAsia",
+        "title": "Katalog besar masih memerlukan sudut pandang.",
+        "description": "BMAsia menterjemahkan jenama, tetamu, lokasi dan jadual operasi kepada senarai main yang boleh digunakan—bukan timbunan lagu untuk diasingkan oleh kakitangan.",
+        "refreshTitle": "Dikemas kini secara berkala, namun tetap mencerminkan identiti anda",
+        "refreshText": "Kemas kini senarai main dirancang mengikut taklimat pelanggan dan boleh disesuaikan apabila perniagaan, musim atau kempen berubah.",
+        "listen": {
+          "label": "Fahami",
+          "title": "Fahami venue sebelum memilih muzik",
+          "text": "Kami mengumpulkan kedudukan jenama, audiens, zon, waktu operasi, pengecualian dan kekangan operasi."
+        },
+        "design": {
+          "label": "Reka bentuk",
+          "title": "Bina arah muzik yang mudah dikenali",
+          "text": "Pereka muzik membentuk senarai main daripada katalog komersial dan memastikan pilihan selaras dengan identiti yang diingini."
+        },
+        "schedule": {
+          "label": "Operasi",
+          "title": "Terjemahkan arah kepada jadual praktikal",
+          "text": "Pagi, siang, malam, hujung minggu dan detik istimewa masing-masing menerima senarai main serta pelan zon yang tepat."
+        },
+        "refresh": {
+          "label": "Pelihara",
+          "title": "Kemas kini tanpa kehilangan identiti jenama",
+          "text": "BMAsia menyemak dan mengemas kini arah muzik secara berkala, dengan maklum balas pelanggan serta kawalan pengendali."
+        }
+      },
+      "extensions": {
+        "eyebrow": "Peluasan yang dibina BMAsia",
+        "title": "Soundtrack, dihubungkan dengan cara venue anda beroperasi.",
+        "description": "Bagi pelanggan yang dibekalkan melalui BMAsia, peluasan sedia produksi boleh menghubungkan muzik Soundtrack kepada rutin venue tertentu dan sistem yang disokong.",
+        "scope": "Ini ialah perkhidmatan BMAsia untuk pelaksanaan pelanggan yang disokong. Ia tidak semestinya disertakan apabila mendaftar terus di soundtrack.io.",
+        "location": "Pelanggan terhubung",
+        "venue": "Riverside Hotel · Bangkok",
+        "connected": "Soundtrack dibekalkan melalui BMAsia dengan peluasan yang diluluskan",
+        "footer": "Setiap peluasan ditentukan skopnya, dikonfigurasi dan disokong untuk pelaksanaan pelanggan.",
+        "prayer": {
+          "title": "Integrasi waktu solat",
+          "text": "Gunakan waktu solat tempatan yang tepat untuk melaksanakan tingkah laku muzik yang dikonfigurasi dan kembali dengan lancar selepas itu."
+        },
+        "volume": {
+          "title": "Integrasi volum yang disokong",
+          "text": "Laksanakan tingkah laku volum berjadual atau bersepadu melalui sistem yang disokong—tanpa mendakwa pengesanan mikrofon berterusan."
+        },
+        "weather": {
+          "title": "Tingkah laku senarai main mengikut cuaca",
+          "text": "Gunakan cuaca tempatan sebagai input yang diluluskan untuk mempengaruhi arah senarai main atau tingkah laku yang dikonfigurasi."
+        },
+        "api": {
+          "title": "API operasi",
+          "text": "Hubungkan aliran kerja dan data venue yang disokong kepada perkhidmatan Soundtrack melalui peluasan yang dibina BMAsia."
+        }
+      },
+      "operations": {
+        "eyebrow": "BMAsia ialah lapisan perkhidmatan",
+        "title": "Satu pasukan daripada taklimat pertama hingga operasi harian.",
+        "description": "BMAsia menjual semula platform, membantu membentuk muzik, mengatur penerimaan pelanggan dan terus terlibat apabila venue berubah.",
+        "cta": "Bincangkan persediaan Soundtrack",
+        "onboarding": {
+          "title": "Penjual semula dan penerimaan pelanggan",
+          "text": "BMAsia membantu menyusun syarikat, lokasi, zon dan pelaksanaan mengikut penggunaan yang dirancang."
+        },
+        "design": {
+          "title": "Reka bentuk dan kemas kini senarai main",
+          "text": "Pereka muzik menyesuaikan senarai main dan mengemas kininya secara berkala berdasarkan taklimat pelanggan."
+        },
+        "regional": {
+          "title": "Konteks serantau dan berbilang bahasa",
+          "text": "Operasi tempatan, keperluan waktu solat dan keperluan pemesejan boleh ditangani dengan konteks yang tepat."
+        },
+        "support": {
+          "title": "Sokongan manusia yang responsif",
+          "text": "Pasukan serantau BMAsia memberikan bantuan berterusan untuk persediaan, arah muzik dan integrasi yang disokong."
+        }
+      },
+      "licensing": {
+        "eyebrow": "Pelesenan yang jelas",
+        "title": "Muzik komersial dengan persediaan tempatan yang tepat.",
+        "description": "Soundtrack membekalkan hak rakaman dan penerbitan untuk perkhidmatan perniagaannya. Keperluan persembahan awam berbeza mengikut lokasi, dan BMAsia mengesahkan persediaan yang berkenaan semasa penerimaan pelanggan.",
+        "included": "Melalui Soundtrack",
+        "recording": "Hak rakaman untuk katalog perkhidmatan",
+        "publishing": "Hak penerbitan untuk katalog perkhidmatan",
+        "commercial": "Perjanjian terus dengan label dan pengedar",
+        "local": "Disahkan secara tempatan",
+        "localText": "Pelesenan persembahan awam dan kewajipan tempatan lain bergantung pada negara dan venue. BMAsia menerangkan perkara yang berasingan sebelum pengaktifan."
+      },
+      "final": {
+        "title": "Jadikan muzik yang dikenali",
+        "highlight": "berfungsi untuk venue.",
+        "description": "Mohon percubaan Soundtrack yang disemak melalui BMAsia atau berbincang dengan kami tentang reka bentuk muzik, zon dan peluasan venue.",
+        "login": "Log masuk Soundtrack",
+        "support": "Sokongan serantau yang responsif daripada BMAsia. Tiada dakwaan sokongan teknikal manusia sepanjang masa."
       }
-    },
-    "features": {
-      "sectionLabel": "Keupayaan",
-      "sectionTitle": "Segala yang anda perlukan untuk menguruskan muzik dengan betul.",
-      "multiZone": {
-        "title": "Kawalan Berbilang Zon",
-        "desc": "Suasana berbeza untuk ruang yang berbeza. Uruskan lobi, spa, dan restoran daripada satu papan pemuka."
-      },
-      "scheduling": {
-        "title": "Penjadualan",
-        "desc": "Jadual mingguan atau harian secara seret-dan-lepas. Pengatasan cuti, waktu siang, dan templat siap sedia mengikut jenis premis."
-      },
-      "audioMessaging": {
-        "title": "Pemesejan Audio",
-        "desc": "Jadualkan pengumuman berjenama, promosi, atau nota suara dalam lima bahasa — muat naik MP3 atau teks-ke-ucapan."
-      },
-      "mobileApps": {
-        "title": "Aplikasi Mudah Alih",
-        "desc": "Kawalan penuh dari mana-mana sahaja. iOS, Android, Windows, macOS. Kakitangan anda boleh mengubah suasana melalui telefon mereka."
-      },
-      "offlineReady": {
-        "title": "Sedia Luar Talian",
-        "desc": "Muzik tidak pernah berhenti. Sehingga 30 hari berturut-turut main balik tercache bagi setiap peranti — ideal untuk kesambungan yang tidak menentu."
-      },
-      "enterpriseSecurity": {
-        "title": "Keselamatan Perusahaan",
-        "desc": "SAML SSO, akses berasaskan peranan, pentadbiran berbilang pengguna. Dibina untuk hartanah yang memerlukan tadbir urus yang kemas."
-      }
-    },
-    "integrations": {
-      "sectionLabel": "Kalis Masa Depan",
-      "sectionTitle": "Melangkaui Platform",
-      "sectionDesc": "Kami membina ciri AI dan API di atas Soundtrack Your Brand — automasi tersuai, integrasi bangunan pintar, dan alat khusus yang direka bentuk sekeliling operasi hartanah anda.",
-      "aiPlaylist": {
-        "title": "Penjanaan Senarai Main AI",
-        "desc": "Alat AI tersuai yang dibina di atas platform. Gambarkan suasana, dapatkan senarai main yang dikurasi dalam beberapa saat."
-      },
-      "smartBuilding": {
-        "title": "API Bangunan Pintar",
-        "desc": "Hubungkan muzik dengan pencahayaan, suhu bilik, atau sensor penghunian. Jadikan bunyi sebahagian daripada keseluruhan pengalaman tetamu."
-      },
-      "bespoke": {
-        "title": "Ciri Tersuai Atas Permintaan",
-        "desc": "Perlukan sesuatu yang khas? Kami membina integrasi mengikut operasi hartanah anda — atas permintaan, tanpa kos tersembunyi."
-      }
-    },
-    "licensing": {
-      "sectionTitle": "Pelesenan, dijelaskan.",
-      "sectionDesc": "Kami memberitahu anda dengan tepat apa yang dilindungi dan apa yang tidak — tiada kejutan, tiada syarat tersembunyi.",
-      "included": {
-        "label": "Apa Yang Termasuk",
-        "item1": "Hak rakaman (lesen master)",
-        "item2": "Hak penerbitan (mekanikal/sync)",
-        "item3": "Perjanjian langsung dengan label utama dan indie melalui Soundtrack",
-        "item4": "Kurasi tersuai dan penyegaran senarai main setiap suku tahun",
-        "item5": "Sokongan berterusan tanpa perlu bersusah payah daripada pereka muzik kami"
-      },
-      "separate": {
-        "label": "Apa Yang Berasingan",
-        "desc": "Lesen",
-        "descHighlight": "Persembahan Awam",
-        "descTail": "dibayar secara tempatan kepada badan kutipan hak cipta anda — MPC di Thailand, MRSS di Singapura, PRS di UK, ASCAP/BMI di AS, dan seterusnya.",
-        "calloutLabel": "Kami di sini untuk membantu",
-        "calloutDesc": "Kami tidak menguruskan dokumen bagi pihak anda, tetapi kami dengan senang hati menyediakan sebarang maklumat yang anda perlukan dan membantu anda sedaya upaya."
-      }
-    },
-    "devices": {
-      "sectionLabel": "Kepelbagaian",
-      "sectionTitle": "Berfungsi pada semua peranti yang sedia ada.",
-      "soundtrackPlayer": {
-        "title": "Soundtrack Player",
-        "desc": "Perkakasan khusus. Pasang-dan-main, cache luar talian 30 hari."
-      },
-      "windows": {
-        "title": "Windows PC",
-        "desc": "Mana-mana mesin Windows moden. Pemain desktop penuh, mod perusahaan tanpa skrin."
-      },
-      "androidIos": {
-        "title": "Android & iOS",
-        "desc": "Tablet atau telefon. Kawalan aplikasi penuh dari mana-mana sahaja di dalam premis."
-      },
-      "macos": {
-        "title": "macOS",
-        "desc": "Pemain desktop asli untuk persekitaran Mac."
-      },
-      "sonos": {
-        "title": "Integrasi Sonos",
-        "desc": "Gunakan Soundtrack sebagai perkhidmatan muzik dalam aplikasi Sonos."
-      },
-      "qsys": {
-        "title": "Q-SYS",
-        "desc": "Pengurusan berbilang zon berpusat untuk sistem audio perusahaan."
-      }
-    },
-    "trial": {
-      "sectionLabel": "Cuba Dahulu",
-      "title": "Cuba sebelum anda",
-      "titleHighlight": "komited.",
-      "desc1": "Mulakan dengan percubaan percuma 14 hari untuk satu zon. Tanpa kad kredit, tanpa komitmen.",
-      "desc2": "Sebaik sahaja anda memutuskan untuk mendaftar dan perkakasan anda sudah sedia, kami akan menyiapkan anda dalam lima minit.",
-      "cta": "Mula Percubaan Percuma"
-    },
-    "support": {
-      "sectionLabel": "Sentiasa Aktif",
-      "sectionTitle": "Anda tidak pernah keseorangan.",
-      "technical": {
-        "title": "Sokongan Teknikal 24/7",
-        "desc": "Bantuan sepanjang masa untuk isu perkakasan, rangkaian, dan platform. Manusia sebenar, bukan skrip."
-      },
-      "musicDesign": {
-        "title": "Reka Bentuk Muzik Tersuai",
-        "desc": "Pereka muzik kami bekerjasama dengan anda dari Isnin hingga Jumaat (waktu Bangkok) untuk mencipta dan menyegarkan bunyi anda."
-      },
-      "aiAssist": {
-        "title": "Layan Diri AI",
-        "desc": "Pembantu interaktif tersedia 24/7 untuk soalan lazim, pengubahsuaian senarai main, dan pelarasan cepat."
-      }
-    },
-    "faq": {
-      "title": "Soalan Lazim",
-      "q1": {
-        "q": "Adakah saya memerlukan Lesen Persembahan Awam?",
-        "a": "Ya — ini dibayar secara berasingan kepada badan kutipan hak cipta tempatan anda (MPC di Thailand, MRSS di Singapura, PRS di UK, dsb). Kami tidak menguruskan dokumen bagi pihak anda, tetapi kami dengan senang hati berkongsi sebarang maklumat yang anda perlukan dan membantu anda sedaya upaya."
-      },
-      "q2": {
-        "q": "Kelajuan internet dan rangkaian apa yang saya perlukan?",
-        "a": "Minimum 0.5 Mbit/s bagi setiap peranti main balik. Ethernet berwayar lebih diutamakan berbanding Wi-Fi. Beberapa port keluar perlu dibuka (443, 53, 123) — kami akan menghantar senarai semak ringkas kepada pasukan IT anda sebelum pemasangan."
-      },
-      "q3": {
-        "q": "Bolehkah saya memainkan muzik secara luar talian?",
-        "a": "Ya. Setiap peranti menyimpan cache lagu selepas memainkannya, dan anda boleh mengaktifkan mod \"lebih banyak main luar talian\" untuk memuat turun kandungan secara proaktif. Peranti yang disegerakkan sepenuhnya boleh terus memainkan muzik sehingga 30 hari berturut-turut tanpa internet."
-      },
-      "q4": {
-        "q": "Berapa banyak zon yang boleh saya uruskan?",
-        "a": "Tanpa had. Setiap zon mempunyai jadual, senarai main, dan pemasangan peranti tersendiri — dikawal daripada satu papan pemuka. Anda boleh menambah dan menyusun semula zon apabila hartanah anda berkembang."
-      },
-      "q5": {
-        "q": "Bolehkah saya menggunakan senarai main Spotify saya?",
-        "a": "Ya. Soundtrack Your Brand menyegerak terus dengan Spotify, jadi mana-mana senarai main yang anda telah bina (milik anda atau dikurasi) boleh digunakan secara komersial melalui platform kami."
-      },
-      "q6": {
-        "q": "Apa yang berlaku jika internet terputus?",
-        "a": "Lagu tercache terus dimainkan tanpa gangguan. Tetamu anda tidak akan perasan apa-apa. Sebaik sambungan kembali, pemain akan menyegerak secara senyap di latar belakang."
-      }
-    },
-    "finalCta": {
-      "title": "Sedia untuk mendengar",
-      "titleHighlight": "perbezaannya?",
-      "desc": "Pereka muzik kami akan mencipta pengalaman bunyi yang unik untuk jenama anda.",
-      "ctaQuote": "Dapatkan Sebut Harga",
-      "ctaDemo": "Tempah Demo"
     }
   },
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
-      "description": "Operasi tempat berteraskan muzik: jadualkan muzik, urus saluran TV, cipta mesej dan audio telefon, automasikan titik sentuh dan kawal setiap zon."
-    },
-    "hero": {
-      "label": "Pengalaman Tempat Terhubung",
-      "title": "Beat",
-      "titleHighlight": "Breeze",
-      "subtitle": "Muzik, skrin, mesej dan audio telefon—dirancang, dicipta dan dikawal di setiap zon.",
-      "ctaQuote": "Dapatkan Sebut Harga",
-      "ctaTrial": "Mula Percubaan Percuma"
-    },
-    "positioning": {
-      "text1": "Muzik berlesen, dikurasi sepenuhnya, pada sebahagian kecil kos perkhidmatan penstriman komersial.",
-      "highlight": "Beat Breeze",
-      "text2": "termasuk setiap lesen yang anda perlukan — jadi anda tidak perlu lagi berurusan dengan badan kutipan hak cipta."
-    },
-    "valueProps": {
-      "01": {
-        "label": "Serba Lengkap",
-        "title": "Ketiga-tiga lesen, sentiasa termasuk.",
-        "desc": "Rakaman, penerbitan, dan persembahan awam — setiap lesen yang anda perlukan disertakan dalam langganan. Tiada yuran badan kutipan, selama-lamanya."
-      },
-      "02": {
-        "label": "Nilai",
-        "title": "Jauh lebih berpatutan.",
-        "desc": "Kerana Beat Breeze dikurasi secara dalaman, ia jauh lebih murah berbanding Soundtrack Your Brand — dan anda tetap mendapat setiap lesen termasuk."
-      },
-      "03": {
-        "label": "Kesederhanaan",
-        "title": "Direka bentuk tanpa perlu bersusah payah.",
-        "desc": "Kurasi tersuai oleh pereka muzik kami. Penyegaran berjadual, kemas kini bermusim, dan sokongan 24/7. Anda fokus kepada tetamu — kami uruskan bunyinya."
-      }
-    },
-    "features": {
-      "sectionLabel": "Keupayaan",
-      "sectionTitle": "Muzik ialah nadinya. Setiap titik sentuh bergerak bersamanya.",
-      "zeroLicensing": {
-        "title": "Kedengaran profesional semasa panggilan",
-        "desc": "Cipta muzik menunggu dan audio telefon berjenama dengan suara dan bahasa yang sesuai untuk perniagaan anda."
-      },
-      "curation": {
-        "title": "Bentuk bunyi tempat anda",
-        "desc": "Terokai katalog sendiri atau biarkan Music Concierge mencadang mengikut zon, masa, tenaga dan konteks perniagaan."
-      },
-      "offline": {
-        "title": "Biarkan tempat bertindak balas",
-        "desc": "Automasi membantu muzik dan mesej mengikut waktu operasi, hari istimewa, cuaca dan keperluan tempat."
-      },
-      "scheduling": {
-        "title": "Hidupkan setiap skrin",
-        "desc": "Padankan senarai main penuh dengan visual gelung, mesej dan kandungan berjenama untuk TV dan skrin."
-      },
-      "audioSignatures": {
-        "title": "Bercakap pada waktu yang tepat",
-        "desc": "Cipta dan jadualkan mesej suara berbilang bahasa untuk promosi, maklumat tetamu dan pengumuman operasi."
-      },
-      "remoteMgmt": {
-        "title": "Kawal dari mana-mana",
-        "desc": "Lihat status pemain, kawal muzik dan kelantangan, serta urus setiap zon dari papan pemuka atau aplikasi Remote."
-      }
-    ,
-      "sectionDescription": "Beat Breeze menyatukan bunyi, skrin, komunikasi dan operasi harian dalam satu aliran yang mudah dikawal."
+      "description": "Platform pengalaman venue bebas royalti BMAsia untuk muzik terpilih, jadual, skrin, pemesejan, automasi dan kawalan zon terhubung."
     },
     "product": {
       "openProduct": "Buka Beat Breeze",
@@ -824,213 +587,299 @@
       "windows": "Pemain Windows",
       "web": "Pemain web",
       "offline": "Main balik luar talian",
-      "price": "Bermula $12 / zon / bulan",
+      "price": "Pemain",
+      "finalDescription": "Cuba pengalaman tempat terhubung dalam satu zon selama 14 hari. Tanpa kad, perkakasan khusus atau persediaan yang rumit.",
       "finalTitle": "Zon pertama anda sedia dalam beberapa minit.",
       "startFree": "Mula percuma",
       "talkToBMAsia": "Bercakap dengan BMAsia"
-    ,
-      "finalDescription": "Cuba pengalaman tempat terhubung dalam satu zon selama 14 hari. Tanpa kad, perkakasan khusus atau persediaan yang rumit."
     },
-    "licensing": {
-      "sectionTitle": "Setiap lesen.",
-      "sectionTitleHighlight": "Termasuk.",
-      "sectionDesc": "Tiada yuran PRO. Tiada kerenah dokumen. Tiada kejutan.",
-      "recording": {
-        "title": "Hak Rakaman",
-        "desc": "Lesen master untuk setiap lagu dalam katalog."
+    "redesign": {
+      "hero": {
+        "eyebrow": "Platform venue terhubung BMAsia",
+        "title": "Muzik sebagai nadi.",
+        "highlight": "Setiap titik sentuh bergerak seiring.",
+        "description": "Muzik bebas royalti terpilih, skrin, mesej dan automasi venue—dirancang merentas zon, disemak oleh manusia dan dikawal dari satu tempat.",
+        "trial": "Mulakan percubaan Beat Breeze",
+        "talk": "Bercakap dengan BMAsia",
+        "proof1": "Katalog bebas royalti yang terus berkembang",
+        "proof2": "Pelayaran manual sentiasa tersedia",
+        "proof3": "Tiada perkakasan pemain khas diperlukan"
       },
-      "publishing": {
-        "title": "Hak Penerbitan",
-        "desc": "Hak mekanikal dan sync untuk komposer dan penerbit."
+      "controlRoom": {
+        "label": "Bilik kawalan venue",
+        "venue": "Riverside House · Bangkok",
+        "live": "3 zon aktif",
+        "weather": "Konteks cuaca",
+        "prayer": "Jeda solat seterusnya",
+        "volume": "Pratetap waktu malam",
+        "schedule": "Waktu operasi semasa",
+        "energy": "Tenaga",
+        "lobby": "Lobi",
+        "restaurant": "Restoran",
+        "rooftop": "Ruang atas bumbung",
+        "updated": "Pelan dikemas kini",
+        "note": "Pratetap volum berjadual dan integrasi yang disokong memastikan tingkah laku boleh dijangka. Beat Breeze tidak mendakwa pengesanan suasana berasaskan mikrofon secara berterusan."
       },
-      "performance": {
-        "title": "Lesen Persembahan Awam",
-        "desc": "Mainkan di mana sahaja perniagaan anda beroperasi — tanpa pembayaran badan kutipan selamanya."
+      "day": {
+        "eyebrow": "Sehari yang bergerak",
+        "title": "Venue berubah. Pelan berubah bersamanya.",
+        "description": "Jadual menjadi asas. Cuaca, waktu solat dan pencetus operasi yang diluluskan boleh melaraskan pelan, sementara kakitangan mengekalkan keputusan akhir.",
+        "morning": {
+          "time": "06:30",
+          "title": "Pagi bermula mengikut zon",
+          "text": "Zon lobi, sarapan dan kesejahteraan dibuka dengan muzik, skrin dan pratetap volum yang berbeza."
+        },
+        "weather": {
+          "time": "12:10",
+          "title": "Cuaca memaklumkan arah",
+          "text": "Hari yang panas atau hujan boleh mempengaruhi cadangan senarai main atau tingkah laku yang dikonfigurasi tanpa mengambil kawalan daripada pengendali."
+        },
+        "prayer": {
+          "time": "18:36",
+          "title": "Waktu solat dihormati",
+          "text": "Pasaran yang dikonfigurasi boleh menjeda atau mengubah atur cara pada waktu solat tempatan yang tepat, kemudian kembali dengan lancar kepada jadual."
+        },
+        "evening": {
+          "time": "19:00",
+          "title": "Waktu malam mengaktifkan pengalaman yang lebih luas",
+          "text": "Muzik, gelung visual, mesej berbilang bahasa dan tingkah laku volum pratetap bergerak ke dalam pelan malam bersama-sama."
+        },
+        "volumeNote": "Perubahan volum yang diterangkan di sini ialah pratetap berjadual atau integrasi sistem venue yang disokong—bukan pendengaran mikrofon berterusan."
       },
-      "footnote1": "Walaupun",
-      "footnoteLink": "Soundtrack Your Brand",
-      "footnote2": "masih memerlukan Lesen Persembahan Awam berasingan di kebanyakan negara, Beat Breeze mempunyai semuanya disatukan. Itulah tujuannya."
-    },
-    "platforms": {
-      "sectionLabel": "Berfungsi Di Mana-Mana",
-      "sectionTitle": "Tiada perkakasan khas diperlukan.",
-      "windows": {
-        "title": "Windows",
-        "desc": "Pemain desktop penuh untuk mana-mana mesin Windows moden. Mini PC tersedia daripada BMAsia (Thailand) dengan waranti 1 tahun."
+      "concierge": {
+        "eyebrow": "Music Concierge, dalam bahasa mudah",
+        "title": "Minta hasil. Semak apa yang diterima.",
+        "description": "Beritahu Concierge tentang zon, audiens, waktu dan perasaan yang diingini. Ia boleh mengesyorkan muzik katalog atau menyediakan arah kreatif; anda mempratonton hasil sebelum apa-apa dimainkan atau dimasukkan dalam jadual.",
+        "ready": "Sedia menerima taklimat",
+        "recommendation": "Cadangan yang boleh dimainkan",
+        "preview": "Pratonton",
+        "schedule": "Tambah pada jadual",
+        "keepBrowsing": "Teruskan melayari",
+        "control": "Kawalan manusia sentiasa kelihatan: semak alasan, pratonton hasil, gunakan, sunting atau teruskan melayari katalog secara manual.",
+        "steps": {
+          "ask": "Huraikan detik tersebut",
+          "recommend": "Terima pilihan atau taklimat",
+          "review": "Pratonton dan luluskan",
+          "play": "Mainkan sekarang atau jadualkan"
+        },
+        "arrival": {
+          "label": "Ketibaan hotel",
+          "prompt": "Ketibaan lobi yang hangat tetapi kontemporari",
+          "request": "Untuk lobi dari 16:00–19:00: hangat, kontemporari dan tenang semasa daftar masuk. Elakkan muzik akustik yang terlalu mengantuk.",
+          "result": "Bossa moden dan soul elektronik lembut",
+          "reason": "Ritma tempo sederhana mengekalkan pergerakan ketibaan, sementara vokal yang terkawal memberi ruang untuk perbualan."
+        },
+        "campaign": {
+          "label": "Pelancaran runcit",
+          "prompt": "Tenaga utama musim baharu",
+          "request": "Bina arah musim baharu yang yakin untuk lantai jualan serta gelung skrin senyap untuk pintu masuk.",
+          "result": "Rentak nu-disco dengan taklimat gerakan grafik",
+          "reason": "Asas berirama yang kemas sesuai merentas lantai jualan, sementara taklimat visual membawa warna kempen ke pintu masuk."
+        },
+        "recovery": {
+          "label": "Pemulihan kesejahteraan",
+          "prompt": "Ruang pemulihan dengan gangguan minimum",
+          "request": "Cipta arah pemulihan yang tenang dengan tekstur alam, tanpa peralihan tajam dan volum dikawal pengendali.",
+          "result": "Landskap bunyi ambien dengan pergerakan harmoni perlahan",
+          "reason": "Tekstur panjang mengurangkan peralihan yang ketara sambil mengekalkan kawalan langsung kakitangan terhadap aras dan masa."
+        }
       },
-      "android": {
-        "title": "Android",
-        "desc": "Aplikasi Android asli untuk tablet dan telefon. Mesra bajet dan boleh dipercayai."
+      "media": {
+        "eyebrow": "Lebih daripada pemain muzik",
+        "title": "Bina dunia di sekeliling runut bunyi.",
+        "description": "Beat Breeze boleh menyelaras media dan mesej yang ditemui tetamu di seluruh venue—bukan sebagai tambahan berasingan, tetapi sebagai sebahagian daripada pelan operasi yang sama.",
+        "screens": {
+          "label": "Skrin dan TV",
+          "title": "Gelung visual, tayangan slaid dan saluran venue",
+          "text": "Rancang gelung skrin senyap, tayangan slaid berjenama dan saluran TV untuk ruang awam atau pengalaman dalam bilik apabila pelaksanaan memerlukannya."
+        },
+        "create": {
+          "label": "Penciptaan dibantu AI",
+          "title": "Imej dan video dengan langkah semakan",
+          "text": "Gunakan draf visual dibantu atau dicipta AI, kemudian semak dan luluskan aset sebelum ia dipaparkan pada skrin."
+        },
+        "messages": {
+          "label": "Pemesejan berbilang bahasa",
+          "title": "Sampaikan perkara yang tepat dalam bahasa yang betul",
+          "text": "Sediakan dan jadualkan pengumuman berguna, promosi dan mesej berjenama merentas bahasa yang disokong."
+        },
+        "soundscapes": {
+          "label": "Landskap bunyi",
+          "title": "Suasana melangkaui lagu",
+          "text": "Gunakan tekstur alam, kesejahteraan dan persekitaran apabila senarai main konvensional bukan pengalaman yang tepat."
+        },
+        "phone": {
+          "label": "Muzik semasa panggilan menunggu",
+          "title": "Bawa jenama ke dalam panggilan",
+          "text": "Padankan asas muzik yang sesuai dengan mesej panggilan menunggu yang jelas dan kekalkan keselarasan dengan identiti venue."
+        },
+        "catalogue": {
+          "label": "Sentiasa berkembang",
+          "title": "Pilihan muzik dan media yang semakin berkembang",
+          "text": "BMAsia terus mengembangkan arah senarai main, landskap bunyi dan pilihan media untuk perniagaan serta zon yang berbeza."
+        }
       },
-      "web": {
-        "title": "Pelayar Web",
-        "desc": "Pemain web untuk pemasangan pantas — log masuk daripada mana-mana pelayar dan mula memainkan muzik."
+      "connections": {
+        "eyebrow": "Automasi dengan sempadan",
+        "title": "Hubungkan venue tanpa menyembunyikan kawalan.",
+        "description": "Beat Breeze menggunakan jadual yang jelas, peraturan dikonfigurasi dan integrasi yang disokong. Pengendali boleh melihat apa yang dirancang dan campur tangan apabila venue memerlukan sesuatu yang berbeza.",
+        "schedules": {
+          "title": "Waktu operasi dan kalendar",
+          "text": "Rancang muzik, pemesejan, skrin dan pratetap volum berbeza mengikut waktu, hari minggu, musim atau acara."
+        },
+        "weather": {
+          "title": "Tingkah laku peka cuaca",
+          "text": "Gunakan cuaca tempatan sebagai input yang dikonfigurasi untuk cadangan muzik atau tingkah laku senarai main yang diluluskan."
+        },
+        "prayer": {
+          "title": "Automasi waktu solat",
+          "text": "Hormati waktu solat tempatan dengan tingkah laku main balik yang dikonfigurasi dan kembali dengan jelas kepada pelan harian."
+        },
+        "volume": {
+          "title": "Kawalan volum berjadual dan disokong",
+          "text": "Gunakan aras pratetap dan integrasi volum yang disokong. Kakitangan mengekalkan kawalan langsung; tiada pengesanan mikrofon berterusan didakwa."
+        },
+        "api": {
+          "title": "API pintar dan sambungan venue",
+          "text": "Hubungkan sistem bangunan, kandungan atau operasi yang diluluskan melalui API berskop yang direka untuk pelaksanaan pelanggan."
+        }
+      },
+      "final": {
+        "title": "Jadikan zon pertama benar-benar berfungsi.",
+        "description": "Mulakan dengan percubaan Beat Breeze khusus produk atau minta BMAsia membentuk pelan muzik dan media berbilang zon.",
+        "support": "BMAsia menyediakan penerimaan pelanggan dan sokongan serantau yang responsif. Layan diri produk kekal tersedia apabila pasukan anda memerlukannya."
       }
-    },
-    "custom": {
-      "sectionLabel": "Dibina Untuk Skala",
-      "sectionTitle": "Melangkaui yang standard.",
-      "sectionDesc": "Beat Breeze dibina sebagai platform yang sentiasa berkembang — khususnya untuk rangkaian korporat dan kumpulan berbilang hartanah. Kami membangunkan ciri mengikut keperluan anda.",
-      "whiteLabel": {
-        "title": "Label Putih untuk Korporat",
-        "desc": "Rangkaian korporat boleh menjenamakan Beat Breeze sebagai platform muzik dalaman mereka sendiri. Penjenamaan tersuai, warna, dan domain."
-      },
-      "customBuilds": {
-        "title": "Pembinaan Ciri Tersuai",
-        "desc": "Perlukan sesuatu di luar standard? Kami membina ciri mengikut operasi anda atas permintaan — sebahagian daripada pembangunan platform berterusan kami."
-      },
-      "volumePricing": {
-        "title": "Harga Mesra Volum",
-        "desc": "Semakin banyak zon yang anda jalankan, semakin baik kadar per zon. Sangat menarik untuk rangkaian berbilang hartanah dan kumpulan runcit."
-      }
-    },
-    "trial": {
-      "sectionLabel": "Cuba Dahulu",
-      "title": "Dengar sebelum anda",
-      "titleHighlight": "komited.",
-      "desc1": "Mulakan dengan percubaan percuma dua minggu. Tanpa kad kredit, tanpa komitmen.",
-      "desc2": "Kami akan menyiapkan anda dari jauh dan anda boleh mendengar bagaimana bunyi Beat Breeze dalam ruang sebenar anda sebelum membuat keputusan.",
-      "cta": "Mula Percubaan Percuma"
-    },
-    "support": {
-      "sectionLabel": "Sentiasa Aktif",
-      "sectionTitle": "Anda tidak pernah keseorangan.",
-      "technical": {
-        "title": "Sokongan Teknikal 24/7",
-        "desc": "Bantuan sepanjang masa untuk isu perkakasan, rangkaian, dan platform. Manusia sebenar, bukan skrip."
-      },
-      "musicDesign": {
-        "title": "Reka Bentuk Muzik Tersuai",
-        "desc": "Pereka muzik kami bekerjasama dengan anda dari Isnin hingga Jumaat (waktu Bangkok) untuk mencipta dan menyegarkan bunyi anda."
-      },
-      "aiAssist": {
-        "title": "Layan Diri AI",
-        "desc": "Pembantu interaktif tersedia 24/7 untuk soalan lazim, pengubahsuaian senarai main, dan pelarasan cepat."
-      }
-    },
-    "faq": {
-      "title": "Soalan Lazim",
-      "q1": {
-        "q": "Adakah saya perlu membayar sebarang yuran pelesenan muzik secara berasingan?",
-        "a": "Tidak. Setiap langganan Beat Breeze termasuk ketiga-tiga lesen — rakaman, penerbitan, dan persembahan awam. Anda tidak perlu membayar MPC, MRSS, PRS, ASCAP, BMI, atau mana-mana badan kutipan lain."
-      },
-      "q2": {
-        "q": "Bagaimana Beat Breeze berbeza daripada Soundtrack Your Brand?",
-        "a": "Beat Breeze jauh lebih berpatutan dan mempunyai semua lesen termasuk, tetapi katalog muziknya dikurasi dan bebas royalti — bukan lagu hit carta tertentu. Jika anda mahukan lagu hit yang dikenali tetamu anda dengan nama, pilih Soundtrack Your Brand. Jika anda mahukan muzik berlesen tanpa kerenah, tiada yuran, dan kurasi profesional, pilih Beat Breeze."
-      },
-      "q3": {
-        "q": "Peranti apa yang menjalankan Beat Breeze?",
-        "a": "Mana-mana Windows PC moden, tablet atau telefon Android, atau terus dalam pelayar web. Di Thailand, kami membekalkan Windows mini PC yang telah prakonfigurasi dengan waranti 1 tahun jika anda mahukan penyelesaian pasang-dan-main."
-      },
-      "q4": {
-        "q": "Bolehkah Beat Breeze berfungsi secara luar talian?",
-        "a": "Ya. Muzik dimuat turun ke peranti anda dan dimainkan secara tempatan, jadi pengalaman kekal lancar walaupun internet anda terputus. Anda hanya memerlukan kesambungan untuk kemas kini dan pengurusan jarak jauh."
-      },
-      "q5": {
-        "q": "Berapa besar katalog muzik?",
-        "a": "Lebih 30,000 lagu bebas royalti yang dihasilkan secara profesional, dan katalog ini semakin berkembang. Setiap lagu dikurasi oleh pereka muzik kami untuk persekitaran hospitaliti dan runcit."
-      },
-      "q6": {
-        "q": "Bolehkah saya menggunakan label putih Beat Breeze untuk jenama korporat saya?",
-        "a": "Ya. Rangkaian korporat boleh menjalankan Beat Breeze sebagai platform muzik dalaman berjenama mereka sendiri dengan warna, logo, dan domain tersuai. Hubungi kami untuk berbincang tentang keperluan anda."
-      }
-    },
-    "finalCta": {
-      "title": "Muzik,",
-      "titleHighlight": "dipermudahkan.",
-      "desc": "Tanpa kerenah pelesenan. Kurasi tersuai. Sokongan tanpa perlu bersusah payah. Semuanya pada harga yang masuk akal.",
-      "ctaQuote": "Dapatkan Sebut Harga",
-      "ctaDemo": "Tempah Demo"
     }
   },
   "homePage": {
     "immersive": {
       "hero": {
-        "eyebrow": "Beat Breeze oleh BMAsia", "title": "Bentuk suasana.", "highlight": "Gerakkan setiap titik sentuh.",
+        "eyebrow": "Beat Breeze oleh BMAsia",
+        "title": "Bentuk suasana.",
+        "highlight": "Gerakkan setiap titik sentuh.",
         "description": "Muzik, skrin, mesej dan audio telefon yang diselaraskan di setiap zon.",
-        "try": "Cuba simulator pengalaman tempat", "start": "Cuba percuma 14 hari", "proof1": "Tiada kad diperlukan", "proof2": "Tiada perkakasan khusus", "proof3": "Daripada $12 setiap zon", "scroll": "Alami perjalanan hari"
+        "try": "Cuba simulator pengalaman tempat",
+        "start": "Cuba percuma 14 hari",
+        "proof1": "Tiada kad diperlukan",
+        "proof2": "Tiada perkakasan khusus",
+        "proof3": "Tiada perkakasan khusus",
+        "scroll": "Alami perjalanan hari"
       },
-      "field": { "ariaLabel": "Medan muzik hidup yang berubah di seluruh venue", "energy": "Tenaga {energy}" },
-      "audio": { "title": "Pratonton audio", "visualOnly": "Pratonton arah muzik · bunyi dimatikan", "hear": "Dengar suasana ini", "pause": "Jeda pratonton", "paused": "Pratonton dijeda", "mute": "Senyapkan pratonton", "unmute": "Hidupkan bunyi", "playing": "Memainkan pratonton berlesen selama 25 saat", "playingMuted": "Memainkan pratonton berlesen selama 25 saat · disenyapkan", "unavailable": "Pratonton audio tidak tersedia", "volume": "Kelantangan pratonton" },
+      "field": {
+        "ariaLabel": "Medan muzik hidup yang berubah di seluruh venue",
+        "energy": "Tenaga {energy}"
+      },
+      "audio": {
+        "title": "Pratonton audio",
+        "visualOnly": "Pratonton arah muzik · bunyi dimatikan",
+        "hear": "Dengar suasana ini",
+        "pause": "Jeda pratonton",
+        "paused": "Pratonton dijeda",
+        "mute": "Senyapkan pratonton",
+        "unmute": "Hidupkan bunyi",
+        "playing": "Memainkan pratonton berlesen selama 25 saat",
+        "playingMuted": "Memainkan pratonton berlesen selama 25 saat · disenyapkan",
+        "unavailable": "Pratonton audio tidak tersedia",
+        "volume": "Kelantangan pratonton"
+      },
       "demo": {
-        "eyebrow": "Pengalaman lima minit yang berguna", "title": "Jalani satu hari.", "highlight": "Lihat setiap titik sentuh bertindak balas.",
+        "eyebrow": "Pengalaman lima minit yang berguna",
+        "title": "Jalani satu hari.",
+        "highlight": "Lihat setiap titik sentuh bertindak balas.",
         "description": "Pilih jenis perniagaan, gerakkan masa dan bawa zon berbeza ke hadapan. Muzik, skrin, mesej, telefon, tenaga dan panduan Concierge bertindak balas bersama.",
-        "machineLabel": "Simulasi pengalaman tempat secara langsung", "live": "Bertindak balas langsung", "chooseVenue": "Pilih jenis perniagaan", "localTime": "Waktu tempatan", "chooseTime": "Pilih masa", "playlistDetail": "Tenaga {energy} · {bpm} BPM", "concierge": "Panduan Music Concierge", "energy": "Tenaga venue"
+        "machineLabel": "Simulasi pengalaman tempat secara langsung",
+        "live": "Bertindak balas langsung",
+        "chooseVenue": "Pilih jenis perniagaan",
+        "localTime": "Waktu tempatan",
+        "chooseTime": "Pilih masa",
+        "playlistDetail": "Tenaga {energy} · {bpm} BPM",
+        "concierge": "Panduan Music Concierge",
+        "energy": "Tenaga venue"
       },
-      "venues": { "hotel": "Hotel", "restaurant": "Restoran", "retail": "Runcit", "fitness": "Kecergasan" },
-      "phases": { "0": { "label": "Pagi", "mood": "Ketibaan yang tenang" }, "1": { "label": "Siang", "mood": "Hangat dan mengalir" }, "2": { "label": "Petang", "mood": "Tenaga sosial" }, "3": { "label": "Lewat malam", "mood": "Penutup yang lembut" } },
-      "zones": { "lobby": "Lobi", "restaurant": "Restoran", "wellness": "Kesejahteraan", "rooftop": "Bumbung", "dining": "Ruang makan", "bar": "Bar", "terrace": "Teres", "entrance": "Pintu masuk", "shopFloor": "Ruang jualan", "fittingRooms": "Bilik persalinan", "mainFloor": "Ruang utama", "studio": "Studio", "recovery": "Pemulihan" },
+      "touchpoints": {
+        "eyebrow": "Titik sentuh terhubung",
+        "title": "Pratonton seluruh pengalaman tempat.",
+        "description": "Pilih titik sentuh untuk melihat bagaimana satu brief membentuk setiap permukaan yang dilihat tetamu.",
+        "sound": {
+          "label": "Muzik",
+          "title": "Muzik dalam zon ini",
+          "text": "{playlist} membentuk suasana {zone} pada {time}."
+        },
+        "screens": {
+          "label": "Skrin",
+          "title": "Visual bergerak bersama muzik",
+          "text": "Gelung visual senyap mengikuti suasana {phase}, sementara senarai main zon terus bergerak."
+        },
+        "messages": {
+          "label": "Mesej",
+          "title": "Mesej hadir pada masa yang tepat",
+          "text": "Pengumuman ringkas setempat tersedia untuk detik ini tanpa mengganggu aliran."
+        },
+        "phone": {
+          "label": "Telefon",
+          "title": "Pengalaman berterusan dalam panggilan",
+          "text": "Mesej telefon berjenama dan asas muzik membawa suasana yang sama melangkaui ruang utama venue."
+        },
+        "status": "Arah langsung"
+      },
+      "venues": {
+        "hotel": "Hotel",
+        "restaurant": "Restoran",
+        "retail": "Runcit",
+        "fitness": "Kecergasan"
+      },
+      "phases": {
+        "0": {
+          "label": "Pagi",
+          "mood": "Ketibaan yang tenang"
+        },
+        "1": {
+          "label": "Siang",
+          "mood": "Hangat dan mengalir"
+        },
+        "2": {
+          "label": "Petang",
+          "mood": "Tenaga sosial"
+        },
+        "3": {
+          "label": "Lewat malam",
+          "mood": "Penutup yang lembut"
+        }
+      },
+      "zones": {
+        "lobby": "Lobi",
+        "restaurant": "Restoran",
+        "wellness": "Kesejahteraan",
+        "rooftop": "Bumbung",
+        "dining": "Ruang makan",
+        "bar": "Bar",
+        "terrace": "Teres",
+        "entrance": "Pintu masuk",
+        "shopFloor": "Ruang jualan",
+        "fittingRooms": "Bilik persalinan",
+        "mainFloor": "Ruang utama",
+        "studio": "Studio",
+        "recovery": "Pemulihan"
+      },
       "venueContext": {
         "hotel": "Pastikan ketibaan tenang dan biarkan zon sosial membina tenaga kemudian.",
         "restaurant": "Utamakan perbualan, kemudian tingkatkan suasana mengikut servis.",
         "retail": "Cipta momentum tanpa menjadikan muzik acara utama.",
         "fitness": "Padankan keamatan muzik dengan latihan, peralihan dan pemulihan."
       },
-      "guidance": { "0": "Mulakan dengan ruang yang lapang dan rangsangan rendah ketika hari bermula.", "1": "Tambah pergerakan berirama yang stabil tanpa memenuhi ruang.", "2": "Tingkatkan tenaga secara sengaja apabila tetamu semakin bersosial.", "3": "Kurangkan keamatan dan kekalkan penutup yang selesa." },
-      "brief": { "eyebrow": "Bawa pulang sesuatu yang berguna", "title": "Ringkasan muzik yang dijana untuk anda", "copy": "Salin ringkasan muzik", "copied": "Ringkasan disalin", "text": "Arah {venue} pada {time}\nSuasana yang dikehendaki: {mood}. {guidance}\nPelan zon: {zones}" },
-      "story": {
-        "eyebrow": "Satu sistem, bukan senarai ciri",
-        "title": "Daripada satu brief kepada",
-        "highlight": "tempat yang terasa menyatu.",
-        "sound": {
-          "title": "Bentuk identiti bunyi",
-          "text": "Cari muzik sendiri atau biarkan Concierge menterjemah konsep kepada arah yang boleh dijelaskan."
-        },
-        "screens": {
-          "title": "Bawa ke skrin",
-          "text": "Padankan visual gelung dan kandungan berjenama dengan senarai main yang terus bergerak."
-        },
-        "messages": {
-          "title": "Bercakap pada masa yang tepat",
-          "text": "Cipta dan jadualkan mesej suara berbilang bahasa tanpa aliran produksi berasingan."
-        },
-        "calls": {
-          "title": "Teruskan pengalaman dalam panggilan",
-          "text": "Cipta muzik menunggu dan suara telefon yang terasa sebahagian daripada tempat yang sama."
-        },
-        "automate": {
-          "title": "Automatikkan kerja berulang",
-          "text": "Biarkan masa, acara dan konteks tempat mencetuskan perubahan yang boleh disemak."
-        },
-        "control": {
-          "title": "Kawal semuanya",
-          "text": "Lihat apa yang berjalan, sambungkan peranti dan ambil alih dari papan pemuka atau Remote."
-        },
-        "cta": "Terokai semua yang Beat Breeze boleh lakukan"
+      "guidance": {
+        "0": "Mulakan dengan ruang yang lapang dan rangsangan rendah ketika hari bermula.",
+        "1": "Tambah pergerakan berirama yang stabil tanpa memenuhi ruang.",
+        "2": "Tingkatkan tenaga secara sengaja apabila tetamu semakin bersosial.",
+        "3": "Kurangkan keamatan dan kekalkan penutup yang selesa."
       },
-      "worlds": {
-        "eyebrow": "Satu pasukan BMAsia · dua penyelesaian berbeza", "title": "Pilih dunia muzik", "highlight": "yang sesuai dengan perniagaan anda.",
-        "description": "Beat Breeze memberi operator platform layan diri pintar. Soundtrack menawarkan repertoir komersial yang dikenali dengan bimbingan BMAsia.",
-        "bbCore": "Zon · jadual · Concierge", "tryBeatBreeze": "Cuba Beat Breeze percuma", "sybDiscLabel": "Dibantu BMAsia", "sybDiscText": "Muzik yang dikenali untuk perniagaan", "talkSoundtrack": "Bercakap dengan BMAsia tentang Soundtrack", "compareLabel": "Tidak pasti laluan yang sesuai?", "compareText": "Kami akan membandingkan repertoir, pelesenan, kawalan dan perkhidmatan bersama anda—tanpa menolak produk yang salah."
-      }
-    ,
-      "touchpoints": {
-        "eyebrow": "Titik sentuh terhubung",
-        "title": "Pratonton seluruh pengalaman tempat.",
-        "description": "Pilih titik sentuh untuk melihat bagaimana satu brief membentuk setiap permukaan yang dilihat tetamu.",
-        "status": "Arah langsung",
-        "sound": {
-          "label": "Muzik",
-          "title": "{playlist} membentuk {zone}",
-          "text": "Pilihan muzik mengikuti tenaga {phase} pada {time}."
-        },
-        "screens": {
-          "label": "Skrin",
-          "title": "Visual bergerak bersama muzik",
-          "text": "Gelung di {zone} mengikuti warna, tempo dan rasa {playlist}."
-        },
-        "messages": {
-          "label": "Mesej",
-          "title": "Mesej hadir pada masa yang tepat",
-          "text": "Mesej berbilang bahasa boleh dijadualkan untuk detik {phase} pada {time}."
-        },
-        "phone": {
-          "label": "Telefon",
-          "title": "Pengalaman berterusan dalam panggilan",
-          "text": "Muzik menunggu dan suara jenama mengekalkan rasa {playlist} sebelum tetamu tiba."
-        }
-      }
-    ,
+      "brief": {
+        "eyebrow": "Bawa pulang sesuatu yang berguna",
+        "title": "Ringkasan muzik yang dijana untuk anda",
+        "copy": "Salin ringkasan muzik",
+        "copied": "Ringkasan disalin",
+        "text": "Arah {venue} pada {time}\nSuasana yang dikehendaki: {mood}. {guidance}\nPelan zon: {zones}"
+      },
       "connected": {
         "eyebrow": "Lebih daripada muzik",
         "title": "Muzik ialah nadinya.",
@@ -1062,6 +911,63 @@
           "title": "Kawalan langsung",
           "text": "Urus setiap zon, pemain dan perubahan dari mana-mana."
         }
+      },
+      "story": {
+        "eyebrow": "Satu sistem, bukan senarai ciri",
+        "title": "Daripada satu brief kepada",
+        "highlight": "tempat yang terasa menyatu.",
+        "sound": {
+          "title": "Bentuk identiti bunyi",
+          "text": "Cari muzik sendiri atau biarkan Concierge menterjemah konsep kepada arah yang boleh dijelaskan."
+        },
+        "screens": {
+          "title": "Bawa ke skrin",
+          "text": "Padankan visual gelung dan kandungan berjenama dengan senarai main yang terus bergerak."
+        },
+        "messages": {
+          "title": "Bercakap pada masa yang tepat",
+          "text": "Cipta dan jadualkan mesej suara berbilang bahasa tanpa aliran produksi berasingan."
+        },
+        "calls": {
+          "title": "Teruskan pengalaman dalam panggilan",
+          "text": "Cipta muzik menunggu dan suara telefon yang terasa sebahagian daripada tempat yang sama."
+        },
+        "automate": {
+          "title": "Automatikkan kerja berulang",
+          "text": "Biarkan masa, acara dan konteks tempat mencetuskan perubahan yang boleh disemak."
+        },
+        "control": {
+          "title": "Kawal semuanya",
+          "text": "Lihat apa yang berjalan, sambungkan peranti dan ambil alih dari papan pemuka atau Remote."
+        },
+        "cta": "Terokai semua yang Beat Breeze boleh lakukan"
+      },
+      "worlds": {
+        "eyebrow": "Satu pasukan BMAsia · dua penyelesaian berbeza",
+        "title": "Pilih dunia muzik",
+        "highlight": "yang sesuai dengan perniagaan anda.",
+        "description": "Beat Breeze memberi operator platform layan diri pintar. Soundtrack menawarkan repertoir komersial yang dikenali dengan bimbingan BMAsia.",
+        "bbCore": "Zon · jadual · Concierge",
+        "tryBeatBreeze": "Cuba Beat Breeze percuma",
+        "sybDiscLabel": "Dibantu BMAsia",
+        "sybDiscText": "Muzik yang dikenali untuk perniagaan",
+        "talkSoundtrack": "Bercakap dengan BMAsia tentang Soundtrack",
+        "compareLabel": "Tidak pasti laluan yang sesuai?",
+        "compareText": "Kami akan membandingkan repertoir, pelesenan, kawalan dan perkhidmatan bersama anda—tanpa menolak produk yang salah."
+      },
+      "paths": {
+        "eyebrow": "Dua laluan produk",
+        "title": "Mulakan dengan keperluan venue",
+        "beatLabel": "Fleksibel dan bebas royalti",
+        "beatText": "Muzik, media dan automasi dalam satu platform BMAsia.",
+        "soundtrackLabel": "Muzik komersial yang dikenali",
+        "soundtrackText": "Repertoir label utama dengan perkhidmatan dan peluasan BMAsia.",
+        "resultEyebrow": "Tukar pratonton menjadi pelan",
+        "resultTitle": "Laluan manakah yang sesuai untuk venue ini?",
+        "resultText": "Pilih berdasarkan katalog, operasi dan pengalaman tetamu—bukan skrip jualan seragam.",
+        "beatDecision": "Terbaik apabila fleksibiliti, media dan automasi menjadi keutamaan taklimat.",
+        "soundtrackDecision": "Terbaik apabila repertoir komersial yang dikenali menjadi keutamaan taklimat.",
+        "helpDecision": "Minta BMAsia membandingkan kedua-dua laluan"
       }
     },
     "venuePulse": {
@@ -1069,9 +975,21 @@
       "label": "Nadi venue",
       "venue": "Riverside House",
       "ready": "3 zon sedia",
-      "lobby": { "name": "Lobi", "playlist": "Jazz Piano · lounge petang", "status": "Sedang dimainkan" },
-      "restaurant": { "name": "Restoran", "playlist": "Bossa Nova Lounge · makan malam", "status": "Sedang dimainkan" },
-      "rooftop": { "name": "Bumbung", "playlist": "Deep House · bermula 19:00", "status": "Sedia" },
+      "lobby": {
+        "name": "Lobi",
+        "playlist": "Jazz Piano · lounge petang",
+        "status": "Sedang dimainkan"
+      },
+      "restaurant": {
+        "name": "Restoran",
+        "playlist": "Bossa Nova Lounge · makan malam",
+        "status": "Sedang dimainkan"
+      },
+      "rooftop": {
+        "name": "Bumbung",
+        "playlist": "Deep House · bermula 19:00",
+        "status": "Sedia"
+      },
       "conciergeLabel": "Cadangan Concierge",
       "conciergeText": "Naikkan tenaga di bumbung secara perlahan sebelum tetamu tiba. Kekalkan lobi tenang ketika daftar masuk paling sibuk.",
       "reason": "Berdasarkan zon, masa, tenaga dan jadual hari ini"
@@ -1127,7 +1045,7 @@
         "title": "Beat Breeze",
         "tagline": "Muzik latar berlesen sepenuhnya — tanpa sebarang kerumitan.",
         "feature1": "Katalog bebas royalti yang sentiasa berkembang — berlesen untuk perniagaan",
-        "feature2": "Tiada yuran badan kutipan, tiada dokumen pematuhan",
+        "feature2": "Skop pelesenan disahkan untuk pelan dan wilayah anda",
         "feature3": "Cadangan Music Concierge dengan alasan yang jelas",
         "feature4": "Mampu dimainkan luar talian, penjadualan berbilang zon",
         "cta": "Terokai Beat Breeze"
@@ -1167,152 +1085,155 @@
     "finalCta": {
       "title": "Mari Reka",
       "titleHighlight": "Bunyi Anda",
+      "description": "Beritahu kami keperluan ruang tersebut. Kami akan membandingkan Beat Breeze dan Soundtrack secara jujur, kemudian mereka bentuk muzik dan perkhidmatan mengikut operasi.",
       "ctaQuote": "Dapatkan Sebut Harga",
       "ctaDemo": "Tempah Demo"
     }
   },
   "licensingPage": {
     "hero": {
-      "label": "Pematuhan",
-      "title": "Pelesenan Muzik",
-      "titleHighlight": "Dipermudahkan",
-      "subtitle": "Memahami lesen yang diperlukan oleh perniagaan anda untuk kekal mematuhi peraturan dan menyokong artis yang anda mainkan."
+      "label": "Hak muzik, dijelaskan dengan mudah",
+      "title": "Ketahui perkara yang diliputi perkhidmatan anda.",
+      "titleHighlight": "Sahkan perkara yang masih diperlukan venue anda.",
+      "subtitle": "Hak muzik komersial berbeza mengikut repertoir, produk, wilayah dan cara muzik digunakan. BMAsia membantu anda memahami skop sebelum bersiaran langsung."
     },
     "intro": {
-      "paragraph1": "Memainkan muzik dalam perniagaan adalah berbeza daripada mendengar di rumah. Apabila anda menggunakan muzik secara komersial, anda memerlukan kebenaran daripada pemegang hak.",
-      "paragraph2Prefix": "Perniagaan anda memerlukan",
-      "paragraph2Highlight": "tiga lesen yang berbeza."
+      "paragraph1": "Langganan penstriman pengguna tidak sama dengan kebenaran untuk memainkan muzik dalam perniagaan. Penggunaan komersial boleh melibatkan beberapa lapisan hak.",
+      "paragraph2Prefix": "Peraturan praktikal:",
+      "paragraph2Highlight": "sahkan perkhidmatan dan wilayah secara bertulis."
     },
     "licenses": {
       "01": {
-        "title": "Lesen Rakaman",
-        "desc": "Merangkumi hak untuk menggunakan rakaman tertentu sesebuah lagu dan memberi pampasan kepada artis rakaman serta syarikat rakaman mereka."
+        "title": "Hak rakaman muzik",
+        "desc": "Kebenaran yang berkaitan dengan rakaman bunyi tertentu. Liputan bergantung pada katalog dan perkhidmatan muzik komersial yang anda pilih."
       },
       "02": {
-        "title": "Lesen Penerbitan",
-        "desc": "Merangkumi hak untuk menggunakan komposisi asal dan memberi pampasan kepada penulis lagu dan penggubah muzik atas harta intelek mereka."
+        "title": "Hak komposisi",
+        "desc": "Hak yang berkaitan dengan lagu asas, termasuk pencipta lagu dan penerbit. Produk dan wilayah menentukan cara hak ini dikendalikan."
       },
       "03": {
-        "title": "Lesen Persembahan Awam",
-        "desc": "Membenarkan anda memainkan lagu dalam persekitaran awam seperti premis perniagaan, ruang runcit, atau restoran anda."
+        "title": "Kewajipan persembahan awam",
+        "desc": "Venue mungkin turut memerlukan lesen tempatan atau aturan pertubuhan pemungutan. Keperluan berbeza mengikut negara, venue dan repertoir."
       }
     },
     "warning": {
-      "label": "PEMATUHAN KRITIKAL",
-      "titleStart": "Perkhidmatan Penstriman Pengguna",
-      "titleNot": "TIDAK",
-      "titleEnd": "Dilesenkan untuk Kegunaan Perniagaan",
-      "quote": "Kami memberikan anda lesen yang terhad, bukan eksklusif dan boleh dibatalkan untuk membuat penggunaan peribadi dan bukan komersial bagi Spotify Service...",
-      "quoteHighlight": "bukan komersial",
-      "source": "— Terma & Syarat Spotify"
+      "label": "Sempadan yang berguna",
+      "titleStart": "Pelan penstriman peribadi",
+      "titleNot": "tidak direka",
+      "titleEnd": "untuk kegunaan venue komersial",
+      "quote": "Gunakan perkhidmatan muzik perniagaan dan sahkan hak yang terpakai kepada venue tepat anda.",
+      "quoteHighlight": "perkhidmatan muzik perniagaan",
+      "source": "Panduan pelesenan BMAsia"
     },
     "comparison": {
-      "sectionTitle": "Bandingkan Penyelesaian Anda",
-      "recordingLicense": "Lesen Rakaman",
-      "publishingLicense": "Lesen Penerbitan",
-      "performanceLicense": "Lesen Persembahan Awam",
+      "sectionTitle": "Dua laluan produk, masing-masing dengan model hak yang berbeza",
+      "recordingLicense": "Hak katalog komersial",
+      "publishingLicense": "Skop repertoir khusus produk",
+      "performanceLicense": "Kewajipan venue tempatan",
       "syb": {
-        "badge": "PREMIUM",
-        "performanceNote": "Pendaftaran PRO tempatan diperlukan"
+        "badge": "Repertoir yang dikenali",
+        "performanceNote": "Keperluan persembahan awam tempatan mungkin terpakai; sahkan mengikut wilayah.",
+        "cta": "Terokai Soundtrack"
       },
       "bb": {
-        "badge": "DILESENKAN SEPENUHNYA",
-        "performanceNote": "Perlindungan menyeluruh"
+        "badge": "Katalog terpilih",
+        "performanceNote": "Liputan bergantung pada pelan, katalog dan wilayah yang dipilih; sahkan dengan BMAsia.",
+        "cta": "Terokai Beat Breeze"
       }
     },
     "cta": {
-      "title": "Mulakan dengan",
-      "titleHighlight": "Muzik Berlesen",
-      "ctaQuote": "Dapatkan Sebut Harga",
-      "ctaDemo": "Tempah Demo"
+      "title": "Dapatkan gambaran hak untuk",
+      "titleHighlight": "venue dan wilayah anda",
+      "ctaQuote": "Tanya BMAsia",
+      "ctaDemo": "Bincangkan pilihan"
     }
   },
   "howItWorksPage": {
     "hero": {
-      "label": "Metodologi Kami",
-      "title": "Dari Panggilan Pertama ke",
-      "titleHighlight": "Nota Pertama",
-      "subtitle": "Kebanyakan pelanggan beroperasi dalam masa 48 jam. Inilah rupa prosesnya."
+      "label": "Daripada taklimat kepada rentak harian",
+      "title": "Satu model operasi.",
+      "titleHighlight": "Dua cara untuk melaksanakannya.",
+      "subtitle": "BMAsia menterjemahkan jenama, ruang dan waktu operasi anda kepada pelan muzik, kemudian menghubungkan platform yang tepat serta menyokong pasukan yang mengendalikannya."
     },
     "steps": {
       "01": {
-        "title": "Beritahu Kami Tentang Ruang Anda",
-        "desc": "Kongsikan jenis premis, bilangan zon, dan suasana yang ingin anda wujudkan. Kami akan mencadangkan penyelesaian yang sesuai — Soundtrack Your Brand untuk kawalan kreatif sepenuhnya, atau Beat Breeze untuk muzik yang bebas kerumitan dan serba lengkap. Dapatkan sebut harga dalam masa 24 jam."
+        "title": "Fahami venue",
+        "desc": "Kami memetakan jenis perniagaan, lokasi, zon, perjalanan tetamu, petunjuk jenama dan kekangan praktikal. Di sinilah kami menentukan sama ada Beat Breeze, Soundtrack atau pendekatan operasi gabungan paling sesuai dengan taklimat."
       },
       "02": {
-        "title": "Kami Reka Bunyi Anda",
-        "desc": "Pereka muzik kami menganalisis jenama, demografi tetamu, dan akustik premis anda. Kami mencipta jadual senarai main berbilang lapisan — mood berbeza untuk waktu pagi, petang, dan malam — disesuaikan dengan ruang anda. Anda meluluskan sampel sebelum apa-apa disiarkan."
+        "title": "Reka bentuk perjalanan hari",
+        "desc": "Kami membentuk urutan suasana untuk detik penting: pembukaan, ketibaan, perkhidmatan puncak, peralihan dan penutupan. Anda boleh menyemak arah sebelum ia menjadi jadual langsung."
       },
       "03": {
-        "title": "Persediaan & Mula Beroperasi",
-        "desc": "Kami menghantar perkakasan (atau mengkonfigurasi peranti sedia ada anda), memasang perisian dari jauh, dan melatih pasukan anda. Jika perkakasan sudah tersedia, anda boleh mula memainkan muzik dalam masa beberapa minit. Kami uruskan semuanya — anda hanya perlu tekan main."
+        "title": "Hubungkan sistem",
+        "desc": "BMAsia membantu mengkonfigurasi main balik yang serasi, jadual, kebenaran dan akses pasukan. Persediaan tepat mengikuti produk yang dipilih, perkakasan venue serta keadaan rangkaian."
       },
       "04": {
-        "title": "Sokongan & Evolusi Berterusan",
-        "desc": "Muzik anda bukan sekadar tetapkan-dan-lupakan. Kami menyegarkan senarai main setiap bulan (SYB) atau setiap suku tahun (Beat Breeze), memantau kesihatan zon, dan menyesuaikan dengan tema bermusim. Sokongan khusus daripada pasukan Bangkok kami."
+        "title": "Kendalikan dan kembangkan",
+        "desc": "Pasukan anda menerima serahan yang jelas, sementara BMAsia menyediakan sokongan serantau yang responsif dan membantu arah muzik berkembang apabila venue, musim atau taklimat operasi berubah."
       }
     },
     "stats": {
-      "label": "Mengapa BMAsia",
-      "sectionTitle": "Dibina untuk Hospitaliti.",
+      "label": "Lapisan BMAsia",
+      "sectionTitle": "Direka sebagai sistem operasi, bukan sekadar penyerahan senarai main.",
       "experience": {
-        "value": "23 Tahun",
-        "desc": "Mengkurasi muzik untuk sektor hospitaliti di seluruh Asia-Pacific sejak 2002."
+        "value": "Taklimat venue",
+        "desc": "Jenama, audiens, zon dan realiti operasi dirakam dalam satu arah bersama."
       },
       "speed": {
-        "value": "48 Jam",
-        "desc": "Dari reka bentuk muzik khusus hingga beroperasi di premis anda. Serta-merta jika perkakasan sudah tersedia."
+        "value": "Pelan bunyi",
+        "desc": "Waktu operasi dan peralihan direka berdasarkan pergerakan sebenar venue."
       },
       "legal": {
-        "value": "100% Sah",
-        "desc": "Setiap lagu dilesenkan sepenuhnya. Tiada kerumitan pematuhan, tiada denda."
+        "value": "Serahan langsung",
+        "desc": "Persediaan platform, panduan pasukan dan skop pelesenan dijelaskan sebelum pelancaran."
       }
     },
     "cta": {
-      "title": "Bersedia untuk mendengar perbezaannya?",
-      "ctaQuote": "Dapatkan Sebut Harga",
-      "ctaDemo": "Tempah Demo"
+      "title": "Mulakan dengan tempat, bukan produk.",
+      "ctaQuote": "Ceritakan venue anda",
+      "ctaDemo": "Bercakap dengan BMAsia"
     }
   },
   "quotationPage": {
     "hero": {
       "label": "Mulakan",
-      "title": "Minta",
+      "title": "Mohon",
       "titleHighlight": "Sebut Harga",
-      "subtitle": "Beritahu kami tentang lokasi anda dan kami akan menghantar sebut harga peribadi dalam masa 24 jam."
+      "subtitle": "Kongsikan venue, lokasi dan zon yang perlu anda kendalikan. BMAsia akan menyemak taklimat, kemudian menghubungi anda dengan laluan produk yang tepat serta cadangan tersuai."
     },
     "whatToExpect": {
-      "sectionTitle": "Apa yang Dijangkakan",
+      "sectionTitle": "Apa yang Boleh Dijangka",
       "fastResponse": {
-        "title": "Maklum Balas Pantas",
-        "desc": "Terima sebut harga peribadi anda dalam masa 24 jam"
+        "title": "Susulan manusia",
+        "desc": "Pakar BMAsia menyemak taklimat dan menghubungi anda dengan langkah berguna seterusnya."
       },
       "noObligation": {
-        "title": "Tanpa Obligasi",
-        "desc": "Perundingan percuma tanpa sebarang komitmen"
+        "title": "Tiada pembelian automatik",
+        "desc": "Penghantaran borang tidak mewujudkan langganan atau pesanan yang mengikat."
       },
       "tailored": {
-        "title": "Penyelesaian Tersuai",
-        "desc": "Harga khusus berdasarkan keperluan spesifik anda"
+        "title": "Dibina mengikut operasi",
+        "desc": "Cadangan mencerminkan pasaran, lokasi, zon, perkakasan dan keperluan perkhidmatan anda."
       }
     },
     "ourSolutions": {
       "sectionTitle": "Penyelesaian Kami",
-      "sybTagline": "Repertoir komersial yang dikenali — artis popular, import Spotify dan persediaan dibantu BMAsia",
-      "bbTagline": "Operasi muzik pintar — katalog terpilih yang terus berkembang, Music Concierge, jadual dan kawalan zon langsung",
-      "learnMore": "Ketahui lebih lanjut tentang penyelesaian kami →"
+      "sybTagline": "Repertoir komersial yang dikenali — artis biasa didengar, import Spotify dan persediaan dibantu BMAsia",
+      "bbTagline": "Operasi muzik pintar — katalog terpilih yang berkembang, Music Concierge, jadual dan kawalan zon langsung",
+      "learnMore": "Lihat cara proses BMAsia berfungsi →"
     },
     "questions": {
-      "sectionTitle": "Ada Soalan?"
+      "sectionTitle": "Ada Pertanyaan?"
     },
     "formHeader": {
-      "title": "Beritahu Kami Tentang Ruang Anda",
-      "subtitle": "Isikan maklumat anda dan kami akan menghubungi anda dengan sebut harga peribadi."
+      "title": "Ceritakan Tentang Ruang Anda",
+      "subtitle": "Beberapa butiran operasi membantu kami menghalakan permintaan anda dengan tepat."
     },
     "demoCta": {
-      "title": "Lebih suka",
+      "title": "Lebih Suka",
       "titleHighlight": "Demo Langsung?",
-      "subtitle": "Tempah demo dalam talian percuma untuk melihat penyelesaian muzik kami secara langsung.",
+      "subtitle": "Tempah demo dalam talian percuma untuk melihat penyelesaian muzik kami berfungsi.",
       "ctaButton": "Tempah Demo"
     }
   },
@@ -1322,27 +1243,7 @@
       "subheadline": "Dari lobi hingga ke spa, kami mereka bentuk muzik yang membentuk pengalaman tetamu anda di setiap zon.",
       "zonesTitle": "Setiap ruang mempunyai frekuensinya",
       "benefitsTitle": "Mengapa hotel memilih BMAsia",
-      "editorialStat": "41% tetamu tinggal lebih lama apabila mereka menikmati muziknya.",
-      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021 — lebih 2,500 pengguna ditinjau.",
       "ctaHeadline": "Reka bentuk bunyi hotel anda.",
-      "stats": {
-        "s1": {
-          "value": "9.1%",
-          "label": "Peningkatan Hasil"
-        },
-        "s2": {
-          "value": "41%",
-          "label": "Masa Tinggal Lebih Lama"
-        },
-        "s3": {
-          "value": "39%",
-          "label": "Lawatan Ulangan Lebih Banyak"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Pengurusan Muzik"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Lobi & Penyambut Tetamu",
@@ -1370,11 +1271,11 @@
         }
       },
       "benefits": {
-        "b1": "Kawalan berpusat pelbagai hartanah dari satu papan pemuka",
-        "b2": "Reka bentuk muzik tersuai oleh pasukan kami, disegarkan setiap suku tahun",
-        "b3": "Penjadualan mengikut waktu hari — peralihan automatik dari pagi ke malam",
-        "b4": "Main balik luar talian dijamin — muzik terus dimainkan walaupun internet terputus",
-        "b5": "Sokongan dan pengurusan akaun berdedikasi 24/7"
+        "b1": "Satu pelan merentas lobi, makanan dan minuman, kesejahteraan, rekreasi serta zon waktu malam",
+        "b2": "Jadual muzik dan kandungan skrin boleh mengikuti perjalanan tetamu sepanjang hari",
+        "b3": "Mesej berbilang bahasa kekal jelas dan selaras dengan jenama",
+        "b4": "Waktu solat, cuaca dan tingkah laku volum yang disokong disesuaikan dengan operasi tempatan",
+        "b5": "Pengawasan pusat dengan kawalan kakitangan tempatan"
       }
     },
     "restaurants": {
@@ -1382,27 +1283,7 @@
       "subheadline": "Muzik yang mengubah hidangan menjadi kenangan — dijadualkan, dikurasikan, dan sentiasa selari dengan jenama.",
       "zonesTitle": "Dari terbit fajar hingga panggilan terakhir",
       "benefitsTitle": "Mengapa restoran memilih BMAsia",
-      "editorialStat": "Muzik bertempo perlahan meningkatkan masa makan sebanyak 24% dan hasil bar sebanyak 40%.",
-      "editorialStatSub": "Milliman (1986), Journal of Consumer Research.",
       "ctaHeadline": "Tetapkan suasana untuk restoran anda.",
-      "stats": {
-        "s1": {
-          "value": "9.1%",
-          "label": "Hasil Lebih Tinggi"
-        },
-        "s2": {
-          "value": "15%",
-          "label": "Jualan Pencuci Mulut Lebih"
-        },
-        "s3": {
-          "value": "24%",
-          "label": "Masa Makan Lebih Lama"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automatik"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Hidangan Mewah",
@@ -1430,11 +1311,11 @@
         }
       },
       "benefits": {
-        "b1": "Penjadualan mengikut waktu hari — peralihan automatik dari sarapan ke lewat malam",
-        "b2": "Kurasi genre dan suasana yang sepadan dengan konsep F&B anda",
-        "b3": "Semua lesen tersedia — pilihan bebas royalti atau komersial",
-        "b4": "Kawalan berbilang zon untuk ruang makan, bar, teres dan tandas",
-        "b5": "Kelantangan dan tenaga dilaraskan secara automatik mengikut waktu hari"
+        "b1": "Waktu operasi bergerak daripada pembukaan kepada makan tengah hari, makan malam dan perkhidmatan lewat",
+        "b2": "Zon makan, bar dan teres boleh mengekalkan tenaga yang berbeza",
+        "b3": "Visual menu, promosi dan acara boleh mengikuti pelan yang sama",
+        "b4": "Pratetap volum berjadual menyokong perkhidmatan tanpa dakwaan mikrofon ambien",
+        "b5": "Pengendali boleh mempratonton, meluluskan dan mengatasi perubahan"
       }
     },
     "retail": {
@@ -1442,27 +1323,7 @@
       "subheadline": "Kami mereka bentuk identiti sonik yang membuat pelanggan tinggal, melayari, dan membeli.",
       "zonesTitle": "Bunyi untuk setiap format",
       "benefitsTitle": "Mengapa peruncit memilih BMAsia",
-      "editorialStat": "Muzik bertempo perlahan meningkatkan jualan runcit harian sebanyak 38%.",
-      "editorialStatSub": "Milliman (1982), Journal of Marketing — kajian muzik runcit standard emas.",
       "ctaHeadline": "Perkasakan jenama anda.",
-      "stats": {
-        "s1": {
-          "value": "38%",
-          "label": "Jualan Harian Lebih Tinggi"
-        },
-        "s2": {
-          "value": "90%",
-          "label": "Kembali dengan Muzik Baik"
-        },
-        "s3": {
-          "value": "3.4x",
-          "label": "Kesan Priming Wain"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automatik"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Fesyen & Pakaian",
@@ -1490,11 +1351,11 @@
         }
       },
       "benefits": {
-        "b1": "Kawalan muzik berpusat merentasi semua lokasi kedai",
-        "b2": "Kurasi selaras jenama yang mengukuhkan identiti anda",
-        "b3": "Pemesejan audio untuk promosi, waktu operasi dan pengumuman",
-        "b4": "Konsistensi pelbagai kedai dari kedai utama ke outlet",
-        "b5": "Penjadualan waktu puncak — tahap tenaga sepadan dengan aliran pelanggan"
+        "b1": "Muzik kempen dan gelung visual berkongsi satu arah kreatif",
+        "b2": "Jadual berbilang kedai mengekalkan konsistensi jenama dengan kawalan tempatan",
+        "b3": "Pemesejan promosi boleh ditetapkan masanya tanpa mengganggu suasana",
+        "b4": "API boleh menghubungkan pencetus operasi dan kempen yang diluluskan",
+        "b5": "Laluan katalog komersial yang dikenali dan bebas royalti kedua-duanya tersedia"
       }
     },
     "bars": {
@@ -1502,27 +1363,7 @@
       "subheadline": "Muzik berlesen yang menetapkan suasana sempurna — dari waktu koktel hingga waktu tutup.",
       "zonesTitle": "Tetapkan vibe untuk setiap detik",
       "benefitsTitle": "Mengapa bar memilih BMAsia",
-      "editorialStat": "Kelantangan lebih tinggi meningkatkan jumlah minuman setiap pelanggan dari 2.6 ke 3.4.",
-      "editorialStatSub": "Guéguen et al. (2004), Alcoholism: Clinical & Experimental Research.",
       "ctaHeadline": "Reka bentuk bunyi bar anda.",
-      "stats": {
-        "s1": {
-          "value": "+31%",
-          "label": "Minuman Lebih Dipesan"
-        },
-        "s2": {
-          "value": "+40%",
-          "label": "Peningkatan Hasil Bar"
-        },
-        "s3": {
-          "value": "24%",
-          "label": "Masa Di Meja Lebih Lama"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automatik"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Bar Koktel",
@@ -1550,11 +1391,11 @@
         }
       },
       "benefits": {
-        "b1": "Peralihan suasana dari selepas kerja ke lewat malam secara automatik",
-        "b2": "Kepakaran genre — dari jazz ke elektronik ke top 40",
-        "b3": "Pematuhan undang-undang — tiada risiko isu hak cipta",
-        "b4": "Penjadualan kelantangan yang menghormati peraturan bunyi bising",
-        "b5": "Senarai main tersuai disegarkan untuk mengejutkan pelanggan tetap"
+        "b1": "Tenaga boleh berkembang daripada pembukaan melalui waktu koktel hingga penutupan",
+        "b2": "Pilihan muzik boleh menggunakan repertoir komersial yang dikenali atau bebas royalti terpilih",
+        "b3": "Skrin, visual acara dan promosi mengikuti susunan acara",
+        "b4": "Pratetap volum berjadual menghormati dasar venue dan pertimbangan pengendali",
+        "b5": "Kakitangan mengekalkan kawalan main balik dan zon dengan segera"
       }
     },
     "spas": {
@@ -1562,27 +1403,7 @@
       "subheadline": "Muzik direka untuk menenangkan, menyembuhkan, dan memulihkan — dari penyambut tetamu ke bilik rawatan.",
       "zonesTitle": "Frekuensi penyembuhan untuk setiap ruang",
       "benefitsTitle": "Mengapa spa memilih BMAsia",
-      "editorialStat": "\"Weightless\" mengurangkan kebimbangan sebanyak 65% dalam ujian klinikal.",
-      "editorialStatSub": "Mindlab International / British Academy of Sound Therapy, 2011.",
       "ctaHeadline": "Reka bentuk bunyi sanktuari anda.",
-      "stats": {
-        "s1": {
-          "value": "65%",
-          "label": "Pengurangan Kebimbangan"
-        },
-        "s2": {
-          "value": "60 BPM",
-          "label": "Sinkronisasi Gelombang Alfa"
-        },
-        "s3": {
-          "value": "30K+",
-          "label": "Trek Terkurasi"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automatik"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Penyambut Tetamu & Ruang Menunggu",
@@ -1610,11 +1431,11 @@
         }
       },
       "benefits": {
-        "b1": "Senarai main kesihatan yang dikurasi oleh pereka muzik profesional",
-        "b2": "Kawalan zon demi zon yang lancar untuk kawasan rawatan berbeza",
-        "b3": "Main balik luar talian — tiada kesunyian semasa rawatan",
-        "b4": "Kemas kini bermusim dan bertema (Ramadan, cuti, acara)",
-        "b5": "Semua lesen disertakan dengan Beat Breeze — tanpa kerumitan"
+        "b1": "Landskap bunyi dan muzik boleh dibentuk untuk setiap zon rawatan",
+        "b2": "Jadual dengan gangguan minimum melindungi rentak perjalanan tetamu",
+        "b3": "Gelung visual yang tenang menyokong ruang penerimaan dan bersantai",
+        "b4": "Mesej kekal minimum, berguna dan sesuai dengan konteks tempatan",
+        "b5": "Volum kekal dipratetap dan dikawal pengendali"
       }
     },
     "cafes": {
@@ -1622,27 +1443,7 @@
       "subheadline": "Muzik yang membuat orang duduk, memesan kopi lagi, dan menetap untuk seketika.",
       "zonesTitle": "Dari espresso pagi hingga sesi kerja petang",
       "benefitsTitle": "Mengapa kafe memilih BMAsia",
-      "editorialStat": "73% pelanggan mengambil tindakan selepas mendengar lagu yang mereka suka di kafe.",
-      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021.",
       "ctaHeadline": "Reka bentuk bunyi kafe anda.",
-      "stats": {
-        "s1": {
-          "value": "79%",
-          "label": "Perasan Muziknya"
-        },
-        "s2": {
-          "value": "41%",
-          "label": "Tinggal Lebih Lama"
-        },
-        "s3": {
-          "value": "73%",
-          "label": "Ambil Tindakan Selepasnya"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automatik"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Kesibukan Pagi",
@@ -1670,11 +1471,11 @@
         }
       },
       "benefits": {
-        "b1": "Penjadualan waktu hari memadankan tenaga dengan masa",
-        "b2": "Semua lesen disertakan — tiada yuran persatuan kutipan dengan Beat Breeze",
-        "b3": "Harga berpatutan untuk lokasi zon tunggal",
-        "b4": "Persediaan mudah pada mana-mana peranti Android atau Windows",
-        "b5": "Senarai main yang disegarkan mengekalkan minat pelanggan tetap"
+        "b1": "Jadual muzik mengikuti kesibukan pagi, waktu bekerja, waktu bersosial dan penutupan",
+        "b2": "Menu digital dan visual promosi boleh berubah mengikut waktu operasi",
+        "b3": "Atur cara peka cuaca boleh mencadangkan arah yang sesuai",
+        "b4": "Muzik semasa panggilan menunggu boleh membawa bunyi jenama yang sama ke luar kafe",
+        "b5": "Kakitangan boleh melaraskan zon langsung tanpa membina semula pelan"
       }
     },
     "malls": {
@@ -1682,27 +1483,7 @@
       "subheadline": "Pengurusan muzik pelbagai zon untuk pusat membeli-belah yang mahukan lebih lalu lintas pelanggan dan lawatan lebih lama.",
       "zonesTitle": "Satu bangunan, pelbagai suasana",
       "benefitsTitle": "Mengapa pusat membeli-belah memilih BMAsia",
-      "editorialStat": "85% pembeli berkata muzik adalah faktor #1 yang meningkatkan suasana hati mereka di dalam kedai.",
-      "editorialStatSub": "Mood Media, \"Quantifying the Impact of Sensory Marketing,\" 2019.",
       "ctaHeadline": "Reka bentuk bunyi pusat membeli-belah anda.",
-      "stats": {
-        "s1": {
-          "value": "38%",
-          "label": "Jualan Harian Lebih Tinggi"
-        },
-        "s2": {
-          "value": "85%",
-          "label": "Kata Muzik Angkat Suasana Hati"
-        },
-        "s3": {
-          "value": "75%",
-          "label": "Tinggal Lebih Lama"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Kawalan Berpusat"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Kawasan Umum",
@@ -1730,11 +1511,11 @@
         }
       },
       "benefits": {
-        "b1": "Pengurusan berpusat merentasi berpuluh zon dari satu papan pemuka",
-        "b2": "Pemesejan audio untuk promosi, acara dan pengumuman",
-        "b3": "Penjadualan yang disesuaikan dengan corak lalu lintas hari bekerja vs hujung minggu",
-        "b4": "Penyelesaian perkakasan untuk penggunaan berskala besar",
-        "b5": "Pengurus akaun berdedikasi untuk sokongan berterusan"
+        "b1": "Ruang umum, medan selera, pintu masuk dan sayap premium kekal terselaras",
+        "b2": "Rangkaian skrin dan pengumuman boleh mengikuti kalendar operasi yang sama",
+        "b3": "Pemesejan berbilang bahasa menyokong pencarian arah, acara dan promosi",
+        "b4": "Tingkah laku waktu solat boleh disesuaikan dengan jadual pusat beli-belah tempatan",
+        "b5": "Pasukan pusat melihat seluruh hartanah sementara kakitangan zon mengekalkan kawalan"
       }
     },
     "gyms": {
@@ -1742,27 +1523,7 @@
       "subheadline": "Muzik bertenaga tinggi yang mendorong prestasi, memotivasi ahli, dan membuat mereka terus datang.",
       "zonesTitle": "Tenaga berbeza untuk setiap latihan",
       "benefitsTitle": "Mengapa gim memilih BMAsia",
-      "editorialStat": "Muzik meningkatkan daya tahan sebanyak 15% dan mengurangkan persepsi usaha sebanyak 10%.",
-      "editorialStatSub": "Karageorghis et al. / Terry et al. (2020), Psychological Bulletin — meta-analisis 139 kajian.",
       "ctaHeadline": "Perkasakan bunyi gim anda.",
-      "stats": {
-        "s1": {
-          "value": "+15%",
-          "label": "Peningkatan Daya Tahan"
-        },
-        "s2": {
-          "value": "-10%",
-          "label": "Persepsi Usaha"
-        },
-        "s3": {
-          "value": "139",
-          "label": "Kajian Mengesahkannya"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automatik"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Ruang Berat",
@@ -1790,11 +1551,11 @@
         }
       },
       "benefits": {
-        "b1": "Senarai main sepadan BPM untuk intensiti senaman berbeza",
-        "b2": "Kawalan pelbagai zon — berat di ruang berat, tenang di yoga",
-        "b3": "Semua lesen tersedia — komersial atau bebas royalti",
-        "b4": "Penjadualan yang disesuaikan dengan waktu puncak dan jadual kelas",
-        "b5": "Konsistensi pelbagai lokasi untuk rangkaian gim"
+        "b1": "Jadual kelas dan zon membentuk lengkung tenaga harian",
+        "b2": "Kawasan senaman, penerimaan dan pemulihan boleh mempunyai bunyi yang sengaja berbeza",
+        "b3": "Skrin dan gelung visual menyokong kelas serta komunikasi ahli",
+        "b4": "API boleh menghubungkan jadual waktu atau pencetus operasi yang diluluskan",
+        "b5": "Pratetap volum berjadual mengekalkan kawalan pada kakitangan"
       }
     },
     "medical": {
@@ -1802,27 +1563,7 @@
       "subheadline": "Muzik yang mengurangkan kebimbangan, membina kepercayaan, dan mencipta persekitaran penyembuhan.",
       "zonesTitle": "Bunyi untuk setiap ruang klinikal",
       "benefitsTitle": "Mengapa fasiliti perubatan memilih BMAsia",
-      "editorialStat": "Muzik mengurangkan kebimbangan pembedahan seberkesan ubat (NNT=4).",
-      "editorialStatSub": "Kuhlmann et al. (2018), British Journal of Surgery — 92 RCTs, 7,385 pesakit.",
       "ctaHeadline": "Reka bentuk bunyi klinik anda.",
-      "stats": {
-        "s1": {
-          "value": "NNT=4",
-          "label": "Seberkesan Ubat"
-        },
-        "s2": {
-          "value": "7,385",
-          "label": "Pesakit Dikaji"
-        },
-        "s3": {
-          "value": "92",
-          "label": "Percubaan Klinikal"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automatik"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Bilik Menunggu",
@@ -1850,11 +1591,11 @@
         }
       },
       "benefits": {
-        "b1": "Senarai main berasaskan klinikal yang direka untuk persekitaran penjagaan kesihatan",
-        "b2": "Semua lesen disertakan dengan Beat Breeze — tiada kerumitan pematuhan",
-        "b3": "Main balik luar talian — tiada gangguan semasa rawatan",
-        "b4": "Kawalan kelantangan yang sesuai untuk persekitaran klinikal",
-        "b5": "Persediaan mudah yang tidak membebankan pasukan IT"
+        "b1": "Ruang menunggu, rawatan dan pemulihan boleh mempunyai bunyi tekanan rendah yang berbeza",
+        "b2": "Skrin menyokong maklumat yang tenang dan pencarian arah tanpa dakwaan perubatan",
+        "b3": "Pemesejan berbilang bahasa boleh dijadualkan mengikut lokasi dan waktu",
+        "b4": "Jadual zon mudah mengurangkan beban kakitangan dan IT",
+        "b5": "Pengendali mengekalkan kawalan langsung terhadap volum dan main balik"
       }
     },
     "offices": {
@@ -1862,27 +1603,7 @@
       "subheadline": "Muzik latar belakang yang meningkatkan fokus, kreativiti dan kepuasan di tempat kerja.",
       "zonesTitle": "Mod berbeza untuk ruang berbeza",
       "benefitsTitle": "Mengapa pejabat memilih BMAsia",
-      "editorialStat": "Pembangun perisian menghasilkan kerja berkualiti lebih tinggi dengan muzik latar belakang.",
-      "editorialStatSub": "Lesiuk (2005), Psychology of Music — 56 pembangun, kajian 5 minggu.",
       "ctaHeadline": "Reka bentuk bunyi ruang kerja anda.",
-      "stats": {
-        "s1": {
-          "value": "79%",
-          "label": "Kata Muzik Membantu"
-        },
-        "s2": {
-          "value": "70 dB",
-          "label": "Tahap Optimum"
-        },
-        "s3": {
-          "value": "30K+",
-          "label": "Trek Terkurasi"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automatik"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Pelan Terbuka",
@@ -1910,11 +1631,11 @@
         }
       },
       "benefits": {
-        "b1": "Penjadualan yang sepadan dengan irama pejabat — pagi fokus, petang sosial",
-        "b2": "Kawalan pelbagai zon untuk pelan terbuka, bilik mesyuarat dan kawasan umum",
-        "b3": "Semua lesen disertakan dengan Beat Breeze — persediaan mesra IT",
-        "b4": "Peningkatan kepuasan pekerja melalui reka bentuk bunyi yang difikirkan",
-        "b5": "Harga zon tunggal berpatutan untuk pejabat kecil"
+        "b1": "Zon fokus, penerimaan, sosial dan mesyuarat boleh menjalankan mod yang berbeza",
+        "b2": "Skrin dan mesej dalaman mengikuti kalendar tempat kerja",
+        "b3": "Landskap bunyi boleh menyokong ruang bersama yang lebih senyap tanpa jaminan produktiviti",
+        "b4": "Muzik semasa panggilan menunggu meneruskan pengalaman jenama untuk pemanggil",
+        "b5": "Jadual kekal mudah untuk disemak dan diatasi oleh pasukan tempat kerja"
       }
     },
     "showrooms": {
@@ -1922,27 +1643,7 @@
       "subheadline": "Muzik premium yang meningkatkan produk dan mencipta pengalaman inspirasi.",
       "zonesTitle": "Menetapkan pentas untuk setiap produk",
       "benefitsTitle": "Mengapa ruang pameran memilih BMAsia",
-      "editorialStat": "Muzik klasik membawa pelanggan memilih produk yang lebih mahal.",
-      "editorialStatSub": "Areni & Kim (1993), Advances in Consumer Research.",
       "ctaHeadline": "Reka bentuk bunyi ruang pameran anda.",
-      "stats": {
-        "s1": {
-          "value": "38%",
-          "label": "Jualan Lebih Tinggi"
-        },
-        "s2": {
-          "value": "3.4x",
-          "label": "Kesan Priming Muzik"
-        },
-        "s3": {
-          "value": "65%",
-          "label": "Kata Suasana Penting"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Automatik"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Ruang Pameran Automotif",
@@ -1970,11 +1671,11 @@
         }
       },
       "benefits": {
-        "b1": "Muzik selaras jenama yang mengukuhkan kedudukan produk anda",
-        "b2": "Mod acara untuk pelancaran, pembukaan dan tayangan VIP",
-        "b3": "Kurasi tersuai yang menceritakan kisah jenama anda melalui bunyi",
-        "b4": "Penjadualan berbilang bilik untuk kawasan produk berbeza",
-        "b5": "Rasa premium tanpa kerumitan premium"
+        "b1": "Muzik dan kandungan visual bersama-sama mengukuhkan kisah produk",
+        "b2": "Video pelancaran, tayangan slaid dan mod acara boleh mengikuti urutan bermasa",
+        "b3": "Mesej berbilang bahasa menyokong tetamu tempatan dan kumpulan pelawat",
+        "b4": "API yang diluluskan boleh mencetuskan kandungan untuk detik produk atau acara",
+        "b5": "Muzik semasa panggilan menunggu melanjutkan arah jenama yang sama ke luar ruang utama"
       }
     },
     "events": {
@@ -1982,27 +1683,7 @@
       "subheadline": "Dari gala korporat ke pelancaran jenama — muzik yang menjadikan detik tidak dapat dilupakan.",
       "zonesTitle": "Bunyi untuk setiap majlis",
       "benefitsTitle": "Mengapa tempat acara memilih BMAsia",
-      "editorialStat": "Pada detik emosi puncak, hadirin 63% lebih berkemungkinan untuk terhubung dengan jenama.",
-      "editorialStatSub": "Live Nation, \"The Power of Live\" Global Study, 2018 — 22,500 peminat, 11 negara.",
       "ctaHeadline": "Reka bentuk bunyi acara anda.",
-      "stats": {
-        "s1": {
-          "value": "63%",
-          "label": "Hubungan Jenama"
-        },
-        "s2": {
-          "value": "90%",
-          "label": "Mengalu-alukan Kehadiran Jenama"
-        },
-        "s3": {
-          "value": "500+",
-          "label": "Tempat Dilayani"
-        },
-        "s4": {
-          "value": "23+",
-          "label": "Tahun Pengalaman"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Acara Korporat",
@@ -2030,11 +1711,11 @@
         }
       },
       "benefits": {
-        "b1": "Reka bentuk senarai main khusus acara oleh pasukan muzik kami",
-        "b2": "Penjadualan yang mengikut garis masa acara dengan tepat",
-        "b3": "Pemesejan audio untuk pengumuman dan aliran program",
-        "b4": "Pilihan pemasangan sementara atau kekal",
-        "b5": "Pasukan muzik kami menukar ringkasan acara anda menjadi pelan muzik yang praktikal"
+        "b1": "Muzik, skrin, video dan pengumuman mengikuti satu susunan acara",
+        "b2": "Zon sementara boleh diuji sebelum tetamu tiba",
+        "b3": "Mesej bermasa menyokong peralihan tanpa bergantung pada isyarat manual semata-mata",
+        "b4": "Pengendali boleh mengatasi setiap detik berjadual secara langsung",
+        "b5": "Pelan boleh digunakan semula dan disesuaikan untuk acara akan datang"
       }
     }
   },
@@ -2043,6 +1724,283 @@
     "ctaDemo": "Tempah Demo",
     "source": "Sumber: Soundtrack Research",
     "footerCtaQuote": "Dapatkan sebut harga →",
-    "footerCtaDemo": "Tempah demo →"
+    "footerCtaDemo": "Tempah demo →",
+    "heroEyebrow": "BMAsia untuk venue anda",
+    "helpChoose": "Bantu saya memilih",
+    "seeDayFlow": "Lihat perjalanan hari ini",
+    "livePlan": "Pelan suasana langsung",
+    "ready": "Pelan sedia",
+    "dayEyebrow": "Satu hari operasi",
+    "dayTitle": "Setiap detik mempunyai tugas yang berbeza.",
+    "dayDescription": "Muzik memimpin suasana, sementara skrin, pemesejan, jadual dan automasi yang diluluskan membawa pelan ke seluruh venue.",
+    "touchpointsEyebrow": "Dibina untuk operasi ini",
+    "touchpointsTitle": "Bukan templat muzik latar.",
+    "touchpointsDescription": "Setiap zon dan titik sentuh harus menyokong perjalanan pelanggan, rentak kakitangan dan keputusan jenama sebenar bagi jenis perniagaan ini.",
+    "operationsTitle": "Dibina untuk dikendalikan, bukan sekadar dikagumi sekali",
+    "productFitEyebrow": "Dua laluan produk yang meyakinkan",
+    "productFitTitle": "Pilih berdasarkan katalog dan model operasi.",
+    "productFitDescription": "BMAsia boleh membekalkan mana-mana laluan. Jawapan yang tepat bergantung pada muzik yang perlu didengar tetamu dan pengalaman venue lebih luas yang perlu anda kendalikan.",
+    "beatBreeze": {
+      "eyebrow": "Fleksibel dan bebas royalti",
+      "text": "Pilih Beat Breeze apabila muzik, skrin, pemesejan, media dan automasi venue perlu berfungsi bersama dalam satu platform BMAsia.",
+      "cta": "Terokai Beat Breeze"
+    },
+    "soundtrack": {
+      "eyebrow": "Muzik komersial yang dikenali",
+      "text": "Pilih Soundtrack apabila repertoir label utama yang dikenali menjadi keutamaan, dengan reka bentuk muzik BMAsia dan peluasan yang disokong.",
+      "cta": "Terokai Soundtrack"
+    },
+    "notSure": "Minta BMAsia membandingkan kedua-duanya",
+    "finalDescription": "Beritahu kami tentang zon, perjalanan tetamu dan jangkaan muzik. Kami akan mencadangkan model produk dan perkhidmatan yang benar-benar sesuai.",
+    "howItWorks": "Cara BMAsia berfungsi",
+    "capabilities": {
+      "music": "Muzik",
+      "screens": "Skrin dan TV",
+      "messages": "Mesej berbilang bahasa",
+      "video": "Video dan gelung",
+      "scheduling": "Penjadualan",
+      "automation": "Automasi",
+      "api": "API dan integrasi",
+      "volume": "Pratetap volum",
+      "prayer": "Tingkah laku waktu solat",
+      "phone": "Muzik semasa panggilan menunggu",
+      "soundscapes": "Landskap bunyi"
+    }
+  },
+  "cookieBanner": {
+    "title": "Pilihan privasi anda",
+    "manageTitle": "Urus keutamaan kuki",
+    "description": "Kami menggunakan storan yang diperlukan untuk pilihan bahasa dan persetujuan. Dengan izin anda, Google Analytics melalui Google Tag Manager dan pengukuran laman Apollo membantu kami memahami penggunaan laman serta pertanyaan perniagaan.",
+    "policy": "Baca dasar kuki",
+    "close": "Tutup keutamaan kuki",
+    "necessaryTitle": "Diperlukan",
+    "necessaryDescription": "Mengingati bahasa dan pilihan privasi anda. Sentiasa aktif.",
+    "analyticsTitle": "Pengukuran pilihan",
+    "analyticsDescription": "Google Analytics dan Apollo. Hanya dimuatkan selepas anda menerima.",
+    "necessaryOnly": "Yang diperlukan sahaja",
+    "allowAnalytics": "Benarkan pengukuran"
+  },
+  "legalPages": {
+    "privacy": {
+      "eyebrow": "Undang-undang · Amalan data",
+      "title": "Dasar privasi",
+      "summary": "Maklumat yang BMAsia kumpulkan melalui laman web ini, sebab kami menggunakannya, serta perkhidmatan yang terlibat apabila anda menghubungi kami, memohon percubaan atau menggunakan pembantu.",
+      "updated": "Kemas kini terakhir: 4 Ogos 2026",
+      "cookieLink": "Semak atau ubah keutamaan kuki",
+      "sections": {
+        "controller": {
+          "title": "Pihak yang bertanggungjawab",
+          "paragraphs": [
+            "Dasar ini terpakai kepada BMAsia (Thailand) Co., Ltd. dan BMAsia Limited apabila mereka memproses data peribadi melalui bmasiamusic.com. Entiti BMAsia yang mengendalikan pertanyaan atau perjanjian anda bertanggungjawab terhadap pemprosesan tersebut."
+          ],
+          "items": [
+            "BMAsia (Thailand) Co., Ltd., 725 S-Metro Building, Suite 144, Level 20, Sukhumvit Road, Klongtan Nua, Watthana, Bangkok 10110, Thailand.",
+            "BMAsia Limited, Hong Kong."
+          ]
+        },
+        "data": {
+          "title": "Data yang kami terima",
+          "paragraphs": [
+            "Kami menerima maklumat yang anda serahkan dan maklumat teknikal terhad yang terhasil apabila laman digunakan. Jangan masukkan data peribadi sensitif ke dalam medan teks bebas atau pembantu laman web."
+          ],
+          "items": [
+            "Butiran hubungan dan perniagaan, maklumat venue, pilihan produk serta mesej yang dihantar melalui borang pertanyaan, sebut harga dan percubaan Soundtrack.",
+            "Perbualan pembantu dan butiran eskalasi apabila anda memilih untuk menggunakan pengalaman sembang atau suara.",
+            "Pilihan persetujuan, pilihan bahasa, maklumat peranti dan penggunaan, data rujukan serta maklumat rangkaian anggaran apabila pengukuran pilihan didayakan."
+          ]
+        },
+        "purposes": {
+          "title": "Sebab kami menggunakannya",
+          "paragraphs": [
+            "Kami menggunakan maklumat ini untuk membalas permintaan, menilai kesesuaian produk dan percubaan, menyediakan cadangan, menyokong pelanggan, mengamankan serta mengendalikan laman dan menambah baik perkhidmatan kami. Bergantung pada konteks, asas kami mungkin langkah ke arah kontrak, pelaksanaan kontrak, kepentingan perniagaan yang sah, persetujuan atau kewajipan undang-undang."
+          ],
+          "items": [
+            "Penghantaran borang bukan kebenaran untuk pemasaran pukal yang tidak berkaitan.",
+            "Analitis pilihan dan pengukuran prospek hanya dimuatkan selepas pilihan persetujuan yang dipaparkan di laman ini.",
+            "Respons pembantu bersifat maklumat dan bukan komitmen komersial yang mengikat."
+          ]
+        },
+        "sharing": {
+          "title": "Perkhidmatan dan penerima",
+          "paragraphs": [
+            "Kami hanya berkongsi data apabila diperlukan untuk mengendalikan laman, membalas anda, mengatur perkhidmatan yang diminta atau memenuhi kewajipan undang-undang. Penyedia mungkin memproses data di negara di luar negara anda."
+          ],
+          "items": [
+            "Render dan Cloudflare untuk infrastruktur aplikasi, pangkalan data, rangkaian dan keselamatan.",
+            "Google Workspace dan Gmail untuk surat-menyurat perniagaan; Google Tag Manager dan Google Analytics apabila pengukuran pilihan diterima.",
+            "Pengukuran pelawat laman Apollo apabila pengukuran pilihan diterima.",
+            "ElevenLabs serta perkhidmatan pembantu atau hab mesej BMAsia apabila ciri sembang, suara atau eskalasi digunakan.",
+            "Soundtrack apabila anda memohon percubaan atau pengaktifan Soundtrack dan butiran persediaan yang diperlukan perlu dikongsi.",
+            "Penasihat profesional, pihak berkuasa atau pihak urus niaga apabila dikehendaki oleh undang-undang atau urus niaga korporat yang sah."
+          ]
+        },
+        "retention": {
+          "title": "Penyimpanan dan keselamatan",
+          "paragraphs": [
+            "Kami menyimpan maklumat hanya selama yang diperlukan untuk tujuan ia dikumpulkan, hubungan perniagaan aktif, pengendalian pertikaian, keselamatan atau kewajipan undang-undang dan perakaunan. Tempoh penyimpanan berbeza mengikut jenis rekod dan bidang kuasa.",
+            "BMAsia dan penyedianya menggunakan perlindungan organisasi serta teknikal, tetapi tiada penghantaran internet atau sistem penyimpanan yang boleh dijamin selamat sepenuhnya."
+          ],
+          "items": []
+        },
+        "rights": {
+          "title": "Pilihan dan hak anda",
+          "paragraphs": [
+            "Bergantung pada lokasi anda, anda mungkin boleh meminta akses, pembetulan, pemadaman, sekatan, kebolehportan atau bantahan, menarik balik persetujuan dan membuat aduan kepada pihak berkuasa perlindungan data yang berkaitan. Kami mungkin perlu mengesahkan identiti anda dan mungkin menyimpan maklumat apabila undang-undang membenarkan atau mewajibkannya."
+          ],
+          "items": [
+            "Anda boleh membuka semula keutamaan kuki daripada pengaki atau pautan di bawah.",
+            "Anda boleh meminta kami menghentikan susulan langsung yang tidak diperlukan untuk perkhidmatan semasa.",
+            "Kawalan pelayar dan peranti juga boleh mengehadkan kuki atau kebenaran."
+          ]
+        },
+        "contact": {
+          "title": "Hubungan dan kemas kini",
+          "paragraphs": [
+            "E-melkan soalan privasi atau permintaan hak kepada alamat di bawah. Kami mungkin mengemas kini dasar ini apabila laman, penyedia atau keperluan undang-undang berubah; tarikh semasa akan dipaparkan di bahagian atas halaman ini."
+          ],
+          "items": []
+        }
+      }
+    },
+    "cookies": {
+      "eyebrow": "Undang-undang · Kawalan anda",
+      "title": "Dasar kuki dan storan",
+      "summary": "Peta dalam bahasa mudah bagi storan pelayar dan pengukuran pilihan yang digunakan di laman web ini—serta cara mengubah pilihan anda.",
+      "updated": "Kemas kini terakhir: 4 Ogos 2026",
+      "manage": "Buka keutamaan kuki",
+      "privacyLink": "Baca dasar privasi",
+      "sections": {
+        "storage": {
+          "title": "Kuki dan storan pelayar",
+          "paragraphs": [
+            "Kuki ialah nilai kecil yang disimpan oleh pelayar. Laman ini juga menggunakan storan tempatan untuk rekod persetujuan. Penyedia yang didayakan melalui pilihan anda mungkin menggunakan kuki atau pengecam serupa mereka sendiri."
+          ],
+          "items": []
+        },
+        "necessary": {
+          "title": "Storan yang diperlukan",
+          "paragraphs": [
+            "Storan yang diperlukan menyokong pilihan yang anda minta laman ingati dan tidak digunakan untuk pengiklanan."
+          ],
+          "items": [
+            "cookie_consent_v2 dalam storan tempatan merekodkan sama ada anda menerima storan yang diperlukan sahaja atau turut menerima pengukuran pilihan.",
+            "NEXT_LOCALE mengingati bahasa yang anda pilih. Tempoh maksimumnya sekarang ialah satu tahun.",
+            "Kawalan keselamatan atau platform yang penting mungkin ditetapkan oleh lapisan pengehosan dan rangkaian."
+          ]
+        },
+        "optional": {
+          "title": "Pengukuran pilihan",
+          "paragraphs": [
+            "Jika anda menerima pengukuran pilihan, laman memuatkan Google Tag Manager dan pengukuran Google Analytics yang dikonfigurasi, serta pengukuran laman web Apollo. Penyedia ini mungkin menetapkan pengecam seperti _ga atau kuki berkaitan Apollo dan menggunakan maklumat pelayar atau rangkaian untuk menghasilkan cerapan penggunaan serta prospek.",
+            "Nama dan tempoh kuki penyedia yang tepat boleh berubah. Ia tertakluk pada konfigurasi serta dasar penyedia, di samping kawalan pelayar anda."
+          ],
+          "items": []
+        },
+        "control": {
+          "title": "Berikan, tolak atau tarik balik persetujuan",
+          "paragraphs": [
+            "Anda boleh memilih storan yang diperlukan sahaja, menerima pengukuran pilihan atau membuka semula panel kemudian. Menarik balik persetujuan pilihan akan mengalih keluar kuki Google Analytics dan Apollo yang diketahui serta boleh dicapai oleh laman ini, kemudian memuat semula halaman supaya skrip pilihan tidak dimuatkan lagi. Tetapan pelayar boleh mengalih keluar storan penyedia yang masih ada."
+          ],
+          "items": []
+        },
+        "providers": {
+          "title": "Sempadan penyedia",
+          "paragraphs": [
+            "Google dan Apollo memproses pengukuran pilihan mengikut syarat privasi masing-masing. BMAsia tidak memuatkan alat pengukuran tersebut dengan sengaja sebelum panel persetujuan merekodkan penerimaan. Pembantu itu sendiri ialah perkhidmatan interaktif; maklumat yang anda hantar secara aktif melaluinya diliputi oleh dasar privasi."
+          ],
+          "items": []
+        },
+        "contact": {
+          "title": "Pertanyaan",
+          "paragraphs": [
+            "Untuk pertanyaan tentang storan atau pengukuran di laman ini, hubungi BMAsia. Anda juga boleh membaca dasar privasi yang lebih luas di bawah."
+          ],
+          "items": []
+        }
+      }
+    },
+    "terms": {
+      "eyebrow": "Undang-undang · Penggunaan laman web",
+      "title": "Terma laman web",
+      "summary": "Sempadan penggunaan bmasiamusic.com, permintaan maklumat dan pautan ke perkhidmatan produk serta rakan kongsi BMAsia.",
+      "updated": "Kemas kini terakhir: 4 Ogos 2026",
+      "sections": {
+        "scope": {
+          "title": "Tentang terma ini",
+          "paragraphs": [
+            "Terma ini mengawal penggunaan bmasiamusic.com. Dengan menggunakan laman ini, anda bersetuju dengannya. Jika anda tidak bersetuju, jangan gunakan laman ini. Laman ini dikendalikan oleh BMAsia (Thailand) Co., Ltd. dan BMAsia Limited."
+          ],
+          "items": []
+        },
+        "services": {
+          "title": "Perkara yang disediakan oleh laman",
+          "paragraphs": [
+            "Laman ini menerangkan reka bentuk muzik dan perkhidmatan muzik perniagaan BMAsia, termasuk Beat Breeze serta perkhidmatan BMAsia berkaitan Soundtrack. Ia juga membolehkan anda menghubungi kami, meminta cadangan, memohon percubaan Soundtrack yang layak dan menggunakan pembantu maklumat."
+          ],
+          "items": []
+        },
+        "requests": {
+          "title": "Permintaan, percubaan dan cadangan",
+          "paragraphs": [
+            "Penghantaran borang, tempahan demo atau permohonan percubaan ialah permintaan untuk semakan—bukan pesanan yang diterima atau langganan automatik. Kelayakan, skop perkhidmatan, pelesenan, ketersediaan, harga, cukai, wilayah, perkakasan dan terma kontrak disahkan secara berasingan dalam bentuk bertulis.",
+            "Cadangan rasmi atau perjanjian perkhidmatan mengawal jika bercanggah dengan kandungan umum laman web."
+          ],
+          "items": []
+        },
+        "assistant": {
+          "title": "Maklumat dibantu AI",
+          "paragraphs": [
+            "Laman ini mungkin menyediakan respons teks atau suara yang dijana dengan kecerdasan buatan. Respons tersebut boleh tidak lengkap atau salah dan bukan nasihat undang-undang, sebut harga atau komitmen yang mengikat. Sahkan butiran penting tentang produk, pelesenan dan komersial dengan pakar BMAsia."
+          ],
+          "items": []
+        },
+        "rights": {
+          "title": "Kandungan dan tanda dagangan",
+          "paragraphs": [
+            "Teks laman, reka bentuk visual, perisian dan bahan BMAsia dilindungi oleh undang-undang harta intelek yang berkenaan. Nama produk, logo dan bahan rakan kongsi dimiliki oleh pemilik masing-masing. Pautan atau penerangan tidak memindahkan hak kepada anda."
+          ],
+          "items": []
+        },
+        "acceptable": {
+          "title": "Penggunaan yang boleh diterima",
+          "paragraphs": [
+            "Jangan salah gunakan laman atau mengganggu operasinya."
+          ],
+          "items": [
+            "Jangan cuba mendapatkan akses tanpa kebenaran, menguji keselamatan, memasukkan kod berbahaya atau membebankan perkhidmatan.",
+            "Jangan hantar bahan yang menyalahi undang-undang, mengelirukan atau melanggar hak, menyamar sebagai orang lain atau menyalahgunakan borang dan ciri pembantu.",
+            "Jangan mengikis atau menghasilkan semula kandungan laman yang dilindungi secara sistematik tanpa kebenaran."
+          ]
+        },
+        "external": {
+          "title": "Perkhidmatan luaran",
+          "paragraphs": [
+            "Laman ini memaut kepada perkhidmatan yang dikendalikan oleh pihak lain, termasuk log masuk produk, Soundtrack, Calendly, platform pemesejan dan saluran sosial. Terma, amalan privasi, ketersediaan dan keselamatan mereka terpakai apabila anda meninggalkan laman ini. BMAsia tidak bertanggungjawab terhadap laman pihak ketiga yang tidak dikawalnya."
+          ],
+          "items": []
+        },
+        "liability": {
+          "title": "Ketersediaan dan liabiliti",
+          "paragraphs": [
+            "Laman awam disediakan atas dasar “seperti tersedia”. Kami tidak menjanjikan akses tanpa gangguan atau bahawa setiap kenyataan umum sesuai bagi setiap wilayah atau venue. Setakat yang dibenarkan oleh undang-undang, BMAsia tidak bertanggungjawab atas kerugian tidak langsung atau berbangkit yang disebabkan semata-mata oleh penggunaan laman awam ini. Tiada apa-apa di sini mengecualikan liabiliti yang tidak boleh dikecualikan secara sah."
+          ],
+          "items": []
+        },
+        "law": {
+          "title": "Undang-undang yang terpakai",
+          "paragraphs": [
+            "Penggunaan laman web secara umum dikawal oleh undang-undang Thailand. Perjanjian pelanggan mungkin menamakan entiti BMAsia, undang-undang yang mengawal dan proses pertikaian yang berbeza; perjanjian tersebut mengawal perkhidmatan yang dikontrak."
+          ],
+          "items": []
+        },
+        "contact": {
+          "title": "Perubahan dan hubungan",
+          "paragraphs": [
+            "Kami mungkin mengemas kini terma laman web ini apabila perkhidmatan berubah. Tarikh semasa dipaparkan di bahagian atas. Pertanyaan boleh dihantar kepada BMAsia di alamat di bawah."
+          ],
+          "items": []
+        }
+      }
+    }
   }
 }

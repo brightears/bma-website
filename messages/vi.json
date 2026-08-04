@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "BMAsia | Nơi Âm Nhạc Quan Trọng",
-    "description": "Tạo bầu không khí hoàn hảo cho doanh nghiệp của bạn. BMAsia cung cấp giải pháp nhạc nền tùy chỉnh cho khách sạn, nhà hàng và bán lẻ trên khắp Châu Á-Thái Bình Dương từ năm 2002."
+    "description": "BMAsia thiết kế và vận hành âm nhạc, nội dung truyền thông, thông điệp và trải nghiệm không gian kết nối, với Beat Breeze và Soundtrack được cung cấp qua một đội ngũ dịch vụ chuyên môn thống nhất."
   },
   "navigation": {
     "home": "Trang chủ",
@@ -14,15 +14,24 @@
     "solutions": "Giải pháp",
     "notSure": "Chưa chắc giải pháp nào phù hợp?",
     "talkToUs": "Trao đổi với chúng tôi",
-    "signIn": "Đăng nhập Beat Breeze",
-    "startFree": "Bắt đầu miễn phí",
+    "signIn": "Đăng nhập",
+    "startFree": "Bắt đầu",
     "openMenu": "Mở menu",
     "closeMenu": "Đóng menu",
     "mainNavigation": "Điều hướng chính",
     "mobileNavigation": "Menu điều hướng di động",
     "language": "Ngôn ngữ",
     "talkToBMAsia": "Trao đổi với BMAsia",
-    "startTrial": "Dùng thử miễn phí 14 ngày"
+    "startTrial": "Chọn sản phẩm",
+    "products": "Sản phẩm",
+    "solutionsIntro": "Khám phá các ý tưởng trải nghiệm không gian trọn vẹn dành cho loại hình doanh nghiệp của bạn.",
+    "helpMeChoose": "Giúp tôi lựa chọn",
+    "login": "Đăng nhập",
+    "beatBreezeShort": "Âm nhạc miễn phí bản quyền, nội dung truyền thông và tự động hóa không gian.",
+    "soundtrackShort": "Âm nhạc thương mại quen thuộc, do BMAsia cung cấp và hỗ trợ.",
+    "beatBreezeLogin": "Mở nền tảng Beat Breeze",
+    "soundtrackLogin": "Mở ứng dụng Soundtrack",
+    "skipToContent": "Chuyển đến nội dung chính"
   },
   "languageSwitcher": {
     "label": "Ngôn ngữ",
@@ -58,57 +67,6 @@
       "title": "Hài hòa thương hiệu",
       "description": "Nâng cao bản sắc thương hiệu thông qua thiết kế âm nhạc độc đáo cộng hưởng với khách hàng của bạn."
     }
-  },
-  "products": {
-    "sectionTitle": "Giải pháp",
-    "sectionTitleHighlight": "của chúng tôi",
-    "sectionSubtitle": "Chọn giải pháp âm nhạc hoàn hảo phù hợp với nhu cầu và ngân sách doanh nghiệp của bạn",
-    "premium": "Cao cấp",
-    "availableOn": "Có sẵn trên",
-    "soundtrackYourBrand": {
-      "tagline": "Giải pháp nhạc cao cấp",
-      "features": {
-        "tracks": "100 triệu+ bài hát có sẵn",
-        "scheduling": "Lập lịch kéo thả",
-        "messaging": "Tin nhắn văn bản thành giọng nói",
-        "offline": "Phát ngoại tuyến",
-        "spotify": "Đồng bộ Spotify hợp pháp",
-        "bespoke": "Thiết kế nhạc riêng",
-        "support": "Hỗ trợ 24/7"
-      }
-    },
-    "beatBreeze": {
-      "tagline": "Giải pháp cơ bản",
-      "features": {
-        "tracks": "30.000+ bài hát chọn lọc",
-        "playlists": "50 playlist sẵn có",
-        "license": "Bao gồm giấy phép biểu diễn công cộng",
-        "multizone": "Thiết lập đa vùng",
-        "scheduling": "Lập lịch nâng cao",
-        "messaging": "Tin nhắn tích hợp",
-        "offline": "Phát ngoại tuyến"
-      }
-    },
-    "notSure": "Không chắc giải pháp nào phù hợp với bạn?",
-    "bookDemo": "Đặt demo miễn phí"
-  },
-  "smartFeatures": {
-    "sectionTitle": "Âm nhạc hoạt động",
-    "sectionTitleHighlight": "vì bạn",
-    "sectionSubtitle": "Tự động hóa thông minh điều chỉnh nhạc phù hợp với doanh nghiệp của bạn",
-    "smartScheduling": {
-      "title": "Lập lịch thông minh",
-      "description": "Lập trình sẵn mức âm lượng, điều chỉnh tự động theo giờ làm việc và thích ứng theo vùng như tạm dừng giờ cầu nguyện."
-    },
-    "contextAware": {
-      "title": "Nhạc theo ngữ cảnh",
-      "description": "Nhạc thích ứng với điều kiện thời tiết, đồng bộ với hệ thống chiếu sáng và phản hồi dữ liệu thời gian thực."
-    },
-    "aiPowered": {
-      "title": "Playlist do AI tạo",
-      "description": "Chỉ cần mô tả những gì bạn muốn — AI của chúng tôi tạo playlist hoàn hảo. Không cần chuyên môn âm nhạc."
-    },
-    "ctaDemo": "Đặt demo"
   },
   "clientLogos": {
     "sectionTitle": "Được tin tưởng bởi các nhà lãnh đạo ngành"
@@ -189,7 +147,7 @@
     },
     "email": {
       "label": "Email",
-      "description": "Chúng tôi phản hồi trong 24 giờ"
+      "description": "Một chuyên gia BMAsia sẽ xem xét và phản hồi"
     },
     "whatsapp": {
       "label": "WhatsApp",
@@ -203,7 +161,7 @@
   "forms": {
     "inquiry": {
       "title": "Mẫu yêu cầu nhạc",
-      "description": "Điền vào mẫu bên dưới và chúng tôi sẽ liên hệ lại trong 24 giờ.",
+      "description": "Điền vào biểu mẫu bên dưới và một chuyên gia BMAsia sẽ liên hệ với bạn.",
       "preferDemo": "Muốn đặt lịch gọi?",
       "bookDemo": "Đặt demo miễn phí thay thế",
       "fields": {
@@ -228,9 +186,9 @@
         "default": "Gửi tin nhắn",
         "sending": "Đang gửi..."
       },
-      "successMessage": "Cảm ơn yêu cầu của bạn! Chúng tôi sẽ liên hệ lại trong 24 giờ.",
+      "successMessage": "Cảm ơn bạn đã gửi yêu cầu. Một chuyên gia BMAsia sẽ liên hệ với bạn.",
       "errorMessage": "Đã xảy ra lỗi. Vui lòng thử lại.",
-      "privacyNote": "Bằng cách gửi mẫu này, bạn đồng ý với chính sách bảo mật của chúng tôi. Chúng tôi không bao giờ chia sẻ thông tin của bạn với bên thứ ba."
+      "privacyNote": "Chúng tôi sử dụng những thông tin này để phản hồi yêu cầu của bạn. Xem Chính sách bảo mật để biết các nhà cung cấp dịch vụ hỗ trợ chúng tôi vận hành trang web như thế nào."
     },
     "quotation": {
       "title": "Mẫu yêu cầu báo giá",
@@ -278,9 +236,9 @@
         "default": "Yêu cầu báo giá",
         "sending": "Đang gửi..."
       },
-      "successMessage": "Cảm ơn yêu cầu báo giá! Chúng tôi sẽ liên hệ lại trong 24-48 giờ với báo giá cá nhân hóa.",
+      "successMessage": "Cảm ơn bạn đã yêu cầu báo giá. Chuyên viên BMAsia sẽ xem xét thông tin và liên hệ lại.",
       "errorMessage": "Đã xảy ra lỗi. Vui lòng thử lại.",
-      "privacyNote": "Bằng cách gửi mẫu này, bạn đồng ý với chính sách bảo mật của chúng tôi. Chúng tôi không bao giờ chia sẻ thông tin của bạn với bên thứ ba."
+      "privacyNote": "Chúng tôi sử dụng những thông tin này để chuẩn bị và phản hồi yêu cầu của bạn. Xem Chính sách bảo mật để biết các nhà cung cấp dịch vụ hỗ trợ chúng tôi vận hành trang web như thế nào."
     },
     "validation": {
       "required": "Vui lòng nhập {field}",
@@ -306,7 +264,7 @@
     "cookies": "Cookie",
     "terms": "Điều khoản",
     "allRightsReserved": "Bảo lưu mọi quyền.",
-    "operationsDescription": "Âm nhạc và nội dung, được quản lý cùng nhau.",
+    "operationsDescription": "Âm nhạc, nội dung truyền thông và vận hành không gian—được thiết kế thành một trải nghiệm thống nhất.",
     "products": "Sản phẩm",
     "howItWorks": "Cách hoạt động",
     "musicLicensing": "Cấp phép âm nhạc",
@@ -318,144 +276,12 @@
     "startHere": "Bắt đầu tại đây",
     "tryBeatBreeze": "Dùng thử Beat Breeze",
     "trialProof": "Miễn phí 14 ngày · không cần thẻ",
-    "talkToBMAsia": "Trao đổi với BMAsia"
-  },
-  "howItWorks": {
-    "hero": {
-      "title": "Cách",
-      "titleHighlight": "hoạt động",
-      "subtitle": "Hài hòa không gian của bạn trong 3 bước đơn giản",
-      "imageAlt": "Nội thất nhà hàng hiện đại với bầu không khí tinh tế"
-    },
-    "steps": {
-      "sectionTitle": "Hành trình của bạn đến",
-      "sectionTitleHighlight": "Âm thanh hoàn hảo",
-      "sectionSubtitle": "Bắt đầu với BMAsia rất đơn giản. Làm theo 3 bước này để biến đổi không gian của bạn.",
-      "step1": {
-        "title": "Chọn âm thanh và nhận báo giá",
-        "description": "Chọn giữa các giải pháp, yêu cầu báo giá cá nhân hóa hoặc đặt demo trực tuyến miễn phí để trải nghiệm nền tảng."
-      },
-      "step2": {
-        "title": "Tùy chỉnh playlist",
-        "description": "Hợp tác với nhà thiết kế nhạc chuyên gia để tạo mẫu phù hợp với giọng thương hiệu và bầu không khí địa điểm."
-      },
-      "step3": {
-        "title": "Cài đặt và bắt đầu",
-        "description": "Chúng tôi xử lý cài đặt và cung cấp đào tạo toàn diện để bạn dễ dàng quản lý trải nghiệm âm nhạc."
-      }
-    },
-    "benefits": {
-      "sectionTitle": "Tại sao chọn",
-      "sectionTitleHighlight": "BMAsia",
-      "sectionSubtitle": "Khám phá sức mạnh biến đổi của nhạc được chọn lọc chuyên nghiệp"
-    },
-    "cta": {
-      "sectionTitle": "Sẵn sàng biến đổi",
-      "sectionTitleHighlight": "không gian của bạn?",
-      "sectionSubtitle": "Bước đầu tiên để tạo bầu không khí hoàn hảo cho doanh nghiệp. Đội ngũ sẵn sàng giúp bạn tìm giải pháp âm nhạc lý tưởng."
-    }
-  },
-  "licensing": {
-    "hero": {
-      "title": "Bản quyền nhạc",
-      "titleHighlight": "đơn giản hóa",
-      "subtitle": "Hiểu các bản quyền doanh nghiệp của bạn cần",
-      "imageAlt": "Hình ảnh sóng âm trừu tượng đại diện cho bản quyền nhạc"
-    },
-    "intro": {
-      "sectionTitle": "Tại sao doanh nghiệp",
-      "sectionTitleHighlight": "cần bản quyền?",
-      "paragraph1": "Phát nhạc trong doanh nghiệp khác với nghe ở nhà. Khi sử dụng nhạc thương mại, bạn cần sự cho phép từ chủ sở hữu quyền đã tạo ra nhạc đó.",
-      "paragraph2Intro": "Để phát nhạc hợp pháp trong doanh nghiệp, bạn cần",
-      "paragraph2Highlight": "ba bản quyền khác nhau"
-    },
-    "types": {
-      "sectionTitle": "Ba",
-      "sectionTitleHighlight": "bản quyền thiết yếu",
-      "sectionSubtitle": "Mỗi bản quyền bảo vệ chủ sở hữu quyền khác nhau và đảm bảo bồi thường công bằng",
-      "recording": {
-        "name": "Bản quyền ghi âm",
-        "description": "Bao gồm quyền sử dụng bản ghi cụ thể của bài hát và bồi thường cho nghệ sĩ ghi âm."
-      },
-      "publishing": {
-        "name": "Bản quyền xuất bản",
-        "description": "Bao gồm quyền sử dụng sáng tác gốc và bồi thường cho nhạc sĩ và composer."
-      },
-      "performance": {
-        "name": "Bản quyền biểu diễn công cộng",
-        "description": "Cho phép bạn phát bài hát trong môi trường công cộng như địa điểm kinh doanh."
-      }
-    },
-    "warning": {
-      "sectionTitle": "Dịch vụ streaming tiêu dùng",
-      "notLicensed": "KHÔNG",
-      "sectionTitleEnd": "được cấp phép cho sử dụng kinh doanh",
-      "personalUseOnly": "Các dịch vụ này chỉ được cấp phép cho sử dụng cá nhân.",
-      "liability": "Sử dụng trong môi trường thương mại vi phạm điều khoản dịch vụ và có thể khiến doanh nghiệp chịu trách nhiệm pháp lý.",
-      "spotifyQuote": "Dịch vụ Spotify và Nội dung là tài sản của Spotify hoặc người cấp phép của Spotify. Chúng tôi cấp cho bạn giấy phép hạn chế, không độc quyền, có thể thu hồi để sử dụng cá nhân, phi thương mại Dịch vụ Spotify...",
-      "spotifySource": "Điều khoản dịch vụ Spotify"
-    },
-    "solution": {
-      "sectionTitle": "Chúng tôi xử lý",
-      "sectionTitleHighlight": "sự phức tạp bản quyền",
-      "sectionSubtitle": "Chọn giải pháp phù hợp với nhu cầu của bạn",
-      "fullyLicensed": "Đầy đủ bản quyền",
-      "included": "Bao gồm",
-      "requiredSeparately": "Yêu cầu riêng từ PRO địa phương",
-      "worryFree": "Phát nhạc không lo - chúng tôi lo mọi thứ."
-    },
-    "cta": {
-      "sectionTitle": "Bắt đầu với",
-      "sectionTitleHighlight": "nhạc có bản quyền",
-      "sectionSubtitle": "Chọn giải pháp âm nhạc phù hợp cho doanh nghiệp. Nhận báo giá cá nhân hóa ngay hôm nay."
-    }
-  },
-  "quotation": {
-    "hero": {
-      "title": "Yêu cầu",
-      "titleHighlight": "báo giá",
-      "subtitle": "Cung cấp thông tin và chúng tôi sẽ phản hồi với báo giá cá nhân hóa",
-      "imageAlt": "Spa sang trọng với bầu không khí thư giãn"
-    },
-    "whatToExpect": {
-      "sectionTitle": "Điều mong đợi",
-      "fastResponse": {
-        "title": "Phản hồi nhanh",
-        "description": "Nhận báo giá cá nhân hóa trong 24-48 giờ"
-      },
-      "noObligation": {
-        "title": "Không ràng buộc",
-        "description": "Tư vấn miễn phí không cần cam kết"
-      },
-      "tailored": {
-        "title": "Giải pháp tùy chỉnh",
-        "description": "Giá tùy chỉnh dựa trên nhu cầu cụ thể"
-      }
-    },
-    "ourSolutions": {
-      "sectionTitle": "Giải pháp của chúng tôi",
-      "soundtrackHighlights": {
-        "tracks": "100M+ bài hát",
-        "scheduling": "Lập lịch nâng cao",
-        "support": "Hỗ trợ 24/7"
-      },
-      "beatBreezeHighlights": {
-        "tracks": "30K+ bài hát chọn lọc",
-        "license": "Bao gồm bản quyền",
-        "multizone": "Sẵn sàng đa vùng"
-      },
-      "learnMore": "Tìm hiểu thêm về giải pháp"
-    },
-    "haveQuestions": {
-      "sectionTitle": "Có câu hỏi?",
-      "emailDescription": "Liên hệ trực tiếp",
-      "messagingLabel": "Hoặc nhắn tin:"
-    },
-    "preferDemo": {
-      "sectionTitle": "Muốn xem demo trực tiếp?",
-      "sectionSubtitle": "Đặt demo trực tuyến miễn phí với đội ngũ để xem giải pháp âm nhạc hoạt động và nhận câu trả lời cho mọi câu hỏi.",
-      "ctaButton": "Đặt demo miễn phí"
-    }
+    "talkToBMAsia": "Trao đổi với BMAsia",
+    "globalReach": "Thành lập năm 2002. Hỗ trợ các địa điểm địa phương và tập đoàn quốc tế qua một đội ngũ khu vực phản hồi nhanh.",
+    "choosePath": "Chọn hướng đi âm nhạc của bạn",
+    "beatBreezeDescription": "Nền tảng miễn phí bản quyền linh hoạt của BMAsia dành cho âm nhạc, màn hình, thông điệp và tự động hóa.",
+    "soundtrackDescription": "Kho nhạc quen thuộc được cấp phép với quy mô lớn, đi kèm dịch vụ và thiết kế âm nhạc của BMAsia.",
+    "manageCookies": "Quản lý cookie"
   },
   "countries": {
     "select": "Chọn quốc gia",
@@ -529,7 +355,7 @@
     "orAskAnything": "Hoặc hỏi bất cứ điều gì!",
     "escalation": {
       "title": "Kết nối với Đội ngũ của chúng tôi",
-      "subtitle": "Chúng tôi sẽ phản hồi qua email trong vòng 2 giờ làm việc",
+      "subtitle": "Một chuyên gia BMAsia sẽ liên hệ qua email",
       "nameLabel": "Tên",
       "namePlaceholder": "Tên của bạn",
       "companyLabel": "Công ty",
@@ -541,270 +367,207 @@
       "cancel": "Hủy",
       "submit": "Kết nối với Đội ngũ",
       "submitting": "Đang kết nối...",
-      "success": "Đội ngũ của chúng tôi sẽ liên hệ với bạn tại {email} trong vòng 2 giờ làm việc. Bạn có cần hỗ trợ thêm gì không?",
+      "success": "Đội ngũ của chúng tôi sẽ liên hệ với bạn qua {email}. Trong lúc chờ, tôi có thể giúp làm rõ thêm điều gì không?",
       "error": "Đã xảy ra lỗi. Vui lòng thử lại."
     }
   },
   "soundtrackTrialPage": {
-    "metadata": { "title": "Bắt đầu dùng thử Soundtrack miễn phí", "description": "Yêu cầu dùng thử Soundtrack 14 ngày cho một khu vực nhạc doanh nghiệp. Không cần thẻ và không ràng buộc." },
-    "hero": { "label": "Dùng thử 14 ngày không cần thẻ", "title": "Nghe Soundtrack", "titleHighlight": "trong không gian của bạn.", "subtitle": "Hãy cho chúng tôi biết địa điểm đầu tiên bạn muốn thử. BMAsia sẽ xác minh thiết lập và sắp xếp quyền truy cập cho một khu vực." },
-    "proof": { "noCard": "Không cần thẻ tín dụng", "oneZone": "Một khu vực thử nghiệm", "autoEnd": "Tự động kết thúc" },
-    "steps": { "label": "Điều gì xảy ra tiếp theo", "requestTitle": "Gửi thông tin cần thiết", "requestDesc": "Một biểu mẫu ngắn cung cấp đủ thông tin để chúng tôi chuẩn bị bản dùng thử.", "verifyTitle": "BMAsia xác minh thiết lập", "verifyDesc": "Chúng tôi kiểm tra địa điểm và bảo đảm bản dùng thử được cấu hình cho mục đích kinh doanh.", "accessTitle": "Nhận quyền truy cập", "accessDesc": "Chúng tôi gửi thông tin đăng nhập và hướng dẫn thiết lập cho khu vực đầu tiên." },
-    "note": { "title": "Dùng thử minh bạch", "desc": "Không yêu cầu phương thức thanh toán. Nếu bạn không đăng ký, bản dùng thử không cần thẻ sẽ tự động kết thúc." },
-    "form": { "title": "Yêu cầu dùng thử", "subtitle": "Bắt đầu với một địa điểm và một khu vực. Bạn có thể thêm phần còn lại sau khi âm nhạc đã phù hợp.", "name": "Tên của bạn", "email": "Email công việc", "company": "Công ty", "country": "Quốc gia", "businessType": "Loại hình kinh doanh", "select": "Chọn một", "hotel": "Khách sạn hoặc khu nghỉ dưỡng", "restaurant": "Nhà hàng hoặc quán bar", "retail": "Bán lẻ", "fitness": "Thể hình hoặc chăm sóc sức khỏe", "office": "Văn phòng hoặc nơi làm việc", "other": "Khác", "locationName": "Địa điểm đầu tiên", "locationPlaceholder": "ví dụ Riverside Hotel Bangkok", "zoneName": "Khu vực đầu tiên (tùy chọn)", "zonePlaceholder": "ví dụ Sảnh", "zoneHint": "Khu vực là một không gian có âm nhạc riêng, như sảnh, nhà hàng hoặc khu bán hàng.", "consent": "Tôi đồng ý cho BMAsia sử dụng thông tin này để sắp xếp bản dùng thử Soundtrack và chia sẻ thông tin kích hoạt cần thiết với Soundtrack", "privacy": "Chính sách bảo mật", "consentRequired": "Vui lòng xác nhận trước khi tiếp tục.", "required": "Trường này là bắt buộc.", "invalidEmail": "Nhập email công việc hợp lệ.", "submit": "Yêu cầu dùng thử 14 ngày", "submitting": "Đang gửi yêu cầu…", "footnote": "Gửi biểu mẫu không bắt đầu gói đăng ký trả phí.", "successTitle": "Đã nhận yêu cầu dùng thử.", "successMessage": "BMAsia sẽ xác minh thông tin và gửi bước tiếp theo qua email. Chưa có khoản phí hay đăng ký nào.", "back": "Quay lại Soundtrack", "error": "Không thể lưu yêu cầu. Vui lòng thử lại." }
+    "metadata": {
+      "title": "Bắt đầu dùng thử Soundtrack miễn phí",
+      "description": "Yêu cầu dùng thử Soundtrack 14 ngày cho một khu vực nhạc doanh nghiệp. Không cần thẻ và không ràng buộc."
+    },
+    "hero": {
+      "label": "Dùng thử 14 ngày không cần thẻ",
+      "title": "Nghe Soundtrack",
+      "titleHighlight": "trong không gian của bạn.",
+      "subtitle": "Hãy cho chúng tôi biết địa điểm đầu tiên bạn muốn thử. BMAsia sẽ xác minh thiết lập và sắp xếp quyền truy cập cho một khu vực."
+    },
+    "proof": {
+      "noCard": "Không cần thẻ tín dụng",
+      "oneZone": "Một khu vực thử nghiệm"
+    },
+    "steps": {
+      "label": "Điều gì xảy ra tiếp theo",
+      "requestTitle": "Gửi thông tin cần thiết",
+      "requestDesc": "Một biểu mẫu ngắn cung cấp đủ thông tin để chúng tôi chuẩn bị bản dùng thử.",
+      "verifyTitle": "BMAsia xác minh thiết lập",
+      "verifyDesc": "Chúng tôi kiểm tra địa điểm và bảo đảm bản dùng thử được cấu hình cho mục đích kinh doanh.",
+      "accessTitle": "Nhận quyền truy cập",
+      "accessDesc": "Chúng tôi gửi thông tin đăng nhập và hướng dẫn thiết lập cho khu vực đầu tiên."
+    },
+    "note": {
+      "title": "Dùng thử rõ ràng, không cần thẻ",
+      "desc": "Không yêu cầu phương thức thanh toán. BMAsia xem xét yêu cầu và sắp xếp quyền truy cập cho trường hợp đủ điều kiện; mọi việc tiếp tục sử dụng đều được trao đổi với bạn trước khi gói đăng ký trả phí bắt đầu."
+    },
+    "form": {
+      "title": "Yêu cầu dùng thử",
+      "subtitle": "Bắt đầu với một địa điểm và một khu vực. Bạn có thể thêm phần còn lại sau khi âm nhạc đã phù hợp.",
+      "name": "Tên của bạn",
+      "email": "Email công việc",
+      "company": "Công ty",
+      "country": "Quốc gia",
+      "businessType": "Loại hình kinh doanh",
+      "select": "Chọn một",
+      "hotel": "Khách sạn hoặc khu nghỉ dưỡng",
+      "restaurant": "Nhà hàng hoặc quán bar",
+      "retail": "Bán lẻ",
+      "fitness": "Thể hình hoặc chăm sóc sức khỏe",
+      "office": "Văn phòng hoặc nơi làm việc",
+      "other": "Khác",
+      "locationName": "Địa điểm đầu tiên",
+      "locationPlaceholder": "ví dụ Riverside Hotel Bangkok",
+      "zoneName": "Khu vực đầu tiên (tùy chọn)",
+      "zonePlaceholder": "ví dụ Sảnh",
+      "zoneHint": "Khu vực là một không gian có âm nhạc riêng, như sảnh, nhà hàng hoặc khu bán hàng.",
+      "consent": "Tôi đồng ý cho BMAsia sử dụng thông tin này để sắp xếp bản dùng thử Soundtrack và chia sẻ thông tin kích hoạt cần thiết với Soundtrack",
+      "privacy": "Chính sách bảo mật",
+      "consentRequired": "Vui lòng xác nhận trước khi tiếp tục.",
+      "required": "Trường này là bắt buộc.",
+      "invalidEmail": "Nhập email công việc hợp lệ.",
+      "submit": "Yêu cầu dùng thử 14 ngày",
+      "submitting": "Đang gửi yêu cầu…",
+      "footnote": "Gửi biểu mẫu không bắt đầu gói đăng ký trả phí.",
+      "successTitle": "Đã nhận yêu cầu dùng thử.",
+      "successMessage": "BMAsia sẽ xác minh thông tin và gửi bước tiếp theo qua email. Chưa có khoản phí hay đăng ký nào.",
+      "back": "Quay lại Soundtrack",
+      "error": "Không thể lưu yêu cầu. Vui lòng thử lại."
+    }
   },
   "soundtrackPage": {
     "metadata": {
-      "title": "Soundtrack Your Brand",
-      "description": "Thư viện nhạc thương mại lớn nhất thế giới, được tuyển chọn dành riêng cho ngành khách sạn. Hơn 100 triệu bản nhạc có bản quyền, điều khiển đa khu vực, tuyển chọn theo yêu cầu và hỗ trợ 24/7 từ BMAsia."
-    },
-    "hero": {
-      "label": "Tiêu Chuẩn Toàn Cầu",
       "title": "Soundtrack",
-      "titleHighlight": "Your Brand",
-      "subtitle": "Thư viện nhạc thương mại lớn nhất thế giới, được tuyển chọn riêng cho không gian của quý khách.",
-      "ctaQuote": "Nhận Báo Giá",
-      "ctaTrial": "Dùng Thử Miễn Phí"
+      "description": "Âm nhạc thương mại quen thuộc được cấp phép và cung cấp qua BMAsia, đi kèm thiết kế âm nhạc, hướng dẫn triển khai, hỗ trợ liên tục và các tiện ích mở rộng cho địa điểm do BMAsia xây dựng."
     },
-    "positioning": {
-      "text1": "Khi quý khách phát nhạc trong doanh nghiệp của mình, quý khách đang kiến tạo một trải nghiệm.",
-      "highlight": "Soundtrack Your Brand",
-      "text2": "mang đến mọi ca khúc mà khách hàng của quý khách yêu thích — được cấp phép đầy đủ cho mục đích thương mại."
-    },
-    "valueProps": {
-      "sectionLabel": "",
-      "01": {
-        "label": "Kho Nhạc",
-        "title": "Mọi nghệ sĩ, mọi thể loại.",
-        "desc": "Truy cập hơn 100 triệu bản nhạc được cấp phép thương mại. Mọi ca khúc mà khách hàng yêu thích, đã được duyệt đầy đủ cho sử dụng thương mại."
+    "redesign": {
+      "hero": {
+        "eyebrow": "Âm nhạc thương mại được cấp phép qua BMAsia",
+        "title": "Âm nhạc quen thuộc.",
+        "highlight": "Được thiết kế đúng cho không gian.",
+        "description": "Kho nhạc quen thuộc quy mô lớn từ các hãng thu âm lớn, kết hợp cùng dịch vụ thiết kế playlist, hướng dẫn triển khai, tiện ích mở rộng cho địa điểm và hỗ trợ liên tục từ BMAsia.",
+        "trial": "Yêu cầu dùng thử Soundtrack",
+        "talk": "Trao đổi với BMAsia",
+        "note": "Yêu cầu dùng thử Soundtrack qua BMAsia sẽ được xem xét và sắp xếp cho doanh nghiệp. Đây là yêu cầu kích hoạt dành riêng cho sản phẩm, không phải biểu mẫu báo giá chung."
       },
-      "02": {
-        "label": "Tuân Thủ",
-        "title": "Cấp phép đáng tin cậy.",
-        "desc": "Bao gồm quyền ghi âm và xuất bản. Chúng tôi chia sẻ mọi thông tin cần thiết về giấy phép biểu diễn công cộng tại địa phương và hỗ trợ quý khách bất cứ khi nào có thể — phần thủ tục pháp lý vẫn là giữa quý khách và tổ chức thu tiền bản quyền."
+      "catalogue": {
+        "nowPlaying": "Nghe thử định hướng âm nhạc",
+        "featured": "Âm nhạc quen thuộc cho khoảnh khắc khách đến vào buổi tối",
+        "preview": "Nghe thử định hướng này",
+        "label": "Kho nhạc thương mại",
+        "line": "Nghệ sĩ quen thuộc, công cụ điều khiển dành cho doanh nghiệp"
       },
-      "03": {
-        "label": "Chuyên Biệt",
-        "title": "Thiết kế riêng cho ngành khách sạn.",
-        "desc": "Được xây dựng cho những cơ sở phức tạp. Không khí nhẹ nhàng buổi sáng tại sảnh, nhịp sôi động giờ ăn trưa, nhịp đập khuya tại lounge — mỗi không gian được xử lý như một khu vực riêng."
+      "pillars": {
+        "catalogue": {
+          "title": "Kho nhạc quen thuộc",
+          "text": "Kho nhạc thương mại được cấp phép quy mô lớn, bao gồm âm nhạc từ các hãng thu âm lớn."
+        },
+        "musicDesign": {
+          "title": "Thiết kế âm nhạc từ BMAsia",
+          "text": "Playlist được định hình theo thương hiệu, từng khu vực và hành trình trong ngày của khách."
+        },
+        "service": {
+          "title": "Một đội ngũ dịch vụ khu vực",
+          "text": "BMAsia quản lý việc triển khai, làm mới nội dung và hỗ trợ liên tục."
+        }
+      },
+      "direction": {
+        "eyebrow": "Dịch vụ thiết kế âm nhạc của BMAsia",
+        "title": "Một kho nhạc lớn vẫn cần định hướng rõ ràng.",
+        "description": "BMAsia chuyển hóa thương hiệu, khách hàng, địa điểm và lịch vận hành thành những playlist có thể sử dụng ngay—thay vì để nhân viên tự sắp xếp một kho bài hát đồ sộ.",
+        "refreshTitle": "Thường xuyên làm mới, vẫn giữ được bản sắc riêng",
+        "refreshText": "Các bản cập nhật playlist được lên kế hoạch theo yêu cầu của khách hàng và có thể điều chỉnh khi doanh nghiệp, mùa vụ hoặc chiến dịch thay đổi.",
+        "listen": {
+          "label": "Thấu hiểu",
+          "title": "Hiểu địa điểm trước khi chọn nhạc",
+          "text": "Chúng tôi tìm hiểu định vị thương hiệu, đối tượng khách, các khu vực, khung giờ, nội dung cần loại trừ và những ràng buộc vận hành."
+        },
+        "design": {
+          "label": "Thiết kế",
+          "title": "Xây dựng một định hướng âm nhạc dễ nhận biết",
+          "text": "Các nhà thiết kế âm nhạc định hình playlist từ kho nhạc thương mại và giữ lựa chọn nhất quán với bản sắc mong muốn."
+        },
+        "schedule": {
+          "label": "Vận hành",
+          "title": "Chuyển định hướng thành lịch phát thực tế",
+          "text": "Buổi sáng, ban ngày, buổi tối, cuối tuần và những thời điểm đặc biệt đều có playlist và kế hoạch khu vực phù hợp."
+        },
+        "refresh": {
+          "label": "Duy trì",
+          "title": "Làm mới mà không đánh mất thương hiệu",
+          "text": "BMAsia thường xuyên xem xét và cập nhật định hướng âm nhạc, dựa trên phản hồi của khách hàng và quyền kiểm soát của người vận hành."
+        }
+      },
+      "extensions": {
+        "eyebrow": "Tiện ích mở rộng do BMAsia xây dựng",
+        "title": "Soundtrack, kết nối với cách địa điểm của bạn vận hành.",
+        "description": "Với khách hàng sử dụng dịch vụ qua BMAsia, các tiện ích mở rộng sẵn sàng cho môi trường thực tế có thể kết nối âm nhạc Soundtrack với những quy trình cụ thể của địa điểm và các hệ thống được hỗ trợ.",
+        "scope": "Đây là các dịch vụ của BMAsia dành cho những triển khai khách hàng được hỗ trợ. Chúng không nhất thiết được bao gồm khi đăng ký trực tiếp tại soundtrack.io.",
+        "location": "Khách hàng đã kết nối",
+        "venue": "Riverside Hotel · Bangkok",
+        "connected": "Soundtrack được cung cấp qua BMAsia cùng các tiện ích mở rộng đã được phê duyệt",
+        "footer": "Mỗi tiện ích mở rộng đều được xác định phạm vi, cấu hình và hỗ trợ cho từng triển khai khách hàng.",
+        "prayer": {
+          "title": "Tích hợp giờ cầu nguyện",
+          "text": "Sử dụng đúng giờ cầu nguyện tại địa phương để áp dụng hành vi âm nhạc đã cấu hình và trở lại lịch phát một cách liền mạch sau đó."
+        },
+        "volume": {
+          "title": "Tích hợp âm lượng được hỗ trợ",
+          "text": "Áp dụng hành vi âm lượng theo lịch hoặc qua tích hợp với các hệ thống được hỗ trợ—không tuyên bố sử dụng microphone để cảm nhận môi trường liên tục."
+        },
+        "weather": {
+          "title": "Hành vi playlist điều chỉnh theo thời tiết",
+          "text": "Sử dụng thời tiết địa phương làm đầu vào đã được phê duyệt để tác động đến định hướng playlist hoặc hành vi đã cấu hình."
+        },
+        "api": {
+          "title": "API vận hành",
+          "text": "Kết nối các quy trình và dữ liệu được hỗ trợ của địa điểm với dịch vụ Soundtrack thông qua tiện ích mở rộng do BMAsia xây dựng."
+        }
+      },
+      "operations": {
+        "eyebrow": "BMAsia là lớp dịch vụ",
+        "title": "Một đội ngũ đồng hành từ yêu cầu đầu tiên đến vận hành hằng ngày.",
+        "description": "BMAsia phân phối lại nền tảng, hỗ trợ định hình âm nhạc, sắp xếp triển khai và tiếp tục đồng hành khi địa điểm thay đổi.",
+        "cta": "Trao đổi về thiết lập Soundtrack",
+        "onboarding": {
+          "title": "Phân phối và hướng dẫn triển khai",
+          "text": "BMAsia hỗ trợ cấu trúc công ty, địa điểm, khu vực và kế hoạch triển khai theo mục đích sử dụng."
+        },
+        "design": {
+          "title": "Thiết kế và làm mới playlist",
+          "text": "Các nhà thiết kế âm nhạc điều chỉnh playlist và thường xuyên làm mới theo yêu cầu của khách hàng."
+        },
+        "regional": {
+          "title": "Bối cảnh khu vực và đa ngôn ngữ",
+          "text": "Nhu cầu vận hành địa phương, giờ cầu nguyện và thông điệp có thể được xử lý trong đúng bối cảnh."
+        },
+        "support": {
+          "title": "Hỗ trợ trực tiếp, phản hồi nhanh",
+          "text": "Đội ngũ BMAsia trong khu vực hỗ trợ liên tục về thiết lập, định hướng âm nhạc và các tích hợp được hỗ trợ."
+        }
+      },
+      "licensing": {
+        "eyebrow": "Bản quyền được giải thích rõ ràng",
+        "title": "Âm nhạc thương mại với thiết lập phù hợp tại địa phương.",
+        "description": "Soundtrack cung cấp quyền sử dụng bản ghi âm và tác phẩm âm nhạc cho dịch vụ doanh nghiệp của mình. Yêu cầu về quyền biểu diễn công cộng khác nhau theo từng địa điểm, và BMAsia xác nhận thiết lập áp dụng trong quá trình triển khai.",
+        "included": "Qua Soundtrack",
+        "recording": "Quyền sử dụng bản ghi âm trong kho nhạc của dịch vụ",
+        "publishing": "Quyền sử dụng tác phẩm âm nhạc trong kho nhạc của dịch vụ",
+        "commercial": "Thỏa thuận trực tiếp với hãng thu âm và nhà phân phối",
+        "local": "Xác nhận tại địa phương",
+        "localText": "Quyền biểu diễn công cộng và các nghĩa vụ địa phương khác tùy thuộc vào quốc gia và địa điểm. BMAsia sẽ giải thích rõ những phần cần tách riêng trước khi kích hoạt."
+      },
+      "final": {
+        "title": "Đưa âm nhạc quen thuộc",
+        "highlight": "vào vận hành.",
+        "description": "Yêu cầu bản dùng thử Soundtrack được BMAsia xem xét hoặc trao đổi với chúng tôi về thiết kế âm nhạc, các khu vực và tiện ích mở rộng cho địa điểm.",
+        "login": "Đăng nhập Soundtrack",
+        "support": "Hỗ trợ khu vực phản hồi nhanh từ BMAsia."
       }
-    },
-    "features": {
-      "sectionLabel": "Tính Năng",
-      "sectionTitle": "Mọi thứ quý khách cần để vận hành âm nhạc đúng cách.",
-      "multiZone": {
-        "title": "Điều Khiển Đa Khu Vực",
-        "desc": "Bầu không khí khác nhau cho từng không gian. Quản lý sảnh, spa và nhà hàng từ một bảng điều khiển duy nhất."
-      },
-      "scheduling": {
-        "title": "Lập Lịch",
-        "desc": "Lịch phát theo tuần hoặc theo ngày với thao tác kéo-thả. Ghi đè ngày lễ, khung giờ trong ngày và mẫu sẵn có theo loại hình địa điểm."
-      },
-      "audioMessaging": {
-        "title": "Thông Điệp Âm Thanh",
-        "desc": "Lên lịch phát các thông báo thương hiệu, chương trình khuyến mãi hoặc ghi chú giọng nói bằng năm ngôn ngữ — tải lên MP3 hoặc chuyển văn bản thành giọng nói."
-      },
-      "mobileApps": {
-        "title": "Ứng Dụng Di Động",
-        "desc": "Toàn quyền điều khiển từ bất cứ đâu. iOS, Android, Windows, macOS. Nhân viên của quý khách có thể điều chỉnh không khí ngay từ điện thoại."
-      },
-      "offlineReady": {
-        "title": "Sẵn Sàng Ngoại Tuyến",
-        "desc": "Âm nhạc không bao giờ gián đoạn. Mỗi thiết bị lưu trữ nhạc để phát liên tục đến 30 ngày — lý tưởng cho những nơi kết nối không ổn định."
-      },
-      "enterpriseSecurity": {
-        "title": "Bảo Mật Doanh Nghiệp",
-        "desc": "SAML SSO, phân quyền theo vai trò, quản trị đa người dùng. Được thiết kế cho các cơ sở cần quản trị chuẩn mực."
-      }
-    },
-    "integrations": {
-      "sectionLabel": "Bền Vững Với Tương Lai",
-      "sectionTitle": "Vượt Ra Ngoài Nền Tảng",
-      "sectionDesc": "Chúng tôi phát triển các tính năng AI và API trên nền Soundtrack Your Brand — tự động hóa tùy biến, tích hợp tòa nhà thông minh và các công cụ chuyên biệt được thiết kế xoay quanh vận hành của cơ sở quý khách.",
-      "aiPlaylist": {
-        "title": "Tạo Playlist Bằng AI",
-        "desc": "Các công cụ AI tùy biến được xây dựng trên nền tảng. Mô tả một tâm trạng, nhận playlist được tuyển chọn trong vài giây."
-      },
-      "smartBuilding": {
-        "title": "API Tòa Nhà Thông Minh",
-        "desc": "Kết nối âm nhạc với hệ thống chiếu sáng, nhiệt độ phòng hoặc cảm biến sự hiện diện. Biến âm thanh thành một phần trong toàn bộ trải nghiệm của khách."
-      },
-      "bespoke": {
-        "title": "Tính Năng Theo Yêu Cầu",
-        "desc": "Cần điều gì đặc biệt? Chúng tôi xây dựng các tích hợp xoay quanh vận hành của cơ sở quý khách — theo yêu cầu, không phát sinh chi phí bất ngờ."
-      }
-    },
-    "licensing": {
-      "sectionTitle": "Cấp phép, rõ ràng.",
-      "sectionDesc": "Chúng tôi cho quý khách biết chính xác những gì được bao gồm và những gì không — không bất ngờ, không điều khoản ẩn.",
-      "included": {
-        "label": "Những Gì Được Bao Gồm",
-        "item1": "Quyền ghi âm (giấy phép bản ghi gốc)",
-        "item2": "Quyền xuất bản (cơ học/đồng bộ)",
-        "item3": "Hợp tác trực tiếp với các hãng lớn và độc lập thông qua Soundtrack",
-        "item4": "Tuyển chọn theo yêu cầu và làm mới playlist hàng quý",
-        "item5": "Hỗ trợ liên tục, không cần bận tâm, từ đội ngũ thiết kế âm nhạc của chúng tôi"
-      },
-      "separate": {
-        "label": "Những Gì Cần Riêng",
-        "desc": "Giấy",
-        "descHighlight": "Phép Biểu Diễn Công Cộng",
-        "descTail": "được thanh toán tại địa phương cho tổ chức thu tiền bản quyền của quý khách — MPC tại Thái Lan, MRSS tại Singapore, PRS tại Anh, ASCAP/BMI tại Mỹ, và nhiều nơi khác.",
-        "calloutLabel": "Chúng tôi luôn sẵn sàng hỗ trợ",
-        "calloutDesc": "Chúng tôi không xử lý thủ tục pháp lý thay quý khách, nhưng luôn sẵn lòng cung cấp mọi thông tin cần thiết và hỗ trợ bằng mọi cách có thể."
-      }
-    },
-    "devices": {
-      "sectionLabel": "Linh Hoạt",
-      "sectionTitle": "Hoạt động trên mọi thiết bị quý khách đã có.",
-      "soundtrackPlayer": {
-        "title": "Soundtrack Player",
-        "desc": "Thiết bị phần cứng chuyên dụng. Cắm là chạy, bộ nhớ đệm ngoại tuyến 30 ngày."
-      },
-      "windows": {
-        "title": "Windows PC",
-        "desc": "Bất kỳ máy Windows hiện đại nào. Trình phát desktop đầy đủ, chế độ doanh nghiệp không giao diện."
-      },
-      "androidIos": {
-        "title": "Android & iOS",
-        "desc": "Máy tính bảng hoặc điện thoại. Toàn quyền điều khiển ứng dụng từ bất cứ đâu trong cơ sở."
-      },
-      "macos": {
-        "title": "macOS",
-        "desc": "Trình phát desktop gốc dành cho môi trường Mac."
-      },
-      "sonos": {
-        "title": "Tích Hợp Sonos",
-        "desc": "Sử dụng Soundtrack như một dịch vụ âm nhạc bên trong ứng dụng Sonos."
-      },
-      "qsys": {
-        "title": "Q-SYS",
-        "desc": "Quản lý đa khu vực tập trung cho các hệ thống âm thanh doanh nghiệp."
-      }
-    },
-    "trial": {
-      "sectionLabel": "Hãy Thử Trước",
-      "title": "Hãy thử trước khi",
-      "titleHighlight": "quyết định.",
-      "desc1": "Bắt đầu với 14 ngày dùng thử miễn phí trên một khu vực. Không cần thẻ tín dụng, không ràng buộc.",
-      "desc2": "Khi quý khách quyết định đăng ký và phần cứng đã sẵn sàng, chúng tôi sẽ giúp quý khách vận hành trong vòng năm phút.",
-      "cta": "Bắt Đầu Dùng Thử"
-    },
-    "support": {
-      "sectionLabel": "Luôn Sẵn Sàng",
-      "sectionTitle": "Quý khách không bao giờ đơn độc.",
-      "technical": {
-        "title": "Hỗ Trợ Kỹ Thuật 24/7",
-        "desc": "Hỗ trợ mọi lúc cho các vấn đề về phần cứng, mạng và nền tảng. Người thật, không phải kịch bản."
-      },
-      "musicDesign": {
-        "title": "Thiết Kế Âm Nhạc Theo Yêu Cầu",
-        "desc": "Đội ngũ thiết kế âm nhạc của chúng tôi làm việc với quý khách từ thứ Hai đến thứ Sáu (giờ Bangkok) để xây dựng và làm mới âm thanh của quý khách."
-      },
-      "aiAssist": {
-        "title": "Tự Phục Vụ Bằng AI",
-        "desc": "Trợ lý tương tác sẵn sàng 24/7 cho những câu hỏi phổ biến, tinh chỉnh playlist và điều chỉnh nhanh."
-      }
-    },
-    "faq": {
-      "title": "Câu Hỏi Thường Gặp",
-      "q1": {
-        "q": "Tôi có cần Giấy Phép Biểu Diễn Công Cộng không?",
-        "a": "Có — giấy phép này được thanh toán riêng cho tổ chức thu tiền bản quyền tại địa phương (MPC tại Thái Lan, MRSS tại Singapore, PRS tại Anh, v.v.). Chúng tôi không xử lý thủ tục pháp lý thay quý khách, nhưng luôn sẵn lòng chia sẻ mọi thông tin cần thiết và hỗ trợ bằng mọi cách có thể."
-      },
-      "q2": {
-        "q": "Tôi cần tốc độ internet và hệ thống mạng như thế nào?",
-        "a": "Tối thiểu 0,5 Mbit/s cho mỗi thiết bị phát. Nên sử dụng Ethernet có dây thay vì Wi-Fi. Một vài cổng gửi đi cần được mở (443, 53, 123) — chúng tôi sẽ gửi cho đội ngũ IT của quý khách một danh sách kiểm tra ngắn trước khi cài đặt."
-      },
-      "q3": {
-        "q": "Tôi có thể phát nhạc ngoại tuyến không?",
-        "a": "Có. Mỗi thiết bị lưu đệm các bản nhạc sau khi phát, và quý khách có thể bật chế độ \"phát ngoại tuyến nhiều hơn\" để chủ động tải nội dung về. Một thiết bị đã đồng bộ đầy đủ có thể phát liên tục đến 30 ngày mà không cần internet."
-      },
-      "q4": {
-        "q": "Tôi có thể quản lý bao nhiêu khu vực?",
-        "a": "Không giới hạn. Mỗi khu vực có lịch phát, playlist và ghép nối thiết bị riêng — được điều khiển từ một bảng điều khiển duy nhất. Quý khách có thể thêm và sắp xếp lại các khu vực khi cơ sở phát triển."
-      },
-      "q5": {
-        "q": "Tôi có thể sử dụng playlist Spotify của mình không?",
-        "a": "Có. Soundtrack Your Brand đồng bộ trực tiếp với Spotify, nên mọi playlist quý khách đã tạo (của riêng mình hay được tuyển chọn) đều có thể được sử dụng cho mục đích thương mại thông qua nền tảng của chúng tôi."
-      },
-      "q6": {
-        "q": "Điều gì xảy ra nếu mất kết nối internet?",
-        "a": "Các bản nhạc đã lưu đệm vẫn tiếp tục phát không gián đoạn. Khách của quý khách hoàn toàn không nhận ra điều gì. Khi kết nối được khôi phục, trình phát sẽ âm thầm đồng bộ ở nền."
-      }
-    },
-    "finalCta": {
-      "title": "Sẵn sàng cảm nhận",
-      "titleHighlight": "sự khác biệt?",
-      "desc": "Đội ngũ thiết kế âm nhạc của chúng tôi sẽ kiến tạo một trải nghiệm âm thanh độc đáo riêng cho thương hiệu của quý khách.",
-      "ctaQuote": "Nhận Báo Giá",
-      "ctaDemo": "Đặt Lịch Demo"
     }
   },
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
-      "description": "Vận hành không gian lấy âm nhạc làm trung tâm: lên lịch nhạc, quản lý kênh TV, tạo thông điệp và âm thanh điện thoại, tự động hóa các điểm chạm và điều khiển mọi khu vực."
-    },
-    "hero": {
-      "label": "Trải Nghiệm Không Gian Kết Nối",
-      "title": "Beat",
-      "titleHighlight": "Breeze",
-      "subtitle": "Âm nhạc, màn hình, thông điệp và âm thanh điện thoại—được lập kế hoạch, sáng tạo và điều khiển ở mọi khu vực.",
-      "ctaQuote": "Nhận Báo Giá",
-      "ctaTrial": "Dùng Thử Miễn Phí"
-    },
-    "positioning": {
-      "text1": "Âm nhạc được cấp phép, tuyển chọn trọn gói, với chi phí chỉ bằng một phần của dịch vụ streaming thương mại.",
-      "highlight": "Beat Breeze",
-      "text2": "bao gồm mọi giấy phép quý khách cần — để quý khách không bao giờ phải làm việc với tổ chức thu tiền bản quyền nữa."
-    },
-    "valueProps": {
-      "01": {
-        "label": "Trọn Gói",
-        "title": "Đủ ba giấy phép, luôn bao gồm.",
-        "desc": "Quyền ghi âm, xuất bản và biểu diễn công cộng — mọi giấy phép quý khách cần đều được tích hợp trong gói đăng ký. Không bao giờ phải trả phí cho tổ chức thu tiền bản quyền."
-      },
-      "02": {
-        "label": "Giá Trị",
-        "title": "Chi phí hợp lý hơn đáng kể.",
-        "desc": "Vì Beat Breeze được tuyển chọn nội bộ, chi phí thấp hơn đáng kể so với Soundtrack Your Brand — mà vẫn có đầy đủ mọi giấy phép."
-      },
-      "03": {
-        "label": "Đơn Giản",
-        "title": "Được thiết kế để quý khách không phải bận tâm.",
-        "desc": "Tuyển chọn theo yêu cầu bởi đội ngũ thiết kế âm nhạc của chúng tôi. Làm mới theo lịch, cập nhật theo mùa và hỗ trợ 24/7. Quý khách tập trung vào khách hàng — chúng tôi lo phần âm thanh."
-      }
-    },
-    "features": {
-      "sectionLabel": "Tính Năng",
-      "sectionTitle": "Âm nhạc là nhịp tim. Mọi điểm chạm chuyển động cùng nó.",
-      "zeroLicensing": {
-        "title": "Chuyên nghiệp trong từng cuộc gọi",
-        "desc": "Tạo nhạc chờ và âm thanh điện thoại theo thương hiệu, bằng giọng nói và ngôn ngữ phù hợp với doanh nghiệp."
-      },
-      "curation": {
-        "title": "Định hình âm thanh",
-        "desc": "Tự khám phá danh mục hoặc để Music Concierge đề xuất theo khu vực, thời gian, năng lượng và bối cảnh kinh doanh."
-      },
-      "offline": {
-        "title": "Để không gian tự phản ứng",
-        "desc": "Tự động hóa giúp nhạc và thông điệp thay đổi theo giờ mở cửa, ngày đặc biệt, thời tiết và nhu cầu vận hành."
-      },
-      "scheduling": {
-        "title": "Làm sống động mọi màn hình",
-        "desc": "Kết hợp playlist đầy đủ với hình ảnh lặp, thông điệp và nội dung thương hiệu cho TV và màn hình tại điểm bán."
-      },
-      "audioSignatures": {
-        "title": "Nói đúng lúc",
-        "desc": "Tạo và lên lịch thông điệp thoại đa ngôn ngữ cho khuyến mãi, thông tin khách và thông báo vận hành."
-      },
-      "remoteMgmt": {
-        "title": "Điều khiển từ bất cứ đâu",
-        "desc": "Xem trạng thái trình phát, điều khiển nhạc và âm lượng, quản lý mọi khu vực từ bảng điều khiển hoặc ứng dụng Remote."
-      }
-    ,
-      "sectionDescription": "Beat Breeze kết nối âm thanh, màn hình, giao tiếp và vận hành hằng ngày trong một luồng làm việc dễ kiểm soát."
+      "description": "Nền tảng trải nghiệm không gian của BMAsia với âm nhạc miễn phí bản quyền được tuyển chọn, lịch phát, màn hình, thông điệp, tự động hóa và điều khiển khu vực kết nối."
     },
     "product": {
       "openProduct": "Mở Beat Breeze",
@@ -824,186 +587,316 @@
       "windows": "Trình phát Windows",
       "web": "Trình phát web",
       "offline": "Phát ngoại tuyến",
-      "price": "Từ 12 USD / khu vực / tháng",
+      "price": "Cấu hình riêng cho từng địa điểm",
       "finalTitle": "Khu vực đầu tiên sẵn sàng trong vài phút.",
       "startFree": "Bắt đầu miễn phí",
-      "talkToBMAsia": "Trao đổi với BMAsia"
-    ,
+      "talkToBMAsia": "Trao đổi với BMAsia",
       "finalDescription": "Thử trải nghiệm không gian kết nối tại một khu vực trong 14 ngày. Không cần thẻ, thiết bị chuyên dụng hay cài đặt phức tạp."
     },
-    "licensing": {
-      "sectionTitle": "Mọi giấy phép.",
-      "sectionTitleHighlight": "Trọn gói.",
-      "sectionDesc": "Không phí PRO. Không thủ tục. Không bất ngờ.",
-      "recording": {
-        "title": "Quyền Ghi Âm",
-        "desc": "Giấy phép bản ghi gốc cho mọi bản nhạc trong kho."
+    "redesign": {
+      "hero": {
+        "eyebrow": "Nền tảng không gian kết nối của BMAsia",
+        "title": "Âm nhạc ở vị trí trung tâm.",
+        "highlight": "Mọi điểm chạm cùng chuyển động.",
+        "description": "Âm nhạc miễn phí bản quyền được tuyển chọn, màn hình, thông điệp và tự động hóa không gian—được lập kế hoạch trên mọi khu vực, do con người rà soát và điều khiển từ một nơi.",
+        "trial": "Bắt đầu dùng thử Beat Breeze",
+        "talk": "Trao đổi với BMAsia",
+        "proof1": "Kho nhạc miễn phí bản quyền đang phát triển",
+        "proof2": "Luôn có thể tự duyệt kho nhạc",
+        "proof3": "Không cần phần cứng trình phát chuyên dụng"
       },
-      "publishing": {
-        "title": "Quyền Xuất Bản",
-        "desc": "Quyền cơ học và đồng bộ cho nhà soạn nhạc và nhà xuất bản."
+      "controlRoom": {
+        "label": "Phòng điều khiển địa điểm",
+        "venue": "Riverside House · Bangkok",
+        "live": "3 khu vực đang hoạt động",
+        "weather": "Bối cảnh thời tiết",
+        "prayer": "Lần tạm dừng cầu nguyện tiếp theo",
+        "volume": "Mức đặt trước buổi tối",
+        "schedule": "Khung giờ hiện tại",
+        "energy": "Năng lượng",
+        "lobby": "Sảnh",
+        "restaurant": "Nhà hàng",
+        "rooftop": "Sân thượng",
+        "updated": "Đã cập nhật kế hoạch",
+        "note": "Các mức âm lượng đặt trước theo lịch và tích hợp được hỗ trợ giúp hành vi luôn có thể dự đoán. Beat Breeze không tuyên bố sử dụng microphone để cảm nhận âm thanh môi trường liên tục."
       },
-      "performance": {
-        "title": "Giấy Phép Biểu Diễn Công Cộng",
-        "desc": "Phát nhạc ở bất cứ nơi nào doanh nghiệp của quý khách hoạt động — không bao giờ phải trả phí cho tổ chức thu tiền bản quyền."
+      "day": {
+        "eyebrow": "Một ngày luôn chuyển động",
+        "title": "Địa điểm thay đổi. Kế hoạch thay đổi theo.",
+        "description": "Lịch phát tạo nên nền tảng. Thời tiết, giờ cầu nguyện và các tín hiệu vận hành đã được phê duyệt có thể điều chỉnh kế hoạch, trong khi nhân viên vẫn giữ quyền quyết định cuối cùng.",
+        "morning": {
+          "time": "06:30",
+          "title": "Buổi sáng bắt đầu theo từng khu vực",
+          "text": "Sảnh, khu ăn sáng và khu chăm sóc sức khỏe mở cửa với các mức đặt trước riêng về âm nhạc, màn hình và âm lượng."
+        },
+        "weather": {
+          "time": "12:10",
+          "title": "Thời tiết giúp định hướng",
+          "text": "Ngày nóng hoặc mưa có thể tác động đến đề xuất playlist hay hành vi đã cấu hình mà không lấy đi quyền kiểm soát của người vận hành."
+        },
+        "prayer": {
+          "time": "18:36",
+          "title": "Tôn trọng giờ cầu nguyện",
+          "text": "Tại các thị trường được cấu hình, chương trình có thể tạm dừng hoặc thay đổi đúng giờ cầu nguyện địa phương, rồi trở lại lịch phát một cách liền mạch."
+        },
+        "evening": {
+          "time": "19:00",
+          "title": "Buổi tối kích hoạt trải nghiệm rộng hơn",
+          "text": "Âm nhạc, hình ảnh lặp, thông điệp đa ngôn ngữ và hành vi âm lượng đặt trước cùng chuyển sang kế hoạch buổi tối."
+        },
+        "volumeNote": "Các thay đổi âm lượng được mô tả ở đây là mức đặt trước theo lịch hoặc tích hợp với hệ thống địa điểm được hỗ trợ—không phải lắng nghe liên tục qua microphone."
       },
-      "footnote1": "Trong khi",
-      "footnoteLink": "Soundtrack Your Brand",
-      "footnote2": "vẫn yêu cầu Giấy Phép Biểu Diễn Công Cộng riêng ở hầu hết các quốc gia, Beat Breeze đã tích hợp tất cả bên trong. Đó chính là điểm cốt lõi."
-    },
-    "platforms": {
-      "sectionLabel": "Chạy Trên Mọi Thiết Bị",
-      "sectionTitle": "Không cần phần cứng đặc biệt.",
-      "windows": {
-        "title": "Windows",
-        "desc": "Trình phát desktop đầy đủ cho bất kỳ máy Windows hiện đại nào. Mini PC có sẵn từ BMAsia (Thái Lan) với bảo hành 1 năm."
+      "concierge": {
+        "eyebrow": "Music Concierge, bằng ngôn ngữ dễ hiểu",
+        "title": "Nêu kết quả mong muốn. Xem lại đề xuất nhận được.",
+        "description": "Cho Concierge biết khu vực, đối tượng khách, thời gian và cảm giác mong muốn. Hệ thống có thể đề xuất nhạc trong kho hoặc chuẩn bị một định hướng sáng tạo; bạn nghe thử kết quả trước khi bất cứ nội dung nào được phát hoặc thêm vào lịch.",
+        "ready": "Sẵn sàng nhận yêu cầu",
+        "recommendation": "Đề xuất có thể phát",
+        "preview": "Nghe thử",
+        "schedule": "Thêm vào lịch",
+        "keepBrowsing": "Tiếp tục duyệt",
+        "control": "Quyền kiểm soát của con người luôn hiển thị rõ: xem lý do, nghe thử kết quả, áp dụng, chỉnh sửa hoặc tiếp tục tự duyệt kho nhạc.",
+        "steps": {
+          "ask": "Mô tả khoảnh khắc",
+          "recommend": "Nhận các lựa chọn hoặc bản định hướng",
+          "review": "Nghe thử và phê duyệt",
+          "play": "Phát ngay hoặc lên lịch"
+        },
+        "arrival": {
+          "label": "Khách đến khách sạn",
+          "prompt": "Không khí đón khách tại sảnh ấm áp nhưng hiện đại",
+          "request": "Dành cho sảnh từ 16:00–19:00: ấm áp, hiện đại và bình tĩnh trong giờ nhận phòng. Tránh nhạc acoustic gây buồn ngủ.",
+          "result": "Bossa hiện đại và electronic soul nhẹ nhàng",
+          "reason": "Nhịp độ vừa phải giữ cho dòng khách đến luôn chuyển động, còn giọng hát tiết chế để lại không gian cho trò chuyện."
+        },
+        "campaign": {
+          "label": "Ra mắt bán lẻ",
+          "prompt": "Năng lượng mùa mới cho cửa hàng chủ lực",
+          "request": "Xây dựng một định hướng mùa mới tự tin cho khu bán hàng và hình ảnh lặp không tiếng cho lối vào.",
+          "result": "Nhịp nu-disco cùng bản định hướng đồ họa chuyển động",
+          "reason": "Nền nhịp rõ ràng phù hợp trên toàn khu bán hàng, trong khi phần định hướng hình ảnh đưa màu sắc chiến dịch đến lối vào."
+        },
+        "recovery": {
+          "label": "Phục hồi sức khỏe",
+          "prompt": "Không gian phục hồi ít gián đoạn",
+          "request": "Tạo một định hướng phục hồi yên tĩnh với chất liệu thiên nhiên, không chuyển đoạn đột ngột và âm lượng do người vận hành kiểm soát.",
+          "result": "Không gian âm thanh ambient với chuyển động hòa âm chậm",
+          "reason": "Các lớp âm thanh dài giúp giảm những chuyển đoạn dễ nhận thấy, đồng thời vẫn để nhân viên trực tiếp kiểm soát mức âm lượng và thời điểm."
+        }
       },
-      "android": {
-        "title": "Android",
-        "desc": "Ứng dụng Android gốc dành cho máy tính bảng và điện thoại. Tiết kiệm chi phí và đáng tin cậy."
+      "media": {
+        "eyebrow": "Không chỉ là một trình phát nhạc",
+        "title": "Xây dựng thế giới quanh phần âm thanh.",
+        "description": "Beat Breeze có thể phối hợp nội dung truyền thông và thông điệp mà khách gặp trong toàn địa điểm—không phải các tiện ích rời rạc, mà là những phần của cùng một kế hoạch vận hành.",
+        "screens": {
+          "label": "Màn hình và TV",
+          "title": "Hình ảnh lặp, trình chiếu và kênh nội bộ",
+          "text": "Lên kế hoạch cho hình ảnh lặp không tiếng, trình chiếu mang thương hiệu và các kênh TV tại khu vực công cộng hoặc trải nghiệm trong phòng khi mô hình triển khai cần đến."
+        },
+        "create": {
+          "label": "Sáng tạo có AI hỗ trợ",
+          "title": "Hình ảnh và video qua bước rà soát",
+          "text": "Sử dụng bản nháp hình ảnh có AI hỗ trợ hoặc do AI tạo, sau đó rà soát và phê duyệt nội dung trước khi đưa lên màn hình."
+        },
+        "messages": {
+          "label": "Thông điệp đa ngôn ngữ",
+          "title": "Nói đúng điều bằng đúng ngôn ngữ",
+          "text": "Chuẩn bị và lên lịch các thông báo, chương trình khuyến mãi và thông điệp thương hiệu hữu ích bằng những ngôn ngữ được hỗ trợ."
+        },
+        "soundscapes": {
+          "label": "Không gian âm thanh",
+          "title": "Bầu không khí vượt ra ngoài bài hát",
+          "text": "Sử dụng âm thanh thiên nhiên, chăm sóc sức khỏe và môi trường khi playlist thông thường không phù hợp với trải nghiệm mong muốn."
+        },
+        "phone": {
+          "label": "Nhạc chờ điện thoại",
+          "title": "Đưa thương hiệu vào cuộc gọi",
+          "text": "Kết hợp nền nhạc phù hợp với thông điệp chờ rõ ràng và giữ nội dung nhất quán với bản sắc địa điểm."
+        },
+        "catalogue": {
+          "label": "Luôn phát triển",
+          "title": "Lựa chọn âm nhạc và nội dung truyền thông ngày càng mở rộng",
+          "text": "BMAsia tiếp tục mở rộng các định hướng playlist, không gian âm thanh và lựa chọn nội dung truyền thông cho nhiều loại hình doanh nghiệp và khu vực."
+        }
       },
-      "web": {
-        "title": "Trình Duyệt Web",
-        "desc": "Trình phát web cho cài đặt nhanh chóng — đăng nhập từ bất kỳ trình duyệt nào và bắt đầu phát nhạc."
+      "connections": {
+        "eyebrow": "Tự động hóa có ranh giới rõ ràng",
+        "title": "Kết nối địa điểm mà không che giấu quyền điều khiển.",
+        "description": "Beat Breeze sử dụng lịch rõ ràng, quy tắc đã cấu hình và tích hợp được hỗ trợ. Người vận hành có thể xem kế hoạch và can thiệp khi địa điểm cần điều chỉnh.",
+        "schedules": {
+          "title": "Khung giờ và lịch",
+          "text": "Lên kế hoạch riêng cho âm nhạc, thông điệp, màn hình và mức âm lượng đặt trước theo thời gian, ngày trong tuần, mùa hoặc sự kiện."
+        },
+        "weather": {
+          "title": "Hành vi nhận biết thời tiết",
+          "text": "Sử dụng thời tiết địa phương làm đầu vào đã cấu hình cho đề xuất âm nhạc hoặc hành vi playlist được phê duyệt."
+        },
+        "prayer": {
+          "title": "Tự động hóa giờ cầu nguyện",
+          "text": "Tôn trọng giờ cầu nguyện địa phương bằng hành vi phát đã cấu hình và trở lại kế hoạch trong ngày một cách rõ ràng."
+        },
+        "volume": {
+          "title": "Điều khiển âm lượng theo lịch và qua tích hợp được hỗ trợ",
+          "text": "Sử dụng các mức đặt trước và tích hợp âm lượng được hỗ trợ. Nhân viên giữ quyền điều khiển trực tiếp; không tuyên bố cảm nhận liên tục qua microphone."
+        },
+        "api": {
+          "title": "API thông minh và kết nối địa điểm",
+          "text": "Kết nối các hệ thống tòa nhà, nội dung hoặc vận hành đã được phê duyệt thông qua API có phạm vi rõ ràng, được thiết kế cho từng triển khai khách hàng."
+        }
+      },
+      "final": {
+        "title": "Biến khu vực đầu tiên thành hiện thực.",
+        "description": "Bắt đầu bằng bản dùng thử dành riêng cho Beat Breeze hoặc nhờ BMAsia xây dựng kế hoạch âm nhạc và nội dung truyền thông cho nhiều khu vực.",
+        "support": "BMAsia cung cấp hướng dẫn triển khai và hỗ trợ khu vực phản hồi nhanh. Các tính năng tự phục vụ của sản phẩm luôn sẵn sàng khi đội ngũ của bạn cần."
       }
-    },
-    "custom": {
-      "sectionLabel": "Xây Dựng Để Mở Rộng",
-      "sectionTitle": "Vượt trên tiêu chuẩn.",
-      "sectionDesc": "Beat Breeze được xây dựng như một nền tảng không ngừng phát triển — đặc biệt dành cho các chuỗi doanh nghiệp và tập đoàn đa cơ sở. Chúng tôi phát triển các tính năng xoay quanh nhu cầu của quý khách.",
-      "whiteLabel": {
-        "title": "White-Label Cho Tập Đoàn",
-        "desc": "Các chuỗi doanh nghiệp có thể gắn thương hiệu Beat Breeze thành nền tảng âm nhạc nội bộ của riêng mình. Thương hiệu, màu sắc và tên miền tùy chỉnh."
-      },
-      "customBuilds": {
-        "title": "Xây Dựng Tính Năng Tùy Biến",
-        "desc": "Cần điều gì vượt ngoài tiêu chuẩn? Chúng tôi xây dựng các tính năng xoay quanh vận hành của quý khách theo yêu cầu — như một phần trong quá trình phát triển nền tảng liên tục."
-      },
-      "volumePricing": {
-        "title": "Giá Ưu Đãi Theo Khối Lượng",
-        "desc": "Càng nhiều khu vực vận hành, mức giá trên mỗi khu vực càng tốt. Đặc biệt hấp dẫn cho các chuỗi đa cơ sở và tập đoàn bán lẻ."
-      }
-    },
-    "trial": {
-      "sectionLabel": "Hãy Thử Trước",
-      "title": "Lắng nghe trước khi",
-      "titleHighlight": "quyết định.",
-      "desc1": "Bắt đầu với hai tuần dùng thử miễn phí. Không cần thẻ tín dụng, không ràng buộc.",
-      "desc2": "Chúng tôi sẽ cài đặt từ xa cho quý khách, và quý khách có thể cảm nhận Beat Breeze nghe như thế nào trong chính không gian của mình trước khi quyết định.",
-      "cta": "Bắt Đầu Dùng Thử"
-    },
-    "support": {
-      "sectionLabel": "Luôn Sẵn Sàng",
-      "sectionTitle": "Quý khách không bao giờ đơn độc.",
-      "technical": {
-        "title": "Hỗ Trợ Kỹ Thuật 24/7",
-        "desc": "Hỗ trợ mọi lúc cho các vấn đề về phần cứng, mạng và nền tảng. Người thật, không phải kịch bản."
-      },
-      "musicDesign": {
-        "title": "Thiết Kế Âm Nhạc Theo Yêu Cầu",
-        "desc": "Đội ngũ thiết kế âm nhạc của chúng tôi làm việc với quý khách từ thứ Hai đến thứ Sáu (giờ Bangkok) để xây dựng và làm mới âm thanh của quý khách."
-      },
-      "aiAssist": {
-        "title": "Tự Phục Vụ Bằng AI",
-        "desc": "Trợ lý tương tác sẵn sàng 24/7 cho những câu hỏi phổ biến, tinh chỉnh playlist và điều chỉnh nhanh."
-      }
-    },
-    "faq": {
-      "title": "Câu Hỏi Thường Gặp",
-      "q1": {
-        "q": "Tôi có phải trả bất kỳ khoản phí cấp phép âm nhạc nào riêng không?",
-        "a": "Không. Mọi gói đăng ký Beat Breeze đều bao gồm cả ba giấy phép — ghi âm, xuất bản và biểu diễn công cộng. Quý khách không bao giờ phải trả cho MPC, MRSS, PRS, ASCAP, BMI hay bất kỳ tổ chức thu tiền bản quyền nào khác."
-      },
-      "q2": {
-        "q": "Beat Breeze khác gì so với Soundtrack Your Brand?",
-        "a": "Beat Breeze có chi phí hợp lý hơn đáng kể và bao gồm tất cả các giấy phép, nhưng kho nhạc được tuyển chọn và miễn phí bản quyền — không phải các ca khúc hit cụ thể. Nếu quý khách muốn những bản hit mà khách hàng của mình biết tên, hãy chọn Soundtrack Your Brand. Nếu quý khách muốn âm nhạc được cấp phép không phiền phức với chi phí bằng không và được tuyển chọn chuyên nghiệp, hãy chọn Beat Breeze."
-      },
-      "q3": {
-        "q": "Beat Breeze chạy trên những thiết bị nào?",
-        "a": "Bất kỳ Windows PC hiện đại nào, máy tính bảng hoặc điện thoại Android, hoặc trực tiếp trên trình duyệt web. Tại Thái Lan, chúng tôi cung cấp các Windows mini PC đã được cấu hình sẵn với bảo hành 1 năm nếu quý khách muốn một giải pháp cắm là chạy."
-      },
-      "q4": {
-        "q": "Beat Breeze có hoạt động ngoại tuyến được không?",
-        "a": "Có. Nhạc được tải về thiết bị và phát tại chỗ, vì vậy trải nghiệm vẫn mượt mà ngay cả khi internet bị gián đoạn. Quý khách chỉ cần kết nối để cập nhật và quản lý từ xa."
-      },
-      "q5": {
-        "q": "Kho nhạc lớn đến mức nào?",
-        "a": "Hơn 30.000 bản nhạc được sản xuất chuyên nghiệp và miễn phí bản quyền, và kho nhạc vẫn đang tiếp tục phát triển. Mỗi bản nhạc đều được đội ngũ thiết kế âm nhạc của chúng tôi tuyển chọn cho môi trường khách sạn và bán lẻ."
-      },
-      "q6": {
-        "q": "Tôi có thể white-label Beat Breeze cho thương hiệu tập đoàn của mình không?",
-        "a": "Có. Các chuỗi doanh nghiệp có thể vận hành Beat Breeze như nền tảng âm nhạc nội bộ mang thương hiệu riêng với màu sắc, logo và tên miền tùy chỉnh. Hãy trao đổi với chúng tôi về những gì quý khách cần."
-      }
-    },
-    "finalCta": {
-      "title": "Âm nhạc,",
-      "titleHighlight": "đơn giản hóa.",
-      "desc": "Không phiền phức cấp phép. Tuyển chọn theo yêu cầu. Hỗ trợ không cần bận tâm. Tất cả với mức giá hợp lý.",
-      "ctaQuote": "Nhận Báo Giá",
-      "ctaDemo": "Đặt Lịch Demo"
     }
   },
   "homePage": {
     "immersive": {
       "hero": {
-        "eyebrow": "Beat Breeze bởi BMAsia", "title": "Định hình bầu không khí.", "highlight": "Vận hành mọi điểm chạm.",
-        "description": "Âm nhạc, màn hình, thông điệp và âm thanh điện thoại được phối hợp trên mọi khu vực.",
-        "try": "Thử trình mô phỏng trải nghiệm không gian", "start": "Dùng thử miễn phí 14 ngày", "proof1": "Không cần thẻ", "proof2": "Không cần phần cứng chuyên dụng", "proof3": "Từ $12 mỗi khu vực", "scroll": "Trải nghiệm cả ngày"
+        "eyebrow": "BMAsia · Âm nhạc, nội dung truyền thông và trải nghiệm không gian",
+        "title": "Mỗi không gian có một nhịp điệu.",
+        "highlight": "Chúng tôi khiến mọi thứ vận hành đồng bộ.",
+        "description": "BMAsia thiết kế và vận hành âm nhạc, màn hình, thông điệp cùng trải nghiệm không gian kết nối—với hai nền tảng âm nhạc riêng biệt để phù hợp từng yêu cầu.",
+        "try": "Chọn hướng đi của bạn",
+        "start": "Trao đổi với BMAsia",
+        "proof1": "Tư vấn sản phẩm độc lập",
+        "proof2": "Thiết kế âm nhạc từ năm 2002",
+        "proof3": "Một đối tác cho mọi khu vực",
+        "scroll": "Thử Cỗ máy Thời gian Không gian"
       },
-      "field": { "ariaLabel": "Trường âm nhạc sống động thay đổi theo từng khu vực", "energy": "Năng lượng {energy}" },
-      "audio": { "title": "Nghe thử", "visualOnly": "Bản xem trước định hướng âm nhạc · đang tắt tiếng", "hear": "Nghe không khí này", "pause": "Tạm dừng bản nghe thử", "paused": "Đã tạm dừng", "mute": "Tắt tiếng", "unmute": "Bật tiếng", "playing": "Đang phát bản nghe thử có bản quyền dài 25 giây", "playingMuted": "Đang phát bản nghe thử có bản quyền dài 25 giây · đã tắt tiếng", "unavailable": "Không thể phát bản nghe thử", "volume": "Âm lượng nghe thử" },
+      "field": {
+        "ariaLabel": "Trường âm nhạc sống động thay đổi theo từng khu vực",
+        "energy": "Năng lượng {energy}"
+      },
+      "audio": {
+        "title": "Nghe thử",
+        "visualOnly": "Bản xem trước định hướng âm nhạc · đang tắt tiếng",
+        "hear": "Nghe không khí này",
+        "pause": "Tạm dừng bản nghe thử",
+        "paused": "Đã tạm dừng",
+        "mute": "Tắt tiếng",
+        "unmute": "Bật tiếng",
+        "playing": "Đang phát bản nghe thử có bản quyền dài 25 giây",
+        "playingMuted": "Đang phát bản nghe thử có bản quyền dài 25 giây · đã tắt tiếng",
+        "unavailable": "Không thể phát bản nghe thử",
+        "volume": "Âm lượng nghe thử"
+      },
       "demo": {
-        "eyebrow": "Một trải nghiệm hữu ích trong năm phút", "title": "Đi qua một ngày.", "highlight": "Xem mọi điểm chạm phản hồi.",
+        "eyebrow": "BMAsia Venue Time Machine",
+        "title": "Đi qua một ngày.",
+        "highlight": "Xem mọi điểm chạm phản hồi.",
         "description": "Chọn loại hình kinh doanh, kéo thời gian và đưa từng khu vực lên trước. Âm nhạc, màn hình, thông điệp, điện thoại, năng lượng và hướng dẫn Concierge cùng thay đổi.",
-        "machineLabel": "Mô phỏng trải nghiệm không gian trực tiếp", "live": "Phản hồi trực tiếp", "chooseVenue": "Chọn loại hình kinh doanh", "localTime": "Giờ địa phương", "chooseTime": "Chọn thời điểm", "playlistDetail": "Năng lượng {energy} · {bpm} BPM", "concierge": "Hướng dẫn từ Music Concierge", "energy": "Năng lượng địa điểm"
+        "machineLabel": "Bản xem trước trải nghiệm không gian trực tiếp",
+        "live": "Phản hồi trực tiếp",
+        "chooseVenue": "Chọn loại hình kinh doanh",
+        "localTime": "Giờ địa phương",
+        "chooseTime": "Chọn thời điểm",
+        "playlistDetail": "Năng lượng {energy} · {bpm} BPM",
+        "concierge": "Hướng dẫn từ Music Concierge",
+        "energy": "Năng lượng địa điểm"
       },
-      "venues": { "hotel": "Khách sạn", "restaurant": "Nhà hàng", "retail": "Bán lẻ", "fitness": "Thể hình" },
-      "phases": { "0": { "label": "Buổi sáng", "mood": "Đón khách nhẹ nhàng" }, "1": { "label": "Ban ngày", "mood": "Ấm áp và trôi chảy" }, "2": { "label": "Buổi tối", "mood": "Năng lượng giao lưu" }, "3": { "label": "Đêm muộn", "mood": "Khép lại dịu dàng" } },
-      "zones": { "lobby": "Sảnh", "restaurant": "Nhà hàng", "wellness": "Chăm sóc sức khỏe", "rooftop": "Sân thượng", "dining": "Khu ăn uống", "bar": "Quầy bar", "terrace": "Sân hiên", "entrance": "Lối vào", "shopFloor": "Khu bán hàng", "fittingRooms": "Phòng thử đồ", "mainFloor": "Sàn chính", "studio": "Phòng tập", "recovery": "Khu hồi phục" },
+      "venues": {
+        "hotel": "Khách sạn",
+        "restaurant": "Nhà hàng",
+        "retail": "Bán lẻ",
+        "fitness": "Thể hình"
+      },
+      "phases": {
+        "0": {
+          "label": "Buổi sáng",
+          "mood": "Đón khách nhẹ nhàng"
+        },
+        "1": {
+          "label": "Ban ngày",
+          "mood": "Ấm áp và trôi chảy"
+        },
+        "2": {
+          "label": "Buổi tối",
+          "mood": "Năng lượng giao lưu"
+        },
+        "3": {
+          "label": "Đêm muộn",
+          "mood": "Khép lại dịu dàng"
+        }
+      },
+      "zones": {
+        "lobby": "Sảnh",
+        "restaurant": "Nhà hàng",
+        "wellness": "Chăm sóc sức khỏe",
+        "rooftop": "Sân thượng",
+        "dining": "Khu ăn uống",
+        "bar": "Quầy bar",
+        "terrace": "Sân hiên",
+        "entrance": "Lối vào",
+        "shopFloor": "Khu bán hàng",
+        "fittingRooms": "Phòng thử đồ",
+        "mainFloor": "Sàn chính",
+        "studio": "Phòng tập",
+        "recovery": "Khu hồi phục"
+      },
       "venueContext": {
         "hotel": "Giữ trải nghiệm đến nơi thật êm dịu, rồi tăng dần năng lượng ở các khu vực giao lưu.",
         "restaurant": "Ưu tiên trò chuyện trước, sau đó nâng không khí theo nhịp phục vụ.",
         "retail": "Tạo đà chuyển động mà không biến âm nhạc thành tâm điểm.",
         "fitness": "Khớp cường độ âm nhạc với luyện tập, chuyển tiếp và hồi phục."
       },
-      "guidance": { "0": "Bắt đầu thoáng và ít kích thích khi ngày mới dần mở ra.", "1": "Thêm chuyển động nhịp nhàng ổn định mà không làm không gian chật chội.", "2": "Chủ động nâng năng lượng ở nơi mọi người giao lưu nhiều hơn.", "3": "Giảm dần cường độ để kết thúc một cách dễ chịu." },
-      "brief": { "eyebrow": "Mang theo điều hữu ích", "title": "Bản định hướng âm nhạc của bạn", "copy": "Sao chép bản định hướng", "copied": "Đã sao chép", "text": "Định hướng {venue} lúc {time}\nCảm giác mong muốn: {mood}. {guidance}\nKế hoạch khu vực: {zones}" },
+      "guidance": {
+        "0": "Bắt đầu thoáng và ít kích thích khi ngày mới dần mở ra.",
+        "1": "Thêm chuyển động nhịp nhàng ổn định mà không làm không gian chật chội.",
+        "2": "Chủ động nâng năng lượng ở nơi mọi người giao lưu nhiều hơn.",
+        "3": "Giảm dần cường độ để kết thúc một cách dễ chịu."
+      },
+      "brief": {
+        "eyebrow": "Mang theo điều hữu ích",
+        "title": "Bản định hướng âm nhạc của bạn",
+        "copy": "Sao chép bản định hướng",
+        "copied": "Đã sao chép",
+        "text": "Định hướng {venue} lúc {time}\nCảm giác mong muốn: {mood}. {guidance}\nKế hoạch khu vực: {zones}"
+      },
       "story": {
-        "eyebrow": "Một hệ thống, không phải danh sách tính năng",
-        "title": "Từ một bản brief đến",
-        "highlight": "không gian vận hành liền mạch.",
+        "eyebrow": "Vượt ra ngoài nhạc nền",
+        "title": "Thiết kế bầu không khí.",
+        "highlight": "Vận hành trải nghiệm.",
         "sound": {
           "title": "Định hình bản sắc âm thanh",
-          "text": "Tự tìm nhạc hoặc để Concierge chuyển ý tưởng thành hướng đi có thể giải thích."
+          "text": "Chọn kho nhạc, thiết kế âm nhạc và lên kế hoạch cho mọi khung giờ trong ngày."
         },
         "screens": {
-          "title": "Đưa lên màn hình",
-          "text": "Kết hợp hình ảnh lặp và nội dung thương hiệu với playlist luôn chuyển động."
+          "title": "Trao vai trò cho màn hình",
+          "text": "Sử dụng hình ảnh lặp, trình chiếu và kênh TV tại những nơi địa điểm cần."
         },
         "messages": {
           "title": "Nói đúng lúc",
-          "text": "Tạo và lên lịch thông điệp thoại đa ngôn ngữ mà không cần quy trình sản xuất riêng."
+          "text": "Lên lịch các thông điệp đa ngôn ngữ rõ ràng mà không làm gián đoạn trải nghiệm."
         },
         "calls": {
-          "title": "Tiếp tục trải nghiệm qua điện thoại",
-          "text": "Tạo nhạc chờ và giọng điện thoại như một phần của cùng không gian."
+          "title": "Tiếp nối ngoài không gian trực tiếp",
+          "text": "Duy trì thương hiệu qua nhạc chờ và thông điệp điện thoại."
         },
         "automate": {
-          "title": "Tự động hóa việc lặp lại",
-          "text": "Để thời gian, sự kiện và bối cảnh kích hoạt các thay đổi có thể xem xét."
+          "title": "Kết nối các tín hiệu của địa điểm",
+          "text": "Sử dụng lịch, thời tiết, giờ cầu nguyện và các tín hiệu API đã được phê duyệt."
         },
         "control": {
-          "title": "Điều khiển tất cả",
-          "text": "Xem nội dung đang chạy, kết nối thiết bị và kiểm soát từ bảng điều khiển hoặc Remote."
+          "title": "Giữ quyền kiểm soát trong tay con người",
+          "text": "Người vận hành có thể rà soát, can thiệp và quản lý mọi khu vực."
         },
-        "cta": "Khám phá mọi điều Beat Breeze có thể làm"
+        "cta": "Xem cách BMAsia vận hành"
       },
       "worlds": {
-        "eyebrow": "Một đội ngũ BMAsia · hai giải pháp khác biệt", "title": "Chọn thế giới âm nhạc", "highlight": "phù hợp với doanh nghiệp của bạn.",
+        "eyebrow": "Một đội ngũ BMAsia · hai giải pháp khác biệt",
+        "title": "Chọn thế giới âm nhạc",
+        "highlight": "phù hợp với doanh nghiệp của bạn.",
         "description": "Beat Breeze mang đến nền tảng tự phục vụ thông minh. Soundtrack cung cấp danh mục thương mại quen thuộc với sự hỗ trợ của BMAsia.",
-        "bbCore": "Khu vực · lịch phát · Concierge", "tryBeatBreeze": "Dùng thử Beat Breeze", "sybDiscLabel": "BMAsia đồng hành", "sybDiscText": "Âm nhạc quen thuộc cho doanh nghiệp", "talkSoundtrack": "Trao đổi với BMAsia về Soundtrack", "compareLabel": "Chưa chắc lựa chọn nào phù hợp?", "compareText": "Chúng tôi sẽ cùng bạn so sánh danh mục, bản quyền, khả năng điều khiển và dịch vụ—không ép bạn chọn sai sản phẩm."
-      }
-    ,
+        "bbCore": "Khu vực · lịch phát · Concierge",
+        "tryBeatBreeze": "Bắt đầu dùng thử Beat Breeze",
+        "sybDiscLabel": "BMAsia đồng hành",
+        "sybDiscText": "Âm nhạc quen thuộc cho doanh nghiệp",
+        "talkSoundtrack": "Yêu cầu dùng thử Soundtrack",
+        "compareLabel": "Chưa chắc lựa chọn nào phù hợp?",
+        "compareText": "Chúng tôi sẽ cùng bạn so sánh danh mục, bản quyền, khả năng điều khiển và dịch vụ—không ép bạn chọn sai sản phẩm."
+      },
       "touchpoints": {
         "eyebrow": "Các điểm chạm kết nối",
         "title": "Xem trước toàn bộ trải nghiệm không gian.",
@@ -1011,32 +904,31 @@
         "status": "Hướng trực tiếp",
         "sound": {
           "label": "Âm nhạc",
-          "title": "{playlist} định hình {zone}",
-          "text": "Lựa chọn âm nhạc theo năng lượng {phase} lúc {time}."
+          "title": "Âm nhạc trong khu vực này",
+          "text": "{playlist} đang định hình {zone} lúc {time}."
         },
         "screens": {
           "label": "Màn hình",
           "title": "Hình ảnh chuyển động cùng âm nhạc",
-          "text": "Vòng lặp tại {zone} theo màu sắc, nhịp độ và cảm xúc của {playlist}."
+          "text": "Một hình ảnh lặp không tiếng đi theo tâm trạng {phase} trong khi playlist của khu vực vẫn tiếp tục."
         },
         "messages": {
           "label": "Thông điệp",
           "title": "Thông điệp xuất hiện đúng lúc",
-          "text": "Có thể lên lịch thông điệp đa ngôn ngữ cho thời điểm {phase} lúc {time}."
+          "text": "Một thông báo ngắn gọn, được bản địa hóa đã sẵn sàng cho thời điểm này mà không làm gián đoạn trải nghiệm."
         },
         "phone": {
           "label": "Điện thoại",
           "title": "Trải nghiệm tiếp tục trên điện thoại",
-          "text": "Nhạc chờ và giọng thương hiệu giữ cảm giác của {playlist} trước khi khách đến."
+          "text": "Thông điệp điện thoại và nền nhạc mang thương hiệu đưa cùng bầu không khí vượt ra ngoài không gian trực tiếp."
         }
-      }
-    ,
+      },
       "connected": {
-        "eyebrow": "Không chỉ là âm nhạc",
+        "eyebrow": "Địa điểm như một hệ thống",
         "title": "Âm nhạc là nhịp tim.",
         "highlight": "Beat Breeze vận hành toàn bộ trải nghiệm.",
         "description": "Một định hướng sáng tạo có thể điều khiển âm thanh, màn hình, thông điệp, điện thoại và công việc phía sau.",
-        "core": "Beat Breeze",
+        "core": "BMAsia",
         "coreText": "Một brief cho cả không gian",
         "sound": {
           "title": "Âm nhạc & Concierge",
@@ -1062,6 +954,20 @@
           "title": "Điều khiển trực tiếp",
           "text": "Quản lý mọi khu vực, trình phát và thay đổi từ bất cứ đâu."
         }
+      },
+      "paths": {
+        "eyebrow": "Hai hướng sản phẩm",
+        "title": "Bắt đầu từ điều địa điểm cần",
+        "beatLabel": "Linh hoạt và miễn phí bản quyền",
+        "beatText": "Âm nhạc, nội dung truyền thông và tự động hóa trong một nền tảng BMAsia.",
+        "soundtrackLabel": "Âm nhạc thương mại quen thuộc",
+        "soundtrackText": "Kho nhạc từ các hãng thu âm lớn, đi kèm dịch vụ và tiện ích mở rộng của BMAsia.",
+        "resultEyebrow": "Biến bản xem trước thành kế hoạch",
+        "resultTitle": "Hướng nào phù hợp với địa điểm này?",
+        "resultText": "Lựa chọn dựa trên kho nhạc, cách vận hành và trải nghiệm khách hàng—không theo một kịch bản bán hàng áp dụng cho tất cả.",
+        "beatDecision": "Phù hợp nhất khi tính linh hoạt, nội dung truyền thông và tự động hóa là trọng tâm yêu cầu.",
+        "soundtrackDecision": "Phù hợp nhất khi kho nhạc thương mại quen thuộc là trọng tâm yêu cầu.",
+        "helpDecision": "Nhờ BMAsia so sánh cả hai hướng"
       }
     },
     "venuePulse": {
@@ -1069,9 +975,21 @@
       "label": "Nhịp vận hành địa điểm",
       "venue": "Riverside House",
       "ready": "3 khu vực sẵn sàng",
-      "lobby": { "name": "Sảnh", "playlist": "Jazz Piano · lounge buổi chiều", "status": "Đang phát" },
-      "restaurant": { "name": "Nhà hàng", "playlist": "Bossa Nova Lounge · bữa tối", "status": "Đang phát" },
-      "rooftop": { "name": "Sân thượng", "playlist": "Deep House · bắt đầu 19:00", "status": "Sẵn sàng" },
+      "lobby": {
+        "name": "Sảnh",
+        "playlist": "Jazz Piano · lounge buổi chiều",
+        "status": "Đang phát"
+      },
+      "restaurant": {
+        "name": "Nhà hàng",
+        "playlist": "Bossa Nova Lounge · bữa tối",
+        "status": "Đang phát"
+      },
+      "rooftop": {
+        "name": "Sân thượng",
+        "playlist": "Deep House · bắt đầu 19:00",
+        "status": "Sẵn sàng"
+      },
       "conciergeLabel": "Đề xuất từ Concierge",
       "conciergeText": "Tăng năng lượng sân thượng nhẹ nhàng trước giờ khách đến. Giữ sảnh êm dịu khi check-in đông nhất.",
       "reason": "Dựa trên khu vực, thời gian, năng lượng và lịch hôm nay"
@@ -1097,7 +1015,7 @@
     },
     "alternative": {
       "title": "Cần những bài hát khách quen tên?",
-      "description": "Soundtrack Your Brand mang đến nghệ sĩ quen thuộc và danh mục hãng thu âm lớn. BMAsia có thể cung cấp và quản lý khi âm nhạc nhận diện cao là ưu tiên."
+      "description": "Âm nhạc thương mại quen thuộc được cấp phép, kết hợp cùng thiết kế âm nhạc, hướng dẫn triển khai và tiện ích mở rộng cho địa điểm từ BMAsia."
     },
     "theProblem": {
       "title": "Khách hàng của bạn có thể",
@@ -1125,9 +1043,9 @@
       "bb": {
         "badge": "Tuyển chọn trọn gói",
         "title": "Beat Breeze",
-        "tagline": "Nhạc nền được cấp phép đầy đủ — hoàn toàn không phiền toái.",
+        "tagline": "Âm nhạc miễn phí bản quyền ở vị trí trung tâm của một nền tảng trải nghiệm không gian linh hoạt.",
         "feature1": "Danh mục nhạc miễn bản quyền liên tục mở rộng — được cấp phép cho doanh nghiệp",
-        "feature2": "Không phí tổ chức thu tác quyền, không thủ tục tuân thủ",
+        "feature2": "Phạm vi bản quyền phụ thuộc vào gói, kho nhạc và lãnh thổ",
         "feature3": "Đề xuất Music Concierge kèm lý do rõ ràng",
         "feature4": "Hoạt động ngoại tuyến, lên lịch đa khu vực",
         "cta": "Khám phá Beat Breeze"
@@ -1165,113 +1083,116 @@
       }
     },
     "finalCta": {
-      "title": "Hãy cùng thiết kế",
-      "titleHighlight": "Âm thanh của bạn",
-      "ctaQuote": "Nhận báo giá",
-      "ctaDemo": "Đặt lịch demo"
+      "title": "Tìm hướng đi phù hợp",
+      "titleHighlight": "cho địa điểm này.",
+      "description": "Hãy cho chúng tôi biết không gian cần gì. Chúng tôi sẽ so sánh Beat Breeze và Soundtrack một cách thẳng thắn, rồi thiết kế âm nhạc và dịch vụ xoay quanh cách vận hành.",
+      "ctaQuote": "Giúp tôi lựa chọn",
+      "ctaDemo": "So sánh sản phẩm"
     }
   },
   "licensingPage": {
     "hero": {
-      "label": "Tuân thủ",
-      "title": "Cấp phép âm nhạc",
-      "titleHighlight": "Đơn giản hoá",
-      "subtitle": "Hiểu rõ các loại giấy phép mà doanh nghiệp bạn cần để tuân thủ quy định và ủng hộ các nghệ sĩ bạn phát nhạc."
+      "label": "Quyền âm nhạc, được giải thích rõ ràng",
+      "title": "Hiểu dịch vụ của bạn bao gồm gì.",
+      "titleHighlight": "Xác nhận địa điểm vẫn cần gì.",
+      "subtitle": "Quyền sử dụng âm nhạc thương mại khác nhau theo kho nhạc, sản phẩm, lãnh thổ và cách âm nhạc được sử dụng. BMAsia giúp bạn hiểu rõ phạm vi trước khi đi vào hoạt động."
     },
     "intro": {
-      "paragraph1": "Phát nhạc trong một doanh nghiệp khác với nghe nhạc tại nhà. Khi bạn sử dụng âm nhạc cho mục đích thương mại, bạn cần được sự cho phép từ những chủ sở hữu quyền.",
-      "paragraph2Prefix": "Doanh nghiệp của bạn cần",
-      "paragraph2Highlight": "ba loại giấy phép khác nhau."
+      "paragraph1": "Gói nghe nhạc trực tuyến dành cho cá nhân không đồng nghĩa với quyền phát nhạc trong doanh nghiệp. Việc sử dụng thương mại có thể liên quan đến nhiều lớp quyền khác nhau.",
+      "paragraph2Prefix": "Nguyên tắc thực tế:",
+      "paragraph2Highlight": "xác nhận dịch vụ và lãnh thổ bằng văn bản."
     },
     "licenses": {
       "01": {
-        "title": "Giấy phép bản ghi",
-        "desc": "Bao gồm quyền sử dụng một bản thu cụ thể của một bài hát và trả thù lao cho nghệ sĩ biểu diễn cùng hãng đĩa của họ."
+        "title": "Quyền đối với bản ghi âm",
+        "desc": "Quyền liên quan đến bản ghi âm cụ thể. Phạm vi phụ thuộc vào kho nhạc và dịch vụ âm nhạc thương mại bạn chọn."
       },
       "02": {
-        "title": "Giấy phép xuất bản",
-        "desc": "Bao gồm quyền sử dụng tác phẩm gốc và trả thù lao cho người viết lời và nhà soạn nhạc cho tài sản trí tuệ của họ."
+        "title": "Quyền đối với tác phẩm âm nhạc",
+        "desc": "Quyền liên quan đến bài hát gốc, bao gồm tác giả và nhà xuất bản âm nhạc. Sản phẩm và lãnh thổ quyết định cách các quyền này được xử lý."
       },
       "03": {
-        "title": "Giấy phép biểu diễn công cộng",
-        "desc": "Cho phép bạn phát bài hát trong môi trường công cộng như địa điểm kinh doanh, cửa hàng bán lẻ hoặc nhà hàng của bạn."
+        "title": "Nghĩa vụ về biểu diễn công cộng",
+        "desc": "Địa điểm cũng có thể cần giấy phép địa phương hoặc thỏa thuận với tổ chức thu tác quyền. Yêu cầu khác nhau theo quốc gia, địa điểm và kho nhạc."
       }
     },
     "warning": {
-      "label": "TUÂN THỦ QUAN TRỌNG",
-      "titleStart": "Các dịch vụ phát trực tuyến dành cho người dùng cá nhân",
-      "titleNot": "KHÔNG",
-      "titleEnd": "được cấp phép cho mục đích sử dụng thương mại",
-      "quote": "Chúng tôi cấp cho bạn một giấy phép có giới hạn, không độc quyền và có thể thu hồi để sử dụng dịch vụ Spotify cho mục đích cá nhân, phi thương mại...",
-      "quoteHighlight": "phi thương mại",
-      "source": "— Điều khoản & Điều kiện của Spotify"
+      "label": "Một ranh giới cần biết",
+      "titleStart": "Các gói nghe nhạc dành cho cá nhân",
+      "titleNot": "không được thiết kế",
+      "titleEnd": "để sử dụng tại địa điểm thương mại",
+      "quote": "Hãy sử dụng dịch vụ âm nhạc doanh nghiệp và xác minh các quyền áp dụng cho chính địa điểm của bạn.",
+      "quoteHighlight": "dịch vụ âm nhạc doanh nghiệp",
+      "source": "Hướng dẫn bản quyền của BMAsia"
     },
     "comparison": {
-      "sectionTitle": "So sánh giải pháp của bạn",
-      "recordingLicense": "Giấy phép bản ghi",
-      "publishingLicense": "Giấy phép xuất bản",
-      "performanceLicense": "Giấy phép biểu diễn công cộng",
+      "sectionTitle": "Hai hướng sản phẩm, mỗi hướng có mô hình quyền khác nhau",
+      "recordingLicense": "Quyền đối với kho nhạc thương mại",
+      "publishingLicense": "Phạm vi kho nhạc theo từng sản phẩm",
+      "performanceLicense": "Nghĩa vụ địa phương của địa điểm",
       "syb": {
-        "badge": "CAO CẤP",
-        "performanceNote": "Yêu cầu đăng ký với PRO địa phương"
+        "badge": "Kho nhạc dễ nhận biết",
+        "performanceNote": "Có thể áp dụng yêu cầu về biểu diễn công cộng tại địa phương; cần xác nhận theo lãnh thổ.",
+        "cta": "Khám phá Soundtrack"
       },
       "bb": {
-        "badge": "ĐÃ CẤP PHÉP ĐẦY ĐỦ",
-        "performanceNote": "Bao gồm trọn gói tất cả"
+        "badge": "Kho nhạc được tuyển chọn",
+        "performanceNote": "Phạm vi phụ thuộc vào gói, kho nhạc và lãnh thổ đã chọn; hãy xác nhận với BMAsia.",
+        "cta": "Khám phá Beat Breeze"
       }
     },
     "cta": {
-      "title": "Bắt đầu với",
-      "titleHighlight": "Âm nhạc có bản quyền",
-      "ctaQuote": "Nhận báo giá",
-      "ctaDemo": "Đặt lịch demo"
+      "title": "Hiểu rõ bức tranh quyền âm nhạc cho",
+      "titleHighlight": "địa điểm và lãnh thổ của bạn",
+      "ctaQuote": "Hỏi BMAsia",
+      "ctaDemo": "Trao đổi về các lựa chọn"
     }
   },
   "howItWorksPage": {
     "hero": {
-      "label": "Phương pháp của chúng tôi",
-      "title": "Từ cuộc gọi đầu tiên đến",
-      "titleHighlight": "Nốt nhạc đầu tiên",
-      "subtitle": "Hầu hết khách hàng đi vào hoạt động trong vòng 48 giờ. Đây là quy trình cụ thể."
+      "label": "Từ yêu cầu đến nhịp vận hành hằng ngày",
+      "title": "Một mô hình vận hành.",
+      "titleHighlight": "Hai cách triển khai.",
+      "subtitle": "BMAsia chuyển thương hiệu, không gian và các khung giờ của bạn thành kế hoạch âm nhạc, sau đó kết nối nền tảng phù hợp và hỗ trợ đội ngũ vận hành."
     },
     "steps": {
       "01": {
-        "title": "Hãy cho chúng tôi biết về không gian của bạn",
-        "desc": "Chia sẻ loại hình địa điểm, số lượng khu vực phát nhạc và bầu không khí bạn muốn tạo ra. Chúng tôi sẽ đề xuất giải pháp phù hợp — Soundtrack Your Brand để kiểm soát sáng tạo toàn diện, hoặc Beat Breeze cho giải pháp âm nhạc trọn gói, không phiền phức. Nhận báo giá trong vòng 24 giờ."
+        "title": "Hiểu địa điểm",
+        "desc": "Chúng tôi lập bản đồ loại hình doanh nghiệp, địa điểm, khu vực, hành trình của khách, tín hiệu thương hiệu và các ràng buộc thực tế. Đây là lúc xác định Beat Breeze, Soundtrack hay cách vận hành kết hợp phù hợp nhất với yêu cầu."
       },
       "02": {
-        "title": "Chúng tôi thiết kế âm thanh của bạn",
-        "desc": "Các nhà thiết kế âm nhạc của chúng tôi phân tích thương hiệu, đặc điểm khách hàng và âm học của địa điểm. Chúng tôi xây dựng lịch phát danh sách nhạc đa lớp — với các cảm xúc khác nhau cho buổi sáng, buổi chiều và buổi tối — được thiết kế riêng cho không gian của bạn. Bạn duyệt các bản mẫu trước khi mọi thứ đi vào hoạt động."
+        "title": "Thiết kế một ngày",
+        "desc": "Chúng tôi định hình chuỗi cảm xúc cho những thời điểm quan trọng: mở cửa, đón khách, cao điểm phục vụ, chuyển tiếp và kết thúc. Bạn có thể rà soát định hướng trước khi nó trở thành lịch phát thực tế."
       },
       "03": {
-        "title": "Cài đặt và đi vào hoạt động",
-        "desc": "Chúng tôi vận chuyển phần cứng (hoặc cấu hình thiết bị hiện có của bạn), cài đặt phần mềm từ xa và hướng dẫn đội ngũ của bạn. Nếu phần cứng đã sẵn sàng, bạn có thể phát nhạc chỉ trong vài phút. Chúng tôi xử lý mọi thứ — bạn chỉ cần nhấn nút phát."
+        "title": "Kết nối hệ thống",
+        "desc": "BMAsia hỗ trợ cấu hình thiết bị phát tương thích, lịch, quyền truy cập và tài khoản đội ngũ. Thiết lập cụ thể tuân theo sản phẩm đã chọn, phần cứng tại địa điểm và điều kiện mạng."
       },
       "04": {
-        "title": "Hỗ trợ và phát triển liên tục",
-        "desc": "Âm nhạc của bạn không phải là việc cài đặt một lần rồi quên. Chúng tôi làm mới danh sách nhạc hàng tháng (SYB) hoặc hàng quý (Beat Breeze), theo dõi tình trạng các khu vực phát và thích ứng với các chủ đề theo mùa. Hỗ trợ tận tình từ đội ngũ Bangkok của chúng tôi."
+        "title": "Vận hành và phát triển",
+        "desc": "Đội ngũ của bạn nhận được bàn giao rõ ràng, còn BMAsia cung cấp hỗ trợ khu vực phản hồi nhanh và giúp định hướng âm nhạc phát triển khi địa điểm, mùa vụ hoặc yêu cầu vận hành thay đổi."
       }
     },
     "stats": {
-      "label": "Tại sao chọn BMAsia",
-      "sectionTitle": "Được xây dựng cho ngành khách sạn.",
+      "label": "Lớp dịch vụ BMAsia",
+      "sectionTitle": "Được thiết kế như một hệ điều hành, không chỉ là bàn giao playlist.",
       "experience": {
-        "value": "23 Năm",
-        "desc": "Tuyển chọn âm nhạc cho ngành khách sạn trên khắp Asia-Pacific từ năm 2002."
+        "value": "Yêu cầu địa điểm",
+        "desc": "Thương hiệu, đối tượng khách, các khu vực và thực tế vận hành được ghi lại trong một định hướng chung."
       },
       "speed": {
-        "value": "48 Giờ",
-        "desc": "Từ thiết kế âm nhạc riêng đến vận hành trực tiếp tại địa điểm của bạn. Ngay lập tức nếu phần cứng đã sẵn sàng."
+        "value": "Kế hoạch âm thanh",
+        "desc": "Các khung giờ và bước chuyển tiếp được thiết kế quanh cách địa điểm thực sự vận hành."
       },
       "legal": {
-        "value": "100% Hợp pháp",
-        "desc": "Mọi bản nhạc đều được cấp phép đầy đủ. Không rắc rối tuân thủ, không tiền phạt."
+        "value": "Bàn giao vận hành",
+        "desc": "Thiết lập nền tảng, hướng dẫn đội ngũ và phạm vi bản quyền được làm rõ trước khi ra mắt."
       }
     },
     "cta": {
-      "title": "Sẵn sàng cảm nhận sự khác biệt?",
-      "ctaQuote": "Nhận báo giá",
-      "ctaDemo": "Đặt lịch demo"
+      "title": "Bắt đầu từ địa điểm, không phải sản phẩm.",
+      "ctaQuote": "Cho chúng tôi biết về địa điểm",
+      "ctaDemo": "Trao đổi với BMAsia"
     }
   },
   "quotationPage": {
@@ -1279,35 +1200,35 @@
       "label": "Bắt đầu",
       "title": "Yêu cầu",
       "titleHighlight": "Báo giá",
-      "subtitle": "Hãy cho chúng tôi biết về địa điểm của bạn và chúng tôi sẽ gửi báo giá cá nhân hóa trong vòng 24 hours."
+      "subtitle": "Chia sẻ địa điểm, cơ sở và các khu vực bạn cần vận hành. BMAsia sẽ xem xét yêu cầu, sau đó phản hồi với hướng sản phẩm phù hợp và đề xuất được thiết kế riêng."
     },
     "whatToExpect": {
       "sectionTitle": "Những gì bạn sẽ nhận được",
       "fastResponse": {
-        "title": "Phản hồi nhanh chóng",
-        "desc": "Nhận báo giá cá nhân hóa của bạn trong vòng 24 hours"
+        "title": "Con người trực tiếp phản hồi",
+        "desc": "Một chuyên gia BMAsia xem xét yêu cầu và liên hệ với bạn về bước tiếp theo hữu ích."
       },
       "noObligation": {
-        "title": "Không ràng buộc",
-        "desc": "Tư vấn miễn phí, không yêu cầu cam kết"
+        "title": "Không tự động mua hàng",
+        "desc": "Việc gửi biểu mẫu không tạo ra gói đăng ký hay đơn đặt hàng có tính ràng buộc."
       },
       "tailored": {
-        "title": "Giải pháp tùy chỉnh",
-        "desc": "Định giá riêng dựa trên nhu cầu cụ thể của bạn"
+        "title": "Xây dựng quanh cách vận hành",
+        "desc": "Đề xuất phản ánh thị trường, các cơ sở, khu vực, phần cứng và nhu cầu dịch vụ của bạn."
       }
     },
     "ourSolutions": {
       "sectionTitle": "Giải pháp của chúng tôi",
       "sybTagline": "Kho nhạc thương mại quen thuộc — nghệ sĩ nổi tiếng, nhập từ Spotify và thiết lập có BMAsia hỗ trợ",
       "bbTagline": "Vận hành âm nhạc thông minh — danh mục tuyển chọn luôn mở rộng, Music Concierge, lịch phát và điều khiển khu vực trực tiếp",
-      "learnMore": "Tìm hiểu thêm về các giải pháp của chúng tôi →"
+      "learnMore": "Xem quy trình BMAsia vận hành như thế nào →"
     },
     "questions": {
       "sectionTitle": "Có thắc mắc?"
     },
     "formHeader": {
       "title": "Hãy cho chúng tôi biết về không gian của bạn",
-      "subtitle": "Điền thông tin của bạn và chúng tôi sẽ liên hệ lại với báo giá cá nhân hóa."
+      "subtitle": "Một vài chi tiết vận hành giúp chúng tôi chuyển yêu cầu của bạn đến đúng hướng."
     },
     "demoCta": {
       "title": "Bạn muốn trải nghiệm",
@@ -1322,27 +1243,7 @@
       "subheadline": "Từ sảnh đón đến spa, chúng tôi thiết kế âm nhạc định hình trải nghiệm của khách trên từng không gian.",
       "zonesTitle": "Mỗi không gian có tần số riêng",
       "benefitsTitle": "Vì sao các khách sạn chọn BMAsia",
-      "editorialStat": "41% khách lưu trú lâu hơn khi họ yêu thích âm nhạc.",
-      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021 — khảo sát hơn 2.500 người tiêu dùng.",
       "ctaHeadline": "Thiết kế âm thanh cho khách sạn của bạn.",
-      "stats": {
-        "s1": {
-          "value": "9.1%",
-          "label": "Tăng doanh thu"
-        },
-        "s2": {
-          "value": "41%",
-          "label": "Thời gian lưu trú dài hơn"
-        },
-        "s3": {
-          "value": "39%",
-          "label": "Khách quay lại nhiều hơn"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Quản lý âm nhạc"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Sảnh đón & Tiếp tân",
@@ -1370,11 +1271,11 @@
         }
       },
       "benefits": {
-        "b1": "Điều khiển tập trung nhiều cơ sở từ một bảng điều khiển duy nhất",
-        "b2": "Thiết kế âm nhạc riêng bởi đội ngũ của chúng tôi, làm mới hàng quý",
-        "b3": "Lập lịch theo khung giờ — tự động chuyển từ sáng đến tối",
-        "b4": "Phát ngoại tuyến đảm bảo — âm nhạc vẫn phát ngay cả khi mất mạng",
-        "b5": "Hỗ trợ và quản lý tài khoản chuyên biệt 24/7"
+        "b1": "Một kế hoạch xuyên suốt sảnh, khu ẩm thực, chăm sóc sức khỏe, giải trí và các khu vực buổi tối",
+        "b2": "Lịch phát nhạc và nội dung màn hình có thể đi theo hành trình trong ngày của khách",
+        "b3": "Thông điệp đa ngôn ngữ luôn rõ ràng và đúng thương hiệu",
+        "b4": "Giờ cầu nguyện, thời tiết và hành vi âm lượng được hỗ trợ phù hợp với vận hành địa phương",
+        "b5": "Giám sát tập trung, nhân viên tại địa điểm vẫn giữ quyền kiểm soát"
       }
     },
     "restaurants": {
@@ -1382,27 +1283,7 @@
       "subheadline": "Âm nhạc biến bữa ăn thành kỷ niệm — được lên lịch, tuyển chọn và luôn đúng thương hiệu.",
       "zonesTitle": "Từ bình minh đến gọi món cuối",
       "benefitsTitle": "Vì sao các nhà hàng chọn BMAsia",
-      "editorialStat": "Âm nhạc nhịp chậm tăng thời gian dùng bữa thêm 24% và doanh thu quầy bar thêm 40%.",
-      "editorialStatSub": "Milliman (1986), Journal of Consumer Research.",
       "ctaHeadline": "Định hình không khí cho nhà hàng của bạn.",
-      "stats": {
-        "s1": {
-          "value": "9.1%",
-          "label": "Doanh thu cao hơn"
-        },
-        "s2": {
-          "value": "15%",
-          "label": "Bán tráng miệng nhiều hơn"
-        },
-        "s3": {
-          "value": "24%",
-          "label": "Thời gian dùng bữa dài hơn"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Tự động"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Fine Dining",
@@ -1430,11 +1311,11 @@
         }
       },
       "benefits": {
-        "b1": "Lập lịch theo khung giờ — tự động chuyển từ bữa sáng đến đêm khuya",
-        "b2": "Tuyển chọn thể loại và tâm trạng phù hợp với concept F&B của bạn",
-        "b3": "Đầy đủ giấy phép — tùy chọn không bản quyền hoặc thương mại",
-        "b4": "Điều khiển đa vùng cho phòng ăn, quầy bar, sân hiên và khu vệ sinh",
-        "b5": "Âm lượng và mức năng lượng tự điều chỉnh theo thời điểm trong ngày"
+        "b1": "Các khung giờ chuyển từ mở cửa sang bữa trưa, bữa tối và phục vụ khuya",
+        "b2": "Khu ăn uống, quầy bar và sân hiên có thể duy trì mức năng lượng riêng",
+        "b3": "Hình ảnh thực đơn, khuyến mãi và sự kiện có thể đi theo cùng một kế hoạch",
+        "b4": "Mức âm lượng đặt trước theo lịch hỗ trợ vận hành phục vụ mà không đưa ra tuyên bố về microphone cảm nhận môi trường",
+        "b5": "Người vận hành có thể xem trước, phê duyệt và can thiệp vào các thay đổi"
       }
     },
     "retail": {
@@ -1442,27 +1323,7 @@
       "subheadline": "Chúng tôi thiết kế bản sắc âm thanh khiến khách hàng ở lại, dạo xem và mua sắm.",
       "zonesTitle": "Âm thanh cho mọi quy mô",
       "benefitsTitle": "Vì sao các nhà bán lẻ chọn BMAsia",
-      "editorialStat": "Âm nhạc nhịp chậm tăng doanh số bán lẻ hàng ngày thêm 38%.",
-      "editorialStatSub": "Milliman (1982), Journal of Marketing — nghiên cứu âm nhạc bán lẻ chuẩn mực.",
       "ctaHeadline": "Khuếch đại thương hiệu của bạn.",
-      "stats": {
-        "s1": {
-          "value": "38%",
-          "label": "Doanh số hàng ngày cao hơn"
-        },
-        "s2": {
-          "value": "90%",
-          "label": "Quay lại khi nhạc hay"
-        },
-        "s3": {
-          "value": "3.4x",
-          "label": "Hiệu ứng gợi ý với rượu vang"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Tự động"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Thời trang & May mặc",
@@ -1490,11 +1351,11 @@
         }
       },
       "benefits": {
-        "b1": "Điều khiển âm nhạc tập trung trên toàn bộ chuỗi cửa hàng",
-        "b2": "Tuyển chọn phù hợp thương hiệu, củng cố bản sắc của bạn",
-        "b3": "Thông điệp âm thanh cho khuyến mãi, giờ mở cửa và thông báo",
-        "b4": "Đồng nhất đa cửa hàng từ flagship đến outlet",
-        "b5": "Lập lịch giờ cao điểm — mức năng lượng khớp với lưu lượng khách"
+        "b1": "Âm nhạc chiến dịch và hình ảnh lặp cùng theo một định hướng sáng tạo",
+        "b2": "Lịch phát cho nhiều cửa hàng giữ sự nhất quán thương hiệu và quyền kiểm soát tại địa phương",
+        "b3": "Thông điệp khuyến mãi có thể được đặt đúng thời điểm mà không làm gián đoạn bầu không khí",
+        "b4": "API có thể kết nối các tín hiệu vận hành và chiến dịch đã được phê duyệt",
+        "b5": "Có cả hướng kho nhạc thương mại quen thuộc và kho nhạc miễn phí bản quyền"
       }
     },
     "bars": {
@@ -1502,27 +1363,7 @@
       "subheadline": "Âm nhạc có bản quyền định hình không khí hoàn hảo — từ giờ cocktail đến giờ đóng cửa.",
       "zonesTitle": "Định hình không khí cho từng khoảnh khắc",
       "benefitsTitle": "Vì sao các quầy bar chọn BMAsia",
-      "editorialStat": "Âm lượng lớn hơn làm tăng số đồ uống mỗi khách từ 2.6 lên 3.4.",
-      "editorialStatSub": "Guéguen et al. (2004), Alcoholism: Clinical & Experimental Research.",
       "ctaHeadline": "Thiết kế âm thanh cho quầy bar của bạn.",
-      "stats": {
-        "s1": {
-          "value": "+31%",
-          "label": "Gọi đồ uống nhiều hơn"
-        },
-        "s2": {
-          "value": "+40%",
-          "label": "Tăng doanh thu quầy bar"
-        },
-        "s3": {
-          "value": "24%",
-          "label": "Thời gian ngồi bàn dài hơn"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Tự động"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Cocktail Bar",
@@ -1550,11 +1391,11 @@
         }
       },
       "benefits": {
-        "b1": "Tự động chuyển không khí từ giờ tan ca sang đêm muộn",
-        "b2": "Chuyên môn đa thể loại — từ jazz đến electronic đến top 40",
-        "b3": "Tuân thủ pháp lý — không rủi ro vi phạm bản quyền",
-        "b4": "Lập lịch âm lượng tôn trọng quy định về tiếng ồn",
-        "b5": "Playlist riêng được làm mới để khách quen luôn bất ngờ"
+        "b1": "Năng lượng có thể tăng dần từ lúc mở cửa, qua giờ cocktail đến khi đóng cửa",
+        "b2": "Lựa chọn âm nhạc có thể dùng kho nhạc thương mại quen thuộc hoặc kho miễn phí bản quyền được tuyển chọn",
+        "b3": "Màn hình, hình ảnh sự kiện và chương trình khuyến mãi đi theo kịch bản vận hành",
+        "b4": "Mức âm lượng đặt trước theo lịch tôn trọng chính sách địa điểm và phán đoán của người vận hành",
+        "b5": "Nhân viên luôn giữ quyền điều khiển tức thời đối với phát nhạc và từng khu vực"
       }
     },
     "spas": {
@@ -1562,27 +1403,7 @@
       "subheadline": "Âm nhạc được thiết kế để xoa dịu, chữa lành và phục hồi — từ tiếp tân đến phòng trị liệu.",
       "zonesTitle": "Tần số chữa lành cho từng không gian",
       "benefitsTitle": "Vì sao các spa chọn BMAsia",
-      "editorialStat": "\"Weightless\" giảm lo âu 65% trong thử nghiệm lâm sàng.",
-      "editorialStatSub": "Mindlab International / British Academy of Sound Therapy, 2011.",
       "ctaHeadline": "Thiết kế âm thanh cho không gian an yên của bạn.",
-      "stats": {
-        "s1": {
-          "value": "65%",
-          "label": "Giảm lo âu"
-        },
-        "s2": {
-          "value": "60 BPM",
-          "label": "Đồng bộ sóng não Alpha"
-        },
-        "s3": {
-          "value": "30K+",
-          "label": "Bản nhạc tuyển chọn"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Tự động"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Tiếp tân & Chờ",
@@ -1610,11 +1431,11 @@
         }
       },
       "benefits": {
-        "b1": "Playlist wellness tuyển chọn bởi các nhà thiết kế âm nhạc chuyên nghiệp",
-        "b2": "Điều khiển liền mạch theo từng vùng cho các khu trị liệu khác nhau",
-        "b3": "Phát ngoại tuyến — không bao giờ im lặng trong lúc trị liệu",
-        "b4": "Cập nhật theo mùa và chủ đề (Ramadan, lễ hội, sự kiện)",
-        "b5": "Bao gồm đầy đủ giấy phép với Beat Breeze — không phiền hà"
+        "b1": "Không gian âm thanh và âm nhạc có thể được định hình cho từng khu vực trị liệu",
+        "b2": "Lịch phát ít gián đoạn bảo vệ nhịp điệu trong hành trình của khách",
+        "b3": "Hình ảnh lặp nhẹ nhàng hỗ trợ khu tiếp tân và thư giãn",
+        "b4": "Thông điệp được giữ ở mức tối thiểu, hữu ích và phù hợp địa phương",
+        "b5": "Âm lượng theo mức đặt trước và do người vận hành kiểm soát"
       }
     },
     "cafes": {
@@ -1622,27 +1443,7 @@
       "subheadline": "Âm nhạc khiến khách ngồi xuống, gọi thêm một ly cà phê và nán lại thêm chút nữa.",
       "zonesTitle": "Từ ly espresso buổi sáng đến buổi làm việc chiều",
       "benefitsTitle": "Vì sao các quán café chọn BMAsia",
-      "editorialStat": "73% khách hàng hành động sau khi nghe một bài hát họ thích trong quán café.",
-      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021.",
       "ctaHeadline": "Thiết kế âm thanh cho quán café của bạn.",
-      "stats": {
-        "s1": {
-          "value": "79%",
-          "label": "Chú ý đến âm nhạc"
-        },
-        "s2": {
-          "value": "41%",
-          "label": "Ở lại lâu hơn"
-        },
-        "s3": {
-          "value": "73%",
-          "label": "Hành động sau đó"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Tự động"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Cao điểm sáng",
@@ -1670,11 +1471,11 @@
         }
       },
       "benefits": {
-        "b1": "Lập lịch theo khung giờ khớp năng lượng với thời điểm trong ngày",
-        "b2": "Bao gồm đầy đủ giấy phép — không phí hiệp hội thu tác quyền với Beat Breeze",
-        "b3": "Giá cả phải chăng cho các cơ sở một vùng",
-        "b4": "Thiết lập dễ dàng trên mọi thiết bị Android hoặc Windows",
-        "b5": "Playlist làm mới giữ chân khách quen"
+        "b1": "Lịch phát nhạc đi theo giờ cao điểm buổi sáng, giờ làm việc, thời gian giao lưu và lúc đóng cửa",
+        "b2": "Hình ảnh thực đơn số và khuyến mãi có thể thay đổi theo khung giờ",
+        "b3": "Chương trình nhận biết thời tiết có thể gợi ý một định hướng phù hợp",
+        "b4": "Nhạc chờ điện thoại có thể đưa cùng bản sắc âm thanh vượt ra ngoài quán cà phê",
+        "b5": "Nhân viên có thể điều chỉnh khu vực đang hoạt động mà không phải xây lại kế hoạch"
       }
     },
     "malls": {
@@ -1682,27 +1483,7 @@
       "subheadline": "Quản lý âm nhạc đa vùng cho các trung tâm thương mại mong muốn tăng lưu lượng khách và thời gian ghé thăm.",
       "zonesTitle": "Một tòa nhà, nhiều không khí",
       "benefitsTitle": "Vì sao các trung tâm thương mại chọn BMAsia",
-      "editorialStat": "85% người mua nói âm nhạc là yếu tố số 1 nâng cao tâm trạng khi mua sắm.",
-      "editorialStatSub": "Mood Media, \"Quantifying the Impact of Sensory Marketing,\" 2019.",
       "ctaHeadline": "Thiết kế âm thanh cho trung tâm thương mại của bạn.",
-      "stats": {
-        "s1": {
-          "value": "38%",
-          "label": "Doanh số hàng ngày cao hơn"
-        },
-        "s2": {
-          "value": "85%",
-          "label": "Nói âm nhạc nâng cao tâm trạng"
-        },
-        "s3": {
-          "value": "75%",
-          "label": "Ở lại lâu hơn"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Điều khiển tập trung"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Khu vực chung",
@@ -1730,11 +1511,11 @@
         }
       },
       "benefits": {
-        "b1": "Quản lý tập trung hàng chục vùng từ một bảng điều khiển duy nhất",
-        "b2": "Thông điệp âm thanh cho khuyến mãi, sự kiện và thông báo",
-        "b3": "Lập lịch thích ứng với mô hình lưu lượng ngày thường và cuối tuần",
-        "b4": "Giải pháp phần cứng cho triển khai quy mô lớn",
-        "b5": "Quản lý tài khoản chuyên biệt để hỗ trợ liên tục"
+        "b1": "Khu vực chung, khu ẩm thực, lối vào và các khu cao cấp luôn được phối hợp",
+        "b2": "Mạng lưới màn hình và thông báo có thể theo cùng một lịch vận hành",
+        "b3": "Thông điệp đa ngôn ngữ hỗ trợ chỉ đường, sự kiện và khuyến mãi",
+        "b4": "Hành vi theo giờ cầu nguyện có thể phù hợp với lịch địa phương của trung tâm",
+        "b5": "Đội ngũ trung tâm nhìn thấy toàn bộ khuôn viên trong khi nhân viên từng khu vực vẫn giữ quyền kiểm soát"
       }
     },
     "gyms": {
@@ -1742,27 +1523,7 @@
       "subheadline": "Âm nhạc tràn đầy năng lượng thúc đẩy hiệu suất, truyền cảm hứng cho hội viên và giữ họ quay lại.",
       "zonesTitle": "Năng lượng khác nhau cho từng bài tập",
       "benefitsTitle": "Vì sao các phòng gym chọn BMAsia",
-      "editorialStat": "Âm nhạc tăng sức bền 15% và giảm cảm giác gắng sức 10%.",
-      "editorialStatSub": "Karageorghis et al. / Terry et al. (2020), Psychological Bulletin — phân tích tổng hợp 139 nghiên cứu.",
       "ctaHeadline": "Tiếp thêm năng lượng cho âm thanh phòng gym của bạn.",
-      "stats": {
-        "s1": {
-          "value": "+15%",
-          "label": "Tăng sức bền"
-        },
-        "s2": {
-          "value": "-10%",
-          "label": "Cảm giác gắng sức"
-        },
-        "s3": {
-          "value": "139",
-          "label": "Nghiên cứu xác nhận"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Tự động"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Khu tạ",
@@ -1790,11 +1551,11 @@
         }
       },
       "benefits": {
-        "b1": "Playlist khớp BPM cho các cường độ tập luyện khác nhau",
-        "b2": "Điều khiển đa vùng — mạnh mẽ ở khu tạ, nhẹ nhàng ở phòng yoga",
-        "b3": "Đầy đủ giấy phép — thương mại hoặc không bản quyền",
-        "b4": "Lập lịch thích ứng với giờ cao điểm và lịch lớp học",
-        "b5": "Đồng nhất đa cơ sở cho các chuỗi gym"
+        "b1": "Lịch lớp học và lịch từng khu vực định hình đường cong năng lượng trong ngày",
+        "b2": "Khu tập luyện, tiếp tân và phục hồi có thể được chủ động tạo âm thanh khác nhau",
+        "b3": "Màn hình và hình ảnh lặp hỗ trợ lớp học và truyền thông tới hội viên",
+        "b4": "API có thể kết nối các tín hiệu lịch học hoặc vận hành đã được phê duyệt",
+        "b5": "Mức âm lượng đặt trước theo lịch giữ quyền kiểm soát trong tay nhân viên"
       }
     },
     "medical": {
@@ -1802,27 +1563,7 @@
       "subheadline": "Âm nhạc giảm lo âu, xây dựng niềm tin và tạo nên môi trường chữa lành.",
       "zonesTitle": "Âm thanh cho mọi không gian lâm sàng",
       "benefitsTitle": "Vì sao các cơ sở y tế chọn BMAsia",
-      "editorialStat": "Âm nhạc giảm lo âu phẫu thuật hiệu quả như thuốc (NNT=4).",
-      "editorialStatSub": "Kuhlmann et al. (2018), British Journal of Surgery — 92 RCTs, 7.385 bệnh nhân.",
       "ctaHeadline": "Thiết kế âm thanh cho phòng khám của bạn.",
-      "stats": {
-        "s1": {
-          "value": "NNT=4",
-          "label": "Hiệu quả như thuốc"
-        },
-        "s2": {
-          "value": "7,385",
-          "label": "Bệnh nhân được nghiên cứu"
-        },
-        "s3": {
-          "value": "92",
-          "label": "Thử nghiệm lâm sàng"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Tự động"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Phòng chờ",
@@ -1850,11 +1591,11 @@
         }
       },
       "benefits": {
-        "b1": "Playlist dựa trên cơ sở lâm sàng, thiết kế cho môi trường y tế",
-        "b2": "Bao gồm đầy đủ giấy phép với Beat Breeze — không phức tạp về tuân thủ",
-        "b3": "Phát ngoại tuyến — không gián đoạn trong lúc điều trị",
-        "b4": "Kiểm soát âm lượng phù hợp với môi trường lâm sàng",
-        "b5": "Thiết lập dễ dàng, không gây gánh nặng cho đội IT"
+        "b1": "Khu chờ, điều trị và phục hồi có thể có âm thanh ít gây căng thẳng riêng biệt",
+        "b2": "Màn hình hỗ trợ thông tin nhẹ nhàng và chỉ đường mà không đưa ra tuyên bố y khoa",
+        "b3": "Thông điệp đa ngôn ngữ có thể được lên lịch theo địa điểm và thời gian",
+        "b4": "Lịch đơn giản theo khu vực giúp giảm gánh nặng cho nhân viên và đội IT",
+        "b5": "Người vận hành giữ quyền điều khiển trực tiếp đối với âm lượng và phát nhạc"
       }
     },
     "offices": {
@@ -1862,27 +1603,7 @@
       "subheadline": "Nhạc nền nâng cao khả năng tập trung, sáng tạo và sự hài lòng nơi công sở.",
       "zonesTitle": "Các chế độ khác nhau cho các không gian khác nhau",
       "benefitsTitle": "Vì sao các văn phòng chọn BMAsia",
-      "editorialStat": "Lập trình viên phần mềm tạo ra công việc chất lượng cao hơn khi có nhạc nền.",
-      "editorialStatSub": "Lesiuk (2005), Psychology of Music — 56 lập trình viên, nghiên cứu 5 tuần.",
       "ctaHeadline": "Thiết kế âm thanh cho không gian làm việc của bạn.",
-      "stats": {
-        "s1": {
-          "value": "79%",
-          "label": "Nói âm nhạc có ích"
-        },
-        "s2": {
-          "value": "70 dB",
-          "label": "Mức tối ưu"
-        },
-        "s3": {
-          "value": "30K+",
-          "label": "Bản nhạc tuyển chọn"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Tự động"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Không gian mở",
@@ -1910,11 +1631,11 @@
         }
       },
       "benefits": {
-        "b1": "Lập lịch khớp với nhịp văn phòng — sáng tập trung, chiều xã giao",
-        "b2": "Điều khiển đa vùng cho không gian mở, phòng họp và khu vực chung",
-        "b3": "Bao gồm đầy đủ giấy phép với Beat Breeze — thiết lập thân thiện với IT",
-        "b4": "Tăng sự hài lòng của nhân viên thông qua thiết kế âm thanh chu đáo",
-        "b5": "Giá một vùng phải chăng cho văn phòng nhỏ"
+        "b1": "Khu tập trung, tiếp tân, giao lưu và họp có thể vận hành theo các chế độ khác nhau",
+        "b2": "Màn hình và thông điệp nội bộ đi theo lịch của nơi làm việc",
+        "b3": "Không gian âm thanh có thể hỗ trợ các khu vực chung yên tĩnh hơn mà không bảo đảm năng suất",
+        "b4": "Nhạc chờ điện thoại tiếp nối trải nghiệm thương hiệu cho người gọi",
+        "b5": "Lịch luôn dễ dàng để đội ngũ nơi làm việc rà soát và can thiệp"
       }
     },
     "showrooms": {
@@ -1922,27 +1643,7 @@
       "subheadline": "Âm nhạc cao cấp tôn vinh sản phẩm và tạo ra những trải nghiệm truyền cảm hứng.",
       "zonesTitle": "Sân khấu cho từng sản phẩm",
       "benefitsTitle": "Vì sao các showroom chọn BMAsia",
-      "editorialStat": "Nhạc cổ điển dẫn dắt khách hàng chọn những sản phẩm đắt tiền hơn.",
-      "editorialStatSub": "Areni & Kim (1993), Advances in Consumer Research.",
       "ctaHeadline": "Thiết kế âm thanh cho showroom của bạn.",
-      "stats": {
-        "s1": {
-          "value": "38%",
-          "label": "Doanh số cao hơn"
-        },
-        "s2": {
-          "value": "3.4x",
-          "label": "Hiệu ứng gợi ý từ âm nhạc"
-        },
-        "s3": {
-          "value": "65%",
-          "label": "Nói không khí là quan trọng"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "Tự động"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Showroom ô tô",
@@ -1970,11 +1671,11 @@
         }
       },
       "benefits": {
-        "b1": "Âm nhạc khớp thương hiệu củng cố định vị sản phẩm của bạn",
-        "b2": "Chế độ sự kiện cho ra mắt, khai trương và các buổi xem VIP",
-        "b3": "Tuyển chọn riêng kể câu chuyện thương hiệu qua âm thanh",
-        "b4": "Lập lịch đa phòng cho các khu sản phẩm khác nhau",
-        "b5": "Cảm giác cao cấp không đi kèm sự phức tạp cao cấp"
+        "b1": "Âm nhạc và nội dung hình ảnh cùng củng cố câu chuyện sản phẩm",
+        "b2": "Video ra mắt, trình chiếu và chế độ sự kiện có thể chạy theo một chuỗi được định giờ",
+        "b3": "Thông điệp đa ngôn ngữ hỗ trợ khách địa phương và các đoàn tham quan",
+        "b4": "API đã được phê duyệt có thể kích hoạt nội dung cho khoảnh khắc sản phẩm hoặc sự kiện",
+        "b5": "Nhạc chờ điện thoại mở rộng cùng định hướng thương hiệu ra ngoài khu trưng bày"
       }
     },
     "events": {
@@ -1982,27 +1683,7 @@
       "subheadline": "Từ gala doanh nghiệp đến ra mắt thương hiệu — âm nhạc biến những khoảnh khắc thành điều không thể quên.",
       "zonesTitle": "Âm thanh cho mọi dịp",
       "benefitsTitle": "Vì sao các địa điểm sự kiện chọn BMAsia",
-      "editorialStat": "Vào những khoảnh khắc cảm xúc đỉnh cao, người tham dự có khả năng kết nối với thương hiệu cao hơn 63%.",
-      "editorialStatSub": "Live Nation, \"The Power of Live\" Global Study, 2018 — 22.500 người hâm mộ, 11 quốc gia.",
       "ctaHeadline": "Thiết kế âm thanh cho sự kiện của bạn.",
-      "stats": {
-        "s1": {
-          "value": "63%",
-          "label": "Kết nối thương hiệu"
-        },
-        "s2": {
-          "value": "90%",
-          "label": "Chào đón sự hiện diện thương hiệu"
-        },
-        "s3": {
-          "value": "500+",
-          "label": "Địa điểm đã phục vụ"
-        },
-        "s4": {
-          "value": "23+",
-          "label": "Năm kinh nghiệm"
-        }
-      },
       "zones": {
         "z1": {
           "name": "Sự kiện doanh nghiệp",
@@ -2030,11 +1711,11 @@
         }
       },
       "benefits": {
-        "b1": "Thiết kế playlist riêng cho từng sự kiện bởi đội ngũ âm nhạc của chúng tôi",
-        "b2": "Lập lịch bám sát dòng thời gian sự kiện một cách chính xác",
-        "b3": "Thông điệp âm thanh cho thông báo và điều hướng chương trình",
-        "b4": "Tùy chọn lắp đặt tạm thời hoặc cố định",
-        "b5": "Đội ngũ âm nhạc biến bản tóm tắt sự kiện của bạn thành kế hoạch âm nhạc thực tế"
+        "b1": "Âm nhạc, màn hình, video và thông báo cùng theo một kịch bản vận hành",
+        "b2": "Các khu vực tạm thời có thể được diễn tập trước khi khách đến",
+        "b3": "Thông điệp được định giờ hỗ trợ các bước chuyển tiếp mà không chỉ dựa vào tín hiệu thủ công",
+        "b4": "Người vận hành có thể can thiệp trực tiếp vào mọi khoảnh khắc đã lên lịch",
+        "b5": "Kế hoạch có thể được tái sử dụng và điều chỉnh cho các sự kiện sau"
       }
     }
   },
@@ -2043,6 +1724,283 @@
     "ctaDemo": "Đặt lịch demo",
     "source": "Nguồn: Soundtrack Research",
     "footerCtaQuote": "Nhận báo giá →",
-    "footerCtaDemo": "Đặt lịch demo →"
+    "footerCtaDemo": "Đặt lịch demo →",
+    "heroEyebrow": "BMAsia cho địa điểm của bạn",
+    "helpChoose": "Giúp tôi lựa chọn",
+    "seeDayFlow": "Xem một ngày chuyển động",
+    "livePlan": "Kế hoạch bầu không khí trực tiếp",
+    "ready": "Kế hoạch đã sẵn sàng",
+    "dayEyebrow": "Một ngày vận hành",
+    "dayTitle": "Mỗi khoảnh khắc có một nhiệm vụ khác nhau.",
+    "dayDescription": "Âm nhạc dẫn dắt bầu không khí, còn màn hình, thông điệp, lịch và các tự động hóa đã được phê duyệt đưa kế hoạch xuyên suốt địa điểm.",
+    "touchpointsEyebrow": "Được thiết kế cho cách vận hành này",
+    "touchpointsTitle": "Không phải một mẫu nhạc nền rập khuôn.",
+    "touchpointsDescription": "Mỗi khu vực và điểm chạm cần hỗ trợ hành trình thực tế của khách hàng, nhịp làm việc của nhân viên và quyết định thương hiệu của loại hình doanh nghiệp này.",
+    "operationsTitle": "Được xây để vận hành, không chỉ để ngắm một lần",
+    "productFitEyebrow": "Hai hướng sản phẩm đáng tin cậy",
+    "productFitTitle": "Lựa chọn theo kho nhạc và mô hình vận hành.",
+    "productFitDescription": "BMAsia có thể cung cấp cả hai hướng. Lựa chọn phù hợp phụ thuộc vào âm nhạc khách nên nghe và trải nghiệm không gian rộng hơn mà bạn cần vận hành.",
+    "beatBreeze": {
+      "eyebrow": "Linh hoạt và miễn phí bản quyền",
+      "text": "Chọn Beat Breeze khi âm nhạc, màn hình, thông điệp, nội dung truyền thông và tự động hóa không gian cần phối hợp trong một nền tảng BMAsia.",
+      "cta": "Khám phá Beat Breeze"
+    },
+    "soundtrack": {
+      "eyebrow": "Âm nhạc thương mại quen thuộc",
+      "text": "Chọn Soundtrack khi kho nhạc quen thuộc từ các hãng thu âm lớn là ưu tiên, đi kèm thiết kế âm nhạc và các tiện ích mở rộng được hỗ trợ từ BMAsia.",
+      "cta": "Khám phá Soundtrack"
+    },
+    "notSure": "Nhờ BMAsia so sánh cả hai",
+    "finalDescription": "Hãy cho chúng tôi biết về các khu vực, hành trình của khách và kỳ vọng âm nhạc. Chúng tôi sẽ đề xuất sản phẩm và mô hình dịch vụ thực sự phù hợp.",
+    "howItWorks": "Cách BMAsia vận hành",
+    "capabilities": {
+      "music": "Âm nhạc",
+      "screens": "Màn hình và TV",
+      "messages": "Thông điệp đa ngôn ngữ",
+      "video": "Video và hình ảnh lặp",
+      "scheduling": "Lên lịch",
+      "automation": "Tự động hóa",
+      "api": "API và tích hợp",
+      "volume": "Mức âm lượng đặt trước",
+      "prayer": "Hành vi theo giờ cầu nguyện",
+      "phone": "Nhạc chờ điện thoại",
+      "soundscapes": "Không gian âm thanh"
+    }
+  },
+  "cookieBanner": {
+    "title": "Lựa chọn quyền riêng tư của bạn",
+    "manageTitle": "Quản lý tùy chọn phân tích",
+    "description": "Bộ nhớ cần thiết lưu lựa chọn ngôn ngữ và quyền riêng tư của bạn. Khi được cho phép, Google Tag Manager và Apollo giúp chúng tôi hiểu lượt truy cập và mức độ quan tâm của doanh nghiệp.",
+    "policy": "Đọc chính sách cookie",
+    "close": "Đóng tùy chọn",
+    "necessaryTitle": "Cần thiết",
+    "necessaryDescription": "Cần thiết cho ngôn ngữ, bảo mật và ghi nhớ lựa chọn này. Luôn hoạt động.",
+    "analyticsTitle": "Phân tích và thông tin chuyên sâu về doanh nghiệp",
+    "analyticsDescription": "Đo lường tùy chọn bằng Google Tag Manager và Apollo. Chỉ được tải sau khi bạn cho phép.",
+    "necessaryOnly": "Chỉ cần thiết",
+    "allowAnalytics": "Cho phép phân tích"
+  },
+  "legalPages": {
+    "privacy": {
+      "eyebrow": "Pháp lý · Cách xử lý dữ liệu",
+      "title": "Chính sách bảo mật",
+      "summary": "Thông tin BMAsia thu thập qua trang web này, lý do chúng tôi sử dụng và các dịch vụ liên quan khi bạn liên hệ, yêu cầu dùng thử hoặc sử dụng trợ lý.",
+      "updated": "Cập nhật lần cuối: ngày 4 tháng 8 năm 2026",
+      "cookieLink": "Xem lại hoặc thay đổi tùy chọn cookie",
+      "sections": {
+        "controller": {
+          "title": "Đơn vị chịu trách nhiệm",
+          "paragraphs": [
+            "Chính sách này áp dụng cho BMAsia (Thailand) Co., Ltd. và BMAsia Limited khi các công ty này xử lý dữ liệu cá nhân qua bmasiamusic.com. Pháp nhân BMAsia xử lý yêu cầu hoặc thỏa thuận của bạn chịu trách nhiệm về hoạt động xử lý đó."
+          ],
+          "items": [
+            "BMAsia (Thailand) Co., Ltd., 725 S-Metro Building, Suite 144, Level 20, Sukhumvit Road, Klongtan Nua, Watthana, Bangkok 10110, Thailand.",
+            "BMAsia Limited, Hong Kong."
+          ]
+        },
+        "data": {
+          "title": "Dữ liệu chúng tôi nhận được",
+          "paragraphs": [
+            "Chúng tôi nhận thông tin bạn gửi và một lượng thông tin kỹ thuật giới hạn được tạo ra khi trang web được sử dụng. Vui lòng không nhập dữ liệu cá nhân nhạy cảm vào các trường văn bản tự do hoặc trợ lý trên trang web."
+          ],
+          "items": [
+            "Thông tin liên hệ và doanh nghiệp, thông tin địa điểm, lựa chọn sản phẩm và thông điệp được gửi qua biểu mẫu yêu cầu, báo giá và dùng thử Soundtrack.",
+            "Cuộc trò chuyện với trợ lý và chi tiết chuyển tiếp khi bạn chọn sử dụng trải nghiệm trò chuyện hoặc giọng nói.",
+            "Lựa chọn đồng ý, tùy chọn ngôn ngữ, thông tin thiết bị và sử dụng, dữ liệu giới thiệu và thông tin mạng gần đúng khi tính năng đo lường tùy chọn được bật."
+          ]
+        },
+        "purposes": {
+          "title": "Lý do chúng tôi sử dụng dữ liệu",
+          "paragraphs": [
+            "Chúng tôi sử dụng thông tin này để phản hồi yêu cầu, đánh giá mức độ phù hợp của sản phẩm và bản dùng thử, chuẩn bị đề xuất, hỗ trợ khách hàng, bảo mật và vận hành trang web, cũng như cải thiện dịch vụ. Tùy theo bối cảnh, cơ sở xử lý có thể là các bước chuẩn bị cho hợp đồng, thực hiện hợp đồng, lợi ích kinh doanh chính đáng, sự đồng ý hoặc nghĩa vụ pháp lý."
+          ],
+          "items": [
+            "Việc gửi biểu mẫu không đồng nghĩa với cho phép tiếp thị hàng loạt không liên quan.",
+            "Công cụ phân tích và đo lường khách hàng tiềm năng tùy chọn chỉ được tải sau lựa chọn đồng ý hiển thị trên trang web này.",
+            "Phản hồi của trợ lý chỉ nhằm cung cấp thông tin và không phải cam kết thương mại có tính ràng buộc."
+          ]
+        },
+        "sharing": {
+          "title": "Dịch vụ và bên nhận dữ liệu",
+          "paragraphs": [
+            "Chúng tôi chỉ chia sẻ dữ liệu khi cần để vận hành trang web, phản hồi bạn, sắp xếp dịch vụ được yêu cầu hoặc thực hiện nghĩa vụ pháp lý. Nhà cung cấp có thể xử lý dữ liệu tại các quốc gia ngoài quốc gia của bạn."
+          ],
+          "items": [
+            "Render và Cloudflare cho hạ tầng ứng dụng, cơ sở dữ liệu, mạng và bảo mật.",
+            "Google Workspace và Gmail cho trao đổi công việc; Google Tag Manager và Google Analytics khi bạn chấp nhận đo lường tùy chọn.",
+            "Công cụ đo lường khách truy cập trang web của Apollo khi bạn chấp nhận đo lường tùy chọn.",
+            "ElevenLabs và các dịch vụ trợ lý hoặc trung tâm thông điệp của BMAsia khi bạn sử dụng tính năng trò chuyện, giọng nói hoặc chuyển tiếp.",
+            "Soundtrack khi bạn yêu cầu dùng thử hoặc kích hoạt Soundtrack và cần chia sẻ các chi tiết thiết lập cần thiết.",
+            "Cố vấn chuyên môn, cơ quan có thẩm quyền hoặc đối tác giao dịch khi pháp luật hoặc một giao dịch doanh nghiệp hợp pháp yêu cầu."
+          ]
+        },
+        "retention": {
+          "title": "Lưu giữ và bảo mật",
+          "paragraphs": [
+            "Chúng tôi chỉ lưu thông tin trong thời gian cần thiết cho mục đích thu thập, quan hệ kinh doanh đang hoạt động, xử lý tranh chấp, bảo mật hoặc nghĩa vụ pháp lý và kế toán. Thời gian lưu giữ khác nhau theo loại hồ sơ và khu vực pháp lý.",
+            "BMAsia và các nhà cung cấp áp dụng biện pháp bảo vệ về tổ chức và kỹ thuật, nhưng không hệ thống truyền tải hoặc lưu trữ qua internet nào có thể được bảo đảm an toàn tuyệt đối."
+          ],
+          "items": []
+        },
+        "rights": {
+          "title": "Lựa chọn và quyền của bạn",
+          "paragraphs": [
+            "Tùy nơi bạn sinh sống, bạn có thể yêu cầu truy cập, chỉnh sửa, xóa, hạn chế hoặc chuyển dữ liệu, phản đối việc xử lý, rút lại sự đồng ý và khiếu nại với cơ quan bảo vệ dữ liệu có thẩm quyền. Chúng tôi có thể cần xác minh danh tính của bạn và có thể lưu giữ thông tin khi pháp luật cho phép hoặc yêu cầu."
+          ],
+          "items": [
+            "Bạn có thể mở lại tùy chọn cookie từ chân trang hoặc liên kết bên dưới.",
+            "Bạn có thể yêu cầu chúng tôi dừng liên hệ trực tiếp nếu việc liên hệ đó không cần thiết cho dịch vụ hiện tại.",
+            "Các công cụ điều khiển của trình duyệt và thiết bị cũng có thể giới hạn cookie hoặc quyền truy cập."
+          ]
+        },
+        "contact": {
+          "title": "Liên hệ và cập nhật",
+          "paragraphs": [
+            "Gửi câu hỏi về quyền riêng tư hoặc yêu cầu thực hiện quyền đến địa chỉ email bên dưới. Chúng tôi có thể cập nhật chính sách này khi trang web, nhà cung cấp hoặc yêu cầu pháp lý thay đổi; ngày hiện hành sẽ xuất hiện ở đầu trang này."
+          ],
+          "items": []
+        }
+      }
+    },
+    "cookies": {
+      "eyebrow": "Pháp lý · Quyền kiểm soát của bạn",
+      "title": "Chính sách cookie và lưu trữ",
+      "summary": "Bản đồ dễ hiểu về bộ nhớ trình duyệt và tính năng đo lường tùy chọn được sử dụng trên trang web này—cùng cách thay đổi lựa chọn của bạn.",
+      "updated": "Cập nhật lần cuối: ngày 4 tháng 8 năm 2026",
+      "manage": "Mở tùy chọn cookie",
+      "privacyLink": "Đọc chính sách bảo mật",
+      "sections": {
+        "storage": {
+          "title": "Cookie và bộ nhớ trình duyệt",
+          "paragraphs": [
+            "Cookie là các giá trị nhỏ được trình duyệt lưu trữ. Trang web này cũng sử dụng bộ nhớ cục bộ để lưu hồ sơ đồng ý. Những nhà cung cấp được bật theo lựa chọn của bạn có thể sử dụng cookie hoặc mã nhận dạng tương tự của riêng họ."
+          ],
+          "items": []
+        },
+        "necessary": {
+          "title": "Bộ nhớ cần thiết",
+          "paragraphs": [
+            "Bộ nhớ cần thiết hỗ trợ các lựa chọn mà bạn yêu cầu trang web ghi nhớ và không được sử dụng cho quảng cáo."
+          ],
+          "items": [
+            "cookie_consent_v2 trong bộ nhớ cục bộ ghi lại việc bạn chỉ chấp nhận bộ nhớ cần thiết hay cả tính năng đo lường tùy chọn.",
+            "NEXT_LOCALE ghi nhớ ngôn ngữ bạn chọn. Thời hạn tối đa hiện tại là một năm.",
+            "Các lớp lưu trữ và mạng có thể thiết lập công cụ kiểm soát nền tảng hoặc bảo mật thiết yếu."
+          ]
+        },
+        "optional": {
+          "title": "Đo lường tùy chọn",
+          "paragraphs": [
+            "Nếu bạn chấp nhận đo lường tùy chọn, trang web sẽ tải Google Tag Manager và cấu hình đo lường Google Analytics, cùng công cụ đo lường trang web của Apollo. Các nhà cung cấp này có thể thiết lập mã nhận dạng như _ga hoặc cookie liên quan đến Apollo, đồng thời sử dụng thông tin trình duyệt hoặc mạng để tạo thông tin chuyên sâu về mức sử dụng và khách hàng tiềm năng.",
+            "Tên cookie và thời hạn chính xác của nhà cung cấp có thể thay đổi. Chúng chịu sự điều chỉnh của cấu hình, chính sách của nhà cung cấp và công cụ điều khiển trên trình duyệt của bạn."
+          ],
+          "items": []
+        },
+        "control": {
+          "title": "Đồng ý, từ chối hoặc rút lại sự đồng ý",
+          "paragraphs": [
+            "Bạn có thể chọn chỉ bộ nhớ cần thiết, chấp nhận đo lường tùy chọn hoặc mở lại bảng lựa chọn sau. Khi rút lại sự đồng ý tùy chọn, trang web sẽ xóa các cookie Google Analytics và Apollo đã biết mà trang web có thể truy cập, rồi tải lại trang để các đoạn mã tùy chọn không được tải lại. Cài đặt trình duyệt có thể xóa phần lưu trữ còn lại của nhà cung cấp."
+          ],
+          "items": []
+        },
+        "providers": {
+          "title": "Ranh giới của nhà cung cấp",
+          "paragraphs": [
+            "Google và Apollo xử lý dữ liệu đo lường tùy chọn theo điều khoản bảo mật riêng. BMAsia không chủ ý tải các công cụ đo lường đó trước khi bảng đồng ý ghi nhận việc chấp nhận. Bản thân trợ lý là một dịch vụ tương tác; thông tin bạn chủ động gửi qua trợ lý được điều chỉnh bởi chính sách bảo mật."
+          ],
+          "items": []
+        },
+        "contact": {
+          "title": "Câu hỏi",
+          "paragraphs": [
+            "Nếu có câu hỏi về lưu trữ hoặc đo lường trên trang web này, hãy liên hệ BMAsia. Bạn cũng có thể đọc chính sách bảo mật đầy đủ hơn bên dưới."
+          ],
+          "items": []
+        }
+      }
+    },
+    "terms": {
+      "eyebrow": "Pháp lý · Sử dụng trang web",
+      "title": "Điều khoản trang web",
+      "summary": "Các ranh giới khi sử dụng bmasiamusic.com, yêu cầu thông tin và truy cập liên kết đến các dịch vụ sản phẩm hoặc đối tác của BMAsia.",
+      "updated": "Cập nhật lần cuối: ngày 4 tháng 8 năm 2026",
+      "sections": {
+        "scope": {
+          "title": "Về các điều khoản này",
+          "paragraphs": [
+            "Các điều khoản này điều chỉnh việc sử dụng bmasiamusic.com. Khi sử dụng trang web, bạn đồng ý với các điều khoản này. Nếu không đồng ý, vui lòng không sử dụng trang web. Trang web do BMAsia (Thailand) Co., Ltd. và BMAsia Limited vận hành."
+          ],
+          "items": []
+        },
+        "services": {
+          "title": "Trang web cung cấp gì",
+          "paragraphs": [
+            "Trang web giải thích dịch vụ thiết kế âm nhạc và âm nhạc doanh nghiệp của BMAsia, bao gồm Beat Breeze và các dịch vụ BMAsia xoay quanh Soundtrack. Trang web cũng cho phép bạn liên hệ, yêu cầu đề xuất, yêu cầu dùng thử Soundtrack nếu đủ điều kiện và sử dụng trợ lý cung cấp thông tin."
+          ],
+          "items": []
+        },
+        "requests": {
+          "title": "Yêu cầu, dùng thử và đề xuất",
+          "paragraphs": [
+            "Việc gửi biểu mẫu, đặt lịch demo hoặc yêu cầu dùng thử là yêu cầu để xem xét—không phải đơn hàng được chấp nhận hay gói đăng ký tự động. Điều kiện sử dụng, phạm vi dịch vụ, bản quyền, tính sẵn có, giá, thuế, lãnh thổ, phần cứng và điều khoản hợp đồng được xác nhận riêng bằng văn bản.",
+            "Đề xuất chính thức hoặc thỏa thuận dịch vụ được ưu tiên áp dụng nếu có mâu thuẫn với nội dung chung trên trang web."
+          ],
+          "items": []
+        },
+        "assistant": {
+          "title": "Thông tin có AI hỗ trợ",
+          "paragraphs": [
+            "Trang web có thể cung cấp phản hồi bằng văn bản hoặc giọng nói được tạo với trí tuệ nhân tạo. Những phản hồi đó có thể không đầy đủ hoặc không chính xác và không phải tư vấn pháp lý, báo giá hay cam kết có tính ràng buộc. Hãy xác nhận các chi tiết quan trọng về sản phẩm, bản quyền và thương mại với chuyên gia BMAsia."
+          ],
+          "items": []
+        },
+        "rights": {
+          "title": "Nội dung và nhãn hiệu",
+          "paragraphs": [
+            "Văn bản, thiết kế hình ảnh, phần mềm và tài liệu BMAsia trên trang web được bảo vệ theo luật sở hữu trí tuệ áp dụng. Tên sản phẩm, logo và tài liệu đối tác thuộc về chủ sở hữu tương ứng. Liên kết hoặc phần mô tả không chuyển giao quyền cho bạn."
+          ],
+          "items": []
+        },
+        "acceptable": {
+          "title": "Sử dụng được chấp nhận",
+          "paragraphs": [
+            "Không sử dụng sai mục đích hoặc can thiệp vào hoạt động của trang web."
+          ],
+          "items": [
+            "Không tìm cách truy cập trái phép, thăm dò bảo mật, đưa mã độc vào hoặc làm quá tải dịch vụ.",
+            "Không gửi nội dung trái pháp luật, lừa dối hoặc vi phạm quyền; không mạo danh người khác hoặc lạm dụng biểu mẫu và tính năng trợ lý.",
+            "Không thu thập dữ liệu có hệ thống hoặc sao chép nội dung được bảo vệ trên trang web khi chưa được phép."
+          ]
+        },
+        "external": {
+          "title": "Dịch vụ bên ngoài",
+          "paragraphs": [
+            "Trang web liên kết đến các dịch vụ do bên khác vận hành, bao gồm đăng nhập sản phẩm, Soundtrack, Calendly, nền tảng nhắn tin và kênh mạng xã hội. Điều khoản, cách xử lý quyền riêng tư, tính sẵn có và bảo mật của họ được áp dụng khi bạn rời trang web này. BMAsia không chịu trách nhiệm về trang web bên thứ ba mà BMAsia không kiểm soát."
+          ],
+          "items": []
+        },
+        "liability": {
+          "title": "Tính sẵn có và trách nhiệm",
+          "paragraphs": [
+            "Trang web công khai được cung cấp trên cơ sở “sẵn có đến đâu, cung cấp đến đó”. Chúng tôi không cam kết quyền truy cập không gián đoạn hay mọi tuyên bố chung đều phù hợp với mọi lãnh thổ hoặc địa điểm. Trong phạm vi pháp luật cho phép, BMAsia không chịu trách nhiệm đối với tổn thất gián tiếp hoặc hệ quả phát sinh chỉ từ việc sử dụng trang web công khai này. Không nội dung nào tại đây loại trừ trách nhiệm mà pháp luật không cho phép loại trừ."
+          ],
+          "items": []
+        },
+        "law": {
+          "title": "Luật áp dụng",
+          "paragraphs": [
+            "Việc sử dụng trang web nhìn chung chịu sự điều chỉnh của pháp luật Thái Lan. Thỏa thuận với khách hàng có thể chỉ định một pháp nhân BMAsia, luật điều chỉnh và quy trình giải quyết tranh chấp khác; thỏa thuận đó điều chỉnh dịch vụ đã ký hợp đồng."
+          ],
+          "items": []
+        },
+        "contact": {
+          "title": "Thay đổi và liên hệ",
+          "paragraphs": [
+            "Chúng tôi có thể cập nhật các điều khoản trang web này khi dịch vụ thay đổi. Ngày hiện hành được hiển thị ở đầu trang. Bạn có thể gửi câu hỏi cho BMAsia theo địa chỉ bên dưới."
+          ],
+          "items": []
+        }
+      }
+    }
   }
 }

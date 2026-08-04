@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "BMAsia | 音乐无处不在",
-    "description": "为您的企业打造完美氛围。自2002年以来，BMAsia为亚太地区的酒店、餐厅和零售店提供定制背景音乐解决方案。"
+    "description": "BMAsia 设计并运营音乐、媒体、信息与互联场所体验，由同一支专业服务团队提供 Beat Breeze 与 Soundtrack。"
   },
   "navigation": {
     "home": "首页",
@@ -14,15 +14,24 @@
     "solutions": "解决方案",
     "notSure": "不确定哪种解决方案适合您？",
     "talkToUs": "与我们沟通",
-    "signIn": "登录 Beat Breeze",
-    "startFree": "免费开始",
+    "signIn": "登录",
+    "startFree": "开始使用",
     "openMenu": "打开菜单",
     "closeMenu": "关闭菜单",
     "mainNavigation": "主导航",
     "mobileNavigation": "移动端导航菜单",
     "language": "语言",
     "talkToBMAsia": "与 BMAsia 沟通",
-    "startTrial": "开始 14 天免费试用"
+    "startTrial": "选择产品",
+    "products": "产品",
+    "solutionsIntro": "探索适合您业务类型的完整场所体验方案。",
+    "helpMeChoose": "帮我选择",
+    "login": "登录",
+    "beatBreezeShort": "免版税音乐、媒体与场所自动化。",
+    "soundtrackShort": "由 BMAsia 提供与支持的知名商业音乐。",
+    "beatBreezeLogin": "打开 Beat Breeze 平台",
+    "soundtrackLogin": "打开 Soundtrack 应用",
+    "skipToContent": "跳至主要内容"
   },
   "languageSwitcher": {
     "label": "语言",
@@ -58,57 +67,6 @@
       "title": "品牌和谐",
       "description": "通过与顾客产生共鸣的独特音乐设计，增强品牌识别度。"
     }
-  },
-  "products": {
-    "sectionTitle": "我们的",
-    "sectionTitleHighlight": "解决方案",
-    "sectionSubtitle": "选择适合您业务需求和预算的完美音乐解决方案",
-    "premium": "高端版",
-    "availableOn": "适用于",
-    "soundtrackYourBrand": {
-      "tagline": "高端音乐解决方案",
-      "features": {
-        "tracks": "超过1亿首曲目",
-        "scheduling": "拖拽式排程",
-        "messaging": "文字转语音消息",
-        "offline": "离线播放",
-        "spotify": "合法Spotify同步",
-        "bespoke": "定制音乐设计",
-        "support": "全天候支持"
-      }
-    },
-    "beatBreeze": {
-      "tagline": "基础解决方案",
-      "features": {
-        "tracks": "超过3万首精选曲目",
-        "playlists": "50个现成播放列表",
-        "license": "包含公共表演许可",
-        "multizone": "多区域设置",
-        "scheduling": "高级排程功能",
-        "messaging": "集成消息功能",
-        "offline": "离线播放"
-      }
-    },
-    "notSure": "不确定哪种解决方案适合您？",
-    "bookDemo": "预约免费演示"
-  },
-  "smartFeatures": {
-    "sectionTitle": "为您",
-    "sectionTitleHighlight": "服务的音乐",
-    "sectionSubtitle": "智能自动化，让您的背景音乐适应您的业务",
-    "smartScheduling": {
-      "title": "智能排程",
-      "description": "预设音量级别，根据营业时间自动调整，以及区域适配如祈祷时间暂停等功能。"
-    },
-    "contextAware": {
-      "title": "情境感知音乐",
-      "description": "音乐可根据天气条件调整，与灯光系统同步，并响应实时数据馈送。"
-    },
-    "aiPowered": {
-      "title": "AI驱动播放列表",
-      "description": "只需描述您想要的音乐风格，我们的AI就能创建完美播放列表。无需音乐专业知识。"
-    },
-    "ctaDemo": "预约演示"
   },
   "clientLogos": {
     "sectionTitle": "行业领袖的信赖之选"
@@ -189,7 +147,7 @@
     },
     "email": {
       "label": "电子邮件",
-      "description": "我们通常在24小时内回复"
+      "description": "BMAsia 专员将审核并回复"
     },
     "whatsapp": {
       "label": "WhatsApp",
@@ -203,7 +161,7 @@
   "forms": {
     "inquiry": {
       "title": "音乐咨询表单",
-      "description": "填写以下表单，我们将在24小时内与您联系。",
+      "description": "请填写下方表格，BMAsia 专员将与您联系。",
       "preferDemo": "更喜欢预约通话？",
       "bookDemo": "预约免费演示",
       "fields": {
@@ -228,9 +186,9 @@
         "default": "发送消息",
         "sending": "发送中..."
       },
-      "successMessage": "感谢您的咨询！我们将在24小时内与您联系。",
+      "successMessage": "感谢您的咨询。BMAsia 专员将与您联系。",
       "errorMessage": "出了点问题。请重试。",
-      "privacyNote": "提交此表单即表示您同意我们的隐私政策。我们绝不会与第三方分享您的信息。"
+      "privacyNote": "我们会使用这些信息回复您的请求。有关服务提供商如何协助我们运营网站，请参阅《隐私政策》。"
     },
     "quotation": {
       "title": "报价申请表单",
@@ -278,9 +236,9 @@
         "default": "提交报价申请",
         "sending": "提交中..."
       },
-      "successMessage": "感谢您的报价申请！我们将在24-48小时内为您提供个性化报价。",
+      "successMessage": "感谢您提交报价请求。BMAsia 专员会审核您的需求并与您联系。",
       "errorMessage": "出了点问题。请重试。",
-      "privacyNote": "提交此表单即表示您同意我们的隐私政策。我们绝不会与第三方分享您的信息。"
+      "privacyNote": "我们会使用这些信息准备并回复您的请求。有关服务提供商如何协助我们运营网站，请参阅《隐私政策》。"
     },
     "validation": {
       "required": "{field}为必填项",
@@ -306,7 +264,7 @@
     "cookies": "Cookie",
     "terms": "条款",
     "allRightsReserved": "版权所有。",
-    "operationsDescription": "音乐与媒体，统一管理。",
+    "operationsDescription": "将音乐、媒体与场所运营设计为一体化体验。",
     "products": "产品",
     "howItWorks": "运作方式",
     "musicLicensing": "音乐授权",
@@ -318,144 +276,12 @@
     "startHere": "从这里开始",
     "tryBeatBreeze": "试用 Beat Breeze",
     "trialProof": "免费 14 天 · 无需信用卡",
-    "talkToBMAsia": "与 BMAsia 沟通"
-  },
-  "howItWorks": {
-    "hero": {
-      "title": "服务",
-      "titleHighlight": "流程",
-      "subtitle": "三个简单步骤，为您的空间带来和谐之音",
-      "imageAlt": "现代餐厅内部，氛围优雅"
-    },
-    "steps": {
-      "sectionTitle": "完美音效",
-      "sectionTitleHighlight": "之旅",
-      "sectionSubtitle": "与BMAsia合作非常简单。按照这三个步骤改变您的空间。",
-      "step1": {
-        "title": "选择音效并获取报价",
-        "description": "在我们的解决方案中选择，申请个性化报价，或预约免费在线演示体验我们的平台。"
-      },
-      "step2": {
-        "title": "定制您的播放列表",
-        "description": "与我们的专业音乐设计师合作，定制符合您品牌声音和场所氛围的音乐样本。"
-      },
-      "step3": {
-        "title": "安装并开始使用",
-        "description": "我们负责安装并提供全面培训，让您轻松管理音乐体验。"
-      }
-    },
-    "benefits": {
-      "sectionTitle": "为什么选择",
-      "sectionTitleHighlight": "BMAsia",
-      "sectionSubtitle": "发现专业策划音乐的变革力量"
-    },
-    "cta": {
-      "sectionTitle": "准备好改变",
-      "sectionTitleHighlight": "您的空间？",
-      "sectionSubtitle": "迈出第一步，为您的企业打造完美氛围。我们的团队随时准备帮助您找到理想的音乐解决方案。"
-    }
-  },
-  "licensing": {
-    "hero": {
-      "title": "音乐授权",
-      "titleHighlight": "轻松搞定",
-      "subtitle": "了解您的企业所需的许可证",
-      "imageAlt": "代表音乐授权的抽象声波可视化"
-    },
-    "intro": {
-      "sectionTitle": "为什么您的企业",
-      "sectionTitleHighlight": "需要许可证？",
-      "paragraph1": "在企业中播放音乐与在家中聆听不同。当您将音乐用于商业用途时，您需要获得创作该音乐的权利持有人的许可。",
-      "paragraph2Intro": "要在您的企业中合法播放音乐，您需要",
-      "paragraph2Highlight": "三种不同的许可证"
-    },
-    "types": {
-      "sectionTitle": "三种",
-      "sectionTitleHighlight": "基本许可证",
-      "sectionSubtitle": "每种许可证保护不同的权利持有人并确保公平补偿",
-      "recording": {
-        "name": "录音许可证",
-        "description": "涵盖使用特定歌曲录音的权利，并补偿录音艺术家。"
-      },
-      "publishing": {
-        "name": "出版许可证",
-        "description": "涵盖使用原始作品的权利，并补偿词曲作者和作曲家。"
-      },
-      "performance": {
-        "name": "公共表演许可证",
-        "description": "允许您在公共场所如您的商业场所播放歌曲。"
-      }
-    },
-    "warning": {
-      "sectionTitle": "消费级流媒体服务",
-      "notLicensed": "未获得",
-      "sectionTitleEnd": "商业使用授权",
-      "personalUseOnly": "这些服务仅授权供个人使用。",
-      "liability": "在商业环境中使用它们违反其服务条款，可能使您的企业面临法律责任。",
-      "spotifyQuote": "Spotify服务和内容是Spotify或Spotify许可方的财产。我们授予您有限的、非排他性的、可撤销的许可，仅供个人、非商业使用Spotify服务...",
-      "spotifySource": "Spotify服务条款"
-    },
-    "solution": {
-      "sectionTitle": "我们处理",
-      "sectionTitleHighlight": "授权复杂事务",
-      "sectionSubtitle": "选择适合您需求的解决方案",
-      "fullyLicensed": "完全授权",
-      "included": "已包含",
-      "requiredSeparately": "需单独从当地PRO获取",
-      "worryFree": "无忧播放音乐——我们处理一切。"
-    },
-    "cta": {
-      "sectionTitle": "开始使用",
-      "sectionTitleHighlight": "授权音乐",
-      "sectionSubtitle": "为您的企业选择合适的音乐解决方案。立即获取个性化报价。"
-    }
-  },
-  "quotation": {
-    "hero": {
-      "title": "申请",
-      "titleHighlight": "报价",
-      "subtitle": "提供您的详细信息，我们将为您提供个性化报价",
-      "imageAlt": "豪华水疗环境，氛围轻松"
-    },
-    "whatToExpect": {
-      "sectionTitle": "期待什么",
-      "fastResponse": {
-        "title": "快速响应",
-        "description": "在24-48小时内收到您的个性化报价"
-      },
-      "noObligation": {
-        "title": "无需承诺",
-        "description": "免费咨询，无需任何承诺"
-      },
-      "tailored": {
-        "title": "定制方案",
-        "description": "根据您的具体需求定制定价"
-      }
-    },
-    "ourSolutions": {
-      "sectionTitle": "我们的解决方案",
-      "soundtrackHighlights": {
-        "tracks": "1亿+曲目",
-        "scheduling": "高级排程",
-        "support": "全天候支持"
-      },
-      "beatBreezeHighlights": {
-        "tracks": "3万+精选曲目",
-        "license": "包含许可证",
-        "multizone": "多区域就绪"
-      },
-      "learnMore": "了解更多关于我们的解决方案"
-    },
-    "haveQuestions": {
-      "sectionTitle": "有疑问？",
-      "emailDescription": "直接联系我们",
-      "messagingLabel": "或发消息给我们："
-    },
-    "preferDemo": {
-      "sectionTitle": "更喜欢现场演示？",
-      "sectionSubtitle": "与我们的团队预约免费在线演示，亲眼体验我们的音乐解决方案，并获得所有问题的解答。",
-      "ctaButton": "预约免费演示"
-    }
+    "talkToBMAsia": "与 BMAsia 沟通",
+    "globalReach": "创立于 2002 年。由响应迅速的区域团队，为本地场所与国际集团提供支持。",
+    "choosePath": "选择您的音乐方案",
+    "beatBreezeDescription": "BMAsia 灵活的免版税平台，整合音乐、屏幕、信息与自动化。",
+    "soundtrackDescription": "丰富的知名授权音乐曲库，结合 BMAsia 的设计与服务。",
+    "manageCookies": "管理 Cookie"
   },
   "countries": {
     "select": "选择国家",
@@ -529,7 +355,7 @@
     "orAskAnything": "或者随便问我任何问题！",
     "escalation": {
       "title": "联系我们的团队",
-      "subtitle": "我们将在2个工作小时内通过电子邮件回复",
+      "subtitle": "请留下您的电子邮件，BMAsia 专员将与您联系。",
       "nameLabel": "姓名",
       "namePlaceholder": "您的姓名",
       "companyLabel": "公司",
@@ -541,270 +367,207 @@
       "cancel": "取消",
       "submit": "联系团队",
       "submitting": "正在连接...",
-      "success": "我们的团队将在2个工作小时内通过 {email} 与您联系。还有什么需要帮助的吗？",
+      "success": "我们的团队将通过 {email} 与您联系。在此期间，还有什么我可以帮您进一步说明的吗？",
       "error": "出现了问题，请重试。"
     }
   },
   "soundtrackTrialPage": {
-    "metadata": { "title": "开始 Soundtrack 免费试用", "description": "申请一个商业音乐区域的 14 天 Soundtrack 试用。无需信用卡，无需承诺。" },
-    "hero": { "label": "无需信用卡的 14 天试用", "title": "在您的空间体验", "titleHighlight": "Soundtrack。", "subtitle": "告诉我们您希望测试的第一个地点。BMAsia 将核实设置并安排一个区域的访问权限。" },
-    "proof": { "noCard": "无需信用卡", "oneZone": "测试一个区域", "autoEnd": "自动结束" },
-    "steps": { "label": "接下来的流程", "requestTitle": "提交必要信息", "requestDesc": "一份简短表格即可提供我们准备合适试用所需的信息。", "verifyTitle": "BMAsia 核实设置", "verifyDesc": "我们会检查地点，并确保试用按商业用途进行配置。", "accessTitle": "获取访问权限", "accessDesc": "我们会发送第一个区域的登录信息和设置说明。" },
-    "note": { "title": "透明、无压力的试用", "desc": "无需提供付款方式。如果您不订阅，无卡试用将自动结束。" },
-    "form": { "title": "申请试用", "subtitle": "先从一个地点和一个区域开始。音乐合适后，再添加其余区域。", "name": "您的姓名", "email": "工作邮箱", "company": "公司", "country": "国家", "businessType": "业务类型", "select": "请选择", "hotel": "酒店或度假村", "restaurant": "餐厅或酒吧", "retail": "零售", "fitness": "健身或康养", "office": "办公室或工作场所", "other": "其他", "locationName": "第一个地点", "locationPlaceholder": "例如 Riverside Hotel Bangkok", "zoneName": "第一个区域（可选）", "zonePlaceholder": "例如 大堂", "zoneHint": "区域是拥有独立音乐的空间，例如大堂、餐厅或卖场。", "consent": "我同意 BMAsia 使用这些信息安排 Soundtrack 试用，并与 Soundtrack 分享所需的激活信息", "privacy": "隐私政策", "consentRequired": "请确认后再继续。", "required": "此项为必填。", "invalidEmail": "请输入有效的工作邮箱。", "submit": "申请 14 天试用", "submitting": "正在发送申请…", "footnote": "提交表格不会开始付费订阅。", "successTitle": "已收到您的试用申请。", "successMessage": "BMAsia 将核实信息并通过电子邮件发送下一步。尚未产生费用或订阅。", "back": "返回 Soundtrack", "error": "无法保存申请，请重试。" }
+    "metadata": {
+      "title": "开始 Soundtrack 免费试用",
+      "description": "申请一个商业音乐区域的 14 天 Soundtrack 试用。无需信用卡，无需承诺。"
+    },
+    "hero": {
+      "label": "无需信用卡的 14 天试用",
+      "title": "在您的空间体验",
+      "titleHighlight": "Soundtrack。",
+      "subtitle": "告诉我们您希望测试的第一个地点。BMAsia 将核实设置并安排一个区域的访问权限。"
+    },
+    "proof": {
+      "noCard": "无需信用卡",
+      "oneZone": "测试一个区域"
+    },
+    "steps": {
+      "label": "接下来的流程",
+      "requestTitle": "提交必要信息",
+      "requestDesc": "一份简短表格即可提供我们准备合适试用所需的信息。",
+      "verifyTitle": "BMAsia 核实设置",
+      "verifyDesc": "我们会检查地点，并确保试用按商业用途进行配置。",
+      "accessTitle": "获取访问权限",
+      "accessDesc": "我们会发送第一个区域的登录信息和设置说明。"
+    },
+    "note": {
+      "title": "透明、无压力的试用",
+      "desc": "无需提供付款方式。BMAsia 会审核申请并为符合条件的客户安排访问权限；在开始付费订阅前，我们会与您讨论任何后续安排。"
+    },
+    "form": {
+      "title": "申请试用",
+      "subtitle": "先从一个地点和一个区域开始。音乐合适后，再添加其余区域。",
+      "name": "您的姓名",
+      "email": "工作邮箱",
+      "company": "公司",
+      "country": "国家",
+      "businessType": "业务类型",
+      "select": "请选择",
+      "hotel": "酒店或度假村",
+      "restaurant": "餐厅或酒吧",
+      "retail": "零售",
+      "fitness": "健身或康养",
+      "office": "办公室或工作场所",
+      "other": "其他",
+      "locationName": "第一个地点",
+      "locationPlaceholder": "例如 Riverside Hotel Bangkok",
+      "zoneName": "第一个区域（可选）",
+      "zonePlaceholder": "例如 大堂",
+      "zoneHint": "区域是拥有独立音乐的空间，例如大堂、餐厅或卖场。",
+      "consent": "我同意 BMAsia 使用这些信息安排 Soundtrack 试用，并与 Soundtrack 分享所需的激活信息",
+      "privacy": "隐私政策",
+      "consentRequired": "请确认后再继续。",
+      "required": "此项为必填。",
+      "invalidEmail": "请输入有效的工作邮箱。",
+      "submit": "申请 14 天试用",
+      "submitting": "正在发送申请…",
+      "footnote": "提交表格不会开始付费订阅。",
+      "successTitle": "已收到您的试用申请。",
+      "successMessage": "BMAsia 将核实信息并通过电子邮件发送下一步。尚未产生费用或订阅。",
+      "back": "返回 Soundtrack",
+      "error": "无法保存申请，请重试。"
+    }
   },
   "soundtrackPage": {
     "metadata": {
-      "title": "Soundtrack Your Brand",
-      "description": "全球最大的商用音乐曲库，专为酒店与餐饮行业精心策划。1亿+首已获授权的曲目、多区域控制、定制化编排，以及来自 BMAsia 的全天候支持。"
-    },
-    "hero": {
-      "label": "全球行业标准",
       "title": "Soundtrack",
-      "titleHighlight": "Your Brand",
-      "subtitle": "全球最大的商用音乐曲库，为您的空间量身打造。",
-      "ctaQuote": "获取报价",
-      "ctaTrial": "开始免费试用"
+      "description": "由 BMAsia 提供的知名授权商业音乐，并配套音乐设计、上线实施、持续支持及 BMAsia 打造的场所扩展功能。"
     },
-    "positioning": {
-      "text1": "在商业空间播放音乐，其实是在塑造一种体验。",
-      "highlight": "Soundtrack Your Brand",
-      "text2": "为您提供每一首宾客耳熟能详的歌曲 —— 全部获得完整的商业使用授权。"
-    },
-    "valueProps": {
-      "sectionLabel": "",
-      "01": {
-        "label": "曲目储备",
-        "title": "任何艺人，任何风格。",
-        "desc": "访问超过1亿首获得商业授权的曲目。每一首宾客熟悉的歌曲，都已获得完整的商业使用许可。"
+    "redesign": {
+      "hero": {
+        "eyebrow": "通过 BMAsia 获取授权商业音乐",
+        "title": "耳熟能详的音乐。",
+        "highlight": "为场所恰到好处地呈现。",
+        "description": "丰富的知名及主流唱片公司音乐曲库，结合 BMAsia 的播放列表设计、上线实施、场所扩展与持续人工服务。",
+        "trial": "申请 Soundtrack 试用",
+        "talk": "咨询 BMAsia",
+        "note": "通过 BMAsia 提交的 Soundtrack 试用将按企业情况审核并安排。这是针对具体产品的开通申请，并非通用报价表。"
       },
-      "02": {
-        "label": "合规保障",
-        "title": "让您安心的授权方案。",
-        "desc": "录音权和出版权均已包含在内。我们会分享您所需的任何关于当地公开表演许可的信息，并在力所能及的范围内为您提供协助 —— 具体手续仍需由您与当地版权集体管理组织直接办理。"
+      "catalogue": {
+        "nowPlaying": "音乐方向预览",
+        "featured": "适合晚间迎宾的知名音乐",
+        "preview": "预览此音乐方向",
+        "label": "商业音乐曲库",
+        "line": "知名艺人，面向企业的专业控制"
       },
-      "03": {
-        "label": "行业专注",
-        "title": "为酒店与餐饮量身打造。",
-        "desc": "专为复杂物业而设。清晨大堂的轻柔氛围、午餐时段的活力节奏、深夜酒廊的慵懒律动 —— 每个区域都可独立管理。"
+      "pillars": {
+        "catalogue": {
+          "title": "熟悉的音乐作品",
+          "text": "包含主流唱片公司音乐的丰富授权商业曲库。"
+        },
+        "musicDesign": {
+          "title": "BMAsia 音乐设计",
+          "text": "围绕品牌、分区与宾客全天体验打造播放列表。"
+        },
+        "service": {
+          "title": "一支区域服务团队",
+          "text": "BMAsia 负责上线实施、内容更新与持续支持。"
+        }
+      },
+      "direction": {
+        "eyebrow": "BMAsia 音乐设计服务",
+        "title": "再大的曲库，也需要清晰的观点。",
+        "description": "BMAsia 将品牌、宾客、地点和运营时段转化为可直接使用的播放列表，而不是把海量曲目留给员工筛选。",
+        "refreshTitle": "定期更新，始终保留您的辨识度",
+        "refreshText": "播放列表更新会围绕客户需求规划，并可随业务、季节或活动变化进行调整。",
+        "listen": {
+          "label": "理解",
+          "title": "选音乐前，先读懂场所",
+          "text": "我们收集品牌定位、受众、分区、时段、排除项与运营限制。"
+        },
+        "design": {
+          "label": "设计",
+          "title": "建立有辨识度的音乐方向",
+          "text": "音乐设计师从商业曲库中打造播放列表，让选曲始终与期望的品牌形象一致。"
+        },
+        "schedule": {
+          "label": "运营",
+          "title": "将音乐方向落实为实用排期",
+          "text": "早晨、日间、晚间、周末与特殊时刻，都配有合适的播放列表和分区计划。"
+        },
+        "refresh": {
+          "label": "维护",
+          "title": "更新内容，不丢失品牌风格",
+          "text": "BMAsia 结合客户反馈与运营人员的控制，定期审视并更新音乐方向。"
+        }
+      },
+      "extensions": {
+        "eyebrow": "BMAsia 打造的扩展功能",
+        "title": "让 Soundtrack 接入场所的实际运营方式。",
+        "description": "对于由 BMAsia 提供服务的客户，已可用于生产环境的扩展功能能把 Soundtrack 音乐连接到特定场所流程与受支持系统。",
+        "scope": "这些是面向受支持客户部署的 BMAsia 服务，直接在 soundtrack.io 注册时不一定包含。",
+        "location": "互联客户",
+        "venue": "河畔酒店 · 曼谷",
+        "connected": "由 BMAsia 提供 Soundtrack，并启用已批准的扩展功能",
+        "footer": "每项扩展都会针对客户部署进行范围界定、配置与支持。",
+        "prayer": {
+          "title": "祈祷时间集成",
+          "text": "依据正确的当地祈祷时间执行已配置的音乐行为，并在之后顺畅恢复。"
+        },
+        "volume": {
+          "title": "受支持的音量集成",
+          "text": "通过受支持系统执行定时或集成式音量行为，不宣称持续使用麦克风感知环境。"
+        },
+        "weather": {
+          "title": "随天气调整的播放列表行为",
+          "text": "将当地天气作为经批准的输入，用于影响播放列表方向或已配置行为。"
+        },
+        "api": {
+          "title": "运营 API",
+          "text": "通过 BMAsia 打造的扩展，将受支持的场所工作流程与数据连接到 Soundtrack 服务。"
+        }
+      },
+      "operations": {
+        "eyebrow": "BMAsia 是您的服务层",
+        "title": "从首次需求沟通到日常运营，始终由同一团队负责。",
+        "description": "BMAsia 经销该平台、协助塑造音乐方向、安排上线实施，并随场所变化持续参与。",
+        "cta": "讨论 Soundtrack 配置",
+        "onboarding": {
+          "title": "经销与上线实施",
+          "text": "BMAsia 协助按目标部署规划企业、地点、分区与推广方式。"
+        },
+        "design": {
+          "title": "播放列表设计与更新",
+          "text": "音乐设计师依据客户需求定制播放列表并定期更新。"
+        },
+        "regional": {
+          "title": "区域与多语言背景",
+          "text": "结合正确的本地背景处理当地运营、祈祷时间与信息发布需求。"
+        },
+        "support": {
+          "title": "响应迅速的人工支持",
+          "text": "BMAsia 区域团队持续协助配置、音乐方向及受支持的集成。"
+        }
+      },
+      "licensing": {
+        "eyebrow": "清晰理解音乐授权",
+        "title": "为商业音乐完成正确的本地配置。",
+        "description": "Soundtrack 为其商业服务提供录音与词曲版权。公开播放要求因地点而异，BMAsia 会在上线实施期间确认适用安排。",
+        "included": "由 Soundtrack 提供",
+        "recording": "服务曲库的录音版权",
+        "publishing": "服务曲库的词曲版权",
+        "commercial": "与唱片公司和发行商的直接协议",
+        "local": "按当地情况确认",
+        "localText": "公开播放许可及其他本地义务取决于国家与场所。BMAsia 会在开通前说明哪些项目需要单独办理。"
+      },
+      "final": {
+        "title": "让熟悉的音乐",
+        "highlight": "真正服务于场所。",
+        "description": "通过 BMAsia 申请经审核的 Soundtrack 试用，或与我们讨论音乐设计、分区和场所扩展。",
+        "login": "登录 Soundtrack",
+        "support": "BMAsia 提供响应迅速的区域支持；我们不宣称提供全天候人工技术支持。"
       }
-    },
-    "features": {
-      "sectionLabel": "核心功能",
-      "sectionTitle": "管理好音乐所需的一切，尽在这里。",
-      "multiZone": {
-        "title": "多区域控制",
-        "desc": "为不同空间营造不同氛围。大堂、水疗中心、餐厅，尽在同一控制面板管理。"
-      },
-      "scheduling": {
-        "title": "排期管理",
-        "desc": "每周或每日拖放式排期。支持节假日覆盖、时段切换，以及按场所类型提供的现成模板。"
-      },
-      "audioMessaging": {
-        "title": "音频广播",
-        "desc": "可按计划播放品牌公告、促销信息或语音留言，支持五种语言 —— MP3 上传或文字转语音均可。"
-      },
-      "mobileApps": {
-        "title": "移动应用",
-        "desc": "随时随地掌控全局。支持 iOS、Android、Windows、macOS。员工可用手机随时调整氛围。"
-      },
-      "offlineReady": {
-        "title": "离线就绪",
-        "desc": "音乐从不间断。每台设备可缓存长达30天的连续播放内容 —— 非常适合网络不稳定的环境。"
-      },
-      "enterpriseSecurity": {
-        "title": "企业级安全",
-        "desc": "支持 SAML SSO、基于角色的访问控制及多用户管理。专为需要规范治理的物业打造。"
-      }
-    },
-    "integrations": {
-      "sectionLabel": "面向未来",
-      "sectionTitle": "超越平台本身",
-      "sectionDesc": "我们在 Soundtrack Your Brand 之上构建 AI 与 API 功能 —— 定制自动化流程、智能楼宇集成，以及围绕您物业运营量身打造的专属工具。",
-      "aiPlaylist": {
-        "title": "AI 歌单生成",
-        "desc": "基于平台之上构建的定制 AI 工具。只需描述一种心情，几秒内即可获得精心挑选的歌单。"
-      },
-      "smartBuilding": {
-        "title": "智能楼宇 API",
-        "desc": "将音乐与灯光、室内温度或人流传感器联动。让声音成为宾客整体体验的一部分。"
-      },
-      "bespoke": {
-        "title": "按需定制功能",
-        "desc": "需要特殊功能？我们会围绕您物业的运营需求构建集成 —— 按需打造，绝无隐藏费用。"
-      }
-    },
-    "licensing": {
-      "sectionTitle": "授权问题，一目了然。",
-      "sectionDesc": "我们会清楚告知您哪些已涵盖、哪些未涵盖 —— 绝无意外，绝无隐藏条款。",
-      "included": {
-        "label": "已包含的内容",
-        "item1": "录音权（原版授权）",
-        "item2": "出版权（机械复制权/同步权）",
-        "item3": "通过 Soundtrack 与主流及独立唱片公司达成的直接合作",
-        "item4": "定制化编排与每季度歌单更新",
-        "item5": "由我们音乐设计师提供的无忧持续支持"
-      },
-      "separate": {
-        "label": "需另行支付的部分",
-        "desc": "",
-        "descHighlight": "公开表演许可",
-        "descTail": "需向当地版权集体管理组织另行支付 —— 泰国为 MPC，新加坡为 MRSS，英国为 PRS，美国为 ASCAP/BMI 等等。",
-        "calloutLabel": "我们随时提供协助",
-        "calloutDesc": "我们不会代办相关手续，但我们乐意提供您所需的任何信息，并在力所能及的范围内为您提供帮助。"
-      }
-    },
-    "devices": {
-      "sectionLabel": "广泛兼容",
-      "sectionTitle": "兼容您现有的一切设备。",
-      "soundtrackPlayer": {
-        "title": "Soundtrack Player",
-        "desc": "专用硬件。即插即用，支持30天离线缓存。"
-      },
-      "windows": {
-        "title": "Windows PC",
-        "desc": "兼容任何现代 Windows 设备。完整桌面播放器，支持无界面企业模式。"
-      },
-      "androidIos": {
-        "title": "Android 与 iOS",
-        "desc": "平板或手机均可。在场所内任何位置都能通过应用完整控制。"
-      },
-      "macos": {
-        "title": "macOS",
-        "desc": "为 Mac 环境提供的原生桌面播放器。"
-      },
-      "sonos": {
-        "title": "Sonos 集成",
-        "desc": "在 Sonos 应用中将 Soundtrack 作为音乐服务使用。"
-      },
-      "qsys": {
-        "title": "Q-SYS",
-        "desc": "面向企业音响系统的集中式多区域管理。"
-      }
-    },
-    "trial": {
-      "sectionLabel": "先试后定",
-      "title": "在决定之前",
-      "titleHighlight": "先体验一番。",
-      "desc1": "从单个区域的免费 14 天试用开始。无需信用卡，无需任何承诺。",
-      "desc2": "一旦您决定签约且硬件就位，我们可在五分钟内让您顺利上线运行。",
-      "cta": "开始免费试用"
-    },
-    "support": {
-      "sectionLabel": "全天候在线",
-      "sectionTitle": "您从不会孤军奋战。",
-      "technical": {
-        "title": "7×24 技术支持",
-        "desc": "全天候解决硬件、网络及平台问题。真人服务，绝非脚本应答。"
-      },
-      "musicDesign": {
-        "title": "定制音乐设计",
-        "desc": "我们的音乐设计师于周一至周五（曼谷时间）与您携手打造并刷新您的专属声音。"
-      },
-      "aiAssist": {
-        "title": "AI 自助服务",
-        "desc": "7×24 可用的交互式助手，随时解答常见问题、调整歌单、进行快速修改。"
-      }
-    },
-    "faq": {
-      "title": "常见问题",
-      "q1": {
-        "q": "我需要公开表演许可吗？",
-        "a": "是的 —— 这需要向当地版权集体管理组织另行支付（泰国为 MPC，新加坡为 MRSS，英国为 PRS 等）。我们不会代办相关手续，但我们乐意分享您所需的任何信息，并在力所能及的范围内为您提供帮助。"
-      },
-      "q2": {
-        "q": "我需要怎样的网络速度与网络环境？",
-        "a": "每台播放设备最低需要 0.5 Mbit/s 带宽。建议使用有线以太网而非 Wi-Fi。需要开放少数几个出站端口（443、53、123）—— 我们会在部署前向您的 IT 团队提供一份简短的清单。"
-      },
-      "q3": {
-        "q": "我可以离线播放音乐吗？",
-        "a": "可以。每台设备在播放曲目后都会自动缓存，您还可以启用\"更多离线播放\"模式来主动下载内容。已完全同步的设备即便在无网络的情况下也可连续播放长达30天。"
-      },
-      "q4": {
-        "q": "我可以管理多少个区域？",
-        "a": "无限制。每个区域都有独立的排期、歌单和设备配对 —— 均可在同一控制面板上管理。您可以根据物业的变化随时添加或重新调整区域。"
-      },
-      "q5": {
-        "q": "我可以使用自己的 Spotify 歌单吗？",
-        "a": "可以。Soundtrack Your Brand 与 Spotify 直接同步，您创建或精选的任何歌单都可以通过我们的平台用于商业用途。"
-      },
-      "q6": {
-        "q": "如果网络中断会发生什么？",
-        "a": "已缓存的曲目会继续不间断播放。宾客丝毫察觉不到。网络恢复后，播放器会在后台静默同步。"
-      }
-    },
-    "finalCta": {
-      "title": "准备好感受",
-      "titleHighlight": "不同之处了吗？",
-      "desc": "我们的音乐设计师将为您的品牌打造独一无二的声音体验。",
-      "ctaQuote": "获取报价",
-      "ctaDemo": "预约演示"
     }
   },
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
-      "description": "以音乐为核心的场所运营平台：安排音乐、运行电视内容、创建消息与电话音频、自动化触点，并控制每个区域。"
-    },
-    "hero": {
-      "label": "互联场所体验",
-      "title": "Beat",
-      "titleHighlight": "Breeze",
-      "subtitle": "音乐、屏幕、消息与电话音频，在每个区域统一规划、创作与控制。",
-      "ctaQuote": "获取报价",
-      "ctaTrial": "开始免费试用"
-    },
-    "positioning": {
-      "text1": "完整授权、专业编排，价格仅为商用流媒体服务的一小部分。",
-      "highlight": "Beat Breeze",
-      "text2": "包含您所需的每一项许可 —— 让您从此无需再与版权集体管理组织打交道。"
-    },
-    "valueProps": {
-      "01": {
-        "label": "全包无忧",
-        "title": "三项许可，始终全部包含。",
-        "desc": "录音权、出版权和公开表演权 —— 您所需的每一项许可都已内置于订阅中。永远没有任何版权组织费用。"
-      },
-      "02": {
-        "label": "高性价比",
-        "title": "价格显著更具吸引力。",
-        "desc": "由于 Beat Breeze 由我们自有团队精心编排，其价格远低于 Soundtrack Your Brand —— 而您依然能获得全部许可。"
-      },
-      "03": {
-        "label": "简单省心",
-        "title": "专为无忧打造。",
-        "desc": "由我们的音乐设计师进行定制编排。定期刷新、季节性更新，以及7×24全天候支持。您只需专注于宾客 —— 声音的事交给我们。"
-      }
-    },
-    "features": {
-      "sectionLabel": "核心功能",
-      "sectionTitle": "音乐是心跳，每个触点随之律动。",
-      "zeroLicensing": {
-        "title": "让每通电话都更专业",
-        "desc": "以适合品牌的声音和语言，创建品牌等候音乐与电话音频。"
-      },
-      "curation": {
-        "title": "塑造场所声音",
-        "desc": "自行探索曲库，或让 Music Concierge 根据区域、时间、能量和业务情境提供建议。"
-      },
-      "offline": {
-        "title": "让场所主动响应",
-        "desc": "自动化功能可让音乐与消息根据营业时间、特殊日期、天气和现场需求变化。"
-      },
-      "scheduling": {
-        "title": "让每块屏幕鲜活起来",
-        "desc": "将完整音乐播放列表与循环视觉、消息和品牌内容配合，用于电视与场内屏幕。"
-      },
-      "audioSignatures": {
-        "title": "在正确时刻发声",
-        "desc": "为促销、宾客信息和运营通知创建并安排多语言语音消息。"
-      },
-      "remoteMgmt": {
-        "title": "随时随地控制",
-        "desc": "查看播放器状态，控制音乐和音量，并通过控制台或 Remote 应用管理每个区域。"
-      }
-    ,
-      "sectionDescription": "Beat Breeze 将声音、屏幕、沟通和日常运营连接成一个清晰易控的工作流。"
+      "description": "BMAsia 的免版税场所体验平台，整合精选音乐、排期、屏幕、信息、自动化与互联分区控制。"
     },
     "product": {
       "openProduct": "打开 Beat Breeze",
@@ -824,244 +587,387 @@
       "windows": "Windows 播放器",
       "web": "网页播放器",
       "offline": "离线播放",
-      "price": "每个区域每月 12 美元起",
+      "price": "按场所需求配置",
+      "finalDescription": "在一个区域免费体验 14 天互联场所体验。无需信用卡、专用硬件或复杂设置。",
       "finalTitle": "几分钟内即可让第一个区域上线。",
       "startFree": "免费开始",
       "talkToBMAsia": "联系 BMAsia"
-    ,
-      "finalDescription": "在一个区域免费体验 14 天互联场所体验。无需信用卡、专用硬件或复杂设置。"
     },
-    "licensing": {
-      "sectionTitle": "每一项许可。",
-      "sectionTitleHighlight": "全部包含。",
-      "sectionDesc": "无 PRO 费用。无纸面手续。无意外开支。",
-      "recording": {
-        "title": "录音权",
-        "desc": "涵盖目录中每一首曲目的原版授权。"
+    "redesign": {
+      "hero": {
+        "eyebrow": "BMAsia 的互联场所平台",
+        "title": "以音乐为核心。",
+        "highlight": "让每个触点协同运转。",
+        "description": "将精选免版税音乐、屏幕、信息与场所自动化跨分区规划，由人员审核，并在一处统一控制。",
+        "trial": "开始 Beat Breeze 试用",
+        "talk": "咨询 BMAsia",
+        "proof1": "持续扩充的免版税曲库",
+        "proof2": "始终可以手动浏览",
+        "proof3": "无需专用播放器硬件"
       },
-      "publishing": {
-        "title": "出版权",
-        "desc": "面向作曲人与出版方的机械复制权和同步权。"
+      "controlRoom": {
+        "label": "场所控制中心",
+        "venue": "Riverside House · 曼谷",
+        "live": "3 个分区正在运行",
+        "weather": "天气背景",
+        "prayer": "下次祈祷暂停",
+        "volume": "晚间预设",
+        "schedule": "当前时段",
+        "energy": "氛围强度",
+        "lobby": "大堂",
+        "restaurant": "餐厅",
+        "rooftop": "屋顶空间",
+        "updated": "计划已更新",
+        "note": "定时音量预设与受支持的集成让系统行为保持可预测。Beat Breeze 不宣称通过麦克风持续感知环境。"
       },
-      "performance": {
-        "title": "公开表演许可",
-        "desc": "可在您的任何营业场所播放 —— 永远无需向版权集体管理组织付费。"
+      "day": {
+        "eyebrow": "流动的一天",
+        "title": "场所在变化，计划也随之调整。",
+        "description": "排期构成运营骨架。天气、祈祷时间和经批准的运营触发条件可调整计划，而员工始终拥有最终决定权。",
+        "morning": {
+          "time": "06:30",
+          "title": "清晨从各个分区启动",
+          "text": "大堂、早餐区和康体区以各自的音乐、屏幕与音量预设开启一天。"
+        },
+        "weather": {
+          "time": "12:10",
+          "title": "天气为音乐方向提供参考",
+          "text": "炎热或雨天可影响播放列表建议或已配置行为，但不会取代运营人员的控制。"
+        },
+        "prayer": {
+          "time": "18:36",
+          "title": "尊重祈祷时间",
+          "text": "在已配置的市场，系统可于正确的当地祈祷时间暂停或调整内容，然后顺畅恢复排期。"
+        },
+        "evening": {
+          "time": "19:00",
+          "title": "晚间开启更完整的体验",
+          "text": "音乐、视觉循环、多语言信息与预设音量行为一同进入晚间计划。"
+        },
+        "volumeNote": "此处所述的音量变化是定时预设或受支持的场所系统集成，并非持续通过麦克风监听。"
       },
-      "footnote1": "尽管",
-      "footnoteLink": "Soundtrack Your Brand",
-      "footnote2": "在大多数国家仍需单独支付公开表演许可费用，但 Beat Breeze 已将一切内置其中。这正是它的核心价值所在。"
-    },
-    "platforms": {
-      "sectionLabel": "随处运行",
-      "sectionTitle": "无需任何特殊硬件。",
-      "windows": {
-        "title": "Windows",
-        "desc": "兼容任何现代 Windows 设备的完整桌面播放器。BMAsia（泰国）可提供迷你 PC，含一年保修。"
+      "concierge": {
+        "eyebrow": "用简单语言使用 Music Concierge",
+        "title": "提出想要的结果，再审核系统给出的方案。",
+        "description": "告诉 Concierge 分区、受众、时间与期望感受。它可推荐曲库音乐或准备创意方向；在内容播放或加入排期前，您可以先预览结果。",
+        "ready": "可以接收需求",
+        "recommendation": "可播放的建议",
+        "preview": "预览",
+        "schedule": "加入排期",
+        "keepBrowsing": "继续浏览",
+        "control": "人工控制始终清晰可见：审阅理由、预览结果、应用、编辑，或继续手动浏览曲库。",
+        "steps": {
+          "ask": "描述这一时刻",
+          "recommend": "获取选项或创意简报",
+          "review": "预览并批准",
+          "play": "立即播放或加入排期"
+        },
+        "arrival": {
+          "label": "酒店迎宾",
+          "prompt": "温暖而现代的大堂迎宾氛围",
+          "request": "为 16:00–19:00 的大堂营造温暖、现代且平静的入住氛围，避免过于慵懒的原声音乐。",
+          "result": "现代 Bossa Nova 与轻柔电子灵魂乐",
+          "reason": "中速节奏让迎宾流程保持流动，克制的人声则为交谈留出空间。"
+        },
+        "campaign": {
+          "label": "零售上新",
+          "prompt": "新季旗舰店活力",
+          "request": "为卖场打造自信的新季音乐方向，并为入口制作无声屏幕循环。",
+          "result": "Nu-disco 律动与图形动态创意简报",
+          "reason": "清晰的节奏基础适合整个卖场，视觉简报则将活动色彩延伸至入口。"
+        },
+        "recovery": {
+          "label": "康体恢复",
+          "prompt": "低干扰的恢复空间",
+          "request": "创建安静的恢复方向，融入自然质感，避免突兀切换，并由运营人员控制音量。",
+          "result": "缓慢和声变化的环境声景",
+          "reason": "长篇幅质感减少明显切换，同时让员工直接控制音量与时间。"
+        }
       },
-      "android": {
-        "title": "Android",
-        "desc": "面向平板和手机的原生 Android 应用。经济实惠，稳定可靠。"
+      "media": {
+        "eyebrow": "不只是音乐播放器",
+        "title": "围绕音乐打造完整场所世界。",
+        "description": "Beat Breeze 可协调宾客在场所中接触到的媒体与信息，让它们不是彼此割裂的附加项，而是同一运营计划的一部分。",
+        "screens": {
+          "label": "屏幕与电视",
+          "title": "视觉循环、幻灯片与场所频道",
+          "text": "按部署需求，为公共区域或客房体验规划无声屏幕循环、品牌幻灯片与电视频道。"
+        },
+        "create": {
+          "label": "AI 辅助创作",
+          "title": "经过审核的图像与视频",
+          "text": "使用 AI 辅助或 AI 创建的视觉草稿，并在资产上屏前进行审核与批准。"
+        },
+        "messages": {
+          "label": "多语言信息",
+          "title": "用正确的语言，说正确的话",
+          "text": "以受支持语言准备并安排实用通知、促销与品牌信息。"
+        },
+        "soundscapes": {
+          "label": "声景",
+          "title": "超越歌曲的氛围",
+          "text": "当传统播放列表并不合适时，可使用自然、康体与环境质感。"
+        },
+        "phone": {
+          "label": "电话等待音乐",
+          "title": "将品牌延伸到通话中",
+          "text": "将合适的音乐铺底与清晰的电话等待信息结合，并与场所品牌形象保持一致。"
+        },
+        "catalogue": {
+          "label": "持续发展",
+          "title": "不断扩充的音乐与媒体选择",
+          "text": "BMAsia 持续为不同业务与分区扩展播放列表方向、声景及媒体选项。"
+        }
       },
-      "web": {
-        "title": "网页浏览器",
-        "desc": "网页播放器，快速上手 —— 从任意浏览器登录即可开始播放。"
+      "connections": {
+        "eyebrow": "有明确边界的自动化",
+        "title": "连接场所，同时让控制清晰可见。",
+        "description": "Beat Breeze 使用明确排期、已配置规则与受支持集成。运营人员可以看到计划内容，并在场所需要变化时介入。",
+        "schedules": {
+          "title": "时段与日历",
+          "text": "按时间、星期、季节或活动，为音乐、信息、屏幕与音量预设不同计划。"
+        },
+        "weather": {
+          "title": "感知天气的行为",
+          "text": "将当地天气设为已配置输入，用于音乐建议或经批准的播放列表行为。"
+        },
+        "prayer": {
+          "title": "祈祷时间自动化",
+          "text": "以已配置的播放行为尊重当地祈祷时间，并明确回到当天计划。"
+        },
+        "volume": {
+          "title": "定时与受支持的音量控制",
+          "text": "使用预设音量和受支持的音量集成。员工保留直接控制权；我们不宣称持续使用麦克风感知环境。"
+        },
+        "api": {
+          "title": "智能 API 与场所连接",
+          "text": "通过为客户部署而设计、范围明确的 API，连接经批准的楼宇、内容或运营系统。"
+        }
+      },
+      "final": {
+        "title": "让第一个分区真正上线。",
+        "description": "从 Beat Breeze 专属试用开始，或请 BMAsia 规划多分区音乐与媒体方案。",
+        "support": "BMAsia 提供上线实施与响应迅速的区域支持。您的团队需要时，也始终可以使用产品自助功能。"
       }
-    },
-    "custom": {
-      "sectionLabel": "为规模而建",
-      "sectionTitle": "超越标准。",
-      "sectionDesc": "Beat Breeze 作为一个持续进化的平台而打造 —— 尤其面向企业连锁与多物业集团。我们根据您的需求开发功能。",
-      "whiteLabel": {
-        "title": "企业白标方案",
-        "desc": "企业连锁可将 Beat Breeze 作为自有内部音乐平台进行品牌化。支持定制品牌、配色与专属域名。"
-      },
-      "customBuilds": {
-        "title": "定制功能开发",
-        "desc": "需要超越标准的功能？我们会根据您的运营需求按需开发 —— 这是我们平台持续迭代的一部分。"
-      },
-      "volumePricing": {
-        "title": "批量友好定价",
-        "desc": "您运营的区域越多，单区域费率越优惠。对多物业连锁和零售集团尤其有吸引力。"
-      }
-    },
-    "trial": {
-      "sectionLabel": "先试后定",
-      "title": "在决定之前",
-      "titleHighlight": "先聆听一番。",
-      "desc1": "从免费两周试用开始。无需信用卡，无需任何承诺。",
-      "desc2": "我们会为您进行远程部署，让您在实际空间中先体验 Beat Breeze 的声音效果，再做决定。",
-      "cta": "开始免费试用"
-    },
-    "support": {
-      "sectionLabel": "全天候在线",
-      "sectionTitle": "您从不会孤军奋战。",
-      "technical": {
-        "title": "7×24 技术支持",
-        "desc": "全天候解决硬件、网络及平台问题。真人服务，绝非脚本应答。"
-      },
-      "musicDesign": {
-        "title": "定制音乐设计",
-        "desc": "我们的音乐设计师于周一至周五（曼谷时间）与您携手打造并刷新您的专属声音。"
-      },
-      "aiAssist": {
-        "title": "AI 自助服务",
-        "desc": "7×24 可用的交互式助手，随时解答常见问题、调整歌单、进行快速修改。"
-      }
-    },
-    "faq": {
-      "title": "常见问题",
-      "q1": {
-        "q": "我需要另行支付任何音乐授权费用吗？",
-        "a": "不需要。每一份 Beat Breeze 订阅都包含录音、出版和公开表演三项全部许可。您永远无需向 MPC、MRSS、PRS、ASCAP、BMI 或任何其他版权集体管理组织支付费用。"
-      },
-      "q2": {
-        "q": "Beat Breeze 与 Soundtrack Your Brand 有何区别？",
-        "a": "Beat Breeze 价格显著更优惠，且包含所有许可，但曲库为精心编排的免版税音乐 —— 而非具体的热门榜单歌曲。如果您希望播放宾客耳熟能详的热门金曲，请选择 Soundtrack Your Brand。如果您追求无忧的授权音乐、零费用且享有专业编排，请选择 Beat Breeze。"
-      },
-      "q3": {
-        "q": "Beat Breeze 可在哪些设备上运行？",
-        "a": "任何现代 Windows PC、Android 平板或手机，或直接在网页浏览器中运行。在泰国，我们还可提供预配置的 Windows 迷你 PC，含一年保修，为您带来即插即用的便捷方案。"
-      },
-      "q4": {
-        "q": "Beat Breeze 可以离线工作吗？",
-        "a": "可以。音乐会下载到您的设备本地播放，即便网络中断，体验依然流畅。仅在更新和远程管理时需要网络连接。"
-      },
-      "q5": {
-        "q": "曲库有多大？",
-        "a": "超过30,000首专业制作的免版税曲目，且曲库仍在持续扩充。每一首都由我们的音乐设计师专为酒店餐饮及零售环境精心挑选。"
-      },
-      "q6": {
-        "q": "我可以将 Beat Breeze 作为企业品牌白标使用吗？",
-        "a": "可以。企业连锁可将 Beat Breeze 作为自有品牌的内部音乐平台运营，支持定制配色、Logo 和专属域名。欢迎与我们沟通具体需求。"
-      }
-    },
-    "finalCta": {
-      "title": "音乐，",
-      "titleHighlight": "化繁为简。",
-      "desc": "零授权烦恼。定制化编排。无忧持续支持。价格也合情合理。",
-      "ctaQuote": "获取报价",
-      "ctaDemo": "预约演示"
     }
   },
   "homePage": {
     "immersive": {
       "hero": {
-        "eyebrow": "BMAsia 旗下 Beat Breeze", "title": "塑造空间氛围。", "highlight": "驱动每一个触点。",
-        "description": "音乐、屏幕、消息与电话音频，在每个区域协同运行。",
-        "try": "体验场所模拟器", "start": "免费试用 14 天", "proof1": "无需信用卡", "proof2": "无需专用硬件", "proof3": "每个区域 $12 起", "scroll": "体验一天的变化"
+        "eyebrow": "BMAsia · 音乐、媒体与场所体验",
+        "title": "您的场所有自己的节奏。",
+        "highlight": "我们让一切协同运转。",
+        "description": "BMAsia 设计并运营音乐、屏幕、信息与互联场所体验，以两种不同的音乐平台匹配您的需求。",
+        "try": "选择您的方案",
+        "start": "咨询 BMAsia",
+        "proof1": "独立的产品建议",
+        "proof2": "自 2002 年起深耕音乐设计",
+        "proof3": "一个合作伙伴，覆盖每个分区",
+        "scroll": "体验场所时光机"
       },
-      "field": { "ariaLabel": "展示音乐随场所变化的动态音乐场", "energy": "能量 {energy}" },
-      "audio": { "title": "声音预览", "visualOnly": "音乐方向预览 · 静音", "hear": "聆听这种氛围", "pause": "暂停预览", "paused": "预览已暂停", "mute": "静音预览", "unmute": "取消静音", "playing": "正在播放25秒授权预览", "playingMuted": "正在播放25秒授权预览 · 已静音", "unavailable": "音频预览不可用", "volume": "预览音量" },
+      "field": {
+        "ariaLabel": "展示音乐随场所变化的动态音乐场",
+        "energy": "能量 {energy}"
+      },
+      "audio": {
+        "title": "声音预览",
+        "visualOnly": "音乐方向预览 · 静音",
+        "hear": "聆听这种氛围",
+        "pause": "暂停预览",
+        "paused": "预览已暂停",
+        "mute": "静音预览",
+        "unmute": "取消静音",
+        "playing": "正在播放25秒授权预览",
+        "playingMuted": "正在播放25秒授权预览 · 已静音",
+        "unavailable": "音频预览不可用",
+        "volume": "预览音量"
+      },
       "demo": {
-        "eyebrow": "五分钟即可获得启发", "title": "走过完整一天。", "highlight": "观察每个触点如何响应。",
+        "eyebrow": "五分钟即可获得启发",
+        "title": "走过完整一天。",
+        "highlight": "观察每个触点如何响应。",
         "description": "选择业态、拖动时间并突出不同区域。音乐、屏幕、消息、电话、能量与 Concierge 建议会同步变化。",
-        "machineLabel": "实时场所体验模拟", "live": "实时响应中", "chooseVenue": "选择业务类型", "localTime": "当地时间", "chooseTime": "选择时间", "playlistDetail": "能量 {energy} · {bpm} BPM", "concierge": "Music Concierge 建议", "energy": "场所能量"
+        "machineLabel": "实时场所体验模拟",
+        "live": "实时响应中",
+        "chooseVenue": "选择业务类型",
+        "localTime": "当地时间",
+        "chooseTime": "选择时间",
+        "playlistDetail": "能量 {energy} · {bpm} BPM",
+        "concierge": "Music Concierge 建议",
+        "energy": "场所能量"
       },
-      "venues": { "hotel": "酒店", "restaurant": "餐厅", "retail": "零售", "fitness": "健身中心" },
-      "phases": { "0": { "label": "早晨", "mood": "安静迎宾" }, "1": { "label": "白天", "mood": "温暖流动" }, "2": { "label": "傍晚", "mood": "社交活力" }, "3": { "label": "深夜", "mood": "柔和收尾" } },
-      "zones": { "lobby": "大堂", "restaurant": "餐厅", "wellness": "康养区", "rooftop": "屋顶", "dining": "用餐区", "bar": "酒吧", "terrace": "露台", "entrance": "入口", "shopFloor": "卖场", "fittingRooms": "试衣间", "mainFloor": "主训练区", "studio": "工作室", "recovery": "恢复区" },
+      "touchpoints": {
+        "eyebrow": "互联触点",
+        "title": "预览整个场所体验。",
+        "description": "选择一个触点，查看同一份简报如何塑造宾客看到和听到的一切。",
+        "sound": {
+          "label": "声音",
+          "title": "此分区的音乐",
+          "text": "{playlist} 正在 {time} 塑造 {zone} 的氛围。"
+        },
+        "screens": {
+          "label": "电视",
+          "title": "屏幕氛围",
+          "text": "无声视觉循环呼应 {phase} 氛围，同时分区播放列表持续运行。"
+        },
+        "messages": {
+          "label": "信息",
+          "title": "定时信息",
+          "text": "为这一时刻准备简洁、本地化的通知，同时保持体验流畅。"
+        },
+        "phone": {
+          "label": "电话",
+          "title": "电话等待体验",
+          "text": "品牌电话信息与音乐铺底将同一氛围延伸到场所之外。"
+        },
+        "status": "实时方向"
+      },
+      "venues": {
+        "hotel": "酒店",
+        "restaurant": "餐厅",
+        "retail": "零售",
+        "fitness": "健身中心"
+      },
+      "phases": {
+        "0": {
+          "label": "早晨",
+          "mood": "安静迎宾"
+        },
+        "1": {
+          "label": "白天",
+          "mood": "温暖流动"
+        },
+        "2": {
+          "label": "傍晚",
+          "mood": "社交活力"
+        },
+        "3": {
+          "label": "深夜",
+          "mood": "柔和收尾"
+        }
+      },
+      "zones": {
+        "lobby": "大堂",
+        "restaurant": "餐厅",
+        "wellness": "康养区",
+        "rooftop": "屋顶",
+        "dining": "用餐区",
+        "bar": "酒吧",
+        "terrace": "露台",
+        "entrance": "入口",
+        "shopFloor": "卖场",
+        "fittingRooms": "试衣间",
+        "mainFloor": "主训练区",
+        "studio": "工作室",
+        "recovery": "恢复区"
+      },
       "venueContext": {
         "hotel": "让宾客抵达时保持平静，再逐步提升社交区域的活力。",
         "restaurant": "先保护交谈空间，再随着服务节奏提升氛围。",
         "retail": "营造前进感，但不让音乐喧宾夺主。",
         "fitness": "让音乐强度匹配训练、过渡和恢复。"
       },
-      "guidance": { "0": "一天刚开始时，以宽松、低唤醒度的音乐起步。", "1": "加入稳定的律动，同时避免让空间显得拥挤。", "2": "在人们社交增加的区域，有意识地提升能量。", "3": "逐步降低强度，为一天带来舒适的收尾。" },
-      "brief": { "eyebrow": "带走一份真正有用的成果", "title": "为你生成的音乐简报", "copy": "复制音乐简报", "copied": "简报已复制", "text": "{time} 的{venue}方向\n目标感受：{mood}。{guidance}\n区域计划：{zones}" },
-      "story": {
-        "eyebrow": "一个系统，而非功能清单",
-        "title": "从一份简报到",
-        "highlight": "浑然一体的场所。",
-        "sound": {
-          "title": "塑造声音识别",
-          "text": "自行寻找音乐，或让 Concierge 将概念转化为可解释的方向。"
-        },
-        "screens": {
-          "title": "延伸到屏幕",
-          "text": "将循环视觉和品牌内容与持续流动的播放列表连接。"
-        },
-        "messages": {
-          "title": "在正确时刻发声",
-          "text": "无需额外制作流程，即可创建并安排多语言语音消息。"
-        },
-        "calls": {
-          "title": "让体验延续到电话",
-          "text": "创建如同场所一部分的等候音乐与电话声音。"
-        },
-        "automate": {
-          "title": "自动处理重复工作",
-          "text": "让时间、活动和场所情境触发可审核的变化。"
-        },
-        "control": {
-          "title": "控制一切",
-          "text": "查看正在运行的内容、连接设备，并通过控制台或 Remote 接管。"
-        },
-        "cta": "探索 Beat Breeze 的全部能力"
+      "guidance": {
+        "0": "一天刚开始时，以宽松、低唤醒度的音乐起步。",
+        "1": "加入稳定的律动，同时避免让空间显得拥挤。",
+        "2": "在人们社交增加的区域，有意识地提升能量。",
+        "3": "逐步降低强度，为一天带来舒适的收尾。"
       },
-      "worlds": {
-        "eyebrow": "一个 BMAsia 团队 · 两种不同解决方案", "title": "选择适合业务的", "highlight": "音乐世界。",
-        "description": "Beat Breeze 为运营者提供智能自助平台。Soundtrack 则在 BMAsia 支持下带来熟悉的商业音乐曲库。",
-        "bbCore": "区域 · 排程 · Concierge", "tryBeatBreeze": "免费试用 Beat Breeze", "sybDiscLabel": "BMAsia 协助服务", "sybDiscText": "适合商业空间的熟悉音乐", "talkSoundtrack": "向 BMAsia 咨询 Soundtrack", "compareLabel": "还不确定哪种方案适合？", "compareText": "我们会与你比较曲库、授权、控制和服务，而不会把你推向错误的产品。"
-      }
-    ,
-      "touchpoints": {
-        "eyebrow": "互联触点",
-        "title": "预览整个场所体验。",
-        "description": "选择一个触点，查看同一份简报如何塑造宾客看到和听到的一切。",
-        "status": "实时方向",
-        "sound": {
-          "label": "音乐",
-          "title": "{playlist} 塑造 {zone}",
-          "text": "音乐选择跟随 {time} 的 {phase} 能量。"
-        },
-        "screens": {
-          "label": "屏幕",
-          "title": "视觉随音乐而动",
-          "text": "{zone} 的循环视觉呼应 {playlist} 的色彩、节奏和氛围。"
-        },
-        "messages": {
-          "label": "消息",
-          "title": "在正确时刻传达",
-          "text": "可为 {time} 的 {phase} 时刻安排多语言消息。"
-        },
-        "phone": {
-          "label": "电话",
-          "title": "体验延续到电话中",
-          "text": "等候音乐与品牌声音在宾客到达前延续 {playlist} 的感受。"
-        }
-      }
-    ,
+      "brief": {
+        "eyebrow": "带走一份真正有用的成果",
+        "title": "为你生成的音乐简报",
+        "copy": "复制音乐简报",
+        "copied": "简报已复制",
+        "text": "{time} 的{venue}方向\n目标感受：{mood}。{guidance}\n区域计划：{zones}"
+      },
       "connected": {
-        "eyebrow": "不止音乐",
-        "title": "音乐是心跳。",
-        "highlight": "Beat Breeze 运营完整体验。",
-        "description": "一个创意方向即可驱动声音、屏幕、消息、电话及其背后的运营工作。",
-        "core": "Beat Breeze",
-        "coreText": "一份场所简报",
+        "eyebrow": "将场所视为一个系统",
+        "title": "音乐是核心脉搏。",
+        "highlight": "Beat Breeze 驱动完整体验。",
+        "description": "塑造声音、屏幕、信息与通话体验，再通过自动化和实时控制，让每个分区保持一致。",
+        "core": "BMAsia",
+        "coreText": "以音乐为核心的场所运营",
         "sound": {
-          "title": "音乐与 Concierge",
-          "text": "发现、安排并持续更新场所声音。"
+          "title": "声音",
+          "text": "精选、排期与预览"
         },
         "screens": {
-          "title": "电视与视觉",
-          "text": "使用完整播放列表运行循环视觉。"
+          "title": "屏幕",
+          "text": "电视频道与视觉循环"
         },
         "messages": {
-          "title": "多语言消息",
-          "text": "创建及时且符合品牌的通知。"
+          "title": "信息",
+          "text": "定时、多语言通知"
         },
         "calls": {
-          "title": "等候音乐",
-          "text": "让声音识别延伸到每通电话。"
+          "title": "通话",
+          "text": "电话等待音频"
         },
         "automation": {
-          "title": "智能自动化",
-          "text": "让时间、情境和事件触发日常工作。"
+          "title": "自动化",
+          "text": "根据时间、日期与触发条件响应"
         },
         "operations": {
-          "title": "实时控制",
-          "text": "随时随地管理每个区域、播放器和变化。"
+          "title": "运营",
+          "text": "监控并控制每个分区"
         }
+      },
+      "story": {
+        "eyebrow": "超越背景音乐",
+        "title": "设计氛围。",
+        "highlight": "运营体验。",
+        "sound": {
+          "title": "塑造声音",
+          "text": "选择曲库、设计音乐，并规划每个时段。"
+        },
+        "screens": {
+          "title": "让屏幕发挥作用",
+          "text": "在场所需要的地方使用视觉循环、幻灯片与电视频道。"
+        },
+        "messages": {
+          "title": "在正确的时刻发声",
+          "text": "安排清晰的多语言信息，同时保持体验流畅。"
+        },
+        "calls": {
+          "title": "将体验延伸到场所之外",
+          "text": "通过电话等待音乐与信息延续品牌。"
+        },
+        "automate": {
+          "title": "连接场所信号",
+          "text": "使用排期、天气、祈祷时间与经批准的 API 触发条件。"
+        },
+        "control": {
+          "title": "始终由人掌控",
+          "text": "运营人员可以审核、覆盖并管理每个分区。"
+        },
+        "cta": "了解 BMAsia 如何运作"
+      },
+      "worlds": {
+        "eyebrow": "同一支 BMAsia 团队 · 两种不同方案",
+        "title": "选择适合您业务的",
+        "highlight": "音乐世界。",
+        "description": "Beat Breeze 为运营人员提供智能自助平台；Soundtrack 则在 BMAsia 指导下带来耳熟能详的商业音乐。",
+        "bbCore": "分区 · 排期 · Concierge",
+        "tryBeatBreeze": "开始 Beat Breeze 试用",
+        "sybDiscLabel": "BMAsia 协助服务",
+        "sybDiscText": "适合商业场所的知名音乐",
+        "talkSoundtrack": "申请 Soundtrack 试用",
+        "compareLabel": "不确定哪条路线更合适？",
+        "compareText": "我们会与您一起比较曲库、授权、控制与服务，不会把不合适的产品强加给您。"
+      },
+      "paths": {
+        "eyebrow": "两种产品路线",
+        "title": "从场所真正需要的体验出发",
+        "beatLabel": "灵活且免版税",
+        "beatText": "在一个 BMAsia 平台中整合音乐、媒体与自动化。",
+        "soundtrackLabel": "知名商业音乐",
+        "soundtrackText": "主流唱片公司曲库，配合 BMAsia 服务与扩展功能。",
+        "resultEyebrow": "把预览变成实际计划",
+        "resultTitle": "哪种路线适合这个场所？",
+        "resultText": "根据曲库、运营与宾客体验选择，而不是套用千篇一律的销售话术。",
+        "beatDecision": "适合以灵活性、媒体与自动化为主要需求的场所。",
+        "soundtrackDecision": "适合以知名商业音乐曲库为主要需求的场所。",
+        "helpDecision": "请 BMAsia 比较两种路线"
       }
     },
     "venuePulse": {
@@ -1069,9 +975,21 @@
       "label": "场所脉动",
       "venue": "Riverside House",
       "ready": "3 个区域已就绪",
-      "lobby": { "name": "大堂", "playlist": "Jazz Piano · 午后休息室", "status": "播放中" },
-      "restaurant": { "name": "餐厅", "playlist": "Bossa Nova Lounge · 晚餐", "status": "播放中" },
-      "rooftop": { "name": "屋顶", "playlist": "Deep House · 19:00 开始", "status": "就绪" },
+      "lobby": {
+        "name": "大堂",
+        "playlist": "Jazz Piano · 午后休息室",
+        "status": "播放中"
+      },
+      "restaurant": {
+        "name": "餐厅",
+        "playlist": "Bossa Nova Lounge · 晚餐",
+        "status": "播放中"
+      },
+      "rooftop": {
+        "name": "屋顶",
+        "playlist": "Deep House · 19:00 开始",
+        "status": "就绪"
+      },
       "conciergeLabel": "Concierge 建议",
       "conciergeText": "客人到达前温和提升屋顶区域的能量；入住高峰时保持大堂平静。",
       "reason": "基于区域、时间、能量和今日排程"
@@ -1096,8 +1014,8 @@
       "finalDescription": "在一个区域完整试用 14 天。无需信用卡、专用盒子或复杂设置。"
     },
     "alternative": {
-      "title": "需要客人熟悉的热门音乐？",
-      "description": "Soundtrack Your Brand 提供知名艺人和主流唱片公司曲库。当熟悉度是重点时，BMAsia 可负责供应和管理。"
+      "title": "需要宾客能叫出名字的音乐？",
+      "description": "熟悉的授权商业音乐，结合 BMAsia 音乐设计、上线实施与场所扩展。"
     },
     "theProblem": {
       "title": "您的客人能",
@@ -1136,183 +1054,186 @@
       "notSureCta": "联系我们 →"
     },
     "industries": {
-      "sectionTitle": "为每一种空间量身定制声音",
-      "sectionSubtitle": "我们不相信千篇一律。每个行业都需要特定的频率与氛围，才能释放最大效能。",
+      "sectionTitle": "为每种空间定制声音",
+      "sectionSubtitle": "我们不相信一套方案适合所有场所。每个行业都需要与自身运营节奏、宾客旅程和品牌相匹配的音乐。",
       "exploreCta": "探索 →",
       "hotels": {
         "title": "酒店与度假村",
-        "desc": "以标志性大堂乐章提升宾客忠诚度。"
+        "desc": "以贯穿大堂、餐饮、康体与社交空间的音乐设计塑造宾客旅程。"
       },
       "restaurants": {
         "title": "餐厅与酒吧",
-        "desc": "从早午餐到深夜酒廊，精准调配氛围能量。"
+        "desc": "从早午餐到深夜，为每个服务时段设计恰当能量。"
       },
       "retail": {
         "title": "零售与时尚",
-        "desc": "以富有节奏感的时尚之声提升品牌好感度。"
+        "desc": "让音乐、屏幕与活动时刻共同强化品牌体验。"
       },
       "cafes": {
         "title": "咖啡馆",
-        "desc": "办公与社交的完美声学背景。"
+        "desc": "为清晨高峰、工作时段与社交时刻打造合适的声场。"
       },
       "medical": {
-        "title": "医疗与健康",
-        "desc": "以生物声学设计舒缓焦虑，营造宁静氛围。"
+        "title": "医疗与康体",
+        "desc": "为等候、护理与恢复空间规划克制、低压力的氛围。"
       },
       "gyms": {
-        "title": "健身房与健身中心",
-        "desc": "高能量 BPM 曲目，激发训练极限表现。"
+        "title": "健身房与运动空间",
+        "desc": "让训练、课程、接待与恢复区拥有各自明确的能量曲线。"
       }
     },
     "finalCta": {
-      "title": "让我们一同设计",
-      "titleHighlight": "属于您的声音",
-      "ctaQuote": "获取报价",
-      "ctaDemo": "预约演示"
+      "title": "为这个场所找到",
+      "titleHighlight": "正确路线。",
+      "description": "告诉我们空间的实际需求。我们会诚实比较 Beat Breeze 与 Soundtrack，再围绕运营方式设计音乐与服务。",
+      "ctaQuote": "帮我选择",
+      "ctaDemo": "比较产品"
     }
   },
   "licensingPage": {
     "hero": {
-      "label": "合规",
-      "title": "音乐版权授权",
-      "titleHighlight": "简单易行",
-      "subtitle": "了解您的企业所需的各项授权，保持合规运营，同时支持您所播放的艺术家。"
+      "label": "清晰理解音乐权利",
+      "title": "了解服务覆盖什么。",
+      "titleHighlight": "确认场所还需要什么。",
+      "subtitle": "商业音乐权利会因曲库、产品、地区及使用方式而异。BMAsia 会在上线前帮助您了解适用范围。"
     },
     "intro": {
-      "paragraph1": "在商业场所播放音乐与在家中聆听完全不同。一旦将音乐用于商业用途，您就必须获得版权方的授权。",
-      "paragraph2Prefix": "您的企业需要",
-      "paragraph2Highlight": "三种不同的授权。"
+      "paragraph1": "消费者流媒体订阅并不等同于在商业场所播放音乐的许可。商业使用可能涉及多层权利。",
+      "paragraph2Prefix": "实用原则：",
+      "paragraph2Highlight": "以书面形式确认服务与适用地区。"
     },
     "licenses": {
       "01": {
-        "title": "录音版权授权",
-        "desc": "涵盖使用某一特定歌曲录音版本的权利，并向录音艺术家及其唱片公司支付相应报酬。"
+        "title": "录音制品权利",
+        "desc": "与特定录音版本相关的许可。覆盖范围取决于所选曲库与商业音乐服务。"
       },
       "02": {
-        "title": "出版版权授权",
-        "desc": "涵盖使用原创音乐作品的权利，并就知识产权向词曲作者和音乐创作人支付相应报酬。"
+        "title": "词曲作品权利",
+        "desc": "与歌曲本身相关的权利，包括词曲作者与出版商。具体处理方式取决于产品与地区。"
       },
       "03": {
-        "title": "公开表演授权",
-        "desc": "允许您在商业场所、零售空间或餐厅等公共环境中播放该歌曲。"
+        "title": "公开播放义务",
+        "desc": "场所可能还需要本地许可证或集体管理组织安排。要求因国家、场所与曲库而异。"
       }
     },
     "warning": {
-      "label": "关键合规提醒",
-      "titleStart": "面向个人的流媒体服务",
-      "titleNot": "NOT",
-      "titleEnd": "并未获得商业使用授权",
-      "quote": "我们授予您有限的、非独占的、可撤销的许可，以个人、非商业方式使用 Spotify 服务……",
-      "quoteHighlight": "非商业",
-      "source": "— Spotify 服务条款"
+      "label": "一个实用边界",
+      "titleStart": "个人流媒体套餐",
+      "titleNot": "并非为",
+      "titleEnd": "商业场所使用而设计",
+      "quote": "请使用商业音乐服务，并核实适用于您具体场所的权利。",
+      "quoteHighlight": "商业音乐服务",
+      "source": "BMAsia 音乐授权指南"
     },
     "comparison": {
-      "sectionTitle": "比较您的解决方案",
-      "recordingLicense": "录音版权授权",
-      "publishingLicense": "出版版权授权",
-      "performanceLicense": "公开表演授权",
+      "sectionTitle": "两种产品路线，两套不同的权利模式",
+      "recordingLicense": "商业曲库权利",
+      "publishingLicense": "产品特定曲库范围",
+      "performanceLicense": "本地场所义务",
       "syb": {
-        "badge": "高级版",
-        "performanceNote": "需在当地 PRO 进行登记"
+        "badge": "知名音乐曲库",
+        "performanceNote": "当地公开播放要求可能适用；请按地区确认。",
+        "cta": "探索 Soundtrack"
       },
       "bb": {
-        "badge": "全面授权",
-        "performanceNote": "包含所有授权的一站式方案"
+        "badge": "精选曲库",
+        "performanceNote": "覆盖范围取决于所选方案、曲库与地区；请与 BMAsia 确认。",
+        "cta": "探索 Beat Breeze"
       }
     },
     "cta": {
-      "title": "立即开启",
-      "titleHighlight": "合法授权音乐之旅",
-      "ctaQuote": "获取报价",
-      "ctaDemo": "预约演示"
+      "title": "了解适用于",
+      "titleHighlight": "您的场所与地区的权利范围",
+      "ctaQuote": "咨询 BMAsia",
+      "ctaDemo": "讨论可选方案"
     }
   },
   "howItWorksPage": {
     "hero": {
-      "label": "我们的方法论",
-      "title": "从首次沟通到",
-      "titleHighlight": "第一个音符",
-      "subtitle": "大多数客户在 48 小时内即可正式上线。以下是完整流程。"
+      "label": "从需求到日常节奏",
+      "title": "一种运营模式。",
+      "titleHighlight": "两种交付方式。",
+      "subtitle": "BMAsia 将您的品牌、空间与时段转化为音乐计划，再连接合适的平台，并支持实际运营的团队。"
     },
     "steps": {
       "01": {
-        "title": "告诉我们您的场所",
-        "desc": "分享您的场所类型、区域数量以及您想营造的氛围。我们会为您推荐合适的解决方案 — Soundtrack Your Brand 提供完整的创意掌控，Beat Breeze 则为您带来省心省力的一站式音乐体验。24 小时内获取报价。"
+        "title": "读懂场所",
+        "desc": "我们梳理业务类型、地点、分区、宾客旅程、品牌线索与实际限制，并据此判断 Beat Breeze、Soundtrack 或组合式运营方式哪一种最符合需求。"
       },
       "02": {
-        "title": "我们为您定制声音",
-        "desc": "我们的音乐设计师会分析您的品牌、宾客画像及场所声学环境，为您打造多层次的播放时段编排 — 清晨、午后与夜晚各具不同氛围 — 量身贴合您的空间。所有样本均须您确认后方可上线。"
+        "title": "设计一天的节奏",
+        "desc": "我们为营业、迎宾、高峰服务、过渡与收尾等关键时刻设计一系列氛围。方向成为正式排期前，您可以先行审核。"
       },
       "03": {
-        "title": "安装部署与正式上线",
-        "desc": "我们会为您寄送硬件（或配置您现有的设备），远程完成软件设置，并培训您的团队。若硬件已就位，几分钟内即可开始播放音乐。所有环节由我们全权处理 — 您只需按下播放键。"
+        "title": "连接系统",
+        "desc": "BMAsia 协助配置兼容的播放设备、排期、权限与团队访问。具体设置取决于所选产品、场所硬件和网络条件。"
       },
       "04": {
-        "title": "持续支持与迭代优化",
-        "desc": "您的音乐绝非一劳永逸。我们每月更新播放列表（SYB），或每季度更新（Beat Breeze），持续监测各区域运行状况，并根据季节主题灵活调整。由 Bangkok 专属团队提供全程支持。"
+        "title": "运营并持续演进",
+        "desc": "您的团队会得到清晰交接；BMAsia 提供响应迅速的区域支持，并随着场所、季节或运营需求变化，协助音乐方向持续演进。"
       }
     },
     "stats": {
-      "label": "为何选择 BMAsia",
-      "sectionTitle": "为酒店业量身打造。",
+      "label": "BMAsia 服务层",
+      "sectionTitle": "按运营系统来设计，而不只是交付一份播放列表。",
       "experience": {
-        "value": "23 年",
-        "desc": "自 2002 年起，为 Asia-Pacific 酒店业精心策划音乐。"
+        "value": "场所需求",
+        "desc": "将品牌、受众、分区与运营现实整合为一个共同方向。"
       },
       "speed": {
-        "value": "48 小时",
-        "desc": "从定制音乐设计到场所正式上线。硬件就位则可即时启用。"
+        "value": "声音计划",
+        "desc": "围绕场所实际运转方式设计时段与过渡。"
       },
       "legal": {
-        "value": "100% 合法",
-        "desc": "每一首曲目均完整授权。无合规烦恼，无罚款风险。"
+        "value": "上线交接",
+        "desc": "在启动前明确平台配置、团队指引与音乐授权范围。"
       }
     },
     "cta": {
-      "title": "准备好聆听不一样的声音了吗？",
-      "ctaQuote": "获取报价",
-      "ctaDemo": "预约演示"
+      "title": "从场所出发，而不是从产品出发。",
+      "ctaQuote": "告诉我们您的场所需求",
+      "ctaDemo": "咨询 BMAsia"
     }
   },
   "quotationPage": {
     "hero": {
-      "label": "立即开始",
+      "label": "开始",
       "title": "申请",
       "titleHighlight": "报价",
-      "subtitle": "告诉我们您的场所信息，我们将在24小时内发送个性化报价。"
+      "subtitle": "告诉我们需要运营的场所、地点与分区。BMAsia 会审核需求，跟进合适的产品路线与定制方案。"
     },
     "whatToExpect": {
       "sectionTitle": "您将获得",
       "fastResponse": {
-        "title": "快速响应",
-        "desc": "24小时内收到您的个性化报价"
+        "title": "人工跟进",
+        "desc": "BMAsia 专员会审核需求，并与您联系下一项有价值的步骤。"
       },
       "noObligation": {
-        "title": "无需承诺",
-        "desc": "免费咨询，无任何义务"
+        "title": "不会自动购买",
+        "desc": "提交表格不会创建订阅或具有约束力的订单。"
       },
       "tailored": {
-        "title": "定制方案",
-        "desc": "根据您的具体需求量身定价"
+        "title": "围绕实际运营设计",
+        "desc": "方案会反映您的市场、地点、分区、硬件与服务需求。"
       }
     },
     "ourSolutions": {
-      "sectionTitle": "我们的方案",
-      "sybTagline": "广为熟悉的商业曲库 — 知名艺人、Spotify 导入及 BMAsia 协助设置",
-      "bbTagline": "智能音乐运营 — 持续扩充的精选曲库、Music Concierge、排程与分区实时控制",
-      "learnMore": "了解更多我们的方案 →"
+      "sectionTitle": "我们的解决方案",
+      "sybTagline": "知名商业曲库——熟悉的艺人、Spotify 导入与 BMAsia 协助配置",
+      "bbTagline": "智能音乐运营——不断扩充的精选曲库、Music Concierge、排期与实时分区控制",
+      "learnMore": "了解 BMAsia 的服务流程 →"
     },
     "questions": {
       "sectionTitle": "有疑问？"
     },
     "formHeader": {
-      "title": "告诉我们您的场所情况",
-      "subtitle": "填写您的详细信息，我们将为您提供个性化报价。"
+      "title": "告诉我们您的空间情况",
+      "subtitle": "少量运营信息即可帮助我们准确分派您的请求。"
     },
     "demoCta": {
-      "title": "想要",
+      "title": "更想观看",
       "titleHighlight": "在线演示？",
-      "subtitle": "预约免费在线演示，亲身体验我们的音乐解决方案。",
+      "subtitle": "预约免费在线演示，了解我们的音乐解决方案如何运作。",
       "ctaButton": "预约演示"
     }
   },
@@ -1322,27 +1243,7 @@
       "subheadline": "从大堂到水疗，我们为您酒店的每一个区域量身打造塑造宾客体验的音乐。",
       "zonesTitle": "每一个空间都有属于自己的频率",
       "benefitsTitle": "为什么酒店选择 BMAsia",
-      "editorialStat": "41% 的宾客在喜爱音乐时会停留更久。",
-      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021 — 2,500+ 消费者调研。",
       "ctaHeadline": "为您的酒店定制声音。",
-      "stats": {
-        "s1": {
-          "value": "9.1%",
-          "label": "营收增长"
-        },
-        "s2": {
-          "value": "41%",
-          "label": "停留时间更长"
-        },
-        "s3": {
-          "value": "39%",
-          "label": "回访率提升"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "音乐管理"
-        }
-      },
       "zones": {
         "z1": {
           "name": "大堂与前台",
@@ -1370,11 +1271,11 @@
         }
       },
       "benefits": {
-        "b1": "通过一个控制台集中管理多家物业",
-        "b2": "由我们的团队量身设计音乐，每季度更新",
-        "b3": "分时段排程——从清晨到深夜自动切换",
-        "b4": "保证离线播放——即使断网音乐也不中断",
-        "b5": "24/7 专属支持与客户经理服务"
+        "b1": "一套计划覆盖大堂、餐饮、康体、休闲与晚间分区",
+        "b2": "音乐排期与屏幕内容可跟随宾客全天旅程",
+        "b3": "多语言信息保持清晰并符合品牌",
+        "b4": "祈祷时间、天气与受支持的音量行为适应本地运营",
+        "b5": "中央统一监管，同时保留本地员工控制权"
       }
     },
     "restaurants": {
@@ -1382,27 +1283,7 @@
       "subheadline": "让每一餐都成为回忆的音乐——精心排程、策划，并始终契合品牌。",
       "zonesTitle": "从日出到最后一杯",
       "benefitsTitle": "为什么餐厅选择 BMAsia",
-      "editorialStat": "慢节奏音乐使用餐时间延长 24%，酒吧营收提升 40%。",
-      "editorialStatSub": "Milliman (1986), Journal of Consumer Research。",
       "ctaHeadline": "为您的餐厅营造氛围。",
-      "stats": {
-        "s1": {
-          "value": "9.1%",
-          "label": "营收更高"
-        },
-        "s2": {
-          "value": "15%",
-          "label": "甜品销售提升"
-        },
-        "s3": {
-          "value": "24%",
-          "label": "用餐时间更长"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "自动运行"
-        }
-      },
       "zones": {
         "z1": {
           "name": "高级餐饮",
@@ -1430,11 +1311,11 @@
         }
       },
       "benefits": {
-        "b1": "分时段排程——从早餐到深夜自动切换",
-        "b2": "根据您的 F&B 概念匹配曲风与情绪",
-        "b3": "全部牌照可选——免版税或商业授权",
-        "b4": "多区域控制，覆盖餐厅、酒吧、露台和洗手间",
-        "b5": "音量与能量根据时段自动调整"
+        "b1": "时段从营业、午餐、晚餐一路衔接至深夜服务",
+        "b2": "用餐区、酒吧与露台可拥有各自不同的能量",
+        "b3": "菜单、促销与活动视觉可遵循同一计划",
+        "b4": "定时音量预设支持服务运营，不涉及环境麦克风感知的宣称",
+        "b5": "运营人员可预览、批准并覆盖变更"
       }
     },
     "retail": {
@@ -1442,27 +1323,7 @@
       "subheadline": "我们打造让顾客驻足、浏览并下单的声音标识。",
       "zonesTitle": "适用于每种业态的声音",
       "benefitsTitle": "为什么零售商选择 BMAsia",
-      "editorialStat": "慢节奏音乐使零售店每日销售额提升 38%。",
-      "editorialStatSub": "Milliman (1982), Journal of Marketing — 零售音乐研究的金标准。",
       "ctaHeadline": "放大您的品牌。",
-      "stats": {
-        "s1": {
-          "value": "38%",
-          "label": "日均销售更高"
-        },
-        "s2": {
-          "value": "90%",
-          "label": "因好音乐回访"
-        },
-        "s3": {
-          "value": "3.4x",
-          "label": "红酒启动效应"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "自动运行"
-        }
-      },
       "zones": {
         "z1": {
           "name": "时装与服饰",
@@ -1490,11 +1351,11 @@
         }
       },
       "benefits": {
-        "b1": "集中管理所有门店的音乐播放",
-        "b2": "与品牌契合的策划，强化您的身份标识",
-        "b3": "用于促销、营业时间和公告的语音广播",
-        "b4": "从旗舰店到奥莱店的多店一致性",
-        "b5": "高峰时段排程——能量与客流节奏同步"
+        "b1": "活动音乐与视觉循环共享同一创意方向",
+        "b2": "多门店排期保持品牌一致，同时保留本地控制",
+        "b3": "促销信息可按时发布而不打断整体氛围",
+        "b4": "API 可连接经批准的运营与活动触发条件",
+        "b5": "可选择知名商业曲库或免版税曲库两种路线"
       }
     },
     "bars": {
@@ -1502,27 +1363,7 @@
       "subheadline": "获得合法授权的音乐，完美营造氛围——从鸡尾酒时光到打烊时刻。",
       "zonesTitle": "为每一刻设定氛围",
       "benefitsTitle": "为什么酒吧选择 BMAsia",
-      "editorialStat": "更高音量使每位顾客的饮品数量从 2.6 提升至 3.4 杯。",
-      "editorialStatSub": "Guéguen et al. (2004), Alcoholism: Clinical & Experimental Research。",
       "ctaHeadline": "为您的酒吧定制声音。",
-      "stats": {
-        "s1": {
-          "value": "+31%",
-          "label": "酒水点单增加"
-        },
-        "s2": {
-          "value": "+40%",
-          "label": "酒吧营收提升"
-        },
-        "s3": {
-          "value": "24%",
-          "label": "桌边停留更久"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "自动运行"
-        }
-      },
       "zones": {
         "z1": {
           "name": "鸡尾酒吧",
@@ -1550,11 +1391,11 @@
         }
       },
       "benefits": {
-        "b1": "从下班后到深夜的情绪自动切换",
-        "b2": "专业曲风——从爵士到电子到 top 40",
-        "b3": "合法合规——杜绝版权风险",
-        "b4": "符合噪声规定的音量排程",
-        "b5": "定制歌单持续更新，给老顾客新惊喜"
+        "b1": "能量可从开场、鸡尾酒时段逐步推进至收尾",
+        "b2": "音乐可选用知名商业作品或精选免版税曲库",
+        "b3": "屏幕、活动视觉与促销内容遵循统一流程",
+        "b4": "定时音量预设尊重场所政策与运营人员判断",
+        "b5": "员工保留即时播放与分区控制"
       }
     },
     "spas": {
@@ -1562,27 +1403,7 @@
       "subheadline": "为平静、疗愈与恢复而设计的音乐——从前台到护理室。",
       "zonesTitle": "为每一处空间调配的疗愈频率",
       "benefitsTitle": "为什么水疗中心选择 BMAsia",
-      "editorialStat": "《Weightless》在临床测试中将焦虑降低 65%。",
-      "editorialStatSub": "Mindlab International / British Academy of Sound Therapy, 2011。",
       "ctaHeadline": "为您的疗愈空间定制声音。",
-      "stats": {
-        "s1": {
-          "value": "65%",
-          "label": "焦虑缓解"
-        },
-        "s2": {
-          "value": "60 BPM",
-          "label": "α 脑波同步"
-        },
-        "s3": {
-          "value": "30K+",
-          "label": "精选曲目"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "自动运行"
-        }
-      },
       "zones": {
         "z1": {
           "name": "前台与等候区",
@@ -1610,11 +1431,11 @@
         }
       },
       "benefits": {
-        "b1": "由专业音乐设计师策划的养生歌单",
-        "b2": "不同护理区域的逐区无缝控制",
-        "b3": "离线播放——护理过程中绝不静音",
-        "b4": "季节性与主题更新（Ramadan、节日、活动）",
-        "b5": "Beat Breeze 全牌照涵盖——零烦恼"
+        "b1": "可针对每个护理分区塑造声景与音乐",
+        "b2": "低干扰排期保护宾客旅程节奏",
+        "b3": "平静的视觉循环支持接待与放松区域",
+        "b4": "信息保持精简、实用并符合当地情境",
+        "b5": "音量保持预设并由运营人员控制"
       }
     },
     "cafes": {
@@ -1622,27 +1443,7 @@
       "subheadline": "让人愿意坐下、再点一杯咖啡、并多停留片刻的音乐。",
       "zonesTitle": "从清晨的浓缩到午后的工作时光",
       "benefitsTitle": "为什么咖啡馆选择 BMAsia",
-      "editorialStat": "73% 的顾客在咖啡馆听到喜欢的歌曲后会采取行动。",
-      "editorialStatSub": "MRC Data / Soundtrack Your Brand, 2021。",
       "ctaHeadline": "为您的咖啡馆定制声音。",
-      "stats": {
-        "s1": {
-          "value": "79%",
-          "label": "注意到音乐"
-        },
-        "s2": {
-          "value": "41%",
-          "label": "停留更久"
-        },
-        "s3": {
-          "value": "73%",
-          "label": "听后采取行动"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "自动运行"
-        }
-      },
       "zones": {
         "z1": {
           "name": "早高峰",
@@ -1670,11 +1471,11 @@
         }
       },
       "benefits": {
-        "b1": "分时段排程让能量与时段匹配",
-        "b2": "全部牌照涵盖——Beat Breeze 无需支付版权协会费用",
-        "b3": "单区域店铺的实惠价格",
-        "b4": "在任何 Android 或 Windows 设备上轻松部署",
-        "b5": "更新歌单让老顾客持续参与"
+        "b1": "音乐排期跟随清晨高峰、工作时段、社交时间与闭店",
+        "b2": "数字菜单与促销视觉可按时段变化",
+        "b3": "感知天气的节目安排可建议合适方向",
+        "b4": "电话等待音乐将同一品牌声音延伸到咖啡馆之外",
+        "b5": "员工可调整正在运行的分区，无需重建整个计划"
       }
     },
     "malls": {
@@ -1682,27 +1483,7 @@
       "subheadline": "为希望提升客流与停留时间的购物中心提供多区域音乐管理。",
       "zonesTitle": "一栋建筑，多种氛围",
       "benefitsTitle": "为什么购物中心选择 BMAsia",
-      "editorialStat": "85% 的购物者表示，音乐是提升店内心情的第一要素。",
-      "editorialStatSub": "Mood Media, \"Quantifying the Impact of Sensory Marketing,\" 2019。",
       "ctaHeadline": "为您的购物中心定制声音。",
-      "stats": {
-        "s1": {
-          "value": "38%",
-          "label": "日均销售更高"
-        },
-        "s2": {
-          "value": "85%",
-          "label": "认为音乐提升心情"
-        },
-        "s3": {
-          "value": "75%",
-          "label": "停留更久"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "集中控制"
-        }
-      },
       "zones": {
         "z1": {
           "name": "公共区域",
@@ -1730,11 +1511,11 @@
         }
       },
       "benefits": {
-        "b1": "通过一个控制台集中管理数十个区域",
-        "b2": "用于促销、活动和公告的语音广播",
-        "b3": "适应工作日与周末客流规律的排程",
-        "b4": "面向大规模部署的硬件方案",
-        "b5": "专属客户经理持续提供支持"
+        "b1": "公共区域、美食广场、入口与高端区域保持协调",
+        "b2": "屏幕网络与通知可遵循同一运营日历",
+        "b3": "多语言信息支持导览、活动与促销",
+        "b4": "祈祷时间行为可配合当地商场排期",
+        "b5": "中央团队掌握整个项目，各分区员工仍保留控制权"
       }
     },
     "gyms": {
@@ -1742,27 +1523,7 @@
       "subheadline": "高能量音乐激发表现、激励会员、让他们持续回归。",
       "zonesTitle": "每种训练对应不同能量",
       "benefitsTitle": "为什么健身房选择 BMAsia",
-      "editorialStat": "音乐可使耐力提升 15%，主观疲劳感降低 10%。",
-      "editorialStatSub": "Karageorghis et al. / Terry et al. (2020), Psychological Bulletin — 139 项研究的 meta 分析。",
       "ctaHeadline": "为您的健身房注入声音能量。",
-      "stats": {
-        "s1": {
-          "value": "+15%",
-          "label": "耐力提升"
-        },
-        "s2": {
-          "value": "-10%",
-          "label": "主观疲劳"
-        },
-        "s3": {
-          "value": "139",
-          "label": "研究佐证"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "自动运行"
-        }
-      },
       "zones": {
         "z1": {
           "name": "力量训练区",
@@ -1790,11 +1551,11 @@
         }
       },
       "benefits": {
-        "b1": "按 BPM 匹配不同训练强度的歌单",
-        "b2": "多区域控制——力量区动感、瑜伽区静谧",
-        "b3": "全部牌照可选——商业授权或免版税",
-        "b4": "适应高峰时段与课程安排的排程",
-        "b5": "连锁健身房的多店一致体验"
+        "b1": "课程时间表与分区排期塑造全天能量曲线",
+        "b2": "训练、接待与恢复区域可有意呈现不同声音",
+        "b3": "屏幕与视觉循环支持课程和会员沟通",
+        "b4": "API 可连接经批准的课程表或运营触发条件",
+        "b5": "定时音量预设让控制权始终掌握在员工手中"
       }
     },
     "medical": {
@@ -1802,27 +1563,7 @@
       "subheadline": "缓解焦虑、建立信任、营造疗愈环境的音乐。",
       "zonesTitle": "为每一处临床空间而设计的声音",
       "benefitsTitle": "为什么医疗机构选择 BMAsia",
-      "editorialStat": "音乐缓解术前焦虑的效果与药物相当（NNT=4）。",
-      "editorialStatSub": "Kuhlmann et al. (2018), British Journal of Surgery — 92 项 RCTs，7,385 名患者。",
       "ctaHeadline": "为您的诊所定制声音。",
-      "stats": {
-        "s1": {
-          "value": "NNT=4",
-          "label": "效果等同药物"
-        },
-        "s2": {
-          "value": "7,385",
-          "label": "研究患者数"
-        },
-        "s3": {
-          "value": "92",
-          "label": "临床试验"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "自动运行"
-        }
-      },
       "zones": {
         "z1": {
           "name": "候诊区",
@@ -1850,11 +1591,11 @@
         }
       },
       "benefits": {
-        "b1": "为医疗场景专门设计、具临床依据的歌单",
-        "b2": "Beat Breeze 全牌照涵盖——零合规烦恼",
-        "b3": "离线播放——诊疗过程中绝无中断",
-        "b4": "适合临床环境的音量控制",
-        "b5": "不给 IT 团队添负担的轻松部署"
+        "b1": "等候、护理与恢复空间可拥有不同的低压力声音",
+        "b2": "屏幕支持平静的信息与导览，不作医疗功效宣称",
+        "b3": "多语言信息可按地点与时间排期",
+        "b4": "简单的分区排期减轻员工与 IT 团队负担",
+        "b5": "运营人员保留直接的音量与播放控制"
       }
     },
     "offices": {
@@ -1862,27 +1603,7 @@
       "subheadline": "提升专注力、创造力与职场满意度的背景音乐。",
       "zonesTitle": "不同空间对应不同模式",
       "benefitsTitle": "为什么办公室选择 BMAsia",
-      "editorialStat": "软件开发者在有背景音乐时能产出更高质量的工作。",
-      "editorialStatSub": "Lesiuk (2005), Psychology of Music — 56 名开发者，为期 5 周的研究。",
       "ctaHeadline": "为您的办公空间定制声音。",
-      "stats": {
-        "s1": {
-          "value": "79%",
-          "label": "认为音乐有益"
-        },
-        "s2": {
-          "value": "70 dB",
-          "label": "最佳音量"
-        },
-        "s3": {
-          "value": "30K+",
-          "label": "精选曲目"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "自动运行"
-        }
-      },
       "zones": {
         "z1": {
           "name": "开放式办公区",
@@ -1910,11 +1631,11 @@
         }
       },
       "benefits": {
-        "b1": "与办公节奏匹配的排程——专注的清晨，社交的午后",
-        "b2": "多区域控制，覆盖开放区、会议室和公共区",
-        "b3": "Beat Breeze 全牌照涵盖——IT 友好的部署",
-        "b4": "通过用心的声音设计提升员工满意度",
-        "b5": "为小型办公室提供实惠的单区域定价"
+        "b1": "专注、接待、社交与会议分区可运行不同模式",
+        "b2": "内部屏幕与信息跟随办公日历",
+        "b3": "声景可支持更安静的共享空间，但不保证生产力提升",
+        "b4": "电话等待音乐为来电者延续品牌体验",
+        "b5": "工作场所团队可轻松审核与覆盖排期"
       }
     },
     "showrooms": {
@@ -1922,27 +1643,7 @@
       "subheadline": "高端音乐提升产品格调，营造令人向往的体验。",
       "zonesTitle": "为每件产品打造舞台",
       "benefitsTitle": "为什么展厅选择 BMAsia",
-      "editorialStat": "古典音乐会促使顾客选择更昂贵的产品。",
-      "editorialStatSub": "Areni & Kim (1993), Advances in Consumer Research。",
       "ctaHeadline": "为您的展厅定制声音。",
-      "stats": {
-        "s1": {
-          "value": "38%",
-          "label": "销售更高"
-        },
-        "s2": {
-          "value": "3.4x",
-          "label": "音乐启动效应"
-        },
-        "s3": {
-          "value": "65%",
-          "label": "认为氛围重要"
-        },
-        "s4": {
-          "value": "24/7",
-          "label": "自动运行"
-        }
-      },
       "zones": {
         "z1": {
           "name": "汽车展厅",
@@ -1970,11 +1671,11 @@
         }
       },
       "benefits": {
-        "b1": "与品牌契合的音乐，强化您的产品定位",
-        "b2": "适用于发布会、开幕和 VIP 参观的活动模式",
-        "b3": "定制策划，用声音讲述您的品牌故事",
-        "b4": "不同产品区域的多房间排程",
-        "b5": "高端体验，却没有高端的繁琐"
+        "b1": "音乐与视觉内容共同强化产品故事",
+        "b2": "发布视频、幻灯片与活动模式可遵循定时流程",
+        "b3": "多语言信息支持本地宾客与来访团体",
+        "b4": "经批准的 API 可在产品或活动时刻触发内容",
+        "b5": "电话等待音乐将同一品牌方向延伸到展厅之外"
       }
     },
     "events": {
@@ -1982,27 +1683,7 @@
       "subheadline": "从企业晚宴到品牌发布——让瞬间难以忘怀的音乐。",
       "zonesTitle": "为每种场合而设的声音",
       "benefitsTitle": "为什么活动场馆选择 BMAsia",
-      "editorialStat": "在情绪高峰时刻，与会者与品牌产生连接的可能性高出 63%。",
-      "editorialStatSub": "Live Nation, \"The Power of Live\" Global Study, 2018 — 22,500 名粉丝，11 个国家。",
       "ctaHeadline": "为您的活动定制声音。",
-      "stats": {
-        "s1": {
-          "value": "63%",
-          "label": "品牌连接"
-        },
-        "s2": {
-          "value": "90%",
-          "label": "欢迎品牌出现"
-        },
-        "s3": {
-          "value": "500+",
-          "label": "服务场馆"
-        },
-        "s4": {
-          "value": "23+",
-          "label": "年经验"
-        }
-      },
       "zones": {
         "z1": {
           "name": "企业活动",
@@ -2030,11 +1711,11 @@
         }
       },
       "benefits": {
-        "b1": "由我们的音乐团队为特定活动设计歌单",
-        "b2": "精准跟随活动时间线的排程",
-        "b3": "用于公告与流程衔接的语音广播",
-        "b4": "临时或长期安装方案可选",
-        "b5": "我们的音乐团队将您的活动需求转化为切实可行的音乐方案"
+        "b1": "音乐、屏幕、视频与通知遵循同一活动流程",
+        "b2": "临时分区可在宾客抵达前完成演练",
+        "b3": "定时信息协助转场，不必只依赖人工提示",
+        "b4": "运营人员可实时覆盖每个预设时刻",
+        "b5": "计划可复用，并为未来活动进行调整"
       }
     }
   },
@@ -2043,6 +1724,283 @@
     "ctaDemo": "预约演示",
     "source": "来源：Soundtrack Research",
     "footerCtaQuote": "获取报价 →",
-    "footerCtaDemo": "预约演示 →"
+    "footerCtaDemo": "预约演示 →",
+    "heroEyebrow": "BMAsia 为您的场所而设",
+    "helpChoose": "帮我选择",
+    "seeDayFlow": "查看一天如何运转",
+    "livePlan": "实时氛围计划",
+    "ready": "计划已就绪",
+    "dayEyebrow": "一个运营日",
+    "dayTitle": "每个时刻，都承担不同任务。",
+    "dayDescription": "音乐引领氛围，屏幕、信息、排期与经批准的自动化则将计划延伸到整个场所。",
+    "touchpointsEyebrow": "为这种运营方式而设计",
+    "touchpointsTitle": "不是套用背景音乐模板。",
+    "touchpointsDescription": "每个分区与触点都应服务于这种业务真实的顾客旅程、员工节奏与品牌决策。",
+    "operationsTitle": "为持续运营而建，而非只在初次展示时好看",
+    "productFitEyebrow": "两种可信的产品路线",
+    "productFitTitle": "根据曲库与运营模式选择。",
+    "productFitDescription": "BMAsia 两种路线均可提供。正确答案取决于宾客应听到的音乐，以及您需要运营的更广泛场所体验。",
+    "beatBreeze": {
+      "eyebrow": "灵活且免版税",
+      "text": "当音乐、屏幕、信息、媒体与场所自动化需要在一个 BMAsia 平台协同工作时，选择 Beat Breeze。",
+      "cta": "探索 Beat Breeze"
+    },
+    "soundtrack": {
+      "eyebrow": "知名商业音乐",
+      "text": "当熟悉的主流唱片公司曲库是首要需求时，选择 Soundtrack，并配合 BMAsia 音乐设计与受支持的扩展。",
+      "cta": "探索 Soundtrack"
+    },
+    "notSure": "请 BMAsia 比较两种方案",
+    "finalDescription": "告诉我们分区、宾客旅程与音乐期望。我们会推荐真正适合的产品与服务模式。",
+    "howItWorks": "BMAsia 如何运作",
+    "capabilities": {
+      "music": "音乐",
+      "screens": "屏幕与电视",
+      "messages": "多语言信息",
+      "video": "视频与循环",
+      "scheduling": "排期",
+      "automation": "自动化",
+      "api": "API 与集成",
+      "volume": "音量预设",
+      "prayer": "祈祷时间行为",
+      "phone": "电话等待音乐",
+      "soundscapes": "声景"
+    }
+  },
+  "cookieBanner": {
+    "title": "您的隐私选择",
+    "manageTitle": "管理分析偏好",
+    "description": "必要存储会保留您的语言和隐私选择。经您允许后，Google Tag Manager 与 Apollo 可帮助我们了解访问情况及商业兴趣。",
+    "policy": "阅读 Cookie 政策",
+    "close": "关闭偏好设置",
+    "necessaryTitle": "必要",
+    "necessaryDescription": "用于语言、安全和记住此项选择，始终启用。",
+    "analyticsTitle": "分析与商业洞察",
+    "analyticsDescription": "可选的 Google Tag Manager 与 Apollo 衡量工具，仅在您允许后加载。",
+    "necessaryOnly": "仅必要存储",
+    "allowAnalytics": "允许分析"
+  },
+  "legalPages": {
+    "privacy": {
+      "eyebrow": "法律 · 数据处理",
+      "title": "隐私政策",
+      "summary": "说明 BMAsia 通过本网站收集哪些信息、使用原因，以及您联系我们、申请试用或使用助手时涉及的服务。",
+      "updated": "最后更新：2026 年 8 月 4 日",
+      "cookieLink": "查看或更改 Cookie 偏好",
+      "sections": {
+        "controller": {
+          "title": "责任主体",
+          "paragraphs": [
+            "本政策适用于 BMAsia (Thailand) Co., Ltd. 与 BMAsia Limited 通过 bmasiamusic.com 处理个人数据的情况。负责处理您的咨询或协议的 BMAsia 实体，对相应的数据处理负责。"
+          ],
+          "items": [
+            "BMAsia (Thailand) Co., Ltd.，地址：725 S-Metro Building, Suite 144, Level 20, Sukhumvit Road, Klongtan Nua, Watthana, Bangkok 10110, Thailand。",
+            "BMAsia Limited，香港。"
+          ]
+        },
+        "data": {
+          "title": "我们接收的数据",
+          "paragraphs": [
+            "我们接收您提交的信息，以及使用网站时产生的有限技术信息。请勿在自由文本字段或网站助手中填写敏感个人数据。"
+          ],
+          "items": [
+            "通过咨询、报价及 Soundtrack 试用表格提交的联系与企业信息、场所资料、产品偏好和留言。",
+            "您选择使用文字聊天、语音体验或转接功能时的助手对话与转接详情。",
+            "启用可选衡量工具时的同意选择、语言偏好、设备与使用信息、来源数据及大致网络信息。"
+          ]
+        },
+        "purposes": {
+          "title": "使用目的",
+          "paragraphs": [
+            "我们使用这些信息来回复请求、评估产品与试用适用性、准备方案、支持客户、保障并运营网站，以及改进服务。根据具体情境，处理依据可能是订立合同前的步骤、履行合同、合法商业利益、同意或法定义务。"
+          ],
+          "items": [
+            "提交表格不代表您同意接收无关的大批量营销信息。",
+            "可选的分析与潜在客户衡量工具，仅在您通过本网站的同意选项允许后加载。",
+            "助手回复仅供参考，不构成具有约束力的商业承诺。"
+          ]
+        },
+        "sharing": {
+          "title": "服务提供商与接收方",
+          "paragraphs": [
+            "我们仅在运营网站、回复您、安排所请求服务或履行法律义务所需时共享数据。服务提供商可能在您所在国家或地区之外处理数据。"
+          ],
+          "items": [
+            "Render 与 Cloudflare：应用、数据库、网络及安全基础设施。",
+            "Google Workspace 与 Gmail：业务通信；在接受可选衡量工具时，使用 Google Tag Manager 与 Google Analytics。",
+            "在接受可选衡量工具时，使用 Apollo 衡量网站访客。",
+            "使用聊天、语音或转接功能时，使用 ElevenLabs 及 BMAsia 助手或消息中心服务。",
+            "当您申请 Soundtrack 试用或开通，且必须共享必要的配置信息时，向 Soundtrack 提供相关信息。",
+            "法律要求或合法企业交易所需的专业顾问、主管机关或交易对方。"
+          ]
+        },
+        "retention": {
+          "title": "保留与安全",
+          "paragraphs": [
+            "我们仅在实现收集目的、维持有效业务关系、处理争议、安全需要或履行法律与会计义务所必需的期限内保留信息。保留期限因记录类型及司法辖区而异。",
+            "BMAsia 及其服务提供商采取组织与技术保护措施，但任何互联网传输或存储系统都无法保证绝对安全。"
+          ],
+          "items": []
+        },
+        "rights": {
+          "title": "您的选择与权利",
+          "paragraphs": [
+            "根据您所在地区，您可能有权请求访问、更正、删除、限制处理、数据可携或反对处理，撤回同意，并向相关数据保护主管机关投诉。我们可能需要核实您的身份，并可能在法律允许或要求的情况下保留信息。"
+          ],
+          "items": [
+            "您可以通过页脚或下方链接重新打开 Cookie 偏好设置。",
+            "您可以要求我们停止与当前服务无关的直接跟进。",
+            "浏览器与设备控制也可限制 Cookie 或权限。"
+          ]
+        },
+        "contact": {
+          "title": "联系与更新",
+          "paragraphs": [
+            "如有隐私问题或权利请求，请发送电子邮件至下方地址。当网站、服务提供商或法律要求发生变化时，我们可能更新本政策；当前更新日期会显示在本页顶部。"
+          ],
+          "items": []
+        }
+      }
+    },
+    "cookies": {
+      "eyebrow": "法律 · 您的控制权",
+      "title": "Cookie 与存储政策",
+      "summary": "以清晰语言说明本网站使用的浏览器存储与可选衡量工具，以及如何更改您的选择。",
+      "updated": "最后更新：2026 年 8 月 4 日",
+      "manage": "打开 Cookie 偏好设置",
+      "privacyLink": "阅读隐私政策",
+      "sections": {
+        "storage": {
+          "title": "Cookie 与浏览器存储",
+          "paragraphs": [
+            "Cookie 是浏览器存储的小型数据。本网站也使用本地存储记录同意选择。经您选择启用的服务提供商可能使用自己的 Cookie 或类似标识符。"
+          ],
+          "items": []
+        },
+        "necessary": {
+          "title": "必要存储",
+          "paragraphs": [
+            "必要存储用于支持您要求网站记住的选择，不用于广告。"
+          ],
+          "items": [
+            "本地存储中的 cookie_consent_v2 会记录您选择仅接受必要存储，还是同时接受可选衡量工具。",
+            "NEXT_LOCALE 会记住您选择的语言，目前最长保存期限为一年。",
+            "托管与网络层可能设置必要的安全或平台控制项。"
+          ]
+        },
+        "optional": {
+          "title": "可选衡量工具",
+          "paragraphs": [
+            "如果您接受可选衡量工具，网站会加载 Google Tag Manager、已配置的 Google Analytics 衡量工具，以及 Apollo 网站衡量工具。这些服务提供商可能设置 _ga 或 Apollo 相关 Cookie 等标识符，并使用浏览器或网络信息生成使用情况与潜在客户洞察。",
+            "服务提供商 Cookie 的具体名称与有效期可能变化，除浏览器控制外，还受相关配置及服务提供商政策约束。"
+          ],
+          "items": []
+        },
+        "control": {
+          "title": "给予、拒绝或撤回同意",
+          "paragraphs": [
+            "您可以选择仅使用必要存储、接受可选衡量工具，或之后重新打开设置面板。撤回可选同意会删除本网站可访问的已知 Google Analytics 与 Apollo Cookie，并重新加载页面，使可选脚本不再加载。您可通过浏览器设置删除其他服务提供商存储。"
+          ],
+          "items": []
+        },
+        "providers": {
+          "title": "服务提供商边界",
+          "paragraphs": [
+            "Google 与 Apollo 按其自身隐私条款处理可选衡量数据。在同意面板记录接受前，BMAsia 不会有意加载这些衡量工具。助手本身属于互动服务；您主动发送的信息受《隐私政策》约束。"
+          ],
+          "items": []
+        },
+        "contact": {
+          "title": "问题",
+          "paragraphs": [
+            "如对本网站的存储或衡量工具有疑问，请联系 BMAsia。您也可以在下方阅读更完整的《隐私政策》。"
+          ],
+          "items": []
+        }
+      }
+    },
+    "terms": {
+      "eyebrow": "法律 · 网站使用",
+      "title": "网站条款",
+      "summary": "说明使用 bmasiamusic.com、请求信息，以及前往 BMAsia 产品与合作伙伴服务链接时的适用边界。",
+      "updated": "最后更新：2026 年 8 月 4 日",
+      "sections": {
+        "scope": {
+          "title": "关于本条款",
+          "paragraphs": [
+            "本条款规范 bmasiamusic.com 的使用。使用本网站即表示您同意本条款；如不同意，请勿使用。本网站由 BMAsia (Thailand) Co., Ltd. 与 BMAsia Limited 运营。"
+          ],
+          "items": []
+        },
+        "services": {
+          "title": "网站提供的内容",
+          "paragraphs": [
+            "本网站介绍 BMAsia 的音乐设计与商业音乐服务，包括 Beat Breeze 以及 BMAsia 围绕 Soundtrack 提供的服务。您还可通过本网站联系我们、申请方案、申请符合条件的 Soundtrack 试用，并使用信息型助手。"
+          ],
+          "items": []
+        },
+        "requests": {
+          "title": "请求、试用与方案",
+          "paragraphs": [
+            "提交表格、预约演示或申请试用，仅表示请求审核，并不构成已接受的订单或自动订阅。资格、服务范围、授权、可用性、价格、税费、地区、硬件及合同条款将另行以书面形式确认。",
+            "如正式方案或服务协议与网站的一般内容冲突，应以正式方案或服务协议为准。"
+          ],
+          "items": []
+        },
+        "assistant": {
+          "title": "AI 辅助信息",
+          "paragraphs": [
+            "本网站可能提供由人工智能生成的文字或语音回复。这些回复可能不完整或有误，且不构成法律意见、报价或具有约束力的承诺。重要的产品、授权与商业细节，请向 BMAsia 专员确认。"
+          ],
+          "items": []
+        },
+        "rights": {
+          "title": "内容与商标",
+          "paragraphs": [
+            "网站文字、视觉设计、软件及 BMAsia 材料受适用知识产权法律保护。产品名称、标识与合作伙伴材料归各自权利人所有。链接或介绍不会向您转让任何权利。"
+          ],
+          "items": []
+        },
+        "acceptable": {
+          "title": "可接受使用",
+          "paragraphs": [
+            "请勿滥用本网站或干扰其运行。"
+          ],
+          "items": [
+            "请勿尝试未经授权的访问、探测安全机制、引入有害代码或使服务超负荷。",
+            "请勿提交违法、欺骗或侵权材料，不得冒充他人，也不得滥用表格与助手功能。",
+            "未经许可，请勿系统性抓取或复制受保护的网站内容。"
+          ]
+        },
+        "external": {
+          "title": "外部服务",
+          "paragraphs": [
+            "本网站包含由其他主体运营的服务链接，包括产品登录、Soundtrack、Calendly、消息平台与社交频道。离开本网站后，相关服务的条款、隐私做法、可用性与安全措施将适用。对于 BMAsia 无法控制的第三方网站，BMAsia 不承担责任。"
+          ],
+          "items": []
+        },
+        "liability": {
+          "title": "可用性与责任",
+          "paragraphs": [
+            "本公共网站按“现状可用”基础提供。我们不承诺访问不会中断，也不保证每项一般性说明都适合所有地区或场所。在法律允许的范围内，对于仅因使用本公共网站而造成的间接或后果性损失，BMAsia 不承担责任。本条款不排除法律规定不得排除的责任。"
+          ],
+          "items": []
+        },
+        "law": {
+          "title": "适用法律",
+          "paragraphs": [
+            "网站使用通常受泰国法律管辖。客户协议可能指定不同的 BMAsia 实体、管辖法律与争议处理方式；对于已签约服务，应以该协议为准。"
+          ],
+          "items": []
+        },
+        "contact": {
+          "title": "变更与联系",
+          "paragraphs": [
+            "我们可能随服务变化更新本网站条款，当前日期显示在页面顶部。如有问题，可通过下方地址联系 BMAsia。"
+          ],
+          "items": []
+        }
+      }
+    }
   }
 }

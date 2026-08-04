@@ -12,6 +12,9 @@ const pages = [
   { path: '/how-it-works', changeFrequency: 'monthly' as const, priority: 0.8 },
   { path: '/licensing', changeFrequency: 'monthly' as const, priority: 0.8 },
   { path: '/quotation', changeFrequency: 'monthly' as const, priority: 0.9 },
+  { path: '/privacy', changeFrequency: 'yearly' as const, priority: 0.3 },
+  { path: '/cookies', changeFrequency: 'yearly' as const, priority: 0.3 },
+  { path: '/terms', changeFrequency: 'yearly' as const, priority: 0.3 },
   { path: '/solutions/hotels', changeFrequency: 'monthly' as const, priority: 0.9 },
   { path: '/solutions/restaurants', changeFrequency: 'monthly' as const, priority: 0.9 },
   { path: '/solutions/retail', changeFrequency: 'monthly' as const, priority: 0.9 },
@@ -35,15 +38,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const page of pages) {
     for (const locale of locales) {
       // Build the URL for this locale
-      const url = `${BASE_URL}/${locale}${page.path}`;
+      const url = `${BASE_URL}/${locale}${page.path}/`;
 
       // Build alternates object with hreflang for all locales
       const languages: Record<string, string> = {};
       for (const altLocale of locales) {
-        languages[altLocale] = `${BASE_URL}/${altLocale}${page.path}`;
+        languages[altLocale] = `${BASE_URL}/${altLocale}${page.path}/`;
       }
       // Add x-default pointing to English version
-      languages['x-default'] = `${BASE_URL}/${defaultLocale}${page.path}`;
+      languages['x-default'] = `${BASE_URL}/${defaultLocale}${page.path}/`;
 
       sitemapEntries.push({
         url,

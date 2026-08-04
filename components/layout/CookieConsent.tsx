@@ -1,105 +1,158 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
+import { BarChart3, Check, ShieldCheck, X } from 'lucide-react';
 
-type ConsentState = 'pending' | 'accepted' | 'rejected';
+type ConsentChoice = 'pending' | 'necessary' | 'analytics';
 
-export const CookieConsent: React.FC = () => {
-  const [consent, setConsent] = useState<ConsentState>('pending');
-  const [visible, setVisible] = useState(false);
+declare global {
+  interface Window {
+    dataLayer?: Array<Record<string, unknown>>;
+    trackingFunctions?: { onLoad?: (config: { appId: string }) => void };
+  }
+}
+
+const STORAGE_KEY = 'cookie_consent_v2';
+
+export function CookieConsent() {
   const locale = useLocale();
+  const t = useTranslations('cookieBanner');
+  const [choice, setChoice] = useState<ConsentChoice>('pending');
+  const [visible, setVisible] = useState(false);
+  const [manageMode, setManageMode] = useState(false);
 
   useEffect(() => {
-    const stored = localStorage.getItem('cookie_consent');
-    if (stored === 'accepted') {
-      setConsent('accepted');
-      enableAnalytics();
-    } else if (stored === 'rejected') {
-      setConsent('rejected');
-    } else {
-      // No consent stored — show banner after brief delay
-      const timer = setTimeout(() => setVisible(true), 1500);
-      return () => clearTimeout(timer);
+    const stored = window.localStorage.getItem(STORAGE_KEY);
+    const legacy = window.localStorage.getItem('cookie_consent');
+    const initial: ConsentChoice = stored === 'analytics' || legacy === 'accepted'
+      ? 'analytics'
+      : stored === 'necessary' || legacy === 'rejected'
+        ? 'necessary'
+        : 'pending';
+
+    setChoice(initial);
+    if (initial === 'analytics') enableAnalytics();
+    if (initial === 'pending') {
+      const timer = window.setTimeout(() => setVisible(true), 700);
+      return () => window.clearTimeout(timer);
     }
   }, []);
 
-  const enableAnalytics = () => {
-    // Fire GTM only after consent
-    const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
-    if (gtmId && !document.querySelector(`script[src*="googletagmanager.com/gtm.js?id=${gtmId}"]`)) {
-      const gtmScript = document.createElement('script');
-      gtmScript.innerHTML = `
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','${gtmId}');
-      `;
-      document.head.appendChild(gtmScript);
+  useEffect(() => {
+    const openPreferences = () => {
+      setManageMode(true);
+      setVisible(true);
+    };
+    window.addEventListener('bma:open-cookie-preferences', openPreferences);
+    return () => window.removeEventListener('bma:open-cookie-preferences', openPreferences);
+  }, []);
+
+  const save = (next: Exclude<ConsentChoice, 'pending'>) => {
+    const wasAnalytics = choice === 'analytics';
+    window.localStorage.setItem(STORAGE_KEY, next);
+    window.localStorage.removeItem('cookie_consent');
+    setChoice(next);
+    setVisible(false);
+    setManageMode(false);
+
+    if (next === 'analytics') {
+      enableAnalytics();
+      return;
     }
 
-    // Fire Apollo.io tracker only after consent
-    if (!document.querySelector('script[src*="assets.apollo.io"]')) {
-      const apolloScript = document.createElement('script');
-      apolloScript.innerHTML = `
-        (function(){
-          var n=Math.random().toString(36).substring(7),
-          o=document.createElement("script");
-          o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n;
-          o.async=true;o.defer=true;
-          o.onload=function(){window.trackingFunctions.onLoad({appId:"691d948496127f0021ef7728"})};
-          document.head.appendChild(o)
-        })();
-      `;
-      document.head.appendChild(apolloScript);
-    }
+    denyAnalytics();
+    if (wasAnalytics) window.location.reload();
   };
 
-  const handleAccept = () => {
-    localStorage.setItem('cookie_consent', 'accepted');
-    setConsent('accepted');
-    setVisible(false);
-    enableAnalytics();
-  };
-
-  const handleReject = () => {
-    localStorage.setItem('cookie_consent', 'rejected');
-    setConsent('rejected');
-    setVisible(false);
-  };
-
-  if (!visible || consent !== 'pending') return null;
+  if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[80] p-4 md:p-6">
-      <div className="max-w-4xl mx-auto bg-[#1a1a1a] border border-white/10 p-5 md:p-6 flex flex-col md:flex-row items-start md:items-center gap-4">
-        <div className="flex-1">
-          <p className="text-white/80 text-sm leading-relaxed">
-            We use cookies to analyze site traffic and improve your experience. By clicking &ldquo;Accept&rdquo;, you consent to our use of analytics cookies.{' '}
-            <Link href={`/${locale}/cookies`} className="text-brand-orange hover:underline">
-              Cookie Policy
-            </Link>
-          </p>
-        </div>
-        <div className="flex items-center gap-3 flex-shrink-0">
-          <button
-            onClick={handleReject}
-            className="px-5 py-2 text-white/60 hover:text-white text-sm font-label transition-colors"
-          >
-            Reject
-          </button>
-          <button
-            onClick={handleAccept}
-            className="px-5 py-2 bg-brand-orange text-black text-sm font-label font-bold hover:bg-amber-400 transition-colors"
-          >
-            Accept
-          </button>
+    <div className="fixed inset-x-0 bottom-0 z-[90] p-3 sm:p-5" role="region" aria-label={t('title')}>
+      <div className="mx-auto max-w-5xl overflow-hidden rounded-[1.5rem] border border-white/12 bg-[#091722]/98 shadow-[0_30px_110px_rgba(0,0,0,.72)] backdrop-blur-2xl">
+        <div className="grid gap-6 p-5 sm:p-6 lg:grid-cols-[1fr_auto] lg:items-end">
+          <div>
+            <div className="flex items-start gap-4">
+              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-brand-orange/20 bg-brand-orange/[0.08] text-brand-orange">
+                <ShieldCheck className="h-5 w-5" aria-hidden="true" />
+              </span>
+              <div>
+                <h2 className="font-label text-base font-semibold text-white">{manageMode ? t('manageTitle') : t('title')}</h2>
+                <p className="mt-2 max-w-2xl text-sm leading-6 text-white/55">
+                  {t('description')}{' '}
+                  <Link href={`/${locale}/cookies`} className="text-brand-orange hover:text-[#ffc164]">{t('policy')}</Link>
+                </p>
+              </div>
+              {manageMode && (
+                <button type="button" className="ml-auto grid h-9 w-9 shrink-0 place-items-center rounded-full text-white/48 hover:bg-white/[0.06] hover:text-white" onClick={() => setVisible(false)} aria-label={t('close')}>
+                  <X className="h-4 w-4" />
+                </button>
+              )}
+            </div>
+
+            {manageMode && (
+              <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                <div className="rounded-xl border border-white/[0.08] bg-white/[0.025] p-4">
+                  <p className="flex items-center gap-2 text-sm font-medium text-white"><Check className="h-4 w-4 text-emerald-300" />{t('necessaryTitle')}</p>
+                  <p className="mt-2 text-xs leading-5 text-white/42">{t('necessaryDescription')}</p>
+                </div>
+                <div className="rounded-xl border border-white/[0.08] bg-white/[0.025] p-4">
+                  <p className="flex items-center gap-2 text-sm font-medium text-white"><BarChart3 className="h-4 w-4 text-brand-orange" />{t('analyticsTitle')}</p>
+                  <p className="mt-2 text-xs leading-5 text-white/42">{t('analyticsDescription')}</p>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <div className="flex flex-col-reverse gap-2 sm:flex-row lg:min-w-[21rem] lg:justify-end">
+            <button type="button" onClick={() => save('necessary')} className="bma-button-secondary min-h-11 px-5">
+              {t('necessaryOnly')}
+            </button>
+            <button type="button" onClick={() => save('analytics')} className="bma-button-primary min-h-11 px-5">
+              {t('allowAnalytics')}
+            </button>
+          </div>
         </div>
       </div>
     </div>
   );
-};
+}
+
+function enableAnalytics() {
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'consent_update', analytics_storage: 'granted' });
+
+  if (gtmId && !document.getElementById('bma-gtm')) {
+    window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+    const script = document.createElement('script');
+    script.id = 'bma-gtm';
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtm.js?id=${encodeURIComponent(gtmId)}`;
+    document.head.appendChild(script);
+  }
+
+  if (!document.getElementById('bma-apollo')) {
+    const script = document.createElement('script');
+    script.id = 'bma-apollo';
+    script.async = true;
+    script.defer = true;
+    script.src = `https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=${Math.random().toString(36).slice(2)}`;
+    script.addEventListener('load', () => window.trackingFunctions?.onLoad?.({ appId: '691d948496127f0021ef7728' }));
+    document.head.appendChild(script);
+  }
+}
+
+function denyAnalytics() {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'consent_update', analytics_storage: 'denied' });
+  for (const cookie of document.cookie.split(';')) {
+    const name = cookie.split('=')[0]?.trim();
+    if (name?.startsWith('_ga') || name?.toLowerCase().includes('apollo')) {
+      document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;samesite=lax`;
+    }
+  }
+}
 
 export default CookieConsent;

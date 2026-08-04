@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { checkRateLimit, getClientIP } from '@/lib/rate-limiter';
+import { locales } from '@/lib/i18n-config';
 
 /**
  * Chat Lead Capture API endpoint
@@ -21,11 +23,19 @@ interface LeadCaptureRequest {
 
 export async function POST(request: NextRequest) {
   try {
-    const body: LeadCaptureRequest = await request.json();
+    if (checkRateLimit(`chat-lead:${getClientIP(request.headers)}`).isLimited) {
+      return NextResponse.json({ success: false, message: 'Too many requests.' }, { status: 429 });
+    }
+
+    const body = await request.json() as Partial<LeadCaptureRequest>;
     const { email, name, company, conversationSummary, locale } = body;
+    const clean = (value: unknown, max: number) => typeof value === 'string'
+      ? value.replace(/[\u0000-\u001F\u007F]/g, ' ').trim().slice(0, max)
+      : '';
+    const safeEmail = clean(email, 254).toLowerCase();
 
     // Validate required fields
-    if (!email) {
+    if (!safeEmail) {
       return NextResponse.json(
         { error: 'Email is required' },
         { status: 400 }
@@ -34,7 +44,7 @@ export async function POST(request: NextRequest) {
 
     // Validate email format
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-    if (!emailRegex.test(email)) {
+    if (!emailRegex.test(safeEmail)) {
       return NextResponse.json(
         { error: 'Invalid email address' },
         { status: 400 }
@@ -43,18 +53,13 @@ export async function POST(request: NextRequest) {
 
     // Forward to bma_messenger_hub lead capture webhook
     const leadPayload = {
-      email: email.trim().toLowerCase(),
-      name: name?.trim() || undefined,
-      company: company?.trim() || undefined,
-      conversationSummary,
-      locale,
+      email: safeEmail,
+      name: clean(name, 120) || undefined,
+      company: clean(company, 160) || undefined,
+      conversationSummary: clean(conversationSummary, 4_000),
+      locale: locales.includes(locale as (typeof locales)[number]) ? locale : 'en',
       source: 'website_chat',
     };
-
-    console.log('Forwarding lead capture to messenger hub:', {
-      email: leadPayload.email,
-      locale,
-    });
 
     const hubResponse = await fetch(`${MESSENGER_HUB_URL}/webhooks/lead-capture`, {
       method: 'POST',
@@ -62,12 +67,15 @@ export async function POST(request: NextRequest) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(leadPayload),
+      signal: AbortSignal.timeout(10_000),
     });
 
     if (!hubResponse.ok) {
-      const errorText = await hubResponse.text();
-      console.error('Messenger hub lead capture error:', errorText);
-      // Don't throw - lead capture is fire-and-forget, shouldn't break UX
+      console.error('Messenger hub lead capture failed with status:', hubResponse.status);
+      return NextResponse.json(
+        { success: false, message: 'Lead capture could not be delivered.' },
+        { status: 502 }
+      );
     }
 
     return NextResponse.json({
@@ -77,11 +85,10 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Chat lead capture error:', error);
 
-    // Return success anyway - lead capture shouldn't break UX
-    return NextResponse.json({
-      success: false,
-      message: 'Lead capture processing',
-    });
+    return NextResponse.json(
+      { success: false, message: 'Lead capture could not be processed.' },
+      { status: 500 }
+    );
   }
 }
 

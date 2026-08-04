@@ -54,7 +54,7 @@
   width: min(100%, 1480px);
   min-height: 100svh;
   margin: 0 auto;
-  padding: 130px 5vw 90px;
+  padding: 122px 5vw 230px;
 }
 
 .aurora {
@@ -234,6 +234,75 @@
   width: 14px;
   color: var(--orange);
 }
+
+.productChoice {
+  position: absolute;
+  z-index: 8;
+  right: 5vw;
+  bottom: 58px;
+  left: 5vw;
+  display: grid;
+  grid-template-columns: minmax(190px, 0.66fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1px;
+  max-width: 1480px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 24px;
+  background: rgba(6, 17, 26, 0.88);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(22px);
+}
+
+.productChoiceIntro,
+.beatPath,
+.soundtrackPath {
+  min-width: 0;
+  padding: 21px 24px;
+}
+
+.productChoiceIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.productChoiceIntro span,
+.beatPath small,
+.soundtrackPath small {
+  color: rgba(238, 243, 255, 0.38);
+  font-family: var(--font-label), sans-serif;
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.productChoiceIntro strong { margin-top: 6px; font-size: 14px; font-weight: 560; }
+
+.beatPath,
+.soundtrackPath {
+  display: grid;
+  grid-template-columns: minmax(130px, 0.52fr) minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 18px;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  transition: background 220ms ease, transform 220ms ease;
+}
+
+.beatPath:hover { background: linear-gradient(110deg, rgba(232, 133, 12, 0.13), rgba(0, 212, 200, 0.04)); }
+.soundtrackPath:hover { background: linear-gradient(110deg, rgba(214, 194, 255, 0.11), rgba(74, 35, 91, 0.16)); }
+.beatPath strong,
+.soundtrackPath strong { display: block; margin-top: 5px; font-family: var(--font-label), sans-serif; font-size: 18px; font-weight: 560; }
+.soundtrackPath small { color: #d6c2ff; }
+.beatPath small { color: var(--orange); }
+.beatPath p,
+.soundtrackPath p { margin: 0; color: rgba(238, 243, 255, 0.46); font-size: 12px; line-height: 1.5; }
+.beatPath svg,
+.soundtrackPath svg { width: 17px; color: rgba(238, 243, 255, 0.5); transition: transform 200ms ease; }
+.beatPath:hover svg,
+.soundtrackPath:hover svg { transform: translateX(4px); }
 
 .livingField {
   position: relative;
@@ -959,6 +1028,50 @@
 .takeaway h3 { margin: 0; font-family: var(--font-label), sans-serif; font-size: 30px; font-weight: 480; }
 .takeaway > div > p:last-child { max-width: 840px; margin: 10px 0 0; color: rgba(238, 243, 255, 0.48); line-height: 1.55; text-wrap: pretty; white-space: pre-line; }
 
+.routeDecision {
+  max-width: 1480px;
+  margin: 26px auto 0;
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(420px, 1.2fr);
+  gap: 50px;
+  padding: clamp(30px, 4vw, 54px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at 0 100%, rgba(232, 133, 12, 0.13), transparent 36%),
+    radial-gradient(circle at 100% 0, rgba(214, 194, 255, 0.09), transparent 34%),
+    #08111c;
+}
+
+.routeDecision .eyebrow { margin-bottom: 16px; }
+.routeDecision h3 { margin: 0; font-family: var(--font-label), sans-serif; font-size: clamp(2rem, 3.2vw, 3.6rem); font-weight: 480; line-height: 1.02; }
+.routeDecision > div:first-child > p:last-child { max-width: 580px; margin: 18px 0 0; color: rgba(238, 243, 255, 0.48); line-height: 1.65; }
+.routeDecision > div:last-child { display: grid; gap: 10px; }
+.beatDecision,
+.soundtrackDecision {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.45fr) 1fr auto;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.025);
+  transition: transform 220ms ease, background 220ms ease, border-color 220ms ease;
+}
+.beatDecision:hover { border-color: rgba(232, 133, 12, 0.35); background: rgba(232, 133, 12, 0.08); transform: translateX(3px); }
+.soundtrackDecision:hover { border-color: rgba(214, 194, 255, 0.3); background: rgba(214, 194, 255, 0.07); transform: translateX(3px); }
+.beatDecision strong,
+.soundtrackDecision strong { font-family: var(--font-label), sans-serif; font-size: 16px; font-weight: 580; }
+.beatDecision span,
+.soundtrackDecision span { color: rgba(238, 243, 255, 0.44); font-size: 12px; line-height: 1.5; }
+.beatDecision svg,
+.soundtrackDecision svg { width: 17px; color: var(--orange); }
+.soundtrackDecision svg { color: #d6c2ff; }
+.helpDecision { display: inline-flex; align-items: center; justify-content: flex-end; gap: 9px; padding: 10px 4px 0; color: rgba(238, 243, 255, 0.58); font-size: 13px; font-weight: 600; }
+.helpDecision:hover { color: white; }
+.helpDecision svg { width: 15px; }
+
 .connectedReveal {
   max-width: 1480px;
   margin: 26px auto 0;
@@ -1076,13 +1189,17 @@
 }
 
 @media (max-width: 900px) {
-  .heroGrid { min-height: auto; grid-template-columns: 1fr; padding: 130px 24px 90px; }
+  .heroGrid { min-height: auto; grid-template-columns: 1fr; padding: 130px 24px 54px; }
   .hero h1 { font-size: clamp(3.2rem, 12vw, 5rem); }
   .livingField { min-height: 520px; }
   .experience, .story { padding: 100px 24px; }
   .zonesStage { grid-template-columns: 1fr; }
   .playlistCard { opacity: 0.8; transform: none; }
-  .machineFooter, .takeaway, .storyHeading, .touchpointRail, .connectedReveal { grid-template-columns: 1fr; }
+  .machineFooter, .takeaway, .storyHeading, .touchpointRail, .connectedReveal, .routeDecision { grid-template-columns: 1fr; }
+  .productChoice { position: relative; inset: auto; grid-template-columns: 1fr 1fr; margin: 0 24px 82px; }
+  .productChoiceIntro { grid-column: 1 / -1; }
+  .productChoice > *:nth-child(2) { border-left: 0; }
+  .scrollCue { display: none; }
   .touchpointIntro { grid-row: auto; }
   .connectedScene { min-height: 540px; }
   .storyTrack { grid-template-columns: 1fr 1fr; gap: 50px 0; }
@@ -1111,6 +1228,15 @@
   .audioVolume { grid-column: 1 / -1; grid-row: 3; min-width: 0; }
   .audioCopy span { white-space: normal; }
   .takeaway { grid-template-columns: 1fr; padding: 24px; }
+  .productChoice { grid-template-columns: 1fr; margin-inline: 18px; }
+  .productChoiceIntro { grid-column: auto; }
+  .beatPath,
+  .soundtrackPath { grid-template-columns: minmax(120px, 0.7fr) 1fr auto; border-top: 1px solid rgba(255, 255, 255, 0.08); border-left: 0; }
+  .routeDecision { padding: 26px 20px; }
+  .beatDecision,
+  .soundtrackDecision { grid-template-columns: 1fr auto; }
+  .beatDecision span,
+  .soundtrackDecision span { grid-column: 1 / -1; grid-row: 2; }
   .touchpointTabs { grid-template-columns: 1fr 1fr; }
   .touchpointTab { min-height: 56px; }
   .touchpointPreview { grid-template-columns: auto minmax(0, 1fr); padding: 20px; }

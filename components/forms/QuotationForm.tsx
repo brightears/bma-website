@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { useSearchParams } from 'next/navigation';
 
 /**
  * Country codes for the dropdown
@@ -119,6 +120,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
   const [status, setStatus] = useState<SubmissionStatus>('idle');
   const [errorMessage, setErrorMessage] = useState<string>('');
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const searchParams = useSearchParams();
 
   // Translation hooks
   const t = useTranslations('forms.quotation');
@@ -140,13 +142,26 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
     handleSubmit,
     formState: { errors, isSubmitting },
     reset,
+    setValue,
     watch,
   } = useForm<QuotationFormData>({
     mode: 'onBlur',
     defaultValues: {
+      country: '',
+      preferredSolution: '',
       numberOfZones: 1,
     },
   });
+
+  // Product pages may deliberately provide context. Otherwise the form stays
+  // neutral and asks the visitor to choose, instead of silently favouring one
+  // product or market.
+  useEffect(() => {
+    const solution = searchParams.get('solution');
+    if (solution === 'beat-breeze' || solution === 'soundtrack-your-brand') {
+      setValue('preferredSolution', solution, { shouldValidate: false });
+    }
+  }, [searchParams, setValue]);
 
   // Watch the country field to conditionally show "Other" input
   const selectedCountry = watch('country');
@@ -190,11 +205,11 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({
           setStatus('idle');
         }, 5000);
       } else {
-        throw new Error(result.error || 'Failed to submit quotation request');
+        throw new Error(result.error || t('errorMessage'));
       }
     } catch (error) {
-      const message =
-        error instanceof Error ? error.message : 'Something went wrong';
+      // Do not expose service or database details returned by the API.
+      const message = t('errorMessage');
       setStatus('error');
       setErrorMessage(message);
       onError?.(message);
