@@ -799,7 +799,7 @@
         "zonePlanEyebrow": "Satu venue, tiga tugas musik",
         "zonePlanTitleLine1": "Tiga zona.",
         "zonePlanTitleLine2": "Tiga rekomendasi terpisah.",
-        "zonePlanDescription": "Setiap kartu mengontrol zona yang berbeda. Pilih satu untuk mendengar arah representatif dan melihat alasan kecocokannya saat ini.",
+        "zonePlanDescription": "Setiap kartu mengontrol zona yang berbeda. Pilih satu untuk mendengar sampel Beat Breeze dan melihat alasan kecocokannya saat ini.",
         "zoneLabel": "Zona {index} · {zone}",
         "conciergeReason": "{playlist} direkomendasikan untuk {zone} pada {time}: {purpose}. Sekitar {bpm} BPM dengan target aktivasi {energy}/100 membedakan zona ini dari dua zona lainnya."
       },
