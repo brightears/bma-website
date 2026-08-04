@@ -886,7 +886,8 @@
 
 .coverWrap {
   position: relative;
-  grid-row: 1 / 4;
+  grid-column: 1;
+  grid-row: 1 / 5;
   width: 112px;
   aspect-ratio: 1;
   overflow: hidden;
@@ -951,6 +952,7 @@
 }
 
 .zonePurpose {
+  grid-column: 2;
   overflow: hidden;
   color: rgba(238, 243, 255, 0.56);
   font-size: 11px;
@@ -959,6 +961,9 @@
   white-space: nowrap;
 }
 
+.playlistCard > .zoneName,
+.playlistCard > strong,
+.playlistCard > small { grid-column: 2; }
 .playlistCard > strong { align-self: end; overflow: hidden; font-size: 17px; font-weight: 560; text-overflow: ellipsis; white-space: nowrap; }
 .playlistCard > small { overflow: hidden; color: rgba(238, 243, 255, 0.42); text-overflow: ellipsis; white-space: nowrap; }
 

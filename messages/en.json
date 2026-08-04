@@ -800,7 +800,7 @@
         "zonePlanTitle": "Three zones. Three separate recommendations.",
         "zonePlanDescription": "Each card controls a different zone. Select one to hear its representative direction and see why it fits this moment.",
         "zoneLabel": "Zone {index} · {zone}",
-        "conciergeReason": "{playlist} is the {zone} recommendation at {time}: {purpose}. Around {bpm} BPM with target activation {energy}/100 keeps this zone distinct from the other two."
+        "conciergeReason": "At {time}, {playlist} is the {zone} recommendation to {purpose}. Around {bpm} BPM with target activation {energy}/100 keeps this zone distinct from the other two."
       },
       "touchpoints": {
         "eyebrow": "Connected touchpoints",
