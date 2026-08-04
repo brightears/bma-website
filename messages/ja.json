@@ -777,11 +777,11 @@
         "paused": "プレビューを一時停止中",
         "mute": "プレビューをミュート",
         "unmute": "ミュート解除",
-        "playing": "代表的なライセンス済み25秒サンプルを再生中",
-        "playingMuted": "代表的なライセンス済み25秒サンプルを再生中 · ミュート",
+        "playing": "ライセンス済みBeat Breezeの30秒サンプルを再生中",
+        "playingMuted": "ライセンス済みBeat Breezeの30秒サンプルを再生中 · ミュート",
         "unavailable": "音声プレビューを利用できません",
         "volume": "プレビュー音量",
-        "selection": "{zone} · {playlist} の方向性 · {status}"
+        "selection": "{zone} · {playlist} · {status}"
       },
       "demo": {
         "eyebrow": "BMAsia Venue Time Machine",

@@ -777,11 +777,11 @@
         "paused": "Pratonton dijeda",
         "mute": "Senyapkan pratonton",
         "unmute": "Hidupkan bunyi",
-        "playing": "Memainkan sampel perwakilan berlesen selama 25 saat",
-        "playingMuted": "Memainkan sampel perwakilan berlesen selama 25 saat · disenyapkan",
+        "playing": "Memainkan sampel Beat Breeze berlesen selama 30 saat",
+        "playingMuted": "Memainkan sampel Beat Breeze berlesen selama 30 saat · disenyapkan",
         "unavailable": "Pratonton audio tidak tersedia",
         "volume": "Kelantangan pratonton",
-        "selection": "{zone} · arah {playlist} · {status}"
+        "selection": "{zone} · {playlist} · {status}"
       },
       "demo": {
         "eyebrow": "Pengalaman lima minit yang berguna",

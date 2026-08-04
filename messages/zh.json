@@ -777,11 +777,11 @@
         "paused": "预览已暂停",
         "mute": "静音预览",
         "unmute": "取消静音",
-        "playing": "正在播放25秒代表性授权样本",
-        "playingMuted": "正在播放25秒代表性授权样本 · 已静音",
+        "playing": "正在播放30秒Beat Breeze授权样本",
+        "playingMuted": "正在播放30秒Beat Breeze授权样本 · 已静音",
         "unavailable": "音频预览不可用",
         "volume": "预览音量",
-        "selection": "{zone} · {playlist} 方向 · {status}"
+        "selection": "{zone} · {playlist} · {status}"
       },
       "demo": {
         "eyebrow": "五分钟即可获得启发",

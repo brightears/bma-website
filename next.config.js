@@ -7,6 +7,12 @@ const nextConfig = {
   // Note: Removed 'output: export' to enable API routes with PostgreSQL + email
   images: {
     formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '*.r2.cloudflarestorage.com',
+      },
+    ],
   },
   trailingSlash: true,
   async redirects() {

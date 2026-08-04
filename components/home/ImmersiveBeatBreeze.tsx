@@ -24,9 +24,10 @@ import {
 import styles from './ImmersiveBeatBreeze.module.css';
 import {
   PLAYLIST_COVERS,
-  PREVIEW_AUDIO_BY_PLAYLIST,
   TIME_STOPS,
   VENUES,
+  type PlaylistSampleAsset,
+  type PlaylistSampleTrack,
   type VenueKey,
 } from './venue-time-machine-data';
 
@@ -50,6 +51,21 @@ function formatHour(hour: number) {
   return `${String(hour).padStart(2, '0')}:00`;
 }
 
+function closestSample(
+  samples: PlaylistSampleTrack[] | undefined,
+  targetBpm: number,
+): PlaylistSampleTrack | undefined {
+  return samples?.reduce<PlaylistSampleTrack | undefined>((closest, sample) => {
+    if (!closest) return sample;
+    if (sample.tempoBpm === null) return closest;
+    if (closest.tempoBpm === null) return sample;
+
+    return Math.abs(sample.tempoBpm - targetBpm) < Math.abs(closest.tempoBpm - targetBpm)
+      ? sample
+      : closest;
+  }, undefined);
+}
+
 function Equalizer({ active = false }: { active?: boolean }) {
   return (
     <span className={`${styles.equalizer} ${active ? styles.equalizerActive : ''}`} aria-hidden="true">
@@ -71,6 +87,8 @@ export function ImmersiveBeatBreeze() {
   const [isMuted, setIsMuted] = useState(false);
   const [volume, setVolume] = useState(0.65);
   const [activeTouchpoint, setActiveTouchpoint] = useState<TouchpointKey>('sound');
+  const [sampleAssets, setSampleAssets] = useState<Record<string, PlaylistSampleAsset>>({});
+  const [sampleLoadState, setSampleLoadState] = useState<'loading' | 'ready' | 'error'>('loading');
   const audioRef = useRef<HTMLAudioElement>(null);
   const resumeAfterSourceChangeRef = useRef(false);
 
@@ -82,8 +100,11 @@ export function ImmersiveBeatBreeze() {
     ...(recommendations[timeIndex] ?? recommendations[0]),
   }));
   const selectedPlaylist = playlists[focus] ?? playlists[0]!;
-  const selectedAudioSource = PREVIEW_AUDIO_BY_PLAYLIST[selectedPlaylist.title]
-    ?? '/audio/beat-breeze-demo/daytime.mp3';
+  const selectedSample = closestSample(
+    sampleAssets[selectedPlaylist.title]?.samples,
+    selectedPlaylist.bpm,
+  );
+  const selectedAudioSource = selectedSample?.audioUrl;
   const [accent, accentTwo] = phaseAccents[phaseIndex]!;
   const energy = selectedPlaylist.energy;
   const zoneSummary = playlists
@@ -109,6 +130,28 @@ export function ImmersiveBeatBreeze() {
   }, []);
 
   useEffect(() => {
+    const controller = new AbortController();
+
+    void fetch('/api/beat-breeze-samples', { signal: controller.signal })
+      .then(async (response) => {
+        if (!response.ok) throw new Error('Sample manifest unavailable');
+        return response.json() as Promise<{ playlists?: PlaylistSampleAsset[] }>;
+      })
+      .then(({ playlists: loadedPlaylists = [] }) => {
+        setSampleAssets(Object.fromEntries(
+          loadedPlaylists.map((playlist) => [playlist.name, playlist]),
+        ));
+        setSampleLoadState('ready');
+      })
+      .catch((error: unknown) => {
+        if (error instanceof DOMException && error.name === 'AbortError') return;
+        setSampleLoadState('error');
+      });
+
+    return () => controller.abort();
+  }, []);
+
+  useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
 
@@ -126,10 +169,10 @@ export function ImmersiveBeatBreeze() {
     resumeAfterSourceChangeRef.current = false;
     audio.pause();
     audio.currentTime = 0;
-    audio.load();
+    if (selectedAudioSource) audio.load();
     setAudioState('idle');
 
-    if (shouldResume) {
+    if (shouldResume && selectedAudioSource) {
       void audio.play().catch((error: unknown) => {
         if (error instanceof DOMException && error.name === 'AbortError') return;
         setAudioState('error');
@@ -144,7 +187,10 @@ export function ImmersiveBeatBreeze() {
 
   const toggleAudio = async () => {
     const audio = audioRef.current;
-    if (!audio) return;
+    if (!audio || !selectedAudioSource) {
+      setAudioState('error');
+      return;
+    }
 
     if (!audio.paused) {
       audio.pause();
@@ -182,13 +228,15 @@ export function ImmersiveBeatBreeze() {
     setFocus(index);
   };
 
-  const audioStatus = audioState === 'playing'
-    ? t(isMuted ? 'audio.playingMuted' : 'audio.playing')
-    : audioState === 'paused'
-      ? t('audio.paused')
-      : audioState === 'error'
-        ? t('audio.unavailable')
-        : t('audio.visualOnly');
+  const audioStatus = !selectedAudioSource && sampleLoadState === 'error'
+    ? t('audio.unavailable')
+    : audioState === 'playing'
+      ? t(isMuted ? 'audio.playingMuted' : 'audio.playing')
+      : audioState === 'paused'
+        ? t('audio.paused')
+        : audioState === 'error'
+          ? t('audio.unavailable')
+          : t('audio.visualOnly');
 
   const copyBrief = async () => {
     await navigator.clipboard?.writeText(brief);
@@ -233,7 +281,8 @@ export function ImmersiveBeatBreeze() {
               <Equalizer active={audioState === 'playing'} />
             </div>
             {playlists.map((playlist, index) => {
-              const cover = PLAYLIST_COVERS[playlist.title];
+              const cover = sampleAssets[playlist.title]?.coverImageUrl
+                ?? PLAYLIST_COVERS[playlist.title];
               const orbitClass = `${styles.orbitCover} ${[styles.orbitCover1, styles.orbitCover2, styles.orbitCover3][index]}`;
               return cover ? (
                 <Image
@@ -356,12 +405,19 @@ export function ImmersiveBeatBreeze() {
                 <span aria-live="polite">
                   {t('audio.selection', {
                     zone: t(`zones.${selectedPlaylist.zone}`),
-                    playlist: selectedPlaylist.title,
+                    playlist: selectedSample
+                      ? `${selectedPlaylist.title} · ${selectedSample.title}`
+                      : selectedPlaylist.title,
                     status: audioStatus,
                   })}
                 </span>
               </div>
-              <button type="button" className={styles.audioPlay} onClick={toggleAudio}>
+              <button
+                type="button"
+                className={styles.audioPlay}
+                onClick={toggleAudio}
+                disabled={!selectedAudioSource}
+              >
                 {audioState === 'playing' ? <Pause aria-hidden="true" /> : <Play aria-hidden="true" />}
                 {audioState === 'playing' ? t('audio.pause') : t('audio.hear')}
               </button>
@@ -403,7 +459,8 @@ export function ImmersiveBeatBreeze() {
               <p>{t('demo.zonePlanDescription')}</p>
             </div>
             {playlists.map((playlist, index) => {
-              const cover = PLAYLIST_COVERS[playlist.title];
+              const cover = sampleAssets[playlist.title]?.coverImageUrl
+                ?? PLAYLIST_COVERS[playlist.title];
               return (
                 <button
                   type="button"
