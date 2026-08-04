@@ -799,7 +799,7 @@
         "zonePlanEyebrow": "Một địa điểm, ba nhiệm vụ âm nhạc",
         "zonePlanTitleLine1": "Ba khu vực.",
         "zonePlanTitleLine2": "Ba đề xuất riêng.",
-        "zonePlanDescription": "Mỗi thẻ điều khiển một khu vực khác nhau. Chọn một thẻ để nghe định hướng đại diện và xem vì sao nó phù hợp vào lúc này.",
+        "zonePlanDescription": "Mỗi thẻ điều khiển một khu vực khác nhau. Chọn một thẻ để nghe mẫu Beat Breeze và xem vì sao nó phù hợp vào lúc này.",
         "zoneLabel": "Khu vực {index} · {zone}",
         "conciergeReason": "{playlist} được đề xuất cho {zone} lúc {time}: {purpose}. Khoảng {bpm} BPM với mức kích hoạt mục tiêu {energy}/100 giúp khu vực này khác biệt với hai khu vực còn lại."
       },

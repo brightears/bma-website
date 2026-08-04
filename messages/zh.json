@@ -799,7 +799,7 @@
         "zonePlanEyebrow": "一个场所，三种音乐任务",
         "zonePlanTitleLine1": "三个区域。",
         "zonePlanTitleLine2": "三套独立建议。",
-        "zonePlanDescription": "每张卡片控制不同区域。选择一个区域，即可试听代表性方向，并了解它为何适合当前时刻。",
+        "zonePlanDescription": "每张卡片控制不同区域。选择一个区域，即可试听它的 Beat Breeze 样本，并了解它为何适合当前时刻。",
         "zoneLabel": "区域 {index} · {zone}",
         "conciergeReason": "{time} 的 {zone} 推荐 {playlist}：{purpose}。约 {bpm} BPM、目标活跃度 {energy}/100，使这个区域与另外两个区域保持清晰区别。"
       },
