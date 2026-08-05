@@ -692,14 +692,17 @@
         "screens": {
           "label": "Layar dan TV",
           "title": "Visual loop, slideshow, dan kanal venue",
-          "text": "Rencanakan visual loop tanpa suara, slideshow bermerek, dan kanal TV untuk area publik atau pengalaman di dalam kamar jika implementasinya memerlukan.",
+          "text": "Rencanakan visual loop, slideshow bermerek, dan kanal TV untuk area publik atau pengalaman di dalam kamar. Film tertentu dapat menyertakan suara jika sesuai dengan format venue.",
           "loopPlay": "Putar loop visual",
           "loopPause": "Jeda loop visual",
-          "loopMeta": "10 detik · 16:9",
+          "loopSoundOn": "Nyalakan suara",
+          "loopSoundOff": "Senyapkan suara",
+          "loopWithSound": "Suara tersedia",
+          "loopSilent": "Visual tanpa suara",
           "loops": {
-            "coffee": { "name": "Krema kopi", "mood": "Hangat & nyaman" },
-            "palm": { "name": "Bayangan palem", "mood": "Segar & cerah" },
-            "neon": { "name": "Pantulan neon", "mood": "Malam neon" }
+            "waterfall": { "name": "Lorong air terjun", "mood": "Tenang dan alami" },
+            "snow": { "name": "Sang pengunjung", "mood": "Ceria dan surealis" },
+            "underwater": { "name": "Dinding bawah air", "mood": "Hanyut tenang di laut" }
           }
         },
         "create": {

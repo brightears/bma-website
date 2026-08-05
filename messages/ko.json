@@ -692,14 +692,17 @@
         "screens": {
           "label": "스크린 및 TV",
           "title": "비주얼 루프, 슬라이드쇼, 매장 채널",
-          "text": "도입 환경에 따라 공용 공간이나 객실 경험을 위한 무음 스크린 루프, 브랜드 슬라이드쇼, TV 채널을 계획합니다.",
+          "text": "공용 공간이나 객실 경험을 위한 비주얼 루프, 브랜드 슬라이드쇼, TV 채널을 계획합니다. 공간의 형식에 맞는 일부 영상은 사운드도 함께 제공할 수 있습니다.",
           "loopPlay": "비주얼 루프 재생",
           "loopPause": "비주얼 루프 일시정지",
-          "loopMeta": "10초 · 16:9",
+          "loopSoundOn": "소리 켜기",
+          "loopSoundOff": "소리 끄기",
+          "loopWithSound": "사운드 제공",
+          "loopSilent": "무음 영상",
           "loops": {
-            "coffee": { "name": "커피 크레마", "mood": "따뜻하고 아늑한" },
-            "palm": { "name": "야자수 그림자", "mood": "산뜻하고 밝은" },
-            "neon": { "name": "네온 반사", "mood": "네온의 밤" }
+            "waterfall": { "name": "폭포의 통로", "mood": "원초적인 고요" },
+            "snow": { "name": "방문자", "mood": "유쾌한 초현실" },
+            "underwater": { "name": "수중 벽면", "mood": "느린 바닷속 흐름" }
           }
         },
         "create": {

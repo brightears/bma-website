@@ -692,14 +692,17 @@
         "screens": {
           "label": "Màn hình và TV",
           "title": "Hình ảnh lặp, trình chiếu và kênh nội bộ",
-          "text": "Lên kế hoạch cho hình ảnh lặp không tiếng, trình chiếu mang thương hiệu và các kênh TV tại khu vực công cộng hoặc trải nghiệm trong phòng khi mô hình triển khai cần đến.",
+          "text": "Lên kế hoạch cho video lặp, trình chiếu mang thương hiệu và các kênh TV tại khu vực công cộng hoặc trong phòng. Một số phim có thể phát âm thanh khi phù hợp với không gian.",
           "loopPlay": "Phát vòng lặp hình ảnh",
           "loopPause": "Tạm dừng vòng lặp hình ảnh",
-          "loopMeta": "10 giây · 16:9",
+          "loopSoundOn": "Bật âm thanh",
+          "loopSoundOff": "Tắt âm thanh",
+          "loopWithSound": "Có âm thanh",
+          "loopSilent": "Hình ảnh không tiếng",
           "loops": {
-            "coffee": { "name": "Lớp crema cà phê", "mood": "Ấm áp & thư thái" },
-            "palm": { "name": "Bóng cọ", "mood": "Tươi mới & rực sáng" },
-            "neon": { "name": "Phản chiếu neon", "mood": "Đêm neon" }
+            "waterfall": { "name": "Lối qua thác nước", "mood": "Tĩnh lặng nguyên sơ" },
+            "snow": { "name": "Vị khách", "mood": "Tinh nghịch và siêu thực" },
+            "underwater": { "name": "Bức tường dưới nước", "mood": "Trôi chậm giữa đại dương" }
           }
         },
         "create": {

@@ -26,6 +26,7 @@ import {
   Sparkles,
   Smartphone,
   Volume2,
+  VolumeX,
   WandSparkles,
   Workflow,
 } from 'lucide-react';
@@ -56,22 +57,28 @@ const conciergeSampleDirections: Record<
 
 const includedVisualLoops = [
   {
-    key: 'coffee',
-    src: '/media/beat-breeze/warm-coffee-crema.mp4',
-    poster: '/media/beat-breeze/warm-coffee-crema.jpg',
-    accent: '#efa634',
-  },
-  {
-    key: 'palm',
-    src: '/media/beat-breeze/fresh-palm-shadows.mp4',
-    poster: '/media/beat-breeze/fresh-palm-shadows.jpg',
+    key: 'waterfall',
+    src: '/media/beat-breeze/waterfall-steps-back.mp4',
+    poster: '/media/beat-breeze/waterfall-steps-back.jpg',
+    duration: '0:19',
+    hasAudio: true,
     accent: '#49d5c5',
   },
   {
-    key: 'neon',
-    src: '/media/beat-breeze/neon-wet-street.mp4',
-    poster: '/media/beat-breeze/neon-wet-street.jpg',
-    accent: '#7fe7c4',
+    key: 'snow',
+    src: '/media/beat-breeze/snow-visitor.mp4',
+    poster: '/media/beat-breeze/snow-visitor.jpg',
+    duration: '0:10',
+    hasAudio: false,
+    accent: '#e6cf74',
+  },
+  {
+    key: 'underwater',
+    src: '/media/beat-breeze/underwater-wall.mp4',
+    poster: '/media/beat-breeze/underwater-wall.jpg',
+    duration: '1:01',
+    hasAudio: true,
+    accent: '#38cfe0',
   },
 ] as const;
 
@@ -556,6 +563,7 @@ function VisualLoopTheater({
   const reduceMotion = useReducedMotion();
   const [activeLoop, setActiveLoop] = useState(0);
   const [isPlaying, setIsPlaying] = useState(!reduceMotion);
+  const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
   const loop = includedVisualLoops[activeLoop] ?? includedVisualLoops[0]!;
   const loopName = t(`loops.${loop.key}.name`);
@@ -586,6 +594,33 @@ function VisualLoopTheater({
     }
   }
 
+  function toggleSound() {
+    const video = videoRef.current;
+    if (!video || !loop.hasAudio) return;
+
+    if (isMuted) {
+      video.muted = false;
+      setIsMuted(false);
+      if (video.paused) {
+        void video.play().then(() => setIsPlaying(true)).catch(() => {
+          video.muted = true;
+          setIsMuted(true);
+          setIsPlaying(false);
+        });
+      }
+    } else {
+      video.muted = true;
+      setIsMuted(true);
+    }
+  }
+
+  function selectLoop(index: number) {
+    if (index === activeLoop) return;
+    if (videoRef.current) videoRef.current.muted = true;
+    setIsMuted(true);
+    setActiveLoop(index);
+  }
+
   return (
     <div className="mt-9" role="group" aria-label={ariaLabel}>
       <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10 bg-[#050b12] shadow-[0_24px_70px_rgba(0,0,0,.34)]">
@@ -602,12 +637,15 @@ function VisualLoopTheater({
               ref={videoRef}
               src={loop.src}
               poster={loop.poster}
-              muted
+              muted={isMuted}
+              autoPlay={isPlaying && !reduceMotion}
               loop
               playsInline
               preload="metadata"
               className="h-full w-full object-cover"
               aria-label={`${loopName} · ${loopMood}`}
+              onPlay={() => setIsPlaying(true)}
+              onPause={() => setIsPlaying(false)}
             />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(3,8,13,.06),rgba(3,8,13,.12)_48%,rgba(3,8,13,.82))]" />
             <motion.i
@@ -617,7 +655,9 @@ function VisualLoopTheater({
             />
             <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-4 sm:p-5">
               <div>
-                <span className="font-label text-[9px] uppercase tracking-[.2em] text-white/42">{t('loopMeta')}</span>
+                <span className="font-label text-[9px] uppercase tracking-[.2em] text-white/42">
+                  {loop.duration} · 16:9 · {loop.hasAudio ? t('loopWithSound') : t('loopSilent')}
+                </span>
                 <strong className="mt-1 block text-sm font-medium text-white sm:text-base">{loopName}</strong>
                 <span className="mt-0.5 block text-xs text-white/48">{loopMood}</span>
               </div>
@@ -625,14 +665,38 @@ function VisualLoopTheater({
             </div>
           </motion.div>
         </AnimatePresence>
-        <button
-          type="button"
-          onClick={togglePlayback}
-          className="absolute right-3 top-3 z-10 grid h-10 w-10 place-items-center rounded-full border border-white/14 bg-[#06111a]/70 text-white shadow-lg backdrop-blur transition hover:bg-[#06111a]/90"
-        >
-          {isPlaying ? <Pause className="h-4 w-4 fill-current" /> : <Play className="ml-0.5 h-4 w-4 fill-current" />}
-          <span className="sr-only">{isPlaying ? pauseLabel : playLabel}</span>
-        </button>
+        <div className="absolute right-3 top-3 z-10 flex items-center gap-2">
+          {loop.hasAudio ? (
+            <button
+              type="button"
+              onClick={toggleSound}
+              aria-pressed={!isMuted}
+              aria-label={isMuted ? t('loopSoundOn') : t('loopSoundOff')}
+              title={isMuted ? t('loopSoundOn') : t('loopSoundOff')}
+              className="grid h-10 w-10 place-items-center rounded-full border border-white/14 bg-[#06111a]/70 text-white shadow-lg backdrop-blur transition hover:bg-[#06111a]/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#49d5c5]"
+            >
+              {isMuted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
+            </button>
+          ) : (
+            <span
+              role="img"
+              aria-label={t('loopSilent')}
+              className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-[#06111a]/58 text-white/55 shadow-lg backdrop-blur"
+              title={t('loopSilent')}
+            >
+              <VolumeX className="h-4 w-4" />
+            </span>
+          )}
+          <button
+            type="button"
+            onClick={togglePlayback}
+            aria-label={isPlaying ? pauseLabel : playLabel}
+            title={isPlaying ? pauseLabel : playLabel}
+            className="grid h-10 w-10 place-items-center rounded-full border border-white/14 bg-[#06111a]/70 text-white shadow-lg backdrop-blur transition hover:bg-[#06111a]/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange"
+          >
+            {isPlaying ? <Pause className="h-4 w-4 fill-current" /> : <Play className="ml-0.5 h-4 w-4 fill-current" />}
+          </button>
+        </div>
       </div>
 
       <div className="mt-3 grid grid-cols-3 gap-2">
@@ -644,7 +708,7 @@ function VisualLoopTheater({
             <button
               key={candidate.src}
               type="button"
-              onClick={() => setActiveLoop(index)}
+              onClick={() => selectLoop(index)}
               aria-pressed={activeLoop === index}
               aria-label={`${candidateName} · ${candidateMood}`}
               className={`group/loop relative aspect-video overflow-hidden rounded-xl border transition ${activeLoop === index ? 'border-brand-orange/65 ring-2 ring-brand-orange/15' : 'border-white/10 opacity-58 hover:opacity-100'}`}
