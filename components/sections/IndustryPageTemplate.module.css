@@ -51,7 +51,7 @@
   border-radius: 999px;
   background: var(--industry-soft);
   box-shadow: 0 0 0 0 color-mix(in srgb, var(--industry-soft) 50%, transparent);
-  animation: previewPulse 2.8s ease-out infinite;
+  animation: preview-pulse 2.8s ease-out infinite;
 }
 
 .momentCard {
@@ -108,7 +108,7 @@
   position: absolute;
   border: 1px solid color-mix(in srgb, var(--industry-soft) 28%, transparent);
   border-radius: 50%;
-  animation: orbitDrift 14s ease-in-out infinite alternate;
+  animation: orbit-drift 14s ease-in-out infinite alternate;
 }
 
 .fieldOrb {
@@ -145,7 +145,7 @@
   stroke-width: 1.3;
   stroke-linecap: round;
   stroke-dasharray: 7 15;
-  animation: ribbonTravel 13s linear infinite;
+  animation: ribbon-travel 13s linear infinite;
 }
 
 .fieldRibbon:nth-of-type(2) {
@@ -169,12 +169,12 @@
   border-radius: 999px;
   background: var(--industry-soft);
   box-shadow: 0 0 16px color-mix(in srgb, var(--industry-soft) 65%, transparent);
-  animation: particleFloat 7s ease-in-out infinite alternate;
+  animation: particle-float 7s ease-in-out infinite alternate;
 }
 
-.particle:nth-of-type(1) { left: 16%; top: 28%; animation-delay: -1s; }
-.particle:nth-of-type(2) { left: 48%; top: 18%; animation-delay: -4s; }
-.particle:nth-of-type(3) { right: 13%; top: 54%; animation-delay: -2s; }
+.particle:nth-of-type(3) { left: 16%; top: 28%; animation-delay: -1s; }
+.particle:nth-of-type(4) { left: 48%; top: 18%; animation-delay: -4s; }
+.particle:nth-of-type(5) { right: 13%; top: 54%; animation-delay: -2s; }
 
 .cardSpectrum {
   position: absolute;
@@ -209,25 +209,25 @@
   mask-image: linear-gradient(90deg, #000, transparent 72%);
 }
 
-@keyframes previewPulse {
+@keyframes preview-pulse {
   0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--industry-soft) 50%, transparent); }
   70%, 100% { box-shadow: 0 0 0 12px transparent; }
 }
 
-@keyframes ribbonTravel {
-  from { stroke-dashoffset: 0; transform: translate3d(-1%, 0, 0); }
+@keyframes ribbon-travel {
+  0% { stroke-dashoffset: 0; transform: translate3d(-1%, 0, 0); }
   50% { transform: translate3d(2%, 2%, 0); }
-  to { stroke-dashoffset: -180; transform: translate3d(-1%, 0, 0); }
+  100% { stroke-dashoffset: -180; transform: translate3d(-1%, 0, 0); }
 }
 
-@keyframes orbitDrift {
-  from { transform: translate3d(-2%, 2%, 0) scale(0.96); opacity: 0.45; }
-  to { transform: translate3d(4%, -3%, 0) scale(1.06); opacity: 0.9; }
+@keyframes orbit-drift {
+  0% { transform: translate3d(-2%, 2%, 0) scale(0.96); opacity: 0.45; }
+  100% { transform: translate3d(4%, -3%, 0) scale(1.06); opacity: 0.9; }
 }
 
-@keyframes particleFloat {
-  from { transform: translate3d(0, 0, 0) scale(0.8); opacity: 0.35; }
-  to { transform: translate3d(18px, -24px, 0) scale(1.25); opacity: 1; }
+@keyframes particle-float {
+  0% { transform: translate3d(0, 0, 0) scale(0.8); opacity: 0.35; }
+  100% { transform: translate3d(18px, -24px, 0) scale(1.25); opacity: 1; }
 }
 
 @media (max-width: 639px) {

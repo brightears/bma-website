@@ -31,7 +31,24 @@
     "soundtrackShort": "Musik komersial yang dikenal, disediakan dan didukung oleh BMAsia.",
     "beatBreezeLogin": "Buka platform Beat Breeze",
     "soundtrackLogin": "Buka aplikasi Soundtrack",
-    "skipToContent": "Lewati ke konten utama"
+    "skipToContent": "Lewati ke konten utama",
+    "solutionCategories": {
+      "hospitality": "Hospitalitas",
+      "retailLifestyle": "Ritel & Gaya Hidup",
+      "professional": "Profesional",
+      "hotels": "Hotel & Resor",
+      "restaurants": "Restoran",
+      "bars": "Bar & Lounge",
+      "spas": "Spa & Wellness",
+      "retail": "Ritel & Mode",
+      "cafes": "Kafe & Kedai Kopi",
+      "malls": "Pusat Perbelanjaan",
+      "gyms": "Gym & Kebugaran",
+      "medical": "Medis & Gigi",
+      "offices": "Kantor",
+      "showrooms": "Ruang Pamer",
+      "events": "Acara & Venue"
+    }
   },
   "languageSwitcher": {
     "label": "Bahasa",
@@ -1770,6 +1787,13 @@
       "title": "Musik bekerja melalui konteks.",
       "description": "Riset membantu kami mengajukan pertanyaan yang lebih baik, tetapi tidak menggantikan brief venue, kebutuhan pendengar, atau validasi dalam operasional nyata.",
       "opensSource": "membuka sumber riset di tab baru",
+      "sources": {
+        "soundtrack": "Riset Soundtrack",
+        "brandFitFieldStudy": "Eksperimen lapangan kesesuaian merek HUI",
+        "exerciseReview": "Tinjauan BMC Sports Science",
+        "careReview": "Tinjauan SAGE Open Medicine",
+        "focusStudy": "Studi Communications Psychology"
+      },
       "notes": {
         "brandFit": {
           "title": "Kesesuaian sebelum popularitas.",

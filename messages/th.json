@@ -31,7 +31,24 @@
     "soundtrackShort": "เพลงเชิงพาณิชย์ที่คุ้นเคย พร้อมบริการและการดูแลจาก BMAsia",
     "beatBreezeLogin": "เปิดแพลตฟอร์ม Beat Breeze",
     "soundtrackLogin": "เปิดแอป Soundtrack",
-    "skipToContent": "ข้ามไปยังเนื้อหาหลัก"
+    "skipToContent": "ข้ามไปยังเนื้อหาหลัก",
+    "solutionCategories": {
+      "hospitality": "การบริการและการท่องเที่ยว",
+      "retailLifestyle": "ค้าปลีกและไลฟ์สไตล์",
+      "professional": "ธุรกิจและวิชาชีพ",
+      "hotels": "โรงแรมและรีสอร์ต",
+      "restaurants": "ร้านอาหาร",
+      "bars": "บาร์และเลานจ์",
+      "spas": "สปาและเวลเนส",
+      "retail": "ค้าปลีกและแฟชั่น",
+      "cafes": "คาเฟ่และร้านกาแฟ",
+      "malls": "ศูนย์การค้า",
+      "gyms": "ยิมและฟิตเนส",
+      "medical": "การแพทย์และทันตกรรม",
+      "offices": "สำนักงาน",
+      "showrooms": "โชว์รูม",
+      "events": "อีเวนต์และสถานที่จัดงาน"
+    }
   },
   "languageSwitcher": {
     "label": "ภาษา",
@@ -2006,6 +2023,13 @@
       "title": "ดนตรีได้ผลเมื่ออยู่ในบริบทที่เหมาะสม",
       "description": "งานวิจัยช่วยให้เราตั้งคำถามได้ดีขึ้น แต่ไม่อาจทดแทนโจทย์ของสถานที่ ความต้องการของผู้ฟัง หรือการตรวจสอบจากการใช้งานจริง",
       "opensSource": "เปิดแหล่งงานวิจัยในแท็บใหม่",
+      "sources": {
+        "soundtrack": "งานวิจัยของ Soundtrack",
+        "brandFitFieldStudy": "การทดลองภาคสนามเรื่องความสอดคล้องกับแบรนด์ของ HUI",
+        "exerciseReview": "บททบทวน BMC Sports Science",
+        "careReview": "บททบทวน SAGE Open Medicine",
+        "focusStudy": "งานศึกษา Communications Psychology"
+      },
       "notes": {
         "brandFit": {
           "title": "ความเข้ากันได้มาก่อนความดัง",

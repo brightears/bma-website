@@ -18,30 +18,30 @@ export const SOCIAL = {
 // Solutions dropdown — categorized like Soundtrack's "Business types"
 export const SOLUTIONS_CATEGORIES = [
   {
-    category: 'Hospitality',
+    categoryKey: 'hospitality',
     links: [
-      { href: '/solutions/hotels', label: 'Hotels & Resorts' },
-      { href: '/solutions/restaurants', label: 'Restaurants' },
-      { href: '/solutions/bars', label: 'Bars & Lounges' },
-      { href: '/solutions/spas', label: 'Spas & Wellness' },
+      { href: '/solutions/hotels', labelKey: 'hotels' },
+      { href: '/solutions/restaurants', labelKey: 'restaurants' },
+      { href: '/solutions/bars', labelKey: 'bars' },
+      { href: '/solutions/spas', labelKey: 'spas' },
     ],
   },
   {
-    category: 'Retail & Lifestyle',
+    categoryKey: 'retailLifestyle',
     links: [
-      { href: '/solutions/retail', label: 'Retail & Fashion' },
-      { href: '/solutions/cafes', label: 'Cafés & Coffee Shops' },
-      { href: '/solutions/malls', label: 'Shopping Malls' },
-      { href: '/solutions/gyms', label: 'Gyms & Fitness' },
+      { href: '/solutions/retail', labelKey: 'retail' },
+      { href: '/solutions/cafes', labelKey: 'cafes' },
+      { href: '/solutions/malls', labelKey: 'malls' },
+      { href: '/solutions/gyms', labelKey: 'gyms' },
     ],
   },
   {
-    category: 'Professional',
+    categoryKey: 'professional',
     links: [
-      { href: '/solutions/medical', label: 'Medical & Dental' },
-      { href: '/solutions/offices', label: 'Offices' },
-      { href: '/solutions/showrooms', label: 'Showrooms' },
-      { href: '/solutions/events', label: 'Events & Venues' },
+      { href: '/solutions/medical', labelKey: 'medical' },
+      { href: '/solutions/offices', labelKey: 'offices' },
+      { href: '/solutions/showrooms', labelKey: 'showrooms' },
+      { href: '/solutions/events', labelKey: 'events' },
     ],
   },
 ] as const;

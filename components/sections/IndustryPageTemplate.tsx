@@ -3,7 +3,7 @@
 import { useId, type CSSProperties } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, MotionConfig } from 'framer-motion';
 import { useLocale, useTranslations } from 'next-intl';
 import {
   ArrowRight,
@@ -40,19 +40,19 @@ const capabilityIcons = {
   soundscapes: Radio,
 } satisfies Record<CapabilityKey, typeof Music2>;
 
-const evidenceSources: Record<EvidenceKey, Array<{ label: string; href: string }>> = {
+const evidenceSources: Record<EvidenceKey, Array<{ labelKey: string; href: string }>> = {
   brandFit: [
-    { label: 'Soundtrack research', href: 'https://www.soundtrack.io/research/' },
-    { label: 'Journal of Consumer Research', href: 'https://academic.oup.com/jcr/article-abstract/13/2/286/1846377' },
+    { labelKey: 'soundtrack', href: 'https://www.soundtrack.io/research/' },
+    { labelKey: 'brandFitFieldStudy', href: 'https://ideas.repec.org/p/hhs/huiwps/0121.html' },
   ],
   exercise: [
-    { label: 'BMC Sports Science, Medicine and Rehabilitation', href: 'https://pubmed.ncbi.nlm.nih.gov/41430324/' },
+    { labelKey: 'exerciseReview', href: 'https://pubmed.ncbi.nlm.nih.gov/41430324/' },
   ],
   care: [
-    { label: 'SAGE Open Medicine review', href: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9072951/' },
+    { labelKey: 'careReview', href: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9072951/' },
   ],
   focus: [
-    { label: 'Communications Psychology', href: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11819607/' },
+    { labelKey: 'focusStudy', href: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11819607/' },
   ],
 };
 
@@ -70,10 +70,11 @@ export function IndustryPageTemplate({ config }: { config: IndustryConfig }) {
   const benefits = Array.from({ length: 5 }, (_, index) => `b${index + 1}`);
 
   return (
-    <div
-      className="overflow-hidden bg-[#06111a] text-white"
-      style={{ '--industry-accent': config.accent, '--industry-soft': config.accentSoft } as CSSProperties}
-    >
+    <MotionConfig reducedMotion="user">
+      <div
+        className="overflow-hidden bg-[#06111a] text-white"
+        style={{ '--industry-accent': config.accent, '--industry-soft': config.accentSoft } as CSSProperties}
+      >
       <section className="bma-grain relative isolate min-h-[82dvh] overflow-hidden px-5 pb-20 pt-28 sm:px-8 sm:pt-32 lg:flex lg:items-center lg:px-16">
         <Image src={config.heroImage} alt={t('headline')} fill priority loading="eager" className="-z-30 object-cover opacity-45" sizes="100vw" />
         <div className="absolute inset-0 -z-20 bg-[linear-gradient(98deg,#06111a_0%,rgba(6,17,26,.94)_48%,rgba(6,17,26,.48)_100%)]" />
@@ -204,7 +205,8 @@ export function IndustryPageTemplate({ config }: { config: IndustryConfig }) {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_100%,color-mix(in_srgb,var(--industry-accent)_18%,transparent),transparent_48%)]" />
         <motion.div {...reveal} className="relative mx-auto max-w-4xl"><Gauge className="mx-auto h-8 w-8 text-[var(--industry-accent)]" aria-hidden="true" /><h2 className={`${styles.sectionHeading} mt-7 font-headline text-[clamp(2.8rem,5vw,4.4rem)] font-medium leading-[.98] tracking-[-.052em]`}>{t('ctaHeadline')}</h2><p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/50 sm:text-lg sm:leading-8">{tt('finalDescription')}</p><div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row"><Link href={`/${locale}/quotation?industry=${config.slug}&source=industry-final`} className="inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-[var(--industry-accent)] px-8 font-label text-sm font-semibold text-[#111820] hover:brightness-110">{tt('helpChoose')} <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link><Link href={`/${locale}/how-it-works`} className="bma-button-secondary min-h-14 px-8">{tt('howItWorks')}</Link></div></motion.div>
       </section>
-    </div>
+      </div>
+    </MotionConfig>
   );
 }
 
@@ -253,7 +255,7 @@ function EvidenceSection({ evidence }: { evidence: EvidenceKey }) {
             <div className="mt-6 flex flex-wrap gap-2">
               {evidenceSources[evidence].map((source) => (
                 <a key={source.href} href={source.href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.035] px-3 py-2 text-xs text-white/58 transition hover:border-white/20 hover:text-white">
-                  {source.label}<ExternalLink className="h-3.5 w-3.5" aria-hidden="true" /><span className="sr-only"> — {tt('evidence.opensSource')}</span>
+                  {tt(`evidence.sources.${source.labelKey}`)}<ExternalLink className="h-3.5 w-3.5" aria-hidden="true" /><span className="sr-only"> — {tt('evidence.opensSource')}</span>
                 </a>
               ))}
             </div>

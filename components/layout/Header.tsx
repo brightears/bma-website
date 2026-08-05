@@ -282,7 +282,7 @@ function SolutionsMenu({ locale, t }: { locale: string; t: NavigationTranslator 
         aria-haspopup="true"
         aria-expanded={isOpen}
         aria-controls="solutions-menu"
-        onClick={() => setIsOpen((open) => !open)}
+        onClick={openMenu}
       >
         {t('solutions')} <ChevronDown className={`h-3.5 w-3.5 transition-transform ${isOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
       </button>
@@ -300,12 +300,12 @@ function SolutionsMenu({ locale, t }: { locale: string; t: NavigationTranslator 
           </div>
           <div className="grid grid-cols-3 gap-6">
             {SOLUTIONS_CATEGORIES.map((category) => (
-              <div key={category.category}>
-                <p className="font-label text-[10px] font-semibold uppercase tracking-[0.2em] text-white/34">{category.category}</p>
+              <div key={category.categoryKey}>
+                <p className="font-label text-[10px] font-semibold uppercase tracking-[0.2em] text-white/34">{t(`solutionCategories.${category.categoryKey}`)}</p>
                 <div className="mt-3 space-y-0.5">
                   {category.links.map((link) => (
                     <Link key={link.href} href={`/${locale}${link.href}`} onClick={closeMenu} className="block rounded-lg px-2 py-1.5 text-sm text-white/66 transition hover:bg-white/[0.05] hover:text-white">
-                      {link.label}
+                      {t(`solutionCategories.${link.labelKey}`)}
                     </Link>
                   ))}
                 </div>

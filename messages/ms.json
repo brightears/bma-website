@@ -31,7 +31,24 @@
     "soundtrackShort": "Muzik komersial yang dikenali, dibekal dan disokong oleh BMAsia.",
     "beatBreezeLogin": "Buka platform Beat Breeze",
     "soundtrackLogin": "Buka aplikasi Soundtrack",
-    "skipToContent": "Langkau ke kandungan utama"
+    "skipToContent": "Langkau ke kandungan utama",
+    "solutionCategories": {
+      "hospitality": "Hospitaliti",
+      "retailLifestyle": "Runcit & Gaya Hidup",
+      "professional": "Profesional",
+      "hotels": "Hotel & Resort",
+      "restaurants": "Restoran",
+      "bars": "Bar & Lounge",
+      "spas": "Spa & Kesejahteraan",
+      "retail": "Runcit & Fesyen",
+      "cafes": "Kafe & Kedai Kopi",
+      "malls": "Pusat Beli-belah",
+      "gyms": "Gim & Kecergasan",
+      "medical": "Perubatan & Pergigian",
+      "offices": "Pejabat",
+      "showrooms": "Bilik Pameran",
+      "events": "Acara & Venue"
+    }
   },
   "languageSwitcher": {
     "label": "Bahasa",
@@ -1770,6 +1787,13 @@
       "title": "Muzik berkesan melalui konteks.",
       "description": "Penyelidikan membantu kami mengemukakan soalan yang lebih baik, tetapi tidak menggantikan taklimat venue, keperluan pendengar atau pengesahan dalam operasi sebenar.",
       "opensSource": "membuka sumber penyelidikan dalam tab baharu",
+      "sources": {
+        "soundtrack": "Penyelidikan Soundtrack",
+        "brandFitFieldStudy": "Eksperimen lapangan kesesuaian jenama HUI",
+        "exerciseReview": "Ulasan BMC Sports Science",
+        "careReview": "Ulasan SAGE Open Medicine",
+        "focusStudy": "Kajian Communications Psychology"
+      },
       "notes": {
         "brandFit": {
           "title": "Kesesuaian dahulu, kemasyhuran kemudian.",

@@ -31,7 +31,24 @@
     "soundtrackShort": "BMAsia가 공급하고 지원하는 친숙한 상업용 음악.",
     "beatBreezeLogin": "Beat Breeze 플랫폼 열기",
     "soundtrackLogin": "Soundtrack 앱 열기",
-    "skipToContent": "본문으로 건너뛰기"
+    "skipToContent": "본문으로 건너뛰기",
+    "solutionCategories": {
+      "hospitality": "호스피탈리티",
+      "retailLifestyle": "리테일 & 라이프스타일",
+      "professional": "전문 공간",
+      "hotels": "호텔 & 리조트",
+      "restaurants": "레스토랑",
+      "bars": "바 & 라운지",
+      "spas": "스파 & 웰니스",
+      "retail": "리테일 & 패션",
+      "cafes": "카페 & 커피숍",
+      "malls": "쇼핑몰",
+      "gyms": "헬스장 & 피트니스",
+      "medical": "의료 & 치과",
+      "offices": "오피스",
+      "showrooms": "쇼룸",
+      "events": "이벤트 & 베뉴"
+    }
   },
   "languageSwitcher": {
     "label": "언어",
@@ -1770,6 +1787,13 @@
       "title": "음악의 효과는 맥락에서 나옵니다.",
       "description": "연구는 더 나은 질문을 만드는 데 도움을 주지만, 공간의 브리프와 청취자의 필요, 실제 운영에서의 검증을 대신할 수는 없습니다.",
       "opensSource": "새 탭에서 연구 출처 열기",
+      "sources": {
+        "soundtrack": "Soundtrack 연구",
+        "brandFitFieldStudy": "HUI 브랜드 적합성 현장 실험",
+        "exerciseReview": "BMC Sports Science 연구 검토",
+        "careReview": "SAGE Open Medicine 연구 검토",
+        "focusStudy": "Communications Psychology 연구"
+      },
       "notes": {
         "brandFit": {
           "title": "유명세보다 적합성.",

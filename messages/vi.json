@@ -31,7 +31,24 @@
     "soundtrackShort": "Âm nhạc thương mại quen thuộc, do BMAsia cung cấp và hỗ trợ.",
     "beatBreezeLogin": "Mở nền tảng Beat Breeze",
     "soundtrackLogin": "Mở ứng dụng Soundtrack",
-    "skipToContent": "Chuyển đến nội dung chính"
+    "skipToContent": "Chuyển đến nội dung chính",
+    "solutionCategories": {
+      "hospitality": "Khách sạn & Dịch vụ",
+      "retailLifestyle": "Bán lẻ & Phong cách sống",
+      "professional": "Chuyên nghiệp",
+      "hotels": "Khách sạn & Khu nghỉ dưỡng",
+      "restaurants": "Nhà hàng",
+      "bars": "Quán bar & Lounge",
+      "spas": "Spa & Chăm sóc sức khỏe",
+      "retail": "Bán lẻ & Thời trang",
+      "cafes": "Quán cà phê",
+      "malls": "Trung tâm mua sắm",
+      "gyms": "Phòng gym & Thể hình",
+      "medical": "Y tế & Nha khoa",
+      "offices": "Văn phòng",
+      "showrooms": "Phòng trưng bày",
+      "events": "Sự kiện & Địa điểm"
+    }
   },
   "languageSwitcher": {
     "label": "Ngôn ngữ",
@@ -1770,6 +1787,13 @@
       "title": "Âm nhạc phát huy tác dụng trong đúng bối cảnh.",
       "description": "Nghiên cứu giúp chúng tôi đặt câu hỏi tốt hơn, nhưng không thể thay thế yêu cầu của địa điểm, nhu cầu người nghe hay việc kiểm chứng trong vận hành thực tế.",
       "opensSource": "mở nguồn nghiên cứu trong thẻ mới",
+      "sources": {
+        "soundtrack": "Nghiên cứu của Soundtrack",
+        "brandFitFieldStudy": "Thí nghiệm thực địa về độ phù hợp thương hiệu của HUI",
+        "exerciseReview": "Tổng quan BMC Sports Science",
+        "careReview": "Tổng quan SAGE Open Medicine",
+        "focusStudy": "Nghiên cứu Communications Psychology"
+      },
       "notes": {
         "brandFit": {
           "title": "Phù hợp trước, nổi tiếng sau.",

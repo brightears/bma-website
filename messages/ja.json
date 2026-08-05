@@ -31,7 +31,24 @@
     "soundtrackShort": "親しみのある商用音楽を、BMAsiaの提供・サポートで。",
     "beatBreezeLogin": "Beat Breezeプラットフォームを開く",
     "soundtrackLogin": "Soundtrackアプリを開く",
-    "skipToContent": "メインコンテンツへ移動"
+    "skipToContent": "メインコンテンツへ移動",
+    "solutionCategories": {
+      "hospitality": "ホスピタリティ",
+      "retailLifestyle": "小売・ライフスタイル",
+      "professional": "プロフェッショナル",
+      "hotels": "ホテル・リゾート",
+      "restaurants": "レストラン",
+      "bars": "バー・ラウンジ",
+      "spas": "スパ・ウェルネス",
+      "retail": "小売・ファッション",
+      "cafes": "カフェ・コーヒーショップ",
+      "malls": "ショッピングモール",
+      "gyms": "ジム・フィットネス",
+      "medical": "医療・歯科",
+      "offices": "オフィス",
+      "showrooms": "ショールーム",
+      "events": "イベント・会場"
+    }
   },
   "languageSwitcher": {
     "label": "言語",
@@ -1770,6 +1787,13 @@
       "title": "音楽の効果は、文脈で決まる。",
       "description": "研究はより良い問いを立てる助けになりますが、施設の要件、聴く人のニーズ、実運用での検証に代わるものではありません。",
       "opensSource": "研究資料を新しいタブで開く",
+      "sources": {
+        "soundtrack": "Soundtrackの研究",
+        "brandFitFieldStudy": "HUIのブランド適合フィールド実験",
+        "exerciseReview": "BMC Sports Scienceレビュー",
+        "careReview": "SAGE Open Medicineレビュー",
+        "focusStudy": "Communications Psychology研究"
+      },
       "notes": {
         "brandFit": {
           "title": "知名度より、ブランドとの適合。",

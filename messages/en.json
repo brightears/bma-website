@@ -31,7 +31,24 @@
     "soundtrackShort": "Familiar commercial music, supplied and supported by BMAsia.",
     "beatBreezeLogin": "Open the Beat Breeze platform",
     "soundtrackLogin": "Open the Soundtrack app",
-    "skipToContent": "Skip to main content"
+    "skipToContent": "Skip to main content",
+    "solutionCategories": {
+      "hospitality": "Hospitality",
+      "retailLifestyle": "Retail & Lifestyle",
+      "professional": "Professional",
+      "hotels": "Hotels & Resorts",
+      "restaurants": "Restaurants",
+      "bars": "Bars & Lounges",
+      "spas": "Spas & Wellness",
+      "retail": "Retail & Fashion",
+      "cafes": "Cafés & Coffee Shops",
+      "malls": "Shopping Malls",
+      "gyms": "Gyms & Fitness",
+      "medical": "Medical & Dental",
+      "offices": "Offices",
+      "showrooms": "Showrooms",
+      "events": "Events & Venues"
+    }
   },
   "languageSwitcher": {
     "label": "Language",
@@ -1770,6 +1787,13 @@
       "title": "Music works through context.",
       "description": "Research can help us ask better questions. It cannot replace the venue brief, listener needs or live validation.",
       "opensSource": "opens the research source in a new tab",
+      "sources": {
+        "soundtrack": "Soundtrack research",
+        "brandFitFieldStudy": "HUI brand-fit field experiment",
+        "exerciseReview": "BMC Sports Science review",
+        "careReview": "SAGE Open Medicine review",
+        "focusStudy": "Communications Psychology study"
+      },
       "notes": {
         "brandFit": {
           "title": "Fit before fame.",
