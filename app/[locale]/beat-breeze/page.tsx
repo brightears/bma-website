@@ -638,6 +638,7 @@ function VisualLoopTheater({
               src={loop.src}
               poster={loop.poster}
               muted={isMuted}
+              autoPlay={isPlaying && !reduceMotion}
               loop
               playsInline
               preload="metadata"
