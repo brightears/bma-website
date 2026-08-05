@@ -32,12 +32,12 @@ const reveal = {
 };
 
 const covers = [
-  '/images/brand/soundtrack/catalogue/dinner-and-drinks.webp',
-  '/images/brand/soundtrack/catalogue/diner-rush-pop.webp',
-  '/images/brand/soundtrack/catalogue/boutique-hotel.webp',
-  '/images/brand/soundtrack/catalogue/hotel-lounge.webp',
-  '/images/brand/soundtrack/catalogue/boutique-pop.webp',
-  '/images/brand/soundtrack/catalogue/rush-hour-pop.webp',
+  { src: '/images/brand/soundtrack/catalogue/grand-hotel-jazz.webp', name: 'Grand Hotel Jazz' },
+  { src: '/images/brand/soundtrack/catalogue/hotel-lounge-complete.webp', name: 'Hotel Lounge' },
+  { src: '/images/brand/soundtrack/catalogue/brunch-with-friends.webp', name: 'Brunch With Friends' },
+  { src: '/images/brand/soundtrack/catalogue/mall-pop.webp', name: 'Mall Pop' },
+  { src: '/images/brand/soundtrack/catalogue/high-end-fashion.webp', name: 'High End Fashion' },
+  { src: '/images/brand/soundtrack/catalogue/piano-in-the-lobby.webp', name: 'Piano In The Lobby' },
 ] as const;
 
 export default function SoundtrackPage() {
@@ -73,18 +73,25 @@ export default function SoundtrackPage() {
           <motion.div initial={{ opacity: 0, scale: .97 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: .75, delay: .14 }} className="relative">
             <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4">
               {covers.map((cover, index) => (
-                <div key={cover} className={`group relative aspect-square overflow-hidden rounded-[1.25rem] border border-[#d6c2ff]/18 shadow-[0_22px_55px_rgba(0,0,0,.35)] ${index === 0 ? 'col-span-2 row-span-2' : index === 5 ? 'hidden sm:block' : ''}`}>
+                <div key={cover.src} className={`group relative aspect-square overflow-hidden rounded-[1.25rem] border border-[#d6c2ff]/18 shadow-[0_22px_55px_rgba(0,0,0,.35)] ${index === 0 ? 'col-span-2 row-span-2' : index === 5 ? 'hidden sm:block' : ''}`}>
                   <Image
-                    src={cover}
-                    alt=""
+                    src={cover.src}
+                    alt={cover.name}
                     fill
-                    className="object-cover opacity-85 transition duration-700 group-hover:scale-105"
+                    className="object-cover transition duration-500 group-hover:brightness-110"
                     sizes={index === 0
                       ? '(max-width: 639px) 62vw, (max-width: 1023px) 48vw, 28vw'
                       : '(max-width: 639px) 31vw, (max-width: 1023px) 24vw, 14vw'}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#160b1f]/75 to-transparent" />
-                  {index === 0 && <div className="absolute inset-x-0 bottom-0 p-5"><span className="font-label text-[9px] uppercase tracking-[.18em] text-[#d6c2ff]">{t('redesign.catalogue.nowPlaying')}</span><strong className="mt-2 block text-lg">{t('redesign.catalogue.featured')}</strong><button type="button" className="mt-4 grid h-10 w-10 place-items-center rounded-full bg-[#d6c2ff] text-[#160b1f]"><Play className="h-4 w-4 fill-current" /><span className="sr-only">{t('redesign.catalogue.preview')}</span></button></div>}
+                  {index === 0 && (
+                    <div className="absolute left-4 right-4 top-4 max-w-[19rem] rounded-2xl border border-[#d6c2ff]/20 bg-[#160b1f]/88 p-4 shadow-[0_16px_34px_rgba(0,0,0,.28)] backdrop-blur-md sm:left-5 sm:top-5 sm:p-5">
+                      <span className="font-label text-[9px] uppercase tracking-[.18em] text-[#d6c2ff]">{t('redesign.catalogue.nowPlaying')}</span>
+                      <strong className="mt-2 block text-base leading-snug sm:text-lg">{t('redesign.catalogue.featured')}</strong>
+                      <span className="mt-4 grid h-10 w-10 place-items-center rounded-full bg-[#d6c2ff] text-[#160b1f]" aria-hidden="true">
+                        <Play className="h-4 w-4 fill-current" />
+                      </span>
+                    </div>
+                  )}
                 </div>
               ))}
               <div className="col-span-2 flex min-h-24 items-center justify-between rounded-[1.25rem] border border-[#d6c2ff]/18 bg-[#d6c2ff]/[0.06] px-5 sm:col-span-3">
@@ -126,7 +133,7 @@ export default function SoundtrackPage() {
                 <div className="rounded-[1.5rem] border border-[#d6c2ff]/13 bg-[#d6c2ff]/[0.035] p-5 sm:p-7">
                   <div className="flex items-start justify-between gap-6"><div><p className="font-label text-[9px] uppercase tracking-[.18em] text-[#d6c2ff]">{t(`redesign.direction.${key}.label`)}</p><h3 className="mt-3 text-2xl font-medium">{t(`redesign.direction.${key}.title`)}</h3></div>{index === 0 ? <Headphones className="h-6 w-6 text-[#d6c2ff]" /> : index === 1 ? <Sparkles className="h-6 w-6 text-[#d6c2ff]" /> : index === 2 ? <CalendarDays className="h-6 w-6 text-[#d6c2ff]" /> : <RefreshCw className="h-6 w-6 text-[#d6c2ff]" />}</div>
                   <p className="mt-4 max-w-xl text-sm leading-6 text-[#f1eaff]/46">{t(`redesign.direction.${key}.text`)}</p>
-                  {index === 1 && <div className="mt-6 flex -space-x-3">{covers.slice(0, 4).map((cover) => <span key={cover} className="relative h-12 w-12 overflow-hidden rounded-xl border-2 border-[#24112f]"><Image src={cover} alt="" fill className="object-cover" sizes="48px" /></span>)}</div>}
+                  {index === 1 && <div className="mt-6 flex -space-x-3">{covers.slice(0, 4).map((cover) => <span key={cover.src} className="relative h-12 w-12 overflow-hidden rounded-xl border-2 border-[#24112f]"><Image src={cover.src} alt="" fill className="object-cover" sizes="48px" /></span>)}</div>}
                 </div>
               </motion.article>
             ))}
