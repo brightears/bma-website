@@ -644,6 +644,7 @@
           "title": "Evening activates the wider experience",
           "text": "Music, visual loops, multilingual messages and preset volume behavior move into the evening plan together."
         },
+        "signal": "Signal",
         "volumeNote": "Volume changes described here are scheduled presets or supported venue-system integrations—not continuous microphone listening."
       },
       "concierge": {
@@ -709,7 +710,9 @@
         "messages": {
           "label": "Multilingual messaging",
           "title": "Say the right thing in the right language",
-          "text": "Prepare and schedule useful announcements, promotions and branded messages across supported languages."
+          "text": "Prepare and schedule useful announcements, promotions and branded messages across supported languages.",
+          "examplePrimary": "EN · Welcome to tonight's tasting menu",
+          "exampleSecondary": "TH · ยินดีต้อนรับ"
         },
         "soundscapes": {
           "label": "Soundscapes",

@@ -644,6 +644,7 @@
           "title": "Waktu malam mengaktifkan pengalaman yang lebih luas",
           "text": "Muzik, gelung visual, mesej berbilang bahasa dan tingkah laku volum pratetap bergerak ke dalam pelan malam bersama-sama."
         },
+        "signal": "Isyarat",
         "volumeNote": "Perubahan volum yang diterangkan di sini ialah pratetap berjadual atau integrasi sistem venue yang disokong—bukan pendengaran mikrofon berterusan."
       },
       "concierge": {
@@ -709,7 +710,9 @@
         "messages": {
           "label": "Pemesejan berbilang bahasa",
           "title": "Sampaikan perkara yang tepat dalam bahasa yang betul",
-          "text": "Sediakan dan jadualkan pengumuman berguna, promosi dan mesej berjenama merentas bahasa yang disokong."
+          "text": "Sediakan dan jadualkan pengumuman berguna, promosi dan mesej berjenama merentas bahasa yang disokong.",
+          "examplePrimary": "EN · Welcome to tonight's tasting menu",
+          "exampleSecondary": "TH · ยินดีต้อนรับ"
         },
         "soundscapes": {
           "label": "Landskap bunyi",

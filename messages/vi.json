@@ -644,6 +644,7 @@
           "title": "Buổi tối kích hoạt trải nghiệm rộng hơn",
           "text": "Âm nhạc, hình ảnh lặp, thông điệp đa ngôn ngữ và hành vi âm lượng đặt trước cùng chuyển sang kế hoạch buổi tối."
         },
+        "signal": "Tín hiệu",
         "volumeNote": "Các thay đổi âm lượng được mô tả ở đây là mức đặt trước theo lịch hoặc tích hợp với hệ thống địa điểm được hỗ trợ—không phải lắng nghe liên tục qua microphone."
       },
       "concierge": {
@@ -709,7 +710,9 @@
         "messages": {
           "label": "Thông điệp đa ngôn ngữ",
           "title": "Nói đúng điều bằng đúng ngôn ngữ",
-          "text": "Chuẩn bị và lên lịch các thông báo, chương trình khuyến mãi và thông điệp thương hiệu hữu ích bằng những ngôn ngữ được hỗ trợ."
+          "text": "Chuẩn bị và lên lịch các thông báo, chương trình khuyến mãi và thông điệp thương hiệu hữu ích bằng những ngôn ngữ được hỗ trợ.",
+          "examplePrimary": "EN · Welcome to tonight's tasting menu",
+          "exampleSecondary": "TH · ยินดีต้อนรับ"
         },
         "soundscapes": {
           "label": "Không gian âm thanh",

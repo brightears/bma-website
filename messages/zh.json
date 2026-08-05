@@ -644,6 +644,7 @@
           "title": "晚间开启更完整的体验",
           "text": "音乐、视觉循环、多语言信息与预设音量行为一同进入晚间计划。"
         },
+        "signal": "信号",
         "volumeNote": "此处所述的音量变化是定时预设或受支持的场所系统集成，并非持续通过麦克风监听。"
       },
       "concierge": {
@@ -709,7 +710,9 @@
         "messages": {
           "label": "多语言信息",
           "title": "用正确的语言，说正确的话",
-          "text": "以受支持语言准备并安排实用通知、促销与品牌信息。"
+          "text": "以受支持语言准备并安排实用通知、促销与品牌信息。",
+          "examplePrimary": "EN · Welcome to tonight's tasting menu",
+          "exampleSecondary": "TH · ยินดีต้อนรับ"
         },
         "soundscapes": {
           "label": "声景",

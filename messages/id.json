@@ -644,6 +644,7 @@
           "title": "Malam mengaktifkan pengalaman yang lebih luas",
           "text": "Musik, visual loop, pesan multibahasa, dan perilaku volume preset beralih ke rencana malam secara bersamaan."
         },
+        "signal": "Sinyal",
         "volumeNote": "Perubahan volume yang dijelaskan di sini merupakan preset terjadwal atau integrasi sistem venue yang didukung—bukan pemantauan mikrofon terus-menerus."
       },
       "concierge": {
@@ -709,7 +710,9 @@
         "messages": {
           "label": "Pesan multibahasa",
           "title": "Sampaikan hal yang tepat dalam bahasa yang tepat",
-          "text": "Siapkan dan jadwalkan pengumuman, promosi, dan pesan bermerek yang berguna dalam bahasa yang didukung."
+          "text": "Siapkan dan jadwalkan pengumuman, promosi, dan pesan bermerek yang berguna dalam bahasa yang didukung.",
+          "examplePrimary": "EN · Welcome to tonight's tasting menu",
+          "exampleSecondary": "TH · ยินดีต้อนรับ"
         },
         "soundscapes": {
           "label": "Soundscape",

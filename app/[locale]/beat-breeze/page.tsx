@@ -94,6 +94,7 @@ export default function BeatBreezePage() {
   const locale = useLocale();
   const t = useTranslations('beatBreezePage');
   const immersive = useTranslations('homePage.immersive');
+  const reduceMotion = useReducedMotion();
   const [scenario, setScenario] = useState<(typeof conciergeScenarios)[number]>('arrival');
   const [sampleAssets, setSampleAssets] = useState<Record<string, PlaylistSampleAsset>>({});
   const [sampleLoadState, setSampleLoadState] = useState<'loading' | 'ready' | 'error'>('loading');
@@ -331,9 +332,10 @@ export default function BeatBreezePage() {
               <AnimatePresence initial={false}>
                 {showSchedulePreview && (
                   <motion.div
-                    initial={{ opacity: 0, height: 0, y: -8 }}
+                    initial={reduceMotion ? false : { opacity: 0, height: 0, y: -8 }}
                     animate={{ opacity: 1, height: 'auto', y: 0 }}
-                    exit={{ opacity: 0, height: 0, y: -8 }}
+                    exit={reduceMotion ? undefined : { opacity: 0, height: 0, y: -8 }}
+                    transition={reduceMotion ? { duration: 0 } : undefined}
                     className="overflow-hidden"
                   >
                     <div role="status" className="mt-4 grid gap-4 rounded-2xl border border-[#49d5c5]/20 bg-[#49d5c5]/[0.055] p-4 sm:grid-cols-[auto_1fr_auto] sm:items-center">
@@ -442,12 +444,13 @@ export default function BeatBreezePage() {
 }
 
 function DaySignalScene({ variant }: { variant: number }) {
+  const t = useTranslations('beatBreezePage.redesign.day');
   const reduceMotion = useReducedMotion();
 
   return (
     <div className="ml-auto max-w-md overflow-hidden rounded-2xl border border-white/[0.08] bg-[linear-gradient(145deg,rgba(255,255,255,.035),rgba(73,213,197,.025))] p-5 text-left shadow-[inset_0_1px_0_rgba(255,255,255,.035)]">
       <div className="flex items-center justify-between">
-        <span className="font-mono text-[10px] text-white/30">SIGNAL / 0{variant + 1}</span>
+        <span className="font-mono text-[10px] text-white/30">{t('signal')} / 0{variant + 1}</span>
         <i className="h-1.5 w-1.5 rounded-full bg-emerald-300 shadow-[0_0_12px_rgba(110,231,183,.65)]" />
       </div>
 
@@ -465,10 +468,10 @@ function DaySignalScene({ variant }: { variant: number }) {
             {[74, 56, 38].map((width, index) => (
               <div key={width} className="h-1.5 overflow-hidden rounded-full bg-white/[0.06]">
                 <motion.i
-                  initial={{ scaleX: 0 }}
-                  whileInView={{ scaleX: 1 }}
+                  initial={reduceMotion ? false : { scaleX: 0 }}
+                  whileInView={reduceMotion ? undefined : { scaleX: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: .7, delay: index * .12 }}
+                  transition={reduceMotion ? undefined : { duration: .7, delay: index * .12 }}
                   className="block h-full origin-left rounded-full bg-[linear-gradient(90deg,#efa634,#e7c55f,#49d5c5)]"
                   style={{ width: `${width}%` }}
                 />
@@ -589,10 +592,10 @@ function VisualLoopTheater({
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
             key={loop.src}
-            initial={{ opacity: 0, scale: 1.025 }}
+            initial={reduceMotion ? false : { opacity: 0, scale: 1.025 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: .45 }}
+            exit={reduceMotion ? undefined : { opacity: 0 }}
+            transition={reduceMotion ? { duration: 0 } : { duration: .45 }}
             className="absolute inset-0"
           >
             <video
@@ -657,6 +660,7 @@ function VisualLoopTheater({
 }
 
 function CreativeReviewPreview({ ariaLabel }: { ariaLabel: string }) {
+  const reduceMotion = useReducedMotion();
   const [draft, setDraft] = useState(0);
   const drafts = ['/images/hero-restaurant.webp', '/images/hero-spa.webp'] as const;
   const activeDraft = drafts[draft] ?? drafts[0];
@@ -667,10 +671,10 @@ function CreativeReviewPreview({ ariaLabel }: { ariaLabel: string }) {
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
             key={activeDraft}
-            initial={{ opacity: 0, scale: 1.035 }}
+            initial={reduceMotion ? false : { opacity: 0, scale: 1.035 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: .42 }}
+            exit={reduceMotion ? undefined : { opacity: 0 }}
+            transition={reduceMotion ? { duration: 0 } : { duration: .42 }}
             className="absolute inset-0"
           >
             <Image src={activeDraft} alt="" fill sizes="360px" className="object-cover opacity-72" />
@@ -717,6 +721,9 @@ function MediaChapter({
   visualPlayLabel?: string;
   visualPauseLabel?: string;
 }) {
+  const messagesT = useTranslations('beatBreezePage.redesign.media.messages');
+  const reduceMotion = useReducedMotion();
+
   return (
     <motion.article {...reveal} className={`group relative overflow-hidden rounded-[1.6rem] border border-white/[0.09] bg-[#0a1825] p-6 shadow-[inset_0_1px_0_rgba(255,255,255,.025)] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-[linear-gradient(90deg,transparent,#efa634,#e7c55f,#49d5c5,transparent)] before:opacity-55 sm:p-8 ${className}`}>
       {visual === 'screens' && <div className="absolute inset-x-0 top-0 h-2/5 bg-[radial-gradient(circle_at_70%_10%,rgba(73,213,197,.16),transparent_38%)]" />}
@@ -735,8 +742,8 @@ function MediaChapter({
         {visual === 'create' && <CreativeReviewPreview ariaLabel={title} />}
         {visual === 'messages' && (
           <div className="mt-8 space-y-2">
-            <motion.span initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="block w-4/5 rounded-full bg-white/[0.07] px-4 py-2 text-xs text-white/46">EN · Welcome to tonight&apos;s tasting menu</motion.span>
-            <motion.span initial={{ opacity: 0, x: 10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: .12 }} className="ml-auto block w-4/5 rounded-full bg-brand-orange/12 px-4 py-2 text-right text-xs text-white/56">TH · ยินดีต้อนรับ</motion.span>
+            <motion.span initial={reduceMotion ? false : { opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={reduceMotion ? { duration: 0 } : undefined} className="block w-4/5 rounded-full bg-white/[0.07] px-4 py-2 text-xs text-white/46">{messagesT('examplePrimary')}</motion.span>
+            <motion.span initial={reduceMotion ? false : { opacity: 0, x: 10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={reduceMotion ? { duration: 0 } : { delay: .12 }} className="ml-auto block w-4/5 rounded-full bg-brand-orange/12 px-4 py-2 text-right text-xs text-white/56">{messagesT('exampleSecondary')}</motion.span>
           </div>
         )}
       </div>
