@@ -32,12 +32,12 @@ const reveal = {
 };
 
 const covers = [
-  '/images/covers/nu-disco-vocal.jpg',
-  '/images/covers/jazz-piano.jpg',
-  '/images/covers/deep-house.jpg',
-  '/images/covers/pop-mid-tempo.jpg',
-  '/images/covers/french-cafe.jpg',
-  '/images/covers/bossa-nova-lounge.jpg',
+  '/images/brand/soundtrack/catalogue/dinner-and-drinks.webp',
+  '/images/brand/soundtrack/catalogue/diner-rush-pop.webp',
+  '/images/brand/soundtrack/catalogue/boutique-hotel.webp',
+  '/images/brand/soundtrack/catalogue/hotel-lounge.webp',
+  '/images/brand/soundtrack/catalogue/boutique-pop.webp',
+  '/images/brand/soundtrack/catalogue/rush-hour-pop.webp',
 ] as const;
 
 export default function SoundtrackPage() {
@@ -74,7 +74,15 @@ export default function SoundtrackPage() {
             <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4">
               {covers.map((cover, index) => (
                 <div key={cover} className={`group relative aspect-square overflow-hidden rounded-[1.25rem] border border-[#d6c2ff]/18 shadow-[0_22px_55px_rgba(0,0,0,.35)] ${index === 0 ? 'col-span-2 row-span-2' : index === 5 ? 'hidden sm:block' : ''}`}>
-                  <Image src={cover} alt="" fill className="object-cover opacity-85 transition duration-700 group-hover:scale-105" sizes="(max-width:768px) 30vw, 180px" />
+                  <Image
+                    src={cover}
+                    alt=""
+                    fill
+                    className="object-cover opacity-85 transition duration-700 group-hover:scale-105"
+                    sizes={index === 0
+                      ? '(max-width: 639px) 62vw, (max-width: 1023px) 48vw, 28vw'
+                      : '(max-width: 639px) 31vw, (max-width: 1023px) 24vw, 14vw'}
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#160b1f]/75 to-transparent" />
                   {index === 0 && <div className="absolute inset-x-0 bottom-0 p-5"><span className="font-label text-[9px] uppercase tracking-[.18em] text-[#d6c2ff]">{t('redesign.catalogue.nowPlaying')}</span><strong className="mt-2 block text-lg">{t('redesign.catalogue.featured')}</strong><button type="button" className="mt-4 grid h-10 w-10 place-items-center rounded-full bg-[#d6c2ff] text-[#160b1f]"><Play className="h-4 w-4 fill-current" /><span className="sr-only">{t('redesign.catalogue.preview')}</span></button></div>}
                 </div>
@@ -108,11 +116,13 @@ export default function SoundtrackPage() {
             <div className="mt-8 rounded-2xl border border-[#d6c2ff]/16 bg-[#d6c2ff]/[0.045] p-5"><p className="text-sm font-medium">{t('redesign.direction.refreshTitle')}</p><p className="mt-2 text-sm leading-6 text-[#f1eaff]/46">{t('redesign.direction.refreshText')}</p></div>
           </motion.div>
 
-          <div className="relative">
-            <div className="absolute bottom-0 left-5 top-0 w-px bg-gradient-to-b from-[#d6c2ff] via-[#8c66bf] to-transparent sm:left-[7.25rem]" />
+          <div>
             {(['listen', 'design', 'schedule', 'refresh'] as const).map((key, index) => (
-              <motion.article key={key} {...reveal} className="relative grid grid-cols-[2.6rem_1fr] gap-5 pb-9 sm:grid-cols-[8rem_1fr]">
-                <span className="relative z-10 grid h-10 w-10 place-items-center rounded-full border border-[#d6c2ff]/28 bg-[#160b1f] font-mono text-xs text-[#d6c2ff] sm:ml-[5.25rem]">0{index + 1}</span>
+              <motion.article key={key} {...reveal} className="grid grid-cols-[3.25rem_1fr] items-start gap-3 pb-5 sm:grid-cols-[6rem_1fr] sm:gap-5">
+                <div className="flex items-center pt-5 sm:pt-7" aria-hidden="true">
+                  <span className="grid h-10 w-10 shrink-0 place-items-center rounded-[.9rem] border border-[#d6c2ff]/24 bg-[#d6c2ff]/[0.055] font-mono text-xs text-[#d6c2ff]">0{index + 1}</span>
+                  <span className="ml-2 hidden h-px flex-1 bg-gradient-to-r from-[#d6c2ff]/45 to-[#d6c2ff]/8 sm:block" />
+                </div>
                 <div className="rounded-[1.5rem] border border-[#d6c2ff]/13 bg-[#d6c2ff]/[0.035] p-5 sm:p-7">
                   <div className="flex items-start justify-between gap-6"><div><p className="font-label text-[9px] uppercase tracking-[.18em] text-[#d6c2ff]">{t(`redesign.direction.${key}.label`)}</p><h3 className="mt-3 text-2xl font-medium">{t(`redesign.direction.${key}.title`)}</h3></div>{index === 0 ? <Headphones className="h-6 w-6 text-[#d6c2ff]" /> : index === 1 ? <Sparkles className="h-6 w-6 text-[#d6c2ff]" /> : index === 2 ? <CalendarDays className="h-6 w-6 text-[#d6c2ff]" /> : <RefreshCw className="h-6 w-6 text-[#d6c2ff]" />}</div>
                   <p className="mt-4 max-w-xl text-sm leading-6 text-[#f1eaff]/46">{t(`redesign.direction.${key}.text`)}</p>
