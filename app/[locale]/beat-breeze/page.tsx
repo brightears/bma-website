@@ -114,7 +114,7 @@ export default function BeatBreezePage() {
   useEffect(() => {
     const controller = new AbortController();
 
-    void fetch('/api/beat-breeze-samples', { signal: controller.signal })
+    void fetch('/api/beat-breeze-samples/', { signal: controller.signal })
       .then(async (response) => {
         if (!response.ok) throw new Error('Sample manifest unavailable');
         return response.json() as Promise<{ playlists?: PlaylistSampleAsset[] }>;
