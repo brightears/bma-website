@@ -692,14 +692,17 @@
         "screens": {
           "label": "Screens and TV",
           "title": "Visual loops, slideshows and venue channels",
-          "text": "Plan silent screen loops, branded slideshows and TV channels for public areas or in-room experiences where the deployment calls for them.",
+          "text": "Plan visual loops, branded slideshows and TV channels for public areas or in-room experiences. Selected films can include sound when the venue format calls for it.",
           "loopPlay": "Play visual loop",
           "loopPause": "Pause visual loop",
-          "loopMeta": "10 sec · 16:9",
+          "loopSoundOn": "Turn on sound",
+          "loopSoundOff": "Mute sound",
+          "loopWithSound": "Sound available",
+          "loopSilent": "Silent visual",
           "loops": {
-            "coffee": { "name": "Coffee crema", "mood": "Warm & cozy" },
-            "palm": { "name": "Palm shadows", "mood": "Fresh & bright" },
-            "neon": { "name": "Neon reflections", "mood": "Neon night" }
+            "waterfall": { "name": "Waterfall passage", "mood": "Elemental calm" },
+            "snow": { "name": "The visitor", "mood": "Playful surrealism" },
+            "underwater": { "name": "Underwater wall", "mood": "Slow ocean drift" }
           }
         },
         "create": {

@@ -692,14 +692,17 @@
         "screens": {
           "label": "屏幕与电视",
           "title": "视觉循环、幻灯片与场所频道",
-          "text": "按部署需求，为公共区域或客房体验规划无声屏幕循环、品牌幻灯片与电视频道。",
+          "text": "为公共区域或客房体验规划视觉循环、品牌幻灯片与场所频道。部分影片可在适合场所形式时启用声音。",
           "loopPlay": "播放视觉循环",
           "loopPause": "暂停视觉循环",
-          "loopMeta": "10 秒 · 16:9",
+          "loopSoundOn": "开启声音",
+          "loopSoundOff": "静音",
+          "loopWithSound": "含声音",
+          "loopSilent": "无声视觉",
           "loops": {
-            "coffee": { "name": "咖啡油脂", "mood": "温暖惬意" },
-            "palm": { "name": "棕榈树影", "mood": "清新明亮" },
-            "neon": { "name": "霓虹倒影", "mood": "霓虹之夜" }
+            "waterfall": { "name": "瀑布通道", "mood": "自然的宁静" },
+            "snow": { "name": "访客", "mood": "俏皮而超现实" },
+            "underwater": { "name": "水下之墙", "mood": "缓慢的海洋漂流" }
           }
         },
         "create": {

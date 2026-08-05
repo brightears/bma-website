@@ -692,14 +692,17 @@
         "screens": {
           "label": "Skrin dan TV",
           "title": "Gelung visual, tayangan slaid dan saluran venue",
-          "text": "Rancang gelung skrin senyap, tayangan slaid berjenama dan saluran TV untuk ruang awam atau pengalaman dalam bilik apabila pelaksanaan memerlukannya.",
+          "text": "Rancang gelung visual, tayangan slaid berjenama dan saluran TV untuk ruang awam atau pengalaman dalam bilik. Filem terpilih boleh disertakan bunyi apabila sesuai dengan format venue.",
           "loopPlay": "Mainkan gelung visual",
           "loopPause": "Jeda gelung visual",
-          "loopMeta": "10 saat · 16:9",
+          "loopSoundOn": "Hidupkan bunyi",
+          "loopSoundOff": "Senyapkan bunyi",
+          "loopWithSound": "Bunyi tersedia",
+          "loopSilent": "Visual senyap",
           "loops": {
-            "coffee": { "name": "Krim kopi", "mood": "Hangat & selesa" },
-            "palm": { "name": "Bayang palma", "mood": "Segar & cerah" },
-            "neon": { "name": "Pantulan neon", "mood": "Malam neon" }
+            "waterfall": { "name": "Laluan air terjun", "mood": "Tenang dan semula jadi" },
+            "snow": { "name": "Si pelawat", "mood": "Ceria dan sureal" },
+            "underwater": { "name": "Dinding bawah air", "mood": "Hanyutan laut yang tenang" }
           }
         },
         "create": {
