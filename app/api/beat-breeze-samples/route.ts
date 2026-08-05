@@ -10,7 +10,7 @@ export async function GET() {
 
   try {
     const response = await fetch(upstreamUrl, {
-      next: { revalidate: 3600 },
+      cache: 'no-store',
       headers: { Accept: 'application/json' },
     });
 
@@ -23,7 +23,7 @@ export async function GET() {
 
     return NextResponse.json(await response.json(), {
       headers: {
-        'Cache-Control': 'public, max-age=300, s-maxage=3600, stale-while-revalidate=86400',
+        'Cache-Control': 'no-store',
       },
     });
   } catch {
