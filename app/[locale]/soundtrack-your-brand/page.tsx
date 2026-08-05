@@ -74,7 +74,15 @@ export default function SoundtrackPage() {
             <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4">
               {covers.map((cover, index) => (
                 <div key={cover} className={`group relative aspect-square overflow-hidden rounded-[1.25rem] border border-[#d6c2ff]/18 shadow-[0_22px_55px_rgba(0,0,0,.35)] ${index === 0 ? 'col-span-2 row-span-2' : index === 5 ? 'hidden sm:block' : ''}`}>
-                  <Image src={cover} alt="" fill className="object-cover opacity-85 transition duration-700 group-hover:scale-105" sizes="(max-width:768px) 30vw, 180px" />
+                  <Image
+                    src={cover}
+                    alt=""
+                    fill
+                    className="object-cover opacity-85 transition duration-700 group-hover:scale-105"
+                    sizes={index === 0
+                      ? '(max-width: 639px) 62vw, (max-width: 1023px) 48vw, 28vw'
+                      : '(max-width: 639px) 31vw, (max-width: 1023px) 24vw, 14vw'}
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#160b1f]/75 to-transparent" />
                   {index === 0 && <div className="absolute inset-x-0 bottom-0 p-5"><span className="font-label text-[9px] uppercase tracking-[.18em] text-[#d6c2ff]">{t('redesign.catalogue.nowPlaying')}</span><strong className="mt-2 block text-lg">{t('redesign.catalogue.featured')}</strong><button type="button" className="mt-4 grid h-10 w-10 place-items-center rounded-full bg-[#d6c2ff] text-[#160b1f]"><Play className="h-4 w-4 fill-current" /><span className="sr-only">{t('redesign.catalogue.preview')}</span></button></div>}
                 </div>
