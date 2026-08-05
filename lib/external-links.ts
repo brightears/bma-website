@@ -1,6 +1,7 @@
 export const EXTERNAL_LINKS = {
   beatBreezeLogin: 'https://beatbreeze.io/sign-in',
   beatBreezeSignup: 'https://beatbreeze.io/sign-up',
+  beatBreezeCatalogue: 'https://beatbreeze.io/dashboard/search',
   soundtrackLogin: 'https://app.soundtrack.io/',
   calendly: process.env.NEXT_PUBLIC_CALENDLY_URL || 'https://calendly.com/bmasia/sound-innovations',
 } as const;

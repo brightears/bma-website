@@ -644,6 +644,7 @@
           "title": "晚间开启更完整的体验",
           "text": "音乐、视觉循环、多语言信息与预设音量行为一同进入晚间计划。"
         },
+        "signal": "信号",
         "volumeNote": "此处所述的音量变化是定时预设或受支持的场所系统集成，并非持续通过麦克风监听。"
       },
       "concierge": {
@@ -652,9 +653,9 @@
         "description": "告诉 Concierge 分区、受众、时间与期望感受。它可推荐曲库音乐或准备创意方向；在内容播放或加入排期前，您可以先预览结果。",
         "ready": "可以接收需求",
         "recommendation": "可播放的建议",
-        "preview": "预览",
-        "schedule": "加入排期",
-        "keepBrowsing": "继续浏览",
+        "preview": "试听样本",
+        "schedule": "预览排期",
+        "keepBrowsing": "打开曲库",
         "control": "人工控制始终清晰可见：审阅理由、预览结果、应用、编辑，或继续手动浏览曲库。",
         "steps": {
           "ask": "描述这一时刻",
@@ -691,7 +692,15 @@
         "screens": {
           "label": "屏幕与电视",
           "title": "视觉循环、幻灯片与场所频道",
-          "text": "按部署需求，为公共区域或客房体验规划无声屏幕循环、品牌幻灯片与电视频道。"
+          "text": "按部署需求，为公共区域或客房体验规划无声屏幕循环、品牌幻灯片与电视频道。",
+          "loopPlay": "播放视觉循环",
+          "loopPause": "暂停视觉循环",
+          "loopMeta": "10 秒 · 16:9",
+          "loops": {
+            "coffee": { "name": "咖啡油脂", "mood": "温暖惬意" },
+            "palm": { "name": "棕榈树影", "mood": "清新明亮" },
+            "neon": { "name": "霓虹倒影", "mood": "霓虹之夜" }
+          }
         },
         "create": {
           "label": "AI 辅助创作",
@@ -701,7 +710,9 @@
         "messages": {
           "label": "多语言信息",
           "title": "用正确的语言，说正确的话",
-          "text": "以受支持语言准备并安排实用通知、促销与品牌信息。"
+          "text": "以受支持语言准备并安排实用通知、促销与品牌信息。",
+          "examplePrimary": "EN · Welcome to tonight's tasting menu",
+          "exampleSecondary": "TH · ยินดีต้อนรับ"
         },
         "soundscapes": {
           "label": "声景",

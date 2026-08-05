@@ -644,6 +644,7 @@
           "title": "Malam mengaktifkan pengalaman yang lebih luas",
           "text": "Musik, visual loop, pesan multibahasa, dan perilaku volume preset beralih ke rencana malam secara bersamaan."
         },
+        "signal": "Sinyal",
         "volumeNote": "Perubahan volume yang dijelaskan di sini merupakan preset terjadwal atau integrasi sistem venue yang didukung—bukan pemantauan mikrofon terus-menerus."
       },
       "concierge": {
@@ -652,9 +653,9 @@
         "description": "Sampaikan kepada Concierge tentang zona, audiens, waktu, dan suasana yang diinginkan. Concierge dapat merekomendasikan musik dari katalog atau menyiapkan arah kreatif; Anda meninjau hasilnya sebelum musik diputar atau dimasukkan ke jadwal.",
         "ready": "Siap menerima brief",
         "recommendation": "Rekomendasi siap diputar",
-        "preview": "Pratinjau",
-        "schedule": "Tambahkan ke jadwal",
-        "keepBrowsing": "Lanjutkan menelusuri",
+        "preview": "Dengarkan sampel",
+        "schedule": "Pratinjau jadwal",
+        "keepBrowsing": "Buka katalog",
         "control": "Kontrol manusia tetap terlihat: tinjau alasannya, dengarkan pratinjau hasilnya, terapkan, edit, atau tetap telusuri katalog secara manual.",
         "steps": {
           "ask": "Jelaskan momennya",
@@ -691,7 +692,15 @@
         "screens": {
           "label": "Layar dan TV",
           "title": "Visual loop, slideshow, dan kanal venue",
-          "text": "Rencanakan visual loop tanpa suara, slideshow bermerek, dan kanal TV untuk area publik atau pengalaman di dalam kamar jika implementasinya memerlukan."
+          "text": "Rencanakan visual loop tanpa suara, slideshow bermerek, dan kanal TV untuk area publik atau pengalaman di dalam kamar jika implementasinya memerlukan.",
+          "loopPlay": "Putar loop visual",
+          "loopPause": "Jeda loop visual",
+          "loopMeta": "10 detik · 16:9",
+          "loops": {
+            "coffee": { "name": "Krema kopi", "mood": "Hangat & nyaman" },
+            "palm": { "name": "Bayangan palem", "mood": "Segar & cerah" },
+            "neon": { "name": "Pantulan neon", "mood": "Malam neon" }
+          }
         },
         "create": {
           "label": "Kreasi berbantuan AI",
@@ -701,7 +710,9 @@
         "messages": {
           "label": "Pesan multibahasa",
           "title": "Sampaikan hal yang tepat dalam bahasa yang tepat",
-          "text": "Siapkan dan jadwalkan pengumuman, promosi, dan pesan bermerek yang berguna dalam bahasa yang didukung."
+          "text": "Siapkan dan jadwalkan pengumuman, promosi, dan pesan bermerek yang berguna dalam bahasa yang didukung.",
+          "examplePrimary": "EN · Welcome to tonight's tasting menu",
+          "exampleSecondary": "TH · ยินดีต้อนรับ"
         },
         "soundscapes": {
           "label": "Soundscape",
