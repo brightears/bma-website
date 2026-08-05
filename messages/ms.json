@@ -1765,6 +1765,30 @@
     "seeDayFlow": "Lihat perjalanan hari ini",
     "livePlan": "Pelan suasana langsung",
     "ready": "Pelan sedia",
+    "evidence": {
+      "eyebrow": "Bukti, bukan cerita turun-temurun",
+      "title": "Muzik berkesan melalui konteks.",
+      "description": "Penyelidikan membantu kami mengemukakan soalan yang lebih baik, tetapi tidak menggantikan taklimat venue, keperluan pendengar atau pengesahan dalam operasi sebenar.",
+      "opensSource": "membuka sumber penyelidikan dalam tab baharu",
+      "notes": {
+        "brandFit": {
+          "title": "Kesesuaian dahulu, kemasyhuran kemudian.",
+          "body": "Kajian lapangan berskala besar melaporkan tingkah laku yang berbeza apabila muzik sepadan dengan jenama dan bukannya bergantung pada lagu popular rawak. Kami menggunakannya untuk membentuk taklimat, bukan sebagai formula jualan yang dijamin."
+        },
+        "exercise": {
+          "title": "Pilihan mengubah pengalaman.",
+          "body": "Meta-analisis 2025 mengaitkan muzik pilihan dengan motivasi, afek dan beberapa hasil kekuatan serta kuasa, manakala keputusan yang pelbagai menolak idea satu senarai main gim untuk semua."
+        },
+        "care": {
+          "title": "Ketenangan memerlukan konteks dan kawalan.",
+          "body": "Kajian semula ruang menunggu penjagaan kesihatan menemui manfaat yang menjanjikan terhadap kebimbangan dan pengalaman, namun kaedah dan hasil berbeza. Kesesuaian, kelantangan dan kawalan kakitangan kekal penting."
+        },
+        "focus": {
+          "title": "Muzik fokus bukan satu kategori sahaja.",
+          "body": "Satu kajian terkawal mendapati hasil berbeza daripada dua keadaan muzik fokus yang dipasarkan dengan cara serupa. Bunyi mesti sesuai dengan tugas, pendengar dan ruang bersama."
+        }
+      }
+    },
     "dayEyebrow": "Satu hari operasi",
     "dayTitle": "Setiap detik mempunyai tugas yang berbeza.",
     "dayDescription": "Muzik memimpin suasana, sementara skrin, pemesejan, jadual dan automasi yang diluluskan membawa pelan ke seluruh venue.",

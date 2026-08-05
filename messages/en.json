@@ -1765,6 +1765,30 @@
     "seeDayFlow": "See the day in motion",
     "livePlan": "Live atmosphere plan",
     "ready": "Plan ready",
+    "evidence": {
+      "eyebrow": "Evidence, not folklore",
+      "title": "Music works through context.",
+      "description": "Research can help us ask better questions. It cannot replace the venue brief, listener needs or live validation.",
+      "opensSource": "opens the research source in a new tab",
+      "notes": {
+        "brandFit": {
+          "title": "Fit before fame.",
+          "body": "Large field studies reported different behaviour when music matched the brand instead of relying on random popular tracks. We use that as a brief-setting signal, not a guaranteed sales formula."
+        },
+        "exercise": {
+          "title": "Preference changes the experience.",
+          "body": "A 2025 meta-analysis associated preferred music with motivation, affect and some strength and power outcomes, while varied results argue against one generic gym playlist."
+        },
+        "care": {
+          "title": "Calm needs context and control.",
+          "body": "A healthcare waiting-room review found promising anxiety and experience benefits, but methods and results varied. Suitability, volume and staff control remain part of the intervention."
+        },
+        "focus": {
+          "title": "Focus music is not one category.",
+          "body": "A controlled study found different outcomes from two similarly marketed focus-music conditions. The sound must fit the task, audience and shared space."
+        }
+      }
+    },
     "dayEyebrow": "One operating day",
     "dayTitle": "Every moment has a different job.",
     "dayDescription": "Music leads the atmosphere, while screens, messaging, schedules and approved automations carry the plan across the venue.",

@@ -1,0 +1,257 @@
+.heroHeading,
+.sectionHeading {
+  color: transparent;
+  background: linear-gradient(
+    96deg,
+    #ffffff 4%,
+    #ffffff 42%,
+    var(--industry-accent) 72%,
+    var(--industry-soft) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.heroHeading {
+  max-width: 13ch;
+}
+
+.previewCard {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.previewCard::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  opacity: 0.46;
+  background:
+    radial-gradient(circle at 92% 12%, color-mix(in srgb, var(--industry-soft) 20%, transparent), transparent 31%),
+    linear-gradient(110deg, color-mix(in srgb, var(--industry-accent) 8%, transparent), transparent 48%);
+}
+
+.previewCard::after {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 2px;
+  content: "";
+  background: linear-gradient(var(--industry-accent), var(--industry-soft));
+  opacity: 0.88;
+}
+
+.previewPulse {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.8rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: var(--industry-soft);
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--industry-soft) 50%, transparent);
+  animation: previewPulse 2.8s ease-out infinite;
+}
+
+.momentCard {
+  position: relative;
+  isolation: isolate;
+  min-height: 25rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.75rem;
+  background: #081622;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.2);
+}
+
+.momentCard::after {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  background: linear-gradient(180deg, rgba(4, 12, 19, 0.05), rgba(4, 12, 19, 0.28) 38%, rgba(4, 12, 19, 0.96) 100%);
+}
+
+.momentCard:nth-child(2),
+.momentCard:nth-child(3) {
+  min-height: 22rem;
+}
+
+.field {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.fieldImage {
+  object-fit: cover;
+  opacity: 0.2;
+  filter: saturate(0.78) contrast(1.08);
+  transform: scale(1.05);
+}
+
+.fieldWash {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 78% 24%, color-mix(in srgb, var(--industry-soft) 30%, transparent), transparent 29%),
+    radial-gradient(circle at 26% 72%, color-mix(in srgb, var(--industry-accent) 26%, transparent), transparent 34%),
+    linear-gradient(135deg, rgba(5, 15, 24, 0.38), rgba(5, 15, 24, 0.84));
+  mix-blend-mode: screen;
+}
+
+.fieldOrb,
+.fieldOrbSecondary {
+  position: absolute;
+  border: 1px solid color-mix(in srgb, var(--industry-soft) 28%, transparent);
+  border-radius: 50%;
+  animation: orbitDrift 14s ease-in-out infinite alternate;
+}
+
+.fieldOrb {
+  right: -9rem;
+  top: -8rem;
+  width: 24rem;
+  height: 24rem;
+  box-shadow:
+    inset 0 0 70px color-mix(in srgb, var(--industry-soft) 8%, transparent),
+    0 0 80px color-mix(in srgb, var(--industry-soft) 6%, transparent);
+}
+
+.fieldOrbSecondary {
+  bottom: -8rem;
+  left: -6rem;
+  width: 18rem;
+  height: 18rem;
+  animation-delay: -5s;
+  animation-duration: 18s;
+}
+
+.fieldSvg {
+  position: absolute;
+  inset: 8% -8% auto;
+  width: 116%;
+  height: 67%;
+  overflow: visible;
+  opacity: 0.7;
+  filter: drop-shadow(0 0 18px color-mix(in srgb, var(--industry-soft) 18%, transparent));
+}
+
+.fieldRibbon {
+  fill: none;
+  stroke-width: 1.3;
+  stroke-linecap: round;
+  stroke-dasharray: 7 15;
+  animation: ribbonTravel 13s linear infinite;
+}
+
+.fieldRibbon:nth-of-type(2) {
+  stroke-width: 0.85;
+  stroke-dasharray: 2 13;
+  animation-delay: -4s;
+  animation-duration: 17s;
+}
+
+.fieldRibbon:nth-of-type(3) {
+  stroke-width: 1;
+  stroke-dasharray: 18 22;
+  animation-delay: -9s;
+  animation-duration: 21s;
+}
+
+.particle {
+  position: absolute;
+  width: 0.28rem;
+  height: 0.28rem;
+  border-radius: 999px;
+  background: var(--industry-soft);
+  box-shadow: 0 0 16px color-mix(in srgb, var(--industry-soft) 65%, transparent);
+  animation: particleFloat 7s ease-in-out infinite alternate;
+}
+
+.particle:nth-of-type(1) { left: 16%; top: 28%; animation-delay: -1s; }
+.particle:nth-of-type(2) { left: 48%; top: 18%; animation-delay: -4s; }
+.particle:nth-of-type(3) { right: 13%; top: 54%; animation-delay: -2s; }
+
+.cardSpectrum {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  opacity: 0.72;
+  background: linear-gradient(90deg, var(--industry-accent), var(--industry-soft), transparent 85%);
+}
+
+.evidencePanel {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  background:
+    radial-gradient(circle at 9% 14%, color-mix(in srgb, var(--industry-accent) 15%, transparent), transparent 32%),
+    radial-gradient(circle at 90% 88%, color-mix(in srgb, var(--industry-soft) 13%, transparent), transparent 31%),
+    #081722;
+}
+
+.evidencePanel::after {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  opacity: 0.18;
+  background-image:
+    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size: 54px 54px;
+  mask-image: linear-gradient(90deg, #000, transparent 72%);
+}
+
+@keyframes previewPulse {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--industry-soft) 50%, transparent); }
+  70%, 100% { box-shadow: 0 0 0 12px transparent; }
+}
+
+@keyframes ribbonTravel {
+  from { stroke-dashoffset: 0; transform: translate3d(-1%, 0, 0); }
+  50% { transform: translate3d(2%, 2%, 0); }
+  to { stroke-dashoffset: -180; transform: translate3d(-1%, 0, 0); }
+}
+
+@keyframes orbitDrift {
+  from { transform: translate3d(-2%, 2%, 0) scale(0.96); opacity: 0.45; }
+  to { transform: translate3d(4%, -3%, 0) scale(1.06); opacity: 0.9; }
+}
+
+@keyframes particleFloat {
+  from { transform: translate3d(0, 0, 0) scale(0.8); opacity: 0.35; }
+  to { transform: translate3d(18px, -24px, 0) scale(1.25); opacity: 1; }
+}
+
+@media (max-width: 639px) {
+  .heroHeading {
+    max-width: 14ch;
+  }
+
+  .momentCard,
+  .momentCard:nth-child(2),
+  .momentCard:nth-child(3) {
+    min-height: 23rem;
+  }
+
+  .fieldSvg {
+    height: 57%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .previewPulse,
+  .fieldOrb,
+  .fieldOrbSecondary,
+  .fieldRibbon,
+  .particle {
+    animation: none;
+  }
+}
