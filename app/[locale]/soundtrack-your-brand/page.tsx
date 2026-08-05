@@ -32,12 +32,12 @@ const reveal = {
 };
 
 const covers = [
-  '/images/brand/soundtrack/catalogue/dinner-and-drinks.webp',
-  '/images/brand/soundtrack/catalogue/diner-rush-pop.webp',
-  '/images/brand/soundtrack/catalogue/boutique-hotel.webp',
-  '/images/brand/soundtrack/catalogue/hotel-lounge.webp',
-  '/images/brand/soundtrack/catalogue/boutique-pop.webp',
-  '/images/brand/soundtrack/catalogue/rush-hour-pop.webp',
+  '/images/brand/soundtrack/catalogue/grand-hotel-jazz.webp',
+  '/images/brand/soundtrack/catalogue/hotel-lounge-complete.webp',
+  '/images/brand/soundtrack/catalogue/brunch-with-friends.webp',
+  '/images/brand/soundtrack/catalogue/mall-pop.webp',
+  '/images/brand/soundtrack/catalogue/high-end-fashion.webp',
+  '/images/brand/soundtrack/catalogue/piano-in-the-lobby.webp',
 ] as const;
 
 export default function SoundtrackPage() {
@@ -78,13 +78,21 @@ export default function SoundtrackPage() {
                     src={cover}
                     alt=""
                     fill
-                    className="object-cover opacity-85 transition duration-700 group-hover:scale-105"
+                    className="object-cover transition duration-500 group-hover:brightness-110"
                     sizes={index === 0
                       ? '(max-width: 639px) 62vw, (max-width: 1023px) 48vw, 28vw'
                       : '(max-width: 639px) 31vw, (max-width: 1023px) 24vw, 14vw'}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#160b1f]/75 to-transparent" />
-                  {index === 0 && <div className="absolute inset-x-0 bottom-0 p-5"><span className="font-label text-[9px] uppercase tracking-[.18em] text-[#d6c2ff]">{t('redesign.catalogue.nowPlaying')}</span><strong className="mt-2 block text-lg">{t('redesign.catalogue.featured')}</strong><button type="button" className="mt-4 grid h-10 w-10 place-items-center rounded-full bg-[#d6c2ff] text-[#160b1f]"><Play className="h-4 w-4 fill-current" /><span className="sr-only">{t('redesign.catalogue.preview')}</span></button></div>}
+                  {index === 0 && (
+                    <div className="absolute left-4 right-4 top-4 max-w-[19rem] rounded-2xl border border-[#d6c2ff]/20 bg-[#160b1f]/88 p-4 shadow-[0_16px_34px_rgba(0,0,0,.28)] backdrop-blur-md sm:left-5 sm:top-5 sm:p-5">
+                      <span className="font-label text-[9px] uppercase tracking-[.18em] text-[#d6c2ff]">{t('redesign.catalogue.nowPlaying')}</span>
+                      <strong className="mt-2 block text-base leading-snug sm:text-lg">{t('redesign.catalogue.featured')}</strong>
+                      <button type="button" className="mt-4 grid h-10 w-10 place-items-center rounded-full bg-[#d6c2ff] text-[#160b1f] transition hover:bg-white">
+                        <Play className="h-4 w-4 fill-current" />
+                        <span className="sr-only">{t('redesign.catalogue.preview')}</span>
+                      </button>
+                    </div>
+                  )}
                 </div>
               ))}
               <div className="col-span-2 flex min-h-24 items-center justify-between rounded-[1.25rem] border border-[#d6c2ff]/18 bg-[#d6c2ff]/[0.06] px-5 sm:col-span-3">
