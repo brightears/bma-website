@@ -31,7 +31,24 @@
     "soundtrackShort": "Musik komersial yang dikenal, disediakan dan didukung oleh BMAsia.",
     "beatBreezeLogin": "Buka platform Beat Breeze",
     "soundtrackLogin": "Buka aplikasi Soundtrack",
-    "skipToContent": "Lewati ke konten utama"
+    "skipToContent": "Lewati ke konten utama",
+    "solutionCategories": {
+      "hospitality": "Hospitalitas",
+      "retailLifestyle": "Ritel & Gaya Hidup",
+      "professional": "Profesional",
+      "hotels": "Hotel & Resor",
+      "restaurants": "Restoran",
+      "bars": "Bar & Lounge",
+      "spas": "Spa & Wellness",
+      "retail": "Ritel & Mode",
+      "cafes": "Kafe & Kedai Kopi",
+      "malls": "Pusat Perbelanjaan",
+      "gyms": "Gym & Kebugaran",
+      "medical": "Medis & Gigi",
+      "offices": "Kantor",
+      "showrooms": "Ruang Pamer",
+      "events": "Acara & Venue"
+    }
   },
   "languageSwitcher": {
     "label": "Bahasa",
@@ -1765,6 +1782,37 @@
     "seeDayFlow": "Lihat alur hari yang bergerak",
     "livePlan": "Rencana atmosfer langsung",
     "ready": "Rencana siap",
+    "evidence": {
+      "eyebrow": "Bukti, bukan sekadar mitos",
+      "title": "Musik bekerja melalui konteks.",
+      "description": "Riset membantu kami mengajukan pertanyaan yang lebih baik, tetapi tidak menggantikan brief venue, kebutuhan pendengar, atau validasi dalam operasional nyata.",
+      "opensSource": "membuka sumber riset di tab baru",
+      "sources": {
+        "soundtrack": "Riset Soundtrack",
+        "brandFitFieldStudy": "Eksperimen lapangan kesesuaian merek HUI",
+        "exerciseReview": "Tinjauan BMC Sports Science",
+        "careReview": "Tinjauan SAGE Open Medicine",
+        "focusStudy": "Studi Communications Psychology"
+      },
+      "notes": {
+        "brandFit": {
+          "title": "Kesesuaian sebelum popularitas.",
+          "body": "Studi lapangan berskala besar melaporkan perilaku yang berbeda ketika musik selaras dengan merek, bukan mengandalkan lagu populer acak. Kami memakainya untuk menyusun brief, bukan sebagai rumus penjualan yang dijamin."
+        },
+        "exercise": {
+          "title": "Preferensi mengubah pengalaman.",
+          "body": "Meta-analisis 2025 mengaitkan musik pilihan dengan motivasi, afek, serta beberapa hasil kekuatan dan daya, sementara hasil yang beragam menentang satu playlist gym generik untuk semua."
+        },
+        "care": {
+          "title": "Ketenangan membutuhkan konteks dan kontrol.",
+          "body": "Tinjauan ruang tunggu layanan kesehatan menemukan manfaat yang menjanjikan bagi kecemasan dan pengalaman, tetapi metode serta hasilnya bervariasi. Kesesuaian, volume, dan kontrol staf tetap penting."
+        },
+        "focus": {
+          "title": "Musik fokus bukan satu kategori.",
+          "body": "Sebuah studi terkontrol menemukan hasil berbeda dari dua kondisi musik fokus yang dipasarkan secara serupa. Suara harus sesuai dengan tugas, audiens, dan ruang bersama."
+        }
+      }
+    },
     "dayEyebrow": "Satu hari operasional",
     "dayTitle": "Setiap momen memiliki tugas yang berbeda.",
     "dayDescription": "Musik memimpin atmosfer, sementara layar, pesan, jadwal, dan otomatisasi yang disetujui membawa rencana ke seluruh venue.",

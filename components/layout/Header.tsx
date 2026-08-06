@@ -224,28 +224,88 @@ function DesktopLink({ href, active, children }: { href: string; active: boolean
 }
 
 function SolutionsMenu({ locale, t }: { locale: string; t: NavigationTranslator }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const closeTimerRef = useRef<number | null>(null);
+
+  const cancelClose = useCallback(() => {
+    if (closeTimerRef.current) window.clearTimeout(closeTimerRef.current);
+    closeTimerRef.current = null;
+  }, []);
+
+  const openMenu = useCallback(() => {
+    cancelClose();
+    setIsOpen(true);
+  }, [cancelClose]);
+
+  const closeMenu = useCallback(() => {
+    cancelClose();
+    setIsOpen(false);
+  }, [cancelClose]);
+
+  const scheduleClose = useCallback(() => {
+    cancelClose();
+    closeTimerRef.current = window.setTimeout(() => setIsOpen(false), 180);
+  }, [cancelClose]);
+
+  useEffect(() => {
+    const onPointerDown = (event: PointerEvent) => {
+      if (!wrapperRef.current?.contains(event.target as Node)) closeMenu();
+    };
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') closeMenu();
+    };
+
+    document.addEventListener('pointerdown', onPointerDown);
+    document.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.removeEventListener('pointerdown', onPointerDown);
+      document.removeEventListener('keydown', onKeyDown);
+      cancelClose();
+    };
+  }, [cancelClose, closeMenu]);
+
   return (
-    <div className="group relative">
-      <button type="button" className="flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium text-white/62 transition-colors hover:bg-white/[0.045] hover:text-white" aria-haspopup="true">
-        {t('solutions')} <ChevronDown className="h-3.5 w-3.5" aria-hidden="true" />
+    <div
+      ref={wrapperRef}
+      className="relative"
+      onPointerEnter={openMenu}
+      onPointerLeave={scheduleClose}
+      onFocusCapture={openMenu}
+      onBlurCapture={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget as Node)) scheduleClose();
+      }}
+    >
+      <button
+        type="button"
+        className="flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium text-white/62 transition-colors hover:bg-white/[0.045] hover:text-white"
+        aria-haspopup="true"
+        aria-expanded={isOpen}
+        aria-controls="solutions-menu"
+        onClick={openMenu}
+      >
+        {t('solutions')} <ChevronDown className={`h-3.5 w-3.5 transition-transform ${isOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
       </button>
-      <div className="invisible absolute left-1/2 top-full z-50 mt-3 w-[44rem] -translate-x-1/2 translate-y-2 opacity-0 transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+      <div
+        id="solutions-menu"
+        className={`absolute left-1/2 top-full z-50 w-[44rem] -translate-x-1/2 pt-3 transition duration-200 ${isOpen ? 'visible translate-y-0 opacity-100' : 'invisible translate-y-2 opacity-0'}`}
+      >
         <div className="overflow-hidden rounded-[1.5rem] border border-white/12 bg-[#091722] p-6 shadow-[0_34px_110px_rgba(0,0,0,.72)] ring-1 ring-black/40">
           <div className="mb-5 flex items-end justify-between gap-6 border-b border-white/[0.08] pb-5">
             <div>
               <p className="bma-kicker">{t('solutions')}</p>
               <p className="mt-2 max-w-md text-sm leading-6 text-white/48">{t('solutionsIntro')}</p>
             </div>
-            <Link href={`/${locale}/quotation`} className="bma-text-link shrink-0">{t('helpMeChoose')} <ArrowRight className="h-4 w-4" /></Link>
+            <Link href={`/${locale}/quotation`} onClick={closeMenu} className="bma-text-link shrink-0">{t('helpMeChoose')} <ArrowRight className="h-4 w-4" /></Link>
           </div>
           <div className="grid grid-cols-3 gap-6">
             {SOLUTIONS_CATEGORIES.map((category) => (
-              <div key={category.category}>
-                <p className="font-label text-[10px] font-semibold uppercase tracking-[0.2em] text-white/34">{category.category}</p>
+              <div key={category.categoryKey}>
+                <p className="font-label text-[10px] font-semibold uppercase tracking-[0.2em] text-white/34">{t(`solutionCategories.${category.categoryKey}`)}</p>
                 <div className="mt-3 space-y-0.5">
                   {category.links.map((link) => (
-                    <Link key={link.href} href={`/${locale}${link.href}`} className="block rounded-lg px-2 py-1.5 text-sm text-white/66 transition hover:bg-white/[0.05] hover:text-white">
-                      {link.label}
+                    <Link key={link.href} href={`/${locale}${link.href}`} onClick={closeMenu} className="block rounded-lg px-2 py-1.5 text-sm text-white/66 transition hover:bg-white/[0.05] hover:text-white">
+                      {t(`solutionCategories.${link.labelKey}`)}
                     </Link>
                   ))}
                 </div>
@@ -264,7 +324,7 @@ function LoginMenu({ t }: { t: NavigationTranslator }) {
       <button type="button" className="flex min-h-11 items-center gap-1 rounded-full px-4 text-sm font-medium text-white/66 hover:bg-white/[0.045] hover:text-white" aria-haspopup="true">
         {t('login')} <ChevronDown className="h-3.5 w-3.5" aria-hidden="true" />
       </button>
-      <div className="invisible absolute right-0 top-full mt-3 w-72 translate-y-2 opacity-0 transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+      <div className="invisible absolute right-0 top-full w-72 translate-y-2 pt-3 opacity-0 transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
         <div className="rounded-2xl border border-white/12 bg-[#091722] p-3 shadow-[0_28px_90px_rgba(0,0,0,.7)]">
           <LoginLink href={EXTERNAL_LINKS.beatBreezeLogin} icon={Layers3} title="Beat Breeze" description={t('beatBreezeLogin')} />
           <LoginLink href={EXTERNAL_LINKS.soundtrackLogin} icon={Headphones} title="Soundtrack" description={t('soundtrackLogin')} />

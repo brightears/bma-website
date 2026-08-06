@@ -31,7 +31,24 @@
     "soundtrackShort": "由 BMAsia 提供与支持的知名商业音乐。",
     "beatBreezeLogin": "打开 Beat Breeze 平台",
     "soundtrackLogin": "打开 Soundtrack 应用",
-    "skipToContent": "跳至主要内容"
+    "skipToContent": "跳至主要内容",
+    "solutionCategories": {
+      "hospitality": "酒店与餐饮",
+      "retailLifestyle": "零售与生活方式",
+      "professional": "专业场所",
+      "hotels": "酒店与度假村",
+      "restaurants": "餐厅",
+      "bars": "酒吧与酒廊",
+      "spas": "水疗与健康",
+      "retail": "零售与时尚",
+      "cafes": "咖啡馆与咖啡店",
+      "malls": "购物中心",
+      "gyms": "健身房与健身",
+      "medical": "医疗与牙科",
+      "offices": "办公室",
+      "showrooms": "展厅",
+      "events": "活动与场地"
+    }
   },
   "languageSwitcher": {
     "label": "语言",
@@ -1765,6 +1782,37 @@
     "seeDayFlow": "查看一天如何运转",
     "livePlan": "实时氛围计划",
     "ready": "计划已就绪",
+    "evidence": {
+      "eyebrow": "以证据为据，而非凭传言",
+      "title": "音乐的作用取决于情境。",
+      "description": "研究能帮助我们提出更好的问题，但不能取代场所简报、听众需求或实际运营中的验证。",
+      "opensSource": "在新标签页中打开研究来源",
+      "sources": {
+        "soundtrack": "Soundtrack研究",
+        "brandFitFieldStudy": "HUI品牌契合度实地实验",
+        "exerciseReview": "BMC Sports Science综述",
+        "careReview": "SAGE Open Medicine综述",
+        "focusStudy": "Communications Psychology研究"
+      },
+      "notes": {
+        "brandFit": {
+          "title": "先求契合，再谈知名度。",
+          "body": "大型实地研究报告称，与随机热门歌曲相比，音乐与品牌匹配时会出现不同的行为。我们把它作为制定简报的信号，而不是保证销售的公式。"
+        },
+        "exercise": {
+          "title": "偏好会改变体验。",
+          "body": "一项2025年的元分析把偏好音乐与动力、情绪以及部分力量和功率结果联系起来；结果的差异也说明，不应为所有健身场景套用同一份通用歌单。"
+        },
+        "care": {
+          "title": "平静需要情境与控制。",
+          "body": "一项医疗候诊区综述发现音乐对焦虑和体验可能有积极作用，但研究方法与结果并不一致。适宜性、音量和员工控制仍然重要。"
+        },
+        "focus": {
+          "title": "专注音乐并非单一类别。",
+          "body": "一项对照研究发现，两种营销方式相近的专注音乐条件产生了不同结果。声音必须适合任务、听众与共享空间。"
+        }
+      }
+    },
     "dayEyebrow": "一个运营日",
     "dayTitle": "每个时刻，都承担不同任务。",
     "dayDescription": "音乐引领氛围，屏幕、信息、排期与经批准的自动化则将计划延伸到整个场所。",

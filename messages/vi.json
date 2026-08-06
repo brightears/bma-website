@@ -31,7 +31,24 @@
     "soundtrackShort": "Âm nhạc thương mại quen thuộc, do BMAsia cung cấp và hỗ trợ.",
     "beatBreezeLogin": "Mở nền tảng Beat Breeze",
     "soundtrackLogin": "Mở ứng dụng Soundtrack",
-    "skipToContent": "Chuyển đến nội dung chính"
+    "skipToContent": "Chuyển đến nội dung chính",
+    "solutionCategories": {
+      "hospitality": "Khách sạn & Dịch vụ",
+      "retailLifestyle": "Bán lẻ & Phong cách sống",
+      "professional": "Chuyên nghiệp",
+      "hotels": "Khách sạn & Khu nghỉ dưỡng",
+      "restaurants": "Nhà hàng",
+      "bars": "Quán bar & Lounge",
+      "spas": "Spa & Chăm sóc sức khỏe",
+      "retail": "Bán lẻ & Thời trang",
+      "cafes": "Quán cà phê",
+      "malls": "Trung tâm mua sắm",
+      "gyms": "Phòng gym & Thể hình",
+      "medical": "Y tế & Nha khoa",
+      "offices": "Văn phòng",
+      "showrooms": "Phòng trưng bày",
+      "events": "Sự kiện & Địa điểm"
+    }
   },
   "languageSwitcher": {
     "label": "Ngôn ngữ",
@@ -1765,6 +1782,37 @@
     "seeDayFlow": "Xem một ngày chuyển động",
     "livePlan": "Kế hoạch bầu không khí trực tiếp",
     "ready": "Kế hoạch đã sẵn sàng",
+    "evidence": {
+      "eyebrow": "Bằng chứng, không phải truyền miệng",
+      "title": "Âm nhạc phát huy tác dụng trong đúng bối cảnh.",
+      "description": "Nghiên cứu giúp chúng tôi đặt câu hỏi tốt hơn, nhưng không thể thay thế yêu cầu của địa điểm, nhu cầu người nghe hay việc kiểm chứng trong vận hành thực tế.",
+      "opensSource": "mở nguồn nghiên cứu trong thẻ mới",
+      "sources": {
+        "soundtrack": "Nghiên cứu của Soundtrack",
+        "brandFitFieldStudy": "Thí nghiệm thực địa về độ phù hợp thương hiệu của HUI",
+        "exerciseReview": "Tổng quan BMC Sports Science",
+        "careReview": "Tổng quan SAGE Open Medicine",
+        "focusStudy": "Nghiên cứu Communications Psychology"
+      },
+      "notes": {
+        "brandFit": {
+          "title": "Phù hợp trước, nổi tiếng sau.",
+          "body": "Các nghiên cứu thực địa quy mô lớn ghi nhận hành vi khác biệt khi âm nhạc phù hợp với thương hiệu thay vì dựa vào những bản hit ngẫu nhiên. Chúng tôi dùng đó để định hình yêu cầu, không xem như công thức đảm bảo doanh số."
+        },
+        "exercise": {
+          "title": "Sở thích thay đổi trải nghiệm.",
+          "body": "Một phân tích tổng hợp năm 2025 liên hệ âm nhạc ưa thích với động lực, cảm xúc và một số kết quả về sức mạnh và công suất; kết quả đa dạng cũng cho thấy không nên dùng một playlist phòng tập chung cho tất cả."
+        },
+        "care": {
+          "title": "Sự thư thái cần bối cảnh và kiểm soát.",
+          "body": "Một tổng quan về âm nhạc trong phòng chờ y tế ghi nhận lợi ích hứa hẹn đối với lo âu và trải nghiệm, nhưng phương pháp và kết quả khác nhau. Mức độ phù hợp, âm lượng và quyền kiểm soát của nhân viên vẫn rất quan trọng."
+        },
+        "focus": {
+          "title": "Nhạc tập trung không chỉ có một loại.",
+          "body": "Một nghiên cứu có đối chứng cho thấy hai điều kiện nhạc tập trung được quảng bá tương tự tạo ra kết quả khác nhau. Âm thanh phải phù hợp với nhiệm vụ, người nghe và không gian dùng chung."
+        }
+      }
+    },
     "dayEyebrow": "Một ngày vận hành",
     "dayTitle": "Mỗi khoảnh khắc có một nhiệm vụ khác nhau.",
     "dayDescription": "Âm nhạc dẫn dắt bầu không khí, còn màn hình, thông điệp, lịch và các tự động hóa đã được phê duyệt đưa kế hoạch xuyên suốt địa điểm.",
