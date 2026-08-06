@@ -139,6 +139,7 @@
 
   .bma-kicker {
     @apply font-label font-semibold uppercase tracking-[0.24em] text-brand-orange;
+
     font-size: var(--bma-type-label);
   }
 
@@ -148,6 +149,7 @@
 
   .bma-page-title {
     @apply font-headline font-medium;
+
     font-size: var(--bma-type-page-title);
     line-height: 0.94;
     letter-spacing: -0.055em;
@@ -155,6 +157,7 @@
 
   .bma-section-title {
     @apply font-headline font-medium;
+
     font-size: var(--bma-type-section-title);
     line-height: 0.98;
     letter-spacing: -0.052em;
@@ -162,6 +165,7 @@
 
   .bma-subsection-title {
     @apply font-headline font-medium;
+
     font-size: var(--bma-type-subsection-title);
     line-height: 1;
     letter-spacing: -0.048em;
@@ -169,6 +173,7 @@
 
   .bma-card-title {
     @apply font-headline font-medium;
+
     font-size: var(--bma-type-card-title);
     line-height: 1.08;
     letter-spacing: -0.035em;
@@ -176,6 +181,7 @@
 
   .bma-lede {
     @apply max-w-[64ch] text-white/60;
+
     font-size: var(--bma-type-lede);
     line-height: 1.6;
   }
@@ -192,6 +198,7 @@
 
   .bma-label {
     @apply font-label font-semibold uppercase tracking-[0.24em];
+
     font-size: var(--bma-type-label);
   }
 

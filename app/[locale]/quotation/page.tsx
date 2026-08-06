@@ -60,7 +60,7 @@ export default function QuotationPage() {
                 <div key={key} className="grid grid-cols-[2.25rem_1fr] gap-4 border-t border-white/[0.08] py-5 first:border-t-0">
                   <span className="font-mono text-xs text-[#49d5c5]/70">0{index + 1}</span>
                   <div>
-                    <h2 className="font-label text-sm font-semibold text-white">{t(`whatToExpect.${key}.title`)}</h2>
+                    <h3 className="font-label text-sm font-semibold text-white">{t(`whatToExpect.${key}.title`)}</h3>
                     <p className="mt-1 max-w-xl text-sm leading-6 text-white/44">{t(`whatToExpect.${key}.desc`)}</p>
                   </div>
                 </div>

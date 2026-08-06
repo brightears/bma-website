@@ -829,6 +829,7 @@
   display: block;
   font-size: var(--bma-type-card-title);
   font-weight: 520;
+  line-height: 1.08;
   text-wrap: balance;
 }
 
@@ -1129,7 +1130,7 @@
 }
 
 .takeaway .eyebrow { margin-bottom: 12px; }
-.takeaway h3 { margin: 0; font-family: var(--font-geist), system-ui, sans-serif; font-size: var(--bma-type-card-title); font-weight: 500; letter-spacing: -.035em; }
+.takeaway h3 { margin: 0; font-family: var(--font-geist), system-ui, sans-serif; font-size: var(--bma-type-card-title); font-weight: 500; line-height: 1.08; letter-spacing: -.035em; }
 .takeaway > div > p:last-child { max-width: 840px; margin: 10px 0 0; color: rgba(238, 243, 255, 0.48); line-height: 1.55; text-wrap: pretty; white-space: pre-line; }
 
 .routeDecision {
@@ -1267,7 +1268,7 @@
 .storyLine { height: 1px; margin: 24px 0 28px; background: rgba(255, 255, 255, 0.12); }
 .storyLine i { display: block; width: 10px; height: 10px; border-radius: 50%; background: #4a5772; transform: translateY(-4.5px); }
 .storyLine i.storyActive { background: var(--orange); box-shadow: 0 0 22px var(--orange); }
-.storyTrack h3 { margin: 0; font-size: var(--bma-type-card-title); font-weight: 540; letter-spacing: -.035em; }
+.storyTrack h3 { margin: 0; font-size: var(--bma-type-card-title); font-weight: 540; line-height: 1.08; letter-spacing: -.035em; }
 .storyTrack p { max-width: 270px; margin: 12px 0 0; color: rgba(238, 243, 255, 0.44); line-height: 1.65; text-wrap: pretty; }
 
 .storyCta { max-width: 1480px; margin: 55px auto 0; }

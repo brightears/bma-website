@@ -278,7 +278,7 @@ function BookingStep({ number, title, Icon, className = '', children }: { number
       <div className="mb-5 flex items-center justify-between gap-4">
         <div>
           <span className="font-mono text-[.65rem] text-[#efa634]">{number}</span>
-          <h2 className="mt-1 font-headline text-xl font-medium tracking-[-0.025em] text-white">{title}</h2>
+          <h3 className="mt-1 font-headline text-xl font-medium tracking-[-0.025em] text-white">{title}</h3>
         </div>
         <Icon className="h-5 w-5 text-[#49d5c5]/65" aria-hidden="true" />
       </div>
