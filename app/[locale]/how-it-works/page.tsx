@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import type { CSSProperties } from 'react';
+import { useState, type CSSProperties } from 'react';
 import { MotionConfig, motion, useReducedMotion } from 'framer-motion';
 import { ArrowDown, ArrowRight, AudioLines, Blend, Check, Map, RadioTower } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
@@ -27,6 +27,7 @@ export default function HowItWorksPage() {
   const navigation = useTranslations('navigation');
   const locale = useLocale();
   const reduceMotion = useReducedMotion();
+  const [activeStep, setActiveStep] = useState<(typeof STEPS)[number]['id']>('01');
   const reveal = {
     initial: reduceMotion ? false : { opacity: 0, y: 28 },
     whileInView: { opacity: 1, y: 0 },
@@ -134,8 +135,20 @@ export default function HowItWorksPage() {
               <h2>{t('stats.sectionTitle')}</h2>
               <p>{t('stats.experience.desc')}</p>
               <div className={styles.processIndex} aria-hidden="true">
-                {STEPS.map(({ id }) => <span key={id}>{id}</span>)}
+                {STEPS.map(({ id }) => (
+                  <span key={id} data-active={activeStep === id}>{id}</span>
+                ))}
               </div>
+              <motion.div
+                key={activeStep}
+                initial={reduceMotion ? false : { opacity: 0, x: -8 }}
+                animate={{ opacity: 1, x: 0 }}
+                className={styles.processActive}
+                aria-hidden="true"
+              >
+                <span>{activeStep} / 04</span>
+                <strong>{t(`steps.${activeStep}.title`)}</strong>
+              </motion.div>
             </motion.header>
 
             <div className={styles.processStack}>
@@ -143,6 +156,8 @@ export default function HowItWorksPage() {
                 <motion.article
                   key={id}
                   {...reveal}
+                  viewport={{ once: false, amount: 0.45 }}
+                  onViewportEnter={() => setActiveStep(id)}
                   whileHover={reduceMotion ? undefined : { y: -3 }}
                   className={styles.processCard}
                 >

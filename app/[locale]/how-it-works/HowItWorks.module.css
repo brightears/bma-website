@@ -1,5 +1,6 @@
 .page {
-  overflow: hidden;
+  overflow-x: clip;
+  overflow-y: visible;
   background: #06111a;
   color: #f4f7ff;
 }
@@ -211,7 +212,7 @@
 
 .processSection { position: relative; padding: 8rem 4rem 10rem; background: linear-gradient(180deg, #06111a, #071520 52%, #06111a); }
 .processLayout { display: grid; grid-template-columns: minmax(18rem, .56fr) minmax(0, 1fr); align-items: start; gap: clamp(4rem, 8vw, 9rem); }
-.processIntro { position: sticky; top: 8.5rem; }
+.processIntro { position: sticky; top: 8.5rem; align-self: start; }
 .processIntro h2,
 .finalHeader h2 {
   margin: 1.3rem 0 0;
@@ -227,8 +228,11 @@
 }
 .processIntro > p:last-of-type { max-width: 34rem; margin: 1.5rem 0 0; color: rgba(244,247,255,.48); font-size: 1rem; line-height: 1.75; }
 .processIndex { display: flex; gap: .55rem; margin-top: 2rem; }
-.processIndex span { width: 2.6rem; padding: .55rem 0; border-bottom: 1px solid rgba(255,255,255,.12); color: rgba(244,247,255,.32); font-family: ui-monospace, monospace; font-size: .62rem; }
-.processIndex span:first-child { border-color: #efa634; color: #efa634; }
+.processIndex span { width: 2.6rem; padding: .55rem 0; border-bottom: 1px solid rgba(255,255,255,.12); color: rgba(244,247,255,.32); font-family: ui-monospace, monospace; font-size: .62rem; transition: border-color .28s ease, color .28s ease; }
+.processIndex span[data-active='true'] { border-color: #efa634; color: #efa634; }
+.processActive { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: .8rem; max-width: 20rem; margin-top: 1.25rem; padding: .9rem 1rem; border: 1px solid rgba(73,213,197,.12); border-radius: .9rem; background: linear-gradient(105deg, rgba(239,166,52,.055), rgba(73,213,197,.035)); }
+.processActive span { color: #efa634; font-family: ui-monospace, monospace; font-size: .62rem; }
+.processActive strong { overflow: hidden; color: rgba(244,247,255,.66); font-size: .74rem; font-weight: 540; text-overflow: ellipsis; white-space: nowrap; }
 
 .processStack { display: grid; gap: 1.25rem; }
 .processCard {
@@ -373,6 +377,7 @@
   .processSection { padding: 6rem 1.5rem 7rem; }
   .processLayout { grid-template-columns: 1fr; }
   .processIntro { position: static; }
+  .processActive { display: none; }
   .processStack { margin-top: 1rem; }
   .handoffSection { padding: 0 1.5rem 7rem; }
   .handoffInner { grid-template-columns: 1fr; }
