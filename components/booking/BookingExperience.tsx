@@ -46,10 +46,9 @@ export function BookingExperience() {
   const [submitting, setSubmitting] = useState(false);
   const [successEmail, setSuccessEmail] = useState('');
   const [error, setError] = useState('');
-  const visitorTimeZone = useMemo(
-    () => Intl.DateTimeFormat().resolvedOptions().timeZone || 'Asia/Bangkok',
-    [],
-  );
+  // Keep the server and first client render identical. The browser timezone is
+  // only available after hydration, so resolve it once the component mounts.
+  const [visitorTimeZone, setVisitorTimeZone] = useState('Asia/Bangkok');
 
   const loadAvailability = async () => {
     setStatus('loading');
@@ -71,6 +70,7 @@ export function BookingExperience() {
   };
 
   useEffect(() => {
+    setVisitorTimeZone(Intl.DateTimeFormat().resolvedOptions().timeZone || 'Asia/Bangkok');
     void loadAvailability();
   }, []);
 
