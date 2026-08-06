@@ -12,6 +12,7 @@ const pages = [
   { path: '/how-it-works', changeFrequency: 'monthly' as const, priority: 0.8 },
   { path: '/licensing', changeFrequency: 'monthly' as const, priority: 0.8 },
   { path: '/quotation', changeFrequency: 'monthly' as const, priority: 0.9 },
+  { path: '/book-demo', changeFrequency: 'monthly' as const, priority: 0.9 },
   { path: '/privacy', changeFrequency: 'yearly' as const, priority: 0.3 },
   { path: '/cookies', changeFrequency: 'yearly' as const, priority: 0.3 },
   { path: '/terms', changeFrequency: 'yearly' as const, priority: 0.3 },

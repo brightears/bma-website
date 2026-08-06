@@ -108,6 +108,48 @@
       "description": "Just exploring? That's fine"
     }
   },
+  "bookingPage": {
+    "metadataTitle": "Book a BMAsia demo",
+    "metadataDescription": "Choose a time for a focused BMAsia consultation and meet on Google Meet or Microsoft Teams.",
+    "metadataImageAlt": "BMAsia - Wherever Music Matters",
+    "eyebrow": "Live consultation",
+    "title": "Book a conversation,",
+    "titleHighlight": "without leaving the flow.",
+    "description": "Choose a live time from our calendar, tell us what you are exploring, and meet the BMAsia team on the platform you prefer.",
+    "duration": "30 minutes",
+    "oneToOne": "One-to-one",
+    "calendar": "Live availability",
+    "noCommitment": "No commitment",
+    "stepDate": "Choose a date",
+    "stepTime": "Choose a time",
+    "stepProvider": "Choose how to meet",
+    "stepDetails": "Tell us who is joining",
+    "yourTimeZone": "Times shown in {timeZone}",
+    "googleMeet": "Google Meet",
+    "microsoftTeams": "Microsoft Teams",
+    "name": "Name",
+    "email": "Work email",
+    "company": "Company",
+    "notes": "What would you like to explore?",
+    "notesPlaceholder": "Your venue, number of locations, current setup or any questions",
+    "confirm": "Confirm demo",
+    "confirming": "Reserving your time...",
+    "required": "Please complete the required details.",
+    "loading": "Checking the calendar...",
+    "noSlots": "No times are available in this window.",
+    "fallbackEyebrow": "Booking fallback",
+    "fallbackTitle": "The live calendar is reconnecting.",
+    "fallbackDescription": "You can still use BMAsia's secure Calendly page while the direct calendar connection is unavailable.",
+    "fallbackButton": "Open booking calendar",
+    "successEyebrow": "You are booked",
+    "successTitle": "The invitation is on its way.",
+    "successDescription": "We sent the calendar invitation and meeting details to {email}.",
+    "bookAnother": "Book another time",
+    "slotGone": "That time was just taken. Please choose another.",
+    "genericError": "We could not complete the booking. Please try again.",
+    "meetNote": "A unique meeting link will be added to your calendar invitation.",
+    "privacy": "Your details are used only to arrange and prepare this conversation."
+  },
   "about": {
     "sectionTitle": "Who We",
     "sectionTitleHighlight": "Are",
@@ -344,6 +386,15 @@
     "placeholder": "Ask anything about our music solutions...",
     "send": "Send",
     "assistantName": "BMAsia AI Assistant",
+    "guideLabel": "Venue guide",
+    "welcomeTitle": "Start with the space.",
+    "nudge": "Not sure which music route fits? I can narrow it down in one question.",
+    "open": "Open BMAsia venue guide",
+    "dismiss": "Dismiss suggestion",
+    "messagesLabel": "Assistant conversation",
+    "homeContext": "BMAsia overview",
+    "humanFollowup": "Ask a BMAsia specialist to follow up",
+    "trialAction": "Request a trial",
     "minimize": "Minimize",
     "close": "Close",
     "expand": "View conversation",
@@ -359,7 +410,7 @@
     },
     "status": {
       "connecting": "Connecting...",
-      "connected": "Online",
+      "connected": "Ready to guide",
       "disconnected": "Offline",
       "typing": "Typing..."
     },
@@ -1248,6 +1299,13 @@
     }
   },
   "quotationPage": {
+    "interface": {
+      "formLoading": "Loading quotation form",
+      "venueBrief": "Venue brief / 01",
+      "liveWalkthrough": "Live walkthrough",
+      "beatBreeze": "Beat Breeze",
+      "soundtrack": "Soundtrack"
+    },
     "hero": {
       "label": "Get Started",
       "title": "Request a",
@@ -1912,7 +1970,7 @@
             "Render and Cloudflare for application, database, network and security infrastructure.",
             "Google Workspace and Gmail for business correspondence; Google Tag Manager and Google Analytics when optional measurement is accepted.",
             "Apollo website visitor measurement when optional measurement is accepted.",
-            "ElevenLabs and BMAsia assistant or message-hub services when chat, voice or escalation features are used.",
+            "OpenAI and BMAsia assistant or message-hub services when text guidance or human escalation features are used; ElevenLabs if a voice feature is explicitly used; and Google Calendar, Microsoft Teams or Calendly when you request a demo booking.",
             "Soundtrack when you request a Soundtrack trial or activation and the necessary setup details must be shared.",
             "Professional advisers, authorities or counterparties where required by law or a legitimate corporate transaction."
           ]

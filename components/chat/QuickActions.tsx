@@ -40,7 +40,7 @@ export function QuickActions({ onSelect, disabled = false }: QuickActionsProps) 
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-2 mt-4 px-4">
+    <div className="mt-5 grid gap-2">
       {actions.map((action) => {
         const Icon = action.icon;
         return (
@@ -49,16 +49,11 @@ export function QuickActions({ onSelect, disabled = false }: QuickActionsProps) 
             type="button"
             onClick={() => !disabled && onSelect(action.message)}
             disabled={disabled}
-            whileHover={!disabled ? { scale: 1.02 } : undefined}
-            whileTap={!disabled ? { scale: 0.98 } : undefined}
-            className={`inline-flex items-center gap-2 px-4 py-2
-              bg-white/5 hover:bg-white/10
-              border border-white/10 hover:border-brand-orange/50
-              rounded-full text-sm text-gray-300 hover:text-white
-              transition-all duration-200
+            whileTap={!disabled ? { scale: 0.99 } : undefined}
+            className={`flex min-h-11 w-full items-center gap-3 rounded-xl border border-white/[0.08] bg-white/[0.025] px-3.5 text-left text-sm text-white/55 transition hover:border-[#efa634]/30 hover:bg-white/[0.045] hover:text-white
               ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
           >
-            <Icon className="w-4 h-4" aria-hidden="true" />
+            <span className="grid h-7 w-7 place-items-center rounded-lg bg-white/[0.04] text-[#efa634]"><Icon className="h-3.5 w-3.5" aria-hidden="true" /></span>
             <span>{action.label}</span>
           </motion.button>
         );
