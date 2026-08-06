@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import {
   createBooking,
+  BookingSlotConflictError,
   getAvailableBookingSlots,
   getBookingCapability,
   type BookingProvider,
@@ -79,8 +80,10 @@ export async function POST(request: NextRequest) {
       alreadyExists: result.alreadyExists,
     }, { status: result.alreadyExists ? 200 : 201 });
   } catch (error) {
+    if (error instanceof BookingSlotConflictError) {
+      return NextResponse.json({ error: 'That time is no longer available.', code: 'slot_unavailable' }, { status: 409 });
+    }
     console.error('Booking creation provider error:', error instanceof Error ? error.message : 'unknown error');
     return NextResponse.json({ error: 'The booking could not be completed. Please try another time.' }, { status: 502 });
   }
 }
-

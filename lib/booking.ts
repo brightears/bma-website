@@ -25,7 +25,15 @@ type GoogleEvent = {
   location?: string;
   status?: string;
   conferenceData?: { entryPoints?: Array<{ entryPointType?: string; uri?: string }> };
+  extendedProperties?: { private?: { requestId?: string } };
 };
+
+export class BookingSlotConflictError extends Error {
+  constructor() {
+    super('That booking slot is no longer available');
+    this.name = 'BookingSlotConflictError';
+  }
+}
 
 let googleTokenCache: AccessTokenCache | null = null;
 let microsoftTokenCache: AccessTokenCache | null = null;
@@ -224,7 +232,14 @@ export async function getAvailableBookingSlots(): Promise<BookingSlot[]> {
   return slots;
 }
 
-const eventIdFor = (requestId: string) => `bma${createHash('sha256').update(requestId).digest('hex').slice(0, 40)}`;
+// A slot-derived event ID makes Google Calendar the final concurrency lock: two
+// visitors cannot confirm the same start time during the small free/busy race window.
+const eventIdFor = (start: string) => `bma${createHash('sha256').update(new Date(start).toISOString()).digest('hex').slice(0, 40)}`;
+
+function assertEventOwnership(event: GoogleEvent, requestId: string) {
+  if (event.extendedProperties?.private?.requestId !== requestId) throw new BookingSlotConflictError();
+  return event;
+}
 
 function eventDescription(request: BookingRequest, meetingLine?: string) {
   const lines = [
@@ -317,20 +332,26 @@ async function createTeamsMeeting(request: BookingRequest) {
 }
 
 export async function createBooking(request: BookingRequest) {
-  const eventId = eventIdFor(request.requestId);
+  const eventId = eventIdFor(request.start);
   const existing = await getGoogleEvent(eventId);
-  if (existing && existing.status !== 'cancelled' && (request.provider === 'google-meet' || existing.location?.startsWith('https://'))) {
-    return { eventId: existing.id, htmlLink: existing.htmlLink, alreadyExists: true };
+  if (existing && existing.status !== 'cancelled') {
+    assertEventOwnership(existing, request.requestId);
+    if (request.provider === 'google-meet' || existing.location?.startsWith('https://')) {
+      return { eventId: existing.id, htmlLink: existing.htmlLink, alreadyExists: true };
+    }
   }
 
   if (request.provider === 'google-meet') {
     const event = await insertGoogleEvent(request, { eventId, meet: true });
     if (!event) throw new Error('Google Calendar did not return an event');
+    assertEventOwnership(event, request.requestId);
     return { eventId: event.id, htmlLink: event.htmlLink, alreadyExists: false };
   }
 
   if (!teamsConfigured()) throw new Error('Microsoft Teams booking is not configured');
-  await insertGoogleEvent(request, { eventId, reserveOnly: true });
+  const reservation = await insertGoogleEvent(request, { eventId, reserveOnly: true });
+  if (!reservation) throw new Error('Google Calendar did not return a reservation');
+  assertEventOwnership(reservation, request.requestId);
   try {
     const teamsMeeting = await createTeamsMeeting(request);
     const event = await patchGoogleEventWithTeams(request, eventId, teamsMeeting.joinWebUrl!);
