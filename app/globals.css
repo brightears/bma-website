@@ -4,6 +4,24 @@
 
 /* Fonts loaded via next/font in layout.tsx: Geist (body + headlines), Space Grotesk (labels and product moments) */
 
+/*
+ * BMAsia responsive type system
+ *
+ * Keep typography consistent by semantic role, rather than assigning a new
+ * clamp() value on each page. The rem bounds preserve browser zoom and the
+ * fluid middle value lets the hierarchy breathe between breakpoints.
+ */
+:root {
+  --bma-type-page-title: clamp(3.25rem, 5.7vw, 6rem);
+  --bma-type-section-title: clamp(2.65rem, 4.45vw, 4.5rem);
+  --bma-type-subsection-title: clamp(2rem, 3vw, 3.25rem);
+  --bma-type-card-title: clamp(1.5rem, 2vw, 2rem);
+  --bma-type-lede: clamp(1.0625rem, 1.4vw, 1.25rem);
+  --bma-type-body: 1rem;
+  --bma-type-body-small: 0.875rem;
+  --bma-type-label: 0.6875rem;
+}
+
 /* Base styles */
 @layer base {
   html {
@@ -120,15 +138,61 @@
   }
 
   .bma-kicker {
-    @apply font-label text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-brand-orange;
+    @apply font-label font-semibold uppercase tracking-[0.24em] text-brand-orange;
+    font-size: var(--bma-type-label);
   }
 
   .bma-display {
     @apply font-headline font-medium leading-[0.96] tracking-[-0.055em] text-white;
   }
 
+  .bma-page-title {
+    @apply font-headline font-medium;
+    font-size: var(--bma-type-page-title);
+    line-height: 0.94;
+    letter-spacing: -0.055em;
+  }
+
+  .bma-section-title {
+    @apply font-headline font-medium;
+    font-size: var(--bma-type-section-title);
+    line-height: 0.98;
+    letter-spacing: -0.052em;
+  }
+
+  .bma-subsection-title {
+    @apply font-headline font-medium;
+    font-size: var(--bma-type-subsection-title);
+    line-height: 1;
+    letter-spacing: -0.048em;
+  }
+
+  .bma-card-title {
+    @apply font-headline font-medium;
+    font-size: var(--bma-type-card-title);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+  }
+
   .bma-lede {
-    @apply max-w-[64ch] text-base leading-7 text-white/60 sm:text-lg sm:leading-8;
+    @apply max-w-[64ch] text-white/60;
+    font-size: var(--bma-type-lede);
+    line-height: 1.6;
+  }
+
+  .bma-body {
+    font-size: var(--bma-type-body);
+    line-height: 1.75;
+  }
+
+  .bma-body-small {
+    font-size: var(--bma-type-body-small);
+    line-height: 1.7;
+  }
+
+  .bma-label {
+    @apply font-label font-semibold uppercase tracking-[0.24em];
+    font-size: var(--bma-type-label);
   }
 
   .bma-button-primary {

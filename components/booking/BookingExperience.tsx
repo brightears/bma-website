@@ -142,7 +142,7 @@ export function BookingExperience() {
             <Check className="h-8 w-8" aria-hidden="true" />
           </div>
           <p className="bma-kicker mt-8">{t('successEyebrow')}</p>
-          <h2 className="mt-4 font-headline text-[clamp(2.35rem,5vw,4.25rem)] font-medium leading-[.98] tracking-[-0.055em] text-white">
+          <h2 className="bma-section-title mt-4 text-white">
             {t('successTitle')}
           </h2>
           <p className="mx-auto mt-5 max-w-lg text-base leading-7 text-white/52">{t('successDescription', { email: successEmail })}</p>
@@ -162,7 +162,7 @@ export function BookingExperience() {
             <CalendarDays className="h-8 w-8" aria-hidden="true" />
           </div>
           <p className="bma-kicker mt-8">{t('fallbackEyebrow')}</p>
-          <h2 className="mt-4 font-headline text-[clamp(2.25rem,5vw,4rem)] font-medium leading-[1] tracking-[-0.05em] text-white">{t('fallbackTitle')}</h2>
+          <h2 className="bma-section-title mt-4 text-white">{t('fallbackTitle')}</h2>
           <p className="mx-auto mt-5 max-w-lg text-base leading-7 text-white/50">{t('fallbackDescription')}</p>
           <a
             href={withAttribution(EXTERNAL_LINKS.calendly, 'booking', 'native_fallback')}

@@ -17,11 +17,11 @@ export default function BookDemoPage() {
         <div className="bma-container">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .65 }} className="mx-auto max-w-5xl text-center">
             <p className="bma-kicker">{t('eyebrow')}</p>
-            <h1 className="bma-display mt-6 text-[clamp(3.5rem,8vw,7.4rem)]">
+            <h1 className="bma-display bma-page-title mt-6">
               {t('title')}<br />
               <span className="bg-[linear-gradient(96deg,#efa634_0%,#e7c762_46%,#49d5c5_100%)] bg-clip-text text-transparent">{t('titleHighlight')}</span>
             </h1>
-            <p className="bma-lede mx-auto mt-7 max-w-3xl text-lg sm:text-xl">{t('description')}</p>
+            <p className="bma-lede mx-auto mt-7 max-w-3xl">{t('description')}</p>
             <div className="mt-8 flex flex-wrap justify-center gap-x-7 gap-y-3 font-label text-xs text-white/45">
               <span className="flex items-center gap-2"><Clock3 className="h-4 w-4 text-[#efa634]" /> {t('duration')}</span>
               <span className="flex items-center gap-2"><MessagesSquare className="h-4 w-4 text-[#49d5c5]" /> {t('oneToOne')}</span>

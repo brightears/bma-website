@@ -55,10 +55,10 @@ export default function SoundtrackPage() {
           <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .75 }}>
             <Image src="/images/brand/soundtrack/soundtrack-logo-white.svg" alt="Soundtrack" width={502} height={147} className="h-auto w-48 sm:w-56" priority />
             <p className="mt-8 font-label text-[11px] font-semibold uppercase tracking-[.25em] text-[#d6c2ff]">{t('redesign.hero.eyebrow')}</p>
-            <h1 className="mt-5 max-w-3xl font-headline text-[clamp(3.7rem,7vw,7.4rem)] font-medium leading-[.94] tracking-[-.058em]">
+            <h1 className="bma-page-title mt-5 max-w-3xl">
               {t('redesign.hero.title')} <span className="text-[#d6c2ff]">{t('redesign.hero.highlight')}</span>
             </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-[#f1eaff]/60 sm:text-xl">{t('redesign.hero.description')}</p>
+            <p className="bma-lede mt-7 max-w-2xl text-[#f1eaff]/60">{t('redesign.hero.description')}</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link href={`/${locale}/soundtrack-trial?source=soundtrack-hero`} className="inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-[#d6c2ff] px-7 font-label text-sm font-semibold text-[#1b0b25] transition hover:-translate-y-0.5 hover:bg-white">
                 {t('redesign.hero.trial')} <ArrowRight className="h-4 w-4" />
@@ -118,7 +118,7 @@ export default function SoundtrackPage() {
         <div className="bma-container grid gap-12 lg:grid-cols-[.72fr_1.28fr] lg:items-start">
           <motion.div {...reveal} className="lg:sticky lg:top-32">
             <p className="font-label text-[11px] uppercase tracking-[.25em] text-[#d6c2ff]">{t('redesign.direction.eyebrow')}</p>
-            <h2 className="mt-5 font-headline text-5xl font-medium leading-[.98] tracking-[-.05em] sm:text-6xl">{t('redesign.direction.title')}</h2>
+            <h2 className="bma-section-title mt-5">{t('redesign.direction.title')}</h2>
             <p className="mt-6 max-w-xl text-lg leading-8 text-[#f1eaff]/52">{t('redesign.direction.description')}</p>
             <div className="mt-8 rounded-2xl border border-[#d6c2ff]/16 bg-[#d6c2ff]/[0.045] p-5"><p className="text-sm font-medium">{t('redesign.direction.refreshTitle')}</p><p className="mt-2 text-sm leading-6 text-[#f1eaff]/46">{t('redesign.direction.refreshText')}</p></div>
           </motion.div>
@@ -144,7 +144,7 @@ export default function SoundtrackPage() {
       <section className="bma-grain bma-section border-y border-[#d6c2ff]/12 bg-[#1d0e28]">
         <div className="bma-container">
           <motion.div {...reveal} className="grid gap-8 lg:grid-cols-[.66fr_1fr] lg:items-end">
-            <div><p className="font-label text-[11px] uppercase tracking-[.25em] text-[#d6c2ff]">{t('redesign.extensions.eyebrow')}</p><h2 className="mt-5 font-headline text-5xl font-medium leading-[.98] tracking-[-.05em] sm:text-6xl lg:text-7xl">{t('redesign.extensions.title')}</h2></div>
+            <div><p className="font-label text-[11px] uppercase tracking-[.25em] text-[#d6c2ff]">{t('redesign.extensions.eyebrow')}</p><h2 className="bma-section-title mt-5">{t('redesign.extensions.title')}</h2></div>
             <div><p className="max-w-2xl text-lg leading-8 text-[#f1eaff]/52">{t('redesign.extensions.description')}</p><p className="mt-4 max-w-2xl text-xs leading-5 text-[#d6c2ff]/52">{t('redesign.extensions.scope')}</p></div>
           </motion.div>
 
@@ -173,7 +173,7 @@ export default function SoundtrackPage() {
         <div className="bma-container grid gap-12 lg:grid-cols-[.78fr_1.22fr] lg:items-center">
           <motion.div {...reveal}>
             <p className="font-label text-[11px] uppercase tracking-[.25em] text-[#d6c2ff]">{t('redesign.operations.eyebrow')}</p>
-            <h2 className="mt-5 font-headline text-5xl font-medium leading-[.98] tracking-[-.05em] sm:text-6xl">{t('redesign.operations.title')}</h2>
+            <h2 className="bma-section-title mt-5">{t('redesign.operations.title')}</h2>
             <p className="mt-6 max-w-xl text-lg leading-8 text-[#f1eaff]/52">{t('redesign.operations.description')}</p>
             <Link href={`/${locale}/quotation?solution=soundtrack-your-brand&source=soundtrack-service`} className="mt-8 inline-flex items-center gap-2 font-label text-sm font-semibold text-[#d6c2ff] hover:text-white">{t('redesign.operations.cta')} <ArrowRight className="h-4 w-4" /></Link>
           </motion.div>
@@ -190,7 +190,7 @@ export default function SoundtrackPage() {
 
       <section className="border-y border-[#d6c2ff]/12 bg-[#1d0e28] px-5 py-16 sm:px-8 lg:px-16">
         <div className="bma-container grid gap-10 lg:grid-cols-[.7fr_1.3fr] lg:items-center">
-          <motion.div {...reveal}><p className="font-label text-[11px] uppercase tracking-[.25em] text-[#d6c2ff]">{t('redesign.licensing.eyebrow')}</p><h2 className="mt-5 font-headline text-4xl font-medium tracking-[-.045em] sm:text-5xl">{t('redesign.licensing.title')}</h2><p className="mt-5 max-w-xl text-sm leading-6 text-[#f1eaff]/46">{t('redesign.licensing.description')}</p></motion.div>
+          <motion.div {...reveal}><p className="font-label text-[11px] uppercase tracking-[.25em] text-[#d6c2ff]">{t('redesign.licensing.eyebrow')}</p><h2 className="bma-section-title mt-5">{t('redesign.licensing.title')}</h2><p className="mt-5 max-w-xl text-sm leading-6 text-[#f1eaff]/46">{t('redesign.licensing.description')}</p></motion.div>
           <motion.div {...reveal} className="grid gap-3 sm:grid-cols-2">
             <div className="rounded-2xl border border-[#d6c2ff]/16 bg-[#d6c2ff]/[0.045] p-6"><p className="font-label text-[10px] uppercase tracking-[.18em] text-[#d6c2ff]">{t('redesign.licensing.included')}</p><ul className="mt-5 space-y-3 text-sm text-[#f1eaff]/58"><li className="flex gap-2"><Check className="h-4 w-4 text-[#d6c2ff]" />{t('redesign.licensing.recording')}</li><li className="flex gap-2"><Check className="h-4 w-4 text-[#d6c2ff]" />{t('redesign.licensing.publishing')}</li><li className="flex gap-2"><Check className="h-4 w-4 text-[#d6c2ff]" />{t('redesign.licensing.commercial')}</li></ul></div>
             <div className="rounded-2xl border border-white/[0.08] bg-white/[0.025] p-6"><p className="font-label text-[10px] uppercase tracking-[.18em] text-white/38">{t('redesign.licensing.local')}</p><p className="mt-5 text-sm leading-6 text-[#f1eaff]/48">{t('redesign.licensing.localText')}</p></div>
@@ -202,7 +202,7 @@ export default function SoundtrackPage() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_100%,rgba(214,194,255,.17),transparent_48%)]" />
         <motion.div {...reveal} className="relative mx-auto max-w-4xl">
           <Image src="/images/brand/soundtrack/soundtrack-logo-white.svg" alt="Soundtrack" width={502} height={147} className="mx-auto h-auto w-44 opacity-72" />
-          <h2 className="mt-9 font-headline text-5xl font-medium leading-[.98] tracking-[-.05em] sm:text-7xl">{t('redesign.final.title')} <span className="text-[#d6c2ff]">{t('redesign.final.highlight')}</span></h2>
+          <h2 className="bma-section-title mt-9">{t('redesign.final.title')} <span className="text-[#d6c2ff]">{t('redesign.final.highlight')}</span></h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#f1eaff]/52">{t('redesign.final.description')}</p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Link href={`/${locale}/soundtrack-trial?source=soundtrack-final`} className="inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-[#d6c2ff] px-8 font-label text-sm font-semibold text-[#1b0b25] hover:bg-white">{t('redesign.hero.trial')} <ArrowRight className="h-4 w-4" /></Link>

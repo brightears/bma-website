@@ -114,22 +114,11 @@
 .story h2 {
   max-width: 900px;
   margin: 0;
-  font-family: var(--font-geist), system-ui, sans-serif;
-  font-weight: 500;
   text-wrap: balance;
 }
 
 .hero h1 {
-  font-size: clamp(3.65rem, 5.7vw, 6.25rem);
-  line-height: 0.94;
-  letter-spacing: -0.055em;
-}
-
-.sectionIntro h2,
-.story h2 {
-  font-size: clamp(3rem, 4.55vw, 4.5rem);
-  line-height: 0.98;
-  letter-spacing: -0.052em;
+  max-width: 880px;
 }
 
 .hero h1 > span {
@@ -159,8 +148,8 @@
   max-width: 670px;
   margin: 30px 0 0;
   color: rgba(238, 243, 255, 0.64);
-  font-size: clamp(18px, 1.4vw, 24px);
-  line-height: 1.5;
+  font-size: var(--bma-type-lede);
+  line-height: 1.6;
   text-wrap: pretty;
 }
 
@@ -838,7 +827,7 @@
 
 .zonePlanIntro strong {
   display: block;
-  font-size: clamp(1.35rem, 2vw, 2rem);
+  font-size: var(--bma-type-card-title);
   font-weight: 520;
   text-wrap: balance;
 }
@@ -1059,7 +1048,7 @@
 
 .touchpointIntro { grid-row: 1 / 3; align-self: center; }
 .touchpointIntro .eyebrow { margin-bottom: 12px; }
-.touchpointIntro h3 { margin: 0; font-size: clamp(1.8rem, 2.6vw, 2.75rem); font-weight: 480; text-wrap: balance; }
+.touchpointIntro h3 { margin: 0; font-size: var(--bma-type-subsection-title); font-weight: 500; line-height: 1; letter-spacing: -.048em; text-wrap: balance; }
 .touchpointIntro > p:last-child { max-width: 500px; margin: 12px 0 0; color: rgba(238, 243, 255, 0.48); line-height: 1.6; text-wrap: pretty; }
 
 .touchpointTabs {
@@ -1140,7 +1129,7 @@
 }
 
 .takeaway .eyebrow { margin-bottom: 12px; }
-.takeaway h3 { margin: 0; font-family: var(--font-label), sans-serif; font-size: 30px; font-weight: 480; }
+.takeaway h3 { margin: 0; font-family: var(--font-geist), system-ui, sans-serif; font-size: var(--bma-type-card-title); font-weight: 500; letter-spacing: -.035em; }
 .takeaway > div > p:last-child { max-width: 840px; margin: 10px 0 0; color: rgba(238, 243, 255, 0.48); line-height: 1.55; text-wrap: pretty; white-space: pre-line; }
 
 .routeDecision {
@@ -1159,7 +1148,7 @@
 }
 
 .routeDecision .eyebrow { margin-bottom: 16px; }
-.routeDecision h3 { margin: 0; font-family: var(--font-label), sans-serif; font-size: clamp(2rem, 3.2vw, 3.6rem); font-weight: 480; line-height: 1.02; }
+.routeDecision h3 { margin: 0; font-family: var(--font-geist), system-ui, sans-serif; font-size: var(--bma-type-subsection-title); font-weight: 500; line-height: 1; letter-spacing: -.048em; }
 .routeDecision > div:first-child > p:last-child { max-width: 580px; margin: 18px 0 0; color: rgba(238, 243, 255, 0.48); line-height: 1.65; }
 .routeDecision > div:last-child { display: grid; gap: 10px; }
 .beatDecision,
@@ -1205,7 +1194,7 @@
 
 .connectedHeading { align-self: center; }
 .connectedHeading .eyebrow { margin-bottom: 18px; }
-.connectedHeading h3 { margin: 0; font-size: clamp(2.3rem, 3.8vw, 4.4rem); font-weight: 470; line-height: 1.03; text-wrap: balance; }
+.connectedHeading h3 { margin: 0; font-size: var(--bma-type-section-title); font-weight: 500; line-height: .98; letter-spacing: -.052em; text-wrap: balance; }
 .connectedHeading h3 em { display: block; margin-top: 7px; background: linear-gradient(90deg, #e8850c, #e7c658 39%, #7bd69e 68%, #1fd5d2); background-clip: text; color: transparent; font-style: normal; }
 .connectedHeading > p:last-child { max-width: 560px; margin: 22px 0 0; color: rgba(238, 243, 255, 0.52); font-size: 17px; line-height: 1.65; text-wrap: pretty; }
 
@@ -1278,7 +1267,7 @@
 .storyLine { height: 1px; margin: 24px 0 28px; background: rgba(255, 255, 255, 0.12); }
 .storyLine i { display: block; width: 10px; height: 10px; border-radius: 50%; background: #4a5772; transform: translateY(-4.5px); }
 .storyLine i.storyActive { background: var(--orange); box-shadow: 0 0 22px var(--orange); }
-.storyTrack h3 { margin: 0; font-size: 22px; font-weight: 540; }
+.storyTrack h3 { margin: 0; font-size: var(--bma-type-card-title); font-weight: 540; letter-spacing: -.035em; }
 .storyTrack p { max-width: 270px; margin: 12px 0 0; color: rgba(238, 243, 255, 0.44); line-height: 1.65; text-wrap: pretty; }
 
 .storyCta { max-width: 1480px; margin: 55px auto 0; }
@@ -1306,7 +1295,6 @@
 
 @media (max-width: 900px) {
   .heroGrid { min-height: auto; grid-template-columns: 1fr; padding: 130px 24px 54px; }
-  .hero h1 { font-size: clamp(3.2rem, 11.5vw, 5rem); }
   .livingField { min-height: 520px; }
   .experience, .story { padding: 100px 24px; }
   .zonesStage { grid-template-columns: 1fr; }
@@ -1343,7 +1331,6 @@
   .orbitCore { width: 150px; }
   .orbitCore > strong { font-size: 18px; }
   .orbitCover { width: 84px; border-radius: 15px; }
-  .sectionIntro h2, .story h2 { font-size: clamp(2.75rem, 10vw, 3.25rem); }
   .timeMachine { border-radius: 22px; }
   .machineTopline { padding: 22px 20px; }
   .livePill { display: none; }

@@ -68,7 +68,7 @@ export function SoundtrackTrialForm() {
         <span className="grid h-14 w-14 place-items-center rounded-full bg-[#d6c2ff] text-[#190d21]">
           <CheckCircle2 className="h-7 w-7" aria-hidden="true" />
         </span>
-        <h2 className="mt-7 text-balance font-headline text-3xl font-medium tracking-[-0.04em] text-white sm:text-4xl">{t('successTitle')}</h2>
+        <h2 className="bma-subsection-title mt-7 text-balance text-white">{t('successTitle')}</h2>
         <p className="mt-4 max-w-md text-pretty text-lg leading-8 text-white/58">{t('successMessage')}</p>
         <Link href={`/${locale}/soundtrack-your-brand`} className="mt-8 inline-flex items-center gap-3 text-sm font-semibold text-[#d6c2ff]">
           {t('back')} <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -79,7 +79,7 @@ export function SoundtrackTrialForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate className="rounded-[1.75rem] border border-[#d6c2ff]/18 bg-white/[0.04] p-6 sm:p-9">
-      <h2 className="text-balance font-headline text-3xl font-medium tracking-[-0.04em] text-white">{t('title')}</h2>
+      <h2 className="bma-subsection-title text-balance text-white">{t('title')}</h2>
       <p className="mt-3 text-pretty leading-7 text-white/52">{t('subtitle')}</p>
 
       {state === 'error' && (

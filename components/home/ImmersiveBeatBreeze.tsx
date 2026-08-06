@@ -255,7 +255,7 @@ export function ImmersiveBeatBreeze() {
         <div className={styles.heroGrid}>
           <div className={styles.heroCopy}>
             <p className={styles.eyebrow}><span />{t('hero.eyebrow')}</p>
-            <h1><span>{t('hero.title')}</span> <em>{t('hero.highlight')}</em></h1>
+            <h1 className="bma-page-title"><span>{t('hero.title')}</span> <em>{t('hero.highlight')}</em></h1>
             <p className={styles.heroLead}>{t('hero.description')}</p>
             <div className={styles.heroActions}>
               <a href="#choose-path" className={styles.primaryButton}>
@@ -329,7 +329,7 @@ export function ImmersiveBeatBreeze() {
       <section className={styles.experience} id="experience">
         <div className={styles.sectionIntro}>
           <p className={styles.eyebrow}><span />{t('demo.eyebrow')}</p>
-          <h2>{t('demo.title')} <em>{t('demo.highlight')}</em></h2>
+          <h2 className="bma-section-title">{t('demo.title')} <em>{t('demo.highlight')}</em></h2>
           <p>{t('demo.description')}</p>
         </div>
 
@@ -648,7 +648,7 @@ export function ImmersiveBeatBreeze() {
       <section className={styles.story} id="bmasia-story">
         <div className={styles.storyHeading}>
           <p className={styles.eyebrow}><span />{t('story.eyebrow')}</p>
-          <h2>{t('story.title')} <em>{t('story.highlight')}</em></h2>
+          <h2 className="bma-section-title">{t('story.title')} <em>{t('story.highlight')}</em></h2>
         </div>
         <div className={styles.storyTrack}>
           {(['sound', 'screens', 'messages', 'calls', 'automate', 'control'] as const).map((key, index) => (

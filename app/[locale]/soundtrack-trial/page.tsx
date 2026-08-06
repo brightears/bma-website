@@ -25,10 +25,10 @@ export default function SoundtrackTrialPage() {
       <div className="relative mx-auto grid max-w-[1320px] gap-14 lg:grid-cols-[0.88fr_1.12fr] lg:gap-20">
         <motion.section initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65 }} className="lg:sticky lg:top-36 lg:self-start">
           <p className="font-label text-[11px] uppercase tracking-[0.28em] text-[#d6c2ff]">{t('hero.label')}</p>
-          <h1 className="mt-6 max-w-2xl text-balance font-headline text-[clamp(3.2rem,7vw,6.7rem)] font-medium leading-[0.92] tracking-[-0.055em] text-white">
+          <h1 className="bma-page-title mt-6 max-w-2xl text-balance text-white">
             {t('hero.title')} <span className="text-[#d6c2ff]">{t('hero.titleHighlight')}</span>
           </h1>
-          <p className="mt-7 max-w-xl text-pretty text-lg leading-8 text-white/58 sm:text-xl">{t('hero.subtitle')}</p>
+          <p className="bma-lede mt-7 max-w-xl text-pretty text-white/58">{t('hero.subtitle')}</p>
 
           <div className="mt-9 flex flex-wrap gap-2.5">
             {(['noCard', 'oneZone'] as const).map((key) => (

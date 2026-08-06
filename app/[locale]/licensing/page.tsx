@@ -21,7 +21,7 @@ export default function LicensingPage() {
         <div className="bma-grid-lines absolute inset-0 opacity-20" aria-hidden="true" />
         <div className="bma-container relative">
           <p className="bma-kicker">{t('hero.label')}</p>
-          <h1 className="bma-display mt-7 max-w-6xl text-[clamp(3.7rem,8.4vw,8rem)]">{t('hero.title')} <span className="text-[#f0a539]">{t('hero.titleHighlight')}</span></h1>
+          <h1 className="bma-display bma-page-title mt-7 max-w-6xl">{t('hero.title')} <span className="text-[#f0a539]">{t('hero.titleHighlight')}</span></h1>
           <p className="bma-lede mt-8 max-w-3xl">{t('hero.subtitle')}</p>
         </div>
       </section>
@@ -36,7 +36,7 @@ export default function LicensingPage() {
             {RIGHTS.map(({ id, icon: Icon }, index) => (
               <motion.article key={id} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className={`py-10 lg:px-9 ${index > 0 ? 'border-t border-white/10 lg:border-l lg:border-t-0' : ''}`}>
                 <div className="flex items-center justify-between"><Icon className="h-6 w-6 text-[#f0a539]" aria-hidden="true" /><span className="font-label text-xs tracking-[0.2em] text-white/30">LAYER {id}</span></div>
-                <h2 className="mt-10 text-balance font-headline text-3xl font-medium tracking-[-0.04em] text-white">{t(`licenses.${id}.title`)}</h2>
+                <h2 className="bma-card-title mt-10 text-balance text-white">{t(`licenses.${id}.title`)}</h2>
                 <p className="mt-5 leading-8 text-white/55">{t(`licenses.${id}.desc`)}</p>
               </motion.article>
             ))}
@@ -49,7 +49,7 @@ export default function LicensingPage() {
           <span className="grid h-14 w-14 place-items-center rounded-full border border-[#f0a539]/30 text-[#f0a539]"><TriangleAlert className="h-6 w-6" aria-hidden="true" /></span>
           <div>
             <p className="font-label text-xs uppercase tracking-[0.22em] text-[#f0a539]">{t('warning.label')}</p>
-            <h2 className="mt-4 max-w-5xl text-balance font-headline text-4xl font-medium tracking-[-0.045em] text-white sm:text-6xl">{t('warning.titleStart')} <span className="text-[#f0a539]">{t('warning.titleNot')}</span> {t('warning.titleEnd')}</h2>
+            <h2 className="bma-section-title mt-4 max-w-5xl text-balance text-white">{t('warning.titleStart')} <span className="text-[#f0a539]">{t('warning.titleNot')}</span> {t('warning.titleEnd')}</h2>
             <p className="mt-7 max-w-3xl text-lg leading-8 text-white/58">{t('warning.quote')}</p>
           </div>
         </div>
@@ -58,7 +58,7 @@ export default function LicensingPage() {
       <section className="bma-section">
         <div className="bma-container">
           <p className="bma-kicker">PRODUCT SCOPE</p>
-          <h2 className="mt-5 max-w-4xl text-balance font-headline text-4xl font-medium tracking-[-0.045em] text-white sm:text-6xl">{t('comparison.sectionTitle')}</h2>
+          <h2 className="bma-section-title mt-5 max-w-4xl text-balance text-white">{t('comparison.sectionTitle')}</h2>
           <div className="mt-14 grid gap-5 lg:grid-cols-2">
             <ProductScope name="Beat Breeze" accent="#ff9f2f" badge={t('comparison.bb.badge')} note={t('comparison.bb.performanceNote')} labels={[t('comparison.recordingLicense'), t('comparison.publishingLicense'), t('comparison.performanceLicense')]} href={`/${locale}/beat-breeze`} cta={t('comparison.bb.cta')} />
             <ProductScope name="Soundtrack" accent="#d6c2ff" badge={t('comparison.syb.badge')} note={t('comparison.syb.performanceNote')} labels={[t('comparison.recordingLicense'), t('comparison.publishingLicense'), t('comparison.performanceLicense')]} href={`/${locale}/soundtrack-your-brand`} cta={t('comparison.syb.cta')} />
@@ -69,7 +69,7 @@ export default function LicensingPage() {
 
       <section className="border-t border-white/10 px-5 py-20 sm:px-8 sm:py-28 lg:px-16">
         <div className="bma-container flex flex-col justify-between gap-10 lg:flex-row lg:items-end">
-          <h2 className="max-w-4xl text-balance font-headline text-5xl font-medium tracking-[-0.05em] text-white sm:text-7xl">{t('cta.title')} <span className="text-[#f0a539]">{t('cta.titleHighlight')}</span></h2>
+          <h2 className="bma-section-title max-w-4xl text-balance text-white">{t('cta.title')} <span className="text-[#f0a539]">{t('cta.titleHighlight')}</span></h2>
           <div className="flex shrink-0 flex-col gap-3 sm:flex-row lg:flex-col">
             <Link href={`/${locale}/quotation`} className="bma-button-primary">{t('cta.ctaQuote')} <ArrowRight className="h-4 w-4" /></Link>
             <Link href={`/${locale}/book-demo?source=licensing`} className="bma-button-secondary">{t('cta.ctaDemo')}</Link>

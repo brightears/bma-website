@@ -178,10 +178,10 @@ export default function BeatBreezePage() {
               <span className="h-1.5 w-1.5 rounded-full bg-[#49d5c5] shadow-[0_0_12px_#49d5c5]" /> Beat Breeze
             </div>
             <p className="bma-kicker mt-7">{t('redesign.hero.eyebrow')}</p>
-            <h1 className="bma-display mt-5 max-w-3xl text-[clamp(3.35rem,5.8vw,5.9rem)]">
+            <h1 className="bma-display bma-page-title mt-5 max-w-3xl">
               {t('redesign.hero.title')} <span className="bg-gradient-to-r from-brand-orange via-[#e4ca68] to-[#49d5c5] bg-clip-text text-transparent">{t('redesign.hero.highlight')}</span>
             </h1>
-            <p className="bma-lede mt-7 max-w-2xl text-lg sm:text-xl">{t('redesign.hero.description')}</p>
+            <p className="bma-lede mt-7 max-w-2xl">{t('redesign.hero.description')}</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a href={signup} className="bma-button-primary min-h-14 px-7">{t('redesign.hero.trial')} <ArrowRight className="h-4 w-4" /></a>
               <Link href={`/${locale}/quotation?solution=beat-breeze&source=product-hero`} className="bma-button-secondary min-h-14 px-7">{t('redesign.hero.talk')}</Link>
@@ -239,7 +239,7 @@ export default function BeatBreezePage() {
       <section className="bma-section border-y border-white/[0.08] bg-[#081521]">
         <div className="bma-container">
           <motion.div {...reveal} className="grid gap-8 lg:grid-cols-[0.62fr_1fr] lg:items-end">
-            <div><p className="bma-kicker">{t('redesign.day.eyebrow')}</p><h2 className="bma-display mt-5 text-[clamp(2.8rem,4.6vw,4.9rem)]">{t('redesign.day.title')}</h2></div>
+            <div><p className="bma-kicker">{t('redesign.day.eyebrow')}</p><h2 className="bma-section-title mt-5 text-white">{t('redesign.day.title')}</h2></div>
             <p className="bma-lede lg:justify-self-end">{t('redesign.day.description')}</p>
           </motion.div>
 
@@ -272,7 +272,7 @@ export default function BeatBreezePage() {
         <div className="bma-container grid gap-12 lg:grid-cols-[0.74fr_1.26fr] lg:items-start">
           <motion.div {...reveal} className="lg:sticky lg:top-32">
             <p className="bma-kicker">{t('redesign.concierge.eyebrow')}</p>
-            <h2 className="bma-display mt-5 bg-[linear-gradient(100deg,#ffffff_8%,#ffffff_36%,#e7c55f_68%,#49d5c5_100%)] bg-clip-text text-[clamp(2.65rem,4vw,4.2rem)] text-transparent">{t('redesign.concierge.title')}</h2>
+            <h2 className="bma-section-title mt-5 bg-[linear-gradient(100deg,#ffffff_8%,#ffffff_36%,#e7c55f_68%,#49d5c5_100%)] bg-clip-text text-transparent">{t('redesign.concierge.title')}</h2>
             <p className="bma-lede mt-6">{t('redesign.concierge.description')}</p>
             <div className="mt-8 space-y-2">
               {conciergeScenarios.map((key) => (
@@ -379,7 +379,7 @@ export default function BeatBreezePage() {
         <div className="bma-container">
           <motion.div {...reveal} className="max-w-4xl">
             <p className="bma-kicker">{t('redesign.media.eyebrow')}</p>
-            <h2 className="bma-display mt-5 bg-[linear-gradient(100deg,#ffffff_8%,#ffffff_36%,#e7c55f_68%,#49d5c5_100%)] bg-clip-text text-[clamp(2.8rem,4.6vw,4.9rem)] text-transparent">{t('redesign.media.title')}</h2>
+            <h2 className="bma-section-title mt-5 bg-[linear-gradient(100deg,#ffffff_8%,#ffffff_36%,#e7c55f_68%,#49d5c5_100%)] bg-clip-text text-transparent">{t('redesign.media.title')}</h2>
             <p className="bma-lede mt-6">{t('redesign.media.description')}</p>
           </motion.div>
 
@@ -407,7 +407,7 @@ export default function BeatBreezePage() {
         <div className="bma-container grid gap-12 lg:grid-cols-[0.78fr_1.22fr]">
           <motion.div {...reveal}>
             <p className="bma-kicker">{t('redesign.connections.eyebrow')}</p>
-            <h2 className="bma-display mt-5 bg-[linear-gradient(100deg,#ffffff_8%,#ffffff_38%,#e7c55f_70%,#49d5c5_100%)] bg-clip-text text-[clamp(2.65rem,4vw,4.2rem)] text-transparent">{t('redesign.connections.title')}</h2>
+            <h2 className="bma-section-title mt-5 bg-[linear-gradient(100deg,#ffffff_8%,#ffffff_38%,#e7c55f_70%,#49d5c5_100%)] bg-clip-text text-transparent">{t('redesign.connections.title')}</h2>
             <p className="bma-lede mt-6">{t('redesign.connections.description')}</p>
           </motion.div>
           <div className="relative">
@@ -424,7 +424,7 @@ export default function BeatBreezePage() {
 
       <section className="border-y border-white/[0.08] bg-[#081521] px-5 py-16 sm:px-8 lg:px-16">
         <div className="bma-container grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
-          <motion.div {...reveal}><p className="bma-kicker">{t('product.playersLabel')}</p><h2 className="bma-display mt-5 text-[clamp(2.4rem,3.5vw,3.8rem)]">{t('product.playersTitle')}</h2></motion.div>
+          <motion.div {...reveal}><p className="bma-kicker">{t('product.playersLabel')}</p><h2 className="bma-section-title mt-5 text-white">{t('product.playersTitle')}</h2></motion.div>
           <motion.div {...reveal} className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {[[Smartphone, t('product.mobile')], [Laptop, t('product.windows')], [MonitorPlay, t('product.web')], [Music2, t('product.offline')]].map(([Icon, label]) => { const DeviceIcon = Icon as typeof Smartphone; return <div key={label as string} className="rounded-2xl border border-white/[0.08] bg-white/[0.025] p-5"><DeviceIcon className="h-5 w-5 text-brand-orange" /><p className="mt-6 text-sm text-white/64">{label as string}</p></div>; })}
           </motion.div>
@@ -434,7 +434,7 @@ export default function BeatBreezePage() {
       <section className="bma-grain relative overflow-hidden px-5 py-24 text-center sm:px-8 md:py-36 lg:px-16">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_100%,rgba(239,166,52,.19),transparent_46%),radial-gradient(circle_at_75%_0,rgba(73,213,197,.08),transparent_32%)]" />
         <motion.div {...reveal} className="relative mx-auto max-w-4xl">
-          <h2 className="bma-display bg-gradient-to-r from-brand-orange via-[#e6cf74] to-[#49d5c5] bg-clip-text text-[clamp(2.8rem,4.6vw,4.9rem)] text-transparent">{t('redesign.final.title')}</h2>
+          <h2 className="bma-section-title bg-gradient-to-r from-brand-orange via-[#e6cf74] to-[#49d5c5] bg-clip-text text-transparent">{t('redesign.final.title')}</h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/52">{t('redesign.final.description')}</p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <a href={withAttribution(EXTERNAL_LINKS.beatBreezeSignup, 'beat_breeze_product', 'final_trial')} className="bma-button-primary min-h-14 px-8">{t('redesign.hero.trial')} <ArrowRight className="h-4 w-4" /></a>

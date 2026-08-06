@@ -95,7 +95,7 @@ export default function Home() {
         <div className="mx-auto max-w-[1480px]">
           <motion.div {...reveal} className="mx-auto max-w-4xl text-center">
             <p className="font-label text-[11px] uppercase tracking-[0.28em] text-brand-orange">{h('immersive.worlds.eyebrow')}</p>
-            <h2 className="mt-5 text-balance font-headline text-5xl font-medium leading-[0.98] tracking-[-0.055em] text-white md:text-7xl">
+            <h2 className="bma-section-title mt-5 text-balance text-white">
               {h('immersive.worlds.title')}{' '}
               <span className="bg-gradient-to-r from-[#e8850c] via-[#d9bd61] to-[#00d4c8] bg-clip-text text-transparent">
                 {h('immersive.worlds.highlight')}
@@ -125,7 +125,7 @@ export default function Home() {
               </div>
               <div className="flex flex-1 flex-col p-7 sm:p-10">
                 <p className="font-label text-[10px] uppercase tracking-[0.2em] text-brand-orange">{h('twoSolutions.bb.badge')}</p>
-                <h3 className="mt-3 bg-gradient-to-r from-[#e8850c] via-[#e7b94e] via-[55%] to-[#00d4c8] bg-clip-text font-headline text-4xl font-medium tracking-[-0.045em] text-transparent sm:text-5xl xl:min-h-[58px]">Beat Breeze</h3>
+                <h3 className="bma-subsection-title mt-3 bg-gradient-to-r from-[#e8850c] via-[#e7b94e] via-[55%] to-[#00d4c8] bg-clip-text text-transparent xl:min-h-[58px]">Beat Breeze</h3>
                 <p className="mt-4 max-w-2xl text-pretty text-lg leading-8 text-white/52 xl:min-h-[64px]">{h('twoSolutions.bb.tagline')}</p>
                 <ul className="mt-8 grid gap-3 sm:grid-cols-2">
                   {beatBreezeBenefits.map((benefit) => (
@@ -176,7 +176,7 @@ export default function Home() {
               </div>
               <div className="flex flex-1 flex-col p-7 sm:p-10">
                 <p className="font-label text-[10px] uppercase tracking-[0.2em] text-[#c9b2ff]">{h('twoSolutions.syb.badge')}</p>
-                <h3 className="mt-3 text-balance font-headline text-4xl font-medium tracking-[-0.045em] text-white sm:text-5xl xl:min-h-[58px]">Soundtrack Your Brand</h3>
+                <h3 className="bma-subsection-title mt-3 text-balance text-white xl:min-h-[58px]">Soundtrack Your Brand</h3>
                 <p className="mt-4 text-pretty text-lg leading-8 text-[#eee6ff]/58 xl:min-h-[64px]">{h('alternative.description')}</p>
                 <ul className="mt-8 grid gap-3 sm:grid-cols-2">
                   {soundtrackBenefits.map((benefit) => (
@@ -221,7 +221,7 @@ export default function Home() {
           <motion.div {...reveal} className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
             <div className="max-w-2xl">
               <p className="font-label text-[11px] uppercase tracking-[0.28em] text-brand-orange">{h('industries.sectionTitle')}</p>
-              <h2 className="mt-5 text-balance font-headline text-4xl font-medium leading-[0.98] tracking-[-0.052em] text-white md:text-6xl">{h('industries.sectionSubtitle')}</h2>
+              <h2 className="bma-section-title mt-5 max-w-4xl text-balance text-white">{h('industries.sectionSubtitle')}</h2>
             </div>
             <Link href={`/${locale}/quotation`} className="group inline-flex shrink-0 items-center gap-3 whitespace-nowrap text-sm font-semibold text-white/65 hover:text-white">
               {h('twoSolutions.notSureCta')} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
@@ -236,7 +236,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#070d17] via-[#070d17]/45 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 p-7 md:p-8">
                     <p className="font-label text-[10px] uppercase tracking-[0.22em] text-brand-orange">0{index + 1}</p>
-                    <h3 className="mt-3 text-balance font-headline text-3xl font-medium text-white">{h(`industries.${industry.key}.title`)}</h3>
+                    <h3 className="bma-card-title mt-3 text-balance text-white">{h(`industries.${industry.key}.title`)}</h3>
                     <p className="mt-3 max-w-sm text-pretty leading-7 text-white/60">{h(`industries.${industry.key}.desc`)}</p>
                   </div>
                 </Link>
@@ -250,7 +250,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_100%,rgba(232,133,12,0.18),transparent_40%),radial-gradient(circle_at_75%_100%,rgba(0,212,200,0.11),transparent_42%)]" aria-hidden="true" />
         <motion.div {...reveal} className="relative mx-auto max-w-4xl text-center">
           <Compass className="mx-auto h-9 w-9 text-brand-orange" strokeWidth={1.5} aria-hidden="true" />
-          <h2 className="mt-7 text-balance font-headline text-5xl font-medium leading-[0.98] tracking-[-0.055em] text-white md:text-7xl">
+          <h2 className="bma-section-title mt-7 text-balance text-white">
             {h('finalCta.title')}{' '}
             <span className="bg-gradient-to-r from-brand-orange via-[#d9bd61] to-[#42d6ca] bg-clip-text text-transparent">{h('finalCta.titleHighlight')}</span>
           </h2>

@@ -45,13 +45,13 @@ export default function QuotationPage() {
             className="xl:sticky xl:top-28 xl:self-start"
           >
             <p className="bma-kicker">{t('hero.label')}</p>
-            <h1 className="bma-display mt-6 max-w-3xl text-[clamp(3.55rem,7vw,6.45rem)]">
+            <h1 className="bma-display bma-page-title mt-6 max-w-3xl">
               {t('hero.title')}{' '}
               <span className="bg-[linear-gradient(96deg,#efa634_0%,#e7c762_46%,#49d5c5_100%)] bg-clip-text text-transparent">
                 {t('hero.titleHighlight')}
               </span>
             </h1>
-            <p className="bma-lede mt-7 max-w-xl text-lg sm:text-xl">{t('hero.subtitle')}</p>
+            <p className="bma-lede mt-7 max-w-xl">{t('hero.subtitle')}</p>
 
             <VenueSignal label={t('formHeader.title')} />
 
@@ -87,7 +87,7 @@ export default function QuotationPage() {
               <div className="relative mb-8 flex flex-col gap-5 border-b border-white/[0.08] pb-7 sm:flex-row sm:items-end sm:justify-between">
                 <div>
                   <p className="font-label text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#efa634]">{t('interface.venueBrief')}</p>
-                  <h2 className="mt-4 font-headline text-[clamp(2.1rem,4vw,3.15rem)] font-medium leading-[1] tracking-[-0.05em] text-white">{t('formHeader.title')}</h2>
+                  <h2 className="bma-subsection-title mt-4 text-white">{t('formHeader.title')}</h2>
                   <p className="mt-3 max-w-xl text-sm leading-6 text-white/46 sm:text-base sm:leading-7">{t('formHeader.subtitle')}</p>
                 </div>
                 <div className="hidden h-12 w-12 shrink-0 place-items-center rounded-full border border-[#49d5c5]/20 bg-[#49d5c5]/[0.055] text-[#49d5c5] sm:grid" aria-hidden="true">
@@ -105,7 +105,7 @@ export default function QuotationPage() {
         <div className="bma-container relative grid gap-10 lg:grid-cols-[.82fr_1.18fr] lg:items-end">
           <div>
             <p className="bma-kicker">{t('interface.liveWalkthrough')}</p>
-            <h2 className="bma-display mt-5 max-w-2xl text-[clamp(2.6rem,4.6vw,4.8rem)]">
+            <h2 className="bma-section-title mt-5 max-w-2xl text-white">
               {t('demoCta.title')}{' '}
               <span className="bg-[linear-gradient(96deg,#efa634,#e7c762,#49d5c5)] bg-clip-text text-transparent">{t('demoCta.titleHighlight')}</span>
             </h2>
