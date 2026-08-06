@@ -111,6 +111,7 @@
   "bookingPage": {
     "metadataTitle": "Đặt lịch demo BMAsia",
     "metadataDescription": "Chọn thời gian tư vấn với BMAsia qua Google Meet hoặc Microsoft Teams.",
+    "metadataImageAlt": "BMAsia - Wherever Music Matters",
     "eyebrow": "Tư vấn trực tiếp",
     "title": "Đặt một cuộc trò chuyện,",
     "titleHighlight": "ngay trên trang này.",
@@ -1298,6 +1299,13 @@
     }
   },
   "quotationPage": {
+    "interface": {
+      "formLoading": "Đang tải biểu mẫu báo giá",
+      "venueBrief": "Thông tin địa điểm / 01",
+      "liveWalkthrough": "Trình diễn trực tiếp",
+      "beatBreeze": "Beat Breeze",
+      "soundtrack": "Soundtrack"
+    },
     "hero": {
       "label": "Bắt đầu",
       "title": "Yêu cầu",

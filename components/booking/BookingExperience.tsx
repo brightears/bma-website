@@ -200,6 +200,7 @@ export function BookingExperience() {
                     <button
                       type="button"
                       key={key}
+                      aria-pressed={active}
                       onClick={() => { setSelectedDate(key); setSelectedStart(''); }}
                       className={`min-h-[5.3rem] rounded-2xl border px-3 text-left transition ${active ? 'border-[#efa634]/65 bg-[#efa634]/10 text-white shadow-[0_0_35px_rgba(239,166,52,.08)]' : 'border-white/10 bg-white/[0.018] text-white/52 hover:border-white/25 hover:text-white'}`}
                     >
@@ -220,6 +221,7 @@ export function BookingExperience() {
                   <button
                     type="button"
                     key={slot.start}
+                    aria-pressed={active}
                     onClick={() => setSelectedStart(slot.start)}
                     className={`min-h-12 rounded-xl border font-mono text-sm transition ${active ? 'border-[#49d5c5]/65 bg-[#49d5c5]/10 text-[#8be9dd]' : 'border-white/10 bg-white/[0.018] text-white/55 hover:border-white/25 hover:text-white'}`}
                   >
@@ -287,7 +289,7 @@ function BookingStep({ number, title, Icon, className = '', children }: { number
 
 function ProviderButton({ active, onClick, Icon, title }: { active: boolean; onClick: () => void; Icon: typeof Video; title: string }) {
   return (
-    <button type="button" onClick={onClick} className={`flex min-h-[5rem] items-center gap-3 rounded-2xl border px-4 text-left transition ${active ? 'border-[#efa634]/60 bg-[#efa634]/10 text-white' : 'border-white/10 bg-white/[0.018] text-white/50 hover:border-white/25 hover:text-white'}`}>
+    <button type="button" aria-pressed={active} onClick={onClick} className={`flex min-h-[5rem] items-center gap-3 rounded-2xl border px-4 text-left transition ${active ? 'border-[#efa634]/60 bg-[#efa634]/10 text-white' : 'border-white/10 bg-white/[0.018] text-white/50 hover:border-white/25 hover:text-white'}`}>
       <span className={`grid h-10 w-10 place-items-center rounded-full ${active ? 'bg-[#efa634]/15 text-[#efa634]' : 'bg-white/[0.04]'}`}><Icon className="h-4 w-4" /></span>
       <span className="font-label text-sm font-semibold">{title}</span>
       {active && <Check className="ml-auto h-4 w-4 text-[#49d5c5]" />}

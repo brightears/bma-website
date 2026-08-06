@@ -11,8 +11,13 @@ import { LineLink, WhatsAppLink } from '@/components/icons';
 
 const QuotationForm = dynamic(() => import('@/components/forms/QuotationForm').then((mod) => mod.QuotationForm), {
   ssr: false,
-  loading: () => <div className="min-h-[52rem] animate-pulse rounded-[1.75rem] bg-white/[0.025]" aria-label="Loading form" />,
+  loading: () => <QuotationFormLoading />,
 });
+
+function QuotationFormLoading() {
+  const t = useTranslations('quotationPage');
+  return <div className="min-h-[52rem] animate-pulse rounded-[1.75rem] bg-white/[0.025]" role="status" aria-label={t('interface.formLoading')} />;
+}
 
 const EXPECT_ITEMS = ['fastResponse', 'noObligation', 'tailored'] as const;
 
@@ -81,7 +86,7 @@ export default function QuotationPage() {
               <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#49d5c5]/[0.055] blur-3xl" aria-hidden="true" />
               <div className="relative mb-8 flex flex-col gap-5 border-b border-white/[0.08] pb-7 sm:flex-row sm:items-end sm:justify-between">
                 <div>
-                  <p className="font-label text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#efa634]">VENUE BRIEF / 01</p>
+                  <p className="font-label text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#efa634]">{t('interface.venueBrief')}</p>
                   <h2 className="mt-4 font-headline text-[clamp(2.1rem,4vw,3.15rem)] font-medium leading-[1] tracking-[-0.05em] text-white">{t('formHeader.title')}</h2>
                   <p className="mt-3 max-w-xl text-sm leading-6 text-white/46 sm:text-base sm:leading-7">{t('formHeader.subtitle')}</p>
                 </div>
@@ -99,7 +104,7 @@ export default function QuotationPage() {
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_100%,rgba(239,166,52,.12),transparent_34%),radial-gradient(circle_at_82%_0,rgba(73,213,197,.08),transparent_31%)]" aria-hidden="true" />
         <div className="bma-container relative grid gap-10 lg:grid-cols-[.82fr_1.18fr] lg:items-end">
           <div>
-            <p className="bma-kicker">LIVE WALKTHROUGH</p>
+            <p className="bma-kicker">{t('interface.liveWalkthrough')}</p>
             <h2 className="bma-display mt-5 max-w-2xl text-[clamp(2.6rem,4.6vw,4.8rem)]">
               {t('demoCta.title')}{' '}
               <span className="bg-[linear-gradient(96deg,#efa634,#e7c762,#49d5c5)] bg-clip-text text-transparent">{t('demoCta.titleHighlight')}</span>
@@ -114,7 +119,7 @@ export default function QuotationPage() {
             <ProductRoute
               href={`/${locale}/beat-breeze`}
               Icon={Music2}
-              title="Beat Breeze"
+              title={t('interface.beatBreeze')}
               description={t('ourSolutions.bbTagline')}
               className="border-[#49d5c5]/18 bg-[linear-gradient(145deg,rgba(239,166,52,.075),rgba(73,213,197,.035))]"
               iconClassName="text-[#49d5c5]"
@@ -122,7 +127,7 @@ export default function QuotationPage() {
             <ProductRoute
               href={`/${locale}/soundtrack-your-brand`}
               Icon={Headphones}
-              title="Soundtrack"
+              title={t('interface.soundtrack')}
               description={t('ourSolutions.sybTagline')}
               className="border-[#d6c2ff]/18 bg-[linear-gradient(145deg,rgba(214,194,255,.075),rgba(61,29,75,.09))]"
               iconClassName="text-[#d6c2ff]"

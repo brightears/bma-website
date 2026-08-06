@@ -38,19 +38,26 @@ export class BookingSlotConflictError extends Error {
 let googleTokenCache: AccessTokenCache | null = null;
 let microsoftTokenCache: AccessTokenCache | null = null;
 
-const getNumber = (name: string, fallback: number) => {
+const getPositiveInteger = (name: string, fallback: number) => {
   const parsed = Number(process.env[name]);
-  return Number.isFinite(parsed) ? parsed : fallback;
+  return Number.isInteger(parsed) && parsed > 0 ? parsed : fallback;
 };
 
 export const BOOKING_TIME_ZONE = process.env.BOOKING_TIME_ZONE || 'Asia/Bangkok';
-export const BOOKING_DURATION_MINUTES = getNumber('BOOKING_DURATION_MINUTES', 30);
-const BOOKING_START_HOUR = getNumber('BOOKING_START_HOUR', 10);
-const BOOKING_END_HOUR = getNumber('BOOKING_END_HOUR', 17);
-const BOOKING_INTERVAL_MINUTES = getNumber('BOOKING_INTERVAL_MINUTES', 30);
-const BOOKING_LEAD_HOURS = getNumber('BOOKING_LEAD_HOURS', 24);
-const BOOKING_HORIZON_DAYS = Math.min(60, Math.max(7, getNumber('BOOKING_HORIZON_DAYS', 35)));
-const BOOKING_BUFFER_MINUTES = getNumber('BOOKING_BUFFER_MINUTES', 15);
+export const BOOKING_DURATION_MINUTES = getPositiveInteger('BOOKING_DURATION_MINUTES', 30);
+const rawStartHour = Number(process.env.BOOKING_START_HOUR ?? 10);
+const rawEndHour = Number(process.env.BOOKING_END_HOUR ?? 17);
+const validHourWindow = Number.isInteger(rawStartHour)
+  && Number.isInteger(rawEndHour)
+  && rawStartHour >= 0
+  && rawEndHour <= 24
+  && rawStartHour < rawEndHour;
+const BOOKING_START_HOUR = validHourWindow ? rawStartHour : 10;
+const BOOKING_END_HOUR = validHourWindow ? rawEndHour : 17;
+const BOOKING_INTERVAL_MINUTES = getPositiveInteger('BOOKING_INTERVAL_MINUTES', 30);
+const BOOKING_LEAD_HOURS = getPositiveInteger('BOOKING_LEAD_HOURS', 24);
+const BOOKING_HORIZON_DAYS = Math.min(60, Math.max(7, getPositiveInteger('BOOKING_HORIZON_DAYS', 35)));
+const BOOKING_BUFFER_MINUTES = getPositiveInteger('BOOKING_BUFFER_MINUTES', 15);
 
 const googleConfigured = () => Boolean(
   process.env.NATIVE_BOOKING_ENABLED === 'true'
@@ -331,6 +338,19 @@ async function createTeamsMeeting(request: BookingRequest) {
   return payload;
 }
 
+async function deleteTeamsMeeting(meetingId: string) {
+  const organizer = process.env.MICROSOFT_BOOKING_ORGANIZER_ID;
+  if (!organizer) return;
+  const token = await getMicrosoftAccessToken();
+  const response = await fetch(`https://graph.microsoft.com/v1.0/users/${encodeURIComponent(organizer)}/onlineMeetings/${encodeURIComponent(meetingId)}`, {
+    method: 'DELETE',
+    headers: { Authorization: `Bearer ${token}` },
+    cache: 'no-store',
+    signal: AbortSignal.timeout(12_000),
+  });
+  if (!response.ok && response.status !== 404) throw new Error(`Microsoft Teams meeting cleanup failed with ${response.status}`);
+}
+
 export async function createBooking(request: BookingRequest) {
   const eventId = eventIdFor(request.start);
   const existing = await getGoogleEvent(eventId);
@@ -352,11 +372,13 @@ export async function createBooking(request: BookingRequest) {
   const reservation = await insertGoogleEvent(request, { eventId, reserveOnly: true });
   if (!reservation) throw new Error('Google Calendar did not return a reservation');
   assertEventOwnership(reservation, request.requestId);
+  let teamsMeeting: { id?: string; joinWebUrl?: string } | undefined;
   try {
-    const teamsMeeting = await createTeamsMeeting(request);
+    teamsMeeting = await createTeamsMeeting(request);
     const event = await patchGoogleEventWithTeams(request, eventId, teamsMeeting.joinWebUrl!);
     return { eventId: event.id, htmlLink: event.htmlLink, alreadyExists: false };
   } catch (error) {
+    if (teamsMeeting?.id) await deleteTeamsMeeting(teamsMeeting.id).catch(() => undefined);
     await deleteGoogleEvent(eventId).catch(() => undefined);
     throw error;
   }

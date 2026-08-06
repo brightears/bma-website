@@ -13,6 +13,7 @@ import { EscalationModal } from './EscalationModal';
 export function ChatPanel() {
   const t = useTranslations('chat');
   const common = useTranslations('common');
+  const navigation = useTranslations('navigation');
   const locale = useLocale();
   const pathname = usePathname();
   const {
@@ -41,14 +42,16 @@ export function ChatPanel() {
     const previous = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
     const focus = window.setTimeout(() => inputRef.current?.focus(), 320);
-    const escape = (event: globalThis.KeyboardEvent) => { if (event.key === 'Escape') closePanel(); };
+    const escape = (event: globalThis.KeyboardEvent) => {
+      if (event.key === 'Escape' && !showEscalationModal) closePanel();
+    };
     document.addEventListener('keydown', escape);
     return () => {
       window.clearTimeout(focus);
       document.body.style.overflow = previous;
       document.removeEventListener('keydown', escape);
     };
-  }, [closePanel, isOpen]);
+  }, [closePanel, isOpen, showEscalationModal]);
 
   const handleSend = useCallback(() => {
     const value = inputValue.trim();
@@ -67,14 +70,23 @@ export function ChatPanel() {
   const routeLabel = (action: string) => {
     if (action === 'book-demo') return common('bookDemo');
     if (action === 'quotation') return common('getQuote');
-    if (action === 'licensing') return t('quickActions.licensing');
+    if (action === 'licensing') return navigation('licensing');
     if (action === 'soundtrack-trial') return t('trialAction');
-    if (action === 'soundtrack-your-brand') return 'Soundtrack';
-    if (action === 'beat-breeze') return 'Beat Breeze';
+    if (action === 'soundtrack-your-brand') return navigation('soundtrack');
+    if (action === 'beat-breeze') return navigation('beatBreeze');
     return action;
   };
 
-  const pageName = pathname.split('/').filter(Boolean).slice(1).join(' · ').replaceAll('-', ' ') || t('homeContext');
+  const pageRoute = pathname.split('/').filter(Boolean)[1] || '';
+  const pageName = pageRoute === 'beat-breeze' ? navigation('beatBreeze')
+    : pageRoute === 'soundtrack-your-brand' ? navigation('soundtrack')
+      : pageRoute === 'how-it-works' ? navigation('howItWorks')
+        : pageRoute === 'quotation' ? common('getQuote')
+          : pageRoute === 'book-demo' ? common('bookDemo')
+            : pageRoute === 'licensing' ? navigation('licensing')
+              : pageRoute === 'soundtrack-trial' ? t('trialAction')
+                : pageRoute === 'solutions' ? navigation('solutions')
+                  : t('homeContext');
   const canSend = inputValue.trim().length > 0 && !isConnecting && !isTyping;
 
   return (

@@ -111,6 +111,7 @@
   "bookingPage": {
     "metadataTitle": "Book a BMAsia demo",
     "metadataDescription": "Choose a time for a focused BMAsia consultation and meet on Google Meet or Microsoft Teams.",
+    "metadataImageAlt": "BMAsia - Wherever Music Matters",
     "eyebrow": "Live consultation",
     "title": "Book a conversation,",
     "titleHighlight": "without leaving the flow.",
@@ -1298,6 +1299,13 @@
     }
   },
   "quotationPage": {
+    "interface": {
+      "formLoading": "Loading quotation form",
+      "venueBrief": "Venue brief / 01",
+      "liveWalkthrough": "Live walkthrough",
+      "beatBreeze": "Beat Breeze",
+      "soundtrack": "Soundtrack"
+    },
     "hero": {
       "label": "Get Started",
       "title": "Request a",

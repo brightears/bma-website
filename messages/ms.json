@@ -111,6 +111,7 @@
   "bookingPage": {
     "metadataTitle": "Tempah demo BMAsia",
     "metadataDescription": "Pilih masa untuk rundingan BMAsia melalui Google Meet atau Microsoft Teams.",
+    "metadataImageAlt": "BMAsia - Wherever Music Matters",
     "eyebrow": "Rundingan langsung",
     "title": "Tempah perbualan,",
     "titleHighlight": "tanpa meninggalkan laman ini.",
@@ -1298,6 +1299,13 @@
     }
   },
   "quotationPage": {
+    "interface": {
+      "formLoading": "Memuatkan borang sebut harga",
+      "venueBrief": "Ringkasan premis / 01",
+      "liveWalkthrough": "Demonstrasi langsung",
+      "beatBreeze": "Beat Breeze",
+      "soundtrack": "Soundtrack"
+    },
     "hero": {
       "label": "Mulakan",
       "title": "Mohon",

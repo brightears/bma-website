@@ -18,6 +18,7 @@ export function FloatingChatButton() {
   const [showNudge, setShowNudge] = useState(false);
 
   useEffect(() => {
+    setShowNudge(false);
     const reveal = window.setTimeout(() => setVisible(true), 1_200);
     const lastDismissed = Number(window.localStorage.getItem(NUDGE_KEY) || 0);
     const mayNudge = Date.now() - lastDismissed > NUDGE_INTERVAL;

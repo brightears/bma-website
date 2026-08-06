@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       url: `${SITE.url}/${locale}/book-demo/`,
       siteName: SITE.name,
       type: 'website',
-      images: [{ url: `${SITE.url}/images/og-image.jpg`, width: 1200, height: 630, alt: 'BMAsia - Wherever Music Matters' }],
+      images: [{ url: `${SITE.url}/images/og-image.jpg`, width: 1200, height: 630, alt: t('metadataImageAlt') }],
     },
   };
 }

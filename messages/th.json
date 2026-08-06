@@ -111,6 +111,7 @@
   "bookingPage": {
     "metadataTitle": "จองเดโมกับ BMAsia",
     "metadataDescription": "เลือกเวลาพูดคุยกับ BMAsia ผ่าน Google Meet หรือ Microsoft Teams",
+    "metadataImageAlt": "BMAsia - Wherever Music Matters",
     "eyebrow": "คำปรึกษาแบบสด",
     "title": "จองเวลาพูดคุย",
     "titleHighlight": "ได้โดยไม่ต้องออกจากเว็บไซต์",
@@ -1311,6 +1312,13 @@
     }
   },
   "quotationPage": {
+    "interface": {
+      "formLoading": "กำลังโหลดแบบฟอร์มใบเสนอราคา",
+      "venueBrief": "ข้อมูลสถานที่ / 01",
+      "liveWalkthrough": "สาธิตแบบสด",
+      "beatBreeze": "Beat Breeze",
+      "soundtrack": "Soundtrack"
+    },
     "hero": {
       "label": "เริ่มต้นใช้งาน",
       "title": "ขอ",

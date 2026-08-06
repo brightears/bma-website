@@ -111,6 +111,7 @@
   "bookingPage": {
     "metadataTitle": "BMAsiaデモを予約",
     "metadataDescription": "Google MeetまたはMicrosoft TeamsでBMAsiaとの相談時間を選択できます。",
+    "metadataImageAlt": "BMAsia - Wherever Music Matters",
     "eyebrow": "ライブ相談",
     "title": "相談を予約。",
     "titleHighlight": "このページから直接。",
@@ -1298,6 +1299,13 @@
     }
   },
   "quotationPage": {
+    "interface": {
+      "formLoading": "見積もりフォームを読み込み中",
+      "venueBrief": "施設概要 / 01",
+      "liveWalkthrough": "ライブデモ",
+      "beatBreeze": "Beat Breeze",
+      "soundtrack": "Soundtrack"
+    },
     "hero": {
       "label": "はじめる",
       "title": "お見積もりを",

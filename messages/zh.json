@@ -111,6 +111,7 @@
   "bookingPage": {
     "metadataTitle": "预约 BMAsia 演示",
     "metadataDescription": "选择时间，通过 Google Meet 或 Microsoft Teams 与 BMAsia 进行咨询。",
+    "metadataImageAlt": "BMAsia - Wherever Music Matters",
     "eyebrow": "在线咨询",
     "title": "预约一次对话，",
     "titleHighlight": "无需离开本页。",
@@ -1298,6 +1299,13 @@
     }
   },
   "quotationPage": {
+    "interface": {
+      "formLoading": "正在加载报价表单",
+      "venueBrief": "场所简报 / 01",
+      "liveWalkthrough": "在线演示",
+      "beatBreeze": "Beat Breeze",
+      "soundtrack": "Soundtrack"
+    },
     "hero": {
       "label": "开始",
       "title": "申请",

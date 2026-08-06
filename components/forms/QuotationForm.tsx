@@ -117,6 +117,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({ onSuccess, onError
   const selectedSolution = watch('preferredSolution');
 
   const onSubmit = async (data: QuotationFormData) => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
     setStatus('idle');
     setErrorMessage('');
 
@@ -323,7 +324,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({ onSuccess, onError
               return (
                 <label
                   key={solution.value}
-                  className={`group relative flex min-h-24 cursor-pointer flex-col justify-between overflow-hidden rounded-2xl border p-4 transition duration-200 ${
+                  className={`group relative flex min-h-24 cursor-pointer flex-col justify-between overflow-hidden rounded-2xl border p-4 transition duration-200 focus-within:border-[#49d5c5]/60 focus-within:ring-2 focus-within:ring-[#49d5c5]/25 ${
                     active ? 'border-white/30 bg-white/[0.075]' : 'border-white/[0.09] bg-white/[0.025] hover:border-white/20 hover:bg-white/[0.045]'
                   }`}
                 >
