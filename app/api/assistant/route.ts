@@ -31,18 +31,12 @@ async function isFlagged(input: string, apiKey: string) {
   return Boolean(payload.results?.[0]?.flagged);
 }
 
-async function openAIReply(message: string, history: AssistantTurn[], pagePath: string, locale: Locale, apiKey: string) {
+async function openAIReply(message: string, history: AssistantTurn[], pagePath: string, locale: Locale, sessionId: string, apiKey: string) {
   if (await isFlagged(message, apiKey)) return guidedReply('', locale);
-  const input = [
-    ...history.slice(-8).map((turn) => ({
-      role: turn.role === 'agent' ? 'assistant' as const : 'user' as const,
-      content: [{ type: turn.role === 'agent' ? 'output_text' as const : 'input_text' as const, text: clean(turn.text, 1_200) }],
-    })),
-    {
-      role: 'user' as const,
-      content: [{ type: 'input_text' as const, text: `Current page: ${pagePath || '/'}\nVisitor locale: ${locale}\nQuestion: ${message}` }],
-    },
-  ];
+  const recentConversation = history.slice(-8)
+    .map((turn) => `${turn.role === 'agent' ? 'BMAsia guide' : 'Visitor'}: ${clean(turn.text, 1_200)}`)
+    .join('\n');
+  const input = `${recentConversation ? `Recent conversation:\n${recentConversation}\n\n` : ''}Current page: ${pagePath || '/'}\nVisitor locale: ${locale}\nVisitor question: ${message}`;
   const response = await fetch('https://api.openai.com/v1/responses', {
     method: 'POST',
     headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
@@ -52,6 +46,9 @@ async function openAIReply(message: string, history: AssistantTurn[], pagePath: 
       input,
       max_output_tokens: 450,
       store: false,
+      reasoning: { effort: 'none' },
+      text: { verbosity: 'low' },
+      safety_identifier: sessionId,
     }),
     signal: AbortSignal.timeout(18_000),
     cache: 'no-store',
@@ -68,11 +65,12 @@ export async function POST(request: NextRequest) {
   if (rateLimit.isLimited) return NextResponse.json({ error: 'Too many messages.' }, { status: 429 });
 
   try {
-    const body = await request.json() as { message?: unknown; locale?: unknown; pagePath?: unknown; history?: unknown };
+    const body = await request.json() as { message?: unknown; locale?: unknown; pagePath?: unknown; history?: unknown; sessionId?: unknown };
     const message = clean(body.message, 1_200);
     const requestedLocale = clean(body.locale, 8) as Locale;
     const locale = locales.includes(requestedLocale) ? requestedLocale : 'en';
     const pagePath = clean(body.pagePath, 240);
+    const sessionId = clean(body.sessionId, 100) || `anonymous-${crypto.randomUUID()}`;
     const history = Array.isArray(body.history)
       ? body.history.slice(-8).map((turn) => {
         const item = turn as Partial<AssistantTurn>;
@@ -86,7 +84,7 @@ export async function POST(request: NextRequest) {
     const apiKey = process.env.OPENAI_API_KEY;
     if (apiKey) {
       try {
-        reply = await openAIReply(message, history, pagePath, locale, apiKey);
+        reply = await openAIReply(message, history, pagePath, locale, sessionId, apiKey);
         mode = 'ai';
       } catch (error) {
         console.error('Assistant provider fallback:', error instanceof Error ? error.message : 'unknown error');

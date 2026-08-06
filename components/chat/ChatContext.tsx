@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useState, useCallback, ReactNode } from 'react';
+import { createContext, useContext, useState, useCallback, useRef, ReactNode } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname } from 'next/navigation';
 
@@ -51,6 +51,7 @@ export function ChatProvider({ children }: ChatProviderProps) {
   const t = useTranslations('chat');
   const locale = useLocale();
   const pathname = usePathname();
+  const sessionIdRef = useRef(`web-${Date.now()}-${Math.random().toString(36).slice(2, 14)}`);
 
   // State
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -148,6 +149,7 @@ export function ChatProvider({ children }: ChatProviderProps) {
             locale,
             pagePath: pathname,
             history,
+            sessionId: sessionIdRef.current,
           }),
         });
 
