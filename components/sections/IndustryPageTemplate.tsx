@@ -83,8 +83,8 @@ export function IndustryPageTemplate({ config }: { config: IndustryConfig }) {
         <div className="bma-container grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
           <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .72 }}>
             <p className="font-label text-[11px] font-semibold uppercase tracking-[.25em] text-[var(--industry-accent)]">{tt('heroEyebrow', { industry: t('headline') })}</p>
-            <h1 className={`${styles.heroHeading} mt-6 font-headline text-[clamp(3.25rem,5.7vw,5.8rem)] font-medium leading-[.94] tracking-[-.056em]`}>{t('headline')}</h1>
-            <p className="mt-7 max-w-[42rem] text-base leading-7 text-white/62 sm:text-lg sm:leading-8">{t('subheadline')}</p>
+            <h1 className={`${styles.heroHeading} bma-page-title mt-6`}>{t('headline')}</h1>
+            <p className="bma-lede mt-7 max-w-[42rem] text-white/62">{t('subheadline')}</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link href={`/${locale}/quotation?industry=${config.slug}&source=industry-hero`} className="inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-[var(--industry-accent)] px-7 font-label text-sm font-semibold text-[#111820] transition hover:-translate-y-0.5 hover:brightness-110">
                 {tt('helpChoose')} <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -127,7 +127,7 @@ export function IndustryPageTemplate({ config }: { config: IndustryConfig }) {
           <motion.div {...reveal} className="grid gap-8 lg:grid-cols-[.72fr_1fr] lg:items-end">
             <div>
               <p className="font-label text-[11px] uppercase tracking-[.25em] text-[var(--industry-accent)]">{tt('dayEyebrow')}</p>
-              <h2 className={`${styles.sectionHeading} mt-5 max-w-3xl font-headline text-[clamp(2.75rem,5vw,4.25rem)] font-medium leading-[.98] tracking-[-.052em]`}>{tt('dayTitle')}</h2>
+              <h2 className={`${styles.sectionHeading} bma-section-title mt-5 max-w-3xl`}>{tt('dayTitle')}</h2>
             </div>
             <p className="max-w-2xl text-base leading-7 text-white/52 sm:text-lg sm:leading-8 lg:justify-self-end">{tt('dayDescription')}</p>
           </motion.div>
@@ -146,7 +146,7 @@ export function IndustryPageTemplate({ config }: { config: IndustryConfig }) {
                   </div>
                   <div className="absolute inset-x-6 bottom-6 sm:inset-x-8 sm:bottom-8">
                     <p className="font-label text-[10px] uppercase tracking-[.2em] text-[var(--industry-soft)]">{tt(`capabilities.${moment.capability}`)}</p>
-                    <h3 className="mt-3 max-w-xl font-headline text-3xl font-medium tracking-[-.035em] sm:text-4xl">{t(`zones.${zoneKey}.name`)}</h3>
+                    <h3 className="bma-card-title mt-3 max-w-xl">{t(`zones.${zoneKey}.name`)}</h3>
                     <p className="mt-3 max-w-xl text-sm leading-6 text-white/55 sm:text-base sm:leading-7">{t(`zones.${zoneKey}.description`)}</p>
                   </div>
                 </motion.article>
@@ -160,7 +160,7 @@ export function IndustryPageTemplate({ config }: { config: IndustryConfig }) {
         <div className="bma-container">
           <motion.div {...reveal} className="max-w-4xl">
             <p className="font-label text-[11px] uppercase tracking-[.25em] text-[var(--industry-accent)]">{tt('touchpointsEyebrow')}</p>
-            <h2 className={`${styles.sectionHeading} mt-5 font-headline text-[clamp(2.75rem,5vw,4.1rem)] font-medium leading-[.98] tracking-[-.052em]`}>{tt('touchpointsTitle')}</h2>
+            <h2 className={`${styles.sectionHeading} bma-section-title mt-5`}>{tt('touchpointsTitle')}</h2>
             <p className="mt-6 max-w-2xl text-base leading-7 text-white/52 sm:text-lg sm:leading-8">{tt('touchpointsDescription')}</p>
           </motion.div>
 
@@ -174,7 +174,7 @@ export function IndustryPageTemplate({ config }: { config: IndustryConfig }) {
                   <Image src={config.heroImage} alt="" fill className="object-cover opacity-[0.1] transition duration-700 group-hover:scale-105 group-hover:opacity-[0.16]" style={{ objectPosition: `${22 + index * 29}% center` }} sizes={index === 0 ? '(min-width: 1024px) 50vw, 100vw' : '(min-width: 1024px) 25vw, 100vw'} />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#07131e] via-[#07131e]/82 to-[#07131e]/28" />
                   <i className={styles.cardSpectrum} aria-hidden="true" />
-                  <div className="relative flex h-full flex-col"><span className="grid h-11 w-11 place-items-center rounded-2xl bg-[var(--industry-accent)]/[0.09] text-[var(--industry-accent)]"><Icon className="h-5 w-5" aria-hidden="true" /></span><p className="mt-auto font-label text-[9px] uppercase tracking-[.18em] text-[var(--industry-soft)]">{tt(`capabilities.${capability}`)}</p><h3 className="mt-3 font-headline text-2xl font-medium tracking-[-.03em]">{t(`zones.${key}.name`)}</h3><p className="mt-3 max-w-lg text-sm leading-6 text-white/50">{t(`zones.${key}.description`)}</p></div>
+                  <div className="relative flex h-full flex-col"><span className="grid h-11 w-11 place-items-center rounded-2xl bg-[var(--industry-accent)]/[0.09] text-[var(--industry-accent)]"><Icon className="h-5 w-5" aria-hidden="true" /></span><p className="mt-auto font-label text-[9px] uppercase tracking-[.18em] text-[var(--industry-soft)]">{tt(`capabilities.${capability}`)}</p><h3 className="bma-card-title mt-3">{t(`zones.${key}.name`)}</h3><p className="mt-3 max-w-lg text-sm leading-6 text-white/50">{t(`zones.${key}.description`)}</p></div>
                 </motion.article>
               );
             })}
@@ -192,7 +192,7 @@ export function IndustryPageTemplate({ config }: { config: IndustryConfig }) {
 
       <section className="bma-section border-y border-white/[0.08] bg-[#081521]">
         <div className="bma-container">
-          <motion.div {...reveal} className="text-center"><p className="font-label text-[11px] uppercase tracking-[.25em] text-[var(--industry-accent)]">{tt('productFitEyebrow')}</p><h2 className={`${styles.sectionHeading} mx-auto mt-5 max-w-4xl font-headline text-[clamp(2.75rem,5vw,4.1rem)] font-medium leading-[.98] tracking-[-.052em]`}>{tt('productFitTitle')}</h2><p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/50 sm:text-lg sm:leading-8">{tt('productFitDescription')}</p></motion.div>
+          <motion.div {...reveal} className="text-center"><p className="font-label text-[11px] uppercase tracking-[.25em] text-[var(--industry-accent)]">{tt('productFitEyebrow')}</p><h2 className={`${styles.sectionHeading} bma-section-title mx-auto mt-5 max-w-4xl`}>{tt('productFitTitle')}</h2><p className="bma-body mx-auto mt-6 max-w-2xl text-white/50">{tt('productFitDescription')}</p></motion.div>
           <div className="mt-12 grid gap-4 lg:grid-cols-2">
             <ProductFit href={`/${locale}/beat-breeze`} palette="beat" label="Beat Breeze" eyebrow={tt('beatBreeze.eyebrow')} text={tt('beatBreeze.text')} cta={tt('beatBreeze.cta')} />
             <ProductFit href={`/${locale}/soundtrack-your-brand`} palette="soundtrack" label="Soundtrack" eyebrow={tt('soundtrack.eyebrow')} text={tt('soundtrack.text')} cta={tt('soundtrack.cta')} />
@@ -203,7 +203,7 @@ export function IndustryPageTemplate({ config }: { config: IndustryConfig }) {
 
       <section className="bma-grain relative overflow-hidden px-5 py-24 text-center sm:px-8 md:py-28 lg:px-16">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_100%,color-mix(in_srgb,var(--industry-accent)_18%,transparent),transparent_48%)]" />
-        <motion.div {...reveal} className="relative mx-auto max-w-4xl"><Gauge className="mx-auto h-8 w-8 text-[var(--industry-accent)]" aria-hidden="true" /><h2 className={`${styles.sectionHeading} mt-7 font-headline text-[clamp(2.8rem,5vw,4.4rem)] font-medium leading-[.98] tracking-[-.052em]`}>{t('ctaHeadline')}</h2><p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/50 sm:text-lg sm:leading-8">{tt('finalDescription')}</p><div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row"><Link href={`/${locale}/quotation?industry=${config.slug}&source=industry-final`} className="inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-[var(--industry-accent)] px-8 font-label text-sm font-semibold text-[#111820] hover:brightness-110">{tt('helpChoose')} <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link><Link href={`/${locale}/how-it-works`} className="bma-button-secondary min-h-14 px-8">{tt('howItWorks')}</Link></div></motion.div>
+        <motion.div {...reveal} className="relative mx-auto max-w-4xl"><Gauge className="mx-auto h-8 w-8 text-[var(--industry-accent)]" aria-hidden="true" /><h2 className={`${styles.sectionHeading} bma-section-title mt-7`}>{t('ctaHeadline')}</h2><p className="bma-body mx-auto mt-6 max-w-2xl text-white/50">{tt('finalDescription')}</p><div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row"><Link href={`/${locale}/quotation?industry=${config.slug}&source=industry-final`} className="inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-[var(--industry-accent)] px-8 font-label text-sm font-semibold text-[#111820] hover:brightness-110">{tt('helpChoose')} <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link><Link href={`/${locale}/how-it-works`} className="bma-button-secondary min-h-14 px-8">{tt('howItWorks')}</Link></div></motion.div>
       </section>
       </div>
     </MotionConfig>
@@ -245,7 +245,7 @@ function EvidenceSection({ evidence }: { evidence: EvidenceKey }) {
         <motion.article {...reveal} className={`${styles.evidencePanel} grid gap-10 p-7 sm:p-10 lg:grid-cols-[.86fr_1.14fr] lg:items-center lg:p-14`}>
           <div>
             <p className="font-label text-[11px] uppercase tracking-[.25em] text-[var(--industry-accent)]">{tt('evidence.eyebrow')}</p>
-            <h2 className={`${styles.sectionHeading} mt-5 max-w-xl font-headline text-[clamp(2.65rem,4.7vw,4rem)] font-medium leading-[.99] tracking-[-.052em]`}>{tt('evidence.title')}</h2>
+            <h2 className={`${styles.sectionHeading} bma-section-title mt-5 max-w-xl`}>{tt('evidence.title')}</h2>
             <p className="mt-6 max-w-xl text-sm leading-6 text-white/48 sm:text-base sm:leading-7">{tt('evidence.description')}</p>
           </div>
           <div className="rounded-[1.5rem] border border-white/[0.1] bg-[#07131e]/72 p-6 backdrop-blur-md sm:p-8">

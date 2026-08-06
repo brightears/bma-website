@@ -22,7 +22,7 @@ export function LegalDocument({ eyebrow, title, summary, updated, sections }: Le
       <div className="bma-container relative">
         <header className="max-w-4xl border-b border-white/10 pb-12 sm:pb-16">
           <p className="bma-kicker">{eyebrow}</p>
-          <h1 className="bma-display mt-5 text-[clamp(3.4rem,9vw,7.5rem)]">{title}</h1>
+          <h1 className="bma-display bma-page-title mt-5">{title}</h1>
           <p className="bma-lede mt-7 max-w-3xl">{summary}</p>
           <p className="mt-7 font-label text-xs uppercase tracking-[0.18em] text-white/38">{updated}</p>
         </header>
@@ -46,7 +46,7 @@ export function LegalDocument({ eyebrow, title, summary, updated, sections }: Le
                 <div className="grid gap-5 sm:grid-cols-[3rem_1fr]">
                   <span className="font-label text-xs tracking-[0.2em] text-[#f0a539]/60">{String(index + 1).padStart(2, '0')}</span>
                   <div>
-                    <h2 className="text-balance font-headline text-2xl font-medium tracking-[-0.035em] text-white sm:text-3xl">{section.title}</h2>
+                    <h2 className="bma-card-title text-balance text-white">{section.title}</h2>
                     <div className="mt-5 space-y-4 text-[1.02rem] leading-8 text-white/62">
                       {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                       {section.items && (

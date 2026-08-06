@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint . --max-warnings=0",
     "typecheck": "tsc --noEmit",
-    "check:locales": "node scripts/check-locales.mjs"
+    "check:locales": "node scripts/check-locales.mjs",
+    "check:typography": "node scripts/check-typography.mjs"
   },
   "dependencies": {
     "@elevenlabs/react": "^0.13.0",

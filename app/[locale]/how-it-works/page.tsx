@@ -61,7 +61,7 @@ export default function HowItWorksPage() {
               className={styles.heroCopy}
             >
               <p className="bma-kicker">{t('hero.label')}</p>
-              <h1 className={styles.heroTitle}>
+              <h1 className={`${styles.heroTitle} bma-page-title`}>
                 <span>{t('hero.title')}</span>{' '}
                 <em>{t('hero.titleHighlight')}</em>
               </h1>
@@ -132,7 +132,7 @@ export default function HowItWorksPage() {
           <div className={`${styles.processLayout} bma-container`}>
             <motion.header {...reveal} className={styles.processIntro}>
               <p className="bma-kicker">{t('stats.label')}</p>
-              <h2>{t('stats.sectionTitle')}</h2>
+              <h2 className="bma-section-title">{t('stats.sectionTitle')}</h2>
               <p>{t('stats.experience.desc')}</p>
               <div className={styles.processIndex} aria-hidden="true">
                 {STEPS.map(({ id }) => (
@@ -217,7 +217,7 @@ export default function HowItWorksPage() {
           <div className="bma-container relative">
             <motion.header {...reveal} className={styles.finalHeader}>
               <p className="bma-kicker">{t('hero.label')}</p>
-              <h2>{t('cta.title')}</h2>
+              <h2 className="bma-section-title">{t('cta.title')}</h2>
               <p>{immersive('worlds.description')}</p>
             </motion.header>
 
