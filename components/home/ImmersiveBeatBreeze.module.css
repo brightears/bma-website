@@ -134,6 +134,8 @@
 
 .hero h1 > span {
   display: block;
+  padding-bottom: 0.12em;
+  margin-bottom: -0.12em;
   background: linear-gradient(96deg, #f8f9ff 5%, #f8f9ff 58%, #f0c478 100%);
   background-clip: text;
   color: transparent;
