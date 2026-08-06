@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useLocale, useTranslations } from 'next-intl';
 import { ArrowRight, CheckCircle2, Disc3, FileCheck2, Landmark, TriangleAlert } from 'lucide-react';
-import { EXTERNAL_LINKS, withAttribution } from '@/lib/external-links';
 
 const RIGHTS = [
   { id: '01', icon: Disc3 },
@@ -73,7 +72,7 @@ export default function LicensingPage() {
           <h2 className="max-w-4xl text-balance font-headline text-5xl font-medium tracking-[-0.05em] text-white sm:text-7xl">{t('cta.title')} <span className="text-[#f0a539]">{t('cta.titleHighlight')}</span></h2>
           <div className="flex shrink-0 flex-col gap-3 sm:flex-row lg:flex-col">
             <Link href={`/${locale}/quotation`} className="bma-button-primary">{t('cta.ctaQuote')} <ArrowRight className="h-4 w-4" /></Link>
-            <a href={withAttribution(EXTERNAL_LINKS.calendly, 'licensing_guidance', 'final')} target="_blank" rel="noopener noreferrer" className="bma-button-secondary">{t('cta.ctaDemo')}</a>
+            <Link href={`/${locale}/book-demo?source=licensing`} className="bma-button-secondary">{t('cta.ctaDemo')}</Link>
           </div>
         </div>
       </section>

@@ -7,7 +7,6 @@ import { useLocale, useTranslations } from 'next-intl';
 import { ArrowRight, Check, Compass, Sparkles } from 'lucide-react';
 import { ImmersiveBeatBreeze } from '@/components/home/ImmersiveBeatBreeze';
 import { ClientLogos } from '@/components/sections';
-import { FloatingChatButton } from '@/components/chat/FloatingChatButton';
 import { EXTERNAL_LINKS, withAttribution } from '@/lib/external-links';
 
 const industries = [
@@ -265,7 +264,6 @@ export default function Home() {
         </motion.div>
       </section>
 
-      <FloatingChatButton />
     </>
   );
 }

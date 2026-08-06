@@ -261,9 +261,9 @@ export default function HowItWorksPage() {
               <Link href={`/${locale}/quotation?source=how-it-works-final`} className="bma-button-primary min-h-14 px-8">
                 {t('cta.ctaQuote')} <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
-              <a href={withAttribution(EXTERNAL_LINKS.calendly, 'how_it_works', 'final')} target="_blank" rel="noopener noreferrer" className="bma-button-secondary min-h-14 px-8">
+              <Link href={`/${locale}/book-demo?source=how-it-works`} className="bma-button-secondary min-h-14 px-8">
                 {t('cta.ctaDemo')}
-              </a>
+              </Link>
             </motion.div>
           </div>
         </section>

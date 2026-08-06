@@ -14,6 +14,7 @@ type Campaign =
   | 'industry_solution'
   | 'how_it_works'
   | 'licensing_guidance'
+  | 'booking'
   | 'quotation';
 
 /**

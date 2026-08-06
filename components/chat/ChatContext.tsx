@@ -1,15 +1,15 @@
 'use client';
 
-import { createContext, useContext, useState, useCallback, useRef, ReactNode } from 'react';
+import { createContext, useContext, useState, useCallback, ReactNode } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
-
-const CHAT_API_URL = process.env.NEXT_PUBLIC_CHAT_API_URL || 'https://webhooks.bmasiamusic.com';
+import { usePathname } from 'next/navigation';
 
 export interface ChatMessage {
   id: string;
   role: 'user' | 'agent';
   text: string;
   timestamp: Date;
+  actions?: string[];
 }
 
 export interface EscalationData {
@@ -17,18 +17,6 @@ export interface EscalationData {
   company: string;
   email: string;
 }
-
-// Phrases that trigger the escalation modal
-const ESCALATION_TRIGGERS = [
-  'connect you with',
-  'speak with a human',
-  'speak to someone',
-  'one of our specialists',
-  'escalate',
-  'human agent',
-  'specialist who can help',
-  'team member',
-];
 
 interface ChatContextType {
   messages: ChatMessage[];
@@ -62,6 +50,7 @@ interface ChatProviderProps {
 export function ChatProvider({ children }: ChatProviderProps) {
   const t = useTranslations('chat');
   const locale = useLocale();
+  const pathname = usePathname();
 
   // State
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -70,15 +59,6 @@ export function ChatProvider({ children }: ChatProviderProps) {
   const [error, setError] = useState<string | null>(null);
   const [showEscalationModal, setShowEscalationModal] = useState(false);
   const [isSubmittingEscalation, setIsSubmittingEscalation] = useState(false);
-
-  // Session ID for conversation continuity
-  const sessionIdRef = useRef(`session-${Date.now()}-${Math.random().toString(36).substring(7)}`);
-
-  // Track if escalation has already been triggered this session
-  const escalationTriggeredRef = useRef(false);
-
-  // Track if lead has been captured this session
-  const leadCapturedRef = useRef(false);
 
   // Open panel
   const openPanel = useCallback(() => {
@@ -101,7 +81,7 @@ export function ChatProvider({ children }: ChatProviderProps) {
           .map((msg) => `${msg.role === 'user' ? 'Customer' : 'Agent'}: ${msg.text}`)
           .join('\n');
 
-        const response = await fetch(`${CHAT_API_URL}/escalation`, {
+        const response = await fetch('/api/chat-escalation', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -136,7 +116,7 @@ export function ChatProvider({ children }: ChatProviderProps) {
     [messages, locale, t]
   );
 
-  // Send a message via our Claude-powered chat API
+  // Send a message through the same-origin assistant gateway.
   const sendMessage = useCallback(
     async (text: string) => {
       if (!text.trim()) return;
@@ -159,13 +139,15 @@ export function ChatProvider({ children }: ChatProviderProps) {
       setIsTyping(true);
 
       try {
-        const response = await fetch(`${CHAT_API_URL}/chat`, {
+        const history = messages.slice(-8).map((message) => ({ role: message.role, text: message.text }));
+        const response = await fetch('/api/assistant', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             message: text,
-            sessionId: sessionIdRef.current,
             locale,
+            pagePath: pathname,
+            history,
           }),
         });
 
@@ -173,7 +155,8 @@ export function ChatProvider({ children }: ChatProviderProps) {
           throw new Error('Chat request failed');
         }
 
-        const data = await response.json();
+        const data = await response.json() as { reply?: string; escalate?: boolean; actions?: string[] };
+        if (!data.reply) throw new Error('Assistant returned no reply');
 
         setIsTyping(false);
 
@@ -183,35 +166,13 @@ export function ChatProvider({ children }: ChatProviderProps) {
           role: 'agent',
           text: data.reply,
           timestamp: new Date(),
+          actions: data.actions,
         };
         setMessages((prev) => [...prev, agentMessage]);
 
         // Check if response triggers escalation
-        if (data.escalate && !escalationTriggeredRef.current) {
-          escalationTriggeredRef.current = true;
+        if (data.escalate) {
           setShowEscalationModal(true);
-        }
-
-        // Check if lead was captured
-        if (data.leadCaptured && !leadCapturedRef.current) {
-          leadCapturedRef.current = true;
-
-          const conversationSummary = messages
-            .slice(-6)
-            .map((msg) => `${msg.role === 'user' ? 'Customer' : 'Agent'}: ${msg.text}`)
-            .join('\n');
-
-          fetch(`${CHAT_API_URL}/lead`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              email: data.leadCaptured,
-              conversationSummary,
-              locale,
-            }),
-          }).catch((err) => {
-            console.error('Lead capture notification failed:', err);
-          });
         }
       } catch (err) {
         console.error('Failed to send message:', err);
@@ -219,7 +180,7 @@ export function ChatProvider({ children }: ChatProviderProps) {
         setIsTyping(false);
       }
     },
-    [locale, messages, t]
+    [locale, messages, pathname, t]
   );
 
   return (

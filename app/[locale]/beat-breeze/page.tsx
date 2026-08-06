@@ -30,7 +30,6 @@ import {
   WandSparkles,
   Workflow,
 } from 'lucide-react';
-import { FloatingChatButton } from '@/components/chat/FloatingChatButton';
 import { EXTERNAL_LINKS, withAttribution } from '@/lib/external-links';
 import {
   type PlaylistSampleAsset,
@@ -445,7 +444,6 @@ export default function BeatBreezePage() {
         </motion.div>
       </section>
 
-      <FloatingChatButton />
     </div>
   );
 }

@@ -88,6 +88,41 @@ export function checkRateLimit(ip: string): {
 }
 
 /**
+ * A scoped variant for high-frequency, read-only endpoints such as calendar
+ * availability. Prefix the key at the call site so form and assistant quotas
+ * remain independent.
+ */
+export function checkRateLimitWithPolicy(
+  key: string,
+  maxRequests: number,
+  windowMs: number,
+): { isLimited: boolean; remaining: number; resetIn: number } {
+  const now = Date.now();
+  const entry = rateLimitStore.get(key);
+
+  if (!entry || now - entry.firstRequest > windowMs) {
+    rateLimitStore.set(key, { count: 1, firstRequest: now });
+    return { isLimited: false, remaining: Math.max(0, maxRequests - 1), resetIn: windowMs };
+  }
+
+  if (entry.count >= maxRequests) {
+    return {
+      isLimited: true,
+      remaining: 0,
+      resetIn: Math.max(0, windowMs - (now - entry.firstRequest)),
+    };
+  }
+
+  entry.count += 1;
+  rateLimitStore.set(key, entry);
+  return {
+    isLimited: false,
+    remaining: Math.max(0, maxRequests - entry.count),
+    resetIn: Math.max(0, windowMs - (now - entry.firstRequest)),
+  };
+}
+
+/**
  * Check if a honeypot field was filled (indicates bot)
  * @param honeypotValue - The value of the honeypot field
  * @returns true if the submission is likely from a bot

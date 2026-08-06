@@ -8,7 +8,7 @@ import { SITE } from '@/lib/constants';
 import { locales, type Locale } from '@/lib/i18n-config';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
-import { ChatProvider, ChatPanel } from '@/components/chat';
+import { ChatProvider, ChatPanel, FloatingChatButton } from '@/components/chat';
 import { CookieConsent } from '@/components/layout/CookieConsent';
 
 const geist = Geist({
@@ -141,9 +141,6 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning className={`scroll-smooth ${geist.variable} ${spaceGrotesk.variable}`}>
       <head>
-        {/* Preconnect hints for external resources */}
-        <link rel="preconnect" href="https://assets.calendly.com" />
-        <link rel="dns-prefetch" href="https://assets.calendly.com" />
         {/* Apollo preconnect added dynamically after consent */}
 
         {/* Organization Schema (JSON-LD) - with translated description */}
@@ -193,6 +190,8 @@ export default async function LocaleLayout({
             </div>
             {/* Chat Panel (slides in from right) */}
             <ChatPanel />
+            {/* Persistent, low-interruption site guide */}
+            <FloatingChatButton />
             {/* Cookie consent banner */}
             <CookieConsent />
           </ChatProvider>
