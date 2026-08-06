@@ -10,10 +10,10 @@ import { EXTERNAL_LINKS, withAttribution } from '@/lib/external-links';
 import styles from './HowItWorks.module.css';
 
 const STEPS = [
-  { id: '01', icon: Map, visual: 'brief' },
-  { id: '02', icon: AudioLines, visual: 'day' },
-  { id: '03', icon: RadioTower, visual: 'system' },
-  { id: '04', icon: Blend, visual: 'operate' },
+  { id: '01', icon: Map, visual: 'brief', outcome: 'experience' },
+  { id: '02', icon: AudioLines, visual: 'day', outcome: 'speed' },
+  { id: '03', icon: RadioTower, visual: 'system', outcome: 'legal' },
+  { id: '04', icon: Blend, visual: 'operate', outcome: 'legal' },
 ] as const;
 
 const OUTCOMES = ['experience', 'speed', 'legal'] as const;
@@ -24,6 +24,7 @@ export default function HowItWorksPage() {
   const immersive = useTranslations('homePage.immersive');
   const beatBreeze = useTranslations('beatBreezePage');
   const soundtrack = useTranslations('soundtrackPage');
+  const navigation = useTranslations('navigation');
   const locale = useLocale();
   const reduceMotion = useReducedMotion();
   const reveal = {
@@ -69,7 +70,7 @@ export default function HowItWorksPage() {
                   {t('cta.ctaQuote')} <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Link>
                 <a href="#process" className="bma-button-secondary min-h-14 px-7">
-                  {t('hero.label')} <ArrowDown className="h-4 w-4" aria-hidden="true" />
+                  {navigation('howItWorks')} <ArrowDown className="h-4 w-4" aria-hidden="true" />
                 </a>
               </div>
               <div className={styles.heroProof}>
@@ -131,15 +132,20 @@ export default function HowItWorksPage() {
             <motion.header {...reveal} className={styles.processIntro}>
               <p className="bma-kicker">{t('stats.label')}</p>
               <h2>{t('stats.sectionTitle')}</h2>
-              <p>{t('hero.subtitle')}</p>
+              <p>{t('stats.experience.desc')}</p>
               <div className={styles.processIndex} aria-hidden="true">
                 {STEPS.map(({ id }) => <span key={id}>{id}</span>)}
               </div>
             </motion.header>
 
             <div className={styles.processStack}>
-              {STEPS.map(({ id, icon: Icon, visual }, index) => (
-                <motion.article key={id} {...reveal} className={styles.processCard}>
+              {STEPS.map(({ id, icon: Icon, visual, outcome }) => (
+                <motion.article
+                  key={id}
+                  {...reveal}
+                  whileHover={reduceMotion ? undefined : { y: -3 }}
+                  className={styles.processCard}
+                >
                   <div className={styles.processCopy}>
                     <div className={styles.processMeta}>
                       <span>{id}</span>
@@ -151,7 +157,7 @@ export default function HowItWorksPage() {
                   <ProcessVisual
                     visual={visual}
                     stepTitle={t(`steps.${id}.title`)}
-                    outcome={t(`stats.${OUTCOMES[Math.min(index, OUTCOMES.length - 1)]}.value`)}
+                    outcome={t(`stats.${outcome}.value`)}
                   />
                 </motion.article>
               ))}
@@ -197,11 +203,15 @@ export default function HowItWorksPage() {
             <motion.header {...reveal} className={styles.finalHeader}>
               <p className="bma-kicker">{t('hero.label')}</p>
               <h2>{t('cta.title')}</h2>
-              <p>{t('hero.subtitle')}</p>
+              <p>{immersive('worlds.description')}</p>
             </motion.header>
 
             <div className={styles.routeGrid}>
-              <motion.article {...reveal} className={`${styles.routeCard} ${styles.beatRoute}`}>
+              <motion.article
+                {...reveal}
+                whileHover={reduceMotion ? undefined : { y: -5 }}
+                className={`${styles.routeCard} ${styles.beatRoute}`}
+              >
                 <Image src="/images/product-bb-hero.webp" alt="" fill className={styles.routeImage} sizes="(min-width: 768px) 50vw, 100vw" aria-hidden="true" />
                 <div className={styles.routeOverlay} aria-hidden="true" />
                 <div className={styles.routeContent}>
@@ -214,7 +224,11 @@ export default function HowItWorksPage() {
                 </div>
               </motion.article>
 
-              <motion.article {...reveal} className={`${styles.routeCard} ${styles.soundtrackRoute}`}>
+              <motion.article
+                {...reveal}
+                whileHover={reduceMotion ? undefined : { y: -5 }}
+                className={`${styles.routeCard} ${styles.soundtrackRoute}`}
+              >
                 <Image src="/images/product-syb-hero.webp" alt="" fill className={styles.routeImage} sizes="(min-width: 768px) 50vw, 100vw" aria-hidden="true" />
                 <div className={styles.routeOverlay} aria-hidden="true" />
                 <div className={styles.routeContent}>
@@ -295,17 +309,22 @@ function ProcessVisual({
     );
   }
 
-  return (
-    <div className={`${styles.processVisual} ${styles.operateVisual}`} aria-hidden="true">
-      <div className={styles.operateHeader}><span>{stepTitle}</span><i /></div>
-      {['06:30', '12:00', '18:30'].map((time, index) => (
-        <div className={styles.operateRow} key={time}>
-          <span>{time}</span>
-          <div><strong>{outcome}</strong><i style={{ width: `${46 + index * 19}%` }} /></div>
-          <em>0{index + 1}</em>
-        </div>
-      ))}
-      <div className={styles.operateScan} />
-    </div>
-  );
+  if (visual === 'operate') {
+    return (
+      <div className={`${styles.processVisual} ${styles.operateVisual}`} aria-hidden="true">
+        <div className={styles.operateHeader}><span>{stepTitle}</span><i /></div>
+        {DAYPARTS.slice(0, 3).map((time, index) => (
+          <div className={styles.operateRow} key={time}>
+            <span>{time}</span>
+            <div><strong>{outcome}</strong><i style={{ width: `${46 + index * 19}%` }} /></div>
+            <em>0{index + 1}</em>
+          </div>
+        ))}
+        <div className={styles.operateScan} />
+      </div>
+    );
+  }
+
+  const exhaustiveVisual: never = visual;
+  return exhaustiveVisual;
 }
