@@ -30,8 +30,8 @@ export function Footer() {
             <Link href={`/${locale}`} className="inline-block rounded-lg" aria-label="BMAsia">
               <Image src="/images/BMAsia_Logo.png" alt="BMAsia" width={150} height={50} className="h-10 w-auto" />
             </Link>
-            <div className="mt-7 max-w-[18rem]">
-              <p className={`${styles.signature} bma-card-title max-w-[15ch] text-balance`}>{t('tagline')}</p>
+            <div className="mt-7 max-w-[23rem]">
+              <p className={`${styles.signature} font-label`}>{t('tagline')}</p>
               <div className={`${styles.signalTrace} mt-5`} aria-hidden="true" />
             </div>
             <div className="mt-7 flex items-center gap-4">
