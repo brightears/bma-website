@@ -76,44 +76,13 @@ function Equalizer({ active = false }: { active?: boolean }) {
   );
 }
 
-type ConductorGlyphName = 'sound' | 'screens' | 'messages' | 'automation';
-
-function ConductorGlyph({ name }: { name: ConductorGlyphName }) {
-  if (name === 'sound') {
-    return (
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M4 14v-4M8 18V6m4 14V4m4 13V7m4 7v-4" />
-      </svg>
-    );
-  }
-
-  if (name === 'screens') {
-    return (
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <rect x="3.5" y="4.5" width="17" height="12" rx="2.5" />
-        <path d="M9 20h6m-3-3.5V20m-4-9.5 2.4 1.8L16 8.5" />
-      </svg>
-    );
-  }
-
-  if (name === 'messages') {
-    return (
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M5 5.5h14a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-8l-5.5 3v-3H5a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Z" />
-        <path d="M7.5 9.5h9m-9 3h6" />
-      </svg>
-    );
-  }
-
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <circle cx="6" cy="7" r="2.5" />
-      <circle cx="18" cy="7" r="2.5" />
-      <circle cx="12" cy="18" r="2.5" />
-      <path d="m8.3 8.2 2.4 7.5m5-7.5-2.4 7.5M8.5 7h7" />
-    </svg>
-  );
-}
+const HERO_COVERS = [
+  { name: 'French Cafe', src: '/images/covers/french-cafe.jpg' },
+  { name: 'Tropical House Instrumental', src: '/images/covers/tropical-house-instrumental.jpg' },
+  { name: 'Nu Disco Vocal', src: '/images/covers/nu-disco-vocal.jpg' },
+  { name: 'Deep House', src: '/images/covers/deep-house.jpg' },
+  { name: 'Pop Mid-Tempo', src: '/images/covers/pop-mid-tempo.jpg' },
+] as const;
 
 export function ImmersiveBeatBreeze() {
   const locale = useLocale();
@@ -309,50 +278,52 @@ export function ImmersiveBeatBreeze() {
             </div>
           </div>
 
-          <div className={styles.venueConductor} role="img" aria-label={t('field.ariaLabel')}>
-            <div className={styles.conductorStage} aria-hidden="true">
-              <div className={styles.conductorGlow} />
-              <svg className={styles.conductorMap} viewBox="0 0 680 620" preserveAspectRatio="xMidYMid meet">
-                <path className={styles.venueOutline} d="M118 67h389l58 61v342l-76 78H157l-58-62V130Z" />
-                <path className={styles.venuePartition} d="M99 220h123V67m245 0v126h98M99 403h119v145m269 0V414h78" />
-                <path className={styles.signalRoute} d="M132 108h99c47 0 62 23 74 67l23 84" />
-                <path className={`${styles.signalRoute} ${styles.signalRouteOne}`} d="M303 294c-40-9-74-20-112-36" />
-                <path className={`${styles.signalRoute} ${styles.signalRouteTwo}`} d="M375 275c38-39 76-62 119-82" />
-                <path className={`${styles.signalRoute} ${styles.signalRouteThree}`} d="M383 342c43 26 78 55 112 88" />
-                <path className={`${styles.signalRoute} ${styles.signalRouteFour}`} d="M299 348c-40 31-74 64-105 101" />
-                <circle className={`${styles.signalPoint} ${styles.signalPointOne}`} cx="188" cy="257" r="4" />
-                <circle className={`${styles.signalPoint} ${styles.signalPointTwo}`} cx="497" cy="191" r="4" />
-                <circle className={`${styles.signalPoint} ${styles.signalPointThree}`} cx="498" cy="433" r="4" />
-                <circle className={`${styles.signalPoint} ${styles.signalPointFour}`} cx="191" cy="453" r="4" />
-              </svg>
+          <div className={styles.livingRecord} role="img" aria-label={t('field.ariaLabel')}>
+            <div className={styles.recordStage} aria-hidden="true">
+              <div className={styles.recordAura} />
+              <div className={styles.recordDisc}>
+                <div className={styles.recordLabel}><span>BM</span></div>
+              </div>
+              <div className={styles.toneArm}><i /></div>
 
-              <div className={styles.conductorBrief}>
-                <i />
-                <span>{t('field.brief')}</span>
+              <div className={styles.coverFan}>
+                {HERO_COVERS.map((cover, index) => (
+                  <div className={styles.recordCover} key={cover.name}>
+                    <Image
+                      src={cover.src}
+                      alt=""
+                      fill
+                      sizes="(max-width: 620px) 22vw, (max-width: 900px) 16vw, 110px"
+                      priority={index < 3}
+                    />
+                  </div>
+                ))}
               </div>
 
-              <div className={styles.conductorCore}>
-                <div className={styles.coreHalo} />
-                <span>BMAsia</span>
-                <strong>{t('connected.coreText')}</strong>
-                <i />
-              </div>
-
-              {([
-                ['sound', '01', t('field.sound'), styles.conductorSound],
-                ['screens', '02', t('field.screens'), styles.conductorScreens],
-                ['messages', '03', t('field.messages'), styles.conductorMessages],
-                ['automation', '04', t('field.automation'), styles.conductorAutomation],
-              ] as const).map(([name, index, label, positionClass]) => (
-                <div key={name} className={`${styles.conductorNode} ${positionClass}`}>
-                  <span className={styles.conductorGlyph}><ConductorGlyph name={name} /></span>
-                  <span><small>{index}</small><strong>{label}</strong></span>
+              <div className={styles.directionSleeve}>
+                <div className={styles.directionCore}>
+                  <div className={styles.directionCollage}>
+                    {HERO_COVERS.slice(1, 4).map((cover) => (
+                      <span key={cover.name}>
+                        <Image src={cover.src} alt="" fill sizes="11vw" priority />
+                      </span>
+                    ))}
+                  </div>
+                  <div className={styles.directionWash} />
+                  <div className={styles.directionCopy}>
+                    <span>{t('field.curated')}</span>
+                    <strong>{t('field.statement')}</strong>
+                    <small>{t('field.detail')}</small>
+                  </div>
                 </div>
-              ))}
+              </div>
 
-              <div className={styles.conductorOutcome}>
+              <div className={styles.curationStory}>
+                <span>{t('field.read')}</span>
                 <i />
-                <span>{t('field.outcome')}</span>
+                <span>{t('field.blend')}</span>
+                <i />
+                <span>{t('field.shape')}</span>
               </div>
             </div>
           </div>

@@ -848,13 +848,19 @@
         "scroll": "Try the Venue Time Machine"
       },
       "field": {
-        "ariaLabel": "One venue brief coordinating music, screens, messages and automation across the venue",
+        "ariaLabel": "A living record made from a broad playlist selection and shaped into one locally directed venue sound",
         "brief": "Venue brief",
         "sound": "Sound",
         "screens": "Screens",
         "messages": "Messages",
         "automation": "Automation",
-        "outcome": "Every touchpoint in rhythm"
+        "outcome": "Every touchpoint in rhythm",
+        "curated": "Curated by BMAsia",
+        "statement": "Global range. Locally directed.",
+        "detail": "Shaped for the place, people and moment",
+        "read": "Read the place",
+        "blend": "Open the range",
+        "shape": "Shape the moment"
       },
       "audio": {
         "title": "Selected zone sample",

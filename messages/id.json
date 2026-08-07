@@ -848,13 +848,19 @@
         "scroll": "Coba Mesin Waktu Venue"
       },
       "field": {
-        "ariaLabel": "Satu arahan venue yang mengoordinasikan musik, layar, pesan, dan otomatisasi di seluruh venue",
+        "ariaLabel": "Rekaman hidup yang dibentuk dari pilihan playlist luas menjadi satu arah musik lokal untuk venue",
         "brief": "Arahan venue",
         "sound": "Suara",
         "screens": "Layar",
         "messages": "Pesan",
         "automation": "Otomatisasi",
-        "outcome": "Setiap titik interaksi selaras"
+        "outcome": "Setiap titik interaksi selaras",
+        "curated": "Dikurasi oleh BMAsia",
+        "statement": "Pilihan global. Diarahkan secara lokal.",
+        "detail": "Dibentuk untuk tempat, orang, dan momen",
+        "read": "Baca ruangnya",
+        "blend": "Buka pilihannya",
+        "shape": "Bentuk momennya"
       },
       "audio": {
         "title": "Sampel zona terpilih",
