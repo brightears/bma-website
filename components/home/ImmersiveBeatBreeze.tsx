@@ -254,7 +254,7 @@ export function ImmersiveBeatBreeze() {
         <div className={`${styles.aurora} ${styles.auroraTwo}`} aria-hidden="true" />
         <div className={styles.heroGrid}>
           <div className={styles.heroCopy}>
-            <p className={styles.eyebrow}><span />{t('hero.eyebrow')}</p>
+            <p className={styles.eyebrow}>{t('hero.eyebrow')}</p>
             <h1 className="bma-page-title"><span>{t('hero.title')}</span> <em>{t('hero.highlight')}</em></h1>
             <p className={styles.heroLead}>{t('hero.description')}</p>
             <div className={styles.heroActions}>
@@ -328,7 +328,7 @@ export function ImmersiveBeatBreeze() {
 
       <section className={styles.experience} id="experience">
         <div className={styles.sectionIntro}>
-          <p className={styles.eyebrow}><span />{t('demo.eyebrow')}</p>
+          <p className={styles.eyebrow}>{t('demo.eyebrow')}</p>
           <h2 className="bma-section-title">{t('demo.title')} <em>{t('demo.highlight')}</em></h2>
           <p>{t('demo.description')}</p>
         </div>
@@ -525,7 +525,7 @@ export function ImmersiveBeatBreeze() {
 
           <div className={styles.touchpointRail}>
             <div className={styles.touchpointIntro}>
-              <p className={styles.eyebrow}><span />{t('touchpoints.eyebrow')}</p>
+              <p className={styles.eyebrow}>{t('touchpoints.eyebrow')}</p>
               <h3>{t('touchpoints.title')}</h3>
               <p>{t('touchpoints.description')}</p>
             </div>
@@ -583,7 +583,7 @@ export function ImmersiveBeatBreeze() {
 
         <div className={styles.takeaway}>
           <div>
-            <p className={styles.eyebrow}><span />{t('brief.eyebrow')}</p>
+            <p className={styles.eyebrow}>{t('brief.eyebrow')}</p>
             <h3>{t('brief.title')}</h3>
             <p>{brief}</p>
           </div>
@@ -594,7 +594,7 @@ export function ImmersiveBeatBreeze() {
 
         <div className={styles.routeDecision}>
           <div>
-            <p className={styles.eyebrow}><span />{t('paths.resultEyebrow')}</p>
+            <p className={styles.eyebrow}>{t('paths.resultEyebrow')}</p>
             <h3>{t('paths.resultTitle')}</h3>
             <p>{t('paths.resultText')}</p>
           </div>
@@ -613,7 +613,7 @@ export function ImmersiveBeatBreeze() {
 
         <div className={styles.connectedReveal}>
           <div className={styles.connectedHeading}>
-            <p className={styles.eyebrow}><span />{t('connected.eyebrow')}</p>
+            <p className={styles.eyebrow}>{t('connected.eyebrow')}</p>
             <h3>{t('connected.title')} <em>{t('connected.highlight')}</em></h3>
             <p>{t('connected.description')}</p>
           </div>
@@ -647,7 +647,7 @@ export function ImmersiveBeatBreeze() {
 
       <section className={styles.story} id="bmasia-story">
         <div className={styles.storyHeading}>
-          <p className={styles.eyebrow}><span />{t('story.eyebrow')}</p>
+          <p className={styles.eyebrow}>{t('story.eyebrow')}</p>
           <h2 className="bma-section-title">{t('story.title')} <em>{t('story.highlight')}</em></h2>
         </div>
         <div className={styles.storyTrack}>
