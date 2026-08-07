@@ -339,10 +339,10 @@ export function ImmersiveBeatBreeze() {
               </div>
 
               {([
-                ['sound', '01', t('connected.sound.title'), styles.conductorSound],
-                ['screens', '02', t('connected.screens.title'), styles.conductorScreens],
-                ['messages', '03', t('connected.messages.title'), styles.conductorMessages],
-                ['automation', '04', t('connected.automation.title'), styles.conductorAutomation],
+                ['sound', '01', t('field.sound'), styles.conductorSound],
+                ['screens', '02', t('field.screens'), styles.conductorScreens],
+                ['messages', '03', t('field.messages'), styles.conductorMessages],
+                ['automation', '04', t('field.automation'), styles.conductorAutomation],
               ] as const).map(([name, index, label, positionClass]) => (
                 <div key={name} className={`${styles.conductorNode} ${positionClass}`}>
                   <span className={styles.conductorGlyph}><ConductorGlyph name={name} /></span>

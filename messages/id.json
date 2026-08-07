@@ -848,10 +848,13 @@
         "scroll": "Coba Mesin Waktu Venue"
       },
       "field": {
-        "ariaLabel": "Satu arahan venue yang mengoordinasikan musik, layar, pesan, dan automasi di seluruh venue",
+        "ariaLabel": "Satu arahan venue yang mengoordinasikan musik, layar, pesan, dan otomatisasi di seluruh venue",
         "brief": "Arahan venue",
-        "outcome": "Setiap titik interaksi selaras",
-        "energy": "Energi {energy}"
+        "sound": "Suara",
+        "screens": "Layar",
+        "messages": "Pesan",
+        "automation": "Otomatisasi",
+        "outcome": "Setiap titik interaksi selaras"
       },
       "audio": {
         "title": "Sampel zona terpilih",

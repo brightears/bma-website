@@ -850,8 +850,11 @@
       "field": {
         "ariaLabel": "一份场所需求简报，协调场所内的音乐、屏幕、信息与自动化",
         "brief": "场所需求简报",
-        "outcome": "每个触点，同步共振",
-        "energy": "能量 {energy}"
+        "sound": "音响",
+        "screens": "屏幕",
+        "messages": "信息",
+        "automation": "自动化",
+        "outcome": "每个触点，同步共振"
       },
       "audio": {
         "title": "所选区域样本",

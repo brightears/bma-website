@@ -850,8 +850,11 @@
       "field": {
         "ariaLabel": "One venue brief coordinating music, screens, messages and automation across the venue",
         "brief": "Venue brief",
-        "outcome": "Every touchpoint in rhythm",
-        "energy": "Energy {energy}"
+        "sound": "Sound",
+        "screens": "Screens",
+        "messages": "Messages",
+        "automation": "Automation",
+        "outcome": "Every touchpoint in rhythm"
       },
       "audio": {
         "title": "Selected zone sample",

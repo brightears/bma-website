@@ -325,7 +325,7 @@
     radial-gradient(circle at 30% 28%, rgba(232, 133, 12, 0.17), transparent 31%),
     radial-gradient(circle at 72% 65%, rgba(0, 212, 200, 0.15), transparent 34%);
   filter: blur(10px);
-  animation: conductorBreathe 9s ease-in-out infinite;
+  animation: conductor-breathe 9s ease-in-out infinite;
 }
 
 .conductorStage::after {
@@ -350,7 +350,7 @@
   background: radial-gradient(circle, rgba(0, 212, 200, 0.13), rgba(232, 133, 12, 0.035) 48%, transparent 72%);
   filter: blur(12px);
   transform: translate(-50%, -50%);
-  animation: conductorGlow 6.8s ease-in-out infinite;
+  animation: conductor-glow 6.8s ease-in-out infinite;
 }
 
 .conductorMap {
@@ -385,7 +385,7 @@
   stroke-linecap: round;
   stroke-dasharray: 7 13;
   vector-effect: non-scaling-stroke;
-  animation: signalTravel 3.4s linear infinite;
+  animation: signal-travel 3.4s linear infinite;
 }
 
 .signalRouteOne { animation-delay: -0.3s; }
@@ -398,7 +398,7 @@
   filter: drop-shadow(0 0 8px rgba(0, 212, 200, 0.82));
   transform-box: fill-box;
   transform-origin: center;
-  animation: signalPoint 7.2s ease-in-out infinite;
+  animation: signal-point 7.2s ease-in-out infinite;
 }
 
 .signalPointOne { fill: #e8850c; animation-delay: -0.3s; }
@@ -448,7 +448,7 @@
   box-shadow: 0 0 10px rgba(232, 133, 12, 0.9);
   content: '';
   transform: translate(-50%, -50%);
-  animation: briefPulse 2.8s ease-in-out infinite;
+  animation: brief-pulse 2.8s ease-in-out infinite;
 }
 
 .conductorCore {
@@ -480,7 +480,7 @@
   inset: -13px;
   border: 1px solid rgba(0, 212, 200, 0.17);
   border-radius: 50%;
-  animation: coreHalo 4.8s ease-out infinite;
+  animation: core-halo 4.8s ease-out infinite;
 }
 
 .conductorCore > span {
@@ -518,7 +518,7 @@
   border-radius: inherit;
   background: linear-gradient(90deg, #e8850c, #00d4c8);
   content: '';
-  animation: coreSignal 2.6s ease-in-out infinite;
+  animation: core-signal 2.6s ease-in-out infinite;
 }
 
 .conductorNode {
@@ -549,29 +549,37 @@
   opacity: 0.7;
   background: linear-gradient(90deg, transparent, var(--node-accent), transparent);
   transform: scaleX(0.24);
-  animation: nodeAwake 7.2s ease-in-out infinite;
+  animation: node-awake 7.2s ease-in-out infinite;
 }
 
 .conductorSound {
+
   --node-accent: #e8850c;
+
   top: 35%;
   left: 3.5%;
 }
 
 .conductorScreens {
+
   --node-accent: #e7b94e;
+
   top: 20%;
   right: 2.5%;
 }
 
 .conductorMessages {
+
   --node-accent: #73cf98;
+
   right: 1.5%;
   bottom: 17%;
 }
 
 .conductorAutomation {
+
   --node-accent: #00d4c8;
+
   bottom: 13.5%;
   left: 4%;
 }
@@ -594,7 +602,7 @@
 .conductorGlyph svg {
   width: 20px;
   fill: none;
-  stroke: currentColor;
+  stroke: currentcolor;
   stroke-width: 1.4;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -647,7 +655,7 @@
   border-radius: 50%;
   background: #00d4c8;
   box-shadow: 0 0 14px rgba(0, 212, 200, 0.75);
-  animation: outcomePulse 2.8s ease-in-out infinite;
+  animation: outcome-pulse 2.8s ease-in-out infinite;
 }
 
 .equalizer {
@@ -1538,47 +1546,47 @@
   to { transform: translate3d(5%, 4%, 0) rotate(-8deg) scale(1.08); }
 }
 
-@keyframes conductorBreathe {
+@keyframes conductor-breathe {
   0%, 100% { opacity: 0.34; transform: scale(0.96) rotate(-2deg); }
   50% { opacity: 0.58; transform: scale(1.04) rotate(2deg); }
 }
 
-@keyframes conductorGlow {
+@keyframes conductor-glow {
   0%, 100% { opacity: 0.55; transform: translate(-50%, -50%) scale(0.88); }
   50% { opacity: 1; transform: translate(-50%, -50%) scale(1.12); }
 }
 
-@keyframes signalTravel { to { stroke-dashoffset: -40; } }
+@keyframes signal-travel { to { stroke-dashoffset: -40; } }
 
-@keyframes signalPoint {
+@keyframes signal-point {
   0%, 18%, 100% { opacity: 0.35; transform: scale(0.8); }
   28%, 42% { opacity: 1; transform: scale(1.55); }
   55% { opacity: 0.5; transform: scale(1); }
 }
 
-@keyframes briefPulse {
+@keyframes brief-pulse {
   0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) scale(0.72); }
   50% { opacity: 1; transform: translate(-50%, -50%) scale(1.35); }
 }
 
-@keyframes coreHalo {
+@keyframes core-halo {
   0% { opacity: 0.15; transform: scale(0.9); }
   48% { opacity: 0.62; }
   100% { opacity: 0; transform: scale(1.14); }
 }
 
-@keyframes coreSignal {
+@keyframes core-signal {
   0%, 100% { transform: translateX(-34%); }
   50% { transform: translateX(100%); }
 }
 
-@keyframes nodeAwake {
+@keyframes node-awake {
   0%, 16%, 100% { opacity: 0.25; transform: scaleX(0.2); }
   27%, 42% { opacity: 1; transform: scaleX(1); }
   58% { opacity: 0.5; transform: scaleX(0.48); }
 }
 
-@keyframes outcomePulse {
+@keyframes outcome-pulse {
   0%, 100% { opacity: 0.5; transform: scale(0.82); }
   50% { opacity: 1; transform: scale(1.28); }
 }
