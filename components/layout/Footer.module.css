@@ -1,5 +1,11 @@
 .signature {
   width: fit-content;
+  max-width: 100%;
+  font-size: 1.1875rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+  text-wrap: pretty;
   background: linear-gradient(
     100deg,
     #efa634 0%,
