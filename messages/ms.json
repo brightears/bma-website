@@ -860,7 +860,17 @@
         "detail": "Dibentuk untuk tempat, orang dan detik",
         "read": "Fahami ruang",
         "blend": "Luaskan pilihan",
-        "shape": "Bentuk detik"
+        "shape": "Bentuk detik",
+        "listeningIn": "Mendengar di {country}",
+        "localTitle": "Suara tempatan. Pilihan global.",
+        "localMeta": "Muzik serantau dan antarabangsa, disusun sebagai satu arah",
+        "localSelection": "Pilihan tempatan",
+        "globalEyebrow": "Merentasi katalog",
+        "globalTitle": "Suara global. Satu arah yang jelas.",
+        "globalMeta": "Muzik antarabangsa, dibentuk untuk tempat dan detik",
+        "regionalVoices": "Suara serantau",
+        "openRange": "Pilihan terbuka",
+        "globalDirection": "Katalog global · diarahkan oleh BMAsia"
       },
       "audio": {
         "title": "Sampel zon dipilih",

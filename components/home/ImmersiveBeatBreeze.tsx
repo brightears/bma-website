@@ -30,6 +30,10 @@ import {
   type PlaylistSampleTrack,
   type VenueKey,
 } from './venue-time-machine-data';
+import {
+  GLOBAL_HERO_COVERS,
+  type HeroExperience,
+} from '@/lib/hero-market';
 
 type TouchpointKey = 'sound' | 'screens' | 'messages' | 'phone';
 
@@ -87,6 +91,12 @@ export function ImmersiveBeatBreeze() {
   const [isMuted, setIsMuted] = useState(false);
   const [volume, setVolume] = useState(0.65);
   const [activeTouchpoint, setActiveTouchpoint] = useState<TouchpointKey>('sound');
+  const [heroExperience, setHeroExperience] = useState<HeroExperience>({
+    countryCode: null,
+    covers: GLOBAL_HERO_COVERS,
+    localized: false,
+  });
+  const [showExtendedCovers, setShowExtendedCovers] = useState(false);
   const [sampleAssets, setSampleAssets] = useState<Record<string, PlaylistSampleAsset>>({});
   const [sampleLoadState, setSampleLoadState] = useState<'loading' | 'ready' | 'error'>('loading');
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -127,6 +137,35 @@ export function ImmersiveBeatBreeze() {
     if (Number.isFinite(storedVolume) && storedVolume >= 0 && storedVolume <= 1) {
       setVolume(storedVolume);
     }
+  }, []);
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    void fetch('/api/hero-market/', { cache: 'no-store', signal: controller.signal })
+      .then(async (response) => {
+        if (!response.ok) return null;
+        return response.json() as Promise<HeroExperience>;
+      })
+      .then((result) => {
+        if (result?.covers?.featured?.src && typeof result.localized === 'boolean') {
+          setHeroExperience(result);
+        }
+      })
+      .catch((error: unknown) => {
+        if (error instanceof DOMException && error.name === 'AbortError') return;
+      });
+
+    return () => controller.abort();
+  }, []);
+
+  useEffect(() => {
+    const query = window.matchMedia('(min-width: 621px)');
+    const updateVisibility = () => setShowExtendedCovers(query.matches);
+    updateVisibility();
+    query.addEventListener('change', updateVisibility);
+
+    return () => query.removeEventListener('change', updateVisibility);
   }, []);
 
   useEffect(() => {
@@ -244,6 +283,23 @@ export function ImmersiveBeatBreeze() {
     window.setTimeout(() => setCopied(false), 1800);
   };
 
+  const heroCovers = heroExperience.covers;
+  const hasRegionalLayer = heroExperience.localized && Boolean(heroExperience.countryCode);
+  const regionalCountry = useMemo(() => {
+    if (!hasRegionalLayer || !heroExperience.countryCode) return '';
+
+    try {
+      return new Intl.DisplayNames([locale], { type: 'region' }).of(heroExperience.countryCode) ?? '';
+    } catch {
+      return '';
+    }
+  }, [hasRegionalLayer, heroExperience.countryCode, locale]);
+  const fieldEyebrow = hasRegionalLayer
+    ? t('field.listeningIn', { country: regionalCountry })
+    : t('field.globalEyebrow');
+  const fieldTitle = t(hasRegionalLayer ? 'field.localTitle' : 'field.globalTitle');
+  const fieldMeta = t(hasRegionalLayer ? 'field.localMeta' : 'field.globalMeta');
+
   return (
     <div
       className={styles.shell}
@@ -273,41 +329,68 @@ export function ImmersiveBeatBreeze() {
           <div
             className={styles.venueCanvas}
             role="img"
-            aria-label={`${t('field.statement')} ${t('field.detail')}`}
+            aria-label={`${fieldTitle} ${fieldMeta}`}
           >
-            <div className={styles.canvasStage} aria-hidden="true">
-              <div className={styles.canvasGlow} />
-
-              <div className={styles.venueFrame}>
-                <div className={styles.venueMedia}>
-                  <Image
-                    className={styles.venueScene}
-                    src="/images/hero-lounge.webp"
-                    alt=""
-                    fill
-                    sizes="(max-width: 900px) 88vw, 44vw"
-                    priority
-                  />
-                </div>
-                <div className={styles.venueWash} />
-
-                <div className={styles.venueChrome}>
-                  <span>{t('field.curated')}</span>
-                  <i aria-hidden="true" />
+            <div className={styles.coverStage} aria-hidden="true">
+              <div className={styles.coverField} key={heroCovers.featured.src}>
+                <div className={styles.coverFieldHead}>
+                  <div>
+                    <span>{fieldEyebrow}</span>
+                    <strong>{fieldTitle}</strong>
+                  </div>
+                  <small>{fieldMeta}</small>
                 </div>
 
-                <div className={styles.venueMessage}>
-                  <strong>{t('field.statement')}</strong>
-                  <small>{t('field.detail')}</small>
-                </div>
-              </div>
+                <div className={styles.coverGrid}>
+                  {(
+                    [
+                      ['featured', styles.featuredCover],
+                      ['regionalWide', styles.regionalWideCover],
+                      ['globalSquare', styles.globalSquareCover],
+                      ['regionalSmall', styles.regionalSmallCover],
+                      ['globalSmallOne', styles.globalSmallOneCover],
+                      ...(showExtendedCovers
+                        ? [
+                            ['globalSmallTwo', styles.globalSmallTwoCover],
+                            ['globalTall', styles.globalTallCover],
+                          ] as const
+                        : []),
+                    ] as const
+                  ).map(([key, placement], index) => {
+                    const cover = heroCovers[key];
 
-              <div className={styles.curationStory}>
-                <span>{t('field.read')}</span>
-                <i />
-                <span>{t('field.blend')}</span>
-                <i />
-                <span>{t('field.shape')}</span>
+                    return (
+                      <article
+                        className={`${styles.coverTile} ${placement} ${cover.local ? styles.localCover : ''}`}
+                        key={cover.src}
+                      >
+                        <Image
+                          src={cover.src}
+                          alt=""
+                          fill
+                          priority={index < 2}
+                          sizes={index === 0
+                            ? '(max-width: 620px) 46vw, (max-width: 900px) 45vw, 22vw'
+                            : '(max-width: 620px) 43vw, (max-width: 900px) 30vw, 15vw'}
+                          className={styles.coverImage}
+                        />
+                        {key === 'featured' && hasRegionalLayer ? (
+                          <div className={styles.localeNote}>
+                            <span>{t('field.localSelection')}</span>
+                            <strong>{cover.alt}</strong>
+                          </div>
+                        ) : null}
+                        {key === 'featured' ? <strong className={styles.mobileCoverName}>{cover.alt}</strong> : null}
+                      </article>
+                    );
+                  })}
+                </div>
+
+                <div className={styles.coverFieldFoot}>
+                  <span>{t(hasRegionalLayer ? 'field.regionalVoices' : 'field.openRange')}</span>
+                  <i />
+                  <span>{t('field.globalDirection')}</span>
+                </div>
               </div>
             </div>
           </div>

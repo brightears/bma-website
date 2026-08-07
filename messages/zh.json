@@ -860,7 +860,17 @@
         "detail": "为场所、人群与时刻而设计",
         "read": "读懂空间",
         "blend": "拓展选择",
-        "shape": "塑造当下"
+        "shape": "塑造当下",
+        "listeningIn": "在 {country} 聆听",
+        "localTitle": "本地声音。全球选择。",
+        "localMeta": "将地区与国际音乐策划为统一方向",
+        "localSelection": "本地精选",
+        "globalEyebrow": "纵览完整曲库",
+        "globalTitle": "全球声音。一个清晰方向。",
+        "globalMeta": "为场所与时刻塑造的国际音乐",
+        "regionalVoices": "地区声音",
+        "openRange": "多元选择",
+        "globalDirection": "全球曲库 · BMAsia 策划"
       },
       "audio": {
         "title": "所选区域样本",

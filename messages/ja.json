@@ -860,7 +860,17 @@
         "detail": "空間、人、瞬間に合わせて設計",
         "read": "空間を知る",
         "blend": "選択肢を広げる",
-        "shape": "瞬間をかたちに"
+        "shape": "瞬間をかたちに",
+        "listeningIn": "{country}で聴く音楽",
+        "localTitle": "地域の声。世界の選択肢。",
+        "localMeta": "地域と世界の音楽を一つの方向性としてキュレーション",
+        "localSelection": "地域セレクション",
+        "globalEyebrow": "カタログ全体から",
+        "globalTitle": "世界の音楽。一つの明確な方向性。",
+        "globalMeta": "場所と瞬間に合わせて整えた世界の音楽",
+        "regionalVoices": "地域の声",
+        "openRange": "幅広い選択肢",
+        "globalDirection": "グローバルカタログ · BMAsiaディレクション"
       },
       "audio": {
         "title": "選択中ゾーンのサンプル",
