@@ -848,13 +848,19 @@
         "scroll": "Venue Time Machine 체험하기"
       },
       "field": {
-        "ariaLabel": "하나의 공간 브리프가 공간 전체의 음악, 스크린, 메시지, 자동화를 조율합니다",
+        "ariaLabel": "폭넓은 플레이리스트에서 공간에 맞는 하나의 음악 방향을 완성하는 리빙 레코드",
         "brief": "공간 브리프",
         "sound": "사운드",
         "screens": "스크린",
         "messages": "메시지",
         "automation": "자동화",
-        "outcome": "모든 접점이 하나의 리듬으로"
+        "outcome": "모든 접점이 하나의 리듬으로",
+        "curated": "BMAsia 큐레이션",
+        "statement": "글로벌 선택지, 현지에 맞춘 방향.",
+        "detail": "공간, 사람, 순간에 맞춰 설계",
+        "read": "공간을 읽다",
+        "blend": "선택의 폭을 넓히다",
+        "shape": "순간을 설계하다"
       },
       "audio": {
         "title": "선택한 존 샘플",

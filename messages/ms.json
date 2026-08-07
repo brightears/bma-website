@@ -848,13 +848,19 @@
         "scroll": "Alami perjalanan hari"
       },
       "field": {
-        "ariaLabel": "Satu ringkasan tempat yang menyelaras muzik, skrin, mesej dan automasi di seluruh tempat",
+        "ariaLabel": "Rekod hidup yang dibentuk daripada pilihan senarai main luas menjadi satu arah muzik tempatan untuk tempat",
         "brief": "Ringkasan tempat",
         "sound": "Bunyi",
         "screens": "Skrin",
         "messages": "Mesej",
         "automation": "Automasi",
-        "outcome": "Setiap titik sentuh seirama"
+        "outcome": "Setiap titik sentuh seirama",
+        "curated": "Dikurasi oleh BMAsia",
+        "statement": "Pilihan global. Diarah secara tempatan.",
+        "detail": "Dibentuk untuk tempat, orang dan detik",
+        "read": "Fahami ruang",
+        "blend": "Luaskan pilihan",
+        "shape": "Bentuk detik"
       },
       "audio": {
         "title": "Sampel zon dipilih",

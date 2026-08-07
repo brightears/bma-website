@@ -848,13 +848,19 @@
         "scroll": "Thử Cỗ máy Thời gian Không gian"
       },
       "field": {
-        "ariaLabel": "Một định hướng không gian điều phối âm nhạc, màn hình, thông điệp và tự động hóa trong toàn bộ địa điểm",
+        "ariaLabel": "Một bản thu sống động kết hợp nhiều playlist để tạo nên định hướng âm nhạc phù hợp riêng cho địa điểm",
         "brief": "Định hướng không gian",
         "sound": "Âm thanh",
         "screens": "Màn hình",
         "messages": "Thông điệp",
         "automation": "Tự động hóa",
-        "outcome": "Mọi điểm chạm chung một nhịp điệu"
+        "outcome": "Mọi điểm chạm chung một nhịp điệu",
+        "curated": "Được tuyển chọn bởi BMAsia",
+        "statement": "Phạm vi toàn cầu. Định hướng tại địa phương.",
+        "detail": "Được định hình cho không gian, con người và khoảnh khắc",
+        "read": "Hiểu không gian",
+        "blend": "Mở rộng lựa chọn",
+        "shape": "Định hình khoảnh khắc"
       },
       "audio": {
         "title": "Mẫu của khu vực đã chọn",

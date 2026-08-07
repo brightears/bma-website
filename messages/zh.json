@@ -848,13 +848,19 @@
         "scroll": "体验场所时光机"
       },
       "field": {
-        "ariaLabel": "一份场所需求简报，协调场所内的音乐、屏幕、信息与自动化",
+        "ariaLabel": "一张鲜活的唱片，从丰富歌单中凝练出符合当地场所的专属音乐方向",
         "brief": "场所需求简报",
         "sound": "音响",
         "screens": "屏幕",
         "messages": "信息",
         "automation": "自动化",
-        "outcome": "每个触点，同步共振"
+        "outcome": "每个触点，同步共振",
+        "curated": "由 BMAsia 精选",
+        "statement": "全球选择，本地策划。",
+        "detail": "为场所、人群与时刻而设计",
+        "read": "读懂空间",
+        "blend": "拓展选择",
+        "shape": "塑造当下"
       },
       "audio": {
         "title": "所选区域样本",
