@@ -860,7 +860,17 @@
         "detail": "Shaped for the place, people and moment",
         "read": "Read the place",
         "blend": "Open the range",
-        "shape": "Shape the moment"
+        "shape": "Shape the moment",
+        "listeningIn": "Listening in {country}",
+        "localTitle": "Local voices. Global range.",
+        "localMeta": "Regional and international music, curated as one direction",
+        "localSelection": "Local selection",
+        "globalEyebrow": "Across the catalogue",
+        "globalTitle": "Global voices. One clear direction.",
+        "globalMeta": "International music, shaped for the place and moment",
+        "regionalVoices": "Regional voices",
+        "openRange": "Open range",
+        "globalDirection": "Global catalogue · directed by BMAsia"
       },
       "audio": {
         "title": "Selected zone sample",

@@ -860,7 +860,17 @@
         "detail": "공간, 사람, 순간에 맞춰 설계",
         "read": "공간을 읽다",
         "blend": "선택의 폭을 넓히다",
-        "shape": "순간을 설계하다"
+        "shape": "순간을 설계하다",
+        "listeningIn": "{country}에서 듣는 음악",
+        "localTitle": "지역의 목소리. 세계적인 선택.",
+        "localMeta": "지역 및 세계 음악을 하나의 방향으로 큐레이션",
+        "localSelection": "지역 셀렉션",
+        "globalEyebrow": "카탈로그 전반에서",
+        "globalTitle": "세계의 음악. 하나의 분명한 방향.",
+        "globalMeta": "장소와 순간에 맞게 설계한 세계 음악",
+        "regionalVoices": "지역의 목소리",
+        "openRange": "폭넓은 선택",
+        "globalDirection": "글로벌 카탈로그 · BMAsia 디렉션"
       },
       "audio": {
         "title": "선택한 존 샘플",

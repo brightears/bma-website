@@ -860,7 +860,17 @@
         "detail": "Dibentuk untuk tempat, orang, dan momen",
         "read": "Baca ruangnya",
         "blend": "Buka pilihannya",
-        "shape": "Bentuk momennya"
+        "shape": "Bentuk momennya",
+        "listeningIn": "Mendengarkan di {country}",
+        "localTitle": "Suara lokal. Jangkauan global.",
+        "localMeta": "Musik regional dan internasional, dikurasi sebagai satu arah",
+        "localSelection": "Pilihan lokal",
+        "globalEyebrow": "Menjelajahi katalog",
+        "globalTitle": "Suara global. Satu arah yang jelas.",
+        "globalMeta": "Musik internasional, dibentuk untuk tempat dan momen",
+        "regionalVoices": "Suara regional",
+        "openRange": "Pilihan terbuka",
+        "globalDirection": "Katalog global · diarahkan oleh BMAsia"
       },
       "audio": {
         "title": "Sampel zona terpilih",

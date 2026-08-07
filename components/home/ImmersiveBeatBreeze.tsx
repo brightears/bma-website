@@ -30,8 +30,46 @@ import {
   type PlaylistSampleTrack,
   type VenueKey,
 } from './venue-time-machine-data';
+import type { HeroMarket } from '@/lib/hero-market';
 
 type TouchpointKey = 'sound' | 'screens' | 'messages' | 'phone';
+
+type HeroCover = {
+  alt: string;
+  local?: boolean;
+  src: string;
+};
+
+type HeroCoverSet = {
+  featured: HeroCover;
+  globalSmallOne: HeroCover;
+  globalSmallTwo: HeroCover;
+  globalSquare: HeroCover;
+  globalTall: HeroCover;
+  regionalSmall: HeroCover;
+  regionalWide: HeroCover;
+};
+
+const HERO_COVER_SETS: Record<HeroMarket, HeroCoverSet> = {
+  global: {
+    featured: { src: '/images/covers/pop-mid-tempo.jpg', alt: 'Pop Mid-Tempo' },
+    regionalWide: { src: '/images/covers/nu-disco-vocal.jpg', alt: 'Nu Disco Vocal' },
+    globalSquare: { src: '/images/covers/deep-house.jpg', alt: 'Deep House' },
+    regionalSmall: { src: '/images/covers/tropical-house-instrumental.jpg', alt: 'Tropical House Instrumental' },
+    globalSmallOne: { src: '/images/covers/bossa-nova-lounge.jpg', alt: 'Bossa Nova Lounge' },
+    globalSmallTwo: { src: '/images/covers/french-cafe.jpg', alt: 'French Cafe' },
+    globalTall: { src: '/images/covers/chillhop.jpg', alt: 'Chillhop' },
+  },
+  vietnam: {
+    featured: { src: '/images/covers/vietnamese-pop.webp', alt: 'Vietnamese Pop', local: true },
+    regionalWide: { src: '/images/covers/vietnamese-acoustic-pop.webp', alt: 'Vietnamese Acoustic Pop', local: true },
+    globalSquare: { src: '/images/covers/deep-house.jpg', alt: 'Deep House' },
+    regionalSmall: { src: '/images/covers/vietnamese-tet-instrumental.webp', alt: 'Vietnamese Tet Instrumental', local: true },
+    globalSmallOne: { src: '/images/covers/nu-disco-vocal.jpg', alt: 'Nu Disco Vocal' },
+    globalSmallTwo: { src: '/images/covers/bossa-nova-lounge.jpg', alt: 'Bossa Nova Lounge' },
+    globalTall: { src: '/images/covers/chillhop.jpg', alt: 'Chillhop' },
+  },
+};
 
 const phaseAccents = [
   ['#e8850c', '#79d7a5'],
@@ -87,6 +125,7 @@ export function ImmersiveBeatBreeze() {
   const [isMuted, setIsMuted] = useState(false);
   const [volume, setVolume] = useState(0.65);
   const [activeTouchpoint, setActiveTouchpoint] = useState<TouchpointKey>('sound');
+  const [heroMarket, setHeroMarket] = useState<HeroMarket>('global');
   const [sampleAssets, setSampleAssets] = useState<Record<string, PlaylistSampleAsset>>({});
   const [sampleLoadState, setSampleLoadState] = useState<'loading' | 'ready' | 'error'>('loading');
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -127,6 +166,24 @@ export function ImmersiveBeatBreeze() {
     if (Number.isFinite(storedVolume) && storedVolume >= 0 && storedVolume <= 1) {
       setVolume(storedVolume);
     }
+  }, []);
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    void fetch('/api/hero-market/', { cache: 'no-store', signal: controller.signal })
+      .then(async (response) => {
+        if (!response.ok) return null;
+        return response.json() as Promise<{ market?: HeroMarket }>;
+      })
+      .then((result) => {
+        if (result?.market === 'vietnam') setHeroMarket('vietnam');
+      })
+      .catch((error: unknown) => {
+        if (error instanceof DOMException && error.name === 'AbortError') return;
+      });
+
+    return () => controller.abort();
   }, []);
 
   useEffect(() => {
@@ -244,6 +301,23 @@ export function ImmersiveBeatBreeze() {
     window.setTimeout(() => setCopied(false), 1800);
   };
 
+  const heroCovers = HERO_COVER_SETS[heroMarket];
+  const hasRegionalLayer = heroMarket === 'vietnam';
+  const regionalCountry = useMemo(() => {
+    if (!hasRegionalLayer) return '';
+
+    try {
+      return new Intl.DisplayNames([locale], { type: 'region' }).of('VN') ?? 'Vietnam';
+    } catch {
+      return 'Vietnam';
+    }
+  }, [hasRegionalLayer, locale]);
+  const fieldEyebrow = hasRegionalLayer
+    ? t('field.listeningIn', { country: regionalCountry })
+    : t('field.globalEyebrow');
+  const fieldTitle = t(hasRegionalLayer ? 'field.localTitle' : 'field.globalTitle');
+  const fieldMeta = t(hasRegionalLayer ? 'field.localMeta' : 'field.globalMeta');
+
   return (
     <div
       className={styles.shell}
@@ -273,41 +347,64 @@ export function ImmersiveBeatBreeze() {
           <div
             className={styles.venueCanvas}
             role="img"
-            aria-label={`${t('field.statement')} ${t('field.detail')}`}
+            aria-label={`${fieldTitle} ${fieldMeta}`}
           >
-            <div className={styles.canvasStage} aria-hidden="true">
-              <div className={styles.canvasGlow} />
-
-              <div className={styles.venueFrame}>
-                <div className={styles.venueMedia}>
-                  <Image
-                    className={styles.venueScene}
-                    src="/images/hero-lounge.webp"
-                    alt=""
-                    fill
-                    sizes="(max-width: 900px) 88vw, 44vw"
-                    priority
-                  />
-                </div>
-                <div className={styles.venueWash} />
-
-                <div className={styles.venueChrome}>
-                  <span>{t('field.curated')}</span>
-                  <i aria-hidden="true" />
+            <div className={styles.coverStage} aria-hidden="true">
+              <div className={styles.coverField} key={heroMarket}>
+                <div className={styles.coverFieldHead}>
+                  <div>
+                    <span>{fieldEyebrow}</span>
+                    <strong>{fieldTitle}</strong>
+                  </div>
+                  <small>{fieldMeta}</small>
                 </div>
 
-                <div className={styles.venueMessage}>
-                  <strong>{t('field.statement')}</strong>
-                  <small>{t('field.detail')}</small>
-                </div>
-              </div>
+                <div className={styles.coverGrid}>
+                  {(
+                    [
+                      ['featured', styles.featuredCover],
+                      ['regionalWide', styles.regionalWideCover],
+                      ['globalSquare', styles.globalSquareCover],
+                      ['regionalSmall', styles.regionalSmallCover],
+                      ['globalSmallOne', styles.globalSmallOneCover],
+                      ['globalSmallTwo', styles.globalSmallTwoCover],
+                      ['globalTall', styles.globalTallCover],
+                    ] as const
+                  ).map(([key, placement], index) => {
+                    const cover = heroCovers[key];
 
-              <div className={styles.curationStory}>
-                <span>{t('field.read')}</span>
-                <i />
-                <span>{t('field.blend')}</span>
-                <i />
-                <span>{t('field.shape')}</span>
+                    return (
+                      <article
+                        className={`${styles.coverTile} ${placement} ${cover.local ? styles.localCover : ''}`}
+                        key={cover.src}
+                      >
+                        <Image
+                          src={cover.src}
+                          alt=""
+                          fill
+                          priority={index < 2}
+                          sizes={index === 0
+                            ? '(max-width: 620px) 46vw, (max-width: 900px) 45vw, 22vw'
+                            : '(max-width: 620px) 43vw, (max-width: 900px) 30vw, 15vw'}
+                          className={styles.coverImage}
+                        />
+                        {key === 'featured' && hasRegionalLayer ? (
+                          <div className={styles.localeNote}>
+                            <span>{t('field.localSelection')}</span>
+                            <strong>{cover.alt}</strong>
+                          </div>
+                        ) : null}
+                        {key === 'featured' ? <strong className={styles.mobileCoverName}>{cover.alt}</strong> : null}
+                      </article>
+                    );
+                  })}
+                </div>
+
+                <div className={styles.coverFieldFoot}>
+                  <span>{t(hasRegionalLayer ? 'field.regionalVoices' : 'field.openRange')}</span>
+                  <i />
+                  <span>{t('field.globalDirection')}</span>
+                </div>
               </div>
             </div>
           </div>
