@@ -84,6 +84,12 @@ const HERO_COVERS = [
   { name: 'Pop Mid-Tempo', src: '/images/covers/pop-mid-tempo.jpg' },
 ] as const;
 
+const HERO_VENUE_SCENES = [
+  { name: 'Hotel', src: '/images/hero-hotel.webp' },
+  { name: 'Restaurant', src: '/images/hero-restaurant.webp' },
+  { name: 'Retail', src: '/images/hero-retail.webp' },
+] as const;
+
 export function ImmersiveBeatBreeze() {
   const locale = useLocale();
   const t = useTranslations('homePage.immersive');
@@ -278,44 +284,59 @@ export function ImmersiveBeatBreeze() {
             </div>
           </div>
 
-          <div className={styles.livingRecord} role="img" aria-label={t('field.ariaLabel')}>
-            <div className={styles.recordStage} aria-hidden="true">
-              <div className={styles.recordAura} />
-              <div className={styles.recordDisc}>
-                <div className={styles.recordLabel}><span>BM</span></div>
-              </div>
-              <div className={styles.toneArm}><i /></div>
+          <div
+            className={styles.venueCanvas}
+            role="img"
+            aria-label={`${t('field.statement')} ${t('field.detail')}`}
+          >
+            <div className={styles.canvasStage} aria-hidden="true">
+              <div className={styles.canvasGlow} />
 
-              <div className={styles.coverFan}>
-                {HERO_COVERS.map((cover, index) => (
-                  <div className={styles.recordCover} key={cover.name}>
+              <div className={styles.catalogueRail}>
+                <div className={styles.catalogueTrack}>
+                  {HERO_COVERS.map((cover, index) => (
+                    <div className={styles.catalogueCover} key={cover.name}>
+                      <Image
+                        src={cover.src}
+                        alt=""
+                        fill
+                        sizes="(max-width: 620px) 84px, (max-width: 900px) 104px, 118px"
+                        priority={index < 2}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className={styles.venueFrame}>
+                <div className={styles.venueMedia}>
+                  {HERO_VENUE_SCENES.map((scene, index) => (
                     <Image
-                      src={cover.src}
+                      className={styles.venueScene}
+                      key={scene.name}
+                      src={scene.src}
                       alt=""
                       fill
-                      sizes="(max-width: 620px) 22vw, (max-width: 900px) 16vw, 110px"
-                      priority={index < 3}
+                      sizes="(max-width: 900px) 88vw, 44vw"
+                      priority={index === 0}
                     />
-                  </div>
-                ))}
-              </div>
-
-              <div className={styles.directionSleeve}>
-                <div className={styles.directionCore}>
-                  <div className={styles.directionCollage}>
-                    {HERO_COVERS.slice(1, 4).map((cover) => (
-                      <span key={cover.name}>
-                        <Image src={cover.src} alt="" fill sizes="11vw" priority />
-                      </span>
-                    ))}
-                  </div>
-                  <div className={styles.directionWash} />
-                  <div className={styles.directionCopy}>
-                    <span>{t('field.curated')}</span>
-                    <strong>{t('field.statement')}</strong>
-                    <small>{t('field.detail')}</small>
-                  </div>
+                  ))}
                 </div>
+                <div className={styles.venueWash} />
+
+                <div className={styles.venueChrome}>
+                  <span>{t('field.read')}</span>
+                  <i />
+                  <span>{t('field.shape')}</span>
+                </div>
+
+                <div className={styles.venueMessage}>
+                  <span>{t('field.curated')}</span>
+                  <strong>{t('field.statement')}</strong>
+                  <small>{t('field.detail')}</small>
+                </div>
+
+                <div className={styles.directionSignal}><i /></div>
               </div>
 
               <div className={styles.curationStory}>
