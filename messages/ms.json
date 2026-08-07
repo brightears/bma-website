@@ -848,8 +848,13 @@
         "scroll": "Alami perjalanan hari"
       },
       "field": {
-        "ariaLabel": "Medan muzik hidup yang berubah di seluruh venue",
-        "energy": "Tenaga {energy}"
+        "ariaLabel": "Satu ringkasan tempat yang menyelaras muzik, skrin, mesej dan automasi di seluruh tempat",
+        "brief": "Ringkasan tempat",
+        "sound": "Bunyi",
+        "screens": "Skrin",
+        "messages": "Mesej",
+        "automation": "Automasi",
+        "outcome": "Setiap titik sentuh seirama"
       },
       "audio": {
         "title": "Sampel zon dipilih",
@@ -989,7 +994,7 @@
         "highlight": "Beat Breeze mengurus seluruh pengalaman.",
         "description": "Satu arah kreatif boleh menggerakkan bunyi, skrin, mesej, telefon dan kerja operasi di belakangnya.",
         "core": "Beat Breeze",
-        "coreText": "Satu brief tempat",
+        "coreText": "Satu ringkasan tempat",
         "sound": {
           "title": "Muzik & Concierge",
           "text": "Cari, jadual dan segarkan bunyi tempat."
