@@ -6,7 +6,6 @@ import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import { SITE, SOCIAL } from '@/lib/constants';
 import { WhatsAppLink, LineLink } from '@/components/icons';
-import styles from './Footer.module.css';
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -30,11 +29,7 @@ export function Footer() {
             <Link href={`/${locale}`} className="inline-block rounded-lg" aria-label="BMAsia">
               <Image src="/images/BMAsia_Logo.png" alt="BMAsia" width={150} height={50} className="h-10 w-auto" />
             </Link>
-            <div className="mt-7 max-w-[23rem]">
-              <p className={`${styles.signature} font-label`}>{t('tagline')}</p>
-              <div className={`${styles.signalTrace} mt-5`} aria-hidden="true" />
-            </div>
-            <div className="mt-7 flex items-center gap-4">
+            <div className="mt-8 flex items-center gap-4">
               <a href={`mailto:${SITE.email}`} className="text-sm text-white/62 hover:text-brand-orange">{SITE.email}</a>
               <WhatsAppLink href={SOCIAL.whatsapp} size={18} />
               <LineLink href={SOCIAL.line} size={18} />
