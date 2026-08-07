@@ -848,7 +848,9 @@
         "scroll": "体验场所时光机"
       },
       "field": {
-        "ariaLabel": "展示音乐随场所变化的动态音乐场",
+        "ariaLabel": "一份场所需求简报，协调场所内的音乐、屏幕、信息与自动化",
+        "brief": "场所需求简报",
+        "outcome": "每个触点，同步共振",
         "energy": "能量 {energy}"
       },
       "audio": {

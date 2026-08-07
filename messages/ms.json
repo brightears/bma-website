@@ -848,7 +848,9 @@
         "scroll": "Alami perjalanan hari"
       },
       "field": {
-        "ariaLabel": "Medan muzik hidup yang berubah di seluruh venue",
+        "ariaLabel": "Satu ringkasan venue yang menyelaras muzik, skrin, mesej dan automasi di seluruh venue",
+        "brief": "Ringkasan venue",
+        "outcome": "Setiap titik sentuh seirama",
         "energy": "Tenaga {energy}"
       },
       "audio": {

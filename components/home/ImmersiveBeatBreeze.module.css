@@ -298,58 +298,356 @@
 .beatPath:hover svg,
 .soundtrackPath:hover svg { transform: translateX(4px); }
 
-.livingField {
+.venueConductor {
   position: relative;
   min-height: min(70vh, 720px);
   display: grid;
   place-items: center;
+  contain: layout paint;
 }
 
-.orbitRing {
+.conductorStage {
   position: absolute;
-  border: 1px solid color-mix(in srgb, var(--phase-b) 25%, rgba(255, 255, 255, 0.08));
-  border-radius: 50%;
-  animation: ringBreathe 6s ease-in-out infinite;
-  transition: border-color 700ms ease;
+  width: min(100%, 700px);
+  aspect-ratio: 1.06;
+  overflow: hidden;
+  isolation: isolate;
 }
 
-.ringOne { width: 32%; aspect-ratio: 1; }
-.ringTwo { width: 58%; aspect-ratio: 1; animation-delay: -2s; }
-.ringThree { width: 86%; aspect-ratio: 1; animation-delay: -4s; }
+.conductorStage::before {
+  position: absolute;
+  z-index: -3;
+  inset: 4%;
+  border-radius: 45% 55% 52% 48% / 48% 42% 58% 52%;
+  content: '';
+  opacity: 0.44;
+  background:
+    radial-gradient(circle at 30% 28%, rgba(232, 133, 12, 0.17), transparent 31%),
+    radial-gradient(circle at 72% 65%, rgba(0, 212, 200, 0.15), transparent 34%);
+  filter: blur(10px);
+  animation: conductorBreathe 9s ease-in-out infinite;
+}
 
-.orbitCore {
+.conductorStage::after {
+  position: absolute;
+  z-index: -2;
+  inset: 12% 10%;
+  border: 1px solid rgba(255, 255, 255, 0.045);
+  border-radius: 38% 62% 46% 54% / 58% 42% 58% 42%;
+  content: '';
+  box-shadow: inset 0 0 70px rgba(0, 212, 200, 0.025);
+  transform: rotate(-7deg);
+}
+
+.conductorGlow {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 38%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 212, 200, 0.13), rgba(232, 133, 12, 0.035) 48%, transparent 72%);
+  filter: blur(12px);
+  transform: translate(-50%, -50%);
+  animation: conductorGlow 6.8s ease-in-out infinite;
+}
+
+.conductorMap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.venueOutline,
+.venuePartition {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+
+.venueOutline {
+  stroke: rgba(238, 243, 255, 0.08);
+  stroke-width: 1.2;
+  stroke-dasharray: 4 11;
+}
+
+.venuePartition {
+  stroke: rgba(238, 243, 255, 0.045);
+  stroke-width: 1;
+}
+
+.signalRoute {
+  fill: none;
+  stroke: rgba(232, 133, 12, 0.62);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-dasharray: 7 13;
+  vector-effect: non-scaling-stroke;
+  animation: signalTravel 3.4s linear infinite;
+}
+
+.signalRouteOne { animation-delay: -0.3s; }
+.signalRouteTwo { stroke: rgba(215, 185, 73, 0.64); animation-delay: -1.1s; }
+.signalRouteThree { stroke: rgba(73, 197, 158, 0.7); animation-delay: -1.9s; }
+.signalRouteFour { stroke: rgba(0, 212, 200, 0.68); animation-delay: -2.7s; }
+
+.signalPoint {
+  fill: #00d4c8;
+  filter: drop-shadow(0 0 8px rgba(0, 212, 200, 0.82));
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: signalPoint 7.2s ease-in-out infinite;
+}
+
+.signalPointOne { fill: #e8850c; animation-delay: -0.3s; }
+.signalPointTwo { fill: #e7b94e; animation-delay: -1.6s; }
+.signalPointThree { fill: #73cf98; animation-delay: -3.1s; }
+.signalPointFour { animation-delay: -4.6s; }
+
+.conductorBrief {
+  position: absolute;
+  z-index: 4;
+  top: 12.5%;
+  left: 11%;
+  display: flex;
+  min-height: 36px;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px 0 10px;
+  border: 1px solid rgba(232, 133, 12, 0.25);
+  border-radius: 999px;
+  background: rgba(10, 18, 30, 0.74);
+  box-shadow: 0 12px 42px rgba(0, 0, 0, 0.26);
+  color: rgba(238, 243, 255, 0.68);
+  font-family: var(--font-label), sans-serif;
+  font-size: 10px;
+  font-weight: 620;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  backdrop-filter: blur(16px);
+}
+
+.conductorBrief i {
   position: relative;
-  z-index: 3;
-  width: 220px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(232, 133, 12, 0.5);
+  border-radius: 50%;
+}
+
+.conductorBrief i::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #e8850c;
+  box-shadow: 0 0 10px rgba(232, 133, 12, 0.9);
+  content: '';
+  transform: translate(-50%, -50%);
+  animation: briefPulse 2.8s ease-in-out infinite;
+}
+
+.conductorCore {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  width: 168px;
   aspect-ratio: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.13);
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 50%;
-  background: rgba(11, 19, 33, 0.72);
-  box-shadow: 0 0 80px color-mix(in srgb, var(--phase-a) 20%, transparent);
+  background:
+    radial-gradient(circle at 32% 20%, rgba(232, 133, 12, 0.14), transparent 35%),
+    radial-gradient(circle at 72% 78%, rgba(0, 212, 200, 0.11), transparent 38%),
+    rgba(8, 17, 30, 0.86);
+  box-shadow: 0 0 80px rgba(0, 212, 200, 0.08), 0 26px 70px rgba(0, 0, 0, 0.34), inset 0 0 30px rgba(255, 255, 255, 0.025);
   text-align: center;
+  transform: translate(-50%, -50%);
   backdrop-filter: blur(20px);
 }
 
-.orbitCore > span {
-  color: var(--phase-a);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 14px;
+.coreHalo {
+  position: absolute;
+  inset: -13px;
+  border: 1px solid rgba(0, 212, 200, 0.17);
+  border-radius: 50%;
+  animation: coreHalo 4.8s ease-out infinite;
 }
 
-.orbitCore > strong {
-  margin-top: 7px;
+.conductorCore > span {
+  color: #e7b94e;
   font-family: var(--font-label), sans-serif;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
 }
 
-.orbitCore > small {
-  margin: 8px 0 11px;
-  color: rgba(238, 243, 255, 0.42);
+.conductorCore > strong {
+  max-width: 112px;
+  margin-top: 9px;
+  color: rgba(238, 243, 255, 0.84);
+  font-size: 13px;
+  font-weight: 520;
+  line-height: 1.35;
+  text-wrap: balance;
+}
+
+.conductorCore > i {
+  width: 36px;
+  height: 2px;
+  margin-top: 13px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.conductorCore > i::after {
+  display: block;
+  width: 60%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #e8850c, #00d4c8);
+  content: '';
+  animation: coreSignal 2.6s ease-in-out infinite;
+}
+
+.conductorNode {
+  position: absolute;
+  z-index: 4;
+  display: grid;
+  width: 172px;
+  min-height: 70px;
+  grid-template-columns: 38px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px 11px 11px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(18, 30, 44, 0.86), rgba(7, 16, 29, 0.72));
+  box-shadow: 0 22px 58px rgba(0, 0, 0, 0.28), inset 0 1px rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(18px);
+}
+
+.conductorNode::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  content: '';
+  opacity: 0.7;
+  background: linear-gradient(90deg, transparent, var(--node-accent), transparent);
+  transform: scaleX(0.24);
+  animation: nodeAwake 7.2s ease-in-out infinite;
+}
+
+.conductorSound {
+  --node-accent: #e8850c;
+  top: 35%;
+  left: 3.5%;
+}
+
+.conductorScreens {
+  --node-accent: #e7b94e;
+  top: 20%;
+  right: 2.5%;
+}
+
+.conductorMessages {
+  --node-accent: #73cf98;
+  right: 1.5%;
+  bottom: 17%;
+}
+
+.conductorAutomation {
+  --node-accent: #00d4c8;
+  bottom: 13.5%;
+  left: 4%;
+}
+
+.conductorScreens::after { animation-delay: -1.8s; }
+.conductorMessages::after { animation-delay: -3.6s; }
+.conductorAutomation::after { animation-delay: -5.4s; }
+
+.conductorGlyph {
+  display: grid;
+  width: 38px;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--node-accent) 38%, rgba(255, 255, 255, 0.08));
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--node-accent) 10%, rgba(255, 255, 255, 0.025));
+  color: var(--node-accent);
+}
+
+.conductorGlyph svg {
+  width: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.conductorNode > span:last-child {
+  min-width: 0;
+}
+
+.conductorNode small {
+  display: block;
+  color: var(--node-accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+}
+
+.conductorNode strong {
+  display: block;
+  margin-top: 4px;
+  color: rgba(238, 243, 255, 0.82);
+  font-family: var(--font-label), sans-serif;
+  font-size: 12px;
+  font-weight: 540;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+.conductorOutcome {
+  position: absolute;
+  z-index: 5;
+  top: 68%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: rgba(238, 243, 255, 0.54);
+  font-family: var(--font-label), sans-serif;
+  font-size: 10px;
+  font-weight: 580;
+  letter-spacing: 0.08em;
+  text-align: center;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.conductorOutcome i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #00d4c8;
+  box-shadow: 0 0 14px rgba(0, 212, 200, 0.75);
+  animation: outcomePulse 2.8s ease-in-out infinite;
 }
 
 .equalizer {
@@ -369,40 +667,6 @@
 .equalizerActive i { animation: equalize 900ms ease-in-out infinite alternate; }
 .equalizerActive i:nth-child(2n) { animation-delay: -400ms; }
 .equalizerActive i:nth-child(3n) { animation-delay: -700ms; }
-
-.orbitCover {
-  position: absolute;
-  z-index: 4;
-  width: clamp(96px, 10vw, 154px);
-  aspect-ratio: 1;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 22px;
-  object-fit: cover;
-  box-shadow: 0 26px 80px rgba(0, 0, 0, 0.38);
-  animation: coverFloat 5s ease-in-out infinite;
-  transition: all 700ms cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.orbitFallback {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  padding: 14px;
-  background:
-    radial-gradient(circle at 22% 18%, color-mix(in srgb, var(--phase-b) 28%, transparent), transparent 42%),
-    linear-gradient(145deg, color-mix(in srgb, var(--phase-a) 20%, #101827), #07101d 72%);
-  color: rgba(238, 243, 255, 0.88);
-  text-align: center;
-}
-
-.orbitFallback svg { width: 22px; }
-.orbitFallback small { font-size: 10px; line-height: 1.25; text-wrap: balance; }
-
-.orbitCover1 { top: 24%; left: 4%; transform: rotate(-8deg); }
-.orbitCover2 { top: 20%; right: 3%; transform: rotate(8deg); animation-delay: -1.7s; }
-.orbitCover3 { right: 12%; bottom: 11%; transform: rotate(-4deg); animation-delay: -3.2s; }
 
 .scrollCue {
   position: absolute;
@@ -1274,8 +1538,51 @@
   to { transform: translate3d(5%, 4%, 0) rotate(-8deg) scale(1.08); }
 }
 
-@keyframes ringBreathe { 0%, 100% { transform: scale(0.98); opacity: 0.55; } 50% { transform: scale(1.035); opacity: 1; } }
-@keyframes coverFloat { 0%, 100% { translate: 0 0; } 50% { translate: 0 -12px; } }
+@keyframes conductorBreathe {
+  0%, 100% { opacity: 0.34; transform: scale(0.96) rotate(-2deg); }
+  50% { opacity: 0.58; transform: scale(1.04) rotate(2deg); }
+}
+
+@keyframes conductorGlow {
+  0%, 100% { opacity: 0.55; transform: translate(-50%, -50%) scale(0.88); }
+  50% { opacity: 1; transform: translate(-50%, -50%) scale(1.12); }
+}
+
+@keyframes signalTravel { to { stroke-dashoffset: -40; } }
+
+@keyframes signalPoint {
+  0%, 18%, 100% { opacity: 0.35; transform: scale(0.8); }
+  28%, 42% { opacity: 1; transform: scale(1.55); }
+  55% { opacity: 0.5; transform: scale(1); }
+}
+
+@keyframes briefPulse {
+  0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) scale(0.72); }
+  50% { opacity: 1; transform: translate(-50%, -50%) scale(1.35); }
+}
+
+@keyframes coreHalo {
+  0% { opacity: 0.15; transform: scale(0.9); }
+  48% { opacity: 0.62; }
+  100% { opacity: 0; transform: scale(1.14); }
+}
+
+@keyframes coreSignal {
+  0%, 100% { transform: translateX(-34%); }
+  50% { transform: translateX(100%); }
+}
+
+@keyframes nodeAwake {
+  0%, 16%, 100% { opacity: 0.25; transform: scaleX(0.2); }
+  27%, 42% { opacity: 1; transform: scaleX(1); }
+  58% { opacity: 0.5; transform: scaleX(0.48); }
+}
+
+@keyframes outcomePulse {
+  0%, 100% { opacity: 0.5; transform: scale(0.82); }
+  50% { opacity: 1; transform: scale(1.28); }
+}
+
 @keyframes scrollLine { 0% { transform: translateX(-110%); } 100% { transform: translateX(220%); } }
 @keyframes pulseOut { 0% { transform: translate(-50%, -50%) scale(0.25); opacity: 0.7; } 100% { transform: translate(-50%, -50%) scale(3.2); opacity: 0; } }
 @keyframes equalize { from { transform: scaleY(0.55); } to { transform: scaleY(1.25); } }
@@ -1289,7 +1596,8 @@
 
 @media (max-width: 900px) {
   .heroGrid { min-height: auto; grid-template-columns: 1fr; padding: 130px 24px 54px; }
-  .livingField { min-height: 520px; }
+  .venueConductor { min-height: 540px; }
+  .conductorStage { width: min(100%, 640px); }
   .experience, .story { padding: 100px 24px; }
   .zonesStage { grid-template-columns: 1fr; }
   .zonePlanIntro { grid-template-columns: 1fr; }
@@ -1321,10 +1629,23 @@
 @media (max-width: 620px) {
   .heroGrid { padding-inline: 18px; }
   .heroActions { flex-direction: column; align-items: stretch; }
-  .livingField { min-height: 430px; }
-  .orbitCore { width: 150px; }
-  .orbitCore > strong { font-size: 18px; }
-  .orbitCover { width: 84px; border-radius: 15px; }
+  .venueConductor { min-height: 440px; }
+  .conductorStage { width: 108%; }
+  .conductorCore { width: 126px; padding: 12px; }
+  .conductorCore > span { font-size: 9px; }
+  .conductorCore > strong { max-width: 90px; font-size: 10px; }
+  .conductorNode { width: 132px; min-height: 56px; grid-template-columns: 30px minmax(0, 1fr); gap: 8px; padding: 8px 10px 8px 8px; border-radius: 14px; }
+  .conductorGlyph { width: 30px; border-radius: 9px; }
+  .conductorGlyph svg { width: 16px; }
+  .conductorNode strong { font-size: 10px; }
+  .conductorNode small { font-size: 8px; }
+  .conductorBrief { top: 11%; left: 9%; min-height: 30px; padding-right: 10px; font-size: 8px; }
+  .conductorBrief i { width: 14px; height: 14px; }
+  .conductorSound { top: 35%; left: 1%; }
+  .conductorScreens { top: 20%; right: 0; }
+  .conductorMessages { right: 0; bottom: 17%; }
+  .conductorAutomation { bottom: 14%; left: 1%; }
+  .conductorOutcome { top: 67%; font-size: 8px; }
   .timeMachine { border-radius: 22px; }
   .machineTopline { padding: 22px 20px; }
   .livePill { display: none; }
@@ -1372,9 +1693,20 @@
 
 @media (prefers-reduced-motion: reduce) {
   .aurora,
-  .orbitRing,
-  .orbitCover,
+  .conductorStage::before,
+  .conductorGlow,
+  .signalRoute,
+  .signalPoint,
+  .conductorBrief i::after,
+  .coreHalo,
+  .conductorCore > i::after,
+  .conductorNode::after,
+  .conductorOutcome i,
   .equalizerActive i,
   .scrollCue i::after,
   .pulseField i { animation: none !important; }
+
+  .signalRoute { stroke-dasharray: none; opacity: 0.52; }
+  .signalPoint { opacity: 0.8; transform: none; }
+  .conductorStage::before { opacity: 0.42; transform: none; }
 }

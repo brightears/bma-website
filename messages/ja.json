@@ -848,7 +848,9 @@
         "scroll": "Venue Time Machineを試す"
       },
       "field": {
-        "ariaLabel": "ベニュー全体で音楽が変化するライブフィールド",
+        "ariaLabel": "ひとつの会場ブリーフが会場全体の音楽、スクリーン、メッセージ、オートメーションを連携します",
+        "brief": "会場ブリーフ",
+        "outcome": "すべての接点をひとつのリズムに",
         "energy": "エネルギー {energy}"
       },
       "audio": {

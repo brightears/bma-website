@@ -848,7 +848,9 @@
         "scroll": "Try the Venue Time Machine"
       },
       "field": {
-        "ariaLabel": "A living field showing music changing throughout the venue",
+        "ariaLabel": "One venue brief coordinating music, screens, messages and automation across the venue",
+        "brief": "Venue brief",
+        "outcome": "Every touchpoint in rhythm",
         "energy": "Energy {energy}"
       },
       "audio": {

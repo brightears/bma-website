@@ -848,7 +848,9 @@
         "scroll": "Coba Mesin Waktu Venue"
       },
       "field": {
-        "ariaLabel": "Bidang musik hidup yang berubah di seluruh venue",
+        "ariaLabel": "Satu arahan venue yang mengoordinasikan musik, layar, pesan, dan automasi di seluruh venue",
+        "brief": "Arahan venue",
+        "outcome": "Setiap titik interaksi selaras",
         "energy": "Energi {energy}"
       },
       "audio": {

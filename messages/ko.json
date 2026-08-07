@@ -848,7 +848,9 @@
         "scroll": "Venue Time Machine 체험하기"
       },
       "field": {
-        "ariaLabel": "베뉴 전체에서 음악이 변화하는 살아 있는 필드",
+        "ariaLabel": "하나의 공간 브리프가 공간 전체의 음악, 스크린, 메시지, 자동화를 조율합니다",
+        "brief": "공간 브리프",
+        "outcome": "모든 접점이 하나의 리듬으로",
         "energy": "에너지 {energy}"
       },
       "audio": {

@@ -848,7 +848,9 @@
         "scroll": "Thử Cỗ máy Thời gian Không gian"
       },
       "field": {
-        "ariaLabel": "Trường âm nhạc sống động thay đổi theo từng khu vực",
+        "ariaLabel": "Một định hướng không gian điều phối âm nhạc, màn hình, thông điệp và tự động hóa trong toàn bộ địa điểm",
+        "brief": "Định hướng không gian",
+        "outcome": "Mọi điểm chạm cùng chung nhịp điệu",
         "energy": "Năng lượng {energy}"
       },
       "audio": {
