@@ -76,20 +76,6 @@ function Equalizer({ active = false }: { active?: boolean }) {
   );
 }
 
-const HERO_COVERS = [
-  { name: 'French Cafe', src: '/images/covers/french-cafe.jpg' },
-  { name: 'Tropical House Instrumental', src: '/images/covers/tropical-house-instrumental.jpg' },
-  { name: 'Nu Disco Vocal', src: '/images/covers/nu-disco-vocal.jpg' },
-  { name: 'Deep House', src: '/images/covers/deep-house.jpg' },
-  { name: 'Pop Mid-Tempo', src: '/images/covers/pop-mid-tempo.jpg' },
-] as const;
-
-const HERO_VENUE_SCENES = [
-  { name: 'Hotel', src: '/images/hero-hotel.webp' },
-  { name: 'Restaurant', src: '/images/hero-restaurant.webp' },
-  { name: 'Retail', src: '/images/hero-retail.webp' },
-] as const;
-
 export function ImmersiveBeatBreeze() {
   const locale = useLocale();
   const t = useTranslations('homePage.immersive');
@@ -292,51 +278,28 @@ export function ImmersiveBeatBreeze() {
             <div className={styles.canvasStage} aria-hidden="true">
               <div className={styles.canvasGlow} />
 
-              <div className={styles.catalogueRail}>
-                <div className={styles.catalogueTrack}>
-                  {HERO_COVERS.map((cover, index) => (
-                    <div className={styles.catalogueCover} key={cover.name}>
-                      <Image
-                        src={cover.src}
-                        alt=""
-                        fill
-                        sizes="(max-width: 620px) 84px, (max-width: 900px) 104px, 118px"
-                        priority={index < 2}
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-
               <div className={styles.venueFrame}>
                 <div className={styles.venueMedia}>
-                  {HERO_VENUE_SCENES.map((scene, index) => (
-                    <Image
-                      className={styles.venueScene}
-                      key={scene.name}
-                      src={scene.src}
-                      alt=""
-                      fill
-                      sizes="(max-width: 900px) 88vw, 44vw"
-                      priority={index === 0}
-                    />
-                  ))}
+                  <Image
+                    className={styles.venueScene}
+                    src="/images/hero-lounge.webp"
+                    alt=""
+                    fill
+                    sizes="(max-width: 900px) 88vw, 44vw"
+                    priority
+                  />
                 </div>
                 <div className={styles.venueWash} />
 
                 <div className={styles.venueChrome}>
-                  <span>{t('field.read')}</span>
-                  <i />
-                  <span>{t('field.shape')}</span>
+                  <span>{t('field.curated')}</span>
+                  <i aria-hidden="true" />
                 </div>
 
                 <div className={styles.venueMessage}>
-                  <span>{t('field.curated')}</span>
                   <strong>{t('field.statement')}</strong>
                   <small>{t('field.detail')}</small>
                 </div>
-
-                <div className={styles.directionSignal}><i /></div>
               </div>
 
               <div className={styles.curationStory}>
