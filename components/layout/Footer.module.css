@@ -1,0 +1,92 @@
+.signature {
+  width: fit-content;
+  background: linear-gradient(
+    100deg,
+    #efa634 0%,
+    #e8c85f 38%,
+    #8bd29b 68%,
+    #49d5c5 100%
+  );
+  background-size: 180% 100%;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 10px 28px rgba(73, 213, 197, 0.08));
+  animation: signatureDrift 9s ease-in-out infinite alternate;
+}
+
+.signalTrace {
+  position: relative;
+  width: min(100%, 13rem);
+  height: 1px;
+  overflow: visible;
+  background: linear-gradient(
+    90deg,
+    rgba(239, 166, 52, 0.9),
+    rgba(232, 200, 95, 0.7) 45%,
+    rgba(73, 213, 197, 0.18)
+  );
+}
+
+.signalTrace::before,
+.signalTrace::after {
+  position: absolute;
+  top: 50%;
+  content: '';
+  border-radius: 999px;
+  transform: translate(-50%, -50%);
+}
+
+.signalTrace::before {
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background: #efa634;
+  box-shadow: 0 0 16px rgba(239, 166, 52, 0.55);
+}
+
+.signalTrace::after {
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background: #49d5c5;
+  box-shadow: 0 0 20px rgba(73, 213, 197, 0.65);
+  animation: signalTravel 7s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
+@keyframes signatureDrift {
+  from {
+    background-position: 0% 50%;
+  }
+
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes signalTravel {
+  0%,
+  100% {
+    left: 0;
+    opacity: 0.45;
+  }
+
+  50% {
+    left: 100%;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .signature,
+  .signalTrace::after {
+    animation: none;
+  }
+
+  .signature {
+    background-position: 50% 50%;
+  }
+
+  .signalTrace::after {
+    left: 100%;
+  }
+}
