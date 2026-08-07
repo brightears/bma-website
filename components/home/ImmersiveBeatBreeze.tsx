@@ -30,46 +30,12 @@ import {
   type PlaylistSampleTrack,
   type VenueKey,
 } from './venue-time-machine-data';
-import type { HeroMarket } from '@/lib/hero-market';
+import {
+  GLOBAL_HERO_COVERS,
+  type HeroExperience,
+} from '@/lib/hero-market';
 
 type TouchpointKey = 'sound' | 'screens' | 'messages' | 'phone';
-
-type HeroCover = {
-  alt: string;
-  local?: boolean;
-  src: string;
-};
-
-type HeroCoverSet = {
-  featured: HeroCover;
-  globalSmallOne: HeroCover;
-  globalSmallTwo: HeroCover;
-  globalSquare: HeroCover;
-  globalTall: HeroCover;
-  regionalSmall: HeroCover;
-  regionalWide: HeroCover;
-};
-
-const HERO_COVER_SETS: Record<HeroMarket, HeroCoverSet> = {
-  global: {
-    featured: { src: '/images/covers/pop-mid-tempo.jpg', alt: 'Pop Mid-Tempo' },
-    regionalWide: { src: '/images/covers/nu-disco-vocal.jpg', alt: 'Nu Disco Vocal' },
-    globalSquare: { src: '/images/covers/deep-house.jpg', alt: 'Deep House' },
-    regionalSmall: { src: '/images/covers/tropical-house-instrumental.jpg', alt: 'Tropical House Instrumental' },
-    globalSmallOne: { src: '/images/covers/bossa-nova-lounge.jpg', alt: 'Bossa Nova Lounge' },
-    globalSmallTwo: { src: '/images/covers/french-cafe.jpg', alt: 'French Cafe' },
-    globalTall: { src: '/images/covers/chillhop.jpg', alt: 'Chillhop' },
-  },
-  vietnam: {
-    featured: { src: '/images/covers/vietnamese-pop.webp', alt: 'Vietnamese Pop', local: true },
-    regionalWide: { src: '/images/covers/vietnamese-acoustic-pop.webp', alt: 'Vietnamese Acoustic Pop', local: true },
-    globalSquare: { src: '/images/covers/deep-house.jpg', alt: 'Deep House' },
-    regionalSmall: { src: '/images/covers/vietnamese-tet-instrumental.webp', alt: 'Vietnamese Tet Instrumental', local: true },
-    globalSmallOne: { src: '/images/covers/nu-disco-vocal.jpg', alt: 'Nu Disco Vocal' },
-    globalSmallTwo: { src: '/images/covers/bossa-nova-lounge.jpg', alt: 'Bossa Nova Lounge' },
-    globalTall: { src: '/images/covers/chillhop.jpg', alt: 'Chillhop' },
-  },
-};
 
 const phaseAccents = [
   ['#e8850c', '#79d7a5'],
@@ -125,7 +91,12 @@ export function ImmersiveBeatBreeze() {
   const [isMuted, setIsMuted] = useState(false);
   const [volume, setVolume] = useState(0.65);
   const [activeTouchpoint, setActiveTouchpoint] = useState<TouchpointKey>('sound');
-  const [heroMarket, setHeroMarket] = useState<HeroMarket>('global');
+  const [heroExperience, setHeroExperience] = useState<HeroExperience>({
+    countryCode: null,
+    covers: GLOBAL_HERO_COVERS,
+    localized: false,
+  });
+  const [showExtendedCovers, setShowExtendedCovers] = useState(false);
   const [sampleAssets, setSampleAssets] = useState<Record<string, PlaylistSampleAsset>>({});
   const [sampleLoadState, setSampleLoadState] = useState<'loading' | 'ready' | 'error'>('loading');
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -174,16 +145,27 @@ export function ImmersiveBeatBreeze() {
     void fetch('/api/hero-market/', { cache: 'no-store', signal: controller.signal })
       .then(async (response) => {
         if (!response.ok) return null;
-        return response.json() as Promise<{ market?: HeroMarket }>;
+        return response.json() as Promise<HeroExperience>;
       })
       .then((result) => {
-        if (result?.market === 'vietnam') setHeroMarket('vietnam');
+        if (result?.covers?.featured?.src && typeof result.localized === 'boolean') {
+          setHeroExperience(result);
+        }
       })
       .catch((error: unknown) => {
         if (error instanceof DOMException && error.name === 'AbortError') return;
       });
 
     return () => controller.abort();
+  }, []);
+
+  useEffect(() => {
+    const query = window.matchMedia('(min-width: 621px)');
+    const updateVisibility = () => setShowExtendedCovers(query.matches);
+    updateVisibility();
+    query.addEventListener('change', updateVisibility);
+
+    return () => query.removeEventListener('change', updateVisibility);
   }, []);
 
   useEffect(() => {
@@ -301,17 +283,17 @@ export function ImmersiveBeatBreeze() {
     window.setTimeout(() => setCopied(false), 1800);
   };
 
-  const heroCovers = HERO_COVER_SETS[heroMarket];
-  const hasRegionalLayer = heroMarket === 'vietnam';
+  const heroCovers = heroExperience.covers;
+  const hasRegionalLayer = heroExperience.localized && Boolean(heroExperience.countryCode);
   const regionalCountry = useMemo(() => {
-    if (!hasRegionalLayer) return '';
+    if (!hasRegionalLayer || !heroExperience.countryCode) return '';
 
     try {
-      return new Intl.DisplayNames([locale], { type: 'region' }).of('VN') ?? 'Vietnam';
+      return new Intl.DisplayNames([locale], { type: 'region' }).of(heroExperience.countryCode) ?? '';
     } catch {
-      return 'Vietnam';
+      return '';
     }
-  }, [hasRegionalLayer, locale]);
+  }, [hasRegionalLayer, heroExperience.countryCode, locale]);
   const fieldEyebrow = hasRegionalLayer
     ? t('field.listeningIn', { country: regionalCountry })
     : t('field.globalEyebrow');
@@ -350,7 +332,7 @@ export function ImmersiveBeatBreeze() {
             aria-label={`${fieldTitle} ${fieldMeta}`}
           >
             <div className={styles.coverStage} aria-hidden="true">
-              <div className={styles.coverField} key={heroMarket}>
+              <div className={styles.coverField} key={heroCovers.featured.src}>
                 <div className={styles.coverFieldHead}>
                   <div>
                     <span>{fieldEyebrow}</span>
@@ -367,8 +349,12 @@ export function ImmersiveBeatBreeze() {
                       ['globalSquare', styles.globalSquareCover],
                       ['regionalSmall', styles.regionalSmallCover],
                       ['globalSmallOne', styles.globalSmallOneCover],
-                      ['globalSmallTwo', styles.globalSmallTwoCover],
-                      ['globalTall', styles.globalTallCover],
+                      ...(showExtendedCovers
+                        ? [
+                            ['globalSmallTwo', styles.globalSmallTwoCover],
+                            ['globalTall', styles.globalTallCover],
+                          ] as const
+                        : []),
                     ] as const
                   ).map(([key, placement], index) => {
                     const cover = heroCovers[key];
