@@ -298,7 +298,6 @@ export function ImmersiveBeatBreeze() {
     ? t('field.listeningIn', { country: regionalCountry })
     : t('field.globalEyebrow');
   const fieldTitle = t(hasRegionalLayer ? 'field.localTitle' : 'field.globalTitle');
-  const fieldMeta = t(hasRegionalLayer ? 'field.localMeta' : 'field.globalMeta');
 
   return (
     <div
@@ -329,7 +328,7 @@ export function ImmersiveBeatBreeze() {
           <div
             className={styles.venueCanvas}
             role="img"
-            aria-label={`${fieldTitle} ${fieldMeta}`}
+            aria-label={hasRegionalLayer ? `${fieldEyebrow}. ${fieldTitle}` : fieldTitle}
           >
             <div className={styles.coverStage} aria-hidden="true">
               <div className={styles.coverField} key={heroCovers.featured.src}>
@@ -338,7 +337,6 @@ export function ImmersiveBeatBreeze() {
                     <span>{fieldEyebrow}</span>
                     <strong>{fieldTitle}</strong>
                   </div>
-                  <small>{fieldMeta}</small>
                 </div>
 
                 <div className={styles.coverGrid}>
@@ -370,8 +368,8 @@ export function ImmersiveBeatBreeze() {
                           fill
                           priority={index < 2}
                           sizes={index === 0
-                            ? '(max-width: 620px) 46vw, (max-width: 900px) 45vw, 22vw'
-                            : '(max-width: 620px) 43vw, (max-width: 900px) 30vw, 15vw'}
+                            ? '(max-width: 620px) calc(100vw - 36px), (max-width: 900px) 58vw, min(60vw, 410px)'
+                            : '(max-width: 620px) 44vw, (max-width: 900px) 19vw, min(20vw, 130px)'}
                           className={styles.coverImage}
                         />
                         {key === 'featured' && hasRegionalLayer ? (
