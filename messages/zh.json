@@ -753,10 +753,12 @@
           "reason": "长篇幅质感减少明显切换，同时让员工直接控制音量与时间。"
         }
       },
+      "capabilities": { "play": "播放", "create": "创作", "communicate": "沟通", "connect": "连接" },
       "media": {
         "eyebrow": "不只是音乐播放器",
         "title": "围绕音乐打造完整场所世界。",
         "description": "Beat Breeze 可协调宾客在场所中接触到的媒体与信息，让它们不是彼此割裂的附加项，而是同一运营计划的一部分。",
+        "musicCreation": { "label": "音乐方向", "title": "创作一首音乐，或从精选曲库开始", "text": "使用 Mureka Compose 生成原创音乐，浏览 Beat Breeze 曲库，或在适用项目中加入由真人创作的 Epidemic Sound 音乐，并在播放前审核。" },
         "screens": {
           "label": "屏幕与电视",
           "title": "视觉循环、幻灯片与场所频道",
@@ -831,6 +833,25 @@
         "description": "从 Beat Breeze 专属试用开始，或请 BMAsia 规划多分区音乐与媒体方案。",
         "support": "BMAsia 提供上线实施与响应迅速的区域支持。您的团队需要时，也始终可以使用产品自助功能。"
       }
+    }
+  },
+  "volumeController": {
+    "eyebrow": "BMAsia Volume Controller",
+    "title": "实时测量现场声音，让音乐保持在合适范围。",
+    "description": "BMAsia Volume Controller 测量场所的实时分贝，并只将数字 dB 读数发送到音乐平台。Beat Breeze 或 Soundtrack 随后在设定范围内自动调整播放音量。",
+    "imageAlt": "显示实时分贝读数的 BMAsia Volume Controller",
+    "compactTitle": "随空间变化而响应的音量",
+    "compactText": "适用于 Beat Breeze 和 Soundtrack 的 BMAsia 扩展，提供实时 dB 输入与清晰的操作范围。",
+    "privacy": "不会录制或传输任何对话或音频。",
+    "cta": "联系 BMAsia",
+    "measure": { "title": "测量", "text": "读取场所的实时声音水平。" },
+    "send": { "title": "仅发送 dB", "text": "传输数字读数，而非场所音频。" },
+    "adjust": { "title": "在范围内调整", "text": "音乐应用在设定限制内响应。" },
+    "proof": {
+      "live": "实时 dB 测量",
+      "automatic": "自动音量调整",
+      "compatible": "Beat Breeze + Soundtrack",
+      "private": "不录制音频"
     }
   },
   "homePage": {

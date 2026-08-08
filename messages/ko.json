@@ -753,10 +753,12 @@
           "reason": "긴 호흡의 질감이 눈에 띄는 전환을 줄이고 레벨과 타이밍은 직원이 직접 제어할 수 있게 합니다."
         }
       },
+      "capabilities": { "play": "재생", "create": "제작", "communicate": "소통", "connect": "연결" },
       "media": {
         "eyebrow": "음악 플레이어 그 이상",
         "title": "사운드트랙을 둘러싼 세계를 만드세요.",
         "description": "Beat Breeze는 매장에서 고객이 접하는 미디어와 메시지를 따로 떨어진 부가 기능이 아니라 하나의 운영 계획으로 조율할 수 있습니다.",
+        "musicCreation": { "label": "음악 방향", "title": "트랙을 만들거나 큐레이션 카탈로그에서 시작하세요", "text": "Mureka Compose로 오리지널 트랙을 만들고 Beat Breeze 음악을 탐색하거나, 대상 배포에 사람이 만든 Epidemic Sound 음악을 추가한 뒤 재생 전에 검토할 수 있습니다." },
         "screens": {
           "label": "스크린 및 TV",
           "title": "비주얼 루프, 슬라이드쇼, 매장 채널",
@@ -831,6 +833,25 @@
         "description": "제품별 Beat Breeze 체험으로 시작하거나 BMAsia에 다중 존 음악·미디어 계획을 요청하세요.",
         "support": "BMAsia가 온보딩과 신속한 지역 지원을 제공합니다. 팀이 필요할 때 언제든 제품 셀프서비스를 사용할 수 있습니다."
       }
+    }
+  },
+  "volumeController": {
+    "eyebrow": "BMAsia Volume Controller",
+    "title": "현장 음량을 측정하고 음악을 적정 범위로 유지합니다.",
+    "description": "BMAsia Volume Controller는 현장의 실시간 데시벨 수준을 측정해 숫자 dB 값만 음악 플랫폼으로 전송합니다. Beat Breeze 또는 Soundtrack은 설정된 범위 안에서 재생 음량을 조절합니다.",
+    "imageAlt": "실시간 데시벨 수치를 표시하는 BMAsia Volume Controller",
+    "compactTitle": "공간에 반응하는 볼륨",
+    "compactText": "실시간 dB 입력과 명확한 운영 범위를 제공하는 Beat Breeze 및 Soundtrack 공용 BMAsia 확장 기능입니다.",
+    "privacy": "대화나 오디오는 녹음 또는 전송되지 않습니다.",
+    "cta": "BMAsia에 문의",
+    "measure": { "title": "측정", "text": "현장의 실시간 소리 수준을 읽습니다." },
+    "send": { "title": "dB만 전송", "text": "현장 오디오가 아닌 숫자 값만 전송합니다." },
+    "adjust": { "title": "범위 내 조정", "text": "음악 앱이 설정된 한도 안에서 반응합니다." },
+    "proof": {
+      "live": "실시간 dB 측정",
+      "automatic": "자동 볼륨 조절",
+      "compatible": "Beat Breeze + Soundtrack",
+      "private": "오디오 녹음 없음"
     }
   },
   "homePage": {

@@ -10,7 +10,6 @@ import {
   CalendarClock,
   Check,
   CloudRain,
-  CloudSun,
   ExternalLink,
   Gauge,
   ImageIcon,
@@ -31,6 +30,8 @@ import {
   Workflow,
 } from 'lucide-react';
 import { EXTERNAL_LINKS, withAttribution } from '@/lib/external-links';
+import { useMarketFeatureProfile } from '@/hooks/use-market-feature-profile';
+import { VolumeControllerShowcase } from '@/components/products/VolumeControllerShowcase';
 import {
   type PlaylistSampleAsset,
   type PlaylistSampleTrack,
@@ -44,6 +45,7 @@ const reveal = {
 };
 
 const conciergeScenarios = ['arrival', 'campaign', 'recovery'] as const;
+const capabilityKeys = ['play', 'create', 'communicate', 'connect'] as const;
 
 const conciergeSampleDirections: Record<
   (typeof conciergeScenarios)[number],
@@ -100,8 +102,11 @@ export default function BeatBreezePage() {
   const locale = useLocale();
   const t = useTranslations('beatBreezePage');
   const immersive = useTranslations('homePage.immersive');
+  const volumeT = useTranslations('volumeController');
   const reduceMotion = useReducedMotion();
+  const marketProfile = useMarketFeatureProfile();
   const [scenario, setScenario] = useState<(typeof conciergeScenarios)[number]>('arrival');
+  const [capability, setCapability] = useState<(typeof capabilityKeys)[number]>('play');
   const [sampleAssets, setSampleAssets] = useState<Record<string, PlaylistSampleAsset>>({});
   const [sampleLoadState, setSampleLoadState] = useState<'loading' | 'ready' | 'error'>('loading');
   const [audioState, setAudioState] = useState<'idle' | 'playing' | 'paused' | 'error'>('idle');
@@ -116,6 +121,47 @@ export default function BeatBreezePage() {
     [sampleAssets, selectedDirection],
   );
   const selectedAudioSource = selectedSample?.audioUrl;
+  const controlSignals = [
+    { Icon: Workflow, label: t('redesign.controlRoom.schedule'), value: 'Evening' },
+    { Icon: WandSparkles, label: t('redesign.media.musicCreation.label'), value: 'AI + human' },
+    { Icon: Volume2, label: t('redesign.controlRoom.volume'), value: '-8 dB' },
+    { Icon: MessageSquareText, label: t('redesign.media.messages.label'), value: 'Ready' },
+  ];
+  const adaptiveMoment = marketProfile === 'prayer'
+    ? {
+        key: 'prayer',
+        time: t('redesign.day.prayer.time'),
+        title: t('redesign.day.prayer.title'),
+        text: t('redesign.day.prayer.text'),
+      }
+    : marketProfile === 'climate'
+      ? {
+          key: 'weather',
+          time: t('redesign.day.weather.time'),
+          title: t('redesign.day.weather.title'),
+          text: t('redesign.day.weather.text'),
+        }
+      : {
+          key: 'api',
+          time: '14:00',
+          title: t('redesign.connections.api.title'),
+          text: t('redesign.connections.api.text'),
+        };
+  const dayMoments = [
+    {
+      key: 'morning',
+      time: t('redesign.day.morning.time'),
+      title: t('redesign.day.morning.title'),
+      text: t('redesign.day.morning.text'),
+    },
+    adaptiveMoment,
+    {
+      key: 'evening',
+      time: t('redesign.day.evening.time'),
+      title: t('redesign.day.evening.title'),
+      text: t('redesign.day.evening.text'),
+    },
+  ];
 
   useEffect(() => {
     const controller = new AbortController();
@@ -200,15 +246,9 @@ export default function BeatBreezePage() {
               </div>
 
               <div className="grid border-b border-white/[0.08] sm:grid-cols-4">
-                {[
-                  [CloudSun, 'weather', '29°C'],
-                  [MoonStar, 'prayer', '18:42'],
-                  [Volume2, 'volume', '-8 dB'],
-                  [Workflow, 'schedule', 'Evening'],
-                ].map(([Icon, key, value]) => {
-                  const ControlIcon = Icon as typeof CloudSun;
-                  return <div key={key as string} className="border-b border-white/[0.07] p-4 last:border-b-0 sm:border-b-0 sm:border-r sm:last:border-r-0"><ControlIcon className="h-4 w-4 text-brand-orange" /><p className="mt-4 font-label text-[9px] uppercase tracking-[.16em] text-white/30">{t(`redesign.controlRoom.${key as string}`)}</p><strong className="mt-1 block text-sm font-medium text-white/82">{value as string}</strong></div>;
-                })}
+                {controlSignals.map(({ Icon, label, value }) => (
+                  <div key={label} className="border-b border-white/[0.07] p-4 last:border-b-0 sm:border-b-0 sm:border-r sm:last:border-r-0"><Icon className="h-4 w-4 text-brand-orange" /><p className="mt-4 font-label text-[9px] uppercase tracking-[.16em] text-white/30">{label}</p><strong className="mt-1 block truncate text-sm font-medium text-white/82">{value}</strong></div>
+                ))}
               </div>
 
               <div className="relative p-5 sm:p-7">
@@ -228,7 +268,7 @@ export default function BeatBreezePage() {
                 </div>
                 <div className="mt-4 flex items-center gap-3 rounded-2xl border border-brand-orange/18 bg-brand-orange/[0.065] p-4">
                   <Sparkles className="h-5 w-5 shrink-0 text-brand-orange" />
-                  <p className="text-xs leading-5 text-white/56">{t('redesign.controlRoom.note')}</p>
+                  <p className="text-xs leading-5 text-white/56">{volumeT('compactText')}</p>
                 </div>
               </div>
             </div>
@@ -240,31 +280,31 @@ export default function BeatBreezePage() {
         <div className="bma-container">
           <motion.div {...reveal} className="grid gap-8 lg:grid-cols-[0.62fr_1fr] lg:items-end">
             <div><p className="bma-kicker">{t('redesign.day.eyebrow')}</p><h2 className="bma-section-title mt-5 text-white">{t('redesign.day.title')}</h2></div>
-            <p className="bma-lede lg:justify-self-end">{t('redesign.day.description')}</p>
+            <p className="bma-lede lg:justify-self-end">{marketProfile === 'prayer' ? t('redesign.day.description') : t('redesign.connections.description')}</p>
           </motion.div>
 
           <div className="relative mt-16">
             <div className="absolute left-5 top-0 h-full w-px bg-[linear-gradient(#efa634,#49d5c5,rgba(73,213,197,.08))] sm:left-20 lg:left-1/2" aria-hidden="true" />
-            {(['morning', 'weather', 'prayer', 'evening'] as const).map((key, index) => (
-              <motion.article key={key} {...reveal} className={`relative grid min-h-[15rem] grid-cols-[3rem_1fr] gap-5 pb-10 sm:grid-cols-[8rem_1fr] lg:grid-cols-2 lg:gap-16 ${index % 2 ? '' : 'lg:text-right'}`}>
+            {dayMoments.map((moment, index) => (
+              <motion.article key={moment.key} {...reveal} className={`relative grid min-h-[15rem] grid-cols-[3rem_1fr] gap-5 pb-10 sm:grid-cols-[8rem_1fr] lg:grid-cols-2 lg:gap-16 ${index % 2 ? '' : 'lg:text-right'}`}>
                 <div className={`hidden lg:block ${index % 2 ? 'lg:order-2' : ''}`}>
-                  <p className="font-mono text-sm text-brand-orange">{t(`redesign.day.${key}.time`)}</p>
-                  <h3 className="mt-4 font-headline text-3xl font-medium">{t(`redesign.day.${key}.title`)}</h3>
-                  <p className={`mt-4 text-base leading-7 text-white/48 ${index % 2 ? 'max-w-lg' : 'ml-auto max-w-lg'}`}>{t(`redesign.day.${key}.text`)}</p>
+                  <p className="font-mono text-sm text-brand-orange">{moment.time}</p>
+                  <h3 className="mt-4 font-headline text-3xl font-medium">{moment.title}</h3>
+                  <p className={`mt-4 text-base leading-7 text-white/48 ${index % 2 ? 'max-w-lg' : 'ml-auto max-w-lg'}`}>{moment.text}</p>
                 </div>
                 <span className="relative z-10 mt-1 grid h-10 w-10 place-items-center rounded-full border border-brand-orange/35 bg-[#081521] font-mono text-xs text-brand-orange sm:ml-[3.75rem] lg:absolute lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">0{index + 1}</span>
                 <div className={`lg:hidden ${index % 2 ? 'lg:order-1' : 'lg:order-2'}`}>
-                  <p className="font-mono text-sm text-brand-orange">{t(`redesign.day.${key}.time`)}</p>
-                  <h3 className="mt-3 font-headline text-2xl font-medium">{t(`redesign.day.${key}.title`)}</h3>
-                  <p className="mt-3 text-sm leading-6 text-white/48">{t(`redesign.day.${key}.text`)}</p>
+                  <p className="font-mono text-sm text-brand-orange">{moment.time}</p>
+                  <h3 className="mt-3 font-headline text-2xl font-medium">{moment.title}</h3>
+                  <p className="mt-3 text-sm leading-6 text-white/48">{moment.text}</p>
                 </div>
                 <div className={`hidden lg:block ${index % 2 ? 'lg:order-1' : 'lg:order-2'}`} aria-hidden="true">
-                  <DaySignalScene variant={index} />
+                  <DaySignalScene variant={moment.key === 'morning' ? 0 : moment.key === 'weather' ? 1 : moment.key === 'prayer' ? 2 : 3} />
                 </div>
               </motion.article>
             ))}
           </div>
-          <p className="mx-auto mt-4 max-w-3xl rounded-2xl border border-white/[0.08] bg-white/[0.025] px-5 py-4 text-center text-xs leading-5 text-white/42">{t('redesign.day.volumeNote')}</p>
+          <p className="mx-auto mt-4 max-w-3xl rounded-2xl border border-white/[0.08] bg-white/[0.025] px-5 py-4 text-center text-xs leading-5 text-white/42">{volumeT('privacy')}</p>
         </div>
       </section>
 
@@ -383,22 +423,39 @@ export default function BeatBreezePage() {
             <p className="bma-lede mt-6">{t('redesign.media.description')}</p>
           </motion.div>
 
-          <div className="mt-14 grid auto-rows-[minmax(13rem,auto)] gap-4 lg:grid-cols-12">
-            <MediaChapter
-              className="lg:col-span-7 lg:row-span-2"
-              icon={MonitorPlay}
-              label={t('redesign.media.screens.label')}
-              title={t('redesign.media.screens.title')}
-              text={t('redesign.media.screens.text')}
-              visual="screens"
-              visualPlayLabel={t('redesign.media.screens.loopPlay')}
-              visualPauseLabel={t('redesign.media.screens.loopPause')}
-            />
-            <MediaChapter className="lg:col-span-5" icon={ImageIcon} label={t('redesign.media.create.label')} title={t('redesign.media.create.title')} text={t('redesign.media.create.text')} visual="create" />
-            <MediaChapter className="lg:col-span-5" icon={MessageSquareText} label={t('redesign.media.messages.label')} title={t('redesign.media.messages.title')} text={t('redesign.media.messages.text')} visual="messages" />
-            <MediaChapter className="lg:col-span-4" icon={Radio} label={t('redesign.media.soundscapes.label')} title={t('redesign.media.soundscapes.title')} text={t('redesign.media.soundscapes.text')} />
-            <MediaChapter className="lg:col-span-4" icon={PhoneCall} label={t('redesign.media.phone.label')} title={t('redesign.media.phone.title')} text={t('redesign.media.phone.text')} />
-            <MediaChapter className="lg:col-span-4" icon={WandSparkles} label={t('redesign.media.catalogue.label')} title={t('redesign.media.catalogue.title')} text={t('redesign.media.catalogue.text')} />
+          <div className="mt-12 grid gap-4 lg:grid-cols-[15rem_1fr]">
+            <div className="grid grid-cols-2 gap-2 lg:grid-cols-1 lg:content-start" role="tablist" aria-label={t('redesign.media.title')}>
+              {capabilityKeys.map((key, index) => (
+                <button key={key} type="button" role="tab" aria-selected={capability === key} onClick={() => setCapability(key)} className={`group flex min-h-20 items-center gap-4 border px-4 text-left transition ${capability === key ? 'border-brand-orange/42 bg-brand-orange/[0.08] text-white' : 'border-white/[0.08] bg-white/[0.02] text-white/46 hover:bg-white/[0.04]'}`}>
+                  <span className={`font-mono text-[10px] ${capability === key ? 'text-brand-orange' : 'text-white/24'}`}>0{index + 1}</span>
+                  <span className="font-label text-[10px] font-semibold uppercase tracking-[.16em]">{t(`redesign.capabilities.${key}`)}</span>
+                </button>
+              ))}
+            </div>
+
+            <div role="tabpanel" className="min-h-[35rem]">
+              <AnimatePresence mode="wait" initial={false}>
+                <motion.div key={capability} initial={reduceMotion ? false : { opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} exit={reduceMotion ? undefined : { opacity: 0, y: -8 }} transition={{ duration: reduceMotion ? 0 : .32 }} className="grid gap-4 lg:grid-cols-12">
+                  {capability === 'play' && <>
+                    <MediaChapter className="lg:col-span-8" icon={Music2} label={t('redesign.media.musicCreation.label')} title={t('redesign.media.musicCreation.title')} text={t('redesign.media.musicCreation.text')} />
+                    <MediaChapter className="lg:col-span-4" icon={Radio} label={t('redesign.media.soundscapes.label')} title={t('redesign.media.soundscapes.title')} text={t('redesign.media.soundscapes.text')} />
+                    <MediaChapter className="lg:col-span-12" icon={WandSparkles} label={t('redesign.media.catalogue.label')} title={t('redesign.media.catalogue.title')} text={t('redesign.media.catalogue.text')} />
+                  </>}
+                  {capability === 'create' && <>
+                    <MediaChapter className="lg:col-span-7" icon={MonitorPlay} label={t('redesign.media.screens.label')} title={t('redesign.media.screens.title')} text={t('redesign.media.screens.text')} visual="screens" visualPlayLabel={t('redesign.media.screens.loopPlay')} visualPauseLabel={t('redesign.media.screens.loopPause')} />
+                    <MediaChapter className="lg:col-span-5" icon={ImageIcon} label={t('redesign.media.create.label')} title={t('redesign.media.create.title')} text={t('redesign.media.create.text')} visual="create" />
+                  </>}
+                  {capability === 'communicate' && <>
+                    <MediaChapter className="lg:col-span-7" icon={MessageSquareText} label={t('redesign.media.messages.label')} title={t('redesign.media.messages.title')} text={t('redesign.media.messages.text')} visual="messages" />
+                    <MediaChapter className="lg:col-span-5" icon={PhoneCall} label={t('redesign.media.phone.label')} title={t('redesign.media.phone.title')} text={t('redesign.media.phone.text')} />
+                  </>}
+                  {capability === 'connect' && <>
+                    <MediaChapter className="lg:col-span-7" icon={Workflow} label={t('redesign.connections.eyebrow')} title={t('redesign.connections.title')} text={t('redesign.connections.description')} />
+                    <MediaChapter className="lg:col-span-5" icon={Gauge} label={volumeT('eyebrow')} title={volumeT('compactTitle')} text={volumeT('compactText')} />
+                  </>}
+                </motion.div>
+              </AnimatePresence>
+            </div>
           </div>
         </div>
       </section>
@@ -412,15 +469,17 @@ export default function BeatBreezePage() {
           </motion.div>
           <div className="relative">
             <div className="absolute bottom-0 left-5 top-0 w-px bg-white/[0.09] sm:left-[7.5rem]" />
-            {(['schedules', 'weather', 'prayer', 'volume', 'api'] as const).map((key, index) => (
+            {(['schedules', 'weather', 'volume', 'api'] as const).map((key, index) => (
               <motion.div key={key} {...reveal} className="relative grid grid-cols-[2.6rem_1fr] gap-5 pb-9 sm:grid-cols-[8rem_1fr]">
                 <span className="relative z-10 grid h-10 w-10 place-items-center rounded-full border border-white/12 bg-[#06111a] font-mono text-xs text-brand-orange sm:ml-[5.5rem]">0{index + 1}</span>
-                <div className="rounded-2xl border border-white/[0.08] bg-white/[0.025] p-5 sm:p-6"><h3 className="text-lg font-medium">{t(`redesign.connections.${key}.title`)}</h3><p className="mt-3 text-sm leading-6 text-white/46">{t(`redesign.connections.${key}.text`)}</p></div>
+                <div className="rounded-2xl border border-white/[0.08] bg-white/[0.025] p-5 sm:p-6"><h3 className="text-lg font-medium">{t(`redesign.connections.${key}.title`)}</h3><p className="mt-3 text-sm leading-6 text-white/46">{key === 'volume' ? volumeT('compactText') : t(`redesign.connections.${key}.text`)}</p></div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
+
+      <VolumeControllerShowcase product="beat-breeze" theme="beat" />
 
       <section className="border-y border-white/[0.08] bg-[#081521] px-5 py-16 sm:px-8 lg:px-16">
         <div className="bma-container grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-center">

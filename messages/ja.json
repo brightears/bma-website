@@ -753,10 +753,12 @@
           "reason": "長尺のテクスチャーが目立つ切り替えを減らし、音量とタイミングはスタッフが直接管理できます。"
         }
       },
+      "capabilities": { "play": "再生", "create": "制作", "communicate": "伝える", "connect": "つなぐ" },
       "media": {
         "eyebrow": "音楽プレイヤーを超えて",
         "title": "サウンドトラックを取り巻く世界をつくる。",
         "description": "Beat Breezeは、施設でゲストが触れるメディアとメッセージを、ばらばらな追加機能ではなく、ひとつの運営プランとして連携できます。",
+        "musicCreation": { "label": "音楽ディレクション", "title": "楽曲を作るか、選曲済みカタログから始める", "text": "Mureka Composeでオリジナル曲を作り、Beat Breezeの音楽を探すか、対象の導入では人が制作したEpidemic Soundの楽曲を追加し、再生前に確認できます。" },
         "screens": {
           "label": "スクリーンとTV",
           "title": "ビジュアルループ、スライドショー、施設チャンネル",
@@ -831,6 +833,25 @@
         "description": "Beat Breeze固有のトライアルから始めるか、複数ゾーンの音楽・メディア計画をBMAsiaにご相談ください。",
         "support": "BMAsiaが導入と迅速なリージョナルサポートを提供します。チームが必要なときは、製品のセルフサービス機能も利用できます。"
       }
+    }
+  },
+  "volumeController": {
+    "eyebrow": "BMAsia Volume Controller",
+    "title": "現場の音量を測定し、音楽を適切な範囲に保ちます。",
+    "description": "BMAsia Volume Controllerは会場のリアルタイムなデシベル値を測定し、数値のdBデータだけを音楽プラットフォームへ送信します。Beat BreezeまたはSoundtrackが設定範囲内で再生音量を調整します。",
+    "imageAlt": "リアルタイムのデシベル値を表示するBMAsia Volume Controller",
+    "compactTitle": "空間に応じて変わる音量",
+    "compactText": "リアルタイムdB入力と明確な運用範囲を備えた、Beat BreezeとSoundtrack共通のBMAsia拡張機能です。",
+    "privacy": "会話や音声を録音・送信することはありません。",
+    "cta": "BMAsiaに相談する",
+    "measure": { "title": "測定", "text": "会場のリアルタイム音量を読み取ります。" },
+    "send": { "title": "dBのみ送信", "text": "会場音声ではなく数値だけを送信します。" },
+    "adjust": { "title": "範囲内で調整", "text": "音楽アプリが設定された範囲内で反応します。" },
+    "proof": {
+      "live": "リアルタイムdB測定",
+      "automatic": "音量を自動調整",
+      "compatible": "Beat Breeze + Soundtrack",
+      "private": "音声録音なし"
     }
   },
   "homePage": {

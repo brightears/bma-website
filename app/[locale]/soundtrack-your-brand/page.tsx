@@ -23,6 +23,8 @@ import {
   Volume2,
 } from 'lucide-react';
 import { EXTERNAL_LINKS } from '@/lib/external-links';
+import { useMarketFeatureProfile } from '@/hooks/use-market-feature-profile';
+import { VolumeControllerShowcase } from '@/components/products/VolumeControllerShowcase';
 
 const reveal = {
   initial: { opacity: 0, y: 24 },
@@ -43,6 +45,15 @@ const covers = [
 export default function SoundtrackPage() {
   const locale = useLocale();
   const t = useTranslations('soundtrackPage');
+  const marketProfile = useMarketFeatureProfile();
+  const extensionItems = [
+    marketProfile === 'prayer'
+      ? { Icon: MoonStar, title: t('redesign.extensions.prayer.title'), text: t('redesign.extensions.prayer.text'), value: '18:42' }
+      : { Icon: CalendarDays, title: t('redesign.direction.schedule.title'), text: t('redesign.direction.schedule.text'), value: 'Calendar' },
+    { Icon: Volume2, title: t('redesign.extensions.volume.title'), text: t('redesign.extensions.volume.text'), value: '-8 dB' },
+    { Icon: CloudSun, title: t('redesign.extensions.weather.title'), text: t('redesign.extensions.weather.text'), value: 'Warm / rain' },
+    { Icon: Network, title: t('redesign.extensions.api.title'), text: t('redesign.extensions.api.text'), value: 'Ready' },
+  ];
 
   return (
     <div className="overflow-hidden bg-[#160b1f] text-white">
@@ -156,18 +167,15 @@ export default function SoundtrackPage() {
                 <div className="mt-6 flex items-center gap-3"><span className="grid h-9 w-9 place-items-center rounded-xl bg-emerald-300/[0.08] text-emerald-200"><Check className="h-4 w-4" /></span><p className="text-xs leading-5 text-[#f1eaff]/46">{t('redesign.extensions.connected')}</p></div>
               </div>
               <div className="grid sm:grid-cols-2">
-                {[
-                  [MoonStar, 'prayer', '18:42'],
-                  [Volume2, 'volume', '-8 dB'],
-                  [CloudSun, 'weather', 'Warm / rain'],
-                  [Network, 'api', 'Ready'],
-                ].map(([Icon, key, value]) => { const ExtensionIcon = Icon as typeof MoonStar; return <div key={key as string} className="border-b border-[#d6c2ff]/10 p-6 last:border-b-0 sm:border-r sm:p-8 sm:even:border-r-0"><div className="flex items-center justify-between"><span className="grid h-11 w-11 place-items-center rounded-2xl bg-[#d6c2ff]/[0.07] text-[#d6c2ff]"><ExtensionIcon className="h-5 w-5" /></span><span className="font-mono text-xs text-[#d6c2ff]">{value as string}</span></div><h3 className="mt-7 text-lg font-medium">{t(`redesign.extensions.${key as string}.title`)}</h3><p className="mt-3 text-sm leading-6 text-[#f1eaff]/43">{t(`redesign.extensions.${key as string}.text`)}</p></div>; })}
+                {extensionItems.map(({ Icon, title, text, value }) => <div key={title} className="border-b border-[#d6c2ff]/10 p-6 last:border-b-0 sm:border-r sm:p-8 sm:even:border-r-0"><div className="flex items-center justify-between"><span className="grid h-11 w-11 place-items-center rounded-2xl bg-[#d6c2ff]/[0.07] text-[#d6c2ff]"><Icon className="h-5 w-5" /></span><span className="font-mono text-xs text-[#d6c2ff]">{value}</span></div><h3 className="mt-7 text-lg font-medium">{title}</h3><p className="mt-3 text-sm leading-6 text-[#f1eaff]/43">{text}</p></div>)}
               </div>
             </div>
             <div className="flex flex-col gap-3 px-6 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-8"><p className="text-xs text-[#f1eaff]/38">{t('redesign.extensions.footer')}</p><span className="font-label text-[9px] uppercase tracking-[.18em] text-[#d6c2ff]">BMAsia service layer</span></div>
           </div>
         </div>
       </section>
+
+      <VolumeControllerShowcase product="soundtrack-your-brand" theme="soundtrack" />
 
       <section className="bma-section bg-[#160b1f]">
         <div className="bma-container grid gap-12 lg:grid-cols-[.78fr_1.22fr] lg:items-center">
@@ -183,7 +191,7 @@ export default function SoundtrackPage() {
               [SlidersHorizontal, 'design'],
               [Languages, 'regional'],
               [Headphones, 'support'],
-            ].map(([Icon, key], index) => { const ServiceIcon = Icon as typeof Layers3; return <div key={key as string} className="bg-[#1a0d24] p-6 sm:p-8"><span className="flex items-center justify-between"><ServiceIcon className="h-5 w-5 text-[#d6c2ff]" /><small className="font-mono text-[10px] text-[#d6c2ff]/50">0{index + 1}</small></span><h3 className="mt-10 text-xl font-medium">{t(`redesign.operations.${key as string}.title`)}</h3><p className="mt-3 text-sm leading-6 text-[#f1eaff]/43">{t(`redesign.operations.${key as string}.text`)}</p></div>; })}
+            ].map(([Icon, key], index) => { const ServiceIcon = Icon as typeof Layers3; return <div key={key as string} className="bg-[#1a0d24] p-6 sm:p-8"><span className="flex items-center justify-between"><ServiceIcon className="h-5 w-5 text-[#d6c2ff]" /><small className="font-mono text-[10px] text-[#d6c2ff]/50">0{index + 1}</small></span><h3 className="mt-10 text-xl font-medium">{t(`redesign.operations.${key as string}.title`)}</h3><p className="mt-3 text-sm leading-6 text-[#f1eaff]/43">{key === 'regional' && marketProfile !== 'prayer' ? t('redesign.operations.description') : t(`redesign.operations.${key as string}.text`)}</p></div>; })}
           </motion.div>
         </div>
       </section>

@@ -3,6 +3,7 @@ import {
   GLOBAL_HERO_COVERS,
   buildHeroCoverSet,
   resolveCountryCode,
+  resolveMarketFeatureProfile,
   selectHeroPlaylistNames,
   type CataloguePlaylist,
   type HeroExperience,
@@ -137,6 +138,7 @@ function jsonResponse(experience: HeroExperience) {
 
 export async function GET(request: Request) {
   const countryCode = resolveCountryCode(request.headers);
+  const featureProfile = resolveMarketFeatureProfile(countryCode);
   const cacheKey = countryCode ?? 'global';
   const cached = heroRuntimeCache.experiences.get(cacheKey);
   if (cached && cached.expiresAt > Date.now()) return jsonResponse(cached.experience);
@@ -155,6 +157,7 @@ export async function GET(request: Request) {
         return {
           countryCode: localized ? countryCode : null,
           covers,
+          featureProfile,
           localized,
         } satisfies HeroExperience;
       })().finally(() => {
@@ -175,6 +178,7 @@ export async function GET(request: Request) {
     return jsonResponse({
       countryCode: null,
       covers: GLOBAL_HERO_COVERS,
+      featureProfile,
       localized: false,
     });
   }
