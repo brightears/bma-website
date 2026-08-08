@@ -49,10 +49,10 @@ export default function SoundtrackPage() {
   const extensionItems = [
     marketProfile === 'prayer'
       ? { Icon: MoonStar, title: t('redesign.extensions.prayer.title'), text: t('redesign.extensions.prayer.text'), value: '18:42' }
-      : { Icon: CalendarDays, title: t('redesign.direction.schedule.title'), text: t('redesign.direction.schedule.text'), value: 'Calendar' },
+      : { Icon: CalendarDays, title: t('redesign.direction.schedule.title'), text: t('redesign.direction.schedule.text'), value: t('redesign.extensions.scheduleValue') },
     { Icon: Volume2, title: t('redesign.extensions.volume.title'), text: t('redesign.extensions.volume.text'), value: '-8 dB' },
-    { Icon: CloudSun, title: t('redesign.extensions.weather.title'), text: t('redesign.extensions.weather.text'), value: 'Warm / rain' },
-    { Icon: Network, title: t('redesign.extensions.api.title'), text: t('redesign.extensions.api.text'), value: 'Ready' },
+    { Icon: CloudSun, title: t('redesign.extensions.weather.title'), text: t('redesign.extensions.weather.text'), value: t('redesign.extensions.weatherValue') },
+    { Icon: Network, title: t('redesign.extensions.api.title'), text: t('redesign.extensions.api.text'), value: t('redesign.extensions.apiValue') },
   ];
 
   return (
@@ -170,7 +170,7 @@ export default function SoundtrackPage() {
                 {extensionItems.map(({ Icon, title, text, value }) => <div key={title} className="border-b border-[#d6c2ff]/10 p-6 last:border-b-0 sm:border-r sm:p-8 sm:even:border-r-0"><div className="flex items-center justify-between"><span className="grid h-11 w-11 place-items-center rounded-2xl bg-[#d6c2ff]/[0.07] text-[#d6c2ff]"><Icon className="h-5 w-5" /></span><span className="font-mono text-xs text-[#d6c2ff]">{value}</span></div><h3 className="mt-7 text-lg font-medium">{title}</h3><p className="mt-3 text-sm leading-6 text-[#f1eaff]/43">{text}</p></div>)}
               </div>
             </div>
-            <div className="flex flex-col gap-3 px-6 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-8"><p className="text-xs text-[#f1eaff]/38">{t('redesign.extensions.footer')}</p><span className="font-label text-[9px] uppercase tracking-[.18em] text-[#d6c2ff]">BMAsia service layer</span></div>
+            <div className="flex flex-col gap-3 px-6 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-8"><p className="text-xs text-[#f1eaff]/38">{t('redesign.extensions.footer')}</p><span className="font-label text-[9px] uppercase tracking-[.18em] text-[#d6c2ff]">{t('redesign.extensions.serviceLayer')}</span></div>
           </div>
         </div>
       </section>

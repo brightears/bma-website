@@ -573,6 +573,10 @@
         "venue": "河畔酒店 · 曼谷",
         "connected": "由 BMAsia 提供 Soundtrack，并启用已批准的扩展功能",
         "footer": "每项扩展都会针对客户部署进行范围界定、配置与支持。",
+        "scheduleValue": "日历",
+        "weatherValue": "温暖 / 雨天",
+        "apiValue": "已就绪",
+        "serviceLayer": "BMAsia 服务层",
         "prayer": {
           "title": "祈祷时间集成",
           "text": "依据正确的当地祈祷时间执行已配置的音乐行为，并在之后顺畅恢复。"
@@ -681,6 +685,7 @@
         "prayer": "下次祈祷暂停",
         "volume": "晚间预设",
         "schedule": "当前时段",
+        "scheduleValue": "晚间",
         "energy": "氛围强度",
         "lobby": "大堂",
         "restaurant": "餐厅",
@@ -758,7 +763,7 @@
         "eyebrow": "不只是音乐播放器",
         "title": "围绕音乐打造完整场所世界。",
         "description": "Beat Breeze 可协调宾客在场所中接触到的媒体与信息，让它们不是彼此割裂的附加项，而是同一运营计划的一部分。",
-        "musicCreation": { "label": "音乐方向", "title": "创作一首音乐，或从精选曲库开始", "text": "使用 Mureka Compose 生成原创音乐，浏览 Beat Breeze 曲库，或在适用项目中加入由真人创作的 Epidemic Sound 音乐，并在播放前审核。" },
+        "musicCreation": { "label": "音乐方向", "value": "AI + 真人", "title": "创作一首音乐，或从精选曲库开始", "text": "使用 Mureka Compose 生成原创音乐，浏览 Beat Breeze 曲库，或在适用项目中加入由真人创作的 Epidemic Sound 音乐，并在播放前审核。" },
         "screens": {
           "label": "屏幕与电视",
           "title": "视觉循环、幻灯片与场所频道",
@@ -782,6 +787,7 @@
         },
         "messages": {
           "label": "多语言信息",
+          "value": "已就绪",
           "title": "用正确的语言，说正确的话",
           "text": "以受支持语言准备并安排实用通知、促销与品牌信息。",
           "examplePrimary": "EN · Welcome to tonight's tasting menu",

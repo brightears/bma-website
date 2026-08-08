@@ -573,6 +573,10 @@
         "venue": "Riverside Hotel · Bangkok",
         "connected": "Soundtrack dibekalkan melalui BMAsia dengan peluasan yang diluluskan",
         "footer": "Setiap peluasan ditentukan skopnya, dikonfigurasi dan disokong untuk pelaksanaan pelanggan.",
+        "scheduleValue": "Kalendar",
+        "weatherValue": "Panas / hujan",
+        "apiValue": "Sedia",
+        "serviceLayer": "Lapisan perkhidmatan BMAsia",
         "prayer": {
           "title": "Integrasi waktu solat",
           "text": "Gunakan waktu solat tempatan yang tepat untuk melaksanakan tingkah laku muzik yang dikonfigurasi dan kembali dengan lancar selepas itu."
@@ -681,6 +685,7 @@
         "prayer": "Jeda solat seterusnya",
         "volume": "Pratetap waktu malam",
         "schedule": "Waktu operasi semasa",
+        "scheduleValue": "Waktu malam",
         "energy": "Tenaga",
         "lobby": "Lobi",
         "restaurant": "Restoran",
@@ -758,7 +763,7 @@
         "eyebrow": "Lebih daripada pemain muzik",
         "title": "Bina dunia di sekeliling runut bunyi.",
         "description": "Beat Breeze boleh menyelaras media dan mesej yang ditemui tetamu di seluruh venue—bukan sebagai tambahan berasingan, tetapi sebagai sebahagian daripada pelan operasi yang sama.",
-        "musicCreation": { "label": "Arah muzik", "title": "Gubah lagu atau mulakan dengan katalog terpilih", "text": "Cipta lagu asal dengan Mureka Compose, terokai muzik Beat Breeze atau tambah muzik ciptaan manusia daripada Epidemic Sound untuk pelaksanaan yang layak—kemudian semak sebelum dimainkan." },
+        "musicCreation": { "label": "Arah muzik", "value": "AI + manusia", "title": "Gubah lagu atau mulakan dengan katalog terpilih", "text": "Cipta lagu asal dengan Mureka Compose, terokai muzik Beat Breeze atau tambah muzik ciptaan manusia daripada Epidemic Sound untuk pelaksanaan yang layak—kemudian semak sebelum dimainkan." },
         "screens": {
           "label": "Skrin dan TV",
           "title": "Gelung visual, tayangan slaid dan saluran venue",
@@ -782,6 +787,7 @@
         },
         "messages": {
           "label": "Pemesejan berbilang bahasa",
+          "value": "Sedia",
           "title": "Sampaikan perkara yang tepat dalam bahasa yang betul",
           "text": "Sediakan dan jadualkan pengumuman berguna, promosi dan mesej berjenama merentas bahasa yang disokong.",
           "examplePrimary": "EN · Welcome to tonight's tasting menu",

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { type KeyboardEvent, useEffect, useMemo, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
@@ -120,12 +120,21 @@ export default function BeatBreezePage() {
     () => closestSample(sampleAssets[selectedDirection.playlist]?.samples, selectedDirection.bpm),
     [sampleAssets, selectedDirection],
   );
+  const apiTime = useMemo(
+    () => new Intl.DateTimeFormat(locale, {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false,
+      timeZone: 'UTC',
+    }).format(new Date(Date.UTC(2026, 0, 1, 14, 0))),
+    [locale],
+  );
   const selectedAudioSource = selectedSample?.audioUrl;
   const controlSignals = [
-    { Icon: Workflow, label: t('redesign.controlRoom.schedule'), value: 'Evening' },
-    { Icon: WandSparkles, label: t('redesign.media.musicCreation.label'), value: 'AI + human' },
+    { Icon: Workflow, label: t('redesign.controlRoom.schedule'), value: t('redesign.controlRoom.scheduleValue') },
+    { Icon: WandSparkles, label: t('redesign.media.musicCreation.label'), value: t('redesign.media.musicCreation.value') },
     { Icon: Volume2, label: t('redesign.controlRoom.volume'), value: '-8 dB' },
-    { Icon: MessageSquareText, label: t('redesign.media.messages.label'), value: 'Ready' },
+    { Icon: MessageSquareText, label: t('redesign.media.messages.label'), value: t('redesign.media.messages.value') },
   ];
   const adaptiveMoment = marketProfile === 'prayer'
     ? {
@@ -143,7 +152,7 @@ export default function BeatBreezePage() {
         }
       : {
           key: 'api',
-          time: '14:00',
+          time: apiTime,
           title: t('redesign.connections.api.title'),
           text: t('redesign.connections.api.text'),
         };
@@ -162,6 +171,24 @@ export default function BeatBreezePage() {
       text: t('redesign.day.evening.text'),
     },
   ];
+
+  const handleCapabilityKeyDown = (
+    event: KeyboardEvent<HTMLButtonElement>,
+    currentIndex: number,
+  ) => {
+    let nextIndex: number | undefined;
+
+    if (event.key === 'ArrowRight') nextIndex = (currentIndex + 1) % capabilityKeys.length;
+    if (event.key === 'ArrowLeft') nextIndex = (currentIndex - 1 + capabilityKeys.length) % capabilityKeys.length;
+    if (event.key === 'Home') nextIndex = 0;
+    if (event.key === 'End') nextIndex = capabilityKeys.length - 1;
+    if (nextIndex === undefined) return;
+
+    event.preventDefault();
+    const nextCapability = capabilityKeys[nextIndex];
+    setCapability(nextCapability);
+    document.getElementById(`capability-tab-${nextCapability}`)?.focus();
+  };
 
   useEffect(() => {
     const controller = new AbortController();
@@ -426,14 +453,14 @@ export default function BeatBreezePage() {
           <div className="mt-12 grid gap-4 lg:grid-cols-[15rem_1fr]">
             <div className="grid grid-cols-2 gap-2 lg:grid-cols-1 lg:content-start" role="tablist" aria-label={t('redesign.media.title')}>
               {capabilityKeys.map((key, index) => (
-                <button key={key} type="button" role="tab" aria-selected={capability === key} onClick={() => setCapability(key)} className={`group flex min-h-20 items-center gap-4 border px-4 text-left transition ${capability === key ? 'border-brand-orange/42 bg-brand-orange/[0.08] text-white' : 'border-white/[0.08] bg-white/[0.02] text-white/46 hover:bg-white/[0.04]'}`}>
+                <button key={key} id={`capability-tab-${key}`} type="button" role="tab" aria-selected={capability === key} aria-controls={`capability-panel-${key}`} tabIndex={capability === key ? 0 : -1} onClick={() => setCapability(key)} onKeyDown={(event) => handleCapabilityKeyDown(event, index)} className={`group flex min-h-20 items-center gap-4 border px-4 text-left transition ${capability === key ? 'border-brand-orange/42 bg-brand-orange/[0.08] text-white' : 'border-white/[0.08] bg-white/[0.02] text-white/46 hover:bg-white/[0.04]'}`}>
                   <span className={`font-mono text-[10px] ${capability === key ? 'text-brand-orange' : 'text-white/24'}`}>0{index + 1}</span>
                   <span className="font-label text-[10px] font-semibold uppercase tracking-[.16em]">{t(`redesign.capabilities.${key}`)}</span>
                 </button>
               ))}
             </div>
 
-            <div role="tabpanel" className="min-h-[35rem]">
+            <div id={`capability-panel-${capability}`} role="tabpanel" aria-labelledby={`capability-tab-${capability}`} className="min-h-[35rem]">
               <AnimatePresence mode="wait" initial={false}>
                 <motion.div key={capability} initial={reduceMotion ? false : { opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} exit={reduceMotion ? undefined : { opacity: 0, y: -8 }} transition={{ duration: reduceMotion ? 0 : .32 }} className="grid gap-4 lg:grid-cols-12">
                   {capability === 'play' && <>
