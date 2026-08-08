@@ -351,15 +351,10 @@
 }
 
 .coverFieldHead {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 24px;
   margin: 0 2px 15px;
 }
 
-.coverFieldHead span,
-.coverFieldHead small {
+.coverFieldHead span {
   display: block;
   font-family: var(--font-label), sans-serif;
   font-weight: 650;
@@ -367,7 +362,7 @@
 }
 
 .coverFieldHead span {
-  color: var(--orange);
+  color: color-mix(in srgb, var(--phase-b) 74%, rgba(238, 243, 255, 0.74));
   font-size: 10px;
   letter-spacing: 0.22em;
 }
@@ -382,28 +377,18 @@
   text-wrap: balance;
 }
 
-.coverFieldHead small {
-  max-width: 220px;
-  color: rgba(238, 243, 255, 0.38);
-  font-size: 8px;
-  letter-spacing: 0.15em;
-  line-height: 1.45;
-  text-align: right;
-}
-
 .coverGrid {
   display: grid;
-  aspect-ratio: 1.48;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  grid-template-rows: repeat(4, minmax(0, 1fr));
+  aspect-ratio: 1.68;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
   gap: 10px;
-  transform: perspective(1400px) rotateY(-1.2deg);
-  transform-origin: center right;
 }
 
 .coverTile {
   position: relative;
   min-width: 0;
+  aspect-ratio: 1;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 17px;
@@ -442,13 +427,12 @@
 
 .coverImage { object-fit: cover; }
 .featuredCover { grid-column: 1 / span 3; grid-row: 1 / span 3; }
-.regionalWideCover { grid-column: 4 / span 3; grid-row: 1 / span 2; }
-.globalSquareCover { grid-column: 4 / span 2; grid-row: 3 / span 2; }
-.regionalSmallCover { grid-column: 1; grid-row: 4; }
-.globalSmallOneCover { grid-column: 2; grid-row: 4; }
-.globalSmallTwoCover { grid-column: 3; grid-row: 4; }
-.globalTallCover { grid-column: 6; grid-row: 3 / span 2; }
-.globalTallCover .coverImage { height: 116% !important; transform: translateY(-8%); }
+.regionalWideCover { grid-column: 4; grid-row: 1; }
+.globalSquareCover { grid-column: 5; grid-row: 1; }
+.regionalSmallCover { grid-column: 4; grid-row: 2; }
+.globalSmallOneCover { grid-column: 5; grid-row: 2; }
+.globalSmallTwoCover { grid-column: 4; grid-row: 3; }
+.globalTallCover { grid-column: 5; grid-row: 3; }
 
 .localeNote {
   position: absolute;
@@ -1429,17 +1413,14 @@
   .heroActions { flex-direction: column; align-items: stretch; }
   .venueCanvas { min-height: 430px; }
   .coverStage { width: 100%; min-height: 410px; }
-  .coverFieldHead { align-items: start; gap: 16px; }
   .coverFieldHead strong { font-size: 16px; }
-  .coverFieldHead small { max-width: 120px; font-size: 6px; }
-  .coverGrid { aspect-ratio: 1.08; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: repeat(4, minmax(0, 1fr)); gap: 7px; transform: none; }
+  .coverGrid { aspect-ratio: auto; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; gap: 7px; }
   .coverTile { border-radius: 12px; }
-  .featuredCover { grid-column: 1 / span 2; grid-row: 1 / span 3; }
-  .featuredCover .coverImage { height: 116% !important; transform: translateY(-8%); }
-  .regionalWideCover { grid-column: 3 / span 2; grid-row: 1 / span 2; }
-  .globalSquareCover { grid-column: 3 / span 2; grid-row: 3 / span 2; }
-  .regionalSmallCover { grid-column: 1; grid-row: 4; }
-  .globalSmallOneCover { grid-column: 2; grid-row: 4; }
+  .featuredCover { grid-column: 1 / -1; grid-row: auto; }
+  .regionalWideCover,
+  .globalSquareCover,
+  .regionalSmallCover,
+  .globalSmallOneCover { grid-column: auto; grid-row: auto; }
   .globalSmallTwoCover,
   .globalTallCover { display: none; }
   .localeNote { top: 10px; left: 10px; padding: 8px 9px; border-radius: 9px; }
