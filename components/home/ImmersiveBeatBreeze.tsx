@@ -328,7 +328,7 @@ export function ImmersiveBeatBreeze() {
           <div
             className={styles.venueCanvas}
             role="img"
-            aria-label={fieldTitle}
+            aria-label={hasRegionalLayer ? `${fieldEyebrow}. ${fieldTitle}` : fieldTitle}
           >
             <div className={styles.coverStage} aria-hidden="true">
               <div className={styles.coverField} key={heroCovers.featured.src}>
@@ -368,8 +368,8 @@ export function ImmersiveBeatBreeze() {
                           fill
                           priority={index < 2}
                           sizes={index === 0
-                            ? '(max-width: 620px) calc(100vw - 36px), (max-width: 900px) 58vw, 29vw'
-                            : '(max-width: 620px) 44vw, (max-width: 900px) 19vw, 10vw'}
+                            ? '(max-width: 620px) calc(100vw - 36px), (max-width: 900px) 58vw, min(60vw, 410px)'
+                            : '(max-width: 620px) 44vw, (max-width: 900px) 19vw, min(20vw, 130px)'}
                           className={styles.coverImage}
                         />
                         {key === 'featured' && hasRegionalLayer ? (
