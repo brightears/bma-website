@@ -294,9 +294,9 @@ export function ImmersiveBeatBreeze() {
       return '';
     }
   }, [hasRegionalLayer, heroExperience.countryCode, locale]);
-  const fieldEyebrow = hasRegionalLayer
-    ? t('field.listeningIn', { country: regionalCountry })
-    : t('field.globalEyebrow');
+  const regionalContext = hasRegionalLayer
+    ? t('field.curatedFor', { country: regionalCountry })
+    : '';
   const fieldTitle = t(hasRegionalLayer ? 'field.localTitle' : 'field.globalTitle');
 
   return (
@@ -328,15 +328,12 @@ export function ImmersiveBeatBreeze() {
           <div
             className={styles.venueCanvas}
             role="img"
-            aria-label={hasRegionalLayer ? `${fieldEyebrow}. ${fieldTitle}` : fieldTitle}
+            aria-label={hasRegionalLayer ? `${regionalContext}. ${fieldTitle}` : fieldTitle}
           >
             <div className={styles.coverStage} aria-hidden="true">
               <div className={styles.coverField} key={heroCovers.featured.src}>
                 <div className={styles.coverFieldHead}>
-                  <div>
-                    <span>{fieldEyebrow}</span>
-                    <strong>{fieldTitle}</strong>
-                  </div>
+                  <strong>{fieldTitle}</strong>
                 </div>
 
                 <div className={styles.coverGrid}>
@@ -374,7 +371,7 @@ export function ImmersiveBeatBreeze() {
                         />
                         {key === 'featured' && hasRegionalLayer ? (
                           <div className={styles.localeNote}>
-                            <span>{t('field.localSelection')}</span>
+                            <span>{regionalContext}</span>
                             <strong>{cover.alt}</strong>
                           </div>
                         ) : null}
