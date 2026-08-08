@@ -34,6 +34,7 @@ import {
   GLOBAL_HERO_COVERS,
   type HeroExperience,
 } from '@/lib/hero-market';
+import { VolumeControllerShowcase } from '@/components/products/VolumeControllerShowcase';
 
 type TouchpointKey = 'sound' | 'screens' | 'messages' | 'phone';
 
@@ -94,6 +95,7 @@ export function ImmersiveBeatBreeze() {
   const [heroExperience, setHeroExperience] = useState<HeroExperience>({
     countryCode: null,
     covers: GLOBAL_HERO_COVERS,
+    featureProfile: 'global',
     localized: false,
   });
   const [showExtendedCovers, setShowExtendedCovers] = useState(false);
@@ -725,6 +727,9 @@ export function ImmersiveBeatBreeze() {
               ))}
             </div>
           </div>
+          <div className={styles.controllerTeaser}>
+            <VolumeControllerShowcase compact theme="neutral" product="beat-breeze" />
+          </div>
         </div>
       </section>
 
@@ -739,7 +744,7 @@ export function ImmersiveBeatBreeze() {
               <span>0{index + 1}</span>
               <div className={styles.storyLine}><i className={index === 0 ? styles.storyActive : ''} /></div>
               <h3>{t(`story.${key}.title`)}</h3>
-              <p>{t(`story.${key}.text`)}</p>
+              <p>{key === 'automate' && heroExperience.featureProfile !== 'prayer' ? t('connected.automation.text') : t(`story.${key}.text`)}</p>
             </article>
           ))}
         </div>

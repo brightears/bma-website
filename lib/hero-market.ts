@@ -17,8 +17,11 @@ export type HeroCoverSet = {
 export type HeroExperience = {
   countryCode: string | null;
   covers: HeroCoverSet;
+  featureProfile: MarketFeatureProfile;
   localized: boolean;
 };
+
+export type MarketFeatureProfile = 'climate' | 'global' | 'prayer';
 
 export type CataloguePlaylist = {
   description?: string | null;
@@ -53,6 +56,17 @@ const COUNTRY_HEADERS = [
   'x-country-code',
   'x-appengine-country',
 ] as const;
+
+// This is a presentation hint, never an access rule. Visitors always see the
+// complete product; we only change which operational example appears first.
+const PRAYER_RELEVANT_MARKETS = new Set([
+  'AE', 'BH', 'BN', 'EG', 'ID', 'IQ', 'IR', 'JO', 'KW', 'LB', 'MY', 'OM',
+  'PS', 'QA', 'SA', 'SY', 'YE',
+]);
+
+const CLIMATE_RELEVANT_MARKETS = new Set([
+  'KH', 'LA', 'MM', 'PH', 'SG', 'TH', 'VN',
+]);
 
 const REGIONAL_ALIASES: Partial<Record<string, string[]>> = {
   CN: ['china', 'chinese', 'c-pop', 'canto', 'cantopop', 'guofeng', 'mandopop'],
@@ -170,6 +184,14 @@ export function resolveCountryCode(headers: Headers): string | null {
   }
 
   return null;
+}
+
+export function resolveMarketFeatureProfile(
+  countryCode: string | null,
+): MarketFeatureProfile {
+  if (countryCode && PRAYER_RELEVANT_MARKETS.has(countryCode)) return 'prayer';
+  if (countryCode && CLIMATE_RELEVANT_MARKETS.has(countryCode)) return 'climate';
+  return 'global';
 }
 
 export function findRegionalPlaylists(playlists: CataloguePlaylist[], countryCode: string | null) {

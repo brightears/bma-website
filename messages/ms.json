@@ -573,6 +573,10 @@
         "venue": "Riverside Hotel · Bangkok",
         "connected": "Soundtrack dibekalkan melalui BMAsia dengan peluasan yang diluluskan",
         "footer": "Setiap peluasan ditentukan skopnya, dikonfigurasi dan disokong untuk pelaksanaan pelanggan.",
+        "scheduleValue": "Kalendar",
+        "weatherValue": "Panas / hujan",
+        "apiValue": "Sedia",
+        "serviceLayer": "Lapisan perkhidmatan BMAsia",
         "prayer": {
           "title": "Integrasi waktu solat",
           "text": "Gunakan waktu solat tempatan yang tepat untuk melaksanakan tingkah laku muzik yang dikonfigurasi dan kembali dengan lancar selepas itu."
@@ -681,6 +685,7 @@
         "prayer": "Jeda solat seterusnya",
         "volume": "Pratetap waktu malam",
         "schedule": "Waktu operasi semasa",
+        "scheduleValue": "Waktu malam",
         "energy": "Tenaga",
         "lobby": "Lobi",
         "restaurant": "Restoran",
@@ -753,10 +758,12 @@
           "reason": "Tekstur panjang mengurangkan peralihan yang ketara sambil mengekalkan kawalan langsung kakitangan terhadap aras dan masa."
         }
       },
+      "capabilities": { "play": "Main", "create": "Cipta", "communicate": "Berkomunikasi", "connect": "Sambung" },
       "media": {
         "eyebrow": "Lebih daripada pemain muzik",
         "title": "Bina dunia di sekeliling runut bunyi.",
         "description": "Beat Breeze boleh menyelaras media dan mesej yang ditemui tetamu di seluruh venue—bukan sebagai tambahan berasingan, tetapi sebagai sebahagian daripada pelan operasi yang sama.",
+        "musicCreation": { "label": "Arah muzik", "value": "AI + manusia", "title": "Gubah lagu atau mulakan dengan katalog terpilih", "text": "Cipta lagu asal dengan Mureka Compose, terokai muzik Beat Breeze atau tambah muzik ciptaan manusia daripada Epidemic Sound untuk pelaksanaan yang layak—kemudian semak sebelum dimainkan." },
         "screens": {
           "label": "Skrin dan TV",
           "title": "Gelung visual, tayangan slaid dan saluran venue",
@@ -780,6 +787,7 @@
         },
         "messages": {
           "label": "Pemesejan berbilang bahasa",
+          "value": "Sedia",
           "title": "Sampaikan perkara yang tepat dalam bahasa yang betul",
           "text": "Sediakan dan jadualkan pengumuman berguna, promosi dan mesej berjenama merentas bahasa yang disokong.",
           "examplePrimary": "EN · Welcome to tonight's tasting menu",
@@ -831,6 +839,25 @@
         "description": "Mulakan dengan percubaan Beat Breeze khusus produk atau minta BMAsia membentuk pelan muzik dan media berbilang zon.",
         "support": "BMAsia menyediakan penerimaan pelanggan dan sokongan serantau yang responsif. Layan diri produk kekal tersedia apabila pasukan anda memerlukannya."
       }
+    }
+  },
+  "volumeController": {
+    "eyebrow": "BMAsia Volume Controller",
+    "title": "Bunyi langsung diukur. Muzik kekal dalam julat.",
+    "description": "BMAsia Volume Controller mengukur paras desibel langsung di premis dan hanya menghantar bacaan dB berangka kepada platform muzik. Beat Breeze atau Soundtrack kemudian melaras main balik dalam had yang dikonfigurasi.",
+    "imageAlt": "BMAsia Volume Controller memaparkan bacaan desibel langsung",
+    "compactTitle": "Volum yang bertindak balas kepada ruang",
+    "compactText": "Sambungan BMAsia untuk Beat Breeze dan Soundtrack, dengan input dB langsung dan had pengendali yang jelas.",
+    "privacy": "Tiada perbualan atau audio dirakam atau dihantar.",
+    "cta": "Bercakap dengan BMAsia",
+    "measure": { "title": "Ukur", "text": "Baca paras bunyi langsung di premis." },
+    "send": { "title": "Hantar dB sahaja", "text": "Hantar paras berangka, bukan audio premis." },
+    "adjust": { "title": "Laras dalam julat", "text": "Aplikasi muzik bertindak dalam had yang ditetapkan." },
+    "proof": {
+      "live": "Pengukuran dB langsung",
+      "automatic": "Pelarasan volum automatik",
+      "compatible": "Beat Breeze + Soundtrack",
+      "private": "Tiada rakaman audio"
     }
   },
   "homePage": {

@@ -573,6 +573,10 @@
         "venue": "Riverside Hotel · Bangkok",
         "connected": "Soundtrack disediakan melalui BMAsia dengan ekstensi yang disetujui",
         "footer": "Setiap ekstensi ditentukan cakupannya, dikonfigurasi, dan didukung untuk implementasi pelanggan.",
+        "scheduleValue": "Kalender",
+        "weatherValue": "Hangat / hujan",
+        "apiValue": "Siap",
+        "serviceLayer": "Lapisan layanan BMAsia",
         "prayer": {
           "title": "Integrasi waktu salat",
           "text": "Gunakan waktu salat lokal yang tepat untuk menerapkan perilaku musik yang telah dikonfigurasi, lalu kembali ke program dengan lancar setelahnya."
@@ -681,6 +685,7 @@
         "prayer": "Jeda salat berikutnya",
         "volume": "Preset malam hari",
         "schedule": "Pembagian waktu saat ini",
+        "scheduleValue": "Malam",
         "energy": "Energi",
         "lobby": "Lobi",
         "restaurant": "Restoran",
@@ -753,10 +758,12 @@
           "reason": "Tekstur berdurasi panjang mengurangi transisi yang terasa, sementara staf tetap memegang kendali langsung atas level dan waktunya."
         }
       },
+      "capabilities": { "play": "Putar", "create": "Ciptakan", "communicate": "Komunikasikan", "connect": "Hubungkan" },
       "media": {
         "eyebrow": "Lebih dari sekadar pemutar musik",
         "title": "Bangun dunia di sekeliling soundtrack.",
         "description": "Beat Breeze dapat mengoordinasikan media dan pesan yang ditemui tamu di seluruh venue—bukan sebagai tambahan yang terpisah, melainkan sebagai bagian dari rencana operasional yang sama.",
+        "musicCreation": { "label": "Arah musik", "value": "AI + manusia", "title": "Ciptakan lagu atau mulai dari katalog terkurasi", "text": "Buat lagu orisinal dengan Mureka Compose, jelajahi musik Beat Breeze, atau tambahkan musik buatan manusia dari Epidemic Sound untuk penerapan yang memenuhi syarat—lalu tinjau sebelum diputar." },
         "screens": {
           "label": "Layar dan TV",
           "title": "Visual loop, slideshow, dan kanal venue",
@@ -780,6 +787,7 @@
         },
         "messages": {
           "label": "Pesan multibahasa",
+          "value": "Siap",
           "title": "Sampaikan hal yang tepat dalam bahasa yang tepat",
           "text": "Siapkan dan jadwalkan pengumuman, promosi, dan pesan bermerek yang berguna dalam bahasa yang didukung.",
           "examplePrimary": "EN · Welcome to tonight's tasting menu",
@@ -831,6 +839,25 @@
         "description": "Mulai dengan uji coba khusus produk Beat Breeze atau minta BMAsia membentuk rencana musik dan media multizona.",
         "support": "BMAsia menyediakan onboarding dan dukungan regional yang responsif. Layanan mandiri produk tetap tersedia kapan pun tim Anda membutuhkannya."
       }
+    }
+  },
+  "volumeController": {
+    "eyebrow": "BMAsia Volume Controller",
+    "title": "Suara langsung diukur. Musik tetap dalam rentang.",
+    "description": "BMAsia Volume Controller mengukur tingkat desibel langsung di venue dan hanya mengirim angka dB ke platform musik. Beat Breeze atau Soundtrack kemudian menyesuaikan pemutaran dalam batas yang telah dikonfigurasi.",
+    "imageAlt": "BMAsia Volume Controller menampilkan pembacaan desibel langsung",
+    "compactTitle": "Volume yang merespons kondisi ruangan",
+    "compactText": "Ekstensi BMAsia untuk Beat Breeze dan Soundtrack, dengan input dB langsung dan batas operator yang jelas.",
+    "privacy": "Tidak ada percakapan atau audio yang direkam maupun dikirim.",
+    "cta": "Bicara dengan BMAsia",
+    "measure": { "title": "Ukur", "text": "Baca tingkat suara langsung di venue." },
+    "send": { "title": "Kirim dB saja", "text": "Kirim tingkat numerik, bukan audio venue." },
+    "adjust": { "title": "Sesuaikan dalam rentang", "text": "Aplikasi musik merespons dalam batas yang ditetapkan." },
+    "proof": {
+      "live": "Pengukuran dB langsung",
+      "automatic": "Penyesuaian volume otomatis",
+      "compatible": "Beat Breeze + Soundtrack",
+      "private": "Tanpa perekaman audio"
     }
   },
   "homePage": {

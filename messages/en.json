@@ -573,6 +573,10 @@
         "venue": "Riverside Hotel · Bangkok",
         "connected": "Soundtrack supplied through BMAsia with approved extensions",
         "footer": "Each extension is scoped, configured and supported for the customer deployment.",
+        "scheduleValue": "Calendar",
+        "weatherValue": "Warm / rain",
+        "apiValue": "Ready",
+        "serviceLayer": "BMAsia service layer",
         "prayer": {
           "title": "Prayer-time integration",
           "text": "Use the correct local prayer times to apply the configured music behavior and return cleanly afterward."
@@ -681,6 +685,7 @@
         "prayer": "Next prayer pause",
         "volume": "Evening preset",
         "schedule": "Current daypart",
+        "scheduleValue": "Evening",
         "energy": "Energy",
         "lobby": "Lobby",
         "restaurant": "Restaurant",
@@ -753,10 +758,12 @@
           "reason": "Long-form textures reduce noticeable transitions while leaving staff in direct control of level and timing."
         }
       },
+      "capabilities": { "play": "Play", "create": "Create", "communicate": "Communicate", "connect": "Connect" },
       "media": {
         "eyebrow": "More than a music player",
         "title": "Build the world around the soundtrack.",
         "description": "Beat Breeze can coordinate the media and messages guests meet around the venue—not as disconnected add-ons, but as parts of the same operating plan.",
+        "musicCreation": { "label": "Music direction", "value": "AI + human", "title": "Compose a track or begin with a curated catalogue", "text": "Prompt an original track with Mureka Compose, browse Beat Breeze music, or add human-made Epidemic Sound music for eligible deployments—then review before anything plays." },
         "screens": {
           "label": "Screens and TV",
           "title": "Visual loops, slideshows and venue channels",
@@ -780,6 +787,7 @@
         },
         "messages": {
           "label": "Multilingual messaging",
+          "value": "Ready",
           "title": "Say the right thing in the right language",
           "text": "Prepare and schedule useful announcements, promotions and branded messages across supported languages.",
           "examplePrimary": "EN · Welcome to tonight's tasting menu",
@@ -831,6 +839,25 @@
         "description": "Start with a product-specific Beat Breeze trial or ask BMAsia to shape a multi-zone music and media plan.",
         "support": "BMAsia provides onboarding and responsive regional support. Product self-service remains available whenever your team needs it."
       }
+    }
+  },
+  "volumeController": {
+    "eyebrow": "BMAsia Volume Controller",
+    "title": "Live sound, measured. Music kept within range.",
+    "description": "The BMAsia Volume Controller measures the venue’s live decibel level and sends only the numeric dB reading to the music platform. Beat Breeze or Soundtrack then adjusts playback within configured limits.",
+    "imageAlt": "BMAsia Volume Controller displaying a live decibel reading",
+    "compactTitle": "Volume that responds to the room",
+    "compactText": "A shared BMAsia extension for Beat Breeze and Soundtrack, with live dB input and clear operator limits.",
+    "privacy": "No conversations or audio are recorded or transmitted.",
+    "cta": "Talk to BMAsia",
+    "measure": { "title": "Measure", "text": "Read the live sound level in the venue." },
+    "send": { "title": "Send dB only", "text": "Transmit the numeric level—not venue audio." },
+    "adjust": { "title": "Adjust within range", "text": "The music app responds inside configured limits." },
+    "proof": {
+      "live": "Live dB measurement",
+      "automatic": "Automatic volume adjustment",
+      "compatible": "Beat Breeze + Soundtrack",
+      "private": "No audio recording"
     }
   },
   "homePage": {
