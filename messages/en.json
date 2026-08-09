@@ -1241,60 +1241,125 @@
   },
   "licensingPage": {
     "hero": {
-      "label": "Music rights, made legible",
-      "title": "Know what your service covers.",
-      "titleHighlight": "Confirm what your venue still needs.",
-      "subtitle": "Commercial music rights vary by repertoire, product, territory and how music is used. BMAsia helps you understand the scope before you go live."
+      "label": "Music rights, made clear",
+      "title": "Play music in public.",
+      "titleHighlight": "Keep every right in place.",
+      "subtitle": "A song carries more than one right. BMAsia separates the service rights from the venue’s local obligations, then shows which product covers what.",
+      "cta": "Check my venue",
+      "secondaryCta": "See how rights work"
     },
-    "intro": {
-      "paragraph1": "A consumer streaming subscription is not the same as permission to play music in a business. Commercial use can involve several layers of rights.",
-      "paragraph2Prefix": "The practical rule:",
-      "paragraph2Highlight": "confirm the service and territory, in writing."
+    "signal": {
+      "label": "Live rights check",
+      "title": "From song to room",
+      "composition": "Music & lyrics",
+      "recording": "Master recording",
+      "service": "Business music service",
+      "venue": "Venue permission",
+      "footer": "The correct answer depends on both the music route and the country where it plays."
     },
-    "licenses": {
+    "rights": {
+      "label": "One track · four permissions",
+      "title": "What is actually being licensed?",
+      "description": "A familiar song can involve separate owners, agreements and uses. The venue does not negotiate each track: a business service and, where required, local collecting societies connect these layers.",
+      "layer": "RIGHT {number}",
       "01": {
-        "title": "Recorded music rights",
-        "desc": "Permission connected to the particular sound recording. Coverage depends on the catalogue and commercial music service you select."
+        "title": "Music & lyrics",
+        "description": "The underlying composition belongs to songwriters and publishers. This is separate from any particular recording of the song."
       },
       "02": {
-        "title": "Composition rights",
-        "desc": "Rights connected to the underlying song, including songwriters and publishers. Product and territory determine how these are handled."
+        "title": "Master recording",
+        "description": "The recorded performance can belong to artists, producers or a record label. A cover version has its own master rights."
       },
       "03": {
-        "title": "Public performance obligations",
-        "desc": "A venue may also need a local licence or collecting-society arrangement. Requirements differ by country, venue and repertoire."
+        "title": "Reproduction & delivery",
+        "description": "A business service needs permission to store, copy, stream and deliver its catalogue through the player—not just consumer access to listen."
+      },
+      "04": {
+        "title": "Public performance",
+        "description": "Playing music where customers or staff can hear it is a public performance. The venue licence for that use varies by country and product."
       }
     },
-    "warning": {
-      "label": "A useful boundary",
-      "titleStart": "Personal streaming plans are",
-      "titleNot": "not designed",
-      "titleEnd": "for commercial venue use",
-      "quote": "Use a business music service and verify the rights that apply to your exact venue.",
-      "quoteHighlight": "business music service",
-      "source": "BMAsia licensing guidance"
+    "split": {
+      "compositionLabel": "The song",
+      "compositionTitle": "Composition & lyrics",
+      "compositionDescription": "A songwriter or publisher controls the underlying musical work. Publishing is the business of administering and licensing those composition rights.",
+      "recordingLabel": "The recording",
+      "recordingTitle": "A particular master",
+      "recordingDescription": "An artist, producer or label may control the recorded performance. A different recording of the same song can have a different rights owner."
     },
     "comparison": {
-      "sectionTitle": "Two product paths, each with a different rights model",
-      "recordingLicense": "Commercial catalogue rights",
-      "publishingLicense": "Product-specific repertoire scope",
-      "performanceLicense": "Local venue obligations",
-      "syb": {
-        "badge": "Recognisable repertoire",
-        "performanceNote": "Local public-performance requirements may apply; confirm by territory.",
-        "cta": "Explore Soundtrack"
-      },
+      "label": "Two routes · two rights models",
+      "sectionTitle": "The platform changes what the venue must arrange",
+      "description": "Both products are built for business. Their catalogues and licensing structures are different, so we make the boundary visible before activation.",
+      "recordingLicense": "Sound recording rights",
+      "publishingLicense": "Composition & publishing rights",
+      "performanceIncluded": "Public performance for covered playback",
+      "performanceSeparate": "Local public-performance licence",
       "bb": {
-        "badge": "Curated catalogue",
-        "performanceNote": "Coverage depends on the selected plan, catalogue and territory; confirm with BMAsia.",
+        "badge": "Cleared route",
+        "headline": "One service. No separate music licence.",
+        "performanceNote": "For music played through Beat Breeze, the catalogue and covered business playback rights are included. Live acts, DJs, third-party music and visual synchronisation are separate use cases.",
         "cta": "Explore Beat Breeze"
+      },
+      "syb": {
+        "badge": "Commercial catalogue",
+        "headlineIncluded": "All three core rights included here.",
+        "headlineLocal": "Service rights included. Venue rights added locally.",
+        "noteIncluded": "In the United States and Canada, Soundtrack includes public-performance licensing for ordinary background-music use. Special uses can still need more permissions.",
+        "performanceNote": "Outside the United States and Canada, Soundtrack includes recording and publishing rights; the venue normally obtains local public-performance licences.",
+        "noteConfirm": "Soundtrack availability and public-performance requirements must be confirmed for this market.",
+        "cta": "Explore Soundtrack"
       }
     },
+    "market": {
+      "global": "your market",
+      "detecting": "Checking your market",
+      "label": "Your local rights check",
+      "title": "The country changes the last step",
+      "description": "We use the visitor’s country only to present relevant licensing guidance. It never limits what the site shows.",
+      "location": "Licensing in {country}",
+      "includedTitle": "The venue licence is included",
+      "localTitle": "Add the local venue licence",
+      "confirmTitle": "Confirm availability and local rights",
+      "includedDescription": "For ordinary background-music use in this market, Soundtrack includes its service rights and the relevant public-performance coverage. Special uses still need review.",
+      "localDescription": "Soundtrack includes the recording and publishing permissions in its service. The venue normally adds public-performance licences from the local collecting societies.",
+      "confirmDescription": "Beat Breeze remains a cleared business-music route. We will confirm Soundtrack availability and any local public-performance obligation before recommending it.",
+      "beatStatus": "Included through service",
+      "beatDescription": "Covered Beat Breeze playback does not require a separate music licence.",
+      "includedStatus": "Included for background use",
+      "localStatus": "Local venue licence required",
+      "confirmStatus": "Confirm before activation",
+      "soundtrackIncluded": "Service and ordinary public-performance rights are included, subject to use-case exceptions.",
+      "soundtrackLocal": "Recording and publishing are included; local public performance is arranged by the venue.",
+      "soundtrackConfirm": "Availability and local rights depend on the market and venue use.",
+      "societies": "Local collecting societies",
+      "countryGuide": "Soundtrack guide for {country}",
+      "disclaimer": "General guidance only. Venue type, admission, live music, exercise classes, repertoire and local law can change the answer. BMAsia confirms scope in writing before activation."
+    },
+    "personal": {
+      "label": "Consumer access ≠ business permission",
+      "title": "A paid personal account is still personal",
+      "description": "Subscriptions made for private listening do not grant the full set of rights needed to play music to customers or staff. A business service is designed for that public use.",
+      "consumerTitle": "Personal streaming",
+      "consumerDescription": "A listener receives private, non-commercial access—not permission to provide the music as part of a venue experience.",
+      "consumerExamples": "Spotify · YouTube · consumer services",
+      "businessTitle": "Business music",
+      "businessDescription": "The catalogue, delivery and applicable commercial permissions are designed around playback in workplaces and customer-facing spaces."
+    },
     "cta": {
-      "title": "Get the rights picture for",
-      "titleHighlight": "your venue and territory",
-      "ctaQuote": "Ask BMAsia",
+      "label": "Before the first track plays",
+      "title": "Get a clear rights answer for",
+      "titleHighlight": "this venue, in this country.",
+      "description": "Tell us the venue, music route and how the music will be used. We will confirm the product scope and any local licence step before launch.",
+      "ctaQuote": "Check my venue",
       "ctaDemo": "Talk through the options"
+    },
+    "sources": {
+      "label": "Primary references:",
+      "copyright": "U.S. Copyright Office",
+      "soundtrack": "Soundtrack licensing guidance",
+      "spotify": "Spotify commercial-use policy",
+      "youtube": "YouTube terms"
     }
   },
   "howItWorksPage": {

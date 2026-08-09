@@ -1241,60 +1241,125 @@
   },
   "licensingPage": {
     "hero": {
-      "label": "清晰理解音乐权利",
-      "title": "了解服务覆盖什么。",
-      "titleHighlight": "确认场所还需要什么。",
-      "subtitle": "商业音乐权利会因曲库、产品、地区及使用方式而异。BMAsia 会在上线前帮助您了解适用范围。"
+      "label": "让音乐权利清晰易懂",
+      "title": "在公共空间播放音乐。",
+      "titleHighlight": "确保每一项权利都到位。",
+      "subtitle": "一首歌包含不止一种权利。BMAsia 将服务内已包含的权利与场所的本地义务分开说明，并清楚展示每种产品覆盖什么。",
+      "cta": "检查我的场所",
+      "secondaryCta": "了解权利如何运作"
     },
-    "intro": {
-      "paragraph1": "消费者流媒体订阅并不等同于在商业场所播放音乐的许可。商业使用可能涉及多层权利。",
-      "paragraph2Prefix": "实用原则：",
-      "paragraph2Highlight": "以书面形式确认服务与适用地区。"
+    "signal": {
+      "label": "实时权利检查",
+      "title": "从歌曲到空间",
+      "composition": "音乐与歌词",
+      "recording": "母带录音",
+      "service": "商业音乐服务",
+      "venue": "场所许可",
+      "footer": "正确答案取决于所选音乐服务，以及音乐实际播放的国家。"
     },
-    "licenses": {
+    "rights": {
+      "label": "一首曲目 · 四项许可",
+      "title": "真正需要许可的是什么？",
+      "description": "一首熟悉的歌曲可能涉及不同权利人、协议和使用方式。场所无需逐曲协商；商业音乐服务及必要时的本地集体管理组织会连接这些权利层。",
+      "layer": "权利 {number}",
       "01": {
-        "title": "录音制品权利",
-        "desc": "与特定录音版本相关的许可。覆盖范围取决于所选曲库与商业音乐服务。"
+        "title": "音乐与歌词",
+        "description": "底层词曲作品属于词曲作者与出版商，和任何特定录音版本是分开的权利。"
       },
       "02": {
-        "title": "词曲作品权利",
-        "desc": "与歌曲本身相关的权利，包括词曲作者与出版商。具体处理方式取决于产品与地区。"
+        "title": "母带录音",
+        "description": "录制的表演可能归艺术家、制作人或唱片公司所有。翻唱版本拥有自己的母带权利。"
       },
       "03": {
-        "title": "公开播放义务",
-        "desc": "场所可能还需要本地许可证或集体管理组织安排。要求因国家、场所与曲库而异。"
+        "title": "复制与传输",
+        "description": "商业服务需要获得存储、复制、串流并通过播放器传输曲库的许可，而不只是消费者的个人收听权。"
+      },
+      "04": {
+        "title": "公开播放",
+        "description": "让顾客或员工听到音乐属于公开播放。场所所需许可会因国家与产品而异。"
       }
     },
-    "warning": {
-      "label": "一个实用边界",
-      "titleStart": "个人流媒体套餐",
-      "titleNot": "并非为",
-      "titleEnd": "商业场所使用而设计",
-      "quote": "请使用商业音乐服务，并核实适用于您具体场所的权利。",
-      "quoteHighlight": "商业音乐服务",
-      "source": "BMAsia 音乐授权指南"
+    "split": {
+      "compositionLabel": "歌曲",
+      "compositionTitle": "词曲作品与歌词",
+      "compositionDescription": "词曲作者或出版商控制底层音乐作品。音乐出版（publishing）负责管理并许可这些作品权利。",
+      "recordingLabel": "录音",
+      "recordingTitle": "特定母带",
+      "recordingDescription": "艺术家、制作人或唱片公司可能控制录制的表演。同一首歌的不同录音可以有不同权利人。"
     },
     "comparison": {
-      "sectionTitle": "两种产品路线，两套不同的权利模式",
-      "recordingLicense": "商业曲库权利",
-      "publishingLicense": "产品特定曲库范围",
-      "performanceLicense": "本地场所义务",
-      "syb": {
-        "badge": "知名音乐曲库",
-        "performanceNote": "当地公开播放要求可能适用；请按地区确认。",
-        "cta": "探索 Soundtrack"
-      },
+      "label": "两条路线 · 两种权利模式",
+      "sectionTitle": "平台决定场所还需安排什么",
+      "description": "两种产品都为商业使用而设计，但曲库与许可结构不同。我们会在启用前把边界说明清楚。",
+      "recordingLicense": "录音制品权利",
+      "publishingLicense": "词曲与出版权利",
+      "performanceIncluded": "已覆盖播放的公开表演权",
+      "performanceSeparate": "本地公开播放许可",
       "bb": {
-        "badge": "精选曲库",
-        "performanceNote": "覆盖范围取决于所选方案、曲库与地区；请与 BMAsia 确认。",
+        "badge": "权利已清理路线",
+        "headline": "一项服务，无需另办音乐许可。",
+        "performanceNote": "通过 Beat Breeze 播放的覆盖音乐，已包括曲库及相应商业播放权。现场演出、DJ、第三方音乐与视频同步属于其他使用情形。",
         "cta": "探索 Beat Breeze"
+      },
+      "syb": {
+        "badge": "商业曲库",
+        "headlineIncluded": "三项核心权利在此均已包括。",
+        "headlineLocal": "服务权利已包括，场所权利在本地补充。",
+        "noteIncluded": "在美国和加拿大，Soundtrack 包括普通背景音乐的公开表演许可。特殊用途仍可能需要额外许可。",
+        "performanceNote": "在美国和加拿大以外，Soundtrack 包括录音与出版权利；场所通常需要取得本地公开播放许可。",
+        "noteConfirm": "需要确认 Soundtrack 在该市场的可用性及公开播放要求。",
+        "cta": "探索 Soundtrack"
       }
     },
+    "market": {
+      "global": "您的市场",
+      "detecting": "正在检查您的市场",
+      "label": "您的本地权利检查",
+      "title": "国家决定最后一步",
+      "description": "我们仅使用访客所在国家来显示相关许可指引，不会因此限制网站展示的内容。",
+      "location": "{country} 的音乐许可",
+      "includedTitle": "场所许可已包括",
+      "localTitle": "添加本地场所许可",
+      "confirmTitle": "确认可用性与本地权利",
+      "includedDescription": "对于该市场的普通背景音乐使用，Soundtrack 包括服务权利及相关公开表演许可。特殊用途仍需审查。",
+      "localDescription": "Soundtrack 服务包括录音与出版权利。场所通常需要从本地集体管理组织取得公开播放许可。",
+      "confirmDescription": "Beat Breeze 仍是权利已清理的商业音乐路线。我们会在推荐前确认 Soundtrack 的可用性及本地义务。",
+      "beatStatus": "已包含在服务中",
+      "beatDescription": "在覆盖范围内播放 Beat Breeze 音乐无需另办音乐许可。",
+      "includedStatus": "普通背景音乐已包括",
+      "localStatus": "需要本地场所许可",
+      "confirmStatus": "启用前确认",
+      "soundtrackIncluded": "除特定使用例外外，服务权利与普通公开表演权均已包括。",
+      "soundtrackLocal": "录音与出版权利已包括；本地公开播放由场所安排。",
+      "soundtrackConfirm": "可用性与本地权利取决于市场及场所用途。",
+      "societies": "本地集体管理组织",
+      "countryGuide": "{country} 的 Soundtrack 指南",
+      "disclaimer": "仅供一般参考。场所类型、门票、现场音乐、健身课程、曲库及本地法律都可能改变结论。BMAsia 会在启用前以书面形式确认范围。"
+    },
+    "personal": {
+      "label": "个人访问权 ≠ 商业使用许可",
+      "title": "付费个人账户仍然是个人账户",
+      "description": "为私人收听而购买的订阅不包含向顾客或员工播放音乐所需的完整权利。商业音乐服务正是为这种公开使用而设计。",
+      "consumerTitle": "个人流媒体",
+      "consumerDescription": "听众获得的是私人、非商业访问权，而非将音乐作为场所体验一部分的许可。",
+      "consumerExamples": "Spotify · YouTube · 消费者服务",
+      "businessTitle": "商业音乐",
+      "businessDescription": "曲库、传输方式与相关商业许可均围绕工作场所及顾客空间的播放需求设计。"
+    },
     "cta": {
-      "title": "了解适用于",
-      "titleHighlight": "您的场所与地区的权利范围",
-      "ctaQuote": "咨询 BMAsia",
+      "label": "在第一首歌播放之前",
+      "title": "为这个场所获得清晰的权利答案，",
+      "titleHighlight": "并适用于这个国家。",
+      "description": "告诉我们场所、音乐路线及使用方式。我们会在上线前确认产品范围与任何本地许可步骤。",
+      "ctaQuote": "检查我的场所",
       "ctaDemo": "讨论可选方案"
+    },
+    "sources": {
+      "label": "主要参考：",
+      "copyright": "美国版权局",
+      "soundtrack": "Soundtrack 许可指引",
+      "spotify": "Spotify 商业使用政策",
+      "youtube": "YouTube 条款"
     }
   },
   "howItWorksPage": {

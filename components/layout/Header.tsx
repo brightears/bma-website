@@ -98,6 +98,7 @@ export function Header() {
             <DesktopLink href={local('/soundtrack-your-brand')} active={active('/soundtrack-your-brand')}>{t('soundtrack')}</DesktopLink>
             <SolutionsMenu locale={locale} t={t} />
             <DesktopLink href={local('/how-it-works')} active={active('/how-it-works')}>{t('howItWorks')}</DesktopLink>
+            <DesktopLink href={local('/licensing')} active={active('/licensing')}>{t('licensing')}</DesktopLink>
             <LanguageSwitcher />
           </div>
 
