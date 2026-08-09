@@ -1316,7 +1316,7 @@
       "detecting": "Checking your market",
       "label": "Your local rights check",
       "title": "The country changes the last step",
-      "description": "We use the visitor’s country only to present relevant licensing guidance. It never limits what the site shows.",
+      "description": "Licensing requirements vary by country. This guide highlights the steps most relevant to your location.",
       "location": "Licensing in {country}",
       "includedTitle": "The venue licence is included",
       "localTitle": "Add the local venue licence",
