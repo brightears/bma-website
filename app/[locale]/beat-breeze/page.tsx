@@ -789,10 +789,10 @@ function CreativeReviewPreview({ ariaLabel }: { ariaLabel: string }) {
   const reduceMotion = useReducedMotion();
   const [draft, setDraft] = useState(0);
   const drafts = [
-    '/images/beat-breeze/visual-draft-botanical.webp',
-    '/images/beat-breeze/visual-draft-underwater.webp',
-    '/images/beat-breeze/visual-draft-snow.webp',
-    '/images/beat-breeze/visual-draft-ribbons.webp',
+    '/images/beat-breeze/visual-draft-cocktail.webp',
+    '/images/beat-breeze/visual-draft-shared-table.webp',
+    '/images/beat-breeze/visual-draft-fashion.webp',
+    '/images/beat-breeze/visual-draft-wellness-retail.webp',
   ] as const;
   const activeDraft = drafts[draft] ?? drafts[0];
 
