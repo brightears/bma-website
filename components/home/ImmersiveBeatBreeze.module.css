@@ -1153,7 +1153,7 @@
 }
 
 .touchpointPreview {
-  min-height: 132px;
+  min-height: 160px;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
@@ -1178,7 +1178,7 @@
 .touchpointPreviewIcon svg { width: 23px; }
 .touchpointPreview > div > span { color: var(--phase-b); font-size: 10px; font-weight: 650; letter-spacing: 0.18em; text-transform: uppercase; }
 .touchpointPreview h4 { margin: 6px 0 0; font-size: 18px; font-weight: 560; }
-.touchpointPreview p { max-width: 700px; margin: 6px 0 0; color: rgba(238, 243, 255, 0.5); line-height: 1.5; text-wrap: pretty; }
+.touchpointPreview p { min-block-size: 3em; max-width: 700px; margin: 6px 0 0; color: rgba(238, 243, 255, 0.5); line-height: 1.5; text-wrap: pretty; }
 .touchpointPreview > strong { color: rgba(238, 243, 255, 0.42); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 450; }
 
 .takeaway {
