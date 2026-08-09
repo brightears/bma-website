@@ -24,7 +24,6 @@ import {
 } from 'lucide-react';
 import { EXTERNAL_LINKS } from '@/lib/external-links';
 import { useMarketFeatureProfile } from '@/hooks/use-market-feature-profile';
-import { VolumeControllerShowcase } from '@/components/products/VolumeControllerShowcase';
 
 const reveal = {
   initial: { opacity: 0, y: 24 },
@@ -174,8 +173,6 @@ export default function SoundtrackPage() {
           </div>
         </div>
       </section>
-
-      <VolumeControllerShowcase product="soundtrack-your-brand" theme="soundtrack" />
 
       <section className="bma-section bg-[#160b1f]">
         <div className="bma-container grid gap-12 lg:grid-cols-[.78fr_1.22fr] lg:items-center">

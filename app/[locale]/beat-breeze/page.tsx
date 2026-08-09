@@ -31,7 +31,6 @@ import {
 } from 'lucide-react';
 import { EXTERNAL_LINKS, withAttribution } from '@/lib/external-links';
 import { useMarketFeatureProfile } from '@/hooks/use-market-feature-profile';
-import { VolumeControllerShowcase } from '@/components/products/VolumeControllerShowcase';
 import {
   type PlaylistSampleAsset,
   type PlaylistSampleTrack,
@@ -504,8 +503,6 @@ export default function BeatBreezePage() {
           </div>
         </div>
       </section>
-
-      <VolumeControllerShowcase product="beat-breeze" theme="beat" />
 
       <section className="border-y border-white/[0.08] bg-[#081521] px-5 py-16 sm:px-8 lg:px-16">
         <div className="bma-container grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
