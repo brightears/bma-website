@@ -331,7 +331,6 @@ export default function BeatBreezePage() {
               </motion.article>
             ))}
           </div>
-          <p className="mx-auto mt-4 max-w-3xl rounded-2xl border border-white/[0.08] bg-white/[0.025] px-5 py-4 text-center text-xs leading-5 text-white/42">{volumeT('privacy')}</p>
         </div>
       </section>
 
