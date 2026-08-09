@@ -788,12 +788,31 @@ function VisualLoopTheater({
 function CreativeReviewPreview({ ariaLabel }: { ariaLabel: string }) {
   const reduceMotion = useReducedMotion();
   const [draft, setDraft] = useState(0);
-  const drafts = ['/images/hero-restaurant.webp', '/images/hero-spa.webp'] as const;
+  const drafts = [
+    '/images/beat-breeze/visual-draft-cocktail.webp',
+    '/images/beat-breeze/visual-draft-shared-table.webp',
+    '/images/beat-breeze/visual-draft-fashion.webp',
+    '/images/beat-breeze/visual-draft-wellness-retail.webp',
+  ] as const;
   const activeDraft = drafts[draft] ?? drafts[0];
 
   return (
-    <div className="mt-8 grid grid-cols-[1fr_4.5rem] gap-2">
-      <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 bg-[#06111a]">
+    <div className="mt-8 flex min-h-[34rem] flex-1 flex-col rounded-[1.35rem] border border-white/[0.08] bg-[#06111a]/78 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,.025)]">
+      <div className="flex items-center justify-between px-1 pb-3">
+        <div className="flex items-center gap-2" aria-hidden="true">
+          {drafts.map((image, index) => (
+            <span
+              key={image}
+              className={`h-1 rounded-full transition-[width,background-color] duration-300 ${draft === index ? 'w-8 bg-brand-orange' : 'w-2 bg-white/16'}`}
+            />
+          ))}
+        </div>
+        <span className="font-mono text-[10px] tracking-[.16em] text-white/38" aria-hidden="true">
+          0{draft + 1} / 04
+        </span>
+      </div>
+
+      <div className="relative min-h-64 flex-1 overflow-hidden rounded-[1.05rem] border border-white/10 bg-[#06111a]">
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
             key={activeDraft}
@@ -803,13 +822,15 @@ function CreativeReviewPreview({ ariaLabel }: { ariaLabel: string }) {
             transition={reduceMotion ? { duration: 0 } : { duration: .42 }}
             className="absolute inset-0"
           >
-            <Image src={activeDraft} alt="" fill sizes="360px" className="object-cover opacity-72" />
-            <div className="absolute inset-0 bg-[linear-gradient(145deg,rgba(6,17,26,.05),rgba(6,17,26,.72))]" />
+            <Image src={activeDraft} alt={`${ariaLabel} 0${draft + 1}`} fill sizes="(min-width: 1024px) 31vw, 90vw" className="object-cover" />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,17,26,.02)_42%,rgba(6,17,26,.72)_100%)]" />
           </motion.div>
         </AnimatePresence>
-        <span className="absolute bottom-3 left-3 grid h-8 w-8 place-items-center rounded-full bg-brand-orange text-xs font-bold text-[#111820]">✓</span>
+        <span className="absolute bottom-3 left-3 grid h-8 w-8 place-items-center rounded-full bg-brand-orange text-xs font-bold text-[#111820] shadow-[0_8px_24px_rgba(239,166,52,.24)]" aria-hidden="true">✓</span>
+        <span className="absolute inset-x-3 bottom-3 ml-11 h-px bg-[linear-gradient(90deg,#efa634,#e7c55f,#49d5c5,transparent)]" aria-hidden="true" />
       </div>
-      <div className="grid gap-2">
+
+      <div className="mt-3 grid grid-cols-2 gap-2">
         {drafts.map((image, index) => (
           <button
             key={image}
@@ -817,10 +838,11 @@ function CreativeReviewPreview({ ariaLabel }: { ariaLabel: string }) {
             onClick={() => setDraft(index)}
             aria-pressed={draft === index}
             aria-label={`${ariaLabel} 0${index + 1}`}
-            className={`relative overflow-hidden rounded-xl border transition ${draft === index ? 'border-[#49d5c5]/60' : 'border-white/10 opacity-45 hover:opacity-100'}`}
+            className={`group/draft relative aspect-video overflow-hidden rounded-xl border transition duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange ${draft === index ? 'border-[#49d5c5]/65 opacity-100' : 'border-white/10 opacity-52 hover:border-white/20 hover:opacity-100'}`}
           >
-            <Image src={image} alt="" fill sizes="72px" className="object-cover" />
-            <span className="absolute inset-0 grid place-items-center bg-[#06111a]/32 font-mono text-[10px] text-white">0{index + 1}</span>
+            <Image src={image} alt="" fill sizes="(min-width: 1024px) 15vw, 42vw" className="object-cover transition duration-500 group-hover/draft:scale-[1.025]" />
+            <span className={`absolute inset-0 transition ${draft === index ? 'bg-transparent' : 'bg-[#06111a]/32'}`} aria-hidden="true" />
+            <span className="absolute bottom-2 left-2 font-mono text-[10px] tracking-[.14em] text-white/80" aria-hidden="true">0{index + 1}</span>
           </button>
         ))}
       </div>
