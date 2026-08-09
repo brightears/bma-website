@@ -763,7 +763,7 @@
         "eyebrow": "Lebih dari sekadar pemutar musik",
         "title": "Bangun dunia di sekeliling soundtrack.",
         "description": "Beat Breeze dapat mengoordinasikan media dan pesan yang ditemui tamu di seluruh venue—bukan sebagai tambahan yang terpisah, melainkan sebagai bagian dari rencana operasional yang sama.",
-        "musicCreation": { "label": "Arah musik", "value": "AI + manusia", "title": "Ciptakan lagu atau mulai dari katalog terkurasi", "text": "Buat lagu orisinal dengan Mureka Compose, jelajahi musik Beat Breeze, atau tambahkan musik buatan manusia dari Epidemic Sound untuk penerapan yang memenuhi syarat—lalu tinjau sebelum diputar." },
+        "musicCreation": { "label": "Arah musik", "value": "AI + manusia", "title": "Ciptakan lagu atau mulai dari katalog terkurasi", "text": "Buat lagu orisinal dengan modul kreasi musik BMAsia, jelajahi musik Beat Breeze, atau tambahkan musik buatan manusia dari Epidemic Sound untuk penerapan yang memenuhi syarat—lalu tinjau sebelum diputar." },
         "screens": {
           "label": "Layar dan TV",
           "title": "Visual loop, slideshow, dan kanal venue",

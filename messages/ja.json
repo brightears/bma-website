@@ -763,7 +763,7 @@
         "eyebrow": "音楽プレイヤーを超えて",
         "title": "サウンドトラックを取り巻く世界をつくる。",
         "description": "Beat Breezeは、施設でゲストが触れるメディアとメッセージを、ばらばらな追加機能ではなく、ひとつの運営プランとして連携できます。",
-        "musicCreation": { "label": "音楽ディレクション", "value": "AI＋人", "title": "楽曲を作るか、選曲済みカタログから始める", "text": "Mureka Composeでオリジナル曲を作り、Beat Breezeの音楽を探すか、対象の導入では人が制作したEpidemic Soundの楽曲を追加し、再生前に確認できます。" },
+        "musicCreation": { "label": "音楽ディレクション", "value": "AI＋人", "title": "楽曲を作るか、選曲済みカタログから始める", "text": "BMAsiaの音楽制作モジュールでオリジナル曲を作り、Beat Breezeの音楽を探すか、対象の導入では人が制作したEpidemic Soundの楽曲を追加し、再生前に確認できます。" },
         "screens": {
           "label": "スクリーンとTV",
           "title": "ビジュアルループ、スライドショー、施設チャンネル",

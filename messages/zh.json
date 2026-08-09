@@ -763,7 +763,7 @@
         "eyebrow": "不只是音乐播放器",
         "title": "围绕音乐打造完整场所世界。",
         "description": "Beat Breeze 可协调宾客在场所中接触到的媒体与信息，让它们不是彼此割裂的附加项，而是同一运营计划的一部分。",
-        "musicCreation": { "label": "音乐方向", "value": "AI + 真人", "title": "创作一首音乐，或从精选曲库开始", "text": "使用 Mureka Compose 生成原创音乐，浏览 Beat Breeze 曲库，或在适用项目中加入由真人创作的 Epidemic Sound 音乐，并在播放前审核。" },
+        "musicCreation": { "label": "音乐方向", "value": "AI + 真人", "title": "创作一首音乐，或从精选曲库开始", "text": "使用 BMAsia 音乐创作模块生成原创音乐，浏览 Beat Breeze 曲库，或在适用项目中加入由真人创作的 Epidemic Sound 音乐，并在播放前审核。" },
         "screens": {
           "label": "屏幕与电视",
           "title": "视觉循环、幻灯片与场所频道",
