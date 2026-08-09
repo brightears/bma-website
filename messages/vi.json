@@ -1316,7 +1316,7 @@
       "detecting": "Đang kiểm tra thị trường",
       "label": "Kiểm tra quyền tại địa phương",
       "title": "Quốc gia quyết định bước cuối",
-      "description": "Chúng tôi chỉ dùng quốc gia của khách truy cập để hiển thị hướng dẫn cấp phép phù hợp; điều này không giới hạn nội dung trên trang.",
+      "description": "Yêu cầu cấp phép âm nhạc khác nhau theo từng quốc gia. Hướng dẫn này nêu bật những bước phù hợp nhất với địa điểm của bạn.",
       "location": "Cấp phép tại {country}",
       "includedTitle": "Giấy phép địa điểm đã được bao gồm",
       "localTitle": "Bổ sung giấy phép địa điểm tại địa phương",
