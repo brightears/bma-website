@@ -1241,60 +1241,125 @@
   },
   "licensingPage": {
     "hero": {
-      "label": "Hak muzik, dijelaskan dengan mudah",
-      "title": "Ketahui perkara yang diliputi perkhidmatan anda.",
-      "titleHighlight": "Sahkan perkara yang masih diperlukan venue anda.",
-      "subtitle": "Hak muzik komersial berbeza mengikut repertoir, produk, wilayah dan cara muzik digunakan. BMAsia membantu anda memahami skop sebelum bersiaran langsung."
+      "label": "Hak muzik, dibuat jelas",
+      "title": "Mainkan muzik di ruang awam.",
+      "titleHighlight": "Pastikan setiap hak tersedia.",
+      "subtitle": "Sebuah lagu membawa lebih daripada satu hak. BMAsia memisahkan hak dalam perkhidmatan daripada kewajipan tempatan venue, kemudian menunjukkan perkara yang diliputi setiap produk.",
+      "cta": "Semak venue saya",
+      "secondaryCta": "Lihat cara hak berfungsi"
     },
-    "intro": {
-      "paragraph1": "Langganan penstriman pengguna tidak sama dengan kebenaran untuk memainkan muzik dalam perniagaan. Penggunaan komersial boleh melibatkan beberapa lapisan hak.",
-      "paragraph2Prefix": "Peraturan praktikal:",
-      "paragraph2Highlight": "sahkan perkhidmatan dan wilayah secara bertulis."
+    "signal": {
+      "label": "Semakan hak langsung",
+      "title": "Daripada lagu ke ruang",
+      "composition": "Muzik & lirik",
+      "recording": "Rakaman induk",
+      "service": "Perkhidmatan muzik perniagaan",
+      "venue": "Kebenaran venue",
+      "footer": "Jawapan yang tepat bergantung pada laluan muzik dan negara tempat muzik dimainkan."
     },
-    "licenses": {
+    "rights": {
+      "label": "Satu trek · empat kebenaran",
+      "title": "Apakah yang sebenarnya dilesenkan?",
+      "description": "Lagu yang dikenali boleh melibatkan pemilik, perjanjian dan penggunaan yang berasingan. Venue tidak perlu berunding bagi setiap trek: perkhidmatan muzik perniagaan dan, jika perlu, badan kutipan tempatan menghubungkan lapisan ini.",
+      "layer": "HAK {number}",
       "01": {
-        "title": "Hak rakaman muzik",
-        "desc": "Kebenaran yang berkaitan dengan rakaman bunyi tertentu. Liputan bergantung pada katalog dan perkhidmatan muzik komersial yang anda pilih."
+        "title": "Muzik & lirik",
+        "description": "Komposisi asas dimiliki oleh pencipta lagu dan penerbit. Hak ini berasingan daripada mana-mana rakaman tertentu."
       },
       "02": {
-        "title": "Hak komposisi",
-        "desc": "Hak yang berkaitan dengan lagu asas, termasuk pencipta lagu dan penerbit. Produk dan wilayah menentukan cara hak ini dikendalikan."
+        "title": "Rakaman induk",
+        "description": "Persembahan yang dirakam boleh dimiliki oleh artis, penerbit atau label. Versi cover mempunyai hak rakaman induknya sendiri."
       },
       "03": {
-        "title": "Kewajipan persembahan awam",
-        "desc": "Venue mungkin turut memerlukan lesen tempatan atau aturan pertubuhan pemungutan. Keperluan berbeza mengikut negara, venue dan repertoir."
+        "title": "Pengeluaran semula & penghantaran",
+        "description": "Perkhidmatan perniagaan memerlukan kebenaran untuk menyimpan, menyalin, menstrim dan menghantar katalog melalui pemain—bukan sekadar akses pengguna untuk mendengar."
+      },
+      "04": {
+        "title": "Persembahan awam",
+        "description": "Memainkan muzik untuk didengar pelanggan atau kakitangan ialah persembahan awam. Lesen venue berbeza mengikut negara dan produk."
       }
     },
-    "warning": {
-      "label": "Sempadan yang berguna",
-      "titleStart": "Pelan penstriman peribadi",
-      "titleNot": "tidak direka",
-      "titleEnd": "untuk kegunaan venue komersial",
-      "quote": "Gunakan perkhidmatan muzik perniagaan dan sahkan hak yang terpakai kepada venue tepat anda.",
-      "quoteHighlight": "perkhidmatan muzik perniagaan",
-      "source": "Panduan pelesenan BMAsia"
+    "split": {
+      "compositionLabel": "Lagu",
+      "compositionTitle": "Komposisi & lirik",
+      "compositionDescription": "Pencipta lagu atau penerbit mengawal karya muzik asas. Publishing ialah pengurusan dan pelesenan hak komposisi tersebut.",
+      "recordingLabel": "Rakaman",
+      "recordingTitle": "Rakaman induk tertentu",
+      "recordingDescription": "Artis, penerbit atau label boleh mengawal persembahan yang dirakam. Rakaman berlainan bagi lagu yang sama boleh mempunyai pemilik hak berlainan."
     },
     "comparison": {
-      "sectionTitle": "Dua laluan produk, masing-masing dengan model hak yang berbeza",
-      "recordingLicense": "Hak katalog komersial",
-      "publishingLicense": "Skop repertoir khusus produk",
-      "performanceLicense": "Kewajipan venue tempatan",
-      "syb": {
-        "badge": "Repertoir yang dikenali",
-        "performanceNote": "Keperluan persembahan awam tempatan mungkin terpakai; sahkan mengikut wilayah.",
-        "cta": "Terokai Soundtrack"
-      },
+      "label": "Dua laluan · dua model hak",
+      "sectionTitle": "Platform menentukan perkara yang perlu diatur oleh venue",
+      "description": "Kedua-dua produk dibina untuk perniagaan. Katalog dan struktur pelesenannya berbeza, jadi kami menjelaskan sempadannya sebelum pengaktifan.",
+      "recordingLicense": "Hak rakaman bunyi",
+      "publishingLicense": "Hak komposisi & publishing",
+      "performanceIncluded": "Persembahan awam bagi penggunaan yang diliputi",
+      "performanceSeparate": "Lesen persembahan awam tempatan",
       "bb": {
-        "badge": "Katalog terpilih",
-        "performanceNote": "Liputan bergantung pada pelan, katalog dan wilayah yang dipilih; sahkan dengan BMAsia.",
+        "badge": "Laluan hak lengkap",
+        "headline": "Satu perkhidmatan. Tiada lesen muzik berasingan.",
+        "performanceNote": "Muzik yang dimainkan melalui Beat Breeze merangkumi katalog dan hak penggunaan perniagaan yang diliputi. Persembahan langsung, DJ, muzik pihak ketiga dan penyegerakan visual ialah penggunaan berasingan.",
         "cta": "Terokai Beat Breeze"
+      },
+      "syb": {
+        "badge": "Katalog komersial",
+        "headlineIncluded": "Ketiga-tiga hak teras disertakan di sini.",
+        "headlineLocal": "Hak perkhidmatan disertakan. Hak venue ditambah secara tempatan.",
+        "noteIncluded": "Di Amerika Syarikat dan Kanada, Soundtrack merangkumi pelesenan persembahan awam untuk muzik latar biasa. Penggunaan khas masih mungkin memerlukan kebenaran tambahan.",
+        "performanceNote": "Di luar Amerika Syarikat dan Kanada, Soundtrack merangkumi hak rakaman dan publishing; venue lazimnya mendapatkan lesen persembahan awam tempatan.",
+        "noteConfirm": "Ketersediaan Soundtrack dan keperluan persembahan awam mesti disahkan untuk pasaran ini.",
+        "cta": "Terokai Soundtrack"
       }
     },
+    "market": {
+      "global": "pasaran anda",
+      "detecting": "Menyemak pasaran anda",
+      "label": "Semakan hak tempatan anda",
+      "title": "Negara menentukan langkah terakhir",
+      "description": "Kami menggunakan negara pelawat hanya untuk memaparkan panduan pelesenan yang berkaitan. Ia tidak mengehadkan kandungan laman.",
+      "location": "Pelesenan di {country}",
+      "includedTitle": "Lesen venue disertakan",
+      "localTitle": "Tambah lesen venue tempatan",
+      "confirmTitle": "Sahkan ketersediaan dan hak tempatan",
+      "includedDescription": "Bagi penggunaan muzik latar biasa dalam pasaran ini, Soundtrack merangkumi hak perkhidmatan dan perlindungan persembahan awam berkaitan. Penggunaan khas masih perlu disemak.",
+      "localDescription": "Soundtrack merangkumi hak rakaman dan publishing dalam perkhidmatannya. Venue lazimnya menambah lesen persembahan awam daripada badan kutipan tempatan.",
+      "confirmDescription": "Beat Breeze kekal sebagai laluan muzik perniagaan dengan hak lengkap. Kami akan mengesahkan ketersediaan Soundtrack dan kewajipan tempatan sebelum mencadangkannya.",
+      "beatStatus": "Disertakan melalui perkhidmatan",
+      "beatDescription": "Penggunaan Beat Breeze yang diliputi tidak memerlukan lesen muzik berasingan.",
+      "includedStatus": "Disertakan untuk muzik latar",
+      "localStatus": "Lesen venue tempatan diperlukan",
+      "confirmStatus": "Sahkan sebelum pengaktifan",
+      "soundtrackIncluded": "Hak perkhidmatan dan persembahan awam biasa disertakan, tertakluk pada pengecualian penggunaan.",
+      "soundtrackLocal": "Rakaman dan publishing disertakan; persembahan awam tempatan diatur oleh venue.",
+      "soundtrackConfirm": "Ketersediaan dan hak tempatan bergantung pada pasaran dan penggunaan venue.",
+      "societies": "Badan kutipan tempatan",
+      "countryGuide": "Panduan Soundtrack untuk {country}",
+      "disclaimer": "Panduan umum sahaja. Jenis venue, bayaran masuk, muzik langsung, kelas senaman, repertoir dan undang-undang tempatan boleh mengubah jawapan. BMAsia mengesahkan skop secara bertulis sebelum pengaktifan."
+    },
+    "personal": {
+      "label": "Akses pengguna ≠ kebenaran perniagaan",
+      "title": "Akaun peribadi berbayar masih bersifat peribadi",
+      "description": "Langganan untuk pendengaran peribadi tidak memberikan set hak penuh untuk dimainkan kepada pelanggan atau kakitangan. Perkhidmatan muzik perniagaan direka bagi kegunaan awam itu.",
+      "consumerTitle": "Penstriman peribadi",
+      "consumerDescription": "Pendengar menerima akses peribadi, bukan komersial—bukan kebenaran menjadikan muzik sebahagian daripada pengalaman venue.",
+      "consumerExamples": "Spotify · YouTube · perkhidmatan pengguna",
+      "businessTitle": "Muzik perniagaan",
+      "businessDescription": "Katalog, penghantaran dan kebenaran komersial berkaitan direka untuk tempat kerja dan ruang pelanggan."
+    },
     "cta": {
-      "title": "Dapatkan gambaran hak untuk",
-      "titleHighlight": "venue dan wilayah anda",
-      "ctaQuote": "Tanya BMAsia",
+      "label": "Sebelum trek pertama dimainkan",
+      "title": "Dapatkan jawapan hak yang jelas untuk",
+      "titleHighlight": "venue ini, di negara ini.",
+      "description": "Beritahu kami venue, laluan muzik dan cara muzik akan digunakan. Kami akan mengesahkan skop produk dan sebarang langkah lesen tempatan sebelum pelancaran.",
+      "ctaQuote": "Semak venue saya",
       "ctaDemo": "Bincangkan pilihan"
+    },
+    "sources": {
+      "label": "Rujukan utama:",
+      "copyright": "Pejabat Hak Cipta A.S.",
+      "soundtrack": "Panduan pelesenan Soundtrack",
+      "spotify": "Dasar penggunaan komersial Spotify",
+      "youtube": "Terma YouTube"
     }
   },
   "howItWorksPage": {

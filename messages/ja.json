@@ -1241,60 +1241,125 @@
   },
   "licensingPage": {
     "hero": {
-      "label": "音楽の権利を、わかりやすく",
-      "title": "サービスがカバーする範囲を知り、",
-      "titleHighlight": "施設に別途必要なものを確認する。",
-      "subtitle": "商用音楽の権利は、レパートリー、製品、地域、利用方法で異なります。BMAsiaが、利用開始前に範囲を理解できるよう支援します。"
+      "label": "音楽の権利を、明快に",
+      "title": "公共の場で音楽を流す。",
+      "titleHighlight": "必要な権利をすべて整える。",
+      "subtitle": "1曲には複数の権利があります。BMAsiaはサービスに含まれる権利と施設側の地域別義務を分け、各製品の範囲を明確にします。",
+      "cta": "施設の要件を確認",
+      "secondaryCta": "権利の仕組みを見る"
     },
-    "intro": {
-      "paragraph1": "個人向けストリーミング契約は、事業施設で音楽を流す許可とは異なります。商用利用には複数の権利が関わる場合があります。",
-      "paragraph2Prefix": "実務上の原則：",
-      "paragraph2Highlight": "サービスと地域ごとの範囲を、書面で確認する。"
+    "signal": {
+      "label": "権利をリアルタイム確認",
+      "title": "楽曲から空間まで",
+      "composition": "音楽と歌詞",
+      "recording": "マスター録音",
+      "service": "業務用音楽サービス",
+      "venue": "施設の許諾",
+      "footer": "正しい答えは、選ぶ音楽サービスと再生する国の両方で決まります。"
     },
-    "licenses": {
+    "rights": {
+      "label": "1曲 · 4つの許諾",
+      "title": "実際に何をライセンスするのか？",
+      "description": "親しみのある曲にも、複数の権利者、契約、利用形態があります。施設が1曲ずつ交渉するのではなく、業務用音楽サービスと必要に応じた現地の権利管理団体が各層をつなぎます。",
+      "layer": "権利 {number}",
       "01": {
-        "title": "録音物の権利",
-        "desc": "特定の録音物に関する許諾です。対象範囲は、選択するカタログと商用音楽サービスによって異なります。"
+        "title": "音楽と歌詞",
+        "description": "元となる楽曲は作詞・作曲家と音楽出版社の権利です。特定の録音物とは別の権利です。"
       },
       "02": {
-        "title": "楽曲の権利",
-        "desc": "作詞・作曲家や音楽出版社など、楽曲そのものに関する権利です。製品と地域によって扱いが異なります。"
+        "title": "マスター録音",
+        "description": "録音された演奏は、アーティスト、プロデューサー、レーベルなどが管理します。カバー版には別のマスター権があります。"
       },
       "03": {
-        "title": "公衆演奏に関する義務",
-        "desc": "施設には現地ライセンスや著作権管理団体との手続きが別途必要な場合があります。要件は国、施設、レパートリーで異なります。"
+        "title": "複製と配信",
+        "description": "業務用サービスには、カタログを保存、複製、ストリーミングし、プレーヤーへ配信する許諾が必要です。個人の視聴権だけでは足りません。"
+      },
+      "04": {
+        "title": "公衆演奏",
+        "description": "顧客や従業員に聞こえる形で音楽を流すことは公衆演奏です。施設に必要な許諾は国と製品で異なります。"
       }
     },
-    "warning": {
-      "label": "知っておきたい境界",
-      "titleStart": "個人向けストリーミングプランは",
-      "titleNot": "事業施設での商用利用を想定して",
-      "titleEnd": "いません",
-      "quote": "事業者向け音楽サービスを利用し、施設に適用される権利を正確に確認してください。",
-      "quoteHighlight": "事業者向け音楽サービス",
-      "source": "BMAsiaのライセンス案内"
+    "split": {
+      "compositionLabel": "楽曲",
+      "compositionTitle": "作曲・作詞",
+      "compositionDescription": "作詞・作曲家や音楽出版社が元の音楽作品を管理します。出版（publishing）は、その作品の権利を管理し許諾する事業です。",
+      "recordingLabel": "録音",
+      "recordingTitle": "特定のマスター",
+      "recordingDescription": "アーティスト、プロデューサー、レーベルが録音された演奏を管理する場合があります。同じ曲でも録音が違えば権利者も変わり得ます。"
     },
     "comparison": {
-      "sectionTitle": "異なる権利モデルを持つ、2つの製品ルート",
-      "recordingLicense": "商用カタログの権利",
-      "publishingLicense": "製品ごとのレパートリー範囲",
-      "performanceLicense": "現地施設の義務",
-      "syb": {
-        "badge": "親しみのあるレパートリー",
-        "performanceNote": "現地の公衆演奏要件が適用される場合があります。地域ごとに確認してください。",
-        "cta": "Soundtrackを見る"
-      },
+      "label": "2つのルート · 2つの権利モデル",
+      "sectionTitle": "プラットフォームによって施設が手配する範囲が変わる",
+      "description": "どちらも業務用ですが、カタログとライセンス構造は異なります。運用開始前に境界を明確にします。",
+      "recordingLicense": "録音物の権利",
+      "publishingLicense": "作曲・出版の権利",
+      "performanceIncluded": "対象再生の公衆演奏権",
+      "performanceSeparate": "現地の公衆演奏ライセンス",
       "bb": {
-        "badge": "厳選されたカタログ",
-        "performanceNote": "対象範囲は選択するプラン、カタログ、地域で異なります。BMAsiaにご確認ください。",
+        "badge": "権利処理済みルート",
+        "headline": "1つのサービス。別途音楽ライセンスは不要。",
+        "performanceNote": "Beat Breezeで再生する対象音楽には、カタログと業務再生の権利が含まれます。ライブ、DJ、外部音源、映像との同期は別の利用形態です。",
         "cta": "Beat Breezeを見る"
+      },
+      "syb": {
+        "badge": "商用カタログ",
+        "headlineIncluded": "3つの主要権利をこの地域でカバー。",
+        "headlineLocal": "サービスの権利は含まれ、施設の権利は現地で追加。",
+        "noteIncluded": "米国とカナダでは、通常のBGM利用に必要な公衆演奏ライセンスをSoundtrackが含みます。特殊利用には追加許諾が必要な場合があります。",
+        "performanceNote": "米国・カナダ以外では、Soundtrackは録音物と出版の権利を含み、施設は通常、現地の公衆演奏ライセンスを取得します。",
+        "noteConfirm": "この市場でのSoundtrackの提供状況と公衆演奏要件を確認する必要があります。",
+        "cta": "Soundtrackを見る"
       }
     },
+    "market": {
+      "global": "お客様の市場",
+      "detecting": "市場を確認中",
+      "label": "現地の権利チェック",
+      "title": "最後の一歩は国によって変わる",
+      "description": "訪問者の国情報は、関連するライセンス案内を表示するためだけに使用し、サイトの内容を制限しません。",
+      "location": "{country}でのライセンス",
+      "includedTitle": "施設ライセンスも含まれます",
+      "localTitle": "現地の施設ライセンスを追加",
+      "confirmTitle": "提供状況と現地の権利を確認",
+      "includedDescription": "この市場での通常のBGM利用では、Soundtrackのサービス権と該当する公衆演奏権が含まれます。特殊な用途は別途確認が必要です。",
+      "localDescription": "Soundtrackには録音物と出版の権利が含まれます。施設は通常、現地の権利管理団体から公衆演奏ライセンスを取得します。",
+      "confirmDescription": "Beat Breezeは権利処理済みの業務用ルートです。Soundtrackの提供状況と現地義務は、提案前に確認します。",
+      "beatStatus": "サービスに含まれる",
+      "beatDescription": "対象となるBeat Breezeの再生には、別途音楽ライセンスは不要です。",
+      "includedStatus": "通常のBGM利用に含まれる",
+      "localStatus": "現地の施設ライセンスが必要",
+      "confirmStatus": "運用開始前に確認",
+      "soundtrackIncluded": "利用形態による例外を除き、サービス権と通常の公衆演奏権が含まれます。",
+      "soundtrackLocal": "録音物と出版は含まれ、公衆演奏は施設が現地で手配します。",
+      "soundtrackConfirm": "提供状況と現地の権利は市場と施設用途で異なります。",
+      "societies": "現地の権利管理団体",
+      "countryGuide": "{country}向けSoundtrackガイド",
+      "disclaimer": "一般的な案内です。施設種別、入場料、ライブ、フィットネスクラス、レパートリー、現地法によって要件は変わります。BMAsiaは運用開始前に書面で範囲を確認します。"
+    },
+    "personal": {
+      "label": "個人アクセス ≠ 業務利用許可",
+      "title": "有料でも、個人アカウントは個人用",
+      "description": "私的視聴向けの契約には、顧客や従業員へ音楽を流すための権利一式は含まれません。業務用音楽サービスは、その公衆利用を前提に設計されています。",
+      "consumerTitle": "個人向けストリーミング",
+      "consumerDescription": "利用者が得るのは私的・非商用のアクセスであり、施設体験の一部として音楽を提供する許可ではありません。",
+      "consumerExamples": "Spotify · YouTube · 個人向けサービス",
+      "businessTitle": "業務用音楽",
+      "businessDescription": "カタログ、配信、該当する商用許諾が、職場や顧客向け空間での再生を前提に設計されています。"
+    },
     "cta": {
-      "title": "施設と地域に必要な",
-      "titleHighlight": "権利の全体像を確認",
-      "ctaQuote": "BMAsiaに相談",
+      "label": "最初の曲を流す前に",
+      "title": "権利の明確な答えを",
+      "titleHighlight": "この施設、この国に合わせて。",
+      "description": "施設、音楽ルート、利用方法をお知らせください。開始前に製品範囲と現地ライセンスの手順を確認します。",
+      "ctaQuote": "施設の要件を確認",
       "ctaDemo": "選択肢について話す"
+    },
+    "sources": {
+      "label": "主な参照先：",
+      "copyright": "米国著作権局",
+      "soundtrack": "Soundtrackライセンス案内",
+      "spotify": "Spotify商用利用ポリシー",
+      "youtube": "YouTube利用規約"
     }
   },
   "howItWorksPage": {

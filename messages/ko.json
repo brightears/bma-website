@@ -1241,60 +1241,125 @@
   },
   "licensingPage": {
     "hero": {
-      "label": "알기 쉬운 음악 권리",
-      "title": "서비스가 보장하는 범위를 알고.",
-      "titleHighlight": "매장에 필요한 추가 사항을 확인하세요.",
-      "subtitle": "상업용 음악 권리는 레퍼토리, 제품, 지역, 사용 방식에 따라 달라집니다. BMAsia가 운영 시작 전에 범위를 이해하도록 돕습니다."
+      "label": "음악 권리를 명확하게",
+      "title": "공공장소에서 음악을 재생하세요.",
+      "titleHighlight": "필요한 모든 권리를 갖추고.",
+      "subtitle": "한 곡에는 둘 이상의 권리가 있습니다. BMAsia는 서비스에 포함된 권리와 매장의 현지 의무를 구분해 각 제품이 무엇을 보장하는지 보여드립니다.",
+      "cta": "내 매장 확인하기",
+      "secondaryCta": "권리 구조 보기"
     },
-    "intro": {
-      "paragraph1": "개인용 스트리밍 구독은 사업장에서 음악을 재생할 수 있는 허가와 같지 않습니다. 상업적 이용에는 여러 층위의 권리가 관련될 수 있습니다.",
-      "paragraph2Prefix": "실용적인 원칙:",
-      "paragraph2Highlight": "서비스와 지역 범위를 서면으로 확인하세요."
+    "signal": {
+      "label": "실시간 권리 확인",
+      "title": "노래에서 공간까지",
+      "composition": "음악과 가사",
+      "recording": "마스터 음원",
+      "service": "비즈니스 음악 서비스",
+      "venue": "매장 허가",
+      "footer": "정확한 답은 선택한 음악 경로와 재생하는 국가에 따라 달라집니다."
     },
-    "licenses": {
+    "rights": {
+      "label": "한 곡 · 네 가지 허가",
+      "title": "실제로 무엇을 라이선스할까요?",
+      "description": "익숙한 노래에도 서로 다른 권리자, 계약, 이용 방식이 존재합니다. 매장이 곡마다 협상하는 대신 비즈니스 음악 서비스와 필요한 경우 현지 신탁관리단체가 이 권리들을 연결합니다.",
+      "layer": "권리 {number}",
       "01": {
-        "title": "녹음물 권리",
-        "desc": "특정 녹음물과 관련된 허가입니다. 적용 범위는 선택한 카탈로그와 상업용 음악 서비스에 따라 달라집니다."
+        "title": "음악과 가사",
+        "description": "원곡은 작사·작곡가와 음악 출판사의 권리입니다. 특정 녹음물과는 별개의 권리입니다."
       },
       "02": {
-        "title": "저작물 권리",
-        "desc": "작곡가와 음악 출판사를 포함한 원곡 자체에 관한 권리입니다. 제품과 지역에 따라 처리 방식이 달라집니다."
+        "title": "마스터 음원",
+        "description": "녹음된 연주는 아티스트, 프로듀서 또는 레이블이 소유할 수 있습니다. 커버 버전에는 별도의 마스터 권리가 있습니다."
       },
       "03": {
-        "title": "공연권 의무",
-        "desc": "매장에는 현지 라이선스나 저작권 신탁관리단체와의 별도 절차가 필요할 수 있습니다. 요건은 국가, 매장, 레퍼토리에 따라 다릅니다."
+        "title": "복제와 전송",
+        "description": "비즈니스 서비스는 카탈로그를 저장, 복제, 스트리밍하고 플레이어로 전송할 허가가 필요합니다. 개인 청취 권한만으로는 부족합니다."
+      },
+      "04": {
+        "title": "공연권",
+        "description": "고객이나 직원이 들을 수 있게 음악을 재생하는 것은 공개 공연입니다. 매장 라이선스는 국가와 제품에 따라 달라집니다."
       }
     },
-    "warning": {
-      "label": "기억할 경계",
-      "titleStart": "개인용 스트리밍 요금제는",
-      "titleNot": "설계되지 않았습니다",
-      "titleEnd": "상업용 매장 이용을 위해",
-      "quote": "비즈니스 음악 서비스를 사용하고 해당 매장에 적용되는 권리를 확인하세요.",
-      "quoteHighlight": "비즈니스 음악 서비스",
-      "source": "BMAsia 라이선스 안내"
+    "split": {
+      "compositionLabel": "노래",
+      "compositionTitle": "작곡과 가사",
+      "compositionDescription": "작사·작곡가나 음악 출판사가 원저작물을 관리합니다. 퍼블리싱은 이 저작물 권리를 관리하고 허가하는 업무입니다.",
+      "recordingLabel": "녹음",
+      "recordingTitle": "특정 마스터",
+      "recordingDescription": "아티스트, 프로듀서 또는 레이블이 녹음된 연주를 관리할 수 있습니다. 같은 노래라도 녹음이 다르면 권리자도 다를 수 있습니다."
     },
     "comparison": {
-      "sectionTitle": "서로 다른 권리 모델을 가진 두 가지 제품 경로",
-      "recordingLicense": "상업용 카탈로그 권리",
-      "publishingLicense": "제품별 레퍼토리 범위",
-      "performanceLicense": "현지 매장 의무",
-      "syb": {
-        "badge": "친숙한 레퍼토리",
-        "performanceNote": "현지 공연권 요건이 적용될 수 있으므로 지역별로 확인하세요.",
-        "cta": "Soundtrack 살펴보기"
-      },
+      "label": "두 경로 · 두 권리 모델",
+      "sectionTitle": "플랫폼에 따라 매장이 준비할 범위가 달라집니다",
+      "description": "두 제품 모두 비즈니스용이지만 카탈로그와 라이선스 구조는 다릅니다. 활성화 전에 그 경계를 명확히 보여드립니다.",
+      "recordingLicense": "음원 권리",
+      "publishingLicense": "저작물과 퍼블리싱 권리",
+      "performanceIncluded": "대상 재생의 공연권",
+      "performanceSeparate": "현지 공연권 라이선스",
       "bb": {
-        "badge": "큐레이션 카탈로그",
-        "performanceNote": "적용 범위는 선택한 플랜, 카탈로그, 지역에 따라 달라지므로 BMAsia에 확인하세요.",
+        "badge": "권리 처리 완료",
+        "headline": "하나의 서비스. 별도 음악 라이선스 불필요.",
+        "performanceNote": "Beat Breeze를 통한 대상 음악 재생에는 카탈로그와 비즈니스 재생 권리가 포함됩니다. 라이브 공연, DJ, 외부 음악, 영상 동기화는 별도의 이용 사례입니다.",
         "cta": "Beat Breeze 살펴보기"
+      },
+      "syb": {
+        "badge": "상업용 카탈로그",
+        "headlineIncluded": "세 가지 핵심 권리가 모두 포함됩니다.",
+        "headlineLocal": "서비스 권리는 포함. 매장 권리는 현지에서 추가.",
+        "noteIncluded": "미국과 캐나다에서는 일반 배경음악의 공연권 라이선스가 Soundtrack에 포함됩니다. 특별 이용은 추가 허가가 필요할 수 있습니다.",
+        "performanceNote": "미국과 캐나다 이외 지역에서는 Soundtrack에 음원 및 퍼블리싱 권리가 포함되며, 매장은 보통 현지 공연권 라이선스를 취득합니다.",
+        "noteConfirm": "이 시장에서 Soundtrack 제공 여부와 공연권 요건을 확인해야 합니다.",
+        "cta": "Soundtrack 살펴보기"
       }
     },
+    "market": {
+      "global": "고객님의 시장",
+      "detecting": "시장을 확인하는 중",
+      "label": "현지 권리 확인",
+      "title": "마지막 단계는 국가에 따라 달라집니다",
+      "description": "방문자의 국가는 관련 라이선스 안내를 보여주는 데만 사용하며 사이트의 내용을 제한하지 않습니다.",
+      "location": "{country} 라이선스",
+      "includedTitle": "매장 라이선스가 포함됩니다",
+      "localTitle": "현지 매장 라이선스를 추가하세요",
+      "confirmTitle": "제공 여부와 현지 권리를 확인하세요",
+      "includedDescription": "이 시장의 일반 배경음악 이용에는 Soundtrack 서비스 권리와 관련 공연권이 포함됩니다. 특별 이용은 별도 검토가 필요합니다.",
+      "localDescription": "Soundtrack 서비스에는 음원 및 퍼블리싱 권리가 포함됩니다. 매장은 보통 현지 신탁관리단체에서 공연권 라이선스를 추가합니다.",
+      "confirmDescription": "Beat Breeze는 권리 처리된 비즈니스 음악 경로입니다. 추천 전에 Soundtrack 제공 여부와 현지 의무를 확인합니다.",
+      "beatStatus": "서비스에 포함",
+      "beatDescription": "대상 Beat Breeze 재생에는 별도의 음악 라이선스가 필요하지 않습니다.",
+      "includedStatus": "배경음악 이용에 포함",
+      "localStatus": "현지 매장 라이선스 필요",
+      "confirmStatus": "활성화 전 확인",
+      "soundtrackIncluded": "이용 방식에 따른 예외를 제외하고 서비스 권리와 일반 공연권이 포함됩니다.",
+      "soundtrackLocal": "음원과 퍼블리싱은 포함되며 현지 공연권은 매장이 준비합니다.",
+      "soundtrackConfirm": "제공 여부와 현지 권리는 시장 및 매장 이용 방식에 따라 달라집니다.",
+      "societies": "현지 저작권 신탁관리단체",
+      "countryGuide": "{country} Soundtrack 안내",
+      "disclaimer": "일반 안내입니다. 매장 유형, 입장료, 라이브 음악, 운동 수업, 레퍼토리 및 현지 법률에 따라 답이 달라질 수 있습니다. BMAsia는 활성화 전에 범위를 서면으로 확인합니다."
+    },
+    "personal": {
+      "label": "개인 접근 권한 ≠ 비즈니스 허가",
+      "title": "유료 개인 계정도 여전히 개인용입니다",
+      "description": "개인 청취용 구독에는 고객이나 직원에게 음악을 재생하는 데 필요한 모든 권리가 포함되지 않습니다. 비즈니스 음악 서비스는 그런 공개 이용을 위해 설계됩니다.",
+      "consumerTitle": "개인 스트리밍",
+      "consumerDescription": "이용자는 사적·비상업적 접근 권한을 얻을 뿐, 매장 경험의 일부로 음악을 제공할 허가는 받지 않습니다.",
+      "consumerExamples": "Spotify · YouTube · 개인 서비스",
+      "businessTitle": "비즈니스 음악",
+      "businessDescription": "카탈로그, 전송 및 관련 상업적 허가가 직장과 고객 공간의 재생을 전제로 설계됩니다."
+    },
     "cta": {
-      "title": "다음 조건에 맞는 권리 범위를 확인하세요",
-      "titleHighlight": "매장과 운영 지역",
-      "ctaQuote": "BMAsia에 문의",
+      "label": "첫 곡을 재생하기 전에",
+      "title": "권리에 대한 명확한 답을",
+      "titleHighlight": "이 매장과 이 국가에 맞게.",
+      "description": "매장, 음악 경로, 이용 방식을 알려주세요. 출시 전에 제품 범위와 현지 라이선스 단계를 확인합니다.",
+      "ctaQuote": "내 매장 확인하기",
       "ctaDemo": "옵션 상담하기"
+    },
+    "sources": {
+      "label": "주요 참고 자료:",
+      "copyright": "미국 저작권청",
+      "soundtrack": "Soundtrack 라이선스 안내",
+      "spotify": "Spotify 상업적 이용 정책",
+      "youtube": "YouTube 이용약관"
     }
   },
   "howItWorksPage": {

@@ -1241,60 +1241,125 @@
   },
   "licensingPage": {
     "hero": {
-      "label": "Quyền âm nhạc, được giải thích rõ ràng",
-      "title": "Hiểu dịch vụ của bạn bao gồm gì.",
-      "titleHighlight": "Xác nhận địa điểm vẫn cần gì.",
-      "subtitle": "Quyền sử dụng âm nhạc thương mại khác nhau theo kho nhạc, sản phẩm, lãnh thổ và cách âm nhạc được sử dụng. BMAsia giúp bạn hiểu rõ phạm vi trước khi đi vào hoạt động."
+      "label": "Quyền âm nhạc, thật dễ hiểu",
+      "title": "Phát nhạc nơi công cộng.",
+      "titleHighlight": "Đảm bảo mọi quyền đều đúng.",
+      "subtitle": "Một bài hát có nhiều hơn một loại quyền. BMAsia tách rõ quyền đã có trong dịch vụ và nghĩa vụ địa phương của địa điểm, rồi cho bạn biết mỗi sản phẩm bao gồm những gì.",
+      "cta": "Kiểm tra địa điểm",
+      "secondaryCta": "Xem cách các quyền hoạt động"
     },
-    "intro": {
-      "paragraph1": "Gói nghe nhạc trực tuyến dành cho cá nhân không đồng nghĩa với quyền phát nhạc trong doanh nghiệp. Việc sử dụng thương mại có thể liên quan đến nhiều lớp quyền khác nhau.",
-      "paragraph2Prefix": "Nguyên tắc thực tế:",
-      "paragraph2Highlight": "xác nhận dịch vụ và lãnh thổ bằng văn bản."
+    "signal": {
+      "label": "Kiểm tra quyền trực tiếp",
+      "title": "Từ bài hát đến không gian",
+      "composition": "Nhạc & lời",
+      "recording": "Bản ghi master",
+      "service": "Dịch vụ nhạc doanh nghiệp",
+      "venue": "Quyền của địa điểm",
+      "footer": "Câu trả lời đúng phụ thuộc vào cả lựa chọn dịch vụ và quốc gia nơi âm nhạc được phát."
     },
-    "licenses": {
+    "rights": {
+      "label": "Một bản nhạc · bốn quyền",
+      "title": "Thực sự cần cấp phép cho những gì?",
+      "description": "Một bài hát quen thuộc có thể liên quan đến nhiều chủ sở hữu, thỏa thuận và cách sử dụng. Địa điểm không phải đàm phán từng bài: dịch vụ nhạc doanh nghiệp và, khi cần, tổ chức quản lý tập thể sẽ kết nối các lớp quyền này.",
+      "layer": "QUYỀN {number}",
       "01": {
-        "title": "Quyền đối với bản ghi âm",
-        "desc": "Quyền liên quan đến bản ghi âm cụ thể. Phạm vi phụ thuộc vào kho nhạc và dịch vụ âm nhạc thương mại bạn chọn."
+        "title": "Nhạc & lời",
+        "description": "Tác phẩm âm nhạc gốc thuộc về nhạc sĩ và nhà xuất bản. Quyền này tách biệt với từng bản ghi cụ thể."
       },
       "02": {
-        "title": "Quyền đối với tác phẩm âm nhạc",
-        "desc": "Quyền liên quan đến bài hát gốc, bao gồm tác giả và nhà xuất bản âm nhạc. Sản phẩm và lãnh thổ quyết định cách các quyền này được xử lý."
+        "title": "Bản ghi master",
+        "description": "Phần trình diễn đã thu có thể thuộc về nghệ sĩ, nhà sản xuất hoặc hãng đĩa. Một bản cover có quyền master riêng."
       },
       "03": {
-        "title": "Nghĩa vụ về biểu diễn công cộng",
-        "desc": "Địa điểm cũng có thể cần giấy phép địa phương hoặc thỏa thuận với tổ chức thu tác quyền. Yêu cầu khác nhau theo quốc gia, địa điểm và kho nhạc."
+        "title": "Sao chép & phân phối",
+        "description": "Dịch vụ nhạc doanh nghiệp cần quyền lưu trữ, sao chép, phát trực tuyến và phân phối kho nhạc qua trình phát—không chỉ quyền nghe cá nhân."
+      },
+      "04": {
+        "title": "Biểu diễn công cộng",
+        "description": "Phát nhạc để khách hàng hoặc nhân viên nghe là biểu diễn công cộng. Giấy phép cho địa điểm thay đổi theo quốc gia và sản phẩm."
       }
     },
-    "warning": {
-      "label": "Một ranh giới cần biết",
-      "titleStart": "Các gói nghe nhạc dành cho cá nhân",
-      "titleNot": "không được thiết kế",
-      "titleEnd": "để sử dụng tại địa điểm thương mại",
-      "quote": "Hãy sử dụng dịch vụ âm nhạc doanh nghiệp và xác minh các quyền áp dụng cho chính địa điểm của bạn.",
-      "quoteHighlight": "dịch vụ âm nhạc doanh nghiệp",
-      "source": "Hướng dẫn bản quyền của BMAsia"
+    "split": {
+      "compositionLabel": "Bài hát",
+      "compositionTitle": "Tác phẩm & lời ca",
+      "compositionDescription": "Nhạc sĩ hoặc nhà xuất bản kiểm soát tác phẩm âm nhạc gốc. Publishing là việc quản lý và cấp phép các quyền tác phẩm đó.",
+      "recordingLabel": "Bản ghi",
+      "recordingTitle": "Một bản master cụ thể",
+      "recordingDescription": "Nghệ sĩ, nhà sản xuất hoặc hãng đĩa có thể kiểm soát phần trình diễn đã thu. Hai bản ghi cùng một bài hát có thể có chủ sở hữu quyền khác nhau."
     },
     "comparison": {
-      "sectionTitle": "Hai hướng sản phẩm, mỗi hướng có mô hình quyền khác nhau",
-      "recordingLicense": "Quyền đối với kho nhạc thương mại",
-      "publishingLicense": "Phạm vi kho nhạc theo từng sản phẩm",
-      "performanceLicense": "Nghĩa vụ địa phương của địa điểm",
-      "syb": {
-        "badge": "Kho nhạc dễ nhận biết",
-        "performanceNote": "Có thể áp dụng yêu cầu về biểu diễn công cộng tại địa phương; cần xác nhận theo lãnh thổ.",
-        "cta": "Khám phá Soundtrack"
-      },
+      "label": "Hai lựa chọn · hai mô hình quyền",
+      "sectionTitle": "Nền tảng quyết định điều địa điểm cần thu xếp",
+      "description": "Cả hai sản phẩm đều dành cho doanh nghiệp. Kho nhạc và cấu trúc cấp phép khác nhau, vì vậy chúng tôi làm rõ ranh giới trước khi kích hoạt.",
+      "recordingLicense": "Quyền bản ghi âm",
+      "publishingLicense": "Quyền tác phẩm & publishing",
+      "performanceIncluded": "Biểu diễn công cộng cho phạm vi phát được bao gồm",
+      "performanceSeparate": "Giấy phép biểu diễn công cộng địa phương",
       "bb": {
-        "badge": "Kho nhạc được tuyển chọn",
-        "performanceNote": "Phạm vi phụ thuộc vào gói, kho nhạc và lãnh thổ đã chọn; hãy xác nhận với BMAsia.",
+        "badge": "Tuyến quyền đã được xử lý",
+        "headline": "Một dịch vụ. Không cần giấy phép nhạc riêng.",
+        "performanceNote": "Âm nhạc phát qua Beat Breeze đã bao gồm kho nhạc và quyền phát doanh nghiệp thuộc phạm vi. Biểu diễn trực tiếp, DJ, nhạc bên thứ ba và đồng bộ hình ảnh là những trường hợp riêng.",
         "cta": "Khám phá Beat Breeze"
+      },
+      "syb": {
+        "badge": "Kho nhạc thương mại",
+        "headlineIncluded": "Ba quyền cốt lõi đều được bao gồm tại đây.",
+        "headlineLocal": "Quyền dịch vụ đã có. Quyền địa điểm bổ sung tại địa phương.",
+        "noteIncluded": "Tại Hoa Kỳ và Canada, Soundtrack bao gồm giấy phép biểu diễn công cộng cho nhạc nền thông thường. Trường hợp sử dụng đặc biệt vẫn có thể cần thêm quyền.",
+        "performanceNote": "Ngoài Hoa Kỳ và Canada, Soundtrack bao gồm quyền bản ghi và publishing; địa điểm thường phải có giấy phép biểu diễn công cộng địa phương.",
+        "noteConfirm": "Cần xác nhận Soundtrack có sẵn và yêu cầu biểu diễn công cộng tại thị trường này.",
+        "cta": "Khám phá Soundtrack"
       }
     },
+    "market": {
+      "global": "thị trường của bạn",
+      "detecting": "Đang kiểm tra thị trường",
+      "label": "Kiểm tra quyền tại địa phương",
+      "title": "Quốc gia quyết định bước cuối",
+      "description": "Chúng tôi chỉ dùng quốc gia của khách truy cập để hiển thị hướng dẫn cấp phép phù hợp; điều này không giới hạn nội dung trên trang.",
+      "location": "Cấp phép tại {country}",
+      "includedTitle": "Giấy phép địa điểm đã được bao gồm",
+      "localTitle": "Bổ sung giấy phép địa điểm tại địa phương",
+      "confirmTitle": "Xác nhận khả dụng và quyền địa phương",
+      "includedDescription": "Với nhạc nền thông thường tại thị trường này, Soundtrack bao gồm quyền dịch vụ và phạm vi biểu diễn công cộng liên quan. Trường hợp đặc biệt vẫn cần xem xét.",
+      "localDescription": "Soundtrack bao gồm quyền bản ghi và publishing trong dịch vụ. Địa điểm thường bổ sung giấy phép biểu diễn công cộng từ các tổ chức quản lý tập thể địa phương.",
+      "confirmDescription": "Beat Breeze vẫn là tuyến nhạc doanh nghiệp đã xử lý quyền. Chúng tôi sẽ xác nhận Soundtrack có sẵn và mọi nghĩa vụ địa phương trước khi đề xuất.",
+      "beatStatus": "Bao gồm trong dịch vụ",
+      "beatDescription": "Phát nhạc Beat Breeze thuộc phạm vi không cần giấy phép nhạc riêng.",
+      "includedStatus": "Bao gồm cho nhạc nền",
+      "localStatus": "Cần giấy phép địa điểm địa phương",
+      "confirmStatus": "Xác nhận trước khi kích hoạt",
+      "soundtrackIncluded": "Quyền dịch vụ và biểu diễn công cộng thông thường được bao gồm, tùy các ngoại lệ về cách sử dụng.",
+      "soundtrackLocal": "Quyền bản ghi và publishing được bao gồm; biểu diễn công cộng địa phương do địa điểm thu xếp.",
+      "soundtrackConfirm": "Khả dụng và quyền địa phương phụ thuộc vào thị trường và cách sử dụng.",
+      "societies": "Tổ chức quản lý tập thể địa phương",
+      "countryGuide": "Hướng dẫn Soundtrack cho {country}",
+      "disclaimer": "Chỉ là hướng dẫn chung. Loại địa điểm, phí vào cửa, nhạc sống, lớp thể dục, kho nhạc và luật địa phương có thể làm thay đổi câu trả lời. BMAsia sẽ xác nhận phạm vi bằng văn bản trước khi kích hoạt."
+    },
+    "personal": {
+      "label": "Quyền truy cập cá nhân ≠ quyền doanh nghiệp",
+      "title": "Tài khoản cá nhân trả phí vẫn là tài khoản cá nhân",
+      "description": "Gói dành cho nghe riêng không cấp đầy đủ quyền để phát cho khách hàng hoặc nhân viên. Dịch vụ nhạc doanh nghiệp được thiết kế cho mục đích công cộng đó.",
+      "consumerTitle": "Nghe nhạc cá nhân",
+      "consumerDescription": "Người nghe nhận quyền truy cập riêng tư, phi thương mại—không phải quyền dùng âm nhạc như một phần trải nghiệm tại địa điểm.",
+      "consumerExamples": "Spotify · YouTube · dịch vụ người dùng",
+      "businessTitle": "Âm nhạc doanh nghiệp",
+      "businessDescription": "Kho nhạc, cách phân phối và các quyền thương mại liên quan được thiết kế cho nơi làm việc và không gian phục vụ khách hàng."
+    },
     "cta": {
-      "title": "Hiểu rõ bức tranh quyền âm nhạc cho",
-      "titleHighlight": "địa điểm và lãnh thổ của bạn",
-      "ctaQuote": "Hỏi BMAsia",
+      "label": "Trước khi bản nhạc đầu tiên phát",
+      "title": "Nhận câu trả lời rõ ràng về quyền cho",
+      "titleHighlight": "địa điểm này, tại quốc gia này.",
+      "description": "Cho chúng tôi biết địa điểm, lựa chọn dịch vụ và cách sử dụng âm nhạc. Chúng tôi sẽ xác nhận phạm vi sản phẩm và mọi bước cấp phép địa phương trước khi triển khai.",
+      "ctaQuote": "Kiểm tra địa điểm",
       "ctaDemo": "Trao đổi về các lựa chọn"
+    },
+    "sources": {
+      "label": "Nguồn tham khảo chính:",
+      "copyright": "Cục Bản quyền Hoa Kỳ",
+      "soundtrack": "Hướng dẫn cấp phép Soundtrack",
+      "spotify": "Chính sách sử dụng thương mại Spotify",
+      "youtube": "Điều khoản YouTube"
     }
   },
   "howItWorksPage": {
