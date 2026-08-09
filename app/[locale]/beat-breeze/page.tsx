@@ -1,6 +1,6 @@
 'use client';
 
-import { type KeyboardEvent, useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
@@ -105,7 +105,6 @@ export default function BeatBreezePage() {
   const reduceMotion = useReducedMotion();
   const marketProfile = useMarketFeatureProfile();
   const [scenario, setScenario] = useState<(typeof conciergeScenarios)[number]>('arrival');
-  const [capability, setCapability] = useState<(typeof capabilityKeys)[number]>('play');
   const [sampleAssets, setSampleAssets] = useState<Record<string, PlaylistSampleAsset>>({});
   const [sampleLoadState, setSampleLoadState] = useState<'loading' | 'ready' | 'error'>('loading');
   const [audioState, setAudioState] = useState<'idle' | 'playing' | 'paused' | 'error'>('idle');
@@ -170,24 +169,6 @@ export default function BeatBreezePage() {
       text: t('redesign.day.evening.text'),
     },
   ];
-
-  const handleCapabilityKeyDown = (
-    event: KeyboardEvent<HTMLButtonElement>,
-    currentIndex: number,
-  ) => {
-    let nextIndex: number | undefined;
-
-    if (event.key === 'ArrowRight') nextIndex = (currentIndex + 1) % capabilityKeys.length;
-    if (event.key === 'ArrowLeft') nextIndex = (currentIndex - 1 + capabilityKeys.length) % capabilityKeys.length;
-    if (event.key === 'Home') nextIndex = 0;
-    if (event.key === 'End') nextIndex = capabilityKeys.length - 1;
-    if (nextIndex === undefined) return;
-
-    event.preventDefault();
-    const nextCapability = capabilityKeys[nextIndex];
-    setCapability(nextCapability);
-    document.getElementById(`capability-tab-${nextCapability}`)?.focus();
-  };
 
   useEffect(() => {
     const controller = new AbortController();
@@ -448,39 +429,40 @@ export default function BeatBreezePage() {
             <p className="bma-lede mt-6">{t('redesign.media.description')}</p>
           </motion.div>
 
-          <div className="mt-12 grid gap-4 lg:grid-cols-[15rem_1fr]">
-            <div className="grid grid-cols-2 gap-2 lg:grid-cols-1 lg:content-start" role="tablist" aria-label={t('redesign.media.title')}>
-              {capabilityKeys.map((key, index) => (
-                <button key={key} id={`capability-tab-${key}`} type="button" role="tab" aria-selected={capability === key} aria-controls={`capability-panel-${key}`} tabIndex={capability === key ? 0 : -1} onClick={() => setCapability(key)} onKeyDown={(event) => handleCapabilityKeyDown(event, index)} className={`group flex min-h-20 items-center gap-4 border px-4 text-left transition ${capability === key ? 'border-brand-orange/42 bg-brand-orange/[0.08] text-white' : 'border-white/[0.08] bg-white/[0.02] text-white/46 hover:bg-white/[0.04]'}`}>
-                  <span className={`font-mono text-[10px] ${capability === key ? 'text-brand-orange' : 'text-white/24'}`}>0{index + 1}</span>
-                  <span className="font-label text-[10px] font-semibold uppercase tracking-[.16em]">{t(`redesign.capabilities.${key}`)}</span>
-                </button>
-              ))}
-            </div>
+          <nav aria-label={t('redesign.media.title')} className="mt-12 grid grid-cols-2 overflow-hidden rounded-[1.4rem] border border-white/[0.09] bg-white/[0.018] sm:grid-cols-4">
+            {capabilityKeys.map((key, index) => (
+              <a
+                key={key}
+                href={`#beat-breeze-${key}`}
+                className={`group flex min-h-20 items-center gap-4 border-white/[0.08] px-4 text-left text-white/52 transition duration-300 hover:bg-white/[0.035] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-brand-orange sm:px-5 ${index < 2 ? 'border-b sm:border-b-0' : ''} ${index % 2 === 0 ? 'border-r' : ''} ${index < capabilityKeys.length - 1 ? 'sm:border-r' : 'sm:border-r-0'}`}
+              >
+                <span className="font-mono text-[10px] text-brand-orange transition group-hover:text-[#71e2d4]">0{index + 1}</span>
+                <span className="font-label text-[10px] font-semibold uppercase tracking-[.16em]">{t(`redesign.capabilities.${key}`)}</span>
+              </a>
+            ))}
+          </nav>
 
-            <div id={`capability-panel-${capability}`} role="tabpanel" aria-labelledby={`capability-tab-${capability}`} className="min-h-[35rem]">
-              <AnimatePresence mode="wait" initial={false}>
-                <motion.div key={capability} initial={reduceMotion ? false : { opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} exit={reduceMotion ? undefined : { opacity: 0, y: -8 }} transition={{ duration: reduceMotion ? 0 : .32 }} className="grid gap-4 lg:grid-cols-12">
-                  {capability === 'play' && <>
-                    <MediaChapter className="lg:col-span-8" icon={Music2} label={t('redesign.media.musicCreation.label')} title={t('redesign.media.musicCreation.title')} text={t('redesign.media.musicCreation.text')} />
-                    <MediaChapter className="lg:col-span-4" icon={Radio} label={t('redesign.media.soundscapes.label')} title={t('redesign.media.soundscapes.title')} text={t('redesign.media.soundscapes.text')} />
-                    <MediaChapter className="lg:col-span-12" icon={WandSparkles} label={t('redesign.media.catalogue.label')} title={t('redesign.media.catalogue.title')} text={t('redesign.media.catalogue.text')} />
-                  </>}
-                  {capability === 'create' && <>
-                    <MediaChapter className="lg:col-span-7" icon={MonitorPlay} label={t('redesign.media.screens.label')} title={t('redesign.media.screens.title')} text={t('redesign.media.screens.text')} visual="screens" visualPlayLabel={t('redesign.media.screens.loopPlay')} visualPauseLabel={t('redesign.media.screens.loopPause')} />
-                    <MediaChapter className="lg:col-span-5" icon={ImageIcon} label={t('redesign.media.create.label')} title={t('redesign.media.create.title')} text={t('redesign.media.create.text')} visual="create" />
-                  </>}
-                  {capability === 'communicate' && <>
-                    <MediaChapter className="lg:col-span-7" icon={MessageSquareText} label={t('redesign.media.messages.label')} title={t('redesign.media.messages.title')} text={t('redesign.media.messages.text')} visual="messages" />
-                    <MediaChapter className="lg:col-span-5" icon={PhoneCall} label={t('redesign.media.phone.label')} title={t('redesign.media.phone.title')} text={t('redesign.media.phone.text')} />
-                  </>}
-                  {capability === 'connect' && <>
-                    <MediaChapter className="lg:col-span-7" icon={Workflow} label={t('redesign.connections.eyebrow')} title={t('redesign.connections.title')} text={t('redesign.connections.description')} />
-                    <MediaChapter className="lg:col-span-5" icon={Gauge} label={volumeT('eyebrow')} title={volumeT('compactTitle')} text={volumeT('compactText')} />
-                  </>}
-                </motion.div>
-              </AnimatePresence>
-            </div>
+          <div className="mt-16 space-y-20 sm:mt-20 sm:space-y-28">
+            <CapabilityChapter id="beat-breeze-play" number="01" title={t('redesign.capabilities.play')}>
+              <MediaChapter className="lg:col-span-8" icon={Music2} label={t('redesign.media.musicCreation.label')} title={t('redesign.media.musicCreation.title')} text={t('redesign.media.musicCreation.text')} />
+              <MediaChapter className="lg:col-span-4" icon={Radio} label={t('redesign.media.soundscapes.label')} title={t('redesign.media.soundscapes.title')} text={t('redesign.media.soundscapes.text')} />
+              <MediaChapter className="lg:col-span-12" icon={WandSparkles} label={t('redesign.media.catalogue.label')} title={t('redesign.media.catalogue.title')} text={t('redesign.media.catalogue.text')} />
+            </CapabilityChapter>
+
+            <CapabilityChapter id="beat-breeze-create" number="02" title={t('redesign.capabilities.create')} accent>
+              <MediaChapter className="lg:col-span-8" icon={MonitorPlay} label={t('redesign.media.screens.label')} title={t('redesign.media.screens.title')} text={t('redesign.media.screens.text')} visual="screens" visualPlayLabel={t('redesign.media.screens.loopPlay')} visualPauseLabel={t('redesign.media.screens.loopPause')} />
+              <MediaChapter className="lg:col-span-4" icon={ImageIcon} label={t('redesign.media.create.label')} title={t('redesign.media.create.title')} text={t('redesign.media.create.text')} visual="create" />
+            </CapabilityChapter>
+
+            <CapabilityChapter id="beat-breeze-communicate" number="03" title={t('redesign.capabilities.communicate')}>
+              <MediaChapter className="lg:col-span-7" icon={MessageSquareText} label={t('redesign.media.messages.label')} title={t('redesign.media.messages.title')} text={t('redesign.media.messages.text')} visual="messages" />
+              <MediaChapter className="lg:col-span-5" icon={PhoneCall} label={t('redesign.media.phone.label')} title={t('redesign.media.phone.title')} text={t('redesign.media.phone.text')} />
+            </CapabilityChapter>
+
+            <CapabilityChapter id="beat-breeze-connect" number="04" title={t('redesign.capabilities.connect')}>
+              <MediaChapter className="lg:col-span-7" icon={Workflow} label={t('redesign.connections.eyebrow')} title={t('redesign.connections.title')} text={t('redesign.connections.description')} />
+              <MediaChapter className="lg:col-span-5" icon={Gauge} label={volumeT('eyebrow')} title={volumeT('compactTitle')} text={volumeT('compactText')} />
+            </CapabilityChapter>
           </div>
         </div>
       </section>
@@ -891,6 +873,31 @@ function MediaChapter({
           </div>
         )}
       </div>
+    </motion.article>
+  );
+}
+
+function CapabilityChapter({
+  id,
+  number,
+  title,
+  accent = false,
+  children,
+}: {
+  id: string;
+  number: string;
+  title: string;
+  accent?: boolean;
+  children: React.ReactNode;
+}) {
+  return (
+    <motion.article id={id} {...reveal} className="scroll-mt-28">
+      <header className="mb-7 flex items-center gap-4 sm:mb-9">
+        <span className={`grid h-11 w-11 shrink-0 place-items-center rounded-full border font-mono text-[10px] ${accent ? 'border-[#49d5c5]/35 bg-[#49d5c5]/[0.07] text-[#74e4d7]' : 'border-brand-orange/28 bg-brand-orange/[0.055] text-brand-orange'}`}>{number}</span>
+        <h3 className="font-label text-xs font-semibold uppercase tracking-[.2em] text-white/74 sm:text-sm">{title}</h3>
+        <span className={`h-px flex-1 ${accent ? 'bg-[linear-gradient(90deg,rgba(73,213,197,.58),rgba(239,166,52,.2),transparent)]' : 'bg-[linear-gradient(90deg,rgba(239,166,52,.42),rgba(73,213,197,.22),transparent)]'}`} />
+      </header>
+      <div className="grid gap-4 lg:grid-cols-12">{children}</div>
     </motion.article>
   );
 }
