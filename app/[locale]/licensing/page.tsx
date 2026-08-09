@@ -98,7 +98,7 @@ export default function LicensingPage() {
           <motion.div {...reveal}>
             <p className="bma-kicker">{t('hero.label')}</p>
             <h1 className="bma-display bma-page-title mt-7 max-w-[12ch] text-balance text-white">
-              {t('hero.title')} <span className="bma-gradient-text">{t('hero.titleHighlight')}</span>
+              {t('hero.title')} <span className="gradient-text">{t('hero.titleHighlight')}</span>
             </h1>
             <p className="bma-lede mt-8 max-w-2xl">{t('hero.subtitle')}</p>
             <div className="mt-9 flex flex-wrap gap-3">
@@ -222,7 +222,7 @@ export default function LicensingPage() {
             <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
               <div>
                 <p className="bma-kicker">{t('cta.label')}</p>
-                <h2 className="bma-section-title mt-5 max-w-3xl text-balance text-white">{t('cta.title')} <span className="bma-gradient-text">{t('cta.titleHighlight')}</span></h2>
+                <h2 className="bma-section-title mt-5 max-w-3xl text-balance text-white">{t('cta.title')} <span className="gradient-text">{t('cta.titleHighlight')}</span></h2>
                 <p className="mt-6 max-w-2xl text-base leading-7 text-white/48">{t('cta.description')}</p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
@@ -262,7 +262,7 @@ function RightsSignal({ countryName, marketReady, reduceMotion }: { countryName:
         <div className="flex flex-wrap items-start justify-between gap-4 border-b border-white/[0.08] pb-6">
           <div>
             <p className="font-label text-[0.65rem] uppercase tracking-[0.21em] text-[#38d3c7]">{t('signal.label')}</p>
-            <h2 className="mt-2 font-headline text-xl font-medium tracking-[-0.025em] text-white">{t('signal.title')}</h2>
+            <h2 className="bma-card-title mt-2 text-white">{t('signal.title')}</h2>
           </div>
           <span className="inline-flex items-center gap-2 rounded-full border border-[#38d3c7]/20 bg-[#38d3c7]/[0.06] px-3 py-2 text-xs text-[#79e4da]">
             <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
