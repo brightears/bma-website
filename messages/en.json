@@ -763,7 +763,7 @@
         "eyebrow": "More than a music player",
         "title": "Build the world around the soundtrack.",
         "description": "Beat Breeze can coordinate the media and messages guests meet around the venue—not as disconnected add-ons, but as parts of the same operating plan.",
-        "musicCreation": { "label": "Music direction", "value": "AI + human", "title": "Compose a track or begin with a curated catalogue", "text": "Prompt an original track with Mureka Compose, browse Beat Breeze music, or add human-made Epidemic Sound music for eligible deployments—then review before anything plays." },
+        "musicCreation": { "label": "Music direction", "value": "AI + human", "title": "Compose a track or begin with a curated catalogue", "text": "Prompt an original track with the BMAsia music creation module, browse Beat Breeze music, or add human-made Epidemic Sound music for eligible deployments—then review before anything plays." },
         "screens": {
           "label": "Screens and TV",
           "title": "Visual loops, slideshows and venue channels",

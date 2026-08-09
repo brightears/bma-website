@@ -50,6 +50,7 @@ White:           #ffffff
 - No ampersands in body copy (use "and")
 - Positive framing ("Enhancing" not "Embellishing")
 - Professional but approachable tone
+- Treat underlying generative-music engines as private implementation details; use "BMAsia music creation module" in public copy
 
 ## Common Commands
 ```bash

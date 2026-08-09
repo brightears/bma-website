@@ -763,7 +763,7 @@
         "eyebrow": "Không chỉ là một trình phát nhạc",
         "title": "Xây dựng thế giới quanh phần âm thanh.",
         "description": "Beat Breeze có thể phối hợp nội dung truyền thông và thông điệp mà khách gặp trong toàn địa điểm—không phải các tiện ích rời rạc, mà là những phần của cùng một kế hoạch vận hành.",
-        "musicCreation": { "label": "Định hướng âm nhạc", "value": "AI + con người", "title": "Sáng tác một bản nhạc hoặc bắt đầu từ danh mục tuyển chọn", "text": "Tạo bản nhạc gốc với Mureka Compose, duyệt nhạc Beat Breeze hoặc bổ sung nhạc do con người sáng tác từ Epidemic Sound cho các triển khai phù hợp—rồi duyệt trước khi phát." },
+        "musicCreation": { "label": "Định hướng âm nhạc", "value": "AI + con người", "title": "Sáng tác một bản nhạc hoặc bắt đầu từ danh mục tuyển chọn", "text": "Tạo bản nhạc gốc bằng mô-đun sáng tạo âm nhạc BMAsia, duyệt nhạc Beat Breeze hoặc bổ sung nhạc do con người sáng tác từ Epidemic Sound cho các triển khai phù hợp—rồi duyệt trước khi phát." },
         "screens": {
           "label": "Màn hình và TV",
           "title": "Hình ảnh lặp, trình chiếu và kênh nội bộ",

@@ -763,7 +763,7 @@
         "eyebrow": "음악 플레이어 그 이상",
         "title": "사운드트랙을 둘러싼 세계를 만드세요.",
         "description": "Beat Breeze는 매장에서 고객이 접하는 미디어와 메시지를 따로 떨어진 부가 기능이 아니라 하나의 운영 계획으로 조율할 수 있습니다.",
-        "musicCreation": { "label": "음악 방향", "value": "AI + 사람", "title": "트랙을 만들거나 큐레이션 카탈로그에서 시작하세요", "text": "Mureka Compose로 오리지널 트랙을 만들고 Beat Breeze 음악을 탐색하거나, 대상 배포에 사람이 만든 Epidemic Sound 음악을 추가한 뒤 재생 전에 검토할 수 있습니다." },
+        "musicCreation": { "label": "음악 방향", "value": "AI + 사람", "title": "트랙을 만들거나 큐레이션 카탈로그에서 시작하세요", "text": "BMAsia 음악 제작 모듈로 오리지널 트랙을 만들고 Beat Breeze 음악을 탐색하거나, 대상 배포에 사람이 만든 Epidemic Sound 음악을 추가한 뒤 재생 전에 검토할 수 있습니다." },
         "screens": {
           "label": "스크린 및 TV",
           "title": "비주얼 루프, 슬라이드쇼, 매장 채널",
