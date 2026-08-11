@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import type { LicensingMarket } from '@/lib/licensing-markets';
+import { FaqSection } from '@/components/sections/FaqSection';
 
 const DEFAULT_MARKET: LicensingMarket = {
   countryCode: null,
@@ -215,6 +216,8 @@ export default function LicensingPage() {
           </motion.div>
         </div>
         </section>
+
+        <FaqSection namespace="licensingPage.faq" accent="#f0a539" className="border-t border-white/[0.08] bg-[#07141f]" />
 
         <section className="border-t border-white/[0.08] px-5 py-20 sm:px-8 sm:py-28 lg:px-16">
         <div className="bma-container">

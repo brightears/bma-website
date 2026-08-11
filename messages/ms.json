@@ -633,6 +633,45 @@
         "description": "Mohon percubaan Soundtrack yang disemak melalui BMAsia atau berbincang dengan kami tentang reka bentuk muzik, zon dan peluasan venue.",
         "login": "Log masuk Soundtrack",
         "support": "Sokongan serantau yang responsif daripada BMAsia. Tiada dakwaan sokongan teknikal manusia sepanjang masa."
+      },
+      "faq": {
+        "eyebrow": "Soalan lazim",
+        "title": "Soundtrack melalui BMAsia, dijelaskan.",
+        "subtitle": "Soalan yang paling kerap ditanya venue sebelum menggunakan muzik yang dikenali.",
+        "items": [
+          {
+            "q": "Apakah itu Soundtrack, dan apakah nilai tambah BMAsia?",
+            "a": "Soundtrack ialah platform muzik perniagaan berlesen dengan katalog komersial yang besar, berisi muzik yang dikenali daripada label utama. BMAsia membekalkannya bersama lapisan perkhidmatan penuh di sekeliling platform: reka bentuk senarai main, penerimaan pelanggan, peluasan venue dan sokongan serantau yang responsif daripada satu pasukan."
+          },
+          {
+            "q": "Perlukah kami membina senarai main sendiri?",
+            "a": "Tidak. Pereka muzik BMAsia memahami venue terlebih dahulu—jenama, audiens, zon dan waktu operasi—kemudian membentuk senarai main daripada katalog komersial dan menyusunnya ke dalam jadual yang praktikal. Arah muzik dikemas kini secara berkala tanpa kehilangan identiti jenama."
+          },
+          {
+            "q": "Adakah Soundtrack merangkumi lesen muzik yang kami perlukan?",
+            "a": "Soundtrack membekalkan hak rakaman dan penerbitan untuk perkhidmatan perniagaannya. Keperluan persembahan awam berbeza mengikut negara: di Amerika Syarikat dan Kanada, penggunaan muzik latar biasa telah diliputi, manakala di kebanyakan negara lain venue menambah lesen daripada badan kutipan tempatan. BMAsia mengesahkan persediaan yang berkenaan semasa penerimaan pelanggan."
+          },
+          {
+            "q": "Adakah terdapat percubaan percuma?",
+            "a": "Ya. Soundtrack menawarkan percubaan 14 hari tanpa memerlukan kad. Percubaan melalui BMAsia disemak dan diatur untuk perniagaan: hantar maklumat penting, kami mengesahkan lokasi dan mengkonfigurasi percubaan untuk kegunaan perniagaan, kemudian anda menerima akses untuk zon pertama anda."
+          },
+          {
+            "q": "Perkakasan apakah yang kami perlukan?",
+            "a": "Tiada perkakasan khas diperlukan. Persediaan sebenar bergantung pada produk yang dipilih, perkakasan sedia ada venue serta keadaan rangkaian—BMAsia membantu mengkonfigurasi main balik yang serasi semasa penerimaan pelanggan."
+          },
+          {
+            "q": "Apakah itu peluasan venue BMAsia?",
+            "a": "Bagi pelanggan yang dibekalkan melalui BMAsia, peluasan sedia produksi menghubungkan Soundtrack dengan cara venue beroperasi: integrasi waktu solat, integrasi volum yang disokong, tingkah laku senarai main mengikut cuaca dan API operasi. Setiap satunya ditentukan skopnya, dikonfigurasi dan disokong untuk pelaksanaan berkenaan—ia tidak semestinya disertakan apabila mendaftar terus di soundtrack.io."
+          },
+          {
+            "q": "Bagaimanakah harga ditentukan?",
+            "a": "Harga ditentukan berdasarkan sebut harga. Ia bergantung pada laluan produk, bilangan lokasi dan zon, serta wilayah. Mohon cadangan tersuai dan BMAsia akan menghubungi anda dengan laluan produk yang tepat."
+          },
+          {
+            "q": "Apakah sokongan yang BMAsia berikan selepas pelancaran?",
+            "a": "Satu pasukan serantau kekal terlibat daripada taklimat pertama hingga operasi harian: penerimaan pelanggan, kemas kini senarai main yang dirancang mengikut taklimat anda, serta bantuan manusia yang responsif untuk persediaan, arah muzik dan integrasi yang disokong."
+          }
+        ]
       }
     }
   },
@@ -838,6 +877,45 @@
         "title": "Jadikan zon pertama benar-benar berfungsi.",
         "description": "Mulakan dengan percubaan Beat Breeze khusus produk atau minta BMAsia membentuk pelan muzik dan media berbilang zon.",
         "support": "BMAsia menyediakan penerimaan pelanggan dan sokongan serantau yang responsif. Layan diri produk kekal tersedia apabila pasukan anda memerlukannya."
+      },
+      "faq": {
+        "eyebrow": "Soalan lazim",
+        "title": "Beat Breeze, dijelaskan.",
+        "subtitle": "Soalan pengendali sebelum menjadikan zon pertama benar-benar berfungsi.",
+        "items": [
+          {
+            "q": "Apakah itu Beat Breeze?",
+            "a": "Beat Breeze ialah platform pengalaman venue milik BMAsia sendiri. Muzik bebas royalti yang terpilih menjadi nadinya, bersama skrin, mesej dan automasi venue—dirancang merentas zon, disemak oleh manusia dan dikawal dari satu tempat."
+          },
+          {
+            "q": "Adakah kami memerlukan lesen muzik berasingan untuk memainkan Beat Breeze?",
+            "a": "Tidak. Bagi muzik yang dimainkan melalui Beat Breeze, katalog dan hak penggunaan perniagaan yang diliputi telah disertakan, jadi tiada lesen muzik berasingan perlu diatur. Persembahan langsung, DJ, muzik pihak ketiga dan penyegerakan visual ialah penggunaan berasingan."
+          },
+          {
+            "q": "Adakah terdapat percubaan percuma?",
+            "a": "Ya. Beat Breeze menawarkan percubaan percuma 14 hari tanpa memerlukan kad, dan ia secara layan diri di beatbreeze.io. Mulakan dengan satu zon, kemudian minta BMAsia membentuk pelan muzik dan media berbilang zon apabila anda bersedia."
+          },
+          {
+            "q": "Perkakasan apakah yang diperlukan oleh Beat Breeze?",
+            "a": "Tiada perkakasan pemain khas diperlukan. Beat Breeze berjalan dalam pelayar atau sebagai aplikasi pada peranti yang venue sudah miliki, dan main balik mampu dilakukan di luar talian."
+          },
+          {
+            "q": "Apakah itu Music Concierge?",
+            "a": "Music Concierge menukar taklimat dalam bahasa mudah kepada muzik. Beritahu ia tentang zon, audiens, waktu dan perasaan yang diingini; ia boleh mengesyorkan muzik katalog atau menyediakan arah kreatif, dan anda mempratonton hasilnya sebelum apa-apa dimainkan atau dimasukkan dalam jadual. Pelayaran manual sentiasa tersedia sepanjang masa."
+          },
+          {
+            "q": "Bolehkah Beat Breeze melakukan lebih daripada muzik?",
+            "a": "Ya. Beat Breeze boleh menyelaras media dan mesej yang ditemui tetamu di seluruh venue: gelung visual dan saluran TV untuk skrin, pengumuman berbilang bahasa, landskap bunyi dan muzik semasa panggilan menunggu—semuanya sebahagian daripada pelan operasi yang sama."
+          },
+          {
+            "q": "Bagaimanakah automasi berfungsi—adakah ia mendengar keadaan ruang?",
+            "a": "Automasi berjalan mengikut jadual yang jelas, peraturan yang dikonfigurasi dan integrasi yang disokong—tingkah laku peka cuaca, automasi waktu solat serta aras volum pratetap. Kakitangan mengekalkan keputusan akhir, dan perubahan volum ialah pratetap berjadual atau integrasi sistem venue yang disokong, bukan pendengaran mikrofon berterusan."
+          },
+          {
+            "q": "Bagaimanakah harga ditentukan?",
+            "a": "Harga ditentukan berdasarkan sebut harga. Ia bergantung pada bilangan lokasi dan zon serta wilayah. Mohon cadangan tersuai melalui halaman sebut harga dan BMAsia akan mengesyorkan persediaan yang tepat."
+          }
+        ]
       }
     }
   },
@@ -1360,6 +1438,41 @@
       "soundtrack": "Panduan pelesenan Soundtrack",
       "spotify": "Dasar penggunaan komersial Spotify",
       "youtube": "Terma YouTube"
+    },
+    "faq": {
+      "eyebrow": "Soalan lazim",
+      "title": "Soalan pelesenan, dijawab dengan jelas",
+      "subtitle": "Jawapan ringkas kepada soalan yang paling kerap ditimbulkan venue, sebelum trek pertama dimainkan.",
+      "items": [
+        {
+          "q": "Bolehkah kami memainkan Spotify, YouTube atau perkhidmatan penstriman peribadi lain dalam perniagaan kami?",
+          "a": "Tidak. Langganan yang dibuat untuk pendengaran peribadi tidak memberikan set hak penuh yang diperlukan untuk memainkan muzik kepada pelanggan atau kakitangan. Pendengar menerima akses peribadi, bukan komersial—bukan kebenaran untuk menjadikan muzik sebahagian daripada pengalaman venue. Itulah sebabnya venue menggunakan perkhidmatan muzik perniagaan seperti Beat Breeze atau Soundtrack."
+        },
+        {
+          "q": "Hak apakah yang terlibat apabila venue memainkan muzik?",
+          "a": "Sebuah lagu yang dikenali membawa empat kebenaran: muzik dan lirik dimiliki oleh pencipta lagu dan penerbit, rakaman induk boleh dimiliki oleh artis atau label, perkhidmatan perniagaan memerlukan hak pengeluaran semula dan penghantaran untuk katalognya, dan memainkan muzik di tempat pelanggan atau kakitangan boleh mendengarnya ialah persembahan awam. Venue tidak perlu berunding bagi setiap trek—perkhidmatan muzik perniagaan dan, jika perlu, badan kutipan tempatan menghubungkan lapisan ini."
+        },
+        {
+          "q": "Adakah kami masih memerlukan lesen persembahan awam daripada badan kutipan?",
+          "a": "Ia bergantung pada platform dan negara. Bagi muzik yang dimainkan melalui Beat Breeze, penggunaan perniagaan yang diliputi telah disertakan, jadi tiada lesen muzik berasingan diperlukan. Dengan Soundtrack, hak rakaman dan publishing disertakan; di Amerika Syarikat dan Kanada, penggunaan muzik latar biasa turut diliputi, manakala di kebanyakan negara lain venue menambah lesen badan kutipan tempatan. BMAsia mengesahkan skop yang tepat secara bertulis sebelum pengaktifan."
+        },
+        {
+          "q": "Apakah perbezaan pelesenan antara Beat Breeze dan Soundtrack?",
+          "a": "Beat Breeze ialah satu laluan dengan hak lengkap: katalog bebas royalti dan hak penggunaan perniagaan yang diliputi disertakan bersama perkhidmatan. Soundtrack menawarkan katalog komersial yang besar, berisi muzik yang dikenali daripada label utama dengan hak rakaman dan publishing disertakan, manakala keperluan persembahan awam bergantung pada negara. Kami menjelaskan sempadannya sebelum pengaktifan."
+        },
+        {
+          "q": "Adakah negara tempat kami beroperasi mengubah apa yang kami perlukan?",
+          "a": "Ya—negara mengubah langkah terakhir. Dalam sesetengah pasaran, Soundtrack merangkumi perlindungan persembahan awam untuk penggunaan muzik latar biasa; di kebanyakan pasaran lain, venue menambah lesen daripada badan kutipan tempatan. Beat Breeze kekal sebagai laluan muzik perniagaan dengan hak lengkap dalam kedua-dua keadaan. BMAsia menyemak pasaran anda dan mengesahkan langkah yang perlu sebelum mengesyorkan sesuatu persediaan."
+        },
+        {
+          "q": "Bagaimana pula dengan muzik langsung, DJ atau kelas senaman?",
+          "a": "Semua itu berada di luar main balik muzik latar yang diliputi. Persembahan langsung, DJ, muzik pihak ketiga dan penyegerakan visual ialah penggunaan berasingan, dan jenis venue, bayaran masuk, kelas senaman, repertoir serta undang-undang tempatan semuanya boleh mengubah jawapannya. Beritahu kami cara muzik akan digunakan dan kami akan menyemaknya sebagai sebahagian daripada semakan hak."
+        },
+        {
+          "q": "Bagaimanakah BMAsia membantu kami mendapatkan pelesenan yang betul?",
+          "a": "Beritahu kami venue, laluan muzik dan cara muzik akan digunakan. Kami memisahkan hak dalam perkhidmatan daripada kewajipan tempatan venue, menunjukkan produk mana meliputi apa, dan mengesahkan skop produk serta sebarang langkah lesen tempatan secara bertulis sebelum pelancaran."
+        }
+      ]
     }
   },
   "howItWorksPage": {

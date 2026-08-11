@@ -31,6 +31,7 @@ import {
 } from 'lucide-react';
 import { EXTERNAL_LINKS, withAttribution } from '@/lib/external-links';
 import { useMarketFeatureProfile } from '@/hooks/use-market-feature-profile';
+import { FaqSection } from '@/components/sections/FaqSection';
 import {
   type PlaylistSampleAsset,
   type PlaylistSampleTrack,
@@ -494,6 +495,8 @@ export default function BeatBreezePage() {
           </motion.div>
         </div>
       </section>
+
+      <FaqSection namespace="beatBreezePage.redesign.faq" accent="#EFA634" className="bg-[#06111a]" />
 
       <section className="bma-grain relative overflow-hidden px-5 py-24 text-center sm:px-8 md:py-36 lg:px-16">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_100%,rgba(239,166,52,.19),transparent_46%),radial-gradient(circle_at_75%_0,rgba(73,213,197,.08),transparent_32%)]" />

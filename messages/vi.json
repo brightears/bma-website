@@ -633,6 +633,45 @@
         "description": "Yêu cầu bản dùng thử Soundtrack được BMAsia xem xét hoặc trao đổi với chúng tôi về thiết kế âm nhạc, các khu vực và tiện ích mở rộng cho địa điểm.",
         "login": "Đăng nhập Soundtrack",
         "support": "Hỗ trợ khu vực phản hồi nhanh từ BMAsia."
+      },
+      "faq": {
+        "eyebrow": "Câu hỏi thường gặp",
+        "title": "Soundtrack qua BMAsia, giải đáp rõ ràng.",
+        "subtitle": "Những câu hỏi các địa điểm đặt ra nhiều nhất trước khi đưa âm nhạc quen thuộc vào vận hành.",
+        "items": [
+          {
+            "q": "Soundtrack là gì, và BMAsia bổ sung thêm những gì?",
+            "a": "Soundtrack là nền tảng nhạc doanh nghiệp được cấp phép, với kho nhạc thương mại quy mô lớn gồm âm nhạc quen thuộc từ các hãng thu âm lớn. BMAsia cung cấp nền tảng này cùng một lớp dịch vụ đầy đủ bao quanh: thiết kế playlist, hướng dẫn triển khai, tiện ích mở rộng cho địa điểm và hỗ trợ khu vực phản hồi nhanh từ một đội ngũ duy nhất."
+          },
+          {
+            "q": "Chúng tôi có phải tự xây dựng playlist không?",
+            "a": "Không. Các nhà thiết kế âm nhạc của BMAsia tìm hiểu địa điểm trước—thương hiệu, đối tượng khách, các khu vực và khung giờ—rồi định hình playlist từ kho nhạc thương mại và đưa chúng vào một lịch phát thực tế. Định hướng được làm mới thường xuyên mà vẫn giữ được bản sắc thương hiệu."
+          },
+          {
+            "q": "Soundtrack có bao gồm những giấy phép âm nhạc mà chúng tôi cần không?",
+            "a": "Soundtrack cung cấp quyền bản ghi và quyền publishing cho dịch vụ doanh nghiệp của mình. Yêu cầu về biểu diễn công cộng khác nhau theo từng quốc gia: tại Hoa Kỳ và Canada, việc sử dụng nhạc nền thông thường đã được bao gồm, trong khi ở hầu hết các quốc gia khác, địa điểm bổ sung giấy phép từ các tổ chức quản lý tập thể địa phương. BMAsia xác nhận thiết lập áp dụng trong quá trình triển khai."
+          },
+          {
+            "q": "Có bản dùng thử miễn phí không?",
+            "a": "Có. Soundtrack cung cấp bản dùng thử 14 ngày, không cần thẻ. Bản dùng thử qua BMAsia được xem xét và sắp xếp cho doanh nghiệp: bạn gửi những thông tin cơ bản, chúng tôi xác minh địa điểm và cấu hình bản dùng thử cho mục đích kinh doanh, sau đó bạn nhận quyền truy cập cho khu vực đầu tiên."
+          },
+          {
+            "q": "Chúng tôi cần phần cứng gì?",
+            "a": "Không cần phần cứng chuyên dụng. Thiết lập cụ thể tuân theo sản phẩm đã chọn, phần cứng sẵn có tại địa điểm và điều kiện mạng—BMAsia hỗ trợ cấu hình thiết bị phát tương thích trong quá trình triển khai."
+          },
+          {
+            "q": "Tiện ích mở rộng cho địa điểm của BMAsia là gì?",
+            "a": "Với khách hàng được cung cấp dịch vụ qua BMAsia, các tiện ích mở rộng sẵn sàng cho môi trường thực tế sẽ kết nối Soundtrack với cách địa điểm vận hành: tích hợp giờ cầu nguyện, các tích hợp âm lượng được hỗ trợ, hành vi playlist điều chỉnh theo thời tiết và API vận hành. Mỗi tiện ích đều được xác định phạm vi, cấu hình và hỗ trợ cho từng triển khai—chúng không nhất thiết được bao gồm khi đăng ký trực tiếp tại soundtrack.io."
+          },
+          {
+            "q": "Giá được tính như thế nào?",
+            "a": "Giá được xây dựng theo báo giá. Mức giá phụ thuộc vào hướng sản phẩm, số lượng cơ sở và khu vực, cùng lãnh thổ triển khai. Hãy yêu cầu một đề xuất được thiết kế riêng và BMAsia sẽ liên hệ lại với hướng sản phẩm phù hợp."
+          },
+          {
+            "q": "BMAsia hỗ trợ những gì sau khi triển khai?",
+            "a": "Một đội ngũ khu vực đồng hành từ yêu cầu đầu tiên đến vận hành hằng ngày: hướng dẫn triển khai, làm mới playlist theo kế hoạch dựa trên yêu cầu của bạn, và hỗ trợ trực tiếp, phản hồi nhanh về thiết lập, định hướng âm nhạc cùng các tích hợp được hỗ trợ."
+          }
+        ]
       }
     }
   },
@@ -838,6 +877,45 @@
         "title": "Biến khu vực đầu tiên thành hiện thực.",
         "description": "Bắt đầu bằng bản dùng thử dành riêng cho Beat Breeze hoặc nhờ BMAsia xây dựng kế hoạch âm nhạc và nội dung truyền thông cho nhiều khu vực.",
         "support": "BMAsia cung cấp hướng dẫn triển khai và hỗ trợ khu vực phản hồi nhanh. Các tính năng tự phục vụ của sản phẩm luôn sẵn sàng khi đội ngũ của bạn cần."
+      },
+      "faq": {
+        "eyebrow": "Câu hỏi thường gặp",
+        "title": "Beat Breeze, giải đáp rõ ràng.",
+        "subtitle": "Những điều người vận hành thường hỏi trước khi biến khu vực đầu tiên thành hiện thực.",
+        "items": [
+          {
+            "q": "Beat Breeze là gì?",
+            "a": "Beat Breeze là nền tảng trải nghiệm không gian do chính BMAsia phát triển. Âm nhạc miễn phí bản quyền được tuyển chọn nằm ở vị trí trung tâm, bên cạnh màn hình, thông điệp và tự động hóa không gian—được lập kế hoạch trên mọi khu vực, do con người rà soát và điều khiển từ một nơi."
+          },
+          {
+            "q": "Chúng tôi có cần giấy phép âm nhạc riêng để phát Beat Breeze không?",
+            "a": "Không. Với âm nhạc phát qua Beat Breeze, kho nhạc và quyền phát doanh nghiệp thuộc phạm vi đã được bao gồm, nên không cần thu xếp giấy phép âm nhạc riêng. Biểu diễn trực tiếp, DJ, nhạc bên thứ ba và đồng bộ hình ảnh là những trường hợp sử dụng riêng."
+          },
+          {
+            "q": "Có bản dùng thử miễn phí không?",
+            "a": "Có. Beat Breeze cung cấp bản dùng thử miễn phí 14 ngày, không cần thẻ, và bạn có thể tự đăng ký tại beatbreeze.io. Hãy bắt đầu với một khu vực, rồi nhờ BMAsia xây dựng kế hoạch âm nhạc và nội dung truyền thông cho nhiều khu vực khi bạn sẵn sàng."
+          },
+          {
+            "q": "Beat Breeze cần phần cứng gì?",
+            "a": "Không cần phần cứng trình phát chuyên dụng. Beat Breeze chạy trên trình duyệt hoặc dưới dạng ứng dụng trên những thiết bị mà địa điểm đã có, và có thể phát ngoại tuyến."
+          },
+          {
+            "q": "Music Concierge là gì?",
+            "a": "Music Concierge biến một yêu cầu bằng ngôn ngữ đời thường thành âm nhạc. Bạn cho biết khu vực, đối tượng khách, thời gian và cảm giác mong muốn; hệ thống có thể đề xuất nhạc trong kho hoặc chuẩn bị một định hướng sáng tạo, và bạn nghe thử kết quả trước khi bất cứ nội dung nào được phát hoặc thêm vào lịch. Bạn vẫn luôn có thể tự duyệt kho nhạc theo cách thủ công."
+          },
+          {
+            "q": "Beat Breeze có làm được nhiều hơn âm nhạc không?",
+            "a": "Có. Beat Breeze có thể phối hợp nội dung truyền thông và thông điệp mà khách gặp trong toàn địa điểm: hình ảnh lặp và kênh TV cho màn hình, thông báo đa ngôn ngữ, không gian âm thanh và nhạc chờ điện thoại—tất cả đều là những phần của cùng một kế hoạch vận hành."
+          },
+          {
+            "q": "Tự động hóa hoạt động ra sao—hệ thống có lắng nghe không gian không?",
+            "a": "Tự động hóa chạy trên lịch rõ ràng, quy tắc đã cấu hình và các tích hợp được hỗ trợ—hành vi nhận biết thời tiết, tự động hóa giờ cầu nguyện và mức âm lượng đặt trước. Nhân viên giữ quyền quyết định cuối cùng, và các thay đổi âm lượng là mức đặt trước theo lịch hoặc tích hợp với hệ thống địa điểm được hỗ trợ, không phải lắng nghe liên tục qua microphone."
+          },
+          {
+            "q": "Giá được tính như thế nào?",
+            "a": "Giá được xây dựng theo báo giá. Mức giá phụ thuộc vào số lượng cơ sở và khu vực, cùng lãnh thổ triển khai. Hãy yêu cầu một đề xuất được thiết kế riêng qua trang báo giá và BMAsia sẽ đề xuất thiết lập phù hợp."
+          }
+        ]
       }
     }
   },
@@ -1360,6 +1438,41 @@
       "soundtrack": "Hướng dẫn cấp phép Soundtrack",
       "spotify": "Chính sách sử dụng thương mại Spotify",
       "youtube": "Điều khoản YouTube"
+    },
+    "faq": {
+      "eyebrow": "Câu hỏi thường gặp",
+      "title": "Câu hỏi về bản quyền, giải đáp thật dễ hiểu",
+      "subtitle": "Câu trả lời ngắn gọn cho những thắc mắc các địa điểm nêu ra nhiều nhất, trước khi bản nhạc đầu tiên được phát.",
+      "items": [
+        {
+          "q": "Chúng tôi có thể phát Spotify, YouTube hay một dịch vụ nghe nhạc cá nhân khác trong doanh nghiệp của mình không?",
+          "a": "Không. Các gói đăng ký dành cho nghe nhạc riêng tư không cấp đầy đủ những quyền cần thiết để phát nhạc cho khách hàng hoặc nhân viên. Người nghe nhận quyền truy cập riêng tư, phi thương mại—không phải quyền dùng âm nhạc như một phần trải nghiệm tại địa điểm. Vì vậy các địa điểm sử dụng dịch vụ nhạc doanh nghiệp như Beat Breeze hoặc Soundtrack."
+        },
+        {
+          "q": "Những quyền nào liên quan khi một địa điểm phát nhạc?",
+          "a": "Một bài hát quen thuộc mang theo bốn quyền: nhạc và lời thuộc về nhạc sĩ và nhà xuất bản, bản ghi master có thể thuộc về nghệ sĩ hoặc hãng đĩa, dịch vụ nhạc doanh nghiệp cần quyền sao chép và phân phối kho nhạc của mình, còn việc phát nhạc ở nơi khách hàng hoặc nhân viên có thể nghe được là biểu diễn công cộng. Địa điểm không phải đàm phán từng bài—dịch vụ nhạc doanh nghiệp và, khi cần, các tổ chức quản lý tập thể địa phương sẽ kết nối các lớp quyền này."
+        },
+        {
+          "q": "Chúng tôi có còn cần giấy phép biểu diễn công cộng từ tổ chức quản lý tập thể không?",
+          "a": "Điều đó phụ thuộc vào nền tảng và quốc gia. Với âm nhạc phát qua Beat Breeze, quyền phát doanh nghiệp thuộc phạm vi đã được bao gồm, nên không cần giấy phép âm nhạc riêng. Với Soundtrack, quyền bản ghi và quyền publishing được bao gồm; tại Hoa Kỳ và Canada, việc sử dụng nhạc nền thông thường cũng được bao gồm, trong khi ở hầu hết các quốc gia khác, địa điểm bổ sung giấy phép từ các tổ chức quản lý tập thể địa phương. BMAsia xác nhận phạm vi chính xác bằng văn bản trước khi kích hoạt."
+        },
+        {
+          "q": "Bản quyền giữa Beat Breeze và Soundtrack khác nhau thế nào?",
+          "a": "Beat Breeze là một tuyến quyền đã được xử lý trọn vẹn: kho nhạc miễn phí bản quyền và quyền phát doanh nghiệp thuộc phạm vi đi kèm cùng dịch vụ. Soundtrack cung cấp kho nhạc thương mại quy mô lớn gồm âm nhạc quen thuộc từ các hãng thu âm lớn, đã bao gồm quyền bản ghi và quyền publishing, trong khi yêu cầu về biểu diễn công cộng phụ thuộc vào từng quốc gia. Chúng tôi làm rõ ranh giới này trước khi kích hoạt."
+        },
+        {
+          "q": "Quốc gia nơi chúng tôi hoạt động có làm thay đổi những gì chúng tôi cần không?",
+          "a": "Có—quốc gia làm thay đổi bước cuối cùng. Tại một số thị trường, Soundtrack bao gồm cả phạm vi biểu diễn công cộng cho việc sử dụng nhạc nền thông thường; ở hầu hết các thị trường còn lại, địa điểm bổ sung giấy phép từ các tổ chức quản lý tập thể địa phương. Dù trong trường hợp nào, Beat Breeze vẫn là tuyến nhạc doanh nghiệp đã được xử lý quyền. BMAsia kiểm tra thị trường của bạn và xác nhận các bước cần thực hiện trước khi đề xuất một thiết lập."
+        },
+        {
+          "q": "Còn nhạc sống, DJ hay các lớp thể dục thì sao?",
+          "a": "Những trường hợp đó nằm ngoài phạm vi phát nhạc nền đã được bao gồm. Biểu diễn trực tiếp, DJ, nhạc bên thứ ba và đồng bộ hình ảnh là những trường hợp sử dụng riêng, và loại địa điểm, phí vào cửa, lớp thể dục, kho nhạc cùng luật địa phương đều có thể làm thay đổi câu trả lời. Hãy cho chúng tôi biết âm nhạc sẽ được sử dụng như thế nào và chúng tôi sẽ xem xét trong quá trình kiểm tra quyền."
+        },
+        {
+          "q": "BMAsia giúp chúng tôi làm đúng về bản quyền như thế nào?",
+          "a": "Hãy cho chúng tôi biết địa điểm, lựa chọn dịch vụ và cách âm nhạc sẽ được sử dụng. Chúng tôi tách rõ quyền đã có trong dịch vụ và nghĩa vụ địa phương của địa điểm, chỉ ra sản phẩm nào bao gồm những gì, rồi xác nhận phạm vi sản phẩm cùng mọi bước cấp phép địa phương bằng văn bản trước khi triển khai."
+        }
+      ]
     }
   },
   "howItWorksPage": {
