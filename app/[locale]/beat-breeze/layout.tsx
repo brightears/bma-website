@@ -16,4 +16,45 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default function BeatBreezeLayout({ children }: { children: React.ReactNode }) { return children; }
+export default async function BeatBreezeLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'beatBreezePage.metadata' });
+  const tNav = await getTranslations({ locale, namespace: 'navigation' });
+  const url = `${SITE.url}/${locale}/beat-breeze/`;
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Service',
+        name: t('title'),
+        description: t('description'),
+        url,
+        sameAs: 'https://beatbreeze.io',
+        serviceType: 'Business background music and venue experience platform',
+        provider: { '@id': `${SITE.url}/#organization` },
+        areaServed: 'Asia-Pacific',
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: tNav('home'), item: `${SITE.url}/${locale}/` },
+          { '@type': 'ListItem', position: 2, name: tNav('beatBreeze'), item: url },
+        ],
+      },
+    ],
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      {children}
+    </>
+  );
+}

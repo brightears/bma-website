@@ -476,6 +476,17 @@ Voice input/output using cheaper alternatives (Fish Audio or ChatterboxTTS).
 - **Twitter**: https://cards-dev.twitter.com/validator
 - **LinkedIn**: https://www.linkedin.com/post-inspector/
 
+## AI / Answer-Engine Readiness (Aug 11, 2026)
+
+Playbook adapted from the Beat Breeze agent-web work (see `research/agent-web-readiness-202608.md` in the ACE Music Player repo — fact-checked findings: AI crawlers don't execute JS, comparison content + structured data + SSR-parseable facts feed AI answers; llms.txt is cheap insurance; pay-per-crawl/x402 not actionable).
+
+- **Serving**: bmasiamusic.com is proxied through **Cloudflare** (server: cloudflare in response headers; Render is the origin behind it). Cloudflare AI Crawl Control is therefore available in the dashboard. All major AI crawlers (GPTBot, ClaudeBot, PerplexityBot, CCBot, Google-Extended, Bytespider) receive HTTP 200.
+- **robots.txt** (`public/robots.txt`): permissive, with `Content-Signal: search=yes, ai-input=yes, ai-train=yes` (contentsignals.org), Disallow on `/api/`, `/admin`, `/login` (proxied back-office app).
+- **llms.txt** (`app/llms.txt/route.ts`): force-static route composed from `messages/en.json` + `lib/constants.ts` so it can't drift from site copy. English-only by design (AI engines cite English pages; +122% ChatGPT citations for /en/ sites). Format follows llmstxt.org: free markdown (product comparison, buyer Q&A) before the first H2; H2 sections are strict link lists.
+- **JSON-LD**: Organization (@id `/#organization`, enriched with brand → Beat Breeze, knowsAbout, slogan, availableLanguage) + WebSite in one @graph on every page (`app/[locale]/layout.tsx`); Service + BreadcrumbList on `/soundtrack-your-brand` and `/beat-breeze` layouts; BreadcrumbList on `/licensing`; Service + BreadcrumbList on all 12 solutions pages (pre-existing, `lib/industry-metadata.tsx`).
+- **Known gaps (deliberate/pending)**: no public pricing in HTML (quotation-based business model — AI engines cannot cite prices); no visible FAQ sections on any page (FAQPage schema must NOT be added until visible FAQ content exists — Google policy); `/music-design` is a retired page that redirects to `/quotation` (correctly absent from sitemap).
+- **AI crawlers do not render JavaScript** (Gemini via Googlebot is the only exception): any fact AI should know must be in server-rendered HTML, never behind client-only toggles/accordions.
+
 ## Recent Changes
 
 ### Apr 10–11, 2026
