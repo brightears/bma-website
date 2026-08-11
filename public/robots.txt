@@ -1,6 +1,15 @@
-# BMAsia Robots.txt
-User-agent: *
-Allow: /
+# BMAsia — bmasiamusic.com
+# AI crawlers, AI assistants, and search engines are welcome here.
+# Marketing content on this site may be indexed for search, retrieved for
+# AI-generated answers, and used for AI training.
+# A machine-readable site summary is published at /llms.txt.
+# Content-Signal spec: https://contentsignals.org
 
-# Sitemap location
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /login
+
 Sitemap: https://bmasiamusic.com/sitemap.xml

@@ -143,26 +143,51 @@ export default async function LocaleLayout({
       <head>
         {/* Apollo preconnect added dynamically after consent */}
 
-        {/* Organization Schema (JSON-LD) - with translated description */}
+        {/* Organization + WebSite Schema (JSON-LD) - with translated description */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': 'Organization',
-              name: 'BMAsia',
-              url: `${SITE.url}/${locale}/`,
-              logo: `${SITE.url}/images/BMAsia_Logo.png`,
-              description: t('description'),
-              foundingDate: '2002',
-              contactPoint: {
-                '@type': 'ContactPoint',
-                email: 'info@bmasiamusic.com',
-                contactType: 'sales',
-              },
-              areaServed: 'Asia-Pacific',
-              serviceType: 'Background Music Solutions',
-              inLanguage: locale,
+              '@graph': [
+                {
+                  '@type': 'Organization',
+                  '@id': `${SITE.url}/#organization`,
+                  name: 'BMAsia',
+                  alternateName: 'BMAsia Group',
+                  url: `${SITE.url}/`,
+                  logo: `${SITE.url}/images/BMAsia_Logo.png`,
+                  description: t('description'),
+                  slogan: SITE.tagline,
+                  foundingDate: '2002',
+                  contactPoint: {
+                    '@type': 'ContactPoint',
+                    email: SITE.email,
+                    contactType: 'sales',
+                    availableLanguage: [...locales],
+                  },
+                  areaServed: 'Asia-Pacific',
+                  brand: {
+                    '@type': 'Brand',
+                    name: 'Beat Breeze',
+                    url: 'https://beatbreeze.io',
+                  },
+                  knowsAbout: [
+                    'background music for business venues',
+                    'music licensing and public performance rights',
+                    'venue atmosphere and music design',
+                    'multi-zone music scheduling',
+                  ],
+                },
+                {
+                  '@type': 'WebSite',
+                  '@id': `${SITE.url}/#website`,
+                  url: `${SITE.url}/`,
+                  name: 'BMAsia',
+                  publisher: { '@id': `${SITE.url}/#organization` },
+                  inLanguage: locale,
+                },
+              ],
             }),
           }}
         />

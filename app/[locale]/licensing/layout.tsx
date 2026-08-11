@@ -31,6 +31,32 @@ export async function generateMetadata({
   };
 }
 
-export default function LicensingLayout({ children }: { children: ReactNode }) {
-  return children;
+export default async function LicensingLayout({
+  children,
+  params,
+}: {
+  children: ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const tNav = await getTranslations({ locale, namespace: 'navigation' });
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: tNav('home'), item: `${SITE.url}/${locale}/` },
+      { '@type': 'ListItem', position: 2, name: tNav('licensing'), item: `${SITE.url}/${locale}/licensing/` },
+    ],
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      {children}
+    </>
+  );
 }
