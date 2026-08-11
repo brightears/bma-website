@@ -633,6 +633,45 @@
         "description": "Request a reviewed Soundtrack trial through BMAsia or talk to us about music design, zones and venue extensions.",
         "login": "Soundtrack login",
         "support": "Responsive regional support from BMAsia. No claim of round-the-clock human technical support."
+      },
+      "faq": {
+        "eyebrow": "Frequently asked",
+        "title": "Soundtrack through BMAsia, answered.",
+        "subtitle": "The questions venues ask most before putting familiar music to work.",
+        "items": [
+          {
+            "q": "What is Soundtrack, and what does BMAsia add?",
+            "a": "Soundtrack is a licensed business music platform with a large commercial catalogue of familiar, major-label music. BMAsia supplies it with a full service layer around the platform: playlist design, onboarding, venue extensions and responsive regional support from one team."
+          },
+          {
+            "q": "Do we have to build the playlists ourselves?",
+            "a": "No. BMAsia music designers read the venue first—brand, audience, zones and dayparts—then shape playlists from the commercial catalogue and put them into a practical schedule. The direction is refreshed regularly without losing the brand."
+          },
+          {
+            "q": "Does Soundtrack include the music licences we need?",
+            "a": "Soundtrack supplies recording and publishing rights for its business service. Public-performance requirements vary by country: in the United States and Canada, ordinary background use is covered, while in most other countries the venue adds licences from the local collecting societies. BMAsia confirms the applicable setup during onboarding."
+          },
+          {
+            "q": "Is there a free trial?",
+            "a": "Yes. Soundtrack offers a 14-day trial with no card required. Trials through BMAsia are reviewed and arranged for the business: send the essentials, we verify the location and configure the trial for business use, then you receive access for your first zone."
+          },
+          {
+            "q": "What hardware do we need?",
+            "a": "No dedicated hardware is required. The exact setup follows the selected product, the venue's existing hardware and network conditions—BMAsia helps configure compatible playback during onboarding."
+          },
+          {
+            "q": "What are BMAsia venue extensions?",
+            "a": "For customers supplied through BMAsia, production-ready extensions connect Soundtrack to the way the venue works: prayer-time integration, supported volume integrations, weather-adjusted playlist behavior and operational APIs. Each one is scoped, configured and supported for the deployment—they aren't necessarily included when signing up directly at soundtrack.io."
+          },
+          {
+            "q": "How does pricing work?",
+            "a": "Pricing is quotation-based. It depends on the product route, the number of locations and zones, and the territory. Request a tailored proposal and BMAsia follows up with the right product path."
+          },
+          {
+            "q": "What support does BMAsia provide after launch?",
+            "a": "One regional team stays involved from first brief to daily operation: onboarding, playlist refreshes planned around your brief, and responsive human help with setup, music direction and supported integrations."
+          }
+        ]
       }
     }
   },
@@ -838,6 +877,45 @@
         "title": "Make the first zone real.",
         "description": "Start with a product-specific Beat Breeze trial or ask BMAsia to shape a multi-zone music and media plan.",
         "support": "BMAsia provides onboarding and responsive regional support. Product self-service remains available whenever your team needs it."
+      },
+      "faq": {
+        "eyebrow": "Frequently asked",
+        "title": "Beat Breeze, answered.",
+        "subtitle": "What operators ask before making the first zone real.",
+        "items": [
+          {
+            "q": "What is Beat Breeze?",
+            "a": "Beat Breeze is BMAsia's own venue experience platform. Curated royalty-free music sits at the heart of it, alongside screens, messages and venue automation—planned across zones, reviewed by people and controlled from one place."
+          },
+          {
+            "q": "Do we need a separate music licence to play Beat Breeze?",
+            "a": "No. For music played through Beat Breeze, the catalogue and covered business playback rights are included, so there's no separate music licence to arrange. Live acts, DJs, third-party music and visual synchronisation are separate use cases."
+          },
+          {
+            "q": "Is there a free trial?",
+            "a": "Yes. Beat Breeze offers a 14-day free trial with no card required, and it's self-serve at beatbreeze.io. Start with one zone, then ask BMAsia to shape a multi-zone music and media plan when you're ready."
+          },
+          {
+            "q": "What hardware does Beat Breeze need?",
+            "a": "No special player hardware is required. Beat Breeze runs in a browser or as an app on devices the venue already owns, and playback is offline-capable."
+          },
+          {
+            "q": "What is Music Concierge?",
+            "a": "Music Concierge turns a plain-language brief into music. Tell it the zone, audience, time and desired feeling; it can recommend catalogue music or prepare a creative direction, and you preview the result before anything plays or enters a schedule. Manual browsing stays available throughout."
+          },
+          {
+            "q": "Can Beat Breeze do more than music?",
+            "a": "Yes. Beat Breeze can coordinate the media and messages guests meet around the venue: visual loops and TV channels for screens, multilingual announcements, soundscapes and phone-on-hold—all parts of the same operating plan."
+          },
+          {
+            "q": "How does the automation work—does it listen to the room?",
+            "a": "Automation runs on explicit schedules, configured rules and supported integrations—weather-aware behavior, prayer-time automation and preset volume levels. Staff keep the final say, and volume changes are scheduled presets or supported venue-system integrations, not continuous microphone listening."
+          },
+          {
+            "q": "How does pricing work?",
+            "a": "Pricing is quotation-based. It depends on the number of locations and zones and the territory. Request a tailored proposal via the quotation page and BMAsia recommends the right setup."
+          }
+        ]
       }
     }
   },
@@ -1360,6 +1438,41 @@
       "soundtrack": "Soundtrack licensing guidance",
       "spotify": "Spotify commercial-use policy",
       "youtube": "YouTube terms"
+    },
+    "faq": {
+      "eyebrow": "Frequently asked",
+      "title": "Licensing questions, answered plainly",
+      "subtitle": "Short answers to the questions venues raise most, before the first track plays.",
+      "items": [
+        {
+          "q": "Can we play Spotify, YouTube or another personal streaming service in our business?",
+          "a": "No. Subscriptions made for private listening don't grant the full set of rights needed to play music to customers or staff. A listener receives private, non-commercial access—not permission to provide the music as part of a venue experience. That's why venues use a business music service such as Beat Breeze or Soundtrack."
+        },
+        {
+          "q": "What rights are involved when a venue plays music?",
+          "a": "A familiar song carries four permissions: the music and lyrics belong to songwriters and publishers, the master recording can belong to artists or a label, the business service needs reproduction and delivery rights for its catalogue, and playing music where customers or staff can hear it is a public performance. The venue doesn't negotiate each track—a business service and, where required, local collecting societies connect these layers."
+        },
+        {
+          "q": "Do we still need a public-performance licence from a collecting society?",
+          "a": "It depends on the platform and the country. For music played through Beat Breeze, covered business playback is included, so no separate music licence is needed. With Soundtrack, recording and publishing rights are included; in the United States and Canada ordinary background use is also covered, while in most other countries the venue adds local collecting-society licences. BMAsia confirms the exact scope in writing before activation."
+        },
+        {
+          "q": "How is licensing different between Beat Breeze and Soundtrack?",
+          "a": "Beat Breeze is one cleared route: the royalty-free catalogue and covered business playback rights come with the service. Soundtrack offers a large commercial catalogue of familiar, major-label music with recording and publishing rights included, while public-performance requirements depend on the country. We make the boundary visible before activation."
+        },
+        {
+          "q": "Does the country we operate in change what we need?",
+          "a": "Yes—the country changes the last step. In some markets Soundtrack includes public-performance coverage for ordinary background use; in most others the venue adds licences from the local collecting societies. Beat Breeze remains a cleared business-music route either way. BMAsia checks your market and confirms the steps before recommending a setup."
+        },
+        {
+          "q": "What about live music, DJs or exercise classes?",
+          "a": "Those sit outside covered background playback. Live acts, DJs, third-party music and visual synchronisation are separate use cases, and venue type, admission, exercise classes, repertoire and local law can all change the answer. Tell us how the music will be used and we'll review it as part of the rights check."
+        },
+        {
+          "q": "How does BMAsia help us get licensing right?",
+          "a": "Tell us the venue, the music route and how the music will be used. We separate the service rights from the venue's local obligations, show which product covers what, and confirm the product scope and any local licence step in writing before launch."
+        }
+      ]
     }
   },
   "howItWorksPage": {

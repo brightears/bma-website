@@ -26,7 +26,11 @@ export default async function BeatBreezeLayout({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'beatBreezePage.metadata' });
   const tNav = await getTranslations({ locale, namespace: 'navigation' });
+  const tFaq = await getTranslations({ locale, namespace: 'beatBreezePage.redesign.faq' });
   const url = `${SITE.url}/${locale}/beat-breeze/`;
+  // Mirrors the visible FAQ accordion on the page (Google requires FAQPage
+  // JSON-LD to reflect on-page Q&A), sourced from the same translation keys.
+  const faqItems = tFaq.raw('items') as { q: string; a: string }[];
 
   const schema = {
     '@context': 'https://schema.org',
@@ -47,6 +51,14 @@ export default async function BeatBreezeLayout({
           { '@type': 'ListItem', position: 1, name: tNav('home'), item: `${SITE.url}/${locale}/` },
           { '@type': 'ListItem', position: 2, name: tNav('beatBreeze'), item: url },
         ],
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map((item) => ({
+          '@type': 'Question',
+          name: item.q,
+          acceptedAnswer: { '@type': 'Answer', text: item.a },
+        })),
       },
     ],
   };

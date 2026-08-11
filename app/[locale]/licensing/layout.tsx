@@ -40,13 +40,29 @@ export default async function LicensingLayout({
 }) {
   const { locale } = await params;
   const tNav = await getTranslations({ locale, namespace: 'navigation' });
+  const tFaq = await getTranslations({ locale, namespace: 'licensingPage.faq' });
+  // Mirrors the visible FAQ accordion on the page (Google requires FAQPage
+  // JSON-LD to reflect on-page Q&A), sourced from the same translation keys.
+  const faqItems = tFaq.raw('items') as { q: string; a: string }[];
 
-  const breadcrumbSchema = {
+  const schema = {
     '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: tNav('home'), item: `${SITE.url}/${locale}/` },
-      { '@type': 'ListItem', position: 2, name: tNav('licensing'), item: `${SITE.url}/${locale}/licensing/` },
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: tNav('home'), item: `${SITE.url}/${locale}/` },
+          { '@type': 'ListItem', position: 2, name: tNav('licensing'), item: `${SITE.url}/${locale}/licensing/` },
+        ],
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map((item) => ({
+          '@type': 'Question',
+          name: item.q,
+          acceptedAnswer: { '@type': 'Answer', text: item.a },
+        })),
+      },
     ],
   };
 
@@ -54,7 +70,7 @@ export default async function LicensingLayout({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       {children}
     </>
