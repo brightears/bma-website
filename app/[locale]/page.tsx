@@ -37,8 +37,8 @@ export default function Home() {
       text: beatBreeze('product.selfText'),
     },
     {
-      title: beatBreeze('product.conciergeTitle'),
-      text: beatBreeze('product.conciergeText'),
+      title: beatBreeze('product.musicDirectorTitle'),
+      text: beatBreeze('product.musicDirectorText'),
     },
     {
       title: beatBreeze('redesign.media.screens.title'),

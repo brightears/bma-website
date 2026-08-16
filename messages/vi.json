@@ -686,12 +686,12 @@
       "zonesReady": "{count} khu vực sẵn sàng",
       "explainable": "Có giải thích",
       "waysLabel": "Một hệ thống, hai cách làm việc",
-      "waysTitle": "Tự chọn nhạc hoặc làm việc với Concierge.",
+      "waysTitle": "Tự chọn nhạc hoặc làm việc với Music Director.",
       "waysDescription": "Bắt đầu chủ động, giao lại công việc lặp lại sau và duyệt mọi đề xuất trước khi áp dụng tại địa điểm.",
       "selfTitle": "Quý khách luôn kiểm soát",
       "selfText": "Duyệt kho nhạc, nghe thử, xây lịch và điều khiển phát nhạc ở mọi khu vực.",
-      "conciergeTitle": "Concierge làm việc cùng quý khách",
-      "conciergeText": "Hệ thống học bối cảnh kinh doanh, giải thích lý do và có thể quản lý công việc âm nhạc liên tục khi được bật.",
+      "musicDirectorTitle": "Music Director làm việc cùng quý khách",
+      "musicDirectorText": "Hệ thống học bối cảnh kinh doanh, giải thích lý do và có thể quản lý công việc âm nhạc liên tục khi được bật.",
       "playersLabel": "Trình phát",
       "playersTitle": "Dùng những thiết bị quý khách đã có.",
       "mobile": "iPhone, iPad & Android",
@@ -759,10 +759,10 @@
         "signal": "Tín hiệu",
         "volumeNote": "Các thay đổi âm lượng được mô tả ở đây là mức đặt trước theo lịch hoặc tích hợp với hệ thống địa điểm được hỗ trợ—không phải lắng nghe liên tục qua microphone."
       },
-      "concierge": {
-        "eyebrow": "Music Concierge, bằng ngôn ngữ dễ hiểu",
+      "musicDirector": {
+        "eyebrow": "Music Director, bằng ngôn ngữ dễ hiểu",
         "title": "Nêu kết quả mong muốn. Xem lại đề xuất nhận được.",
-        "description": "Cho Concierge biết khu vực, đối tượng khách, thời gian và cảm giác mong muốn. Hệ thống có thể đề xuất nhạc trong kho hoặc chuẩn bị một định hướng sáng tạo; bạn nghe thử kết quả trước khi bất cứ nội dung nào được phát hoặc thêm vào lịch.",
+        "description": "Cho Music Director biết khu vực, đối tượng khách, thời gian và cảm giác mong muốn. Hệ thống có thể đề xuất nhạc trong kho hoặc chuẩn bị một định hướng sáng tạo; bạn nghe thử kết quả trước khi bất cứ nội dung nào được phát hoặc thêm vào lịch.",
         "ready": "Sẵn sàng nhận yêu cầu",
         "recommendation": "Đề xuất có thể phát",
         "preview": "Nghe mẫu",
@@ -900,8 +900,8 @@
             "a": "Không cần phần cứng trình phát chuyên dụng. Beat Breeze chạy trên trình duyệt hoặc dưới dạng ứng dụng trên những thiết bị mà địa điểm đã có, và có thể phát ngoại tuyến."
           },
           {
-            "q": "Music Concierge là gì?",
-            "a": "Music Concierge biến một yêu cầu bằng ngôn ngữ đời thường thành âm nhạc. Bạn cho biết khu vực, đối tượng khách, thời gian và cảm giác mong muốn; hệ thống có thể đề xuất nhạc trong kho hoặc chuẩn bị một định hướng sáng tạo, và bạn nghe thử kết quả trước khi bất cứ nội dung nào được phát hoặc thêm vào lịch. Bạn vẫn luôn có thể tự duyệt kho nhạc theo cách thủ công."
+            "q": "Music Director là gì?",
+            "a": "Music Director biến một yêu cầu bằng ngôn ngữ đời thường thành âm nhạc. Bạn cho biết khu vực, đối tượng khách, thời gian và cảm giác mong muốn; hệ thống có thể đề xuất nhạc trong kho hoặc chuẩn bị một định hướng sáng tạo, và bạn nghe thử kết quả trước khi bất cứ nội dung nào được phát hoặc thêm vào lịch. Bạn vẫn luôn có thể tự duyệt kho nhạc theo cách thủ công."
           },
           {
             "q": "Beat Breeze có làm được nhiều hơn âm nhạc không?",
@@ -993,21 +993,21 @@
         "eyebrow": "BMAsia Venue Time Machine",
         "title": "Đi qua một ngày.",
         "highlight": "Xem mọi điểm chạm phản hồi.",
-        "description": "Chọn loại hình kinh doanh và đi qua bảy thời điểm trong lịch. Mỗi thẻ là một khu vực riêng; âm nhạc, mức kích hoạt, bản nghe thử và giải thích của Concierge thay đổi đồng bộ.",
+        "description": "Chọn loại hình kinh doanh và đi qua bảy thời điểm trong lịch. Mỗi thẻ là một khu vực riêng; âm nhạc, mức kích hoạt, bản nghe thử và giải thích của Music Director thay đổi đồng bộ.",
         "machineLabel": "Bản xem trước trải nghiệm không gian trực tiếp",
         "live": "Phản hồi trực tiếp",
         "chooseVenue": "Chọn loại hình kinh doanh",
         "localTime": "Giờ địa phương",
         "chooseTime": "Chọn thời điểm",
         "playlistDetail": "Mức kích hoạt mục tiêu {energy}/100 · khoảng {bpm} BPM",
-        "concierge": "Vì sao phù hợp với khu vực này",
+        "musicDirector": "Vì sao phù hợp với khu vực này",
         "energy": "Mức kích hoạt của khu vực đã chọn",
         "zonePlanEyebrow": "Một địa điểm, ba nhiệm vụ âm nhạc",
         "zonePlanTitleLine1": "Ba khu vực.",
         "zonePlanTitleLine2": "Ba đề xuất riêng.",
         "zonePlanDescription": "Mỗi thẻ điều khiển một khu vực khác nhau. Chọn một thẻ để nghe mẫu Beat Breeze và xem vì sao nó phù hợp vào lúc này.",
         "zoneLabel": "Khu vực {index} · {zone}",
-        "conciergeReason": "{playlist} được đề xuất cho {zone} lúc {time}: {purpose}. Khoảng {bpm} BPM với mức kích hoạt mục tiêu {energy}/100 giúp khu vực này khác biệt với hai khu vực còn lại."
+        "musicDirectorReason": "{playlist} được đề xuất cho {zone} lúc {time}: {purpose}. Khoảng {bpm} BPM với mức kích hoạt mục tiêu {energy}/100 giúp khu vực này khác biệt với hai khu vực còn lại."
       },
       "venues": {
         "hotel": "Khách sạn",
@@ -1116,7 +1116,7 @@
         "title": "Chọn thế giới âm nhạc",
         "highlight": "phù hợp với doanh nghiệp của bạn.",
         "description": "Beat Breeze mang đến nền tảng tự phục vụ thông minh. Soundtrack cung cấp danh mục thương mại quen thuộc với sự hỗ trợ của BMAsia.",
-        "bbCore": "Khu vực · lịch phát · Concierge",
+        "bbCore": "Khu vực · lịch phát · Music Director",
         "tryBeatBreeze": "Bắt đầu dùng thử Beat Breeze",
         "sybDiscLabel": "BMAsia đồng hành",
         "sybDiscText": "Âm nhạc quen thuộc cho doanh nghiệp",
@@ -1158,7 +1158,7 @@
         "core": "BMAsia",
         "coreText": "Một brief cho cả không gian",
         "sound": {
-          "title": "Âm nhạc & Concierge",
+          "title": "Âm nhạc & Music Director",
           "text": "Khám phá, lên lịch và làm mới âm thanh."
         },
         "screens": {
@@ -1217,14 +1217,14 @@
         "playlist": "Deep House · bắt đầu 19:00",
         "status": "Sẵn sàng"
       },
-      "conciergeLabel": "Đề xuất từ Concierge",
-      "conciergeText": "Tăng năng lượng sân thượng nhẹ nhàng trước giờ khách đến. Giữ sảnh êm dịu khi check-in đông nhất.",
+      "musicDirectorLabel": "Đề xuất từ Music Director",
+      "musicDirectorText": "Tăng năng lượng sân thượng nhẹ nhàng trước giờ khách đến. Giữ sảnh êm dịu khi check-in đông nhất.",
       "reason": "Dựa trên khu vực, thời gian, năng lượng và lịch hôm nay"
     },
     "beatBreezeLead": {
       "label": "Beat Breeze bởi BMAsia",
       "title": "Một nền tảng. Mọi khu vực đều đúng nhịp.",
-      "description": "Tự chọn nhạc hoặc để Concierge định hình cả ngày. Lên lịch, điều khiển mọi trình phát và quản lý từ một nơi.",
+      "description": "Tự chọn nhạc hoặc để Music Director định hình cả ngày. Lên lịch, điều khiển mọi trình phát và quản lý từ một nơi.",
       "cta": "Khám phá nền tảng",
       "proof1": "Miễn phí 14 ngày",
       "proof2": "Không cần thẻ",
@@ -1237,7 +1237,7 @@
       "step2Title": "Kết nối trình phát",
       "step2Text": "Dùng trình duyệt hoặc cài ứng dụng trên thiết bị sẵn có.",
       "step3Title": "Đưa mọi khu vực vào nhịp",
-      "step3Text": "Tự chọn nhạc hoặc để Concierge tạo kế hoạch đầu tiên.",
+      "step3Text": "Tự chọn nhạc hoặc để Music Director tạo kế hoạch đầu tiên.",
       "finalDescription": "Trải nghiệm đầy đủ cho một khu vực trong 14 ngày. Không cần thẻ hay thiết bị chuyên dụng."
     },
     "alternative": {
@@ -1273,7 +1273,7 @@
         "tagline": "Âm nhạc miễn phí bản quyền ở vị trí trung tâm của một nền tảng trải nghiệm không gian linh hoạt.",
         "feature1": "Danh mục nhạc miễn bản quyền liên tục mở rộng — được cấp phép cho doanh nghiệp",
         "feature2": "Phạm vi bản quyền phụ thuộc vào gói, kho nhạc và lãnh thổ",
-        "feature3": "Đề xuất Music Concierge kèm lý do rõ ràng",
+        "feature3": "Đề xuất Music Director kèm lý do rõ ràng",
         "feature4": "Hoạt động ngoại tuyến, lên lịch đa khu vực",
         "cta": "Khám phá Beat Breeze"
       },
@@ -1554,7 +1554,7 @@
     "ourSolutions": {
       "sectionTitle": "Giải pháp của chúng tôi",
       "sybTagline": "Kho nhạc thương mại quen thuộc — nghệ sĩ nổi tiếng, nhập từ Spotify và thiết lập có BMAsia hỗ trợ",
-      "bbTagline": "Vận hành âm nhạc thông minh — danh mục tuyển chọn luôn mở rộng, Music Concierge, lịch phát và điều khiển khu vực trực tiếp",
+      "bbTagline": "Vận hành âm nhạc thông minh — danh mục tuyển chọn luôn mở rộng, Music Director, lịch phát và điều khiển khu vực trực tiếp",
       "learnMore": "Xem quy trình BMAsia vận hành như thế nào →"
     },
     "questions": {

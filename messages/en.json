@@ -686,12 +686,12 @@
       "zonesReady": "{count} zones ready",
       "explainable": "Explainable",
       "waysLabel": "One system, two ways to work",
-      "waysTitle": "Choose the music. Or work with the Concierge.",
+      "waysTitle": "Choose the music. Or work with the Music Director.",
       "waysDescription": "Start hands-on, hand over repetitive work later, and review every recommendation before it changes the venue.",
       "selfTitle": "You stay in control",
       "selfText": "Browse the catalogue, preview music, build schedules and control playback in every zone.",
-      "conciergeTitle": "The Concierge works with you",
-      "conciergeText": "It learns the business context, explains its reasoning and can manage ongoing music work when enabled.",
+      "musicDirectorTitle": "The Music Director works with you",
+      "musicDirectorText": "It learns the business context, explains its reasoning and can manage ongoing music work when enabled.",
       "playersLabel": "Players",
       "playersTitle": "Use the devices you already own.",
       "mobile": "iPhone, iPad & Android",
@@ -759,10 +759,10 @@
         "signal": "Signal",
         "volumeNote": "Volume changes described here are scheduled presets or supported venue-system integrations—not continuous microphone listening."
       },
-      "concierge": {
-        "eyebrow": "Music Concierge, in plain language",
+      "musicDirector": {
+        "eyebrow": "Music Director, in plain language",
         "title": "Ask for a result. Review what comes back.",
-        "description": "Tell Concierge the zone, audience, time and desired feeling. It can recommend catalogue music or prepare a creative direction; you preview the result before anything plays or enters a schedule.",
+        "description": "Tell the Music Director the zone, audience, time and desired feeling. It can recommend catalogue music or prepare a creative direction; you preview the result before anything plays or enters a schedule.",
         "ready": "Ready for a brief",
         "recommendation": "Playable recommendation",
         "preview": "Hear sample",
@@ -900,8 +900,8 @@
             "a": "No special player hardware is required. Beat Breeze runs in a browser or as an app on devices the venue already owns, and playback is offline-capable."
           },
           {
-            "q": "What is Music Concierge?",
-            "a": "Music Concierge turns a plain-language brief into music. Tell it the zone, audience, time and desired feeling; it can recommend catalogue music or prepare a creative direction, and you preview the result before anything plays or enters a schedule. Manual browsing stays available throughout."
+            "q": "What is the Music Director?",
+            "a": "The Music Director turns a plain-language brief into music. Tell it the zone, audience, time and desired feeling; it can recommend catalogue music or prepare a creative direction, and you preview the result before anything plays or enters a schedule. Manual browsing stays available throughout."
           },
           {
             "q": "Can Beat Breeze do more than music?",
@@ -993,21 +993,21 @@
         "eyebrow": "BMAsia Venue Time Machine",
         "title": "Move through a day.",
         "highlight": "Watch every touchpoint respond.",
-        "description": "Choose a business and move through seven schedule moments. Each card is a separate zone; its music, activation, preview and Concierge explanation respond together.",
+        "description": "Choose a business and move through seven schedule moments. Each card is a separate zone; its music, activation, preview and the Music Director’s explanation respond together.",
         "machineLabel": "Live venue experience preview",
         "live": "Responding live",
         "chooseVenue": "Choose a business type",
         "localTime": "Local time",
         "chooseTime": "Choose a time of day",
         "playlistDetail": "Target activation {energy}/100 · around {bpm} BPM",
-        "concierge": "Why this zone fits",
+        "musicDirector": "Why this zone fits",
         "energy": "Selected zone activation",
         "zonePlanEyebrow": "One venue, three music jobs",
         "zonePlanTitleLine1": "Three zones.",
         "zonePlanTitleLine2": "Three separate recommendations.",
         "zonePlanDescription": "Each card controls a different zone. Choose one to hear its Beat Breeze sample and see why it fits this moment.",
         "zoneLabel": "Zone {index} · {zone}",
-        "conciergeReason": "At {time}, {playlist} is the {zone} recommendation to {purpose}. Around {bpm} BPM with target activation {energy}/100 keeps this zone distinct from the other two."
+        "musicDirectorReason": "At {time}, {playlist} is the {zone} recommendation to {purpose}. Around {bpm} BPM with target activation {energy}/100 keeps this zone distinct from the other two."
       },
       "touchpoints": {
         "eyebrow": "Connected touchpoints",
@@ -1174,7 +1174,7 @@
         "title": "Choose the music world",
         "highlight": "that fits your business.",
         "description": "Beat Breeze gives operators an intelligent self-service platform. Soundtrack brings familiar commercial repertoire with BMAsia guidance.",
-        "bbCore": "Zones · schedules · Concierge",
+        "bbCore": "Zones · schedules · Music Director",
         "tryBeatBreeze": "Start a Beat Breeze trial",
         "sybDiscLabel": "BMAsia-assisted",
         "sybDiscText": "Recognisable music for business",
@@ -1217,14 +1217,14 @@
         "playlist": "Deep House · starts at 19:00",
         "status": "Ready"
       },
-      "conciergeLabel": "Concierge recommendation",
-      "conciergeText": "Bring the rooftop up gently before arrivals. Keep the lobby calm while check-in is busiest.",
+      "musicDirectorLabel": "Music Director recommendation",
+      "musicDirectorText": "Bring the rooftop up gently before arrivals. Keep the lobby calm while check-in is busiest.",
       "reason": "Based on zone, time, energy and today's schedule"
     },
     "beatBreezeLead": {
       "label": "Beat Breeze by BMAsia",
       "title": "One venue platform. Every zone in flow.",
-      "description": "Choose the music yourself or let the Concierge shape the day. Schedule it, control every player and keep the experience moving from one place.",
+      "description": "Choose the music yourself or let the Music Director shape the day. Schedule it, control every player and keep the experience moving from one place.",
       "cta": "Explore the platform",
       "proof1": "14 days free",
       "proof2": "No card required",
@@ -1237,7 +1237,7 @@
       "step2Title": "Connect a player",
       "step2Text": "Use a browser or install the app on a device you already own.",
       "step3Title": "Set every zone in motion",
-      "step3Text": "Choose the music yourself or let the Concierge build the starting plan.",
+      "step3Text": "Choose the music yourself or let the Music Director build the starting plan.",
       "finalDescription": "Try the full music experience in one zone for 14 days. No card, no dedicated box and no long setup."
     },
     "alternative": {
@@ -1273,7 +1273,7 @@
         "tagline": "Royalty-free music at the heart of a flexible venue experience platform.",
         "feature1": "A growing royalty-free catalogue — licensed for business",
         "feature2": "Licensing scope confirmed for your plan and territory",
-        "feature3": "Music Concierge recommendations that explain why",
+        "feature3": "Music Director recommendations that explain why",
         "feature4": "Offline-capable, multi-zone scheduling",
         "cta": "Explore Beat Breeze"
       },
@@ -1554,7 +1554,7 @@
     "ourSolutions": {
       "sectionTitle": "Our Solutions",
       "sybTagline": "Recognisable commercial repertoire — familiar artists, Spotify import and BMAsia-assisted setup",
-      "bbTagline": "Intelligent music operations — a growing curated catalogue, Music Concierge, schedules and live zone control",
+      "bbTagline": "Intelligent music operations — a growing curated catalogue, Music Director, schedules and live zone control",
       "learnMore": "See how the BMAsia process works →"
     },
     "questions": {

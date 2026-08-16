@@ -16,7 +16,7 @@ Baseline: merged PR #8 at `01f0991`. This branch must stay review-only until the
 
 - [x] The page is the most expressive product world, using BMAsia orange with green/cyan energy.
 - [x] The story covers curated royalty-free music, scheduling/dayparting, weather behavior, prayer times, scheduled/preset volume, supported integrations, APIs, AI-assisted images/video, screens/loops, slideshows, multilingual messaging, venue/in-room TV, soundscapes, phone-on-hold, and coordinated touchpoints.
-- [x] Music Concierge is explained in plain language: customer prompt, recommendation/creation, playable action, and human approval/control.
+- [x] Music Director is explained in plain language: customer prompt, recommendation/creation, playable action, and human approval/control.
 - [x] No continuous microphone or autonomous ambient-volume claim is published.
 - [x] No long generic feature-card wall; interaction and operational proof carry the narrative.
 - [x] Trial and login links use the real Beat Breeze destinations.

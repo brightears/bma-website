@@ -686,12 +686,12 @@
       "zonesReady": "{count} 个区域已就绪",
       "explainable": "建议可解释",
       "waysLabel": "一个系统，两种运营方式",
-      "waysTitle": "自己选择音乐，或与 Concierge 协作。",
+      "waysTitle": "自己选择音乐，或与 Music Director 协作。",
       "waysDescription": "先自行上手，之后把重复工作交给系统，并在任何建议改变场所音乐前进行审核。",
       "selfTitle": "您始终掌握控制权",
       "selfText": "浏览曲库、试听音乐、建立排期，并控制每个区域的播放。",
-      "conciergeTitle": "Concierge 与您协同工作",
-      "conciergeText": "它会学习业务背景、解释推荐理由，并在启用后持续管理音乐运营。",
+      "musicDirectorTitle": "Music Director 与您协同工作",
+      "musicDirectorText": "它会学习业务背景、解释推荐理由，并在启用后持续管理音乐运营。",
       "playersLabel": "播放器",
       "playersTitle": "直接使用您已有的设备。",
       "mobile": "iPhone、iPad 与 Android",
@@ -759,10 +759,10 @@
         "signal": "信号",
         "volumeNote": "此处所述的音量变化是定时预设或受支持的场所系统集成，并非持续通过麦克风监听。"
       },
-      "concierge": {
-        "eyebrow": "用简单语言使用 Music Concierge",
+      "musicDirector": {
+        "eyebrow": "用简单语言使用 Music Director",
         "title": "提出想要的结果，再审核系统给出的方案。",
-        "description": "告诉 Concierge 分区、受众、时间与期望感受。它可推荐曲库音乐或准备创意方向；在内容播放或加入排期前，您可以先预览结果。",
+        "description": "告诉 Music Director 分区、受众、时间与期望感受。它可推荐曲库音乐或准备创意方向；在内容播放或加入排期前，您可以先预览结果。",
         "ready": "可以接收需求",
         "recommendation": "可播放的建议",
         "preview": "试听样本",
@@ -900,8 +900,8 @@
             "a": "无需专用播放器硬件。Beat Breeze 可在浏览器中运行，也可作为应用安装在场所现有的设备上，并支持离线播放。"
           },
           {
-            "q": "Music Concierge 是什么？",
-            "a": "Music Concierge 能把简单语言描述的需求转化为音乐。告诉它分区、受众、时间与期望感受；它可以推荐曲库音乐或准备创意方向，而在任何内容播放或加入排期之前，您都可以先预览结果。整个过程中，手动浏览曲库始终可用。"
+            "q": "Music Director 是什么？",
+            "a": "Music Director 能把简单语言描述的需求转化为音乐。告诉它分区、受众、时间与期望感受；它可以推荐曲库音乐或准备创意方向，而在任何内容播放或加入排期之前，您都可以先预览结果。整个过程中，手动浏览曲库始终可用。"
           },
           {
             "q": "Beat Breeze 除了音乐还能做什么？",
@@ -993,21 +993,21 @@
         "eyebrow": "五分钟即可获得启发",
         "title": "走过完整一天。",
         "highlight": "观察每个触点如何响应。",
-        "description": "选择业态并浏览七个排程时刻。每张卡片代表一个独立区域；音乐、活跃度、试听与 Concierge 说明会同步变化。",
+        "description": "选择业态并浏览七个排程时刻。每张卡片代表一个独立区域；音乐、活跃度、试听与 Music Director 说明会同步变化。",
         "machineLabel": "实时场所体验模拟",
         "live": "实时响应中",
         "chooseVenue": "选择业务类型",
         "localTime": "当地时间",
         "chooseTime": "选择时间",
         "playlistDetail": "目标活跃度 {energy}/100 · 约 {bpm} BPM",
-        "concierge": "为何适合这个区域",
+        "musicDirector": "为何适合这个区域",
         "energy": "所选区域活跃度",
         "zonePlanEyebrow": "一个场所，三种音乐任务",
         "zonePlanTitleLine1": "三个区域。",
         "zonePlanTitleLine2": "三套独立建议。",
         "zonePlanDescription": "每张卡片控制不同区域。选择一个区域，即可试听它的 Beat Breeze 样本，并了解它为何适合当前时刻。",
         "zoneLabel": "区域 {index} · {zone}",
-        "conciergeReason": "{time} 的 {zone} 推荐 {playlist}：{purpose}。约 {bpm} BPM、目标活跃度 {energy}/100，使这个区域与另外两个区域保持清晰区别。"
+        "musicDirectorReason": "{time} 的 {zone} 推荐 {playlist}：{purpose}。约 {bpm} BPM、目标活跃度 {energy}/100，使这个区域与另外两个区域保持清晰区别。"
       },
       "touchpoints": {
         "eyebrow": "互联触点",
@@ -1174,7 +1174,7 @@
         "title": "选择适合您业务的",
         "highlight": "音乐世界。",
         "description": "Beat Breeze 为运营人员提供智能自助平台；Soundtrack 则在 BMAsia 指导下带来耳熟能详的商业音乐。",
-        "bbCore": "分区 · 排期 · Concierge",
+        "bbCore": "分区 · 排期 · Music Director",
         "tryBeatBreeze": "开始 Beat Breeze 试用",
         "sybDiscLabel": "BMAsia 协助服务",
         "sybDiscText": "适合商业场所的知名音乐",
@@ -1217,14 +1217,14 @@
         "playlist": "Deep House · 19:00 开始",
         "status": "就绪"
       },
-      "conciergeLabel": "Concierge 建议",
-      "conciergeText": "客人到达前温和提升屋顶区域的能量；入住高峰时保持大堂平静。",
+      "musicDirectorLabel": "Music Director 建议",
+      "musicDirectorText": "客人到达前温和提升屋顶区域的能量；入住高峰时保持大堂平静。",
       "reason": "基于区域、时间、能量和今日排程"
     },
     "beatBreezeLead": {
       "label": "BMAsia 出品 Beat Breeze",
       "title": "一个场所平台，让每个区域保持节奏。",
-      "description": "自行选曲或让 Concierge 安排全天氛围。在一个地方排程并控制所有播放器。",
+      "description": "自行选曲或让 Music Director 安排全天氛围。在一个地方排程并控制所有播放器。",
       "cta": "了解平台",
       "proof1": "免费 14 天",
       "proof2": "无需信用卡",
@@ -1237,7 +1237,7 @@
       "step2Title": "连接播放器",
       "step2Text": "使用浏览器或在现有设备上安装应用。",
       "step3Title": "启动每个区域",
-      "step3Text": "自行选曲或让 Concierge 创建初始方案。",
+      "step3Text": "自行选曲或让 Music Director 创建初始方案。",
       "finalDescription": "在一个区域完整试用 14 天。无需信用卡、专用盒子或复杂设置。"
     },
     "alternative": {
@@ -1273,7 +1273,7 @@
         "tagline": "全授权背景音乐 — 零烦恼。",
         "feature1": "持续增长的免版税曲库 — 已获商业使用授权",
         "feature2": "无需向版权集体管理组织付费，无合规文书",
-        "feature3": "Music Concierge 提供可解释的建议",
+        "feature3": "Music Director 提供可解释的建议",
         "feature4": "支持离线播放与多区域排程",
         "cta": "了解 Beat Breeze"
       },
@@ -1554,7 +1554,7 @@
     "ourSolutions": {
       "sectionTitle": "我们的解决方案",
       "sybTagline": "知名商业曲库——熟悉的艺人、Spotify 导入与 BMAsia 协助配置",
-      "bbTagline": "智能音乐运营——不断扩充的精选曲库、Music Concierge、排期与实时分区控制",
+      "bbTagline": "智能音乐运营——不断扩充的精选曲库、Music Director、排期与实时分区控制",
       "learnMore": "了解 BMAsia 的服务流程 →"
     },
     "questions": {

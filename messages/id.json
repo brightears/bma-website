@@ -686,12 +686,12 @@
       "zonesReady": "{count} zona siap",
       "explainable": "Dapat dijelaskan",
       "waysLabel": "Satu sistem, dua cara bekerja",
-      "waysTitle": "Pilih musik sendiri atau bekerja dengan Concierge.",
+      "waysTitle": "Pilih musik sendiri atau bekerja dengan Music Director.",
       "waysDescription": "Mulai secara mandiri, serahkan pekerjaan berulang nanti, dan tinjau setiap rekomendasi sebelum diterapkan di lokasi.",
       "selfTitle": "Anda tetap memegang kendali",
       "selfText": "Jelajahi katalog, dengarkan pratinjau, buat jadwal, dan kendalikan pemutaran di setiap zona.",
-      "conciergeTitle": "Concierge bekerja bersama Anda",
-      "conciergeText": "Sistem mempelajari konteks bisnis, menjelaskan alasannya, dan dapat mengelola pekerjaan musik berkelanjutan saat diaktifkan.",
+      "musicDirectorTitle": "Music Director bekerja bersama Anda",
+      "musicDirectorText": "Sistem mempelajari konteks bisnis, menjelaskan alasannya, dan dapat mengelola pekerjaan musik berkelanjutan saat diaktifkan.",
       "playersLabel": "Player",
       "playersTitle": "Gunakan perangkat yang sudah Anda miliki.",
       "mobile": "iPhone, iPad & Android",
@@ -759,10 +759,10 @@
         "signal": "Sinyal",
         "volumeNote": "Perubahan volume yang dijelaskan di sini merupakan preset terjadwal atau integrasi sistem venue yang didukung—bukan pemantauan mikrofon terus-menerus."
       },
-      "concierge": {
-        "eyebrow": "Music Concierge, dalam bahasa sederhana",
+      "musicDirector": {
+        "eyebrow": "Music Director, dalam bahasa sederhana",
         "title": "Minta hasilnya. Tinjau apa yang diberikan.",
-        "description": "Sampaikan kepada Concierge tentang zona, audiens, waktu, dan suasana yang diinginkan. Concierge dapat merekomendasikan musik dari katalog atau menyiapkan arah kreatif; Anda meninjau hasilnya sebelum musik diputar atau dimasukkan ke jadwal.",
+        "description": "Sampaikan kepada Music Director tentang zona, audiens, waktu, dan suasana yang diinginkan. Music Director dapat merekomendasikan musik dari katalog atau menyiapkan arah kreatif; Anda meninjau hasilnya sebelum musik diputar atau dimasukkan ke jadwal.",
         "ready": "Siap menerima brief",
         "recommendation": "Rekomendasi siap diputar",
         "preview": "Dengarkan sampel",
@@ -900,8 +900,8 @@
             "a": "Tidak diperlukan perangkat keras player khusus. Beat Breeze berjalan di browser atau sebagai aplikasi pada perangkat yang sudah dimiliki venue, dan pemutarannya dapat digunakan offline."
           },
           {
-            "q": "Apa itu Music Concierge?",
-            "a": "Music Concierge mengubah brief dalam bahasa sederhana menjadi musik. Sampaikan zona, audiens, waktu, dan suasana yang diinginkan; Music Concierge dapat merekomendasikan musik dari katalog atau menyiapkan arah kreatif, dan Anda meninjau hasilnya sebelum musik diputar atau dimasukkan ke jadwal. Penelusuran manual selalu tersedia."
+            "q": "Apa itu Music Director?",
+            "a": "Music Director mengubah brief dalam bahasa sederhana menjadi musik. Sampaikan zona, audiens, waktu, dan suasana yang diinginkan; Music Director dapat merekomendasikan musik dari katalog atau menyiapkan arah kreatif, dan Anda meninjau hasilnya sebelum musik diputar atau dimasukkan ke jadwal. Penelusuran manual selalu tersedia."
           },
           {
             "q": "Apakah Beat Breeze bisa lebih dari sekadar musik?",
@@ -993,21 +993,21 @@
         "eyebrow": "Mesin Waktu Venue BMAsia",
         "title": "Jalani satu hari.",
         "highlight": "Lihat setiap titik interaksi merespons.",
-        "description": "Pilih jenis bisnis dan jelajahi tujuh momen jadwal. Setiap kartu adalah zona terpisah; musik, tingkat aktivasi, pratinjau, dan penjelasan Concierge berubah bersama.",
+        "description": "Pilih jenis bisnis dan jelajahi tujuh momen jadwal. Setiap kartu adalah zona terpisah; musik, tingkat aktivasi, pratinjau, dan penjelasan Music Director berubah bersama.",
         "machineLabel": "Pratinjau pengalaman venue langsung",
         "live": "Merespons langsung",
         "chooseVenue": "Pilih jenis bisnis",
         "localTime": "Waktu lokal",
         "chooseTime": "Pilih waktu",
         "playlistDetail": "Target aktivasi {energy}/100 · sekitar {bpm} BPM",
-        "concierge": "Mengapa cocok untuk zona ini",
+        "musicDirector": "Mengapa cocok untuk zona ini",
         "energy": "Aktivasi zona terpilih",
         "zonePlanEyebrow": "Satu venue, tiga tugas musik",
         "zonePlanTitleLine1": "Tiga zona.",
         "zonePlanTitleLine2": "Tiga rekomendasi terpisah.",
         "zonePlanDescription": "Setiap kartu mengontrol zona yang berbeda. Pilih satu untuk mendengar sampel Beat Breeze dan melihat alasan kecocokannya saat ini.",
         "zoneLabel": "Zona {index} · {zone}",
-        "conciergeReason": "{playlist} direkomendasikan untuk {zone} pada {time}: {purpose}. Sekitar {bpm} BPM dengan target aktivasi {energy}/100 membedakan zona ini dari dua zona lainnya."
+        "musicDirectorReason": "{playlist} direkomendasikan untuk {zone} pada {time}: {purpose}. Sekitar {bpm} BPM dengan target aktivasi {energy}/100 membedakan zona ini dari dua zona lainnya."
       },
       "venues": {
         "hotel": "Hotel",
@@ -1116,7 +1116,7 @@
         "title": "Pilih dunia musik",
         "highlight": "yang sesuai untuk bisnis Anda.",
         "description": "Beat Breeze memberi operator platform layanan mandiri yang cerdas. Soundtrack menghadirkan repertoar komersial yang dikenal dengan panduan BMAsia.",
-        "bbCore": "Zona · jadwal · Concierge",
+        "bbCore": "Zona · jadwal · Music Director",
         "tryBeatBreeze": "Mulai uji coba Beat Breeze",
         "sybDiscLabel": "Didampingi BMAsia",
         "sybDiscText": "Musik yang dikenal untuk bisnis",
@@ -1172,7 +1172,7 @@
         "core": "BMAsia",
         "coreText": "Satu brief venue",
         "sound": {
-          "title": "Musik & Concierge",
+          "title": "Musik & Music Director",
           "text": "Temukan, jadwalkan, dan segarkan suara venue."
         },
         "screens": {
@@ -1217,14 +1217,14 @@
         "playlist": "Deep House · mulai 19:00",
         "status": "Siap"
       },
-      "conciergeLabel": "Rekomendasi Concierge",
-      "conciergeText": "Naikkan energi rooftop perlahan sebelum tamu tiba. Jaga lobi tetap tenang saat check-in paling ramai.",
+      "musicDirectorLabel": "Rekomendasi Music Director",
+      "musicDirectorText": "Naikkan energi rooftop perlahan sebelum tamu tiba. Jaga lobi tetap tenang saat check-in paling ramai.",
       "reason": "Berdasarkan zona, waktu, energi, dan jadwal hari ini"
     },
     "beatBreezeLead": {
       "label": "Beat Breeze oleh BMAsia",
       "title": "Satu platform venue. Semua zona mengalir.",
-      "description": "Pilih musik sendiri atau biarkan Concierge membentuk hari. Jadwalkan dan kendalikan setiap player dari satu tempat.",
+      "description": "Pilih musik sendiri atau biarkan Music Director membentuk hari. Jadwalkan dan kendalikan setiap player dari satu tempat.",
       "cta": "Jelajahi platform",
       "proof1": "Gratis 14 hari",
       "proof2": "Tanpa kartu",
@@ -1237,7 +1237,7 @@
       "step2Title": "Hubungkan player",
       "step2Text": "Gunakan browser atau pasang aplikasi di perangkat yang sudah ada.",
       "step3Title": "Gerakkan setiap zona",
-      "step3Text": "Pilih musik sendiri atau biarkan Concierge membuat rencana awal.",
+      "step3Text": "Pilih musik sendiri atau biarkan Music Director membuat rencana awal.",
       "finalDescription": "Coba pengalaman musik lengkap di satu zona selama 14 hari. Tanpa kartu atau perangkat khusus."
     },
     "alternative": {
@@ -1273,7 +1273,7 @@
         "tagline": "Musik bebas royalti sebagai jantung platform pengalaman venue yang fleksibel.",
         "feature1": "Katalog bebas royalti yang terus bertumbuh — berlisensi untuk bisnis",
         "feature2": "Cakupan lisensi dikonfirmasi untuk paket dan wilayah Anda",
-        "feature3": "Rekomendasi Music Concierge dengan alasan yang jelas",
+        "feature3": "Rekomendasi Music Director dengan alasan yang jelas",
         "feature4": "Dapat digunakan offline, penjadwalan multi-zona",
         "cta": "Jelajahi Beat Breeze"
       },
@@ -1554,7 +1554,7 @@
     "ourSolutions": {
       "sectionTitle": "Solusi Kami",
       "sybTagline": "Repertoar komersial yang dikenal — artis populer, impor Spotify, dan penyiapan dengan dukungan BMAsia",
-      "bbTagline": "Operasi musik cerdas — katalog terkurasi yang terus berkembang, Music Concierge, jadwal, dan kontrol zona langsung",
+      "bbTagline": "Operasi musik cerdas — katalog terkurasi yang terus berkembang, Music Director, jadwal, dan kontrol zona langsung",
       "learnMore": "Lihat cara kerja proses BMAsia →"
     },
     "questions": {
