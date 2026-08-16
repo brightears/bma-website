@@ -44,11 +44,11 @@ const reveal = {
   transition: { duration: 0.62 },
 };
 
-const conciergeScenarios = ['arrival', 'campaign', 'recovery'] as const;
+const musicDirectorScenarios = ['arrival', 'campaign', 'recovery'] as const;
 const capabilityKeys = ['play', 'create', 'communicate', 'connect'] as const;
 
-const conciergeSampleDirections: Record<
-  (typeof conciergeScenarios)[number],
+const musicDirectorSampleDirections: Record<
+  (typeof musicDirectorScenarios)[number],
   { playlist: string; bpm: number }
 > = {
   arrival: { playlist: 'Bossa Nova Lounge', bpm: 98 },
@@ -105,7 +105,7 @@ export default function BeatBreezePage() {
   const volumeT = useTranslations('volumeController');
   const reduceMotion = useReducedMotion();
   const marketProfile = useMarketFeatureProfile();
-  const [scenario, setScenario] = useState<(typeof conciergeScenarios)[number]>('arrival');
+  const [scenario, setScenario] = useState<(typeof musicDirectorScenarios)[number]>('arrival');
   const [sampleAssets, setSampleAssets] = useState<Record<string, PlaylistSampleAsset>>({});
   const [sampleLoadState, setSampleLoadState] = useState<'loading' | 'ready' | 'error'>('loading');
   const [audioState, setAudioState] = useState<'idle' | 'playing' | 'paused' | 'error'>('idle');
@@ -113,8 +113,8 @@ export default function BeatBreezePage() {
   const audioRef = useRef<HTMLAudioElement>(null);
 
   const signup = withAttribution(EXTERNAL_LINKS.beatBreezeSignup, 'beat_breeze_product', 'hero_trial');
-  const catalogue = withAttribution(EXTERNAL_LINKS.beatBreezeCatalogue, 'beat_breeze_product', 'concierge_catalogue');
-  const selectedDirection = conciergeSampleDirections[scenario];
+  const catalogue = withAttribution(EXTERNAL_LINKS.beatBreezeCatalogue, 'beat_breeze_product', 'music_director_catalogue');
+  const selectedDirection = musicDirectorSampleDirections[scenario];
   const selectedSample = useMemo(
     () => closestSample(sampleAssets[selectedDirection.playlist]?.samples, selectedDirection.bpm),
     [sampleAssets, selectedDirection],
@@ -318,13 +318,13 @@ export default function BeatBreezePage() {
       <section className="bma-grain bma-section relative bg-[#06111a]">
         <div className="bma-container grid gap-12 lg:grid-cols-[0.74fr_1.26fr] lg:items-start">
           <motion.div {...reveal} className="lg:sticky lg:top-32">
-            <p className="bma-kicker">{t('redesign.concierge.eyebrow')}</p>
-            <h2 className="bma-section-title mt-5 bg-[linear-gradient(100deg,#ffffff_8%,#ffffff_36%,#e7c55f_68%,#49d5c5_100%)] bg-clip-text text-transparent">{t('redesign.concierge.title')}</h2>
-            <p className="bma-lede mt-6">{t('redesign.concierge.description')}</p>
+            <p className="bma-kicker">{t('redesign.musicDirector.eyebrow')}</p>
+            <h2 className="bma-section-title mt-5 bg-[linear-gradient(100deg,#ffffff_8%,#ffffff_36%,#e7c55f_68%,#49d5c5_100%)] bg-clip-text text-transparent">{t('redesign.musicDirector.title')}</h2>
+            <p className="bma-lede mt-6">{t('redesign.musicDirector.description')}</p>
             <div className="mt-8 space-y-2">
-              {conciergeScenarios.map((key) => (
+              {musicDirectorScenarios.map((key) => (
                 <button key={key} type="button" onClick={() => setScenario(key)} aria-pressed={scenario === key} className={`flex w-full items-center justify-between rounded-2xl border px-5 py-4 text-left transition ${scenario === key ? 'border-brand-orange/35 bg-brand-orange/[0.08] text-white' : 'border-white/[0.08] bg-white/[0.02] text-white/52 hover:bg-white/[0.04]'}`}>
-                  <span><small className="block font-label text-[9px] uppercase tracking-[.18em] text-brand-orange">{t(`redesign.concierge.${key}.label`)}</small><strong className="mt-1 block text-sm font-medium">{t(`redesign.concierge.${key}.prompt`)}</strong></span>
+                  <span><small className="block font-label text-[9px] uppercase tracking-[.18em] text-brand-orange">{t(`redesign.musicDirector.${key}.label`)}</small><strong className="mt-1 block text-sm font-medium">{t(`redesign.musicDirector.${key}.prompt`)}</strong></span>
                   <ArrowRight className={`h-4 w-4 transition-transform ${scenario === key ? 'translate-x-0 text-brand-orange' : '-translate-x-1 text-white/22'}`} />
                 </button>
               ))}
@@ -332,10 +332,10 @@ export default function BeatBreezePage() {
           </motion.div>
 
           <motion.div {...reveal} className="overflow-hidden rounded-[2rem] border border-white/10 bg-[#091722] shadow-[0_34px_100px_rgba(0,0,0,.3)]">
-            <div className="flex items-center justify-between border-b border-white/[0.08] px-5 py-4 sm:px-7"><p className="font-label text-[10px] uppercase tracking-[.2em] text-white/32">Music Concierge</p><span className="inline-flex items-center gap-2 text-xs text-emerald-200"><i className="h-1.5 w-1.5 rounded-full bg-emerald-300" />{t('redesign.concierge.ready')}</span></div>
+            <div className="flex items-center justify-between border-b border-white/[0.08] px-5 py-4 sm:px-7"><p className="font-label text-[10px] uppercase tracking-[.2em] text-white/32">Music Director</p><span className="inline-flex items-center gap-2 text-xs text-emerald-200"><i className="h-1.5 w-1.5 rounded-full bg-emerald-300" />{t('redesign.musicDirector.ready')}</span></div>
             <div className="p-5 sm:p-8">
               <div className="ml-auto max-w-[85%] rounded-[1.4rem_1.4rem_.35rem_1.4rem] bg-brand-orange px-5 py-4 text-sm leading-6 text-[#111820] shadow-[0_18px_50px_rgba(239,166,52,.12)]">
-                {t(`redesign.concierge.${scenario}.request`)}
+                {t(`redesign.musicDirector.${scenario}.request`)}
               </div>
               <div className="mt-6 grid gap-5 rounded-[1.5rem_1.5rem_1.5rem_.35rem] border border-white/[0.08] bg-white/[0.03] p-5 sm:grid-cols-[7rem_1fr] sm:p-6">
                 <div className="relative aspect-square overflow-hidden rounded-2xl">
@@ -347,9 +347,9 @@ export default function BeatBreezePage() {
                   </span>
                 </div>
                 <div>
-                  <p className="font-label text-[10px] uppercase tracking-[.18em] text-[#49d5c5]">{t('redesign.concierge.recommendation')}</p>
-                  <h3 className="mt-2 text-xl font-medium">{t(`redesign.concierge.${scenario}.result`)}</h3>
-                  <p className="mt-3 text-sm leading-6 text-white/48">{t(`redesign.concierge.${scenario}.reason`)}</p>
+                  <p className="font-label text-[10px] uppercase tracking-[.18em] text-[#49d5c5]">{t('redesign.musicDirector.recommendation')}</p>
+                  <h3 className="mt-2 text-xl font-medium">{t(`redesign.musicDirector.${scenario}.result`)}</h3>
+                  <p className="mt-3 text-sm leading-6 text-white/48">{t(`redesign.musicDirector.${scenario}.reason`)}</p>
                   <div className="mt-5 flex flex-wrap gap-2">
                     <button
                       type="button"
@@ -360,7 +360,7 @@ export default function BeatBreezePage() {
                       className="inline-flex items-center gap-2 rounded-full border border-white/12 px-4 py-2 text-xs font-semibold text-white/72 transition hover:border-brand-orange/35 hover:bg-brand-orange/[0.07] disabled:cursor-not-allowed disabled:opacity-35"
                     >
                       {audioState === 'playing' ? <Pause className="h-3.5 w-3.5 fill-current" /> : <Play className="h-3.5 w-3.5 fill-current" />}
-                      {audioState === 'playing' ? immersive('audio.pause') : t('redesign.concierge.preview')}
+                      {audioState === 'playing' ? immersive('audio.pause') : t('redesign.musicDirector.preview')}
                     </button>
                     <button
                       type="button"
@@ -369,13 +369,13 @@ export default function BeatBreezePage() {
                       className="inline-flex items-center gap-2 rounded-full bg-brand-orange px-4 py-2 text-xs font-semibold text-[#111820] transition hover:bg-[#ffc164]"
                     >
                       <CalendarClock className="h-3.5 w-3.5" />
-                      {t('redesign.concierge.schedule')}
+                      {t('redesign.musicDirector.schedule')}
                     </button>
                     <a
                       href={catalogue}
                       className="inline-flex items-center gap-2 rounded-full border border-white/12 px-4 py-2 text-xs font-semibold text-white/72 transition hover:border-[#49d5c5]/35 hover:bg-[#49d5c5]/[0.06]"
                     >
-                      {t('redesign.concierge.keepBrowsing')}
+                      {t('redesign.musicDirector.keepBrowsing')}
                       <ExternalLink className="h-3.5 w-3.5" />
                     </a>
                   </div>
@@ -396,19 +396,19 @@ export default function BeatBreezePage() {
                         <CalendarClock className="h-4 w-4" />
                       </span>
                       <div>
-                        <p className="font-label text-[9px] uppercase tracking-[.18em] text-[#7ce8da]">{t('redesign.concierge.steps.review')}</p>
-                        <strong className="mt-1 block text-sm font-medium text-white/82">{t(`redesign.concierge.${scenario}.prompt`)}</strong>
+                        <p className="font-label text-[9px] uppercase tracking-[.18em] text-[#7ce8da]">{t('redesign.musicDirector.steps.review')}</p>
+                        <strong className="mt-1 block text-sm font-medium text-white/82">{t(`redesign.musicDirector.${scenario}.prompt`)}</strong>
                       </div>
-                      <span className="font-mono text-[10px] text-white/38">{t('redesign.concierge.steps.play')}</span>
+                      <span className="font-mono text-[10px] text-white/38">{t('redesign.musicDirector.steps.play')}</span>
                     </div>
                   </motion.div>
                 )}
               </AnimatePresence>
               <div className="mt-6 grid gap-3 sm:grid-cols-4">
-                {(['ask', 'recommend', 'review', 'play'] as const).map((key, index) => <div key={key} className="rounded-xl border border-white/[0.07] p-3"><span className="font-mono text-[10px] text-brand-orange">0{index + 1}</span><p className="mt-2 text-xs font-medium text-white/68">{t(`redesign.concierge.steps.${key}`)}</p></div>)}
+                {(['ask', 'recommend', 'review', 'play'] as const).map((key, index) => <div key={key} className="rounded-xl border border-white/[0.07] p-3"><span className="font-mono text-[10px] text-brand-orange">0{index + 1}</span><p className="mt-2 text-xs font-medium text-white/68">{t(`redesign.musicDirector.steps.${key}`)}</p></div>)}
               </div>
             </div>
-            <div className="border-t border-white/[0.08] bg-brand-orange/[0.045] px-5 py-4 sm:px-8"><p className="flex items-start gap-3 text-xs leading-5 text-white/48"><Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-orange" />{t('redesign.concierge.control')}</p></div>
+            <div className="border-t border-white/[0.08] bg-brand-orange/[0.045] px-5 py-4 sm:px-8"><p className="flex items-start gap-3 text-xs leading-5 text-white/48"><Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-orange" />{t('redesign.musicDirector.control')}</p></div>
             <audio
               ref={audioRef}
               src={selectedAudioSource}

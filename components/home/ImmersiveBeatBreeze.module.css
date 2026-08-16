@@ -1060,7 +1060,7 @@
   background: rgba(255, 255, 255, 0.015);
 }
 
-.conciergeNote { display: flex; align-items: center; gap: 16px; }
+.musicDirectorNote { display: flex; align-items: center; gap: 16px; }
 
 .spark {
   width: 48px;
@@ -1075,7 +1075,7 @@
 
 .spark svg { width: 22px; }
 
-.conciergeNote span:not(.spark),
+.musicDirectorNote span:not(.spark),
 .energyReadout > span {
   display: block;
   margin-bottom: 5px;
@@ -1086,7 +1086,7 @@
   text-transform: uppercase;
 }
 
-.conciergeNote strong { color: rgba(238, 243, 255, 0.72); font-size: 14px; font-weight: 450; }
+.musicDirectorNote strong { color: rgba(238, 243, 255, 0.72); font-size: 14px; font-weight: 450; }
 
 .energyReadout {
   display: grid;

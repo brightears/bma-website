@@ -585,12 +585,12 @@ export function ImmersiveBeatBreeze() {
           </div>
 
           <div className={styles.machineFooter}>
-            <div className={styles.conciergeNote}>
+            <div className={styles.musicDirectorNote}>
               <span className={styles.spark}><Sparkles aria-hidden="true" /></span>
               <div>
-                <span>{t('demo.concierge')}</span>
+                <span>{t('demo.musicDirector')}</span>
                 <strong>
-                  {t('demo.conciergeReason', {
+                  {t('demo.musicDirectorReason', {
                     playlist: selectedPlaylist.title,
                     zone: t(`zones.${selectedPlaylist.zone}`),
                     time: formatHour(hour),

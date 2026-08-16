@@ -686,12 +686,12 @@
       "zonesReady": "{count}개 존 준비 완료",
       "explainable": "설명 가능한 추천",
       "waysLabel": "하나의 시스템, 두 가지 운영 방식",
-      "waysTitle": "직접 음악을 선택하거나 Concierge와 함께 운영하세요.",
+      "waysTitle": "직접 음악을 선택하거나 Music Director와 함께 운영하세요.",
       "waysDescription": "직접 시작한 뒤 반복 업무를 맡기고, 장소에 적용되기 전에 모든 추천을 검토할 수 있습니다.",
       "selfTitle": "항상 직접 제어",
       "selfText": "카탈로그 탐색, 미리 듣기, 스케줄 구성과 모든 존의 재생 제어가 가능합니다.",
-      "conciergeTitle": "Concierge가 함께 일합니다",
-      "conciergeText": "비즈니스 맥락을 학습하고 이유를 설명하며, 활성화하면 지속적인 음악 운영을 관리할 수 있습니다.",
+      "musicDirectorTitle": "Music Director가 함께 일합니다",
+      "musicDirectorText": "비즈니스 맥락을 학습하고 이유를 설명하며, 활성화하면 지속적인 음악 운영을 관리할 수 있습니다.",
       "playersLabel": "플레이어",
       "playersTitle": "이미 보유한 기기를 사용하세요.",
       "mobile": "iPhone, iPad 및 Android",
@@ -759,10 +759,10 @@
         "signal": "신호",
         "volumeNote": "여기서 설명하는 볼륨 변경은 예약 프리셋 또는 지원되는 매장 시스템 연동이며, 마이크로 계속 듣는 방식이 아닙니다."
       },
-      "concierge": {
-        "eyebrow": "쉬운 말로 설명하는 Music Concierge",
+      "musicDirector": {
+        "eyebrow": "쉬운 말로 설명하는 Music Director",
         "title": "원하는 결과를 요청하고 답을 검토하세요.",
-        "description": "Concierge에 존, 고객층, 시간, 원하는 느낌을 알려주세요. 카탈로그 음악을 추천하거나 크리에이티브 방향을 준비하며, 재생하거나 일정에 넣기 전에 결과를 미리 확인할 수 있습니다.",
+        "description": "Music Director에 존, 고객층, 시간, 원하는 느낌을 알려주세요. 카탈로그 음악을 추천하거나 크리에이티브 방향을 준비하며, 재생하거나 일정에 넣기 전에 결과를 미리 확인할 수 있습니다.",
         "ready": "브리프 준비 완료",
         "recommendation": "재생 가능한 추천",
         "preview": "샘플 듣기",
@@ -900,8 +900,8 @@
             "a": "특별한 플레이어 하드웨어는 필요하지 않습니다. Beat Breeze는 매장이 이미 보유한 기기에서 브라우저나 앱으로 실행되며, 오프라인 재생도 가능합니다."
           },
           {
-            "q": "Music Concierge는 무엇인가요?",
-            "a": "Music Concierge는 쉬운 말로 작성한 브리프를 음악으로 바꿔 줍니다. 존, 고객층, 시간, 원하는 느낌을 알려주면 카탈로그 음악을 추천하거나 크리에이티브 방향을 준비하며, 재생하거나 일정에 넣기 전에 결과를 미리 확인할 수 있습니다. 카탈로그를 직접 탐색하는 방식도 언제든 그대로 사용할 수 있습니다."
+            "q": "Music Director는 무엇인가요?",
+            "a": "Music Director는 쉬운 말로 작성한 브리프를 음악으로 바꿔 줍니다. 존, 고객층, 시간, 원하는 느낌을 알려주면 카탈로그 음악을 추천하거나 크리에이티브 방향을 준비하며, 재생하거나 일정에 넣기 전에 결과를 미리 확인할 수 있습니다. 카탈로그를 직접 탐색하는 방식도 언제든 그대로 사용할 수 있습니다."
           },
           {
             "q": "Beat Breeze는 음악 외에 다른 기능도 제공하나요?",
@@ -993,21 +993,21 @@
         "eyebrow": "BMAsia Venue Time Machine",
         "title": "하루를 움직여 보세요.",
         "highlight": "모든 접점이 반응합니다.",
-        "description": "업종을 선택하고 7개의 스케줄 시점을 이동해 보세요. 각 카드는 별도 존이며 음악, 활성도, 미리듣기, Concierge 설명이 함께 바뀝니다.",
+        "description": "업종을 선택하고 7개의 스케줄 시점을 이동해 보세요. 각 카드는 별도 존이며 음악, 활성도, 미리듣기, Music Director 설명이 함께 바뀝니다.",
         "machineLabel": "실시간 매장 경험 미리보기",
         "live": "실시간 반응 중",
         "chooseVenue": "업종 선택",
         "localTime": "현지 시간",
         "chooseTime": "시간대 선택",
         "playlistDetail": "목표 활성도 {energy}/100 · 약 {bpm} BPM",
-        "concierge": "이 존에 맞는 이유",
+        "musicDirector": "이 존에 맞는 이유",
         "energy": "선택한 존 활성도",
         "zonePlanEyebrow": "하나의 베뉴, 세 가지 음악 역할",
         "zonePlanTitleLine1": "세 개의 존.",
         "zonePlanTitleLine2": "세 가지 개별 추천.",
         "zonePlanDescription": "각 카드는 서로 다른 존을 제어합니다. 하나를 선택하면 Beat Breeze 샘플과 지금 이 존에 맞는 이유를 볼 수 있습니다.",
         "zoneLabel": "존 {index} · {zone}",
-        "conciergeReason": "{time}의 {zone}에는 {playlist}을(를) 추천합니다: {purpose}. 약 {bpm} BPM, 목표 활성도 {energy}/100으로 다른 두 존과 역할을 구분합니다."
+        "musicDirectorReason": "{time}의 {zone}에는 {playlist}을(를) 추천합니다: {purpose}. 약 {bpm} BPM, 목표 활성도 {energy}/100으로 다른 두 존과 역할을 구분합니다."
       },
       "touchpoints": {
         "eyebrow": "연결된 접점",
@@ -1115,7 +1115,7 @@
         "core": "BMAsia",
         "coreText": "공간을 위한 하나의 브리프",
         "sound": {
-          "title": "음악 & Concierge",
+          "title": "음악 & Music Director",
           "text": "공간의 사운드를 찾고 편성하고 새롭게 합니다."
         },
         "screens": {
@@ -1174,7 +1174,7 @@
         "title": "비즈니스에 맞는",
         "highlight": "음악 세계를 선택하세요.",
         "description": "Beat Breeze는 운영자를 위한 지능형 셀프서비스 플랫폼입니다. Soundtrack은 BMAsia의 지원과 함께 익숙한 상업 음악 레퍼토리를 제공합니다.",
-        "bbCore": "존 · 스케줄 · Concierge",
+        "bbCore": "존 · 스케줄 · Music Director",
         "tryBeatBreeze": "Beat Breeze 체험 시작",
         "sybDiscLabel": "BMAsia 지원",
         "sybDiscText": "비즈니스를 위한 익숙한 음악",
@@ -1217,14 +1217,14 @@
         "playlist": "Deep House · 19:00 시작",
         "status": "준비"
       },
-      "conciergeLabel": "Concierge 추천",
-      "conciergeText": "손님 도착 전 루프톱의 에너지를 부드럽게 높이고, 체크인이 붐빌 때는 로비를 차분하게 유지하세요.",
+      "musicDirectorLabel": "Music Director 추천",
+      "musicDirectorText": "손님 도착 전 루프톱의 에너지를 부드럽게 높이고, 체크인이 붐빌 때는 로비를 차분하게 유지하세요.",
       "reason": "존, 시간, 에너지, 오늘의 스케줄을 기반으로 추천"
     },
     "beatBreezeLead": {
       "label": "BMAsia의 Beat Breeze",
       "title": "하나의 베뉴 플랫폼. 모든 존이 자연스럽게.",
-      "description": "직접 음악을 고르거나 Concierge가 하루를 설계하도록 하세요. 모든 플레이어를 한곳에서 스케줄하고 제어합니다.",
+      "description": "직접 음악을 고르거나 Music Director가 하루를 설계하도록 하세요. 모든 플레이어를 한곳에서 스케줄하고 제어합니다.",
       "cta": "플랫폼 살펴보기",
       "proof1": "14일 무료",
       "proof2": "카드 불필요",
@@ -1237,7 +1237,7 @@
       "step2Title": "플레이어 연결",
       "step2Text": "브라우저를 사용하거나 기존 기기에 앱을 설치하세요.",
       "step3Title": "모든 존을 실행",
-      "step3Text": "직접 음악을 고르거나 Concierge가 첫 플랜을 만들게 하세요.",
+      "step3Text": "직접 음악을 고르거나 Music Director가 첫 플랜을 만들게 하세요.",
       "finalDescription": "한 개 존에서 14일간 전체 음악 경험을 체험하세요. 카드나 전용 장비가 필요 없습니다."
     },
     "alternative": {
@@ -1273,7 +1273,7 @@
         "tagline": "유연한 매장 경험 플랫폼의 중심이 되는 로열티 프리 음악.",
         "feature1": "계속 성장하는 로열티 프리 카탈로그 — 비즈니스용 라이선스 포함",
         "feature2": "선택한 플랜과 지역에 맞는 라이선스 범위 확인",
-        "feature3": "이유를 설명하는 Music Concierge 추천",
+        "feature3": "이유를 설명하는 Music Director 추천",
         "feature4": "오프라인 사용 가능, 다중 구역 스케줄링",
         "cta": "Beat Breeze 살펴보기"
       },
@@ -1554,7 +1554,7 @@
     "ourSolutions": {
       "sectionTitle": "제공 솔루션",
       "sybTagline": "익숙한 상업용 레퍼토리 — 유명 아티스트, Spotify 가져오기, BMAsia 지원 설정",
-      "bbTagline": "지능형 음악 운영 — 지속적으로 확장되는 큐레이션 카탈로그, Music Concierge, 스케줄 및 실시간 존 제어",
+      "bbTagline": "지능형 음악 운영 — 지속적으로 확장되는 큐레이션 카탈로그, Music Director, 스케줄 및 실시간 존 제어",
       "learnMore": "BMAsia 운영 방식 보기 →"
     },
     "questions": {

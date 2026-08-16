@@ -686,12 +686,12 @@
       "zonesReady": "{count}ゾーン準備完了",
       "explainable": "理由を説明",
       "waysLabel": "一つのシステム、二つの運用方法",
-      "waysTitle": "自分で選ぶ。あるいはConciergeと運用する。",
+      "waysTitle": "自分で選ぶ。あるいはMusic Directorと運用する。",
       "waysDescription": "まずは自分で始め、反復作業は後から任せることができます。施設へ反映される前にすべての提案を確認できます。",
       "selfTitle": "常に自分でコントロール",
       "selfText": "カタログの閲覧、試聴、スケジュール作成、すべてのゾーンの再生管理が可能です。",
-      "conciergeTitle": "Conciergeが一緒に運用",
-      "conciergeText": "ビジネスの背景を学び、理由を説明し、有効化すると継続的な音楽運用を管理します。",
+      "musicDirectorTitle": "Music Directorが一緒に運用",
+      "musicDirectorText": "ビジネスの背景を学び、理由を説明し、有効化すると継続的な音楽運用を管理します。",
       "playersLabel": "プレイヤー",
       "playersTitle": "お手持ちのデバイスをそのまま利用できます。",
       "mobile": "iPhone、iPad、Android",
@@ -759,10 +759,10 @@
         "signal": "シグナル",
         "volumeNote": "ここで説明する音量変更は、スケジュール済みプリセットまたは対応する施設システムとの連携です。マイクによる常時検知ではありません。"
       },
-      "concierge": {
-        "eyebrow": "わかりやすいMusic Concierge",
+      "musicDirector": {
+        "eyebrow": "わかりやすいMusic Director",
         "title": "望む結果を伝え、提案を確認する。",
-        "description": "ゾーン、客層、時間、望む雰囲気をConciergeに伝えます。カタログ楽曲の提案やクリエイティブ方向性を準備し、再生やスケジュール登録の前に結果をプレビューできます。",
+        "description": "ゾーン、客層、時間、望む雰囲気をMusic Directorに伝えます。カタログ楽曲の提案やクリエイティブ方向性を準備し、再生やスケジュール登録の前に結果をプレビューできます。",
         "ready": "ブリーフを受付中",
         "recommendation": "再生可能な提案",
         "preview": "サンプルを聴く",
@@ -900,8 +900,8 @@
             "a": "専用プレイヤーハードウェアは不要です。Beat Breezeは、施設がすでにお持ちのデバイス上でブラウザまたはアプリとして動作し、再生はオフラインにも対応しています。"
           },
           {
-            "q": "Music Conciergeとは何ですか？",
-            "a": "Music Conciergeは、普段の言葉で伝えたブリーフを音楽に変えます。ゾーン、客層、時間、望む雰囲気を伝えると、カタログ楽曲を提案したり、クリエイティブな方向性を準備したりします。再生やスケジュール登録の前に、結果をプレビューできます。カタログの手動ブラウズも、いつでもご利用いただけます。"
+            "q": "Music Directorとは何ですか？",
+            "a": "Music Directorは、普段の言葉で伝えたブリーフを音楽に変えます。ゾーン、客層、時間、望む雰囲気を伝えると、カタログ楽曲を提案したり、クリエイティブな方向性を準備したりします。再生やスケジュール登録の前に、結果をプレビューできます。カタログの手動ブラウズも、いつでもご利用いただけます。"
           },
           {
             "q": "Beat Breezeは音楽以外にも対応できますか？",
@@ -993,21 +993,21 @@
         "eyebrow": "BMAsia Venue Time Machine",
         "title": "一日を動かしてみる。",
         "highlight": "すべての接点が反応する。",
-        "description": "業態を選び、7つの時間帯を動かしてみてください。各カードは別々のゾーンで、音楽、活性度、プレビュー、Conciergeの説明が連動します。",
+        "description": "業態を選び、7つの時間帯を動かしてみてください。各カードは別々のゾーンで、音楽、活性度、プレビュー、Music Directorの説明が連動します。",
         "machineLabel": "空間体験ライブプレビュー",
         "live": "リアルタイムで反応中",
         "chooseVenue": "業種を選択",
         "localTime": "現地時間",
         "chooseTime": "時間帯を選択",
         "playlistDetail": "目標活性度 {energy}/100 · 約{bpm} BPM",
-        "concierge": "このゾーンに合う理由",
+        "musicDirector": "このゾーンに合う理由",
         "energy": "選択中ゾーンの活性度",
         "zonePlanEyebrow": "1つの施設、3つの音楽の役割",
         "zonePlanTitleLine1": "3つのゾーン。",
         "zonePlanTitleLine2": "3つの個別提案。",
         "zonePlanDescription": "各カードは異なるゾーンを操作します。選択すると、Beat Breezeのサンプルと、この時間に合う理由を確認できます。",
         "zoneLabel": "ゾーン {index} · {zone}",
-        "conciergeReason": "{time}の{zone}には{playlist}を提案します。目的は「{purpose}」。約{bpm} BPM、目標活性度{energy}/100で、ほかの2ゾーンと明確に役割を分けます。"
+        "musicDirectorReason": "{time}の{zone}には{playlist}を提案します。目的は「{purpose}」。約{bpm} BPM、目標活性度{energy}/100で、ほかの2ゾーンと明確に役割を分けます。"
       },
       "touchpoints": {
         "eyebrow": "つながるタッチポイント",
@@ -1115,7 +1115,7 @@
         "core": "BMAsia",
         "coreText": "空間のためのひとつのブリーフ",
         "sound": {
-          "title": "音楽 & Concierge",
+          "title": "音楽 & Music Director",
           "text": "空間のサウンドを探し、編成し、更新します。"
         },
         "screens": {
@@ -1174,7 +1174,7 @@
         "title": "ビジネスに合う",
         "highlight": "音楽の世界を選ぶ。",
         "description": "Beat Breezeは運営者向けの知的なセルフサービスプラットフォーム。SoundtrackはBMAsiaのサポートとともに、親しみのある商用レパートリーを提供します。",
-        "bbCore": "ゾーン · スケジュール · Concierge",
+        "bbCore": "ゾーン · スケジュール · Music Director",
         "tryBeatBreeze": "Beat Breezeを試す",
         "sybDiscLabel": "BMAsiaがサポート",
         "sybDiscText": "ビジネスのための親しみある音楽",
@@ -1217,14 +1217,14 @@
         "playlist": "Deep House · 19:00開始",
         "status": "準備完了"
       },
-      "conciergeLabel": "Conciergeの提案",
-      "conciergeText": "来店前にルーフトップのエネルギーを緩やかに上げ、チェックインのピークはロビーを穏やかに保ちます。",
+      "musicDirectorLabel": "Music Directorの提案",
+      "musicDirectorText": "来店前にルーフトップのエネルギーを緩やかに上げ、チェックインのピークはロビーを穏やかに保ちます。",
       "reason": "ゾーン、時間、エネルギー、今日のスケジュールに基づく提案"
     },
     "beatBreezeLead": {
       "label": "Beat Breeze by BMAsia",
       "title": "ひとつの施設プラットフォーム。全ゾーンを心地よく。",
-      "description": "自分で選曲するか、Conciergeに一日を任せるか。すべてのプレーヤーを一か所でスケジュール・管理できます。",
+      "description": "自分で選曲するか、Music Directorに一日を任せるか。すべてのプレーヤーを一か所でスケジュール・管理できます。",
       "cta": "プラットフォームを見る",
       "proof1": "14日間無料",
       "proof2": "カード不要",
@@ -1237,7 +1237,7 @@
       "step2Title": "プレーヤーを接続",
       "step2Text": "ブラウザまたは手持ちの端末にアプリをインストールします。",
       "step3Title": "すべてのゾーンを稼働",
-      "step3Text": "自分で選曲するか、Conciergeに最初のプランを作らせます。",
+      "step3Text": "自分で選曲するか、Music Directorに最初のプランを作らせます。",
       "finalDescription": "1ゾーンで14日間、すべての機能をお試しください。カードも専用機器も不要です。"
     },
     "alternative": {
@@ -1273,7 +1273,7 @@
         "tagline": "柔軟な空間体験プラットフォームの中心に、ロイヤリティフリー音楽を。",
         "feature1": "成長し続けるロイヤリティフリー・カタログ — 商用ライセンス済み",
         "feature2": "プランと地域に適用されるライセンス範囲を確認",
-        "feature3": "理由まで説明するMusic Conciergeの提案",
+        "feature3": "理由まで説明するMusic Directorの提案",
         "feature4": "オフライン対応、複数ゾーンのスケジューリング",
         "cta": "Beat Breezeを見る"
       },
@@ -1554,7 +1554,7 @@
     "ourSolutions": {
       "sectionTitle": "当社のソリューション",
       "sybTagline": "親しみのある商用レパートリー — 有名アーティスト、Spotify インポート、BMAsia による導入支援",
-      "bbTagline": "インテリジェントな音楽運用 — 拡充を続ける厳選カタログ、Music Concierge、スケジュール、ゾーンのライブ管理",
+      "bbTagline": "インテリジェントな音楽運用 — 拡充を続ける厳選カタログ、Music Director、スケジュール、ゾーンのライブ管理",
       "learnMore": "BMAsiaのプロセスを見る →"
     },
     "questions": {
