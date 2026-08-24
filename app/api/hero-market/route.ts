@@ -14,7 +14,7 @@ export const dynamic = 'force-dynamic';
 
 const DEFAULT_SAMPLE_ORIGIN = 'https://bmasia-audio-sharing.onrender.com';
 const CATALOGUE_REVALIDATE_SECONDS = 21_600;
-const COVER_REVALIDATE_SECONDS = 1_800;
+const EXPERIENCE_CACHE_SECONDS = 600;
 const UPSTREAM_TIMEOUT_MS = 10_000;
 
 type CatalogueCache = {
@@ -115,8 +115,11 @@ async function loadPlaylistCovers(names: string[]) {
   const url = new URL('/api/public/venue-samples', getSampleOrigin());
   url.searchParams.set('names', names.join('|'));
   const response = await fetch(url, {
+    // Cover URLs are temporary R2 credentials. Persisting this response in
+    // Next's data cache can outlive the signature and strand every hero tile
+    // on an expired URL, so only the bounded runtime cache below may reuse it.
+    cache: 'no-store',
     headers: { Accept: 'application/json' },
-    next: { revalidate: COVER_REVALIDATE_SECONDS },
     signal: AbortSignal.timeout(UPSTREAM_TIMEOUT_MS),
   });
 
@@ -169,7 +172,7 @@ export async function GET(request: Request) {
     const experience = await experienceRequest;
     heroRuntimeCache.experiences.set(cacheKey, {
       experience,
-      expiresAt: Date.now() + COVER_REVALIDATE_SECONDS * 1_000,
+      expiresAt: Date.now() + EXPERIENCE_CACHE_SECONDS * 1_000,
     });
 
     return jsonResponse(experience);

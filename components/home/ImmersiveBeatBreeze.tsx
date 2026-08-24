@@ -104,6 +104,19 @@ export function ImmersiveBeatBreeze() {
   const audioRef = useRef<HTMLAudioElement>(null);
   const resumeAfterSourceChangeRef = useRef(false);
 
+  const restoreGlobalHeroCovers = () => {
+    setHeroExperience((current) => {
+      if (current.covers === GLOBAL_HERO_COVERS) return current;
+
+      return {
+        ...current,
+        countryCode: null,
+        covers: GLOBAL_HERO_COVERS,
+        localized: false,
+      };
+    });
+  };
+
   const venue = VENUES[venueKey];
   const hour = TIME_STOPS[timeIndex] ?? TIME_STOPS[0];
   const phaseIndex = getPhaseIndex(hour);
@@ -370,6 +383,7 @@ export function ImmersiveBeatBreeze() {
                             ? '(max-width: 620px) calc(100vw - 36px), (max-width: 900px) 58vw, min(60vw, 410px)'
                             : '(max-width: 620px) 44vw, (max-width: 900px) 19vw, min(20vw, 130px)'}
                           className={styles.coverImage}
+                          onError={restoreGlobalHeroCovers}
                         />
                         {key === 'featured' && hasRegionalLayer ? (
                           <div className={styles.localeNote}>
