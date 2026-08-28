@@ -32,6 +32,12 @@ const nextConfig = {
   async headers() {
     return [
       {
+        source: '/presentations/:path*',
+        headers: [
+          { key: 'X-Robots-Tag', value: 'noindex' },
+        ],
+      },
+      {
         source: '/:path*',
         headers: [
           { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
