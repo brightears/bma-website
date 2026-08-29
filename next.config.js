@@ -53,6 +53,14 @@ const nextConfig = {
     return {
       beforeFiles: [
         {
+          source: '/apps',
+          destination: 'https://bmasia-app-store.onrender.com/apps',
+        },
+        {
+          source: '/apps/:path*',
+          destination: 'https://bmasia-app-store.onrender.com/apps/:path*',
+        },
+        {
           source: '/listen/:path*',
           destination: 'https://bmasia-audio-sharing.onrender.com/listen/:path*',
         },
