@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "deck": "beat-breeze",
+  "status": "two-slide-online-voice-preview",
+  "ready": true,
+  "generatedAt": "2026-09-01T08:32:12Z",
+  "releaseId": "pilot-existing-sulafat-v6",
+  "publicationStatus": "Unlinked, noindex two-slide interaction preview. Reuses approved Sulafat campaign stems; final presenter copy has not been synthesized.",
+  "coverage": {
+    "slideIndexes": [1, 2],
+    "behaviorAfterLastClip": "stop-on-slide"
+  },
+  "source": {
+    "originalDeckPath": "public/presentations/beat-breeze.html",
+    "originalDeckSha256": "b35930cae7e68eafdb2a68d800900cd76ea40891e8c9c3eed18c2dddfd528484",
+    "previewDeckSha256": "866c1e0b2442de72720b17ec5cb8c1443f88cb7da4b250304b5f5a70f7e7a3bc",
+    "audioOrigin": "ACE Music Player meet-beat-breeze v6 narration segments"
+  },
+  "voice": {
+    "provider": "google-gemini",
+    "model": "gemini-3.1-flash-tts-preview",
+    "name": "Sulafat",
+    "performance": "Approved Beat Breeze campaign narrator; reused only to test slide-linked playback."
+  },
+  "processing": {
+    "highpassHz": 65,
+    "loudnessTargetLufs": -18,
+    "truePeakTargetDbtp": -3,
+    "sampleRateHz": 48000,
+    "channels": 1,
+    "format": "MP3",
+    "bitRateKbps": 128
+  },
+  "totalDurationSeconds": 24.783,
+  "slides": [
+    {
+      "index": 1,
+      "id": "01-title",
+      "label": "Title",
+      "src": "audio/pilot-existing-sulafat-v6/01-title.mp3",
+      "text": "Every space has a rhythm. At seven in the morning, the lobby needs calm confidence. It does not need the rooftop.",
+      "audioSha256": "aa241bf1cc4f90caf8f4ad016154275c5d8e4e08ef1e5929ea2b3df23218ecb8",
+      "durationSeconds": 13.143,
+      "codec": "mp3",
+      "sampleRateHz": 48000,
+      "channels": 1,
+      "bitRate": 128000,
+      "integratedLufs": -18.63,
+      "truePeakDbtp": -3.37,
+      "loudnessRangeLu": 2.1
+    },
+    {
+      "index": 2,
+      "id": "02-one-platform-many-jobs",
+      "label": "One platform, many jobs",
+      "src": "audio/pilot-existing-sulafat-v6/02-one-platform-many-jobs.mp3",
+      "text": "Beat Breeze puts the basics in one place: playlists, zones, weekly schedules and central control. Set the day once, then see and change every space from wherever you are.",
+      "audioSha256": "fa78a60df20383b5d3e712b7144068b3889d53052af1a91b15a341a839753427",
+      "durationSeconds": 11.64,
+      "codec": "mp3",
+      "sampleRateHz": 48000,
+      "channels": 1,
+      "bitRate": 128000,
+      "integratedLufs": -18.35,
+      "truePeakDbtp": -3.44,
+      "loudnessRangeLu": 1.0
+    }
+  ]
+}
