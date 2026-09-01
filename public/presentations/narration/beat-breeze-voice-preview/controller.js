@@ -400,7 +400,6 @@
   };
 
   const handleSlideChange = (event) => {
-    dismissInvitation();
     clearAdvanceTimer();
     currentIndex = Number.isInteger(event.detail?.index)
       ? event.detail.index
