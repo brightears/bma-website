@@ -4,14 +4,14 @@
   const CONTROLLER_URL =
     document.currentScript?.src ||
     new URL(
-      "./narration/beat-breeze-voice-preview/controller.js",
+      "./narration/beat-breeze-voice-preview-th/controller.js",
       window.location.href,
     ).href;
   const MANIFEST_URL = new URL("manifest.json", CONTROLLER_URL).href;
   const DISCOVERY_MS = 9500;
   const INVITATION_MS = 9000;
   const INVITATION_SESSION_KEY =
-    "beat-breeze-narration-invitation-seen-en";
+    "beat-breeze-narration-invitation-seen-th";
   const ADVANCE_DELAY_MS = 650;
   const LOCAL_FALLBACK_MANIFEST = {
     deck: "beat-breeze",
@@ -19,63 +19,63 @@
     slides: [
       {
         index: 1,
-        src: "audio/20260901-4d53948a2d9c/01-title.mp3",
+        src: "audio/20260901-5a9a8af5dd0c/01-title.mp3",
       },
       {
         index: 2,
-        src: "audio/20260901-4d53948a2d9c/02-one-platform-many-jobs.mp3",
+        src: "audio/20260901-5a9a8af5dd0c/02-one-platform-many-jobs.mp3",
       },
       {
         index: 3,
-        src: "audio/20260901-4d53948a2d9c/03-music-that-runs-itself.mp3",
+        src: "audio/20260901-5a9a8af5dd0c/03-music-that-runs-itself.mp3",
       },
       {
         index: 4,
-        src: "audio/20260901-4d53948a2d9c/04-automations.mp3",
+        src: "audio/20260901-5a9a8af5dd0c/04-automations.mp3",
       },
       {
         index: 5,
-        src: "audio/20260901-4d53948a2d9c/05-your-music-director.mp3",
+        src: "audio/20260901-5a9a8af5dd0c/05-your-music-director.mp3",
       },
       {
         index: 6,
-        src: "audio/20260901-4d53948a2d9c/06-compose.mp3",
+        src: "audio/20260901-5a9a8af5dd0c/06-compose.mp3",
       },
       {
         index: 7,
-        src: "audio/20260901-4d53948a2d9c/07-studio-and-screens.mp3",
+        src: "audio/20260901-5a9a8af5dd0c/07-studio-and-screens.mp3",
       },
       {
         index: 8,
-        src: "audio/20260901-4d53948a2d9c/08-announcements.mp3",
+        src: "audio/20260901-5a9a8af5dd0c/08-announcements.mp3",
       },
       {
         index: 9,
-        src: "audio/20260901-4d53948a2d9c/09-works-with-claude-and-chatgpt.mp3",
+        src: "audio/20260901-5a9a8af5dd0c/09-works-with-claude-and-chatgpt.mp3",
       },
       {
         index: 10,
-        src: "audio/20260901-4d53948a2d9c/10-built-for-operators.mp3",
+        src: "audio/20260901-5a9a8af5dd0c/10-built-for-operators.mp3",
       },
       {
         index: 11,
-        src: "audio/20260901-4d53948a2d9c/11-never-go-silent.mp3",
+        src: "audio/20260901-5a9a8af5dd0c/11-never-go-silent.mp3",
       },
       {
         index: 12,
-        src: "audio/20260901-4d53948a2d9c/12-why-beat-breeze.mp3",
+        src: "audio/20260901-5a9a8af5dd0c/12-why-beat-breeze.mp3",
       },
       {
         index: 13,
-        src: "audio/20260901-4d53948a2d9c/13-pricing.mp3",
+        src: "audio/20260901-5a9a8af5dd0c/13-pricing.mp3",
       },
       {
         index: 14,
-        src: "audio/20260901-4d53948a2d9c/14-whos-behind-it.mp3",
+        src: "audio/20260901-5a9a8af5dd0c/14-whos-behind-it.mp3",
       },
       {
         index: 15,
-        src: "audio/20260901-4d53948a2d9c/15-close.mp3",
+        src: "audio/20260901-5a9a8af5dd0c/15-close.mp3",
       },
     ],
   };
@@ -191,58 +191,58 @@
     const states = {
       loading: {
         icon: ICONS.loading,
-        visible: "Loading",
-        short: "Loading",
+        visible: "กำลังโหลด",
+        short: "กำลังโหลด",
         pressed: "false",
-        label: "Loading narration",
+        label: "กำลังโหลดเสียงบรรยาย",
         disabled: true,
       },
       unavailable: {
         icon: ICONS.muted,
-        visible: "Voice pending",
-        short: "Pending",
+        visible: "กำลังเตรียมเสียง",
+        short: "รอเสียง",
         pressed: "false",
-        label: "Narration audio is being prepared",
+        label: "กำลังเตรียมเสียงบรรยาย",
         disabled: true,
       },
       idle: {
         icon: ICONS.muted,
-        visible: "Start narration",
-        short: "Start",
+        visible: "เริ่มคำบรรยาย",
+        short: "เริ่มฟัง",
         pressed: "false",
-        label: "Start narration",
+        label: "เริ่มคำบรรยาย",
         disabled: false,
       },
       playing: {
         icon: ICONS.playing,
-        visible: "Narration on",
-        short: "Voice on",
+        visible: "กำลังบรรยาย",
+        short: "กำลังพูด",
         pressed: "true",
-        label: "Mute narration",
+        label: "ปิดเสียงบรรยาย",
         disabled: false,
       },
       muted: {
         icon: ICONS.muted,
-        visible: "Resume narration",
-        short: "Resume",
+        visible: "ฟังคำบรรยายต่อ",
+        short: "ฟังต่อ",
         pressed: "false",
-        label: "Resume narration",
+        label: "ฟังคำบรรยายต่อ",
         disabled: false,
       },
       replay: {
         icon: ICONS.replay,
-        visible: "Replay",
-        short: "Replay",
+        visible: "เล่นใหม่",
+        short: "เล่นใหม่",
         pressed: "false",
-        label: "Replay narrated presentation",
+        label: "เล่นงานนำเสนอพร้อมคำบรรยายอีกครั้ง",
         disabled: false,
       },
       error: {
         icon: ICONS.muted,
-        visible: "Retry audio",
-        short: "Retry",
+        visible: "ลองเสียงอีกครั้ง",
+        short: "ลองใหม่",
         pressed: "false",
-        label: "Retry narration audio",
+        label: "ลองโหลดเสียงบรรยายอีกครั้ง",
         disabled: false,
       },
     };
@@ -272,13 +272,13 @@
       manifestPromise = fetch(MANIFEST_URL, { cache: "no-store" })
         .then((response) => {
           if (!response.ok) {
-            throw new Error(`Narration manifest returned ${response.status}`);
+            throw new Error(`ไฟล์รายการเสียงบรรยายตอบกลับด้วยสถานะ ${response.status}`);
           }
           return response.json();
         })
         .then((value) => {
           if (!value || value.deck !== "beat-breeze") {
-            throw new Error("Narration manifest does not match this deck");
+            throw new Error("ไฟล์รายการเสียงบรรยายไม่ตรงกับงานนำเสนอนี้");
           }
           manifest = value;
           return value;
@@ -303,13 +303,13 @@
 
   const setNarrationUnavailable = () => {
     setButtonState("unavailable");
-    label.textContent = "Voice unavailable";
-    shortLabel.textContent = "Unavailable";
+    label.textContent = "ไม่มีคำบรรยาย";
+    shortLabel.textContent = "ไม่มีเสียง";
     button.setAttribute(
       "aria-label",
-      "Narration is not available on this slide",
+      "สไลด์นี้ไม่มีเสียงบรรยาย",
     );
-    button.title = "Narration is not available on this slide";
+    button.title = "สไลด์นี้ไม่มีเสียงบรรยาย";
   };
 
   const failPlayback = (message) => {
@@ -332,7 +332,7 @@
       if (!data.ready || !Array.isArray(data.slides) || !data.slides.length) {
         narrationEnabled = false;
         setButtonState("unavailable");
-        announce("Narration audio is being prepared.");
+        announce("กำลังเตรียมเสียงบรรยาย");
         return;
       }
 
@@ -340,7 +340,7 @@
       if (!slide?.src) {
         narrationEnabled = false;
         setNarrationUnavailable();
-        announce("Narration is not available on this slide.");
+        announce("สไลด์นี้ไม่มีเสียงบรรยาย");
         return;
       }
 
@@ -357,12 +357,12 @@
       narrationStarted = true;
       completed = false;
       setButtonState("playing");
-      announce(`Narration playing for slide ${currentIndex + 1}.`);
+      announce(`กำลังเล่นคำบรรยายสำหรับสไลด์ ${currentIndex + 1}`);
       await audio.play();
     } catch (error) {
       if (request !== playbackRequest || error?.name === "AbortError") return;
-      console.error("Beat Breeze narration playback failed", error);
-      failPlayback("Narration could not be played. Please try again.");
+      console.error("ไม่สามารถเล่นคำบรรยาย Beat Breeze ได้", error);
+      failPlayback("ไม่สามารถเล่นคำบรรยายได้ โปรดลองอีกครั้ง");
     }
   };
 
@@ -372,7 +372,7 @@
     narrationEnabled = false;
     audio.pause();
     setButtonState("muted");
-    announce("Narration off.");
+    announce("ปิดเสียงบรรยายแล้ว");
   };
 
   const handleToggle = async () => {
@@ -423,7 +423,7 @@
 
       if (!hasNarration) {
         setNarrationUnavailable();
-        announce("Narration is not available on this slide.");
+        announce("สไลด์นี้ไม่มีเสียงบรรยาย");
       } else {
         setButtonState(narrationStarted ? "muted" : "idle");
       }
@@ -452,8 +452,8 @@
       .narration-toggle {
         --narration-progress: 0%;
         position: relative;
-        width: 140px;
-        min-width: 140px;
+        width: 154px;
+        min-width: 154px;
         padding: 0 10px !important;
         gap: 7px;
         overflow: hidden;
@@ -462,6 +462,7 @@
         font-weight: 600;
         letter-spacing: 0.02em;
         color: rgba(255,255,255,0.82) !important;
+        font-family: "Noto Sans Thai", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       }
 
       .narration-toggle::after {
@@ -565,7 +566,7 @@
         background: rgba(20,20,20,0.96);
         box-shadow: 0 18px 44px rgba(0,0,0,0.38);
         color: rgba(255,255,255,0.82);
-        font: 500 13px/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font: 500 13px/1.35 "Noto Sans Thai", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         backdrop-filter: blur(14px);
         -webkit-backdrop-filter: blur(14px);
         animation: narration-invitation-in 240ms ease-out both;
@@ -594,7 +595,7 @@
         background: #EFA634;
         color: #111;
         cursor: pointer;
-        font: 700 12px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font: 700 12px/1 "Noto Sans Thai", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         white-space: nowrap;
       }
 
@@ -664,8 +665,8 @@
         }
         .narration-toggle {
           height: 44px;
-          width: 140px;
-          min-width: 140px;
+          width: 154px;
+          min-width: 154px;
         }
       }
 
@@ -688,6 +689,23 @@
 
     addStyles(root);
 
+    toolbar.setAttribute("aria-label", "ตัวควบคุมงานนำเสนอ");
+    const previousButton = toolbar.querySelector(".btn.prev");
+    const nextButton = toolbar.querySelector(".btn.next");
+    const resetControl = toolbar.querySelector(".btn.reset");
+    if (previousButton) {
+      previousButton.setAttribute("aria-label", "สไลด์ก่อนหน้า");
+      previousButton.title = "สไลด์ก่อนหน้า";
+    }
+    if (nextButton) {
+      nextButton.setAttribute("aria-label", "สไลด์ถัดไป");
+      nextButton.title = "สไลด์ถัดไป";
+    }
+    if (resetControl) {
+      resetControl.setAttribute("aria-label", "เริ่มงานนำเสนอใหม่");
+      resetControl.title = "เริ่มงานนำเสนอใหม่";
+    }
+
     const divider = document.createElement("span");
     divider.className = "divider narration-divider";
     divider.setAttribute("aria-hidden", "true");
@@ -699,8 +717,8 @@
     button.setAttribute("aria-keyshortcuts", "M");
     button.innerHTML = `
       <span class="narration-icon" aria-hidden="true"></span>
-      <span class="narration-label">Narration</span>
-      <span class="narration-label-short">Voice</span>
+      <span class="narration-label">คำบรรยาย</span>
+      <span class="narration-label-short">เสียง</span>
     `;
     icon = button.querySelector(".narration-icon");
     label = button.querySelector(".narration-label");
@@ -722,11 +740,11 @@
     invitation.className = "narration-invitation";
     invitation.hidden = true;
     invitation.setAttribute("role", "group");
-    invitation.setAttribute("aria-label", "Narration invitation");
+    invitation.setAttribute("aria-label", "คำเชิญให้เปิดเสียงบรรยาย");
     invitation.innerHTML = `
-      <span class="narration-invitation-copy">Want the guided version?</span>
-      <button class="narration-invitation-start" type="button">Start narration</button>
-      <button class="narration-invitation-dismiss" type="button" aria-label="Dismiss narration invitation">×</button>
+      <span class="narration-invitation-copy">อยากให้เราพาชมไหม?</span>
+      <button class="narration-invitation-start" type="button">เริ่มคำบรรยาย</button>
+      <button class="narration-invitation-dismiss" type="button" aria-label="ปิดคำเชิญให้เปิดเสียงบรรยาย">×</button>
     `;
     root.append(invitation);
     setButtonState("loading");
@@ -767,12 +785,12 @@
         narrationEnabled = false;
         completed = true;
         setButtonState("replay");
-        announce("Narrated presentation complete.");
+        announce("เล่นงานนำเสนอพร้อมคำบรรยายครบแล้ว");
       }
     });
     audio.addEventListener("error", () => {
       if (audio.getAttribute("src")) {
-        failPlayback("Narration audio could not be loaded.");
+        failPlayback("ไม่สามารถโหลดเสียงบรรยายได้");
       }
     });
 
@@ -794,10 +812,10 @@
         }
         if (slideAudio(currentIndex)?.src) {
           setButtonState("idle");
-          announce("Narration ready.");
+          announce("เสียงบรรยายพร้อมแล้ว");
         } else {
           setNarrationUnavailable();
-          announce("Narration is not available on this slide.");
+          announce("สไลด์นี้ไม่มีเสียงบรรยาย");
         }
         toolbar.classList.add("narration-discovery");
         showInvitation();
@@ -807,9 +825,9 @@
         );
       })
       .catch((error) => {
-        console.error("Beat Breeze narration manifest failed to load", error);
+        console.error("ไม่สามารถโหลดไฟล์รายการเสียงบรรยาย Beat Breeze ได้", error);
         setButtonState("error");
-        announce("Narration could not be loaded. Try again.");
+        announce("ไม่สามารถโหลดเสียงบรรยายได้ โปรดลองอีกครั้ง");
       });
 
     return true;
