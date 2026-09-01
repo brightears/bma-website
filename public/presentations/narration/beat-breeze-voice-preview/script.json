@@ -1,0 +1,188 @@
+{
+  "version": 2,
+  "deck": "beat-breeze",
+  "presentation": "beat-breeze-voice-preview",
+  "status": "approved-for-english-preview-synthesis",
+  "language": "en",
+  "scriptStyle": {
+    "audience": "venue owners, operators, and brand decision-makers",
+    "approach": "Presenter-led explanation of the current slide: orient, interpret the visual groups, explain the operational value, and transition without reading the screen aloud.",
+    "targetSecondsPerSlide": "25-45"
+  },
+  "voice": {
+    "provider": "google-gemini",
+    "model": "gemini-3.1-flash-tts-preview",
+    "name": "Sulafat",
+    "performance": {
+      "name": "Maya",
+      "role": "a warm, capable Beat Breeze product specialist",
+      "scene": "a relaxed one-to-one presentation with a venue manager, talking naturally through the slide currently on screen",
+      "style": "Friendly, grounded and conversational. Speak as if helping one real person understand the venue value, not reading slide copy or delivering a commercial voice-over.",
+      "pacing": "Easy and unforced, with brief natural pauses between the main ideas on each slide. Give product names clear emphasis without sounding theatrical."
+    }
+  },
+  "slides": [
+    {
+      "id": "01-title",
+      "label": "Title",
+      "visualCoverage": [
+        "all-in-one venue platform",
+        "music, screens, announcements, and content",
+        "one platform across every space"
+      ],
+      "text": "Welcome. Beat Breeze began with a simple promise: keep the right music playing in every part of a venue. What you are looking at today is much broader. The same platform now brings together music, screens, announcements, and the content that fills them, across every space you operate. So this is not only a tour of a music player. It is a look at how one system can help shape and run the whole in-venue media experience."
+    },
+    {
+      "id": "02-one-platform-many-jobs",
+      "label": "One platform, many jobs",
+      "visualCoverage": [
+        "music and automation",
+        "content creation",
+        "operations"
+      ],
+      "text": "This slide is the map of the platform, and it falls into three parts. On the left is music and automation: licensed music for each zone, schedules that run the day, an AI Music Director, and playback that keeps going offline. In the middle is content creation: Compose makes original music, Content Studio creates images and video, TV Channels puts that work on your screens, and announcements give the venue a voice. On the right is operations: one dashboard for venues, zones, teams, and players, with brand controls when consistency matters. You can run that yourself, or add BMAsia's music design and support. Now let's start with the core: the music."
+    },
+    {
+      "id": "03-music-that-runs-itself",
+      "label": "Music that runs itself",
+      "visualCoverage": [
+        "different music per zone",
+        "scheduling and dayparts",
+        "offline playback",
+        "licensed library and AI playlist building"
+      ],
+      "text": "At the centre of Beat Breeze is music that can run the venue day without constant attention. Your lobby, bar, spa, and restaurant can each have their own sound, while head office sees every property from one dashboard. You shape the flow once—perhaps calm in the morning, more energy over lunch, and something warmer in the evening—and the dayparts change automatically. The library is licensed for business and keeps growing, or you can describe a mood and let the assistant assemble a playlist. Most importantly, if the internet drops, the local player is designed to keep the music going."
+    },
+    {
+      "id": "04-automations",
+      "label": "Automations",
+      "visualCoverage": [
+        "time and volume rules",
+        "weather and temperature responses",
+        "footfall or POS triggers",
+        "prayer times, dayparts, and seasonal events",
+        "offline automation"
+      ],
+      "text": "A schedule changes music by the clock; automations let the venue react to what is actually happening. Quiet hours can lower the volume at night. A daily energy curve can move from calm to lively and back again. Weather or temperature can trigger a cozier or cooler sound. With a people counter or point-of-sale feed, a busy room can lift the energy automatically. Prayer times, dayparts, seasonal dates, and holidays can all be built into the same system. You can begin with one of these ready-made ideas or create your own rule—and the essential automation, including prayer pauses, continues even when the venue is offline."
+    },
+    {
+      "id": "05-your-music-director",
+      "label": "Your Music Director",
+      "visualCoverage": [
+        "nightly zone review",
+        "limited, explained suggestions",
+        "learning from venue behavior",
+        "seasonal preparation",
+        "before-and-after reporting"
+      ],
+      "text": "Music Director is the proactive AI curator built into Beat Breeze. It reviews each zone overnight and only speaks up when it finds something worth improving—never more than three suggestions a week. The example on screen shows the important part: it explains the evidence behind the recommendation, and you choose whether to accept it. Every change can be undone. Over time, it learns from real behavior such as skips, volume adjustments, and what the team leaves playing. It can also prepare for seasonal moments before they arrive. And if you connect sales or covers data, you can compare the period before a music change with the period after, rather than relying on guesswork."
+    },
+    {
+      "id": "06-compose",
+      "label": "Compose",
+      "visualCoverage": [
+        "original music from a prompt",
+        "venue-specific creative brief",
+        "iterative refinement"
+      ],
+      "text": "Compose moves from choosing music to creating it. You describe the scene in normal language—like the candlelit dinner brief shown here—and Beat Breeze returns original tracks made for that moment. The first result does not have to be final: you can refine the mood, tempo, instruments, or vocals with another sentence. For a venue, the point is not simply that AI can make a track. It is that you can develop a signature sound for a campaign, a space, or a particular service moment instead of always drawing from the same shared playlists."
+    },
+    {
+      "id": "07-studio-and-screens",
+      "label": "Studio & screens",
+      "visualCoverage": [
+        "Content Studio formats",
+        "brand styling",
+        "TV Channels distribution",
+        "in-room hotel use"
+      ],
+      "text": "The same idea continues visually. Content Studio helps your team create the pieces a venue regularly needs: a social post, a promotional poster, a short video, digital signage, or an ambient loop, styled around your logo and colours. Then TV Channels takes that material out of the editor and onto the screens you already have. A lobby screen can carry tonight's offer while the matching zone music plays; a spa screen can run a calm branded loop; and hotels can extend the channels to guest-room televisions. So the creative tool and the distribution system sit together, rather than becoming another separate signage project."
+    },
+    {
+      "id": "08-announcements",
+      "label": "Announcements",
+      "visualCoverage": [
+        "multilingual in-venue announcements",
+        "scheduled playback over music",
+        "phone on-hold audio"
+      ],
+      "text": "This is the spoken side of the venue experience. You can write an announcement, choose the language and voice, schedule the moment, and have it play over the music—whether that is happy hour, a last-order call, a welcome, or an operational message. The three examples show how one venue can communicate in different languages without arranging a studio session for every recording. The same tools can also produce professional phone on-hold audio, combining voice and music for the caller. In other words, the soundtrack and the messages around it are managed in one place."
+    },
+    {
+      "id": "09-works-with-claude-and-chatgpt",
+      "label": "Works with Claude & ChatGPT",
+      "visualCoverage": [
+        "plain-language control",
+        "questions about current schedules",
+        "confirmation before schedule changes",
+        "secure and revocable access"
+      ],
+      "text": "If your team already works in Claude or ChatGPT, Beat Breeze can meet them in that familiar chat window. The examples make the range clear: ask what is playing on Friday night, turn the lobby down a little, or prepare a different spa schedule for tomorrow. Immediate controls still follow the user's permissions, and planned schedule changes are shown back for confirmation before anything is committed. Access uses secure, revocable keys, so it can be removed when a person or integration no longer needs it. The benefit is simple: everyday music operations can be handled in plain language, without giving up operator control."
+    },
+    {
+      "id": "10-built-for-operators",
+      "label": "Built for operators",
+      "visualCoverage": [
+        "self-operated multi-property control",
+        "team access and brand-lock",
+        "player choices and Windows multi-zone",
+        "BMAsia-managed service"
+      ],
+      "text": "There are two operating models on this slide. On the left, you run Beat Breeze directly: one login can cover multiple venues and zones, team members receive the access they need, and brand-lock protects the soundtrack where local changes should not be allowed. The player can run on supported mobile, Windows, or web devices you already own, and one Windows computer with the right multi-channel sound card can serve several zones. On the right is the BMAsia-managed model. The platform stays the same, but our team adds bespoke music design, round-the-clock technical support, account management, and group-wide oversight. You can choose the level of involvement that suits your operation."
+    },
+    {
+      "id": "11-never-go-silent",
+      "label": "Never go silent",
+      "visualCoverage": [
+        "full offline continuity",
+        "self-healing players",
+        "announcement delivery receipts",
+        "live licence proof"
+      ],
+      "text": "All of the creative features matter only if the system is dependable in a real venue. That is what these four safeguards are about. The weekly schedule, automations, and prayer pauses remain available locally when the connection is down, and the play history syncs later. Watchdogs monitor the players and can recover one that becomes stuck. Announcements report which devices actually received them, so an operator can see whether a message reached every intended space. And the live licence certificate gives the venue QR-verifiable proof when an inspector asks. The engineering is designed around one outcome: the room should not notice a technical problem."
+    },
+    {
+      "id": "12-why-beat-breeze",
+      "label": "Why Beat Breeze",
+      "visualCoverage": [
+        "music and scheduling foundation",
+        "offline resilience",
+        "custom music and visual creation",
+        "announcements, on-hold audio, and TV channels",
+        "one-platform proposition"
+      ],
+      "text": "This comparison brings the story back together. Music by zone and automatic scheduling are the foundation; that is where many platforms begin. Beat Breeze is designed to continue beyond that foundation. It adds offline resilience, original music through Compose, visual content creation, multilingual announcements, phone on-hold audio, and branded TV channels. The real difference is not any single tick in the table. It is that the venue does not have to stitch music, creative tools, messaging, and screens together as separate systems. Beat Breeze can both run the in-venue experience and help create the content inside it."
+    },
+    {
+      "id": "13-pricing",
+      "label": "Pricing",
+      "visualCoverage": [
+        "self-serve price and trial",
+        "BMAsia-managed price and services",
+        "enterprise arrangements",
+        "no required player box"
+      ],
+      "text": "There are two straightforward ways to run it. Self-serve is twelve US dollars, or three hundred and ninety-nine baht, per zone each month. Everything we have walked through is included, and you can begin with a fourteen-day trial on one zone without a card. The BMAsia-managed option is two hundred and sixty US dollars per zone each year; that adds ongoing music design for your brand, technical support, and a dedicated account manager. Larger groups can use custom contracts and local invoicing arrangements. In either model, a dedicated box is not required—the platform can run on supported devices you already own."
+    },
+    {
+      "id": "14-whos-behind-it",
+      "label": "Who's behind it",
+      "visualCoverage": [
+        "BMAsia since 2002",
+        "music designers behind the curation",
+        "human support and operator-led roadmap"
+      ],
+      "text": "Behind Beat Breeze is BMAsia, a team that has designed music for hotels, restaurants, retail, and wellness since 2002. That experience matters because the platform is not shaped by software engineering alone. Working music designers guide the curation and the way the AI thinks about a venue. Real people provide support around the clock, and the roadmap is driven by the practical requests operators bring to us. So when you choose the platform, there is an experienced music and service team standing behind it."
+    },
+    {
+      "id": "15-close",
+      "label": "Close",
+      "visualCoverage": [
+        "music foundation and expanded platform",
+        "next step for existing and new customers",
+        "Beat Breeze and BMAsia contact paths"
+      ],
+      "text": "That is Beat Breeze today: the reliable music platform at the centre, now doing much more around it. If you already use Beat Breeze, log in and try Compose, Content Studio, or Announcements—they are included in your plan. If you are new, visit beatbreeze.io or contact Norbert at BMAsia, and we can help you choose a sensible starting point for your venues."
+    }
+  ]
+}

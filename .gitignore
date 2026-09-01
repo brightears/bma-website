@@ -33,6 +33,9 @@ next-env.d.ts
 # Testing
 coverage/
 
+# Local cache for generated presentation narration
+tmp/presentation-narration/
+
 # Claude Code (personal settings)
 .claude/settings.local.json
 CLAUDE.local.md
