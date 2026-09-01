@@ -656,8 +656,10 @@
         }
         if (slideAudio(currentIndex)?.src) {
           setButtonState("idle");
+          announce("Narration ready.");
         } else {
           setNarrationUnavailable();
+          announce("Narration is not available on this slide.");
         }
         toolbar.classList.add("narration-discovery");
         window.setTimeout(
