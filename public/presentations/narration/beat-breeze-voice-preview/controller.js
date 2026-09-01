@@ -1,0 +1,644 @@
+(() => {
+  "use strict";
+
+  const CONTROLLER_URL =
+    document.currentScript?.src ||
+    new URL(
+      "./narration/beat-breeze-voice-preview/controller.js",
+      window.location.href,
+    ).href;
+  const MANIFEST_URL = new URL("manifest.json", CONTROLLER_URL).href;
+  const DISCOVERY_MS = 6500;
+  const ADVANCE_DELAY_MS = 650;
+  const LOCAL_PILOT_MANIFEST = {
+    deck: "beat-breeze",
+    ready: true,
+    slides: [
+      {
+        index: 1,
+        src: "audio/pilot-existing-sulafat-v6/01-title.mp3",
+      },
+      {
+        index: 2,
+        src: "audio/pilot-existing-sulafat-v6/02-one-platform-many-jobs.mp3",
+      },
+    ],
+  };
+
+  const ICONS = {
+    idle: `
+      <svg viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M3.5 8h3l3.6-3v10l-3.6-3h-3z" fill="currentColor"></path>
+        <path d="M13 7.1a4 4 0 0 1 0 5.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+        <path d="m14.3 4.5 3.2 2-3.2 2z" fill="#EFA634"></path>
+      </svg>`,
+    playing: `
+      <svg viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M3 8h3l3.8-3.1v10.2L6 12H3z" fill="currentColor"></path>
+        <path d="M12.7 7.2a4 4 0 0 1 0 5.6M15 5a7 7 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+      </svg>`,
+    muted: `
+      <svg viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M3 8h3l3.8-3.1v10.2L6 12H3z" fill="currentColor"></path>
+        <path d="m13.1 7.2 4.1 4.1m0-4.1-4.1 4.1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+      </svg>`,
+    loading: `
+      <svg viewBox="0 0 20 20" aria-hidden="true">
+        <circle cx="10" cy="10" r="6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="25 13"></circle>
+      </svg>`,
+    replay: `
+      <svg viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M5.1 6.7A6 6 0 1 1 4 11.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+        <path d="M2.7 4.6v4h4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>`,
+  };
+
+  const audio = new Audio();
+  audio.preload = "metadata";
+  audio.setAttribute("playsinline", "");
+
+  let stage;
+  let toolbar;
+  let button;
+  let icon;
+  let label;
+  let shortLabel;
+  let liveRegion;
+  let manifest;
+  let manifestPromise;
+  let currentIndex = 0;
+  let narrationEnabled = false;
+  let narrationStarted = false;
+  let completed = false;
+  let advanceTimer;
+  let pausedForVisibility = false;
+  let playbackRequest = 0;
+
+  const clearAdvanceTimer = () => {
+    window.clearTimeout(advanceTimer);
+    advanceTimer = undefined;
+  };
+
+  const activeSlideIndex = () => {
+    const slides = [...stage.querySelectorAll(":scope > section")];
+    const index = slides.findIndex((slide) =>
+      slide.hasAttribute("data-deck-active"),
+    );
+    return Math.max(0, index);
+  };
+
+  const announce = (message) => {
+    if (liveRegion) liveRegion.textContent = message;
+  };
+
+  const setProgress = (value) => {
+    if (!button) return;
+    const clamped = Math.min(1, Math.max(0, Number(value) || 0));
+    button.style.setProperty(
+      "--narration-progress",
+      `${(clamped * 100).toFixed(2)}%`,
+    );
+  };
+
+  const setButtonState = (stateName) => {
+    if (!button) return;
+
+    const states = {
+      loading: {
+        icon: ICONS.loading,
+        visible: "Loading",
+        short: "Loading",
+        pressed: "false",
+        label: "Loading narration",
+        disabled: true,
+      },
+      unavailable: {
+        icon: ICONS.muted,
+        visible: "Voice pending",
+        short: "Pending",
+        pressed: "false",
+        label: "Narration audio is being prepared",
+        disabled: true,
+      },
+      idle: {
+        icon: ICONS.muted,
+        visible: "Narration off",
+        short: "Voice off",
+        pressed: "false",
+        label: "Start narration",
+        disabled: false,
+      },
+      playing: {
+        icon: ICONS.playing,
+        visible: "Narration on",
+        short: "Voice on",
+        pressed: "true",
+        label: "Turn narration off",
+        disabled: false,
+      },
+      muted: {
+        icon: ICONS.muted,
+        visible: "Narration off",
+        short: "Voice off",
+        pressed: "false",
+        label: "Turn narration on",
+        disabled: false,
+      },
+      replay: {
+        icon: ICONS.replay,
+        visible: "Replay",
+        short: "Replay",
+        pressed: "false",
+        label: "Replay narrated presentation",
+        disabled: false,
+      },
+      error: {
+        icon: ICONS.muted,
+        visible: "Retry audio",
+        short: "Retry",
+        pressed: "false",
+        label: "Retry narration audio",
+        disabled: false,
+      },
+    };
+
+    const state = states[stateName];
+    button.dataset.state = stateName;
+    button.disabled = state.disabled;
+    button.setAttribute("aria-pressed", state.pressed);
+    button.setAttribute("aria-label", state.label);
+    button.setAttribute(
+      "aria-busy",
+      stateName === "loading" ? "true" : "false",
+    );
+    button.title = state.label;
+    icon.innerHTML = state.icon;
+    label.textContent = state.visible;
+    shortLabel.textContent = state.short;
+  };
+
+  const loadManifest = async () => {
+    if (manifest) return manifest;
+    if (window.location.protocol === "file:") {
+      manifest = LOCAL_PILOT_MANIFEST;
+      return manifest;
+    }
+    if (!manifestPromise) {
+      manifestPromise = fetch(MANIFEST_URL, { cache: "no-store" })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Narration manifest returned ${response.status}`);
+          }
+          return response.json();
+        })
+        .then((value) => {
+          if (!value || value.deck !== "beat-breeze") {
+            throw new Error("Narration manifest does not match this deck");
+          }
+          manifest = value;
+          return value;
+        })
+        .catch((error) => {
+          manifestPromise = undefined;
+          throw error;
+        });
+    }
+    return manifestPromise;
+  };
+
+  const slideAudio = (index) =>
+    manifest?.slides?.find((slide) => slide.index === index + 1);
+
+  const isFinalNarratedSlide = (index) => {
+    const indexes = manifest?.slides
+      ?.map((slide) => Number(slide.index) - 1)
+      .filter(Number.isInteger);
+    return indexes?.length ? index === Math.max(...indexes) : true;
+  };
+
+  const setPreviewUnavailable = () => {
+    setButtonState("unavailable");
+    label.textContent = "Preview slides 1–2";
+    shortLabel.textContent = "Slides 1–2";
+    button.setAttribute(
+      "aria-label",
+      "Narration preview is available on slides 1 and 2",
+    );
+    button.title = "Narration preview is available on slides 1 and 2";
+  };
+
+  const failPlayback = (message) => {
+    clearAdvanceTimer();
+    playbackRequest += 1;
+    narrationEnabled = false;
+    audio.pause();
+    setButtonState("error");
+    announce(message);
+  };
+
+  const playCurrentSlide = async ({ restart = false } = {}) => {
+    clearAdvanceTimer();
+    const request = ++playbackRequest;
+    const requestedIndex = currentIndex;
+
+    try {
+      const data = await loadManifest();
+      if (request !== playbackRequest || requestedIndex !== currentIndex) return;
+      if (!data.ready || !Array.isArray(data.slides) || !data.slides.length) {
+        narrationEnabled = false;
+        setButtonState("unavailable");
+        announce("Narration audio is being prepared.");
+        return;
+      }
+
+      const slide = slideAudio(requestedIndex);
+      if (!slide?.src) {
+        narrationEnabled = false;
+        setPreviewUnavailable();
+        announce("Narration preview is available on slides 1 and 2.");
+        return;
+      }
+
+      const nextSource = new URL(slide.src, MANIFEST_URL).href;
+      const sourceChanged = audio.src !== nextSource;
+      if (sourceChanged) {
+        audio.src = nextSource;
+        audio.load();
+      } else if (restart) {
+        audio.currentTime = 0;
+      }
+
+      narrationEnabled = true;
+      narrationStarted = true;
+      completed = false;
+      setButtonState("playing");
+      announce(`Narration playing for slide ${currentIndex + 1}.`);
+      await audio.play();
+    } catch (error) {
+      if (request !== playbackRequest || error?.name === "AbortError") return;
+      console.error("Beat Breeze narration playback failed", error);
+      failPlayback("Narration could not be played. Please try again.");
+    }
+  };
+
+  const turnNarrationOff = () => {
+    clearAdvanceTimer();
+    playbackRequest += 1;
+    narrationEnabled = false;
+    audio.pause();
+    setButtonState("muted");
+    announce("Narration off.");
+  };
+
+  const handleToggle = async () => {
+    toolbar.classList.remove("narration-discovery");
+
+    if (completed) {
+      narrationEnabled = true;
+      completed = false;
+      setButtonState("playing");
+      if (currentIndex === 0) {
+        await playCurrentSlide({ restart: true });
+      } else {
+        stage.goTo(0);
+      }
+      return;
+    }
+
+    if (narrationEnabled) {
+      turnNarrationOff();
+      return;
+    }
+
+    await playCurrentSlide({ restart: true });
+  };
+
+  const handleSlideChange = (event) => {
+    clearAdvanceTimer();
+    currentIndex = Number.isInteger(event.detail?.index)
+      ? event.detail.index
+      : activeSlideIndex();
+    completed = false;
+    setProgress(0);
+
+    const hasNarration = Boolean(slideAudio(currentIndex)?.src);
+
+    if (narrationEnabled && hasNarration) {
+      void playCurrentSlide({ restart: true });
+    } else {
+      if (narrationEnabled) {
+        playbackRequest += 1;
+        narrationEnabled = false;
+      }
+      audio.pause();
+      audio.removeAttribute("src");
+      audio.load();
+
+      if (!hasNarration) {
+        setPreviewUnavailable();
+        announce("Narration preview is available on slides 1 and 2.");
+      } else {
+        setButtonState(narrationStarted ? "muted" : "idle");
+      }
+    }
+  };
+
+  const addStyles = (root) => {
+    if (root.querySelector("#beat-breeze-narration-styles")) return;
+    const style = document.createElement("style");
+    style.id = "beat-breeze-narration-styles";
+    style.textContent = `
+      .overlay.narration-discovery {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate(-50%, 0) scale(1);
+        filter: blur(0);
+      }
+
+      .overlay:focus-within {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate(-50%, 0) scale(1);
+        filter: blur(0);
+      }
+
+      .narration-toggle {
+        --narration-progress: 0%;
+        position: relative;
+        width: 120px;
+        min-width: 120px;
+        padding: 0 10px !important;
+        gap: 7px;
+        overflow: hidden;
+        cursor: pointer !important;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        color: rgba(255,255,255,0.82) !important;
+      }
+
+      .narration-toggle::after {
+        content: "";
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: 2px;
+        height: 1px;
+        border-radius: 999px;
+        background: linear-gradient(
+          90deg,
+          #EFA634 0 var(--narration-progress),
+          rgba(255,255,255,0.12) var(--narration-progress) 100%
+        );
+        opacity: 0;
+        transition: opacity 160ms ease;
+      }
+
+      .narration-toggle[data-state="idle"] {
+        background: rgba(239,166,52,0.16);
+        color: #fff !important;
+      }
+
+      .narration-toggle[data-state="playing"] {
+        background: rgba(239,166,52,0.2);
+        color: #EFA634 !important;
+        box-shadow: inset 0 0 0 1px rgba(239,166,52,0.28);
+      }
+
+      .narration-toggle[data-state="playing"]::after {
+        opacity: 1;
+      }
+
+      .narration-toggle[data-state="loading"] .narration-icon svg {
+        animation: narration-spin 900ms linear infinite;
+      }
+
+      .narration-toggle[data-state="unavailable"] {
+        cursor: default !important;
+        opacity: 0.56;
+      }
+
+      .narration-toggle[data-state="error"] {
+        background: rgba(255,255,255,0.1);
+      }
+
+      .narration-toggle:focus-visible {
+        outline: 2px solid #EFA634 !important;
+        outline-offset: 2px !important;
+      }
+
+      .narration-icon {
+        position: relative;
+        width: 18px;
+        min-width: 18px;
+        height: 18px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .narration-icon svg {
+        width: 18px !important;
+        height: 18px !important;
+      }
+
+      .narration-toggle[data-state="playing"] .narration-icon::after {
+        content: "";
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #EFA634;
+        box-shadow: 0 0 0 3px rgba(239,166,52,0.12);
+      }
+
+      .narration-label {
+        white-space: nowrap;
+      }
+
+      .narration-label-short { display: none; }
+
+      .narration-sr-only {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        white-space: nowrap !important;
+        border: 0 !important;
+      }
+
+      @keyframes narration-spin {
+        to { transform: rotate(360deg); }
+      }
+
+      @media (max-width: 520px) {
+        .btn.reset,
+        .reset-divider { display: none !important; }
+      }
+
+      @media (max-width: 360px) {
+        .narration-toggle {
+          width: 92px;
+          min-width: 92px;
+        }
+        .narration-label { display: none; }
+        .narration-label-short { display: inline; white-space: nowrap; }
+      }
+
+      @media (pointer: coarse) {
+        .overlay {
+          bottom: max(22px, env(safe-area-inset-bottom));
+        }
+        .narration-toggle {
+          height: 44px;
+          width: 124px;
+          min-width: 124px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .narration-toggle[data-state="loading"] .narration-icon svg {
+          animation: none;
+        }
+      }
+    `;
+    root.append(style);
+  };
+
+  const install = () => {
+    stage = document.querySelector("deck-stage");
+    const root = stage?.shadowRoot;
+    toolbar = root?.querySelector('[role="toolbar"][aria-label="Deck controls"]');
+    if (!stage || !root || !toolbar) return false;
+    if (root.querySelector("#beat-breeze-narration-toggle")) return true;
+
+    addStyles(root);
+
+    const divider = document.createElement("span");
+    divider.className = "divider narration-divider";
+    divider.setAttribute("aria-hidden", "true");
+
+    button = document.createElement("button");
+    button.id = "beat-breeze-narration-toggle";
+    button.className = "btn narration-toggle";
+    button.type = "button";
+    button.setAttribute("aria-keyshortcuts", "M");
+    button.innerHTML = `
+      <span class="narration-icon" aria-hidden="true"></span>
+      <span class="narration-label">Narration</span>
+      <span class="narration-label-short">Voice</span>
+    `;
+    icon = button.querySelector(".narration-icon");
+    label = button.querySelector(".narration-label");
+    shortLabel = button.querySelector(".narration-label-short");
+
+    const resetButton = toolbar.querySelector(".btn.reset");
+    if (resetButton?.previousElementSibling?.classList.contains("divider")) {
+      resetButton.previousElementSibling.classList.add("reset-divider");
+    }
+
+    liveRegion = document.createElement("span");
+    liveRegion.className = "narration-sr-only";
+    liveRegion.setAttribute("role", "status");
+    liveRegion.setAttribute("aria-live", "polite");
+
+    toolbar.append(divider, button, liveRegion);
+    setButtonState("loading");
+    currentIndex = activeSlideIndex();
+
+    button.addEventListener("click", () => void handleToggle());
+    stage.addEventListener("slidechange", handleSlideChange);
+    document.addEventListener("keydown", (event) => {
+      const target = event.target;
+      const isTyping =
+        target instanceof HTMLElement &&
+        (target.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(target.tagName));
+      if (!isTyping && event.key.toLowerCase() === "m" && !button.disabled) {
+        event.preventDefault();
+        void handleToggle();
+      }
+    });
+
+    audio.addEventListener("timeupdate", () => {
+      setProgress(audio.duration ? audio.currentTime / audio.duration : 0);
+    });
+    audio.addEventListener("ended", () => {
+      setProgress(1);
+      if (!narrationEnabled) return;
+      const nextSlideHasNarration = Boolean(slideAudio(currentIndex + 1)?.src);
+      if (!isFinalNarratedSlide(currentIndex) && nextSlideHasNarration) {
+        advanceTimer = window.setTimeout(() => stage.next(), ADVANCE_DELAY_MS);
+      } else {
+        narrationEnabled = false;
+        completed = true;
+        setButtonState("replay");
+        announce("Narrated presentation complete.");
+      }
+    });
+    audio.addEventListener("error", () => {
+      if (audio.getAttribute("src")) {
+        failPlayback("Narration audio could not be loaded.");
+      }
+    });
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden && narrationEnabled && !audio.paused) {
+        pausedForVisibility = true;
+        audio.pause();
+      } else if (!document.hidden && pausedForVisibility && narrationEnabled) {
+        pausedForVisibility = false;
+        void audio.play().catch(() => turnNarrationOff());
+      }
+    });
+
+    void loadManifest()
+      .then((data) => {
+        if (!data.ready || !Array.isArray(data.slides) || !data.slides.length) {
+          setButtonState("unavailable");
+          return;
+        }
+        if (slideAudio(currentIndex)?.src) {
+          setButtonState("idle");
+        } else {
+          setPreviewUnavailable();
+        }
+        toolbar.classList.add("narration-discovery");
+        window.setTimeout(
+          () => toolbar.classList.remove("narration-discovery"),
+          DISCOVERY_MS,
+        );
+      })
+      .catch((error) => {
+        console.error("Beat Breeze narration manifest failed to load", error);
+        setButtonState("error");
+        announce("Narration could not be loaded. Try again.");
+      });
+
+    return true;
+  };
+
+  if (install()) return;
+
+  const observer = new MutationObserver(() => {
+    if (install()) {
+      observer.disconnect();
+      window.clearInterval(installPoll);
+    }
+  });
+  const installPoll = window.setInterval(() => {
+    if (install()) {
+      window.clearInterval(installPoll);
+      observer.disconnect();
+    }
+  }, 100);
+  observer.observe(document, { childList: true, subtree: true });
+  window.setTimeout(() => {
+    observer.disconnect();
+    window.clearInterval(installPoll);
+  }, 10000);
+})();
