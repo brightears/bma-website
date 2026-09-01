@@ -642,11 +642,13 @@
         .btn.reset,
         .reset-divider { display: none !important; }
         .narration-invitation {
+          width: calc(100vw - 28px);
           bottom: 88px;
           gap: 8px;
           padding-left: 14px;
+          box-sizing: border-box;
         }
-        .narration-invitation-copy { white-space: normal; }
+        .narration-invitation-copy { white-space: nowrap; }
       }
 
       @media (max-width: 360px) {
@@ -656,6 +658,12 @@
         }
         .narration-label { display: none; }
         .narration-label-short { display: inline; white-space: nowrap; }
+        .narration-invitation {
+          gap: 6px;
+          padding: 10px 12px;
+        }
+        .narration-invitation-copy { font-size: 12px; }
+        .narration-invitation-start { padding: 7px 10px; }
       }
 
       @media (pointer: coarse) {
