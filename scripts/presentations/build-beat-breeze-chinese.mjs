@@ -36,6 +36,10 @@ const MANIFEST_PATH = path.join(PRESENTATION_ROOT, "manifest.json");
 const FONT_ROOT = path.join(PRESENTATION_ROOT, "fonts");
 const ENGLISH_GUARD_SOURCE_PATTERN =
   /\n  <template id="beat-breeze-layout-guard-source"[\s\S]*?<\/template>/;
+const MOTION_SCRIPT =
+  '  <script src="./narration/beat-breeze-motion/controller.js?v=2026-09-02-5" defer></script>';
+const MOTION_SCRIPT_PATTERN =
+  /\n\s*<script src="\.\/narration\/beat-breeze-motion(?:-preview)?\/controller\.js(?:\?v=[^"]+)?" defer><\/script>/g;
 
 const requiredFiles = [
   SOURCE_PATH,
@@ -112,10 +116,9 @@ if (
   throw new Error("The Chinese presenter script must contain all 15 Beat Breeze slides.");
 }
 
-const source = readFileSync(SOURCE_PATH, "utf8").replace(
-  ENGLISH_GUARD_SOURCE_PATTERN,
-  "",
-);
+const source = readFileSync(SOURCE_PATH, "utf8")
+  .replace(ENGLISH_GUARD_SOURCE_PATTERN, "")
+  .replace(MOTION_SCRIPT_PATTERN, "");
 const templateMarker = '<script type="__bundler/template">';
 const templateStart = source.indexOf(templateMarker) + templateMarker.length;
 const templateEnd = source.indexOf("</script>", templateStart);
@@ -272,7 +275,7 @@ let output = source
   )
   .replace(
     "\n</body>",
-    '\n  <script src="./narration/beat-breeze-zh/controller.js" defer></script>\n</body>',
+    `\n  <script src="./narration/beat-breeze-zh/controller.js" defer></script>\n${MOTION_SCRIPT}\n</body>`,
   )
   .replace(/[ \t]+$/gm, "");
 

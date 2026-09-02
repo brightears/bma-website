@@ -33,8 +33,20 @@ const THAI_MANIFEST_PATH = path.join(
   "beat-breeze-voice-preview-th",
   "manifest.json",
 );
+const CHINESE_MANIFEST_PATH = path.join(
+  REPO_ROOT,
+  "public",
+  "presentations",
+  "narration",
+  "beat-breeze-zh",
+  "manifest.json",
+);
 const GUARD_SOURCE_PATTERN =
   /\n  <template id="beat-breeze-layout-guard-source"[\s\S]*?<\/template>/;
+const MOTION_SCRIPT =
+  '  <script src="./narration/beat-breeze-motion/controller.js?v=2026-09-02-5" defer></script>';
+const MOTION_SCRIPT_PATTERN =
+  /\n\s*<script src="\.\/narration\/beat-breeze-motion(?:-preview)?\/controller\.js(?:\?v=[^"]+)?" defer><\/script>/g;
 
 const sha256 = (value) =>
   createHash("sha256").update(Buffer.from(value)).digest("hex");
@@ -52,7 +64,9 @@ const updateManifest = (manifestPath, update) => {
   }
 };
 
-let output = readFileSync(DECK_PATH, "utf8").replace(GUARD_SOURCE_PATTERN, "");
+let output = readFileSync(DECK_PATH, "utf8")
+  .replace(GUARD_SOURCE_PATTERN, "")
+  .replace(MOTION_SCRIPT_PATTERN, "");
 const templateMarker = '<script type="__bundler/template">';
 const templateStart = output.indexOf(templateMarker) + templateMarker.length;
 const templateEnd = output.indexOf("</script>", templateStart);
@@ -118,6 +132,10 @@ output = output
       "\n",
     )}\n  </template>\n</body>`,
   )
+  .replace(
+    '\n  <script src="./narration/beat-breeze-voice-preview/controller.js" defer></script>',
+    `\n  <script src="./narration/beat-breeze-voice-preview/controller.js" defer></script>\n${MOTION_SCRIPT}`,
+  )
   .replace(/[ \t]+$/gm, "");
 
 writeFileSync(DECK_PATH, output);
@@ -126,6 +144,9 @@ updateManifest(MANIFEST_PATH, (manifest) => {
   manifest.source.officialDeckSha256 = officialDeckSha256;
 });
 updateManifest(THAI_MANIFEST_PATH, (manifest) => {
+  manifest.source.englishDeckSha256 = officialDeckSha256;
+});
+updateManifest(CHINESE_MANIFEST_PATH, (manifest) => {
   manifest.source.englishDeckSha256 = officialDeckSha256;
 });
 

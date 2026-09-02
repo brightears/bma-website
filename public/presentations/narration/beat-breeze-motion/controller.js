@@ -1,7 +1,44 @@
 (() => {
   "use strict";
 
-  const VERSION = "2026-09-02-full-deck-2";
+  const VERSION = "2026-09-02-official-1";
+  const LOCALE = (() => {
+    const language = document.documentElement.lang.toLowerCase();
+    if (language.startsWith("th")) return "th";
+    if (language.startsWith("zh")) return "zh";
+    return "en";
+  })();
+  const CANONICAL_LABELS = {
+    "หน้าปก": "Title",
+    "แพลตฟอร์มเดียว หลายหน้าที่": "One platform, many jobs",
+    "เพลงที่ทำงานได้เอง": "Music that runs itself",
+    "ระบบอัตโนมัติ": "Automations",
+    "Music Director ของคุณ": "Your Music Director",
+    "Studio และหน้าจอ": "Studio & screens",
+    "ประกาศ": "Announcements",
+    "ใช้งานร่วมกับ Claude และ ChatGPT": "Works with Claude & ChatGPT",
+    "สร้างมาเพื่อผู้ดูแลสถานที่": "Built for operators",
+    "ออกแบบมาให้เพลงไม่หยุด": "Never go silent",
+    "ทำไมต้อง Beat Breeze": "Why Beat Breeze",
+    "ราคา": "Pricing",
+    "ทีมที่อยู่เบื้องหลัง": "Who's behind it",
+    "เริ่มต้นใช้งาน": "Close",
+    "封面": "Title",
+    "一个平台，多种任务": "One platform, many jobs",
+    "自动运行的音乐": "Music that runs itself",
+    "自动化": "Automations",
+    "您的 Music Director": "Your Music Director",
+    "Studio 与屏幕": "Studio & screens",
+    "语音通知": "Announcements",
+    "连接 Claude 与 ChatGPT": "Works with Claude & ChatGPT",
+    "为运营团队而设计": "Built for operators",
+    "让音乐持续播放": "Never go silent",
+    "为什么选择 Beat Breeze": "Why Beat Breeze",
+    "价格": "Pricing",
+    "背后的团队": "Who's behind it",
+    "开始使用": "Close",
+  };
+  const canonicalLabel = (label) => CANONICAL_LABELS[label] || label;
   const MOTION_LABELS = new Set([
     "Title",
     "One platform, many jobs",
@@ -21,8 +58,8 @@
   ]);
 
   // Semantic cues are deliberately expressed as a percentage of each audio
-  // clip. Future languages can reuse the semantic keys with their own timing.
-  const CUE_TIMELINES = {
+  // clip. Each language follows the same cue order with localized timing.
+  const ENGLISH_CUE_TIMELINES = {
     Title: [
       { start: 0.02, end: 0.3, key: "promise" },
       { start: 0.3, end: 0.67, key: "platform" },
@@ -102,6 +139,190 @@
       { start: 0.74, end: 0.96, key: "action" },
     ],
   };
+
+  const THAI_CUE_TIMELINES = {
+    Title: [
+      { start: 0.02, end: 0.28, key: "promise" },
+      { start: 0.28, end: 0.67, key: "platform" },
+      { start: 0.67, end: 0.98, key: "experience" },
+    ],
+    "One platform, many jobs": [
+      { start: 0.08, end: 0.36, key: "music" },
+      { start: 0.36, end: 0.7, key: "content" },
+      { start: 0.7, end: 0.93, key: "operations" },
+    ],
+    "Music that runs itself": [
+      { start: 0.07, end: 0.35, key: "zones" },
+      { start: 0.35, end: 0.58, key: "dayparts" },
+      { start: 0.58, end: 0.82, key: "library" },
+      { start: 0.82, end: 0.98, key: "offline" },
+    ],
+    Automations: [
+      { start: 0.1, end: 0.36, key: "time" },
+      { start: 0.36, end: 0.52, key: "climate" },
+      { start: 0.52, end: 0.66, key: "busy" },
+      { start: 0.66, end: 0.84, key: "calendar" },
+      { start: 0.84, end: 0.98, key: "custom" },
+    ],
+    "Your Music Director": [
+      { start: 0.06, end: 0.54, key: "recommendation" },
+      { start: 0.54, end: 0.74, key: "learning" },
+      { start: 0.74, end: 0.84, key: "seasonal" },
+      { start: 0.84, end: 0.99, key: "proof" },
+    ],
+    Compose: [
+      { start: 0.05, end: 0.49, key: "brief" },
+      { start: 0.49, end: 0.67, key: "results" },
+      { start: 0.67, end: 0.97, key: "signature" },
+    ],
+    "Studio & screens": [
+      { start: 0.04, end: 0.39, key: "studio" },
+      { start: 0.39, end: 0.61, key: "channels" },
+      { start: 0.61, end: 0.98, key: "screens" },
+    ],
+    Announcements: [
+      { start: 0.06, end: 0.55, key: "venue" },
+      { start: 0.55, end: 0.8, key: "phone" },
+      { start: 0.8, end: 0.98, key: "one-place" },
+    ],
+    "Works with Claude & ChatGPT": [
+      { start: 0.05, end: 0.52, key: "plain-language" },
+      { start: 0.52, end: 0.95, key: "control" },
+    ],
+    "Built for operators": [
+      { start: 0.04, end: 0.62, key: "self-serve" },
+      { start: 0.62, end: 0.99, key: "managed" },
+    ],
+    "Never go silent": [
+      { start: 0.08, end: 0.36, key: "offline" },
+      { start: 0.36, end: 0.52, key: "recovery" },
+      { start: 0.52, end: 0.7, key: "receipts" },
+      { start: 0.7, end: 0.87, key: "licence" },
+    ],
+    "Why Beat Breeze": [
+      { start: 0.06, end: 0.29, key: "foundation" },
+      { start: 0.29, end: 0.74, key: "difference" },
+      { start: 0.74, end: 0.98, key: "one-platform" },
+    ],
+    Pricing: [
+      { start: 0.03, end: 0.44, key: "self-serve" },
+      { start: 0.44, end: 0.73, key: "managed" },
+      { start: 0.73, end: 0.98, key: "enterprise" },
+    ],
+    "Who's behind it": [
+      { start: 0.04, end: 0.39, key: "heritage" },
+      { start: 0.39, end: 0.65, key: "designers" },
+      { start: 0.65, end: 0.97, key: "support" },
+    ],
+    Close: [
+      { start: 0.03, end: 0.36, key: "breadth" },
+      { start: 0.36, end: 0.7, key: "included" },
+      { start: 0.7, end: 0.98, key: "action" },
+    ],
+  };
+
+  const CHINESE_CUE_TIMELINES = {
+    Title: [
+      { start: 0.02, end: 0.29, key: "promise" },
+      { start: 0.29, end: 0.64, key: "platform" },
+      { start: 0.64, end: 0.98, key: "experience" },
+    ],
+    "One platform, many jobs": [
+      { start: 0.08, end: 0.34, key: "music" },
+      { start: 0.34, end: 0.68, key: "content" },
+      { start: 0.68, end: 0.92, key: "operations" },
+    ],
+    "Music that runs itself": [
+      { start: 0.06, end: 0.34, key: "zones" },
+      { start: 0.34, end: 0.59, key: "dayparts" },
+      { start: 0.59, end: 0.82, key: "library" },
+      { start: 0.82, end: 0.98, key: "offline" },
+    ],
+    Automations: [
+      { start: 0.08, end: 0.34, key: "time" },
+      { start: 0.34, end: 0.51, key: "climate" },
+      { start: 0.51, end: 0.64, key: "busy" },
+      { start: 0.64, end: 0.83, key: "calendar" },
+      { start: 0.83, end: 0.97, key: "custom" },
+    ],
+    "Your Music Director": [
+      { start: 0.06, end: 0.52, key: "recommendation" },
+      { start: 0.52, end: 0.72, key: "learning" },
+      { start: 0.72, end: 0.82, key: "seasonal" },
+      { start: 0.82, end: 0.98, key: "proof" },
+    ],
+    Compose: [
+      { start: 0.05, end: 0.48, key: "brief" },
+      { start: 0.48, end: 0.66, key: "results" },
+      { start: 0.66, end: 0.97, key: "signature" },
+    ],
+    "Studio & screens": [
+      { start: 0.04, end: 0.38, key: "studio" },
+      { start: 0.38, end: 0.6, key: "channels" },
+      { start: 0.6, end: 0.98, key: "screens" },
+    ],
+    Announcements: [
+      { start: 0.06, end: 0.56, key: "venue" },
+      { start: 0.56, end: 0.79, key: "phone" },
+      { start: 0.79, end: 0.97, key: "one-place" },
+    ],
+    "Works with Claude & ChatGPT": [
+      { start: 0.05, end: 0.5, key: "plain-language" },
+      { start: 0.5, end: 0.95, key: "control" },
+    ],
+    "Built for operators": [
+      { start: 0.04, end: 0.61, key: "self-serve" },
+      { start: 0.61, end: 0.99, key: "managed" },
+    ],
+    "Never go silent": [
+      { start: 0.08, end: 0.36, key: "offline" },
+      { start: 0.36, end: 0.53, key: "recovery" },
+      { start: 0.53, end: 0.7, key: "receipts" },
+      { start: 0.7, end: 0.88, key: "licence" },
+    ],
+    "Why Beat Breeze": [
+      { start: 0.06, end: 0.28, key: "foundation" },
+      { start: 0.28, end: 0.73, key: "difference" },
+      { start: 0.73, end: 0.98, key: "one-platform" },
+    ],
+    Pricing: [
+      { start: 0.03, end: 0.44, key: "self-serve" },
+      { start: 0.44, end: 0.72, key: "managed" },
+      { start: 0.72, end: 0.97, key: "enterprise" },
+    ],
+    "Who's behind it": [
+      { start: 0.04, end: 0.37, key: "heritage" },
+      { start: 0.37, end: 0.66, key: "designers" },
+      { start: 0.66, end: 0.97, key: "support" },
+    ],
+    Close: [
+      { start: 0.03, end: 0.36, key: "breadth" },
+      { start: 0.36, end: 0.68, key: "included" },
+      { start: 0.68, end: 0.98, key: "action" },
+    ],
+  };
+
+  const CUE_TIMELINES_BY_LOCALE = {
+    en: ENGLISH_CUE_TIMELINES,
+    th: THAI_CUE_TIMELINES,
+    zh: CHINESE_CUE_TIMELINES,
+  };
+  for (const [locale, timelines] of Object.entries(CUE_TIMELINES_BY_LOCALE)) {
+    for (const label of MOTION_LABELS) {
+      const cues = timelines[label];
+      if (!Array.isArray(cues) || cues.length === 0) {
+        throw new Error(`Missing ${locale} motion cues for ${label}.`);
+      }
+      const expectedKeys = ENGLISH_CUE_TIMELINES[label]
+        .map((cue) => cue.key)
+        .join("|");
+      const actualKeys = cues.map((cue) => cue.key).join("|");
+      if (actualKeys !== expectedKeys) {
+        throw new Error(`Cue order mismatch for ${locale}: ${label}.`);
+      }
+    }
+  }
+  const CUE_TIMELINES = CUE_TIMELINES_BY_LOCALE[LOCALE];
 
   let stage;
   let narrationButton;
@@ -586,7 +807,7 @@
   };
 
   const setupSlide = (slide) => {
-    const label = slide.getAttribute("data-label") || "";
+    const label = canonicalLabel(slide.getAttribute("data-label") || "");
     if (!MOTION_LABELS.has(label)) return;
     slide.dataset.bbmMotion = "full-deck";
     slide.classList.add("bbm-motion-slide");
@@ -643,7 +864,7 @@
     stage?.querySelector(":scope > section[data-deck-active]") || null;
 
   const activeSlideLabel = () =>
-    activeSlide()?.getAttribute("data-label") || "";
+    canonicalLabel(activeSlide()?.getAttribute("data-label") || "");
 
   const cueAtProgress = (label, progress) =>
     CUE_TIMELINES[label]?.find(
@@ -698,9 +919,9 @@
   };
 
   const addStyles = () => {
-    if (document.querySelector("#beat-breeze-motion-preview-styles")) return;
+    if (document.querySelector("#beat-breeze-motion-styles")) return;
     const style = document.createElement("style");
-    style.id = "beat-breeze-motion-preview-styles";
+    style.id = "beat-breeze-motion-styles";
     style.textContent = `
       deck-stage > section[data-bbm-motion] .bbm-reveal {
         opacity: 0;
@@ -843,11 +1064,12 @@
         window.setTimeout(bindNarration, 0);
       });
       replayEntrance(activeSlide());
-      window.__beatBreezeMotionPreview = Object.freeze({
+      window.__beatBreezeMotion = Object.freeze({
         version: VERSION,
+        locale: LOCALE,
         slides: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
         focusStyle: "subtle lift and brightness",
-        mode: "English full-deck preview",
+        mode: "official full-deck motion",
       });
     }
     bindNarration();
