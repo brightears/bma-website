@@ -68,6 +68,9 @@ const sha256Buffer = (buffer) =>
 const sha256File = (file) => sha256Buffer(readFileSync(file));
 const closeEnough = (a, b, tolerance) =>
   Math.abs(Number(a) - Number(b)) <= tolerance;
+const allowCoordinatedDeckUpdate = process.argv.includes(
+  "--allow-coordinated-deck-update",
+);
 const gitBlob = (relativePath) =>
   execFileSync("git", ["show", `HEAD:${relativePath}`], {
     cwd: REPO_ROOT,
@@ -92,11 +95,14 @@ if (existsSync(REMOVED_ENGLISH_PREVIEW) || existsSync(REMOVED_THAI_PREVIEW)) {
   fail("A retired Beat Breeze preview HTML route still exists.");
 }
 
-for (const relativePath of [
-  "public/presentations/beat-breeze.html",
-  "public/presentations/beat-breeze-th.html",
-  "public/presentations/soundtrack.html",
-]) {
+const protectedPresentations = allowCoordinatedDeckUpdate
+  ? ["public/presentations/soundtrack.html"]
+  : [
+      "public/presentations/beat-breeze.html",
+      "public/presentations/beat-breeze-th.html",
+      "public/presentations/soundtrack.html",
+    ];
+for (const relativePath of protectedPresentations) {
   const workingPath = path.join(REPO_ROOT, relativePath);
   if (sha256File(workingPath) !== sha256Buffer(gitBlob(relativePath))) {
     fail(`Protected presentation changed unexpectedly: ${relativePath}`);
