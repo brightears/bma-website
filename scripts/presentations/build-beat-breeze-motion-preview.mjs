@@ -21,9 +21,9 @@ const QA_HTML_PATH = path.join(QA_DIR, "index.html");
 const MANIFEST_PATH = path.join(QA_DIR, "deck-manifest.json");
 
 const MOTION_SCRIPT =
-  '  <script src="./narration/beat-breeze-motion-preview/controller.js" defer></script>';
+  '  <script src="./narration/beat-breeze-motion-preview/controller.js?v=2026-09-02-2" defer></script>';
 const MOTION_SCRIPT_PATTERN =
-  /\n\s*<script src="\.\/narration\/beat-breeze-motion-preview\/controller\.js" defer><\/script>/g;
+  /\n\s*<script src="\.\/narration\/beat-breeze-motion-preview\/controller\.js(?:\?v=[^"]+)?" defer><\/script>/g;
 
 let output = readFileSync(SOURCE_PATH, "utf8")
   .replace(MOTION_SCRIPT_PATTERN, "")
