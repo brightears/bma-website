@@ -21,7 +21,7 @@ const QA_HTML_PATH = path.join(QA_DIR, "index.html");
 const MANIFEST_PATH = path.join(QA_DIR, "deck-manifest.json");
 
 const MOTION_SCRIPT =
-  '  <script src="./narration/beat-breeze-motion-preview/controller.js?v=2026-09-02-3" defer></script>';
+  '  <script src="./narration/beat-breeze-motion-preview/controller.js?v=2026-09-02-4" defer></script>';
 const MOTION_SCRIPT_PATTERN =
   /\n\s*<script src="\.\/narration\/beat-breeze-motion-preview\/controller\.js(?:\?v=[^"]+)?" defer><\/script>/g;
 
@@ -55,12 +55,12 @@ writeFileSync(
       activeDesignDna: {
         name: "Beat Breeze cinematic depth",
         thesis:
-          "Soft arrival across the full deck, with restrained narration-linked semantic focus and selective framed emphasis.",
-        motionIntensity: 42,
+          "Soft arrival across the full deck, with one consistent narration-linked lift and brightness treatment and no added focus frames or glow.",
+        motionIntensity: 38,
         reference: "https://beatbreeze.io/",
       },
       motionSlides: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
-      framedSlides: [2, 5, 6, 7, 10, 13],
+      focusStyle: "page-2 subtle lift and brightness; no added frame or glow",
       outputFiles: [
         "public/presentations/beat-breeze-motion-preview.html",
         "public/presentations/narration/beat-breeze-motion-preview/controller.js",
@@ -81,5 +81,5 @@ writeFileSync(
 );
 
 console.log(
-  "Beat Breeze English motion preview built for all 15 slides; framed focus is limited to slides 2, 5, 6, 7, 10, and 13.",
+  "Beat Breeze English motion preview built for all 15 slides with one consistent subtle focus treatment.",
 );

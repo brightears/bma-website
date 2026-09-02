@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "2026-09-02-full-deck-1";
+  const VERSION = "2026-09-02-full-deck-2";
   const MOTION_LABELS = new Set([
     "Title",
     "One platform, many jobs",
@@ -764,34 +764,6 @@
         --bbm-text-active-brightness: 1.07;
       }
 
-      deck-stage > section[data-bbm-motion] .bbm-cue-surface {
-        isolation: isolate;
-      }
-
-      deck-stage > section[data-bbm-motion] .bbm-cue-surface::before {
-        content: "";
-        position: absolute;
-        top: var(--bbm-focus-inset-y, -8px);
-        right: var(--bbm-focus-inset-x, -8px);
-        bottom: var(--bbm-focus-inset-y, -8px);
-        left: var(--bbm-focus-inset-x, -8px);
-        z-index: -1;
-        pointer-events: none;
-        border: 1px solid rgba(239, 166, 52, .58);
-        border-radius: var(--bbm-focus-radius, 14px);
-        background: rgba(239, 166, 52, .032);
-        box-shadow:
-          0 24px 56px -30px rgba(239, 166, 52, .68),
-          inset 0 0 0 1px rgba(255, 255, 255, .025);
-        opacity: 0;
-        transform: scale(.99);
-        transition:
-          opacity 420ms cubic-bezier(.16, 1, .3, 1),
-          transform 620ms cubic-bezier(.16, 1, .3, 1),
-          border-color 420ms ease,
-          box-shadow 620ms cubic-bezier(.16, 1, .3, 1);
-      }
-
       deck-stage > section[data-bbm-motion][data-bbm-entered="true"][data-bbm-narrating="true"] .bbm-cue.bbm-is-soft {
         opacity: var(--bbm-soft-opacity);
         filter:
@@ -811,16 +783,10 @@
         z-index: 4;
       }
 
-      deck-stage > section[data-bbm-motion][data-bbm-entered="true"][data-bbm-narrating="true"] .bbm-cue-surface.bbm-is-active::before {
-        opacity: 1;
-        transform: scale(1);
-      }
-
       deck-stage > section[data-bbm-motion][data-bbm-entered="true"][data-bbm-narrating="true"] .bbm-cue-text.bbm-is-active {
         filter:
           saturate(var(--bbm-text-active-saturation))
-          brightness(var(--bbm-text-active-brightness))
-          drop-shadow(0 12px 24px rgba(239, 166, 52, .18));
+          brightness(var(--bbm-text-active-brightness));
       }
 
       deck-stage > section[data-bbm-motion] .bbm-media {
@@ -857,19 +823,6 @@
           opacity: 1 !important;
         }
 
-        deck-stage > section[data-bbm-motion] .bbm-cue-surface::before {
-          animation: none !important;
-          transition: none !important;
-          transform: none !important;
-        }
-
-        deck-stage > section[data-bbm-motion] .bbm-cue-surface:not(.bbm-is-active)::before {
-          opacity: 0 !important;
-        }
-
-        deck-stage > section[data-bbm-motion] .bbm-cue-surface.bbm-is-active::before {
-          opacity: 1 !important;
-        }
       }
     `;
     document.head.append(style);
@@ -893,7 +846,7 @@
       window.__beatBreezeMotionPreview = Object.freeze({
         version: VERSION,
         slides: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
-        framedSlides: [2, 5, 6, 7, 10, 13],
+        focusStyle: "subtle lift and brightness",
         mode: "English full-deck preview",
       });
     }
