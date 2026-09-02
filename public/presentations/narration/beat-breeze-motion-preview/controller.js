@@ -1,13 +1,23 @@
 (() => {
   "use strict";
 
-  const VERSION = "2026-09-02-prototype-2";
-  const PROTOTYPE_LABELS = new Set([
+  const VERSION = "2026-09-02-full-deck-1";
+  const MOTION_LABELS = new Set([
     "Title",
     "One platform, many jobs",
+    "Music that runs itself",
+    "Automations",
     "Your Music Director",
+    "Compose",
     "Studio & screens",
+    "Announcements",
+    "Works with Claude & ChatGPT",
     "Built for operators",
+    "Never go silent",
+    "Why Beat Breeze",
+    "Pricing",
+    "Who's behind it",
+    "Close",
   ]);
 
   // Semantic cues are deliberately expressed as a percentage of each audio
@@ -23,20 +33,73 @@
       { start: 0.37, end: 0.66, key: "content" },
       { start: 0.66, end: 0.91, key: "operations" },
     ],
+    "Music that runs itself": [
+      { start: 0.06, end: 0.32, key: "zones" },
+      { start: 0.32, end: 0.53, key: "dayparts" },
+      { start: 0.53, end: 0.77, key: "library" },
+      { start: 0.77, end: 0.96, key: "offline" },
+    ],
+    Automations: [
+      { start: 0.12, end: 0.34, key: "time" },
+      { start: 0.34, end: 0.52, key: "climate" },
+      { start: 0.52, end: 0.64, key: "busy" },
+      { start: 0.64, end: 0.84, key: "calendar" },
+      { start: 0.84, end: 0.97, key: "custom" },
+    ],
     "Your Music Director": [
       { start: 0.08, end: 0.5, key: "recommendation" },
       { start: 0.5, end: 0.72, key: "learning" },
       { start: 0.72, end: 0.84, key: "seasonal" },
       { start: 0.84, end: 1.01, key: "proof" },
     ],
+    Compose: [
+      { start: 0.06, end: 0.5, key: "brief" },
+      { start: 0.5, end: 0.68, key: "results" },
+      { start: 0.68, end: 0.95, key: "signature" },
+    ],
     "Studio & screens": [
       { start: 0.03, end: 0.43, key: "studio" },
       { start: 0.43, end: 0.67, key: "channels" },
       { start: 0.67, end: 1.01, key: "screens" },
     ],
+    Announcements: [
+      { start: 0.08, end: 0.56, key: "venue" },
+      { start: 0.56, end: 0.82, key: "phone" },
+      { start: 0.82, end: 0.96, key: "one-place" },
+    ],
+    "Works with Claude & ChatGPT": [
+      { start: 0.05, end: 0.56, key: "plain-language" },
+      { start: 0.56, end: 0.94, key: "control" },
+    ],
     "Built for operators": [
       { start: 0.05, end: 0.65, key: "self-serve" },
       { start: 0.65, end: 1.01, key: "managed" },
+    ],
+    "Never go silent": [
+      { start: 0.12, end: 0.36, key: "offline" },
+      { start: 0.36, end: 0.54, key: "recovery" },
+      { start: 0.54, end: 0.73, key: "receipts" },
+      { start: 0.73, end: 0.88, key: "licence" },
+    ],
+    "Why Beat Breeze": [
+      { start: 0.08, end: 0.31, key: "foundation" },
+      { start: 0.31, end: 0.75, key: "difference" },
+      { start: 0.75, end: 0.97, key: "one-platform" },
+    ],
+    Pricing: [
+      { start: 0.04, end: 0.48, key: "self-serve" },
+      { start: 0.48, end: 0.78, key: "managed" },
+      { start: 0.78, end: 0.97, key: "enterprise" },
+    ],
+    "Who's behind it": [
+      { start: 0.06, end: 0.36, key: "heritage" },
+      { start: 0.36, end: 0.68, key: "designers" },
+      { start: 0.68, end: 0.95, key: "support" },
+    ],
+    Close: [
+      { start: 0.04, end: 0.45, key: "breadth" },
+      { start: 0.45, end: 0.74, key: "included" },
+      { start: 0.74, end: 0.96, key: "action" },
     ],
   };
 
@@ -77,6 +140,7 @@
       focusPaddingX = 8,
       focusPaddingY = 8,
       focusRadius = 14,
+      strength = "standard",
     } = {},
   ) => {
     if (!(element instanceof HTMLElement)) return;
@@ -85,6 +149,7 @@
       surface ? "bbm-cue-surface" : "bbm-cue-text",
     );
     element.dataset.bbmCue = key;
+    element.dataset.bbmCueStrength = strength;
     if (surface) {
       element.style.setProperty("--bbm-focus-inset-x", px(-focusPaddingX));
       element.style.setProperty("--bbm-focus-inset-y", px(-focusPaddingY));
@@ -137,6 +202,61 @@
     });
   };
 
+  const setupMusicAutomation = (slide) => {
+    const [header, grid] = directChildren(slide);
+    const headerItems = directChildren(header);
+    markEntrance(headerItems[0], { delay: 40, x: -24, y: 10, blur: 6 });
+    markEntrance(headerItems[1], { delay: 180, y: 20, blur: 5 });
+
+    const cards = directChildren(grid);
+    cards.forEach((card, index) => {
+      markEntrance(card, {
+        delay: 300 + index * 82,
+        y: 30,
+        scale: 0.972,
+        blur: 7,
+      });
+      markMedia(card.firstElementChild);
+    });
+
+    const quietText = { surface: false, strength: "quiet" };
+    markCue(cards[0], "zones", quietText);
+    markCue(cards[1], "dayparts", quietText);
+    markCue(cards[2], "offline", quietText);
+    cards.slice(3).forEach((card) => markCue(card, "library", quietText));
+  };
+
+  const setupAutomations = (slide) => {
+    const [halo, header, grid, footer] = directChildren(slide);
+    halo?.classList.add("bbm-atmosphere");
+    const headerItems = directChildren(header);
+    markEntrance(headerItems[0], { delay: 40, x: -22, y: 10, blur: 6 });
+    markEntrance(headerItems[1], { delay: 170, y: 18, blur: 5 });
+
+    const cards = directChildren(grid);
+    cards.forEach((card, index) => {
+      markEntrance(card, {
+        delay: 290 + (index % 4) * 72 + Math.floor(index / 4) * 110,
+        y: 26,
+        scale: 0.975,
+        blur: 7,
+      });
+      markMedia(card.firstElementChild);
+    });
+    markEntrance(footer, { delay: 760, y: 18, blur: 4 });
+
+    const quietText = { surface: false, strength: "quiet" };
+    [cards[0], cards[1]].forEach((card) => markCue(card, "time", quietText));
+    [cards[2], cards[3]].forEach((card) =>
+      markCue(card, "climate", quietText),
+    );
+    markCue(cards[4], "busy", quietText);
+    [cards[5], cards[6], cards[7]].forEach((card) =>
+      markCue(card, "calendar", quietText),
+    );
+    markCue(footer, "custom", quietText);
+  };
+
   const setupMusicDirector = (slide) => {
     const grid = directChildren(slide)[1];
     const [copy, recommendation] = directChildren(grid);
@@ -176,6 +296,47 @@
     markCue(copyItems[5], "proof", featureFocus);
   };
 
+  const setupCompose = (slide) => {
+    const [halo, grid] = directChildren(slide);
+    halo?.classList.add("bbm-atmosphere");
+    const [copy, creation] = directChildren(grid);
+    const copyItems = directChildren(copy);
+    const creationItems = directChildren(creation);
+
+    copyItems.forEach((item, index) =>
+      markEntrance(item, {
+        delay: 60 + index * 92,
+        x: -26,
+        y: 10,
+        blur: 6,
+      }),
+    );
+    creationItems.forEach((item, index) =>
+      markEntrance(item, {
+        delay: 230 + index * 105,
+        x: 34,
+        y: 8,
+        scale: index === 1 ? 0.965 : 0.985,
+        blur: 8,
+      }),
+    );
+
+    markCue(creationItems[1], "brief", {
+      focusPaddingX: 12,
+      focusPaddingY: 10,
+      focusRadius: 12,
+    });
+    markCue(creationItems[3], "results", {
+      surface: false,
+      strength: "quiet",
+    });
+    directChildren(creationItems[3]).forEach(markMedia);
+    markCue(copyItems[3], "signature", {
+      surface: false,
+      strength: "quiet",
+    });
+  };
+
   const setupStudioScreens = (slide) => {
     const [eyebrow, headline, grid] = directChildren(slide);
     const [capabilities, showcase] = directChildren(grid);
@@ -212,6 +373,77 @@
     markMedia(showcaseItems[0]?.firstElementChild);
   };
 
+  const setupAnnouncements = (slide) => {
+    const [halo, grid] = directChildren(slide);
+    halo?.classList.add("bbm-atmosphere");
+    const [copy, examples] = directChildren(grid);
+    const copyItems = directChildren(copy);
+    const exampleCards = directChildren(examples);
+
+    copyItems.forEach((item, index) =>
+      markEntrance(item, {
+        delay: 60 + index * 100,
+        x: -24,
+        y: 10,
+        blur: 6,
+      }),
+    );
+    exampleCards.forEach((card, index) => {
+      markEntrance(card, {
+        delay: 260 + index * 130,
+        x: 34,
+        y: 14,
+        scale: 0.97,
+        blur: 8,
+      });
+      markMedia(card);
+    });
+
+    const quietText = { surface: false, strength: "quiet" };
+    [exampleCards[0], exampleCards[1]].forEach((card) =>
+      markCue(card, "venue", quietText),
+    );
+    markCue(exampleCards[2], "phone", quietText);
+    markCue(copyItems[3], "phone", quietText);
+    markCue(copyItems[1], "one-place", quietText);
+  };
+
+  const setupAiAssistants = (slide) => {
+    const [halo, grid] = directChildren(slide);
+    halo?.classList.add("bbm-atmosphere");
+    const [copy, chat] = directChildren(grid);
+    const copyItems = directChildren(copy);
+    const chatItems = directChildren(chat);
+
+    copyItems.forEach((item, index) =>
+      markEntrance(item, {
+        delay: 50 + index * 86,
+        x: -26,
+        y: 9,
+        blur: 6,
+      }),
+    );
+    markEntrance(chatItems[0], { delay: 210, x: 32, y: 8, blur: 7 });
+    chatItems.slice(1).forEach((message, index) =>
+      markEntrance(message, {
+        delay: 300 + index * 82,
+        x: index % 2 === 0 ? 28 : -18,
+        y: 10,
+        scale: 0.982,
+        blur: 6,
+      }),
+    );
+
+    markCue(chat, "plain-language", {
+      surface: false,
+      strength: "quiet",
+    });
+    markCue(copyItems[3], "control", {
+      surface: false,
+      strength: "quiet",
+    });
+  };
+
   const setupOperators = (slide) => {
     const [eyebrow, headline, selfServeGrid, windowsPanel, managedPanel] =
       directChildren(slide);
@@ -229,21 +461,151 @@
     markEntrance(managedPanel, { delay: 680, y: 34, scale: 0.97, blur: 8 });
 
     markCue(selfServeGrid, "self-serve");
-    markCue(windowsPanel, "self-serve");
+    markCue(windowsPanel, "self-serve", {
+      surface: false,
+      strength: "quiet",
+    });
     markCue(managedPanel, "managed");
+  };
+
+  const setupReliability = (slide) => {
+    const [header, grid] = directChildren(slide);
+    const headerItems = directChildren(header);
+    markEntrance(headerItems[0], { delay: 50, x: -24, y: 10, blur: 6 });
+    markEntrance(headerItems[1], { delay: 180, y: 20, blur: 5 });
+
+    const cards = directChildren(grid);
+    const keys = ["offline", "recovery", "receipts", "licence"];
+    cards.forEach((card, index) => {
+      markEntrance(card, {
+        delay: 300 + index * 120,
+        y: 34,
+        scale: 0.965,
+        blur: 8,
+      });
+      markMedia(card.firstElementChild);
+      markCue(card, keys[index], {
+        surface: false,
+        strength: "quiet",
+      });
+    });
+  };
+
+  const setupDifference = (slide) => {
+    const [header, table, conclusion] = directChildren(slide);
+    markEntrance(header, { delay: 50, x: -24, y: 10, blur: 6 });
+    markEntrance(table, { delay: 240, y: 34, scale: 0.975, blur: 9 });
+    markEntrance(conclusion, { delay: 620, y: 20, blur: 5 });
+
+    const tableParts = directChildren(table);
+    const rows = directChildren(tableParts[1]);
+    const markTableCue = (row, key) => {
+      markCue(row, key, {
+        surface: false,
+        strength: "quiet",
+      });
+      row.style.setProperty("--bbm-soft-scale", "1");
+      row.style.setProperty("--bbm-active-y", "0px");
+      row.style.setProperty("--bbm-active-scale", "1");
+    };
+    rows.slice(0, 2).forEach((row) => markTableCue(row, "foundation"));
+    rows.slice(2).forEach((row) => markTableCue(row, "difference"));
+    markCue(conclusion, "one-platform", {
+      surface: false,
+      strength: "quiet",
+    });
+  };
+
+  const setupPricing = (slide) => {
+    const [eyebrow, headline, cards, footer] = directChildren(slide);
+    markEntrance(eyebrow, { delay: 30, y: 14, blur: 4 });
+    markEntrance(headline, { delay: 120, y: 28, scale: 0.975, blur: 7 });
+    const priceCards = directChildren(cards);
+    priceCards.forEach((card, index) =>
+      markEntrance(card, {
+        delay: 300 + index * 150,
+        x: index === 0 ? -30 : 30,
+        y: 14,
+        scale: 0.955,
+        blur: 10,
+      }),
+    );
+    markEntrance(footer, { delay: 650, y: 22, blur: 5 });
+
+    markCue(priceCards[0], "self-serve");
+    markCue(priceCards[1], "managed");
+    markCue(footer, "enterprise", {
+      surface: false,
+      strength: "quiet",
+    });
+  };
+
+  const setupPeople = (slide) => {
+    const [halo, logo, motto, grid] = directChildren(slide);
+    halo?.classList.add("bbm-atmosphere");
+    markEntrance(logo, { delay: 30, x: -20, y: -10, blur: 5 });
+    markEntrance(motto, { delay: 90, x: 20, y: -10, blur: 5 });
+    const [copy, proof] = directChildren(grid);
+    markEntrance(copy, { delay: 190, x: -34, y: 12, blur: 8 });
+    const proofRows = directChildren(proof);
+    proofRows.forEach((row, index) =>
+      markEntrance(row, {
+        delay: 320 + index * 120,
+        x: 34,
+        y: 8,
+        blur: 6,
+      }),
+    );
+
+    const quietText = { surface: false, strength: "quiet" };
+    markCue(copy, "heritage", quietText);
+    markCue(proofRows[0], "heritage", quietText);
+    markCue(proofRows[1], "designers", quietText);
+    markCue(proofRows[2], "support", quietText);
+  };
+
+  const setupClose = (slide) => {
+    const [halo, logo, hero, actionRow] = directChildren(slide);
+    halo?.classList.add("bbm-atmosphere");
+    markEntrance(logo, { delay: 30, x: -18, y: -10, blur: 5 });
+    const heroItems = directChildren(hero);
+    heroItems.forEach((item, index) =>
+      markEntrance(item, {
+        delay: 170 + index * 120,
+        x: -26,
+        y: 12,
+        blur: 7,
+      }),
+    );
+    markEntrance(actionRow, { delay: 570, y: 28, scale: 0.975, blur: 7 });
+
+    const quietText = { surface: false, strength: "quiet" };
+    markCue(heroItems[1], "breadth", quietText);
+    markCue(heroItems[2], "included", quietText);
+    markCue(actionRow, "action", quietText);
   };
 
   const setupSlide = (slide) => {
     const label = slide.getAttribute("data-label") || "";
-    if (!PROTOTYPE_LABELS.has(label)) return;
-    slide.dataset.bbmMotion = "prototype";
+    if (!MOTION_LABELS.has(label)) return;
+    slide.dataset.bbmMotion = "full-deck";
     slide.classList.add("bbm-motion-slide");
 
     if (label === "Title") setupTitle(slide);
     if (label === "One platform, many jobs") setupPlatformMap(slide);
+    if (label === "Music that runs itself") setupMusicAutomation(slide);
+    if (label === "Automations") setupAutomations(slide);
     if (label === "Your Music Director") setupMusicDirector(slide);
+    if (label === "Compose") setupCompose(slide);
     if (label === "Studio & screens") setupStudioScreens(slide);
+    if (label === "Announcements") setupAnnouncements(slide);
+    if (label === "Works with Claude & ChatGPT") setupAiAssistants(slide);
     if (label === "Built for operators") setupOperators(slide);
+    if (label === "Never go silent") setupReliability(slide);
+    if (label === "Why Beat Breeze") setupDifference(slide);
+    if (label === "Pricing") setupPricing(slide);
+    if (label === "Who's behind it") setupPeople(slide);
+    if (label === "Close") setupClose(slide);
   };
 
   const clearCue = (slide) => {
@@ -290,7 +652,7 @@
 
   const syncNarrationCue = () => {
     const slide = activeSlide();
-    if (!slide || !PROTOTYPE_LABELS.has(activeSlideLabel())) {
+    if (!slide || !MOTION_LABELS.has(activeSlideLabel())) {
       clearAllCues();
       return;
     }
@@ -371,12 +733,35 @@
       }
 
       deck-stage > section[data-bbm-motion] .bbm-cue {
+        --bbm-soft-opacity: .78;
+        --bbm-soft-saturation: .82;
+        --bbm-soft-brightness: .9;
+        --bbm-soft-scale: .992;
+        --bbm-active-y: -10px;
+        --bbm-active-scale: 1.025;
+        --bbm-active-saturation: 1.08;
+        --bbm-active-brightness: 1.08;
+        --bbm-text-active-saturation: 1.12;
+        --bbm-text-active-brightness: 1.13;
         position: relative;
         transition:
           opacity 520ms cubic-bezier(.16, 1, .3, 1),
           transform 700ms cubic-bezier(.16, 1, .3, 1),
           filter 520ms cubic-bezier(.16, 1, .3, 1);
         transform-origin: center center;
+      }
+
+      deck-stage > section[data-bbm-motion] .bbm-cue[data-bbm-cue-strength="quiet"] {
+        --bbm-soft-opacity: .88;
+        --bbm-soft-saturation: .92;
+        --bbm-soft-brightness: .95;
+        --bbm-soft-scale: .997;
+        --bbm-active-y: -4px;
+        --bbm-active-scale: 1.012;
+        --bbm-active-saturation: 1.035;
+        --bbm-active-brightness: 1.045;
+        --bbm-text-active-saturation: 1.06;
+        --bbm-text-active-brightness: 1.07;
       }
 
       deck-stage > section[data-bbm-motion] .bbm-cue-surface {
@@ -408,15 +793,21 @@
       }
 
       deck-stage > section[data-bbm-motion][data-bbm-entered="true"][data-bbm-narrating="true"] .bbm-cue.bbm-is-soft {
-        opacity: .78;
-        filter: saturate(.82) brightness(.9);
-        transform: scale(.992);
+        opacity: var(--bbm-soft-opacity);
+        filter:
+          saturate(var(--bbm-soft-saturation))
+          brightness(var(--bbm-soft-brightness));
+        transform: scale(var(--bbm-soft-scale));
       }
 
       deck-stage > section[data-bbm-motion][data-bbm-entered="true"][data-bbm-narrating="true"] .bbm-cue.bbm-is-active {
         opacity: 1;
-        filter: saturate(1.08) brightness(1.08);
-        transform: translate3d(0, -10px, 0) scale(1.025);
+        filter:
+          saturate(var(--bbm-active-saturation))
+          brightness(var(--bbm-active-brightness));
+        transform:
+          translate3d(0, var(--bbm-active-y), 0)
+          scale(var(--bbm-active-scale));
         z-index: 4;
       }
 
@@ -427,8 +818,8 @@
 
       deck-stage > section[data-bbm-motion][data-bbm-entered="true"][data-bbm-narrating="true"] .bbm-cue-text.bbm-is-active {
         filter:
-          saturate(1.12)
-          brightness(1.13)
+          saturate(var(--bbm-text-active-saturation))
+          brightness(var(--bbm-text-active-brightness))
           drop-shadow(0 12px 24px rgba(239, 166, 52, .18));
       }
 
@@ -440,6 +831,10 @@
 
       deck-stage > section[data-bbm-motion] .bbm-cue.bbm-is-active .bbm-media {
         transform: scale(1.07);
+      }
+
+      deck-stage > section[data-bbm-motion] .bbm-cue[data-bbm-cue-strength="quiet"].bbm-is-active .bbm-media {
+        transform: scale(1.025);
       }
 
       @keyframes bbm-atmosphere-breathe {
@@ -497,8 +892,9 @@
       replayEntrance(activeSlide());
       window.__beatBreezeMotionPreview = Object.freeze({
         version: VERSION,
-        slides: [1, 2, 5, 7, 10],
-        mode: "English prototype",
+        slides: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+        framedSlides: [2, 5, 6, 7, 10, 13],
+        mode: "English full-deck preview",
       });
     }
     bindNarration();
