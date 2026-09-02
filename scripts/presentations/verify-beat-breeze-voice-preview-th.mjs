@@ -13,13 +13,13 @@ const PRESENTATION_ROOT = path.join(
   "narration",
   "beat-breeze-voice-preview-th",
 );
-const ORIGINAL_DECK = path.join(
+const ENGLISH_DECK = path.join(
   REPO_ROOT,
   "public",
   "presentations",
   "beat-breeze.html",
 );
-const ENGLISH_PREVIEW = path.join(
+const REMOVED_ENGLISH_PREVIEW = path.join(
   REPO_ROOT,
   "public",
   "presentations",
@@ -31,7 +31,13 @@ const SOUNDTRACK_DECK = path.join(
   "presentations",
   "soundtrack.html",
 );
-const THAI_PREVIEW = path.join(
+const THAI_OFFICIAL = path.join(
+  REPO_ROOT,
+  "public",
+  "presentations",
+  "beat-breeze-th.html",
+);
+const REMOVED_THAI_PREVIEW = path.join(
   REPO_ROOT,
   "public",
   "presentations",
@@ -62,58 +68,66 @@ const gitBlob = (relativePath) =>
   });
 
 for (const required of [
-  ORIGINAL_DECK,
-  ENGLISH_PREVIEW,
+  ENGLISH_DECK,
   SOUNDTRACK_DECK,
-  THAI_PREVIEW,
+  THAI_OFFICIAL,
   SCRIPT_PATH,
   MANIFEST_PATH,
   CONTROLLER_PATH,
   ...FONT_FILES.map((file) => path.join(PRESENTATION_ROOT, file)),
 ]) {
-  if (!existsSync(required)) fail(`Required Thai preview artifact is missing: ${required}`);
+  if (!existsSync(required)) fail(`Required Thai presentation artifact is missing: ${required}`);
 }
 
-for (const relativePath of [
-  "public/presentations/beat-breeze.html",
-  "public/presentations/beat-breeze-voice-preview.html",
-  "public/presentations/soundtrack.html",
-]) {
+if (existsSync(REMOVED_ENGLISH_PREVIEW) || existsSync(REMOVED_THAI_PREVIEW)) {
+  fail("A retired Beat Breeze preview HTML route still exists.");
+}
+
+for (const relativePath of ["public/presentations/soundtrack.html"]) {
   const workingPath = path.join(REPO_ROOT, relativePath);
   if (sha256File(workingPath) !== sha256Buffer(gitBlob(relativePath))) {
     fail(`Protected presentation changed unexpectedly: ${relativePath}`);
   }
 }
 
-const thaiPreview = readFileSync(THAI_PREVIEW, "utf8");
+const thaiOfficial = readFileSync(THAI_OFFICIAL, "utf8");
 const script = JSON.parse(readFileSync(SCRIPT_PATH, "utf8"));
 const manifest = JSON.parse(readFileSync(MANIFEST_PATH, "utf8"));
 const controller = readFileSync(CONTROLLER_PATH, "utf8");
 
 if (
-  !thaiPreview.includes('<html lang="th">') ||
-  !thaiPreview.includes("NotoSansThai-wdth-wght.ttf") ||
-  !thaiPreview.includes("NotoSerifThai-wdth-wght.ttf") ||
-  !thaiPreview.includes("./narration/beat-breeze-voice-preview-th/controller.js")
+  !thaiOfficial.includes('<html lang="th">') ||
+  !thaiOfficial.includes("<title>Beat Breeze — ภาพรวมผลิตภัณฑ์ 2026 (ภาษาไทย)</title>") ||
+  !thaiOfficial.includes("NotoSansThai-wdth-wght.ttf") ||
+  !thaiOfficial.includes("NotoSerifThai-wdth-wght.ttf") ||
+  !thaiOfficial.includes("./narration/beat-breeze-voice-preview-th/controller.js")
 ) {
-  fail("The Thai preview is missing its language, Thai fonts, or narration controller.");
+  fail("The official Thai presentation is missing its language, Thai fonts, or narration controller.");
 }
-if (thaiPreview.includes("./narration/beat-breeze-voice-preview/controller.js")) {
-  fail("The Thai preview points to the English narration controller.");
+if (thaiOfficial.includes("./narration/beat-breeze-voice-preview/controller.js")) {
+  fail("The official Thai presentation points to the English narration controller.");
+}
+if (
+  !thaiOfficial.includes("มีทีมผู้เชี่ยวชาญคอยดูแลตลอด 24 ชั่วโมง") ||
+  thaiOfficial.includes("คนจริงให้การสนับสนุนตลอด 24 ชั่วโมง")
+) {
+  fail("The official Thai slide 14 speaker notes do not match Nikki's approved wording.");
 }
 
 if (
-  sha256File(ORIGINAL_DECK) !== manifest.source.originalDeckSha256 ||
-  sha256File(THAI_PREVIEW) !== manifest.source.previewDeckSha256 ||
+  manifest.source.englishDeckPath !== "public/presentations/beat-breeze.html" ||
+  manifest.source.officialDeckPath !== "public/presentations/beat-breeze-th.html" ||
+  sha256File(ENGLISH_DECK) !== manifest.source.englishDeckSha256 ||
+  sha256File(THAI_OFFICIAL) !== manifest.source.officialDeckSha256 ||
   sha256File(SCRIPT_PATH) !== manifest.source.scriptSha256
 ) {
   fail("A source hash in the Thai narration manifest is stale.");
 }
 
 const templateMarker = '<script type="__bundler/template">';
-const templateStart = thaiPreview.indexOf(templateMarker) + templateMarker.length;
-const templateEnd = thaiPreview.indexOf("</script>", templateStart);
-const template = JSON.parse(thaiPreview.slice(templateStart, templateEnd).trim());
+const templateStart = thaiOfficial.indexOf(templateMarker) + templateMarker.length;
+const templateEnd = thaiOfficial.indexOf("</script>", templateStart);
+const template = JSON.parse(thaiOfficial.slice(templateStart, templateEnd).trim());
 const decodeLabel = (value) =>
   value
     .replaceAll("&amp;", "&")
@@ -138,7 +152,7 @@ if (!script.slides.every((slide) => /[\u0E00-\u0E7F]/.test(slide.text))) {
 }
 if (
   manifest.ready !== true ||
-  manifest.status !== "full-thai-voice-preview" ||
+  manifest.status !== "official-thai-narrated-presentation" ||
   manifest.slides.length !== 15 ||
   manifest.coverage.slideIndexes.join(",") !==
     Array.from({ length: 15 }, (_, index) => index + 1).join(",")
@@ -231,7 +245,7 @@ if (!controller.includes('visible: "เริ่มคำบรรยาย"')) 
 execFileSync(process.execPath, ["--check", CONTROLLER_PATH]);
 execFileSync(process.execPath, ["--check", fileURLToPath(import.meta.url)]);
 
-console.log("PASS: original Beat Breeze, English preview HTML, and Soundtrack deck are untouched.");
+console.log("PASS: English official and Soundtrack decks are present; both preview HTML routes are removed.");
 console.log("PASS: Thai deck preserves 15-slide structure with localized labels and Thai fonts.");
 console.log(
   `PASS: ${manifest.slides.length} Thai Sulafat clips decode correctly (${manifest.totalDurationSeconds.toFixed(1)}s total).`,

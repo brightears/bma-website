@@ -2,11 +2,11 @@
   "version": 2,
   "deck": "beat-breeze",
   "presentation": "beat-breeze-voice-preview",
-  "status": "full-english-voice-preview",
+  "status": "official-english-narrated-presentation",
   "ready": true,
   "generatedAt": "2026-09-02T02:04:37.228Z",
   "releaseId": "20260902-4616b86a157b",
-  "publicationStatus": "Unlinked, noindex English narrated preview. Presenter copy is tied to the final Beat Breeze deck while the original presentation remains unchanged.",
+  "publicationStatus": "Official unlinked, noindex English Beat Breeze presentation with complete slide-linked narration.",
   "coverage": {
     "slideIndexes": [
       1,
@@ -29,10 +29,8 @@
     "manualNavigation": "restart-current-slide-when-narration-is-on"
   },
   "source": {
-    "originalDeckPath": "public/presentations/beat-breeze.html",
-    "originalDeckSha256": "b35930cae7e68eafdb2a68d800900cd76ea40891e8c9c3eed18c2dddfd528484",
-    "previewDeckPath": "public/presentations/beat-breeze-voice-preview.html",
-    "previewDeckSha256": "866c1e0b2442de72720b17ec5cb8c1443f88cb7da4b250304b5f5a70f7e7a3bc",
+    "officialDeckPath": "public/presentations/beat-breeze.html",
+    "officialDeckSha256": "ed8568831a4d1ee0dddbf41765890c88ef13697be50f012c4f1cf86193bf737a",
     "scriptPath": "public/presentations/narration/beat-breeze-voice-preview/script.json",
     "scriptSha256": "29497a8a84aceddf50ec23d245987b406df2e0919611f63524a629ff05120aa9"
   },
