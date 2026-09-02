@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "2026-09-02-prototype-1";
+  const VERSION = "2026-09-02-prototype-2";
   const PROTOTYPE_LABELS = new Set([
     "Title",
     "One platform, many jobs",
@@ -69,13 +69,27 @@
     if (element instanceof HTMLElement) element.classList.add("bbm-media");
   };
 
-  const markCue = (element, key, { surface = true } = {}) => {
+  const markCue = (
+    element,
+    key,
+    {
+      surface = true,
+      focusPaddingX = 8,
+      focusPaddingY = 8,
+      focusRadius = 14,
+    } = {},
+  ) => {
     if (!(element instanceof HTMLElement)) return;
     element.classList.add(
       "bbm-cue",
       surface ? "bbm-cue-surface" : "bbm-cue-text",
     );
     element.dataset.bbmCue = key;
+    if (surface) {
+      element.style.setProperty("--bbm-focus-inset-x", px(-focusPaddingX));
+      element.style.setProperty("--bbm-focus-inset-y", px(-focusPaddingY));
+      element.style.setProperty("--bbm-focus-radius", px(focusRadius));
+    }
   };
 
   const setupTitle = (slide) => {
@@ -152,9 +166,14 @@
     });
 
     markCue(recommendation, "recommendation");
-    markCue(copyItems[3], "learning");
-    markCue(copyItems[4], "seasonal");
-    markCue(copyItems[5], "proof");
+    const featureFocus = {
+      focusPaddingX: 18,
+      focusPaddingY: 6,
+      focusRadius: 8,
+    };
+    markCue(copyItems[3], "learning", featureFocus);
+    markCue(copyItems[4], "seasonal", featureFocus);
+    markCue(copyItems[5], "proof", featureFocus);
   };
 
   const setupStudioScreens = (slide) => {
@@ -356,11 +375,36 @@
         transition:
           opacity 520ms cubic-bezier(.16, 1, .3, 1),
           transform 700ms cubic-bezier(.16, 1, .3, 1),
-          filter 520ms cubic-bezier(.16, 1, .3, 1),
-          box-shadow 700ms cubic-bezier(.16, 1, .3, 1),
-          outline-color 520ms ease,
-          background-color 520ms ease;
+          filter 520ms cubic-bezier(.16, 1, .3, 1);
         transform-origin: center center;
+      }
+
+      deck-stage > section[data-bbm-motion] .bbm-cue-surface {
+        isolation: isolate;
+      }
+
+      deck-stage > section[data-bbm-motion] .bbm-cue-surface::before {
+        content: "";
+        position: absolute;
+        top: var(--bbm-focus-inset-y, -8px);
+        right: var(--bbm-focus-inset-x, -8px);
+        bottom: var(--bbm-focus-inset-y, -8px);
+        left: var(--bbm-focus-inset-x, -8px);
+        z-index: -1;
+        pointer-events: none;
+        border: 1px solid rgba(239, 166, 52, .58);
+        border-radius: var(--bbm-focus-radius, 14px);
+        background: rgba(239, 166, 52, .032);
+        box-shadow:
+          0 24px 56px -30px rgba(239, 166, 52, .68),
+          inset 0 0 0 1px rgba(255, 255, 255, .025);
+        opacity: 0;
+        transform: scale(.99);
+        transition:
+          opacity 420ms cubic-bezier(.16, 1, .3, 1),
+          transform 620ms cubic-bezier(.16, 1, .3, 1),
+          border-color 420ms ease,
+          box-shadow 620ms cubic-bezier(.16, 1, .3, 1);
       }
 
       deck-stage > section[data-bbm-motion][data-bbm-entered="true"][data-bbm-narrating="true"] .bbm-cue.bbm-is-soft {
@@ -376,13 +420,9 @@
         z-index: 4;
       }
 
-      deck-stage > section[data-bbm-motion][data-bbm-entered="true"][data-bbm-narrating="true"] .bbm-cue-surface.bbm-is-active {
-        outline: 1px solid rgba(239, 166, 52, .62);
-        outline-offset: 0;
-        box-shadow:
-          0 24px 54px -26px rgba(239, 166, 52, .72),
-          inset 0 0 0 1px rgba(255, 255, 255, .035);
-        background-color: rgba(239, 166, 52, .035);
+      deck-stage > section[data-bbm-motion][data-bbm-entered="true"][data-bbm-narrating="true"] .bbm-cue-surface.bbm-is-active::before {
+        opacity: 1;
+        transform: scale(1);
       }
 
       deck-stage > section[data-bbm-motion][data-bbm-entered="true"][data-bbm-narrating="true"] .bbm-cue-text.bbm-is-active {
@@ -419,6 +459,20 @@
           transition: none !important;
           transform: none !important;
           filter: none !important;
+          opacity: 1 !important;
+        }
+
+        deck-stage > section[data-bbm-motion] .bbm-cue-surface::before {
+          animation: none !important;
+          transition: none !important;
+          transform: none !important;
+        }
+
+        deck-stage > section[data-bbm-motion] .bbm-cue-surface:not(.bbm-is-active)::before {
+          opacity: 0 !important;
+        }
+
+        deck-stage > section[data-bbm-motion] .bbm-cue-surface.bbm-is-active::before {
           opacity: 1 !important;
         }
       }
