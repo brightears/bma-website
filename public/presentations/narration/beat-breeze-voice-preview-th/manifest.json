@@ -2,11 +2,11 @@
   "version": 2,
   "deck": "beat-breeze",
   "presentation": "beat-breeze-voice-preview-th",
-  "status": "full-thai-voice-preview",
+  "status": "official-thai-narrated-presentation",
   "ready": true,
   "generatedAt": "2026-09-02T02:23:43.489Z",
   "releaseId": "20260902-76c9d16b3620",
-  "publicationStatus": "Unlinked, noindex Thai narrated review preview. The approved Beat Breeze layout and product scope are preserved while the original English presentation remains unchanged.",
+  "publicationStatus": "Official unlinked, noindex Thai Beat Breeze presentation with complete slide-linked narration.",
   "coverage": {
     "slideIndexes": [
       1,
@@ -29,10 +29,10 @@
     "manualNavigation": "restart-current-slide-when-narration-is-on"
   },
   "source": {
-    "originalDeckPath": "public/presentations/beat-breeze.html",
-    "originalDeckSha256": "b35930cae7e68eafdb2a68d800900cd76ea40891e8c9c3eed18c2dddfd528484",
-    "previewDeckPath": "public/presentations/beat-breeze-voice-preview-th.html",
-    "previewDeckSha256": "fb40e14558c537590f7d6a83c6531037fcff9d3235940626c2ce26419c37ba08",
+    "englishDeckPath": "public/presentations/beat-breeze.html",
+    "englishDeckSha256": "ed8568831a4d1ee0dddbf41765890c88ef13697be50f012c4f1cf86193bf737a",
+    "officialDeckPath": "public/presentations/beat-breeze-th.html",
+    "officialDeckSha256": "5a21576798793458cf3a3ad8f4a910a34ba99d2566325d7dbed754cf7e208f02",
     "scriptPath": "public/presentations/narration/beat-breeze-voice-preview-th/script.json",
     "scriptSha256": "15cb1b16358283b211a5faabe075fee163de8c137ee7c3457078f2f876954dbb"
   },

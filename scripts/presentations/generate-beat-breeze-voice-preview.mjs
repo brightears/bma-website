@@ -45,17 +45,11 @@ const WORK_DIR = path.join(
   PRESENTATION,
 );
 const CACHE_DIR = path.join(WORK_DIR, "cache");
-const SOURCE_DECK = path.join(
+const OFFICIAL_DECK = path.join(
   REPO_ROOT,
   "public",
   "presentations",
   "beat-breeze.html",
-);
-const PREVIEW_DECK = path.join(
-  REPO_ROOT,
-  "public",
-  "presentations",
-  "beat-breeze-voice-preview.html",
 );
 
 const apiKey =
@@ -73,7 +67,7 @@ for (const binary of ["ffmpeg", "ffprobe"]) {
   }
 }
 
-for (const required of [SCRIPT_PATH, SOURCE_DECK, PREVIEW_DECK]) {
+for (const required of [SCRIPT_PATH, OFFICIAL_DECK]) {
   if (!existsSync(required)) {
     throw new Error(`Required file is missing: ${required}`);
   }
@@ -87,10 +81,10 @@ if (
   !Array.isArray(script.slides) ||
   script.slides.length !== 15
 ) {
-  throw new Error("The English preview script must contain all 15 Beat Breeze slides.");
+  throw new Error("The English narration script must contain all 15 Beat Breeze slides.");
 }
 
-const sourceHtml = readFileSync(SOURCE_DECK, "utf8");
+const sourceHtml = readFileSync(OFFICIAL_DECK, "utf8");
 const templateMarker = '<script type="__bundler/template">';
 const templateStart = sourceHtml.indexOf(templateMarker) + templateMarker.length;
 const templateEnd = sourceHtml.indexOf("</script>", templateStart);
@@ -121,15 +115,13 @@ if (JSON.stringify(deckLabels) !== JSON.stringify(scriptLabels)) {
 const sha256Buffer = (buffer) =>
   createHash("sha256").update(buffer).digest("hex");
 const sha256File = (file) => sha256Buffer(readFileSync(file));
-const sourceDeckSha256 = sha256File(SOURCE_DECK);
-const previewDeckSha256 = sha256File(PREVIEW_DECK);
+const officialDeckSha256 = sha256File(OFFICIAL_DECK);
 const scriptSha256 = sha256File(SCRIPT_PATH);
 const generatedAt = new Date().toISOString();
 const releaseContentHash = sha256Buffer(
   Buffer.from(
     JSON.stringify({
-      sourceDeckSha256,
-      previewDeckSha256,
+      officialDeckSha256,
       scriptSha256,
       model: MODEL,
       voice: VOICE,
@@ -412,22 +404,20 @@ try {
     version: 2,
     deck: "beat-breeze",
     presentation: PRESENTATION,
-    status: "full-english-voice-preview",
+    status: "official-english-narrated-presentation",
     ready: true,
     generatedAt,
     releaseId,
     publicationStatus:
-      "Unlinked, noindex English narrated preview. Presenter copy is tied to the final Beat Breeze deck while the original presentation remains unchanged.",
+      "Official unlinked, noindex English Beat Breeze presentation with complete slide-linked narration.",
     coverage: {
       slideIndexes: slides.map((slide) => slide.index),
       behaviorAfterLastClip: "replay-from-start",
       manualNavigation: "restart-current-slide-when-narration-is-on",
     },
     source: {
-      originalDeckPath: "public/presentations/beat-breeze.html",
-      originalDeckSha256: sourceDeckSha256,
-      previewDeckPath: "public/presentations/beat-breeze-voice-preview.html",
-      previewDeckSha256,
+      officialDeckPath: "public/presentations/beat-breeze.html",
+      officialDeckSha256,
       scriptPath:
         "public/presentations/narration/beat-breeze-voice-preview/script.json",
       scriptSha256,

@@ -21,7 +21,7 @@ const OUTPUT_PATH = path.join(
   REPO_ROOT,
   "public",
   "presentations",
-  "beat-breeze-voice-preview-th.html",
+  "beat-breeze-th.html",
 );
 const SCRIPT_PATH = path.join(
   REPO_ROOT,
@@ -47,6 +47,8 @@ const FONT_ROOT = path.join(
   "beat-breeze-voice-preview-th",
   "fonts",
 );
+const ENGLISH_GUARD_SOURCE_PATTERN =
+  /\n  <template id="beat-breeze-layout-guard-source"[\s\S]*?<\/template>/;
 
 const requiredFiles = [
   SOURCE_PATH,
@@ -58,7 +60,7 @@ const requiredFiles = [
 ];
 for (const required of requiredFiles) {
   if (!existsSync(required)) {
-    throw new Error(`Required Thai preview source is missing: ${required}`);
+    throw new Error(`Required Thai presentation source is missing: ${required}`);
   }
 }
 
@@ -383,7 +385,10 @@ if (
   throw new Error("The Thai presenter script must contain all 15 Beat Breeze slides.");
 }
 
-const source = readFileSync(SOURCE_PATH, "utf8");
+const source = readFileSync(SOURCE_PATH, "utf8").replace(
+  ENGLISH_GUARD_SOURCE_PATTERN,
+  "",
+);
 const templateMarker = '<script type="__bundler/template">';
 const templateStart = source.indexOf(templateMarker) + templateMarker.length;
 const templateEnd = source.indexOf("</script>", templateStart);
@@ -528,13 +533,17 @@ let output = source
   .replace("<html>", '<html lang="th">')
   .replace(
     "<title>Beat Breeze — Product Overview 2026</title>",
-    "<title>Beat Breeze — ภาพรวมภาษาไทยพร้อมเสียงบรรยาย</title>",
+    "<title>Beat Breeze — ภาพรวมผลิตภัณฑ์ 2026 (ภาษาไทย)</title>",
   )
   .replace("Unpacking...", "กำลังเตรียมงานนำเสนอ…")
   .replace("This page requires JavaScript to display.", "งานนำเสนอนี้ต้องใช้ JavaScript ในการแสดงผล")
   .replace(
     source.slice(templateStart, templateEnd),
     `\n${JSON.stringify(template).replaceAll("</script>", "<\\/script>")}\n  `,
+  )
+  .replace(
+    '\n  <script src="./narration/beat-breeze-voice-preview/controller.js" defer></script>',
+    "",
   )
   .replace(
     "\n</body>",
@@ -554,7 +563,7 @@ output = output.replace(/[ \t]+$/gm, "");
 writeFileSync(OUTPUT_PATH, output);
 if (existsSync(MANIFEST_PATH)) {
   const manifest = JSON.parse(readFileSync(MANIFEST_PATH, "utf8"));
-  manifest.source.previewDeckSha256 = createHash("sha256")
+  manifest.source.officialDeckSha256 = createHash("sha256")
     .update(Buffer.from(output))
     .digest("hex");
   const pendingManifestPath = `${MANIFEST_PATH}.${process.pid}.tmp`;
@@ -566,5 +575,5 @@ if (existsSync(MANIFEST_PATH)) {
   }
 }
 console.log(
-  `Thai preview built: 15 slides, ${translatedNodeCount} localized text nodes, ${path.relative(REPO_ROOT, OUTPUT_PATH)}.`,
+  `Thai presentation built: 15 slides, ${translatedNodeCount} localized text nodes, ${path.relative(REPO_ROOT, OUTPUT_PATH)}.`,
 );
