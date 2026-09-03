@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "deck": "beat-breeze",
+  "presentation": "beat-breeze-id",
+  "status": "approved-for-indonesian-synthesis",
+  "language": "id-ID",
+  "scriptStyle": {
+    "audience": "pemilik venue, tim operasional, dan pengambil keputusan brand",
+    "approach": "Presenter memandu sesuai isi yang terlihat di setiap slide: menjelaskan kelompok informasi, menunjukkan nilai operasional, dan berpindah antarbagian secara alami tanpa membaca teks layar kata demi kata.",
+    "targetSecondsPerSlide": "25-45"
+  },
+  "voice": {
+    "provider": "google-gemini",
+    "model": "gemini-3.1-flash-tts-preview",
+    "name": "Sulafat",
+    "performance": {
+      "name": "Maya",
+      "role": "spesialis produk Beat Breeze yang hangat, profesional, dan memahami operasional venue",
+      "scene": "presentasi langsung yang santai bersama seorang pengelola venue, sambil memandu secara alami mengikuti slide yang sedang tampil",
+      "style": "Percaya diri, ramah, dan alami. Berbicara seperti sedang membantu pelanggan memahami bagaimana Beat Breeze mendukung operasional, bukan membaca teks di layar dan bukan menggunakan gaya iklan.",
+      "pacing": "Tenang dan komunikatif, dengan jeda singkat di antara gagasan utama. Nama produk diucapkan dengan jelas tanpa penekanan berlebihan."
+    }
+  },
+  "slides": [
+    {
+      "id": "01-title",
+      "label": "Sampul",
+      "visualCoverage": [
+        "platform pengalaman venue lengkap",
+        "musik, layar, pengumuman, dan konten",
+        "satu platform untuk setiap ruang"
+      ],
+      "text": "Halo, dan terima kasih sudah meluangkan waktu untuk mengenal Beat Breeze. Platform ini bermula dari satu janji yang sangat sederhana: musik yang tepat selalu hadir di setiap zona venue. Namun, apa yang Anda lihat hari ini sudah berkembang jauh lebih luas. Dalam satu platform, Beat Breeze kini menghubungkan musik, layar, pengumuman suara, dan seluruh konten pendukung di setiap ruang yang Anda kelola. Jadi, ini bukan sekadar presentasi tentang sebuah pemutar musik. Kita akan melihat bagaimana satu sistem dapat membantu menciptakan sekaligus menjalankan seluruh pengalaman media di venue, menggunakan perangkat yang sudah Anda miliki."
+    },
+    {
+      "id": "02-one-platform-many-jobs",
+      "label": "Satu platform, banyak fungsi",
+      "visualCoverage": [
+        "musik dan otomatisasi",
+        "pembuatan konten",
+        "operasional venue"
+      ],
+      "text": "Slide ini merangkum Beat Breeze dalam tiga bidang utama. Di sebelah kiri ada musik dan otomatisasi: katalog berlisensi yang terus bertambah, musik berbeda untuk setiap zona, jadwal cerdas, Music Director, dan pemutaran offline yang andal. Bagian tengah adalah pembuatan konten. Compose membuat musik orisinal, Content Studio menghasilkan gambar dan video, TV Channels menayangkannya ke layar, dan pengumuman dapat dibuat dalam berbagai bahasa. Di sebelah kanan adalah operasional: jumlah venue dan zona tidak dibatasi, anggota tim dapat ditambahkan tanpa biaya kursi, Brand Lock menjaga standar brand, dan sistem berjalan pada perangkat yang sudah Anda miliki. Jika diperlukan, BMAsia juga menambahkan desain musik khusus dan dukungan sepanjang waktu. Tiga bagian ini penting karena biasanya memerlukan beberapa alat terpisah. Di sini semuanya berada dalam satu dasbor."
+    },
+    {
+      "id": "03-music-that-runs-itself",
+      "label": "Musik yang berjalan otomatis",
+      "visualCoverage": [
+        "musik berbeda untuk setiap zona",
+        "jadwal dan pembagian waktu",
+        "pemutaran offline",
+        "katalog dan penyusunan playlist dengan AI",
+        "lisensi bisnis"
+      ],
+      "text": "Fondasinya tetap musik, tetapi musik yang tidak selalu membutuhkan perhatian staf. Setiap ruang dapat menjadi zona tersendiri: misalnya jazz di lobi, deep house di bar, dan ambient di spa, semuanya dipantau dari satu dasbor. Jadwal mengatur perubahan suasana dari sarapan sampai larut malam, baik pada tingkat properti maupun seluruh grup. Jika internet terputus, jadwal dan musik tetap berjalan secara offline. Katalog sudah menyediakan lebih dari seratus ribu lagu berlisensi dan ratusan playlist hasil kurasi profesional, serta terus bertambah. Tim juga dapat menjelaskan suasana yang diinginkan agar AI membantu menyusun playlist yang sesuai. Dan karena musiknya bebas royalti serta berlisensi untuk penggunaan komersial, bukti lisensi dapat ditunjukkan melalui kode QR tanpa harus mencari dokumen. Inilah alasan kami menyebutnya musik yang dapat menjalankan dirinya sendiri."
+    },
+    {
+      "id": "04-automations",
+      "label": "Otomatisasi",
+      "visualCoverage": [
+        "jam tenang dan alur energi harian",
+        "pemicu cuaca dan suhu",
+        "jumlah pengunjung atau tingkat hunian",
+        "jeda waktu salat",
+        "playlist menurut waktu dan musim",
+        "aturan otomatis khusus"
+      ],
+      "text": "Otomatisasi membawa jadwal satu langkah lebih jauh karena musik dapat merespons kondisi nyata di venue. Jam tenang dapat menurunkan volume pada malam hari dan menaikkannya kembali pada pagi hari. Alur energi harian membuat suasana berubah secara bertahap, dari pagi yang tenang menuju siang yang lebih hidup lalu malam yang santai. Cuaca dan suhu juga dapat menjadi pemicu, misalnya musik yang terasa lebih hangat saat hujan atau lebih sejuk ketika hari panas. Dengan sensor atau data POS yang sesuai, energi dapat meningkat ketika jumlah pengunjung bertambah. Di pasar yang membutuhkannya, musik dapat berhenti dengan halus pada waktu salat lalu berlanjut kembali. Anda juga dapat mengatur playlist berdasarkan waktu, musim, dan hari raya. Semua contoh ini dapat dipilih langsung, atau tim Anda dapat membuat aturan sendiri sesuai cara venue beroperasi."
+    },
+    {
+      "id": "05-your-music-director",
+      "label": "Music Director Anda",
+      "visualCoverage": [
+        "belajar dari perilaku setiap zona",
+        "persiapan musim dan kalender",
+        "laporan dampak sebelum dan sesudah",
+        "saran yang disertai alasan",
+        "perubahan yang dapat dibatalkan"
+      ],
+      "text": "Music Director adalah kurator AI yang bekerja secara proaktif di dalam Beat Breeze. Tiga poin di sebelah kiri menjelaskan cara kerjanya. Pertama, sistem mempelajari perilaku nyata di setiap zona: lagu yang sering dilewati, perubahan volume, dan pilihan yang tetap diputar. Kedua, sistem mempersiapkan momen musiman seperti Natal, Tahun Baru Imlek, Songkran, atau kalender waktu salat sebelum tanggalnya tiba. Ketiga, data POS atau jumlah tamu dapat digunakan untuk menilai apakah perubahan musik benar-benar berdampak. Contoh di sebelah kanan menunjukkan bentuk sarannya. Music Director melihat pola selama enam Jumat malam, menjelaskan mengapa rotasi Golden Hour yang lebih hangat layak dicoba, lalu meminta persetujuan. Saran dibatasi agar tidak mengganggu, alasannya selalu terlihat, dan setiap perubahan dapat dibatalkan. Jadi, keputusan akhir tetap berada di tangan tim Anda."
+    },
+    {
+      "id": "06-compose",
+      "label": "Compose",
+      "visualCoverage": [
+        "brief musik dalam bahasa sehari-hari",
+        "musik orisinal untuk venue",
+        "penyempurnaan melalui percakapan",
+        "identitas suara khusus"
+      ],
+      "text": "Compose mengubah sebuah brief sederhana menjadi musik orisinal. Contoh di layar meminta bossa nova yang hangat dan pelan untuk makan malam dengan cahaya lilin, dengan perkusi ringan dan tanpa vokal. Dari kalimat seperti itu, Beat Breeze membuat lagu baru khusus untuk momen tersebut. Hasil pertama tidak harus menjadi versi akhir. Anda dapat menambahkan kalimat lain untuk mengubah suasana, tempo, instrumen, atau penggunaan vokal. Nilai utamanya bagi venue bukan hanya bahwa AI mampu membuat sebuah lagu. Yang lebih penting adalah kemampuan untuk membangun identitas suara yang benar-benar khas bagi sebuah kampanye, ruang, atau waktu layanan—bukan selalu menggunakan playlist umum yang juga dipakai banyak tempat lain."
+    },
+    {
+      "id": "07-studio-and-screens",
+      "label": "Studio dan layar",
+      "visualCoverage": [
+        "format konten Content Studio",
+        "desain yang mengikuti brand",
+        "distribusi melalui TV Channels",
+        "hiburan TV di kamar hotel"
+      ],
+      "text": "Pendekatan yang sama juga berlaku untuk konten visual. Content Studio membantu tim membuat materi yang sering dibutuhkan venue, seperti konten media sosial, poster promosi, video pendek, signage, atau ambient loop, semuanya mengikuti logo dan warna brand. Setelah itu, TV Channels mengirimkan konten langsung dari alat kreatif ke layar yang sudah tersedia. Layar lobi dapat menampilkan promosi malam ini sambil mengikuti musik zona tersebut; layar spa dapat memutar visual brand yang tenang; dan hotel dapat memperluas saluran yang sama ke TV di kamar tamu. Dengan begitu, proses membuat konten dan mendistribusikannya berada dalam satu tempat, bukan menjadi proyek digital signage terpisah yang harus dibeli dan dikelola sendiri."
+    },
+    {
+      "id": "08-announcements",
+      "label": "Pengumuman suara",
+      "visualCoverage": [
+        "pengumuman multibahasa di venue",
+        "pemutaran terjadwal di atas musik",
+        "audio tunggu telepon"
+      ],
+      "text": "Ini adalah bagian komunikasi suara dari pengalaman venue. Anda menulis pesannya, memilih bahasa dan suara, menentukan waktu, lalu membiarkan pengumuman diputar di atas musik. Pesannya bisa berupa happy hour, panggilan pesanan terakhir, sambutan, atau informasi operasional. Tiga contoh di layar menunjukkan bagaimana satu venue dapat berkomunikasi dalam berbagai bahasa tanpa memesan studio rekaman untuk setiap versi. Alat yang sama juga dapat membuat audio tunggu telepon yang profesional, menggabungkan narasi multibahasa dengan musik sebelum mengirimkannya langsung ke sistem telepon. Dengan kata lain, musik dan semua pesan yang mengelilinginya dapat dikelola dari satu tempat yang sama."
+    },
+    {
+      "id": "09-works-with-claude-and-chatgpt",
+      "label": "Terhubung dengan Claude dan ChatGPT",
+      "visualCoverage": [
+        "kendali dengan bahasa sehari-hari",
+        "pertanyaan tentang jadwal saat ini",
+        "konfirmasi sebelum perubahan jadwal",
+        "akses aman yang dapat dicabut"
+      ],
+      "text": "Jika tim Anda sudah bekerja dengan Claude atau ChatGPT, Beat Breeze dapat hadir langsung di jendela percakapan tersebut. Contoh di layar menunjukkan beberapa kegunaan: menanyakan musik yang akan diputar Jumat malam, menurunkan volume lobi, atau menyiapkan jadwal ambient baru untuk spa besok. Perintah langsung tetap mengikuti hak akses pengguna, sedangkan perubahan jadwal akan ditampilkan kembali untuk dikonfirmasi sebelum diterapkan. Koneksi menggunakan kunci aman milik akun yang dapat dicabut kapan saja, sehingga akses mudah dihentikan ketika seseorang atau sebuah integrasi tidak lagi memerlukannya. Manfaatnya sederhana: tim dapat menangani pekerjaan musik sehari-hari dengan bahasa yang alami, tanpa kehilangan kendali akhir atas apa yang berubah di venue."
+    },
+    {
+      "id": "10-built-for-operators",
+      "label": "Dibuat untuk tim operasional",
+      "visualCoverage": [
+        "pengelolaan mandiri untuk banyak properti",
+        "hak akses tim dan Brand Lock",
+        "pilihan pemutar dan beberapa zona di Windows",
+        "layanan yang dikelola BMAsia"
+      ],
+      "text": "Slide ini menunjukkan dua model operasional. Pada bagian atas, Anda mengelola Beat Breeze secara mandiri. Satu akun dapat mencakup banyak venue dan zona, setiap anggota tim hanya memperoleh akses yang dibutuhkan, dan Brand Lock menjaga musik pada area yang harus mengikuti standar brand. Pemutar berjalan pada perangkat mobile, Windows, atau browser yang didukung dan sudah Anda miliki. Dengan kartu suara multisaluran yang sesuai, satu PC Windows bahkan dapat melayani beberapa zona. Pada bagian bawah adalah model yang dikelola BMAsia. Platformnya tetap sama, tetapi tim kami menambahkan desain musik khusus, dukungan teknis sepanjang waktu, account manager, serta pengawasan seluruh grup. Anda dapat memilih tingkat dukungan yang paling sesuai dengan cara organisasi Anda ingin bekerja."
+    },
+    {
+      "id": "11-never-go-silent",
+      "label": "Musik tak pernah terhenti",
+      "visualCoverage": [
+        "operasional offline tanpa gangguan",
+        "pemutar yang pulih otomatis",
+        "konfirmasi pengiriman pengumuman",
+        "bukti lisensi yang dapat diverifikasi langsung"
+      ],
+      "text": "Semua kemampuan kreatif tadi hanya bernilai jika sistem tetap dapat diandalkan saat venue sedang beroperasi. Itulah tujuan empat lapisan perlindungan di layar. Jadwal mingguan, otomatisasi, dan jeda waktu salat disimpan secara lokal, sehingga tetap berjalan tanpa internet dan riwayat pemutaran akan tersinkron setelah koneksi kembali. Sistem pemantau mengawasi setiap pemutar dan memulihkannya secara otomatis jika perangkat macet. Setiap pengumuman melaporkan perangkat mana yang berhasil memutarnya, sehingga operator mengetahui bahwa pesan benar-benar sampai ke semua ruang yang dituju. Sertifikat lisensi juga menyediakan kode QR untuk verifikasi langsung ketika diminta pemeriksa. Seluruh rekayasa ini mengejar satu hasil: tamu di venue seharusnya tidak pernah menyadari adanya masalah teknis."
+    },
+    {
+      "id": "12-why-beat-breeze",
+      "label": "Mengapa Beat Breeze",
+      "visualCoverage": [
+        "platform musik dan jadwal",
+        "ketahanan saat internet terputus",
+        "pembuatan musik dan konten visual",
+        "pengumuman, audio tunggu, dan TV Channels",
+        "satu platform untuk seluruh pengalaman"
+      ],
+      "text": "Tabel ini menyatukan seluruh cerita. Musik per zona dan jadwal otomatis adalah fondasi yang juga ditawarkan oleh banyak solusi lain. Beat Breeze dirancang untuk melangkah lebih jauh dengan pemutaran offline, musik orisinal melalui Compose, pembuatan gambar dan video, pengumuman multibahasa, audio tunggu telepon, dan TV Channels berbrand. Perbedaan sebenarnya bukan hanya satu tanda centang di dalam tabel. Yang membedakan adalah venue tidak perlu menyatukan sendiri platform musik, alat kreatif, sistem pesan, dan layar menjadi beberapa solusi terpisah. Beat Breeze menjalankan pengalaman di venue sekaligus membantu menciptakan konten yang menjadi bagian dari pengalaman tersebut."
+    },
+    {
+      "id": "13-pricing",
+      "label": "Harga",
+      "visualCoverage": [
+        "harga dan uji coba paket mandiri",
+        "harga dan layanan yang dikelola BMAsia",
+        "solusi enterprise",
+        "tanpa perangkat khusus yang diwajibkan"
+      ],
+      "text": "Ada dua cara yang jelas untuk menggunakan Beat Breeze. Paket mandiri berharga dua belas dolar AS, atau tiga ratus sembilan puluh sembilan baht, per zona per bulan. Semua kemampuan yang baru kita lihat sudah termasuk, dan Anda dapat memulai uji coba empat belas hari untuk satu zona tanpa kartu. Paket yang dikelola BMAsia berharga dua ratus enam puluh dolar AS per zona per tahun. Paket ini menambahkan desain musik berkelanjutan untuk brand, dukungan teknis, dan account manager khusus. Grup yang lebih besar dapat menggunakan kontrak khusus dan pilihan penagihan yang sesuai kebutuhan lokal. Apa pun model yang dipilih, Anda tidak diwajibkan membeli box pemutar khusus karena platform berjalan pada perangkat yang didukung dan sudah Anda miliki."
+    },
+    {
+      "id": "14-whos-behind-it",
+      "label": "Tim di balik Beat Breeze",
+      "visualCoverage": [
+        "BMAsia sejak 2002",
+        "desainer musik berpengalaman yang membimbing kurasi",
+        "tim ahli 24/7 dan pengembangan berdasarkan kebutuhan operator"
+      ],
+      "text": "Di balik Beat Breeze ada BMAsia, tim yang telah merancang musik untuk hotel, restoran, ritel, dan wellness sejak 2002. Pengalaman itu penting karena platform ini tidak dibentuk oleh teknologi saja. Desainer musik yang aktif di bidangnya membantu mengarahkan cara konten dikurasi dan cara AI memahami karakter setiap jenis ruang. Tim ahli juga siap memberikan dukungan dua puluh empat jam sehari, sementara arah pengembangan produk dipandu oleh kebutuhan nyata yang disampaikan operator kepada kami. Jadi, ketika memilih Beat Breeze, Anda mendapatkan teknologi yang modern sekaligus tim musik dan layanan berpengalaman yang benar-benar berada di belakangnya."
+    },
+    {
+      "id": "15-close",
+      "label": "Mulai",
+      "visualCoverage": [
+        "fondasi musik yang andal dan kemampuan yang lebih luas",
+        "langkah berikut bagi pelanggan lama dan baru",
+        "jalur kontak Beat Breeze dan BMAsia"
+      ],
+      "text": "Itulah Beat Breeze saat ini. Platform musik yang andal tetap berada di pusatnya, tetapi sekarang dapat melakukan jauh lebih banyak untuk seluruh pengalaman di sekeliling musik. Jika Anda sudah menggunakan Beat Breeze, masuklah dan coba Compose, Content Studio, atau Pengumuman, karena semuanya sudah termasuk dalam paket Anda. Jika Anda baru ingin memulai, kunjungi beatbreeze.io atau hubungi Norbert di BMAsia. Kami akan membantu memilih titik awal yang paling masuk akal untuk venue Anda."
+    }
+  ]
+}

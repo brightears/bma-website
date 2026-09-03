@@ -1,12 +1,13 @@
 (() => {
   "use strict";
 
-  const VERSION = "2026-09-03-official-2";
+  const VERSION = "2026-09-03-official-3";
   const LOCALE = (() => {
     const language = document.documentElement.lang.toLowerCase();
     if (language.startsWith("th")) return "th";
     if (language.startsWith("zh")) return "zh";
     if (language.startsWith("vi")) return "vi";
+    if (language.startsWith("id")) return "id";
     return "en";
   })();
   const CANONICAL_LABELS = {
@@ -52,6 +53,20 @@
     "Bảng giá": "Pricing",
     "Đội ngũ phía sau": "Who's behind it",
     "Bắt đầu": "Close",
+    "Sampul": "Title",
+    "Satu platform, banyak fungsi": "One platform, many jobs",
+    "Musik yang berjalan otomatis": "Music that runs itself",
+    "Otomatisasi": "Automations",
+    "Music Director Anda": "Your Music Director",
+    "Studio dan layar": "Studio & screens",
+    "Pengumuman suara": "Announcements",
+    "Terhubung dengan Claude dan ChatGPT": "Works with Claude & ChatGPT",
+    "Dibuat untuk tim operasional": "Built for operators",
+    "Musik tak pernah terhenti": "Never go silent",
+    "Mengapa Beat Breeze": "Why Beat Breeze",
+    "Harga": "Pricing",
+    "Tim di balik Beat Breeze": "Who's behind it",
+    "Mulai": "Close",
   };
   const canonicalLabel = (label) => CANONICAL_LABELS[label] || label;
   const MOTION_LABELS = new Set([
@@ -327,11 +342,22 @@
     ]),
   );
 
+  // The Indonesian presenter script follows the same semantic order and
+  // conversational cadence as the Vietnamese edition. Keep a separate cue
+  // object so timings can be tuned independently after native-speaker review.
+  const INDONESIAN_CUE_TIMELINES = Object.fromEntries(
+    Object.entries(VIETNAMESE_CUE_TIMELINES).map(([label, cues]) => [
+      label,
+      cues.map((cue) => ({ ...cue })),
+    ]),
+  );
+
   const CUE_TIMELINES_BY_LOCALE = {
     en: ENGLISH_CUE_TIMELINES,
     th: THAI_CUE_TIMELINES,
     zh: CHINESE_CUE_TIMELINES,
     vi: VIETNAMESE_CUE_TIMELINES,
+    id: INDONESIAN_CUE_TIMELINES,
   };
   for (const [locale, timelines] of Object.entries(CUE_TIMELINES_BY_LOCALE)) {
     for (const label of MOTION_LABELS) {
