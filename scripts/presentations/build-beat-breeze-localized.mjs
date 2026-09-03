@@ -206,7 +206,7 @@ const ENGLISH_GUARD_SOURCE_PATTERN =
 const MOTION_SCRIPT =
   '  <script src="./narration/beat-breeze-motion/controller.js?v=2026-09-03-5" defer></script>';
 const LANGUAGE_SELECTOR_SCRIPT =
-  '  <script src="./narration/beat-breeze-language-selector/controller.js?v=2026-09-03-1" defer></script>';
+  '  <script src="./narration/beat-breeze-language-selector/controller.js?v=2026-09-03-2" defer></script>';
 const MOTION_SCRIPT_PATTERN =
   /\n\s*<script src="\.\/narration\/beat-breeze-motion(?:-preview)?\/controller\.js(?:\?v=[^"]+)?" defer><\/script>/g;
 const LANGUAGE_SELECTOR_SCRIPT_PATTERN =
@@ -402,6 +402,9 @@ let output = source
 writeFileSync(OUTPUT_PATH, output);
 if (existsSync(MANIFEST_PATH)) {
   const manifest = JSON.parse(readFileSync(MANIFEST_PATH, "utf8"));
+  manifest.source.englishDeckSha256 = createHash("sha256")
+    .update(readFileSync(SOURCE_PATH))
+    .digest("hex");
   manifest.source.officialDeckSha256 = createHash("sha256")
     .update(Buffer.from(output))
     .digest("hex");

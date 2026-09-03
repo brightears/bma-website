@@ -46,7 +46,7 @@ const GUARD_SOURCE_PATTERN =
 const MOTION_SCRIPT =
   '  <script src="./narration/beat-breeze-motion/controller.js?v=2026-09-03-5" defer></script>';
 const LANGUAGE_SELECTOR_SCRIPT =
-  '  <script src="./narration/beat-breeze-language-selector/controller.js?v=2026-09-03-1" defer></script>';
+  '  <script src="./narration/beat-breeze-language-selector/controller.js?v=2026-09-03-2" defer></script>';
 const MOTION_SCRIPT_PATTERN =
   /\n\s*<script src="\.\/narration\/beat-breeze-motion(?:-preview)?\/controller\.js(?:\?v=[^"]+)?" defer><\/script>/g;
 const LANGUAGE_SELECTOR_SCRIPT_PATTERN =
