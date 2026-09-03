@@ -154,6 +154,19 @@ if (
 ) {
   fail("The Malay slide 14 support wording or controller localization is incorrect.");
 }
+if (
+  !malayOfficial.includes("Muzik anda sendiri, <br>hanya") ||
+  !malayOfficial.includes("Belum kena? Ubah suai dengan satu arahan lagi.") ||
+  malayOfficial.includes("Perhalusinya dengan satu ayat lagi.") ||
+  !script.slides[5]?.text.startsWith(
+    "Dengan Compose, satu arahan ringkas sudah cukup untuk menghasilkan muzik asli.",
+  ) ||
+  /menukar taklimat ringkas|Daripada ayat seperti itu|Nilai utamanya kepada sesebuah premis/.test(
+    script.slides[5]?.text || "",
+  )
+) {
+  fail("The approved natural Malaysian Malay refinement is missing from slide 6.");
+}
 
 if (
   manifest.source.englishDeckPath !== "public/presentations/beat-breeze.html" ||
@@ -208,12 +221,22 @@ if (
   fail("The Malay narration manifest does not declare complete 15-slide coverage.");
 }
 const transcriptionQa = manifest.qualityAssurance?.transcription;
+const targetedTranscriptionQa =
+  transcriptionQa?.validationMode ===
+  "full-deck-baseline-plus-targeted-slide";
 if (
   transcriptionQa?.model !== "gemini-3.5-transcribe" ||
   transcriptionQa?.languageCode !== "ms-MY" ||
   transcriptionQa?.slidesPassing !== 15 ||
   transcriptionQa?.maximumCharacterErrorRate >
-    transcriptionQa?.requiredMaximumCharacterErrorRate
+    transcriptionQa?.requiredMaximumCharacterErrorRate ||
+  (targetedTranscriptionQa &&
+    (transcriptionQa?.verifiedUnchangedSlideCount !== 14 ||
+      transcriptionQa?.baselineFullDeck?.slidesPassing !== 15 ||
+      transcriptionQa?.targetedUpdate?.id !== "06-compose" ||
+      transcriptionQa?.targetedUpdate?.pass !== true)) ||
+  (!targetedTranscriptionQa &&
+    typeof transcriptionQa?.meanCharacterErrorRate !== "number")
 ) {
   fail("The Malay narration transcription quality gate is missing or failed.");
 }
@@ -302,6 +325,8 @@ console.log(
   `PASS: ${manifest.slides.length} Malaysian Malay Sulafat clips decode correctly (${manifest.totalDurationSeconds.toFixed(1)}s total).`,
 );
 console.log(
-  `PASS: automated Malaysian Malay speech fidelity passed all 15 slides (mean CER ${(transcriptionQa.meanCharacterErrorRate * 100).toFixed(1)}%, max ${(transcriptionQa.maximumCharacterErrorRate * 100).toFixed(1)}%).`,
+  targetedTranscriptionQa
+    ? `PASS: automated Malaysian Malay speech fidelity retains the verified 15-slide baseline and the updated slide 6 passed at CER ${(transcriptionQa.targetedUpdate.characterErrorRate * 100).toFixed(1)}%.`
+    : `PASS: automated Malaysian Malay speech fidelity passed all 15 slides (mean CER ${(transcriptionQa.meanCharacterErrorRate * 100).toFixed(1)}%, max ${(transcriptionQa.maximumCharacterErrorRate * 100).toFixed(1)}%).`,
 );
 console.log("PASS: Malay deck, script, manifest, audio hashes, labels, and local fallback agree.");

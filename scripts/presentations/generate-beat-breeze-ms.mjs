@@ -21,6 +21,13 @@ const API_REVISION = "2026-05-20";
 const LOUDNESS_TARGET = -18;
 const TRUE_PEAK_TARGET = -3;
 const LOUDNESS_RANGE = 7;
+const slideIdFlagIndex = process.argv.indexOf("--slide-id");
+const TARGET_SLIDE_ID =
+  slideIdFlagIndex >= 0 ? process.argv[slideIdFlagIndex + 1] : null;
+
+if (slideIdFlagIndex >= 0 && !TARGET_SLIDE_ID) {
+  throw new Error("Pass a slide id after --slide-id.");
+}
 
 if (!process.argv.includes("--confirm-spend")) {
   throw new Error(
@@ -96,6 +103,26 @@ if (
   script.slides.length !== 15
 ) {
   throw new Error("The Malaysian Malay narration script must contain all 15 Beat Breeze slides.");
+}
+if (TARGET_SLIDE_ID && !script.slides.some((slide) => slide.id === TARGET_SLIDE_ID)) {
+  throw new Error(`Unknown Malaysian Malay narration slide: ${TARGET_SLIDE_ID}.`);
+}
+if (TARGET_SLIDE_ID && !existsSync(MANIFEST_PATH)) {
+  throw new Error("A complete verified manifest is required for targeted slide regeneration.");
+}
+const previousManifest = TARGET_SLIDE_ID
+  ? JSON.parse(readFileSync(MANIFEST_PATH, "utf8"))
+  : null;
+const previousTranscriptionQa =
+  previousManifest?.qualityAssurance?.transcription || null;
+if (
+  TARGET_SLIDE_ID &&
+  (previousManifest?.slides?.length !== 15 ||
+    previousTranscriptionQa?.slidesPassing !== 15)
+) {
+  throw new Error(
+    "Targeted regeneration requires a previously verified complete 15-slide release.",
+  );
 }
 
 const sourceHtml = readFileSync(ENGLISH_DECK, "utf8");
@@ -333,6 +360,35 @@ try {
       throw new Error(`Slide ${index + 1} is missing id, label, or narration text.`);
     }
 
+    const previousSlide = previousManifest?.slides?.[index];
+    if (TARGET_SLIDE_ID && slide.id !== TARGET_SLIDE_ID) {
+      if (
+        previousSlide?.id !== slide.id ||
+        previousSlide?.label !== slide.label ||
+        previousSlide?.text !== slide.text ||
+        JSON.stringify(previousSlide?.visualCoverage) !==
+          JSON.stringify(slide.visualCoverage)
+      ) {
+        throw new Error(
+          `Slide ${index + 1} changed outside the targeted regeneration scope.`,
+        );
+      }
+      const previousAudioPath = path.join(PRESENTATION_ROOT, previousSlide.src);
+      if (
+        !existsSync(previousAudioPath) ||
+        sha256File(previousAudioPath) !== previousSlide.audioSha256
+      ) {
+        throw new Error(
+          `The verified carry-forward audio is missing or changed for slide ${index + 1}.`,
+        );
+      }
+      slides.push(previousSlide);
+      console.log(
+        `${String(index + 1).padStart(2, "0")}/15 ${slide.label} — verified carry-forward`,
+      );
+      continue;
+    }
+
     const cacheKey = sha256Buffer(
       Buffer.from(
         JSON.stringify({
@@ -467,6 +523,22 @@ try {
       slides.reduce((sum, slide) => sum + slide.durationSeconds, 0).toFixed(3),
     ),
     slides,
+    ...(TARGET_SLIDE_ID
+      ? {
+          generation: {
+            mode: "targeted-slide-regeneration",
+            updatedSlideIds: [TARGET_SLIDE_ID],
+            verifiedCarryForwardSlideCount: 14,
+          },
+          qualityAssurance: {
+            transcription: {
+              status: "pending-targeted-slide-update",
+              targetSlideId: TARGET_SLIDE_ID,
+              baselineFullDeck: previousTranscriptionQa,
+            },
+          },
+        }
+      : {}),
   };
 
   if (existsSync(releaseAudioDir)) {
@@ -498,7 +570,9 @@ try {
     rmSync(pendingControllerPath, { force: true });
   }
   console.log(
-    `Narration ready: ${slides.length} clips, ${manifest.totalDurationSeconds.toFixed(1)} seconds total.`,
+    TARGET_SLIDE_ID
+      ? `Narration ready: 1 updated clip, 14 verified carry-forwards, ${manifest.totalDurationSeconds.toFixed(1)} seconds total.`
+      : `Narration ready: ${slides.length} clips, ${manifest.totalDurationSeconds.toFixed(1)} seconds total.`,
   );
 } catch (error) {
   rmSync(stagingAudioDir, { recursive: true, force: true });
