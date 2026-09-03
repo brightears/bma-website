@@ -44,9 +44,13 @@ const CHINESE_MANIFEST_PATH = path.join(
 const GUARD_SOURCE_PATTERN =
   /\n  <template id="beat-breeze-layout-guard-source"[\s\S]*?<\/template>/;
 const MOTION_SCRIPT =
-  '  <script src="./narration/beat-breeze-motion/controller.js?v=2026-09-02-5" defer></script>';
+  '  <script src="./narration/beat-breeze-motion/controller.js?v=2026-09-03-5" defer></script>';
+const LANGUAGE_SELECTOR_SCRIPT =
+  '  <script src="./narration/beat-breeze-language-selector/controller.js?v=2026-09-03-1" defer></script>';
 const MOTION_SCRIPT_PATTERN =
   /\n\s*<script src="\.\/narration\/beat-breeze-motion(?:-preview)?\/controller\.js(?:\?v=[^"]+)?" defer><\/script>/g;
+const LANGUAGE_SELECTOR_SCRIPT_PATTERN =
+  /\n\s*<script src="\.\/narration\/beat-breeze-language-selector\/controller\.js(?:\?v=[^"]+)?" defer><\/script>/g;
 
 const sha256 = (value) =>
   createHash("sha256").update(Buffer.from(value)).digest("hex");
@@ -66,7 +70,8 @@ const updateManifest = (manifestPath, update) => {
 
 let output = readFileSync(DECK_PATH, "utf8")
   .replace(GUARD_SOURCE_PATTERN, "")
-  .replace(MOTION_SCRIPT_PATTERN, "");
+  .replace(MOTION_SCRIPT_PATTERN, "")
+  .replace(LANGUAGE_SELECTOR_SCRIPT_PATTERN, "");
 const templateMarker = '<script type="__bundler/template">';
 const templateStart = output.indexOf(templateMarker) + templateMarker.length;
 const templateEnd = output.indexOf("</script>", templateStart);
@@ -134,7 +139,7 @@ output = output
   )
   .replace(
     '\n  <script src="./narration/beat-breeze-voice-preview/controller.js" defer></script>',
-    `\n  <script src="./narration/beat-breeze-voice-preview/controller.js" defer></script>\n${MOTION_SCRIPT}`,
+    `\n  <script src="./narration/beat-breeze-voice-preview/controller.js" defer></script>\n${MOTION_SCRIPT}\n${LANGUAGE_SELECTOR_SCRIPT}`,
   )
   .replace(/[ \t]+$/gm, "");
 

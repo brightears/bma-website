@@ -50,9 +50,13 @@ const FONT_ROOT = path.join(
 const ENGLISH_GUARD_SOURCE_PATTERN =
   /\n  <template id="beat-breeze-layout-guard-source"[\s\S]*?<\/template>/;
 const MOTION_SCRIPT =
-  '  <script src="./narration/beat-breeze-motion/controller.js?v=2026-09-02-5" defer></script>';
+  '  <script src="./narration/beat-breeze-motion/controller.js?v=2026-09-03-5" defer></script>';
+const LANGUAGE_SELECTOR_SCRIPT =
+  '  <script src="./narration/beat-breeze-language-selector/controller.js?v=2026-09-03-1" defer></script>';
 const MOTION_SCRIPT_PATTERN =
   /\n\s*<script src="\.\/narration\/beat-breeze-motion(?:-preview)?\/controller\.js(?:\?v=[^"]+)?" defer><\/script>/g;
+const LANGUAGE_SELECTOR_SCRIPT_PATTERN =
+  /\n\s*<script src="\.\/narration\/beat-breeze-language-selector\/controller\.js(?:\?v=[^"]+)?" defer><\/script>/g;
 
 const requiredFiles = [
   SOURCE_PATH,
@@ -391,7 +395,8 @@ if (
 
 const source = readFileSync(SOURCE_PATH, "utf8")
   .replace(ENGLISH_GUARD_SOURCE_PATTERN, "")
-  .replace(MOTION_SCRIPT_PATTERN, "");
+  .replace(MOTION_SCRIPT_PATTERN, "")
+  .replace(LANGUAGE_SELECTOR_SCRIPT_PATTERN, "");
 const templateMarker = '<script type="__bundler/template">';
 const templateStart = source.indexOf(templateMarker) + templateMarker.length;
 const templateEnd = source.indexOf("</script>", templateStart);
@@ -559,7 +564,7 @@ let output = source
   )
   .replace(
     "\n</body>",
-    `\n  <script src="./narration/beat-breeze-voice-preview-th/controller.js" defer></script>\n${MOTION_SCRIPT}\n</body>`,
+    `\n  <script src="./narration/beat-breeze-voice-preview-th/controller.js" defer></script>\n${MOTION_SCRIPT}\n${LANGUAGE_SELECTOR_SCRIPT}\n</body>`,
   );
 
 output = output.replace(/[ \t]+$/gm, "");

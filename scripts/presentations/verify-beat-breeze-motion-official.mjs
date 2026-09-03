@@ -6,13 +6,7 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(HERE, "../..");
 const PRESENTATION_ROOT = path.join(REPO_ROOT, "public", "presentations");
 const MOTION_REFERENCE =
-  './narration/beat-breeze-motion/controller.js?v=2026-09-02-5';
-const VIETNAMESE_MOTION_REFERENCE =
-  './narration/beat-breeze-motion/controller.js?v=2026-09-03-1';
-const INDONESIAN_MOTION_REFERENCE =
-  './narration/beat-breeze-motion/controller.js?v=2026-09-03-2';
-const MALAY_MOTION_REFERENCE =
-  './narration/beat-breeze-motion/controller.js?v=2026-09-03-3';
+  './narration/beat-breeze-motion/controller.js?v=2026-09-03-5';
 const MOTION_CONTROLLER = path.join(
   PRESENTATION_ROOT,
   "narration",
@@ -48,21 +42,36 @@ const decks = [
     path: path.join(PRESENTATION_ROOT, "beat-breeze-vi.html"),
     languageMarker: '<html lang="vi">',
     narration: "./narration/beat-breeze-vi/controller.js",
-    motionReference: VIETNAMESE_MOTION_REFERENCE,
   },
   {
     locale: "id",
     path: path.join(PRESENTATION_ROOT, "beat-breeze-id.html"),
     languageMarker: '<html lang="id">',
     narration: "./narration/beat-breeze-id/controller.js",
-    motionReference: INDONESIAN_MOTION_REFERENCE,
   },
   {
     locale: "ms",
     path: path.join(PRESENTATION_ROOT, "beat-breeze-ms.html"),
     languageMarker: '<html lang="ms">',
     narration: "./narration/beat-breeze-ms/controller.js",
-    motionReference: MALAY_MOTION_REFERENCE,
+  },
+  {
+    locale: "ko",
+    path: path.join(PRESENTATION_ROOT, "beat-breeze-ko.html"),
+    languageMarker: '<html lang="ko" dir="ltr">',
+    narration: "./narration/beat-breeze-localized/controller.js",
+  },
+  {
+    locale: "ja",
+    path: path.join(PRESENTATION_ROOT, "beat-breeze-ja.html"),
+    languageMarker: '<html lang="ja" dir="ltr">',
+    narration: "./narration/beat-breeze-localized/controller.js",
+  },
+  {
+    locale: "ar",
+    path: path.join(PRESENTATION_ROOT, "beat-breeze-ar.html"),
+    languageMarker: '<html lang="ar" dir="rtl">',
+    narration: "./narration/beat-breeze-localized/controller.js",
   },
 ];
 
@@ -81,7 +90,7 @@ for (const deck of decks) {
   if (!html.includes(deck.narration)) {
     throw new Error(`${deck.locale}: localized narration controller is missing.`);
   }
-  if (!html.includes(deck.motionReference || MOTION_REFERENCE)) {
+  if (!html.includes(MOTION_REFERENCE)) {
     throw new Error(`${deck.locale}: official motion controller is missing or stale.`);
   }
   const templateMarker = '<script type="__bundler/template">';
@@ -99,7 +108,7 @@ for (const deck of decks) {
 
 const controller = readFileSync(MOTION_CONTROLLER, "utf8");
 for (const required of [
-  'const VERSION = "2026-09-03-official-4"',
+  'const VERSION = "2026-09-03-official-5"',
   "const ENGLISH_CUE_TIMELINES",
   "const THAI_CUE_TIMELINES",
   "const CHINESE_CUE_TIMELINES",
@@ -117,5 +126,5 @@ if (controller.includes("bbm-cue-surface::before") || controller.includes("drop-
 }
 
 console.log(
-  "PASS: English, Thai, Chinese, Vietnamese, Indonesian, and Malay official decks each contain 15 slides, localized narration, and the shared subtle-motion controller; the preview route is removed.",
+  "PASS: all nine official Beat Breeze decks contain 15 slides, localized narration, and the shared subtle-motion controller; the preview route is removed.",
 );

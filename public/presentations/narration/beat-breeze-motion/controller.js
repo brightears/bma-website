@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "2026-09-03-official-4";
+  const VERSION = "2026-09-03-official-5";
   const LOCALE = (() => {
     const language = document.documentElement.lang.toLowerCase();
     if (language.startsWith("th")) return "th";
@@ -9,6 +9,9 @@
     if (language.startsWith("vi")) return "vi";
     if (language.startsWith("id")) return "id";
     if (language.startsWith("ms")) return "ms";
+    if (language.startsWith("ko")) return "ko";
+    if (language.startsWith("ja")) return "ja";
+    if (language.startsWith("ar")) return "ar";
     return "en";
   })();
   const CANONICAL_LABELS = {
@@ -79,6 +82,46 @@
     "Mengapa Beat Breeze": "Why Beat Breeze",
     "Pasukan di sebalik Beat Breeze": "Who's behind it",
     "Mulakan": "Close",
+    "표지": "Title",
+    "하나의 플랫폼, 다양한 기능": "One platform, many jobs",
+    "스스로 운영되는 음악": "Music that runs itself",
+    "자동화": "Automations",
+    "Studio와 스크린": "Studio & screens",
+    "음성 안내": "Announcements",
+    "Claude와 ChatGPT 연동": "Works with Claude & ChatGPT",
+    "운영팀을 위한 설계": "Built for operators",
+    "음악은 멈추지 않습니다": "Never go silent",
+    "왜 Beat Breeze인가": "Why Beat Breeze",
+    "요금": "Pricing",
+    "Beat Breeze를 만드는 사람들": "Who's behind it",
+    "시작하기": "Close",
+    "表紙": "Title",
+    "ひとつのプラットフォーム、多彩な機能": "One platform, many jobs",
+    "自動で運用される音楽": "Music that runs itself",
+    "オートメーション": "Automations",
+    "Studioとスクリーン": "Studio & screens",
+    "音声アナウンス": "Announcements",
+    "ClaudeとChatGPTとの連携": "Works with Claude & ChatGPT",
+    "運営チームのための設計": "Built for operators",
+    "音楽を止めない仕組み": "Never go silent",
+    "Beat Breezeが選ばれる理由": "Why Beat Breeze",
+    "料金": "Pricing",
+    "Beat Breezeを支えるチーム": "Who's behind it",
+    "はじめる": "Close",
+    "الغلاف": "Title",
+    "منصة واحدة، مهام متعددة": "One platform, many jobs",
+    "موسيقى تدير نفسها": "Music that runs itself",
+    "الأتمتة": "Automations",
+    "Music Director الخاص بكم": "Your Music Director",
+    "الاستوديو والشاشات": "Studio & screens",
+    "الإعلانات الصوتية": "Announcements",
+    "يعمل مع Claude وChatGPT": "Works with Claude & ChatGPT",
+    "مصمم لفرق التشغيل": "Built for operators",
+    "الموسيقى لا تتوقف": "Never go silent",
+    "لماذا Beat Breeze": "Why Beat Breeze",
+    "الأسعار": "Pricing",
+    "الفريق وراء Beat Breeze": "Who's behind it",
+    "ابدأ الآن": "Close",
   };
   const canonicalLabel = (label) => CANONICAL_LABELS[label] || label;
   const MOTION_LABELS = new Set([
@@ -380,6 +423,9 @@
     vi: VIETNAMESE_CUE_TIMELINES,
     id: INDONESIAN_CUE_TIMELINES,
     ms: MALAY_CUE_TIMELINES,
+    ko: ENGLISH_CUE_TIMELINES,
+    ja: ENGLISH_CUE_TIMELINES,
+    ar: ENGLISH_CUE_TIMELINES,
   };
   for (const [locale, timelines] of Object.entries(CUE_TIMELINES_BY_LOCALE)) {
     for (const label of MOTION_LABELS) {
