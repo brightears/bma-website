@@ -30,9 +30,9 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "2506ecfcc9f04c504e62748fc42b579e242e340eb8ba0bdec399458465b1deec",
+    "englishDeckSha256": "397bb022eaf51ad90b70f0eabf98d23752f0b8a3037f81234762258eb61a8aa7",
     "officialDeckPath": "public/presentations/beat-breeze-vi.html",
-    "officialDeckSha256": "c418eb316aef081d0642d0df40f918a8a7bf8e6b013bc5d1604b37a04856cfd1",
+    "officialDeckSha256": "a7d2a4a3d7032799c55a2ddc110f1b94b4836b0671cdf8e1a7f94724bf170264",
     "scriptPath": "public/presentations/narration/beat-breeze-vi/script.json",
     "scriptSha256": "551eacd429fea08aa17cf841d7a690cc71c66d7f36443e17446fd778d9b0b60d",
     "copyPath": "public/presentations/narration/beat-breeze-vi/copy.json",
