@@ -19,63 +19,63 @@
     slides: [
       {
         index: 1,
-        src: "audio/20260902-76c9d16b3620/01-title.mp3",
+        src: "audio/20260903-3827823b0a44/01-title.mp3",
       },
       {
         index: 2,
-        src: "audio/20260902-76c9d16b3620/02-one-platform-many-jobs.mp3",
+        src: "audio/20260903-3827823b0a44/02-one-platform-many-jobs.mp3",
       },
       {
         index: 3,
-        src: "audio/20260902-76c9d16b3620/03-music-that-runs-itself.mp3",
+        src: "audio/20260903-3827823b0a44/03-music-that-runs-itself.mp3",
       },
       {
         index: 4,
-        src: "audio/20260902-76c9d16b3620/04-automations.mp3",
+        src: "audio/20260903-3827823b0a44/04-automations.mp3",
       },
       {
         index: 5,
-        src: "audio/20260902-76c9d16b3620/05-your-music-director.mp3",
+        src: "audio/20260903-3827823b0a44/05-your-music-director.mp3",
       },
       {
         index: 6,
-        src: "audio/20260902-76c9d16b3620/06-compose.mp3",
+        src: "audio/20260903-3827823b0a44/06-compose.mp3",
       },
       {
         index: 7,
-        src: "audio/20260902-76c9d16b3620/07-studio-and-screens.mp3",
+        src: "audio/20260903-3827823b0a44/07-studio-and-screens.mp3",
       },
       {
         index: 8,
-        src: "audio/20260902-76c9d16b3620/08-announcements.mp3",
+        src: "audio/20260903-3827823b0a44/08-announcements.mp3",
       },
       {
         index: 9,
-        src: "audio/20260902-76c9d16b3620/09-works-with-claude-and-chatgpt.mp3",
+        src: "audio/20260903-3827823b0a44/09-works-with-claude-and-chatgpt.mp3",
       },
       {
         index: 10,
-        src: "audio/20260902-76c9d16b3620/10-built-for-operators.mp3",
+        src: "audio/20260903-3827823b0a44/10-built-for-operators.mp3",
       },
       {
         index: 11,
-        src: "audio/20260902-76c9d16b3620/11-never-go-silent.mp3",
+        src: "audio/20260903-3827823b0a44/11-never-go-silent.mp3",
       },
       {
         index: 12,
-        src: "audio/20260902-76c9d16b3620/12-why-beat-breeze.mp3",
+        src: "audio/20260903-3827823b0a44/12-why-beat-breeze.mp3",
       },
       {
         index: 13,
-        src: "audio/20260902-76c9d16b3620/13-pricing.mp3",
+        src: "audio/20260903-3827823b0a44/13-pricing.mp3",
       },
       {
         index: 14,
-        src: "audio/20260902-76c9d16b3620/14-whos-behind-it.mp3",
+        src: "audio/20260903-3827823b0a44/14-whos-behind-it.mp3",
       },
       {
         index: 15,
-        src: "audio/20260902-76c9d16b3620/15-close.mp3",
+        src: "audio/20260903-3827823b0a44/15-close.mp3",
       },
     ],
   };
