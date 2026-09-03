@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "2026-09-03-1";
+  const VERSION = "2026-09-03-2";
   const LOCALES = [
     { code: "en", name: "English", path: "beat-breeze.html", dir: "ltr" },
     { code: "th", name: "ไทย", path: "beat-breeze-th.html", dir: "ltr" },
@@ -116,6 +116,7 @@
       }
       .language-selector-option {
         display: flex;
+        direction: ltr;
         align-items: center;
         justify-content: space-between;
         gap: 16px;
@@ -127,6 +128,9 @@
         text-decoration: none;
         font: 500 13px/1.25 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         transition: color 140ms ease, background 140ms ease;
+      }
+      .language-selector-option > span {
+        unicode-bidi: isolate;
       }
       .language-selector-option:hover,
       .language-selector-option:focus-visible {
@@ -236,10 +240,10 @@
     menu.setAttribute("aria-label", copy.menu);
     menu.innerHTML = LOCALES.map(
       (locale) => `
-        <a class="language-selector-option" role="menuitem" dir="${locale.dir}"
+        <a class="language-selector-option" role="menuitem"
           lang="${locale.code}" href="${destinationFor(locale.path)}"
           ${locale.code === currentCode ? 'aria-current="page"' : ""}>
-          <span>${locale.name}</span>
+          <span dir="${locale.dir}">${locale.name}</span>
         </a>`,
     ).join("");
 

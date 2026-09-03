@@ -95,7 +95,7 @@ for (const deckName of ALL_DECKS) {
   if (
     (
       deck.match(
-        /beat-breeze-language-selector\/controller\.js\?v=2026-09-03-1/g,
+        /beat-breeze-language-selector\/controller\.js\?v=2026-09-03-2/g,
       ) || []
     ).length !== 1
   ) {
@@ -112,6 +112,14 @@ if (
   !selector.includes("prefers-reduced-motion")
 ) {
   fail("Language selector accessibility or slide-preservation behavior is incomplete.");
+}
+if (
+  selector.includes('role="menuitem" dir="${locale.dir}"') ||
+  !selector.includes('<span dir="${locale.dir}">${locale.name}</span>') ||
+  !selector.includes("direction: ltr;") ||
+  !selector.includes("unicode-bidi: isolate;")
+) {
+  fail("Language selector must isolate label direction without moving RTL rows.");
 }
 
 for (const [localeCode, locale] of Object.entries(LOCALES)) {
