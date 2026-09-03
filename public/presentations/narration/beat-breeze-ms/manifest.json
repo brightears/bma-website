@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-ms",
   "status": "official-malaysian-malay-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-03T05:25:06.745Z",
-  "releaseId": "20260903-486f0b11069b",
+  "generatedAt": "2026-09-03T08:11:16.205Z",
+  "releaseId": "20260903-cde6f42ecf3c",
   "publicationStatus": "Official unlinked, noindex Malaysian Malay Beat Breeze presentation with complete slide-linked Malay narration.",
   "coverage": {
     "slideIndexes": [
@@ -32,11 +32,11 @@
     "englishDeckPath": "public/presentations/beat-breeze.html",
     "englishDeckSha256": "2506ecfcc9f04c504e62748fc42b579e242e340eb8ba0bdec399458465b1deec",
     "officialDeckPath": "public/presentations/beat-breeze-ms.html",
-    "officialDeckSha256": "68ef0d342ce327075d312820245c8f9ecd35fbda5a3cf3f11d25f608abe33988",
+    "officialDeckSha256": "929cbfd96a1211572cf3ab1fafc08d80bb35842ca99a949f81e80e055d0dad7e",
     "scriptPath": "public/presentations/narration/beat-breeze-ms/script.json",
-    "scriptSha256": "549094face5f87f6144d17fb28d706a434638df8d82e91235aff853779df34b8",
+    "scriptSha256": "d87a8ddc287b2ad8329c44f1a7876335412e2ea7a1bbf02b772a8bac4145af57",
     "copyPath": "public/presentations/narration/beat-breeze-ms/copy.json",
-    "copySha256": "9197177cba4e7624a3a389a3e20220d18839f5c0969b375621498464c8b6d005"
+    "copySha256": "5347ce7d1f0d38df4c75bd60ebddd86b7f4da36798b5169ad84d2dd6e3b8f7c5"
   },
   "voice": {
     "provider": "google-gemini",
@@ -60,7 +60,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 788.04,
+  "totalDurationSeconds": 782.32,
   "slides": [
     {
       "index": 1,
@@ -198,26 +198,26 @@
       "index": 6,
       "id": "06-compose",
       "label": "Compose",
-      "src": "audio/20260903-486f0b11069b/06-compose.mp3",
-      "text": "Compose menukar taklimat ringkas kepada muzik asli. Contoh pada skrin meminta bossa nova yang hangat dan perlahan untuk makan malam diterangi cahaya lilin, dengan perkusi ringan dan tanpa vokal. Daripada ayat seperti itu, Beat Breeze menghasilkan trek baharu khusus untuk detik tersebut. Hasil pertama tidak semestinya versi akhir. Anda boleh menambah satu lagi ayat untuk melaraskan suasana, tempo, instrumen atau penggunaan vokal. Nilai utamanya kepada sesebuah premis bukan semata-mata bahawa AI boleh menghasilkan lagu. Yang lebih penting ialah peluang membina identiti bunyi yang benar-benar tersendiri bagi kempen, ruang atau waktu perkhidmatan tertentu—bukan hanya menggunakan senarai main umum yang turut dimainkan di banyak tempat lain.",
+      "src": "audio/20260903-cde6f42ecf3c/06-compose.mp3",
+      "text": "Dengan Compose, satu arahan ringkas sudah cukup untuk menghasilkan muzik asli. Contoh pada skrin meminta bossa nova yang hangat dan perlahan untuk suasana makan malam bercahaya lilin, dengan perkusi ringan dan tanpa vokal. Berdasarkan arahan itu, Beat Breeze menghasilkan trek baharu khas untuk suasana tersebut. Jika hasil pertama belum kena, anda hanya perlu menambah arahan untuk mengubah suasana, tempo, instrumen atau vokal. Untuk premis anda, kelebihan sebenar bukan sekadar menggunakan AI untuk menghasilkan muzik. Compose membolehkan anda membina identiti bunyi tersendiri untuk kempen, ruang atau waktu tertentu—bukan sekadar memainkan senarai main biasa yang turut digunakan di banyak tempat lain.",
       "visualCoverage": [
         "taklimat muzik dalam bahasa biasa",
         "muzik asli untuk premis",
         "penambahbaikan melalui perbualan",
         "identiti bunyi khusus"
       ],
-      "transcriptSha256": "e1477944f9789bd820df869352e6144a348d27e57eb096870becc6844bd9eba0",
-      "audioSha256": "cc88c187f47b56152e26466a84a09cfc36a3edd32e888f566b66fea65c1bd5f0",
-      "durationSeconds": 52.04,
+      "transcriptSha256": "1f3873c923f75d34b6fa298f844d207eae31e878196c99e345680b1d6c144219",
+      "audioSha256": "430d427421c72a4b9aa9955b1f4f90374e40361eb0e0f33e8f163a7129cba31b",
+      "durationSeconds": 46.32,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.46,
-      "truePeakDbtp": -3.45,
-      "loudnessRangeLu": 2.4,
-      "thresholdLufs": -28.77,
-      "targetOffsetLu": -0.01,
+      "integratedLufs": -18.49,
+      "truePeakDbtp": -3.4,
+      "loudnessRangeLu": 3.4,
+      "thresholdLufs": -28.79,
+      "targetOffsetLu": 0.04,
       "cached": false
     },
     {
@@ -453,15 +453,40 @@
       "cached": false
     }
   ],
+  "generation": {
+    "mode": "targeted-slide-regeneration",
+    "updatedSlideIds": [
+      "06-compose"
+    ],
+    "verifiedCarryForwardSlideCount": 14
+  },
   "qualityAssurance": {
     "transcription": {
       "provider": "google-gemini",
       "model": "gemini-3.5-transcribe",
       "languageCode": "ms-MY",
-      "meanCharacterErrorRate": 0.0114,
+      "validationMode": "full-deck-baseline-plus-targeted-slide",
       "maximumCharacterErrorRate": 0.0986,
       "requiredMaximumCharacterErrorRate": 0.18,
-      "slidesPassing": 15
+      "slidesPassing": 15,
+      "verifiedUnchangedSlideCount": 14,
+      "baselineFullDeck": {
+        "provider": "google-gemini",
+        "model": "gemini-3.5-transcribe",
+        "languageCode": "ms-MY",
+        "meanCharacterErrorRate": 0.0114,
+        "maximumCharacterErrorRate": 0.0986,
+        "requiredMaximumCharacterErrorRate": 0.18,
+        "slidesPassing": 15
+      },
+      "targetedUpdate": {
+        "index": 6,
+        "id": "06-compose",
+        "transcriptSha256": "c1aa0787b07eaca6e123766f07a52eacd071faa327fc899b28c6052f63945104",
+        "characterErrorRate": 0,
+        "lengthRatio": 1,
+        "pass": true
+      }
     }
   }
 }

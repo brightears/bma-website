@@ -28,10 +28,17 @@ const ENDPOINT =
 const MAXIMUM_CER = 0.18;
 const MINIMUM_LENGTH_RATIO = 0.84;
 const MAXIMUM_LENGTH_RATIO = 1.12;
+const slideIdFlagIndex = process.argv.indexOf("--slide-id");
+const TARGET_SLIDE_ID =
+  slideIdFlagIndex >= 0 ? process.argv[slideIdFlagIndex + 1] : null;
+
+if (slideIdFlagIndex >= 0 && !TARGET_SLIDE_ID) {
+  throw new Error("Pass a slide id after --slide-id.");
+}
 
 if (!process.argv.includes("--confirm-spend")) {
   throw new Error(
-    "Pass --confirm-spend only for the bounded 15-clip Malaysian Malay transcription QA run.",
+    "Pass --confirm-spend only for the bounded Malaysian Malay transcription QA run.",
   );
 }
 
@@ -47,6 +54,24 @@ const script = JSON.parse(readFileSync(SCRIPT_PATH, "utf8"));
 const manifest = JSON.parse(readFileSync(MANIFEST_PATH, "utf8"));
 if (script.slides.length !== 15 || manifest.slides.length !== 15) {
   throw new Error("Malaysian Malay transcript QA requires all 15 narration clips.");
+}
+if (TARGET_SLIDE_ID && !script.slides.some((slide) => slide.id === TARGET_SLIDE_ID)) {
+  throw new Error(`Unknown Malaysian Malay narration slide: ${TARGET_SLIDE_ID}.`);
+}
+const baselineFullDeck = TARGET_SLIDE_ID
+  ? manifest.qualityAssurance?.transcription?.baselineFullDeck
+  : null;
+if (
+  TARGET_SLIDE_ID &&
+  (manifest.qualityAssurance?.transcription?.status !==
+    "pending-targeted-slide-update" ||
+    manifest.qualityAssurance?.transcription?.targetSlideId !==
+      TARGET_SLIDE_ID ||
+    baselineFullDeck?.slidesPassing !== 15)
+) {
+  throw new Error(
+    "Targeted transcript QA requires the preserved full-deck baseline from generation.",
+  );
 }
 
 const aliases = new Map([
@@ -164,7 +189,12 @@ const transcribe = async (audioPath) => {
 
 const results = [];
 const failures = [];
-for (const [index, scriptSlide] of script.slides.entries()) {
+const selectedSlides = script.slides
+  .map((scriptSlide, index) => ({ index, scriptSlide }))
+  .filter(({ scriptSlide }) =>
+    TARGET_SLIDE_ID ? scriptSlide.id === TARGET_SLIDE_ID : true,
+  );
+for (const { index, scriptSlide } of selectedSlides) {
   const manifestSlide = manifest.slides[index];
   const audioPath = path.join(ROOT, manifestSlide.src);
   const transcript = await transcribe(audioPath);
@@ -198,7 +228,8 @@ const maximumCer = Math.max(...results.map((result) => result.characterErrorRate
 const report = {
   model: MODEL,
   languageCode: "ms-MY",
-  mode: "verbatim-default",
+  mode: TARGET_SLIDE_ID ? "targeted-slide-update" : "verbatim-default",
+  ...(TARGET_SLIDE_ID ? { targetSlideId: TARGET_SLIDE_ID } : {}),
   maximumCharacterErrorRate: MAXIMUM_CER,
   meanCharacterErrorRate: Number(meanCer.toFixed(4)),
   observedMaximumCharacterErrorRate: Number(maximumCer.toFixed(4)),
@@ -214,17 +245,41 @@ if (failures.length) {
   );
 }
 
+const targetedResult = TARGET_SLIDE_ID ? results[0] : null;
 manifest.qualityAssurance = {
   ...(manifest.qualityAssurance || {}),
-  transcription: {
-    provider: "google-gemini",
-    model: MODEL,
-    languageCode: "ms-MY",
-    meanCharacterErrorRate: report.meanCharacterErrorRate,
-    maximumCharacterErrorRate: report.observedMaximumCharacterErrorRate,
-    requiredMaximumCharacterErrorRate: MAXIMUM_CER,
-    slidesPassing: report.slidesPassing,
-  },
+  transcription: TARGET_SLIDE_ID
+    ? {
+        provider: "google-gemini",
+        model: MODEL,
+        languageCode: "ms-MY",
+        validationMode: "full-deck-baseline-plus-targeted-slide",
+        maximumCharacterErrorRate: Math.max(
+          baselineFullDeck.maximumCharacterErrorRate,
+          targetedResult.characterErrorRate,
+        ),
+        requiredMaximumCharacterErrorRate: MAXIMUM_CER,
+        slidesPassing: 15,
+        verifiedUnchangedSlideCount: 14,
+        baselineFullDeck,
+        targetedUpdate: {
+          index: targetedResult.index,
+          id: targetedResult.id,
+          transcriptSha256: targetedResult.transcriptSha256,
+          characterErrorRate: targetedResult.characterErrorRate,
+          lengthRatio: targetedResult.lengthRatio,
+          pass: targetedResult.pass,
+        },
+      }
+    : {
+        provider: "google-gemini",
+        model: MODEL,
+        languageCode: "ms-MY",
+        meanCharacterErrorRate: report.meanCharacterErrorRate,
+        maximumCharacterErrorRate: report.observedMaximumCharacterErrorRate,
+        requiredMaximumCharacterErrorRate: MAXIMUM_CER,
+        slidesPassing: report.slidesPassing,
+      },
 };
 const pendingManifest = `${MANIFEST_PATH}.${process.pid}.tmp`;
 try {
@@ -234,5 +289,7 @@ try {
   rmSync(pendingManifest, { force: true });
 }
 console.log(
-  `PASS: 15 Malaysian Malay clips transcribed with mean CER ${(meanCer * 100).toFixed(1)}% and maximum CER ${(maximumCer * 100).toFixed(1)}%.`,
+  TARGET_SLIDE_ID
+    ? `PASS: ${TARGET_SLIDE_ID} transcribed at CER ${(targetedResult.characterErrorRate * 100).toFixed(1)}%; 14 unchanged clips retain the verified full-deck baseline.`
+    : `PASS: 15 Malaysian Malay clips transcribed with mean CER ${(meanCer * 100).toFixed(1)}% and maximum CER ${(maximumCer * 100).toFixed(1)}%.`,
 );
