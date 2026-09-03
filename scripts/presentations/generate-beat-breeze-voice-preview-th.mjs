@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { execFileSync, spawnSync } from "node:child_process";
 import {
+  copyFileSync,
   existsSync,
   mkdirSync,
   readFileSync,
@@ -81,6 +82,9 @@ for (const required of [SCRIPT_PATH, ENGLISH_DECK, OFFICIAL_DECK, CONTROLLER_PAT
 }
 
 const script = JSON.parse(readFileSync(SCRIPT_PATH, "utf8"));
+const previousManifest = existsSync(MANIFEST_PATH)
+  ? JSON.parse(readFileSync(MANIFEST_PATH, "utf8"))
+  : null;
 if (
   script.deck !== "beat-breeze" ||
   script.presentation !== PRESENTATION ||
@@ -322,6 +326,7 @@ try {
       throw new Error(`Slide ${index + 1} is missing id, label, or narration text.`);
     }
 
+    const transcriptSha256 = sha256Buffer(Buffer.from(slide.text));
     const cacheKey = sha256Buffer(
       Buffer.from(
         JSON.stringify({
@@ -336,49 +341,65 @@ try {
     );
     const cacheFile = path.join(CACHE_DIR, `${cacheKey}.wav`);
     const outputFile = path.join(stagingAudioDir, `${slide.id}.mp3`);
+    const previousSlide = previousManifest?.slides?.find(
+      (candidate) => candidate.id === slide.id,
+    );
+    const previousAudioPath = previousSlide?.src
+      ? path.join(PRESENTATION_ROOT, previousSlide.src)
+      : null;
+    const reusedFromPreviousRelease = Boolean(
+      previousSlide?.transcriptSha256 === transcriptSha256 &&
+        previousAudioPath &&
+        existsSync(previousAudioPath),
+    );
+    let synthesis = { cached: false };
 
-    const synthesis = await synthesizeSource({
-      text: slide.text,
-      profile,
-      cacheFile,
-    });
+    if (reusedFromPreviousRelease) {
+      copyFileSync(previousAudioPath, outputFile);
+    } else {
+      synthesis = await synthesizeSource({
+        text: slide.text,
+        profile,
+        cacheFile,
+      });
 
-    const sourceLoudness = measureLoudness(cacheFile, { highpass: true });
-    const normalizationFilter = [
-      "highpass=f=65",
-      [
-        `loudnorm=I=${LOUDNESS_TARGET}`,
-        `TP=${TRUE_PEAK_TARGET}`,
-        `LRA=${LOUDNESS_RANGE}`,
-        `measured_I=${sourceLoudness.integratedLufs}`,
-        `measured_TP=${sourceLoudness.truePeakDbtp}`,
-        `measured_LRA=${sourceLoudness.loudnessRangeLu}`,
-        `measured_thresh=${sourceLoudness.thresholdLufs}`,
-        `offset=${sourceLoudness.targetOffsetLu}`,
-        "linear=true",
-        "print_format=summary",
-      ].join(":"),
-    ].join(",");
+      const sourceLoudness = measureLoudness(cacheFile, { highpass: true });
+      const normalizationFilter = [
+        "highpass=f=65",
+        [
+          `loudnorm=I=${LOUDNESS_TARGET}`,
+          `TP=${TRUE_PEAK_TARGET}`,
+          `LRA=${LOUDNESS_RANGE}`,
+          `measured_I=${sourceLoudness.integratedLufs}`,
+          `measured_TP=${sourceLoudness.truePeakDbtp}`,
+          `measured_LRA=${sourceLoudness.loudnessRangeLu}`,
+          `measured_thresh=${sourceLoudness.thresholdLufs}`,
+          `offset=${sourceLoudness.targetOffsetLu}`,
+          "linear=true",
+          "print_format=summary",
+        ].join(":"),
+      ].join(",");
 
-    execFileSync("ffmpeg", [
-      "-hide_banner",
-      "-loglevel",
-      "error",
-      "-y",
-      "-i",
-      cacheFile,
-      "-af",
-      normalizationFilter,
-      "-ar",
-      "48000",
-      "-ac",
-      "1",
-      "-c:a",
-      "libmp3lame",
-      "-b:a",
-      "128k",
-      outputFile,
-    ]);
+      execFileSync("ffmpeg", [
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-y",
+        "-i",
+        cacheFile,
+        "-af",
+        normalizationFilter,
+        "-ar",
+        "48000",
+        "-ac",
+        "1",
+        "-c:a",
+        "libmp3lame",
+        "-b:a",
+        "128k",
+        outputFile,
+      ]);
+    }
 
     const media = probe(outputFile);
     const loudness = measureLoudness(outputFile);
@@ -398,15 +419,16 @@ try {
       src: `audio/${releaseId}/${slide.id}.mp3`,
       text: slide.text,
       visualCoverage: slide.visualCoverage,
-      transcriptSha256: sha256Buffer(Buffer.from(slide.text)),
+      transcriptSha256,
       audioSha256: sha256File(outputFile),
       ...media,
       ...loudness,
       cached: synthesis.cached,
+      reusedFromPreviousRelease,
     });
 
     console.log(
-      `${String(index + 1).padStart(2, "0")}/15 ${slide.label} — ${media.durationSeconds.toFixed(1)}s${synthesis.cached ? " (cached voice)" : ""}`,
+      `${String(index + 1).padStart(2, "0")}/15 ${slide.label} — ${media.durationSeconds.toFixed(1)}s${reusedFromPreviousRelease ? " (reused release audio)" : synthesis.cached ? " (cached voice)" : ""}`,
     );
   }
 

@@ -94,6 +94,38 @@ const thaiOfficial = readFileSync(THAI_OFFICIAL, "utf8");
 const script = JSON.parse(readFileSync(SCRIPT_PATH, "utf8"));
 const manifest = JSON.parse(readFileSync(MANIFEST_PATH, "utf8"));
 const controller = readFileSync(CONTROLLER_PATH, "utf8");
+const refinedThaiPhrases = [
+  "Daily Energy Curve",
+  "เตรียมเพลงล่วงหน้าตามฤดูกาล",
+  "วัดผลได้จริง ไม่ใช่แค่ความรู้สึก",
+  "กู้คืนเครื่องเล่นอัตโนมัติ",
+  "ยืนยันว่าประกาศเล่นสำเร็จ",
+  "ตรวจสอบสิทธิ์การใช้งานได้ทันที",
+  "ทีมผู้เชี่ยวชาญคอยดูแล",
+];
+const retiredLiteralThaiPhrases = [
+  "เส้นพลังงานประจำวัน",
+  "เรดาร์ฤดูกาล",
+  "สิทธิ์พร้อมสำหรับธุรกิจ",
+  "เครื่องเล่นฟื้นตัวได้เอง",
+  "ใบยืนยันการส่งประกาศ",
+  "หลักฐานสิทธิ์แบบสด",
+  "คนจริงอยู่เบื้องหลัง",
+];
+
+for (const phrase of refinedThaiPhrases) {
+  if (!thaiOfficial.includes(phrase)) {
+    fail(`The refined Thai presentation is missing: ${phrase}`);
+  }
+}
+for (const phrase of retiredLiteralThaiPhrases) {
+  if (
+    thaiOfficial.includes(phrase) ||
+    script.slides.some((slide) => slide.text.includes(phrase))
+  ) {
+    fail(`A retired literal Thai phrase remains: ${phrase}`);
+  }
+}
 
 if (
   !thaiOfficial.includes('<html lang="th">') ||
@@ -164,6 +196,10 @@ if (
   transcriptionQa?.model !== "gemini-3.5-transcribe" ||
   transcriptionQa?.languageCode !== "th-TH" ||
   transcriptionQa?.slidesPassing !== 15 ||
+  transcriptionQa?.slidesTranscribed +
+      transcriptionQa?.slidesReusedFromPreviousQa !==
+    15 ||
+  !transcriptionQa?.previousReleaseId ||
   transcriptionQa?.maximumCharacterErrorRate >
     transcriptionQa?.requiredMaximumCharacterErrorRate
 ) {
