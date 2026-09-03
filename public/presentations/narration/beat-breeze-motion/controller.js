@@ -1,11 +1,12 @@
 (() => {
   "use strict";
 
-  const VERSION = "2026-09-02-official-1";
+  const VERSION = "2026-09-03-official-2";
   const LOCALE = (() => {
     const language = document.documentElement.lang.toLowerCase();
     if (language.startsWith("th")) return "th";
     if (language.startsWith("zh")) return "zh";
+    if (language.startsWith("vi")) return "vi";
     return "en";
   })();
   const CANONICAL_LABELS = {
@@ -37,6 +38,20 @@
     "价格": "Pricing",
     "背后的团队": "Who's behind it",
     "开始使用": "Close",
+    "Trang bìa": "Title",
+    "Một nền tảng, nhiều chức năng": "One platform, many jobs",
+    "Âm nhạc tự vận hành": "Music that runs itself",
+    "Tự động hóa": "Automations",
+    "Music Director của quý khách": "Your Music Director",
+    "Studio và màn hình": "Studio & screens",
+    "Thông báo bằng giọng nói": "Announcements",
+    "Kết nối với Claude và ChatGPT": "Works with Claude & ChatGPT",
+    "Dành cho đội ngũ vận hành": "Built for operators",
+    "Âm nhạc luôn tiếp diễn": "Never go silent",
+    "Vì sao chọn Beat Breeze": "Why Beat Breeze",
+    "Bảng giá": "Pricing",
+    "Đội ngũ phía sau": "Who's behind it",
+    "Bắt đầu": "Close",
   };
   const canonicalLabel = (label) => CANONICAL_LABELS[label] || label;
   const MOTION_LABELS = new Set([
@@ -302,10 +317,21 @@
     ],
   };
 
+  // The Vietnamese presenter script follows the same semantic order and
+  // conversational cadence as the Thai edition. Keep a separate cue object
+  // so timings can be tuned independently after native-speaker feedback.
+  const VIETNAMESE_CUE_TIMELINES = Object.fromEntries(
+    Object.entries(THAI_CUE_TIMELINES).map(([label, cues]) => [
+      label,
+      cues.map((cue) => ({ ...cue })),
+    ]),
+  );
+
   const CUE_TIMELINES_BY_LOCALE = {
     en: ENGLISH_CUE_TIMELINES,
     th: THAI_CUE_TIMELINES,
     zh: CHINESE_CUE_TIMELINES,
+    vi: VIETNAMESE_CUE_TIMELINES,
   };
   for (const [locale, timelines] of Object.entries(CUE_TIMELINES_BY_LOCALE)) {
     for (const label of MOTION_LABELS) {

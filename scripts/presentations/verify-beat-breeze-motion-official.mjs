@@ -7,6 +7,8 @@ const REPO_ROOT = path.resolve(HERE, "../..");
 const PRESENTATION_ROOT = path.join(REPO_ROOT, "public", "presentations");
 const MOTION_REFERENCE =
   './narration/beat-breeze-motion/controller.js?v=2026-09-02-5';
+const VIETNAMESE_MOTION_REFERENCE =
+  './narration/beat-breeze-motion/controller.js?v=2026-09-03-1';
 const MOTION_CONTROLLER = path.join(
   PRESENTATION_ROOT,
   "narration",
@@ -37,6 +39,13 @@ const decks = [
     languageMarker: '<html lang="zh-CN">',
     narration: "./narration/beat-breeze-zh/controller.js",
   },
+  {
+    locale: "vi",
+    path: path.join(PRESENTATION_ROOT, "beat-breeze-vi.html"),
+    languageMarker: '<html lang="vi">',
+    narration: "./narration/beat-breeze-vi/controller.js",
+    motionReference: VIETNAMESE_MOTION_REFERENCE,
+  },
 ];
 
 if (existsSync(RETIRED_PREVIEW)) {
@@ -54,7 +63,7 @@ for (const deck of decks) {
   if (!html.includes(deck.narration)) {
     throw new Error(`${deck.locale}: localized narration controller is missing.`);
   }
-  if (!html.includes(MOTION_REFERENCE)) {
+  if (!html.includes(deck.motionReference || MOTION_REFERENCE)) {
     throw new Error(`${deck.locale}: official motion controller is missing or stale.`);
   }
   const templateMarker = '<script type="__bundler/template">';
@@ -72,10 +81,11 @@ for (const deck of decks) {
 
 const controller = readFileSync(MOTION_CONTROLLER, "utf8");
 for (const required of [
-  'const VERSION = "2026-09-02-official-1"',
+  'const VERSION = "2026-09-03-official-2"',
   "const ENGLISH_CUE_TIMELINES",
   "const THAI_CUE_TIMELINES",
   "const CHINESE_CUE_TIMELINES",
+  "const VIETNAMESE_CUE_TIMELINES",
   'focusStyle: "subtle lift and brightness"',
 ]) {
   if (!controller.includes(required)) {
@@ -87,5 +97,5 @@ if (controller.includes("bbm-cue-surface::before") || controller.includes("drop-
 }
 
 console.log(
-  "PASS: English, Thai, and Chinese official decks each contain 15 slides, localized narration, and the shared subtle-motion controller; the preview route is removed.",
+  "PASS: English, Thai, Chinese, and Vietnamese official decks each contain 15 slides, localized narration, and the shared subtle-motion controller; the preview route is removed.",
 );
