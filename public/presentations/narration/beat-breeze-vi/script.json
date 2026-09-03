@@ -1,0 +1,188 @@
+{
+  "version": 1,
+  "deck": "beat-breeze",
+  "presentation": "beat-breeze-vi",
+  "status": "approved-for-vietnamese-synthesis",
+  "language": "vi-VN",
+  "scriptStyle": {
+    "audience": "chủ địa điểm, đội ngũ vận hành và người ra quyết định thương hiệu",
+    "approach": "Người thuyết trình dẫn dắt theo nội dung đang hiện trên từng slide: định hướng bố cục, giải thích các nhóm thông tin, nêu giá trị vận hành và chuyển ý tự nhiên mà không đọc nguyên văn trên màn hình.",
+    "targetSecondsPerSlide": "25-45"
+  },
+  "voice": {
+    "provider": "google-gemini",
+    "model": "gemini-3.1-flash-tts-preview",
+    "name": "Sulafat",
+    "performance": {
+      "name": "Maya",
+      "role": "một chuyên gia sản phẩm Beat Breeze ấm áp, chuyên nghiệp và am hiểu hoạt động địa điểm",
+      "scene": "một buổi giới thiệu trực tiếp, thoải mái với người quản lý địa điểm, tự nhiên dẫn dắt theo slide đang hiển thị",
+      "style": "Thân thiện, tự tin và gần gũi. Trò chuyện như đang giúp một khách hàng thực sự hiểu Beat Breeze hỗ trợ vận hành ra sao, không đọc lại nội dung slide và không dùng giọng quảng cáo.",
+      "pacing": "Nhịp nói thong thả, tự nhiên; ngắt nhẹ giữa các ý chính. Phát âm rõ tên sản phẩm nhưng không nhấn quá mức."
+    }
+  },
+  "slides": [
+    {
+      "id": "01-title",
+      "label": "Trang bìa",
+      "visualCoverage": [
+        "nền tảng trải nghiệm không gian tất cả trong một",
+        "âm nhạc, màn hình, thông báo và nội dung",
+        "một nền tảng cho mọi không gian"
+      ],
+      "text": "Xin chào và cảm ơn quý khách đã dành thời gian tìm hiểu Beat Breeze. Nền tảng bắt đầu từ một cam kết rất đơn giản: luôn phát đúng âm nhạc ở từng khu vực của địa điểm. Nhưng những gì quý khách đang thấy hôm nay đã rộng hơn nhiều. Cùng một nền tảng giờ đây kết nối âm nhạc, màn hình, thông báo bằng giọng nói và toàn bộ nội dung đi kèm trên mọi không gian quý khách vận hành. Vì vậy, đây không chỉ là phần giới thiệu một trình phát nhạc. Chúng ta sẽ cùng xem một hệ thống có thể giúp tạo nên và vận hành toàn bộ trải nghiệm truyền thông tại địa điểm như thế nào."
+    },
+    {
+      "id": "02-one-platform-many-jobs",
+      "label": "Một nền tảng, nhiều chức năng",
+      "visualCoverage": [
+        "âm nhạc và tự động hóa",
+        "sáng tạo nội dung",
+        "vận hành"
+      ],
+      "text": "Có thể xem slide này như bản đồ của toàn bộ nền tảng, gồm ba phần. Bên trái là âm nhạc và tự động hóa: mỗi khu vực có nhạc được cấp phép, lịch phát tự vận hành trong ngày, Music Director đưa ra đề xuất bằng AI, và nhạc vẫn tiếp tục khi mất mạng. Ở giữa là sáng tạo nội dung: Compose tạo nhạc gốc, Content Studio làm hình ảnh và video, TV Channels đưa nội dung lên màn hình, còn thông báo đa ngôn ngữ giúp địa điểm giao tiếp bằng giọng nói. Bên phải là vận hành: mọi địa điểm, khu vực, thành viên và trình phát đều nằm trong một bảng điều khiển, với Brand Lock khi cần giữ nhất quán thương hiệu. Quý khách có thể tự quản lý hoặc để BMAsia hỗ trợ thiết kế âm nhạc và vận hành. Bây giờ, chúng ta bắt đầu từ phần cốt lõi: âm nhạc."
+    },
+    {
+      "id": "03-music-that-runs-itself",
+      "label": "Âm nhạc tự vận hành",
+      "visualCoverage": [
+        "âm nhạc riêng cho từng khu vực",
+        "lịch phát và khung giờ",
+        "phát ngoại tuyến",
+        "kho nhạc có bản quyền và playlist do AI hỗ trợ"
+      ],
+      "text": "Cốt lõi của Beat Breeze là hệ thống âm nhạc có thể theo sát nhịp vận hành cả ngày mà không cần nhân viên liên tục can thiệp. Sảnh, quầy bar, spa và nhà hàng có thể mang màu sắc âm nhạc riêng, trong khi trụ sở chính theo dõi mọi cơ sở từ một bảng điều khiển. Quý khách chỉ cần định hình dòng chảy một lần, chẳng hạn nhẹ nhàng vào buổi sáng, nhiều năng lượng hơn vào giờ trưa và ấm áp hơn vào buổi tối; hệ thống sẽ tự chuyển theo từng khung giờ. Kho nhạc đã có bản quyền sử dụng cho doanh nghiệp và được bổ sung liên tục. Quý khách cũng có thể mô tả bầu không khí mong muốn để trợ lý xây dựng playlist phù hợp. Quan trọng hơn, khi internet gián đoạn, trình phát tại chỗ vẫn được thiết kế để âm nhạc tiếp tục."
+    },
+    {
+      "id": "04-automations",
+      "label": "Tự động hóa",
+      "visualCoverage": [
+        "giảm âm lượng tự động và nhịp năng lượng trong ngày",
+        "phản hồi theo thời tiết và nhiệt độ",
+        "kích hoạt theo lượng khách hoặc POS",
+        "giờ cầu nguyện, khung giờ và sự kiện theo mùa",
+        "tự động hóa ngoại tuyến"
+      ],
+      "text": "Lịch phát thay đổi âm nhạc theo giờ, còn tự động hóa giúp địa điểm phản hồi theo những gì thực sự đang diễn ra. Hệ thống có thể tự hạ âm lượng vào đêm muộn và điều chỉnh nhịp năng lượng từ nhẹ nhàng buổi sáng, sôi động hơn vào giờ trưa rồi thư giãn về tối. Khi trời mưa hoặc nhiệt độ tăng, âm nhạc cũng có thể chuyển sang sắc thái ấm áp hay mát dịu phù hợp hơn. Nếu kết nối bộ đếm người hoặc dữ liệu POS, hệ thống sẽ tự tăng năng lượng khi lượng khách đông hơn. Giờ cầu nguyện, từng khung giờ, mùa lễ hội và ngày đặc biệt đều có thể nằm trong cùng một hệ thống. Quý khách có thể chọn quy tắc có sẵn hoặc tự xây dựng quy tắc riêng, và những tự động hóa quan trọng, kể cả tạm dừng theo giờ cầu nguyện, vẫn hoạt động khi internet bị gián đoạn."
+    },
+    {
+      "id": "05-your-music-director",
+      "label": "Music Director của quý khách",
+      "visualCoverage": [
+        "rà soát từng khu vực mỗi đêm",
+        "đề xuất có giới hạn và giải thích rõ",
+        "học từ cách địa điểm thực sự vận hành",
+        "chuẩn bị trước theo mùa",
+        "báo cáo trước và sau thay đổi"
+      ],
+      "text": "Music Director là trợ lý AI chủ động được tích hợp trong Beat Breeze. Mỗi đêm, hệ thống rà soát từng khu vực và chỉ lên tiếng khi nhận thấy điều đáng cải thiện, với tối đa ba đề xuất mỗi tuần. Ví dụ trên màn hình cho thấy điểm quan trọng nhất: Music Director trình bày dữ liệu và lý do đằng sau đề xuất, còn quý khách quyết định có áp dụng hay không. Mọi thay đổi đều có thể hoàn tác. Qua thời gian, hệ thống học từ hành vi thực tế như những bài thường bị bỏ qua, các lần chỉnh âm lượng và nội dung đội ngũ chọn giữ lại. Hệ thống cũng chuẩn bị trước cho những thời điểm theo mùa. Nếu kết nối dữ liệu doanh số hoặc lượng khách, quý khách còn có thể so sánh kết quả trước và sau khi thay đổi âm nhạc, thay vì chỉ dựa vào cảm nhận."
+    },
+    {
+      "id": "06-compose",
+      "label": "Compose",
+      "visualCoverage": [
+        "tạo nhạc gốc từ câu mô tả",
+        "yêu cầu sáng tạo riêng cho địa điểm",
+        "điều chỉnh qua nhiều lần"
+      ],
+      "text": "Compose đưa quý khách từ việc chọn nhạc sang chủ động tạo nhạc. Chỉ cần mô tả khung cảnh bằng ngôn ngữ tự nhiên, giống yêu cầu cho bữa tối dưới ánh nến trên màn hình, Beat Breeze sẽ tạo những bản nhạc gốc dành cho chính khoảnh khắc đó. Kết quả đầu tiên không nhất thiết phải là phiên bản cuối. Quý khách có thể dùng thêm một câu để điều chỉnh cảm xúc, nhịp độ, nhạc cụ hoặc giọng hát. Giá trị với một địa điểm không chỉ nằm ở việc AI có thể tạo ra một bài nhạc, mà ở khả năng phát triển dấu ấn âm thanh riêng cho một chiến dịch, một không gian hay một thời điểm phục vụ, thay vì luôn dùng những playlist đại trà giống nhau."
+    },
+    {
+      "id": "07-studio-and-screens",
+      "label": "Studio và màn hình",
+      "visualCoverage": [
+        "các định dạng của Content Studio",
+        "thiết kế theo thương hiệu",
+        "phân phối qua TV Channels",
+        "nội dung TV trong phòng khách sạn"
+      ],
+      "text": "Cách tiếp cận đó cũng được mở rộng sang nội dung hình ảnh. Content Studio giúp đội ngũ tạo những tài liệu địa điểm thường xuyên cần đến, như bài đăng mạng xã hội, poster khuyến mãi, video ngắn, bảng hiệu số hoặc video nền lặp, tất cả theo logo và màu sắc thương hiệu. Sau đó, TV Channels đưa nội dung trực tiếp từ công cụ biên tập lên những màn hình quý khách đang có. Màn hình tại sảnh có thể giới thiệu ưu đãi tối nay trong khi phát đúng âm nhạc của khu vực; màn hình spa có thể chạy video thương hiệu nhẹ nhàng; còn khách sạn có thể mở rộng các kênh đó lên TV trong phòng. Công cụ sáng tạo và hệ thống phân phối vì thế nằm cùng một nơi, thay vì trở thành một dự án bảng hiệu số riêng biệt."
+    },
+    {
+      "id": "08-announcements",
+      "label": "Thông báo bằng giọng nói",
+      "visualCoverage": [
+        "thông báo tại địa điểm bằng nhiều ngôn ngữ",
+        "phát theo lịch trên nền nhạc",
+        "âm thanh chờ điện thoại"
+      ],
+      "text": "Đây là phần giao tiếp bằng giọng nói trong trải nghiệm tại địa điểm. Quý khách viết nội dung, chọn ngôn ngữ và giọng đọc, đặt thời gian rồi để thông báo phát trên nền nhạc. Đó có thể là happy hour, lời nhắc gọi món cuối, câu chào mừng hoặc thông tin vận hành. Ba ví dụ trên màn hình cho thấy một địa điểm có thể giao tiếp bằng nhiều ngôn ngữ mà không phải đặt phòng thu cho từng bản ghi. Cùng công cụ này còn tạo được âm thanh chờ điện thoại chuyên nghiệp, kết hợp giọng nói và âm nhạc cho người gọi. Nói cách khác, cả phần âm nhạc lẫn những thông điệp xoay quanh nó đều được quản lý tại một nơi."
+    },
+    {
+      "id": "09-works-with-claude-and-chatgpt",
+      "label": "Kết nối với Claude và ChatGPT",
+      "visualCoverage": [
+        "điều khiển bằng ngôn ngữ tự nhiên",
+        "hỏi về lịch phát hiện tại",
+        "xác nhận trước khi thay đổi lịch",
+        "quyền truy cập bảo mật và có thể thu hồi"
+      ],
+      "text": "Nếu đội ngũ đã làm việc với Claude hoặc ChatGPT, Beat Breeze có thể xuất hiện ngay trong cửa sổ trò chuyện quen thuộc đó. Các ví dụ cho thấy nhiều cách sử dụng: hỏi tối thứ Sáu sẽ phát gì, giảm âm lượng sảnh một chút, hoặc chuẩn bị lịch nhạc spa mới cho ngày mai. Những thao tác tức thời vẫn tuân theo quyền của từng người dùng, còn thay đổi lịch phát sẽ được hiển thị lại để xác nhận trước khi ghi vào hệ thống. Kết nối sử dụng khóa bảo mật có thể thu hồi, nên quyền truy cập dễ dàng được gỡ bỏ khi một cá nhân hay tích hợp không còn cần đến. Lợi ích rất rõ ràng: đội ngũ xử lý công việc âm nhạc hằng ngày bằng ngôn ngữ tự nhiên mà người vận hành vẫn giữ quyền kiểm soát cuối cùng."
+    },
+    {
+      "id": "10-built-for-operators",
+      "label": "Dành cho đội ngũ vận hành",
+      "visualCoverage": [
+        "tự quản lý nhiều cơ sở",
+        "quyền thành viên và Brand Lock",
+        "lựa chọn trình phát và nhiều khu vực trên Windows",
+        "dịch vụ do BMAsia quản lý"
+      ],
+      "text": "Slide này thể hiện hai mô hình vận hành. Ở phía trên, quý khách trực tiếp quản lý Beat Breeze: một tài khoản có thể bao phủ nhiều địa điểm và khu vực, mỗi thành viên chỉ nhận quyền cần thiết, còn Brand Lock khóa âm nhạc tại những nơi phải giữ đúng tiêu chuẩn thương hiệu. Trình phát hoạt động trên thiết bị di động, Windows hoặc trình duyệt được hỗ trợ mà quý khách đang có. Với card âm thanh đa kênh phù hợp, một máy tính Windows cũng có thể phục vụ nhiều khu vực. Phía dưới là mô hình BMAsia quản lý. Nền tảng vẫn như vậy, nhưng đội ngũ chúng tôi bổ sung thiết kế âm nhạc riêng, hỗ trợ kỹ thuật suốt ngày đêm, quản lý tài khoản và giám sát toàn hệ thống. Quý khách có thể chọn mức độ hỗ trợ phù hợp nhất với cách vận hành của mình."
+    },
+    {
+      "id": "11-never-go-silent",
+      "label": "Âm nhạc luôn tiếp diễn",
+      "visualCoverage": [
+        "hoạt động ngoại tuyến liên tục",
+        "trình phát tự khôi phục",
+        "xác nhận thông báo đã phát",
+        "xác minh giấy phép tức thì"
+      ],
+      "text": "Mọi tính năng sáng tạo chỉ thực sự có giá trị khi hệ thống đủ đáng tin cậy trong một địa điểm đang hoạt động. Đó là mục đích của bốn lớp bảo vệ trên màn hình. Lịch tuần, tự động hóa và tạm dừng theo giờ cầu nguyện đều được lưu tại chỗ, vì vậy vẫn chạy khi mất mạng, còn lịch sử phát sẽ đồng bộ sau. Hệ thống giám sát theo dõi từng trình phát và tự khôi phục nếu thiết bị bị treo. Mỗi thông báo báo lại chính xác thiết bị nào đã phát thành công, để người vận hành biết nội dung đã đến mọi không gian cần thiết. Chứng nhận giấy phép cũng có mã QR để xác minh ngay khi người kiểm tra yêu cầu. Toàn bộ phần kỹ thuật hướng đến một kết quả duy nhất: khách tại địa điểm không nên cảm nhận thấy bất kỳ sự cố nào."
+    },
+    {
+      "id": "12-why-beat-breeze",
+      "label": "Vì sao chọn Beat Breeze",
+      "visualCoverage": [
+        "nền tảng âm nhạc và lịch phát",
+        "khả năng hoạt động khi mất mạng",
+        "tạo nhạc riêng và nội dung hình ảnh",
+        "thông báo, âm thanh chờ và TV Channels",
+        "một nền tảng cho toàn bộ trải nghiệm"
+      ],
+      "text": "Bảng so sánh này kết nối toàn bộ câu chuyện. Âm nhạc theo từng khu vực và lịch tự động là nền tảng, cũng là nơi nhiều giải pháp khác bắt đầu. Beat Breeze được thiết kế để đi xa hơn nền tảng đó, với khả năng hoạt động ngoại tuyến, nhạc gốc từ Compose, sáng tạo hình ảnh và video, thông báo đa ngôn ngữ, âm thanh chờ điện thoại và TV Channels mang thương hiệu. Khác biệt thật sự không nằm ở một dấu tích riêng lẻ trong bảng. Đó là việc địa điểm không phải tự ghép hệ thống âm nhạc, công cụ sáng tạo, thông điệp và màn hình thành nhiều giải pháp rời rạc. Beat Breeze vừa vận hành trải nghiệm tại địa điểm, vừa giúp tạo nên nội dung bên trong trải nghiệm đó."
+    },
+    {
+      "id": "13-pricing",
+      "label": "Bảng giá",
+      "visualCoverage": [
+        "giá và dùng thử gói tự phục vụ",
+        "giá và dịch vụ BMAsia quản lý",
+        "giải pháp doanh nghiệp",
+        "không bắt buộc thiết bị chuyên dụng"
+      ],
+      "text": "Có hai cách rõ ràng để sử dụng Beat Breeze. Gói tự phục vụ có giá mười hai đô la Mỹ, hoặc ba trăm chín mươi chín baht, cho mỗi khu vực mỗi tháng. Tất cả những tính năng chúng ta vừa xem đều đã bao gồm, và quý khách có thể bắt đầu bằng bản dùng thử mười bốn ngày cho một khu vực mà không cần thẻ. Gói do BMAsia quản lý có giá hai trăm sáu mươi đô la Mỹ cho mỗi khu vực mỗi năm; gói này bổ sung thiết kế âm nhạc liên tục cho thương hiệu, hỗ trợ kỹ thuật và một quản lý tài khoản riêng. Các tập đoàn lớn có thể dùng hợp đồng tùy chỉnh cùng phương án xuất hóa đơn phù hợp tại địa phương. Dù chọn mô hình nào, quý khách cũng không bắt buộc phải mua hộp phát chuyên dụng; nền tảng chạy trên những thiết bị được hỗ trợ mà quý khách đang có."
+    },
+    {
+      "id": "14-whos-behind-it",
+      "label": "Đội ngũ phía sau",
+      "visualCoverage": [
+        "BMAsia từ năm 2002",
+        "chuyên gia thiết kế âm nhạc định hướng tuyển chọn",
+        "đội ngũ chuyên môn hỗ trợ 24/7 và lộ trình từ nhu cầu vận hành"
+      ],
+      "text": "Đứng sau Beat Breeze là BMAsia, đội ngũ đã thiết kế âm nhạc cho khách sạn, nhà hàng, bán lẻ và chăm sóc sức khỏe từ năm 2002. Kinh nghiệm đó rất quan trọng vì nền tảng không chỉ được định hình bởi kỹ thuật phần mềm. Những chuyên gia thiết kế âm nhạc đang làm nghề trực tiếp hướng dẫn cách tuyển chọn nội dung và cách AI hiểu từng loại không gian. Đội ngũ chuyên môn luôn sẵn sàng hỗ trợ 24 giờ mỗi ngày, còn lộ trình sản phẩm được dẫn dắt bởi những nhu cầu thực tế mà người vận hành chia sẻ với chúng tôi. Vì vậy, khi chọn Beat Breeze, quý khách có cả một đội ngũ âm nhạc giàu kinh nghiệm và một đội ngũ dịch vụ đứng phía sau."
+    },
+    {
+      "id": "15-close",
+      "label": "Bắt đầu",
+      "visualCoverage": [
+        "nền tảng âm nhạc tin cậy và các khả năng mở rộng",
+        "bước tiếp theo cho khách hàng hiện tại và mới",
+        "kênh liên hệ Beat Breeze và BMAsia"
+      ],
+      "text": "Đó là Beat Breeze hôm nay: nền tảng âm nhạc đáng tin cậy vẫn nằm ở trung tâm, nhưng giờ đây có thể làm nhiều hơn cho toàn bộ trải nghiệm xung quanh. Nếu quý khách đã sử dụng Beat Breeze, hãy đăng nhập và thử Compose, Content Studio hoặc Thông báo, vì những tính năng đó đã nằm trong gói dịch vụ. Nếu quý khách mới bắt đầu, hãy truy cập beatbreeze.io hoặc liên hệ Norbert tại BMAsia. Chúng tôi sẽ giúp quý khách chọn một điểm khởi đầu hợp lý cho địa điểm của mình."
+    }
+  ]
+}
