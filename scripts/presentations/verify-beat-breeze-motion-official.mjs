@@ -9,6 +9,8 @@ const MOTION_REFERENCE =
   './narration/beat-breeze-motion/controller.js?v=2026-09-02-5';
 const VIETNAMESE_MOTION_REFERENCE =
   './narration/beat-breeze-motion/controller.js?v=2026-09-03-1';
+const INDONESIAN_MOTION_REFERENCE =
+  './narration/beat-breeze-motion/controller.js?v=2026-09-03-2';
 const MOTION_CONTROLLER = path.join(
   PRESENTATION_ROOT,
   "narration",
@@ -46,6 +48,13 @@ const decks = [
     narration: "./narration/beat-breeze-vi/controller.js",
     motionReference: VIETNAMESE_MOTION_REFERENCE,
   },
+  {
+    locale: "id",
+    path: path.join(PRESENTATION_ROOT, "beat-breeze-id.html"),
+    languageMarker: '<html lang="id">',
+    narration: "./narration/beat-breeze-id/controller.js",
+    motionReference: INDONESIAN_MOTION_REFERENCE,
+  },
 ];
 
 if (existsSync(RETIRED_PREVIEW)) {
@@ -81,11 +90,12 @@ for (const deck of decks) {
 
 const controller = readFileSync(MOTION_CONTROLLER, "utf8");
 for (const required of [
-  'const VERSION = "2026-09-03-official-2"',
+  'const VERSION = "2026-09-03-official-3"',
   "const ENGLISH_CUE_TIMELINES",
   "const THAI_CUE_TIMELINES",
   "const CHINESE_CUE_TIMELINES",
   "const VIETNAMESE_CUE_TIMELINES",
+  "const INDONESIAN_CUE_TIMELINES",
   'focusStyle: "subtle lift and brightness"',
 ]) {
   if (!controller.includes(required)) {
@@ -97,5 +107,5 @@ if (controller.includes("bbm-cue-surface::before") || controller.includes("drop-
 }
 
 console.log(
-  "PASS: English, Thai, Chinese, and Vietnamese official decks each contain 15 slides, localized narration, and the shared subtle-motion controller; the preview route is removed.",
+  "PASS: English, Thai, Chinese, Vietnamese, and Indonesian official decks each contain 15 slides, localized narration, and the shared subtle-motion controller; the preview route is removed.",
 );
