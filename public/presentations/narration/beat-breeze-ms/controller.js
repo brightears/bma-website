@@ -39,23 +39,23 @@
       },
       {
         index: 6,
-        src: "audio/20260903-cde6f42ecf3c/06-compose.mp3",
+        src: "audio/20260904-b441167b981b/06-compose.mp3",
       },
       {
         index: 7,
-        src: "audio/20260903-486f0b11069b/07-studio-and-screens.mp3",
+        src: "audio/20260904-b441167b981b/07-studio-and-screens.mp3",
       },
       {
         index: 8,
-        src: "audio/20260903-486f0b11069b/08-announcements.mp3",
+        src: "audio/20260904-b441167b981b/08-announcements.mp3",
       },
       {
         index: 9,
-        src: "audio/20260903-486f0b11069b/09-works-with-claude-and-chatgpt.mp3",
+        src: "audio/20260904-b441167b981b/09-works-with-claude-and-chatgpt.mp3",
       },
       {
         index: 10,
-        src: "audio/20260903-486f0b11069b/10-built-for-operators.mp3",
+        src: "audio/20260904-b441167b981b/10-built-for-operators.mp3",
       },
       {
         index: 11,
@@ -63,11 +63,11 @@
       },
       {
         index: 12,
-        src: "audio/20260903-486f0b11069b/12-why-beat-breeze.mp3",
+        src: "audio/20260904-b441167b981b/12-why-beat-breeze.mp3",
       },
       {
         index: 13,
-        src: "audio/20260903-486f0b11069b/13-pricing.mp3",
+        src: "audio/20260904-b441167b981b/13-pricing.mp3",
       },
       {
         index: 14,
@@ -75,7 +75,7 @@
       },
       {
         index: 15,
-        src: "audio/20260903-486f0b11069b/15-close.mp3",
+        src: "audio/20260904-b441167b981b/15-close.mp3",
       },
     ],
   };

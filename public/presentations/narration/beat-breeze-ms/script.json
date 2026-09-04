@@ -88,7 +88,7 @@
         "penambahbaikan melalui perbualan",
         "identiti bunyi khusus"
       ],
-      "text": "Dengan Compose, satu arahan ringkas sudah cukup untuk menghasilkan muzik asli. Contoh pada skrin meminta bossa nova yang hangat dan perlahan untuk suasana makan malam bercahaya lilin, dengan perkusi ringan dan tanpa vokal. Berdasarkan arahan itu, Beat Breeze menghasilkan trek baharu khas untuk suasana tersebut. Jika hasil pertama belum kena, anda hanya perlu menambah arahan untuk mengubah suasana, tempo, instrumen atau vokal. Untuk premis anda, kelebihan sebenar bukan sekadar menggunakan AI untuk menghasilkan muzik. Compose membolehkan anda membina identiti bunyi tersendiri untuk kempen, ruang atau waktu tertentu—bukan sekadar memainkan senarai main biasa yang turut digunakan di banyak tempat lain."
+      "text": "Dengan Compose, satu ayat ringkas sudah cukup untuk menghasilkan muzik asli. Contoh pada skrin meminta bossa nova yang hangat dan perlahan untuk suasana makan malam bercahaya lilin, dengan perkusi ringan dan tanpa vokal. Berdasarkan ayat itu, Beat Breeze menghasilkan trek baharu khas untuk suasana tersebut. Jika hasil pertama masih belum tepat, perbaikinya lagi dengan menambah satu lagi ayat untuk mengubah suasana, tempo, instrumen atau vokal. Untuk premis anda, kelebihan sebenar bukan sekadar menggunakan AI untuk menghasilkan muzik. Compose membolehkan anda membina bunyi unik yang menjadi identiti tersendiri untuk kempen, ruang atau waktu tertentu—bukan sekadar playlist biasa yang digunakan oleh semua orang."
     },
     {
       "id": "07-studio-and-screens",
@@ -99,17 +99,17 @@
         "pengedaran melalui TV Channels",
         "hiburan pada TV bilik hotel"
       ],
-      "text": "Pendekatan yang sama turut digunakan untuk kandungan visual. Content Studio membantu pasukan menghasilkan bahan yang kerap diperlukan oleh premis, seperti hantaran media sosial, poster promosi, video pendek, papan tanda atau gelung visual ambien, semuanya mengikut logo dan warna jenama. Kemudian, TV Channels menghantar kandungan terus daripada alat kreatif ke skrin yang sudah tersedia. Skrin lobi boleh memaparkan promosi malam ini sambil mengikuti muzik zon tersebut; skrin spa boleh memainkan visual jenama yang menenangkan; dan hotel boleh memperluas saluran yang sama kepada TV di dalam bilik tetamu. Dengan cara ini, penciptaan dan pengedaran kandungan berada dalam satu tempat, bukannya projek papan tanda digital berasingan yang perlu dibeli dan diurus sendiri."
+      "text": "Di sinilah pasukan anda boleh mencipta visual untuk pengalaman premis. Content Studio membantu menghasilkan bahan yang kerap diperlukan, seperti hantaran media sosial, poster promosi, video pendek, papan tanda atau gelung visual ambien, semuanya mengikut logo dan warna jenama. Kemudian, TV Channels menghantar kandungan terus daripada alat kreatif ke skrin yang sudah tersedia. Skrin lobi boleh memaparkan promosi malam ini sambil mengikuti muzik zon tersebut; skrin spa boleh memainkan visual jenama yang menenangkan; dan hotel boleh memperluas saluran yang sama kepada TV di dalam bilik tetamu. Dengan cara ini, penciptaan dan pengedaran kandungan berada dalam satu tempat, bukannya projek papan tanda digital berasingan yang perlu dibeli dan diurus sendiri."
     },
     {
       "id": "08-announcements",
       "label": "Pengumuman suara",
       "visualCoverage": [
         "pengumuman berbilang bahasa di premis",
-        "main balik berjadual di atas muzik",
+        "pengumuman berjadual yang diselitkan ke dalam muzik",
         "audio menunggu panggilan"
       ],
-      "text": "Ini ialah bahagian komunikasi suara bagi pengalaman premis. Anda menulis mesej, memilih bahasa dan suara, menetapkan waktu, kemudian pengumuman dimainkan di atas muzik. Mesej itu boleh berupa promosi happy hour, panggilan pesanan terakhir, ucapan alu-aluan atau maklumat operasi. Tiga contoh pada skrin menunjukkan bagaimana satu premis boleh berkomunikasi dalam beberapa bahasa tanpa menempah studio rakaman bagi setiap versi. Alat yang sama juga boleh menghasilkan audio menunggu panggilan yang profesional, menggabungkan suara latar berbilang bahasa dengan muzik sebelum menghantarnya terus ke sistem telefon. Ertinya, muzik dan semua mesej yang mengiringinya boleh diurus dari tempat yang sama."
+      "text": "Ini ialah bahagian komunikasi suara bagi pengalaman premis. Anda menulis mesej, memilih bahasa dan suara, menetapkan waktu, kemudian pengumuman diselitkan terus ke dalam muzik. Mesej itu boleh berupa promosi happy hour, panggilan pesanan terakhir, ucapan alu-aluan atau maklumat operasi. Tiga contoh pada skrin menunjukkan bagaimana satu premis boleh berkomunikasi dalam beberapa bahasa tanpa menempah studio rakaman bagi setiap versi. Alat yang sama juga boleh menghasilkan audio menunggu panggilan yang profesional, menggabungkan suara latar berbilang bahasa dengan muzik sebelum menghantarnya terus ke sistem telefon. Ertinya, muzik dan semua mesej yang mengiringinya boleh diurus dari tempat yang sama."
     },
     {
       "id": "09-works-with-claude-and-chatgpt",
@@ -120,7 +120,7 @@
         "pengesahan sebelum perubahan jadual",
         "akses selamat yang boleh ditarik balik"
       ],
-      "text": "Jika pasukan anda sudah menggunakan Claude atau ChatGPT, Beat Breeze boleh hadir terus dalam tetingkap perbualan yang sama. Contoh pada skrin menunjukkan beberapa kegunaan: bertanya muzik yang akan dimainkan pada malam Jumaat, merendahkan kelantangan lobi atau menyediakan jadual ambient baharu untuk spa pada hari esok. Arahan langsung tetap mengikut kebenaran pengguna, manakala perubahan jadual akan dipaparkan semula untuk pengesahan sebelum digunakan. Sambungan menggunakan kunci selamat milik akaun yang boleh ditarik balik pada bila-bila masa, jadi akses mudah dihentikan apabila seseorang atau sesuatu integrasi tidak lagi memerlukannya. Manfaatnya mudah: pasukan boleh mengendalikan tugas muzik harian dalam bahasa biasa tanpa kehilangan kawalan akhir terhadap perkara yang berubah di premis."
+      "text": "Jika pasukan anda sudah menggunakan Claude atau ChatGPT, Beat Breeze boleh disambungkan terus melalui ruang sembang yang sedia terbuka. Jadi, pasukan anda boleh mengawal muzik hanya dengan arahan mudah. Contoh pada skrin menunjukkan beberapa kegunaan: bertanya muzik yang akan dimainkan pada malam Jumaat, merendahkan kelantangan lobi atau menyediakan jadual ambient baharu untuk spa pada hari esok. Setiap perubahan jadual perlu disahkan sebelum dilaksanakan. Tiada apa-apa yang berubah tanpa persetujuan anda. Sambungan menggunakan kunci keselamatan akaun anda yang boleh ditarik balik pada bila-bila masa, jadi akses boleh dihentikan serta-merta apabila tidak lagi diperlukan. Manfaatnya mudah: pasukan boleh mengendalikan tugas muzik harian dengan arahan mudah tanpa kehilangan kawalan akhir terhadap perkara yang berubah di premis."
     },
     {
       "id": "10-built-for-operators",
@@ -131,7 +131,7 @@
         "pilihan pemain dan berbilang zon pada Windows",
         "perkhidmatan terurus BMAsia"
       ],
-      "text": "Slaid ini menunjukkan dua model operasi. Pada bahagian atas, anda mengurus Beat Breeze secara layan diri. Satu akaun boleh merangkumi banyak premis dan zon, setiap ahli pasukan hanya menerima akses yang diperlukan, dan Brand Lock melindungi muzik bagi ruang yang mesti mengikut standard jenama. Pemain berjalan pada peranti mudah alih, Windows atau pelayar web yang disokong dan sudah anda miliki. Dengan kad bunyi berbilang saluran yang sesuai, satu PC Windows juga boleh mengendalikan beberapa zon. Pada bahagian bawah ialah model yang diurus oleh BMAsia. Platformnya masih sama, tetapi pasukan kami menambah reka bentuk muzik khusus, sokongan teknikal sepanjang masa, pengurus akaun dan pemantauan seluruh kumpulan. Anda boleh memilih tahap sokongan yang paling sesuai dengan cara organisasi anda mahu bekerja."
+      "text": "Slaid ini menunjukkan dua cara untuk menggunakan Beat Breeze: urus sendiri, atau biar kami uruskannya untuk anda. Pada bahagian atas, satu akaun boleh merangkumi banyak premis dan zon, setiap ahli pasukan hanya menerima akses yang diperlukan, dan Brand Lock melindungi muzik bagi ruang yang mesti mengikut standard jenama. Pemain berjalan pada peranti mudah alih, Windows atau pelayar web yang disokong dan sudah anda miliki. Dengan kad bunyi berbilang saluran yang sesuai, satu PC Windows juga boleh mengendalikan beberapa zon. Pada bahagian bawah ialah model yang diurus oleh BMAsia. Platformnya masih sama, tetapi pasukan kami menambah reka bentuk muzik khusus, sokongan teknikal sepanjang masa, pengurus akaun dan pemantauan seluruh kumpulan. Anda boleh memilih tahap sokongan yang paling sesuai dengan cara organisasi anda mahu bekerja."
     },
     {
       "id": "11-never-go-silent",
@@ -154,7 +154,7 @@
         "pengumuman, audio menunggu dan TV Channels",
         "satu platform untuk seluruh pengalaman"
       ],
-      "text": "Jadual perbandingan ini menyatukan keseluruhan cerita. Muzik bagi setiap zon dan jadual automatik ialah asas yang turut ditawarkan oleh banyak penyelesaian lain. Beat Breeze direka untuk pergi lebih jauh dengan main balik luar talian, muzik asli melalui Compose, penciptaan imej dan video, pengumuman berbilang bahasa, audio menunggu panggilan dan TV Channels berjenama. Perbezaan sebenar bukan sekadar satu tanda semak dalam jadual. Yang membezakannya ialah premis tidak perlu menggabungkan sendiri platform muzik, alat kreatif, sistem pemesejan dan skrin sebagai beberapa penyelesaian berasingan. Beat Breeze mengendalikan pengalaman di premis sambil membantu menghasilkan kandungan yang menjadi sebahagian daripada pengalaman itu."
+      "text": "Jadual perbandingan ini menyatukan keseluruhan cerita. Semua orang memainkan muzik. Selebihnya, kami uruskan. Muzik bagi setiap zon dan jadual automatik ialah asas yang turut ditawarkan oleh banyak penyelesaian lain. Beat Breeze direka untuk pergi lebih jauh dengan main balik luar talian, muzik asli melalui Compose, penciptaan imej dan video, pengumuman berbilang bahasa, audio menunggu panggilan dan TV Channels berjenama. Perbezaan sebenar bukan sekadar satu tanda semak dalam jadual. Yang membezakannya ialah premis tidak perlu menggabungkan sendiri platform muzik, alat kreatif, sistem pemesejan dan skrin sebagai beberapa penyelesaian berasingan. Beat Breeze mengendalikan pengalaman di premis sambil membantu menghasilkan kandungan yang menjadi sebahagian daripada pengalaman itu."
     },
     {
       "id": "13-pricing",
@@ -165,7 +165,7 @@
         "penyelesaian enterprise",
         "tiada peranti khas yang diwajibkan"
       ],
-      "text": "Terdapat dua cara yang jelas untuk menggunakan Beat Breeze. Pakej layan diri berharga dua belas dolar Amerika, atau tiga ratus sembilan puluh sembilan baht, bagi setiap zon sebulan. Semua fungsi yang baru kita lihat sudah disertakan, dan anda boleh memulakan percubaan empat belas hari untuk satu zon tanpa kad. Pakej yang diurus BMAsia berharga dua ratus enam puluh dolar Amerika bagi setiap zon setahun. Pakej ini menambah reka bentuk muzik berterusan untuk jenama anda, sokongan teknikal dan pengurus akaun khusus. Kumpulan yang lebih besar boleh menggunakan kontrak tersuai serta pilihan pengebilan yang sesuai dengan keperluan setempat. Apa jua model yang dipilih, anda tidak diwajibkan membeli kotak pemain khas kerana platform berjalan pada peranti disokong yang sudah anda miliki."
+      "text": "Semuanya disertakan, dengan dua cara untuk menggunakannya. Pakej layan diri berharga dua belas dolar Amerika, atau tiga ratus sembilan puluh sembilan baht, bagi setiap zon sebulan. Semua fungsi yang baru kita lihat sudah disertakan, dan anda boleh memulakan percubaan empat belas hari untuk satu zon tanpa kad. Pakej yang diurus BMAsia berharga dua ratus enam puluh dolar Amerika bagi setiap zon setahun. Pakej ini menambah reka bentuk muzik berterusan untuk jenama anda, sokongan teknikal dan pengurus akaun khusus. Kumpulan yang lebih besar boleh menggunakan kontrak tersuai serta pilihan pengebilan yang sesuai dengan keperluan setempat. Apa jua model yang dipilih, anda tidak diwajibkan membeli kotak pemain khas kerana platform berjalan pada peranti disokong yang sudah anda miliki."
     },
     {
       "id": "14-whos-behind-it",
@@ -185,7 +185,7 @@
         "langkah seterusnya untuk pelanggan sedia ada dan baharu",
         "saluran hubungan Beat Breeze dan BMAsia"
       ],
-      "text": "Itulah Beat Breeze hari ini. Platform muzik yang boleh dipercayai kekal sebagai terasnya, tetapi kini ia mampu melakukan jauh lebih banyak untuk keseluruhan pengalaman di sekeliling muzik. Jika anda sudah menggunakan Beat Breeze, log masuk dan cuba Compose, Content Studio atau Pengumuman kerana semuanya sudah disertakan dalam pelan anda. Jika anda baru ingin bermula, kunjungi beatbreeze.io atau hubungi Norbert di BMAsia. Kami akan membantu anda memilih titik permulaan yang paling sesuai untuk premis anda."
+      "text": "Itulah Beat Breeze hari ini. Muzik yang anda percayai kekal sebagai terasnya. Kini, lebih daripada sekadar muzik, Beat Breeze membantu mengurus keseluruhan pengalaman di premis. Jika anda sudah menggunakan Beat Breeze, log masuk dan cuba Compose, Content Studio atau Pengumuman kerana semuanya sudah disertakan dalam pelan anda. Jika anda baru ingin bermula, kunjungi beatbreeze.io atau hubungi Norbert di BMAsia. Kami akan membantu anda memilih titik permulaan yang paling sesuai untuk premis anda."
     }
   ]
 }
