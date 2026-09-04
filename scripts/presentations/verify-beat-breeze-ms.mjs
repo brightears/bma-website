@@ -156,16 +156,51 @@ if (
 }
 if (
   !malayOfficial.includes("Muzik anda sendiri, <br>hanya") ||
-  !malayOfficial.includes("Belum kena? Ubah suai dengan satu arahan lagi.") ||
-  malayOfficial.includes("Perhalusinya dengan satu ayat lagi.") ||
-  !script.slides[5]?.text.startsWith(
-    "Dengan Compose, satu arahan ringkas sudah cukup untuk menghasilkan muzik asli.",
+  !malayOfficial.includes("dengan satu ayat.") ||
+  !malayOfficial.includes(
+    "Bunyi unik yang menjadi identiti tersendiri—bukan sekadar playlist biasa yang digunakan oleh semua orang.",
   ) ||
-  /menukar taklimat ringkas|Daripada ayat seperti itu|Nilai utamanya kepada sesebuah premis/.test(
+  !malayOfficial.includes(
+    "Masih belum tepat? Perbaikinya lagi dengan menambah satu lagi ayat.",
+  ) ||
+  !script.slides[5]?.text.startsWith(
+    "Dengan Compose, satu ayat ringkas sudah cukup untuk menghasilkan muzik asli.",
+  ) ||
+  /dengan satu arahan|Identiti bunyi tersendiri yang tidak dimiliki pesaing|Belum kena\?/.test(
     script.slides[5]?.text || "",
   )
 ) {
   fail("The approved natural Malaysian Malay refinement is missing from slide 6.");
+}
+
+const approvedMalayRefinements = [
+  "Cipta visual — kemudian paparkan",
+  "diselitkan terus ke dalam muzik",
+  "Kawal semuanya melalui AI",
+  "yang anda sudah gunakan.",
+  "Beat Breeze boleh disambungkan dengan Claude dan ChatGPT",
+  "Setiap perubahan jadual perlu disahkan sebelum dilaksanakan.",
+  "atau biar kami uruskannya untuk anda.",
+  "Selebihnya, kami uruskan.",
+  "Dua cara untuk menggunakannya.",
+  "Muzik yang anda percayai.",
+  "lebih daripada sekadar muzik.",
+];
+if (approvedMalayRefinements.some((phrase) => !malayOfficial.includes(phrase))) {
+  fail("One or more approved native Malay copy refinements are missing.");
+}
+if (
+  !script.slides[6]?.text.includes("mencipta visual") ||
+  !script.slides[7]?.text.includes("diselitkan terus ke dalam muzik") ||
+  !script.slides[8]?.text.includes("arahan mudah") ||
+  !script.slides[9]?.text.includes("biar kami uruskannya untuk anda") ||
+  !script.slides[11]?.text.includes("Selebihnya, kami uruskan") ||
+  !script.slides[12]?.text.startsWith(
+    "Semuanya disertakan, dengan dua cara untuk menggunakannya.",
+  ) ||
+  !script.slides[14]?.text.includes("Muzik yang anda percayai")
+) {
+  fail("The presenter script does not reflect the native Malay review.");
 }
 
 if (
@@ -223,7 +258,17 @@ if (
 const transcriptionQa = manifest.qualityAssurance?.transcription;
 const targetedTranscriptionQa =
   transcriptionQa?.validationMode ===
-  "full-deck-baseline-plus-targeted-slide";
+  "full-deck-baseline-plus-targeted-slides";
+const expectedTargetedSlideIds = [
+  "06-compose",
+  "07-studio-and-screens",
+  "08-announcements",
+  "09-works-with-claude-and-chatgpt",
+  "10-built-for-operators",
+  "12-why-beat-breeze",
+  "13-pricing",
+  "15-close",
+];
 if (
   transcriptionQa?.model !== "gemini-3.5-transcribe" ||
   transcriptionQa?.languageCode !== "ms-MY" ||
@@ -231,10 +276,11 @@ if (
   transcriptionQa?.maximumCharacterErrorRate >
     transcriptionQa?.requiredMaximumCharacterErrorRate ||
   (targetedTranscriptionQa &&
-    (transcriptionQa?.verifiedUnchangedSlideCount !== 14 ||
+    (transcriptionQa?.verifiedUnchangedSlideCount !== 7 ||
       transcriptionQa?.baselineFullDeck?.slidesPassing !== 15 ||
-      transcriptionQa?.targetedUpdate?.id !== "06-compose" ||
-      transcriptionQa?.targetedUpdate?.pass !== true)) ||
+      JSON.stringify(transcriptionQa?.targetedUpdates?.map((item) => item.id)) !==
+        JSON.stringify(expectedTargetedSlideIds) ||
+      transcriptionQa?.targetedUpdates?.some((item) => item.pass !== true))) ||
   (!targetedTranscriptionQa &&
     typeof transcriptionQa?.meanCharacterErrorRate !== "number")
 ) {
@@ -326,7 +372,7 @@ console.log(
 );
 console.log(
   targetedTranscriptionQa
-    ? `PASS: automated Malaysian Malay speech fidelity retains the verified 15-slide baseline and the updated slide 6 passed at CER ${(transcriptionQa.targetedUpdate.characterErrorRate * 100).toFixed(1)}%.`
+    ? `PASS: automated Malaysian Malay speech fidelity retains the verified 15-slide baseline; ${transcriptionQa.targetedUpdates.length} revised slides passed at maximum CER ${(Math.max(...transcriptionQa.targetedUpdates.map((item) => item.characterErrorRate)) * 100).toFixed(1)}%.`
     : `PASS: automated Malaysian Malay speech fidelity passed all 15 slides (mean CER ${(transcriptionQa.meanCharacterErrorRate * 100).toFixed(1)}%, max ${(transcriptionQa.maximumCharacterErrorRate * 100).toFixed(1)}%).`,
 );
 console.log("PASS: Malay deck, script, manifest, audio hashes, labels, and local fallback agree.");

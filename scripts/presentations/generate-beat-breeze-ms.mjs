@@ -21,13 +21,18 @@ const API_REVISION = "2026-05-20";
 const LOUDNESS_TARGET = -18;
 const TRUE_PEAK_TARGET = -3;
 const LOUDNESS_RANGE = 7;
-const slideIdFlagIndex = process.argv.indexOf("--slide-id");
-const TARGET_SLIDE_ID =
-  slideIdFlagIndex >= 0 ? process.argv[slideIdFlagIndex + 1] : null;
-
-if (slideIdFlagIndex >= 0 && !TARGET_SLIDE_ID) {
-  throw new Error("Pass a slide id after --slide-id.");
+const slideIdFlagIndexes = process.argv.flatMap((argument, index) =>
+  argument === "--slide-id" ? [index] : [],
+);
+const TARGET_SLIDE_IDS = slideIdFlagIndexes.map((index) => process.argv[index + 1]);
+if (TARGET_SLIDE_IDS.some((slideId) => !slideId || slideId.startsWith("--"))) {
+  throw new Error("Pass a slide id after every --slide-id.");
 }
+if (new Set(TARGET_SLIDE_IDS).size !== TARGET_SLIDE_IDS.length) {
+  throw new Error("Each targeted slide id may be passed only once.");
+}
+const TARGET_SLIDE_ID_SET = new Set(TARGET_SLIDE_IDS);
+const IS_TARGETED_REGENERATION = TARGET_SLIDE_IDS.length > 0;
 
 if (!process.argv.includes("--confirm-spend")) {
   throw new Error(
@@ -104,21 +109,26 @@ if (
 ) {
   throw new Error("The Malaysian Malay narration script must contain all 15 Beat Breeze slides.");
 }
-if (TARGET_SLIDE_ID && !script.slides.some((slide) => slide.id === TARGET_SLIDE_ID)) {
-  throw new Error(`Unknown Malaysian Malay narration slide: ${TARGET_SLIDE_ID}.`);
+for (const targetSlideId of TARGET_SLIDE_IDS) {
+  if (!script.slides.some((slide) => slide.id === targetSlideId)) {
+    throw new Error(`Unknown Malaysian Malay narration slide: ${targetSlideId}.`);
+  }
 }
-if (TARGET_SLIDE_ID && !existsSync(MANIFEST_PATH)) {
+if (IS_TARGETED_REGENERATION && !existsSync(MANIFEST_PATH)) {
   throw new Error("A complete verified manifest is required for targeted slide regeneration.");
 }
-const previousManifest = TARGET_SLIDE_ID
+const previousManifest = IS_TARGETED_REGENERATION
   ? JSON.parse(readFileSync(MANIFEST_PATH, "utf8"))
   : null;
 const previousTranscriptionQa =
   previousManifest?.qualityAssurance?.transcription || null;
+const baselineFullDeck =
+  previousTranscriptionQa?.baselineFullDeck || previousTranscriptionQa;
 if (
-  TARGET_SLIDE_ID &&
+  IS_TARGETED_REGENERATION &&
   (previousManifest?.slides?.length !== 15 ||
-    previousTranscriptionQa?.slidesPassing !== 15)
+    previousTranscriptionQa?.slidesPassing !== 15 ||
+    baselineFullDeck?.slidesPassing !== 15)
 ) {
   throw new Error(
     "Targeted regeneration requires a previously verified complete 15-slide release.",
@@ -361,7 +371,7 @@ try {
     }
 
     const previousSlide = previousManifest?.slides?.[index];
-    if (TARGET_SLIDE_ID && slide.id !== TARGET_SLIDE_ID) {
+    if (IS_TARGETED_REGENERATION && !TARGET_SLIDE_ID_SET.has(slide.id)) {
       if (
         previousSlide?.id !== slide.id ||
         previousSlide?.label !== slide.label ||
@@ -523,18 +533,19 @@ try {
       slides.reduce((sum, slide) => sum + slide.durationSeconds, 0).toFixed(3),
     ),
     slides,
-    ...(TARGET_SLIDE_ID
+    ...(IS_TARGETED_REGENERATION
       ? {
           generation: {
-            mode: "targeted-slide-regeneration",
-            updatedSlideIds: [TARGET_SLIDE_ID],
-            verifiedCarryForwardSlideCount: 14,
+            mode: "targeted-slides-regeneration",
+            updatedSlideIds: TARGET_SLIDE_IDS,
+            verifiedCarryForwardSlideCount:
+              script.slides.length - TARGET_SLIDE_IDS.length,
           },
           qualityAssurance: {
             transcription: {
-              status: "pending-targeted-slide-update",
-              targetSlideId: TARGET_SLIDE_ID,
-              baselineFullDeck: previousTranscriptionQa,
+              status: "pending-targeted-slides-update",
+              targetSlideIds: TARGET_SLIDE_IDS,
+              baselineFullDeck,
             },
           },
         }
@@ -570,8 +581,8 @@ try {
     rmSync(pendingControllerPath, { force: true });
   }
   console.log(
-    TARGET_SLIDE_ID
-      ? `Narration ready: 1 updated clip, 14 verified carry-forwards, ${manifest.totalDurationSeconds.toFixed(1)} seconds total.`
+    IS_TARGETED_REGENERATION
+      ? `Narration ready: ${TARGET_SLIDE_IDS.length} updated clips, ${script.slides.length - TARGET_SLIDE_IDS.length} verified carry-forwards, ${manifest.totalDurationSeconds.toFixed(1)} seconds total.`
       : `Narration ready: ${slides.length} clips, ${manifest.totalDurationSeconds.toFixed(1)} seconds total.`,
   );
 } catch (error) {
