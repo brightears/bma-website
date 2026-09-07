@@ -1,15 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { checkRateLimit, getClientIP } from '@/lib/rate-limiter';
+import { saveChatInquiry } from '@/lib/chat-inquiry';
 
 /**
  * Chat Escalation API endpoint
  * POST /api/chat-escalation
  *
- * Receives escalation data from website chat and forwards to bma_messenger_hub
+ * Saves website chat follow-ups and notifies the BMAsia team
  */
 
-// bma_messenger_hub escalation webhook URL
-const MESSENGER_HUB_URL = process.env.MESSENGER_HUB_URL || 'https://bma-messenger-hub-ooyy.onrender.com';
 
 interface EscalationRequest {
   email: string;
@@ -49,32 +48,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Forward to bma_messenger_hub escalation webhook
-    const escalationPayload = {
-      customer_email: safeEmail,
-      customer_name: clean(name, 120) || undefined,
-      customer_company: clean(company, 160) || undefined,
-      conversation_history: clean(conversationHistory, 12_000),
-      escalation_reason: 'customer_request',
-      issue_summary: 'Website chat escalation - customer requested to speak with team',
-      urgency: 'normal',
-      // No phone number for website escalations
-      customer_phone: undefined,
-    };
-
-    const hubResponse = await fetch(`${MESSENGER_HUB_URL}/webhooks/elevenlabs/escalate`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(escalationPayload),
-      signal: AbortSignal.timeout(10_000),
+    await saveChatInquiry({
+      email: safeEmail,
+      name: clean(name, 120),
+      company: clean(company, 160),
+      conversation: clean(conversationHistory, 12_000),
+      locale: body.locale,
+      kind: 'follow-up',
     });
-
-    if (!hubResponse.ok) {
-      console.error('Messenger hub escalation failed with status:', hubResponse.status);
-      throw new Error(`Messenger hub returned ${hubResponse.status}`);
-    }
 
     return NextResponse.json({
       success: true,

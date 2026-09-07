@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { checkRateLimit, getClientIP } from '@/lib/rate-limiter';
-import { locales } from '@/lib/i18n-config';
+import { saveChatInquiry } from '@/lib/chat-inquiry';
 
 /**
  * Chat Lead Capture API endpoint
@@ -10,8 +10,6 @@ import { locales } from '@/lib/i18n-config';
  * (progressive profiling - no escalation requested)
  */
 
-// bma_messenger_hub lead capture webhook URL
-const MESSENGER_HUB_URL = process.env.MESSENGER_HUB_URL || 'https://bma-messenger-hub-ooyy.onrender.com';
 
 interface LeadCaptureRequest {
   email: string;
@@ -51,32 +49,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Forward to bma_messenger_hub lead capture webhook
-    const leadPayload = {
+    await saveChatInquiry({
       email: safeEmail,
-      name: clean(name, 120) || undefined,
-      company: clean(company, 160) || undefined,
-      conversationSummary: clean(conversationSummary, 4_000),
-      locale: locales.includes(locale as (typeof locales)[number]) ? locale : 'en',
-      source: 'website_chat',
-    };
-
-    const hubResponse = await fetch(`${MESSENGER_HUB_URL}/webhooks/lead-capture`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(leadPayload),
-      signal: AbortSignal.timeout(10_000),
+      name: clean(name, 120),
+      company: clean(company, 160),
+      conversation: clean(conversationSummary, 4_000),
+      locale,
+      kind: 'lead',
     });
-
-    if (!hubResponse.ok) {
-      console.error('Messenger hub lead capture failed with status:', hubResponse.status);
-      return NextResponse.json(
-        { success: false, message: 'Lead capture could not be delivered.' },
-        { status: 502 }
-      );
-    }
 
     return NextResponse.json({
       success: true,
