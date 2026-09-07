@@ -83,7 +83,10 @@ export function EscalationModal({ isOpen, onClose, onSubmit, isSubmitting }: Esc
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-            className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-md z-[61]"
+            className="fixed inset-0 m-auto h-fit max-h-[calc(100dvh-2rem)] w-[90%] max-w-md overflow-y-auto z-[61]"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="escalation-title"
           >
             <div className="bg-brand-dark/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl overflow-hidden">
               {/* Header */}
@@ -93,7 +96,7 @@ export function EscalationModal({ isOpen, onClose, onSubmit, isSubmitting }: Esc
                     <Mail className="w-5 h-5 text-brand-orange" aria-hidden="true" />
                   </div>
                   <div>
-                    <h2 className="text-white font-semibold text-lg">{t('title')}</h2>
+                    <h2 id="escalation-title" className="text-white font-semibold text-lg">{t('title')}</h2>
                     <p className="text-gray-400 text-sm">{t('subtitle')}</p>
                   </div>
                 </div>

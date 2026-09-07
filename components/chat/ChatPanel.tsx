@@ -41,7 +41,9 @@ export function ChatPanel() {
     if (!isOpen) return;
     const previous = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
-    const focus = window.setTimeout(() => inputRef.current?.focus(), 320);
+    const focus = window.setTimeout(() => {
+      if (!showEscalationModal) inputRef.current?.focus();
+    }, 320);
     const escape = (event: globalThis.KeyboardEvent) => {
       if (event.key === 'Escape' && !showEscalationModal) closePanel();
     };
