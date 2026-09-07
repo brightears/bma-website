@@ -2,7 +2,6 @@ import { NextRequest, NextResponse } from 'next/server';
 import {
   createBooking,
   BookingSlotConflictError,
-  getAvailableBookingSlots,
   getBookingCapability,
   type BookingProvider,
   type BookingRequest,
@@ -53,11 +52,6 @@ export async function POST(request: NextRequest) {
       || Number.isNaN(new Date(start).getTime())
     ) {
       return NextResponse.json({ error: 'Please check the booking details.' }, { status: 400 });
-    }
-
-    const slots = await getAvailableBookingSlots();
-    if (!slots.some((slot) => slot.start === new Date(start).toISOString())) {
-      return NextResponse.json({ error: 'That time is no longer available.', code: 'slot_unavailable' }, { status: 409 });
     }
 
     const bookingRequest: BookingRequest = {

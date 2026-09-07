@@ -1,6 +1,6 @@
 'use client';
 
-import { FormEvent, useEffect, useMemo, useState } from 'react';
+import { FormEvent, useEffect, useMemo, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { ArrowRight, CalendarDays, Check, Clock3, ExternalLink, LoaderCircle, MonitorUp, Sparkles, Video } from 'lucide-react';
 import { EXTERNAL_LINKS, withAttribution } from '@/lib/external-links';
@@ -46,6 +46,7 @@ export function BookingExperience() {
   const [submitting, setSubmitting] = useState(false);
   const [successEmail, setSuccessEmail] = useState('');
   const [error, setError] = useState('');
+  const pendingRequest = useRef<{ details: string; id: string } | null>(null);
   // Keep the server and first client render identical. The browser timezone is
   // only available after hydration, so resolve it once the component mounts.
   const [visitorTimeZone, setVisitorTimeZone] = useState('Asia/Bangkok');
@@ -84,7 +85,7 @@ export function BookingExperience() {
   }, [availability.slots, visitorTimeZone]);
 
   const dates = [...slotsByDate.keys()].slice(0, 12);
-  const activeDate = selectedDate || dates[0] || '';
+  const activeDate = dates.includes(selectedDate) ? selectedDate : dates[0] || '';
   const activeSlots = slotsByDate.get(activeDate) || [];
 
   async function submit(event: FormEvent<HTMLFormElement>) {
@@ -100,32 +101,40 @@ export function BookingExperience() {
 
     setSubmitting(true);
     setError('');
+    const details = {
+      start: selectedStart,
+      provider,
+      name,
+      email,
+      company,
+      notes: String(form.get('notes') || ''),
+      website: String(form.get('website') || ''),
+      locale,
+    };
+    const requestDetails = JSON.stringify(details);
+    if (pendingRequest.current?.details !== requestDetails) {
+      pendingRequest.current = { details: requestDetails, id: crypto.randomUUID().replaceAll('-', '') };
+    }
     try {
       const response = await fetch('/api/booking', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          requestId: crypto.randomUUID().replaceAll('-', ''),
-          start: selectedStart,
-          provider,
-          name,
-          email,
-          company,
-          notes: String(form.get('notes') || ''),
-          website: String(form.get('website') || ''),
-          locale,
+          ...details,
+          requestId: pendingRequest.current.id,
         }),
       });
       const payload = await response.json() as { code?: string };
       if (!response.ok) {
         if (payload.code === 'slot_unavailable') {
-          setError(t('slotGone'));
           setSelectedStart('');
           await loadAvailability();
+          setError(t('slotGone'));
           return;
         }
         throw new Error('booking_failed');
       }
+      pendingRequest.current = null;
       setSuccessEmail(email);
     } catch {
       setError(t('genericError'));
@@ -146,7 +155,7 @@ export function BookingExperience() {
             {t('successTitle')}
           </h2>
           <p className="mx-auto mt-5 max-w-lg text-base leading-7 text-white/52">{t('successDescription', { email: successEmail })}</p>
-          <button type="button" onClick={() => { setSuccessEmail(''); setSelectedStart(''); }} className="bma-button-secondary mt-8 min-h-12 px-6">
+          <button type="button" onClick={() => { setSuccessEmail(''); setSelectedStart(''); setSelectedDate(''); void loadAvailability(); }} className="bma-button-secondary mt-8 min-h-12 px-6">
             {t('bookAnother')} <ArrowRight className="h-4 w-4" />
           </button>
         </div>

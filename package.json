@@ -9,6 +9,7 @@
     "lint": "eslint . --max-warnings=0",
     "typecheck": "tsc --noEmit",
     "check:form-delivery": "node scripts/check-form-delivery.mjs",
+    "check:booking": "node scripts/check-booking.mjs",
     "check:hero-covers": "node scripts/check-hero-covers.mjs",
     "check:locales": "node scripts/check-locales.mjs",
     "check:typography": "node scripts/check-typography.mjs"

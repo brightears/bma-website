@@ -55,7 +55,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
     const newPathname = segments.join('/');
 
     document.cookie = `NEXT_LOCALE=${newLocale};path=/;max-age=31536000;samesite=lax`;
-    router.push(newPathname || `/${newLocale}`);
+    router.push(`${newPathname || `/${newLocale}`}${window.location.search}${window.location.hash}`);
     setIsOpen(false);
   };
 

@@ -199,8 +199,10 @@ async function getBusyIntervals(timeMin: Date, timeMax: Date) {
     calendars?: Record<string, { busy?: Array<{ start: string; end: string }>; errors?: unknown[] }>;
   };
   const calendar = payload.calendars?.[calendarId];
-  if (calendar?.errors?.length) throw new Error('Google Calendar returned an availability error');
-  return (calendar?.busy || []).map((busy) => ({
+  if (!calendar || calendar.errors?.length || !Array.isArray(calendar.busy)) {
+    throw new Error('Google Calendar returned an availability error');
+  }
+  return calendar.busy.map((busy) => ({
     start: new Date(busy.start).getTime(),
     end: new Date(busy.end).getTime(),
   }));
@@ -241,7 +243,7 @@ export async function getAvailableBookingSlots(): Promise<BookingSlot[]> {
 
 // A slot-derived event ID makes Google Calendar the final concurrency lock: two
 // visitors cannot confirm the same start time during the small free/busy race window.
-const eventIdFor = (start: string) => `bma${createHash('sha256').update(new Date(start).toISOString()).digest('hex').slice(0, 40)}`;
+const eventIdFor = (start: string, cancelledId = '') => `bma${createHash('sha256').update(new Date(start).toISOString() + cancelledId).digest('hex').slice(0, 40)}`;
 
 function assertEventOwnership(event: GoogleEvent, requestId: string) {
   if (event.extendedProperties?.private?.requestId !== requestId) throw new BookingSlotConflictError();
@@ -352,13 +354,27 @@ async function deleteTeamsMeeting(meetingId: string) {
 }
 
 export async function createBooking(request: BookingRequest) {
-  const eventId = eventIdFor(request.start);
-  const existing = await getGoogleEvent(eventId);
-  if (existing && existing.status !== 'cancelled') {
+  let eventId = eventIdFor(request.start);
+  let existing = await getGoogleEvent(eventId);
+  // Google retains cancelled event IDs. Derive the same replacement ID for all
+  // visitors, so a reopened slot keeps its concurrency lock without reusing one.
+  for (let cancelled = 0; existing?.status === 'cancelled' && cancelled < 20; cancelled += 1) {
+    eventId = eventIdFor(request.start, eventId);
+    existing = await getGoogleEvent(eventId);
+  }
+  if (existing?.status === 'cancelled') throw new BookingSlotConflictError();
+  if (existing) {
     assertEventOwnership(existing, request.requestId);
     if (request.provider === 'google-meet' || existing.location?.startsWith('https://')) {
       return { eventId: existing.id, htmlLink: existing.htmlLink, alreadyExists: true };
     }
+  }
+
+  // Recover an already confirmed request before checking free/busy: its own
+  // event makes the slot unavailable after a successful but interrupted response.
+  if (!existing) {
+    const slots = await getAvailableBookingSlots();
+    if (!slots.some((slot) => slot.start === request.start)) throw new BookingSlotConflictError();
   }
 
   if (request.provider === 'google-meet') {
