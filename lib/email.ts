@@ -1,15 +1,35 @@
 import nodemailer from 'nodemailer';
 
-/**
- * Gmail SMTP transporter for sending email notifications
- */
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_APP_PASSWORD,
-  },
-});
+/** Validate delivery configuration when sending, so builds do not require secrets. */
+async function sendNotification(mailOptions: nodemailer.SendMailOptions): Promise<void> {
+  const user = process.env.GMAIL_USER?.trim();
+  const pass = process.env.GMAIL_APP_PASSWORD?.replace(/\s/g, '');
+  const recipient = process.env.NOTIFICATION_EMAIL?.trim();
+  const missing = [
+    !user && 'GMAIL_USER',
+    !pass && 'GMAIL_APP_PASSWORD',
+    !recipient && 'NOTIFICATION_EMAIL',
+  ].filter(Boolean);
+
+  if (missing.length > 0) {
+    throw new Error(`Email notification configuration missing: ${missing.join(', ')}`);
+  }
+
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: { user, pass },
+    connectionTimeout: 10_000,
+    greetingTimeout: 10_000,
+    socketTimeout: 15_000,
+    dnsTimeout: 10_000,
+  });
+
+  await transporter.sendMail({
+    ...mailOptions,
+    from: `"BMAsia Website" <${user}>`,
+    to: recipient,
+  });
+}
 
 interface InquiryEmailData {
   name: string;
@@ -61,8 +81,6 @@ export async function sendInquiryNotification(data: InquiryEmailData): Promise<v
     message: escapeMultilineHtml(data.message),
   };
   const mailOptions = {
-    from: `"BMAsia Website" <${process.env.GMAIL_USER}>`,
-    to: process.env.NOTIFICATION_EMAIL,
     replyTo: data.email,
     subject: `New Inquiry from ${safeSubjectValue(data.name)} - ${safeSubjectValue(data.company)}`,
     html: `
@@ -115,7 +133,7 @@ Sent from BMAsia website contact form
     `,
   };
 
-  await transporter.sendMail(mailOptions);
+  await sendNotification(mailOptions);
 }
 
 /**
@@ -140,8 +158,6 @@ export async function sendQuotationNotification(data: QuotationEmailData): Promi
   };
 
   const mailOptions = {
-    from: `"BMAsia Website" <${process.env.GMAIL_USER}>`,
-    to: process.env.NOTIFICATION_EMAIL,
     replyTo: data.email,
     subject: `New Quotation Request from ${safeSubjectValue(`${data.firstName} ${data.lastName}`)} - ${safeSubjectValue(data.companyName)}`,
     html: `
@@ -223,7 +239,7 @@ Sent from BMAsia website quotation form
     `,
   };
 
-  await transporter.sendMail(mailOptions);
+  await sendNotification(mailOptions);
 }
 
 /**
@@ -237,8 +253,6 @@ export async function sendSoundtrackTrialNotification(data: SoundtrackTrialEmail
   ) as Record<keyof SoundtrackTrialEmailData, string>;
 
   const mailOptions = {
-    from: `"BMAsia Website" <${process.env.GMAIL_USER}>`,
-    to: process.env.NOTIFICATION_EMAIL,
     replyTo: data.email,
     subject: `Soundtrack trial request — ${data.company}`,
     html: `
@@ -264,5 +278,5 @@ export async function sendSoundtrackTrialNotification(data: SoundtrackTrialEmail
     text: `Soundtrack trial request\n\nName: ${data.name}\nEmail: ${data.email}\nCompany: ${data.company}\nCountry: ${data.country}\nBusiness type: ${data.businessType}\nFirst location: ${data.locationName}\nFirst zone: ${data.zoneName || 'Not specified'}`,
   };
 
-  await transporter.sendMail(mailOptions);
+  await sendNotification(mailOptions);
 }

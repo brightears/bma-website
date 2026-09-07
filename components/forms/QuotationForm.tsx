@@ -83,6 +83,8 @@ const errorClassName = 'mt-2 text-sm text-[#ffaaa5]';
 export const QuotationForm: React.FC<QuotationFormProps> = ({ onSuccess, onError }) => {
   const [status, setStatus] = useState<SubmissionStatus>('idle');
   const [errorMessage, setErrorMessage] = useState('');
+  // RHF sets isSubmitting before validation; disabled radios fail required validation.
+  const [isSending, setIsSending] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const searchParams = useSearchParams();
   const t = useTranslations('forms.quotation');
@@ -117,6 +119,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({ onSuccess, onError
   const selectedSolution = watch('preferredSolution');
 
   const onSubmit = async (data: QuotationFormData) => {
+    setIsSending(true);
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     setStatus('idle');
     setErrorMessage('');
@@ -148,6 +151,8 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({ onSuccess, onError
         setStatus('idle');
         setErrorMessage('');
       }, 7000);
+    } finally {
+      setIsSending(false);
     }
   };
 
@@ -183,7 +188,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({ onSuccess, onError
             <input
               id="quotation-firstName"
               autoComplete="given-name"
-              disabled={isSubmitting}
+              disabled={isSending}
               aria-required="true"
               aria-invalid={Boolean(errors.firstName)}
               aria-describedby={errors.firstName ? 'firstName-error' : undefined}
@@ -199,7 +204,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({ onSuccess, onError
             <input
               id="quotation-lastName"
               autoComplete="family-name"
-              disabled={isSubmitting}
+              disabled={isSending}
               aria-required="true"
               aria-invalid={Boolean(errors.lastName)}
               aria-describedby={errors.lastName ? 'lastName-error' : undefined}
@@ -219,7 +224,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({ onSuccess, onError
               id="quotation-email"
               type="email"
               autoComplete="email"
-              disabled={isSubmitting}
+              disabled={isSending}
               aria-required="true"
               aria-invalid={Boolean(errors.email)}
               aria-describedby={errors.email ? 'email-error' : undefined}
@@ -235,7 +240,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({ onSuccess, onError
             <div className="relative">
               <select
                 id="quotation-country"
-                disabled={isSubmitting}
+                disabled={isSending}
                 aria-required="true"
                 aria-invalid={Boolean(errors.country)}
                 aria-describedby={errors.country ? 'country-error' : undefined}
@@ -259,7 +264,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({ onSuccess, onError
               <FormField htmlFor="quotation-otherCountry" label={t('fields.otherCountry.label')} error={errors.otherCountry?.message} errorId="otherCountry-error">
                 <input
                   id="quotation-otherCountry"
-                  disabled={isSubmitting}
+                  disabled={isSending}
                   aria-required="true"
                   aria-invalid={Boolean(errors.otherCountry)}
                   aria-describedby={errors.otherCountry ? 'otherCountry-error' : undefined}
@@ -282,7 +287,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({ onSuccess, onError
           <input
             id="quotation-companyName"
             autoComplete="organization"
-            disabled={isSubmitting}
+            disabled={isSending}
             aria-required="true"
             aria-invalid={Boolean(errors.companyName)}
             aria-describedby={errors.companyName ? 'companyName-error' : undefined}
@@ -299,7 +304,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({ onSuccess, onError
                 id="quotation-companyAddress"
                 rows={3}
                 autoComplete="street-address"
-                disabled={isSubmitting}
+                disabled={isSending}
                 aria-required="true"
                 aria-invalid={Boolean(errors.companyAddress)}
                 aria-describedby={errors.companyAddress ? 'companyAddress-error' : undefined}
@@ -331,7 +336,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({ onSuccess, onError
                   <input
                     type="radio"
                     value={solution.value}
-                    disabled={isSubmitting}
+                    disabled={isSending}
                     className="sr-only"
                     {...register('preferredSolution', { required: tValidation('selectRequired') })}
                   />
@@ -353,7 +358,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({ onSuccess, onError
                 id="quotation-numberOfZones"
                 type="number"
                 min="1"
-                disabled={isSubmitting}
+                disabled={isSending}
                 aria-required="true"
                 aria-invalid={Boolean(errors.numberOfZones)}
                 aria-describedby={errors.numberOfZones ? 'numberOfZones-error quotation-numberOfZones-help' : 'quotation-numberOfZones-help'}

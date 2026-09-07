@@ -89,6 +89,12 @@ See `.env.example` for required variables.
 
 This site deploys to Render from the configured production branch. Do not treat a branch preview as a production deployment.
 
+### Form delivery checks
+
+Run `npm run check:form-delivery` in the Render web shell to check the inquiry and quotation tables and Gmail SMTP authentication. This is read-only: it does not create a lead or send email. A nonzero exit means at least one dependency failed. A successful check verifies storage reads and SMTP login; an explicitly authorized TEST submission is still needed to verify browser submission, storage writes, and inbox delivery.
+
+If SMTP reports `EAUTH`, replace `GMAIL_APP_PASSWORD` with a current Google app password for `GMAIL_USER` in the service's Render environment, then redeploy and recheck. Leads already saved remain in `inquiries` or `quotations`; a failed notification does not remove them. Review saved records before retrying delivery to avoid duplicates.
+
 ## Brand Colors
 
 - Primary Orange: `#EFA634`
