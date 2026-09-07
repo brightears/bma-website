@@ -173,9 +173,15 @@ export function ChatPanel() {
                     <span className={`grid h-8 w-8 shrink-0 place-items-center rounded-full ${message.role === 'user' ? 'bg-[#efa634]/12 text-[#efa634]' : 'bg-[#49d5c5]/10 text-[#49d5c5]'}`}>
                       {message.role === 'user' ? <User className="h-3.5 w-3.5" /> : <Bot className="h-3.5 w-3.5" />}
                     </span>
-                    <div className="max-w-[83%]">
-                      <div className={`rounded-2xl px-4 py-3 text-sm leading-6 ${message.role === 'user' ? 'rounded-tr-sm border border-[#efa634]/14 bg-[#efa634]/10 text-white/82' : 'rounded-tl-sm border border-white/[0.08] bg-white/[0.045] text-white/72'}`}>
-                        {message.text}
+                    <div className="min-w-0 max-w-[83%]">
+                      <div className={`whitespace-pre-wrap break-words rounded-2xl px-4 py-3 text-sm leading-6 ${message.role === 'user' ? 'rounded-tr-sm border border-[#efa634]/14 bg-[#efa634]/10 text-white/82' : 'rounded-tl-sm border border-white/[0.08] bg-white/[0.045] text-white/72'}`}>
+                        {message.role === 'agent'
+                          ? message.text.split(/(\*\*[^*\n]+\*\*)/g).map((part, index) => (
+                            part.startsWith('**') && part.endsWith('**')
+                              ? <strong key={index}>{part.slice(2, -2)}</strong>
+                              : part
+                          ))
+                          : message.text}
                       </div>
                       {message.role === 'agent' && message.actions?.length ? (
                         <div className="mt-2 flex flex-wrap gap-2">
