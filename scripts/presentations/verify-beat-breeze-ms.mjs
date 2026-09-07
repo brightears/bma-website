@@ -196,7 +196,7 @@ if (
   !script.slides[9]?.text.includes("biar kami uruskannya untuk anda") ||
   !script.slides[11]?.text.includes("Selebihnya, kami uruskan") ||
   !script.slides[12]?.text.startsWith(
-    "Semuanya disertakan, dengan dua cara untuk menggunakannya.",
+    "Anda boleh mengurus muzik sendiri atau menyerahkannya kepada BMAsia.",
   ) ||
   !script.slides[14]?.text.includes("Muzik yang anda percayai")
 ) {

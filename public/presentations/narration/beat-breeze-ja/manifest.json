@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-ja",
   "status": "official-ja-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-03T09:16:30.746Z",
-  "releaseId": "20260903-e4ca5859bf68",
+  "generatedAt": "2026-09-07T01:49:14.055Z",
+  "releaseId": "20260907-pricing-ab05439dda3a5bb4",
   "publicationStatus": "Official unlinked, noindex Japanese Beat Breeze presentation with complete slide-linked Japanese narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,13 +30,13 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "6881092bb650336601e441f154ecac11e31f46d79bf9911e0d0573f7f3489611",
+    "englishDeckSha256": "bac895d050b8297dba9c5d04e2f38185f36739d01fd05a68f365a64bd1bfcc36",
     "officialDeckPath": "public/presentations/beat-breeze-ja.html",
-    "officialDeckSha256": "7da7b4bca8d3ae2a16b0df148f13e4fa70851395fcebe2511962b2fa65a338b7",
+    "officialDeckSha256": "83407403c8666a96f37a846e8403a6b79b556dc44ecadb17c093bcc930ff0e5c",
     "scriptPath": "public/presentations/narration/beat-breeze-ja/script.json",
-    "scriptSha256": "d0c40a174d51236d49f0f9e807b661d02b5e6aca696bddb141901ec43361b419",
+    "scriptSha256": "9025d13d1961cc2f6f1de234927044faa588406427acbeb60661433d61457392",
     "copyPath": "public/presentations/narration/beat-breeze-ja/copy.json",
-    "copySha256": "ff1bcf57fe246749c78058313f2cf8c1af3bba6db5cd47651bb6f1c2a5047676"
+    "copySha256": "7d82109e71882055eb62eeccbfc5149037e81fd70cf85b0759de89bbc8bad2e7"
   },
   "voice": {
     "provider": "google-gemini",
@@ -60,7 +60,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 702.64,
+  "totalDurationSeconds": 737.72,
   "slides": [
     {
       "index": 1,
@@ -374,30 +374,29 @@
       "cached": false
     },
     {
-      "index": 13,
       "id": "13-pricing",
       "label": "料金",
-      "src": "audio/20260903-e4ca5859bf68/13-pricing.mp3",
-      "text": "Beat Breezeの利用方法は明快に二つあります。セルフサービスは、1ゾーンあたり月額12米ドル、または399バーツです。ここまでご紹介したすべての機能が含まれ、カード登録なしで1ゾーンを14日間試せます。BMAsia管理型は、1ゾーンあたり年額260米ドルで、ブランドのための継続的な音楽設計、技術サポート、専任アカウントマネージャーが加わります。大規模な企業には、個別契約と地域に合った請求方法をご用意できます。どちらのモデルでも、専用プレーヤーボックスの購入は必須ではありません。Beat Breezeは、お客様がすでに所有する対応端末で動作します。",
       "visualCoverage": [
         "セルフサービスの料金とトライアル",
         "BMAsia管理型の料金とサービス",
         "エンタープライズ対応",
         "専用ハードウェア不要"
       ],
-      "transcriptSha256": "8ea1ccc210c345ac1db5450ff88e2e8fa235288baa7cc76f8fbecddd4db315a9",
-      "audioSha256": "83a9f62d91326239cc8c5681c94d3c947b637452ae5884f25108738e2f0e10be",
-      "durationSeconds": 46.4,
+      "text": "音楽を自分で管理するか、BMAsiaに任せるかをお選びいただけます。セルフサービスは、1ゾーンあたり月額15米ドル、または499タイバーツです。年間プランなら、1ゾーンあたり年額150米ドル、または4,990タイバーツになります。どちらのセルフサービスプランにもアプリの機能が含まれ、プレイリストと再生スケジュールはお客様が管理します。運用をお任せいただくBMAsia管理型は、1ゾーンあたり年額260米ドル、または9,000タイバーツで、年間プランのみの提供です。音楽デザインチームが各ゾーンのプレイリストとスケジュールを選定し、季節や行事に合わせて見直します。24時間365日の技術サポートと専任アカウントマネージャーも含まれます。どのプランでも、アプリは継続的に更新されます。違いは、日々の音楽管理を誰が担当するかです。セルフサービスはカード登録なしで1ゾーンを14日間無料でお試しいただけます。大規模な企業には個別契約や地域に合った請求方法をご用意でき、専用プレーヤーボックスの購入も不要です。",
+      "index": 13,
+      "src": "audio/20260907-pricing-ab05439dda3a5bb4/13-pricing.mp3",
+      "transcriptSha256": "80e69b36886e50a694ef9e3d11992d692a1146aded6a94d5486c31ae69cd90d7",
+      "audioSha256": "445c246aa6497fda0f146d96534895dc6e66c3bc0c02e7ccdb04675d750d9b43",
+      "durationSeconds": 81.48,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.53,
-      "truePeakDbtp": -3.43,
-      "loudnessRangeLu": 2.5,
-      "thresholdLufs": -28.97,
-      "targetOffsetLu": 0.16,
-      "cached": false
+      "integratedLufs": -18.46,
+      "truePeakDbtp": -3.44,
+      "loudnessRangeLu": 2.6,
+      "thresholdLufs": -28.9,
+      "targetOffsetLu": 0.17
     },
     {
       "index": 14,
@@ -455,10 +454,71 @@
       "provider": "google-gemini",
       "model": "gemini-3.5-transcribe",
       "languageCode": "ja-JP",
-      "meanCharacterErrorRate": 0.0156,
-      "maximumCharacterErrorRate": 0.0481,
+      "validationMode": "prior-release-plus-pricing-update",
+      "slidesPassing": 15,
+      "slidesPassingScope": "one newly transcribed pricing clip plus 14 hash-identical clips from the prior QA release",
+      "slidesTranscribed": 1,
+      "slidesReusedFromPreviousQa": 14,
+      "verifiedUnchangedSlideCount": 14,
+      "previousReleaseId": "20260903-e4ca5859bf68",
       "requiredMaximumCharacterErrorRate": 0.18,
-      "slidesPassing": 15
+      "maximumCharacterErrorRate": 0.0481,
+      "meanCharacterErrorRate": 0.0481,
+      "meanCharacterErrorRateScope": "conservative-upper-bound",
+      "baselineFullDeck": {
+        "provider": "google-gemini",
+        "model": "gemini-3.5-transcribe",
+        "languageCode": "ja-JP",
+        "meanCharacterErrorRate": 0.0156,
+        "maximumCharacterErrorRate": 0.0481,
+        "requiredMaximumCharacterErrorRate": 0.18,
+        "slidesPassing": 15
+      },
+      "targetedUpdates": [
+        {
+          "index": 13,
+          "id": "13-pricing",
+          "audioSha256": "445c246aa6497fda0f146d96534895dc6e66c3bc0c02e7ccdb04675d750d9b43",
+          "transcriptSha256": "1f804a31396ca82d742c6b62f56f7d43a2f800f1df88cdc65dd537f8bf7da2a3",
+          "characterErrorRate": 0.002352941176470588,
+          "lengthRatio": 1,
+          "pass": true
+        }
+      ]
+    },
+    "pricingUpdate": {
+      "index": 13,
+      "reviewed": true,
+      "reviewMethod": "Assistant semantic review of the generated-audio transcript",
+      "amounts": {
+        "monthly": {
+          "USD": 15,
+          "THB": 499
+        },
+        "annualSelfService": {
+          "USD": 150,
+          "THB": 4990
+        },
+        "annualManaged": {
+          "USD": 260,
+          "THB": 9000
+        }
+      },
+      "perZone": true,
+      "managedAnnualOnly": true,
+      "selfServiceManagesOwnMusic": true,
+      "managedPlaylistAndScheduleRefreshes": true,
+      "seasonalChanges": true,
+      "technicalSupport24x7": true,
+      "appUpdatesInEveryPlan": true
     }
+  },
+  "generation": {
+    "mode": "targeted-slides-regeneration",
+    "updatedSlideIds": [
+      "13-pricing"
+    ],
+    "verifiedCarryForwardSlideCount": 14,
+    "previousReleaseId": "20260903-e4ca5859bf68"
   }
 }

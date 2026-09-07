@@ -146,13 +146,13 @@ for (const [localeCode, locale] of Object.entries(LOCALES)) {
       "./narration/beat-breeze-localized/controller.js?v=2026-09-03-1",
     ) ||
     !official.includes(
-      "./narration/beat-breeze-motion/controller.js?v=2026-09-03-5",
+      "./narration/beat-breeze-motion/controller.js?v=2026-09-07-pricing-1",
     )
   ) {
     fail(`The official ${locale.name} deck is missing its language, title, or controllers.`);
   }
-  if (Object.keys(copy).length !== 220) {
-    fail(`${locale.name} on-screen copy must contain all 220 source phrases.`);
+  if (Object.keys(copy).length !== 223) {
+    fail(`${locale.name} on-screen copy must contain all 223 source phrases, including the new pricing options.`);
   }
   if (
     script.deck !== "beat-breeze" ||

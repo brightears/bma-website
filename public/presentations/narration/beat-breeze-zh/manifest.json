@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-zh",
   "status": "official-simplified-chinese-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-02T03:45:12.322Z",
-  "releaseId": "20260902-59014dd083de",
+  "generatedAt": "2026-09-07T01:47:11.061Z",
+  "releaseId": "20260907-pricing-ac6fd83695ab5b89",
   "publicationStatus": "Official unlinked, noindex Simplified Chinese Beat Breeze presentation with complete slide-linked Mandarin narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,13 +30,13 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "6881092bb650336601e441f154ecac11e31f46d79bf9911e0d0573f7f3489611",
+    "englishDeckSha256": "bac895d050b8297dba9c5d04e2f38185f36739d01fd05a68f365a64bd1bfcc36",
     "officialDeckPath": "public/presentations/beat-breeze-zh.html",
-    "officialDeckSha256": "17c89e2c1c30c9a5af0878acf76e2e77a4820b6e8d320007f084ceda81d680a2",
+    "officialDeckSha256": "5cf5a3b4bcc970f970759feb14707cd028552ab47776a197b92f516668573d23",
     "scriptPath": "public/presentations/narration/beat-breeze-zh/script.json",
-    "scriptSha256": "8deda733d35a441d5d3a2d6f143ab6e8dcabf3d1eeb50fe7224bfeb65e4217cd",
+    "scriptSha256": "84f44a14d8dbeb17e6661ed3d1aa2153251e30428eeb99a8b1844c05bbac9e89",
     "copyPath": "public/presentations/narration/beat-breeze-zh/copy.json",
-    "copySha256": "6d7491d25d3cc690495f5bf79eb171384737a4fb1e637d9a28c59299dbd62765"
+    "copySha256": "1d672ba3aba2df07007eb195df03d20399e3707e1f14ed40492f5025f53839c8"
   },
   "voice": {
     "provider": "google-gemini",
@@ -60,7 +60,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 599.52,
+  "totalDurationSeconds": 622.72,
   "slides": [
     {
       "index": 1,
@@ -374,30 +374,29 @@
       "cached": false
     },
     {
-      "index": 13,
       "id": "13-pricing",
       "label": "价格",
-      "src": "audio/20260902-59014dd083de/13-pricing.mp3",
-      "text": "使用 Beat Breeze 有两种清晰的方式。自助方案每个分区每月十二美元，或三百九十九泰铢；刚才看到的全部功能都包含在内，而且可以先在一个分区免费试用十四天，无需信用卡。由 BMAsia 托管的方案，每个分区每年二百六十美元，并加入持续的品牌音乐设计、技术支持和专属客户经理。大型集团还可以采用定制合同和本地开票安排。无论选择哪种方式，都不强制使用专用播放器盒子；平台可以运行在您已有的受支持设备上。",
       "visualCoverage": [
         "自助方案价格与试用",
         "BMAsia 托管方案价格与服务",
         "企业安排",
         "无需专用播放器盒子"
       ],
-      "transcriptSha256": "f274ed2faa5eace07b865a2bf3e7c7e33d7c8e18dd571b8efec6dd3f44908484",
-      "audioSha256": "304633d1a68c123a5dc7b4fb315b68fd7ab8c6e8cdf80b233e78385caf328496",
-      "durationSeconds": 36.68,
+      "text": "您可以选择自己管理音乐，也可以交给 BMAsia。自助方案每个分区每月 15 美元或 499 泰铢。如果按年付费，则为每个分区每年 150 美元或 4,990 泰铢。这两种自助方案都包含应用功能，由您自行管理播放列表和播放排程。如果希望交给专业团队打理，BMAsia 托管方案每个分区每年 260 美元或 9,000 泰铢，仅提供年度方案。我们的音乐设计团队会为各分区选择并调整播放列表和排程，包括季节与节庆安排，同时提供全天候技术支持和专属客户经理。无论选择哪种方案，所有客户都会持续获得应用更新。区别在于谁来照顾您的日常音乐安排。自助方案可在一个分区免费试用 14 天，无需信用卡。大型集团还可以采用定制合同和本地开票安排，也不需要购买专用播放器盒子。",
+      "index": 13,
+      "src": "audio/20260907-pricing-ac6fd83695ab5b89/13-pricing.mp3",
+      "transcriptSha256": "fa7fbe565538a244b1c848ad6e9ad2de2aa1db8100dd7a24c32a56dd414aeb9c",
+      "audioSha256": "461bcdbde413c4d8cd9320ef8d25903663ffdc234018928a56285eb7399f05ec",
+      "durationSeconds": 59.88,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.44,
-      "truePeakDbtp": -4.61,
-      "loudnessRangeLu": 1.9,
-      "thresholdLufs": -28.65,
-      "targetOffsetLu": 0.18,
-      "cached": false
+      "integratedLufs": -18.51,
+      "truePeakDbtp": -3.29,
+      "loudnessRangeLu": 2.3,
+      "thresholdLufs": -28.82,
+      "targetOffsetLu": 0.08
     },
     {
       "index": 14,
@@ -455,10 +454,71 @@
       "provider": "google-gemini",
       "model": "gemini-3.5-transcribe",
       "languageCode": "zh-CN",
-      "meanCharacterErrorRate": 0.0133,
-      "maximumCharacterErrorRate": 0.0765,
+      "validationMode": "prior-release-plus-pricing-update",
+      "slidesPassing": 15,
+      "slidesPassingScope": "one newly transcribed pricing clip plus 14 hash-identical clips from the prior QA release",
+      "slidesTranscribed": 1,
+      "slidesReusedFromPreviousQa": 14,
+      "verifiedUnchangedSlideCount": 14,
+      "previousReleaseId": "20260902-59014dd083de",
       "requiredMaximumCharacterErrorRate": 0.18,
-      "slidesPassing": 15
+      "maximumCharacterErrorRate": 0.0765,
+      "meanCharacterErrorRate": 0.0765,
+      "meanCharacterErrorRateScope": "conservative-upper-bound",
+      "baselineFullDeck": {
+        "provider": "google-gemini",
+        "model": "gemini-3.5-transcribe",
+        "languageCode": "zh-CN",
+        "meanCharacterErrorRate": 0.0133,
+        "maximumCharacterErrorRate": 0.0765,
+        "requiredMaximumCharacterErrorRate": 0.18,
+        "slidesPassing": 15
+      },
+      "targetedUpdates": [
+        {
+          "index": 13,
+          "id": "13-pricing",
+          "audioSha256": "461bcdbde413c4d8cd9320ef8d25903663ffdc234018928a56285eb7399f05ec",
+          "transcriptSha256": "a7bfe8412e824587d8223ee194cadf94eb4a8cfc877a647646ac8ce8e7ae167e",
+          "characterErrorRate": 0.02413793103448276,
+          "lengthRatio": 1,
+          "pass": true
+        }
+      ]
+    },
+    "pricingUpdate": {
+      "index": 13,
+      "reviewed": true,
+      "reviewMethod": "Assistant semantic review of the generated-audio transcript",
+      "amounts": {
+        "monthly": {
+          "USD": 15,
+          "THB": 499
+        },
+        "annualSelfService": {
+          "USD": 150,
+          "THB": 4990
+        },
+        "annualManaged": {
+          "USD": 260,
+          "THB": 9000
+        }
+      },
+      "perZone": true,
+      "managedAnnualOnly": true,
+      "selfServiceManagesOwnMusic": true,
+      "managedPlaylistAndScheduleRefreshes": true,
+      "seasonalChanges": true,
+      "technicalSupport24x7": true,
+      "appUpdatesInEveryPlan": true
     }
+  },
+  "generation": {
+    "mode": "targeted-slides-regeneration",
+    "updatedSlideIds": [
+      "13-pricing"
+    ],
+    "verifiedCarryForwardSlideCount": 14,
+    "previousReleaseId": "20260902-59014dd083de"
   }
 }
