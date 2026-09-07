@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { pricing } from './pricing-copy.mjs';
 import {
   existsSync,
   readFileSync,
@@ -50,7 +51,7 @@ const FONT_ROOT = path.join(
 const ENGLISH_GUARD_SOURCE_PATTERN =
   /\n  <template id="beat-breeze-layout-guard-source"[\s\S]*?<\/template>/;
 const MOTION_SCRIPT =
-  '  <script src="./narration/beat-breeze-motion/controller.js?v=2026-09-03-5" defer></script>';
+  '  <script src="./narration/beat-breeze-motion/controller.js?v=2026-09-07-pricing-1" defer></script>';
 const LANGUAGE_SELECTOR_SCRIPT =
   '  <script src="./narration/beat-breeze-language-selector/controller.js?v=2026-09-03-2" defer></script>';
 const MOTION_SCRIPT_PATTERN =
@@ -415,6 +416,10 @@ if (sections.length !== 15) {
 }
 
 let cursor = 0;
+// Shared approved pricing keys keep future rebuilds aligned with slide 13.
+for (const key of ['monthly', 'annual', 'self', 'managed', 'design', 'support', 'updates']) {
+  COPY.set(pricing.en[key], pricing.th[key]);
+}
 let translatedTemplate = "";
 let translatedNodeCount = 0;
 for (const [index, match] of sections.entries()) {

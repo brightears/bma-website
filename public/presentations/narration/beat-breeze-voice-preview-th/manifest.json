@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-voice-preview-th",
   "status": "official-thai-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-03T00:49:39.474Z",
-  "releaseId": "20260903-3827823b0a44",
+  "generatedAt": "2026-09-07T01:47:13.447Z",
+  "releaseId": "20260907-pricing-6c8fa01de57203f2",
   "publicationStatus": "Official unlinked, noindex Thai Beat Breeze presentation with complete slide-linked narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,11 +30,11 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "6881092bb650336601e441f154ecac11e31f46d79bf9911e0d0573f7f3489611",
+    "englishDeckSha256": "bac895d050b8297dba9c5d04e2f38185f36739d01fd05a68f365a64bd1bfcc36",
     "officialDeckPath": "public/presentations/beat-breeze-th.html",
-    "officialDeckSha256": "209ab2ed3eba58bc4a4563f4830adb63ec3740fe69f8ba38dcad47eccec12385",
+    "officialDeckSha256": "551613d1d70eaf7a05bb6fe824bcd3f6044a86350f58350fca15f057e69d0d49",
     "scriptPath": "public/presentations/narration/beat-breeze-voice-preview-th/script.json",
-    "scriptSha256": "b47b9349e8d9165032863eabee676f19cedc5ad4c58a8d2a2cc7b179df488b9e"
+    "scriptSha256": "9159b625a85cbbe1a0d150117ccd5881986694b94755ff759377e55bdf23335d"
   },
   "voice": {
     "provider": "google-gemini",
@@ -58,7 +58,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 653.68,
+  "totalDurationSeconds": 675.04,
   "slides": [
     {
       "index": 1,
@@ -384,31 +384,29 @@
       "reusedFromPreviousRelease": false
     },
     {
-      "index": 13,
       "id": "13-pricing",
       "label": "ราคา",
-      "src": "audio/20260903-3827823b0a44/13-pricing.mp3",
-      "text": "มีสองวิธีที่ตรงไปตรงมาในการใช้งานค่ะ แบบ self-serve ราคา 12 ดอลลาร์สหรัฐ หรือ 399 บาท ต่อโซนต่อเดือน ทุกสิ่งที่เราเพิ่งชมรวมอยู่ในราคา และคุณเริ่มทดลองใช้ฟรี 14 วันกับหนึ่งโซนได้โดยไม่ต้องใช้บัตร ส่วนแบบที่ BMAsia ดูแลให้ ราคา 260 ดอลลาร์สหรัฐ ต่อโซนต่อปี โดยเพิ่มการออกแบบเพลงต่อเนื่องสำหรับแบรนด์ การสนับสนุนด้านเทคนิค และผู้จัดการบัญชีเฉพาะ กลุ่มธุรกิจขนาดใหญ่สามารถใช้สัญญาและรูปแบบการออกใบแจ้งหนี้ที่ปรับให้เหมาะกับองค์กรได้ ทั้งสองแบบไม่บังคับให้ใช้กล่องเครื่องเล่นเฉพาะ เพราะแพลตฟอร์มทำงานบนอุปกรณ์ที่รองรับและคุณมีอยู่แล้วค่ะ",
       "visualCoverage": [
         "ราคาและช่วงทดลองสำหรับ self-serve",
         "ราคาและบริการแบบ BMAsia ดูแลให้",
         "ข้อตกลงสำหรับองค์กร",
         "ไม่บังคับใช้กล่องเครื่องเล่นเฉพาะ"
       ],
-      "transcriptSha256": "135df2308f2115ee11c222cf7fb2904194371c69697cf381ebf236078d144124",
-      "audioSha256": "27b69973c9e153f816a33876162105376683978421e7a20933bed597cd3603b7",
-      "durationSeconds": 45.56,
+      "text": "คุณเลือกได้ว่าจะจัดการเพลงเอง หรือให้ BMAsia ดูแลค่ะ แบบดูแลเอง ราคา 15 ดอลลาร์สหรัฐ หรือ 499 บาท ต่อโซนต่อเดือน ถ้าเลือกจ่ายรายปี ราคา 150 ดอลลาร์สหรัฐ หรือ 4,990 บาท ต่อโซนต่อปี ทั้งสองแพ็กเกจมีฟีเจอร์ของแอปครบ โดยคุณเป็นผู้จัดการเพลย์ลิสต์และตารางเล่นเพลงเอง ส่วนบริการที่ BMAsia ดูแลให้ ราคา 260 ดอลลาร์สหรัฐ หรือ 9,000 บาท ต่อโซนต่อปี และมีเฉพาะแพ็กเกจรายปีเท่านั้น ทีมออกแบบเพลงของเราจะเลือกและปรับเพลย์ลิสต์กับตารางเล่นเพลงที่กำหนดให้แต่ละโซน รวมถึงปรับให้เหมาะกับเทศกาลและฤดูกาล พร้อมการสนับสนุนด้านเทคนิคตลอด 24 ชั่วโมง และผู้จัดการบัญชีเฉพาะ ไม่ว่าจะเลือกแพ็กเกจไหน ทุกคนก็ได้รับการอัปเดตแอปอย่างต่อเนื่องค่ะ สิ่งที่ต่างกันคือใครเป็นผู้ดูแลเพลงให้คุณ แบบดูแลเองเริ่มทดลองใช้ฟรี 14 วันกับหนึ่งโซนได้โดยไม่ต้องใช้บัตร สำหรับองค์กรขนาดใหญ่ เราจัดสัญญาและการออกใบแจ้งหนี้ให้เหมาะสมได้ และไม่จำเป็นต้องซื้อกล่องเครื่องเล่นเฉพาะค่ะ",
+      "index": 13,
+      "src": "audio/20260907-pricing-6c8fa01de57203f2/13-pricing.mp3",
+      "transcriptSha256": "810462a91b65b2fac28cd6ac05126d99357156c0a34f91bcef6fe0bc947a3475",
+      "audioSha256": "fb70551dac4057becc876fbae94810e8c7168a8f2e2dc061c327652d683317bd",
+      "durationSeconds": 66.92,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.55,
-      "truePeakDbtp": -3.42,
-      "loudnessRangeLu": 2.2,
-      "thresholdLufs": -28.87,
-      "targetOffsetLu": 0.26,
-      "cached": false,
-      "reusedFromPreviousRelease": true
+      "integratedLufs": -18.47,
+      "truePeakDbtp": -3.33,
+      "loudnessRangeLu": 2.1,
+      "thresholdLufs": -28.85,
+      "targetOffsetLu": 0.04
     },
     {
       "index": 14,
@@ -468,15 +466,76 @@
       "provider": "google-gemini",
       "model": "gemini-3.5-transcribe",
       "languageCode": "th-TH",
-      "meanCharacterErrorRate": 0.0303,
-      "meanCharacterErrorRateScope": "conservative-upper-bound",
-      "measuredFreshMeanCharacterErrorRate": 0.0155,
-      "maximumCharacterErrorRate": 0.0463,
-      "requiredMaximumCharacterErrorRate": 0.18,
+      "validationMode": "prior-release-plus-pricing-update",
       "slidesPassing": 15,
-      "slidesTranscribed": 6,
-      "slidesReusedFromPreviousQa": 9,
-      "previousReleaseId": "20260902-76c9d16b3620"
+      "slidesPassingScope": "one newly transcribed pricing clip plus 14 hash-identical clips from the prior QA release",
+      "slidesTranscribed": 1,
+      "slidesReusedFromPreviousQa": 14,
+      "verifiedUnchangedSlideCount": 14,
+      "previousReleaseId": "20260903-3827823b0a44",
+      "requiredMaximumCharacterErrorRate": 0.18,
+      "maximumCharacterErrorRate": 0.0463,
+      "meanCharacterErrorRate": 0.0463,
+      "meanCharacterErrorRateScope": "conservative-upper-bound",
+      "baselineFullDeck": {
+        "provider": "google-gemini",
+        "model": "gemini-3.5-transcribe",
+        "languageCode": "th-TH",
+        "meanCharacterErrorRate": 0.0303,
+        "meanCharacterErrorRateScope": "conservative-upper-bound",
+        "measuredFreshMeanCharacterErrorRate": 0.0155,
+        "maximumCharacterErrorRate": 0.0463,
+        "requiredMaximumCharacterErrorRate": 0.18,
+        "slidesPassing": 15,
+        "slidesTranscribed": 6,
+        "slidesReusedFromPreviousQa": 9,
+        "previousReleaseId": "20260902-76c9d16b3620"
+      },
+      "targetedUpdates": [
+        {
+          "index": 13,
+          "id": "13-pricing",
+          "audioSha256": "fb70551dac4057becc876fbae94810e8c7168a8f2e2dc061c327652d683317bd",
+          "transcriptSha256": "08315737d5cd6e9529431817339afe0f5e4ba314201aafdd9e7e99314154cb8e",
+          "characterErrorRate": 0.004709576138147566,
+          "lengthRatio": 0.9968602825745683,
+          "pass": true
+        }
+      ]
+    },
+    "pricingUpdate": {
+      "index": 13,
+      "reviewed": true,
+      "reviewMethod": "Assistant semantic review of the generated-audio transcript",
+      "amounts": {
+        "monthly": {
+          "USD": 15,
+          "THB": 499
+        },
+        "annualSelfService": {
+          "USD": 150,
+          "THB": 4990
+        },
+        "annualManaged": {
+          "USD": 260,
+          "THB": 9000
+        }
+      },
+      "perZone": true,
+      "managedAnnualOnly": true,
+      "selfServiceManagesOwnMusic": true,
+      "managedPlaylistAndScheduleRefreshes": true,
+      "seasonalChanges": true,
+      "technicalSupport24x7": true,
+      "appUpdatesInEveryPlan": true
     }
+  },
+  "generation": {
+    "mode": "targeted-slides-regeneration",
+    "updatedSlideIds": [
+      "13-pricing"
+    ],
+    "verifiedCarryForwardSlideCount": 14,
+    "previousReleaseId": "20260903-3827823b0a44"
   }
 }

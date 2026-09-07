@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-ms",
   "status": "official-malaysian-malay-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-04T03:05:11.920Z",
-  "releaseId": "20260904-b441167b981b",
+  "generatedAt": "2026-09-07T01:48:14.584Z",
+  "releaseId": "20260907-pricing-22086f74c8792d94",
   "publicationStatus": "Official unlinked, noindex Malaysian Malay Beat Breeze presentation with complete slide-linked Malay narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,13 +30,13 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "6881092bb650336601e441f154ecac11e31f46d79bf9911e0d0573f7f3489611",
+    "englishDeckSha256": "bac895d050b8297dba9c5d04e2f38185f36739d01fd05a68f365a64bd1bfcc36",
     "officialDeckPath": "public/presentations/beat-breeze-ms.html",
-    "officialDeckSha256": "51211df339aa017ed46e398acf96c45a2d20e53d9a9de9e820f24c613ebcec72",
+    "officialDeckSha256": "f13d32d65e8cdea6620e1927170d285ea3f4649f099448164a937392447cb4d6",
     "scriptPath": "public/presentations/narration/beat-breeze-ms/script.json",
-    "scriptSha256": "693afac39941908ce57e39bf1150a2c33f2f1011a3f86869ca7fd186aa376ba1",
+    "scriptSha256": "bdad99cd991b5ad446c778336430b59dcacdbe11f064b95b8b8751b221d96999",
     "copyPath": "public/presentations/narration/beat-breeze-ms/copy.json",
-    "copySha256": "eb357c4601ff8720198dae9b6e1388681cb9599652287370be2385b32e9aedcf"
+    "copySha256": "71765ff3aa35b3055bbd8df8914446b7f44566afc4615da15503fa3bd8d9dccd"
   },
   "voice": {
     "provider": "google-gemini",
@@ -60,7 +60,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 790.48,
+  "totalDurationSeconds": 822.08,
   "slides": [
     {
       "index": 1,
@@ -377,30 +377,29 @@
       "cached": false
     },
     {
-      "index": 13,
       "id": "13-pricing",
       "label": "Harga",
-      "src": "audio/20260904-b441167b981b/13-pricing.mp3",
-      "text": "Semuanya disertakan, dengan dua cara untuk menggunakannya. Pakej layan diri berharga dua belas dolar Amerika, atau tiga ratus sembilan puluh sembilan baht, bagi setiap zon sebulan. Semua fungsi yang baru kita lihat sudah disertakan, dan anda boleh memulakan percubaan empat belas hari untuk satu zon tanpa kad. Pakej yang diurus BMAsia berharga dua ratus enam puluh dolar Amerika bagi setiap zon setahun. Pakej ini menambah reka bentuk muzik berterusan untuk jenama anda, sokongan teknikal dan pengurus akaun khusus. Kumpulan yang lebih besar boleh menggunakan kontrak tersuai serta pilihan pengebilan yang sesuai dengan keperluan setempat. Apa jua model yang dipilih, anda tidak diwajibkan membeli kotak pemain khas kerana platform berjalan pada peranti disokong yang sudah anda miliki.",
       "visualCoverage": [
         "harga dan percubaan pakej layan diri",
         "harga dan perkhidmatan terurus BMAsia",
         "penyelesaian enterprise",
         "tiada peranti khas yang diwajibkan"
       ],
-      "transcriptSha256": "dfb8ded74dc840a75f00acc1148079bbeba16eb353a0bd0d003992b43fb8b6be",
-      "audioSha256": "e41e671c9a022487dd23b55ce6669aa65d790ad87263b89e34b96572505e0819",
-      "durationSeconds": 54.68,
+      "text": "Anda boleh mengurus muzik sendiri atau menyerahkannya kepada BMAsia. Pakej layan diri berharga 15 dolar Amerika atau 499 baht Thailand bagi setiap zon sebulan. Jika memilih pakej tahunan, harganya 150 dolar Amerika atau 4,990 baht Thailand bagi setiap zon setahun. Kedua-dua pakej layan diri merangkumi fungsi aplikasi, dan anda mengurus playlist serta jadual main balik sendiri. Untuk perkhidmatan yang diurus oleh pasukan kami, pakej BMAsia berharga 260 dolar Amerika atau 9,000 baht Thailand bagi setiap zon setahun, dan hanya tersedia sebagai pakej tahunan. Pasukan reka bentuk muzik kami memilih dan menyegarkan playlist serta jadual yang ditetapkan bagi setiap zon, termasuk perubahan musim dan perayaan. Perkhidmatan ini turut merangkumi sokongan teknikal sepanjang masa dan pengurus akaun khusus. Semua pelanggan menerima kemas kini aplikasi secara berterusan, tanpa mengira pakej yang dipilih. Perbezaannya ialah siapa yang menjaga muzik anda. Anda boleh mencuba pakej layan diri secara percuma selama 14 hari untuk satu zon tanpa kad. Kumpulan yang lebih besar boleh mengatur kontrak khusus dan invois tempatan, tanpa perlu membeli kotak pemain khas.",
+      "index": 13,
+      "src": "audio/20260907-pricing-22086f74c8792d94/13-pricing.mp3",
+      "transcriptSha256": "33a3f64495bf1d43f40c65baf95cdf049e5c1f1cbe574c1eaa5b3e8a8bf5f58d",
+      "audioSha256": "c93f86205d7d7b425aaea71dc9ca64fb167842994f7e81e8c6be187b44c98f35",
+      "durationSeconds": 86.28,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.52,
-      "truePeakDbtp": -3.27,
-      "loudnessRangeLu": 2.9,
-      "thresholdLufs": -28.94,
-      "targetOffsetLu": 0.17,
-      "cached": false
+      "integratedLufs": -18.48,
+      "truePeakDbtp": -3.38,
+      "loudnessRangeLu": 3.1,
+      "thresholdLufs": -28.8,
+      "targetOffsetLu": 0.39
     },
     {
       "index": 14,
@@ -456,102 +455,149 @@
   "generation": {
     "mode": "targeted-slides-regeneration",
     "updatedSlideIds": [
-      "06-compose",
-      "07-studio-and-screens",
-      "08-announcements",
-      "09-works-with-claude-and-chatgpt",
-      "10-built-for-operators",
-      "12-why-beat-breeze",
-      "13-pricing",
-      "15-close"
+      "13-pricing"
     ],
-    "verifiedCarryForwardSlideCount": 7
+    "verifiedCarryForwardSlideCount": 14,
+    "previousReleaseId": "20260904-b441167b981b"
   },
   "qualityAssurance": {
     "transcription": {
       "provider": "google-gemini",
       "model": "gemini-3.5-transcribe",
       "languageCode": "ms-MY",
-      "validationMode": "full-deck-baseline-plus-targeted-slides",
-      "maximumCharacterErrorRate": 0.1305,
-      "requiredMaximumCharacterErrorRate": 0.18,
+      "validationMode": "prior-release-plus-pricing-update",
       "slidesPassing": 15,
-      "verifiedUnchangedSlideCount": 7,
+      "slidesPassingScope": "one newly transcribed pricing clip plus 14 hash-identical clips from the prior QA release",
+      "slidesTranscribed": 1,
+      "slidesReusedFromPreviousQa": 14,
+      "verifiedUnchangedSlideCount": 14,
+      "previousReleaseId": "20260904-b441167b981b",
+      "requiredMaximumCharacterErrorRate": 0.18,
+      "maximumCharacterErrorRate": 0.1305,
+      "meanCharacterErrorRate": 0.1305,
+      "meanCharacterErrorRateScope": "conservative-upper-bound",
       "baselineFullDeck": {
         "provider": "google-gemini",
         "model": "gemini-3.5-transcribe",
         "languageCode": "ms-MY",
-        "meanCharacterErrorRate": 0.0114,
-        "maximumCharacterErrorRate": 0.0986,
+        "validationMode": "full-deck-baseline-plus-targeted-slides",
+        "maximumCharacterErrorRate": 0.1305,
         "requiredMaximumCharacterErrorRate": 0.18,
-        "slidesPassing": 15
+        "slidesPassing": 15,
+        "verifiedUnchangedSlideCount": 7,
+        "baselineFullDeck": {
+          "provider": "google-gemini",
+          "model": "gemini-3.5-transcribe",
+          "languageCode": "ms-MY",
+          "meanCharacterErrorRate": 0.0114,
+          "maximumCharacterErrorRate": 0.0986,
+          "requiredMaximumCharacterErrorRate": 0.18,
+          "slidesPassing": 15
+        },
+        "targetedUpdates": [
+          {
+            "index": 6,
+            "id": "06-compose",
+            "transcriptSha256": "239215295cf3ad13e7cf71c391b97dea520863a0f44093b9fd82734895ad6b78",
+            "characterErrorRate": 0,
+            "lengthRatio": 1,
+            "pass": true
+          },
+          {
+            "index": 7,
+            "id": "07-studio-and-screens",
+            "transcriptSha256": "b66be7fbaf1e06a7964f1581a0f2615b15fafdbf163f4aad3f5417af3c2e3c47",
+            "characterErrorRate": 0.0016,
+            "lengthRatio": 1.0016,
+            "pass": true
+          },
+          {
+            "index": 8,
+            "id": "08-announcements",
+            "transcriptSha256": "9a418526009277b4cbccef5075ad8e3715f99304ffeb0b06c42ca3baa02d1730",
+            "characterErrorRate": 0,
+            "lengthRatio": 1,
+            "pass": true
+          },
+          {
+            "index": 9,
+            "id": "09-works-with-claude-and-chatgpt",
+            "transcriptSha256": "9f36f3e5e2dd8251d692430fa94d072706d6dc5a13af80c97ed2bc4508a8c52e",
+            "characterErrorRate": 0,
+            "lengthRatio": 1,
+            "pass": true
+          },
+          {
+            "index": 10,
+            "id": "10-built-for-operators",
+            "transcriptSha256": "29a6a8ae1d7b76f3dbbf6ddc4e81961d96f01a2b51220f1c3a7f06effdc2cf18",
+            "characterErrorRate": 0.0028,
+            "lengthRatio": 1,
+            "pass": true
+          },
+          {
+            "index": 12,
+            "id": "12-why-beat-breeze",
+            "transcriptSha256": "1eb71302f5c0ed69aa758e09aa7855d87698754e15cc7068c6dd39cab5a317fe",
+            "characterErrorRate": 0.0119,
+            "lengthRatio": 1,
+            "pass": true
+          },
+          {
+            "index": 13,
+            "id": "13-pricing",
+            "transcriptSha256": "9204aeba575dd01a5407869bfa508d34d22342a8c8a24614ca1d472918d0d702",
+            "characterErrorRate": 0.1305,
+            "lengthRatio": 0.8862,
+            "pass": true
+          },
+          {
+            "index": 15,
+            "id": "15-close",
+            "transcriptSha256": "68502e1ab265cd112fbde4e9d737ccda9b428ac666fb1a305eb96be08ddc94ff",
+            "characterErrorRate": 0,
+            "lengthRatio": 1,
+            "pass": true
+          }
+        ]
       },
       "targetedUpdates": [
         {
-          "index": 6,
-          "id": "06-compose",
-          "transcriptSha256": "239215295cf3ad13e7cf71c391b97dea520863a0f44093b9fd82734895ad6b78",
-          "characterErrorRate": 0,
-          "lengthRatio": 1,
-          "pass": true
-        },
-        {
-          "index": 7,
-          "id": "07-studio-and-screens",
-          "transcriptSha256": "b66be7fbaf1e06a7964f1581a0f2615b15fafdbf163f4aad3f5417af3c2e3c47",
-          "characterErrorRate": 0.0016,
-          "lengthRatio": 1.0016,
-          "pass": true
-        },
-        {
-          "index": 8,
-          "id": "08-announcements",
-          "transcriptSha256": "9a418526009277b4cbccef5075ad8e3715f99304ffeb0b06c42ca3baa02d1730",
-          "characterErrorRate": 0,
-          "lengthRatio": 1,
-          "pass": true
-        },
-        {
-          "index": 9,
-          "id": "09-works-with-claude-and-chatgpt",
-          "transcriptSha256": "9f36f3e5e2dd8251d692430fa94d072706d6dc5a13af80c97ed2bc4508a8c52e",
-          "characterErrorRate": 0,
-          "lengthRatio": 1,
-          "pass": true
-        },
-        {
-          "index": 10,
-          "id": "10-built-for-operators",
-          "transcriptSha256": "29a6a8ae1d7b76f3dbbf6ddc4e81961d96f01a2b51220f1c3a7f06effdc2cf18",
-          "characterErrorRate": 0.0028,
-          "lengthRatio": 1,
-          "pass": true
-        },
-        {
-          "index": 12,
-          "id": "12-why-beat-breeze",
-          "transcriptSha256": "1eb71302f5c0ed69aa758e09aa7855d87698754e15cc7068c6dd39cab5a317fe",
-          "characterErrorRate": 0.0119,
-          "lengthRatio": 1,
-          "pass": true
-        },
-        {
           "index": 13,
           "id": "13-pricing",
-          "transcriptSha256": "9204aeba575dd01a5407869bfa508d34d22342a8c8a24614ca1d472918d0d702",
-          "characterErrorRate": 0.1305,
-          "lengthRatio": 0.8862,
-          "pass": true
-        },
-        {
-          "index": 15,
-          "id": "15-close",
-          "transcriptSha256": "68502e1ab265cd112fbde4e9d737ccda9b428ac666fb1a305eb96be08ddc94ff",
-          "characterErrorRate": 0,
-          "lengthRatio": 1,
+          "audioSha256": "c93f86205d7d7b425aaea71dc9ca64fb167842994f7e81e8c6be187b44c98f35",
+          "transcriptSha256": "0eb736a006bb5a2814e4e28047e0ef75376623e5a54800f19760a7dee8e3d8a9",
+          "characterErrorRate": 0.003089598352214212,
+          "lengthRatio": 1.0020597322348095,
           "pass": true
         }
       ]
+    },
+    "pricingUpdate": {
+      "index": 13,
+      "reviewed": true,
+      "reviewMethod": "Assistant semantic review of the generated-audio transcript",
+      "amounts": {
+        "monthly": {
+          "USD": 15,
+          "THB": 499
+        },
+        "annualSelfService": {
+          "USD": 150,
+          "THB": 4990
+        },
+        "annualManaged": {
+          "USD": 260,
+          "THB": 9000
+        }
+      },
+      "perZone": true,
+      "managedAnnualOnly": true,
+      "selfServiceManagesOwnMusic": true,
+      "managedPlaylistAndScheduleRefreshes": true,
+      "seasonalChanges": true,
+      "technicalSupport24x7": true,
+      "appUpdatesInEveryPlan": true
     }
   }
 }

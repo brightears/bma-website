@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-vi",
   "status": "official-vietnamese-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-03T01:55:02.406Z",
-  "releaseId": "20260903-214d179462e3",
+  "generatedAt": "2026-09-07T01:48:07.302Z",
+  "releaseId": "20260907-pricing-3e786a39c42b8297",
   "publicationStatus": "Official unlinked, noindex Vietnamese Beat Breeze presentation with complete slide-linked Vietnamese narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,13 +30,13 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "6881092bb650336601e441f154ecac11e31f46d79bf9911e0d0573f7f3489611",
+    "englishDeckSha256": "bac895d050b8297dba9c5d04e2f38185f36739d01fd05a68f365a64bd1bfcc36",
     "officialDeckPath": "public/presentations/beat-breeze-vi.html",
-    "officialDeckSha256": "beb0ee1d6329262e9fb64ee74299bfc0b655921934f0d69c73ead11a581b8e9e",
+    "officialDeckSha256": "02c2b965481e14535384fc867ca96f65ebcea6baaa643993ddaee935b4b51bc3",
     "scriptPath": "public/presentations/narration/beat-breeze-vi/script.json",
-    "scriptSha256": "551eacd429fea08aa17cf841d7a690cc71c66d7f36443e17446fd778d9b0b60d",
+    "scriptSha256": "a6484ad4385ffb192fc0b86ba4e31323239ee8d86239753c69e2bb2370196c13",
     "copyPath": "public/presentations/narration/beat-breeze-vi/copy.json",
-    "copySha256": "19821580c58b9bd9e07ed1e40ae01a9a129225f0f5716d0fffde7f46029a75eb"
+    "copySha256": "da8871e8fb87b927392578bbb6cee6ce28bfd7f39d9379c361efcae2c55c317a"
   },
   "voice": {
     "provider": "google-gemini",
@@ -60,7 +60,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 600.16,
+  "totalDurationSeconds": 621.52,
   "slides": [
     {
       "index": 1,
@@ -374,30 +374,29 @@
       "cached": false
     },
     {
-      "index": 13,
       "id": "13-pricing",
       "label": "Bảng giá",
-      "src": "audio/20260903-214d179462e3/13-pricing.mp3",
-      "text": "Có hai cách rõ ràng để sử dụng Beat Breeze. Gói tự phục vụ có giá mười hai đô la Mỹ, hoặc ba trăm chín mươi chín baht, cho mỗi khu vực mỗi tháng. Tất cả những tính năng chúng ta vừa xem đều đã bao gồm, và quý khách có thể bắt đầu bằng bản dùng thử mười bốn ngày cho một khu vực mà không cần thẻ. Gói do BMAsia quản lý có giá hai trăm sáu mươi đô la Mỹ cho mỗi khu vực mỗi năm; gói này bổ sung thiết kế âm nhạc liên tục cho thương hiệu, hỗ trợ kỹ thuật và một quản lý tài khoản riêng. Các tập đoàn lớn có thể dùng hợp đồng tùy chỉnh cùng phương án xuất hóa đơn phù hợp tại địa phương. Dù chọn mô hình nào, quý khách cũng không bắt buộc phải mua hộp phát chuyên dụng; nền tảng chạy trên những thiết bị được hỗ trợ mà quý khách đang có.",
       "visualCoverage": [
         "giá và dùng thử gói tự phục vụ",
         "giá và dịch vụ BMAsia quản lý",
         "giải pháp doanh nghiệp",
         "không bắt buộc thiết bị chuyên dụng"
       ],
-      "transcriptSha256": "f7f0eb9a638899f79827f6e372355baec96062a96c8d3fe605ea837d8a35e34d",
-      "audioSha256": "225852e240b3acbed6ccae0fe993744a2c1dd3550a4a4a1ed60c2dafb3b878ac",
-      "durationSeconds": 44.68,
+      "text": "Quý khách có thể tự quản lý âm nhạc hoặc để BMAsia chăm sóc. Gói tự phục vụ có giá 15 đô la Mỹ hoặc 499 baht Thái cho mỗi khu vực mỗi tháng. Nếu chọn thanh toán theo năm, giá là 150 đô la Mỹ hoặc 4,990 baht Thái cho mỗi khu vực mỗi năm. Cả hai gói tự phục vụ đều bao gồm các tính năng của ứng dụng, và quý khách tự quản lý danh sách phát cùng lịch phát. Nếu muốn giao việc này cho đội ngũ chuyên môn, gói do BMAsia quản lý có giá 260 đô la Mỹ hoặc 9,000 baht Thái cho mỗi khu vực mỗi năm, và chỉ có gói năm. Đội ngũ thiết kế âm nhạc của chúng tôi lựa chọn và làm mới danh sách phát cùng lịch phát được gán cho từng khu vực, kể cả thay đổi theo mùa và dịp lễ. Dịch vụ còn có hỗ trợ kỹ thuật suốt ngày đêm và quản lý tài khoản riêng. Mọi khách hàng đều được cập nhật ứng dụng thường xuyên, bất kể chọn gói nào. Điểm khác biệt là ai chăm sóc âm nhạc cho quý khách. Có thể dùng thử gói tự phục vụ miễn phí 14 ngày trên một khu vực, không cần thẻ. Doanh nghiệp lớn có thể chọn hợp đồng và hình thức xuất hóa đơn phù hợp, và không cần mua hộp phát chuyên dụng.",
+      "index": 13,
+      "src": "audio/20260907-pricing-3e786a39c42b8297/13-pricing.mp3",
+      "transcriptSha256": "f7c617ed20a0a36db584afd6216109212c109c3c581609c025a1874c51abbb31",
+      "audioSha256": "29501da05ca41575fcc13e5ec156125e7b42ead6aa9fad9933d75df9d0bd131e",
+      "durationSeconds": 66.04,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.56,
-      "truePeakDbtp": -3.26,
+      "integratedLufs": -18.48,
+      "truePeakDbtp": -3.39,
       "loudnessRangeLu": 2.1,
-      "thresholdLufs": -29,
-      "targetOffsetLu": 0.33,
-      "cached": false
+      "thresholdLufs": -28.68,
+      "targetOffsetLu": 0.3
     },
     {
       "index": 14,
@@ -455,10 +454,71 @@
       "provider": "google-gemini",
       "model": "gemini-3.5-transcribe",
       "languageCode": "vi-VN",
-      "meanCharacterErrorRate": 0.0068,
-      "maximumCharacterErrorRate": 0.0866,
+      "validationMode": "prior-release-plus-pricing-update",
+      "slidesPassing": 15,
+      "slidesPassingScope": "one newly transcribed pricing clip plus 14 hash-identical clips from the prior QA release",
+      "slidesTranscribed": 1,
+      "slidesReusedFromPreviousQa": 14,
+      "verifiedUnchangedSlideCount": 14,
+      "previousReleaseId": "20260903-214d179462e3",
       "requiredMaximumCharacterErrorRate": 0.18,
-      "slidesPassing": 15
+      "maximumCharacterErrorRate": 0.0866,
+      "meanCharacterErrorRate": 0.0866,
+      "meanCharacterErrorRateScope": "conservative-upper-bound",
+      "baselineFullDeck": {
+        "provider": "google-gemini",
+        "model": "gemini-3.5-transcribe",
+        "languageCode": "vi-VN",
+        "meanCharacterErrorRate": 0.0068,
+        "maximumCharacterErrorRate": 0.0866,
+        "requiredMaximumCharacterErrorRate": 0.18,
+        "slidesPassing": 15
+      },
+      "targetedUpdates": [
+        {
+          "index": 13,
+          "id": "13-pricing",
+          "audioSha256": "29501da05ca41575fcc13e5ec156125e7b42ead6aa9fad9933d75df9d0bd131e",
+          "transcriptSha256": "d576d3a04d4cf6a5db08d3f78e8b642107870e22a4340d4282b6be157867fba8",
+          "characterErrorRate": 0.0025252525252525255,
+          "lengthRatio": 1,
+          "pass": true
+        }
+      ]
+    },
+    "pricingUpdate": {
+      "index": 13,
+      "reviewed": true,
+      "reviewMethod": "Assistant semantic review of the generated-audio transcript",
+      "amounts": {
+        "monthly": {
+          "USD": 15,
+          "THB": 499
+        },
+        "annualSelfService": {
+          "USD": 150,
+          "THB": 4990
+        },
+        "annualManaged": {
+          "USD": 260,
+          "THB": 9000
+        }
+      },
+      "perZone": true,
+      "managedAnnualOnly": true,
+      "selfServiceManagesOwnMusic": true,
+      "managedPlaylistAndScheduleRefreshes": true,
+      "seasonalChanges": true,
+      "technicalSupport24x7": true,
+      "appUpdatesInEveryPlan": true
     }
+  },
+  "generation": {
+    "mode": "targeted-slides-regeneration",
+    "updatedSlideIds": [
+      "13-pricing"
+    ],
+    "verifiedCarryForwardSlideCount": 14,
+    "previousReleaseId": "20260903-214d179462e3"
   }
 }

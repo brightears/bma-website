@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "2026-09-03-official-5";
+  const VERSION = "2026-09-07-pricing-1";
   const LOCALE = (() => {
     const language = document.documentElement.lang.toLowerCase();
     if (language.startsWith("th")) return "th";
@@ -209,9 +209,9 @@
       { start: 0.75, end: 0.97, key: "one-platform" },
     ],
     Pricing: [
-      { start: 0.04, end: 0.48, key: "self-serve" },
-      { start: 0.48, end: 0.78, key: "managed" },
-      { start: 0.78, end: 0.97, key: "enterprise" },
+      { start: 0.06, end: 0.38, key: "self-serve" },
+      { start: 0.40, end: 0.72, key: "managed" },
+      { start: 0.91, end: 0.99, key: "enterprise" },
     ],
     "Who's behind it": [
       { start: 0.06, end: 0.36, key: "heritage" },
@@ -290,9 +290,9 @@
       { start: 0.74, end: 0.98, key: "one-platform" },
     ],
     Pricing: [
-      { start: 0.03, end: 0.44, key: "self-serve" },
-      { start: 0.44, end: 0.73, key: "managed" },
-      { start: 0.73, end: 0.98, key: "enterprise" },
+      { start: 0.06, end: 0.38, key: "self-serve" },
+      { start: 0.40, end: 0.72, key: "managed" },
+      { start: 0.91, end: 0.99, key: "enterprise" },
     ],
     "Who's behind it": [
       { start: 0.04, end: 0.39, key: "heritage" },
@@ -371,9 +371,9 @@
       { start: 0.73, end: 0.98, key: "one-platform" },
     ],
     Pricing: [
-      { start: 0.03, end: 0.44, key: "self-serve" },
-      { start: 0.44, end: 0.72, key: "managed" },
-      { start: 0.72, end: 0.97, key: "enterprise" },
+      { start: 0.06, end: 0.38, key: "self-serve" },
+      { start: 0.40, end: 0.72, key: "managed" },
+      { start: 0.91, end: 0.99, key: "enterprise" },
     ],
     "Who's behind it": [
       { start: 0.04, end: 0.37, key: "heritage" },
