@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "2026-09-07-pricing-1";
+  const VERSION = "2026-09-07-usd-only-1";
   const LOCALE = (() => {
     const language = document.documentElement.lang.toLowerCase();
     if (language.startsWith("th")) return "th";
@@ -427,6 +427,14 @@
     ja: ENGLISH_CUE_TIMELINES,
     ar: ENGLISH_CUE_TIMELINES,
   };
+  // International pricing narration omits the three baht alternatives.
+  for (const locale of ["en", "zh", "vi", "id", "ms", "ko", "ja", "ar"]) {
+    CUE_TIMELINES_BY_LOCALE[locale].Pricing = [
+      { start: 0.05, end: 0.34, key: "self-serve" },
+      { start: 0.35, end: 0.70, key: "managed" },
+      { start: 0.91, end: 0.99, key: "enterprise" },
+    ];
+  }
   for (const [locale, timelines] of Object.entries(CUE_TIMELINES_BY_LOCALE)) {
     for (const label of MOTION_LABELS) {
       const cues = timelines[label];

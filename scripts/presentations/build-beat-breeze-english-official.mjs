@@ -44,7 +44,7 @@ const CHINESE_MANIFEST_PATH = path.join(
 const GUARD_SOURCE_PATTERN =
   /\n  <template id="beat-breeze-layout-guard-source"[\s\S]*?<\/template>/;
 const MOTION_SCRIPT =
-  '  <script src="./narration/beat-breeze-motion/controller.js?v=2026-09-07-pricing-1" defer></script>';
+  '  <script src="./narration/beat-breeze-motion/controller.js?v=2026-09-07-usd-only-1" defer></script>';
 const LANGUAGE_SELECTOR_SCRIPT =
   '  <script src="./narration/beat-breeze-language-selector/controller.js?v=2026-09-03-2" defer></script>';
 const MOTION_SCRIPT_PATTERN =

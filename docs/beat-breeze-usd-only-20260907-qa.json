@@ -1,0 +1,309 @@
+{
+  "baselineCommit": "63216976dc06a479f9f216f12c5b5f0d3aacdf8f",
+  "scope": "Eight USD-only slide-13 clips. Thai content and audio untouched; all other clips retained. Transcript QA is not native-speaker editorial approval.",
+  "pricesPerZone": {
+    "monthly": {
+      "USD": 15
+    },
+    "annualSelfService": {
+      "USD": 150
+    },
+    "annualManaged": {
+      "USD": 260
+    }
+  },
+  "slides": [
+    {
+      "locale": "en",
+      "releaseId": "20260907-pricing-c796d38e1d3b589c",
+      "audioSha256": "1f5de833b3805d180d55f33790d8291d4ebbd5fa3e2a2a666cea8c7a76cda37c",
+      "durationSeconds": 59.12,
+      "integratedLufs": -18.58,
+      "truePeakDbtp": -3.24,
+      "characterErrorRate": 0.029085872576177285,
+      "lengthRatio": 0.9709141274238227,
+      "transcript": "You can choose to manage the music yourself or have BMAsia take care of it. Self-service costs $15 USD per zone per month. If you prefer an annual plan, it is $150 USD per zone per year. Both self-service plans include the app's features, and you manage your own playlists and schedules. For a hands-off service, BMAsia is $260 per zone per year, available on annual plans only. Our music design team selects and refreshes the playlists and schedules assigned to each zone, including seasonal changes. That service also includes 24/7 technical support and a dedicated account manager. Everyone receives ongoing app updates, whichever plan they choose. The difference is who looks after your music. You can try self-service free for 14 days on one zone without a card. Larger groups can arrange custom contracts and local invoicing, and no dedicated player box is required.",
+      "semanticReview": {
+        "index": 13,
+        "reviewed": true,
+        "reviewMethod": "Assistant semantic review of the generated-audio transcript",
+        "amounts": {
+          "monthly": {
+            "USD": 15
+          },
+          "annualSelfService": {
+            "USD": 150
+          },
+          "annualManaged": {
+            "USD": 260
+          }
+        },
+        "perZone": true,
+        "managedAnnualOnly": true,
+        "selfServiceManagesOwnMusic": true,
+        "managedPlaylistAndScheduleRefreshes": true,
+        "seasonalChanges": true,
+        "technicalSupport24x7": true,
+        "appUpdatesInEveryPlan": true,
+        "currencyPolicy": "USD only outside the Thai edition"
+      },
+      "unchangedAudioClips": 14
+    },
+    {
+      "locale": "zh",
+      "releaseId": "20260907-pricing-24e85ed7d14f093a",
+      "audioSha256": "e7b770f8ff1333000e23609ab8692cdfeeb6e510f4522cb973c0bfb7baefe6e5",
+      "durationSeconds": 60.36,
+      "integratedLufs": -18.48,
+      "truePeakDbtp": -3.34,
+      "characterErrorRate": 0.011111111111111112,
+      "lengthRatio": 1.0037037037037038,
+      "transcript": "您可以选择自己管理音乐，也可以交给 BMAsia。自助方案每个分区每月 15 美元，如果按年付费则为每个分区每年 150 美元。这两种自助方案都包含应用功能，由您自行管理播放列表和播放排程。如果希望交给专业团队打理，BMAsia 托管方案每个分区每年 260 美元，仅提供年度方案。我们的音乐设计团队会为各分区选择并调整播放列表和排程，包括季节与节庆安排，同时提供全天候技术支持和专属客户经理。无论选择哪种方案，所有客户都会持续获得应用更新，区别在于谁来照顾您的日常音乐安排。自助方案可在一个分区免费试用 10 次天，不需信用卡。大型集团还可以采用定制合同和本地开票安排，也不需要购买专用播放器盒子。",
+      "semanticReview": {
+        "index": 13,
+        "reviewed": true,
+        "reviewMethod": "Assistant semantic review of the generated-audio transcript",
+        "amounts": {
+          "monthly": {
+            "USD": 15
+          },
+          "annualSelfService": {
+            "USD": 150
+          },
+          "annualManaged": {
+            "USD": 260
+          }
+        },
+        "perZone": true,
+        "managedAnnualOnly": true,
+        "selfServiceManagesOwnMusic": true,
+        "managedPlaylistAndScheduleRefreshes": true,
+        "seasonalChanges": true,
+        "technicalSupport24x7": true,
+        "appUpdatesInEveryPlan": true,
+        "currencyPolicy": "USD only outside the Thai edition"
+      },
+      "secondaryTranscriptCheck": {
+        "model": "gemini-3.5-flash",
+        "result": "**录音文本：**\n\n您可以选择自己管理音乐，也可以交给BM Asia。自助方案每个分区每月15美元。如果按年付费，则为每个分区每年150美元。这两种自助方案都包含应用功能，由您自行管理播放列表和播放排程。如果希望交给专业团队打理，BM Asia托管方案每个分区每年260美元，仅提供年度方案。我们的音乐设计团队会为各分区选择并调整播放列表和排程，包括季节与节日安排，同时提供全天候技术支持和专属客户经理。无论选择哪种方案，所有客户都会持续获得应用更新，区别在于谁来照顾您的日常音乐安排。自助方案可在一个分区免费试用14天，无需信用卡。大型集团还可以采用定制合同和本地开票安排，也不需要购买专用播放器盒子。\n\n---\n\n**信息整理：**\n\n* **服务商名称：** BM Asia\n* **服务单位（及拼音）：** 分区 (fēn qū)\n* **价格、货币及计费周期：**\n  * **自助方案（按月）：** 15 美元/月/分区\n  * **自助方案（按年）：** 150 美元/年/分区\n  * **托管方案（按年）：** 260 美元/年/分区\n* **托管服务是否仅限年度：** 是（音频中明确提到托管方案“仅提供年度方案”）\n"
+      },
+      "unchangedAudioClips": 14
+    },
+    {
+      "locale": "vi",
+      "releaseId": "20260907-pricing-7fe46f919a507bdf",
+      "audioSha256": "b4432ee14c8c677cac4805df415eb8ec21c396caab66b1fd358bbfa69e6eeabd",
+      "durationSeconds": 62.32,
+      "integratedLufs": -18.51,
+      "truePeakDbtp": -3.41,
+      "characterErrorRate": 0,
+      "lengthRatio": 1,
+      "transcript": "Quý khách có thể tự quản lý âm nhạc hoặc để BMAsia chăm sóc. Gói tự phục vụ có giá 15 đô la Mỹ cho mỗi khu vực mỗi tháng. Nếu chọn thanh toán theo năm, giá là 150 đô la Mỹ cho mỗi khu vực mỗi năm. Cả hai gói tự phục vụ đều bao gồm các tính năng của ứng dụng và quý khách tự quản lý danh sách phát cùng lịch phát. Nếu muốn giao việc này cho đội ngũ chuyên môn, gói do BMAsia quản lý có giá 260 đô la Mỹ cho mỗi khu vực mỗi năm và chỉ có gói năm. Đội ngũ thiết kế âm nhạc của chúng tôi lựa chọn và làm mới danh sách phát cùng lịch phát được gán cho từng khu vực, kể cả thay đổi theo mùa và dịp lễ. Dịch vụ còn có hỗ trợ kỹ thuật suốt ngày đêm và quản lý tài khoản riêng. Mọi khách hàng đều được cập nhật ứng dụng thường xuyên, bất kể chọn gói nào. Điểm khác biệt là ai chăm sóc âm nhạc cho quý khách. Có thể dùng thử gói tự phục vụ miễn phí 14 ngày trên một khu vực, không cần thẻ. Doanh nghiệp lớn có thể chọn hợp đồng và hình thức xuất hóa đơn phù hợp và không cần mua hộp phát chuyên dụng.",
+      "semanticReview": {
+        "index": 13,
+        "reviewed": true,
+        "reviewMethod": "Assistant semantic review of the generated-audio transcript",
+        "amounts": {
+          "monthly": {
+            "USD": 15
+          },
+          "annualSelfService": {
+            "USD": 150
+          },
+          "annualManaged": {
+            "USD": 260
+          }
+        },
+        "perZone": true,
+        "managedAnnualOnly": true,
+        "selfServiceManagesOwnMusic": true,
+        "managedPlaylistAndScheduleRefreshes": true,
+        "seasonalChanges": true,
+        "technicalSupport24x7": true,
+        "appUpdatesInEveryPlan": true,
+        "currencyPolicy": "USD only outside the Thai edition"
+      },
+      "unchangedAudioClips": 14
+    },
+    {
+      "locale": "id",
+      "releaseId": "20260907-pricing-5254e0a084366232",
+      "audioSha256": "a9dab9070103fe07d97ada6e9ceda481b169b550ee49ff16ab288118010c798c",
+      "durationSeconds": 70.2,
+      "integratedLufs": -18.5,
+      "truePeakDbtp": -3.31,
+      "characterErrorRate": 0.020833333333333332,
+      "lengthRatio": 0.9828431372549019,
+      "transcript": "Anda bisa mengelola musik sendiri atau menyerahkannya kepada BMAsia. Paket mandiri berharga $15 AS per zona per bulan. Jika memilih paket tahunan, harganya $150 AS per zona per tahun. Kedua paket mandiri mencakup fitur aplikasi, dan Anda mengelola playlist serta jadwal pemutaran sendiri. Untuk layanan yang dikelola tim kami, paket BMAsia berharga $260 AS per zona per tahun dan hanya tersedia dalam paket tahunan. Tim desain musik kami memilih dan menyegarkan playlist serta jadwal yang ditetapkan untuk setiap zona, termasuk penyesuaian musim dan hari raya. Layanan ini juga mencakup dukungan teknis sepanjang waktu dan account manager khusus. Semua pelanggan mendapatkan pembaruan aplikasi secara berkala, apa pun paketnya. Perbedaannya adalah siapa yang mengurus musik Anda. Paket mandiri bisa dicoba gratis selama 14 hari untuk satu zona tanpa kartu. Grup besar dapat mengatur kontrak khusus dan penagihan lokal tanpa kewajiban membeli boks pemutar khusus.",
+      "semanticReview": {
+        "index": 13,
+        "reviewed": true,
+        "reviewMethod": "Assistant semantic review of the generated-audio transcript",
+        "amounts": {
+          "monthly": {
+            "USD": 15
+          },
+          "annualSelfService": {
+            "USD": 150
+          },
+          "annualManaged": {
+            "USD": 260
+          }
+        },
+        "perZone": true,
+        "managedAnnualOnly": true,
+        "selfServiceManagesOwnMusic": true,
+        "managedPlaylistAndScheduleRefreshes": true,
+        "seasonalChanges": true,
+        "technicalSupport24x7": true,
+        "appUpdatesInEveryPlan": true,
+        "currencyPolicy": "USD only outside the Thai edition"
+      },
+      "unchangedAudioClips": 14
+    },
+    {
+      "locale": "ms",
+      "releaseId": "20260907-pricing-8413a960413bb210",
+      "audioSha256": "1525671e0dc04565872f44627125d1d10b2bcde051cd78e945314030e6548037",
+      "durationSeconds": 73.08,
+      "integratedLufs": -18.53,
+      "truePeakDbtp": -3,
+      "characterErrorRate": 0,
+      "lengthRatio": 1,
+      "transcript": "Anda boleh mengurus muzik sendiri atau menyerahkannya kepada BMAsia. Pakej layan diri berharga 15 dolar Amerika bagi setiap zon sebulan. Jika memilih pakej tahunan, harganya 150 dolar Amerika bagi setiap zon setahun. Kedua-dua pakej layan diri merangkumi fungsi aplikasi dan anda mengurus playlist serta jadual main balik sendiri. Untuk perkhidmatan yang diurus oleh pasukan kami, pakej BMAsia berharga 260 dolar Amerika bagi setiap zon setahun dan hanya tersedia sebagai pakej tahunan. Pasukan reka bentuk muzik kami memilih dan menyegarkan playlist serta jadual yang ditetapkan bagi setiap zon, termasuk perubahan musim dan perayaan. Perkhidmatan ini turut merangkumi sokongan teknikal sepanjang masa dan pengurus akaun khusus. Semua pelanggan menerima kemaskini aplikasi secara berterusan tanpa mengira pakej yang dipilih. Perbezaannya ialah siapa yang menjaga muzik anda. Anda boleh mencuba pakej layan diri secara percuma selama 14 hari untuk satu zon tanpa kad. Kumpulan yang lebih besar boleh mengatur kontrak khusus dan invois tempatan tanpa perlu membeli kotak pemain khas.",
+      "semanticReview": {
+        "index": 13,
+        "reviewed": true,
+        "reviewMethod": "Assistant semantic review of the generated-audio transcript",
+        "amounts": {
+          "monthly": {
+            "USD": 15
+          },
+          "annualSelfService": {
+            "USD": 150
+          },
+          "annualManaged": {
+            "USD": 260
+          }
+        },
+        "perZone": true,
+        "managedAnnualOnly": true,
+        "selfServiceManagesOwnMusic": true,
+        "managedPlaylistAndScheduleRefreshes": true,
+        "seasonalChanges": true,
+        "technicalSupport24x7": true,
+        "appUpdatesInEveryPlan": true,
+        "currencyPolicy": "USD only outside the Thai edition"
+      },
+      "unchangedAudioClips": 14
+    },
+    {
+      "locale": "ko",
+      "releaseId": "20260907-pricing-29bdfc54eaf34f12",
+      "audioSha256": "9bfb6200ee5b5b1b66092ebcc5bf491561f8dcb1927b0fcd1001ff75ed1ab2ce",
+      "durationSeconds": 67.84,
+      "integratedLufs": -18.43,
+      "truePeakDbtp": -3.41,
+      "characterErrorRate": 0,
+      "lengthRatio": 1,
+      "transcript": "음악을 직접 관리하거나 BMAsia에 맡기는 두 가지 방식이 있습니다. 셀프 서비스는 존당 월 미화 15달러입니다. 연간 요금제를 선택하면 존당 연 미화 150달러입니다. 두 셀프 서비스 요금제 모두 앱 기능이 포함되며 고객사가 재생 목록과 재생 일정을 직접 관리합니다. 음악 관리를 맡기고 싶으시다면 BMAsia 관리형은 존당 연 미화 260달러이며 연간 요금제로만 제공됩니다. 음악 디자인 팀이 각 존에 배정된 재생 목록과 일정을 선정하고 새롭게 구성하며 계절과 행사에 맞춘 변경도 담당합니다. 여기에 24시간 연중무휴 기술 지원과 전담 계정 관리자가 포함됩니다. 어떤 요금제를 선택하든 모든 고객은 지속적인 앱 업데이트를 받습니다. 차이는 일상적인 음악 관리를 누가 맡느냐입니다. 셀프 서비스는 카드 없이 한 개 존에서 14일 동안 무료로 체험할 수 있습니다. 대규모 기업은 맞춤 계약과 현지 청구 방식을 이용할 수 있으며 전용 플레이어 박스를 구매할 필요는 없습니다.",
+      "semanticReview": {
+        "index": 13,
+        "reviewed": true,
+        "reviewMethod": "Assistant semantic review of the generated-audio transcript",
+        "amounts": {
+          "monthly": {
+            "USD": 15
+          },
+          "annualSelfService": {
+            "USD": 150
+          },
+          "annualManaged": {
+            "USD": 260
+          }
+        },
+        "perZone": true,
+        "managedAnnualOnly": true,
+        "selfServiceManagesOwnMusic": true,
+        "managedPlaylistAndScheduleRefreshes": true,
+        "seasonalChanges": true,
+        "technicalSupport24x7": true,
+        "appUpdatesInEveryPlan": true,
+        "currencyPolicy": "USD only outside the Thai edition"
+      },
+      "unchangedAudioClips": 14
+    },
+    {
+      "locale": "ja",
+      "releaseId": "20260907-pricing-b10fd79e7bcf98aa",
+      "audioSha256": "b1828596c20319d73897481aa37450df7b62743542e68d2e21544b27d5c2a90d",
+      "durationSeconds": 70.64,
+      "integratedLufs": -18.45,
+      "truePeakDbtp": -3.44,
+      "characterErrorRate": 0.002564102564102564,
+      "lengthRatio": 1,
+      "transcript": "音楽を自分で管理するか、BMAsiaに任せるかをお選びいただけます。セルフサービスは、1ゾーンあたり月額15米ドルです。年間プランなら、1ゾーンあたり年額150米ドルになります。どちらのセルフサービスプランにもアプリの機能が含まれ、プレイリストと再生スケジュールはお客様が管理します。運用をお任せいただくBMAsia管理型は、1ゾーンあたり年額260米ドルで、年間プランのみの提供です。音楽デザインチームが各ゾーンのプレイリストとスケジュールを選定し、季節や行事に合わせて見直します。24時間365日の技術サポートと専任アカウントマネージャーも含まれます。どのプランでもアプリは継続的に更新されます。違いは、日々の音楽管理を誰が担当するかです。セルフサービスは、カード登録なしで1ゾーンを14日間無料でお試しいただけます。大規模な企業には、個別契約や地域にあった請求方法をご用意でき、専用プレーヤーボックスの購入も不要です。",
+      "semanticReview": {
+        "index": 13,
+        "reviewed": true,
+        "reviewMethod": "Assistant semantic review of the generated-audio transcript",
+        "amounts": {
+          "monthly": {
+            "USD": 15
+          },
+          "annualSelfService": {
+            "USD": 150
+          },
+          "annualManaged": {
+            "USD": 260
+          }
+        },
+        "perZone": true,
+        "managedAnnualOnly": true,
+        "selfServiceManagesOwnMusic": true,
+        "managedPlaylistAndScheduleRefreshes": true,
+        "seasonalChanges": true,
+        "technicalSupport24x7": true,
+        "appUpdatesInEveryPlan": true,
+        "currencyPolicy": "USD only outside the Thai edition"
+      },
+      "unchangedAudioClips": 14
+    },
+    {
+      "locale": "ar",
+      "releaseId": "20260907-pricing-b21a830334926c4d",
+      "audioSha256": "98f5e2427fd83fead3d0fa1d4a7a62d072a0c96872442afd625472983263427f",
+      "durationSeconds": 75.88,
+      "integratedLufs": -18.52,
+      "truePeakDbtp": -3.36,
+      "characterErrorRate": 0,
+      "lengthRatio": 1,
+      "transcript": "يمكنكم إدارة الموسيقى بأنفسكم أو ترك المهمة لفريق BMAsia. تبلغ تكلفة الخدمة الذاتية 15 دولارًا أمريكيًا لكل منطقة شهريًا، وإذا اخترتم الدفع السنوي فالتكلفة 150 دولارًا أمريكيًا لكل منطقة سنويًا. تشمل خطتا الخدمة الذاتية ميزات التطبيق، وتتولون فيهما إدارة قوائم التشغيل والجداول بأنفسكم. أما خدمة BMAsia المدارة فتبلغ 260 دولارًا أمريكيًا لكل منطقة سنويًا، وهي متاحة ضمن خطط سنوية فقط. يختار فريقنا لتصميم الموسيقى قوائم التشغيل والجداول المخصصة لكل منطقة ويجددها بما يناسب المواسم والمناسبات. وتشمل الخدمة أيضًا دعمًا تقنيًا على مدار الساعة طوال أيام الأسبوع ومدير حساب مخصصًا. جميع العملاء يحصلون على تحديثات التطبيق المستمرة أيا كانت خطتهم. الفرق هو من يتولى العناية بالموسيقى اليومية في المكان. ويمكن تجربة الخدمة الذاتية مجانًا لمدة 14 يومًا لمنطقة واحدة من دون بطاقة. وللمؤسسات الكبيرة عقود وطرق فوترة مخصصة، ولا يلزم شراء صندوق تشغيل خاص.",
+      "semanticReview": {
+        "index": 13,
+        "reviewed": true,
+        "reviewMethod": "Assistant semantic review of the generated-audio transcript",
+        "amounts": {
+          "monthly": {
+            "USD": 15
+          },
+          "annualSelfService": {
+            "USD": 150
+          },
+          "annualManaged": {
+            "USD": 260
+          }
+        },
+        "perZone": true,
+        "managedAnnualOnly": true,
+        "selfServiceManagesOwnMusic": true,
+        "managedPlaylistAndScheduleRefreshes": true,
+        "seasonalChanges": true,
+        "technicalSupport24x7": true,
+        "appUpdatesInEveryPlan": true,
+        "currencyPolicy": "USD only outside the Thai edition"
+      },
+      "unchangedAudioClips": 14
+    }
+  ]
+}

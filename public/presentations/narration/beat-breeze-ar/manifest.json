@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-ar",
   "status": "official-ar-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-07T01:49:21.897Z",
-  "releaseId": "20260907-pricing-bb9bd0a714573ad5",
+  "generatedAt": "2026-09-07T02:41:08.993Z",
+  "releaseId": "20260907-pricing-b21a830334926c4d",
   "publicationStatus": "Official unlinked, noindex Arabic Beat Breeze presentation with complete slide-linked Arabic narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,13 +30,13 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "bac895d050b8297dba9c5d04e2f38185f36739d01fd05a68f365a64bd1bfcc36",
+    "englishDeckSha256": "017ebe5a49083498049a89163e1ec2e66e795812780267e6245d5f8276c53ce8",
     "officialDeckPath": "public/presentations/beat-breeze-ar.html",
-    "officialDeckSha256": "d88e139e6663eb8a5694ef429a2386bb4228e711bb3bff2d86d82ee869b38a56",
+    "officialDeckSha256": "259cb559e921ef7d7e7edfee31f864aa77914c01509b89b0955ab42365023340",
     "scriptPath": "public/presentations/narration/beat-breeze-ar/script.json",
-    "scriptSha256": "c7e9d36eece8b39810794d65c3fbf77b653032b74d9febe0681a912491797555",
+    "scriptSha256": "eefb3b2b0dd635d41840eb6245bd0bc6dd0154444f60236f166e4bf59dbbc311",
     "copyPath": "public/presentations/narration/beat-breeze-ar/copy.json",
-    "copySha256": "d0dceb746d0c1b0e4637bc4f2cab0ed70523a5a9fb06af2f7f71dab9bd5333f3"
+    "copySha256": "c78a9229a93f279b940005132d9cd6e98a27a07856cdf4a385343167b7e0b394"
   },
   "voice": {
     "provider": "google-gemini",
@@ -60,7 +60,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 784.84,
+  "totalDurationSeconds": 773.12,
   "slides": [
     {
       "index": 1,
@@ -382,21 +382,21 @@
         "حلول المؤسسات",
         "لا حاجة إلى أجهزة مخصصة"
       ],
-      "text": "يمكنكم إدارة الموسيقى بأنفسكم، أو ترك المهمة لفريق BMAsia. تبلغ تكلفة الخدمة الذاتية 15 دولارا أمريكيا أو 499 باتا تايلانديا لكل منطقة شهريا. وإذا اخترتم الدفع السنوي، فالتكلفة 150 دولارا أمريكيا أو 4,990 باتا تايلانديا لكل منطقة سنويا. تشمل خطتا الخدمة الذاتية ميزات التطبيق، وتتولون فيهما إدارة قوائم التشغيل والجداول بأنفسكم. أما خدمة BMAsia المدارة فتبلغ 260 دولارا أمريكيا أو 9,000 بات تايلاندي لكل منطقة سنويا، وهي متاحة ضمن خطط سنوية فقط. يختار فريقنا لتصميم الموسيقى قوائم التشغيل والجداول المخصصة لكل منطقة ويجددها، بما يناسب المواسم والمناسبات. وتشمل الخدمة أيضا دعما تقنيا على مدار الساعة طوال أيام الأسبوع ومدير حساب مخصصا. جميع العملاء يحصلون على تحديثات التطبيق المستمرة أيا كانت خطتهم. الفرق هو من يتولى العناية بالموسيقى اليومية في المكان. ويمكن تجربة الخدمة الذاتية مجانا لمدة 14 يوما لمنطقة واحدة من دون بطاقة. وللمؤسسات الكبيرة عقود وطرق فوترة مخصصة، ولا يلزم شراء صندوق تشغيل خاص.",
+      "text": "يمكنكم إدارة الموسيقى بأنفسكم، أو ترك المهمة لفريق BMAsia. تبلغ تكلفة الخدمة الذاتية 15 دولارا أمريكيا لكل منطقة شهريا. وإذا اخترتم الدفع السنوي، فالتكلفة 150 دولارا أمريكيا لكل منطقة سنويا. تشمل خطتا الخدمة الذاتية ميزات التطبيق، وتتولون فيهما إدارة قوائم التشغيل والجداول بأنفسكم. أما خدمة BMAsia المدارة فتبلغ 260 دولارا أمريكيا لكل منطقة سنويا، وهي متاحة ضمن خطط سنوية فقط. يختار فريقنا لتصميم الموسيقى قوائم التشغيل والجداول المخصصة لكل منطقة ويجددها، بما يناسب المواسم والمناسبات. وتشمل الخدمة أيضا دعما تقنيا على مدار الساعة طوال أيام الأسبوع ومدير حساب مخصصا. جميع العملاء يحصلون على تحديثات التطبيق المستمرة أيا كانت خطتهم. الفرق هو من يتولى العناية بالموسيقى اليومية في المكان. ويمكن تجربة الخدمة الذاتية مجانا لمدة 14 يوما لمنطقة واحدة من دون بطاقة. وللمؤسسات الكبيرة عقود وطرق فوترة مخصصة، ولا يلزم شراء صندوق تشغيل خاص.",
       "index": 13,
-      "src": "audio/20260907-pricing-bb9bd0a714573ad5/13-pricing.mp3",
-      "transcriptSha256": "8d5039030f25be04bf83195978abb958b5577eb2e4be9adf77b73fdc1f81f055",
-      "audioSha256": "88ba5f88a0ac147f362ff287fe1016fa6890658ae1ca57c640da844cc05f6b9c",
-      "durationSeconds": 87.6,
+      "src": "audio/20260907-pricing-b21a830334926c4d/13-pricing.mp3",
+      "transcriptSha256": "99adad06aaa0bddd53e7c2e6d667923520aadd623668ce497f682dea55b49e4d",
+      "audioSha256": "98f5e2427fd83fead3d0fa1d4a7a62d072a0c96872442afd625472983263427f",
+      "durationSeconds": 75.88,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.47,
-      "truePeakDbtp": -3.41,
-      "loudnessRangeLu": 2.1,
-      "thresholdLufs": -28.94,
-      "targetOffsetLu": 0.18
+      "integratedLufs": -18.52,
+      "truePeakDbtp": -3.36,
+      "loudnessRangeLu": 2.5,
+      "thresholdLufs": -28.93,
+      "targetOffsetLu": 0.28
     },
     {
       "index": 14,
@@ -460,7 +460,7 @@
       "slidesTranscribed": 1,
       "slidesReusedFromPreviousQa": 14,
       "verifiedUnchangedSlideCount": 14,
-      "previousReleaseId": "20260903-5cfd5c50ab12",
+      "previousReleaseId": "20260907-pricing-bb9bd0a714573ad5",
       "requiredMaximumCharacterErrorRate": 0.18,
       "maximumCharacterErrorRate": 0.0934,
       "meanCharacterErrorRate": 0.0934,
@@ -469,19 +469,46 @@
         "provider": "google-gemini",
         "model": "gemini-3.5-transcribe",
         "languageCode": "ar",
-        "meanCharacterErrorRate": 0.0068,
-        "maximumCharacterErrorRate": 0.0934,
+        "validationMode": "prior-release-plus-pricing-update",
+        "slidesPassing": 15,
+        "slidesPassingScope": "one newly transcribed pricing clip plus 14 hash-identical clips from the prior QA release",
+        "slidesTranscribed": 1,
+        "slidesReusedFromPreviousQa": 14,
+        "verifiedUnchangedSlideCount": 14,
+        "previousReleaseId": "20260903-5cfd5c50ab12",
         "requiredMaximumCharacterErrorRate": 0.18,
-        "slidesPassing": 15
+        "maximumCharacterErrorRate": 0.0934,
+        "meanCharacterErrorRate": 0.0934,
+        "meanCharacterErrorRateScope": "conservative-upper-bound",
+        "baselineFullDeck": {
+          "provider": "google-gemini",
+          "model": "gemini-3.5-transcribe",
+          "languageCode": "ar",
+          "meanCharacterErrorRate": 0.0068,
+          "maximumCharacterErrorRate": 0.0934,
+          "requiredMaximumCharacterErrorRate": 0.18,
+          "slidesPassing": 15
+        },
+        "targetedUpdates": [
+          {
+            "index": 13,
+            "id": "13-pricing",
+            "audioSha256": "88ba5f88a0ac147f362ff287fe1016fa6890658ae1ca57c640da844cc05f6b9c",
+            "transcriptSha256": "e152b947757087900ec1673fc2d0f82c7cbe6283ec4471cf3880d5da315dea11",
+            "characterErrorRate": 0.004070556309362279,
+            "lengthRatio": 1.0040705563093624,
+            "pass": true
+          }
+        ]
       },
       "targetedUpdates": [
         {
           "index": 13,
           "id": "13-pricing",
-          "audioSha256": "88ba5f88a0ac147f362ff287fe1016fa6890658ae1ca57c640da844cc05f6b9c",
-          "transcriptSha256": "e152b947757087900ec1673fc2d0f82c7cbe6283ec4471cf3880d5da315dea11",
-          "characterErrorRate": 0.004070556309362279,
-          "lengthRatio": 1.0040705563093624,
+          "audioSha256": "98f5e2427fd83fead3d0fa1d4a7a62d072a0c96872442afd625472983263427f",
+          "transcriptSha256": "490d2d434dbaa1fbffd3937565ab1b357ddecc9b76ed533a063b3cdbf547c414",
+          "characterErrorRate": 0,
+          "lengthRatio": 1,
           "pass": true
         }
       ]
@@ -492,16 +519,13 @@
       "reviewMethod": "Assistant semantic review of the generated-audio transcript",
       "amounts": {
         "monthly": {
-          "USD": 15,
-          "THB": 499
+          "USD": 15
         },
         "annualSelfService": {
-          "USD": 150,
-          "THB": 4990
+          "USD": 150
         },
         "annualManaged": {
-          "USD": 260,
-          "THB": 9000
+          "USD": 260
         }
       },
       "perZone": true,
@@ -510,7 +534,8 @@
       "managedPlaylistAndScheduleRefreshes": true,
       "seasonalChanges": true,
       "technicalSupport24x7": true,
-      "appUpdatesInEveryPlan": true
+      "appUpdatesInEveryPlan": true,
+      "currencyPolicy": "USD only outside the Thai edition"
     }
   },
   "generation": {
@@ -519,6 +544,6 @@
       "13-pricing"
     ],
     "verifiedCarryForwardSlideCount": 14,
-    "previousReleaseId": "20260903-5cfd5c50ab12"
+    "previousReleaseId": "20260907-pricing-bb9bd0a714573ad5"
   }
 }

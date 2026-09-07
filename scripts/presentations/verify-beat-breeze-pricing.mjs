@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { pricing, narrationFolder } from './pricing-copy.mjs';
-const base='24b6a5438190b9baae25f22ac96d769656a88c9e';
+const base='63216976dc06a479f9f216f12c5b5f0d3aacdf8f';
 const old=p=>execFileSync('git',['show',`${base}:${p}`],{maxBuffer:40e6}).toString();
 const read=p=>fs.readFileSync(p,'utf8');
 const hash=x=>createHash('sha256').update(x).digest('hex');
@@ -28,7 +28,19 @@ for(const l of Object.keys(pricing)){
   for(let i=0;i<15;i++){
     assert.equal(m.slides[i].text,script.slides[i].text);
     assert.equal(hash(fs.readFileSync(`${root}/${m.slides[i].src}`)),m.slides[i].audioSha256);
-    if(i!==12){assert.equal(deck[i],before[i],`${l}: unexpected slide ${i+1} visual change`);assert.deepEqual(script.slides[i],originalScript.slides[i]);assert.deepEqual(m.slides[i],prior.slides[i]);retained++;}
+    if(i!==12 || l==='th'){assert.equal(deck[i],before[i],`${l}: unexpected slide ${i+1} visual change`);assert.deepEqual(script.slides[i],originalScript.slides[i]);assert.deepEqual(m.slides[i],prior.slides[i]);retained++;}
+  }
+  if(l==='th'){
+    assert.equal(html,old(file),'Thai HTML must remain byte-identical');
+    assert.equal(read(`${root}/script.json`),old(`${root}/script.json`));
+    assert.equal(read(`${root}/controller.js`),old(`${root}/controller.js`));
+    const expected={...prior,source:{...prior.source,englishDeckSha256:m.source.englishDeckSha256}};
+    assert.deepEqual(m,expected,'Only Thai English-source provenance may change');
+  }else{
+    const noBaht=/฿|\bTHB\b|\bbaht\b|泰铢|바트|バーツ|تايلاند/iu;
+    assert.ok(!noBaht.test(deck.join('')) && !noBaht.test(JSON.stringify(script.slides)),`${l}: THB remains`);
+    assert.notEqual(m.slides[12].audioSha256,prior.slides[12].audioSha256);
+    assert.deepEqual(m.qualityAssurance.pricingUpdate.amounts,{monthly:{USD:15},annualSelfService:{USD:150},annualManaged:{USD:260}});
   }
   for(const[k,p]of Object.entries(m.source))if(k.endsWith('Path'))assert.equal(hash(fs.readFileSync(p)),m.source[k.replace(/Path$/,'Sha256')]);
   assert.equal(m.generation.verifiedCarryForwardSlideCount,14);
@@ -40,6 +52,6 @@ for(const l of Object.keys(pricing)){
   if(l!=='en'&&l!=='th'){const copy=JSON.parse(read(`${root}/copy.json`));for(const key of ['monthly','annual','self','managed','design','support','updates'])assert.equal(copy[pricing.en[key]],pricing[l][key]);}
   console.log(`PASS ${l}: new prices, narration, source hashes, fallback, guard copy and unchanged other slides`);
 }
-assert.equal(retained,126);
+assert.equal(retained,127);
 assert.equal(hash(fs.readFileSync('public/presentations/soundtrack.html')),hash(Buffer.from(old('public/presentations/soundtrack.html'))));
-console.log('PASS: nine replacement clips, 126 retained clips and 126 unchanged visual slides; Soundtrack untouched.');
+console.log('PASS: eight USD-only replacement clips; 127 clips and visual slides unchanged, including all of Thai; Soundtrack untouched.');

@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-zh",
   "status": "official-simplified-chinese-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-07T01:47:11.061Z",
-  "releaseId": "20260907-pricing-ac6fd83695ab5b89",
+  "generatedAt": "2026-09-07T02:39:11.202Z",
+  "releaseId": "20260907-pricing-24e85ed7d14f093a",
   "publicationStatus": "Official unlinked, noindex Simplified Chinese Beat Breeze presentation with complete slide-linked Mandarin narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,13 +30,13 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "bac895d050b8297dba9c5d04e2f38185f36739d01fd05a68f365a64bd1bfcc36",
+    "englishDeckSha256": "017ebe5a49083498049a89163e1ec2e66e795812780267e6245d5f8276c53ce8",
     "officialDeckPath": "public/presentations/beat-breeze-zh.html",
-    "officialDeckSha256": "5cf5a3b4bcc970f970759feb14707cd028552ab47776a197b92f516668573d23",
+    "officialDeckSha256": "81dcd13a24ee4cf9f4d7955c8ad4aa50a76d09a076c9fc21890d363a267c70c5",
     "scriptPath": "public/presentations/narration/beat-breeze-zh/script.json",
-    "scriptSha256": "84f44a14d8dbeb17e6661ed3d1aa2153251e30428eeb99a8b1844c05bbac9e89",
+    "scriptSha256": "91ba3c03f1a8e5f33990fe44462e5115d57016a8ec5e7a124b099c3bda4a2c51",
     "copyPath": "public/presentations/narration/beat-breeze-zh/copy.json",
-    "copySha256": "1d672ba3aba2df07007eb195df03d20399e3707e1f14ed40492f5025f53839c8"
+    "copySha256": "a8f9575ff2198c57a572e0694e814f9110e4f7e83b1f1d2f3c856d7b7fcb4d58"
   },
   "voice": {
     "provider": "google-gemini",
@@ -60,7 +60,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 622.72,
+  "totalDurationSeconds": 623.2,
   "slides": [
     {
       "index": 1,
@@ -382,21 +382,21 @@
         "企业安排",
         "无需专用播放器盒子"
       ],
-      "text": "您可以选择自己管理音乐，也可以交给 BMAsia。自助方案每个分区每月 15 美元或 499 泰铢。如果按年付费，则为每个分区每年 150 美元或 4,990 泰铢。这两种自助方案都包含应用功能，由您自行管理播放列表和播放排程。如果希望交给专业团队打理，BMAsia 托管方案每个分区每年 260 美元或 9,000 泰铢，仅提供年度方案。我们的音乐设计团队会为各分区选择并调整播放列表和排程，包括季节与节庆安排，同时提供全天候技术支持和专属客户经理。无论选择哪种方案，所有客户都会持续获得应用更新。区别在于谁来照顾您的日常音乐安排。自助方案可在一个分区免费试用 14 天，无需信用卡。大型集团还可以采用定制合同和本地开票安排，也不需要购买专用播放器盒子。",
+      "text": "您可以选择自己管理音乐，也可以交给 BMAsia。自助方案每个分区每月 15 美元。如果按年付费，则为每个分区每年 150 美元。这两种自助方案都包含应用功能，由您自行管理播放列表和播放排程。如果希望交给专业团队打理，BMAsia 托管方案每个分区每年 260 美元，仅提供年度方案。我们的音乐设计团队会为各分区选择并调整播放列表和排程，包括季节与节庆安排，同时提供全天候技术支持和专属客户经理。无论选择哪种方案，所有客户都会持续获得应用更新。区别在于谁来照顾您的日常音乐安排。自助方案可在一个分区免费试用 14 天，无需信用卡。大型集团还可以采用定制合同和本地开票安排，也不需要购买专用播放器盒子。",
       "index": 13,
-      "src": "audio/20260907-pricing-ac6fd83695ab5b89/13-pricing.mp3",
-      "transcriptSha256": "fa7fbe565538a244b1c848ad6e9ad2de2aa1db8100dd7a24c32a56dd414aeb9c",
-      "audioSha256": "461bcdbde413c4d8cd9320ef8d25903663ffdc234018928a56285eb7399f05ec",
-      "durationSeconds": 59.88,
+      "src": "audio/20260907-pricing-24e85ed7d14f093a/13-pricing.mp3",
+      "transcriptSha256": "c4ecd575f021892125e7ba5a56cd35a1665da33197c4c195cd86b8099a41ebdc",
+      "audioSha256": "e7b770f8ff1333000e23609ab8692cdfeeb6e510f4522cb973c0bfb7baefe6e5",
+      "durationSeconds": 60.36,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.51,
-      "truePeakDbtp": -3.29,
-      "loudnessRangeLu": 2.3,
-      "thresholdLufs": -28.82,
-      "targetOffsetLu": 0.08
+      "integratedLufs": -18.48,
+      "truePeakDbtp": -3.34,
+      "loudnessRangeLu": 2.4,
+      "thresholdLufs": -28.91,
+      "targetOffsetLu": 0.34
     },
     {
       "index": 14,
@@ -460,7 +460,7 @@
       "slidesTranscribed": 1,
       "slidesReusedFromPreviousQa": 14,
       "verifiedUnchangedSlideCount": 14,
-      "previousReleaseId": "20260902-59014dd083de",
+      "previousReleaseId": "20260907-pricing-ac6fd83695ab5b89",
       "requiredMaximumCharacterErrorRate": 0.18,
       "maximumCharacterErrorRate": 0.0765,
       "meanCharacterErrorRate": 0.0765,
@@ -469,19 +469,46 @@
         "provider": "google-gemini",
         "model": "gemini-3.5-transcribe",
         "languageCode": "zh-CN",
-        "meanCharacterErrorRate": 0.0133,
-        "maximumCharacterErrorRate": 0.0765,
+        "validationMode": "prior-release-plus-pricing-update",
+        "slidesPassing": 15,
+        "slidesPassingScope": "one newly transcribed pricing clip plus 14 hash-identical clips from the prior QA release",
+        "slidesTranscribed": 1,
+        "slidesReusedFromPreviousQa": 14,
+        "verifiedUnchangedSlideCount": 14,
+        "previousReleaseId": "20260902-59014dd083de",
         "requiredMaximumCharacterErrorRate": 0.18,
-        "slidesPassing": 15
+        "maximumCharacterErrorRate": 0.0765,
+        "meanCharacterErrorRate": 0.0765,
+        "meanCharacterErrorRateScope": "conservative-upper-bound",
+        "baselineFullDeck": {
+          "provider": "google-gemini",
+          "model": "gemini-3.5-transcribe",
+          "languageCode": "zh-CN",
+          "meanCharacterErrorRate": 0.0133,
+          "maximumCharacterErrorRate": 0.0765,
+          "requiredMaximumCharacterErrorRate": 0.18,
+          "slidesPassing": 15
+        },
+        "targetedUpdates": [
+          {
+            "index": 13,
+            "id": "13-pricing",
+            "audioSha256": "461bcdbde413c4d8cd9320ef8d25903663ffdc234018928a56285eb7399f05ec",
+            "transcriptSha256": "a7bfe8412e824587d8223ee194cadf94eb4a8cfc877a647646ac8ce8e7ae167e",
+            "characterErrorRate": 0.02413793103448276,
+            "lengthRatio": 1,
+            "pass": true
+          }
+        ]
       },
       "targetedUpdates": [
         {
           "index": 13,
           "id": "13-pricing",
-          "audioSha256": "461bcdbde413c4d8cd9320ef8d25903663ffdc234018928a56285eb7399f05ec",
-          "transcriptSha256": "a7bfe8412e824587d8223ee194cadf94eb4a8cfc877a647646ac8ce8e7ae167e",
-          "characterErrorRate": 0.02413793103448276,
-          "lengthRatio": 1,
+          "audioSha256": "e7b770f8ff1333000e23609ab8692cdfeeb6e510f4522cb973c0bfb7baefe6e5",
+          "transcriptSha256": "23e210949093ece77ddc07c708ed851002b3ea45f2a9e99da99b4374d634a00f",
+          "characterErrorRate": 0.011111111111111112,
+          "lengthRatio": 1.0037037037037038,
           "pass": true
         }
       ]
@@ -492,16 +519,13 @@
       "reviewMethod": "Assistant semantic review of the generated-audio transcript",
       "amounts": {
         "monthly": {
-          "USD": 15,
-          "THB": 499
+          "USD": 15
         },
         "annualSelfService": {
-          "USD": 150,
-          "THB": 4990
+          "USD": 150
         },
         "annualManaged": {
-          "USD": 260,
-          "THB": 9000
+          "USD": 260
         }
       },
       "perZone": true,
@@ -510,7 +534,8 @@
       "managedPlaylistAndScheduleRefreshes": true,
       "seasonalChanges": true,
       "technicalSupport24x7": true,
-      "appUpdatesInEveryPlan": true
+      "appUpdatesInEveryPlan": true,
+      "currencyPolicy": "USD only outside the Thai edition"
     }
   },
   "generation": {
@@ -519,6 +544,6 @@
       "13-pricing"
     ],
     "verifiedCarryForwardSlideCount": 14,
-    "previousReleaseId": "20260902-59014dd083de"
+    "previousReleaseId": "20260907-pricing-ac6fd83695ab5b89"
   }
 }

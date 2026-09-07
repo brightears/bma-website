@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-voice-preview",
   "status": "official-english-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-07T01:47:07.933Z",
-  "releaseId": "20260907-pricing-6ab57b120ff3cb79",
+  "generatedAt": "2026-09-07T02:39:10.832Z",
+  "releaseId": "20260907-pricing-c796d38e1d3b589c",
   "publicationStatus": "Official unlinked, noindex English Beat Breeze presentation with complete slide-linked narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,9 +30,9 @@
   },
   "source": {
     "officialDeckPath": "public/presentations/beat-breeze.html",
-    "officialDeckSha256": "bac895d050b8297dba9c5d04e2f38185f36739d01fd05a68f365a64bd1bfcc36",
+    "officialDeckSha256": "017ebe5a49083498049a89163e1ec2e66e795812780267e6245d5f8276c53ce8",
     "scriptPath": "public/presentations/narration/beat-breeze-voice-preview/script.json",
-    "scriptSha256": "47fdabbe1dfbb6be23a9225cd3527d1cf891aaa250447ea38586be2d4c93751f"
+    "scriptSha256": "a2fbb90b7516d74d334bf84c26c4b5e79cb6c600085e1f69f584eb278b152268"
   },
   "voice": {
     "provider": "google-gemini",
@@ -56,7 +56,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 619.08,
+  "totalDurationSeconds": 614.16,
   "slides": [
     {
       "index": 1,
@@ -378,21 +378,21 @@
         "enterprise arrangements",
         "no required player box"
       ],
-      "text": "You can choose to manage the music yourself, or have BMAsia take care of it. Self-service costs 15 US dollars or 499 Thai baht per zone per month. If you prefer an annual plan, it is 150 US dollars or 4,990 Thai baht per zone per year. Both self-service plans include the app’s features, and you manage your own playlists and schedules. For a hands-off service, BMAsia is 260 US dollars or 9,000 Thai baht per zone per year, available on annual plans only. Our music design team selects and refreshes the playlists and schedules assigned to each zone, including seasonal changes. That service also includes 24/7 technical support and a dedicated account manager. Everyone receives ongoing app updates, whichever plan they choose. The difference is who looks after your music. You can try self-service free for 14 days on one zone without a card. Larger groups can arrange custom contracts and local invoicing, and no dedicated player box is required.",
+      "text": "You can choose to manage the music yourself, or have BMAsia take care of it. Self-service costs 15 US dollars per zone per month. If you prefer an annual plan, it is 150 US dollars per zone per year. Both self-service plans include the app’s features, and you manage your own playlists and schedules. For a hands-off service, BMAsia is 260 US dollars per zone per year, available on annual plans only. Our music design team selects and refreshes the playlists and schedules assigned to each zone, including seasonal changes. That service also includes 24/7 technical support and a dedicated account manager. Everyone receives ongoing app updates, whichever plan they choose. The difference is who looks after your music. You can try self-service free for 14 days on one zone without a card. Larger groups can arrange custom contracts and local invoicing, and no dedicated player box is required.",
       "index": 13,
-      "src": "audio/20260907-pricing-6ab57b120ff3cb79/13-pricing.mp3",
-      "transcriptSha256": "645f8d230f7a8c7a514a36d5528589ce291faf5ca43b62319a0afce3da0b051c",
-      "audioSha256": "f8d20701d75975988402872437ac88204fba8ab0d380cf33c405b3611110fdf5",
-      "durationSeconds": 64.04,
+      "src": "audio/20260907-pricing-c796d38e1d3b589c/13-pricing.mp3",
+      "transcriptSha256": "f78605c0f29119827acba0efc9c569a3a28a76d5a9e495a553308124e132eb53",
+      "audioSha256": "1f5de833b3805d180d55f33790d8291d4ebbd5fa3e2a2a666cea8c7a76cda37c",
+      "durationSeconds": 59.12,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.59,
-      "truePeakDbtp": -3,
-      "loudnessRangeLu": 3.9,
-      "thresholdLufs": -29.06,
-      "targetOffsetLu": 0.25
+      "integratedLufs": -18.58,
+      "truePeakDbtp": -3.24,
+      "loudnessRangeLu": 3.3,
+      "thresholdLufs": -29.05,
+      "targetOffsetLu": 0.35
     },
     {
       "index": 14,
@@ -451,7 +451,7 @@
       "13-pricing"
     ],
     "verifiedCarryForwardSlideCount": 14,
-    "previousReleaseId": "20260902-4616b86a157b"
+    "previousReleaseId": "20260907-pricing-6ab57b120ff3cb79"
   },
   "qualityAssurance": {
     "transcription": {
@@ -464,19 +464,46 @@
       "slidesTranscribed": 1,
       "slidesReusedFromPreviousQa": 0,
       "verifiedUnchangedSlideCount": 14,
-      "previousReleaseId": "20260902-4616b86a157b",
+      "previousReleaseId": "20260907-pricing-6ab57b120ff3cb79",
       "requiredMaximumCharacterErrorRate": 0.18,
       "maximumCharacterErrorRate": 0.035386631716906945,
       "meanCharacterErrorRate": 0.035386631716906945,
       "meanCharacterErrorRateScope": "conservative-upper-bound",
+      "baselineFullDeck": {
+        "provider": "google-gemini",
+        "model": "gemini-3.5-transcribe",
+        "languageCode": "en-US",
+        "validationMode": "prior-release-plus-pricing-update",
+        "slidesPassing": 1,
+        "slidesPassingScope": "one newly transcribed pricing clip; 14 prior English clips retained without a new transcription claim",
+        "slidesTranscribed": 1,
+        "slidesReusedFromPreviousQa": 0,
+        "verifiedUnchangedSlideCount": 14,
+        "previousReleaseId": "20260902-4616b86a157b",
+        "requiredMaximumCharacterErrorRate": 0.18,
+        "maximumCharacterErrorRate": 0.035386631716906945,
+        "meanCharacterErrorRate": 0.035386631716906945,
+        "meanCharacterErrorRateScope": "conservative-upper-bound",
+        "targetedUpdates": [
+          {
+            "index": 13,
+            "id": "13-pricing",
+            "audioSha256": "f8d20701d75975988402872437ac88204fba8ab0d380cf33c405b3611110fdf5",
+            "transcriptSha256": "18809385a97d15e10c7fae21bd6ca44f5b8bcad25f9bc5ff7142ee669e3b1853",
+            "characterErrorRate": 0.035386631716906945,
+            "lengthRatio": 0.9646133682830931,
+            "pass": true
+          }
+        ]
+      },
       "targetedUpdates": [
         {
           "index": 13,
           "id": "13-pricing",
-          "audioSha256": "f8d20701d75975988402872437ac88204fba8ab0d380cf33c405b3611110fdf5",
-          "transcriptSha256": "18809385a97d15e10c7fae21bd6ca44f5b8bcad25f9bc5ff7142ee669e3b1853",
-          "characterErrorRate": 0.035386631716906945,
-          "lengthRatio": 0.9646133682830931,
+          "audioSha256": "1f5de833b3805d180d55f33790d8291d4ebbd5fa3e2a2a666cea8c7a76cda37c",
+          "transcriptSha256": "1c1cb4bcf6faea2c64ddb60e31ad6383049ba0e30eb26fb9ba29f7b062bc6fb0",
+          "characterErrorRate": 0.029085872576177285,
+          "lengthRatio": 0.9709141274238227,
           "pass": true
         }
       ]
@@ -487,16 +514,13 @@
       "reviewMethod": "Assistant semantic review of the generated-audio transcript",
       "amounts": {
         "monthly": {
-          "USD": 15,
-          "THB": 499
+          "USD": 15
         },
         "annualSelfService": {
-          "USD": 150,
-          "THB": 4990
+          "USD": 150
         },
         "annualManaged": {
-          "USD": 260,
-          "THB": 9000
+          "USD": 260
         }
       },
       "perZone": true,
@@ -505,7 +529,8 @@
       "managedPlaylistAndScheduleRefreshes": true,
       "seasonalChanges": true,
       "technicalSupport24x7": true,
-      "appUpdatesInEveryPlan": true
+      "appUpdatesInEveryPlan": true,
+      "currencyPolicy": "USD only outside the Thai edition"
     }
   }
 }

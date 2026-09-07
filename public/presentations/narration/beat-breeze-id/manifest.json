@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-id",
   "status": "official-indonesian-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-07T01:48:11.692Z",
-  "releaseId": "20260907-pricing-3efe30bc7a4def79",
+  "generatedAt": "2026-09-07T02:40:01.648Z",
+  "releaseId": "20260907-pricing-5254e0a084366232",
   "publicationStatus": "Official unlinked, noindex Indonesian Beat Breeze presentation with complete slide-linked Indonesian narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,13 +30,13 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "bac895d050b8297dba9c5d04e2f38185f36739d01fd05a68f365a64bd1bfcc36",
+    "englishDeckSha256": "017ebe5a49083498049a89163e1ec2e66e795812780267e6245d5f8276c53ce8",
     "officialDeckPath": "public/presentations/beat-breeze-id.html",
-    "officialDeckSha256": "4d8f0b7e360d2fbfa1947b5365595272253502b4be7785b1b4d440d1fc75867a",
+    "officialDeckSha256": "2f9459fedc9ea5f416d9f14bd92ac91c2c5d510d3eca917936c9aa93ff3cf648",
     "scriptPath": "public/presentations/narration/beat-breeze-id/script.json",
-    "scriptSha256": "ca910ce54d48df1c7a7a027155947c4b9da6010c1c3dc1915c0b36cc63fea7fe",
+    "scriptSha256": "8757659e472fdc2907dd88051b981352e42c2b3b04486cc734329e8779c7216f",
     "copyPath": "public/presentations/narration/beat-breeze-id/copy.json",
-    "copySha256": "c77fdcedcf97ce79447c289b7daf0c55e3f0c8ad01a7b8abccdc8eeb0ff2923c"
+    "copySha256": "da929dd7f163530f324f72b31e2a29dbdaafccef75020cbd8513d37a23e9bb35"
   },
   "voice": {
     "provider": "google-gemini",
@@ -60,7 +60,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 777.16,
+  "totalDurationSeconds": 773.84,
   "slides": [
     {
       "index": 1,
@@ -385,21 +385,21 @@
         "solusi enterprise",
         "tanpa perangkat khusus yang diwajibkan"
       ],
-      "text": "Anda bisa mengelola musik sendiri atau menyerahkannya kepada BMAsia. Paket mandiri berharga 15 dolar AS atau 499 baht Thailand per zona per bulan. Jika memilih paket tahunan, harganya 150 dolar AS atau 4,990 baht Thailand per zona per tahun. Kedua paket mandiri mencakup fitur aplikasi, dan Anda mengelola playlist serta jadwal pemutaran sendiri. Untuk layanan yang dikelola tim kami, paket BMAsia berharga 260 dolar AS atau 9,000 baht Thailand per zona per tahun, dan hanya tersedia dalam paket tahunan. Tim desain musik kami memilih dan menyegarkan playlist serta jadwal yang ditetapkan untuk setiap zona, termasuk penyesuaian musim dan hari raya. Layanan ini juga mencakup dukungan teknis sepanjang waktu dan account manager khusus. Semua pelanggan mendapatkan pembaruan aplikasi secara berkala, apa pun paketnya. Perbedaannya adalah siapa yang mengurus musik Anda. Paket mandiri bisa dicoba gratis selama 14 hari untuk satu zona tanpa kartu. Grup besar dapat mengatur kontrak khusus dan penagihan lokal, tanpa kewajiban membeli box pemutar khusus.",
+      "text": "Anda bisa mengelola musik sendiri atau menyerahkannya kepada BMAsia. Paket mandiri berharga 15 dolar AS per zona per bulan. Jika memilih paket tahunan, harganya 150 dolar AS per zona per tahun. Kedua paket mandiri mencakup fitur aplikasi, dan Anda mengelola playlist serta jadwal pemutaran sendiri. Untuk layanan yang dikelola tim kami, paket BMAsia berharga 260 dolar AS per zona per tahun, dan hanya tersedia dalam paket tahunan. Tim desain musik kami memilih dan menyegarkan playlist serta jadwal yang ditetapkan untuk setiap zona, termasuk penyesuaian musim dan hari raya. Layanan ini juga mencakup dukungan teknis sepanjang waktu dan account manager khusus. Semua pelanggan mendapatkan pembaruan aplikasi secara berkala, apa pun paketnya. Perbedaannya adalah siapa yang mengurus musik Anda. Paket mandiri bisa dicoba gratis selama 14 hari untuk satu zona tanpa kartu. Grup besar dapat mengatur kontrak khusus dan penagihan lokal, tanpa kewajiban membeli box pemutar khusus.",
       "index": 13,
-      "src": "audio/20260907-pricing-3efe30bc7a4def79/13-pricing.mp3",
-      "transcriptSha256": "036de4e200a167ee14116d0a00069e102430763782a4783914bd0678f9655ef8",
-      "audioSha256": "295601fb6941abfda1cf2c317e39f6ec0545723aee100f6d6b1238dd417e6833",
-      "durationSeconds": 73.52,
+      "src": "audio/20260907-pricing-5254e0a084366232/13-pricing.mp3",
+      "transcriptSha256": "29654cfed609598f2e4995f6959cfe7b909ce81155a532c1b64f384fa9617459",
+      "audioSha256": "a9dab9070103fe07d97ada6e9ceda481b169b550ee49ff16ab288118010c798c",
+      "durationSeconds": 70.2,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.46,
-      "truePeakDbtp": -3.43,
-      "loudnessRangeLu": 3.5,
-      "thresholdLufs": -28.81,
-      "targetOffsetLu": 0.19
+      "integratedLufs": -18.5,
+      "truePeakDbtp": -3.31,
+      "loudnessRangeLu": 2.3,
+      "thresholdLufs": -28.84,
+      "targetOffsetLu": 0.12
     },
     {
       "index": 14,
@@ -463,7 +463,7 @@
       "slidesTranscribed": 1,
       "slidesReusedFromPreviousQa": 14,
       "verifiedUnchangedSlideCount": 14,
-      "previousReleaseId": "20260903-a2cd6329f4db",
+      "previousReleaseId": "20260907-pricing-3efe30bc7a4def79",
       "requiredMaximumCharacterErrorRate": 0.18,
       "maximumCharacterErrorRate": 0.1115,
       "meanCharacterErrorRate": 0.1115,
@@ -472,19 +472,46 @@
         "provider": "google-gemini",
         "model": "gemini-3.5-transcribe",
         "languageCode": "id-ID",
-        "meanCharacterErrorRate": 0.0112,
-        "maximumCharacterErrorRate": 0.1115,
+        "validationMode": "prior-release-plus-pricing-update",
+        "slidesPassing": 15,
+        "slidesPassingScope": "one newly transcribed pricing clip plus 14 hash-identical clips from the prior QA release",
+        "slidesTranscribed": 1,
+        "slidesReusedFromPreviousQa": 14,
+        "verifiedUnchangedSlideCount": 14,
+        "previousReleaseId": "20260903-a2cd6329f4db",
         "requiredMaximumCharacterErrorRate": 0.18,
-        "slidesPassing": 15
+        "maximumCharacterErrorRate": 0.1115,
+        "meanCharacterErrorRate": 0.1115,
+        "meanCharacterErrorRateScope": "conservative-upper-bound",
+        "baselineFullDeck": {
+          "provider": "google-gemini",
+          "model": "gemini-3.5-transcribe",
+          "languageCode": "id-ID",
+          "meanCharacterErrorRate": 0.0112,
+          "maximumCharacterErrorRate": 0.1115,
+          "requiredMaximumCharacterErrorRate": 0.18,
+          "slidesPassing": 15
+        },
+        "targetedUpdates": [
+          {
+            "index": 13,
+            "id": "13-pricing",
+            "audioSha256": "295601fb6941abfda1cf2c317e39f6ec0545723aee100f6d6b1238dd417e6833",
+            "transcriptSha256": "1f9b2547a49c70f1e07feb07b63927a81c2cf99d815091c606f11ac67d2523f1",
+            "characterErrorRate": 0.002285714285714286,
+            "lengthRatio": 1.0011428571428571,
+            "pass": true
+          }
+        ]
       },
       "targetedUpdates": [
         {
           "index": 13,
           "id": "13-pricing",
-          "audioSha256": "295601fb6941abfda1cf2c317e39f6ec0545723aee100f6d6b1238dd417e6833",
-          "transcriptSha256": "1f9b2547a49c70f1e07feb07b63927a81c2cf99d815091c606f11ac67d2523f1",
-          "characterErrorRate": 0.002285714285714286,
-          "lengthRatio": 1.0011428571428571,
+          "audioSha256": "a9dab9070103fe07d97ada6e9ceda481b169b550ee49ff16ab288118010c798c",
+          "transcriptSha256": "a2dc357020cf709d8708415ee6be1f55312b8257d6c6f2efd701eb17187e5098",
+          "characterErrorRate": 0.020833333333333332,
+          "lengthRatio": 0.9828431372549019,
           "pass": true
         }
       ]
@@ -495,16 +522,13 @@
       "reviewMethod": "Assistant semantic review of the generated-audio transcript",
       "amounts": {
         "monthly": {
-          "USD": 15,
-          "THB": 499
+          "USD": 15
         },
         "annualSelfService": {
-          "USD": 150,
-          "THB": 4990
+          "USD": 150
         },
         "annualManaged": {
-          "USD": 260,
-          "THB": 9000
+          "USD": 260
         }
       },
       "perZone": true,
@@ -513,7 +537,8 @@
       "managedPlaylistAndScheduleRefreshes": true,
       "seasonalChanges": true,
       "technicalSupport24x7": true,
-      "appUpdatesInEveryPlan": true
+      "appUpdatesInEveryPlan": true,
+      "currencyPolicy": "USD only outside the Thai edition"
     }
   },
   "generation": {
@@ -522,6 +547,6 @@
       "13-pricing"
     ],
     "verifiedCarryForwardSlideCount": 14,
-    "previousReleaseId": "20260903-a2cd6329f4db"
+    "previousReleaseId": "20260907-pricing-3efe30bc7a4def79"
   }
 }

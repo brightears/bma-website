@@ -6,7 +6,7 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(HERE, "../..");
 const PRESENTATION_ROOT = path.join(REPO_ROOT, "public", "presentations");
 const MOTION_REFERENCE =
-  './narration/beat-breeze-motion/controller.js?v=2026-09-07-pricing-1';
+  './narration/beat-breeze-motion/controller.js?v=2026-09-07-usd-only-1';
 const MOTION_CONTROLLER = path.join(
   PRESENTATION_ROOT,
   "narration",
@@ -90,7 +90,7 @@ for (const deck of decks) {
   if (!html.includes(deck.narration)) {
     throw new Error(`${deck.locale}: localized narration controller is missing.`);
   }
-  if (!html.includes(MOTION_REFERENCE)) {
+  if (!html.includes(deck.locale === 'th' ? MOTION_REFERENCE.replace('usd-only-1','pricing-1') : MOTION_REFERENCE)) {
     throw new Error(`${deck.locale}: official motion controller is missing or stale.`);
   }
   const templateMarker = '<script type="__bundler/template">';
@@ -108,7 +108,7 @@ for (const deck of decks) {
 
 const controller = readFileSync(MOTION_CONTROLLER, "utf8");
 for (const required of [
-  'const VERSION = "2026-09-07-pricing-1"',
+  'const VERSION = "2026-09-07-usd-only-1"',
   "const ENGLISH_CUE_TIMELINES",
   "const THAI_CUE_TIMELINES",
   "const CHINESE_CUE_TIMELINES",
