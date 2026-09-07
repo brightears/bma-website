@@ -30,7 +30,7 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "bac895d050b8297dba9c5d04e2f38185f36739d01fd05a68f365a64bd1bfcc36",
+    "englishDeckSha256": "017ebe5a49083498049a89163e1ec2e66e795812780267e6245d5f8276c53ce8",
     "officialDeckPath": "public/presentations/beat-breeze-th.html",
     "officialDeckSha256": "551613d1d70eaf7a05bb6fe824bcd3f6044a86350f58350fca15f057e69d0d49",
     "scriptPath": "public/presentations/narration/beat-breeze-voice-preview-th/script.json",

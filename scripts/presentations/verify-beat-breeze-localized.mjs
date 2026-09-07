@@ -146,7 +146,7 @@ for (const [localeCode, locale] of Object.entries(LOCALES)) {
       "./narration/beat-breeze-localized/controller.js?v=2026-09-03-1",
     ) ||
     !official.includes(
-      "./narration/beat-breeze-motion/controller.js?v=2026-09-07-pricing-1",
+      "./narration/beat-breeze-motion/controller.js?v=2026-09-07-usd-only-1",
     )
   ) {
     fail(`The official ${locale.name} deck is missing its language, title, or controllers.`);

@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-vi",
   "status": "official-vietnamese-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-07T01:48:07.302Z",
-  "releaseId": "20260907-pricing-3e786a39c42b8297",
+  "generatedAt": "2026-09-07T02:39:02.515Z",
+  "releaseId": "20260907-pricing-7fe46f919a507bdf",
   "publicationStatus": "Official unlinked, noindex Vietnamese Beat Breeze presentation with complete slide-linked Vietnamese narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,13 +30,13 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "bac895d050b8297dba9c5d04e2f38185f36739d01fd05a68f365a64bd1bfcc36",
+    "englishDeckSha256": "017ebe5a49083498049a89163e1ec2e66e795812780267e6245d5f8276c53ce8",
     "officialDeckPath": "public/presentations/beat-breeze-vi.html",
-    "officialDeckSha256": "02c2b965481e14535384fc867ca96f65ebcea6baaa643993ddaee935b4b51bc3",
+    "officialDeckSha256": "8accf1d58cb1d71d2681486ef74ef04546488364f4612836f671ba798a3b41c6",
     "scriptPath": "public/presentations/narration/beat-breeze-vi/script.json",
-    "scriptSha256": "a6484ad4385ffb192fc0b86ba4e31323239ee8d86239753c69e2bb2370196c13",
+    "scriptSha256": "4be01323397e1391ac8235959d410cb803a13d0a4b1eabc8076fef130ece52d5",
     "copyPath": "public/presentations/narration/beat-breeze-vi/copy.json",
-    "copySha256": "da8871e8fb87b927392578bbb6cee6ce28bfd7f39d9379c361efcae2c55c317a"
+    "copySha256": "b2b7f53aa603fb30f7b3b5ed686113074c39f2fd5a218539700afb614435acbd"
   },
   "voice": {
     "provider": "google-gemini",
@@ -60,7 +60,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 621.52,
+  "totalDurationSeconds": 617.8,
   "slides": [
     {
       "index": 1,
@@ -382,21 +382,21 @@
         "giải pháp doanh nghiệp",
         "không bắt buộc thiết bị chuyên dụng"
       ],
-      "text": "Quý khách có thể tự quản lý âm nhạc hoặc để BMAsia chăm sóc. Gói tự phục vụ có giá 15 đô la Mỹ hoặc 499 baht Thái cho mỗi khu vực mỗi tháng. Nếu chọn thanh toán theo năm, giá là 150 đô la Mỹ hoặc 4,990 baht Thái cho mỗi khu vực mỗi năm. Cả hai gói tự phục vụ đều bao gồm các tính năng của ứng dụng, và quý khách tự quản lý danh sách phát cùng lịch phát. Nếu muốn giao việc này cho đội ngũ chuyên môn, gói do BMAsia quản lý có giá 260 đô la Mỹ hoặc 9,000 baht Thái cho mỗi khu vực mỗi năm, và chỉ có gói năm. Đội ngũ thiết kế âm nhạc của chúng tôi lựa chọn và làm mới danh sách phát cùng lịch phát được gán cho từng khu vực, kể cả thay đổi theo mùa và dịp lễ. Dịch vụ còn có hỗ trợ kỹ thuật suốt ngày đêm và quản lý tài khoản riêng. Mọi khách hàng đều được cập nhật ứng dụng thường xuyên, bất kể chọn gói nào. Điểm khác biệt là ai chăm sóc âm nhạc cho quý khách. Có thể dùng thử gói tự phục vụ miễn phí 14 ngày trên một khu vực, không cần thẻ. Doanh nghiệp lớn có thể chọn hợp đồng và hình thức xuất hóa đơn phù hợp, và không cần mua hộp phát chuyên dụng.",
+      "text": "Quý khách có thể tự quản lý âm nhạc hoặc để BMAsia chăm sóc. Gói tự phục vụ có giá 15 đô la Mỹ cho mỗi khu vực mỗi tháng. Nếu chọn thanh toán theo năm, giá là 150 đô la Mỹ cho mỗi khu vực mỗi năm. Cả hai gói tự phục vụ đều bao gồm các tính năng của ứng dụng, và quý khách tự quản lý danh sách phát cùng lịch phát. Nếu muốn giao việc này cho đội ngũ chuyên môn, gói do BMAsia quản lý có giá 260 đô la Mỹ cho mỗi khu vực mỗi năm, và chỉ có gói năm. Đội ngũ thiết kế âm nhạc của chúng tôi lựa chọn và làm mới danh sách phát cùng lịch phát được gán cho từng khu vực, kể cả thay đổi theo mùa và dịp lễ. Dịch vụ còn có hỗ trợ kỹ thuật suốt ngày đêm và quản lý tài khoản riêng. Mọi khách hàng đều được cập nhật ứng dụng thường xuyên, bất kể chọn gói nào. Điểm khác biệt là ai chăm sóc âm nhạc cho quý khách. Có thể dùng thử gói tự phục vụ miễn phí 14 ngày trên một khu vực, không cần thẻ. Doanh nghiệp lớn có thể chọn hợp đồng và hình thức xuất hóa đơn phù hợp, và không cần mua hộp phát chuyên dụng.",
       "index": 13,
-      "src": "audio/20260907-pricing-3e786a39c42b8297/13-pricing.mp3",
-      "transcriptSha256": "f7c617ed20a0a36db584afd6216109212c109c3c581609c025a1874c51abbb31",
-      "audioSha256": "29501da05ca41575fcc13e5ec156125e7b42ead6aa9fad9933d75df9d0bd131e",
-      "durationSeconds": 66.04,
+      "src": "audio/20260907-pricing-7fe46f919a507bdf/13-pricing.mp3",
+      "transcriptSha256": "e5cdcef604fb517428e8b85785fbae60aa1e41fb2961ad6a9a6efe5d314ed642",
+      "audioSha256": "b4432ee14c8c677cac4805df415eb8ec21c396caab66b1fd358bbfa69e6eeabd",
+      "durationSeconds": 62.32,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.48,
-      "truePeakDbtp": -3.39,
-      "loudnessRangeLu": 2.1,
-      "thresholdLufs": -28.68,
-      "targetOffsetLu": 0.3
+      "integratedLufs": -18.51,
+      "truePeakDbtp": -3.41,
+      "loudnessRangeLu": 2.4,
+      "thresholdLufs": -28.8,
+      "targetOffsetLu": 0.39
     },
     {
       "index": 14,
@@ -460,7 +460,7 @@
       "slidesTranscribed": 1,
       "slidesReusedFromPreviousQa": 14,
       "verifiedUnchangedSlideCount": 14,
-      "previousReleaseId": "20260903-214d179462e3",
+      "previousReleaseId": "20260907-pricing-3e786a39c42b8297",
       "requiredMaximumCharacterErrorRate": 0.18,
       "maximumCharacterErrorRate": 0.0866,
       "meanCharacterErrorRate": 0.0866,
@@ -469,18 +469,45 @@
         "provider": "google-gemini",
         "model": "gemini-3.5-transcribe",
         "languageCode": "vi-VN",
-        "meanCharacterErrorRate": 0.0068,
-        "maximumCharacterErrorRate": 0.0866,
+        "validationMode": "prior-release-plus-pricing-update",
+        "slidesPassing": 15,
+        "slidesPassingScope": "one newly transcribed pricing clip plus 14 hash-identical clips from the prior QA release",
+        "slidesTranscribed": 1,
+        "slidesReusedFromPreviousQa": 14,
+        "verifiedUnchangedSlideCount": 14,
+        "previousReleaseId": "20260903-214d179462e3",
         "requiredMaximumCharacterErrorRate": 0.18,
-        "slidesPassing": 15
+        "maximumCharacterErrorRate": 0.0866,
+        "meanCharacterErrorRate": 0.0866,
+        "meanCharacterErrorRateScope": "conservative-upper-bound",
+        "baselineFullDeck": {
+          "provider": "google-gemini",
+          "model": "gemini-3.5-transcribe",
+          "languageCode": "vi-VN",
+          "meanCharacterErrorRate": 0.0068,
+          "maximumCharacterErrorRate": 0.0866,
+          "requiredMaximumCharacterErrorRate": 0.18,
+          "slidesPassing": 15
+        },
+        "targetedUpdates": [
+          {
+            "index": 13,
+            "id": "13-pricing",
+            "audioSha256": "29501da05ca41575fcc13e5ec156125e7b42ead6aa9fad9933d75df9d0bd131e",
+            "transcriptSha256": "d576d3a04d4cf6a5db08d3f78e8b642107870e22a4340d4282b6be157867fba8",
+            "characterErrorRate": 0.0025252525252525255,
+            "lengthRatio": 1,
+            "pass": true
+          }
+        ]
       },
       "targetedUpdates": [
         {
           "index": 13,
           "id": "13-pricing",
-          "audioSha256": "29501da05ca41575fcc13e5ec156125e7b42ead6aa9fad9933d75df9d0bd131e",
-          "transcriptSha256": "d576d3a04d4cf6a5db08d3f78e8b642107870e22a4340d4282b6be157867fba8",
-          "characterErrorRate": 0.0025252525252525255,
+          "audioSha256": "b4432ee14c8c677cac4805df415eb8ec21c396caab66b1fd358bbfa69e6eeabd",
+          "transcriptSha256": "f5afb1296117e57362bc9037fbbb7c8c0975353d1562da12283f1c58c3d453d3",
+          "characterErrorRate": 0,
           "lengthRatio": 1,
           "pass": true
         }
@@ -492,16 +519,13 @@
       "reviewMethod": "Assistant semantic review of the generated-audio transcript",
       "amounts": {
         "monthly": {
-          "USD": 15,
-          "THB": 499
+          "USD": 15
         },
         "annualSelfService": {
-          "USD": 150,
-          "THB": 4990
+          "USD": 150
         },
         "annualManaged": {
-          "USD": 260,
-          "THB": 9000
+          "USD": 260
         }
       },
       "perZone": true,
@@ -510,7 +534,8 @@
       "managedPlaylistAndScheduleRefreshes": true,
       "seasonalChanges": true,
       "technicalSupport24x7": true,
-      "appUpdatesInEveryPlan": true
+      "appUpdatesInEveryPlan": true,
+      "currencyPolicy": "USD only outside the Thai edition"
     }
   },
   "generation": {
@@ -519,6 +544,6 @@
       "13-pricing"
     ],
     "verifiedCarryForwardSlideCount": 14,
-    "previousReleaseId": "20260903-214d179462e3"
+    "previousReleaseId": "20260907-pricing-3e786a39c42b8297"
   }
 }

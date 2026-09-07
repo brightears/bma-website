@@ -93,3 +93,26 @@ export const pricing = {
 };
 
 export const narrationFolder = (locale) => locale === 'en' ? 'beat-breeze-voice-preview' : locale === 'th' ? 'beat-breeze-voice-preview-th' : `beat-breeze-${locale}`;
+
+// International editions use USD only; the Thai edition retains both currencies.
+export const usdOnlyLocales = ['en', 'zh', 'vi', 'id', 'ms', 'ko', 'ja', 'ar'];
+const spokenBahtAlternatives = {
+  en: [' or 499 Thai baht', ' or 4,990 Thai baht', ' or 9,000 Thai baht'],
+  zh: ['或 499 泰铢', '或 4,990 泰铢', '或 9,000 泰铢'],
+  vi: [' hoặc 499 baht Thái', ' hoặc 4,990 baht Thái', ' hoặc 9,000 baht Thái'],
+  id: [' atau 499 baht Thailand', ' atau 4,990 baht Thailand', ' atau 9,000 baht Thailand'],
+  ms: [' atau 499 baht Thailand', ' atau 4,990 baht Thailand', ' atau 9,000 baht Thailand'],
+  ko: [' 또는 태국 바트로 499바트', ' 또는 4,990바트', ' 또는 9,000바트'],
+  ja: ['、または499タイバーツ', '、または4,990タイバーツ', '、または9,000タイバーツ'],
+  ar: [' أو 499 باتا تايلانديا', ' أو 4,990 باتا تايلانديا', ' أو 9,000 بات تايلاندي'],
+};
+for (const locale of usdOnlyLocales) {
+  const p = pricing[locale];
+  p.monthly = p.monthly.replace(/^(?:฿499|499 بات) · /, '');
+  p.annual = p.annual.replace(/ \/ (?:฿4,990|4,990 بات)/, '');
+  p.managed = p.managed.replace(/^(?:฿9,000|9,000 بات) · /, '');
+  for (const phrase of spokenBahtAlternatives[locale]) {
+    if (!p.text.includes(phrase)) throw new Error(`Missing expected baht phrase for ${locale}`);
+    p.text = p.text.replace(phrase, '');
+  }
+}
