@@ -797,12 +797,22 @@
           "reason": "Tekstur panjang mengurangkan peralihan yang ketara sambil mengekalkan kawalan langsung kakitangan terhadap aras dan masa."
         }
       },
-      "capabilities": { "play": "Main", "create": "Cipta", "communicate": "Berkomunikasi", "connect": "Sambung" },
+      "capabilities": {
+        "play": "Main",
+        "create": "Cipta",
+        "communicate": "Berkomunikasi",
+        "connect": "Sambung"
+      },
       "media": {
         "eyebrow": "Lebih daripada pemain muzik",
         "title": "Bina dunia di sekeliling runut bunyi.",
         "description": "Beat Breeze boleh menyelaras media dan mesej yang ditemui tetamu di seluruh venue—bukan sebagai tambahan berasingan, tetapi sebagai sebahagian daripada pelan operasi yang sama.",
-        "musicCreation": { "label": "Arah muzik", "value": "AI + manusia", "title": "Gubah lagu atau mulakan dengan katalog terpilih", "text": "Cipta lagu asal dengan modul penciptaan muzik BMAsia, terokai muzik Beat Breeze atau tambah muzik ciptaan manusia daripada Epidemic Sound untuk pelaksanaan yang layak—kemudian semak sebelum dimainkan." },
+        "musicCreation": {
+          "label": "Arah muzik",
+          "value": "AI + manusia",
+          "title": "Gubah lagu atau mulakan dengan katalog terpilih",
+          "text": "Cipta lagu asal dengan modul penciptaan muzik BMAsia, terokai muzik Beat Breeze atau tambah muzik ciptaan manusia daripada Epidemic Sound untuk pelaksanaan yang layak—kemudian semak sebelum dimainkan."
+        },
         "screens": {
           "label": "Skrin dan TV",
           "title": "Gelung visual, tayangan slaid dan saluran venue",
@@ -814,9 +824,18 @@
           "loopWithSound": "Bunyi tersedia",
           "loopSilent": "Visual senyap",
           "loops": {
-            "waterfall": { "name": "Laluan air terjun", "mood": "Tenang dan semula jadi" },
-            "snow": { "name": "Si pelawat", "mood": "Ceria dan sureal" },
-            "underwater": { "name": "Dinding bawah air", "mood": "Hanyutan laut yang tenang" }
+            "waterfall": {
+              "name": "Laluan air terjun",
+              "mood": "Tenang dan semula jadi"
+            },
+            "snow": {
+              "name": "Si pelawat",
+              "mood": "Ceria dan sureal"
+            },
+            "underwater": {
+              "name": "Dinding bawah air",
+              "mood": "Hanyutan laut yang tenang"
+            }
           }
         },
         "create": {
@@ -928,9 +947,18 @@
     "compactText": "Sambungan BMAsia untuk Beat Breeze dan Soundtrack, dengan input dB langsung dan had pengendali yang jelas.",
     "privacy": "Tiada perbualan atau audio dirakam atau dihantar.",
     "cta": "Bercakap dengan BMAsia",
-    "measure": { "title": "Ukur", "text": "Baca paras bunyi langsung di premis." },
-    "send": { "title": "Hantar dB sahaja", "text": "Hantar paras berangka, bukan audio premis." },
-    "adjust": { "title": "Laras dalam julat", "text": "Aplikasi muzik bertindak dalam had yang ditetapkan." },
+    "measure": {
+      "title": "Ukur",
+      "text": "Baca paras bunyi langsung di premis."
+    },
+    "send": {
+      "title": "Hantar dB sahaja",
+      "text": "Hantar paras berangka, bukan audio premis."
+    },
+    "adjust": {
+      "title": "Laras dalam julat",
+      "text": "Aplikasi muzik bertindak dalam had yang ditetapkan."
+    },
     "proof": {
       "live": "Pengukuran dB langsung",
       "automatic": "Pelarasan volum automatik",
@@ -941,16 +969,16 @@
   "homePage": {
     "immersive": {
       "hero": {
-        "eyebrow": "Beat Breeze oleh BMAsia",
-        "title": "Bentuk suasana.",
-        "highlight": "Gerakkan setiap titik sentuh.",
-        "description": "Muzik, skrin, mesej dan audio telefon yang diselaraskan di setiap zon.",
-        "try": "Cuba simulator pengalaman tempat",
-        "start": "Cuba percuma 14 hari",
-        "proof1": "Tiada kad diperlukan",
-        "proof2": "Tiada perkakasan khusus",
-        "proof3": "Tiada perkakasan khusus",
-        "scroll": "Alami perjalanan hari"
+        "eyebrow": "BMAsia · Muzik, media dan pengalaman venue",
+        "title": "Venue anda mempunyai iramanya sendiri.",
+        "highlight": "Kami menyelaraskan semuanya.",
+        "description": "BMAsia mereka bentuk dan mengurus muzik, skrin, mesej dan pengalaman venue yang saling terhubung, dengan dua platform muzik berbeza untuk memenuhi keperluan anda.",
+        "try": "Pilih penyelesaian anda",
+        "start": "Berbincang dengan BMAsia",
+        "proof1": "Panduan produk yang bebas",
+        "proof2": "Reka bentuk muzik sejak 2002",
+        "proof3": "Satu rakan untuk setiap zon",
+        "scroll": "Cuba Venue Time Machine"
       },
       "field": {
         "ariaLabel": "Rekod hidup yang dibentuk daripada pilihan senarai main luas menjadi satu arah muzik tempatan untuk tempat",
@@ -1310,11 +1338,11 @@
       }
     },
     "finalCta": {
-      "title": "Mari Reka",
-      "titleHighlight": "Bunyi Anda",
+      "title": "Cari penyelesaian yang sesuai",
+      "titleHighlight": "untuk venue ini.",
       "description": "Beritahu kami keperluan ruang tersebut. Kami akan membandingkan Beat Breeze dan Soundtrack secara jujur, kemudian mereka bentuk muzik dan perkhidmatan mengikut operasi.",
-      "ctaQuote": "Dapatkan Sebut Harga",
-      "ctaDemo": "Tempah Demo"
+      "ctaQuote": "Bantu saya memilih",
+      "ctaDemo": "Bandingkan produk"
     }
   },
   "licensingPage": {

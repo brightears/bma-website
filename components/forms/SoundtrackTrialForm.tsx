@@ -52,8 +52,8 @@ export function SoundtrackTrialForm() {
 
       setState('success');
       reset();
-    } catch (error) {
-      setErrorMessage(error instanceof Error ? error.message : t('error'));
+    } catch {
+      setErrorMessage(t('error'));
       setState('error');
     }
   };

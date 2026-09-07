@@ -147,6 +147,13 @@
     @apply font-headline font-medium leading-[0.96] tracking-[-0.055em] text-white;
   }
 
+  .bma-page-title,
+  .bma-section-title,
+  .bma-subsection-title,
+  .bma-card-title {
+    overflow-wrap: anywhere;
+  }
+
   .bma-page-title {
     @apply font-headline font-medium;
 

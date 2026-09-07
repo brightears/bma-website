@@ -130,9 +130,8 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
       } else {
         throw new Error(result.error || 'Failed to send message');
       }
-    } catch (error) {
-      const message =
-        error instanceof Error ? error.message : 'Something went wrong';
+    } catch {
+      const message = t('errorMessage');
       setStatus('error');
       setErrorMessage(message);
       onError?.(message);

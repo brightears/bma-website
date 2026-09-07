@@ -89,11 +89,11 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Validate numberOfZones is a positive number
-    const zones = parseInt(numberOfZones, 10);
-    if (isNaN(zones) || zones < 1) {
+    // Prisma stores a 32-bit integer; never silently truncate a fractional brief.
+    const zones = Number(numberOfZones);
+    if (!Number.isInteger(zones) || zones < 1 || zones > 2_147_483_647) {
       return NextResponse.json(
-        { error: 'Number of zones must be at least 1' },
+        { error: 'Number of zones must be a positive whole number' },
         { status: 400 }
       );
     }

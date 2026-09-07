@@ -367,6 +367,7 @@ export const QuotationForm: React.FC<QuotationFormProps> = ({ onSuccess, onError
                 {...register('numberOfZones', {
                   required: tValidation('required', { field: t('fields.numberOfZones.label') }),
                   min: { value: 1, message: tValidation('minValue', { min: 1 }) },
+                  validate: (value) => (Number.isInteger(value) && value <= 2_147_483_647) || tValidation('invalidNumber'),
                   valueAsNumber: true,
                 })}
               />
