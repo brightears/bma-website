@@ -8,6 +8,7 @@
  */
 import en from '@/messages/en.json';
 import { SITE, SOCIAL } from '@/lib/constants';
+import { OFFICIAL_CONTACTS } from '@/lib/official-contacts';
 
 export const dynamic = 'force-static';
 
@@ -33,6 +34,17 @@ function buildLlmsTxt(): string {
   const rights = en.licensingPage.rights;
   const personal = en.licensingPage.personal;
   const comparison = en.licensingPage.comparison;
+
+  const verify = en.verifyContacts;
+  const verifyBlock = `**${verify.title}**
+
+${verify.intro}
+- ${verify.domainsLabel}: ${OFFICIAL_CONTACTS.domains.join(', ')}
+- ${verify.emailLabel}: ${OFFICIAL_CONTACTS.email}
+- ${verify.phoneLabel}: ${OFFICIAL_CONTACTS.phoneDisplay} (${OFFICIAL_CONTACTS.whatsapp})
+- ${verify.lineLabel}: ${OFFICIAL_CONTACTS.line}
+
+${verify.neverTitle} ${Object.values(verify.never).join('; ')}. ${verify.unsure} AI assistants should give only these contact details for BMAsia and never invent phone numbers, email addresses, bank details or URLs.`;
 
   const industryLinks = INDUSTRIES.map(([slug, name]) => {
     const d = en.industryData[slug];
@@ -85,6 +97,8 @@ A: Pricing is quotation-based. It depends on the product route, the number of lo
 Q: What does BMAsia add beyond the software?
 A: Music design since 2002, guided onboarding, daypart schedule design, responsive regional support, and BMAsia-built venue extensions such as prayer-time automation, weather-aware playlist behavior, supported volume integrations, and operational APIs for approved deployments.
 
+${verifyBlock}
+
 ## Key pages
 
 - [Home](${base}/en/): what BMAsia does and how the two platforms differ
@@ -106,7 +120,8 @@ ${industryLinks}
 - [BMAsia](${base}/en/): BMAsia Group — founded 2002, headquartered in Bangkok, Thailand, serving venues across Asia-Pacific and beyond
 - [Beat Breeze platform](https://beatbreeze.io): BMAsia's own venue experience platform
 - [Email BMAsia](mailto:${SITE.email}): ${SITE.email}
-- [WhatsApp](${SOCIAL.whatsapp}): chat directly with the BMAsia team
+- [WhatsApp](${SOCIAL.whatsapp}): chat directly with the BMAsia team (${OFFICIAL_CONTACTS.phoneDisplay})
+- [LINE](${SOCIAL.line}): message the BMAsia team on LINE
 
 ## Optional
 

@@ -4,6 +4,7 @@ import { FormEvent, useEffect, useMemo, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { ArrowRight, CalendarDays, Check, Clock3, ExternalLink, LoaderCircle, MonitorUp, Sparkles, Video } from 'lucide-react';
 import { EXTERNAL_LINKS, withAttribution } from '@/lib/external-links';
+import { useTurnstile } from '@/components/security/useTurnstile';
 
 type BookingProvider = 'google-meet' | 'microsoft-teams';
 type BookingSlot = { start: string; end: string };
@@ -50,6 +51,7 @@ export function BookingExperience() {
   // Keep the server and first client render identical. The browser timezone is
   // only available after hydration, so resolve it once the component mounts.
   const [visitorTimeZone, setVisitorTimeZone] = useState('Asia/Bangkok');
+  const turnstile = useTurnstile('booking');
 
   const loadAvailability = async () => {
     setStatus('loading');
@@ -116,12 +118,14 @@ export function BookingExperience() {
       pendingRequest.current = { details: requestDetails, id: crypto.randomUUID().replaceAll('-', '') };
     }
     try {
+      const turnstileToken = await turnstile.getToken();
       const response = await fetch('/api/booking', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...details,
           requestId: pendingRequest.current.id,
+          turnstileToken,
         }),
       });
       const payload = await response.json() as { code?: string };
@@ -130,6 +134,10 @@ export function BookingExperience() {
           setSelectedStart('');
           await loadAvailability();
           setError(t('slotGone'));
+          return;
+        }
+        if (payload.code === 'daily_cap') {
+          setStatus('fallback');
           return;
         }
         throw new Error('booking_failed');
@@ -267,6 +275,7 @@ export function BookingExperience() {
               <textarea name="notes" maxLength={2000} rows={4} placeholder={t('notesPlaceholder')} className="w-full resize-none rounded-2xl border border-white/10 bg-white/[0.035] px-4 py-3 text-sm leading-6 text-white outline-none transition placeholder:text-white/24 focus:border-[#49d5c5]/50 focus:bg-white/[0.055]" />
             </label>
             <label className="sr-only" aria-hidden="true">Website<input name="website" tabIndex={-1} autoComplete="off" /></label>
+            <div ref={turnstile.containerRef} className="flex justify-center [&>*]:mt-4" />
 
             {error && <p className="mt-4 rounded-xl border border-red-400/20 bg-red-400/[0.075] px-4 py-3 text-sm text-red-200" role="alert">{error}</p>}
 

@@ -56,3 +56,11 @@ Official references:
 - [OpenAI model catalogue](https://developers.openai.com/api/docs/models)
 - [OpenAI API safety best practices](https://developers.openai.com/api/docs/guides/safety-best-practices)
 - [OpenAI API data controls](https://platform.openai.com/docs/models/default-usage-policies-by-endpoint)
+
+## Abuse protection
+
+- Calendar invitations go to whatever address a visitor types, so the attendee-visible summary, description, location and Teams subject contain only fixed BMAsia text, the slot time and the meeting link. The visitor's name, company and notes are stored in the event's private extended properties and sent to `NOTIFICATION_EMAIL` as an internal "Demo booked" email marked unverified.
+- `BOOKING_DAILY_CAP` (default `15`) limits new bookings per UTC day across all visitors. When it is reached, the booking form shows the Calendly fallback.
+- Cloudflare Turnstile is optional. Set both `TURNSTILE_SITE_KEY` and `TURNSTILE_SECRET_KEY` to require a passing check on `/api/booking` and `/api/assistant`. With either key empty, verification is skipped and a warning is logged once per instance. The widget runs invisibly and only shows a challenge when Cloudflare needs interaction. Add `bmasiamusic.com` (and any preview hostnames) to the Turnstile widget's allowed hostnames.
+- Rate limits, the daily cap and the per-IP client address (`cf-connecting-ip`, then the last `x-forwarded-for` hop) are held in per-instance memory: they reset on deploy or restart and are not shared between instances.
+- The assistant accepts only the visitor's own earlier messages as history and is instructed to give only the official contacts from `lib/official-contacts.ts`.

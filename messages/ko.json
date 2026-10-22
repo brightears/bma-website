@@ -2367,5 +2367,21 @@
         }
       }
     }
+  },
+  "verifyContacts": {
+    "title": "BMAsia 연락처 확인",
+    "intro": "BMAsia를 사칭하는 사기가 발생할 수 있습니다. 메시지, 청구서 또는 전화에 따라 행동하기 전에 공식 채널에서 온 것인지 확인하세요.",
+    "domainsLabel": "공식 웹사이트",
+    "emailLabel": "공식 이메일",
+    "phoneLabel": "전화 및 WhatsApp",
+    "lineLabel": "LINE",
+    "neverTitle": "BMAsia는 다음을 절대 요청하지 않습니다:",
+    "never": {
+      "commands": "컴퓨터에서 명령어나 스크립트 실행",
+      "remoteTools": "원격 접속 또는 화면 공유 도구 설치",
+      "secrets": "이메일이나 채팅으로 비밀번호, 일회용 코드 또는 카드 번호 공유",
+      "bank": "새 은행 계좌나 변경된 계좌로 송금"
+    },
+    "unsure": "의심스러운 점이 있으면 중단하고 위 채널을 통해 문의하세요."
   }
 }

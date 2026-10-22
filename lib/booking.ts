@@ -250,16 +250,56 @@ function assertEventOwnership(event: GoogleEvent, requestId: string) {
   return event;
 }
 
+// Everything below is sent by Google Calendar to the address typed into the
+// public booking form. Attendee-visible fields (summary, description, location,
+// Teams subject) therefore contain only fixed BMAsia text, the slot time and the
+// meeting link. Visitor-supplied name/company/notes stay in the calendar
+// owner's private extended properties and the internal staff email.
+const EVENT_SUMMARY = 'BMAsia music demo';
+
+export function formatBookingSlot(startIso: string) {
+  const start = new Date(startIso);
+  const end = new Date(start.getTime() + BOOKING_DURATION_MINUTES * 60 * 1000);
+  const day = new Intl.DateTimeFormat('en-GB', {
+    timeZone: BOOKING_TIME_ZONE,
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  }).format(start);
+  const time = (date: Date) => new Intl.DateTimeFormat('en-GB', {
+    timeZone: BOOKING_TIME_ZONE,
+    hour: '2-digit',
+    minute: '2-digit',
+    hourCycle: 'h23',
+  }).format(date);
+  return `${day}, ${time(start)}-${time(end)} (${BOOKING_TIME_ZONE})`;
+}
+
 function eventDescription(request: BookingRequest, meetingLine?: string) {
   const lines = [
-    'BMAsia website demo booking',
+    `${EVENT_SUMMARY} (${BOOKING_DURATION_MINUTES} minutes)`,
+    `Time: ${formatBookingSlot(request.start)}`,
+    meetingLine || (request.provider === 'google-meet' ? 'Join with the Google Meet link attached to this invitation.' : ''),
     '',
-    `Contact: ${request.name}`,
-    `Company: ${request.company}`,
-    request.notes ? `Topics: ${request.notes}` : '',
-    meetingLine || '',
+    'Booked through bmasiamusic.com.',
+    'BMAsia will never ask you to pay into a new bank account, share passwords or card numbers, run commands or install remote-access software.',
+    'Verify official BMAsia contacts at https://bmasiamusic.com/en/quotation',
   ];
-  return lines.filter(Boolean).join('\n');
+  return lines.filter((line, index) => line || index === 3).join('\n');
+}
+
+function privateProperties(request: BookingRequest) {
+  // Google limits each private property value to 1024 characters.
+  return {
+    source: 'bmasiamusic.com',
+    requestId: request.requestId,
+    provider: request.provider,
+    contactName: request.name.slice(0, 1000),
+    contactEmail: request.email.slice(0, 254),
+    company: request.company.slice(0, 1000),
+    notes: (request.notes || '').slice(0, 1000),
+  };
 }
 
 async function getGoogleEvent(eventId: string) {
@@ -280,14 +320,14 @@ async function insertGoogleEvent(request: BookingRequest, options: { reserveOnly
     method: 'POST',
     body: JSON.stringify({
       id: options.eventId,
-      summary: options.reserveOnly ? 'BMAsia demo — reserving meeting link' : `BMAsia demo — ${request.company}`,
+      summary: options.reserveOnly ? `${EVENT_SUMMARY} - reserving meeting link` : EVENT_SUMMARY,
       description: eventDescription(request),
       start: { dateTime: start.toISOString(), timeZone: BOOKING_TIME_ZONE },
       end: { dateTime: end.toISOString(), timeZone: BOOKING_TIME_ZONE },
-      attendees: options.reserveOnly ? undefined : [{ email: request.email, displayName: request.name }],
+      attendees: options.reserveOnly ? undefined : [{ email: request.email }],
       guestsCanInviteOthers: false,
       guestsCanModify: false,
-      extendedProperties: { private: { source: 'bmasiamusic.com', requestId: request.requestId, provider: request.provider } },
+      extendedProperties: { private: privateProperties(request) },
       conferenceData: options.meet ? { createRequest: { requestId: request.requestId, conferenceSolutionKey: { type: 'hangoutsMeet' } } } : undefined,
     }),
   });
@@ -301,11 +341,11 @@ async function patchGoogleEventWithTeams(request: BookingRequest, eventId: strin
   const response = await googleCalendarFetch(`/calendars/${encodeURIComponent(calendarId)}/events/${encodeURIComponent(eventId)}?sendUpdates=all`, {
     method: 'PATCH',
     body: JSON.stringify({
-      summary: `BMAsia demo — ${request.company}`,
-      description: eventDescription(request, `Microsoft Teams: ${joinUrl}`),
+      summary: EVENT_SUMMARY,
+      description: eventDescription(request, `Join Microsoft Teams: ${joinUrl}`),
       location: joinUrl,
-      attendees: [{ email: request.email, displayName: request.name }],
-      extendedProperties: { private: { source: 'bmasiamusic.com', requestId: request.requestId, provider: request.provider } },
+      attendees: [{ email: request.email }],
+      extendedProperties: { private: privateProperties(request) },
     }),
   });
   if (!response.ok) throw new Error(`Google Calendar event update failed with ${response.status}`);
@@ -329,7 +369,7 @@ async function createTeamsMeeting(request: BookingRequest) {
     body: JSON.stringify({
       startDateTime: start.toISOString(),
       endDateTime: end.toISOString(),
-      subject: `BMAsia demo — ${request.company}`,
+      subject: EVENT_SUMMARY,
     }),
     cache: 'no-store',
     signal: AbortSignal.timeout(12_000),

@@ -31,9 +31,14 @@ new Function('require', 'module', 'exports', 'console', ts.transpileModule(
 const { saveChatInquiry } = module.exports;
 await saveChatInquiry({ email: 'test@example.com', conversation: 'TEST transcript', locale: 'th', kind: 'follow-up' });
 assert.equal(records[0].name, 'Website visitor');
-assert.match(records[0].message, /Website chat follow-up.*Language: th.*TEST transcript/s);
+assert.match(records[0].message, /Website chat follow-up.*Language: th.*UNVERIFIED — supplied by the website visitor.*TEST transcript/s);
 assert.equal(notifications, 1);
 console.log('PASS chat follow-up saved before email, including language and transcript');
+await saveChatInquiry({ email: 'test@example.com', conversation: 'x'.repeat(20_000), locale: 'en', kind: 'follow-up' });
+assert.ok(records.at(-1).message.length < 6_600 && records.at(-1).message.endsWith('[truncated]'));
+records.pop();
+notifications -= 1;
+console.log('PASS client transcript is marked unverified and capped');
 failEmail = true;
 await saveChatInquiry({ email: 'test@example.com', conversation: 'TEST summary', locale: 'invalid', kind: 'lead' });
 assert.equal(records.length, 2);

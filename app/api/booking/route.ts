@@ -2,11 +2,20 @@ import { NextRequest, NextResponse } from 'next/server';
 import {
   createBooking,
   BookingSlotConflictError,
+  formatBookingSlot,
   getBookingCapability,
   type BookingProvider,
   type BookingRequest,
 } from '@/lib/booking';
-import { checkRateLimit, getClientIP, isHoneypotTriggered } from '@/lib/rate-limiter';
+import { sendBookingNotification } from '@/lib/email';
+import {
+  checkRateLimit,
+  getClientIP,
+  isDailyQuotaReached,
+  isHoneypotTriggered,
+  recordDailyQuotaUse,
+} from '@/lib/rate-limiter';
+import { verifyTurnstile } from '@/lib/turnstile';
 import { locales } from '@/lib/i18n-config';
 
 const clean = (value: unknown, max: number) => typeof value === 'string'
@@ -15,6 +24,15 @@ const clean = (value: unknown, max: number) => typeof value === 'string'
 
 const EMAIL = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 const REQUEST_ID = /^[a-zA-Z0-9_-]{16,96}$/;
+
+// Global cap on new bookings per UTC day (all visitors combined), so a script
+// cannot flood the BMAsia calendar or use it to mass-send invitations.
+// Per-instance memory; resets on deploy/restart.
+const DAILY_BOOKING_CAP = (() => {
+  const parsed = Number(process.env.BOOKING_DAILY_CAP);
+  return Number.isInteger(parsed) && parsed > 0 ? parsed : 15;
+})();
+const DAILY_QUOTA_KEY = 'booking:global';
 
 export async function POST(request: NextRequest) {
   const capability = getBookingCapability();
@@ -54,6 +72,17 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Please check the booking details.' }, { status: 400 });
     }
 
+    const human = await verifyTurnstile(body.turnstileToken, clientIP, 'booking');
+    if (!human.ok) {
+      console.warn('Booking rejected by Turnstile:', human.reason);
+      return NextResponse.json({ error: 'Please confirm you are not a robot and try again.', code: 'verification_failed' }, { status: 403 });
+    }
+
+    if (isDailyQuotaReached(DAILY_QUOTA_KEY, DAILY_BOOKING_CAP)) {
+      console.warn(`Booking daily cap (${DAILY_BOOKING_CAP}) reached; rejecting new booking.`);
+      return NextResponse.json({ error: 'Online booking is busy today. Please use the alternative booking link.', code: 'daily_cap' }, { status: 429 });
+    }
+
     const bookingRequest: BookingRequest = {
       requestId,
       start: new Date(start).toISOString(),
@@ -65,6 +94,23 @@ export async function POST(request: NextRequest) {
       locale: locales.includes(locale as (typeof locales)[number]) ? locale : 'en',
     };
     const result = await createBooking(bookingRequest);
+
+    if (!result.alreadyExists) {
+      recordDailyQuotaUse(DAILY_QUOTA_KEY);
+      try {
+        await sendBookingNotification({
+          name,
+          email,
+          company,
+          notes: notes || undefined,
+          slot: formatBookingSlot(bookingRequest.start),
+          provider,
+          eventId: result.eventId,
+        });
+      } catch (error) {
+        console.error('Booking staff notification failed:', error instanceof Error ? error.message : 'unknown error');
+      }
+    }
 
     return NextResponse.json({
       success: true,

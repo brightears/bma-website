@@ -3,6 +3,7 @@
 import { createContext, useContext, useState, useCallback, useRef, ReactNode } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname } from 'next/navigation';
+import { useTurnstile } from '@/components/security/useTurnstile';
 
 export interface ChatMessage {
   id: string;
@@ -52,6 +53,7 @@ export function ChatProvider({ children }: ChatProviderProps) {
   const locale = useLocale();
   const pathname = usePathname();
   const sessionIdRef = useRef(`web-${Date.now()}-${Math.random().toString(36).slice(2, 14)}`);
+  const { containerRef: turnstileRef, getToken: getTurnstileToken } = useTurnstile('assistant');
 
   // State
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -140,7 +142,12 @@ export function ChatProvider({ children }: ChatProviderProps) {
       setIsTyping(true);
 
       try {
-        const history = messages.slice(-8).map((message) => ({ role: message.role, text: message.text }));
+        // The server accepts only the visitor's own earlier messages as history.
+        const history = messages
+          .filter((message) => message.role === 'user')
+          .slice(-6)
+          .map((message) => ({ role: message.role, text: message.text }));
+        const turnstileToken = await getTurnstileToken();
         const response = await fetch('/api/assistant', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -150,6 +157,7 @@ export function ChatProvider({ children }: ChatProviderProps) {
             pagePath: pathname,
             history,
             sessionId: sessionIdRef.current,
+            turnstileToken,
           }),
         });
 
@@ -182,7 +190,7 @@ export function ChatProvider({ children }: ChatProviderProps) {
         setIsTyping(false);
       }
     },
-    [locale, messages, pathname, t]
+    [locale, messages, pathname, t, getTurnstileToken]
   );
 
   return (
@@ -203,6 +211,7 @@ export function ChatProvider({ children }: ChatProviderProps) {
       }}
     >
       {children}
+      <div ref={turnstileRef} className="fixed bottom-4 left-1/2 z-[120] -translate-x-1/2" />
     </ChatContext.Provider>
   );
 }
