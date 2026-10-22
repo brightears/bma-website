@@ -2367,5 +2367,21 @@
         }
       }
     }
+  },
+  "verifyContacts": {
+    "title": "核实 BMAsia 联系方式",
+    "intro": "有不法分子可能冒充 BMAsia。在根据任何消息、发票或来电采取行动之前，请确认其来自我们的官方渠道。",
+    "domainsLabel": "官方网站",
+    "emailLabel": "官方邮箱",
+    "phoneLabel": "电话和 WhatsApp",
+    "lineLabel": "LINE",
+    "neverTitle": "BMAsia 绝不会要求您：",
+    "never": {
+      "commands": "在您的电脑上运行命令或脚本",
+      "remoteTools": "安装远程访问或屏幕共享工具",
+      "secrets": "通过邮件或聊天提供密码、一次性验证码或银行卡号",
+      "bank": "向新的或已变更的银行账户付款"
+    },
+    "unsure": "如有任何可疑之处，请停止操作，并通过以上渠道联系我们。"
   }
 }

@@ -1,0 +1,8 @@
+# BMAsia security contact (RFC 9116)
+# Report security vulnerabilities or impersonation of BMAsia here.
+# BMAsia will never ask you to run commands, install remote-access tools,
+# share passwords or card numbers, or pay into a new bank account.
+Contact: mailto:info@bmasiamusic.com
+Expires: 2027-10-22T00:00:00.000Z
+Preferred-Languages: en, th
+Canonical: https://bmasiamusic.com/.well-known/security.txt

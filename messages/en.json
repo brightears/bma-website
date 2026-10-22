@@ -2367,5 +2367,21 @@
         }
       }
     }
+  },
+  "verifyContacts": {
+    "title": "Verify BMAsia contacts",
+    "intro": "Scammers sometimes pretend to be BMAsia. Before you act on a message, invoice or call, check that it comes from one of our official channels.",
+    "domainsLabel": "Official websites",
+    "emailLabel": "Official email",
+    "phoneLabel": "Phone and WhatsApp",
+    "lineLabel": "LINE",
+    "neverTitle": "BMAsia will never ask you to:",
+    "never": {
+      "commands": "run commands or scripts on your computer",
+      "remoteTools": "install remote-access or screen-sharing tools",
+      "secrets": "share passwords, one-time codes or card numbers by email or chat",
+      "bank": "pay into a new or changed bank account"
+    },
+    "unsure": "If something feels wrong, stop and contact us through the channels above."
   }
 }

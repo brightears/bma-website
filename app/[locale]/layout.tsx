@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import '../globals.css';
 import { SITE } from '@/lib/constants';
+import { OFFICIAL_CONTACTS } from '@/lib/official-contacts';
 import { locales, type Locale } from '@/lib/i18n-config';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
@@ -160,12 +161,27 @@ export default async function LocaleLayout({
                   description: t('description'),
                   slogan: SITE.tagline,
                   foundingDate: '2002',
-                  contactPoint: {
-                    '@type': 'ContactPoint',
-                    email: SITE.email,
-                    contactType: 'sales',
-                    availableLanguage: [...locales],
-                  },
+                  email: OFFICIAL_CONTACTS.email,
+                  telephone: OFFICIAL_CONTACTS.phoneE164,
+                  contactPoint: [
+                    {
+                      '@type': 'ContactPoint',
+                      email: OFFICIAL_CONTACTS.email,
+                      telephone: OFFICIAL_CONTACTS.phoneE164,
+                      contactType: 'sales',
+                      url: `${SITE.url}/en/quotation/`,
+                      availableLanguage: [...locales],
+                    },
+                    {
+                      '@type': 'ContactPoint',
+                      email: OFFICIAL_CONTACTS.email,
+                      telephone: OFFICIAL_CONTACTS.phoneE164,
+                      contactType: 'customer support',
+                      availableLanguage: [...locales],
+                    },
+                  ],
+                  // Only profile URLs that exist in lib/constants.ts.
+                  sameAs: [OFFICIAL_CONTACTS.line],
                   areaServed: 'Asia-Pacific',
                   brand: {
                     '@type': 'Brand',

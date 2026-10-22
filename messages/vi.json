@@ -2367,5 +2367,21 @@
         }
       }
     }
+  },
+  "verifyContacts": {
+    "title": "Xác minh thông tin liên hệ của BMAsia",
+    "intro": "Kẻ gian đôi khi mạo danh BMAsia. Trước khi làm theo một tin nhắn, hóa đơn hoặc cuộc gọi, hãy kiểm tra rằng nó đến từ một kênh chính thức của chúng tôi.",
+    "domainsLabel": "Trang web chính thức",
+    "emailLabel": "Email chính thức",
+    "phoneLabel": "Điện thoại và WhatsApp",
+    "lineLabel": "LINE",
+    "neverTitle": "BMAsia sẽ không bao giờ yêu cầu bạn:",
+    "never": {
+      "commands": "chạy lệnh hoặc tập lệnh trên máy tính của bạn",
+      "remoteTools": "cài đặt công cụ truy cập từ xa hoặc chia sẻ màn hình",
+      "secrets": "gửi mật khẩu, mã OTP hoặc số thẻ qua email hay tin nhắn",
+      "bank": "chuyển tiền vào một tài khoản ngân hàng mới hoặc đã thay đổi"
+    },
+    "unsure": "Nếu thấy có gì bất thường, hãy dừng lại và liên hệ với chúng tôi qua các kênh ở trên."
   }
 }

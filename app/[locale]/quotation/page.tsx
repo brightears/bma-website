@@ -8,6 +8,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import { ArrowDownRight, ArrowRight, CircleCheck, Headphones, Music2 } from 'lucide-react';
 import { SITE, SOCIAL } from '@/lib/constants';
 import { LineLink, WhatsAppLink } from '@/components/icons';
+import { VerifyContacts } from '@/components/sections/VerifyContacts';
 
 const QuotationForm = dynamic(() => import('@/components/forms/QuotationForm').then((mod) => mod.QuotationForm), {
   ssr: false,
@@ -73,6 +74,8 @@ export default function QuotationPage() {
               <WhatsAppLink href={SOCIAL.whatsapp} size={19} />
               <LineLink href={SOCIAL.line} size={19} />
             </div>
+
+            <VerifyContacts className="mt-8 max-w-xl" />
           </motion.div>
 
           <motion.div

@@ -2367,5 +2367,21 @@
         }
       }
     }
+  },
+  "verifyContacts": {
+    "title": "Verifikasi kontak BMAsia",
+    "intro": "Penipu terkadang mengaku sebagai BMAsia. Sebelum menindaklanjuti pesan, tagihan, atau panggilan, pastikan itu berasal dari salah satu saluran resmi kami.",
+    "domainsLabel": "Situs web resmi",
+    "emailLabel": "Email resmi",
+    "phoneLabel": "Telepon dan WhatsApp",
+    "lineLabel": "LINE",
+    "neverTitle": "BMAsia tidak akan pernah meminta Anda untuk:",
+    "never": {
+      "commands": "menjalankan perintah atau skrip di komputer Anda",
+      "remoteTools": "memasang alat akses jarak jauh atau berbagi layar",
+      "secrets": "membagikan kata sandi, kode sekali pakai, atau nomor kartu melalui email atau chat",
+      "bank": "membayar ke rekening bank baru atau yang diubah"
+    },
+    "unsure": "Jika ada yang terasa janggal, berhenti dan hubungi kami melalui saluran di atas."
   }
 }
