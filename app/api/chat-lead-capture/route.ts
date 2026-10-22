@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { checkRateLimit, getClientIP } from '@/lib/rate-limiter';
-import { saveChatInquiry } from '@/lib/chat-inquiry';
+import { MAX_CHAT_TRANSCRIPT_CHARS, saveChatInquiry } from '@/lib/chat-inquiry';
 
 /**
  * Chat Lead Capture API endpoint
@@ -53,7 +53,7 @@ export async function POST(request: NextRequest) {
       email: safeEmail,
       name: clean(name, 120),
       company: clean(company, 160),
-      conversation: clean(conversationSummary, 4_000),
+      conversation: clean(conversationSummary, MAX_CHAT_TRANSCRIPT_CHARS + 1),
       locale,
       kind: 'lead',
     });
