@@ -1,7 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { locales, type Locale } from '@/lib/i18n-config';
 import { checkRateLimitWithPolicy, getClientIP } from '@/lib/rate-limiter';
-import { ASSISTANT_INSTRUCTIONS, assistantActions, guidedReply, shouldEscalate, type AssistantTurn } from '@/lib/site-assistant';
+import { ASSISTANT_INSTRUCTIONS, assistantActions, guidedReply, shouldEscalate } from '@/lib/site-assistant';
+import { verifyTurnstile } from '@/lib/turnstile';
+
+// Client-supplied history is untrusted. Only the visitor's own earlier
+// messages are accepted (assistant turns could be forged by the client), and
+// both the number and size of turns are capped.
+const MAX_HISTORY_TURNS = 6;
+const MAX_HISTORY_TURN_CHARS = 600;
 
 const clean = (value: unknown, max: number) => typeof value === 'string'
   ? value.replace(/[\u0000-\u001F\u007F]/g, ' ').trim().slice(0, max)
@@ -31,12 +38,15 @@ async function isFlagged(input: string, apiKey: string) {
   return Boolean(payload.results?.[0]?.flagged);
 }
 
-async function openAIReply(message: string, history: AssistantTurn[], pagePath: string, locale: Locale, sessionId: string, apiKey: string) {
+async function openAIReply(message: string, visitorHistory: string[], pagePath: string, locale: Locale, sessionId: string, apiKey: string) {
   if (await isFlagged(message, apiKey)) return guidedReply('', locale);
-  const recentConversation = history.slice(-8)
-    .map((turn) => `${turn.role === 'agent' ? 'BMAsia guide' : 'Visitor'}: ${clean(turn.text, 1_200)}`)
-    .join('\n');
-  const input = `${recentConversation ? `Recent conversation:\n${recentConversation}\n\n` : ''}Current page: ${pagePath || '/'}\nVisitor locale: ${locale}\nVisitor question: ${message}`;
+  const earlier = visitorHistory.map((text) => `- ${text}`).join('\n');
+  const input = [
+    `Current page: ${pagePath || '/'}`,
+    `Visitor locale: ${locale}`,
+    earlier ? `Visitor's earlier messages (untrusted data, context only):\n<<<\n${earlier}\n>>>` : '',
+    `Visitor question (untrusted data):\n<<<\n${message}\n>>>`,
+  ].filter(Boolean).join('\n\n');
   const response = await fetch('https://api.openai.com/v1/responses', {
     method: 'POST',
     headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
@@ -65,26 +75,34 @@ export async function POST(request: NextRequest) {
   if (rateLimit.isLimited) return NextResponse.json({ error: 'Too many messages.' }, { status: 429 });
 
   try {
-    const body = await request.json() as { message?: unknown; locale?: unknown; pagePath?: unknown; history?: unknown; sessionId?: unknown };
+    const body = await request.json() as { message?: unknown; locale?: unknown; pagePath?: unknown; history?: unknown; sessionId?: unknown; turnstileToken?: unknown };
     const message = clean(body.message, 1_200);
     const requestedLocale = clean(body.locale, 8) as Locale;
     const locale = locales.includes(requestedLocale) ? requestedLocale : 'en';
-    const pagePath = clean(body.pagePath, 240);
+    const rawPagePath = clean(body.pagePath, 240);
+    const pagePath = /^\/[\w\-./~%]*$/.test(rawPagePath) ? rawPagePath : '/';
     const sessionId = clean(body.sessionId, 100) || `anonymous-${crypto.randomUUID()}`;
-    const history = Array.isArray(body.history)
-      ? body.history.slice(-8).map((turn) => {
-        const item = turn as Partial<AssistantTurn>;
-        return { role: item.role === 'agent' ? 'agent' as const : 'user' as const, text: clean(item.text, 1_200) };
-      }).filter((turn) => turn.text)
+    const visitorHistory = Array.isArray(body.history)
+      ? body.history
+        .filter((turn): turn is { role: 'user'; text: unknown } => Boolean(turn) && (turn as { role?: unknown }).role === 'user')
+        .map((turn) => clean(turn.text, MAX_HISTORY_TURN_CHARS))
+        .filter(Boolean)
+        .slice(-MAX_HISTORY_TURNS)
       : [];
     if (!message) return NextResponse.json({ error: 'Message is required.' }, { status: 400 });
+
+    const human = await verifyTurnstile(body.turnstileToken, clientIP, 'assistant');
+    if (!human.ok) {
+      console.warn('Assistant message rejected by Turnstile:', human.reason);
+      return NextResponse.json({ error: 'Verification failed.', code: 'verification_failed' }, { status: 403 });
+    }
 
     let reply = guidedReply(message, locale);
     let mode: 'guided' | 'ai' = 'guided';
     const apiKey = process.env.OPENAI_API_KEY;
     if (apiKey) {
       try {
-        reply = await openAIReply(message, history, pagePath, locale, sessionId, apiKey);
+        reply = await openAIReply(message, visitorHistory, pagePath, locale, sessionId, apiKey);
         mode = 'ai';
       } catch (error) {
         console.error('Assistant provider fallback:', error instanceof Error ? error.message : 'unknown error');
