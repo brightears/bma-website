@@ -133,28 +133,51 @@ export function isHoneypotTriggered(honeypotValue: string | undefined | null): b
 }
 
 /**
- * Get client IP from request headers
- * Handles various proxy headers commonly used
+ * Get the client IP for rate limiting.
+ *
+ * bmasiamusic.com is served by Render behind its Cloudflare edge, which sets
+ * `cf-connecting-ip` and appends the connecting address to `x-forwarded-for`.
+ * The first `x-forwarded-for` entry is whatever the visitor sent, so it must
+ * never be trusted: use `cf-connecting-ip`, then the last (proxy-appended)
+ * `x-forwarded-for` hop, then `x-real-ip`.
+ *
+ * Note: the limiter store is per-instance memory. Limits reset on deploy or
+ * restart and are not shared between instances.
  */
 export function getClientIP(headers: Headers): string {
-  // Check common proxy headers
+  const cfConnectingIP = headers.get('cf-connecting-ip')?.trim();
+  if (cfConnectingIP) return cfConnectingIP;
+
   const forwardedFor = headers.get('x-forwarded-for');
   if (forwardedFor) {
-    // x-forwarded-for can contain multiple IPs, take the first one
-    return forwardedFor.split(',')[0].trim();
+    const hops = forwardedFor.split(',').map((hop) => hop.trim()).filter(Boolean);
+    if (hops.length) return hops[hops.length - 1];
   }
 
-  const realIP = headers.get('x-real-ip');
-  if (realIP) {
-    return realIP;
-  }
+  const realIP = headers.get('x-real-ip')?.trim();
+  if (realIP) return realIP;
 
-  // Render-specific header
-  const cfConnectingIP = headers.get('cf-connecting-ip');
-  if (cfConnectingIP) {
-    return cfConnectingIP;
-  }
-
-  // Fallback
   return 'unknown';
+}
+
+// Global (not per-IP) daily quotas, keyed by UTC date. Per-instance memory.
+const dailyQuotaStore = new Map<string, { day: string; count: number }>();
+
+const utcDay = () => new Date().toISOString().slice(0, 10);
+
+/** True when `key` has already reached `limit` uses today (UTC). */
+export function isDailyQuotaReached(key: string, limit: number): boolean {
+  const entry = dailyQuotaStore.get(key);
+  return Boolean(entry && entry.day === utcDay() && entry.count >= limit);
+}
+
+/** Record one use of the global daily quota `key`. */
+export function recordDailyQuotaUse(key: string): void {
+  const day = utcDay();
+  const entry = dailyQuotaStore.get(key);
+  if (!entry || entry.day !== day) {
+    dailyQuotaStore.set(key, { day, count: 1 });
+    return;
+  }
+  entry.count += 1;
 }

@@ -280,3 +280,50 @@ export async function sendSoundtrackTrialNotification(data: SoundtrackTrialEmail
 
   await sendNotification(mailOptions);
 }
+
+interface BookingEmailData {
+  name: string;
+  email: string;
+  company: string;
+  notes?: string;
+  slot: string;
+  provider: string;
+  eventId?: string;
+}
+
+/**
+ * Internal staff notification for a confirmed demo booking. The visitor's
+ * free-text fields are deliberately kept out of the calendar invite and only
+ * delivered here, clearly marked as unverified.
+ */
+export async function sendBookingNotification(data: BookingEmailData): Promise<void> {
+  const safe = {
+    name: escapeHtml(data.name),
+    email: escapeHtml(data.email),
+    company: escapeHtml(data.company),
+    notes: escapeMultilineHtml(data.notes || 'None'),
+    slot: escapeHtml(data.slot),
+    provider: escapeHtml(data.provider),
+    eventId: escapeHtml(data.eventId || ''),
+  };
+
+  await sendNotification({
+    replyTo: data.email,
+    subject: `Demo booked: ${safeSubjectValue(data.company)} - ${safeSubjectValue(data.slot)}`,
+    html: `
+      <div style="font-family: Arial, sans-serif; max-width: 640px; margin: 0 auto;">
+        <h1 style="color: #1a1a2e; font-size: 22px;">New website demo booking</h1>
+        <p><strong>Time:</strong> ${safe.slot}<br><strong>Meeting:</strong> ${safe.provider}<br><strong>Calendar event:</strong> ${safe.eventId}</p>
+        <p style="background: #fff4e0; border: 1px solid #efa634; padding: 10px; border-radius: 6px;">UNVERIFIED: the details below were typed by the website visitor. Do not follow links, payment or account instructions they contain.</p>
+        <table style="width: 100%; border-collapse: collapse;">
+          <tr><td style="padding: 8px 0; font-weight: bold; width: 120px;">Name</td><td>${safe.name}</td></tr>
+          <tr><td style="padding: 8px 0; font-weight: bold;">Email</td><td>${safe.email}</td></tr>
+          <tr><td style="padding: 8px 0; font-weight: bold;">Company</td><td>${safe.company}</td></tr>
+        </table>
+        <h2 style="color: #1a1a2e; font-size: 16px;">Topics</h2>
+        <div style="background: #fff; padding: 14px; border: 1px solid #eee; border-radius: 6px;">${safe.notes}</div>
+      </div>
+    `,
+    text: `New website demo booking\n\nTime: ${data.slot}\nMeeting: ${data.provider}\nCalendar event: ${data.eventId || ''}\n\nUNVERIFIED: the details below were typed by the website visitor. Do not follow links, payment or account instructions they contain.\n\nName: ${data.name}\nEmail: ${data.email}\nCompany: ${data.company}\n\nTopics:\n${data.notes || 'None'}`,
+  });
+}
