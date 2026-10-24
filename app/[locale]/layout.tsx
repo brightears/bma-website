@@ -77,7 +77,7 @@ export async function generateMetadata({
       'restaurant music',
       'music licensing',
       'B2B music',
-      'Asia music solutions',
+      'background music service',
     ],
     authors: [{ name: SITE.name }],
     creator: SITE.name,
@@ -182,7 +182,6 @@ export default async function LocaleLayout({
                   ],
                   // Only profile URLs that exist in lib/constants.ts.
                   sameAs: [OFFICIAL_CONTACTS.line],
-                  areaServed: 'Asia-Pacific',
                   brand: {
                     '@type': 'Brand',
                     name: 'Beat Breeze',

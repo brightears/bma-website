@@ -150,47 +150,6 @@
     "meetNote": "Liên kết họp riêng sẽ được thêm vào lời mời lịch.",
     "privacy": "Thông tin của bạn chỉ được dùng để sắp xếp và chuẩn bị cuộc trò chuyện này."
   },
-  "about": {
-    "sectionTitle": "Chúng tôi",
-    "sectionTitleHighlight": "là ai",
-    "sectionSubtitle": "Đối tác đáng tin cậy trong việc tạo ra trải nghiệm âm thanh đáng nhớ",
-    "imageAlt": "Phòng điều khiển studio nhạc chuyên nghiệp",
-    "storySince": "Từ",
-    "storyYear": "2002",
-    "storyIntro": "BMAsia đã là nhà cung cấp B2B hàng đầu thế giới về",
-    "storyHighlight": "giải pháp nhạc nền tùy chỉnh",
-    "storyDetails": "Chúng tôi tạo ra hơn 50.000 giờ nhạc hàng năm, được chế tác cẩn thận để phù hợp với concept địa điểm, củng cố hình ảnh thương hiệu và cộng hưởng với nhân khẩu học khách hàng của bạn. Đội ngũ chuyên gia của chúng tôi hiểu rằng âm nhạc phù hợp có thể biến đổi trải nghiệm khách hàng và thúc đẩy thành công kinh doanh.",
-    "differentiators": {
-      "title": "Điều làm chúng tôi khác biệt",
-      "venuesConcept": "Nhạc phù hợp với concept địa điểm của bạn",
-      "brandImage": "Phù hợp với hình ảnh thương hiệu",
-      "demographics": "Thiết kế cho nhân khẩu học khách hàng",
-      "expertTeam": "Đội ngũ chọn nhạc chuyên gia"
-    },
-    "cta": "Tìm hiểu cách chúng tôi có thể giúp doanh nghiệp của bạn",
-    "stats": {
-      "experience": {
-        "value": "23+",
-        "label": "Năm kinh nghiệm",
-        "sublabel": "Thành lập năm 2002"
-      },
-      "hours": {
-        "value": "50000+",
-        "label": "Giờ nhạc",
-        "sublabel": "Tạo ra hàng năm"
-      },
-      "tracks": {
-        "value": "100M+",
-        "label": "Bài hát có sẵn",
-        "sublabel": "Trong thư viện"
-      },
-      "global": {
-        "value": "Toàn cầu",
-        "label": "Hiện diện",
-        "sublabel": "Phạm vi toàn thế giới"
-      }
-    }
-  },
   "contact": {
     "sectionTitle": "Liên hệ",
     "sectionTitleHighlight": "chúng tôi",
@@ -310,7 +269,7 @@
   },
   "footer": {
     "tagline": "Nơi Âm Nhạc Quan Trọng",
-    "description": "Tạo bầu không khí hoàn hảo cho doanh nghiệp của bạn. BMAsia cung cấp giải pháp nhạc nền tùy chỉnh cho khách sạn, nhà hàng và bán lẻ trên khắp Châu Á-Thái Bình Dương từ năm 2002.",
+    "description": "Tạo bầu không khí hoàn hảo cho doanh nghiệp của bạn. Từ năm 2002, BMAsia thiết kế nhạc nền riêng cho khách sạn, nhà hàng, bán lẻ và nhiều doanh nghiệp khác trên khắp thế giới.",
     "navigation": "Điều hướng",
     "contact": "Liên hệ",
     "copyright": "Bảo lưu mọi quyền.",
@@ -334,7 +293,7 @@
     "fitness": "Thể hình & chăm sóc sức khỏe",
     "startHere": "Bắt đầu tại đây",
     "tryBeatBreeze": "Dùng thử Beat Breeze",
-    "trialProof": "Miễn phí 14 ngày · không cần thẻ",
+    "trialProof": "Miễn phí 14 ngày · không cần thẻ khi BMAsia thiết lập",
     "talkToBMAsia": "Trao đổi với BMAsia",
     "globalReach": "Thành lập năm 2002. Hỗ trợ các địa điểm địa phương và tập đoàn quốc tế qua một đội ngũ khu vực phản hồi nhanh.",
     "choosePath": "Chọn hướng đi âm nhạc của bạn",
@@ -702,7 +661,7 @@
       "finalTitle": "Khu vực đầu tiên sẵn sàng trong vài phút.",
       "startFree": "Bắt đầu miễn phí",
       "talkToBMAsia": "Trao đổi với BMAsia",
-      "finalDescription": "Thử trải nghiệm không gian kết nối tại một khu vực trong 14 ngày. Không cần thẻ, thiết bị chuyên dụng hay cài đặt phức tạp."
+      "finalDescription": "Trải nghiệm hệ thống địa điểm kết nối trong 14 ngày, không cần thiết bị chuyên dụng hay thiết lập phức tạp. Nhờ BMAsia sắp xếp bản dùng thử thì không cần thẻ. Bản dùng thử tự phục vụ tại beatbreeze.io yêu cầu thẻ, nhưng không tính phí khi bắt đầu."
     },
     "redesign": {
       "hero": {
@@ -893,7 +852,7 @@
           },
           {
             "q": "Có bản dùng thử miễn phí không?",
-            "a": "Có. Beat Breeze cung cấp bản dùng thử miễn phí 14 ngày, không cần thẻ, và bạn có thể tự đăng ký tại beatbreeze.io. Hãy bắt đầu với một khu vực, rồi nhờ BMAsia xây dựng kế hoạch âm nhạc và nội dung truyền thông cho nhiều khu vực khi bạn sẵn sàng."
+            "a": "Có, và có hai cách để bắt đầu bản dùng thử miễn phí 14 ngày. Nhờ BMAsia thiết lập giúp bạn thì không cần thẻ. Hoặc tự bắt đầu bản dùng thử cho một khu vực tại beatbreeze.io: bản này yêu cầu thẻ, không tính phí khi bắt đầu và tự động gia hạn hằng tháng trừ khi bạn hủy trước khi kết thúc. Khi bạn sẵn sàng, BMAsia có thể xây dựng kế hoạch âm nhạc và nội dung truyền thông cho nhiều khu vực."
           },
           {
             "q": "Beat Breeze cần phần cứng gì?",
@@ -913,7 +872,7 @@
           },
           {
             "q": "Giá được tính như thế nào?",
-            "a": "Giá được xây dựng theo báo giá. Mức giá phụ thuộc vào số lượng cơ sở và khu vực, cùng lãnh thổ triển khai. Hãy yêu cầu một đề xuất được thiết kế riêng qua trang báo giá và BMAsia sẽ đề xuất thiết lập phù hợp."
+            "a": "Tùy vào cách bạn bắt đầu. Giá tự phục vụ của Beat Breeze được công bố tại beatbreeze.io/pricing. Nếu BMAsia sắp xếp việc thiết lập, hoặc bạn đang lên kế hoạch cho nhiều cơ sở, BMAsia sẽ lập báo giá dựa trên số lượng cơ sở và khu vực cùng lãnh thổ triển khai. Hãy yêu cầu báo giá qua trang báo giá."
           }
         ]
       }
@@ -1227,7 +1186,7 @@
       "description": "Tự chọn nhạc hoặc để Music Director định hình cả ngày. Lên lịch, điều khiển mọi trình phát và quản lý từ một nơi.",
       "cta": "Khám phá nền tảng",
       "proof1": "Miễn phí 14 ngày",
-      "proof2": "Không cần thẻ",
+      "proof2": "Không cần thẻ khi BMAsia thiết lập",
       "proof3": "Không cần phần cứng riêng",
       "workflowLabel": "Từ đăng ký đến âm thanh",
       "workflowTitle": "Ba bước. Sau đó hệ thống tự vận hành.",
@@ -1238,7 +1197,7 @@
       "step2Text": "Dùng trình duyệt hoặc cài ứng dụng trên thiết bị sẵn có.",
       "step3Title": "Đưa mọi khu vực vào nhịp",
       "step3Text": "Tự chọn nhạc hoặc để Music Director tạo kế hoạch đầu tiên.",
-      "finalDescription": "Trải nghiệm đầy đủ cho một khu vực trong 14 ngày. Không cần thẻ hay thiết bị chuyên dụng."
+      "finalDescription": "Trải nghiệm đầy đủ âm nhạc trong 14 ngày, không cần thiết bị chuyên dụng hay thiết lập phức tạp. Nhờ BMAsia sắp xếp bản dùng thử thì không cần thẻ. Bản dùng thử tự phục vụ tại beatbreeze.io yêu cầu thẻ, nhưng không tính phí khi bắt đầu."
     },
     "alternative": {
       "title": "Cần những bài hát khách quen tên?",
