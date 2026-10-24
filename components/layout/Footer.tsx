@@ -67,6 +67,7 @@ export function Footer() {
               links={[
                 { label: t('howItWorks'), href: local('/how-it-works') },
                 { label: t('musicLicensing'), href: local('/licensing') },
+                { label: t('about'), href: local('/about') },
                 { label: t('talkToBMAsia'), href: local('/quotation') },
               ]}
             />

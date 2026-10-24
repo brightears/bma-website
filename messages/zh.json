@@ -5,6 +5,7 @@
   },
   "navigation": {
     "home": "首页",
+    "about": "关于我们",
     "howItWorks": "服务流程",
     "licensing": "音乐授权",
     "getQuote": "获取报价",
@@ -269,6 +270,7 @@
   },
   "footer": {
     "tagline": "音乐无处不在",
+    "about": "关于 BMAsia",
     "description": "为您的企业打造完美氛围。自 2002 年以来，BMAsia 为世界各地的酒店、餐厅、零售店及其他企业设计定制背景音乐。",
     "navigation": "导航",
     "contact": "联系方式",
@@ -2103,6 +2105,110 @@
     "analyticsDescription": "可选的 Google Tag Manager 与 Apollo 衡量工具，仅在您允许后加载。",
     "necessaryOnly": "仅必要存储",
     "allowAnalytics": "允许分析"
+  },
+  "aboutPage": {
+    "metadata": {
+      "title": "关于 BMAsia",
+      "description": "自 2002 年起，BMAsia 一直为企业设计背景音乐。了解我们如何与各类场所合作、我们提供的两条音乐路线，以及联系方式。"
+    },
+    "hero": {
+      "label": "关于 BMAsia",
+      "title": "为企业设计背景音乐，",
+      "titleHighlight": "始于 2002 年",
+      "subtitle": "BMAsia 是一家面向企业（B2B）的背景音乐公司。我们为酒店、餐厅、商店、水疗、办公室及其他场所设计音乐，并通过两个平台提供服务：Beat Breeze 和 Soundtrack。",
+      "secondaryCta": "服务流程",
+      "imageAlt": "音乐录音室控制室",
+      "facts": {
+        "founded": {
+          "value": "2002",
+          "label": "作为 B2B 背景音乐公司成立"
+        },
+        "hours": {
+          "value": "50,000+",
+          "label": "每年设计的定制音乐时长（小时）"
+        },
+        "global": {
+          "value": "全球",
+          "label": "与世界各地的场所合作"
+        }
+      }
+    },
+    "who": {
+      "label": "我们是谁",
+      "title": "专注商业空间的音乐设计公司",
+      "p1": "BMAsia 成立于 2002 年，是一家面向企业的背景音乐公司。我们的工作，就是场所每天播放的音乐：在大堂、餐厅、店面，或理疗室里。",
+      "p2": "我们每年设计超过 50,000 小时的定制音乐。每套音乐方案都会围绕场所的概念、品牌、地点和日常时间安排来规划，并兼顾其日程中的特别活动。"
+    },
+    "approach": {
+      "label": "服务流程",
+      "title": "从一次沟通开始",
+      "description": "在设计任何音乐之前，我们会先与客户沟通，了解场所本身、其文化、宾客，以及企业希望音乐发挥的作用。",
+      "steps": {
+        "01": {
+          "title": "了解场所",
+          "desc": "我们了解场所的概念、品牌、地点、宾客，以及空间在一天中的运营方式。"
+        },
+        "02": {
+          "title": "设计音乐",
+          "desc": "我们的音乐设计师根据需求规划定制音乐，包括日常时间安排和各类特别活动。"
+        },
+        "03": {
+          "title": "选择平台",
+          "desc": "我们为场所推荐 Beat Breeze 或 Soundtrack，并协助设置播放、时间表和团队访问权限。"
+        },
+        "04": {
+          "title": "持续参与",
+          "desc": "上线后，BMAsia 提供响应迅速的支持，并随着场所、季节或需求的变化，帮助音乐持续调整。"
+        }
+      },
+      "cta": "查看完整流程"
+    },
+    "routes": {
+      "label": "两条音乐路线",
+      "title": "BMAsia 为何提供两个平台",
+      "description": "不同场所对音乐有不同的需求。有些希望在同一处自行管理音乐、媒体和自动化；另一些则希望使用知名商业音乐，并由 BMAsia 负责音乐设计。",
+      "beatBreeze": {
+        "label": "BMAsia 自有平台",
+        "text": "BMAsia 的免版税平台，整合音乐、屏幕、信息发布与场所自动化，专为希望自行管理音乐的场所打造。",
+        "cta": "了解 Beat Breeze",
+        "aboutLink": "关于 Beat Breeze"
+      },
+      "soundtrack": {
+        "label": "知名商业音乐",
+        "text": "丰富的知名授权商业音乐曲库，由 BMAsia 提供，并配套音乐设计、上线实施和区域支持。",
+        "cta": "了解 Soundtrack"
+      }
+    },
+    "licensing": {
+      "label": "音乐授权",
+      "title": "授权方式取决于路线和国家",
+      "description": "Beat Breeze 与 Soundtrack 涵盖音乐权利的方式不同，而公开表演的要求也因国家而异。我们的授权指南说明了每条路线包含哪些内容，以及场所可能仍需在当地自行办理的事项。",
+      "cta": "阅读授权指南"
+    },
+    "venues": {
+      "label": "合作对象",
+      "title": "为各类场所提供音乐",
+      "description": "我们与酒店、餐厅、零售、康养、办公室及其他商业空间合作。每份指南都介绍了 BMAsia 针对该类场所的做法。"
+    },
+    "company": {
+      "label": "公司信息",
+      "title": "BMAsia 服务的运营主体",
+      "websiteLabel": "bmasiamusic.com",
+      "websiteValue": "由 BMAsia (Thailand) Co., Ltd. 与 BMAsia Limited 运营。",
+      "beatBreezeLabel": "Beat Breeze",
+      "beatBreezeValue": "由 BMAsia Group 旗下的 BMAsia Limited（香港）运营。",
+      "foundedLabel": "成立时间",
+      "foundedValue": "2002",
+      "legalNote": "本网站的法律信息详见我们的<terms>网站条款</terms>和<privacy>隐私政策</privacy>。"
+    },
+    "contact": {
+      "label": "联系我们",
+      "title": "与 BMAsia 聊聊您的场所",
+      "description": "告诉我们您的场所、地点与分区，BMAsia 专员会与您跟进。您也可以发送电子邮件或预约演示。",
+      "emailLabel": "电子邮件",
+      "quoteCta": "申请方案",
+      "demoCta": "预约演示"
+    }
   },
   "legalPages": {
     "privacy": {

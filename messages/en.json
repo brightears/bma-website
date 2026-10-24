@@ -5,6 +5,7 @@
   },
   "navigation": {
     "home": "Home",
+    "about": "About",
     "howItWorks": "How It Works",
     "licensing": "Licensing",
     "getQuote": "Get a Quote",
@@ -269,6 +270,7 @@
   },
   "footer": {
     "tagline": "Wherever Music Matters",
+    "about": "About BMAsia",
     "description": "Craft the perfect atmosphere for your business. Since 2002, BMAsia has designed custom background music for hotels, restaurants, retail and other businesses around the world.",
     "navigation": "Navigation",
     "contact": "Contact",
@@ -2103,6 +2105,110 @@
     "analyticsDescription": "Optional Google Tag Manager and Apollo measurement. Loaded only after you allow it.",
     "necessaryOnly": "Necessary only",
     "allowAnalytics": "Allow analytics"
+  },
+  "aboutPage": {
+    "metadata": {
+      "title": "About BMAsia",
+      "description": "BMAsia has designed background music for businesses since 2002. See how we work with venues, the two music routes we supply and how to reach us."
+    },
+    "hero": {
+      "label": "About BMAsia",
+      "title": "Background music for business,",
+      "titleHighlight": "designed since 2002",
+      "subtitle": "BMAsia is a business-to-business background music company. We design music for hotels, restaurants, shops, spas, offices and other venues, and supply it through two platforms: Beat Breeze and Soundtrack.",
+      "secondaryCta": "How we work",
+      "imageAlt": "Music studio control room",
+      "facts": {
+        "founded": {
+          "value": "2002",
+          "label": "Founded as a B2B background music company"
+        },
+        "hours": {
+          "value": "50,000+",
+          "label": "Hours of custom music designed each year"
+        },
+        "global": {
+          "value": "Global",
+          "label": "Working with venues around the world"
+        }
+      }
+    },
+    "who": {
+      "label": "Who we are",
+      "title": "A music design company for business spaces",
+      "p1": "BMAsia was founded in 2002 as a business-to-business background music company. Our work is the music a venue plays every day: in the lobby, the dining room, on the shop floor or in the treatment room.",
+      "p2": "Each year we design more than 50,000 hours of custom music. Each programme is planned around the venue's concept, brand, location and daily schedule, and around the special events in its calendar."
+    },
+    "approach": {
+      "label": "How we work",
+      "title": "It starts with a conversation",
+      "description": "Before we design any music, we talk with the client to understand the venue, its culture, its guests and what the business needs from its music.",
+      "steps": {
+        "01": {
+          "title": "Understand the venue",
+          "desc": "We learn about the concept, the brand, the location, the guests and how the space runs through the day."
+        },
+        "02": {
+          "title": "Design the music",
+          "desc": "Our music designers plan custom music around that brief, including the daily schedule and any special events."
+        },
+        "03": {
+          "title": "Choose the platform",
+          "desc": "We recommend Beat Breeze or Soundtrack for the venue and help set up playback, schedules and team access."
+        },
+        "04": {
+          "title": "Stay involved",
+          "desc": "After launch, BMAsia provides responsive support and helps the music evolve as the venue, season or brief changes."
+        }
+      },
+      "cta": "See the full process"
+    },
+    "routes": {
+      "label": "Two music routes",
+      "title": "Why BMAsia supplies two platforms",
+      "description": "Venues want different things from their music. Some want to run their own music, media and automation in one place. Others want familiar commercial music, with BMAsia looking after the design.",
+      "beatBreeze": {
+        "label": "BMAsia's own platform",
+        "text": "BMAsia's royalty-free platform for music, screens, messaging and venue automation, built for venues that want to run their own music.",
+        "cta": "Explore Beat Breeze",
+        "aboutLink": "About Beat Breeze"
+      },
+      "soundtrack": {
+        "label": "Familiar commercial music",
+        "text": "A large catalogue of familiar, licensed commercial music, supplied by BMAsia with music design, onboarding and regional support.",
+        "cta": "Explore Soundtrack"
+      }
+    },
+    "licensing": {
+      "label": "Music licensing",
+      "title": "Licensing depends on the route and the country",
+      "description": "Beat Breeze and Soundtrack cover music rights in different ways, and public-performance requirements vary from country to country. Our licensing guide explains what each route includes and what a venue may still need to arrange locally.",
+      "cta": "Read the licensing guide"
+    },
+    "venues": {
+      "label": "Who we work with",
+      "title": "Music for many kinds of venue",
+      "description": "We work with hotels, restaurants, retail, wellness, offices and other business spaces. Each guide shows how BMAsia approaches that type of venue."
+    },
+    "company": {
+      "label": "Company information",
+      "title": "Who operates BMAsia's services",
+      "websiteLabel": "bmasiamusic.com",
+      "websiteValue": "Operated by BMAsia (Thailand) Co., Ltd. and BMAsia Limited.",
+      "beatBreezeLabel": "Beat Breeze",
+      "beatBreezeValue": "Operated by BMAsia Limited (Hong Kong), part of BMAsia Group.",
+      "foundedLabel": "Founded",
+      "foundedValue": "2002",
+      "legalNote": "Legal details for this site are set out in our <terms>website terms</terms> and <privacy>privacy policy</privacy>."
+    },
+    "contact": {
+      "label": "Contact",
+      "title": "Talk to BMAsia about your venue",
+      "description": "Tell us about the venue, its locations and its zones, and a BMAsia specialist will follow up. You can also email us or book a demo.",
+      "emailLabel": "Email",
+      "quoteCta": "Request a proposal",
+      "demoCta": "Book a demo"
+    }
   },
   "legalPages": {
     "privacy": {

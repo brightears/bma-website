@@ -179,6 +179,7 @@ export function Header() {
                       [t('solutions'), local('/solutions/hotels')],
                       [t('howItWorks'), local('/how-it-works')],
                       [t('licensing'), local('/licensing')],
+                      [t('about'), local('/about')],
                     ].map(([label, href]) => (
                       <Link key={href} href={href} onClick={closeMenu} className="flex items-center justify-between rounded-xl px-2 py-3.5 text-lg text-white/76 hover:bg-white/[0.05] hover:text-white">
                         {label}<ArrowRight className="h-4 w-4 text-white/30" aria-hidden="true" />

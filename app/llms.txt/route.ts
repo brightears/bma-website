@@ -106,6 +106,7 @@ ${verifyBlock}
 - [Soundtrack through BMAsia](${base}/en/soundtrack-your-brand/): ${en.soundtrackPage.metadata.description}
 - [Music licensing explained](${base}/en/licensing/): ${en.licensingPage.hero.subtitle}
 - [How it works](${base}/en/how-it-works/): ${en.howItWorksPage.hero.subtitle}
+- [About BMAsia](${base}/en/about/): ${en.aboutPage.metadata.description}
 - [Request a quote](${base}/en/quotation/): tailored proposal for your venue, locations, and zones
 - [Request a Soundtrack trial](${base}/en/soundtrack-trial/): 14-day, no-card Soundtrack trial, reviewed and arranged by BMAsia
 - [Book a demo](${base}/en/book-demo/): schedule a session with the BMAsia team
