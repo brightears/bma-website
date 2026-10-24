@@ -5,6 +5,7 @@
   },
   "navigation": {
     "home": "Trang chủ",
+    "about": "Giới thiệu",
     "howItWorks": "Cách hoạt động",
     "licensing": "Bản quyền",
     "getQuote": "Nhận báo giá",
@@ -310,6 +311,7 @@
   },
   "footer": {
     "tagline": "Nơi Âm Nhạc Quan Trọng",
+    "about": "Về BMAsia",
     "description": "Tạo bầu không khí hoàn hảo cho doanh nghiệp của bạn. BMAsia cung cấp giải pháp nhạc nền tùy chỉnh cho khách sạn, nhà hàng và bán lẻ trên khắp Châu Á-Thái Bình Dương từ năm 2002.",
     "navigation": "Điều hướng",
     "contact": "Liên hệ",
@@ -2144,6 +2146,110 @@
     "analyticsDescription": "Đo lường tùy chọn bằng Google Tag Manager và Apollo. Chỉ được tải sau khi bạn cho phép.",
     "necessaryOnly": "Chỉ cần thiết",
     "allowAnalytics": "Cho phép phân tích"
+  },
+  "aboutPage": {
+    "metadata": {
+      "title": "Về BMAsia",
+      "description": "BMAsia thiết kế nhạc nền cho doanh nghiệp từ năm 2002. Tìm hiểu cách chúng tôi làm việc với các địa điểm kinh doanh, hai hướng âm nhạc chúng tôi cung cấp và cách liên hệ với chúng tôi."
+    },
+    "hero": {
+      "label": "Về BMAsia",
+      "title": "Nhạc nền cho doanh nghiệp,",
+      "titleHighlight": "thiết kế từ năm 2002",
+      "subtitle": "BMAsia là công ty nhạc nền B2B. Chúng tôi thiết kế âm nhạc cho khách sạn, nhà hàng, cửa hàng, spa, văn phòng và nhiều địa điểm khác, đồng thời cung cấp qua hai nền tảng: Beat Breeze và Soundtrack.",
+      "secondaryCta": "Cách chúng tôi làm việc",
+      "imageAlt": "Phòng điều khiển phòng thu âm nhạc",
+      "facts": {
+        "founded": {
+          "value": "2002",
+          "label": "Thành lập với tư cách công ty nhạc nền B2B"
+        },
+        "hours": {
+          "value": "50.000+",
+          "label": "Giờ nhạc tùy chỉnh được thiết kế mỗi năm"
+        },
+        "global": {
+          "value": "Toàn cầu",
+          "label": "Làm việc với các địa điểm trên khắp thế giới"
+        }
+      }
+    },
+    "who": {
+      "label": "Chúng tôi là ai",
+      "title": "Công ty thiết kế âm nhạc cho không gian kinh doanh",
+      "p1": "BMAsia được thành lập năm 2002 với tư cách công ty nhạc nền B2B. Công việc của chúng tôi là âm nhạc mà một địa điểm phát mỗi ngày: ở sảnh, phòng ăn, khu trưng bày cửa hàng hay phòng trị liệu.",
+      "p2": "Mỗi năm, chúng tôi thiết kế hơn 50.000 giờ nhạc tùy chỉnh. Mỗi chương trình được lên kế hoạch dựa trên ý tưởng, thương hiệu, vị trí và lịch hoạt động hằng ngày của địa điểm, cũng như các sự kiện đặc biệt trong lịch của họ."
+    },
+    "approach": {
+      "label": "Cách chúng tôi làm việc",
+      "title": "Mọi thứ bắt đầu từ một cuộc trò chuyện",
+      "description": "Trước khi thiết kế bất kỳ bản nhạc nào, chúng tôi trao đổi với khách hàng để hiểu về địa điểm, văn hóa, khách hàng của họ và điều doanh nghiệp cần từ âm nhạc.",
+      "steps": {
+        "01": {
+          "title": "Hiểu về địa điểm",
+          "desc": "Chúng tôi tìm hiểu ý tưởng, thương hiệu, vị trí, khách hàng và cách không gian vận hành trong ngày."
+        },
+        "02": {
+          "title": "Thiết kế âm nhạc",
+          "desc": "Các nhà thiết kế âm nhạc của chúng tôi lên kế hoạch nhạc tùy chỉnh theo yêu cầu đó, bao gồm lịch phát hằng ngày và các sự kiện đặc biệt."
+        },
+        "03": {
+          "title": "Chọn nền tảng",
+          "desc": "Chúng tôi đề xuất Beat Breeze hoặc Soundtrack phù hợp với địa điểm và hỗ trợ thiết lập phát nhạc, lịch phát và quyền truy cập cho đội ngũ."
+        },
+        "04": {
+          "title": "Tiếp tục đồng hành",
+          "desc": "Sau khi triển khai, BMAsia hỗ trợ kịp thời và giúp âm nhạc thay đổi theo địa điểm, mùa hoặc yêu cầu mới."
+        }
+      },
+      "cta": "Xem toàn bộ quy trình"
+    },
+    "routes": {
+      "label": "Hai hướng âm nhạc",
+      "title": "Vì sao BMAsia cung cấp hai nền tảng",
+      "description": "Mỗi địa điểm mong muốn những điều khác nhau từ âm nhạc. Có nơi muốn tự quản lý âm nhạc, nội dung truyền thông và tự động hóa ở cùng một nơi. Có nơi muốn âm nhạc thương mại quen thuộc, để BMAsia lo phần thiết kế.",
+      "beatBreeze": {
+        "label": "Nền tảng riêng của BMAsia",
+        "text": "Nền tảng miễn phí bản quyền của BMAsia dành cho âm nhạc, màn hình, thông điệp và tự động hóa không gian, được xây dựng cho những địa điểm muốn tự quản lý âm nhạc của mình.",
+        "cta": "Khám phá Beat Breeze",
+        "aboutLink": "Về Beat Breeze"
+      },
+      "soundtrack": {
+        "label": "Âm nhạc thương mại quen thuộc",
+        "text": "Kho nhạc thương mại quen thuộc được cấp phép với quy mô lớn, do BMAsia cung cấp, đi kèm thiết kế âm nhạc, hướng dẫn triển khai và hỗ trợ trong khu vực.",
+        "cta": "Khám phá Soundtrack"
+      }
+    },
+    "licensing": {
+      "label": "Bản quyền âm nhạc",
+      "title": "Bản quyền phụ thuộc vào hướng âm nhạc và quốc gia",
+      "description": "Beat Breeze và Soundtrack đáp ứng quyền âm nhạc theo những cách khác nhau, và yêu cầu về quyền trình diễn công cộng khác nhau giữa các quốc gia. Hướng dẫn bản quyền của chúng tôi giải thích mỗi hướng bao gồm những gì và địa điểm có thể vẫn cần thu xếp gì tại địa phương.",
+      "cta": "Đọc hướng dẫn bản quyền"
+    },
+    "venues": {
+      "label": "Chúng tôi làm việc với ai",
+      "title": "Âm nhạc cho nhiều loại hình địa điểm",
+      "description": "Chúng tôi làm việc với khách sạn, nhà hàng, bán lẻ, chăm sóc sức khỏe, văn phòng và các không gian kinh doanh khác. Mỗi hướng dẫn cho thấy cách BMAsia tiếp cận từng loại hình địa điểm."
+    },
+    "company": {
+      "label": "Thông tin công ty",
+      "title": "Đơn vị vận hành dịch vụ của BMAsia",
+      "websiteLabel": "bmasiamusic.com",
+      "websiteValue": "Do BMAsia (Thailand) Co., Ltd. và BMAsia Limited vận hành.",
+      "beatBreezeLabel": "Beat Breeze",
+      "beatBreezeValue": "Do BMASIA LIMITED (Hồng Kông), thành viên của BMAsia Group, vận hành.",
+      "foundedLabel": "Thành lập",
+      "foundedValue": "2002",
+      "legalNote": "Thông tin pháp lý của trang web này được trình bày trong <terms>điều khoản trang web</terms> và <privacy>chính sách bảo mật</privacy> của chúng tôi."
+    },
+    "contact": {
+      "label": "Liên hệ",
+      "title": "Trao đổi với BMAsia về địa điểm của bạn",
+      "description": "Hãy cho chúng tôi biết về địa điểm, các cơ sở và các khu vực của bạn, chuyên viên BMAsia sẽ liên hệ lại. Bạn cũng có thể gửi email hoặc đặt lịch demo.",
+      "emailLabel": "Email",
+      "quoteCta": "Yêu cầu đề xuất",
+      "demoCta": "Đặt lịch demo"
+    }
   },
   "legalPages": {
     "privacy": {

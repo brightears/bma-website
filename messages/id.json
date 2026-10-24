@@ -5,6 +5,7 @@
   },
   "navigation": {
     "home": "Beranda",
+    "about": "Tentang",
     "howItWorks": "Cara Kerja",
     "licensing": "Lisensi",
     "getQuote": "Minta Penawaran",
@@ -310,6 +311,7 @@
   },
   "footer": {
     "tagline": "Di Mana Musik Penting",
+    "about": "Tentang BMAsia",
     "description": "Ciptakan atmosfer sempurna untuk bisnis Anda. BMAsia menyediakan solusi musik latar yang disesuaikan untuk hotel, restoran, dan ritel di seluruh Asia-Pasifik sejak 2002.",
     "navigation": "Navigasi",
     "contact": "Kontak",
@@ -2144,6 +2146,110 @@
     "analyticsDescription": "Pengukuran opsional Google Tag Manager dan Apollo. Hanya dimuat setelah Anda mengizinkannya.",
     "necessaryOnly": "Hanya yang diperlukan",
     "allowAnalytics": "Izinkan analitik"
+  },
+  "aboutPage": {
+    "metadata": {
+      "title": "Tentang BMAsia",
+      "description": "BMAsia telah merancang musik latar untuk bisnis sejak 2002. Lihat cara kami bekerja dengan venue, dua jalur musik yang kami sediakan, dan cara menghubungi kami."
+    },
+    "hero": {
+      "label": "Tentang BMAsia",
+      "title": "Musik latar untuk bisnis,",
+      "titleHighlight": "dirancang sejak 2002",
+      "subtitle": "BMAsia adalah perusahaan musik latar business-to-business. Kami merancang musik untuk hotel, restoran, toko, spa, kantor, dan venue lainnya, lalu menyediakannya melalui dua platform: Beat Breeze dan Soundtrack.",
+      "secondaryCta": "Cara kerja kami",
+      "imageAlt": "Ruang kontrol studio musik",
+      "facts": {
+        "founded": {
+          "value": "2002",
+          "label": "Didirikan sebagai perusahaan musik latar B2B"
+        },
+        "hours": {
+          "value": "50.000+",
+          "label": "Jam musik khusus yang dirancang setiap tahun"
+        },
+        "global": {
+          "value": "Global",
+          "label": "Bekerja dengan venue di seluruh dunia"
+        }
+      }
+    },
+    "who": {
+      "label": "Siapa kami",
+      "title": "Perusahaan desain musik untuk ruang bisnis",
+      "p1": "BMAsia didirikan pada 2002 sebagai perusahaan musik latar business-to-business. Pekerjaan kami adalah musik yang diputar venue setiap hari: di lobi, ruang makan, area toko, atau ruang perawatan.",
+      "p2": "Setiap tahun, kami merancang lebih dari 50.000 jam musik khusus. Setiap program direncanakan berdasarkan konsep, merek, lokasi, dan jadwal harian venue, serta acara khusus dalam kalendernya."
+    },
+    "approach": {
+      "label": "Cara kerja kami",
+      "title": "Semuanya berawal dari percakapan",
+      "description": "Sebelum merancang musik apa pun, kami berbicara dengan klien untuk memahami venue, budayanya, tamunya, dan apa yang dibutuhkan bisnis dari musiknya.",
+      "steps": {
+        "01": {
+          "title": "Memahami venue",
+          "desc": "Kami mempelajari konsep, merek, lokasi, tamu, dan bagaimana ruang tersebut beroperasi sepanjang hari."
+        },
+        "02": {
+          "title": "Merancang musik",
+          "desc": "Desainer musik kami merencanakan musik khusus berdasarkan brief tersebut, termasuk jadwal harian dan acara khusus apa pun."
+        },
+        "03": {
+          "title": "Memilih platform",
+          "desc": "Kami merekomendasikan Beat Breeze atau Soundtrack untuk venue tersebut dan membantu menyiapkan pemutaran, jadwal, dan akses tim."
+        },
+        "04": {
+          "title": "Tetap terlibat",
+          "desc": "Setelah peluncuran, BMAsia memberikan dukungan yang responsif dan membantu musik berkembang seiring perubahan venue, musim, atau brief."
+        }
+      },
+      "cta": "Lihat proses lengkapnya"
+    },
+    "routes": {
+      "label": "Dua jalur musik",
+      "title": "Mengapa BMAsia menyediakan dua platform",
+      "description": "Setiap venue menginginkan hal yang berbeda dari musiknya. Sebagian ingin mengelola musik, media, dan otomatisasi sendiri di satu tempat. Sebagian lainnya menginginkan musik komersial yang dikenal, dengan BMAsia yang mengurus desainnya.",
+      "beatBreeze": {
+        "label": "Platform milik BMAsia",
+        "text": "Platform bebas royalti BMAsia untuk musik, layar, pesan, dan otomatisasi venue, dibuat untuk venue yang ingin mengelola musiknya sendiri.",
+        "cta": "Jelajahi Beat Breeze",
+        "aboutLink": "Tentang Beat Breeze"
+      },
+      "soundtrack": {
+        "label": "Musik komersial yang dikenal",
+        "text": "Katalog besar musik komersial berlisensi yang dikenal, disediakan oleh BMAsia dengan desain musik, onboarding, dan dukungan regional.",
+        "cta": "Jelajahi Soundtrack"
+      }
+    },
+    "licensing": {
+      "label": "Lisensi musik",
+      "title": "Lisensi bergantung pada jalur dan negaranya",
+      "description": "Beat Breeze dan Soundtrack mencakup hak musik dengan cara yang berbeda, dan persyaratan pertunjukan publik berbeda-beda di setiap negara. Panduan lisensi kami menjelaskan apa saja yang termasuk dalam setiap jalur dan apa yang mungkin masih perlu diurus venue secara lokal.",
+      "cta": "Baca panduan lisensi"
+    },
+    "venues": {
+      "label": "Dengan siapa kami bekerja",
+      "title": "Musik untuk berbagai jenis venue",
+      "description": "Kami bekerja dengan hotel, restoran, ritel, wellness, kantor, dan ruang bisnis lainnya. Setiap panduan menunjukkan pendekatan BMAsia untuk jenis venue tersebut."
+    },
+    "company": {
+      "label": "Informasi perusahaan",
+      "title": "Siapa yang mengoperasikan layanan BMAsia",
+      "websiteLabel": "bmasiamusic.com",
+      "websiteValue": "Dioperasikan oleh BMAsia (Thailand) Co., Ltd. dan BMAsia Limited.",
+      "beatBreezeLabel": "Beat Breeze",
+      "beatBreezeValue": "Dioperasikan oleh BMASIA LIMITED (Hong Kong), bagian dari BMAsia Group.",
+      "foundedLabel": "Didirikan",
+      "foundedValue": "2002",
+      "legalNote": "Detail hukum untuk situs ini tercantum dalam <terms>ketentuan situs</terms> dan <privacy>kebijakan privasi</privacy> kami."
+    },
+    "contact": {
+      "label": "Kontak",
+      "title": "Bicarakan venue Anda dengan BMAsia",
+      "description": "Ceritakan tentang venue, lokasi, dan zonanya, dan spesialis BMAsia akan menindaklanjuti. Anda juga dapat mengirim email kepada kami atau memesan demo.",
+      "emailLabel": "Email",
+      "quoteCta": "Minta proposal",
+      "demoCta": "Pesan demo"
+    }
   },
   "legalPages": {
     "privacy": {

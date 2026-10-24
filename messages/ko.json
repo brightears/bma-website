@@ -5,6 +5,7 @@
   },
   "navigation": {
     "home": "홈",
+    "about": "회사 소개",
     "howItWorks": "이용 방법",
     "licensing": "라이선스",
     "getQuote": "견적 받기",
@@ -310,6 +311,7 @@
   },
   "footer": {
     "tagline": "음악이 중요한 곳",
+    "about": "BMAsia 소개",
     "description": "비즈니스에 완벽한 분위기를 만드세요. BMAsia는 2002년부터 아시아태평양 전역의 호텔, 레스토랑, 리테일을 위한 맞춤형 배경음악 솔루션을 제공합니다.",
     "navigation": "네비게이션",
     "contact": "연락처",
@@ -2144,6 +2146,110 @@
     "analyticsDescription": "선택 사항인 Google Tag Manager와 Apollo 측정 기능입니다. 허용한 후에만 로드됩니다.",
     "necessaryOnly": "필수 항목만",
     "allowAnalytics": "분석 허용"
+  },
+  "aboutPage": {
+    "metadata": {
+      "title": "BMAsia 소개",
+      "description": "BMAsia는 2002년부터 비즈니스를 위한 배경음악을 설계해 왔습니다. 매장과 함께 일하는 방식, BMAsia가 제공하는 두 가지 음악 경로, 연락 방법을 확인하세요."
+    },
+    "hero": {
+      "label": "BMAsia 소개",
+      "title": "2002년부터 설계해 온",
+      "titleHighlight": "비즈니스를 위한 배경음악",
+      "subtitle": "BMAsia는 B2B 배경음악 회사입니다. 호텔, 레스토랑, 매장, 스파, 오피스 등 다양한 공간을 위한 음악을 설계하고, Beat Breeze와 Soundtrack 두 플랫폼을 통해 제공합니다.",
+      "secondaryCta": "일하는 방식",
+      "imageAlt": "음악 스튜디오 컨트롤 룸",
+      "facts": {
+        "founded": {
+          "value": "2002",
+          "label": "B2B 배경음악 회사로 설립"
+        },
+        "hours": {
+          "value": "50,000+",
+          "label": "매년 설계하는 맞춤 음악 시간"
+        },
+        "global": {
+          "value": "글로벌",
+          "label": "전 세계 매장과 협업"
+        }
+      }
+    },
+    "who": {
+      "label": "BMAsia는",
+      "title": "비즈니스 공간을 위한 음악 설계 회사",
+      "p1": "BMAsia는 2002년 B2B 배경음악 회사로 설립되었습니다. 저희가 하는 일은 매장에서 매일 흐르는 음악입니다. 로비, 다이닝 공간, 매장 플로어, 트리트먼트 룸까지 모두 포함됩니다.",
+      "p2": "BMAsia는 매년 50,000시간 이상의 맞춤 음악을 설계합니다. 각 프로그램은 매장의 콘셉트, 브랜드, 위치, 하루 일정은 물론 연간 특별 이벤트까지 고려해 기획합니다."
+    },
+    "approach": {
+      "label": "일하는 방식",
+      "title": "대화에서 시작합니다",
+      "description": "음악을 설계하기 전에 먼저 고객과 이야기를 나눕니다. 매장과 그 문화, 고객층, 그리고 비즈니스가 음악에 기대하는 바를 이해하기 위해서입니다.",
+      "steps": {
+        "01": {
+          "title": "매장 이해하기",
+          "desc": "콘셉트, 브랜드, 위치, 고객층, 그리고 하루 동안 공간이 어떻게 운영되는지 파악합니다."
+        },
+        "02": {
+          "title": "음악 설계하기",
+          "desc": "BMAsia 음악 디자이너가 브리프에 맞춰 하루 일정과 특별 이벤트까지 반영한 맞춤 음악을 기획합니다."
+        },
+        "03": {
+          "title": "플랫폼 선택하기",
+          "desc": "매장에 맞는 Beat Breeze 또는 Soundtrack을 추천하고, 재생, 일정, 팀 접근 권한 설정을 돕습니다."
+        },
+        "04": {
+          "title": "계속 함께하기",
+          "desc": "도입 후에도 BMAsia는 신속하게 지원하며, 매장이나 시즌, 브리프가 바뀌면 음악도 그에 맞게 발전시킵니다."
+        }
+      },
+      "cta": "전체 프로세스 보기"
+    },
+    "routes": {
+      "label": "두 가지 음악 경로",
+      "title": "BMAsia가 두 가지 플랫폼을 제공하는 이유",
+      "description": "매장마다 음악에 원하는 것이 다릅니다. 음악, 미디어, 자동화를 한곳에서 직접 운영하고 싶은 곳이 있고, 친숙한 상업용 음악을 원하면서 설계는 BMAsia에 맡기고 싶은 곳도 있습니다.",
+      "beatBreeze": {
+        "label": "BMAsia 자체 플랫폼",
+        "text": "음악, 스크린, 메시지, 매장 자동화를 위한 BMAsia의 로열티 프리 플랫폼으로, 음악을 직접 운영하고 싶은 매장을 위해 만들어졌습니다.",
+        "cta": "Beat Breeze 살펴보기",
+        "aboutLink": "Beat Breeze 소개"
+      },
+      "soundtrack": {
+        "label": "친숙한 상업용 음악",
+        "text": "친숙한 라이선스 상업용 음악의 방대한 카탈로그를 BMAsia가 음악 설계, 온보딩, 지역 지원과 함께 제공합니다.",
+        "cta": "Soundtrack 살펴보기"
+      }
+    },
+    "licensing": {
+      "label": "음악 라이선스",
+      "title": "라이선스는 경로와 국가에 따라 다릅니다",
+      "description": "Beat Breeze와 Soundtrack은 음악 권리를 서로 다른 방식으로 다루며, 공연권 요건은 국가마다 다릅니다. 라이선스 가이드에서 각 경로에 포함되는 내용과 매장이 현지에서 별도로 준비해야 할 수 있는 사항을 설명합니다.",
+      "cta": "라이선스 가이드 읽기"
+    },
+    "venues": {
+      "label": "함께하는 고객",
+      "title": "다양한 매장을 위한 음악",
+      "description": "호텔, 레스토랑, 리테일, 웰니스, 오피스 등 다양한 비즈니스 공간과 함께합니다. 각 가이드에서 BMAsia가 해당 유형의 매장에 어떻게 접근하는지 확인할 수 있습니다."
+    },
+    "company": {
+      "label": "회사 정보",
+      "title": "BMAsia 서비스 운영 주체",
+      "websiteLabel": "bmasiamusic.com",
+      "websiteValue": "BMAsia (Thailand) Co., Ltd.와 BMAsia Limited가 운영합니다.",
+      "beatBreezeLabel": "Beat Breeze",
+      "beatBreezeValue": "BMAsia Group 계열사인 BMASIA LIMITED(홍콩)가 운영합니다.",
+      "foundedLabel": "설립",
+      "foundedValue": "2002",
+      "legalNote": "이 사이트의 법적 사항은 <terms>웹사이트 이용약관</terms> 및 <privacy>개인정보 처리방침</privacy>에 안내되어 있습니다."
+    },
+    "contact": {
+      "label": "문의",
+      "title": "매장에 대해 BMAsia와 상담하세요",
+      "description": "매장과 지점, 존에 대해 알려주시면 BMAsia 전문가가 연락드립니다. 이메일로 문의하거나 데모를 예약하실 수도 있습니다.",
+      "emailLabel": "이메일",
+      "quoteCta": "제안 요청하기",
+      "demoCta": "데모 예약하기"
+    }
   },
   "legalPages": {
     "privacy": {

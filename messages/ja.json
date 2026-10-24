@@ -5,6 +5,7 @@
   },
   "navigation": {
     "home": "ホーム",
+    "about": "会社概要",
     "howItWorks": "ご利用方法",
     "licensing": "ライセンス",
     "getQuote": "お見積もり",
@@ -310,6 +311,7 @@
   },
   "footer": {
     "tagline": "音楽が大切な場所",
+    "about": "BMAsiaについて",
     "description": "ビジネスに最適な雰囲気を創り出しましょう。BMAsiaは2002年よりアジア太平洋地域のホテル、レストラン、小売店向けにカスタマイズされたBGMソリューションを提供しています。",
     "navigation": "ナビゲーション",
     "contact": "お問い合わせ",
@@ -2144,6 +2146,110 @@
     "analyticsDescription": "任意のGoogle Tag ManagerとApolloによる計測です。許可後にのみ読み込まれます。",
     "necessaryOnly": "必須のみ",
     "allowAnalytics": "分析を許可"
+  },
+  "aboutPage": {
+    "metadata": {
+      "title": "BMAsiaについて",
+      "description": "BMAsiaは2002年から企業向けのBGMを設計しています。施設との取り組み方、提供している2つの音楽ルート、お問い合わせ方法をご紹介します。"
+    },
+    "hero": {
+      "label": "BMAsiaについて",
+      "title": "2002年から設計を続ける",
+      "titleHighlight": "ビジネスのためのBGM",
+      "subtitle": "BMAsiaはB2BのBGM会社です。ホテル、レストラン、店舗、スパ、オフィスなどの施設に向けて音楽を設計し、Beat BreezeとSoundtrackの2つのプラットフォームで提供しています。",
+      "secondaryCta": "私たちの進め方",
+      "imageAlt": "音楽スタジオのコントロールルーム",
+      "facts": {
+        "founded": {
+          "value": "2002",
+          "label": "B2BのBGM会社として創業"
+        },
+        "hours": {
+          "value": "50,000+",
+          "label": "毎年設計するカスタム音楽の時間数"
+        },
+        "global": {
+          "value": "グローバル",
+          "label": "世界各地の施設と協働"
+        }
+      }
+    },
+    "who": {
+      "label": "私たちについて",
+      "title": "ビジネス空間のための音楽設計会社",
+      "p1": "BMAsiaは2002年、B2BのBGM会社として創業しました。私たちが手がけるのは、ロビーやダイニングルーム、売り場、トリートメントルームなど、施設で毎日流れる音楽です。",
+      "p2": "毎年50,000時間を超えるカスタム音楽を設計しています。各プログラムは、施設のコンセプト、ブランド、立地、1日のスケジュール、そして年間の特別なイベントに合わせて計画します。"
+    },
+    "approach": {
+      "label": "私たちの進め方",
+      "title": "まずは対話から",
+      "description": "音楽を設計する前に、お客様と話し合い、施設とその文化、ゲスト、そしてビジネスが音楽に求めるものを理解します。",
+      "steps": {
+        "01": {
+          "title": "施設を理解する",
+          "desc": "コンセプト、ブランド、立地、ゲスト、そして1日を通じた空間の運営について把握します。"
+        },
+        "02": {
+          "title": "音楽を設計する",
+          "desc": "音楽デザイナーがその要件をもとに、1日のスケジュールや特別なイベントも含めてカスタム音楽を計画します。"
+        },
+        "03": {
+          "title": "プラットフォームを選ぶ",
+          "desc": "施設に合わせてBeat BreezeまたはSoundtrackをご提案し、再生、スケジュール、チームのアクセス設定をお手伝いします。"
+        },
+        "04": {
+          "title": "継続して関わる",
+          "desc": "導入後もBMAsiaが迅速にサポートし、施設や季節、要件の変化に合わせて音楽を進化させていきます。"
+        }
+      },
+      "cta": "利用の流れを詳しく見る"
+    },
+    "routes": {
+      "label": "2つの音楽ルート",
+      "title": "BMAsiaが2つのプラットフォームを提供する理由",
+      "description": "施設によって音楽に求めるものは異なります。音楽、メディア、オートメーションを1か所で自ら運用したい施設もあれば、親しみのある商用音楽を使い、設計はBMAsiaに任せたい施設もあります。",
+      "beatBreeze": {
+        "label": "BMAsia独自のプラットフォーム",
+        "text": "音楽、スクリーン、メッセージ、空間オートメーションのための、BMAsiaのロイヤリティフリープラットフォーム。自ら音楽を運用したい施設向けに作られています。",
+        "cta": "Beat Breezeを見る",
+        "aboutLink": "Beat Breezeについて"
+      },
+      "soundtrack": {
+        "label": "親しみのある商用音楽",
+        "text": "親しみのあるライセンス済み商用音楽の豊富なカタログを、BMAsiaが音楽設計、導入支援、地域に根ざしたサポートとともに提供します。",
+        "cta": "Soundtrackを見る"
+      }
+    },
+    "licensing": {
+      "label": "音楽ライセンス",
+      "title": "ライセンスはルートと国によって異なります",
+      "description": "Beat BreezeとSoundtrackでは音楽の権利のカバー方法が異なり、公衆演奏に関する要件も国ごとに異なります。ライセンスガイドでは、各ルートに含まれる内容と、施設が現地で別途手配する必要がある場合のある項目を説明しています。",
+      "cta": "ライセンスガイドを読む"
+    },
+    "venues": {
+      "label": "対象となる施設",
+      "title": "さまざまな施設のための音楽",
+      "description": "ホテル、レストラン、小売、ウェルネス、オフィスなど、さまざまなビジネス空間と協働しています。各ガイドでは、施設の種類ごとのBMAsiaの取り組み方をご紹介します。"
+    },
+    "company": {
+      "label": "会社情報",
+      "title": "BMAsiaのサービス運営会社",
+      "websiteLabel": "bmasiamusic.com",
+      "websiteValue": "BMAsia (Thailand) Co., Ltd.およびBMAsia Limitedが運営しています。",
+      "beatBreezeLabel": "Beat Breeze",
+      "beatBreezeValue": "BMAsia Groupの一員であるBMASIA LIMITED（香港）が運営しています。",
+      "foundedLabel": "創業",
+      "foundedValue": "2002年",
+      "legalNote": "本サイトに関する法的情報は、<terms>ウェブサイト利用規約</terms>および<privacy>プライバシーポリシー</privacy>に記載しています。"
+    },
+    "contact": {
+      "label": "お問い合わせ",
+      "title": "施設についてBMAsiaにご相談ください",
+      "description": "施設、拠点、ゾーンについてお知らせください。BMAsiaのスペシャリストからご連絡します。メールでのお問い合わせやデモのご予約も可能です。",
+      "emailLabel": "メール",
+      "quoteCta": "提案を依頼",
+      "demoCta": "デモを予約"
+    }
   },
   "legalPages": {
     "privacy": {
