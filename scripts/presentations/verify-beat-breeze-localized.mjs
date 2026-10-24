@@ -151,8 +151,8 @@ for (const [localeCode, locale] of Object.entries(LOCALES)) {
   ) {
     fail(`The official ${locale.name} deck is missing its language, title, or controllers.`);
   }
-  if (Object.keys(copy).length !== 223) {
-    fail(`${locale.name} on-screen copy must contain all 223 source phrases, including the new pricing options.`);
+  if (Object.keys(copy).length !== 224) {
+    fail(`${locale.name} on-screen copy must contain all 224 source phrases, including the pricing options and corporate-trial line.`);
   }
   if (
     script.deck !== "beat-breeze" ||
