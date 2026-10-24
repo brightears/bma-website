@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-zh",
   "status": "official-simplified-chinese-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-07T02:39:11.202Z",
-  "releaseId": "20260907-pricing-24e85ed7d14f093a",
+  "generatedAt": "2026-10-24T08:36:55.569Z",
+  "releaseId": "20261024-pricing-5462ff5f6a0d967d",
   "publicationStatus": "Official unlinked, noindex Simplified Chinese Beat Breeze presentation with complete slide-linked Mandarin narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,13 +30,13 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "017ebe5a49083498049a89163e1ec2e66e795812780267e6245d5f8276c53ce8",
+    "englishDeckSha256": "c85f12948326f2188d9a5b29405020076d9825d615ea429c2bf027ff0b602a77",
     "officialDeckPath": "public/presentations/beat-breeze-zh.html",
-    "officialDeckSha256": "81dcd13a24ee4cf9f4d7955c8ad4aa50a76d09a076c9fc21890d363a267c70c5",
+    "officialDeckSha256": "3a9b61e39e236dac389cecb733161d0301afec69fd2f9823140ff8eb80dfb0da",
     "scriptPath": "public/presentations/narration/beat-breeze-zh/script.json",
-    "scriptSha256": "91ba3c03f1a8e5f33990fe44462e5115d57016a8ec5e7a124b099c3bda4a2c51",
+    "scriptSha256": "68c4f9eed50548fa9945a5c91d6b3470634903d8413042dd779fb3c241d8d111",
     "copyPath": "public/presentations/narration/beat-breeze-zh/copy.json",
-    "copySha256": "a8f9575ff2198c57a572e0694e814f9110e4f7e83b1f1d2f3c856d7b7fcb4d58"
+    "copySha256": "48fdc773f0a721ca35c11f94ca8555320bac14f8c72dc7573dee60636d57dd1c"
   },
   "voice": {
     "provider": "google-gemini",
@@ -60,7 +60,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 623.2,
+  "totalDurationSeconds": 627.08,
   "slides": [
     {
       "index": 1,
@@ -382,21 +382,21 @@
         "企业安排",
         "无需专用播放器盒子"
       ],
-      "text": "您可以选择自己管理音乐，也可以交给 BMAsia。自助方案每个分区每月 15 美元。如果按年付费，则为每个分区每年 150 美元。这两种自助方案都包含应用功能，由您自行管理播放列表和播放排程。如果希望交给专业团队打理，BMAsia 托管方案每个分区每年 260 美元，仅提供年度方案。我们的音乐设计团队会为各分区选择并调整播放列表和排程，包括季节与节庆安排，同时提供全天候技术支持和专属客户经理。无论选择哪种方案，所有客户都会持续获得应用更新。区别在于谁来照顾您的日常音乐安排。自助方案可在一个分区免费试用 14 天，无需信用卡。大型集团还可以采用定制合同和本地开票安排，也不需要购买专用播放器盒子。",
+      "text": "您可以选择自己管理音乐，也可以交给 BMAsia。自助方案每个分区每月 15 美元。如果按年付费，则为每个分区每年 150 美元。这两种自助方案都包含应用功能，由您自行管理播放列表和播放排程。如果希望交给专业团队打理，BMAsia 托管方案每个分区每年 260 美元，仅提供年度方案。我们的音乐设计团队会为各分区选择并调整播放列表和排程，包括季节与节庆安排，同时提供全天候技术支持和专属客户经理。无论选择哪种方案，所有客户都会持续获得应用更新。区别在于谁来照顾您的日常音乐安排。自助方案可在一个分区免费试用 14 天，需要绑定信用卡，但开始时不收费。如由 BMAsia 为您安排试用，则无需信用卡。大型集团还可以采用定制合同和本地开票安排，也不需要购买专用播放器盒子。",
       "index": 13,
-      "src": "audio/20260907-pricing-24e85ed7d14f093a/13-pricing.mp3",
-      "transcriptSha256": "c4ecd575f021892125e7ba5a56cd35a1665da33197c4c195cd86b8099a41ebdc",
-      "audioSha256": "e7b770f8ff1333000e23609ab8692cdfeeb6e510f4522cb973c0bfb7baefe6e5",
-      "durationSeconds": 60.36,
+      "src": "audio/20261024-pricing-5462ff5f6a0d967d/13-pricing.mp3",
+      "transcriptSha256": "69d9dc32512c6d1785538604580641c094ff6d7914d748662b0922cdc15ca170",
+      "audioSha256": "51b29361b3132f233f9e273d805fac84508e13426d04b5e2adbfe1e33a546d2e",
+      "durationSeconds": 64.24,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.48,
-      "truePeakDbtp": -3.34,
-      "loudnessRangeLu": 2.4,
-      "thresholdLufs": -28.91,
-      "targetOffsetLu": 0.34
+      "integratedLufs": -18.53,
+      "truePeakDbtp": -3.25,
+      "loudnessRangeLu": 2.7,
+      "thresholdLufs": -28.97,
+      "targetOffsetLu": 0.25
     },
     {
       "index": 14,
@@ -460,7 +460,7 @@
       "slidesTranscribed": 1,
       "slidesReusedFromPreviousQa": 14,
       "verifiedUnchangedSlideCount": 14,
-      "previousReleaseId": "20260907-pricing-ac6fd83695ab5b89",
+      "previousReleaseId": "20260907-pricing-24e85ed7d14f093a",
       "requiredMaximumCharacterErrorRate": 0.18,
       "maximumCharacterErrorRate": 0.0765,
       "meanCharacterErrorRate": 0.0765,
@@ -536,6 +536,18 @@
       "technicalSupport24x7": true,
       "appUpdatesInEveryPlan": true,
       "currencyPolicy": "USD only outside the Thai edition"
+    },
+    "trialWordingUpdate": {
+      "date": "2026-10-24",
+      "scope": "Slide 13 (pricing) only; trial sentence changed to the two-route rule; prices unchanged.",
+      "newSentence": "自助方案可在一个分区免费试用 14 天，需要绑定信用卡，但开始时不收费。如由 BMAsia 为您安排试用，则无需信用卡。",
+      "replacedSentence": "自助方案可在一个分区免费试用 14 天，无需信用卡。",
+      "characterErrorRate": 0.016722408026755852,
+      "lengthRatio": 1.0033444816053512,
+      "automatedTextPass": true,
+      "semanticReview": "passed: transcript states the self-serve 14-day one-zone trial needs a card with no charge at start, and a BMAsia-arranged trial needs no card; spoken prices match the slide",
+      "reviewer": "automated transcript plus Claude Code semantic check; not native-speaker editorial approval",
+      "qaRecord": "docs/beat-breeze-trial-wording-20261024-qa.json"
     }
   },
   "generation": {
@@ -544,6 +556,6 @@
       "13-pricing"
     ],
     "verifiedCarryForwardSlideCount": 14,
-    "previousReleaseId": "20260907-pricing-ac6fd83695ab5b89"
+    "previousReleaseId": "20260907-pricing-24e85ed7d14f093a"
   }
 }

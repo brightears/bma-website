@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-ms",
   "status": "official-malaysian-malay-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-07T02:40:08.606Z",
-  "releaseId": "20260907-pricing-8413a960413bb210",
+  "generatedAt": "2026-10-24T08:36:23.329Z",
+  "releaseId": "20261024-pricing-3a4b7dc09ddc8dd6",
   "publicationStatus": "Official unlinked, noindex Malaysian Malay Beat Breeze presentation with complete slide-linked Malay narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,13 +30,13 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "017ebe5a49083498049a89163e1ec2e66e795812780267e6245d5f8276c53ce8",
+    "englishDeckSha256": "c85f12948326f2188d9a5b29405020076d9825d615ea429c2bf027ff0b602a77",
     "officialDeckPath": "public/presentations/beat-breeze-ms.html",
-    "officialDeckSha256": "eb3f70c9f4d727f942e695b524e44b7147ee58f10f5cb40c22f1812686bb9d6c",
+    "officialDeckSha256": "449f18e770693156a14b28974c25f97cf9531b3098ac013db623755852b4e155",
     "scriptPath": "public/presentations/narration/beat-breeze-ms/script.json",
-    "scriptSha256": "eb26b1b2e6f61c038b4ff4c93e6b0a062104ad45a77dbbf4deaca0d8cd1894f9",
+    "scriptSha256": "2f0c76ce1d2ef6a796afc3f19410d2fd13c9671b06db0540d348de01e5c0f66d",
     "copyPath": "public/presentations/narration/beat-breeze-ms/copy.json",
-    "copySha256": "ce5f4db0989f54ff80ee5a154e25cc67145877d348cde6393e4d3e4a07ef213f"
+    "copySha256": "3e653f9ba7cd4e2a4b257cb77c8fe74bdcf8ddeb3d6edffbdc7c03e60686d6bc"
   },
   "voice": {
     "provider": "google-gemini",
@@ -60,7 +60,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 808.88,
+  "totalDurationSeconds": 817.44,
   "slides": [
     {
       "index": 1,
@@ -385,21 +385,21 @@
         "penyelesaian enterprise",
         "tiada peranti khas yang diwajibkan"
       ],
-      "text": "Anda boleh mengurus muzik sendiri atau menyerahkannya kepada BMAsia. Pakej layan diri berharga 15 dolar Amerika bagi setiap zon sebulan. Jika memilih pakej tahunan, harganya 150 dolar Amerika bagi setiap zon setahun. Kedua-dua pakej layan diri merangkumi fungsi aplikasi, dan anda mengurus playlist serta jadual main balik sendiri. Untuk perkhidmatan yang diurus oleh pasukan kami, pakej BMAsia berharga 260 dolar Amerika bagi setiap zon setahun, dan hanya tersedia sebagai pakej tahunan. Pasukan reka bentuk muzik kami memilih dan menyegarkan playlist serta jadual yang ditetapkan bagi setiap zon, termasuk perubahan musim dan perayaan. Perkhidmatan ini turut merangkumi sokongan teknikal sepanjang masa dan pengurus akaun khusus. Semua pelanggan menerima kemas kini aplikasi secara berterusan, tanpa mengira pakej yang dipilih. Perbezaannya ialah siapa yang menjaga muzik anda. Anda boleh mencuba pakej layan diri secara percuma selama 14 hari untuk satu zon tanpa kad. Kumpulan yang lebih besar boleh mengatur kontrak khusus dan invois tempatan, tanpa perlu membeli kotak pemain khas.",
+      "text": "Anda boleh mengurus muzik sendiri atau menyerahkannya kepada BMAsia. Pakej layan diri berharga 15 dolar Amerika bagi setiap zon sebulan. Jika memilih pakej tahunan, harganya 150 dolar Amerika bagi setiap zon setahun. Kedua-dua pakej layan diri merangkumi fungsi aplikasi, dan anda mengurus playlist serta jadual main balik sendiri. Untuk perkhidmatan yang diurus oleh pasukan kami, pakej BMAsia berharga 260 dolar Amerika bagi setiap zon setahun, dan hanya tersedia sebagai pakej tahunan. Pasukan reka bentuk muzik kami memilih dan menyegarkan playlist serta jadual yang ditetapkan bagi setiap zon, termasuk perubahan musim dan perayaan. Perkhidmatan ini turut merangkumi sokongan teknikal sepanjang masa dan pengurus akaun khusus. Semua pelanggan menerima kemas kini aplikasi secara berterusan, tanpa mengira pakej yang dipilih. Perbezaannya ialah siapa yang menjaga muzik anda. Anda boleh mencuba pakej layan diri secara percuma selama 14 hari untuk satu zon; kad diperlukan, tetapi tiada caj dikenakan semasa ia bermula. Jika BMAsia mengaturkan percubaan anda, tiada kad diperlukan. Kumpulan yang lebih besar boleh mengatur kontrak khusus dan invois tempatan, tanpa perlu membeli kotak pemain khas.",
       "index": 13,
-      "src": "audio/20260907-pricing-8413a960413bb210/13-pricing.mp3",
-      "transcriptSha256": "9127b8a53fa4117ab6cfde03897fbfa34494d5159f5e291023ad591dda2ed549",
-      "audioSha256": "1525671e0dc04565872f44627125d1d10b2bcde051cd78e945314030e6548037",
-      "durationSeconds": 73.08,
+      "src": "audio/20261024-pricing-3a4b7dc09ddc8dd6/13-pricing.mp3",
+      "transcriptSha256": "82315e1b5e67d72004533270417b2c1d4cc953b56e06b2443fc36accc0162481",
+      "audioSha256": "4934244e52a7e95d4d1f8ed86f23d2f7a6361ace9078eef57a3345c95508caaf",
+      "durationSeconds": 81.64,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.53,
-      "truePeakDbtp": -3,
-      "loudnessRangeLu": 2.5,
-      "thresholdLufs": -28.91,
-      "targetOffsetLu": 0.19
+      "integratedLufs": -18.5,
+      "truePeakDbtp": -3.4,
+      "loudnessRangeLu": 3.2,
+      "thresholdLufs": -28.86,
+      "targetOffsetLu": 0.23
     },
     {
       "index": 14,
@@ -458,7 +458,7 @@
       "13-pricing"
     ],
     "verifiedCarryForwardSlideCount": 14,
-    "previousReleaseId": "20260907-pricing-22086f74c8792d94"
+    "previousReleaseId": "20260907-pricing-8413a960413bb210"
   },
   "qualityAssurance": {
     "transcription": {
@@ -471,7 +471,7 @@
       "slidesTranscribed": 1,
       "slidesReusedFromPreviousQa": 14,
       "verifiedUnchangedSlideCount": 14,
-      "previousReleaseId": "20260907-pricing-22086f74c8792d94",
+      "previousReleaseId": "20260907-pricing-8413a960413bb210",
       "requiredMaximumCharacterErrorRate": 0.18,
       "maximumCharacterErrorRate": 0.1305,
       "meanCharacterErrorRate": 0.1305,
@@ -623,6 +623,18 @@
       "technicalSupport24x7": true,
       "appUpdatesInEveryPlan": true,
       "currencyPolicy": "USD only outside the Thai edition"
+    },
+    "trialWordingUpdate": {
+      "date": "2026-10-24",
+      "scope": "Slide 13 (pricing) only; trial sentence changed to the two-route rule; prices unchanged.",
+      "newSentence": "Anda boleh mencuba pakej layan diri secara percuma selama 14 hari untuk satu zon; kad diperlukan, tetapi tiada caj dikenakan semasa ia bermula. Jika BMAsia mengaturkan percubaan anda, tiada kad diperlukan.",
+      "replacedSentence": "Anda boleh mencuba pakej layan diri secara percuma selama 14 hari untuk satu zon tanpa kad.",
+      "characterErrorRate": 0.03574975173783516,
+      "lengthRatio": 0.9731876861966237,
+      "automatedTextPass": true,
+      "semanticReview": "passed: transcript states the self-serve 14-day one-zone trial needs a card with no charge at start, and a BMAsia-arranged trial needs no card; spoken prices match the slide",
+      "reviewer": "automated transcript plus Claude Code semantic check; not native-speaker editorial approval",
+      "qaRecord": "docs/beat-breeze-trial-wording-20261024-qa.json"
     }
   }
 }

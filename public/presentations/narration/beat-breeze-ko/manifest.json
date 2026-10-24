@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-ko",
   "status": "official-ko-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-07T02:40:05.208Z",
-  "releaseId": "20260907-pricing-29bdfc54eaf34f12",
+  "generatedAt": "2026-10-24T08:36:58.482Z",
+  "releaseId": "20261024-pricing-700544bbfbb24c61",
   "publicationStatus": "Official unlinked, noindex Korean Beat Breeze presentation with complete slide-linked Korean narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,13 +30,13 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "017ebe5a49083498049a89163e1ec2e66e795812780267e6245d5f8276c53ce8",
+    "englishDeckSha256": "c85f12948326f2188d9a5b29405020076d9825d615ea429c2bf027ff0b602a77",
     "officialDeckPath": "public/presentations/beat-breeze-ko.html",
-    "officialDeckSha256": "60f4481152332f4c52c05c3c3d3e18bb583ea47ff59adaee705afb9d6e99f277",
+    "officialDeckSha256": "cfe96a3e851b55f0467764f6d11a9e0ff5be33f2ae5da015a892e0f4401d9916",
     "scriptPath": "public/presentations/narration/beat-breeze-ko/script.json",
-    "scriptSha256": "df19c2192c7b9668447a994b261f03e7a18357ede2bf99c7503c2b1078e0c340",
+    "scriptSha256": "fd0e0680c72c6bf58e418d7a203193d0bec70c1f082ef68e57e6a6352479d918",
     "copyPath": "public/presentations/narration/beat-breeze-ko/copy.json",
-    "copySha256": "c8bf76379055388b1c443f280ea87b5b465c16891317ddd13fabe4d9eb220791"
+    "copySha256": "1fc05c5d5fafdba2a0a5032437bd55d867d6cd8990ce4ecb3de457d49cee7674"
   },
   "voice": {
     "provider": "google-gemini",
@@ -60,7 +60,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 712,
+  "totalDurationSeconds": 721.2,
   "slides": [
     {
       "index": 1,
@@ -382,21 +382,21 @@
         "엔터프라이즈 옵션",
         "전용 하드웨어 불필요"
       ],
-      "text": "음악을 직접 관리하거나 BMAsia에 맡기는 두 가지 방식이 있습니다. 셀프서비스는 존당 월 미화 15달러입니다. 연간 요금제를 선택하면 존당 연 미화 150달러입니다. 두 셀프서비스 요금제 모두 앱 기능이 포함되며, 고객사가 재생목록과 재생 일정을 직접 관리합니다. 음악 관리를 맡기고 싶으시다면 BMAsia 관리형은 존당 연 미화 260달러이며, 연간 요금제로만 제공됩니다. 음악 디자인팀이 각 존에 배정된 재생목록과 일정을 선정하고 새롭게 구성하며, 계절과 행사에 맞춘 변경도 담당합니다. 여기에 24시간 연중무휴 기술 지원과 전담 계정 관리자가 포함됩니다. 어떤 요금제를 선택하든 모든 고객은 지속적인 앱 업데이트를 받습니다. 차이는 일상적인 음악 관리를 누가 맡느냐입니다. 셀프서비스는 카드 없이 한 개 존에서 14일 동안 무료로 체험할 수 있습니다. 대규모 기업은 맞춤 계약과 현지 청구 방식을 이용할 수 있으며, 전용 플레이어 박스를 구매할 필요는 없습니다.",
+      "text": "음악을 직접 관리하거나 BMAsia에 맡기는 두 가지 방식이 있습니다. 셀프서비스는 존당 월 미화 15달러입니다. 연간 요금제를 선택하면 존당 연 미화 150달러입니다. 두 셀프서비스 요금제 모두 앱 기능이 포함되며, 고객사가 재생목록과 재생 일정을 직접 관리합니다. 음악 관리를 맡기고 싶으시다면 BMAsia 관리형은 존당 연 미화 260달러이며, 연간 요금제로만 제공됩니다. 음악 디자인팀이 각 존에 배정된 재생목록과 일정을 선정하고 새롭게 구성하며, 계절과 행사에 맞춘 변경도 담당합니다. 여기에 24시간 연중무휴 기술 지원과 전담 계정 관리자가 포함됩니다. 어떤 요금제를 선택하든 모든 고객은 지속적인 앱 업데이트를 받습니다. 차이는 일상적인 음악 관리를 누가 맡느냐입니다. 셀프서비스는 한 개 존에서 14일 동안 무료로 체험할 수 있으며, 카드 등록이 필요하지만 시작할 때 요금은 청구되지 않습니다. BMAsia가 체험을 준비해 드리는 경우에는 카드가 필요 없습니다. 대규모 기업은 맞춤 계약과 현지 청구 방식을 이용할 수 있으며, 전용 플레이어 박스를 구매할 필요는 없습니다.",
       "index": 13,
-      "src": "audio/20260907-pricing-29bdfc54eaf34f12/13-pricing.mp3",
-      "transcriptSha256": "e44ba6fdf97d1e9af3595e96c92fff398c035efa07a537aba21383da55e487b5",
-      "audioSha256": "9bfb6200ee5b5b1b66092ebcc5bf491561f8dcb1927b0fcd1001ff75ed1ab2ce",
-      "durationSeconds": 67.84,
+      "src": "audio/20261024-pricing-700544bbfbb24c61/13-pricing.mp3",
+      "transcriptSha256": "4032e96117057f21dbcdbd2f14be425b84d0f00b1fdcddce97fe2825e4b98633",
+      "audioSha256": "febfe33b22dfb8049548a7d8895fb9ab9aad75f61aa49f9521e7d01ced90e3c1",
+      "durationSeconds": 77.04,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.43,
-      "truePeakDbtp": -3.41,
-      "loudnessRangeLu": 2.2,
-      "thresholdLufs": -28.84,
-      "targetOffsetLu": -0.24
+      "integratedLufs": -18.52,
+      "truePeakDbtp": -3.2,
+      "loudnessRangeLu": 2.6,
+      "thresholdLufs": -29.01,
+      "targetOffsetLu": 0.28
     },
     {
       "index": 14,
@@ -460,7 +460,7 @@
       "slidesTranscribed": 1,
       "slidesReusedFromPreviousQa": 14,
       "verifiedUnchangedSlideCount": 14,
-      "previousReleaseId": "20260907-pricing-726566981da1028e",
+      "previousReleaseId": "20260907-pricing-29bdfc54eaf34f12",
       "requiredMaximumCharacterErrorRate": 0.18,
       "maximumCharacterErrorRate": 0.0868,
       "meanCharacterErrorRate": 0.0868,
@@ -536,6 +536,18 @@
       "technicalSupport24x7": true,
       "appUpdatesInEveryPlan": true,
       "currencyPolicy": "USD only outside the Thai edition"
+    },
+    "trialWordingUpdate": {
+      "date": "2026-10-24",
+      "scope": "Slide 13 (pricing) only; trial sentence changed to the two-route rule; prices unchanged.",
+      "newSentence": "셀프서비스는 한 개 존에서 14일 동안 무료로 체험할 수 있으며, 카드 등록이 필요하지만 시작할 때 요금은 청구되지 않습니다. BMAsia가 체험을 준비해 드리는 경우에는 카드가 필요 없습니다.",
+      "replacedSentence": "셀프서비스는 카드 없이 한 개 존에서 14일 동안 무료로 체험할 수 있습니다.",
+      "characterErrorRate": 0,
+      "lengthRatio": 1,
+      "automatedTextPass": true,
+      "semanticReview": "passed: transcript states the self-serve 14-day one-zone trial needs a card with no charge at start, and a BMAsia-arranged trial needs no card; spoken prices match the slide",
+      "reviewer": "automated transcript plus Claude Code semantic check; not native-speaker editorial approval",
+      "qaRecord": "docs/beat-breeze-trial-wording-20261024-qa.json"
     }
   },
   "generation": {
@@ -544,6 +556,6 @@
       "13-pricing"
     ],
     "verifiedCarryForwardSlideCount": 14,
-    "previousReleaseId": "20260907-pricing-726566981da1028e"
+    "previousReleaseId": "20260907-pricing-29bdfc54eaf34f12"
   }
 }

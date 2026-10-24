@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-id",
   "status": "official-indonesian-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-07T02:40:01.648Z",
-  "releaseId": "20260907-pricing-5254e0a084366232",
+  "generatedAt": "2026-10-24T08:36:20.790Z",
+  "releaseId": "20261024-pricing-238952812f2248fd",
   "publicationStatus": "Official unlinked, noindex Indonesian Beat Breeze presentation with complete slide-linked Indonesian narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,13 +30,13 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "017ebe5a49083498049a89163e1ec2e66e795812780267e6245d5f8276c53ce8",
+    "englishDeckSha256": "c85f12948326f2188d9a5b29405020076d9825d615ea429c2bf027ff0b602a77",
     "officialDeckPath": "public/presentations/beat-breeze-id.html",
-    "officialDeckSha256": "2f9459fedc9ea5f416d9f14bd92ac91c2c5d510d3eca917936c9aa93ff3cf648",
+    "officialDeckSha256": "795675652d5a03ef344f1568cfea692cb419052fab17064bfd0ad3e5d5f2f684",
     "scriptPath": "public/presentations/narration/beat-breeze-id/script.json",
-    "scriptSha256": "8757659e472fdc2907dd88051b981352e42c2b3b04486cc734329e8779c7216f",
+    "scriptSha256": "ed0d2cab077a88a800ad9fedbb8a4c767646c58ced34d40ad68e61b7aee2c0a4",
     "copyPath": "public/presentations/narration/beat-breeze-id/copy.json",
-    "copySha256": "da929dd7f163530f324f72b31e2a29dbdaafccef75020cbd8513d37a23e9bb35"
+    "copySha256": "1d26fa5eaf3cd0970c390a90d44335f2d124ab78273fa250938ad0b45003a735"
   },
   "voice": {
     "provider": "google-gemini",
@@ -60,7 +60,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 773.84,
+  "totalDurationSeconds": 775.48,
   "slides": [
     {
       "index": 1,
@@ -385,20 +385,20 @@
         "solusi enterprise",
         "tanpa perangkat khusus yang diwajibkan"
       ],
-      "text": "Anda bisa mengelola musik sendiri atau menyerahkannya kepada BMAsia. Paket mandiri berharga 15 dolar AS per zona per bulan. Jika memilih paket tahunan, harganya 150 dolar AS per zona per tahun. Kedua paket mandiri mencakup fitur aplikasi, dan Anda mengelola playlist serta jadwal pemutaran sendiri. Untuk layanan yang dikelola tim kami, paket BMAsia berharga 260 dolar AS per zona per tahun, dan hanya tersedia dalam paket tahunan. Tim desain musik kami memilih dan menyegarkan playlist serta jadwal yang ditetapkan untuk setiap zona, termasuk penyesuaian musim dan hari raya. Layanan ini juga mencakup dukungan teknis sepanjang waktu dan account manager khusus. Semua pelanggan mendapatkan pembaruan aplikasi secara berkala, apa pun paketnya. Perbedaannya adalah siapa yang mengurus musik Anda. Paket mandiri bisa dicoba gratis selama 14 hari untuk satu zona tanpa kartu. Grup besar dapat mengatur kontrak khusus dan penagihan lokal, tanpa kewajiban membeli box pemutar khusus.",
+      "text": "Anda bisa mengelola musik sendiri atau menyerahkannya kepada BMAsia. Paket mandiri berharga 15 dolar AS per zona per bulan. Jika memilih paket tahunan, harganya 150 dolar AS per zona per tahun. Kedua paket mandiri mencakup fitur aplikasi, dan Anda mengelola playlist serta jadwal pemutaran sendiri. Untuk layanan yang dikelola tim kami, paket BMAsia berharga 260 dolar AS per zona per tahun, dan hanya tersedia dalam paket tahunan. Tim desain musik kami memilih dan menyegarkan playlist serta jadwal yang ditetapkan untuk setiap zona, termasuk penyesuaian musim dan hari raya. Layanan ini juga mencakup dukungan teknis sepanjang waktu dan account manager khusus. Semua pelanggan mendapatkan pembaruan aplikasi secara berkala, apa pun paketnya. Perbedaannya adalah siapa yang mengurus musik Anda. Paket mandiri bisa dicoba gratis selama 14 hari untuk satu zona; uji coba ini memerlukan kartu, tanpa biaya saat dimulai. Jika BMAsia yang mengatur uji coba Anda, tidak perlu kartu. Grup besar dapat mengatur kontrak khusus dan penagihan lokal, tanpa kewajiban membeli box pemutar khusus.",
       "index": 13,
-      "src": "audio/20260907-pricing-5254e0a084366232/13-pricing.mp3",
-      "transcriptSha256": "29654cfed609598f2e4995f6959cfe7b909ce81155a532c1b64f384fa9617459",
-      "audioSha256": "a9dab9070103fe07d97ada6e9ceda481b169b550ee49ff16ab288118010c798c",
-      "durationSeconds": 70.2,
+      "src": "audio/20261024-pricing-238952812f2248fd/13-pricing.mp3",
+      "transcriptSha256": "3a6dad265d2303a29bcd30bfa3478167b85f88f3db4acc2b95bb813b72a80548",
+      "audioSha256": "8008ac6560bea6c2c6b1ef961380569dcca14d1122e64fb578fab0d5b54916cf",
+      "durationSeconds": 71.84,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.5,
-      "truePeakDbtp": -3.31,
-      "loudnessRangeLu": 2.3,
-      "thresholdLufs": -28.84,
+      "integratedLufs": -18.48,
+      "truePeakDbtp": -3.43,
+      "loudnessRangeLu": 3,
+      "thresholdLufs": -29.08,
       "targetOffsetLu": 0.12
     },
     {
@@ -463,7 +463,7 @@
       "slidesTranscribed": 1,
       "slidesReusedFromPreviousQa": 14,
       "verifiedUnchangedSlideCount": 14,
-      "previousReleaseId": "20260907-pricing-3efe30bc7a4def79",
+      "previousReleaseId": "20260907-pricing-5254e0a084366232",
       "requiredMaximumCharacterErrorRate": 0.18,
       "maximumCharacterErrorRate": 0.1115,
       "meanCharacterErrorRate": 0.1115,
@@ -539,6 +539,18 @@
       "technicalSupport24x7": true,
       "appUpdatesInEveryPlan": true,
       "currencyPolicy": "USD only outside the Thai edition"
+    },
+    "trialWordingUpdate": {
+      "date": "2026-10-24",
+      "scope": "Slide 13 (pricing) only; trial sentence changed to the two-route rule; prices unchanged.",
+      "newSentence": "Paket mandiri bisa dicoba gratis selama 14 hari untuk satu zona; uji coba ini memerlukan kartu, tanpa biaya saat dimulai. Jika BMAsia yang mengatur uji coba Anda, tidak perlu kartu.",
+      "replacedSentence": "Paket mandiri bisa dicoba gratis selama 14 hari untuk satu zona tanpa kartu.",
+      "characterErrorRate": 0.0022222222222222222,
+      "lengthRatio": 1.001111111111111,
+      "automatedTextPass": true,
+      "semanticReview": "passed: transcript states the self-serve 14-day one-zone trial needs a card with no charge at start, and a BMAsia-arranged trial needs no card; spoken prices match the slide",
+      "reviewer": "automated transcript plus Claude Code semantic check; not native-speaker editorial approval",
+      "qaRecord": "docs/beat-breeze-trial-wording-20261024-qa.json"
     }
   },
   "generation": {
@@ -547,6 +559,6 @@
       "13-pricing"
     ],
     "verifiedCarryForwardSlideCount": 14,
-    "previousReleaseId": "20260907-pricing-3efe30bc7a4def79"
+    "previousReleaseId": "20260907-pricing-5254e0a084366232"
   }
 }

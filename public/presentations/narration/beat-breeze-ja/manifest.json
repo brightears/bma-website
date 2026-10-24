@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-ja",
   "status": "official-ja-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-07T02:40:59.552Z",
-  "releaseId": "20260907-pricing-b10fd79e7bcf98aa",
+  "generatedAt": "2026-10-24T08:37:01.544Z",
+  "releaseId": "20261024-pricing-effdcbd98ba580fa",
   "publicationStatus": "Official unlinked, noindex Japanese Beat Breeze presentation with complete slide-linked Japanese narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,13 +30,13 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "017ebe5a49083498049a89163e1ec2e66e795812780267e6245d5f8276c53ce8",
+    "englishDeckSha256": "c85f12948326f2188d9a5b29405020076d9825d615ea429c2bf027ff0b602a77",
     "officialDeckPath": "public/presentations/beat-breeze-ja.html",
-    "officialDeckSha256": "728538386bfb29139c123999f97c6dd59e1d7bb6d2898490cec81e2a18cd2b4a",
+    "officialDeckSha256": "99d27da3e777a13877e3cd214f9cd6043c7f0074f84632c52f28d92082df5b13",
     "scriptPath": "public/presentations/narration/beat-breeze-ja/script.json",
-    "scriptSha256": "7849fdd34f5cde7f28a5c05202297fcfc0fedef88444b727458c84809739e3d6",
+    "scriptSha256": "31743e2eefae69ffdeeb63d1790527cb44550cec17c79f631079ab70ce19ae79",
     "copyPath": "public/presentations/narration/beat-breeze-ja/copy.json",
-    "copySha256": "34b173418307ec5806945eed5744a3a80fdb134d57b077d90ffb663441f988d2"
+    "copySha256": "e3dff0c89b82887b57ce69607a305fd0e54b05a09c6816b9329e030b79593760"
   },
   "voice": {
     "provider": "google-gemini",
@@ -60,7 +60,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 726.88,
+  "totalDurationSeconds": 735.12,
   "slides": [
     {
       "index": 1,
@@ -382,21 +382,21 @@
         "エンタープライズ対応",
         "専用ハードウェア不要"
       ],
-      "text": "音楽を自分で管理するか、BMAsiaに任せるかをお選びいただけます。セルフサービスは、1ゾーンあたり月額15米ドルです。年間プランなら、1ゾーンあたり年額150米ドルになります。どちらのセルフサービスプランにもアプリの機能が含まれ、プレイリストと再生スケジュールはお客様が管理します。運用をお任せいただくBMAsia管理型は、1ゾーンあたり年額260米ドルで、年間プランのみの提供です。音楽デザインチームが各ゾーンのプレイリストとスケジュールを選定し、季節や行事に合わせて見直します。24時間365日の技術サポートと専任アカウントマネージャーも含まれます。どのプランでも、アプリは継続的に更新されます。違いは、日々の音楽管理を誰が担当するかです。セルフサービスはカード登録なしで1ゾーンを14日間無料でお試しいただけます。大規模な企業には個別契約や地域に合った請求方法をご用意でき、専用プレーヤーボックスの購入も不要です。",
+      "text": "音楽を自分で管理するか、BMAsiaに任せるかをお選びいただけます。セルフサービスは、1ゾーンあたり月額15米ドルです。年間プランなら、1ゾーンあたり年額150米ドルになります。どちらのセルフサービスプランにもアプリの機能が含まれ、プレイリストと再生スケジュールはお客様が管理します。運用をお任せいただくBMAsia管理型は、1ゾーンあたり年額260米ドルで、年間プランのみの提供です。音楽デザインチームが各ゾーンのプレイリストとスケジュールを選定し、季節や行事に合わせて見直します。24時間365日の技術サポートと専任アカウントマネージャーも含まれます。どのプランでも、アプリは継続的に更新されます。違いは、日々の音楽管理を誰が担当するかです。セルフサービスは1ゾーンを14日間無料でお試しいただけます。カードの登録が必要ですが、開始時に料金は発生しません。BMAsiaがトライアルを手配する場合は、カードは不要です。大規模な企業には個別契約や地域に合った請求方法をご用意でき、専用プレーヤーボックスの購入も不要です。",
       "index": 13,
-      "src": "audio/20260907-pricing-b10fd79e7bcf98aa/13-pricing.mp3",
-      "transcriptSha256": "42d1947610b26bb3a8f290b65bd75d16fc6d2e9e27714c556db7a882280478f5",
-      "audioSha256": "b1828596c20319d73897481aa37450df7b62743542e68d2e21544b27d5c2a90d",
-      "durationSeconds": 70.64,
+      "src": "audio/20261024-pricing-effdcbd98ba580fa/13-pricing.mp3",
+      "transcriptSha256": "226a143753dd7dbb0f57caf0ae0e986d3f75437cf9a92be66bd9f4b84448c059",
+      "audioSha256": "3a259e01e8236b501d1e4e566e937a4795474041f64c2394614c82a08edb3a80",
+      "durationSeconds": 78.88,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.45,
-      "truePeakDbtp": -3.44,
-      "loudnessRangeLu": 4.4,
-      "thresholdLufs": -28.79,
-      "targetOffsetLu": 0.84
+      "integratedLufs": -18.5,
+      "truePeakDbtp": -3.26,
+      "loudnessRangeLu": 2.8,
+      "thresholdLufs": -28.97,
+      "targetOffsetLu": 0.26
     },
     {
       "index": 14,
@@ -460,7 +460,7 @@
       "slidesTranscribed": 1,
       "slidesReusedFromPreviousQa": 14,
       "verifiedUnchangedSlideCount": 14,
-      "previousReleaseId": "20260907-pricing-ab05439dda3a5bb4",
+      "previousReleaseId": "20260907-pricing-b10fd79e7bcf98aa",
       "requiredMaximumCharacterErrorRate": 0.18,
       "maximumCharacterErrorRate": 0.0481,
       "meanCharacterErrorRate": 0.0481,
@@ -536,6 +536,18 @@
       "technicalSupport24x7": true,
       "appUpdatesInEveryPlan": true,
       "currencyPolicy": "USD only outside the Thai edition"
+    },
+    "trialWordingUpdate": {
+      "date": "2026-10-24",
+      "scope": "Slide 13 (pricing) only; trial sentence changed to the two-route rule; prices unchanged.",
+      "newSentence": "セルフサービスは1ゾーンを14日間無料でお試しいただけます。カードの登録が必要ですが、開始時に料金は発生しません。BMAsiaがトライアルを手配する場合は、カードは不要です。",
+      "replacedSentence": "セルフサービスはカード登録なしで1ゾーンを14日間無料でお試しいただけます。",
+      "characterErrorRate": 0,
+      "lengthRatio": 1,
+      "automatedTextPass": true,
+      "semanticReview": "passed: transcript states the self-serve 14-day one-zone trial needs a card with no charge at start, and a BMAsia-arranged trial needs no card; spoken prices match the slide",
+      "reviewer": "automated transcript plus Claude Code semantic check; not native-speaker editorial approval",
+      "qaRecord": "docs/beat-breeze-trial-wording-20261024-qa.json"
     }
   },
   "generation": {
@@ -544,6 +556,6 @@
       "13-pricing"
     ],
     "verifiedCarryForwardSlideCount": 14,
-    "previousReleaseId": "20260907-pricing-ab05439dda3a5bb4"
+    "previousReleaseId": "20260907-pricing-b10fd79e7bcf98aa"
   }
 }

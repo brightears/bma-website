@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-voice-preview-th",
   "status": "official-thai-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-07T01:47:13.447Z",
-  "releaseId": "20260907-pricing-6c8fa01de57203f2",
+  "generatedAt": "2026-10-24T08:35:42.949Z",
+  "releaseId": "20261024-pricing-19b8970071785863",
   "publicationStatus": "Official unlinked, noindex Thai Beat Breeze presentation with complete slide-linked narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,11 +30,11 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "017ebe5a49083498049a89163e1ec2e66e795812780267e6245d5f8276c53ce8",
+    "englishDeckSha256": "c85f12948326f2188d9a5b29405020076d9825d615ea429c2bf027ff0b602a77",
     "officialDeckPath": "public/presentations/beat-breeze-th.html",
-    "officialDeckSha256": "551613d1d70eaf7a05bb6fe824bcd3f6044a86350f58350fca15f057e69d0d49",
+    "officialDeckSha256": "b551eb1dbdd39c69dd2098ce0fe1e934fff68dfa5c397e493c9111502518f4b8",
     "scriptPath": "public/presentations/narration/beat-breeze-voice-preview-th/script.json",
-    "scriptSha256": "9159b625a85cbbe1a0d150117ccd5881986694b94755ff759377e55bdf23335d"
+    "scriptSha256": "c362e8b4746a41c9b8f6e7f52fe6f86df151f6a664e687f2f75cd479ba386cfd"
   },
   "voice": {
     "provider": "google-gemini",
@@ -58,7 +58,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 675.04,
+  "totalDurationSeconds": 692.64,
   "slides": [
     {
       "index": 1,
@@ -392,21 +392,21 @@
         "ข้อตกลงสำหรับองค์กร",
         "ไม่บังคับใช้กล่องเครื่องเล่นเฉพาะ"
       ],
-      "text": "คุณเลือกได้ว่าจะจัดการเพลงเอง หรือให้ BMAsia ดูแลค่ะ แบบดูแลเอง ราคา 15 ดอลลาร์สหรัฐ หรือ 499 บาท ต่อโซนต่อเดือน ถ้าเลือกจ่ายรายปี ราคา 150 ดอลลาร์สหรัฐ หรือ 4,990 บาท ต่อโซนต่อปี ทั้งสองแพ็กเกจมีฟีเจอร์ของแอปครบ โดยคุณเป็นผู้จัดการเพลย์ลิสต์และตารางเล่นเพลงเอง ส่วนบริการที่ BMAsia ดูแลให้ ราคา 260 ดอลลาร์สหรัฐ หรือ 9,000 บาท ต่อโซนต่อปี และมีเฉพาะแพ็กเกจรายปีเท่านั้น ทีมออกแบบเพลงของเราจะเลือกและปรับเพลย์ลิสต์กับตารางเล่นเพลงที่กำหนดให้แต่ละโซน รวมถึงปรับให้เหมาะกับเทศกาลและฤดูกาล พร้อมการสนับสนุนด้านเทคนิคตลอด 24 ชั่วโมง และผู้จัดการบัญชีเฉพาะ ไม่ว่าจะเลือกแพ็กเกจไหน ทุกคนก็ได้รับการอัปเดตแอปอย่างต่อเนื่องค่ะ สิ่งที่ต่างกันคือใครเป็นผู้ดูแลเพลงให้คุณ แบบดูแลเองเริ่มทดลองใช้ฟรี 14 วันกับหนึ่งโซนได้โดยไม่ต้องใช้บัตร สำหรับองค์กรขนาดใหญ่ เราจัดสัญญาและการออกใบแจ้งหนี้ให้เหมาะสมได้ และไม่จำเป็นต้องซื้อกล่องเครื่องเล่นเฉพาะค่ะ",
+      "text": "คุณเลือกได้ว่าจะจัดการเพลงเอง หรือให้ BMAsia ดูแลค่ะ แบบดูแลเอง ราคา 15 ดอลลาร์สหรัฐ หรือ 499 บาท ต่อโซนต่อเดือน ถ้าเลือกจ่ายรายปี ราคา 150 ดอลลาร์สหรัฐ หรือ 4,990 บาท ต่อโซนต่อปี ทั้งสองแพ็กเกจมีฟีเจอร์ของแอปครบ โดยคุณเป็นผู้จัดการเพลย์ลิสต์และตารางเล่นเพลงเอง ส่วนบริการที่ BMAsia ดูแลให้ ราคา 260 ดอลลาร์สหรัฐ หรือ 9,000 บาท ต่อโซนต่อปี และมีเฉพาะแพ็กเกจรายปีเท่านั้น ทีมออกแบบเพลงของเราจะเลือกและปรับเพลย์ลิสต์กับตารางเล่นเพลงที่กำหนดให้แต่ละโซน รวมถึงปรับให้เหมาะกับเทศกาลและฤดูกาล พร้อมการสนับสนุนด้านเทคนิคตลอด 24 ชั่วโมง และผู้จัดการบัญชีเฉพาะ ไม่ว่าจะเลือกแพ็กเกจไหน ทุกคนก็ได้รับการอัปเดตแอปอย่างต่อเนื่องค่ะ สิ่งที่ต่างกันคือใครเป็นผู้ดูแลเพลงให้คุณ แบบดูแลเองเริ่มทดลองใช้ฟรี 14 วันกับหนึ่งโซนได้ โดยต้องใช้บัตร แต่จะไม่มีการเรียกเก็บเงินตอนเริ่มค่ะ ถ้าให้ BMAsia จัดการทดลองใช้ให้ ก็ไม่ต้องใช้บัตรค่ะ สำหรับองค์กรขนาดใหญ่ เราจัดสัญญาและการออกใบแจ้งหนี้ให้เหมาะสมได้ และไม่จำเป็นต้องซื้อกล่องเครื่องเล่นเฉพาะค่ะ",
       "index": 13,
-      "src": "audio/20260907-pricing-6c8fa01de57203f2/13-pricing.mp3",
-      "transcriptSha256": "810462a91b65b2fac28cd6ac05126d99357156c0a34f91bcef6fe0bc947a3475",
-      "audioSha256": "fb70551dac4057becc876fbae94810e8c7168a8f2e2dc061c327652d683317bd",
-      "durationSeconds": 66.92,
+      "src": "audio/20261024-pricing-19b8970071785863/13-pricing.mp3",
+      "transcriptSha256": "185819f8455d7b14a83049984320ef8af98ea3d80980779b89f97ca09a57ec90",
+      "audioSha256": "69f55f572fd852c34818778268d979802d4efd6595ee66d9a2b4b7b4045c17e9",
+      "durationSeconds": 84.52,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.47,
-      "truePeakDbtp": -3.33,
-      "loudnessRangeLu": 2.1,
-      "thresholdLufs": -28.85,
-      "targetOffsetLu": 0.04
+      "integratedLufs": -18.52,
+      "truePeakDbtp": -3.42,
+      "loudnessRangeLu": 3,
+      "thresholdLufs": -28.98,
+      "targetOffsetLu": 0.21
     },
     {
       "index": 14,
@@ -472,7 +472,7 @@
       "slidesTranscribed": 1,
       "slidesReusedFromPreviousQa": 14,
       "verifiedUnchangedSlideCount": 14,
-      "previousReleaseId": "20260903-3827823b0a44",
+      "previousReleaseId": "20260907-pricing-6c8fa01de57203f2",
       "requiredMaximumCharacterErrorRate": 0.18,
       "maximumCharacterErrorRate": 0.0463,
       "meanCharacterErrorRate": 0.0463,
@@ -528,6 +528,18 @@
       "seasonalChanges": true,
       "technicalSupport24x7": true,
       "appUpdatesInEveryPlan": true
+    },
+    "trialWordingUpdate": {
+      "date": "2026-10-24",
+      "scope": "Slide 13 (pricing) only; trial sentence changed to the two-route rule; prices unchanged.",
+      "newSentence": "แบบดูแลเองเริ่มทดลองใช้ฟรี 14 วันกับหนึ่งโซนได้ โดยต้องใช้บัตร แต่จะไม่มีการเรียกเก็บเงินตอนเริ่มค่ะ ถ้าให้ BMAsia จัดการทดลองใช้ให้ ก็ไม่ต้องใช้บัตรค่ะ",
+      "replacedSentence": "แบบดูแลเองเริ่มทดลองใช้ฟรี 14 วันกับหนึ่งโซนได้โดยไม่ต้องใช้บัตร",
+      "characterErrorRate": 0.004285714285714286,
+      "lengthRatio": 0.9971428571428571,
+      "automatedTextPass": true,
+      "semanticReview": "passed: transcript states the self-serve 14-day one-zone trial needs a card with no charge at start, and a BMAsia-arranged trial needs no card; spoken prices match the slide",
+      "reviewer": "automated transcript plus Claude Code semantic check; not native-speaker editorial approval",
+      "qaRecord": "docs/beat-breeze-trial-wording-20261024-qa.json"
     }
   },
   "generation": {
@@ -536,6 +548,6 @@
       "13-pricing"
     ],
     "verifiedCarryForwardSlideCount": 14,
-    "previousReleaseId": "20260903-3827823b0a44"
+    "previousReleaseId": "20260907-pricing-6c8fa01de57203f2"
   }
 }
