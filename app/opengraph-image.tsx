@@ -142,7 +142,7 @@ export default async function Image() {
               lineHeight: 1.4,
             }}
           >
-            Background Music Solutions for Businesses Across Asia
+            Background Music Solutions for Businesses Worldwide
           </div>
         </div>
 

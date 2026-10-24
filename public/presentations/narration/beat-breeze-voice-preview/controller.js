@@ -67,7 +67,7 @@
       },
       {
         index: 13,
-        src: "audio/20260907-pricing-c796d38e1d3b589c/13-pricing.mp3",
+        src: "audio/20261024-pricing-1c747b2a731466c7/13-pricing.mp3",
       },
       {
         index: 14,

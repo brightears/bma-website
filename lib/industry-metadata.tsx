@@ -28,7 +28,7 @@ export async function IndustryRouteLayout({ slug, locale, children }: { slug: In
   const serviceSchema = {
     '@context': 'https://schema.org', '@type': 'Service', name: t('headline'), description: t('subheadline'), url,
     provider: { '@type': 'Organization', name: 'BMAsia', url: `${SITE.url}/` },
-    areaServed: 'Asia-Pacific', serviceType: 'Business music and atmosphere design',
+    serviceType: 'Business music and atmosphere design',
   };
   const breadcrumbSchema = {
     '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [

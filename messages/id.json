@@ -151,47 +151,6 @@
     "meetNote": "Tautan rapat unik akan ditambahkan ke undangan kalender Anda.",
     "privacy": "Detail Anda hanya digunakan untuk mengatur dan menyiapkan percakapan ini."
   },
-  "about": {
-    "sectionTitle": "Siapa",
-    "sectionTitleHighlight": "Kami",
-    "sectionSubtitle": "Mitra terpercaya Anda dalam menciptakan pengalaman sonik yang tak terlupakan",
-    "imageAlt": "Ruang kontrol studio musik profesional",
-    "storySince": "Sejak",
-    "storyYear": "2002",
-    "storyIntro": "BMAsia telah menjadi penyedia B2B terkemuka global untuk",
-    "storyHighlight": "solusi musik latar yang disesuaikan",
-    "storyDetails": "Kami menciptakan lebih dari 50.000 jam musik setiap tahun, dirancang dengan cermat untuk mencocokkan konsep venue Anda, memperkuat citra merek Anda, dan beresonansi dengan demografi pelanggan Anda. Tim ahli kami memahami bahwa soundtrack yang tepat dapat mengubah pengalaman pelanggan dan mendorong kesuksesan bisnis.",
-    "differentiators": {
-      "title": "Apa yang Membedakan Kami",
-      "venuesConcept": "Musik disesuaikan dengan konsep venue Anda",
-      "brandImage": "Selaras dengan citra merek Anda",
-      "demographics": "Dirancang untuk demografi pelanggan Anda",
-      "expertTeam": "Tim kurasi musik ahli"
-    },
-    "cta": "Pelajari bagaimana kami dapat membantu bisnis Anda",
-    "stats": {
-      "experience": {
-        "value": "23+",
-        "label": "Tahun Pengalaman",
-        "sublabel": "Didirikan pada 2002"
-      },
-      "hours": {
-        "value": "50000+",
-        "label": "Jam Musik",
-        "sublabel": "Diciptakan setiap tahun"
-      },
-      "tracks": {
-        "value": "100 Jt+",
-        "label": "Lagu Tersedia",
-        "sublabel": "Di perpustakaan kami"
-      },
-      "global": {
-        "value": "Global",
-        "label": "Kehadiran",
-        "sublabel": "Jangkauan seluruh dunia"
-      }
-    }
-  },
   "contact": {
     "sectionTitle": "Hubungi",
     "sectionTitleHighlight": "Kami",
@@ -312,7 +271,7 @@
   "footer": {
     "tagline": "Di Mana Musik Penting",
     "about": "Tentang BMAsia",
-    "description": "Ciptakan atmosfer sempurna untuk bisnis Anda. BMAsia menyediakan solusi musik latar yang disesuaikan untuk hotel, restoran, dan ritel di seluruh Asia-Pasifik sejak 2002.",
+    "description": "Ciptakan atmosfer sempurna untuk bisnis Anda. Sejak 2002, BMAsia merancang musik latar khusus untuk hotel, restoran, ritel, dan bisnis lain di seluruh dunia.",
     "navigation": "Navigasi",
     "contact": "Kontak",
     "copyright": "Hak cipta dilindungi.",
@@ -336,7 +295,7 @@
     "fitness": "Kebugaran & wellness",
     "startHere": "Mulai di sini",
     "tryBeatBreeze": "Coba Beat Breeze",
-    "trialProof": "Gratis 14 hari · tanpa kartu",
+    "trialProof": "Gratis 14 hari · tanpa kartu jika disiapkan BMAsia",
     "talkToBMAsia": "Bicarakan dengan BMAsia",
     "globalReach": "Berdiri sejak 2002. Mendukung venue lokal dan grup internasional melalui tim regional yang responsif.",
     "choosePath": "Pilih jalur musik Anda",
@@ -704,7 +663,7 @@
       "finalTitle": "Zona pertama Anda siap dalam hitungan menit.",
       "startFree": "Mulai gratis",
       "talkToBMAsia": "Bicara dengan BMAsia",
-      "finalDescription": "Coba pengalaman venue terhubung di satu zona selama 14 hari. Tanpa kartu, perangkat khusus, atau proses penyiapan yang panjang."
+      "finalDescription": "Coba pengalaman venue yang terhubung selama 14 hari, tanpa perangkat khusus dan tanpa penyiapan yang lama. Minta BMAsia menyiapkan uji coba dan tidak perlu kartu. Uji coba mandiri di beatbreeze.io memerlukan kartu, tanpa biaya saat dimulai."
     },
     "redesign": {
       "hero": {
@@ -895,7 +854,7 @@
           },
           {
             "q": "Apakah ada uji coba gratis?",
-            "a": "Ya. Beat Breeze menawarkan uji coba gratis 14 hari tanpa perlu kartu kredit, dan dapat dimulai secara mandiri di beatbreeze.io. Mulailah dengan satu zona, lalu minta BMAsia membentuk rencana musik dan media multizona ketika Anda siap."
+            "a": "Ya, dan ada dua cara untuk memulai uji coba gratis 14 hari. Minta BMAsia menyiapkannya untuk Anda dan tidak perlu kartu. Atau mulai uji coba mandiri untuk satu zona di beatbreeze.io: uji coba ini memerlukan kartu, tidak ada biaya saat dimulai, dan diperpanjang setiap bulan kecuali Anda membatalkannya sebelum berakhir. Ketika Anda siap, BMAsia dapat membentuk rencana musik dan media multizona."
           },
           {
             "q": "Perangkat keras apa yang dibutuhkan Beat Breeze?",
@@ -915,7 +874,7 @@
           },
           {
             "q": "Bagaimana skema harganya?",
-            "a": "Harga ditentukan berdasarkan penawaran. Besarnya bergantung pada jumlah lokasi dan zona serta wilayahnya. Minta proposal yang disesuaikan melalui halaman penawaran, dan BMAsia akan merekomendasikan pengaturan yang tepat."
+            "a": "Tergantung cara Anda memulai. Harga mandiri Beat Breeze dipublikasikan di beatbreeze.io/pricing. Jika BMAsia yang mengatur penyiapannya, atau Anda merencanakan beberapa lokasi, BMAsia menyiapkan penawaran harga berdasarkan jumlah lokasi dan zona serta wilayahnya. Minta penawaran melalui halaman penawaran."
           }
         ]
       }
@@ -1229,7 +1188,7 @@
       "description": "Pilih musik sendiri atau biarkan Music Director membentuk hari. Jadwalkan dan kendalikan setiap player dari satu tempat.",
       "cta": "Jelajahi platform",
       "proof1": "Gratis 14 hari",
-      "proof2": "Tanpa kartu",
+      "proof2": "Tanpa kartu jika disiapkan BMAsia",
       "proof3": "Tanpa perangkat khusus",
       "workflowLabel": "Dari daftar hingga musik",
       "workflowTitle": "Tiga langkah. Lalu berjalan sendiri.",
@@ -1240,7 +1199,7 @@
       "step2Text": "Gunakan browser atau pasang aplikasi di perangkat yang sudah ada.",
       "step3Title": "Gerakkan setiap zona",
       "step3Text": "Pilih musik sendiri atau biarkan Music Director membuat rencana awal.",
-      "finalDescription": "Coba pengalaman musik lengkap di satu zona selama 14 hari. Tanpa kartu atau perangkat khusus."
+      "finalDescription": "Coba pengalaman musik lengkap selama 14 hari, tanpa perangkat khusus dan tanpa penyiapan yang lama. Minta BMAsia menyiapkan uji coba dan tidak perlu kartu. Uji coba mandiri di beatbreeze.io memerlukan kartu, tanpa biaya saat dimulai."
     },
     "alternative": {
       "title": "Butuh musik yang dikenal tamu?",

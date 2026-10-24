@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-vi",
   "status": "official-vietnamese-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-07T02:39:02.515Z",
-  "releaseId": "20260907-pricing-7fe46f919a507bdf",
+  "generatedAt": "2026-10-24T08:36:16.881Z",
+  "releaseId": "20261024-pricing-24aa01c091d3af0a",
   "publicationStatus": "Official unlinked, noindex Vietnamese Beat Breeze presentation with complete slide-linked Vietnamese narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,13 +30,13 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "017ebe5a49083498049a89163e1ec2e66e795812780267e6245d5f8276c53ce8",
+    "englishDeckSha256": "c85f12948326f2188d9a5b29405020076d9825d615ea429c2bf027ff0b602a77",
     "officialDeckPath": "public/presentations/beat-breeze-vi.html",
-    "officialDeckSha256": "8accf1d58cb1d71d2681486ef74ef04546488364f4612836f671ba798a3b41c6",
+    "officialDeckSha256": "37566e603263c41e9e05692d9ad669f8ebf14266b8bda04f80f44b38f95ad1df",
     "scriptPath": "public/presentations/narration/beat-breeze-vi/script.json",
-    "scriptSha256": "4be01323397e1391ac8235959d410cb803a13d0a4b1eabc8076fef130ece52d5",
+    "scriptSha256": "6a8e088f7e099f9dcff1494e4ced00f5a4287ce375bcb3502e6f5f9a9ae6b396",
     "copyPath": "public/presentations/narration/beat-breeze-vi/copy.json",
-    "copySha256": "b2b7f53aa603fb30f7b3b5ed686113074c39f2fd5a218539700afb614435acbd"
+    "copySha256": "4b02101eb51f7606b3b2d1a4c59a45de2d544c134a86124cad81afe5df8e6fd4"
   },
   "voice": {
     "provider": "google-gemini",
@@ -60,7 +60,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 617.8,
+  "totalDurationSeconds": 623.36,
   "slides": [
     {
       "index": 1,
@@ -382,21 +382,21 @@
         "giải pháp doanh nghiệp",
         "không bắt buộc thiết bị chuyên dụng"
       ],
-      "text": "Quý khách có thể tự quản lý âm nhạc hoặc để BMAsia chăm sóc. Gói tự phục vụ có giá 15 đô la Mỹ cho mỗi khu vực mỗi tháng. Nếu chọn thanh toán theo năm, giá là 150 đô la Mỹ cho mỗi khu vực mỗi năm. Cả hai gói tự phục vụ đều bao gồm các tính năng của ứng dụng, và quý khách tự quản lý danh sách phát cùng lịch phát. Nếu muốn giao việc này cho đội ngũ chuyên môn, gói do BMAsia quản lý có giá 260 đô la Mỹ cho mỗi khu vực mỗi năm, và chỉ có gói năm. Đội ngũ thiết kế âm nhạc của chúng tôi lựa chọn và làm mới danh sách phát cùng lịch phát được gán cho từng khu vực, kể cả thay đổi theo mùa và dịp lễ. Dịch vụ còn có hỗ trợ kỹ thuật suốt ngày đêm và quản lý tài khoản riêng. Mọi khách hàng đều được cập nhật ứng dụng thường xuyên, bất kể chọn gói nào. Điểm khác biệt là ai chăm sóc âm nhạc cho quý khách. Có thể dùng thử gói tự phục vụ miễn phí 14 ngày trên một khu vực, không cần thẻ. Doanh nghiệp lớn có thể chọn hợp đồng và hình thức xuất hóa đơn phù hợp, và không cần mua hộp phát chuyên dụng.",
+      "text": "Quý khách có thể tự quản lý âm nhạc hoặc để BMAsia chăm sóc. Gói tự phục vụ có giá 15 đô la Mỹ cho mỗi khu vực mỗi tháng. Nếu chọn thanh toán theo năm, giá là 150 đô la Mỹ cho mỗi khu vực mỗi năm. Cả hai gói tự phục vụ đều bao gồm các tính năng của ứng dụng, và quý khách tự quản lý danh sách phát cùng lịch phát. Nếu muốn giao việc này cho đội ngũ chuyên môn, gói do BMAsia quản lý có giá 260 đô la Mỹ cho mỗi khu vực mỗi năm, và chỉ có gói năm. Đội ngũ thiết kế âm nhạc của chúng tôi lựa chọn và làm mới danh sách phát cùng lịch phát được gán cho từng khu vực, kể cả thay đổi theo mùa và dịp lễ. Dịch vụ còn có hỗ trợ kỹ thuật suốt ngày đêm và quản lý tài khoản riêng. Mọi khách hàng đều được cập nhật ứng dụng thường xuyên, bất kể chọn gói nào. Điểm khác biệt là ai chăm sóc âm nhạc cho quý khách. Có thể dùng thử gói tự phục vụ miễn phí 14 ngày trên một khu vực; gói này yêu cầu thẻ nhưng không tính phí khi bắt đầu. Nếu BMAsia sắp xếp bản dùng thử cho quý khách thì không cần thẻ. Doanh nghiệp lớn có thể chọn hợp đồng và hình thức xuất hóa đơn phù hợp, và không cần mua hộp phát chuyên dụng.",
       "index": 13,
-      "src": "audio/20260907-pricing-7fe46f919a507bdf/13-pricing.mp3",
-      "transcriptSha256": "e5cdcef604fb517428e8b85785fbae60aa1e41fb2961ad6a9a6efe5d314ed642",
-      "audioSha256": "b4432ee14c8c677cac4805df415eb8ec21c396caab66b1fd358bbfa69e6eeabd",
-      "durationSeconds": 62.32,
+      "src": "audio/20261024-pricing-24aa01c091d3af0a/13-pricing.mp3",
+      "transcriptSha256": "0c352f8d941429cc99f2664e742c7cca16ace90da3391dc725c0c6c11e8009bc",
+      "audioSha256": "c0367e273eab99d9e4849ad1fbdfc65599d10efb1e5a9a238c4221f442dd7a4c",
+      "durationSeconds": 67.88,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
       "integratedLufs": -18.51,
-      "truePeakDbtp": -3.41,
-      "loudnessRangeLu": 2.4,
-      "thresholdLufs": -28.8,
-      "targetOffsetLu": 0.39
+      "truePeakDbtp": -3.4,
+      "loudnessRangeLu": 2.5,
+      "thresholdLufs": -28.83,
+      "targetOffsetLu": 0.49
     },
     {
       "index": 14,
@@ -460,7 +460,7 @@
       "slidesTranscribed": 1,
       "slidesReusedFromPreviousQa": 14,
       "verifiedUnchangedSlideCount": 14,
-      "previousReleaseId": "20260907-pricing-3e786a39c42b8297",
+      "previousReleaseId": "20260907-pricing-7fe46f919a507bdf",
       "requiredMaximumCharacterErrorRate": 0.18,
       "maximumCharacterErrorRate": 0.0866,
       "meanCharacterErrorRate": 0.0866,
@@ -536,6 +536,18 @@
       "technicalSupport24x7": true,
       "appUpdatesInEveryPlan": true,
       "currencyPolicy": "USD only outside the Thai edition"
+    },
+    "trialWordingUpdate": {
+      "date": "2026-10-24",
+      "scope": "Slide 13 (pricing) only; trial sentence changed to the two-route rule; prices unchanged.",
+      "newSentence": "Có thể dùng thử gói tự phục vụ miễn phí 14 ngày trên một khu vực; gói này yêu cầu thẻ nhưng không tính phí khi bắt đầu. Nếu BMAsia sắp xếp bản dùng thử cho quý khách thì không cần thẻ.",
+      "replacedSentence": "Có thể dùng thử gói tự phục vụ miễn phí 14 ngày trên một khu vực, không cần thẻ.",
+      "characterErrorRate": 0,
+      "lengthRatio": 1,
+      "automatedTextPass": true,
+      "semanticReview": "passed: transcript states the self-serve 14-day one-zone trial needs a card with no charge at start, and a BMAsia-arranged trial needs no card; spoken prices match the slide",
+      "reviewer": "automated transcript plus Claude Code semantic check; not native-speaker editorial approval",
+      "qaRecord": "docs/beat-breeze-trial-wording-20261024-qa.json"
     }
   },
   "generation": {
@@ -544,6 +556,6 @@
       "13-pricing"
     ],
     "verifiedCarryForwardSlideCount": 14,
-    "previousReleaseId": "20260907-pricing-3e786a39c42b8297"
+    "previousReleaseId": "20260907-pricing-7fe46f919a507bdf"
   }
 }

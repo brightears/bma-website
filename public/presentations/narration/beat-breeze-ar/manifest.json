@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-ar",
   "status": "official-ar-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-07T02:41:08.993Z",
-  "releaseId": "20260907-pricing-b21a830334926c4d",
+  "generatedAt": "2026-10-24T08:35:45.860Z",
+  "releaseId": "20261024-pricing-e0e3b301adaeaa94",
   "publicationStatus": "Official unlinked, noindex Arabic Beat Breeze presentation with complete slide-linked Arabic narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,13 +30,13 @@
   },
   "source": {
     "englishDeckPath": "public/presentations/beat-breeze.html",
-    "englishDeckSha256": "017ebe5a49083498049a89163e1ec2e66e795812780267e6245d5f8276c53ce8",
+    "englishDeckSha256": "c85f12948326f2188d9a5b29405020076d9825d615ea429c2bf027ff0b602a77",
     "officialDeckPath": "public/presentations/beat-breeze-ar.html",
-    "officialDeckSha256": "259cb559e921ef7d7e7edfee31f864aa77914c01509b89b0955ab42365023340",
+    "officialDeckSha256": "753a9228bf349a6d023065e83a22e88f349b277cce5cd4b2cacb9b8d8636ebce",
     "scriptPath": "public/presentations/narration/beat-breeze-ar/script.json",
-    "scriptSha256": "eefb3b2b0dd635d41840eb6245bd0bc6dd0154444f60236f166e4bf59dbbc311",
+    "scriptSha256": "8930e38bb895dbea19adbe90083fff9f39416ad0999c41aca9c7354a72d9bc03",
     "copyPath": "public/presentations/narration/beat-breeze-ar/copy.json",
-    "copySha256": "c78a9229a93f279b940005132d9cd6e98a27a07856cdf4a385343167b7e0b394"
+    "copySha256": "40361f79aa8ec0cfb904e02de9a91bb8fb8f10cb6f7c828a1ecff7baae839c20"
   },
   "voice": {
     "provider": "google-gemini",
@@ -60,7 +60,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 773.12,
+  "totalDurationSeconds": 789.92,
   "slides": [
     {
       "index": 1,
@@ -382,21 +382,21 @@
         "حلول المؤسسات",
         "لا حاجة إلى أجهزة مخصصة"
       ],
-      "text": "يمكنكم إدارة الموسيقى بأنفسكم، أو ترك المهمة لفريق BMAsia. تبلغ تكلفة الخدمة الذاتية 15 دولارا أمريكيا لكل منطقة شهريا. وإذا اخترتم الدفع السنوي، فالتكلفة 150 دولارا أمريكيا لكل منطقة سنويا. تشمل خطتا الخدمة الذاتية ميزات التطبيق، وتتولون فيهما إدارة قوائم التشغيل والجداول بأنفسكم. أما خدمة BMAsia المدارة فتبلغ 260 دولارا أمريكيا لكل منطقة سنويا، وهي متاحة ضمن خطط سنوية فقط. يختار فريقنا لتصميم الموسيقى قوائم التشغيل والجداول المخصصة لكل منطقة ويجددها، بما يناسب المواسم والمناسبات. وتشمل الخدمة أيضا دعما تقنيا على مدار الساعة طوال أيام الأسبوع ومدير حساب مخصصا. جميع العملاء يحصلون على تحديثات التطبيق المستمرة أيا كانت خطتهم. الفرق هو من يتولى العناية بالموسيقى اليومية في المكان. ويمكن تجربة الخدمة الذاتية مجانا لمدة 14 يوما لمنطقة واحدة من دون بطاقة. وللمؤسسات الكبيرة عقود وطرق فوترة مخصصة، ولا يلزم شراء صندوق تشغيل خاص.",
+      "text": "يمكنكم إدارة الموسيقى بأنفسكم، أو ترك المهمة لفريق BMAsia. تبلغ تكلفة الخدمة الذاتية 15 دولارا أمريكيا لكل منطقة شهريا. وإذا اخترتم الدفع السنوي، فالتكلفة 150 دولارا أمريكيا لكل منطقة سنويا. تشمل خطتا الخدمة الذاتية ميزات التطبيق، وتتولون فيهما إدارة قوائم التشغيل والجداول بأنفسكم. أما خدمة BMAsia المدارة فتبلغ 260 دولارا أمريكيا لكل منطقة سنويا، وهي متاحة ضمن خطط سنوية فقط. يختار فريقنا لتصميم الموسيقى قوائم التشغيل والجداول المخصصة لكل منطقة ويجددها، بما يناسب المواسم والمناسبات. وتشمل الخدمة أيضا دعما تقنيا على مدار الساعة طوال أيام الأسبوع ومدير حساب مخصصا. جميع العملاء يحصلون على تحديثات التطبيق المستمرة أيا كانت خطتهم. الفرق هو من يتولى العناية بالموسيقى اليومية في المكان. ويمكن تجربة الخدمة الذاتية مجانا لمدة 14 يوما لمنطقة واحدة، وتتطلب بطاقة من دون أي رسوم عند البدء. وإذا رتبت BMAsia التجربة لكم، فلا حاجة إلى بطاقة. وللمؤسسات الكبيرة عقود وطرق فوترة مخصصة، ولا يلزم شراء صندوق تشغيل خاص.",
       "index": 13,
-      "src": "audio/20260907-pricing-b21a830334926c4d/13-pricing.mp3",
-      "transcriptSha256": "99adad06aaa0bddd53e7c2e6d667923520aadd623668ce497f682dea55b49e4d",
-      "audioSha256": "98f5e2427fd83fead3d0fa1d4a7a62d072a0c96872442afd625472983263427f",
-      "durationSeconds": 75.88,
+      "src": "audio/20261024-pricing-e0e3b301adaeaa94/13-pricing.mp3",
+      "transcriptSha256": "363fb53455d2b62ed461f11d7151c84997b1c7fb04e107b097df5723d1381c07",
+      "audioSha256": "b911e4590930e0b3c6aa645a9a15d7aa1918ecba39e0a83c9b354ecaab83067f",
+      "durationSeconds": 92.68,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.52,
-      "truePeakDbtp": -3.36,
-      "loudnessRangeLu": 2.5,
-      "thresholdLufs": -28.93,
-      "targetOffsetLu": 0.28
+      "integratedLufs": -18.58,
+      "truePeakDbtp": -3.37,
+      "loudnessRangeLu": 4.3,
+      "thresholdLufs": -28.9,
+      "targetOffsetLu": 0.81
     },
     {
       "index": 14,
@@ -460,7 +460,7 @@
       "slidesTranscribed": 1,
       "slidesReusedFromPreviousQa": 14,
       "verifiedUnchangedSlideCount": 14,
-      "previousReleaseId": "20260907-pricing-bb9bd0a714573ad5",
+      "previousReleaseId": "20260907-pricing-b21a830334926c4d",
       "requiredMaximumCharacterErrorRate": 0.18,
       "maximumCharacterErrorRate": 0.0934,
       "meanCharacterErrorRate": 0.0934,
@@ -536,6 +536,18 @@
       "technicalSupport24x7": true,
       "appUpdatesInEveryPlan": true,
       "currencyPolicy": "USD only outside the Thai edition"
+    },
+    "trialWordingUpdate": {
+      "date": "2026-10-24",
+      "scope": "Slide 13 (pricing) only; trial sentence changed to the two-route rule; prices unchanged.",
+      "newSentence": "ويمكن تجربة الخدمة الذاتية مجانا لمدة 14 يوما لمنطقة واحدة، وتتطلب بطاقة من دون أي رسوم عند البدء. وإذا رتبت BMAsia التجربة لكم، فلا حاجة إلى بطاقة.",
+      "replacedSentence": "ويمكن تجربة الخدمة الذاتية مجانا لمدة 14 يوما لمنطقة واحدة من دون بطاقة.",
+      "characterErrorRate": 0.0026954177897574125,
+      "lengthRatio": 0.9986522911051213,
+      "automatedTextPass": true,
+      "semanticReview": "passed: transcript states the self-serve 14-day one-zone trial needs a card with no charge at start, and a BMAsia-arranged trial needs no card; spoken prices match the slide",
+      "reviewer": "automated transcript plus Claude Code semantic check; not native-speaker editorial approval",
+      "qaRecord": "docs/beat-breeze-trial-wording-20261024-qa.json"
     }
   },
   "generation": {
@@ -544,6 +556,6 @@
       "13-pricing"
     ],
     "verifiedCarryForwardSlideCount": 14,
-    "previousReleaseId": "20260907-pricing-bb9bd0a714573ad5"
+    "previousReleaseId": "20260907-pricing-b21a830334926c4d"
   }
 }

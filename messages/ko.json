@@ -151,47 +151,6 @@
     "meetNote": "고유 미팅 링크가 캘린더 초대에 추가됩니다.",
     "privacy": "입력하신 정보는 이 상담을 예약하고 준비하는 데만 사용됩니다."
   },
-  "about": {
-    "sectionTitle": "우리는",
-    "sectionTitleHighlight": "누구인가",
-    "sectionSubtitle": "기억에 남는 음향 경험을 만드는 신뢰할 수 있는 파트너",
-    "imageAlt": "전문 음악 스튜디오 컨트롤룸",
-    "storySince": "",
-    "storyYear": "2002년부터",
-    "storyIntro": "BMAsia는 글로벌 B2B 선두 제공업체로",
-    "storyHighlight": "맞춤형 배경음악 솔루션",
-    "storyDetails": "을 제공합니다. 매년 50,000시간 이상의 음악을 제작하며, 장소 컨셉에 맞게, 브랜드 이미지를 강화하고, 고객 인구통계와 공명하도록 세심하게 제작합니다. 전문 팀은 올바른 사운드트랙이 고객 경험을 변화시키고 비즈니스 성공을 이끌 수 있다는 것을 이해합니다.",
-    "differentiators": {
-      "title": "차별화 요소",
-      "venuesConcept": "장소 컨셉에 맞춘 음악",
-      "brandImage": "브랜드 이미지와 일치",
-      "demographics": "고객 인구통계 맞춤 설계",
-      "expertTeam": "전문 음악 큐레이션 팀"
-    },
-    "cta": "비즈니스를 어떻게 도울 수 있는지 알아보세요",
-    "stats": {
-      "experience": {
-        "value": "23+",
-        "label": "년 경험",
-        "sublabel": "2002년 설립"
-      },
-      "hours": {
-        "value": "50000+",
-        "label": "시간의 음악",
-        "sublabel": "연간 제작"
-      },
-      "tracks": {
-        "value": "1억+",
-        "label": "곡 보유",
-        "sublabel": "라이브러리에"
-      },
-      "global": {
-        "value": "글로벌",
-        "label": "존재감",
-        "sublabel": "전 세계 진출"
-      }
-    }
-  },
   "contact": {
     "sectionTitle": "문의",
     "sectionTitleHighlight": "하기",
@@ -312,7 +271,7 @@
   "footer": {
     "tagline": "음악이 중요한 곳",
     "about": "BMAsia 소개",
-    "description": "비즈니스에 완벽한 분위기를 만드세요. BMAsia는 2002년부터 아시아태평양 전역의 호텔, 레스토랑, 리테일을 위한 맞춤형 배경음악 솔루션을 제공합니다.",
+    "description": "비즈니스에 완벽한 분위기를 만드세요. BMAsia는 2002년부터 전 세계의 호텔, 레스토랑, 리테일 등 다양한 비즈니스를 위해 맞춤형 배경음악을 디자인해 왔습니다.",
     "navigation": "네비게이션",
     "contact": "연락처",
     "copyright": "모든 권리 보유.",
@@ -336,7 +295,7 @@
     "fitness": "피트니스 & 웰니스",
     "startHere": "여기서 시작",
     "tryBeatBreeze": "Beat Breeze 체험하기",
-    "trialProof": "14일 무료 · 카드 불필요",
+    "trialProof": "14일 무료 · BMAsia가 설정 시 카드 불필요",
     "talkToBMAsia": "BMAsia와 상담하기",
     "globalReach": "2002년 설립. 신속하게 대응하는 지역 팀이 현지 매장과 글로벌 그룹을 지원합니다.",
     "choosePath": "음악 솔루션 선택",
@@ -701,7 +660,7 @@
       "web": "웹 플레이어",
       "offline": "오프라인 재생",
       "price": "매장별 맞춤 구성",
-      "finalDescription": "하나의 존에서 14일 동안 연결된 공간 경험을 시험해 보세요. 카드, 전용 하드웨어, 복잡한 설치가 필요 없습니다.",
+      "finalDescription": "전용 장비나 긴 설정 없이 14일간 연결된 공간 경험을 체험하세요. BMAsia에 체험 설정을 요청하면 카드가 필요 없습니다. beatbreeze.io의 셀프서비스 체험은 카드 등록이 필요하지만, 시작 시 요금이 청구되지 않습니다.",
       "finalTitle": "첫 번째 존을 몇 분 안에 준비하세요.",
       "startFree": "무료로 시작",
       "talkToBMAsia": "BMAsia와 상담"
@@ -895,7 +854,7 @@
           },
           {
             "q": "무료 체험이 있나요?",
-            "a": "네. Beat Breeze는 카드 등록 없이 14일 무료 체험을 제공하며, beatbreeze.io에서 직접 셀프서비스로 시작할 수 있습니다. 하나의 존으로 시작한 뒤 준비가 되면 BMAsia에 다중 존 음악·미디어 계획을 요청하세요."
+            "a": "네. 14일 무료 체험은 두 가지 방법으로 시작할 수 있습니다. BMAsia에 설정을 요청하면 카드가 필요 없습니다. 또는 beatbreeze.io에서 하나의 존으로 셀프서비스 체험을 시작할 수 있으며, 이 경우 카드 등록이 필요합니다. 시작 시 요금은 청구되지 않으며, 체험 종료 전에 취소하지 않으면 매월 자동 갱신됩니다. 준비가 되면 BMAsia가 다중 존 음악·미디어 계획을 함께 설계해 드립니다."
           },
           {
             "q": "Beat Breeze에는 어떤 하드웨어가 필요한가요?",
@@ -915,7 +874,7 @@
           },
           {
             "q": "가격은 어떻게 책정되나요?",
-            "a": "가격은 견적 방식으로 산정됩니다. 지점과 존의 수, 그리고 지역에 따라 달라집니다. 견적 페이지에서 맞춤 제안을 요청하시면 BMAsia가 적합한 구성을 추천해 드립니다."
+            "a": "시작 방식에 따라 다릅니다. Beat Breeze 셀프서비스 요금은 beatbreeze.io/pricing에 공개되어 있습니다. BMAsia가 설정을 맡거나 여러 지점을 계획하는 경우, BMAsia가 지점과 존의 수, 그리고 지역에 따라 견적을 준비해 드립니다. 견적 페이지에서 요청하세요."
           }
         ]
       }
@@ -1229,7 +1188,7 @@
       "description": "직접 음악을 고르거나 Music Director가 하루를 설계하도록 하세요. 모든 플레이어를 한곳에서 스케줄하고 제어합니다.",
       "cta": "플랫폼 살펴보기",
       "proof1": "14일 무료",
-      "proof2": "카드 불필요",
+      "proof2": "BMAsia가 설정 시 카드 불필요",
       "proof3": "전용 하드웨어 불필요",
       "workflowLabel": "가입부터 재생까지",
       "workflowTitle": "세 단계면 운영이 시작됩니다.",
@@ -1240,7 +1199,7 @@
       "step2Text": "브라우저를 사용하거나 기존 기기에 앱을 설치하세요.",
       "step3Title": "모든 존을 실행",
       "step3Text": "직접 음악을 고르거나 Music Director가 첫 플랜을 만들게 하세요.",
-      "finalDescription": "한 개 존에서 14일간 전체 음악 경험을 체험하세요. 카드나 전용 장비가 필요 없습니다."
+      "finalDescription": "전용 장비나 긴 설정 없이 14일간 전체 음악 경험을 체험하세요. BMAsia에 체험 설정을 요청하면 카드가 필요 없습니다. beatbreeze.io의 셀프서비스 체험은 카드 등록이 필요하지만, 시작 시 요금이 청구되지 않습니다."
     },
     "alternative": {
       "title": "고객이 이름을 아는 음악이 필요하신가요?",

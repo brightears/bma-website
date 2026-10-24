@@ -53,7 +53,7 @@ ${verify.neverTitle} ${Object.values(verify.never).join('; ')}. ${verify.unsure}
 
   return `# BMAsia
 
-> ${en.metadata.description} Founded in 2002 and headquartered in Bangkok, Thailand, BMAsia serves hospitality, retail, wellness, workplace, and public venues across Asia-Pacific and beyond. Tagline: "${SITE.tagline}". This site is available in 8 languages (en, th, vi, ms, id, ko, ja, zh); English is the x-default.
+> ${en.metadata.description} Founded in 2002, BMAsia serves hospitality, retail, wellness, workplace, and public venues worldwide. Tagline: "${SITE.tagline}". This site is available in 8 languages (en, th, vi, ms, id, ko, ja, zh); English is the x-default.
 
 ${en.homePage.immersive.hero.description} BMAsia provides independent product guidance, bespoke music design, onboarding, schedules, and regional human support around both platforms.
 
@@ -72,7 +72,7 @@ The two music platforms:
 - ${bb.feature3}
 - ${bb.feature4}
 - ${comparison.bb.headline} ${comparison.bb.performanceNote}
-- Trial: ${en.homePage.beatBreezeLead.proof1}, ${en.homePage.beatBreezeLead.proof2.toLowerCase()}, ${en.homePage.beatBreezeLead.proof3.toLowerCase()}
+- Trial: 14 days free. No card is needed when BMAsia sets the trial up; the self-serve trial at beatbreeze.io asks for a card, with no charge when it starts. Self-serve prices: https://beatbreeze.io/pricing
 
 Common buyer questions:
 
@@ -89,10 +89,10 @@ Q: Does BMAsia require special hardware?
 A: No dedicated hardware is required. Beat Breeze runs in a browser or as an app on devices the venue already owns, and its playback is offline-capable. For Soundtrack, the exact setup follows the selected product, venue hardware, and network conditions — BMAsia helps configure compatible playback during onboarding.
 
 Q: Is there a free trial?
-A: Both platforms offer a 14-day free trial with no card required. The Beat Breeze trial is self-serve at beatbreeze.io. Soundtrack trials are reviewed and arranged for the business by BMAsia via the Soundtrack trial request page.
+A: Both platforms offer a 14-day free trial. Beat Breeze can be started two ways: when BMAsia sets the trial up, no card is needed; the self-serve trial for one zone at beatbreeze.io asks for a card, charges nothing when it starts, and renews monthly unless cancelled before it ends. Soundtrack trials need no card and are reviewed and arranged for the business by BMAsia via the Soundtrack trial request page.
 
 Q: How does pricing work?
-A: Pricing is quotation-based. It depends on the product route, the number of locations and zones, and the territory. Venues request a tailored proposal via the quotation page and BMAsia follows up with the right product path.
+A: Beat Breeze self-serve prices are published at https://beatbreeze.io/pricing. For Soundtrack, and for Beat Breeze setups arranged by BMAsia or spanning several locations, pricing is quotation-based: it depends on the product route, the number of locations and zones, and the territory. Venues request a tailored proposal via the quotation page and BMAsia follows up with the right product path.
 
 Q: What does BMAsia add beyond the software?
 A: Music design since 2002, guided onboarding, daypart schedule design, responsive regional support, and BMAsia-built venue extensions such as prayer-time automation, weather-aware playlist behavior, supported volume integrations, and operational APIs for approved deployments.
@@ -111,6 +111,7 @@ ${verifyBlock}
 - [Request a Soundtrack trial](${base}/en/soundtrack-trial/): 14-day, no-card Soundtrack trial, reviewed and arranged by BMAsia
 - [Book a demo](${base}/en/book-demo/): schedule a session with the BMAsia team
 - [Beat Breeze platform](https://beatbreeze.io): sign-up, player apps, and product site
+- [Beat Breeze pricing](https://beatbreeze.io/pricing): published self-serve plans
 
 ## Solutions by industry
 
@@ -118,7 +119,7 @@ ${industryLinks}
 
 ## Company
 
-- [BMAsia](${base}/en/): BMAsia Group — founded 2002, headquartered in Bangkok, Thailand, serving venues across Asia-Pacific and beyond
+- [BMAsia](${base}/en/): BMAsia Group — founded 2002, serving venues worldwide
 - [Beat Breeze platform](https://beatbreeze.io): BMAsia's own venue experience platform
 - [Email BMAsia](mailto:${SITE.email}): ${SITE.email}
 - [WhatsApp](${SOCIAL.whatsapp}): chat directly with the BMAsia team (${OFFICIAL_CONTACTS.phoneDisplay})

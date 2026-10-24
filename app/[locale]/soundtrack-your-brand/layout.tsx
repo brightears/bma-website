@@ -42,7 +42,6 @@ export default async function SoundtrackLayout({
         url,
         serviceType: 'Business background music service',
         provider: { '@id': `${SITE.url}/#organization` },
-        areaServed: 'Asia-Pacific',
       },
       {
         '@type': 'BreadcrumbList',

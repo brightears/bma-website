@@ -43,7 +43,6 @@ export default async function BeatBreezeLayout({
         sameAs: 'https://beatbreeze.io',
         serviceType: 'Business background music and venue experience platform',
         provider: { '@id': `${SITE.url}/#organization` },
-        areaServed: 'Asia-Pacific',
       },
       {
         '@type': 'BreadcrumbList',

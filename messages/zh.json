@@ -151,47 +151,6 @@
     "meetNote": "专属会议链接将添加到您的日历邀请中。",
     "privacy": "您的信息仅用于安排和准备本次对话。"
   },
-  "about": {
-    "sectionTitle": "关于",
-    "sectionTitleHighlight": "我们",
-    "sectionSubtitle": "您值得信赖的合作伙伴，为您创造难忘的声音体验",
-    "imageAlt": "专业音乐工作室控制室",
-    "storySince": "自",
-    "storyYear": "2002年",
-    "storyIntro": "BMAsia一直是全球领先的B2B",
-    "storyHighlight": "定制背景音乐解决方案",
-    "storyDetails": "提供商。我们每年创作超过50,000小时的音乐，精心制作以匹配您的场所概念，强化您的品牌形象，并与您的客户群体产生共鸣。我们的专家团队深知，合适的背景音乐可以改变客户体验，推动业务成功。",
-    "differentiators": {
-      "title": "我们的独特之处",
-      "venuesConcept": "根据您的场所概念定制音乐",
-      "brandImage": "与您的品牌形象保持一致",
-      "demographics": "为您的客户群体量身设计",
-      "expertTeam": "专业音乐策划团队"
-    },
-    "cta": "了解我们如何帮助您的业务",
-    "stats": {
-      "experience": {
-        "value": "23+",
-        "label": "年行业经验",
-        "sublabel": "成立于2002年"
-      },
-      "hours": {
-        "value": "50000+",
-        "label": "小时音乐",
-        "sublabel": "年度制作量"
-      },
-      "tracks": {
-        "value": "1亿+",
-        "label": "可用曲目",
-        "sublabel": "在我们的曲库中"
-      },
-      "global": {
-        "value": "全球",
-        "label": "业务覆盖",
-        "sublabel": "遍布世界各地"
-      }
-    }
-  },
   "contact": {
     "sectionTitle": "联系",
     "sectionTitleHighlight": "我们",
@@ -312,7 +271,7 @@
   "footer": {
     "tagline": "音乐无处不在",
     "about": "关于 BMAsia",
-    "description": "为您的企业打造完美氛围。自2002年以来，BMAsia为亚太地区的酒店、餐厅和零售店提供定制背景音乐解决方案。",
+    "description": "为您的企业打造完美氛围。自 2002 年以来，BMAsia 为世界各地的酒店、餐厅、零售店及其他企业设计定制背景音乐。",
     "navigation": "导航",
     "contact": "联系方式",
     "copyright": "版权所有。",
@@ -336,7 +295,7 @@
     "fitness": "健身与康养",
     "startHere": "从这里开始",
     "tryBeatBreeze": "试用 Beat Breeze",
-    "trialProof": "免费 14 天 · 无需信用卡",
+    "trialProof": "免费 14 天 · 由 BMAsia 开通无需信用卡",
     "talkToBMAsia": "与 BMAsia 沟通",
     "globalReach": "创立于 2002 年。由响应迅速的区域团队，为本地场所与国际集团提供支持。",
     "choosePath": "选择您的音乐方案",
@@ -701,7 +660,7 @@
       "web": "网页播放器",
       "offline": "离线播放",
       "price": "按场所需求配置",
-      "finalDescription": "在一个区域免费体验 14 天互联场所体验。无需信用卡、专用硬件或复杂设置。",
+      "finalDescription": "无需专用盒子或复杂设置，即可完整体验 14 天互联场所服务。请 BMAsia 为您安排试用，无需信用卡；在 beatbreeze.io 自助开通试用需要绑定信用卡，但开始时不会收费。",
       "finalTitle": "几分钟内即可让第一个区域上线。",
       "startFree": "免费开始",
       "talkToBMAsia": "联系 BMAsia"
@@ -895,7 +854,7 @@
           },
           {
             "q": "有免费试用吗？",
-            "a": "有。Beat Breeze 提供 14 天免费试用，无需绑定信用卡，并可在 beatbreeze.io 自助开通。先从一个分区开始，准备就绪后再请 BMAsia 规划多分区的音乐与媒体方案。"
+            "a": "有，14 天免费试用可通过两种方式开始。请 BMAsia 为您开通，无需信用卡。或在 beatbreeze.io 为一个分区自助开通试用：需要绑定信用卡，开始时不收费，除非在试用结束前取消，否则将按月自动续订。准备就绪后，BMAsia 可为您规划多分区的音乐与媒体方案。"
           },
           {
             "q": "Beat Breeze 需要哪些硬件？",
@@ -915,7 +874,7 @@
           },
           {
             "q": "价格是如何计算的？",
-            "a": "价格采用报价方式。具体取决于地点与分区数量以及所在地区。通过报价页面提交定制方案申请，BMAsia 会为您推荐合适的配置。"
+            "a": "取决于您的开通方式。Beat Breeze 自助服务价格公布在 beatbreeze.io/pricing。如由 BMAsia 安排设置，或您计划在多个地点使用，BMAsia 会根据地点与分区数量以及所在地区为您准备报价。请通过报价页面提交申请。"
           }
         ]
       }
@@ -1229,7 +1188,7 @@
       "description": "自行选曲或让 Music Director 安排全天氛围。在一个地方排程并控制所有播放器。",
       "cta": "了解平台",
       "proof1": "免费 14 天",
-      "proof2": "无需信用卡",
+      "proof2": "由 BMAsia 开通无需信用卡",
       "proof3": "无需专用硬件",
       "workflowLabel": "从注册到播放",
       "workflowTitle": "三个步骤，之后自动运行。",
@@ -1240,7 +1199,7 @@
       "step2Text": "使用浏览器或在现有设备上安装应用。",
       "step3Title": "启动每个区域",
       "step3Text": "自行选曲或让 Music Director 创建初始方案。",
-      "finalDescription": "在一个区域完整试用 14 天。无需信用卡、专用盒子或复杂设置。"
+      "finalDescription": "无需专用盒子或复杂设置，即可完整体验 14 天音乐服务。请 BMAsia 为您安排试用，无需信用卡；在 beatbreeze.io 自助开通试用需要绑定信用卡，但开始时不会收费。"
     },
     "alternative": {
       "title": "需要宾客能叫出名字的音乐？",

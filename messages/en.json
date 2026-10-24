@@ -151,47 +151,6 @@
     "meetNote": "A unique meeting link will be added to your calendar invitation.",
     "privacy": "Your details are used only to arrange and prepare this conversation."
   },
-  "about": {
-    "sectionTitle": "Who We",
-    "sectionTitleHighlight": "Are",
-    "sectionSubtitle": "Your trusted partner in creating memorable sonic experiences",
-    "imageAlt": "Professional music studio control room",
-    "storySince": "Since",
-    "storyYear": "2002",
-    "storyIntro": "BMAsia has been a leading global B2B provider of",
-    "storyHighlight": "customized background music solutions",
-    "storyDetails": "We create over 50,000 hours of music annually, carefully crafted to match your venue concepts, reinforce your brand image, and resonate with your customer demographics. Our expert team understands that the right soundtrack can transform customer experiences and drive business success.",
-    "differentiators": {
-      "title": "What Sets Us Apart",
-      "venuesConcept": "Music tailored to your venue concept",
-      "brandImage": "Aligned with your brand image",
-      "demographics": "Designed for your customer demographics",
-      "expertTeam": "Expert music curation team"
-    },
-    "cta": "Learn how we can help your business",
-    "stats": {
-      "experience": {
-        "value": "23+",
-        "label": "Years of Experience",
-        "sublabel": "Founded in 2002"
-      },
-      "hours": {
-        "value": "50000+",
-        "label": "Hours of Music",
-        "sublabel": "Created annually"
-      },
-      "tracks": {
-        "value": "100M+",
-        "label": "Tracks Available",
-        "sublabel": "In our library"
-      },
-      "global": {
-        "value": "Global",
-        "label": "Presence",
-        "sublabel": "Worldwide reach"
-      }
-    }
-  },
   "contact": {
     "sectionTitle": "Contact",
     "sectionTitleHighlight": "Us",
@@ -312,7 +271,7 @@
   "footer": {
     "tagline": "Wherever Music Matters",
     "about": "About BMAsia",
-    "description": "Craft the perfect atmosphere for your business. BMAsia provides customized background music solutions for hotels, restaurants, and retail across Asia-Pacific since 2002.",
+    "description": "Craft the perfect atmosphere for your business. Since 2002, BMAsia has designed custom background music for hotels, restaurants, retail and other businesses around the world.",
     "navigation": "Navigation",
     "contact": "Contact",
     "copyright": "All rights reserved.",
@@ -336,7 +295,7 @@
     "fitness": "Fitness & wellness",
     "startHere": "Start here",
     "tryBeatBreeze": "Try Beat Breeze",
-    "trialProof": "14 days free · no card",
+    "trialProof": "14 days free · no card when BMAsia sets it up",
     "talkToBMAsia": "Talk to BMAsia",
     "globalReach": "Founded in 2002. Supporting local venues and international groups through a responsive regional team.",
     "choosePath": "Choose your music route",
@@ -701,7 +660,7 @@
       "web": "Web player",
       "offline": "Offline playback",
       "price": "Configured for each venue",
-      "finalDescription": "Try the connected venue experience in one zone for 14 days. No card, no dedicated box and no long setup.",
+      "finalDescription": "Try the connected venue experience for 14 days, with no dedicated box and no long setup. Ask BMAsia to arrange the trial and no card is needed. The self-serve trial at beatbreeze.io asks for a card, with no charge when it starts.",
       "finalTitle": "Your first zone is ready in minutes.",
       "startFree": "Start free",
       "talkToBMAsia": "Talk to BMAsia"
@@ -895,7 +854,7 @@
           },
           {
             "q": "Is there a free trial?",
-            "a": "Yes. Beat Breeze offers a 14-day free trial with no card required, and it's self-serve at beatbreeze.io. Start with one zone, then ask BMAsia to shape a multi-zone music and media plan when you're ready."
+            "a": "Yes, and there are two ways to start the 14-day free trial. Ask BMAsia to set it up for you and no card is needed. Or start the self-serve trial for one zone at beatbreeze.io: it asks for a card, nothing is charged when it starts, and it renews monthly unless you cancel before it ends. When you're ready, BMAsia can shape a multi-zone music and media plan."
           },
           {
             "q": "What hardware does Beat Breeze need?",
@@ -915,7 +874,7 @@
           },
           {
             "q": "How does pricing work?",
-            "a": "Pricing is quotation-based. It depends on the number of locations and zones and the territory. Request a tailored proposal via the quotation page and BMAsia recommends the right setup."
+            "a": "It depends on how you start. Self-serve prices for Beat Breeze are published at beatbreeze.io/pricing. If BMAsia arranges the setup, or you're planning several locations, BMAsia prepares a quotation based on the number of locations and zones and the territory. Request one via the quotation page."
           }
         ]
       }
@@ -1229,7 +1188,7 @@
       "description": "Choose the music yourself or let the Music Director shape the day. Schedule it, control every player and keep the experience moving from one place.",
       "cta": "Explore the platform",
       "proof1": "14 days free",
-      "proof2": "No card required",
+      "proof2": "No card when BMAsia sets it up",
       "proof3": "No dedicated hardware",
       "workflowLabel": "From sign-up to sound",
       "workflowTitle": "Three steps. Then it runs itself.",
@@ -1240,7 +1199,7 @@
       "step2Text": "Use a browser or install the app on a device you already own.",
       "step3Title": "Set every zone in motion",
       "step3Text": "Choose the music yourself or let the Music Director build the starting plan.",
-      "finalDescription": "Try the full music experience in one zone for 14 days. No card, no dedicated box and no long setup."
+      "finalDescription": "Try the full music experience for 14 days, with no dedicated box and no long setup. Ask BMAsia to arrange the trial and no card is needed. The self-serve trial at beatbreeze.io asks for a card, with no charge when it starts."
     },
     "alternative": {
       "title": "Need music your guests know by name?",
