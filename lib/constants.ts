@@ -4,7 +4,7 @@
 export const SITE = {
   name: 'BMAsia',
   tagline: 'Wherever Music Matters',
-  description: 'BMAsia designs and operates music experiences for hospitality, retail, wellness, workplaces, and public venues across Asia-Pacific.',
+  description: 'BMAsia designs and operates music experiences for hospitality, retail, wellness, workplaces and public venues worldwide.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://bmasiamusic.com',
   email: 'info@bmasiamusic.com',
 } as const;

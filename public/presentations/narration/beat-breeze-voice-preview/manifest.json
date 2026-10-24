@@ -4,8 +4,8 @@
   "presentation": "beat-breeze-voice-preview",
   "status": "official-english-narrated-presentation",
   "ready": true,
-  "generatedAt": "2026-09-07T02:39:10.832Z",
-  "releaseId": "20260907-pricing-c796d38e1d3b589c",
+  "generatedAt": "2026-10-24T08:35:33.935Z",
+  "releaseId": "20261024-pricing-1c747b2a731466c7",
   "publicationStatus": "Official unlinked, noindex English Beat Breeze presentation with complete slide-linked narration.",
   "coverage": {
     "slideIndexes": [
@@ -30,9 +30,9 @@
   },
   "source": {
     "officialDeckPath": "public/presentations/beat-breeze.html",
-    "officialDeckSha256": "017ebe5a49083498049a89163e1ec2e66e795812780267e6245d5f8276c53ce8",
+    "officialDeckSha256": "c85f12948326f2188d9a5b29405020076d9825d615ea429c2bf027ff0b602a77",
     "scriptPath": "public/presentations/narration/beat-breeze-voice-preview/script.json",
-    "scriptSha256": "a2fbb90b7516d74d334bf84c26c4b5e79cb6c600085e1f69f584eb278b152268"
+    "scriptSha256": "b0448643530677a8ee36cff14dce10182e75cd3071cc252dc7dbecbc8d43a265"
   },
   "voice": {
     "provider": "google-gemini",
@@ -56,7 +56,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 614.16,
+  "totalDurationSeconds": 618.96,
   "slides": [
     {
       "index": 1,
@@ -378,21 +378,21 @@
         "enterprise arrangements",
         "no required player box"
       ],
-      "text": "You can choose to manage the music yourself, or have BMAsia take care of it. Self-service costs 15 US dollars per zone per month. If you prefer an annual plan, it is 150 US dollars per zone per year. Both self-service plans include the app’s features, and you manage your own playlists and schedules. For a hands-off service, BMAsia is 260 US dollars per zone per year, available on annual plans only. Our music design team selects and refreshes the playlists and schedules assigned to each zone, including seasonal changes. That service also includes 24/7 technical support and a dedicated account manager. Everyone receives ongoing app updates, whichever plan they choose. The difference is who looks after your music. You can try self-service free for 14 days on one zone without a card. Larger groups can arrange custom contracts and local invoicing, and no dedicated player box is required.",
+      "text": "You can choose to manage the music yourself, or have BMAsia take care of it. Self-service costs 15 US dollars per zone per month. If you prefer an annual plan, it is 150 US dollars per zone per year. Both self-service plans include the app’s features, and you manage your own playlists and schedules. For a hands-off service, BMAsia is 260 US dollars per zone per year, available on annual plans only. Our music design team selects and refreshes the playlists and schedules assigned to each zone, including seasonal changes. That service also includes 24/7 technical support and a dedicated account manager. Everyone receives ongoing app updates, whichever plan they choose. The difference is who looks after your music. You can try self-service free for 14 days on one zone; it asks for a card, with no charge when it starts. If BMAsia arranges your trial, no card is needed. Larger groups can arrange custom contracts and local invoicing, and no dedicated player box is required.",
       "index": 13,
-      "src": "audio/20260907-pricing-c796d38e1d3b589c/13-pricing.mp3",
-      "transcriptSha256": "f78605c0f29119827acba0efc9c569a3a28a76d5a9e495a553308124e132eb53",
-      "audioSha256": "1f5de833b3805d180d55f33790d8291d4ebbd5fa3e2a2a666cea8c7a76cda37c",
-      "durationSeconds": 59.12,
+      "src": "audio/20261024-pricing-1c747b2a731466c7/13-pricing.mp3",
+      "transcriptSha256": "abeca4b0cf42d48be11f769dfe520f351ff83995d03581b825851c78f3f09af8",
+      "audioSha256": "553c9b2faa1493fff820e9460736d09ed1d34f084daa59186e5028f2047ae6f6",
+      "durationSeconds": 63.92,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.58,
-      "truePeakDbtp": -3.24,
-      "loudnessRangeLu": 3.3,
-      "thresholdLufs": -29.05,
-      "targetOffsetLu": 0.35
+      "integratedLufs": -18.56,
+      "truePeakDbtp": -3.12,
+      "loudnessRangeLu": 3.5,
+      "thresholdLufs": -29.07,
+      "targetOffsetLu": 0.18
     },
     {
       "index": 14,
@@ -451,7 +451,7 @@
       "13-pricing"
     ],
     "verifiedCarryForwardSlideCount": 14,
-    "previousReleaseId": "20260907-pricing-6ab57b120ff3cb79"
+    "previousReleaseId": "20260907-pricing-c796d38e1d3b589c"
   },
   "qualityAssurance": {
     "transcription": {
@@ -464,7 +464,7 @@
       "slidesTranscribed": 1,
       "slidesReusedFromPreviousQa": 0,
       "verifiedUnchangedSlideCount": 14,
-      "previousReleaseId": "20260907-pricing-6ab57b120ff3cb79",
+      "previousReleaseId": "20260907-pricing-c796d38e1d3b589c",
       "requiredMaximumCharacterErrorRate": 0.18,
       "maximumCharacterErrorRate": 0.035386631716906945,
       "meanCharacterErrorRate": 0.035386631716906945,
@@ -531,6 +531,18 @@
       "technicalSupport24x7": true,
       "appUpdatesInEveryPlan": true,
       "currencyPolicy": "USD only outside the Thai edition"
+    },
+    "trialWordingUpdate": {
+      "date": "2026-10-24",
+      "scope": "Slide 13 (pricing) only; trial sentence changed to the two-route rule; prices unchanged.",
+      "newSentence": "You can try self-service free for 14 days on one zone; it asks for a card, with no charge when it starts. If BMAsia arranges your trial, no card is needed.",
+      "replacedSentence": "You can try self-service free for 14 days on one zone without a card.",
+      "characterErrorRate": 0.026683608640406607,
+      "lengthRatio": 0.9733163913595934,
+      "automatedTextPass": true,
+      "semanticReview": "passed: transcript states the self-serve 14-day one-zone trial needs a card with no charge at start, and a BMAsia-arranged trial needs no card; spoken prices match the slide",
+      "reviewer": "automated transcript plus Claude Code semantic check; not native-speaker editorial approval",
+      "qaRecord": "docs/beat-breeze-trial-wording-20261024-qa.json"
     }
   }
 }
