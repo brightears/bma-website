@@ -62,8 +62,7 @@ const radioA = shell(radioSlides[0],`${heading('AI Radio','Your brand has a voic
    </div>
   </div>
  </div>
- <div data-radio-enter data-radio-cue="choices" style="display:grid;grid-template-columns:1fr 1.35fr 1fr;gap:42px;margin-top:42px;">${settings}</div>
- <p data-radio-enter style="font-size:20px;color:#aaa;margin:30px 0 0;">Hear a sample hour before putting your station on air.</p>`);
+ <div data-radio-enter data-radio-cue="choices" style="display:grid;grid-template-columns:1fr 1.35fr 1fr;gap:42px;margin-top:42px;">${settings}</div>`);
 
 const editions = [
  ['Main station','Shared brand stories','Your core station for locations outside a regional edition.'],
@@ -85,8 +84,7 @@ const radioB = shell(radioSlides[1],`${heading('Radio across your locations','On
  <div data-radio-enter data-radio-cue="checks" style="border-top:1px solid rgba(255,255,255,.16);margin-top:36px;padding-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:65px;">
   <div><div style="font-size:24px;line-height:1.4;color:#ddd;">Required offer facts stay fixed.</div><p style="font-size:20px;line-height:1.5;color:#aaa;margin:8px 0 0;">Scripts and recorded speech are checked before airing.</p></div>
   <div><div style="font-size:24px;line-height:1.4;color:#ddd;">Preview · Pause · Skip · Check what aired</div><p style="font-size:20px;line-height:1.5;color:#aaa;margin:8px 0 0;">Prepared ahead, with head-office control.</p></div>
- </div>
- <p data-radio-enter style="font-size:20px;line-height:1.4;color:#EFA634;margin:32px 0 0;">Radio requires a paid plan and uses AI credits.</p>`);
+ </div>`);
 
 const replace = (text,from,to) => { if(!text.includes(from)) throw Error(`Source copy changed: ${from}`); return text.replace(from,to); };
 // Remove old notes before copy replacement: notes can contain the same wording
