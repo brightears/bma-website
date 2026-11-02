@@ -89,7 +89,9 @@ const radioB = shell(radioSlides[1],`${heading('Radio across your locations','On
  <p data-radio-enter style="font-size:20px;line-height:1.4;color:#EFA634;margin:32px 0 0;">Radio requires a paid plan and uses AI credits.</p>`);
 
 const replace = (text,from,to) => { if(!text.includes(from)) throw Error(`Source copy changed: ${from}`); return text.replace(from,to); };
-let sections = [...originalSections];
+// Remove old notes before copy replacement: notes can contain the same wording
+// as the visible slide and must not consume a visual replacement.
+let sections = originalSections.map(s=>s.replace(/ data-speaker-notes="[^"]*"/,''));
 sections[1] = replace(sections[1], 'Ten jobs it used to take five tools to do.', 'Built around your venue.');
 sections[1] = replace(sections[1], 'Multilingual AI announcements', 'Announcements + your AI Radio station');
 sections[11] = replace(sections[11], 'Everyone plays music. Beat Breeze runs your whole in-venue experience —', 'Now with AI Radio: your brand’s own hosted station —');
@@ -110,6 +112,7 @@ if(!template.includes('data-label="AI Radio"')) {
  originalSections.forEach((s,i)=>{template=template.replace(s,sections[i+(i>=8?2:0)]+(i===7?sections[8]+sections[9]:''));});
 }
 if([...template.matchAll(/<section\b/g)].length!==17) throw Error('Preview must contain 17 sections');
+template=template.replace(/<title>[^<]+<\/title>/,'<title>Beat Breeze — Radio Preview (English)</title>');
 const stripGuard = s=>s.replace(/\n\s*<template id="beat-breeze-layout-guard-source"[\s\S]*?<\/template>/,'');
 let html = stripGuard(baseHTML.slice(0,start)+JSON.stringify(template).replaceAll('</script','<\\/script')+baseHTML.slice(end));
 html = html.replace(/<title>[^<]+<\/title>/,'<title>Beat Breeze — Radio Preview (English)</title>');
