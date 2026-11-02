@@ -13,7 +13,10 @@ import {
   ExternalLink,
   Gauge,
   ImageIcon,
+  Languages,
   Laptop,
+  MapPin,
+  Megaphone,
   MessageSquareText,
   MonitorPlay,
   MoonStar,
@@ -22,6 +25,8 @@ import {
   PhoneCall,
   Play,
   Radio,
+  ShieldCheck,
+  SkipForward,
   Sparkles,
   Smartphone,
   Volume2,
@@ -422,6 +427,8 @@ export default function BeatBreezePage() {
         </div>
       </section>
 
+      <AiRadioSection locale={locale} />
+
       <section className="bma-section border-y border-white/[0.08] bg-[#081521]">
         <div className="bma-container">
           <motion.div {...reveal} className="max-w-4xl">
@@ -512,6 +519,129 @@ export default function BeatBreezePage() {
       </section>
 
     </div>
+  );
+}
+
+const radioPointKeys = ['promos', 'regions', 'languages', 'control'] as const;
+const radioPointIcons = { promos: Megaphone, regions: MapPin, languages: Languages, control: ShieldCheck };
+const radioBreaks = [
+  { key: 'weather', time: '14:14', status: 'aired' },
+  { key: 'promo', time: '14:31', status: 'next' },
+  { key: 'story', time: '14:52', status: 'queued' },
+] as const;
+
+function AiRadioSection({ locale }: { locale: string }) {
+  const t = useTranslations('beatBreezePage.redesign.radio');
+  const reduceMotion = useReducedMotion();
+  const radioSite = withAttribution(EXTERNAL_LINKS.beatBreezeRadio, 'beat_breeze_product', 'ai_radio');
+
+  return (
+    <section id="ai-radio" className="bma-grain bma-section relative scroll-mt-20 overflow-hidden border-t border-white/[0.08] bg-[#050e16]">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_82%_24%,rgba(239,166,52,.13),transparent_30%),radial-gradient(circle_at_12%_88%,rgba(73,213,197,.09),transparent_32%)]" aria-hidden="true" />
+      <div className="bma-container relative">
+        <div className="grid gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:gap-16">
+          <motion.div {...reveal}>
+            <p className="inline-flex items-center gap-2 rounded-full border border-brand-orange/25 bg-brand-orange/[0.08] px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.2em] text-brand-orange">
+              <Radio className="h-3.5 w-3.5" /> {t('eyebrow')}
+            </p>
+            <h2 className="bma-section-title mt-6 bg-[linear-gradient(100deg,#ffffff_8%,#ffffff_40%,#e7c55f_72%,#49d5c5_100%)] bg-clip-text text-transparent">{t('title')}</h2>
+            <p className="bma-lede mt-6">{t('description')}</p>
+            <p className="mt-4 text-sm text-white/44">{t('audience')}</p>
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <Link href={`/${locale}/book-demo?source=beat-breeze-radio`} className="bma-button-primary min-h-14 px-7">{t('demo')} <ArrowRight className="h-4 w-4" /></Link>
+              <a href="/presentations/beat-breeze-radio-preview.html" target="_blank" rel="noopener" className="bma-button-secondary min-h-14 px-7">
+                <Play className="h-4 w-4 fill-current" /> {t('preview')}
+              </a>
+            </div>
+            <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-white/40">
+              <span>{t('previewNote')}</span>
+              <a href={radioSite} className="inline-flex items-center gap-1.5 text-white/56 underline-offset-4 transition hover:text-[#7ce8da] hover:underline">{t('more')} <ExternalLink className="h-3.5 w-3.5" /></a>
+            </div>
+          </motion.div>
+
+          <motion.div {...reveal} className="relative">
+            <div className="absolute -inset-10 rounded-full bg-brand-orange/[0.05] blur-3xl" aria-hidden="true" />
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[#091722] shadow-[0_34px_100px_rgba(0,0,0,.34)]">
+              <div className="flex items-center justify-between gap-4 border-b border-white/[0.08] px-5 py-4 sm:px-7 sm:py-5">
+                <div className="min-w-0">
+                  <p className="font-label text-[10px] uppercase tracking-[.2em] text-white/36">{t('station.label')}</p>
+                  <p className="mt-1 truncate text-sm font-semibold">{t('station.name')}</p>
+                </div>
+                <span className="inline-flex shrink-0 items-center gap-2 rounded-full border border-brand-orange/25 bg-brand-orange/[0.08] px-3 py-1.5 text-xs text-brand-orange">
+                  <span className="flex h-3 items-end gap-[2px]" aria-hidden="true">
+                    {[0.55, 1, 0.7, 0.9].map((height, index) => (
+                      <motion.i
+                        key={index}
+                        className="block w-[2px] origin-bottom rounded-full bg-brand-orange"
+                        style={{ height: '100%', scaleY: height }}
+                        animate={reduceMotion ? undefined : { scaleY: [height, 0.3, 1, height] }}
+                        transition={reduceMotion ? undefined : { duration: 1.4, repeat: Infinity, ease: 'easeInOut', delay: index * 0.18 }}
+                      />
+                    ))}
+                  </span>
+                  {t('station.onAir')}
+                </span>
+              </div>
+
+              <dl className="grid border-b border-white/[0.08] sm:grid-cols-3">
+                {([
+                  ['host', 'hostValue'],
+                  ['talkLevel', 'talkLevelValue'],
+                  ['music', 'musicValue'],
+                ] as const).map(([label, value]) => (
+                  <div key={label} className="flex items-baseline justify-between gap-3 border-b border-white/[0.07] px-5 py-3.5 last:border-b-0 sm:block sm:border-b-0 sm:border-r sm:p-4 sm:last:border-r-0">
+                    <dt className="font-label text-[9px] uppercase tracking-[.16em] text-white/30">{t(`station.${label}`)}</dt>
+                    <dd className="text-right text-sm font-medium text-white/82 sm:mt-1 sm:text-left">{t(`station.${value}`)}</dd>
+                  </div>
+                ))}
+              </dl>
+
+              <ol className="space-y-3 p-5 sm:p-7">
+                {radioBreaks.map(({ key, time, status }) => (
+                  <li key={key} className={`grid grid-cols-[3rem_1fr] gap-3 rounded-2xl border p-3.5 sm:grid-cols-[3.5rem_1fr_auto] sm:items-center sm:p-4 ${status === 'next' ? 'border-brand-orange/30 bg-brand-orange/[0.07]' : 'border-white/[0.075] bg-white/[0.03]'}`}>
+                    <span className="font-mono text-xs text-brand-orange sm:text-[11px]">{time}</span>
+                    <div className="min-w-0">
+                      <p className="font-label text-[9px] uppercase tracking-[.16em] text-[#49d5c5]">{t(`station.breaks.${key}.type`)}</p>
+                      <p className="mt-1 text-sm leading-6 text-white/78">{t(`station.breaks.${key}.line`)}</p>
+                    </div>
+                    <span className={`col-start-2 text-[10px] uppercase tracking-[.14em] sm:col-start-auto sm:text-right ${status === 'aired' ? 'text-emerald-200/80' : status === 'next' ? 'text-brand-orange' : 'text-white/30'}`}>
+                      {status === 'aired' ? t('station.aired') : t(`station.${status}`)}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+
+              <div className="flex flex-wrap items-center gap-2 border-t border-white/[0.08] bg-white/[0.015] px-5 py-4 sm:px-7" aria-hidden="true">
+                {([
+                  [Pause, 'pause'],
+                  [SkipForward, 'skip'],
+                  [ShieldCheck, 'never'],
+                ] as const).map(([Icon, key]) => (
+                  <span key={key} className="inline-flex items-center gap-2 rounded-full border border-white/12 px-3.5 py-1.5 text-xs text-white/62">
+                    <Icon className="h-3.5 w-3.5" /> {t(`station.${key}`)}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <p className="relative mt-3 text-center text-[11px] text-white/32 lg:text-right">{t('station.footnote')}</p>
+          </motion.div>
+        </div>
+
+        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4">
+          {radioPointKeys.map((key) => {
+            const Icon = radioPointIcons[key];
+            return (
+              <motion.article key={key} {...reveal} className="rounded-[1.4rem] border border-white/[0.08] bg-white/[0.025] p-6">
+                <Icon className="h-5 w-5 text-brand-orange" />
+                <h3 className="mt-5 text-lg font-medium">{t(`points.${key}.title`)}</h3>
+                <p className="mt-3 text-sm leading-6 text-white/48">{t(`points.${key}.text`)}</p>
+              </motion.article>
+            );
+          })}
+        </div>
+        <p className="mt-6 text-xs text-white/36">{t('cost')}</p>
+      </div>
+    </section>
   );
 }
 

@@ -639,7 +639,7 @@
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
-      "description": "BMAsia 的免版税场所体验平台，整合精选音乐、排期、屏幕、信息、自动化与互联分区控制。"
+      "description": "BMAsia 的免版税场所体验平台，整合精选音乐、AI Radio、排期、屏幕、信息、自动化与互联分区控制。"
     },
     "product": {
       "openProduct": "打开 Beat Breeze",
@@ -756,6 +756,67 @@
           "request": "创建安静的恢复方向，融入自然质感，避免突兀切换，并由运营人员控制音量。",
           "result": "缓慢和声变化的环境声景",
           "reason": "长篇幅质感减少明显切换，同时让员工直接控制音量与时间。"
+        }
+      },
+      "radio": {
+        "eyebrow": "新功能：Beat Breeze AI Radio",
+        "title": "让每家门店都播放您品牌自己的电台。",
+        "description": "只需设置一次，之后由 AI 主持人负责运营。主持人会在电台覆盖的每家门店，于歌曲之间播报您的促销信息、当地天气与品牌故事。",
+        "audience": "适用于超市、便利店、零售、快餐及咖啡连锁品牌。",
+        "points": {
+          "promos": {
+            "title": "措辞常新，事实不变",
+            "text": "总部录入商品、价格与日期。主持人每次插播都会撰写新的措辞；若脚本中出现促销卡片上没有的价格、日期或数字，系统检查会将其驳回。"
+          },
+          "regions": {
+            "title": "关键之处，贴近本地",
+            "text": "区域版本可为一组门店配置专属的主持语言、天气与促销信息，门店不会听到其他城市的天气。"
+          },
+          "languages": {
+            "title": "31 种主持语言与口音",
+            "text": "包括马来语、泰语、印尼语、越南语、普通话以及各地英语口音。一位主持人可混合使用两种语言。"
+          },
+          "control": {
+            "title": "由总部统一掌控",
+            "text": "总部可以暂停电台、跳过某次插播，或将某句话标记为“禁止播报”。门店无法更改电台；“已播出”记录会显示每次插播在哪些门店播出、在哪些门店未能播出。"
+          }
+        },
+        "cost": "每个 Beat Breeze 账户均包含电台功能。开始播出需订阅付费方案，并会消耗 AI 积分。",
+        "demo": "预约电台演示",
+        "preview": "观看电台预览",
+        "previewNote": "附旁白讲解，英文版",
+        "more": "在 beatbreeze.io 了解更多",
+        "station": {
+          "label": "电台",
+          "name": "Harbour Market Radio",
+          "onAir": "播出中",
+          "host": "主持人",
+          "hostValue": "Maya · 12 家门店",
+          "talkLevel": "播报频率",
+          "talkLevelValue": "正常",
+          "music": "音乐",
+          "musicValue": "Beat Breeze 曲库",
+          "aired": "已在 12 家门店播出",
+          "next": "下一条",
+          "queued": "待播",
+          "breaks": {
+            "weather": {
+              "type": "时间与天气",
+              "line": "“下午好！我是 Maya，今天外面可真够热的。”"
+            },
+            "promo": {
+              "type": "促销",
+              "line": "周末水果优惠，在歌曲前奏上播报"
+            },
+            "story": {
+              "type": "品牌故事",
+              "line": "新鲜面包早上6点起供应"
+            }
+          },
+          "pause": "暂停",
+          "skip": "跳过",
+          "never": "禁止播报",
+          "footnote": "Harbour Market 与 Maya 均为虚构示例。"
         }
       },
       "capabilities": { "play": "播放", "create": "创作", "communicate": "沟通", "connect": "连接" },
@@ -1147,7 +1208,7 @@
         "eyebrow": "两种产品路线",
         "title": "从场所真正需要的体验出发",
         "beatLabel": "灵活且免版税",
-        "beatText": "在一个 BMAsia 平台中整合音乐、媒体与自动化。",
+        "beatText": "在一个 BMAsia 平台中整合音乐、AI Radio、媒体与自动化。",
         "soundtrackLabel": "知名商业音乐",
         "soundtrackText": "主流唱片公司曲库，配合 BMAsia 服务与扩展功能。",
         "resultEyebrow": "把预览变成实际计划",

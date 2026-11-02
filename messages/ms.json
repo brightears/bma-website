@@ -639,7 +639,7 @@
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
-      "description": "Platform pengalaman venue bebas royalti BMAsia untuk muzik terpilih, jadual, skrin, pemesejan, automasi dan kawalan zon terhubung."
+      "description": "Platform pengalaman venue bebas royalti BMAsia untuk muzik terpilih, AI Radio, jadual, skrin, pemesejan, automasi dan kawalan zon terhubung."
     },
     "product": {
       "openProduct": "Buka Beat Breeze",
@@ -756,6 +756,67 @@
           "request": "Cipta arah pemulihan yang tenang dengan tekstur alam, tanpa peralihan tajam dan volum dikawal pengendali.",
           "result": "Landskap bunyi ambien dengan pergerakan harmoni perlahan",
           "reason": "Tekstur panjang mengurangkan peralihan yang ketara sambil mengekalkan kawalan langsung kakitangan terhadap aras dan masa."
+        }
+      },
+      "radio": {
+        "eyebrow": "Baharu: Beat Breeze AI Radio",
+        "title": "Stesen radio jenama anda sendiri di setiap kedai.",
+        "description": "Sediakan sekali, dan hos AI akan mengendalikannya. Hos bercakap di antara lagu di setiap kedai dalam stesen itu, dengan promosi anda, cuaca tempatan dan kisah jenama anda.",
+        "audience": "Untuk pasar raya, kedai serbaneka, runcit, rangkaian makanan segera dan rangkaian kedai kopi.",
+        "points": {
+          "promos": {
+            "title": "Ayat baharu, fakta tetap",
+            "text": "Ibu pejabat memasukkan produk, harga dan tarikh. Hos menulis ayat baharu untuk setiap segmen, dan satu semakan menolak mana-mana skrip yang mengandungi harga, tarikh atau nombor yang tiada pada kad promosi."
+          },
+          "regions": {
+            "title": "Setempat apabila perlu",
+            "text": "Edisi serantau memberikan sekumpulan kedai bahasa hos, cuaca dan promosi tersendiri, supaya sesebuah kedai tidak akan mendengar laporan cuaca bandar lain."
+          },
+          "languages": {
+            "title": "31 bahasa dan loghat hos",
+            "text": "Termasuk bahasa Melayu, Thai, Indonesia, Vietnam, Mandarin dan loghat Inggeris tempatan. Hos boleh menggabungkan dua bahasa."
+          },
+          "control": {
+            "title": "Ibu pejabat kekal memegang kawalan",
+            "text": "Ibu pejabat boleh menjeda stesen, melangkau segmen atau menandakan ayat sebagai Jangan sebut ini. Kedai tidak boleh mengubah stesen, dan log Disiarkan menunjukkan di mana setiap segmen dimainkan dan di mana ia terlepas."
+          }
+        },
+        "cost": "Radio tersedia dalam setiap akaun Beat Breeze. Bersiaran memerlukan pelan berbayar dan menggunakan kredit AI.",
+        "demo": "Tempah demo Radio",
+        "preview": "Tonton pratonton Radio",
+        "previewNote": "Pratonton berpandu dengan narasi dalam bahasa Inggeris",
+        "more": "Maklumat lanjut di beatbreeze.io",
+        "station": {
+          "label": "Stesen",
+          "name": "Harbour Market Radio",
+          "onAir": "Sedang bersiaran",
+          "host": "Hos",
+          "hostValue": "Maya · 12 kedai",
+          "talkLevel": "Tahap celoteh",
+          "talkLevelValue": "Biasa",
+          "music": "Muzik",
+          "musicValue": "Katalog Beat Breeze",
+          "aired": "Disiarkan di 12 kedai",
+          "next": "Seterusnya",
+          "queued": "Dalam giliran",
+          "breaks": {
+            "weather": {
+              "type": "Masa dan cuaca",
+              "line": "“Selamat petang! Maya di sini, dan cuaca di luar memang panas terik hari ini.”"
+            },
+            "promo": {
+              "type": "Promosi",
+              "line": "Tawaran buah hujung minggu, semasa intro lagu"
+            },
+            "story": {
+              "type": "Kisah jenama",
+              "line": "Roti segar mulai 6 pagi"
+            }
+          },
+          "pause": "Jeda",
+          "skip": "Langkau",
+          "never": "Jangan sebut ini",
+          "footnote": "Harbour Market dan Maya ialah contoh rekaan."
         }
       },
       "capabilities": {
@@ -1175,7 +1236,7 @@
         "eyebrow": "Dua laluan produk",
         "title": "Mulakan dengan keperluan venue",
         "beatLabel": "Fleksibel dan bebas royalti",
-        "beatText": "Muzik, media dan automasi dalam satu platform BMAsia.",
+        "beatText": "Muzik, AI Radio, media dan automasi dalam satu platform BMAsia.",
         "soundtrackLabel": "Muzik komersial yang dikenali",
         "soundtrackText": "Repertoir label utama dengan perkhidmatan dan peluasan BMAsia.",
         "resultEyebrow": "Tukar pratonton menjadi pelan",

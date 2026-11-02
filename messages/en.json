@@ -639,7 +639,7 @@
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
-      "description": "BMAsia’s royalty-free venue experience platform for curated music, schedules, screens, messaging, automation and connected zone control."
+      "description": "BMAsia’s royalty-free venue experience platform for curated music, AI Radio, schedules, screens, messaging, automation and connected zone control."
     },
     "product": {
       "openProduct": "Open Beat Breeze",
@@ -756,6 +756,67 @@
           "request": "Create a quiet recovery direction with nature texture, no sharp transitions and operator-controlled volume.",
           "result": "Ambient soundscape with slow harmonic movement",
           "reason": "Long-form textures reduce noticeable transitions while leaving staff in direct control of level and timing."
+        }
+      },
+      "radio": {
+        "eyebrow": "New: Beat Breeze AI Radio",
+        "title": "Your brand's own radio station in every store.",
+        "description": "Set it up once, and an AI host runs it. The host talks between songs in every store on the station, with your promos, the local weather and your brand's stories.",
+        "audience": "For supermarkets, convenience stores, retail, fast food and coffee chains.",
+        "points": {
+          "promos": {
+            "title": "Fresh wording, fixed facts",
+            "text": "Head office enters the product, price and dates. The host writes new wording for every break, and a check rejects any script with a price, date or number that isn't on the promo card."
+          },
+          "regions": {
+            "title": "Local where it matters",
+            "text": "A regional edition gives a group of stores its own host language, weather and promos, so a store never hears another city's weather."
+          },
+          "languages": {
+            "title": "31 host languages and accents",
+            "text": "Including Malay, Thai, Indonesian, Vietnamese, Mandarin and local English accents. A host can mix two languages."
+          },
+          "control": {
+            "title": "Head office stays in charge",
+            "text": "Head office can pause the station, skip a break or mark a line Never say this. Stores can't change the station, and the Aired log shows where each break played and where it missed."
+          }
+        },
+        "cost": "Radio is in every Beat Breeze account. Going on air needs a paid plan and uses AI credits.",
+        "demo": "Book a Radio demo",
+        "preview": "Watch the Radio preview",
+        "previewNote": "Narrated walkthrough, in English",
+        "more": "More on beatbreeze.io",
+        "station": {
+          "label": "Station",
+          "name": "Harbour Market Radio",
+          "onAir": "On air",
+          "host": "Host",
+          "hostValue": "Maya · 12 stores",
+          "talkLevel": "Talk level",
+          "talkLevelValue": "Normal",
+          "music": "Music",
+          "musicValue": "Beat Breeze catalogue",
+          "aired": "Aired in 12 stores",
+          "next": "Next",
+          "queued": "Queued",
+          "breaks": {
+            "weather": {
+              "type": "Time and weather",
+              "line": "“Good afternoon! Maya here, and it's a hot one out there.”"
+            },
+            "promo": {
+              "type": "Promo",
+              "line": "Weekend fruit offer, over a song intro"
+            },
+            "story": {
+              "type": "Brand story",
+              "line": "Fresh bread from 6 AM"
+            }
+          },
+          "pause": "Pause",
+          "skip": "Skip",
+          "never": "Never say this",
+          "footnote": "Harbour Market and Maya are fictional examples."
         }
       },
       "capabilities": { "play": "Play", "create": "Create", "communicate": "Communicate", "connect": "Connect" },
@@ -1147,7 +1208,7 @@
         "eyebrow": "Two product routes",
         "title": "Start with what the venue needs",
         "beatLabel": "Flexible and royalty-free",
-        "beatText": "Music, media and automation in one BMAsia platform.",
+        "beatText": "Music, AI Radio, media and automation in one BMAsia platform.",
         "soundtrackLabel": "Familiar commercial music",
         "soundtrackText": "Major-label repertoire with BMAsia service and extensions.",
         "resultEyebrow": "Turn the preview into a plan",
