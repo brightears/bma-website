@@ -639,7 +639,7 @@
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
-      "description": "Nền tảng trải nghiệm không gian của BMAsia với âm nhạc miễn phí bản quyền được tuyển chọn, lịch phát, màn hình, thông điệp, tự động hóa và điều khiển khu vực kết nối."
+      "description": "Nền tảng trải nghiệm không gian của BMAsia với âm nhạc miễn phí bản quyền được tuyển chọn, AI Radio, lịch phát, màn hình, thông điệp, tự động hóa và điều khiển khu vực kết nối."
     },
     "product": {
       "openProduct": "Mở Beat Breeze",
@@ -756,6 +756,67 @@
           "request": "Tạo một định hướng phục hồi yên tĩnh với chất liệu thiên nhiên, không chuyển đoạn đột ngột và âm lượng do người vận hành kiểm soát.",
           "result": "Không gian âm thanh ambient với chuyển động hòa âm chậm",
           "reason": "Các lớp âm thanh dài giúp giảm những chuyển đoạn dễ nhận thấy, đồng thời vẫn để nhân viên trực tiếp kiểm soát mức âm lượng và thời điểm."
+        }
+      },
+      "radio": {
+        "eyebrow": "Mới: Beat Breeze AI Radio",
+        "title": "Đài phát thanh riêng của thương hiệu bạn tại mọi cửa hàng.",
+        "description": "Chỉ cần thiết lập một lần, người dẫn chương trình AI sẽ vận hành đài. Giữa các bài hát, người dẫn lên sóng tại mọi cửa hàng thuộc đài với các chương trình khuyến mãi của bạn, thời tiết địa phương và những câu chuyện thương hiệu.",
+        "audience": "Dành cho siêu thị, cửa hàng tiện lợi, bán lẻ, chuỗi thức ăn nhanh và chuỗi cà phê.",
+        "points": {
+          "promos": {
+            "title": "Lời dẫn luôn mới, thông tin không đổi",
+            "text": "Trụ sở chính nhập sản phẩm, giá và ngày áp dụng. Người dẫn viết lời mới cho mỗi lượt lên sóng, và một bước kiểm tra sẽ loại bỏ mọi kịch bản có giá, ngày hoặc con số không có trên thẻ khuyến mãi."
+          },
+          "regions": {
+            "title": "Đúng chất địa phương ở nơi cần thiết",
+            "text": "Phiên bản theo vùng cho mỗi nhóm cửa hàng ngôn ngữ dẫn, thời tiết và chương trình khuyến mãi riêng, nên cửa hàng không bao giờ nghe thời tiết của thành phố khác."
+          },
+          "languages": {
+            "title": "31 ngôn ngữ và giọng dẫn",
+            "text": "Bao gồm tiếng Mã Lai, tiếng Thái, tiếng Indonesia, tiếng Việt, tiếng Quan Thoại và các giọng tiếng Anh địa phương. Người dẫn có thể kết hợp hai ngôn ngữ."
+          },
+          "control": {
+            "title": "Trụ sở chính luôn nắm quyền kiểm soát",
+            "text": "Trụ sở chính có thể tạm dừng đài, bỏ qua một lượt lên sóng hoặc đánh dấu một câu là Không nói câu này. Cửa hàng không thể thay đổi đài, và nhật ký Đã phát cho biết mỗi lượt lên sóng đã phát ở đâu và bị lỡ ở đâu."
+          }
+        },
+        "cost": "Radio có sẵn trong mọi tài khoản Beat Breeze. Để lên sóng, bạn cần gói trả phí và sẽ sử dụng tín dụng AI.",
+        "demo": "Đặt lịch demo Radio",
+        "preview": "Xem bản giới thiệu Radio",
+        "previewNote": "Bản giới thiệu có thuyết minh bằng tiếng Anh",
+        "more": "Tìm hiểu thêm tại beatbreeze.io",
+        "station": {
+          "label": "Đài",
+          "name": "Harbour Market Radio",
+          "onAir": "Đang phát sóng",
+          "host": "Người dẫn",
+          "hostValue": "Maya · 12 cửa hàng",
+          "talkLevel": "Mức lời dẫn",
+          "talkLevelValue": "Bình thường",
+          "music": "Âm nhạc",
+          "musicValue": "Danh mục Beat Breeze",
+          "aired": "Đã phát tại 12 cửa hàng",
+          "next": "Tiếp theo",
+          "queued": "Đang chờ",
+          "breaks": {
+            "weather": {
+              "type": "Giờ và thời tiết",
+              "line": "“Xin chào buổi chiều! Maya đây, ngoài trời hôm nay nóng thật đấy.”"
+            },
+            "promo": {
+              "type": "Khuyến mãi",
+              "line": "Ưu đãi trái cây cuối tuần, đọc trên đoạn dạo đầu bài hát"
+            },
+            "story": {
+              "type": "Câu chuyện thương hiệu",
+              "line": "Bánh mì mới ra lò từ 6 giờ sáng"
+            }
+          },
+          "pause": "Tạm dừng",
+          "skip": "Bỏ qua",
+          "never": "Không nói câu này",
+          "footnote": "Harbour Market và Maya là các ví dụ hư cấu."
         }
       },
       "capabilities": { "play": "Phát", "create": "Sáng tạo", "communicate": "Giao tiếp", "connect": "Kết nối" },
@@ -1147,7 +1208,7 @@
         "eyebrow": "Hai hướng sản phẩm",
         "title": "Bắt đầu từ điều địa điểm cần",
         "beatLabel": "Linh hoạt và miễn phí bản quyền",
-        "beatText": "Âm nhạc, nội dung truyền thông và tự động hóa trong một nền tảng BMAsia.",
+        "beatText": "Âm nhạc, AI Radio, nội dung truyền thông và tự động hóa trong một nền tảng BMAsia.",
         "soundtrackLabel": "Âm nhạc thương mại quen thuộc",
         "soundtrackText": "Kho nhạc từ các hãng thu âm lớn, đi kèm dịch vụ và tiện ích mở rộng của BMAsia.",
         "resultEyebrow": "Biến bản xem trước thành kế hoạch",

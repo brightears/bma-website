@@ -34,6 +34,7 @@ function buildLlmsTxt(): string {
   const rights = en.licensingPage.rights;
   const personal = en.licensingPage.personal;
   const comparison = en.licensingPage.comparison;
+  const radio = en.beatBreezePage.redesign.radio;
 
   const verify = en.verifyContacts;
   const verifyBlock = `**${verify.title}**
@@ -72,6 +73,7 @@ The two music platforms:
 - ${bb.feature3}
 - ${bb.feature4}
 - ${comparison.bb.headline} ${comparison.bb.performanceNote}
+- AI Radio: ${radio.title} ${radio.description} ${radio.points.regions.text} ${radio.points.languages.title}. ${radio.cost} Details: https://beatbreeze.io/radio
 - Trial: 14 days free. No card is needed when BMAsia sets the trial up; the self-serve trial at beatbreeze.io asks for a card, with no charge when it starts. Self-serve prices: https://beatbreeze.io/pricing
 
 Common buyer questions:
@@ -112,6 +114,7 @@ ${verifyBlock}
 - [Book a demo](${base}/en/book-demo/): schedule a session with the BMAsia team
 - [Beat Breeze platform](https://beatbreeze.io): sign-up, player apps, and product site
 - [Beat Breeze pricing](https://beatbreeze.io/pricing): published self-serve plans
+- [Beat Breeze AI Radio](https://beatbreeze.io/radio): an in-store radio station for chains, run by an AI host who talks between songs about promos, local weather and brand stories
 
 ## Solutions by industry
 

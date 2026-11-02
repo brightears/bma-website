@@ -639,7 +639,7 @@
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
-      "description": "큐레이션된 음악, 일정, 스크린, 메시지, 자동화, 연결형 존 제어를 제공하는 BMAsia의 로열티 프리 매장 경험 플랫폼."
+      "description": "큐레이션된 음악, AI Radio, 일정, 스크린, 메시지, 자동화, 연결형 존 제어를 제공하는 BMAsia의 로열티 프리 매장 경험 플랫폼."
     },
     "product": {
       "openProduct": "Beat Breeze 열기",
@@ -756,6 +756,67 @@
           "request": "자연의 질감, 급격한 전환 없음, 운영자가 제어하는 볼륨을 갖춘 조용한 회복 방향을 만들어 주세요.",
           "result": "느린 화성 움직임의 앰비언트 사운드스케이프",
           "reason": "긴 호흡의 질감이 눈에 띄는 전환을 줄이고 레벨과 타이밍은 직원이 직접 제어할 수 있게 합니다."
+        }
+      },
+      "radio": {
+        "eyebrow": "신규: Beat Breeze AI Radio",
+        "title": "모든 매장에 브랜드만의 라디오 방송국을.",
+        "description": "한 번 설정하면 AI 진행자가 운영합니다. 진행자는 스테이션에 연결된 모든 매장에서 곡 사이사이에 프로모션, 지역 날씨, 브랜드 이야기를 전합니다.",
+        "audience": "슈퍼마켓, 편의점, 리테일, 패스트푸드 및 커피 체인을 위한 기능입니다.",
+        "points": {
+          "promos": {
+            "title": "문구는 새롭게, 사실은 그대로",
+            "text": "본사가 상품, 가격, 기간을 입력합니다. 진행자는 멘트마다 새로운 문구를 쓰고, 프로모션 카드에 없는 가격, 날짜, 숫자가 들어간 원고는 검수 단계에서 반려됩니다."
+          },
+          "regions": {
+            "title": "필요한 곳은 지역에 맞게",
+            "text": "지역 에디션을 사용하면 매장 그룹마다 진행자 언어, 날씨, 프로모션을 따로 지정할 수 있어, 다른 도시의 날씨가 매장에서 나오는 일이 없습니다."
+          },
+          "languages": {
+            "title": "31개 진행 언어 및 억양",
+            "text": "말레이어, 태국어, 인도네시아어, 베트남어, 표준 중국어와 지역별 영어 억양을 포함합니다. 진행자 한 명이 두 언어를 섞어 말할 수도 있습니다."
+          },
+          "control": {
+            "title": "관리 권한은 본사에",
+            "text": "본사는 스테이션을 일시정지하거나 멘트를 건너뛰고, 특정 문장을 '금지 문구'로 지정할 수 있습니다. 매장에서는 스테이션을 변경할 수 없으며, '방송 완료' 기록에서 각 멘트가 어느 매장에서 나갔고 어디서 누락됐는지 확인할 수 있습니다."
+          }
+        },
+        "cost": "라디오는 모든 Beat Breeze 계정에 포함되어 있습니다. 방송을 시작하려면 유료 플랜이 필요하며 AI 크레딧이 사용됩니다.",
+        "demo": "라디오 데모 예약",
+        "preview": "라디오 미리보기 보기",
+        "previewNote": "영어 내레이션으로 진행되는 안내 영상",
+        "more": "beatbreeze.io에서 자세히 보기",
+        "station": {
+          "label": "스테이션",
+          "name": "Harbour Market Radio",
+          "onAir": "방송 중",
+          "host": "진행자",
+          "hostValue": "Maya · 12개 매장",
+          "talkLevel": "멘트 양",
+          "talkLevelValue": "보통",
+          "music": "음악",
+          "musicValue": "Beat Breeze 카탈로그",
+          "aired": "12개 매장에서 방송 완료",
+          "next": "다음",
+          "queued": "대기 중",
+          "breaks": {
+            "weather": {
+              "type": "시간 및 날씨",
+              "line": "“안녕하세요, Maya입니다! 오늘 바깥 날씨 정말 덥네요.”"
+            },
+            "promo": {
+              "type": "프로모션",
+              "line": "곡 인트로에 얹는 주말 과일 행사"
+            },
+            "story": {
+              "type": "브랜드 이야기",
+              "line": "오전 6시부터 갓 구운 빵"
+            }
+          },
+          "pause": "일시정지",
+          "skip": "건너뛰기",
+          "never": "금지 문구",
+          "footnote": "Harbour Market과 Maya는 가상의 예시입니다."
         }
       },
       "capabilities": { "play": "재생", "create": "제작", "communicate": "소통", "connect": "연결" },
@@ -1147,7 +1208,7 @@
         "eyebrow": "두 가지 제품 경로",
         "title": "매장에 필요한 것부터 시작하세요",
         "beatLabel": "유연한 로열티 프리 방식",
-        "beatText": "음악, 미디어, 자동화를 하나의 BMAsia 플랫폼에서.",
+        "beatText": "음악, AI Radio, 미디어, 자동화를 하나의 BMAsia 플랫폼에서.",
         "soundtrackLabel": "친숙한 상업용 음악",
         "soundtrackText": "메이저 레이블 레퍼토리와 BMAsia 서비스 및 확장 기능.",
         "resultEyebrow": "미리보기를 실행 계획으로",
