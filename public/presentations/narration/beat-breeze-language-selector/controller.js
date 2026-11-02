@@ -1,9 +1,9 @@
 (() => {
   "use strict";
 
-  const VERSION = "2026-11-02-radio-official-1";
-  // During rollout the original translations have 15 slides, English has 17.
-  const RADIO_LOCALES = new Set(["en"]);
+  const VERSION = "2026-11-02-radio-all-1";
+  // All official presentations now share the same 17-slide Radio sequence.
+  const RADIO_LOCALES = new Set(["en","th","zh","vi","id","ms","ko","ja","ar"]);
   const LOCALES = [
     { code: "en", name: "English", path: "beat-breeze.html", dir: "ltr" },
     { code: "th", name: "ไทย", path: "beat-breeze-th.html", dir: "ltr" },
