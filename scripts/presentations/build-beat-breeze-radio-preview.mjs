@@ -100,6 +100,11 @@ sections[11] = replace(sections[11], 'and creates the content for it.', 'alongsi
 sections[12] = replace(sections[12], 'Everything included — music, automations, Compose, Content Studio, TV Channels, announcements', 'Music, automations, Compose, Content Studio, TV Channels, announcements and Radio');
 sections[12] = replace(sections[12], 'Our music design team refreshes your zone’s playlists and schedules, including seasonal changes', 'BMAsia manages your music and Radio station, refreshing each zone’s playlists and schedules, including seasonal changes');
 sections[12] = replace(sections[12], 'position:relative;display:flex;align-items:center;justify-content:space-between;gap:40px;border-top:1px solid rgba(255,255,255,0.1);margin-top:30px;padding-top:24px;">', 'position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 40px;border-top:1px solid rgba(255,255,255,0.1);margin-top:30px;padding-top:24px;"><p data-radio-credit-note style="flex:0 0 100%;font-size:18px;line-height:1.4;color:#aaa;margin:0;">Additional AI generation credits are charged separately.</p>');
+sections[12] = replace(sections[12], `<div style="display:flex;align-items:center;gap:20px;">
+        <span style="font-family:'Space Grotesk',monospace;font-size:13px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase;color:#EFA634;">Enterprise</span>
+        <span style="font-size:19px;color:rgba(255,255,255,0.65);">Custom contracts · invoicing by bank transfer or PromptPay · 24/7 support</span>
+      </div>`, '');
+sections[12] = replace(sections[12], 'data-radio-credit-note style="flex:0 0 100%;', 'data-radio-credit-note style="flex:1;');
 sections[14] = replace(sections[14], 'Log in, choose and schedule your music in minutes — then try Compose, Content Studio, or Announcements.', 'Choose your music, create your content — and explore your own Radio station.');
 sections[14] = replace(sections[14], 'Already included in your plan.', '');
 sections.splice(8,0,radioA,radioB);
