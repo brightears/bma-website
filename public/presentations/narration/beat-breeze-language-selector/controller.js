@@ -1,7 +1,9 @@
 (() => {
   "use strict";
 
-  const VERSION = "2026-09-03-2";
+  const VERSION = "2026-11-02-radio-official-1";
+  // During rollout the original translations have 15 slides, English has 17.
+  const RADIO_LOCALES = new Set(["en"]);
   const LOCALES = [
     { code: "en", name: "English", path: "beat-breeze.html", dir: "ltr" },
     { code: "th", name: "ไทย", path: "beat-breeze-th.html", dir: "ltr" },
@@ -43,14 +45,19 @@
   let menu;
   let open = false;
 
-  const slideHash = () => {
-    const match = window.location.hash.match(/^#(?:slide-)?(1[0-5]|[1-9])$/);
-    return match ? `#${match[1]}` : "#1";
+  const slideHash = (targetCode) => {
+    const match = window.location.hash.match(/^#(?:slide-)?(1[0-7]|[1-9])$/);
+    let index = match ? Number(match[1]) : 1;
+    const sourceRadio = RADIO_LOCALES.has(currentCode);
+    const targetRadio = RADIO_LOCALES.has(targetCode);
+    if (sourceRadio && !targetRadio) index = index <= 8 ? index : index <= 10 ? 8 : index - 2;
+    if (!sourceRadio && targetRadio && index > 8) index += 2;
+    return `#${Math.min(index, targetRadio ? 17 : 15)}`;
   };
 
   const destinationFor = (path) => {
     const url = new URL(path, window.location.href);
-    url.hash = slideHash();
+    url.hash = slideHash(LOCALES.find((locale) => locale.path === path)?.code || "en");
     return url.href;
   };
 

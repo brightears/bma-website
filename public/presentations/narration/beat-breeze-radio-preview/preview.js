@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  // This preview is English-only. Do not send new slide numbers to the 15-slide translations.
+  // The approved English presentation now has the same 17-slide sequence.
   const install = () => {
     const stage = document.querySelector('deck-stage');
     const root = stage?.shadowRoot;
@@ -12,8 +12,7 @@
     label.title = 'Radio preview — return to the official presentation';
     label.style.cssText='font:500 12px/1.2 sans-serif;color:#d7b772;text-decoration:none;padding:8px 12px;white-space:nowrap;';
     const update=(n=Number(location.hash.slice(1))||1)=>{
-      const old=n<=8?n:n<=10?8:n-2;
-      label.href=new URL(`beat-breeze.html#${old}`,location.href).href;
+      label.href=new URL(`beat-breeze.html#${Math.max(1,Math.min(17,n))}`,location.href).href;
     };
     update();
     stage.addEventListener('slidechange',event=>{
