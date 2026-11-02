@@ -5,7 +5,7 @@
   "status": "english-radio-review-preview",
   "ready": true,
   "generatedAt": "2026-11-02",
-  "releaseId": "2026-11-02-radio-1",
+  "releaseId": "2026-11-02-radio-2",
   "publicationStatus": "Separate English-only Radio preview for review; official presentations unchanged.",
   "coverage": {
     "slideIndexes": [
@@ -32,7 +32,7 @@
   },
   "source": {
     "englishDeckSha256": "c85f12948326f2188d9a5b29405020076d9825d615ea429c2bf027ff0b602a77",
-    "previewDeckSha256": "1da8a66c834689c65deb6f69efdf7a3de144648f4d1a0299a49d60551400e68d"
+    "previewDeckSha256": "e43e16c6750a7c4a0594cc1ad76870bc2ab08d7302f9d3a9e3cd2aa39f056366"
   },
   "voice": {
     "provider": "google-gemini",

@@ -1,5 +1,5 @@
 // English-only review copy. No change to the official decks or service inclusions.
-export const RADIO_PREVIEW_VERSION = '2026-11-02-radio-1';
+export const RADIO_PREVIEW_VERSION = '2026-11-02-radio-2';
 export const RADIO_PREVIEW_PATH = 'beat-breeze-radio-preview.html';
 
 export const radioSlides = [
