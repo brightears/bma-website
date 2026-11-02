@@ -1,5 +1,5 @@
 // English-only preview. Norbert confirmed Radio management in the corporate package.
-export const RADIO_PREVIEW_VERSION = '2026-11-02-radio-4';
+export const RADIO_PREVIEW_VERSION = '2026-11-02-radio-5';
 export const RADIO_PREVIEW_PATH = 'beat-breeze-radio-preview.html';
 
 export const radioSlides = [

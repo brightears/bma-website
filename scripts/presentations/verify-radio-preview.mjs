@@ -43,6 +43,9 @@ assert.ok(sections[14][0].includes('card required'));assert.ok(sections[14][0].i
 assert.ok(sections[14][0].includes('USD 150'));assert.ok(sections[14][0].includes('$260'));
 assert.ok(sections[14][0].includes('BMAsia manages your music and Radio station'));
 assert.ok(sections[14][0].includes('Additional AI generation credits are charged separately.'));
+assert.ok(!sections[14][0].includes('PromptPay'));
+assert.ok(!sections[14][0].includes('invoicing by bank transfer'));
+assert.ok(!sections[14][0].includes('>Enterprise</span>'));
 assert.ok(!sections[8][0].includes('฿'));assert.ok(!sections[9][0].includes('฿'));
 assert.equal(hash(read('public/presentations/beat-breeze.html')),manifest.source.englishDeckSha256);
 assert.equal(hash(html),manifest.source.previewDeckSha256);
