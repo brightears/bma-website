@@ -5,7 +5,7 @@
   "status": "official",
   "ready": true,
   "generatedAt": "2026-11-02",
-  "releaseId": "2026-11-02-radio-official-1",
+  "releaseId": "2026-11-02-radio-all-1",
   "publicationStatus": "Approved English Radio presentation, official release.",
   "coverage": {
     "slideIndexes": [
@@ -33,7 +33,7 @@
   "source": {
     "englishDeckSha256": "c85f12948326f2188d9a5b29405020076d9825d615ea429c2bf027ff0b602a77",
     "previewDeckSha256": "8d2f17e87066ecdbb57bcd7e0603be52d88ed28d3bdb9881033f563cd021756c",
-    "officialDeckSha256": "b9d27fbac0e31d076f6b6dd0e85b1aedb21adbc2c344002a8457fdbc3058a361"
+    "officialDeckSha256": "7a8972251c7183d2940102b9cae1690f374a5c82ecac1c2f70d243e5d1553c46"
   },
   "voice": {
     "provider": "google-gemini",
