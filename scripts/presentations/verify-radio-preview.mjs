@@ -17,6 +17,8 @@ assert.equal(sections[8][1],'AI Radio');assert.equal(sections[9][1],'Radio acros
 assert.ok(template.includes('<title>Beat Breeze — Radio Preview (English)</title>'));
 const comparisonBody=sections[13][0].replace(/^<section\b[^>]*>/,'');
 assert.ok(comparisonBody.includes('Now with AI Radio: your brand’s own hosted station'));
+assert.ok(!sections[8][0].replace(/^<section\b[^>]*>/,'').includes('Hear a sample hour before putting your station on air.'));
+assert.ok(!sections[9][0].replace(/^<section\b[^>]*>/,'').includes('Radio requires a paid plan and uses AI credits.'));
 const script=JSON.parse(read(`${root}/script.json`)),manifest=JSON.parse(read(`${root}/manifest.json`));
 const orig=JSON.parse(read('public/presentations/narration/beat-breeze-voice-preview/manifest.json'));
 assert.equal(script.slides.length,17);assert.equal(manifest.slides.length,17);
