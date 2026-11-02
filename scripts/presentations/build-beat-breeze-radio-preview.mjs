@@ -23,7 +23,10 @@ let template = JSON.parse(baseHTML.slice(start,end));
 const originalSections = [...template.matchAll(/<section\b[^>]*data-label="([^"]+)"[^>]*>[\s\S]*?<\/section>/g)].map(m=>m[0]);
 if(originalSections.length!==15 || originalManifest.slides.length!==15) throw Error('Review changed source deck before building');
 const slides = originalManifest.slides.map(s=>({...s, text:narrationEdits[s.label] || s.text}));
-slides[12].text = slides[12].text.replace('Both self-service plans include the app’s features,', 'Radio requires a paid plan and uses AI credits. Both self-service plans include the app’s features,');
+slides[12].text = slides[12].text
+ .replace('For a hands-off service, BMAsia is 260 US dollars', 'For a hands-off service, BMAsia manages your music and Radio station for 260 US dollars')
+ .replace('a dedicated account manager.', 'a dedicated account manager. Additional AI generation credits are charged separately.')
+ .replace('The difference is who looks after your music.', 'The difference is who looks after your music and Radio.');
 slides.splice(8,0,...radioSlides);
 const changed = slides.filter(s=>!originalManifest.slides.some(o=>o.id===s.id && o.text===s.text));
 if(changed.length!==6) throw Error(`Expected six approved scripts; found ${changed.length}`);
@@ -95,9 +98,10 @@ sections[1] = replace(sections[1], 'Multilingual AI announcements', 'Announcemen
 sections[11] = replace(sections[11], 'Everyone plays music. Beat Breeze runs your whole in-venue experience —', 'Now with AI Radio: your brand’s own hosted station —');
 sections[11] = replace(sections[11], 'and creates the content for it.', 'alongside music, screens and messages.');
 sections[12] = replace(sections[12], 'Everything included — music, automations, Compose, Content Studio, TV Channels, announcements', 'Music, automations, Compose, Content Studio, TV Channels, announcements and Radio');
-sections[12] = replace(sections[12], 'App updates are included in every plan.', 'App updates are included in every plan.<br><span style="color:#EFA634;">Radio requires a paid plan and uses AI credits.</span>');
+sections[12] = replace(sections[12], 'Our music design team refreshes your zone’s playlists and schedules, including seasonal changes', 'BMAsia manages your music and Radio station, refreshing each zone’s playlists and schedules, including seasonal changes');
+sections[12] = replace(sections[12], 'position:relative;display:flex;align-items:center;justify-content:space-between;gap:40px;border-top:1px solid rgba(255,255,255,0.1);margin-top:30px;padding-top:24px;">', 'position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 40px;border-top:1px solid rgba(255,255,255,0.1);margin-top:30px;padding-top:24px;"><p data-radio-credit-note style="flex:0 0 100%;font-size:18px;line-height:1.4;color:#aaa;margin:0;">Additional AI generation credits are charged separately.</p>');
 sections[14] = replace(sections[14], 'Log in, choose and schedule your music in minutes — then try Compose, Content Studio, or Announcements.', 'Choose your music, create your content — and explore your own Radio station.');
-sections[14] = replace(sections[14], 'Already included in your plan.', 'Radio requires a paid plan and uses AI credits.');
+sections[14] = replace(sections[14], 'Already included in your plan.', '');
 sections.splice(8,0,radioA,radioB);
 sections = sections.map((s,i)=>{
  s=s.replace(/ data-screen-label="[^"]*"/,'').replace(/ data-speaker-notes="[^"]*"/,'');
@@ -125,7 +129,8 @@ fs.writeFileSync(path.join(decks,RADIO_PREVIEW_PATH),html);
 
 const qaPath = path.join(repo,'tmp/presentation-narration/radio-preview/approved-results.json');
 const releasedQA = path.join(repo,'docs/beat-breeze-radio-preview-20261102-qa.json');
-const results = fs.existsSync(qaPath)?JSON.parse(read(qaPath)):fs.existsSync(releasedQA)?JSON.parse(read(releasedQA)).clips:[];
+const managedQA = path.join(repo,'docs/beat-breeze-radio-preview-20261102-managed-offer-qa.json');
+const results = fs.existsSync(qaPath)?JSON.parse(read(qaPath)):[...(fs.existsSync(managedQA)?JSON.parse(read(managedQA)).clips:[]),...(fs.existsSync(releasedQA)?JSON.parse(read(releasedQA)).clips:[])];
 const audioSlides = slides.map((s,i)=>{
  const approved = results.find(r=>r.slide.id===s.id && r.expectedText===s.text && r.automatedTextPass && r.semanticReview==='passed');
  if(approved) {
@@ -148,7 +153,7 @@ const manifest={
  coverage:{...originalManifest.coverage,slideIndexes:audioSlides.map(s=>s.index)},
  totalDurationSeconds:Number(audioSlides.reduce((sum,s)=>sum+(s.durationSeconds||0),0).toFixed(3)),
  generation:{mode:'six-targeted-preview-clips',updatedSlideIds:changed.map(s=>s.id),verifiedCarryForwardSlideCount:11,previousReleaseId:originalManifest.releaseId},
- qualityAssurance:{method:'Primary transcript, independent audio transcript QA and assistant semantic review; not customer listening approval.',record:'docs/beat-breeze-radio-preview-20261102-qa.json',reviewedClipCount:results.filter(r=>r.semanticReview==='passed').length,verifiedUnchangedClipCount:11},
+ qualityAssurance:{method:'Primary transcript, independent audio transcript QA and assistant semantic review; not customer listening approval.',record:'docs/beat-breeze-radio-preview-20261102-qa.json',managedOfferRecord:'docs/beat-breeze-radio-preview-20261102-managed-offer-qa.json',reviewedClipCount:changed.filter(s=>results.some(r=>r.slide.id===s.id&&r.expectedText===s.text&&r.semanticReview==='passed')).length,verifiedUnchangedClipCount:11},
  source:{englishDeckSha256:hash(baseHTML),previewDeckSha256:hash(html)},slides:audioSlides
 };
 fs.writeFileSync(path.join(out,'manifest.json'),JSON.stringify(manifest,null,2)+'\n');

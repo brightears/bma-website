@@ -41,7 +41,8 @@ for(let i=0;i<17;i++){
 assert.equal(reused,11);assert.equal(replaced+pending,6);
 assert.ok(sections[14][0].includes('card required'));assert.ok(sections[14][0].includes('no card needed'));
 assert.ok(sections[14][0].includes('USD 150'));assert.ok(sections[14][0].includes('$260'));
-assert.ok(sections[14][0].includes('Radio requires a paid plan and uses AI credits.'));
+assert.ok(sections[14][0].includes('BMAsia manages your music and Radio station'));
+assert.ok(sections[14][0].includes('Additional AI generation credits are charged separately.'));
 assert.ok(!sections[8][0].includes('฿'));assert.ok(!sections[9][0].includes('฿'));
 assert.equal(hash(read('public/presentations/beat-breeze.html')),manifest.source.englishDeckSha256);
 assert.equal(hash(html),manifest.source.previewDeckSha256);

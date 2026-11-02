@@ -5,7 +5,7 @@
   "status": "english-radio-review-preview",
   "ready": true,
   "generatedAt": "2026-11-02",
-  "releaseId": "2026-11-02-radio-3",
+  "releaseId": "2026-11-02-radio-4",
   "publicationStatus": "Separate English-only Radio preview for review; official presentations unchanged.",
   "coverage": {
     "slideIndexes": [
@@ -32,7 +32,7 @@
   },
   "source": {
     "englishDeckSha256": "c85f12948326f2188d9a5b29405020076d9825d615ea429c2bf027ff0b602a77",
-    "previewDeckSha256": "cfa3d010dcf2b7b3b4e1a9447dbec5255f420214c876d3ac7c990fdfc71a6627"
+    "previewDeckSha256": "b9601e948a78cb10d98118c7cd8782b77f06ffb7851947cd37040da90fd79400"
   },
   "voice": {
     "provider": "google-gemini",
@@ -56,7 +56,7 @@
     "format": "MP3",
     "bitRateKbps": 128
   },
-  "totalDurationSeconds": 713.04,
+  "totalDurationSeconds": 718.52,
   "slides": [
     {
       "index": 1,
@@ -410,7 +410,7 @@
     {
       "id": "13-pricing",
       "label": "Pricing",
-      "text": "You can choose to manage the music yourself, or have BMAsia take care of it. Self-service costs 15 US dollars per zone per month. If you prefer an annual plan, it is 150 US dollars per zone per year. Radio requires a paid plan and uses AI credits. Both self-service plans include the app’s features, and you manage your own playlists and schedules. For a hands-off service, BMAsia is 260 US dollars per zone per year, available on annual plans only. Our music design team selects and refreshes the playlists and schedules assigned to each zone, including seasonal changes. That service also includes 24/7 technical support and a dedicated account manager. Everyone receives ongoing app updates, whichever plan they choose. The difference is who looks after your music. You can try self-service free for 14 days on one zone; it asks for a card, with no charge when it starts. If BMAsia arranges your trial, no card is needed. Larger groups can arrange custom contracts and local invoicing, and no dedicated player box is required.",
+      "text": "You can choose to manage the music yourself, or have BMAsia take care of it. Self-service costs 15 US dollars per zone per month. If you prefer an annual plan, it is 150 US dollars per zone per year. Both self-service plans include the app’s features, and you manage your own playlists and schedules. For a hands-off service, BMAsia manages your music and Radio station for 260 US dollars per zone per year, available on annual plans only. Our music design team selects and refreshes the playlists and schedules assigned to each zone, including seasonal changes. That service also includes 24/7 technical support and a dedicated account manager. Additional AI generation credits are charged separately. Everyone receives ongoing app updates, whichever plan they choose. The difference is who looks after your music and Radio. You can try self-service free for 14 days on one zone; it asks for a card, with no charge when it starts. If BMAsia arranges your trial, no card is needed. Larger groups can arrange custom contracts and local invoicing, and no dedicated player box is required.",
       "visualCoverage": [
         "self-serve price and trial",
         "BMAsia-managed price and services",
@@ -418,16 +418,16 @@
         "no required player box"
       ],
       "index": 15,
-      "src": "audio/20261102-radio-db4c52ee5a137cf0/13-pricing.mp3",
-      "transcriptSha256": "17468fd74235ba393b42f458755669b5c72e3f878ef0f59d9c93c1ceb38c0b92",
-      "audioSha256": "215f767e6b6fc0b0cce3c002729e97a299b75edd7061ad1a82ae40ccee5ee385",
-      "durationSeconds": 69.64,
+      "src": "audio/20261102-radio-0a0d04691a5a1117/13-pricing.mp3",
+      "transcriptSha256": "a0f55260d65bb7499c090cbff728222824343732b3cdb15132691e8830ae6ab4",
+      "audioSha256": "752a32158da50ba3b5bee17074001663fe22d909f6efbe15d7039dec0fee6bd6",
+      "durationSeconds": 75.12,
       "codec": "mp3",
       "sampleRateHz": 48000,
       "channels": 1,
       "bitRate": 128000,
-      "integratedLufs": -18.44,
-      "truePeakDbtp": -3.22
+      "integratedLufs": -18.53,
+      "truePeakDbtp": -3.27
     },
     {
       "index": 16,
@@ -492,6 +492,7 @@
   "qualityAssurance": {
     "method": "Primary transcript, independent audio transcript QA and assistant semantic review; not customer listening approval.",
     "record": "docs/beat-breeze-radio-preview-20261102-qa.json",
+    "managedOfferRecord": "docs/beat-breeze-radio-preview-20261102-managed-offer-qa.json",
     "reviewedClipCount": 6,
     "verifiedUnchangedClipCount": 11
   },

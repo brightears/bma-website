@@ -15,6 +15,9 @@ const original=JSON.parse(fs.readFileSync('public/presentations/narration/beat-b
 const slides=script.slides.filter(s=>!original.slides.some(o=>o.id===s.id&&o.text===s.text));
 const ids=['02-one-platform-many-jobs','radio-your-station','radio-across-locations','12-why-beat-breeze','13-pricing','15-close'];
 if(slides.length!==6||slides.some((s,i)=>s.id!==ids[i]))throw Error('Scope differs from the approved six clips.');
+const requested=process.argv.find(arg=>arg.startsWith('--slide='))?.slice(8);
+if(requested&&!ids.includes(requested))throw Error('Requested slide outside preview scope.');
+const selected=requested?slides.filter(s=>s.id===requested):slides;
 let apiKey=process.env.TUTORIAL_TTS_API_KEY||process.env.GOOGLE_AI_API_KEY;
 if(!apiKey&&process.env.BEAT_BREEZE_TTS_ENV_FILE){
  const env=fs.readFileSync(process.env.BEAT_BREEZE_TTS_ENV_FILE,'utf8');
@@ -75,5 +78,5 @@ async function generate(slide){
  return result;
 }
 let failed=false;
-for(let i=0;i<slides.length;i+=2){const results=await Promise.allSettled(slides.slice(i,i+2).map(generate));for(const r of results)if(r.status==='rejected'){console.error(r.reason);failed=true;}}
+for(let i=0;i<selected.length;i+=2){const results=await Promise.allSettled(selected.slice(i,i+2).map(generate));for(const r of results)if(r.status==='rejected'){console.error(r.reason);failed=true;}}
 if(failed)process.exitCode=1;

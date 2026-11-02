@@ -11,9 +11,12 @@ if(!key)throw Error('Established TTS credential unavailable');
 const allowed=new Set(['02-one-platform-many-jobs','radio-your-station','radio-across-locations','12-why-beat-breeze','13-pricing','15-close']);
 const dirs=fs.readdirSync(root).filter(d=>fs.existsSync(`${root}/${d}/qa.json`));
 const current=JSON.parse(fs.readFileSync('public/presentations/narration/beat-breeze-radio-preview/script.json')).slides;
+const requested=process.argv.find(arg=>arg.startsWith('--slide='))?.slice(8);
+if(requested&&!allowed.has(requested))throw Error('Requested slide outside preview scope');
 for(const dir of dirs){
  const report=JSON.parse(fs.readFileSync(`${root}/${dir}/qa.json`));
  if(!allowed.has(report.slide.id))throw Error('Clip outside approved scope');
+ if(requested&&report.slide.id!==requested)continue;
  if(!current.some(s=>s.id===report.slide.id&&s.text===report.expectedText))continue;
  const out=`${root}/${dir}/secondary-transcript-qa.txt`;
  if(fs.existsSync(out)){console.log(report.slide.id,fs.readFileSync(out,'utf8'));continue;}
