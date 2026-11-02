@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-02",
+  "scope": "One English preview pricing replacement; the other 16 audio clips and all official presentations unchanged.",
+  "approval": "Norbert approved the corporate Radio management scope and upload of this revised English pricing script and its one replacement clip to Google Gemini solely for TTS generation and transcript QA.",
+  "commercialBoundary": "USD 260 per zone per year annual corporate package includes music and Radio station management; additional AI generation credits are charged separately.",
+  "supersedes": "The initial preview QA record's exclusion of Radio management is superseded by Norbert's explicit confirmation. The historical record is retained.",
+  "reviewMethod": "Primary and independent generated-audio transcript checks plus assistant semantic review; not customer listening approval.",
+  "clips": [
+    {
+      "model": "gemini-3.1-flash-tts-preview",
+      "qaModel": "gemini-3.5-transcribe",
+      "generatedAt": "2026-11-02T09:29:55.204Z",
+      "audioFile": "tmp/presentation-narration/radio-preview/13-pricing-0a0d04691a5a1117/13-pricing.mp3",
+      "expectedText": "You can choose to manage the music yourself, or have BMAsia take care of it. Self-service costs 15 US dollars per zone per month. If you prefer an annual plan, it is 150 US dollars per zone per year. Both self-service plans include the app’s features, and you manage your own playlists and schedules. For a hands-off service, BMAsia manages your music and Radio station for 260 US dollars per zone per year, available on annual plans only. Our music design team selects and refreshes the playlists and schedules assigned to each zone, including seasonal changes. That service also includes 24/7 technical support and a dedicated account manager. Additional AI generation credits are charged separately. Everyone receives ongoing app updates, whichever plan they choose. The difference is who looks after your music and Radio. You can try self-service free for 14 days on one zone; it asks for a card, with no charge when it starts. If BMAsia arranges your trial, no card is needed. Larger groups can arrange custom contracts and local invoicing, and no dedicated player box is required.",
+      "transcript": "You can choose to manage the music yourself or have BMAsia take care of it. Self-service costs $15 US per zone per month. If you prefer an annual plan, it is $150 US per zone per year. Both self-service plans include the app's features, and you manage your own playlists and schedules. For a hands-off service, BMAsia manages your music and radio station for $260 US per zone per year, available on annual plans only. Our music design team selects and refreshes the playlists and schedules assigned to each zone, including seasonal changes. That service also includes 24/7 technical support and a dedicated account manager. Additional AI generation credits are charged separately. Everyone receives ongoing app updates whichever plan they choose. The difference is who looks after your music and radio. You can try self-service free for 14 days on one zone. It asks for a card with no charge when it starts. If BMAsia arranges your trial, no card is needed. Larger groups can arrange custom contracts and local invoicing, and no dedicated player box is required.",
+      "characterErrorRate": 0.023972602739726026,
+      "lengthRatio": 0.976027397260274,
+      "automatedTextPass": true,
+      "semanticReview": "passed",
+      "slide": {
+        "id": "13-pricing",
+        "label": "Pricing",
+        "text": "You can choose to manage the music yourself, or have BMAsia take care of it. Self-service costs 15 US dollars per zone per month. If you prefer an annual plan, it is 150 US dollars per zone per year. Both self-service plans include the app’s features, and you manage your own playlists and schedules. For a hands-off service, BMAsia manages your music and Radio station for 260 US dollars per zone per year, available on annual plans only. Our music design team selects and refreshes the playlists and schedules assigned to each zone, including seasonal changes. That service also includes 24/7 technical support and a dedicated account manager. Additional AI generation credits are charged separately. Everyone receives ongoing app updates, whichever plan they choose. The difference is who looks after your music and Radio. You can try self-service free for 14 days on one zone; it asks for a card, with no charge when it starts. If BMAsia arranges your trial, no card is needed. Larger groups can arrange custom contracts and local invoicing, and no dedicated player box is required.",
+        "visualCoverage": [
+          "self-serve price and trial",
+          "BMAsia-managed price and services",
+          "enterprise arrangements",
+          "no required player box"
+        ],
+        "index": 15,
+        "src": "audio/20261102-radio-0a0d04691a5a1117/13-pricing.mp3",
+        "transcriptSha256": "a0f55260d65bb7499c090cbff728222824343732b3cdb15132691e8830ae6ab4",
+        "audioSha256": "752a32158da50ba3b5bee17074001663fe22d909f6efbe15d7039dec0fee6bd6",
+        "durationSeconds": 75.12,
+        "codec": "mp3",
+        "sampleRateHz": 48000,
+        "channels": 1,
+        "bitRate": 128000,
+        "integratedLufs": -18.53,
+        "truePeakDbtp": -3.27
+      },
+      "semanticReviewNote": "Assistant compared primary and independent secondary transcripts with the approved script: USD 15/month, USD 150/year, USD 260/zone/year annual managed music and Radio service, separate additional generation credits, zone playlist/schedule refreshes, seasonal changes, support, account manager, app updates for everyone and both trial routes are intact. No material omissions or additions. This is transcript QA, not customer listening approval.",
+      "secondaryQAModel": "gemini-3.5-flash",
+      "secondaryTranscriptReview": "Here is the verbatim transcript of the audio recording, followed by notes on pronunciation and pricing details.\n\n---\n\n### **Verbatim Transcript**\n\n> \"You can choose to manage the music yourself, or have BM Asia take care of it. Self-service costs 15 US dollars per zone per month. If you prefer an annual plan, it is 150 US dollars per zone per year. Both self-service plans include the app's features, and you manage your own playlists and schedules. \n> \n> For a hands-off service, BM Asia manages your music and radio station for 260 US dollars per zone per year, available on annual plans only. Our music design team selects and refreshes the playlists and schedules assigned to each zone, including seasonal changes. That service also includes 24/7 technical support and a dedicated account manager. Additional AI generation credits are charged separately. \n> \n> Everyone receives ongoing app updates, whichever plan they choose. The difference is who looks after your music and radio. \n> \n> You can try self-service free for 14 days on one zone. It asks for a card, with no charge when it starts. If BM Asia arranges your trial, no card is needed. Larger groups can arrange custom contracts and local invoicing, and no dedicated player box is required.\"\n\n---\n\n### **Pronunciation & Audio Observations**\n\n* **Company Name:** Consistently pronounced as **\"BM Asia\"** (`B-M-Asia`).\n* **Prompt-Specific Phrases (\"music by\", \"regional\", \"review the\"):** None of these phrases (\"music by\", \"regional\", \"review the\") appear anywhere in this audio recording. \n* **Pronunciation / Speech Quality:** \n  * The narration is clear, natural, and synthesized/recorded cleanly with smooth pacing.\n  * No cut-off words, unnatural pauses, or ambiguous pronunciations were detected.\n\n---\n\n### **Pricing Breakdown**\n\n* **Self-Service (Monthly):** 15 US dollars per zone per month\n* **Self-Service (Annual):** 150 US dollars per zone per year\n* **Hands-Off Managed Service (Annual):** 260 US dollars per zone per year\n"
+    }
+  ]
+}

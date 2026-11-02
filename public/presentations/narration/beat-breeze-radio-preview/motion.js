@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "2026-11-02-radio-3";
+  const VERSION = "2026-11-02-radio-4";
   const LOCALE = (() => {
     const language = document.documentElement.lang.toLowerCase();
     if (language.startsWith("th")) return "th";
