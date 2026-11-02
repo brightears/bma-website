@@ -36,7 +36,7 @@ const sans=ss[0].match(/font-family:([^;]+);/)?.[1]||"'DM Sans',sans-serif";
 const serif=ss[1].match(/<h2[^>]*font-family:([^;]+);/)?.[1]||"'Libre Caslon Text',serif";
 function radio(i,strings,label){
  let s=es[i].replace(/ data-speaker-notes="[^"]*"/,'');let n=0;
- s=s.replace(/>([^<>]+)</g,(m,text)=>text.trim()?`>${esc(strings[n++])}<`:m);
+ s=s.replace(/>([^<>]+)</g,(m,text)=>text.trim()?`>${text.match(/^\s*/)[0]}${esc(strings[n++])}${text.match(/\s*$/)[0]}<`:m);
  if(n!==strings.length)throw Error(`Radio text count ${n} != ${strings.length}`);
  s=s.replace(/data-label="[^"]*"/,`data-label="${esc(label)}"`).replaceAll("'DM Sans',sans-serif",sans).replaceAll("'Libre Caslon Text',serif",serif)
  .replaceAll('font-size:64px;','font-size:56px;').replaceAll('letter-spacing:.2em;','letter-spacing:0;').replaceAll('letter-spacing:-.02em;','letter-spacing:0;')
