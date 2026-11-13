@@ -13,7 +13,8 @@
 }
 
 .heroHeading {
-  max-width: 13ch;
+  max-width: 16ch;
+  text-wrap: balance;
 }
 
 .previewCard {
@@ -232,7 +233,7 @@
 
 @media (max-width: 639px) {
   .heroHeading {
-    max-width: 14ch;
+    max-width: 17ch;
   }
 
   .momentCard,

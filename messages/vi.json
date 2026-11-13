@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "BMAsia | Nơi Âm Nhạc Quan Trọng",
+    "title": "BMAsia | Nhạc nền cho doanh nghiệp từ năm 2002",
     "description": "BMAsia thiết kế và vận hành âm nhạc, nội dung truyền thông, thông điệp và trải nghiệm không gian kết nối, với Beat Breeze và Soundtrack được cung cấp qua một đội ngũ dịch vụ chuyên môn thống nhất."
   },
   "navigation": {
@@ -465,11 +465,13 @@
   "soundtrackPage": {
     "metadata": {
       "title": "Soundtrack",
+      "seoTitle": "Soundtrack Your Brand: nhạc nền cho doanh nghiệp",
       "description": "Âm nhạc thương mại quen thuộc được cấp phép và cung cấp qua BMAsia, đi kèm thiết kế âm nhạc, hướng dẫn triển khai, hỗ trợ liên tục và các tiện ích mở rộng cho địa điểm do BMAsia xây dựng."
     },
     "redesign": {
       "hero": {
         "eyebrow": "Âm nhạc thương mại được cấp phép qua BMAsia",
+        "heading": "Soundtrack: nhạc nền từ các nghệ sĩ quen thuộc",
         "title": "Âm nhạc quen thuộc.",
         "highlight": "Được thiết kế đúng cho không gian.",
         "description": "Kho nhạc quen thuộc quy mô lớn từ các hãng thu âm lớn, kết hợp cùng dịch vụ thiết kế playlist, hướng dẫn triển khai, tiện ích mở rộng cho địa điểm và hỗ trợ liên tục từ BMAsia.",
@@ -639,6 +641,7 @@
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
+      "seoTitle": "Beat Breeze: nhạc nền miễn phí bản quyền cho doanh nghiệp",
       "description": "Nền tảng trải nghiệm không gian của BMAsia với âm nhạc miễn phí bản quyền được tuyển chọn, AI Radio, lịch phát, màn hình, thông điệp, tự động hóa và điều khiển khu vực kết nối."
     },
     "product": {
@@ -668,6 +671,7 @@
     "redesign": {
       "hero": {
         "eyebrow": "Nền tảng không gian kết nối của BMAsia",
+        "heading": "Beat Breeze: nhạc nền miễn phí bản quyền cho doanh nghiệp",
         "title": "Âm nhạc ở vị trí trung tâm.",
         "highlight": "Mọi điểm chạm cùng chuyển động.",
         "description": "Âm nhạc miễn phí bản quyền được tuyển chọn, màn hình, thông điệp và tự động hóa không gian—được lập kế hoạch trên mọi khu vực, do con người rà soát và điều khiển từ một nơi.",
@@ -964,6 +968,7 @@
     "immersive": {
       "hero": {
         "eyebrow": "BMAsia · Âm nhạc, nội dung truyền thông và trải nghiệm không gian",
+        "heading": "Nhạc nền và nội dung truyền thông cho doanh nghiệp",
         "title": "Mỗi không gian có một nhịp điệu.",
         "highlight": "Chúng tôi khiến mọi thứ vận hành đồng bộ.",
         "description": "BMAsia thiết kế và vận hành âm nhạc, màn hình, thông điệp cùng trải nghiệm không gian kết nối—với hai nền tảng âm nhạc riêng biệt để phù hợp từng yêu cầu.",
@@ -1342,6 +1347,7 @@
   "licensingPage": {
     "hero": {
       "label": "Quyền âm nhạc, thật dễ hiểu",
+      "heading": "Bản quyền âm nhạc cho doanh nghiệp: những điều cần biết",
       "title": "Phát nhạc nơi công cộng.",
       "titleHighlight": "Đảm bảo mọi quyền đều đúng.",
       "subtitle": "Một bài hát có nhiều hơn một loại quyền. BMAsia tách rõ quyền đã có trong dịch vụ và nghĩa vụ địa phương của địa điểm, rồi cho bạn biết mỗi sản phẩm bao gồm những gì.",
@@ -1595,6 +1601,7 @@
   },
   "industryData": {
     "hotels": {
+      "title": "Nhạc nền cho khách sạn và khu nghỉ dưỡng",
       "headline": "Âm thanh của dịch vụ lưu trú năm sao",
       "subheadline": "Từ sảnh đón đến spa, chúng tôi thiết kế âm nhạc định hình trải nghiệm của khách trên từng không gian.",
       "zonesTitle": "Mỗi không gian có tần số riêng",
@@ -1635,6 +1642,7 @@
       }
     },
     "restaurants": {
+      "title": "Nhạc nền cho nhà hàng",
       "headline": "Nguyên liệu bí mật không ai nhìn thấy",
       "subheadline": "Âm nhạc biến bữa ăn thành kỷ niệm — được lên lịch, tuyển chọn và luôn đúng thương hiệu.",
       "zonesTitle": "Từ bình minh đến gọi món cuối",
@@ -1675,6 +1683,7 @@
       }
     },
     "retail": {
+      "title": "Nhạc nền cho cửa hàng bán lẻ",
       "headline": "Thương hiệu của bạn có âm thanh riêng",
       "subheadline": "Chúng tôi thiết kế bản sắc âm thanh khiến khách hàng ở lại, dạo xem và mua sắm.",
       "zonesTitle": "Âm thanh cho mọi quy mô",
@@ -1715,6 +1724,7 @@
       }
     },
     "bars": {
+      "title": "Nhạc cho quán bar, lounge và hộp đêm",
       "headline": "Nơi đêm buông đúng điệu",
       "subheadline": "Âm nhạc có bản quyền định hình không khí hoàn hảo — từ giờ cocktail đến giờ đóng cửa.",
       "zonesTitle": "Định hình không khí cho từng khoảnh khắc",
@@ -1755,6 +1765,7 @@
       }
     },
     "spas": {
+      "title": "Nhạc nền cho spa và trung tâm chăm sóc sức khỏe",
       "headline": "Âm thanh như liệu pháp",
       "subheadline": "Âm nhạc được thiết kế để xoa dịu, chữa lành và phục hồi — từ tiếp tân đến phòng trị liệu.",
       "zonesTitle": "Tần số chữa lành cho từng không gian",
@@ -1795,6 +1806,7 @@
       }
     },
     "cafes": {
+      "title": "Nhạc nền cho quán cà phê",
       "headline": "Phông nền hoàn hảo",
       "subheadline": "Âm nhạc khiến khách ngồi xuống, gọi thêm một ly cà phê và nán lại thêm chút nữa.",
       "zonesTitle": "Từ ly espresso buổi sáng đến buổi làm việc chiều",
@@ -1835,6 +1847,7 @@
       }
     },
     "malls": {
+      "title": "Nhạc nền cho trung tâm thương mại",
       "headline": "Âm thanh khiến người mua dịch chuyển",
       "subheadline": "Quản lý âm nhạc đa vùng cho các trung tâm thương mại mong muốn tăng lưu lượng khách và thời gian ghé thăm.",
       "zonesTitle": "Một tòa nhà, nhiều không khí",
@@ -1875,6 +1888,7 @@
       }
     },
     "gyms": {
+      "title": "Nhạc cho phòng gym và trung tâm thể hình",
       "headline": "Năng lượng theo yêu cầu",
       "subheadline": "Âm nhạc tràn đầy năng lượng thúc đẩy hiệu suất, truyền cảm hứng cho hội viên và giữ họ quay lại.",
       "zonesTitle": "Năng lượng khác nhau cho từng bài tập",
@@ -1915,6 +1929,7 @@
       }
     },
     "medical": {
+      "title": "Nhạc nền cho phòng khám và bệnh viện",
       "headline": "Bình tĩnh, tin cậy, thoải mái",
       "subheadline": "Âm nhạc giảm lo âu, xây dựng niềm tin và tạo nên môi trường chữa lành.",
       "zonesTitle": "Âm thanh cho mọi không gian lâm sàng",
@@ -1955,6 +1970,7 @@
       }
     },
     "offices": {
+      "title": "Nhạc nền cho văn phòng",
       "headline": "Được thiết kế để làm việc hiệu quả",
       "subheadline": "Nhạc nền nâng cao khả năng tập trung, sáng tạo và sự hài lòng nơi công sở.",
       "zonesTitle": "Các chế độ khác nhau cho các không gian khác nhau",
@@ -1995,6 +2011,7 @@
       }
     },
     "showrooms": {
+      "title": "Nhạc nền cho showroom",
       "headline": "Âm thanh bán đi giấc mơ",
       "subheadline": "Âm nhạc cao cấp tôn vinh sản phẩm và tạo ra những trải nghiệm truyền cảm hứng.",
       "zonesTitle": "Sân khấu cho từng sản phẩm",
@@ -2035,6 +2052,7 @@
       }
     },
     "events": {
+      "title": "Nhạc cho sự kiện, buổi ra mắt và hội nghị",
       "headline": "Mỗi sự kiện đều có âm thanh riêng",
       "subheadline": "Từ gala doanh nghiệp đến ra mắt thương hiệu — âm nhạc biến những khoảnh khắc thành điều không thể quên.",
       "zonesTitle": "Âm thanh cho mọi dịp",
@@ -2121,7 +2139,7 @@
     "dayTitle": "Mỗi khoảnh khắc có một nhiệm vụ khác nhau.",
     "dayDescription": "Âm nhạc dẫn dắt bầu không khí, còn màn hình, thông điệp, lịch và các tự động hóa đã được phê duyệt đưa kế hoạch xuyên suốt địa điểm.",
     "touchpointsEyebrow": "Được thiết kế cho cách vận hành này",
-    "touchpointsTitle": "Không phải một mẫu nhạc nền rập khuôn.",
+    "touchpointsTitle": "Nhạc nền được lên kế hoạch cho từng khu vực.",
     "touchpointsDescription": "Mỗi khu vực và điểm chạm cần hỗ trợ hành trình thực tế của khách hàng, nhịp làm việc của nhân viên và quyết định thương hiệu của loại hình doanh nghiệp này.",
     "operationsTitle": "Được xây để vận hành, không chỉ để ngắm một lần",
     "productFitEyebrow": "Hai hướng sản phẩm đáng tin cậy",

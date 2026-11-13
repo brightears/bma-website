@@ -66,10 +66,11 @@ export default function SoundtrackPage() {
           <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .75 }}>
             <Image src="/images/brand/soundtrack/soundtrack-logo-white.svg" alt="Soundtrack" width={502} height={147} className="h-auto w-48 sm:w-56" priority />
             <p className="mt-8 font-label text-[11px] font-semibold uppercase tracking-[.25em] text-[#d6c2ff]">{t('redesign.hero.eyebrow')}</p>
-            <h1 className="bma-page-title mt-5 max-w-3xl">
+            <h1 className="bma-page-title mt-5 max-w-3xl text-balance">{t('redesign.hero.heading')}</h1>
+            <p className="bma-card-title mt-6 max-w-2xl text-balance text-white/86">
               {t('redesign.hero.title')} <span className="text-[#d6c2ff]">{t('redesign.hero.highlight')}</span>
-            </h1>
-            <p className="bma-lede mt-7 max-w-2xl text-[#f1eaff]/60">{t('redesign.hero.description')}</p>
+            </p>
+            <p className="bma-lede mt-5 max-w-2xl text-[#f1eaff]/60">{t('redesign.hero.description')}</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link href={`/${locale}/soundtrack-trial?source=soundtrack-hero`} className="inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-[#d6c2ff] px-7 font-label text-sm font-semibold text-[#1b0b25] transition hover:-translate-y-0.5 hover:bg-white">
                 {t('redesign.hero.trial')} <ArrowRight className="h-4 w-4" />
