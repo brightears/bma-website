@@ -232,7 +232,7 @@ export default function BeatBreezePage() {
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_78%_30%,rgba(52,211,199,.14),transparent_27%),radial-gradient(circle_at_16%_28%,rgba(239,166,52,.18),transparent_28%)]" />
 
         <div className="bma-container grid gap-14 lg:grid-cols-[0.86fr_1.14fr] lg:items-center lg:gap-16">
-          <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.72 }}>
+          <motion.div initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.72 }}>
             <div className="inline-flex items-center gap-2 rounded-full border border-brand-orange/20 bg-brand-orange/[0.07] px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.2em] text-brand-orange">
               <span className="h-1.5 w-1.5 rounded-full bg-[#49d5c5] shadow-[0_0_12px_#49d5c5]" /> Beat Breeze
             </div>
@@ -250,7 +250,7 @@ export default function BeatBreezePage() {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, scale: .97 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: .75, delay: .14 }} className="relative">
+          <motion.div initial={false} animate={{ opacity: 1, scale: 1 }} transition={{ duration: .75, delay: .14 }} className="relative">
             <div className="absolute -inset-12 rounded-full bg-[#49d5c5]/[0.06] blur-3xl" />
             <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[#081622]/90 shadow-[0_42px_120px_rgba(0,0,0,.48)] backdrop-blur-xl">
               <div className="flex items-center justify-between border-b border-white/[0.08] px-5 py-4 sm:px-7 sm:py-5">

@@ -40,7 +40,7 @@ export default function QuotationPage() {
       <section className="relative px-5 pb-20 pt-32 sm:px-8 sm:pb-28 sm:pt-40 lg:px-16">
         <div className="bma-container grid gap-14 xl:grid-cols-[minmax(0,.86fr)_minmax(38rem,1.14fr)] xl:gap-20">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65 }}
             className="xl:sticky xl:top-28 xl:self-start"
@@ -79,7 +79,7 @@ export default function QuotationPage() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 28 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, delay: 0.1 }}
             className="relative"

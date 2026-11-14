@@ -81,7 +81,7 @@ export function IndustryPageTemplate({ config }: { config: IndustryConfig }) {
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_82%_20%,color-mix(in_srgb,var(--industry-soft)_22%,transparent),transparent_31%),radial-gradient(circle_at_14%_76%,color-mix(in_srgb,var(--industry-accent)_18%,transparent),transparent_30%)]" />
 
         <div className="bma-container grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
-          <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .72 }}>
+          <motion.div initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: .72 }}>
             <p className="font-label text-[11px] font-semibold uppercase tracking-[.25em] text-[var(--industry-accent)]">{tt('heroEyebrow', { industry: t('headline') })}</p>
             <h1 className={`${styles.heroHeading} bma-page-title mt-6`}>{t('headline')}</h1>
             <p className="bma-lede mt-7 max-w-[42rem] text-white/62">{t('subheadline')}</p>
@@ -93,7 +93,7 @@ export function IndustryPageTemplate({ config }: { config: IndustryConfig }) {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, scale: .97 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: .72, delay: .12 }} className="relative lg:pl-8">
+          <motion.div initial={false} animate={{ opacity: 1, scale: 1 }} transition={{ duration: .72, delay: .12 }} className="relative lg:pl-8">
             <div className="absolute -inset-8 rounded-full bg-[var(--industry-soft)]/[0.07] blur-3xl" />
             <div className="relative overflow-hidden rounded-[2rem] border border-white/12 bg-[#07131e]/90 shadow-[0_42px_120px_rgba(0,0,0,.52)] backdrop-blur-xl">
               <div className="flex items-center justify-between border-b border-white/[0.08] px-5 py-4 sm:px-7">

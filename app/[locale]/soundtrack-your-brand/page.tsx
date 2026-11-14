@@ -63,7 +63,7 @@ export default function SoundtrackPage() {
         <div className="absolute -right-48 top-10 -z-10 h-[44rem] w-[44rem] rounded-full border border-[#d6c2ff]/10 shadow-[0_0_0_110px_rgba(214,194,255,.025),0_0_0_220px_rgba(214,194,255,.015)]" />
 
         <div className="bma-container grid gap-14 lg:grid-cols-[0.84fr_1.16fr] lg:items-center lg:gap-16">
-          <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .75 }}>
+          <motion.div initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: .75 }}>
             <Image src="/images/brand/soundtrack/soundtrack-logo-white.svg" alt="Soundtrack" width={502} height={147} className="h-auto w-48 sm:w-56" priority />
             <p className="mt-8 font-label text-[11px] font-semibold uppercase tracking-[.25em] text-[#d6c2ff]">{t('redesign.hero.eyebrow')}</p>
             <h1 className="bma-page-title mt-5 max-w-3xl">
@@ -81,7 +81,7 @@ export default function SoundtrackPage() {
             <p className="mt-6 max-w-xl text-xs leading-5 text-[#f1eaff]/38">{t('redesign.hero.note')}</p>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, scale: .97 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: .75, delay: .14 }} className="relative">
+          <motion.div initial={false} animate={{ opacity: 1, scale: 1 }} transition={{ duration: .75, delay: .14 }} className="relative">
             <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4">
               {covers.map((cover, index) => (
                 <div key={cover.src} className={`group relative aspect-square overflow-hidden rounded-[1.25rem] border border-[#d6c2ff]/18 shadow-[0_22px_55px_rgba(0,0,0,.35)] ${index === 0 ? 'col-span-2 row-span-2' : index === 5 ? 'hidden sm:block' : ''}`}>
