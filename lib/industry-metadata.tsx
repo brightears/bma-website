@@ -11,14 +11,14 @@ export async function createIndustryMetadata(slug: IndustrySlug, locale: string)
   languages['x-default'] = `${SITE.url}/en/solutions/${slug}/`;
 
   return {
-    title: t('headline'),
+    title: t('title'),
     description: t('subheadline'),
     alternates: { canonical: `${SITE.url}${path}`, languages },
     openGraph: {
-      title: t('headline'), description: t('subheadline'), url: `${SITE.url}${path}`, siteName: SITE.name, type: 'website',
-      images: [{ url: `${SITE.url}/images/og-image.jpg`, width: 1200, height: 630, alt: t('headline') }],
+      title: t('title'), description: t('subheadline'), url: `${SITE.url}${path}`, siteName: SITE.name, type: 'website',
+      images: [{ url: `${SITE.url}/images/og-image.jpg`, width: 1200, height: 630, alt: t('title') }],
     },
-    twitter: { card: 'summary_large_image', title: t('headline'), description: t('subheadline'), images: [`${SITE.url}/images/og-image.jpg`] },
+    twitter: { card: 'summary_large_image', title: t('title'), description: t('subheadline'), images: [`${SITE.url}/images/og-image.jpg`] },
   };
 }
 
@@ -26,14 +26,14 @@ export async function IndustryRouteLayout({ slug, locale, children }: { slug: In
   const t = await getTranslations({ locale, namespace: `industryData.${slug}` });
   const url = `${SITE.url}/${locale}/solutions/${slug}/`;
   const serviceSchema = {
-    '@context': 'https://schema.org', '@type': 'Service', name: t('headline'), description: t('subheadline'), url,
+    '@context': 'https://schema.org', '@type': 'Service', name: t('title'), description: t('subheadline'), url,
     provider: { '@type': 'Organization', name: 'BMAsia', url: `${SITE.url}/` },
     serviceType: 'Business music and atmosphere design',
   };
   const breadcrumbSchema = {
     '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'BMAsia', item: `${SITE.url}/${locale}/` },
-      { '@type': 'ListItem', position: 2, name: t('headline'), item: url },
+      { '@type': 'ListItem', position: 2, name: t('title'), item: url },
     ],
   };
 

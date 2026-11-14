@@ -49,7 +49,7 @@ ${verify.neverTitle} ${Object.values(verify.never).join('; ')}. ${verify.unsure}
 
   const industryLinks = INDUSTRIES.map(([slug, name]) => {
     const d = en.industryData[slug];
-    return `- [${name}](${base}/en/solutions/${slug}/): ${d.headline}`;
+    return `- [${name}](${base}/en/solutions/${slug}/): ${d.title}. ${d.subheadline}`;
   }).join('\n');
 
   return `# BMAsia

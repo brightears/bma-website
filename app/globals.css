@@ -162,6 +162,13 @@
     letter-spacing: -0.055em;
   }
 
+  /* Japanese H1s: keep kinsoku rules (no line starting with ー or small kana)
+     and wrap at phrase boundaries where the browser supports it. */
+  :lang(ja) .bma-page-title {
+    line-break: strict;
+    word-break: auto-phrase;
+  }
+
   .bma-section-title {
     @apply font-headline font-medium;
 

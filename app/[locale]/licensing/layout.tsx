@@ -14,7 +14,7 @@ export async function generateMetadata({
   const canonical = `${SITE.url}/${locale}/licensing/`;
 
   return {
-    title: t('label'),
+    title: t('heading'),
     description: t('subtitle'),
     alternates: {
       canonical,
@@ -24,7 +24,7 @@ export async function generateMetadata({
       ]),
     },
     openGraph: {
-      title: `${t('label')} | ${SITE.name}`,
+      title: `${t('heading')} | ${SITE.name}`,
       description: t('subtitle'),
       url: canonical,
     },

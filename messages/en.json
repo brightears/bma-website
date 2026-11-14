@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "BMAsia | Wherever Music Matters",
+    "title": "BMAsia | Background music for business since 2002",
     "description": "BMAsia designs and operates music, media, messaging and connected venue experiences, with Beat Breeze and Soundtrack supplied through one expert service team."
   },
   "navigation": {
@@ -465,11 +465,13 @@
   "soundtrackPage": {
     "metadata": {
       "title": "Soundtrack",
+      "seoTitle": "Soundtrack Your Brand: background music for business",
       "description": "Familiar licensed commercial music supplied through BMAsia, with music design, onboarding, ongoing support and BMAsia-built venue extensions."
     },
     "redesign": {
       "hero": {
         "eyebrow": "Licensed commercial music through BMAsia",
+        "heading": "Soundtrack: background music with familiar artists",
         "title": "Familiar music.",
         "highlight": "Made right for the venue.",
         "description": "A large catalogue of familiar and major-label music, paired with BMAsia playlist design, onboarding, venue extensions and ongoing human service.",
@@ -639,6 +641,7 @@
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
+      "seoTitle": "Beat Breeze: royalty-free background music for business",
       "description": "BMAsia’s royalty-free venue experience platform for curated music, AI Radio, schedules, screens, messaging, automation and connected zone control."
     },
     "product": {
@@ -668,6 +671,7 @@
     "redesign": {
       "hero": {
         "eyebrow": "BMAsia’s connected venue platform",
+        "heading": "Beat Breeze: royalty-free background music for business",
         "title": "Music at the heart.",
         "highlight": "Every touchpoint in motion.",
         "description": "Curated royalty-free music, screens, messages and venue automation—planned across zones, reviewed by people and controlled from one place.",
@@ -964,6 +968,7 @@
     "immersive": {
       "hero": {
         "eyebrow": "BMAsia · Music, media and venue experience",
+        "heading": "Background music and media for business",
         "title": "Your venue has a rhythm.",
         "highlight": "We make it work together.",
         "description": "BMAsia designs and runs music, screens, messages and connected venue experiences—with two distinct music platforms to fit the brief.",
@@ -1342,6 +1347,7 @@
   "licensingPage": {
     "hero": {
       "label": "Music rights, made clear",
+      "heading": "Music licensing for businesses, explained",
       "title": "Play music in public.",
       "titleHighlight": "Keep every right in place.",
       "subtitle": "A song carries more than one right. BMAsia separates the service rights from the venue’s local obligations, then shows which product covers what.",
@@ -1595,6 +1601,7 @@
   },
   "industryData": {
     "hotels": {
+      "title": "Background music for hotels and resorts",
       "headline": "The sound of five-star hospitality",
       "subheadline": "From lobby to spa, we design the music that shapes your guest experience across every zone.",
       "zonesTitle": "Every space has its frequency",
@@ -1635,6 +1642,7 @@
       }
     },
     "restaurants": {
+      "title": "Background music for restaurants",
       "headline": "The secret ingredient no one sees",
       "subheadline": "Music that turns meals into memories — scheduled, curated, and always on brand.",
       "zonesTitle": "From sunrise to last call",
@@ -1675,6 +1683,7 @@
       }
     },
     "retail": {
+      "title": "Background music for retail stores",
       "headline": "Your brand has a sound",
       "subheadline": "We design the sonic identity that makes customers stay, browse, and buy.",
       "zonesTitle": "Sound for every format",
@@ -1715,6 +1724,7 @@
       }
     },
     "bars": {
+      "title": "Music for bars, lounges and nightclubs",
       "headline": "Where the night sounds right",
       "subheadline": "Licensed music that sets the perfect mood — from cocktail hour to closing time.",
       "zonesTitle": "Set the vibe for every moment",
@@ -1755,6 +1765,7 @@
       }
     },
     "spas": {
+      "title": "Background music for spas and wellness centers",
       "headline": "Sound as therapy",
       "subheadline": "Music designed to calm, heal, and restore — from reception to treatment room.",
       "zonesTitle": "Healing frequencies for every space",
@@ -1795,6 +1806,7 @@
       }
     },
     "cafes": {
+      "title": "Background music for cafés and coffee shops",
       "headline": "The perfect backdrop",
       "subheadline": "Music that makes people sit down, order another coffee, and stay a while.",
       "zonesTitle": "From morning espresso to afternoon work session",
@@ -1835,6 +1847,7 @@
       }
     },
     "malls": {
+      "title": "Background music for shopping malls",
       "headline": "Sound that moves shoppers",
       "subheadline": "Multi-zone music management for shopping centers that want more foot traffic and longer visits.",
       "zonesTitle": "One building, many moods",
@@ -1875,6 +1888,7 @@
       }
     },
     "gyms": {
+      "title": "Music for gyms and fitness studios",
       "headline": "Energy on demand",
       "subheadline": "High-energy music that pushes performance, motivates members, and keeps them coming back.",
       "zonesTitle": "Different energy for every workout",
@@ -1915,6 +1929,7 @@
       }
     },
     "medical": {
+      "title": "Background music for clinics and hospitals",
       "headline": "Calm, trust, comfort",
       "subheadline": "Music that reduces anxiety, builds trust, and creates a healing environment.",
       "zonesTitle": "Sound for every clinical space",
@@ -1955,6 +1970,7 @@
       }
     },
     "offices": {
+      "title": "Background music for offices",
       "headline": "Productive by design",
       "subheadline": "Background music that boosts focus, creativity, and workplace satisfaction.",
       "zonesTitle": "Different modes for different spaces",
@@ -1995,6 +2011,7 @@
       }
     },
     "showrooms": {
+      "title": "Background music for showrooms",
       "headline": "Sound that sells the dream",
       "subheadline": "Premium music that elevates products and creates aspirational experiences.",
       "zonesTitle": "Setting the stage for every product",
@@ -2035,6 +2052,7 @@
       }
     },
     "events": {
+      "title": "Music for events, launches and conferences",
       "headline": "Every event has a sound",
       "subheadline": "From corporate galas to brand launches — music that makes moments unforgettable.",
       "zonesTitle": "Sound for every occasion",
@@ -2121,7 +2139,7 @@
     "dayTitle": "Every moment has a different job.",
     "dayDescription": "Music leads the atmosphere, while screens, messaging, schedules and approved automations carry the plan across the venue.",
     "touchpointsEyebrow": "Made for this operation",
-    "touchpointsTitle": "Not a background-music template.",
+    "touchpointsTitle": "Background music, planned zone by zone.",
     "touchpointsDescription": "Each zone and touchpoint should support the actual customer journey, staff rhythm and brand decisions of this type of business.",
     "operationsTitle": "Built to be operated, not admired once",
     "productFitEyebrow": "Two credible product routes",

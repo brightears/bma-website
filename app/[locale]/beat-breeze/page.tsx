@@ -237,10 +237,11 @@ export default function BeatBreezePage() {
               <span className="h-1.5 w-1.5 rounded-full bg-[#49d5c5] shadow-[0_0_12px_#49d5c5]" /> Beat Breeze
             </div>
             <p className="bma-kicker mt-7">{t('redesign.hero.eyebrow')}</p>
-            <h1 className="bma-display bma-page-title mt-5 max-w-3xl">
+            <h1 className="bma-display bma-page-title mt-5 max-w-3xl text-balance">{t('redesign.hero.heading')}</h1>
+            <p className="bma-card-title mt-6 max-w-2xl text-balance text-white/86">
               {t('redesign.hero.title')} <span className="bg-gradient-to-r from-brand-orange via-[#e4ca68] to-[#49d5c5] bg-clip-text text-transparent">{t('redesign.hero.highlight')}</span>
-            </h1>
-            <p className="bma-lede mt-7 max-w-2xl">{t('redesign.hero.description')}</p>
+            </p>
+            <p className="bma-lede mt-5 max-w-2xl">{t('redesign.hero.description')}</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a href={signup} className="bma-button-primary min-h-14 px-7">{t('redesign.hero.trial')} <ArrowRight className="h-4 w-4" /></a>
               <Link href={`/${locale}/quotation?solution=beat-breeze&source=product-hero`} className="bma-button-secondary min-h-14 px-7">{t('redesign.hero.talk')}</Link>

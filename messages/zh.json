@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "BMAsia | 音乐无处不在",
+    "title": "BMAsia | 自2002年起专注商用背景音乐",
     "description": "BMAsia 设计并运营音乐、媒体、信息与互联场所体验，由同一支专业服务团队提供 Beat Breeze 与 Soundtrack。"
   },
   "navigation": {
@@ -465,11 +465,13 @@
   "soundtrackPage": {
     "metadata": {
       "title": "Soundtrack",
+      "seoTitle": "Soundtrack Your Brand：商用背景音乐服务",
       "description": "由 BMAsia 提供的知名授权商业音乐，并配套音乐设计、上线实施、持续支持及 BMAsia 打造的场所扩展功能。"
     },
     "redesign": {
       "hero": {
         "eyebrow": "通过 BMAsia 获取授权商业音乐",
+        "heading": "Soundtrack：汇集知名艺人作品的商用背景音乐",
         "title": "耳熟能详的音乐。",
         "highlight": "为场所恰到好处地呈现。",
         "description": "丰富的知名及主流唱片公司音乐曲库，结合 BMAsia 的播放列表设计、上线实施、场所扩展与持续人工服务。",
@@ -639,6 +641,7 @@
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
+      "seoTitle": "Beat Breeze：免版税商用背景音乐",
       "description": "BMAsia 的免版税场所体验平台，整合精选音乐、AI Radio、排期、屏幕、信息、自动化与互联分区控制。"
     },
     "product": {
@@ -668,6 +671,7 @@
     "redesign": {
       "hero": {
         "eyebrow": "BMAsia 的互联场所平台",
+        "heading": "Beat Breeze：免版税商用背景音乐",
         "title": "以音乐为核心。",
         "highlight": "让每个触点协同运转。",
         "description": "将精选免版税音乐、屏幕、信息与场所自动化跨分区规划，由人员审核，并在一处统一控制。",
@@ -964,6 +968,7 @@
     "immersive": {
       "hero": {
         "eyebrow": "BMAsia · 音乐、媒体与场所体验",
+        "heading": "商用背景音乐与媒体服务",
         "title": "您的场所有自己的节奏。",
         "highlight": "我们让一切协同运转。",
         "description": "BMAsia 设计并运营音乐、屏幕、信息与互联场所体验，以两种不同的音乐平台匹配您的需求。",
@@ -1342,6 +1347,7 @@
   "licensingPage": {
     "hero": {
       "label": "让音乐权利清晰易懂",
+      "heading": "商业场所播放音乐的版权指南",
       "title": "在公共空间播放音乐。",
       "titleHighlight": "确保每一项权利都到位。",
       "subtitle": "一首歌包含不止一种权利。BMAsia 将服务内已包含的权利与场所的本地义务分开说明，并清楚展示每种产品覆盖什么。",
@@ -1595,6 +1601,7 @@
   },
   "industryData": {
     "hotels": {
+      "title": "酒店与度假村背景音乐",
       "headline": "五星级酒店的声音",
       "subheadline": "从大堂到水疗，我们为您酒店的每一个区域量身打造塑造宾客体验的音乐。",
       "zonesTitle": "每一个空间都有属于自己的频率",
@@ -1635,6 +1642,7 @@
       }
     },
     "restaurants": {
+      "title": "餐厅背景音乐",
       "headline": "无人看见的秘密配料",
       "subheadline": "让每一餐都成为回忆的音乐——精心排程、策划，并始终契合品牌。",
       "zonesTitle": "从日出到最后一杯",
@@ -1675,6 +1683,7 @@
       }
     },
     "retail": {
+      "title": "零售门店背景音乐",
       "headline": "您的品牌有自己的声音",
       "subheadline": "我们打造让顾客驻足、浏览并下单的声音标识。",
       "zonesTitle": "适用于每种业态的声音",
@@ -1715,6 +1724,7 @@
       }
     },
     "bars": {
+      "title": "酒吧、酒廊与夜店音乐",
       "headline": "夜晚就该这么响",
       "subheadline": "获得合法授权的音乐，完美营造氛围——从鸡尾酒时光到打烊时刻。",
       "zonesTitle": "为每一刻设定氛围",
@@ -1755,6 +1765,7 @@
       }
     },
     "spas": {
+      "title": "水疗与养生中心背景音乐",
       "headline": "声音即疗愈",
       "subheadline": "为平静、疗愈与恢复而设计的音乐——从前台到护理室。",
       "zonesTitle": "为每一处空间调配的疗愈频率",
@@ -1795,6 +1806,7 @@
       }
     },
     "cafes": {
+      "title": "咖啡馆背景音乐",
       "headline": "最好的背景",
       "subheadline": "让人愿意坐下、再点一杯咖啡、并多停留片刻的音乐。",
       "zonesTitle": "从清晨的浓缩到午后的工作时光",
@@ -1835,6 +1847,7 @@
       }
     },
     "malls": {
+      "title": "购物中心背景音乐",
       "headline": "让顾客流动起来的声音",
       "subheadline": "为希望提升客流与停留时间的购物中心提供多区域音乐管理。",
       "zonesTitle": "一栋建筑，多种氛围",
@@ -1875,6 +1888,7 @@
       }
     },
     "gyms": {
+      "title": "健身房与健身工作室音乐",
       "headline": "随时随地的能量",
       "subheadline": "高能量音乐激发表现、激励会员、让他们持续回归。",
       "zonesTitle": "每种训练对应不同能量",
@@ -1915,6 +1929,7 @@
       }
     },
     "medical": {
+      "title": "诊所与医院背景音乐",
       "headline": "平静、信任、舒适",
       "subheadline": "缓解焦虑、建立信任、营造疗愈环境的音乐。",
       "zonesTitle": "为每一处临床空间而设计的声音",
@@ -1955,6 +1970,7 @@
       }
     },
     "offices": {
+      "title": "办公室背景音乐",
       "headline": "为生产力而设计",
       "subheadline": "提升专注力、创造力与职场满意度的背景音乐。",
       "zonesTitle": "不同空间对应不同模式",
@@ -1995,6 +2011,7 @@
       }
     },
     "showrooms": {
+      "title": "展厅背景音乐",
       "headline": "把梦想卖出去的声音",
       "subheadline": "高端音乐提升产品格调，营造令人向往的体验。",
       "zonesTitle": "为每件产品打造舞台",
@@ -2035,6 +2052,7 @@
       }
     },
     "events": {
+      "title": "活动、发布会与会议音乐",
       "headline": "每一场活动都有属于它的声音",
       "subheadline": "从企业晚宴到品牌发布——让瞬间难以忘怀的音乐。",
       "zonesTitle": "为每种场合而设的声音",
@@ -2121,7 +2139,7 @@
     "dayTitle": "每个时刻，都承担不同任务。",
     "dayDescription": "音乐引领氛围，屏幕、信息、排期与经批准的自动化则将计划延伸到整个场所。",
     "touchpointsEyebrow": "为这种运营方式而设计",
-    "touchpointsTitle": "不是套用背景音乐模板。",
+    "touchpointsTitle": "按区域逐一规划的背景音乐。",
     "touchpointsDescription": "每个分区与触点都应服务于这种业务真实的顾客旅程、员工节奏与品牌决策。",
     "operationsTitle": "为持续运营而建，而非只在初次展示时好看",
     "productFitEyebrow": "两种可信的产品路线",

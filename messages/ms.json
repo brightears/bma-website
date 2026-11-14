@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "BMAsia | Di Mana Muzik Penting",
+    "title": "BMAsia | Muzik latar untuk perniagaan sejak 2002",
     "description": "BMAsia mereka bentuk dan mengendalikan pengalaman muzik, media, pemesejan dan tempat yang bersambung, dengan Beat Breeze dan Soundtrack dibekalkan melalui satu pasukan perkhidmatan pakar."
   },
   "navigation": {
@@ -465,11 +465,13 @@
   "soundtrackPage": {
     "metadata": {
       "title": "Soundtrack",
+      "seoTitle": "Soundtrack Your Brand: muzik latar untuk perniagaan",
       "description": "Muzik komersial berlesen yang dikenali, dibekalkan melalui BMAsia dengan reka bentuk muzik, penerimaan pelanggan, sokongan berterusan dan peluasan venue yang dibina BMAsia."
     },
     "redesign": {
       "hero": {
         "eyebrow": "Muzik komersial berlesen melalui BMAsia",
+        "heading": "Soundtrack: muzik latar daripada artis yang dikenali",
         "title": "Muzik yang dikenali.",
         "highlight": "Disesuaikan dengan tepat untuk venue.",
         "description": "Katalog besar muzik yang dikenali dan daripada label utama, digandingkan dengan reka bentuk senarai main BMAsia, penerimaan pelanggan, peluasan venue dan perkhidmatan manusia yang berterusan.",
@@ -639,6 +641,7 @@
   "beatBreezePage": {
     "metadata": {
       "title": "Beat Breeze",
+      "seoTitle": "Beat Breeze: muzik latar bebas royalti untuk perniagaan",
       "description": "Platform pengalaman venue bebas royalti BMAsia untuk muzik terpilih, AI Radio, jadual, skrin, pemesejan, automasi dan kawalan zon terhubung."
     },
     "product": {
@@ -668,6 +671,7 @@
     "redesign": {
       "hero": {
         "eyebrow": "Platform venue terhubung BMAsia",
+        "heading": "Beat Breeze: muzik latar bebas royalti untuk perniagaan",
         "title": "Muzik sebagai nadi.",
         "highlight": "Setiap titik sentuh bergerak seiring.",
         "description": "Muzik bebas royalti terpilih, skrin, mesej dan automasi venue—dirancang merentas zon, disemak oleh manusia dan dikawal dari satu tempat.",
@@ -992,6 +996,7 @@
     "immersive": {
       "hero": {
         "eyebrow": "BMAsia · Muzik, media dan pengalaman venue",
+        "heading": "Muzik latar dan media untuk perniagaan",
         "title": "Venue anda mempunyai iramanya sendiri.",
         "highlight": "Kami menyelaraskan semuanya.",
         "description": "BMAsia mereka bentuk dan mengurus muzik, skrin, mesej dan pengalaman venue yang saling terhubung, dengan dua platform muzik berbeza untuk memenuhi keperluan anda.",
@@ -1370,6 +1375,7 @@
   "licensingPage": {
     "hero": {
       "label": "Hak muzik, dibuat jelas",
+      "heading": "Lesen muzik untuk perniagaan: perkara yang perlu anda tahu",
       "title": "Mainkan muzik di ruang awam.",
       "titleHighlight": "Pastikan setiap hak tersedia.",
       "subtitle": "Sebuah lagu membawa lebih daripada satu hak. BMAsia memisahkan hak dalam perkhidmatan daripada kewajipan tempatan venue, kemudian menunjukkan perkara yang diliputi setiap produk.",
@@ -1623,6 +1629,7 @@
   },
   "industryData": {
     "hotels": {
+      "title": "Muzik latar untuk hotel dan resort",
       "headline": "Bunyi hospitaliti lima bintang",
       "subheadline": "Dari lobi hingga ke spa, kami mereka bentuk muzik yang membentuk pengalaman tetamu anda di setiap zon.",
       "zonesTitle": "Setiap ruang mempunyai frekuensinya",
@@ -1663,6 +1670,7 @@
       }
     },
     "restaurants": {
+      "title": "Muzik latar untuk restoran",
       "headline": "Ramuan rahsia yang tidak dilihat oleh sesiapa",
       "subheadline": "Muzik yang mengubah hidangan menjadi kenangan — dijadualkan, dikurasikan, dan sentiasa selari dengan jenama.",
       "zonesTitle": "Dari terbit fajar hingga panggilan terakhir",
@@ -1703,6 +1711,7 @@
       }
     },
     "retail": {
+      "title": "Muzik latar untuk kedai peruncitan",
       "headline": "Jenama anda mempunyai bunyinya",
       "subheadline": "Kami mereka bentuk identiti sonik yang membuat pelanggan tinggal, melayari, dan membeli.",
       "zonesTitle": "Bunyi untuk setiap format",
@@ -1743,6 +1752,7 @@
       }
     },
     "bars": {
+      "title": "Muzik untuk bar, lounge dan kelab malam",
       "headline": "Di mana malam terasa tepat",
       "subheadline": "Muzik berlesen yang menetapkan suasana sempurna — dari waktu koktel hingga waktu tutup.",
       "zonesTitle": "Tetapkan vibe untuk setiap detik",
@@ -1783,6 +1793,7 @@
       }
     },
     "spas": {
+      "title": "Muzik latar untuk spa dan pusat kesejahteraan",
       "headline": "Bunyi sebagai terapi",
       "subheadline": "Muzik direka untuk menenangkan, menyembuhkan, dan memulihkan — dari penyambut tetamu ke bilik rawatan.",
       "zonesTitle": "Frekuensi penyembuhan untuk setiap ruang",
@@ -1823,6 +1834,7 @@
       }
     },
     "cafes": {
+      "title": "Muzik latar untuk kafe dan kedai kopi",
       "headline": "Latar belakang yang sempurna",
       "subheadline": "Muzik yang membuat orang duduk, memesan kopi lagi, dan menetap untuk seketika.",
       "zonesTitle": "Dari espresso pagi hingga sesi kerja petang",
@@ -1863,6 +1875,7 @@
       }
     },
     "malls": {
+      "title": "Muzik latar untuk pusat beli-belah",
       "headline": "Bunyi yang menggerakkan pembeli",
       "subheadline": "Pengurusan muzik pelbagai zon untuk pusat membeli-belah yang mahukan lebih lalu lintas pelanggan dan lawatan lebih lama.",
       "zonesTitle": "Satu bangunan, pelbagai suasana",
@@ -1903,6 +1916,7 @@
       }
     },
     "gyms": {
+      "title": "Muzik untuk gim dan studio kecergasan",
       "headline": "Tenaga atas permintaan",
       "subheadline": "Muzik bertenaga tinggi yang mendorong prestasi, memotivasi ahli, dan membuat mereka terus datang.",
       "zonesTitle": "Tenaga berbeza untuk setiap latihan",
@@ -1943,6 +1957,7 @@
       }
     },
     "medical": {
+      "title": "Muzik latar untuk klinik dan hospital",
       "headline": "Tenang, percaya, selesa",
       "subheadline": "Muzik yang mengurangkan kebimbangan, membina kepercayaan, dan mencipta persekitaran penyembuhan.",
       "zonesTitle": "Bunyi untuk setiap ruang klinikal",
@@ -1983,6 +1998,7 @@
       }
     },
     "offices": {
+      "title": "Muzik latar untuk pejabat",
       "headline": "Produktif melalui reka bentuk",
       "subheadline": "Muzik latar belakang yang meningkatkan fokus, kreativiti dan kepuasan di tempat kerja.",
       "zonesTitle": "Mod berbeza untuk ruang berbeza",
@@ -2023,6 +2039,7 @@
       }
     },
     "showrooms": {
+      "title": "Muzik latar untuk bilik pameran",
       "headline": "Bunyi yang menjual impian",
       "subheadline": "Muzik premium yang meningkatkan produk dan mencipta pengalaman inspirasi.",
       "zonesTitle": "Menetapkan pentas untuk setiap produk",
@@ -2063,6 +2080,7 @@
       }
     },
     "events": {
+      "title": "Muzik untuk acara, pelancaran dan persidangan",
       "headline": "Setiap acara mempunyai bunyinya",
       "subheadline": "Dari gala korporat ke pelancaran jenama — muzik yang menjadikan detik tidak dapat dilupakan.",
       "zonesTitle": "Bunyi untuk setiap majlis",
@@ -2149,7 +2167,7 @@
     "dayTitle": "Setiap detik mempunyai tugas yang berbeza.",
     "dayDescription": "Muzik memimpin suasana, sementara skrin, pemesejan, jadual dan automasi yang diluluskan membawa pelan ke seluruh venue.",
     "touchpointsEyebrow": "Dibina untuk operasi ini",
-    "touchpointsTitle": "Bukan templat muzik latar.",
+    "touchpointsTitle": "Muzik latar yang dirancang mengikut zon.",
     "touchpointsDescription": "Setiap zon dan titik sentuh harus menyokong perjalanan pelanggan, rentak kakitangan dan keputusan jenama sebenar bagi jenis perniagaan ini.",
     "operationsTitle": "Dibina untuk dikendalikan, bukan sekadar dikagumi sekali",
     "productFitEyebrow": "Dua laluan produk yang meyakinkan",

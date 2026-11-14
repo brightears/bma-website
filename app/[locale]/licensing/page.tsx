@@ -98,10 +98,11 @@ export default function LicensingPage() {
         <div className="bma-container relative grid items-center gap-14 lg:grid-cols-[0.92fr_1.08fr] lg:gap-16">
           <motion.div {...reveal}>
             <p className="bma-kicker">{t('hero.label')}</p>
-            <h1 className="bma-display bma-page-title mt-7 max-w-[12ch] text-balance text-white">
+            <h1 className="bma-display bma-page-title mt-7 max-w-[16ch] text-balance text-white">{t('hero.heading')}</h1>
+            <p className="bma-card-title mt-6 max-w-[24ch] text-balance text-white/86">
               {t('hero.title')} <span className="gradient-text">{t('hero.titleHighlight')}</span>
-            </h1>
-            <p className="bma-lede mt-8 max-w-2xl">{t('hero.subtitle')}</p>
+            </p>
+            <p className="bma-lede mt-5 max-w-2xl">{t('hero.subtitle')}</p>
             <div className="mt-9 flex flex-wrap gap-3">
               <Link href={`/${locale}/quotation?source=licensing-hero`} className="bma-button-primary">
                 {t('hero.cta')} <ArrowRight className="h-4 w-4" aria-hidden="true" />

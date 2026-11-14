@@ -83,8 +83,9 @@ export function IndustryPageTemplate({ config }: { config: IndustryConfig }) {
         <div className="bma-container grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
           <motion.div initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: .72 }}>
             <p className="font-label text-[11px] font-semibold uppercase tracking-[.25em] text-[var(--industry-accent)]">{tt('heroEyebrow', { industry: t('headline') })}</p>
-            <h1 className={`${styles.heroHeading} bma-page-title mt-6`}>{t('headline')}</h1>
-            <p className="bma-lede mt-7 max-w-[42rem] text-white/62">{t('subheadline')}</p>
+            <h1 className={`${styles.heroHeading} bma-page-title mt-6`}>{t('title')}</h1>
+            <p className="bma-card-title mt-6 max-w-[24ch] text-balance text-white/86">{t('headline')}</p>
+            <p className="bma-lede mt-5 max-w-[42rem] text-white/62">{t('subheadline')}</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link href={`/${locale}/quotation?industry=${config.slug}&source=industry-hero`} className="inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-[var(--industry-accent)] px-7 font-label text-sm font-semibold text-[#111820] transition hover:-translate-y-0.5 hover:brightness-110">
                 {tt('helpChoose')} <ArrowRight className="h-4 w-4" aria-hidden="true" />

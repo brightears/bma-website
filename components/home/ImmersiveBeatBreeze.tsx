@@ -325,7 +325,8 @@ export function ImmersiveBeatBreeze() {
         <div className={styles.heroGrid}>
           <div className={styles.heroCopy}>
             <p className={styles.eyebrow}>{t('hero.eyebrow')}</p>
-            <h1 className="bma-page-title"><span>{t('hero.title')}</span> <em>{t('hero.highlight')}</em></h1>
+            <h1 className="bma-page-title">{t('hero.heading')}</h1>
+            <p className={`${styles.heroSlogan} bma-card-title`}><span>{t('hero.title')}</span> <em>{t('hero.highlight')}</em></p>
             <p className={styles.heroLead}>{t('hero.description')}</p>
             <div className={styles.heroActions}>
               <a href="#choose-path" className={styles.primaryButton}>
