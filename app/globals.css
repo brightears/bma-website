@@ -318,3 +318,9 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* A cookie choice is already stored (set by the head script in app/[locale]/layout.tsx
+   before first paint): hide the server-rendered banner until React removes it. */
+html[data-cookie-choice] [data-cookie-banner] {
+  display: none;
+}
