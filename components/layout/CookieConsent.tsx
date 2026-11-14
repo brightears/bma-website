@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { BarChart3, Check, ShieldCheck, X } from 'lucide-react';
+import { COOKIE_CONSENT_STORAGE_KEY, LEGACY_COOKIE_CONSENT_KEY } from '@/lib/cookie-choice-script';
 
 type ConsentChoice = 'pending' | 'necessary' | 'analytics';
 
@@ -14,18 +15,21 @@ declare global {
   }
 }
 
-const STORAGE_KEY = 'cookie_consent_v2';
+const STORAGE_KEY = COOKIE_CONSENT_STORAGE_KEY;
 
 export function CookieConsent() {
   const locale = useLocale();
   const t = useTranslations('cookieBanner');
   const [choice, setChoice] = useState<ConsentChoice>('pending');
-  const [visible, setVisible] = useState(false);
+  // Visible by default so the banner is in the server HTML. The head script
+  // and globals.css hide it before paint when a choice is stored, and the
+  // effect below then removes it.
+  const [visible, setVisible] = useState(true);
   const [manageMode, setManageMode] = useState(false);
 
   useEffect(() => {
     const stored = window.localStorage.getItem(STORAGE_KEY);
-    const legacy = window.localStorage.getItem('cookie_consent');
+    const legacy = window.localStorage.getItem(LEGACY_COOKIE_CONSENT_KEY);
     const initial: ConsentChoice = stored === 'analytics' || legacy === 'accepted'
       ? 'analytics'
       : stored === 'necessary' || legacy === 'rejected'
@@ -34,14 +38,13 @@ export function CookieConsent() {
 
     setChoice(initial);
     if (initial === 'analytics') enableAnalytics();
-    if (initial === 'pending') {
-      const timer = window.setTimeout(() => setVisible(true), 700);
-      return () => window.clearTimeout(timer);
-    }
+    if (initial !== 'pending') setVisible(false);
   }, []);
 
   useEffect(() => {
     const openPreferences = () => {
+      // The head script's marker would keep the reopened banner hidden.
+      document.documentElement.removeAttribute('data-cookie-choice');
       setManageMode(true);
       setVisible(true);
     };
@@ -52,7 +55,7 @@ export function CookieConsent() {
   const save = (next: Exclude<ConsentChoice, 'pending'>) => {
     const wasAnalytics = choice === 'analytics';
     window.localStorage.setItem(STORAGE_KEY, next);
-    window.localStorage.removeItem('cookie_consent');
+    window.localStorage.removeItem(LEGACY_COOKIE_CONSENT_KEY);
     setChoice(next);
     setVisible(false);
     setManageMode(false);
@@ -69,7 +72,7 @@ export function CookieConsent() {
   if (!visible) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-[90] p-3 sm:p-5" role="region" aria-label={t('title')}>
+    <div className="fixed inset-x-0 bottom-0 z-[90] p-3 sm:p-5" role="region" aria-label={t('title')} data-cookie-banner="">
       <div className="mx-auto max-w-5xl overflow-hidden rounded-[1.5rem] border border-white/12 bg-[#091722]/98 shadow-[0_30px_110px_rgba(0,0,0,.72)] backdrop-blur-2xl">
         <div className="grid gap-6 p-5 sm:p-6 lg:grid-cols-[1fr_auto] lg:items-end">
           <div>

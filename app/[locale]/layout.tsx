@@ -11,6 +11,7 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { ChatProvider, ChatPanel, FloatingChatButton } from '@/components/chat';
 import { CookieConsent } from '@/components/layout/CookieConsent';
+import { COOKIE_CHOICE_HEAD_SCRIPT } from '@/lib/cookie-choice-script';
 
 const geist = Geist({
   subsets: ['latin'],
@@ -142,6 +143,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning className={`scroll-smooth ${geist.variable} ${spaceGrotesk.variable}`}>
       <head>
+        {/* Hides the server-rendered cookie banner before paint when a choice is stored */}
+        <script dangerouslySetInnerHTML={{ __html: COOKIE_CHOICE_HEAD_SCRIPT }} />
+
         {/* Apollo preconnect added dynamically after consent */}
 
         {/* Organization + WebSite Schema (JSON-LD) - with translated description */}
